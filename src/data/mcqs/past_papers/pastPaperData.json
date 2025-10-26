@@ -1,0 +1,72 @@
+[
+  {
+    "question": "Who was the first Prime Minister of Pakistan?",
+    "options": ["Liaquat Ali Khan", "Muhammad Ali Jinnah", "Zulfikar Ali Bhutto", "Benazir Bhutto"],
+    "correctAnswer": "Liaquat Ali Khan",
+    "year": 2020,
+    "subject": "Pakistan Studies"
+  },
+  {
+    "question": "Which gas is most abundant in the Earth's atmosphere?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "correctAnswer": "Nitrogen",
+    "year": 2021,
+    "subject": "General Science"
+  },
+  {
+    "question": "What is the capital of Balochistan?",
+    "options": ["Karachi", "Lahore", "Quetta", "Peshawar"],
+    "correctAnswer": "Quetta",
+    "year": 2019,
+    "subject": "Geography"
+  },
+  {
+    "question": "Which surah of the Quran is known as the heart of the Quran?",
+    "options": ["Surah Al-Fatiha", "Surah Al-Baqarah", "Surah Yaseen", "Surah Al-Ikhlas"],
+    "correctAnswer": "Surah Yaseen",
+    "year": 2022,
+    "subject": "Islamic Studies"
+  },
+  {
+    "question": "The boiling point of water on Celsius scale is?",
+    "options": ["90°C", "80°C", "100°C", "120°C"],
+    "correctAnswer": "100°C",
+    "year": 2018,
+    "subject": "Physics"
+  },
+  {
+    "question": "Which element has the atomic number 1?",
+    "options": ["Hydrogen", "Oxygen", "Carbon", "Helium"],
+    "correctAnswer": "Hydrogen",
+    "year": 2023,
+    "subject": "Chemistry"
+  },
+  {
+    "question": "In which year did Pakistan conduct nuclear tests?",
+    "options": ["1996", "1997", "1998", "1999"],
+    "correctAnswer": "1998",
+    "year": 2020,
+    "subject": "Current Affairs"
+  },
+  {
+    "question": "What is the square root of 144?",
+    "options": ["10", "12", "14", "16"],
+    "correctAnswer": "12",
+    "year": 2021,
+    "subject": "Mathematics"
+  },
+  {
+    "question": "Which organ in the human body is responsible for pumping blood?",
+    "options": ["Lungs", "Heart", "Kidney", "Brain"],
+    "correctAnswer": "Heart",
+    "year": 2022,
+    "subject": "Biology"
+  },
+  {
+    "question": "Who wrote the national anthem of Pakistan?",
+    "options": ["Faiz Ahmad Faiz", "Hafeez Jullundhri", "Allama Iqbal", "Ahmad Nadeem Qasmi"],
+    "correctAnswer": "Hafeez Jullundhri",
+    "year": 2017,
+    "subject": "General Knowledge"
+  }
+]

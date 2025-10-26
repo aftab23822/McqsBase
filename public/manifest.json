@@ -1,0 +1,32 @@
+{
+  "name": "McqsBase.com - Pakistan's Premier MCQ Platform",
+  "short_name": "McqsBase",
+  "description": "Comprehensive MCQ platform for Pakistan competitive exams. Practice MCQs, download past papers, and prepare for FPSC, SPSC, PPSC, and NTS exams.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3B82F6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/eagle.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "screenshots": [
+    {
+      "src": "/eagle.svg",
+      "sizes": "1280x720",
+      "type": "image/svg+xml",
+      "form_factor": "wide"
+    }
+  ]
+} 

@@ -1,0 +1,84 @@
+{
+  "questions": [
+    {
+      "question": "What are the four pillars of Object-Oriented Programming?",
+      "sharedBy": "Ali Raza",
+      "position": "Lecturer Computer Science",
+      "department": "FPSC",
+      "year": "2023",
+      "experience": "They also asked questions related to polymorphism and database normalization."
+    },
+    {
+      "question": "How does SQL JOIN work? Explain with examples.",
+      "sharedBy": "Fatima Zahra",
+      "position": "Assistant Professor",
+      "department": "SPSC",
+      "year": "2022",
+      "experience": "Interview started with academic background, then moved to technical and subject-based questions."
+    },
+    {
+      "question": "Differentiate between TCP and UDP protocols.",
+      "sharedBy": "Usman Ghani",
+      "position": "IT Supervisor",
+      "department": "FPSC",
+      "year": "2021",
+      "experience": "They focused mostly on networking basics, subnetting, and OSI layers."
+    },
+    {
+      "question": "What is normalization? Explain 1NF, 2NF, and 3NF with examples.",
+      "sharedBy": "Sana Iqbal",
+      "position": "Lecturer Information Technology",
+      "department": "SPSC",
+      "year": "2024",
+      "experience": "Mostly DBMS-related questions were asked with a few teaching-related scenarios."
+    },
+    {
+      "question": "Explain the concept of Encapsulation with a real-life example.",
+      "sharedBy": "Bilal Ahmed",
+      "position": "Lecturer Software Engineering",
+      "department": "FPSC",
+      "year": "2023",
+      "experience": "The panel was friendly. They asked scenario-based OOP and project experience questions."
+    },
+    {
+      "question": "What are the differences between stack and queue data structures?",
+      "sharedBy": "Hina Tariq",
+      "position": "Computer Lab Instructor",
+      "department": "SPSC",
+      "year": "2021",
+      "experience": "Only technical questions were asked. No general knowledge or current affairs."
+    },
+    {
+      "question": "How do you handle discipline and communication in a classroom?",
+      "sharedBy": "Adeel Hussain",
+      "position": "Lecturer Education",
+      "department": "FPSC",
+      "year": "2022",
+      "experience": "They tested both subject knowledge and classroom management skills."
+    },
+    {
+      "question": "What is the difference between a process and a thread?",
+      "sharedBy": "Iqra Nawaz",
+      "position": "Lecturer Computer Science",
+      "department": "FPSC",
+      "year": "2024",
+      "experience": "They asked basic OS and DBMS questions, then moved to teaching methodology."
+    },
+    {
+      "question": "Can you explain what is inheritance in OOP?",
+      "sharedBy": "Saad Khan",
+      "position": "Subject Specialist",
+      "department": "SPSC",
+      "year": "2023",
+      "experience": "Technical questions were easy. Panel expected precise and structured answers."
+    },
+    {
+      "question": "Describe your approach to lesson planning and student engagement.",
+      "sharedBy": "Nimra Aslam",
+      "position": "Lecturer (Education)",
+      "department": "FPSC",
+      "year": "2024",
+      "experience": "It was a mixed interview of subject matter and pedagogy techniques."
+    }
+  ]
+}

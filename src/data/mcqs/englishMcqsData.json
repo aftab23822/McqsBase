@@ -1,0 +1,1241 @@
+[
+  {
+    "question": "Choose the correct synonym for **Benevolent**:",
+    "options": ["Malicious", "Generous", "Stingy", "Cruel"],
+    "correctAnswer": "Generous",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the antonym of **Oblivion**:",
+    "options": ["Forgetfulness", "Awareness", "Ignorance", "Neglect"],
+    "correctAnswer": "Awareness",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'She is allergic _____ cats.'",
+    "options": ["to", "from", "with", "for"],
+    "correctAnswer": "to",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which word is misspelled?",
+    "options": ["Accommodate", "Separate", "Definately", "Occurrence"],
+    "correctAnswer": "Definately",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the past participle of **Swim**?",
+    "options": ["Swam", "Swum", "Swims", "Swimming"],
+    "correctAnswer": "Swum",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the correct collective noun for **Birds**:",
+    "options": ["Herd", "Flock", "Pack", "Swarm"],
+    "correctAnswer": "Flock",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the sentence with the correct punctuation:",
+    "options": ["He asked, \"Are you coming.\"", "He asked, \"Are you coming?\"", "He asked \"Are you coming?\"", "He asked, \"Are you coming!\""],
+    "correctAnswer": "He asked, \"Are you coming?\"",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which of the following is an example of an **idiom**?",
+    "options": ["The cat sat on the mat.", "It's raining cats and dogs.", "The sun rose in the east.", "She walked quickly."],
+    "correctAnswer": "It's raining cats and dogs.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the word closest in meaning to **Ephemeral**:",
+    "options": ["Permanent", "Lasting", "Fleeting", "Eternal"],
+    "correctAnswer": "Fleeting",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What type of word is **Quickly** in the sentence 'He ran quickly'?",
+    "options": ["Noun", "Adjective", "Verb", "Adverb"],
+    "correctAnswer": "Adverb",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the correct spelling:",
+    "options": ["Maintanance", "Maintenance", "Maintainence", "Maintenence"],
+    "correctAnswer": "Maintenance",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the passive voice sentence:",
+    "options": ["He wrote a letter.", "A letter was written by him.", "He is writing a letter.", "A letter he wrote."],
+    "correctAnswer": "A letter was written by him.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the correct article: 'She bought _____ umbrella.'",
+    "options": ["a", "an", "the", "no article"],
+    "correctAnswer": "an",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the superlative form of **Good**?",
+    "options": ["Better", "Gooder", "Best", "More good"],
+    "correctAnswer": "Best",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the word that means a person who writes dictionaries:",
+    "options": ["Linguist", "Lexicographer", "Philologist", "Grammarian"],
+    "correctAnswer": "Lexicographer",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Fill in the blank: 'Neither John _____ his friends were present.'",
+    "options": ["or", "nor", "and", "but"],
+    "correctAnswer": "nor",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which sentence uses the correct verb tense?",
+    "options": ["I have gone to the store yesterday.", "I went to the store yesterday.", "I go to the store yesterday.", "I had gone to the store yesterday."],
+    "correctAnswer": "I went to the store yesterday.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Diligent**?",
+    "options": ["Lazy", "Careless", "Hardworking", "Slow"],
+    "correctAnswer": "Hardworking",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the word with a different vowel sound:",
+    "options": ["Cat", "Hat", "Bat", "Gate"],
+    "correctAnswer": "Gate",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the common noun:",
+    "options": ["Pakistan", "River", "Mount Everest", "Amazon"],
+    "correctAnswer": "River",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the correct preposition: 'He apologized _____ his mistake.'",
+    "options": ["for", "to", "at", "on"],
+    "correctAnswer": "for",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the plural of **Child**?",
+    "options": ["Childs", "Childrens", "Children", "Childes"],
+    "correctAnswer": "Children",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the most appropriate word to complete the proverb: 'An apple a day keeps the doctor _____.'",
+    "options": ["near", "away", "close", "around"],
+    "correctAnswer": "away",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What figure of speech is 'The wind whispered through the trees'?",
+    "options": ["Simile", "Metaphor", "Personification", "Hyperbole"],
+    "correctAnswer": "Personification",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the antonym of **Authentic**:",
+    "options": ["Genuine", "Real", "Fake", "True"],
+    "correctAnswer": "Fake",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which of the following is a compound sentence?",
+    "options": ["He ran fast.", "She sang and danced.", "He ran fast, and he won the race.", "Running is fun."],
+    "correctAnswer": "He ran fast, and he won the race.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the word that means a short summary of a book, film, or play:",
+    "options": ["Essay", "Report", "Synopsis", "Critique"],
+    "correctAnswer": "Synopsis",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'If I _____ a bird, I would fly.'",
+    "options": ["was", "were", "am", "is"],
+    "correctAnswer": "were",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the part of speech of **Beautiful** in 'She is a beautiful girl.'",
+    "options": ["Noun", "Adverb", "Verb", "Adjective"],
+    "correctAnswer": "Adjective",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which word is correctly spelled?",
+    "options": ["recieve", "believe", "deceive", "concieve"],
+    "correctAnswer": "believe",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the past tense of **Speak**?",
+    "options": ["Spoke", "Speaked", "Spoken", "Speaks"],
+    "correctAnswer": "Spoke",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the correct spelling for the plural of **Mouse**:",
+    "options": ["Mouses", "Mice", "Mousses", "Mouse's"],
+    "correctAnswer": "Mice",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the sentence with correct subject-verb agreement:",
+    "options": ["The dogs barks loudly.", "The dog bark loudly.", "The dog barks loudly.", "The dogs bark loudly."],
+    "correctAnswer": "The dog barks loudly.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Exacerbate**?",
+    "options": ["To improve", "To worsen", "To simplify", "To clarify"],
+    "correctAnswer": "To worsen",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which of the following is a simile?",
+    "options": ["He is a lion.", "She is as brave as a lion.", "Life is a journey.", "The car flew down the road."],
+    "correctAnswer": "She is as brave as a lion.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the synonym of **Profound**:",
+    "options": ["Shallow", "Superficial", "Deep", "Trivial"],
+    "correctAnswer": "Deep",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'He has been studying _____ three hours.'",
+    "options": ["since", "for", "from", "during"],
+    "correctAnswer": "for",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the proper noun:",
+    "options": ["City", "Boy", "Karachi", "Book"],
+    "correctAnswer": "Karachi",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the correct prefix to make a negative word: _____ **happy**",
+    "options": ["un-", "dis-", "in-", "non-"],
+    "correctAnswer": "un-",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the plural of **Louse**?",
+    "options": ["Louses", "Lice", "Louse's", "Lices"],
+    "correctAnswer": "Lice",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the most appropriate phrasal verb: 'He wants to _____ golf.'",
+    "options": ["play", "do", "make", "go"],
+    "correctAnswer": "play",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Sagacious**?",
+    "options": ["Foolish", "Wise", "Ignorant", "Naive"],
+    "correctAnswer": "Wise",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which sentence is grammatically correct?",
+    "options": ["Between you and I, this is a secret.", "Between you and me, this is a secret.", "Between I and you, this is a secret.", "Between me and you, this is a secret."],
+    "correctAnswer": "Between you and me, this is a secret.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the word closest in meaning to **Ubiquitous**:",
+    "options": ["Rare", "Scarce", "Pervasive", "Limited"],
+    "correctAnswer": "Pervasive",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the correct use of a comma:",
+    "options": ["He bought apples oranges and bananas.", "He bought apples, oranges and bananas.", "He bought apples, oranges, and bananas.", "He bought apples, oranges and, bananas."],
+    "correctAnswer": "He bought apples, oranges, and bananas.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the antonym of **Candid**?",
+    "options": ["Frank", "Honest", "Devious", "Direct"],
+    "correctAnswer": "Devious",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the word that correctly completes the analogy: 'Paw is to cat as hoof is to _____.'",
+    "options": ["dog", "bird", "horse", "fish"],
+    "correctAnswer": "horse",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the noun form of **Decide**?",
+    "options": ["Decisive", "Decision", "Decided", "Deciding"],
+    "correctAnswer": "Decision",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the correctly spelled word:",
+    "options": ["Conscience", "Consciense", "Conscence", "Conscious"],
+    "correctAnswer": "Conscience",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Fill in the blank: 'He prefers tea _____ coffee.'",
+    "options": ["than", "to", "over", "from"],
+    "correctAnswer": "to",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of the proverb 'A bird in the hand is worth two in the bush'?",
+    "options": ["It's better to be greedy.", "It's better to have something certain than risk it for more.", "Birds are valuable.", "Two birds are always better than one."],
+    "correctAnswer": "It's better to have something certain than risk it for more.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the adverb of frequency:",
+    "options": ["Yesterday", "Often", "There", "Very"],
+    "correctAnswer": "Often",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which word is a homophone of **Knew**?",
+    "options": ["New", "Now", "Know", "No"],
+    "correctAnswer": "New",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the correct article: 'She is _____ honest woman.'",
+    "options": ["a", "an", "the", "no article"],
+    "correctAnswer": "an",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the past participle of **Lie** (to recline)?",
+    "options": ["Lied", "Lay", "Lain", "Lying"],
+    "correctAnswer": "Lain",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the most suitable word: 'The company needs to _____ its losses.'",
+    "options": ["mitigate", "aggravate", "enhance", "maximize"],
+    "correctAnswer": "mitigate",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Capricious**?",
+    "options": ["Predictable", "Consistent", "Fickle", "Steady"],
+    "correctAnswer": "Fickle",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which of the following is a complex sentence?",
+    "options": ["He ran.", "He ran and she walked.", "Although it was raining, they went out.", "They went out."],
+    "correctAnswer": "Although it was raining, they went out.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the synonym of **Prodigious**:",
+    "options": ["Small", "Tiny", "Enormous", "Insignificant"],
+    "correctAnswer": "Enormous",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'The cat jumped _____ the table.'",
+    "options": ["on", "onto", "in", "at"],
+    "correctAnswer": "onto",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the abstract noun:",
+    "options": ["Table", "Honesty", "Car", "Tree"],
+    "correctAnswer": "Honesty",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the correct spelling:",
+    "options": ["Independant", "Independent", "Independunt", "Independantt"],
+    "correctAnswer": "Independent",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the plural of **Criterion**?",
+    "options": ["Criterions", "Criteria", "Criteriones", "Criterionss"],
+    "correctAnswer": "Criteria",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the sentence with the correct use of apostrophe:",
+    "options": ["The boys toys were broken.", "The boy's toys were broken.", "The boys' toys were broken.", "The boy's' toys were broken."],
+    "correctAnswer": "The boy's toys were broken.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Alacrity**?",
+    "options": ["Slowness", "Hesitation", "Eagerness", "Reluctance"],
+    "correctAnswer": "Eagerness",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which of the following is an oxymoron?",
+    "options": ["Jumbo shrimp", "As strong as an ox", "Sweat of his brow", "Heart of gold"],
+    "correctAnswer": "Jumbo shrimp",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the antonym of **Obscure**:",
+    "options": ["Clear", "Vague", "Mysterious", "Hidden"],
+    "correctAnswer": "Clear",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'She excels _____ mathematics.'",
+    "options": ["at", "in", "on", "with"],
+    "correctAnswer": "in",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the interjection:",
+    "options": ["Quickly", "Oh!", "Running", "Table"],
+    "correctAnswer": "Oh!",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the word that sounds the same as **Flour**:",
+    "options": ["Flower", "Floor", "Flow", "Foul"],
+    "correctAnswer": "Flower",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the plural of **Phenomenon**?",
+    "options": ["Phenomenons", "Phenomena", "Phenomenon's", "Phenomenones"],
+    "correctAnswer": "Phenomena",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the correct sentence:",
+    "options": ["If I would have known, I would have come.", "If I had known, I would have come.", "If I knew, I would have come.", "If I would know, I would come."],
+    "correctAnswer": "If I had known, I would have come.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Parsimonious**?",
+    "options": ["Generous", "Extravagant", "Frugal", "Wasteful"],
+    "correctAnswer": "Frugal",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which of the following is an example of an **euphemism**?",
+    "options": ["He passed away.", "He died.", "He kicked the bucket.", "He is no more."],
+    "correctAnswer": "He passed away.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the synonym of **Dilapidated**:",
+    "options": ["New", "Restored", "Ruined", "Perfect"],
+    "correctAnswer": "Ruined",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'He got _____ the bus.'",
+    "options": ["on", "in", "into", "at"],
+    "correctAnswer": "on",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the transitive verb:",
+    "options": ["Sleep", "Run", "Eat", "Laugh"],
+    "correctAnswer": "Eat",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the correct spelling:",
+    "options": ["Superceed", "Supersede", "Supurcede", "Superseed"],
+    "correctAnswer": "Supersede",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the comparative form of **Happy**?",
+    "options": ["Happier", "More happy", "Happiest", "Most happy"],
+    "correctAnswer": "Happier",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the correct collective noun for **Fish**:",
+    "options": ["School", "Herd", "Swarm", "Pack"],
+    "correctAnswer": "School",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Voracious**?",
+    "options": ["Full", "Satisfied", "Hungry", "Content"],
+    "correctAnswer": "Hungry",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which of these is a **conjunction**?",
+    "options": ["Run", "And", "Quickly", "Under"],
+    "correctAnswer": "And",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the antonym of **Gregarious**:",
+    "options": ["Sociable", "Outgoing", "Reserved", "Friendly"],
+    "correctAnswer": "Reserved",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'She looked _____ the window.'",
+    "options": ["at", "to", "in", "on"],
+    "correctAnswer": "at",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the demonstrative pronoun:",
+    "options": ["He", "She", "This", "They"],
+    "correctAnswer": "This",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the correct spelling:",
+    "options": ["Privilege", "Privelege", "Priviledge", "Priviliege"],
+    "correctAnswer": "Privilege",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the noun form of **Achieve**?",
+    "options": ["Achievable", "Achievement", "Achiever", "Achieved"],
+    "correctAnswer": "Achievement",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the correct sentence structure:",
+    "options": ["Running quickly, the boy caught the bus.", "The boy running quickly caught the bus.", "Quickly running, the boy caught the bus.", "The boy quickly caught the bus, running."],
+    "correctAnswer": "Running quickly, the boy caught the bus.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Paucity**?",
+    "options": ["Abundance", "Scarcity", "Plenty", "Sufficiency"],
+    "correctAnswer": "Scarcity",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which of the following is a **metaphor**?",
+    "options": ["The world is a stage.", "He runs like the wind.", "Her smile is as bright as the sun.", "The leaves danced in the breeze."],
+    "correctAnswer": "The world is a stage.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the synonym of **Incessant**:",
+    "options": ["Intermittent", "Sporadic", "Continuous", "Occasional"],
+    "correctAnswer": "Continuous",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'He is responsible _____ his actions.'",
+    "options": ["for", "to", "with", "of"],
+    "correctAnswer": "for",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the indefinite pronoun:",
+    "options": ["He", "She", "Anyone", "It"],
+    "correctAnswer": "Anyone",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the word with a silent 'k':",
+    "options": ["Kite", "Know", "King", "Keep"],
+    "correctAnswer": "Know",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the plural of **Octopus**?",
+    "options": ["Octopuses", "Octopi", "Octopuss", "Octopus's"],
+    "correctAnswer": "Octopuses",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the most appropriate verb: 'The baby _____ loudly.'",
+    "options": ["cries", "cry", "cried", "crying"],
+    "correctAnswer": "cries",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Ameliorate**?",
+    "options": ["To worsen", "To improve", "To destroy", "To complicate"],
+    "correctAnswer": "To improve",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which sentence contains a dangling modifier?",
+    "options": ["Running quickly, the bus was missed.", "After eating dinner, I went to bed.", "Having finished my homework, I played games.", "To open the door, a key is needed."],
+    "correctAnswer": "Running quickly, the bus was missed.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the antonym of **Cacophony**:",
+    "options": ["Noise", "Discord", "Harmony", "Racket"],
+    "correctAnswer": "Harmony",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'He is good _____ playing chess.'",
+    "options": ["at", "in", "on", "with"],
+    "correctAnswer": "at",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the gerund in the sentence: 'Swimming is my favorite activity.'",
+    "options": ["Swimming", "Is", "Favorite", "Activity"],
+    "correctAnswer": "Swimming",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the correctly spelled word:",
+    "options": ["Conscience", "Consciense", "Conscence", "Conscious"],
+    "correctAnswer": "Conscience",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the plural of **Crisis**?",
+    "options": ["Crisiss", "Crises", "Crisis's", "Crisises"],
+    "correctAnswer": "Crises",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the sentence in direct speech:",
+    "options": ["He said that he was busy.", "He said, \"I am busy.\"", "He asked if he was busy.", "He told me he was busy."],
+    "correctAnswer": "He said, \"I am busy.\"",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Luminous**?",
+    "options": ["Dull", "Dark", "Bright", "Dim"],
+    "correctAnswer": "Bright",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which of the following is a **hyperbole**?",
+    "options": ["I'm so hungry I could eat a horse.", "He is tall.", "She sings well.", "It was a cold day."],
+    "correctAnswer": "I'm so hungry I could eat a horse.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the synonym of **Querulous**:",
+    "options": ["Happy", "Complaining", "Joyful", "Silent"],
+    "correctAnswer": "Complaining",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'He knocked _____ the door.'",
+    "options": ["on", "at", "in", "to"],
+    "correctAnswer": "at",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the coordinating conjunction:",
+    "options": ["Because", "Although", "And", "When"],
+    "correctAnswer": "And",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the word that means 'a strong feeling of dislike':",
+    "options": ["Affection", "Aversion", "Admiration", "Attraction"],
+    "correctAnswer": "Aversion",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the plural of **Diagnosis**?",
+    "options": ["Diagnosis", "Diagnosiss", "Diagnoses", "Diagnosis's"],
+    "correctAnswer": "Diagnoses",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the sentence with correct capitalization:",
+    "options": ["i live in karachi, pakistan.", "I live in karachi, Pakistan.", "I live in Karachi, pakistan.", "I live in Karachi, Pakistan."],
+    "correctAnswer": "I live in Karachi, Pakistan.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Conundrum**?",
+    "options": ["Solution", "Problem", "Answer", "Clarity"],
+    "correctAnswer": "Problem",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which of the following is an **alliteration**?",
+    "options": ["Peter Piper picked a peck of pickled peppers.", "The wind howled.", "Life is like a box of chocolates.", "She is as quiet as a mouse."],
+    "correctAnswer": "Peter Piper picked a peck of pickled peppers.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the antonym of **Amateur**:",
+    "options": ["Novice", "Expert", "Beginner", "Learner"],
+    "correctAnswer": "Expert",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'He waited _____ the rain stopped.'",
+    "options": ["until", "since", "for", "while"],
+    "correctAnswer": "until",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the relative pronoun:",
+    "options": ["He", "She", "Which", "They"],
+    "correctAnswer": "Which",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the correct spelling:",
+    "options": ["Relevent", "Relevant", "Relavent", "Relivant"],
+    "correctAnswer": "Relevant",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the plural of **Index**?",
+    "options": ["Indexes", "Indices", "Index's", "Indexies"],
+    "correctAnswer": "Indices",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the correct sentence:",
+    "options": ["I wish I was taller.", "I wish I were taller.", "I wish I am taller.", "I wish I is taller."],
+    "correctAnswer": "I wish I were taller.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Esoteric**?",
+    "options": ["Common", "Understood by few", "Obvious", "Public"],
+    "correctAnswer": "Understood by few",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which of the following is an **onomatopoeia**?",
+    "options": ["The cat meowed.", "The sun is a ball of fire.", "She cried a river of tears.", "He is as strong as an ox."],
+    "correctAnswer": "The cat meowed.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the synonym of **Lethargic**:",
+    "options": ["Energetic", "Active", "Sluggish", "Vigorous"],
+    "correctAnswer": "Sluggish",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'He is addicted _____ smoking.'",
+    "options": ["to", "from", "with", "for"],
+    "correctAnswer": "to",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the reflexive pronoun:",
+    "options": ["Him", "His", "Himself", "He"],
+    "correctAnswer": "Himself",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the word with a silent 'b':",
+    "options": ["Bomb", "Rabbit", "Blob", "Rubbish"],
+    "correctAnswer": "Bomb",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the plural of **Formula**?",
+    "options": ["Formulas", "Formulae", "Formulas's", "Formule"],
+    "correctAnswer": "Formulas",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the sentence where 'affect' is used correctly:",
+    "options": ["The weather effected his mood.", "The weather affected his mood.", "The weather had an affect on his mood.", "The weather had an effect on his mood."],
+    "correctAnswer": "The weather affected his mood.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Belligerent**?",
+    "options": ["Peaceful", "Friendly", "Hostile", "Cooperative"],
+    "correctAnswer": "Hostile",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which of the following is a **pun**?",
+    "options": ["I've been to the library. It's an interesting place.", "Why don't scientists trust atoms? Because they make up everything!", "The early bird catches the worm.", "She's a couch potato."],
+    "correctAnswer": "Why don't scientists trust atoms? Because they make up everything!",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the antonym of **Mitigate**:",
+    "options": ["Lessen", "Aggravate", "Reduce", "Ease"],
+    "correctAnswer": "Aggravate",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'He is capable _____ doing the job.'",
+    "options": ["of", "for", "with", "in"],
+    "correctAnswer": "of",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the possessive pronoun:",
+    "options": ["He", "His", "Him", "Himself"],
+    "correctAnswer": "His",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the correct spelling:",
+    "options": ["Necessery", "Necessary", "Necassary", "Neccessary"],
+    "correctAnswer": "Necessary",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the plural of **Deer**?",
+    "options": ["Deers", "Deer", "Deeres", "Deer's"],
+    "correctAnswer": "Deer",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the sentence with the correct use of 'than' or 'then':",
+    "options": ["He is taller then I am.", "He is taller than I am.", "First, we eat, than we leave.", "First, we eat, then we leave."],
+    "correctAnswer": "He is taller than I am.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Perfunctory**?",
+    "options": ["Thorough", "Careful", "Hasty and superficial", "Detailed"],
+    "correctAnswer": "Hasty and superficial",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which of the following is a **cliché**?",
+    "options": ["Every cloud has a silver lining.", "The early bird catches the worm.", "He is a walking encyclopedia.", "All of the above"],
+    "correctAnswer": "All of the above",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the synonym of **Candid**:",
+    "options": ["Dishonest", "Blunt", "Secretive", "Reserved"],
+    "correctAnswer": "Blunt",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'The team consists _____ ten members.'",
+    "options": ["of", "from", "with", "in"],
+    "correctAnswer": "of",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the type of sentence: 'Go home.'",
+    "options": ["Declarative", "Interrogative", "Imperative", "Exclamatory"],
+    "correctAnswer": "Imperative",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the correct spelling:",
+    "options": ["Definite", "Definate", "Definit", "Definitte"],
+    "correctAnswer": "Definite",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the plural of **Analysis**?",
+    "options": ["Analysis", "Analysises", "Analysies", "Analyses"],
+    "correctAnswer": "Analyses",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the sentence where 'principle' is used correctly:",
+    "options": ["He is a man of high principals.", "He is a man of high principles.", "The school principle is very strict.", "The school principal is very strict."],
+    "correctAnswer": "He is a man of high principles.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Ubiquitous**?",
+    "options": ["Rare", "Found everywhere", "Limited", "Scarce"],
+    "correctAnswer": "Found everywhere",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which of the following is an **understatement**?",
+    "options": ["It's a bit chilly in the Arctic.", "It's freezing in the Arctic.", "The Arctic is cold.", "The Arctic is extremely cold."],
+    "correctAnswer": "It's a bit chilly in the Arctic.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the antonym of **Succinct**:",
+    "options": ["Brief", "Concise", "Verbose", "Short"],
+    "correctAnswer": "Verbose",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'She is fond _____ music.'",
+    "options": ["of", "for", "with", "at"],
+    "correctAnswer": "of",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the conjunction in the sentence: 'He is smart but lazy.'",
+    "options": ["He", "Is", "Smart", "But"],
+    "correctAnswer": "But",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the word with a silent 'h':",
+    "options": ["House", "Honest", "Happy", "Heavy"],
+    "correctAnswer": "Honest",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the plural of **Medium** (a means of communication)?",
+    "options": ["Mediums", "Media", "Medium's", "Medias"],
+    "correctAnswer": "Media",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the sentence with correct parallel structure:",
+    "options": ["She likes to sing, dance, and drawing.", "She likes to sing, to dance, and to draw.", "She likes singing, dancing, and to draw.", "She likes to sing, dance, and to draw."],
+    "correctAnswer": "She likes to sing, to dance, and to draw.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Ineffable**?",
+    "options": ["Expressible", "Nameless", "Unspeakable", "Clearly stated"],
+    "correctAnswer": "Unspeakable",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which of the following is a **paradox**?",
+    "options": ["Less is more.", "It's raining cats and dogs.", "He ran like lightning.", "She sings beautifully."],
+    "correctAnswer": "Less is more.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the synonym of **Ostentatious**:",
+    "options": ["Modest", "Simple", "Flashy", "Humble"],
+    "correctAnswer": "Flashy",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'He is anxious _____ his results.'",
+    "options": ["about", "for", "on", "at"],
+    "correctAnswer": "about",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the infinitive phrase:",
+    "options": ["Running quickly", "To swim well", "On the table", "Very tall"],
+    "correctAnswer": "To swim well",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the correct spelling:",
+    "options": ["Concious", "Conscious", "Consious", "Conscius"],
+    "correctAnswer": "Conscious",
+    "submittedBy": "Mudassar Ruz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the plural of **Curriculum**?",
+    "options": ["Curriculums", "Curricula", "Curriculum's", "Curriculumes"],
+    "correctAnswer": "Curricula",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the sentence with the correct use of 'lie' or 'lay':",
+    "options": ["Lie the book on the table.", "Lay the book on the table.", "I will lay down for a nap.", "I will lie down for a nap."],
+    "correctAnswer": "I will lie down for a nap.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Superfluous**?",
+    "options": ["Necessary", "Essential", "Excessive", "Crucial"],
+    "correctAnswer": "Excessive",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which of the following is an example of **irony**?",
+    "options": ["A fire station burns down.", "The sky is blue.", "He sings like an angel.", "She is very kind."],
+    "correctAnswer": "A fire station burns down.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the antonym of **Zealous**:",
+    "options": ["Enthusiastic", "Passionate", "Apathetic", "Ardent"],
+    "correctAnswer": "Apathetic",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'He abstained _____ voting.'",
+    "options": ["from", "to", "with", "in"],
+    "correctAnswer": "from",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the adverb clause:",
+    "options": ["The man who came.", "When he arrived, I was sleeping.", "A very old house.", "To finish the work."],
+    "correctAnswer": "When he arrived, I was sleeping.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the word with a silent 'g':",
+    "options": ["Grain", "Grow", "Sign", "Great"],
+    "correctAnswer": "Sign",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the plural of **Basis**?",
+    "options": ["Basiss", "Bases", "Basis's", "Basisies"],
+    "correctAnswer": "Bases",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the correct option: 'It's _____ late to go out.'",
+    "options": ["too", "to", "two", "tew"],
+    "correctAnswer": "too",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Idiosyncrasy**?",
+    "options": ["Common trait", "Peculiar habit", "Normal behavior", "Universal characteristic"],
+    "correctAnswer": "Peculiar habit",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Which of the following is a **personification**?",
+    "options": ["The wind howled its mournful song.", "The sun is a giant ball of fire.", "He runs like the wind.", "She is a shining star."],
+    "correctAnswer": "The wind howled its mournful song.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Find the synonym of **Clemency**:",
+    "options": ["Harshness", "Severity", "Mercy", "Cruelty"],
+    "correctAnswer": "Mercy",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Complete the sentence: 'He complies _____ the rules.'",
+    "options": ["to", "with", "by", "for"],
+    "correctAnswer": "with",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Identify the appositive phrase:",
+    "options": ["Running fast", "My friend, John, is here.", "To win the game.", "Very old and rusty."],
+    "correctAnswer": "My friend, John, is here.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Choose the correctly spelled word:",
+    "options": ["Equiptment", "Equipement", "Equipment", "Equipmint"],
+    "correctAnswer": "Equipment",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the plural of **Focus**?",
+    "options": ["Focuses", "Foci", "Focus's", "Focusies"],
+    "correctAnswer": "Foci",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "Select the sentence with the correct use of 'affect' or 'effect':",
+    "options": ["The medicine had a strange affect on him.", "The medicine had a strange effect on him.", "It didn't effect him much.", "It didn't affect him much."],
+    "correctAnswer": "It didn't affect him much.",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  },
+  {
+    "question": "What is the meaning of **Redundant**?",
+    "options": ["Necessary", "Superfluous", "Essential", "Important"],
+    "correctAnswer": "Superfluous",
+    "submittedBy": "Mudassar Riaz",
+    "detailsUrl": "#"
+  }
+]

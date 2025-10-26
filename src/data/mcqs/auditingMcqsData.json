@@ -1,0 +1,12 @@
+[
+{"question": "Who is responsible for expressing an opinion on financial statements?", "options": ["Auditor", "Accountant", "Manager", "Shareholder"], "correctAnswer": "Auditor", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which audit is conducted by internal staff?", "options": ["Internal Audit", "External Audit", "Statutory Audit", "Tax Audit"], "correctAnswer": "Internal Audit", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is vouching?", "options": ["Checking entries with supporting documents", "Preparing accounts", "Posting to ledger", "Balancing accounts"], "correctAnswer": "Checking entries with supporting documents", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which standard governs audit procedures?", "options": ["ISA", "IFRS", "IAS", "GAAP"], "correctAnswer": "ISA", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the main objective of an audit?", "options": ["Detect fraud", "Express opinion", "Prepare accounts", "Pay taxes"], "correctAnswer": "Express opinion", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Who appoints the first auditor of a company?", "options": ["Board of Directors", "Shareholders", "Government", "Registrar"], "correctAnswer": "Board of Directors", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is an unqualified audit report?", "options": ["Clean report", "Qualified report", "Adverse report", "Disclaimer"], "correctAnswer": "Clean report", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which audit is required by law?", "options": ["Statutory Audit", "Internal Audit", "Management Audit", "Cost Audit"], "correctAnswer": "Statutory Audit", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the main tool of an auditor?", "options": ["Working Papers", "Ledger", "Trial Balance", "Cash Book"], "correctAnswer": "Working Papers", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which principle requires independence of auditor?", "options": ["Objectivity", "Integrity", "Confidentiality", "Professional Behavior"], "correctAnswer": "Objectivity", "submittedBy": "Dummy User", "detailsUrl": "#"}
+] 

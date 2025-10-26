@@ -1,0 +1,179 @@
+"use client";
+
+import React, { useState, useEffect, useRef } from 'react';
+import QuizRightSideBar from '../QuizRightSideBar';
+import QuizMcqCard from '../QuizMcqCard';
+import Pagination from '../Pagination';
+import ResultModal from '../ResultModal';
+import LeavePageModal from '../LeavePageModal';
+import { usePrompt } from '../../hooks/usePrompt';
+
+const BaseQuiz = ({ quizData, title, currentPage, setCurrentPage, totalPages, quizPerPage, ...rest }) => {
+  const [userAnswers, setUserAnswers] = useState({});
+  const [showModal, setShowModal] = useState(false);
+  const [pageScore, setPageScore] = useState(0);
+  const [timeLeft, setTimeLeft] = useState(300);
+  const [timerStarted, setTimerStarted] = useState(false);
+  const [endReason, setEndReason] = useState('');
+  const [showLeaveModal, setShowLeaveModal] = useState(false);
+  const [pendingNavigation, setPendingNavigation] = useState(null);
+  const timerRef = useRef(null);
+  const [quizSessionId, setQuizSessionId] = useState(Date.now());
+
+
+  usePrompt(Object.keys(userAnswers).length > 0 && !showModal, (proceed) => {
+    setPendingNavigation(() => proceed);
+    setShowLeaveModal(true);
+  });
+  
+  const confirmLeavePage = () => {
+    if (pendingNavigation) {
+      pendingNavigation(); // Allow react-router navigation
+    }
+    resetPage();
+    setShowLeaveModal(false);
+  };
+
+  const cancelLeavePage = () => {
+    setPendingNavigation(null);
+    setShowLeaveModal(false);
+  };
+
+  const startTimer = () => {
+    if (!timerStarted) {
+      setTimerStarted(true);
+      timerRef.current = setInterval(() => {
+        setTimeLeft(prev => {
+          if (prev <= 1) {
+            clearInterval(timerRef.current);
+            handleFinishPage(userAnswers, 'timeout');
+            return 0;
+          }
+          return prev - 1;
+        });
+      }, 1000);
+    }
+  };
+
+  const resetPage = () => {
+    clearInterval(timerRef.current);
+    setUserAnswers({});
+    setPageScore(0);
+    setTimeLeft(300);
+    setTimerStarted(false);
+    setEndReason('');
+  };
+
+  const handleAnswer = (question, selected, correct) => {
+    if (!timerStarted) startTimer();
+
+    setUserAnswers(prev => {
+      const updated = { ...prev, [question]: { selected, correct } };
+      if (Object.keys(updated).length === quizData.length) {
+        clearInterval(timerRef.current);
+        handleFinishPage(updated, 'completed');
+      }
+
+      return updated;
+    });
+  };
+
+  const handleFinishPage = (answers = userAnswers, reason = 'manual') => {
+    let score = 0;
+    Object.values(answers).forEach(ans => {
+      if (ans.selected === ans.correct) score++;
+    });
+    setPageScore(score);
+    setEndReason(reason);
+    setShowModal(true);
+  };
+
+  const handleRetry = () => {
+    resetPage();
+    setShowModal(false);
+    setQuizSessionId(Date.now());
+  };
+
+  const handleNext = () => {
+    if (!showModal && Object.keys(userAnswers).length > 0) {
+      clearInterval(timerRef.current);
+      handleFinishPage(userAnswers, 'manual');
+    } else {
+      resetPage();
+      setShowModal(false);
+      setCurrentPage(prev => Math.min(prev + 1, totalPages));
+    }
+  };
+
+  const handlePageChange = (page) => {
+    if (page === currentPage) return;
+    if (!showModal && Object.keys(userAnswers).length > 0) {
+      clearInterval(timerRef.current);
+      handleFinishPage(userAnswers, 'manual');
+    } else {
+      resetPage();
+      setCurrentPage(page);
+    }
+  };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [currentPage]);
+
+  return (
+    <section className="full-screen px-4 py-8 bg-gray-100">
+      <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-2">
+        <div className="col-span-2 p-62rounded-lg space-y-6">
+          <div className="p-1 sm:p-6 md:p-10 space-y-6 pb-20">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center text-center sm:text-left gap-2">
+              <h1 className="text-xl sm:text-2xl font-bold text-gray-800">
+                {title} (Page {currentPage})
+              </h1>
+              <div className="text-red-600 font-semibold text-sm sm:text-base sm:text-right sm:self-end">
+                Time Left: {Math.floor(timeLeft / 60)}:{String(timeLeft % 60).padStart(2, '0')}
+              </div>
+            </div>
+            {quizData.map((mcq, index) => (
+              <QuizMcqCard
+                key={`${quizSessionId}-${currentPage}-${index}`}
+                questionNumber={(currentPage - 1) * quizPerPage + index + 1}
+                correctAnswer={mcq.answer}
+                {...mcq}
+                onAnswer={handleAnswer}
+                disabled={showModal}
+                userAnswers={userAnswers}
+              />
+            ))}
+            <Pagination
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onPageChange={handlePageChange}
+              disableNavigation={showModal}
+            />
+            {showModal && (
+              <ResultModal
+                score={pageScore}
+                total={quizData.length}
+                reason={endReason}
+                onRetry={handleRetry}
+                onNext={handleNext}
+              />
+            )}
+            {showLeaveModal && (
+              <LeavePageModal
+                onCancel={cancelLeavePage}
+                onConfirm={confirmLeavePage}
+              />
+            )}
+          </div>
+        </div>
+        {/* Right Sidebar - now scrolls with content */}
+        <div className="h-fit top-20">
+          <QuizRightSideBar />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default BaseQuiz;

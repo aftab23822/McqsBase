@@ -1,0 +1,12 @@
+[
+{"question": "Which financial statement shows a company's assets, liabilities, and equity?", "options": ["Balance Sheet", "Income Statement", "Cash Flow Statement", "Statement of Changes in Equity"], "correctAnswer": "Balance Sheet", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the double entry for a cash sale?", "options": ["Debit Cash, Credit Sales", "Debit Sales, Credit Cash", "Debit Cash, Credit Purchases", "Debit Purchases, Credit Cash"], "correctAnswer": "Debit Cash, Credit Sales", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Who is known as the father of accounting?", "options": ["Luca Pacioli", "Adam Smith", "Henry Fayol", "Peter Drucker"], "correctAnswer": "Luca Pacioli", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which concept assumes a business will continue to operate?", "options": ["Going Concern", "Accrual", "Consistency", "Materiality"], "correctAnswer": "Going Concern", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is depreciation?", "options": ["Decrease in value of asset", "Increase in value of asset", "Profit", "Loss"], "correctAnswer": "Decrease in value of asset", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which account is not a real account?", "options": ["Cash", "Building", "Sales", "Machinery"], "correctAnswer": "Sales", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the main purpose of trial balance?", "options": ["Check arithmetical accuracy", "Calculate profit", "Prepare balance sheet", "Record transactions"], "correctAnswer": "Check arithmetical accuracy", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which is a current asset?", "options": ["Inventory", "Land", "Building", "Machinery"], "correctAnswer": "Inventory", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the formula for working capital?", "options": ["Current Assets - Current Liabilities", "Total Assets - Total Liabilities", "Current Assets + Current Liabilities", "Total Assets + Total Liabilities"], "correctAnswer": "Current Assets - Current Liabilities", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which principle requires revenue to be recognized when earned?", "options": ["Revenue Recognition Principle", "Matching Principle", "Cost Principle", "Conservatism Principle"], "correctAnswer": "Revenue Recognition Principle", "submittedBy": "Dummy User", "detailsUrl": "#"}
+] 

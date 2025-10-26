@@ -1,0 +1,6 @@
+{
+  "/mcqs/page": "app/mcqs/page.js",
+  "/quiz/page": "app/quiz/page.js",
+  "/api/mcqs/[subject]/route": "app/api/mcqs/[subject]/route.js",
+  "/mcqs/[subject]/page": "app/mcqs/[subject]/page.js"
+}

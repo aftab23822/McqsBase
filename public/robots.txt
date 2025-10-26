@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mcqsbase.com/sitemap.xml
+
+# Disallow admin areas
+Disallow: /404/admin
+Disallow: /admin/
+
+# Allow important pages
+Allow: /mcqs/
+Allow: /quiz/
+Allow: /past-papers/
+Allow: /past-interviews/
+Allow: /courses/
+Allow: /contact
+Allow: /privacy-policy
+Allow: /terms-of-service
+Allow: /sitemap
+
+# Crawl delay (optional)
+Crawl-delay: 1 

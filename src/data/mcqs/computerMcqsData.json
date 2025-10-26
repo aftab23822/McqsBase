@@ -1,0 +1,12 @@
+[
+{"question": "Who is known as the father of the computer?", "options": ["Charles Babbage", "Alan Turing", "John von Neumann", "Bill Gates"], "correctAnswer": "Charles Babbage", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What does CPU stand for?", "options": ["Central Processing Unit", "Computer Personal Unit", "Central Programming Unit", "Control Processing Unit"], "correctAnswer": "Central Processing Unit", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which protocol is used to send email?", "options": ["SMTP", "FTP", "HTTP", "SNMP"], "correctAnswer": "SMTP", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the binary equivalent of decimal 13?", "options": ["1101", "1011", "1110", "1001"], "correctAnswer": "1101", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which layer of the OSI model deals with encryption?", "options": ["Session", "Presentation", "Transport", "Network"], "correctAnswer": "Presentation", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Who invented the World Wide Web?", "options": ["Tim Berners-Lee", "Vint Cerf", "Bill Gates", "Steve Jobs"], "correctAnswer": "Tim Berners-Lee", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the time complexity of binary search?", "options": ["O(n)", "O(log n)", "O(n^2)", "O(1)"], "correctAnswer": "O(log n)", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which device is used to connect different networks?", "options": ["Router", "Switch", "Hub", "Repeater"], "correctAnswer": "Router", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the main function of an ALU?", "options": ["Arithmetic and Logic Operations", "Memory Storage", "Input/Output", "Data Transmission"], "correctAnswer": "Arithmetic and Logic Operations", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which programming language is used for AI?", "options": ["Python", "COBOL", "Fortran", "Pascal"], "correctAnswer": "Python", "submittedBy": "Dummy User", "detailsUrl": "#"}
+] 

@@ -1,0 +1,12 @@
+[
+{"question": "What is the chemical symbol for table salt?", "options": ["NaCl", "KCl", "Na2CO3", "CaCl2"], "correctAnswer": "NaCl", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which vitamin is produced when sunlight hits the skin?", "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"], "correctAnswer": "Vitamin D", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the main gas found in the air we breathe?", "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"], "correctAnswer": "Nitrogen", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which organ in the human body is primarily responsible for detoxification?", "options": ["Liver", "Kidney", "Heart", "Lungs"], "correctAnswer": "Liver", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the boiling point of water at sea level?", "options": ["90°C", "100°C", "110°C", "120°C"], "correctAnswer": "100°C", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which planet is known as the Red Planet?", "options": ["Earth", "Mars", "Jupiter", "Venus"], "correctAnswer": "Mars", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the hardest natural substance on Earth?", "options": ["Gold", "Iron", "Diamond", "Quartz"], "correctAnswer": "Diamond", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which part of the plant conducts photosynthesis?", "options": ["Root", "Stem", "Leaf", "Flower"], "correctAnswer": "Leaf", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the pH value of pure water?", "options": ["5", "6", "7", "8"], "correctAnswer": "7", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which gas is essential for human respiration?", "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"], "correctAnswer": "Oxygen", "submittedBy": "Dummy User", "detailsUrl": "#"}
+] 

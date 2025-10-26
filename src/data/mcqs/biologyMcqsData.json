@@ -1,0 +1,12 @@
+[
+{"question": "What is the powerhouse of the cell?", "options": ["Nucleus", "Mitochondria", "Ribosome", "Chloroplast"], "correctAnswer": "Mitochondria", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which molecule carries genetic information?", "options": ["RNA", "DNA", "Protein", "Lipid"], "correctAnswer": "DNA", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the process of cell division in somatic cells called?", "options": ["Meiosis", "Mitosis", "Binary Fission", "Budding"], "correctAnswer": "Mitosis", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which organ is responsible for filtering blood in humans?", "options": ["Heart", "Liver", "Kidney", "Lung"], "correctAnswer": "Kidney", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What pigment gives plants their green color?", "options": ["Chlorophyll", "Carotene", "Xanthophyll", "Anthocyanin"], "correctAnswer": "Chlorophyll", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which vitamin is synthesized in the skin upon sunlight exposure?", "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"], "correctAnswer": "Vitamin D", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the basic unit of life?", "options": ["Tissue", "Organ", "Cell", "Organism"], "correctAnswer": "Cell", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which blood cells help in clotting?", "options": ["Red blood cells", "White blood cells", "Platelets", "Plasma"], "correctAnswer": "Platelets", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the largest organ in the human body?", "options": ["Liver", "Skin", "Heart", "Lung"], "correctAnswer": "Skin", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which kingdom do mushrooms belong to?", "options": ["Plantae", "Fungi", "Animalia", "Protista"], "correctAnswer": "Fungi", "submittedBy": "Dummy User", "detailsUrl": "#"}
+] 

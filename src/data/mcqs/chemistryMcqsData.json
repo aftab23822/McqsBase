@@ -1,0 +1,12 @@
+[
+{"question": "What is the pH of a neutral solution at 25°C?", "options": ["5", "7", "9", "11"], "correctAnswer": "7", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Who is known as the father of modern chemistry?", "options": ["Lavoisier", "Dalton", "Mendeleev", "Boyle"], "correctAnswer": "Lavoisier", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the chemical formula for methane?", "options": ["CH4", "C2H6", "C3H8", "C4H10"], "correctAnswer": "CH4", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which element has the highest electronegativity?", "options": ["Oxygen", "Fluorine", "Chlorine", "Nitrogen"], "correctAnswer": "Fluorine", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the main gas in Earth's atmosphere?", "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Argon"], "correctAnswer": "Nitrogen", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which acid is present in vinegar?", "options": ["Citric acid", "Acetic acid", "Sulfuric acid", "Hydrochloric acid"], "correctAnswer": "Acetic acid", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the molar mass of water?", "options": ["16 g/mol", "18 g/mol", "20 g/mol", "22 g/mol"], "correctAnswer": "18 g/mol", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which process separates liquids based on boiling points?", "options": ["Filtration", "Distillation", "Crystallization", "Sublimation"], "correctAnswer": "Distillation", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the oxidation state of carbon in CO2?", "options": ["+2", "+4", "0", "-4"], "correctAnswer": "+4", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which element is used in the vulcanization of rubber?", "options": ["Sulfur", "Phosphorus", "Chlorine", "Sodium"], "correctAnswer": "Sulfur", "submittedBy": "Dummy User", "detailsUrl": "#"}
+] 

@@ -1,0 +1,12 @@
+[
+{"question": "What is the SI unit of electric capacitance?", "options": ["Farad", "Henry", "Ohm", "Tesla"], "correctAnswer": "Farad", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Who discovered the law of universal gravitation?", "options": ["Newton", "Einstein", "Galileo", "Kepler"], "correctAnswer": "Newton", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the speed of light in vacuum?", "options": ["3x10^8 m/s", "1.5x10^8 m/s", "3x10^6 m/s", "1.5x10^6 m/s"], "correctAnswer": "3x10^8 m/s", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which law states that current is directly proportional to voltage?", "options": ["Ohm's Law", "Faraday's Law", "Lenz's Law", "Ampere's Law"], "correctAnswer": "Ohm's Law", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the value of gravitational acceleration on Earth?", "options": ["9.8 m/s^2", "10 m/s^2", "8.9 m/s^2", "9.2 m/s^2"], "correctAnswer": "9.8 m/s^2", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Who proposed the theory of relativity?", "options": ["Newton", "Einstein", "Bohr", "Planck"], "correctAnswer": "Einstein", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the main particle in the nucleus of a hydrogen atom?", "options": ["Proton", "Neutron", "Electron", "Photon"], "correctAnswer": "Proton", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which phenomenon explains the blue color of the sky?", "options": ["Scattering", "Reflection", "Refraction", "Diffraction"], "correctAnswer": "Scattering", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "What is the frequency of a wave with period 0.01s?", "options": ["10 Hz", "100 Hz", "0.1 Hz", "1 Hz"], "correctAnswer": "100 Hz", "submittedBy": "Dummy User", "detailsUrl": "#"},
+{"question": "Which law relates pressure and volume of a gas at constant temperature?", "options": ["Boyle's Law", "Charles's Law", "Avogadro's Law", "Dalton's Law"], "correctAnswer": "Boyle's Law", "submittedBy": "Dummy User", "detailsUrl": "#"}
+] 
