@@ -116,8 +116,8 @@ const testNextjsConfig = () => {
   
   try {
     // Test if we can read next.config.js
-    const fs = await import('fs');
-    const path = await import('path');
+    const fs = require('fs');
+    const path = require('path');
     
     const configPath = path.join(process.cwd(), 'next.config.js');
     if (fs.existsSync(configPath)) {

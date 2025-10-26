@@ -1,0 +1,1 @@
+"use strict";exports.id=9175,exports.ids=[9175],exports.modules={89175:(e,s,t)=>{t.r(s),t.d(s,{default:()=>r});let r=(0,t(68570).createProxy)(String.raw`E:\2.Freelance\mcqs\next-js\src\components\MCQsCategory\OralAnatomyMcqs.jsx#default`)}};

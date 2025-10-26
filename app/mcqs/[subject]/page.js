@@ -1,5 +1,8 @@
 import { notFound } from 'next/navigation';
 import { generateSEOMetadata } from '../../../src/components/SEO';
+import Navbar from '../../../src/components/Navbar';
+import Footer from '../../../src/components/Footer';
+import { ReCaptchaProvider } from '../../../src/components/recaptcha';
 
 // Dynamic imports for all MCQ category components
 const MCQComponents = {
@@ -83,44 +86,82 @@ const MCQComponents = {
 
 // Subject title mapping
 const subjectTitles = {
+  // Core subjects
   'english': 'English MCQs',
-  'biology': 'Biology MCQs', 
+  'english-literature': 'English Literature MCQs',
   'urdu': 'Urdu MCQs',
   'islamic-studies': 'Islamic Studies MCQs',
+  'pak-study': 'Pakistan Studies MCQs',
+  'pakistan-studies': 'Pakistan Studies MCQs',
+  'general-knowledge': 'General Knowledge MCQs',
+  'everyday-science': 'Everyday Science MCQs',
+  
+  // Sciences
+  'biology': 'Biology MCQs', 
   'chemistry': 'Chemistry MCQs',
   'physics': 'Physics MCQs',
   'mathematics': 'Mathematics MCQs',
   'maths': 'Mathematics MCQs',
+  'statistics': 'Statistics MCQs',
+  
+  // Computer Science
   'computer': 'Computer Science MCQs',
   'computer-science': 'Computer Science MCQs',
-  'general-knowledge': 'General Knowledge MCQs',
-  'pak-study': 'Pakistan Studies MCQs',
-  'pakistan-studies': 'Pakistan Studies MCQs',
+  'software-engineering': 'Software Engineering MCQs',
+  
+  // Business & Economics
   'accounting': 'Accounting MCQs',
+  'auditing': 'Auditing MCQs',
   'economics': 'Economics MCQs',
   'finance': 'Finance MCQs',
   'marketing': 'Marketing MCQs',
   'hrm': 'Human Resource Management MCQs',
   'human-resource-management': 'Human Resource Management MCQs',
+  'management-sciences': 'Management Sciences MCQs',
+  
+  // Medical Sciences
   'medical': 'Medical MCQs',
   'pathology': 'Pathology MCQs',
   'pharmacology': 'Pharmacology MCQs',
   'biochemistry': 'Biochemistry MCQs',
   'microbiology': 'Microbiology MCQs',
+  'physiology': 'Physiology MCQs',
+  'general-anatomy': 'General Anatomy MCQs',
+  
+  // Dental Sciences  
   'oral-histology': 'Oral Histology MCQs',
+  'oral-anatomy': 'Oral Anatomy MCQs',
+  'oral-pathology-medicine': 'Oral Pathology & Medicine MCQs',
+  'dental-materials': 'Dental Materials MCQs',
+  
+  // Engineering
   'engineering': 'Engineering MCQs',
   'civil-engineering': 'Civil Engineering MCQs',
   'mechanical-engineering': 'Mechanical Engineering MCQs',
   'chemical-engineering': 'Chemical Engineering MCQs',
   'electrical-engineering': 'Electrical Engineering MCQs',
-  'forestry': 'Forestry MCQs',
+  
+  // Agriculture & Forestry
   'agriculture': 'Agriculture MCQs',
+  'forestry': 'Forestry MCQs',
+  
+  // Education & Social Sciences
   'pedagogy': 'Pedagogy MCQs',
   'education': 'Pedagogy MCQs',
   'physical-education': 'Physical Education MCQs',
-  'english-literature': 'English Literature MCQs',
+  'psychology': 'Psychology MCQs',
+  'sociology': 'Sociology MCQs',
+  'political-science': 'Political Science MCQs',
+  'international-relations': 'International Relations MCQs',
+  
+  // Law & Administration
   'judiciary-law': 'Judiciary & Law MCQs',
   'law': 'Judiciary & Law MCQs',
+  'election-officer': 'Election Officer MCQs',
+  
+  // Current Affairs
+  'pakistan-current-affairs': 'Pakistan Current Affairs MCQs',
+  'world-current-affairs': 'World Current Affairs MCQs',
 };
 
 export async function generateMetadata({ params }) {
@@ -143,6 +184,7 @@ export async function generateMetadata({ params }) {
 
 export default async function MCQCategoryPage({ params }) {
   const { subject } = params;
+  const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || 'your-recaptcha-site-key';
   
   // Check if the subject has a corresponding component
   const componentImporter = MCQComponents[subject];
@@ -153,7 +195,14 @@ export default async function MCQCategoryPage({ params }) {
   try {
     // Dynamically import the component
     const { default: MCQComponent } = await componentImporter();
-    return <MCQComponent />;
+    
+    return (
+      <ReCaptchaProvider siteKey={recaptchaSiteKey}>
+        <Navbar />
+        <MCQComponent />
+        <Footer />
+      </ReCaptchaProvider>
+    );
   } catch (error) {
     console.error(`Error loading MCQ component for ${subject}:`, error);
     notFound();

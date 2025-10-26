@@ -1,0 +1,1 @@
+"use strict";exports.id=5510,exports.ids=[5510],exports.modules={5510:(e,r,s)=>{s.r(r),s.d(r,{default:()=>t});let t=(0,s(68570).createProxy)(String.raw`E:\2.Freelance\mcqs\next-js\src\components\MCQsCategory\AgricultureMcqs.jsx#default`)}};

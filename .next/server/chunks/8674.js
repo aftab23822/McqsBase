@@ -1,0 +1,1 @@
+"use strict";exports.id=8674,exports.ids=[8674],exports.modules={38674:(e,s,t)=>{t.r(s),t.d(s,{default:()=>r});let r=(0,t(68570).createProxy)(String.raw`E:\2.Freelance\mcqs\next-js\src\components\MCQsCategory\PathologyMcqs.jsx#default`)}};

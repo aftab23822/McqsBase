@@ -1,0 +1,1 @@
+"use strict";exports.id=9695,exports.ids=[9695],exports.modules={69695:(e,s,t)=>{t.r(s),t.d(s,{default:()=>r});let r=(0,t(68570).createProxy)(String.raw`E:\2.Freelance\mcqs\next-js\src\components\MCQsCategory\PhysiologyMcqs.jsx#default`)}};
