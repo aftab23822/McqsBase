@@ -113,6 +113,7 @@ const AdminLogin = () => {
       try {
         jsonData = JSON.parse(fileContent);
       } catch (parseError) {
+        console.error('JSON parse error:', parseError);
         setError('Invalid JSON file format');
         setIsLoading(false);
         return;
@@ -123,6 +124,8 @@ const AdminLogin = () => {
         setIsLoading(false);
         return;
       }
+
+      console.log('JSON data loaded:', jsonData.length, 'items');
 
       // Validate JSON structure based on type
       const isValidStructure = jsonData.every(item => {
@@ -144,6 +147,9 @@ const AdminLogin = () => {
 
       // Use the new admin-specific batch upload endpoint
       const token = localStorage.getItem('adminToken');
+      console.log('Uploading to category:', uploadData.category);
+      console.log('MCQs data:', jsonData);
+      
       const response = await apiFetch(`/api/mcqs/batch?category=${uploadData.category}`, {
         method: 'POST',
         headers: {
@@ -158,6 +164,7 @@ const AdminLogin = () => {
 
       if (response.ok) {
         const data = await response.json();
+        console.log('Upload response:', data);
         setSuccess(`Successfully uploaded ${data.inserted} items. ${data.skipped} items were skipped (duplicates).`);
         setUploadData({
           file: null,
@@ -170,9 +177,11 @@ const AdminLogin = () => {
         if (fileInput) fileInput.value = '';
       } else {
         const errorData = await response.json();
+        console.error('Upload error:', errorData);
         setError(errorData.message || 'Upload failed');
       }
     } catch (err) {
+      console.error('Upload exception:', err);
       setError('Network error. Please try again.');
     } finally {
       setIsLoading(false);

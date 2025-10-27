@@ -1,9 +1,10 @@
 {
   "pages": {
-    "/page": [
+    "/mcqs/[subject]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/css/app/mcqs/[subject]/page.css",
+      "static/chunks/app/mcqs/[subject]/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -16,11 +17,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/mcqs/page": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/mcqs/page.css",
-      "static/chunks/app/mcqs/page.js"
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

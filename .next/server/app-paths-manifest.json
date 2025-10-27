@@ -1,5 +1,6 @@
 {
-  "/page": "app/page.js",
-  "/mcqs/page": "app/mcqs/page.js",
-  "/api/mcqs/general-knowledge/route": "app/api/mcqs/general-knowledge/route.js"
+  "/api/mcqs/[subject]/route": "app/api/mcqs/[subject]/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/mcqs/[subject]/page": "app/mcqs/[subject]/page.js",
+  "/api/mcqs/batch/route": "app/api/mcqs/batch/route.js"
 }

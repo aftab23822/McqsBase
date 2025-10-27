@@ -38,6 +38,17 @@ export const ReCaptchaProvider = ({ children, siteKey }) => {
   const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
+    // Check if reCAPTCHA is already available (e.g., on navigation after initial load)
+    const checkExisting = () => {
+      if (typeof window !== 'undefined' && window.grecaptcha) {
+        setIsReady(true);
+      }
+    };
+
+    // Check if already loaded
+    checkExisting();
+
+    // Also handle the case when it loads via the Script component
     if (isLoaded) {
       const checkReady = () => {
         if (typeof window !== 'undefined' && window.grecaptcha && window.grecaptcha.ready) {
@@ -98,8 +109,11 @@ export const ReCaptchaButton = ({
   action, 
   children 
 }) => {
-  const { siteKey, isLoaded } = useReCaptcha();
+  const { siteKey } = useReCaptcha();
   const [isLoading, setIsLoading] = useState(false);
+  
+  // Check if reCAPTCHA is available
+  const isRecaptchaAvailable = typeof window !== 'undefined' && window.grecaptcha;
   
   const handleClick = async () => {
     if (!siteKey) {
@@ -108,13 +122,9 @@ export const ReCaptchaButton = ({
       return;
     }
 
-    if (!isLoaded) {
-      console.error('reCAPTCHA not loaded yet');
-      return;
-    }
-
-    if (typeof window === 'undefined' || !window.grecaptcha) {
+    if (!isRecaptchaAvailable) {
       console.error('reCAPTCHA not available');
+      alert('reCAPTCHA is not loaded yet. Please wait a moment and try again.');
       return;
     }
 
@@ -147,7 +157,7 @@ export const ReCaptchaButton = ({
     <button
       type="button"
       onClick={handleClick}
-      disabled={disabled || isLoading || !isLoaded || !siteKey}
+      disabled={disabled || isLoading || !siteKey}
       className={className}
     >
       {isLoading ? loadingText : children}
