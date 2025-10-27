@@ -6,7 +6,6 @@ import QuizMcqCard from '../QuizMcqCard';
 import Pagination from '../Pagination';
 import ResultModal from '../ResultModal';
 import LeavePageModal from '../LeavePageModal';
-import { usePrompt } from '../../hooks/usePrompt';
 
 const BaseQuiz = ({ quizData, title, currentPage, setCurrentPage, totalPages, quizPerPage, ...rest }) => {
   const [userAnswers, setUserAnswers] = useState({});
@@ -20,18 +19,70 @@ const BaseQuiz = ({ quizData, title, currentPage, setCurrentPage, totalPages, qu
   const timerRef = useRef(null);
   const [quizSessionId, setQuizSessionId] = useState(Date.now());
 
+  // Store handlers in refs so they can be accessed by confirmLeavePage
+  const handlersRef = useRef({ handleClick: null, handleBeforeUnload: null });
 
-  usePrompt(Object.keys(userAnswers).length > 0 && !showModal, (proceed) => {
-    setPendingNavigation(() => proceed);
-    setShowLeaveModal(true);
-  });
+  // Intercept navigation attempts when quiz is active
+  useEffect(() => {
+    const shouldBlockNavigation = () => {
+      // Block if timer has started (quiz is active)
+      return timerStarted && Object.keys(userAnswers).length > 0 && !showModal;
+    };
+
+    const handleClick = (e) => {
+      if (!shouldBlockNavigation()) return;
+
+      // Find the nearest link element
+      let target = e.target;
+      while (target && target.tagName !== 'A') {
+        target = target.parentElement;
+      }
+
+      if (target && target.hasAttribute('href') && target.getAttribute('href').startsWith('/')) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const href = target.getAttribute('href');
+        setPendingNavigation(href);
+        setShowLeaveModal(true);
+      }
+    };
+
+    const handleBeforeUnload = (e) => {
+      if (shouldBlockNavigation()) {
+        e.preventDefault();
+        e.returnValue = '';
+        return '';
+      }
+    };
+
+    handlersRef.current = { handleClick, handleBeforeUnload };
+
+    window.addEventListener('click', handleClick, true);
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener('click', handleClick, true);
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, [timerStarted, userAnswers, showModal]);
   
   const confirmLeavePage = () => {
-    if (pendingNavigation) {
-      pendingNavigation(); // Allow react-router navigation
-    }
-    resetPage();
     setShowLeaveModal(false);
+    resetPage();
+    
+    if (pendingNavigation) {
+      // Temporarily remove the listener to allow navigation
+      if (handlersRef.current.handleClick && handlersRef.current.handleBeforeUnload) {
+        window.removeEventListener('click', handlersRef.current.handleClick, true);
+        window.removeEventListener('beforeunload', handlersRef.current.handleBeforeUnload);
+      }
+      
+      // Small delay to ensure listeners are removed
+      setTimeout(() => {
+        window.location.href = pendingNavigation;
+      }, 100);
+    }
   };
 
   const cancelLeavePage = () => {

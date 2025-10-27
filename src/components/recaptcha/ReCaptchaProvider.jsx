@@ -82,25 +82,25 @@ export const ReCaptchaProvider = ({ children, siteKey }) => {
   return (
     <ReCaptchaContext.Provider value={value}>
       {children}
-      {/* Debug indicator - remove in production */}
-      {process.env.NODE_ENV === 'development' && (
-        <div 
-          style={{
-            position: 'fixed',
-            bottom: '10px',
-            right: '10px',
-            background: isReady ? '#10B981' : '#F59E0B',
-            color: 'white',
-            padding: '4px 8px',
-            borderRadius: '4px',
-            fontSize: '12px',
-            zIndex: 9999,
-            opacity: 0.8
-          }}
-        >
-          reCAPTCHA: {isReady ? 'Ready' : 'Loading...'}
-        </div>
-      )}
+      {/* reCAPTCHA Status Indicator */}
+      <div 
+        style={{
+          position: 'fixed',
+          bottom: '10px',
+          right: '10px',
+          background: isReady ? '#10B981' : '#F59E0B',
+          color: 'white',
+          padding: '6px 12px',
+          borderRadius: '6px',
+          fontSize: '12px',
+          fontWeight: '500',
+          zIndex: 9999,
+          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+          transition: 'all 0.3s ease'
+        }}
+      >
+        🛡️ reCAPTCHA: {isReady ? 'Ready' : 'Loading...'}
+      </div>
     </ReCaptchaContext.Provider>
   );
 }; 

@@ -1,13 +1,83 @@
 "use client";
 
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect, useRef } from 'react';
+import Script from 'next/script';
 
 const ReCaptchaContext = createContext();
 
+// Default placeholder value for unconfigured reCAPTCHA keys
+const PLACEHOLDER_SITE_KEY = 'your-recaptcha-site-key';
+
 export const ReCaptchaProvider = ({ children, siteKey }) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [loadError, setLoadError] = useState(null);
+
+  // Validate siteKey
+  const isValidKey = siteKey && siteKey !== PLACEHOLDER_SITE_KEY;
+
+  useEffect(() => {
+    // Add callback function to window for reCAPTCHA
+    if (typeof window !== 'undefined') {
+      window.recaptchaCallback = () => {
+        setIsLoaded(true);
+      };
+    }
+  }, []);
+
+  // Don't render reCAPTCHA if no valid key is provided
+  if (!isValidKey) {
+    console.warn('reCAPTCHA site key not configured. Please set NEXT_PUBLIC_RECAPTCHA_SITE_KEY in your environment variables.');
+    return (
+      <ReCaptchaContext.Provider value={{ siteKey: null, isLoaded: false, loadError: 'Site key not configured' }}>
+        {children}
+        {/* No indicator shown when reCAPTCHA is not configured */}
+      </ReCaptchaContext.Provider>
+    );
+  }
+
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    if (isLoaded) {
+      const checkReady = () => {
+        if (typeof window !== 'undefined' && window.grecaptcha && window.grecaptcha.ready) {
+          window.grecaptcha.ready(() => {
+            setIsReady(true);
+          });
+        }
+      };
+      checkReady();
+    }
+  }, [isLoaded]);
+
   return (
-    <ReCaptchaContext.Provider value={{ siteKey }}>
+    <ReCaptchaContext.Provider value={{ siteKey, isLoaded, loadError }}>
+      <Script
+        src={`https://www.google.com/recaptcha/api.js?render=${siteKey}&onload=recaptchaCallback`}
+        strategy="afterInteractive"
+        onError={() => setLoadError('Failed to load reCAPTCHA')}
+        onLoad={() => setIsLoaded(true)}
+      />
       {children}
+      {/* reCAPTCHA Status Indicator */}
+      <div 
+        style={{
+          position: 'fixed',
+          bottom: '10px',
+          right: '10px',
+          background: isReady ? '#10B981' : '#F59E0B',
+          color: 'white',
+          padding: '6px 12px',
+          borderRadius: '6px',
+          fontSize: '12px',
+          fontWeight: '500',
+          zIndex: 9999,
+          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+          transition: 'all 0.3s ease'
+        }}
+      >
+        🛡️ reCAPTCHA: {isReady ? 'Ready' : 'Loading...'}
+      </div>
     </ReCaptchaContext.Provider>
   );
 };
@@ -28,16 +98,46 @@ export const ReCaptchaButton = ({
   action, 
   children 
 }) => {
+  const { siteKey, isLoaded } = useReCaptcha();
   const [isLoading, setIsLoading] = useState(false);
   
   const handleClick = async () => {
+    if (!siteKey) {
+      console.error('reCAPTCHA site key not configured');
+      alert('reCAPTCHA is not configured. Please contact the administrator.');
+      return;
+    }
+
+    if (!isLoaded) {
+      console.error('reCAPTCHA not loaded yet');
+      return;
+    }
+
+    if (typeof window === 'undefined' || !window.grecaptcha) {
+      console.error('reCAPTCHA not available');
+      return;
+    }
+
     setIsLoading(true);
     try {
-      // Simulate reCAPTCHA verification - replace with actual implementation
-      const token = 'mock-recaptcha-token';
+      // Execute reCAPTCHA v3
+      const token = await new Promise((resolve, reject) => {
+        if (!window.grecaptcha) {
+          reject(new Error('reCAPTCHA not loaded'));
+          return;
+        }
+        
+        window.grecaptcha.ready(() => {
+          window.grecaptcha.execute(siteKey, { action })
+            .then(resolve)
+            .catch(reject);
+        });
+      });
+      
       await onSubmit(token);
     } catch (error) {
       console.error('ReCAPTCHA error:', error);
+      alert('reCAPTCHA verification failed. Please try again.');
     } finally {
       setIsLoading(false);
     }
@@ -47,7 +147,7 @@ export const ReCaptchaButton = ({
     <button
       type="button"
       onClick={handleClick}
-      disabled={disabled || isLoading}
+      disabled={disabled || isLoading || !isLoaded || !siteKey}
       className={className}
     >
       {isLoading ? loadingText : children}

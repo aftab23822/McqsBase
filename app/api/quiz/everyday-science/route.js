@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import connectToDatabase from '../../../../lib/mongodb.js';
-import Quiz from '../../../../lib/models/Quiz.js';
+import MCQ from '../../../../lib/models/MCQ.js';
+import Category from '../../../../lib/models/Category.js';
 
 export async function GET(request) {
   try {
@@ -11,21 +12,29 @@ export async function GET(request) {
     const limit = parseInt(searchParams.get('limit')) || 10;
     const skip = (page - 1) * limit;
 
-    // Search for quizzes with 'everyday-science' in the title
-    const filter = { 
-      title: { $regex: new RegExp('everyday-science', 'i') } 
-    };
+    // Find the category by name (case-insensitive)
+    const category = await Category.findOne({ 
+      name: { $regex: new RegExp('^everyday-science$', 'i') } 
+    });
     
-    const total = await Quiz.countDocuments(filter);
-    const quizzes = await Quiz.find(filter)
+    if (!category) {
+      return NextResponse.json({ 
+        results: [], 
+        total: 0, 
+        page, 
+        totalPages: 0 
+      });
+    }
+
+    const filter = { categoryId: category._id };
+    const total = await MCQ.countDocuments(filter);
+    const mcqs = await MCQ.find(filter)
       .sort({ createdAt: -1, _id: -1 })
       .skip(skip)
-      .limit(limit)
-      .populate('questions') // Populate MCQ questions
-      .populate('categoryId'); // Populate category info
+      .limit(limit);
 
     return NextResponse.json({
-      results: quizzes,
+      results: mcqs,
       total,
       page,
       totalPages: Math.ceil(total / limit)

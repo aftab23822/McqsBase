@@ -1,0 +1,61 @@
+[
+  {
+    "note": "Example 1: Simple MCQ - Basic structure for regular MCQs",
+    "type": "simple-mcq",
+    "question": "What is the capital of Pakistan?",
+    "options": {
+      "A": "Karachi",
+      "B": "Lahore",
+      "C": "Islamabad",
+      "D": "Rawalpindi",
+      "E": ""
+    },
+    "correct_option": "C",
+    "explanation": "Islamabad is the capital city of Pakistan.",
+    "detail_link": "https://example.com/mcq/1",
+    "submitter": "Admin",
+    "pageOrder": 1
+  },
+  {
+    "note": "Example 2: Past Paper MCQ - Includes year field",
+    "type": "past-paper",
+    "question": "Which river is the longest in Pakistan?",
+    "options": {
+      "A": "Indus",
+      "B": "Jhelum",
+      "C": "Chenab",
+      "D": "Sutlej",
+      "E": ""
+    },
+    "correct_option": "A",
+    "year": "2023",
+    "explanation": "The Indus River is Pakistan's longest and most important river.",
+    "detail_link": "https://example.com/past-paper/1",
+    "submitter": "Admin"
+  },
+  {
+    "note": "Example 3: Past Interview Question - For interview type",
+    "type": "past-interview",
+    "question": "What is polymorphism in object-oriented programming?",
+    "answer": "Polymorphism is the ability of an object to take on many forms. It allows methods to do different things based on the object it is acting upon.",
+    "year": "2023",
+    "explanation": "Common interview question for computer science positions.",
+    "detail_link": "https://example.com/interview/1",
+    "submitter": "Admin"
+  },
+  {
+    "note": "Example 4: MCQ with 5 options",
+    "type": "simple-mcq",
+    "question": "What is the largest province of Pakistan by area?",
+    "options": {
+      "A": "Punjab",
+      "B": "Sindh",
+      "C": "Khyber Pakhtunkhwa",
+      "D": "Balochistan",
+      "E": "Gilgit-Baltistan"
+    },
+    "correct_option": "D",
+    "explanation": "Balochistan is the largest province by area.",
+    "submitter": "Admin"
+  }
+]

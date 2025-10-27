@@ -120,7 +120,7 @@ const ContactUsForm = () => {
             Have a question, feedback, or want to collaborate? We'd love to hear from you!
           </p>
 
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <div className={`flex items-center border rounded-lg px-3 py-2 bg-gray-50 ${validationErrors.name ? 'border-red-500' : ''}`}>

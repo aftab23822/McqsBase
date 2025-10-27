@@ -1,1 +1,0 @@
-"use strict";exports.id=6219,exports.ids=[6219],exports.modules={46219:(e,s,t)=>{t.r(s),t.d(s,{default:()=>r});let r=(0,t(68570).createProxy)(String.raw`E:\2.Freelance\mcqs\next-js\src\components\MCQsCategory\EnglishLiteratureMcqs.jsx#default`)}};

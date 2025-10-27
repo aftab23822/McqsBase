@@ -7,13 +7,17 @@
  * Usage: node scripts/nextjs-create-admin.js
  */
 
-import { connectAdminDb } from '../lib/adminDb.js';
 import dotenv from 'dotenv';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 
-// Load environment variables
-dotenv.config({ path: '.env.local' });
+// Load environment variables FIRST before importing anything else
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+dotenv.config({ path: join(__dirname, '../.env.local') });
 
 async function getAdminUserModel() {
+  const { connectAdminDb } = await import('../lib/adminDb.js');
   const adminConnection = await connectAdminDb();
   
   const mongoose = await import('mongoose');
@@ -34,8 +38,8 @@ async function getAdminUserModel() {
     
     try {
       const bcrypt = await import('bcryptjs');
-      const salt = await bcrypt.genSalt(10);
-      this.password = await bcrypt.hash(this.password, salt);
+      const salt = await bcrypt.default.genSalt(10);
+      this.password = await bcrypt.default.hash(this.password, salt);
       next();
     } catch (error) {
       next(error);
@@ -45,7 +49,7 @@ async function getAdminUserModel() {
   // Method to compare password
   adminUserSchema.methods.comparePassword = async function(password) {
     const bcrypt = await import('bcryptjs');
-    return bcrypt.compare(password, this.password);
+    return bcrypt.default.compare(password, this.password);
   };
 
   // Public JSON method
@@ -79,8 +83,19 @@ const createAdmin = async () => {
     }
     
     // Connect to admin database
-    await connectAdminDb();
+    const { connectAdminDb } = await import('../lib/adminDb.js');
+    const connection = await connectAdminDb();
     console.log('✅ Connected to admin database');
+    
+    // Wait for connection to be ready
+    await new Promise((resolve, reject) => {
+      if (connection.readyState === 1) {
+        resolve();
+      } else {
+        connection.once('connected', resolve);
+        connection.once('error', reject);
+      }
+    });
     
     const AdminUser = await getAdminUserModel();
     
@@ -88,17 +103,16 @@ const createAdmin = async () => {
     const existingAdmin = await AdminUser.findOne({ username: 'admin' });
     
     if (existingAdmin) {
-      console.log('ℹ️  Admin user already exists');
-      console.log('📧 Email:', existingAdmin.email);
-      console.log('🔑 Role:', existingAdmin.role);
-      console.log('📅 Created:', existingAdmin.createdAt);
-      process.exit(0);
+      console.log('⚠️  Admin user already exists - deleting old user...');
+      await AdminUser.deleteOne({ username: 'admin' });
+      console.log('✅ Old admin user deleted');
+      console.log('');
     }
     
     // Create new admin user
     const adminUser = new AdminUser({
       username: 'admin',
-      password: 'Admin@123', // This will be hashed automatically
+      password: 'admin123', // Simple password for initial login
       role: 'admin',
       email: 'admin@mcqsbase.com',
       permissions: ['upload_mcqs', 'manage_users', 'review_submissions', 'manage_categories']
@@ -110,7 +124,7 @@ const createAdmin = async () => {
     console.log('');
     console.log('📋 Admin Credentials:');
     console.log('   Username: admin');
-    console.log('   Password: Admin@123');
+    console.log('   Password: admin123');
     console.log('   Email: admin@mcqsbase.com');
     console.log('');
     console.log('🔒 IMPORTANT: Change the password after first login!');

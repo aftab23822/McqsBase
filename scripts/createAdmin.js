@@ -23,7 +23,7 @@ const createAdmin = async () => {
     // Create new admin user
     const adminUser = new AdminUser({
       username: 'admin',
-      password: 'Admin@123', // This will be hashed automatically
+      password: 'admin123', // This will be hashed automatically - try this password
       role: 'admin',
       email: 'admin@example.com',
       permissions: ['upload_mcqs', 'manage_users', 'review_submissions', 'manage_categories']

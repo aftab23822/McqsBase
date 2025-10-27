@@ -1,8 +1,9 @@
 import { NextResponse } from 'next/server';
 import connectToDatabase from '../../../../lib/mongodb.js';
-import Quiz from '../../../../lib/models/Quiz.js';
+import MCQ from '../../../../lib/models/MCQ.js';
+import Category from '../../../../lib/models/Category.js';
 
-// Get Quiz by subject - matches your existing quizController.getQuizBySubject
+// Get Quiz by subject - returns MCQs from the database (same as MCQs but for quiz display)
 export async function GET(request, { params }) {
   try {
     await connectToDatabase();
@@ -13,15 +14,29 @@ export async function GET(request, { params }) {
     const limit = parseInt(searchParams.get('limit')) || 10;
     const skip = (page - 1) * limit;
 
-    const filter = { title: { $regex: new RegExp(subject, 'i') } };
-    const total = await Quiz.countDocuments(filter);
-    const quizzes = await Quiz.find(filter)
+    // Find the category by name (case-insensitive)
+    const category = await Category.findOne({ 
+      name: { $regex: new RegExp('^' + subject + '$', 'i') } 
+    });
+    
+    if (!category) {
+      return NextResponse.json({ 
+        results: [], 
+        total: 0, 
+        page, 
+        totalPages: 0 
+      });
+    }
+
+    const filter = { categoryId: category._id };
+    const total = await MCQ.countDocuments(filter);
+    const mcqs = await MCQ.find(filter)
       .sort({ createdAt: -1, _id: -1 })
       .skip(skip)
       .limit(limit);
 
     return NextResponse.json({
-      results: quizzes,
+      results: mcqs,
       total,
       page,
       totalPages: Math.ceil(total / limit)

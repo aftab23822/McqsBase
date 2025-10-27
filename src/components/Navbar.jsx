@@ -40,10 +40,10 @@ export default function Navbar() {
   }, []);
 
   const getLinkClass = (path) => {
-    const isHome = path === '/';
-    const isActive = isHome
-      ? (currentPath === '/' || currentPath.startsWith('/mcqs/'))
-      : (currentPath === path || (path !== '/' && currentPath.startsWith(path)));
+    // Exact match or starts with path followed by / or end of string
+    const isActive = currentPath === path || 
+      (path !== '/' && currentPath.startsWith(path + '/')) ||
+      (path === '/' && currentPath === '/');
 
     return isActive
       ? "text-blue-600 bg-blue-50 px-4 py-2 rounded-lg font-semibold transition-all duration-300"
@@ -51,10 +51,10 @@ export default function Navbar() {
   };
 
   const getMobileLinkClass = (path) => {
-    const isHome = path === '/';
-    const isActive = isHome
-      ? (currentPath === '/' || currentPath.startsWith('/mcqs/'))
-      : (currentPath === path || (path !== '/' && currentPath.startsWith(path)));
+    // Exact match or starts with path followed by / or end of string
+    const isActive = currentPath === path || 
+      (path !== '/' && currentPath.startsWith(path + '/')) ||
+      (path === '/' && currentPath === '/');
 
     return isActive
       ? "text-blue-600 bg-blue-50 px-4 py-3 rounded-lg font-semibold transition-all duration-300"
