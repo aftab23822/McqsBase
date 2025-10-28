@@ -1,6 +1,13 @@
 {
-  "/api/mcqs/[subject]/route": "app/api/mcqs/[subject]/route.js",
-  "/_not-found/page": "app/_not-found/page.js",
   "/mcqs/[subject]/page": "app/mcqs/[subject]/page.js",
-  "/api/mcqs/batch/route": "app/api/mcqs/batch/route.js"
+  "/404/admin/dashboard/page": "app/404/admin/dashboard/page.js",
+  "/api/admin/login/route": "app/api/admin/login/route.js",
+  "/api/admin/submissions/route": "app/api/admin/submissions/route.js",
+  "/api/contact/route": "app/api/contact/route.js",
+  "/mcqs/page": "app/mcqs/page.js",
+  "/api/mcqs/general-knowledge/route": "app/api/mcqs/general-knowledge/route.js",
+  "/past-interviews/page": "app/past-interviews/page.js",
+  "/quiz/page": "app/quiz/page.js",
+  "/page": "app/page.js",
+  "/api/quiz/everyday-science/route": "app/api/quiz/everyday-science/route.js"
 }

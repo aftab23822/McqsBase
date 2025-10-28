@@ -49,6 +49,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link rel="canonical" href="https://mcqsbase.com/" />
+        <meta name="google-site-verification" content="WGnVaxb3MaxbnE_dIZ_EYGB9mUMfA1knPGt7sIyhu0I" />
         
         <script
           type="application/ld+json"
