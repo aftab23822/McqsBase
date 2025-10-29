@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { apiFetch } from '../utils/api';
 import LoadingSpinner from './LoadingSpinner';
 import { getAllCategories } from '../utils/categoryUtils';
+import { getMockTestCategories, getUniversities } from '../utils/mockTestCategories';
 import { Shield, Upload, LogOut, User, Lock, FileText, AlertCircle, CheckCircle, ListChecks, Mail } from 'lucide-react';
 import AdminUserSubmissions from './AdminUserSubmissions';
 import AdminContactSubmissions from './AdminContactSubmissions';
@@ -29,7 +30,9 @@ const AdminLogin = () => {
     file: null,
     category: '',
     subcategory: '',
-    type: ''
+    type: '',
+    mockTestName: '',
+    durationMinutes: 30
   });
 
   const handleLoginChange = (e) => {
@@ -99,10 +102,29 @@ const AdminLogin = () => {
     setError('');
     setSuccess('');
 
-    if (!uploadData.file || !uploadData.category || !uploadData.type) {
+    if (!uploadData.type) {
+      setError('Please select a Type');
+      setIsLoading(false);
+      return;
+    }
+
+    if (!uploadData.file || !uploadData.category) {
       setError('Please fill in all required fields');
       setIsLoading(false);
       return;
+    }
+
+    if (uploadData.type === 'mock-tests') {
+      if (!uploadData.subcategory) {
+        setError('Please provide Subcategory (e.g., university slug) for Mock Test');
+        setIsLoading(false);
+        return;
+      }
+      if (!uploadData.mockTestName.trim()) {
+        setError('Please provide a Mock Test Name');
+        setIsLoading(false);
+        return;
+      }
     }
 
     try {
@@ -135,6 +157,8 @@ const AdminLogin = () => {
           return item.question && item.options && item.correct_option && item.year;
         } else if (uploadData.type === 'past-interviews') {
           return item.question && item.answer && item.year;
+        } else if (uploadData.type === 'mock-tests') {
+          return item.question && item.options && item.correct_option;
         }
         return false;
       });
@@ -150,17 +174,39 @@ const AdminLogin = () => {
       console.log('Uploading to category:', uploadData.category);
       console.log('MCQs data:', jsonData);
       
-      const response = await apiFetch(`/api/mcqs/batch?category=${uploadData.category}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`,
-        },
-        body: JSON.stringify({
-          mcqs: jsonData,
-          category: uploadData.category
-        }),
-      });
+      let response;
+      if (uploadData.type === 'mock-tests') {
+        response = await apiFetch(`/api/mock-tests/batch`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`,
+          },
+          body: JSON.stringify({
+            universitySlug: uploadData.subcategory,
+            mockTestName: uploadData.mockTestName,
+            durationMinutes: Number(uploadData.durationMinutes) || 30,
+            questions: jsonData.map(q => ({
+              question: q.question,
+              options: q.options,
+              answer: q.correct_option,
+              explanation: q.explanation || ''
+            }))
+          }),
+        });
+      } else {
+        response = await apiFetch(`/api/mcqs/batch?category=${uploadData.category}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`,
+          },
+          body: JSON.stringify({
+            mcqs: jsonData,
+            category: uploadData.category
+          }),
+        });
+      }
 
       if (response.ok) {
         const data = await response.json();
@@ -170,7 +216,9 @@ const AdminLogin = () => {
           file: null,
           category: '',
           subcategory: '',
-          type: ''
+          type: '',
+          mockTestName: '',
+          durationMinutes: 30
         });
         // Reset file input
         const fileInput = document.getElementById('file-input');
@@ -206,6 +254,8 @@ const AdminLogin = () => {
   };
 
   const categories = getAllCategories();
+  const mockCategories = getMockTestCategories();
+  const universities = getUniversities();
 
   if (!isLoggedIn) {
     return (
@@ -247,7 +297,16 @@ const AdminLogin = () => {
               </div>
             )}
             
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <form 
+              className="space-y-6" 
+              onSubmit={(e) => {
+                e.preventDefault();
+                const btn = document.getElementById('admin-recaptcha-submit');
+                if (btn) {
+                  btn.click();
+                }
+              }}
+            >
               <div>
                 <label htmlFor="username" className="block text-sm font-semibold text-gray-700 mb-2">
                   Username <span className="text-red-500">*</span>
@@ -286,6 +345,15 @@ const AdminLogin = () => {
                     name="password"
                     value={loginData.password}
                     onChange={handleLoginChange}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' && !isLoading && loginData.username && loginData.password) {
+                        e.preventDefault();
+                        const btn = document.getElementById('admin-recaptcha-submit');
+                        if (btn && !btn.disabled) {
+                          btn.click();
+                        }
+                      }
+                    }}
                     required
                     placeholder="Enter password"
                     className={`w-full pl-10 px-4 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent ${validationErrors.password ? 'border-red-500' : 'border-gray-300'}`}
@@ -297,6 +365,7 @@ const AdminLogin = () => {
               </div>
               
               <ReCaptchaButton
+                id="admin-recaptcha-submit"
                 onSubmit={handleLogin}
                 disabled={isLoading}
                 className={`w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white transition-all duration-200 ${
@@ -420,6 +489,26 @@ const AdminLogin = () => {
                 </div>
               </div>
               <form onSubmit={handleFileUpload} className="space-y-6">
+                {/* Type first */}
+                <div>
+                  <label htmlFor="type" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Type <span className="text-red-500">*</span>
+                  </label>
+                  <select
+                    id="type"
+                    value={uploadData.type}
+                    onChange={(e) => setUploadData(prev => ({ ...prev, type: e.target.value }))}
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                  >
+                    <option value="">Select Type</option>
+                    <option value="simple-mcqs">Simple MCQs</option>
+                    <option value="past-papers">Past Papers</option>
+                    <option value="past-interviews">Past Interviews</option>
+                    <option value="mock-tests">Mock Test</option>
+                  </select>
+                </div>
+
                 <div>
                   <label htmlFor="file-input" className="block text-sm font-semibold text-gray-700 mb-2">
                     JSON File <span className="text-red-500">*</span>
@@ -446,43 +535,84 @@ const AdminLogin = () => {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
                   >
                     <option value="">Select Category</option>
-                    {categories.map(category => (
-                      <option key={category.value} value={category.value}>
-                        {category.label}
-                      </option>
-                    ))}
+                    {uploadData.type === 'mock-tests'
+                      ? mockCategories.map(category => (
+                          <option key={category.value} value={category.value}>
+                            {category.label}
+                          </option>
+                        ))
+                      : categories.map(category => (
+                          <option key={category.value} value={category.value}>
+                            {category.label}
+                          </option>
+                        ))
+                    }
                   </select>
                 </div>
                 <div>
                   <label htmlFor="subcategory" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Subcategory (Optional)
+                    {uploadData.type === 'mock-tests' ? 'Subcategory (Select e.g., University)' : 'Subcategory (Optional)'}
                   </label>
-                  <input
-                    type="text"
-                    id="subcategory"
-                    value={uploadData.subcategory}
-                    onChange={(e) => setUploadData(prev => ({ ...prev, subcategory: e.target.value }))}
-                    placeholder="e.g., FPSC, SPSC, etc."
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-                  />
+                  {uploadData.type === 'mock-tests' && uploadData.category === 'universities' ? (
+                    <select
+                      id="subcategory"
+                      value={uploadData.subcategory}
+                      onChange={(e) => setUploadData(prev => ({ ...prev, subcategory: e.target.value }))}
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    >
+                      <option value="">Select University</option>
+                      {universities.map(u => (
+                        <option key={u.slug} value={u.slug} title={u.full}>
+                          {u.label}
+                        </option>
+                      ))}
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      id="subcategory"
+                      value={uploadData.subcategory}
+                      onChange={(e) => setUploadData(prev => ({ ...prev, subcategory: e.target.value }))}
+                      placeholder="e.g., FPSC, SPSC, etc."
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    />
+                  )}
                 </div>
-                <div>
-                  <label htmlFor="type" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Type <span className="text-red-500">*</span>
-                  </label>
-                  <select
-                    id="type"
-                    value={uploadData.type}
-                    onChange={(e) => setUploadData(prev => ({ ...prev, type: e.target.value }))}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-                  >
-                    <option value="">Select Type</option>
-                    <option value="simple-mcqs">Simple MCQs</option>
-                    <option value="past-papers">Past Papers</option>
-                    <option value="past-interviews">Past Interviews</option>
-                  </select>
-                </div>
+
+                {/* Mock Test specific fields */}
+                {uploadData.type === 'mock-tests' && (
+                  <>
+                    <div>
+                      <label htmlFor="mockTestName" className="block text-sm font-semibold text-gray-700 mb-2">
+                        Mock Test Name <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="mockTestName"
+                        value={uploadData.mockTestName}
+                        onChange={(e) => setUploadData(prev => ({ ...prev, mockTestName: e.target.value }))}
+                        placeholder="e.g., SBBU SBA Entry Test 2025 - Set A"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="durationMinutes" className="block text-sm font-semibold text-gray-700 mb-2">
+                        Duration (minutes)
+                      </label>
+                      <input
+                        type="number"
+                        id="durationMinutes"
+                        min="5"
+                        max="240"
+                        value={uploadData.durationMinutes}
+                        onChange={(e) => setUploadData(prev => ({ ...prev, durationMinutes: e.target.value }))}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                      />
+                    </div>
+                  </>
+                )}
                 {/* Info Box */}
                 <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
                   <div className="flex items-start gap-3">

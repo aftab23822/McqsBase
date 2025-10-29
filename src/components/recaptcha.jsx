@@ -107,6 +107,7 @@ export const ReCaptchaButton = ({
   className, 
   loadingText, 
   action, 
+  id,
   children 
 }) => {
   const { siteKey } = useReCaptcha();
@@ -156,6 +157,7 @@ export const ReCaptchaButton = ({
   return (
     <button
       type="button"
+      id={id}
       onClick={handleClick}
       disabled={disabled || isLoading || !siteKey}
       className={className}
