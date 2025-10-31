@@ -13,19 +13,25 @@ export async function GET(request) {
     const universitySlug = searchParams.get('university');
     const limit = parseInt(searchParams.get('limit') || '100', 10);
 
-    const query = universitySlug ? { universitySlug } : {};
-    const tests = await MockTest.find(query)
-      .select('name slug universitySlug durationMinutes updatedAt lastUpdatedAt questions')
-      .sort({ updatedAt: -1 })
-      .limit(limit);
+    const matchStage = universitySlug ? { universitySlug } : {};
+    const tests = await MockTest.aggregate([
+      { $match: matchStage },
+      { $sort: { updatedAt: -1 } },
+      { $limit: limit },
+      { $project: {
+          _id: 1,
+          name: 1,
+          slug: 1,
+          universitySlug: 1,
+          durationMinutes: 1,
+          updatedAt: 1,
+          lastUpdatedAt: 1,
+          questionCount: { $size: { $ifNull: [ '$questions', [] ] } }
+        }
+      }
+    ]);
 
-    // Add question count to each test
-    const testsWithCount = tests.map(test => ({
-      ...test.toObject(),
-      questionCount: test.questions?.length || 0
-    }));
-
-    return Response.json({ success: true, data: testsWithCount });
+    return Response.json({ success: true, data: tests });
   } catch (error) {
     console.error('Error fetching mock tests:', error);
     return Response.json({ success: false, message: 'Failed to fetch tests' }, { status: 500 });

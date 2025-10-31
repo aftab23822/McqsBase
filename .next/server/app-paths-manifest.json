@@ -1,8 +1,13 @@
 {
   "/mock-tests/universities/[university]/[slug]/page": "app/mock-tests/universities/[university]/[slug]/page.js",
   "/mock-tests/page": "app/mock-tests/page.js",
-  "/quiz/page": "app/quiz/page.js",
-  "/past-papers/page": "app/past-papers/page.js",
   "/404/admin/dashboard/page": "app/404/admin/dashboard/page.js",
-  "/api/admin/login/route": "app/api/admin/login/route.js"
+  "/mock-tests/universities/[university]/page": "app/mock-tests/universities/[university]/page.js",
+  "/api/mock-tests/[university]/[slug]/route": "app/api/mock-tests/[university]/[slug]/route.js",
+  "/api/mock-tests/[university]/route": "app/api/mock-tests/[university]/route.js",
+  "/api/admin/login/route": "app/api/admin/login/route.js",
+  "/api/admin/submissions/route": "app/api/admin/submissions/route.js",
+  "/api/contact/route": "app/api/contact/route.js",
+  "/page": "app/page.js",
+  "/api/mock-tests/route": "app/api/mock-tests/route.js"
 }

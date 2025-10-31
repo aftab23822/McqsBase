@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 import MockTestsRightSideBar from './MockTestsRightSideBar';
 import { getUniversities } from '../utils/mockTestCategories';
 
@@ -14,35 +15,22 @@ const MockTests = () => {
       try {
         setLoading(true);
         setError('');
-        
-        // Fetch tests from all universities
-        const universities = getUniversities();
-        const allTests = [];
-        
-        for (const university of universities) {
-          try {
-            const res = await fetch(`/api/mock-tests/${university.slug}/`);
-            if (res.ok) {
-              const data = await res.json();
-              if (data.success && data.data) {
-                allTests.push(...data.data.map(test => ({
-                  ...test,
-                  universityName: university.label,
-                  universitySlug: university.slug
-                })));
-              }
-            }
-          } catch (err) {
-            console.warn(`Failed to fetch tests for ${university.slug}:`, err);
-          }
-        }
-        
-        // Sort by lastUpdatedAt and take the latest 6
-        const sortedTests = allTests
-          .sort((a, b) => new Date(b.lastUpdatedAt || b.updatedAt) - new Date(a.lastUpdatedAt || a.updatedAt))
-          .slice(0, 6);
-        
-        setLatestTests(sortedTests);
+
+        // Single fast API call for latest tests
+        const res = await fetch(`/api/mock-tests?limit=6`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const { success, data } = await res.json();
+        if (!success) throw new Error('API returned error');
+
+        // Attach friendly university labels
+        const uniBySlug = Object.fromEntries(getUniversities().map(u => [u.slug, u.label]));
+        const enriched = (data || []).map(t => ({
+          ...t,
+          universityName: uniBySlug[t.universitySlug] || t.universitySlug,
+          universitySlug: t.universitySlug
+        }));
+
+        setLatestTests(enriched);
       } catch (err) {
         console.error('Error fetching latest tests:', err);
         setError('Failed to load latest mock tests');
@@ -50,7 +38,7 @@ const MockTests = () => {
         setLoading(false);
       }
     }
-    
+
     fetchLatestTests();
   }, []);
 
@@ -115,12 +103,13 @@ const MockTests = () => {
                       <div className="text-xs text-gray-500 mb-3">
                         Updated: {new Date(test.lastUpdatedAt || test.updatedAt).toLocaleDateString()}
                       </div>
-                      <a 
+                      <Link 
                         href={`/mock-tests/universities/${test.universitySlug}/${test.slug}`}
                         className="inline-flex items-center px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition-colors"
+                        prefetch
                       >
                         Start Test →
-                      </a>
+                      </Link>
                     </div>
                   ))}
                 </div>

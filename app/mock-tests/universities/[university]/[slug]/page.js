@@ -85,6 +85,14 @@ export default function MockTestRunnerPage({ params }) {
   const selected = answers[idx];
 
   const correctCount = isFinished ? test.questions.filter((qq, i) => answers[i] === qq.answer).length : 0;
+  const percentage = isFinished && total > 0 ? Math.round((correctCount / total) * 100) : 0;
+  const getRemark = (pct) => {
+    if (pct >= 90) return 'Excellent';
+    if (pct >= 75) return 'Very Good';
+    if (pct >= 60) return 'Good';
+    if (pct >= 40) return 'Needs Improvement';
+    return 'Poor';
+  };
 
   return (
     <div className="min-h-screen">
@@ -128,8 +136,16 @@ export default function MockTestRunnerPage({ params }) {
                 <div className="flex justify-between mt-6">
                   <button onClick={prev} disabled={idx===0} className="px-4 py-2 rounded border disabled:opacity-50">Previous</button>
                   <div className="space-x-2">
-                    {idx < total - 1 ? (
-                      <button onClick={next} className="px-4 py-2 rounded bg-gray-100 border">Next</button>
+                {idx < total - 1 ? (
+                  <button
+                    onClick={next}
+                    disabled={!selected}
+                    className={`px-4 py-2 rounded border ${!selected ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-gray-100 hover:bg-gray-200'}`}
+                    aria-disabled={!selected}
+                    title={!selected ? 'Select an answer to proceed' : 'Next question'}
+                  >
+                    Next
+                  </button>
                     ) : (
                       <button onClick={() => setStarted(false)} className="px-4 py-2 rounded bg-green-600 text-white">Finish</button>
                     )}
@@ -138,10 +154,31 @@ export default function MockTestRunnerPage({ params }) {
               </div>
             )}
 
-            {isFinished && (
-              <div className="bg-white p-6 rounded-lg shadow">
-                <h2 className="text-xl font-bold mb-2">Score Card</h2>
-                <p className="mb-4">Score: {correctCount} / {total}</p>
+        {isFinished && (
+          <div className="bg-white p-6 rounded-2xl shadow-lg">
+            <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 mb-4">Score Card</h2>
+
+            {/* Summary Stats */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+              <div className="rounded-xl border border-indigo-100 bg-indigo-50 px-5 py-4">
+                <div className="text-sm text-indigo-600 font-medium">Score</div>
+                <div className="text-2xl font-extrabold text-indigo-900 mt-1">{correctCount} / {total}</div>
+              </div>
+              <div className="rounded-xl border border-emerald-100 bg-emerald-50 px-5 py-4">
+                <div className="text-sm text-emerald-600 font-medium">Percentage</div>
+                <div className="text-2xl font-extrabold text-emerald-900 mt-1">{percentage}%</div>
+              </div>
+              <div className="rounded-xl border border-amber-100 bg-amber-50 px-5 py-4">
+                <div className="text-sm text-amber-600 font-medium">Remarks</div>
+                <div className="mt-1">
+                  <span className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold ${
+                    percentage >= 75 ? 'bg-emerald-100 text-emerald-800' : percentage >= 40 ? 'bg-amber-100 text-amber-800' : 'bg-rose-100 text-rose-800'
+                  }`}>
+                    {getRemark(percentage)}
+                  </span>
+                </div>
+              </div>
+            </div>
                 <div className="space-y-4">
                   {test.questions.map((qq, i) => {
                     const correct = answers[i] === qq.answer;

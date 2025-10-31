@@ -8,6 +8,7 @@ import { getMockTestCategories, getUniversities } from '../utils/mockTestCategor
 import { Shield, Upload, LogOut, User, Lock, FileText, AlertCircle, CheckCircle, ListChecks, Mail } from 'lucide-react';
 import AdminUserSubmissions from './AdminUserSubmissions';
 import AdminContactSubmissions from './AdminContactSubmissions';
+import AdminMockTestsManager from './AdminMockTestsManager';
 import { ReCaptchaButton } from './recaptcha';
 
 const AdminLogin = () => {
@@ -17,6 +18,7 @@ const AdminLogin = () => {
   const [success, setSuccess] = useState('');
   const [showSubmissions, setShowSubmissions] = useState(false);
   const [showContactMessages, setShowContactMessages] = useState(false);
+  const [showMockTestsManager, setShowMockTestsManager] = useState(false);
   const [validationErrors, setValidationErrors] = useState({});
   
   // Login state
@@ -401,7 +403,7 @@ const AdminLogin = () => {
         </div>
 
         {/* Admin Menu */}
-        <div className="flex gap-4 mb-8 justify-end">
+        <div className="flex gap-4 mb-8 justify-end flex-wrap">
           <button
             onClick={() => {
               setShowSubmissions(false);
@@ -416,6 +418,7 @@ const AdminLogin = () => {
             onClick={() => {
               setShowSubmissions(true);
               setShowContactMessages(false);
+              setShowMockTestsManager(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showSubmissions ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
@@ -426,11 +429,22 @@ const AdminLogin = () => {
             onClick={() => {
               setShowSubmissions(false);
               setShowContactMessages(true);
+              setShowMockTestsManager(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showContactMessages ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
             <Mail className="w-5 h-5" />
             Contact Messages
+          </button>
+          <button
+            onClick={() => {
+              setShowSubmissions(false);
+              setShowContactMessages(false);
+              setShowMockTestsManager(true);
+            }}
+            className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showMockTestsManager ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
+          >
+            Manage Mock Tests
           </button>
           <button 
             onClick={handleLogout}
@@ -442,7 +456,7 @@ const AdminLogin = () => {
         </div>
 
         {/* Main Content */}
-        {!showSubmissions && !showContactMessages ? (
+        {!showSubmissions && !showContactMessages && !showMockTestsManager ? (
           <div className="bg-white rounded-2xl shadow-xl p-8">
             {error && (
               <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
@@ -654,6 +668,10 @@ const AdminLogin = () => {
                 </div>
               </form>
             </div>
+          </div>
+        ) : showMockTestsManager ? (
+          <div className="bg-white rounded-2xl shadow-xl p-8">
+            <AdminMockTestsManager />
           </div>
         ) : showSubmissions ? (
           <div className="bg-white rounded-2xl shadow-xl p-8">

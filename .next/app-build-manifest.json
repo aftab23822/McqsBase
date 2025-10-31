@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/mock-tests/universities/[university]/page": [
+    "/mock-tests/universities/[university]/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/mock-tests/universities/[university]/page.js"
+      "static/chunks/app/mock-tests/universities/[university]/[slug]/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -16,43 +16,31 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/mock-tests/universities/[university]/[slug]/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/mock-tests/universities/[university]/[slug]/page.js"
+      "static/chunks/app/page.js"
     ],
     "/mock-tests/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/mock-tests/page.js"
     ],
-    "/page": [
+    "/past-interviews/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
-    "/mcqs/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/mcqs/page.css",
-      "static/chunks/app/mcqs/page.js"
-    ],
-    "/quiz/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/quiz/page.css",
-      "static/chunks/app/quiz/page.js"
-    ],
-    "/past-papers/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/past-papers/page.js"
+      "static/chunks/app/past-interviews/page.js"
     ],
     "/404/admin/dashboard/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/404/admin/dashboard/page.css",
       "static/chunks/app/404/admin/dashboard/page.js"
+    ],
+    "/mock-tests/universities/[university]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/mock-tests/universities/[university]/page.js"
     ]
   }
 }

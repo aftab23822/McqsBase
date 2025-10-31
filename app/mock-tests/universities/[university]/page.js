@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Navbar from '../../../../src/components/Navbar'
 import Footer from '../../../../src/components/Footer'
+import Link from 'next/link'
 import MockTestsRightSideBar from '../../../../src/components/MockTestsRightSideBar'
 
 export default function UniversityMockTestsPage({ params }) {
@@ -67,17 +68,37 @@ export default function UniversityMockTestsPage({ params }) {
             )}
             
             {!loading && !error && tests.length > 0 && (
-              <ul className="space-y-3">
-                {tests.map((t) => (
-                  <li key={t.slug} className="bg-white p-4 rounded-lg shadow flex items-center justify-between">
-                    <div>
-                      <div className="font-semibold">{t.name}</div>
-                      <div className="text-sm text-gray-500">Last updated: {new Date(t.updatedAt || t.lastUpdatedAt).toLocaleString()}</div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+                {tests.map((t, idx) => (
+                  <div key={t.slug} className="relative overflow-hidden bg-gradient-to-r from-indigo-50 to-blue-50 border border-indigo-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
+                    <div className="flex items-start justify-between mb-2">
+                      <div className="flex-1 min-w-0">
+                        <h3 className="font-semibold text-gray-900 break-words whitespace-normal leading-relaxed" title={t.name}>{t.name}</h3>
+                        <p className="text-sm text-indigo-600 mt-1 leading-relaxed">
+                          SBBU SBA
+                          {idx < 2 && (
+                            <span className="ml-2 align-middle bg-indigo-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">NEW</span>
+                          )}
+                        </p>
+                      </div>
                     </div>
-                    <a href={`/mock-tests/universities/${university}/${t.slug}`} className="text-indigo-600 hover:text-indigo-800 font-medium">View</a>
-                  </li>
+                    <div className="flex items-center justify-between text-sm text-gray-600 mt-3 leading-relaxed">
+                      <span>⏱️ {t.durationMinutes} min</span>
+                      <span>📝 {t.questionCount || t.questions?.length || 0} questions</span>
+                    </div>
+                    <div className="text-xs text-gray-500 mt-3 leading-relaxed">Updated: {new Date(t.lastUpdatedAt || t.updatedAt).toLocaleDateString()}</div>
+                    <div className="mt-auto pt-5">
+                      <Link
+                        href={`/mock-tests/universities/${university}/${t.slug}`}
+                        prefetch
+                        className="inline-flex items-center px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition-colors"
+                      >
+                        Start Test →
+                      </Link>
+                    </div>
+                  </div>
                 ))}
-              </ul>
+              </div>
             )}
           </div>
           
