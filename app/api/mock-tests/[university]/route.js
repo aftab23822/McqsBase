@@ -1,10 +1,16 @@
 import connectToDatabase from '../../../../lib/mongodb';
 import MockTest from '../../../../models/mockTest';
+import { sanitizeSubject } from '../../../../lib/utils/security.js';
 
 export async function GET(_request, { params }) {
   try {
     await connectToDatabase();
-    const { university } = params;
+    
+    // Sanitize and validate university parameter
+    const university = sanitizeSubject(params.university);
+    if (!university) {
+      return Response.json({ success: false, message: 'Invalid university parameter' }, { status: 400 });
+    }
     const tests = await MockTest.aggregate([
       { $match: { universitySlug: university } },
       { $sort: { updatedAt: -1 } },

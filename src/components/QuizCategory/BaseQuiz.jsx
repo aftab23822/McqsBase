@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
+import { useRouter, useSearchParams, usePathname } from 'next/navigation';
 import QuizRightSideBar from '../QuizRightSideBar';
 import QuizMcqCard from '../QuizMcqCard';
 import Pagination from '../Pagination';
@@ -8,6 +9,9 @@ import ResultModal from '../ResultModal';
 import LeavePageModal from '../LeavePageModal';
 
 const BaseQuiz = ({ quizData, title, currentPage, setCurrentPage, totalPages, quizPerPage, ...rest }) => {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
   const [userAnswers, setUserAnswers] = useState({});
   const [showModal, setShowModal] = useState(false);
   const [pageScore, setPageScore] = useState(0);
@@ -152,8 +156,37 @@ const BaseQuiz = ({ quizData, title, currentPage, setCurrentPage, totalPages, qu
     } else {
       resetPage();
       setShowModal(false);
-      setCurrentPage(prev => Math.min(prev + 1, totalPages));
+      const nextPage = Math.min(currentPage + 1, totalPages);
+      setCurrentPage(nextPage);
+      updateUrl(nextPage);
     }
+  };
+
+  // Sync URL with page changes on mount and when URL changes
+  useEffect(() => {
+    const pageParam = searchParams.get('page');
+    const pageNum = pageParam ? Math.max(1, parseInt(pageParam, 10) || 1) : 1;
+    
+    // Only update if URL page differs from current page state and is valid
+    if (pageNum !== currentPage && pageNum >= 1) {
+      // Only sync if totalPages is loaded (greater than 0) and pageNum is within range
+      if (totalPages > 0 && pageNum > totalPages) {
+        return; // Invalid page, don't update
+      }
+      setCurrentPage(pageNum);
+    }
+  }, [searchParams, totalPages, currentPage, setCurrentPage]);
+
+  // Update URL when page changes
+  const updateUrl = (page) => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (page === 1) {
+      params.delete('page');
+    } else {
+      params.set('page', page.toString());
+    }
+    const newUrl = params.toString() ? `${pathname}?${params.toString()}` : pathname;
+    router.push(newUrl, { scroll: false });
   };
 
   const handlePageChange = (page) => {
@@ -164,6 +197,7 @@ const BaseQuiz = ({ quizData, title, currentPage, setCurrentPage, totalPages, qu
     } else {
       resetPage();
       setCurrentPage(page);
+      updateUrl(page);
     }
   };
 

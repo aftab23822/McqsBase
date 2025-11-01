@@ -1,19 +1,32 @@
 import { NextResponse } from 'next/server';
 import connectToDatabase from '../../../../lib/mongodb.js';
 import PastPaper from '../../../../lib/models/PastPaper.js';
+import { sanitizeSubject, sanitizeInt, escapeRegex } from '../../../../lib/utils/security.js';
 
 // Get Past Papers by subject - matches your existing pastPaperController.getPastPapersBySubject
 export async function GET(request, { params }) {
   try {
     await connectToDatabase();
 
-    const { subject } = params;
+    // Sanitize and validate subject parameter
+    const sanitizedSubject = sanitizeSubject(params.subject);
+    if (!sanitizedSubject) {
+      return NextResponse.json({
+        results: [],
+        total: 0,
+        page: 1,
+        totalPages: 0
+      });
+    }
+
     const { searchParams } = new URL(request.url);
-    const page = parseInt(searchParams.get('page')) || 1;
-    const limit = parseInt(searchParams.get('limit')) || 10;
+    const page = sanitizeInt(searchParams.get('page'), 1, 1000, 1);
+    const limit = sanitizeInt(searchParams.get('limit'), 1, 100, 10);
     const skip = (page - 1) * limit;
 
-    const filter = { title: { $regex: new RegExp(subject, 'i') } };
+    // Use escaped regex for security to prevent NoSQL injection
+    const escapedSubject = escapeRegex(sanitizedSubject);
+    const filter = { title: { $regex: new RegExp(escapedSubject, 'i') } };
     const total = await PastPaper.countDocuments(filter);
     const pastPapers = await PastPaper.find(filter)
       .sort({ createdAt: -1, _id: -1 })

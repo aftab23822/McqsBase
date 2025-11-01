@@ -1,10 +1,18 @@
 import connectToDatabase from '../../../../../lib/mongodb';
 import MockTest from '../../../../../models/mockTest';
+import { sanitizeSubject, sanitizeString } from '../../../../../lib/utils/security.js';
 
 export async function GET(_request, { params }) {
   try {
     await connectToDatabase();
-    const { university, slug } = params;
+    
+    // Sanitize and validate parameters
+    const university = sanitizeSubject(params.university);
+    const slug = sanitizeString(params.slug || '', 200);
+    
+    if (!university || !slug) {
+      return Response.json({ success: false, message: 'Invalid parameters' }, { status: 400 });
+    }
     const test = await MockTest.findOne({ universitySlug: university, slug });
     if (!test) {
       return Response.json({ success: false, message: 'Not found' }, { status: 404 });
@@ -19,14 +27,41 @@ export async function GET(_request, { params }) {
 export async function PUT(request, { params }) {
   try {
     await connectToDatabase();
-    const { university, slug } = params;
+    
+    // Sanitize and validate parameters
+    const university = sanitizeSubject(params.university);
+    const slug = sanitizeString(params.slug || '', 200);
+    
+    if (!university || !slug) {
+      return Response.json({ success: false, message: 'Invalid parameters' }, { status: 400 });
+    }
+    
     const body = await request.json();
     const { mockTestName, durationMinutes, questions } = body;
 
     const update = {};
-    if (typeof mockTestName === 'string' && mockTestName.trim()) update.name = mockTestName.trim();
-    if (typeof durationMinutes === 'number') update.durationMinutes = durationMinutes;
-    if (Array.isArray(questions)) update.questions = questions;
+    if (typeof mockTestName === 'string' && mockTestName.trim()) {
+      const sanitizedName = sanitizeString(mockTestName, 200);
+      if (sanitizedName) update.name = sanitizedName;
+    }
+    if (typeof durationMinutes === 'number') {
+      const sanitizedDuration = parseInt(durationMinutes, 10);
+      if (!isNaN(sanitizedDuration) && sanitizedDuration >= 1 && sanitizedDuration <= 1000) {
+        update.durationMinutes = sanitizedDuration;
+      }
+    }
+    if (Array.isArray(questions) && questions.length > 0 && questions.length <= 1000) {
+      // Sanitize questions array
+      const sanitizedQuestions = questions.slice(0, 1000).map(q => ({
+        question: sanitizeString(q.question || '', 2000),
+        options: Array.isArray(q.options) ? q.options.slice(0, 10).map(opt => sanitizeString(opt || '', 500)) : [],
+        answer: sanitizeString(q.answer || '', 500),
+        explanation: sanitizeString(q.explanation || '', 2000)
+      })).filter(q => q.question && q.options.length > 0 && q.answer);
+      if (sanitizedQuestions.length > 0) {
+        update.questions = sanitizedQuestions;
+      }
+    }
     if (Object.keys(update).length === 0) {
       return Response.json({ success: false, message: 'No valid fields to update' }, { status: 400 });
     }
@@ -50,7 +85,14 @@ export async function PUT(request, { params }) {
 export async function DELETE(_request, { params }) {
   try {
     await connectToDatabase();
-    const { university, slug } = params;
+    
+    // Sanitize and validate parameters
+    const university = sanitizeSubject(params.university);
+    const slug = sanitizeString(params.slug || '', 200);
+    
+    if (!university || !slug) {
+      return Response.json({ success: false, message: 'Invalid parameters' }, { status: 400 });
+    }
     const res = await MockTest.deleteOne({ universitySlug: university, slug });
     if (res.deletedCount === 0) {
       return Response.json({ success: false, message: 'Not found' }, { status: 404 });

@@ -1,12 +1,44 @@
 "use client";
 
 import React, { useEffect } from 'react';
+import { useRouter, useSearchParams, usePathname } from 'next/navigation';
 import McqCard from '../McqCard';
 import RightSideBar from '../RightSideBar';
 import Pagination from '../Pagination';
 
 const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mcqsPerPage }) => {
-  // mcqsData is already the current page's data from backend
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  // Sync URL with page changes on mount and when URL changes
+  useEffect(() => {
+    const pageParam = searchParams.get('page');
+    const pageNum = pageParam ? Math.max(1, parseInt(pageParam, 10) || 1) : 1;
+    
+    // Only update if URL page differs from current page state and is valid
+    if (pageNum !== currentPage && pageNum >= 1) {
+      // Only sync if totalPages is loaded (greater than 0) and pageNum is within range
+      if (totalPages > 0 && pageNum > totalPages) {
+        return; // Invalid page, don't update
+      }
+      setCurrentPage(pageNum);
+    }
+  }, [searchParams, totalPages, currentPage, setCurrentPage]);
+
+  // Update URL when page changes
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+    const params = new URLSearchParams(searchParams.toString());
+    if (page === 1) {
+      params.delete('page');
+    } else {
+      params.set('page', page.toString());
+    }
+    const newUrl = params.toString() ? `${pathname}?${params.toString()}` : pathname;
+    router.push(newUrl, { scroll: false });
+  };
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentPage]);
@@ -31,7 +63,7 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
             <Pagination
               currentPage={currentPage}
               totalPages={totalPages}
-              onPageChange={setCurrentPage}
+              onPageChange={handlePageChange}
             />
           </div>
         </div>

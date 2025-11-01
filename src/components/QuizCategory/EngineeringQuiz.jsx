@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import BaseQuiz from './BaseQuiz';
 import LoadingSpinner from '../LoadingSpinner';
 import { apiFetch } from '../../utils/api';
+import { usePageFromUrl } from '../../hooks/usePageFromUrl';
 
 const quizPerPage = 10;
 
@@ -11,7 +12,9 @@ const EngineeringQuiz = () => {
   const [quizData, setQuizData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [currentPage, setCurrentPage] = useState(1);
+    // Initialize currentPage from URL or default to 1
+  const initialPage = usePageFromUrl();
+  const [currentPage, setCurrentPage] = useState(initialPage);
   const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {

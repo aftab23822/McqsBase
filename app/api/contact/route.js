@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import connectToDatabase from '../../../lib/mongodb.js';
+import { sanitizeInt, escapeRegex, sanitizeString } from '../../../lib/utils/security.js';
 
 // Get Contact model (lazy loading)
 async function getContactModel() {
@@ -60,24 +61,32 @@ async function getContactModel() {
 export async function GET(request) {
   try {
     const { searchParams } = new URL(request.url);
-    const page = parseInt(searchParams.get('page')) || 1;
-    const limit = parseInt(searchParams.get('limit')) || 10;
+    const page = sanitizeInt(searchParams.get('page'), 1, 1000, 1);
+    const limit = sanitizeInt(searchParams.get('limit'), 1, 100, 10);
     const status = searchParams.get('status');
     const search = searchParams.get('search');
 
     // Build query
     const query = {};
-    if (status) {
+    
+    // Validate and sanitize status parameter
+    const validStatuses = ['pending', 'read', 'replied', 'archived'];
+    if (status && validStatuses.includes(status)) {
       query.status = status;
     }
     
+    // Sanitize and escape search query to prevent regex injection
     if (search) {
-      query.$or = [
-        { name: { $regex: search, $options: 'i' } },
-        { email: { $regex: search, $options: 'i' } },
-        { subject: { $regex: search, $options: 'i' } },
-        { message: { $regex: search, $options: 'i' } }
-      ];
+      const sanitizedSearch = sanitizeString(search, 200);
+      if (sanitizedSearch) {
+        const escapedSearch = escapeRegex(sanitizedSearch);
+        query.$or = [
+          { name: { $regex: escapedSearch, $options: 'i' } },
+          { email: { $regex: escapedSearch, $options: 'i' } },
+          { subject: { $regex: escapedSearch, $options: 'i' } },
+          { message: { $regex: escapedSearch, $options: 'i' } }
+        ];
+      }
     }
 
     const Contact = await getContactModel();
@@ -114,7 +123,13 @@ export async function GET(request) {
 export async function POST(request) {
   try {
     const body = await request.json();
-    const { name, email, subject, message } = body;
+    let { name, email, subject, message } = body;
+    
+    // Sanitize all inputs
+    name = sanitizeString(name || '', 100);
+    email = sanitizeString(email || '', 100).toLowerCase();
+    subject = sanitizeString(subject || '', 200);
+    message = sanitizeString(message || '', 2000);
     
     // Validate required fields
     if (!name || !email || !subject || !message) {
@@ -133,18 +148,18 @@ export async function POST(request) {
       );
     }
 
-    // Get client IP and user agent
+    // Get client IP and user agent (sanitized)
     const headers = request.headers;
-    const ipAddress = headers.get('x-forwarded-for') || headers.get('x-real-ip') || 'unknown';
-    const userAgent = headers.get('user-agent') || 'unknown';
+    const ipAddress = sanitizeString(headers.get('x-forwarded-for') || headers.get('x-real-ip') || 'unknown', 50);
+    const userAgent = sanitizeString(headers.get('user-agent') || 'unknown', 500);
 
     const Contact = await getContactModel();
 
     const contact = new Contact({
-      name: name.trim(),
-      email: email.trim().toLowerCase(),
-      subject: subject.trim(),
-      message: message.trim(),
+      name,
+      email,
+      subject,
+      message,
       ipAddress,
       userAgent
     });
