@@ -20,7 +20,7 @@ const Footer = () => {
             </div>
             <p className="text-gray-400 leading-relaxed">
               Your premier destination for comprehensive MCQ preparation. Access thousands of practice questions, 
-              past papers, and interview materials to excel in your competitive exams.
+              past papers, interview materials, and mock tests to excel in your competitive exams.
             </p>
             
             {/* Social Media Links */}
@@ -115,6 +115,15 @@ const Footer = () => {
                   >
                     <span className="w-2 h-2 bg-blue-400 rounded-full mr-3 group-hover:scale-150 transition-transform"></span>
                     Past Interviews
+                  </Link>
+                </li>
+                <li>
+                  <Link 
+                    href="/mock-tests" 
+                    className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group"
+                  >
+                    <span className="w-2 h-2 bg-blue-400 rounded-full mr-3 group-hover:scale-150 transition-transform"></span>
+                    Mock Tests
                   </Link>
                 </li>
                 <li>
@@ -274,7 +283,7 @@ const Footer = () => {
             "name": "McqsBase",
             "url": "https://mcqsbase.com",
             "logo": "https://mcqsbase.com/logo.png",
-            "description": "Your premier destination for comprehensive MCQ preparation. Access thousands of practice questions, past papers, and interview materials to excel in your competitive exams.",
+            "description": "Your premier destination for comprehensive MCQ preparation. Access thousands of practice questions, past papers, interview materials, and mock tests to excel in your competitive exams.",
             "contactPoint": {
               "@type": "ContactPoint",
               "contactType": "customer service",

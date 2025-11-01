@@ -15,7 +15,7 @@ const Sitemap = () => {
           <div className="text-center">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Sitemap</h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Navigate through our comprehensive collection of MCQs, past papers, and interview materials. 
+              Navigate through our comprehensive collection of MCQs, past papers, interview materials, and mock tests. 
               Find everything you need for your competitive exam preparation.
             </p>
           </div>
@@ -328,6 +328,34 @@ const Sitemap = () => {
             </ul>
           </div>
 
+          {/* Mock Tests */}
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="flex items-center mb-6">
+              <FileText className="w-6 h-6 text-purple-600 mr-3" />
+              <h2 className="text-2xl font-bold text-gray-900">Mock Tests</h2>
+            </div>
+            <ul className="space-y-3">
+              <li>
+                <Link 
+                  href="/mock-tests" 
+                  className="text-gray-700 hover:text-purple-600 transition-colors duration-300 flex items-center group"
+                >
+                  <span className="w-2 h-2 bg-purple-400 rounded-full mr-3 group-hover:scale-150 transition-transform"></span>
+                  All Mock Tests
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/mock-tests/universities" 
+                  className="text-gray-700 hover:text-purple-600 transition-colors duration-300 flex items-center group"
+                >
+                  <span className="w-2 h-2 bg-purple-400 rounded-full mr-3 group-hover:scale-150 transition-transform"></span>
+                  University Mock Tests
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           {/* Resources */}
           <div className="bg-white rounded-xl shadow-lg p-6">
             <div className="flex items-center mb-6">
@@ -390,7 +418,7 @@ const Sitemap = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Site Information</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
               McqsBase is your comprehensive platform for competitive exam preparation. 
-              We provide thousands of MCQs, past papers, and interview materials to help you succeed.
+              We provide thousands of MCQs, past papers, interview materials, and mock tests to help you succeed.
             </p>
           </div>
           

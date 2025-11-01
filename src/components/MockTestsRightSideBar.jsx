@@ -19,37 +19,31 @@ const mockTestCategories = [
     icon: Building2,
     departments: [
       {
-        label: "🩺 Health Department",
+        label: "🏫 College Education Department",
         roles: [
-          { label: "Medical Officer BPS‑17", link: "/mock-tests/spsc/health/medical-officer-bps-17" },
-          { label: "Women Medical Officer BPS‑17", link: "/mock-tests/spsc/health/women-medical-officer-bps-17" },
-          { label: "Staff Nurse BPS‑16", link: "/mock-tests/spsc/health/staff-nurse-bps-16" },
-          { label: "Clinical Instructor BPS‑17", link: "/mock-tests/spsc/health/clinical-instructor-bps-17" },
-          { label: "Nursing Instructor BPS‑17", link: "/mock-tests/spsc/health/nursing-instructor-bps-17" }
+          { label: "Lecturer Computer Science BPS‑17", link: "/mock-tests/spsc/college-education/lecturer-computer-science-bps-17" },
+          { label: "Lecturer Economics BPS‑17", link: "/mock-tests/spsc/college-education/lecturer-economics-bps-17" },
+          { label: "Lecturer English BPS‑17", link: "/mock-tests/spsc/college-education/lecturer-english-bps-17" },
+          { label: "Lecturer Islamiat BPS‑17", link: "/mock-tests/spsc/college-education/lecturer-islamiat-bps-17" },
+          { label: "Lecturer Zoology BPS‑17", link: "/mock-tests/spsc/college-education/lecturer-zoology-bps-17" }
         ]
       },
       {
-        label: "🏫 College Education Department",
+        label: "🩺 Health Department",
         roles: [
-          { label: "Lecturer Economics BPS‑17", link: "/mock-tests/spsc/college-education/lecturer-economics-bps-17" },
-          { label: "Lecturer Zoology BPS‑17", link: "/mock-tests/spsc/college-education/lecturer-zoology-bps-17" },
-          { label: "Lecturer Islamiat BPS‑17", link: "/mock-tests/spsc/college-education/lecturer-islamiat-bps-17" },
-          { label: "Lecturer English BPS‑17", link: "/mock-tests/spsc/college-education/lecturer-english-bps-17" },
-          { label: "Lecturer Computer Science BPS‑17", link: "/mock-tests/spsc/college-education/lecturer-computer-science-bps-17" }
+          { label: "Clinical Instructor BPS‑17", link: "/mock-tests/spsc/health/clinical-instructor-bps-17" },
+          { label: "Medical Officer BPS‑17", link: "/mock-tests/spsc/health/medical-officer-bps-17" },
+          { label: "Nursing Instructor BPS‑17", link: "/mock-tests/spsc/health/nursing-instructor-bps-17" },
+          { label: "Staff Nurse BPS‑16", link: "/mock-tests/spsc/health/staff-nurse-bps-16" },
+          { label: "Women Medical Officer BPS‑17", link: "/mock-tests/spsc/health/women-medical-officer-bps-17" }
         ]
       },
       {
         label: "⚖ Law & Prosecution Department",
         roles: [
-          { label: "Reader BPS‑17", link: "/mock-tests/spsc/law-prosecution/reader-bps-17" },
           { label: "Assistant District Public Prosecutor BPS‑17", link: "/mock-tests/spsc/law-prosecution/assistant-district-public-prosecutor-bps-17" },
-          { label: "Assistant Prosecutor General BPS‑17", link: "/mock-tests/spsc/law-prosecution/assistant-prosecutor-general-bps-17" }
-        ]
-      },
-      {
-        label: "🏛 Social Welfare Department",
-        roles: [
-          { label: "Assistant Director Social Welfare BPS‑17", link: "/mock-tests/spsc/social-welfare/assistant-director-social-welfare-bps-17" }
+          { label: "Assistant Prosecutor General BPS‑17", link: "/mock-tests/spsc/law-prosecution/assistant-prosecutor-general-bps-17" },
+          { label: "Reader BPS‑17", link: "/mock-tests/spsc/law-prosecution/reader-bps-17" }
         ]
       },
       {
@@ -59,6 +53,12 @@ const mockTestCategories = [
           { label: "Subject Specialist Chemistry BPS‑17", link: "/mock-tests/spsc/school-education/subject-specialist-chemistry-bps-17" },
           { label: "Subject Specialist Zoology BPS‑17", link: "/mock-tests/spsc/school-education/subject-specialist-zoology-bps-17" }
         ]
+      },
+      {
+        label: "🏛 Social Welfare Department",
+        roles: [
+          { label: "Assistant Director Social Welfare BPS‑17", link: "/mock-tests/spsc/social-welfare/assistant-director-social-welfare-bps-17" }
+        ]
       }
     ]
   },
@@ -67,31 +67,31 @@ const mockTestCategories = [
     icon: Landmark,
     departments: [
       {
-        label: "🎓 Education & Academia",
+        label: "🏢 Administrative & Management",
         roles: [
-          { label: "Associate Professor BPS‑19", link: "/mock-tests/fpsc/education/associate-professor-bps-19" },
-          { label: "Assistant Professor (Male) BPS‑18", link: "/mock-tests/fpsc/education/assistant-professor-male-bps-18" },
-          { label: "Assistant Professor (Female) BPS‑18", link: "/mock-tests/fpsc/education/assistant-professor-female-bps-18" },
-          { label: "Lecturer (Male) BPS‑17", link: "/mock-tests/fpsc/education/lecturer-male-bps-17" },
-          { label: "Lecturer (Female) BPS‑17", link: "/mock-tests/fpsc/education/lecturer-female-bps-17" },
-          { label: "Secondary School Teacher (Male) BPS‑17", link: "/mock-tests/fpsc/education/secondary-school-teacher-male-bps-17" },
-          { label: "Secondary School Teacher (Female) BPS‑17", link: "/mock-tests/fpsc/education/secondary-school-teacher-female-bps-17" },
-          { label: "Trained Graduate Teacher (Female/Male) BPS‑17", link: "/mock-tests/fpsc/education/trained-graduate-teacher-bps-17" },
-          { label: "Physical Education Teacher (Female) BPS‑17", link: "/mock-tests/fpsc/education/physical-education-teacher-female-bps-17" }
+          { label: "Accounts Officer BPS‑?", link: "/mock-tests/fpsc/admin/accounts-officer-bps" },
+          { label: "Administrative Officer BPS‑?", link: "/mock-tests/fpsc/admin/administrative-officer-bps" },
+          { label: "Deputy Director BPS‑?", link: "/mock-tests/fpsc/admin/deputy-director-bps" },
+          { label: "Inspector (Customs/etc.) BPS‑?", link: "/mock-tests/fpsc/admin/inspector-bps" },
+          { label: "IT Supervisor BPS‑?", link: "/mock-tests/fpsc/admin/it-supervisor-bps" },
+          { label: "Librarian/Chief Librarian BPS‑?", link: "/mock-tests/fpsc/admin/librarian-bps" },
+          { label: "Project Manager BPS‑?", link: "/mock-tests/fpsc/admin/project-manager-bps" },
+          { label: "Software Assistant Director BPS‑?", link: "/mock-tests/fpsc/admin/software-assistant-director-bps" },
+          { label: "Transport Officer BPS‑?", link: "/mock-tests/fpsc/admin/transport-officer-bps" }
         ]
       },
       {
-        label: "🏥 Health & Medical",
+        label: "🎓 Education & Academia",
         roles: [
-          { label: "Medical Officer BPS‑17", link: "/mock-tests/fpsc/health/medical-officer-bps-17" },
-          { label: "Civil Medical Officer BPS‑17", link: "/mock-tests/fpsc/health/civil-medical-officer-bps-17" },
-          { label: "CMP (Grade‑III) BPS‑17", link: "/mock-tests/fpsc/health/cmp-grade-iii-bps-17" },
-          { label: "Charge Nurse BPS‑17", link: "/mock-tests/fpsc/health/charge-nurse-bps-17" },
-          { label: "Staff Nurse BPS‑17", link: "/mock-tests/fpsc/health/staff-nurse-bps-17" },
-          { label: "Physiotherapist BPS‑17", link: "/mock-tests/fpsc/health/physiotherapist-bps-17" },
-          { label: "Occupational Therapist BPS‑17", link: "/mock-tests/fpsc/health/occupational-therapist-bps-17" },
-          { label: "Nutritionist BPS‑?", link: "/mock-tests/fpsc/health/nutritionist-bps" },
-          { label: "Biochemist BPS‑17", link: "/mock-tests/fpsc/health/biochemist-bps-17" }
+          { label: "Associate Professor BPS‑19", link: "/mock-tests/fpsc/education/associate-professor-bps-19" },
+          { label: "Assistant Professor (Female) BPS‑18", link: "/mock-tests/fpsc/education/assistant-professor-female-bps-18" },
+          { label: "Assistant Professor (Male) BPS‑18", link: "/mock-tests/fpsc/education/assistant-professor-male-bps-18" },
+          { label: "Lecturer (Female) BPS‑17", link: "/mock-tests/fpsc/education/lecturer-female-bps-17" },
+          { label: "Lecturer (Male) BPS‑17", link: "/mock-tests/fpsc/education/lecturer-male-bps-17" },
+          { label: "Physical Education Teacher (Female) BPS‑17", link: "/mock-tests/fpsc/education/physical-education-teacher-female-bps-17" },
+          { label: "Secondary School Teacher (Female) BPS‑17", link: "/mock-tests/fpsc/education/secondary-school-teacher-female-bps-17" },
+          { label: "Secondary School Teacher (Male) BPS‑17", link: "/mock-tests/fpsc/education/secondary-school-teacher-male-bps-17" },
+          { label: "Trained Graduate Teacher (Female/Male) BPS‑17", link: "/mock-tests/fpsc/education/trained-graduate-teacher-bps-17" }
         ]
       },
       {
@@ -99,22 +99,22 @@ const mockTestCategories = [
         roles: [
           { label: "Assistant Electrical Engineer BPS‑17", link: "/mock-tests/fpsc/engineering/assistant-electrical-engineer-bps-17" },
           { label: "Assistant Engineer (Civil) BPS‑17", link: "/mock-tests/fpsc/engineering/assistant-engineer-civil-bps-17" },
-          { label: "Junior Architect BPS‑?", link: "/mock-tests/fpsc/engineering/junior-architect-bps" },
-          { label: "Chief Technician (Cardiology/etc.) BPS‑?", link: "/mock-tests/fpsc/engineering/chief-technician-bps" }
+          { label: "Chief Technician (Cardiology/etc.) BPS‑?", link: "/mock-tests/fpsc/engineering/chief-technician-bps" },
+          { label: "Junior Architect BPS‑?", link: "/mock-tests/fpsc/engineering/junior-architect-bps" }
         ]
       },
       {
-        label: "🏢 Administrative & Management",
+        label: "🏥 Health & Medical",
         roles: [
-          { label: "Deputy Director BPS‑?", link: "/mock-tests/fpsc/admin/deputy-director-bps" },
-          { label: "Administrative Officer BPS‑?", link: "/mock-tests/fpsc/admin/administrative-officer-bps" },
-          { label: "Inspector (Customs/etc.) BPS‑?", link: "/mock-tests/fpsc/admin/inspector-bps" },
-          { label: "Accounts Officer BPS‑?", link: "/mock-tests/fpsc/admin/accounts-officer-bps" },
-          { label: "IT Supervisor BPS‑?", link: "/mock-tests/fpsc/admin/it-supervisor-bps" },
-          { label: "Librarian/Chief Librarian BPS‑?", link: "/mock-tests/fpsc/admin/librarian-bps" },
-          { label: "Project Manager BPS‑?", link: "/mock-tests/fpsc/admin/project-manager-bps" },
-          { label: "Software Assistant Director BPS‑?", link: "/mock-tests/fpsc/admin/software-assistant-director-bps" },
-          { label: "Transport Officer BPS‑?", link: "/mock-tests/fpsc/admin/transport-officer-bps" }
+          { label: "Biochemist BPS‑17", link: "/mock-tests/fpsc/health/biochemist-bps-17" },
+          { label: "Charge Nurse BPS‑17", link: "/mock-tests/fpsc/health/charge-nurse-bps-17" },
+          { label: "Civil Medical Officer BPS‑17", link: "/mock-tests/fpsc/health/civil-medical-officer-bps-17" },
+          { label: "CMP (Grade‑III) BPS‑17", link: "/mock-tests/fpsc/health/cmp-grade-iii-bps-17" },
+          { label: "Medical Officer BPS‑17", link: "/mock-tests/fpsc/health/medical-officer-bps-17" },
+          { label: "Nutritionist BPS‑?", link: "/mock-tests/fpsc/health/nutritionist-bps" },
+          { label: "Occupational Therapist BPS‑17", link: "/mock-tests/fpsc/health/occupational-therapist-bps-17" },
+          { label: "Physiotherapist BPS‑17", link: "/mock-tests/fpsc/health/physiotherapist-bps-17" },
+          { label: "Staff Nurse BPS‑17", link: "/mock-tests/fpsc/health/staff-nurse-bps-17" }
         ]
       }
     ]

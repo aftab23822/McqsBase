@@ -169,23 +169,22 @@ export default function Navbar() {
                  <FileText className="w-4 h-4 mr-2 inline" />
                  Past Papers
                </Link>
-              
                
                <Link href="/past-interviews" className={getLinkClass("/past-interviews")}>
                  <Users className="w-4 h-4 mr-2 inline" />
-                 Interviews
+                 Past Interviews
                </Link>
+              
+              <Link href="/mock-tests" className={getLinkClass("/mock-tests")}>
+                <FileText className="w-4 h-4 mr-2 inline" />
+                Mock Tests
+              </Link>
                
                {/* <Link href="/courses" className={getLinkClass("/courses")}>
                  <GraduationCap className="w-4 h-4 mr-2 inline" />
                  Courses
                </Link> */}
-
-              <Link href="/mock-tests" className={getLinkClass("/mock-tests")}>
-                <FileText className="w-4 h-4 mr-2 inline" />
-                Mock Tests
-              </Link>
-
+               
                <Link href="/submit-mcqs" className={getLinkClass("/submit-mcqs")}>
                  <Upload className="w-4 h-4 mr-2 inline" />
                  Submit
@@ -248,15 +247,6 @@ export default function Navbar() {
                  <FileText className="w-4 h-4 mr-3" />
                  Past Papers
                </Link>
-              
-              <Link 
-                href="/mock-tests" 
-                onClick={() => setIsOpen(false)} 
-                className={`flex items-center w-full ${getMobileLinkClass("/mock-tests")}`}
-              >
-                <FileText className="w-4 h-4 mr-3" />
-                Mock Tests
-              </Link>
                
                <Link 
                  href="/past-interviews" 
@@ -266,6 +256,15 @@ export default function Navbar() {
                  <Users className="w-4 h-4 mr-3" />
                  Past Interviews
                </Link>
+              
+              <Link 
+                href="/mock-tests" 
+                onClick={() => setIsOpen(false)} 
+                className={`flex items-center w-full ${getMobileLinkClass("/mock-tests")}`}
+              >
+                <FileText className="w-4 h-4 mr-3" />
+                Mock Tests
+              </Link>
                
                <Link 
                  href="/courses" 
