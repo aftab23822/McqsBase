@@ -1,9 +1,10 @@
 {
   "pages": {
-    "/page": [
+    "/mcqs/[subject]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/css/app/mcqs/[subject]/page.css",
+      "static/chunks/app/mcqs/[subject]/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -16,32 +17,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/past-papers/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/past-papers/page.js"
-    ],
-    "/past-interviews/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/past-interviews/page.js"
-    ],
-    "/mock-tests/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/mock-tests/page.js"
-    ],
     "/quiz/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/quiz/page.css",
       "static/chunks/app/quiz/page.js"
-    ],
-    "/mcqs/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/mcqs/page.css",
-      "static/chunks/app/mcqs/page.js"
     ],
     "/quiz/[subject]/page": [
       "static/chunks/webpack.js",
@@ -49,26 +29,16 @@
       "static/css/app/quiz/[subject]/page.css",
       "static/chunks/app/quiz/[subject]/page.js"
     ],
-    "/sitemap/page": [
+    "/mcqs/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/sitemap/page.js"
+      "static/css/app/mcqs/page.css",
+      "static/chunks/app/mcqs/page.js"
     ],
-    "/mcqs/[subject]/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/mcqs/[subject]/page.css",
-      "static/chunks/app/mcqs/[subject]/page.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
-    ],
-    "/submit-mcqs/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/submit-mcqs/page.js"
+      "static/chunks/app/page.js"
     ]
   }
 }

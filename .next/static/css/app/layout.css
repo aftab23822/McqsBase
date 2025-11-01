@@ -607,6 +607,9 @@ video {
 .pointer-events-none {
   pointer-events: none;
 }
+.visible {
+  visibility: visible;
+}
 .static {
   position: static;
 }
@@ -1377,6 +1380,9 @@ video {
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
+.bg-opacity-70 {
+  --tw-bg-opacity: 0.7;
+}
 .bg-opacity-90 {
   --tw-bg-opacity: 0.9;
 }
@@ -1867,6 +1873,9 @@ video {
 .underline {
   text-decoration-line: underline;
 }
+.opacity-60 {
+  opacity: 0.6;
+}
 .opacity-70 {
   opacity: 0.7;
 }
@@ -1918,6 +1927,11 @@ video {
 }
 .transition-colors {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-opacity {
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }

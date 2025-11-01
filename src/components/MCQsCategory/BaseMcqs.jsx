@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useRouter, useSearchParams, usePathname } from 'next/navigation';
 import McqCard from '../McqCard';
 import RightSideBar from '../RightSideBar';
@@ -10,6 +10,7 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const prevPageRef = useRef(currentPage);
 
   // Sync URL with page changes on mount and when URL changes
   useEffect(() => {
@@ -39,9 +40,22 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
     router.push(newUrl, { scroll: false });
   };
 
+  // Scroll to top when page changes and data is loaded
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [currentPage]);
+    // Only scroll if page actually changed and we have data
+    if (prevPageRef.current !== currentPage && mcqsData && mcqsData.length > 0) {
+      prevPageRef.current = currentPage;
+      // Use double requestAnimationFrame to ensure DOM is fully updated before scrolling
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          window.scrollTo(0, 0);
+        });
+      });
+    } else {
+      // Update ref to current page for tracking
+      prevPageRef.current = currentPage;
+    }
+  }, [currentPage, mcqsData]);
 
   return (
     <section className="full-screen px-4 py-8 bg-gray-100">

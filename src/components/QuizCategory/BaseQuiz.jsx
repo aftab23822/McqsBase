@@ -157,6 +157,7 @@ const BaseQuiz = ({ quizData, title, currentPage, setCurrentPage, totalPages, qu
       resetPage();
       setShowModal(false);
       const nextPage = Math.min(currentPage + 1, totalPages);
+      // Scroll happens in useEffect when quizData updates
       setCurrentPage(nextPage);
       updateUrl(nextPage);
     }
@@ -191,6 +192,7 @@ const BaseQuiz = ({ quizData, title, currentPage, setCurrentPage, totalPages, qu
 
   const handlePageChange = (page) => {
     if (page === currentPage) return;
+    
     if (!showModal && Object.keys(userAnswers).length > 0) {
       clearInterval(timerRef.current);
       handleFinishPage(userAnswers, 'manual');
@@ -201,9 +203,21 @@ const BaseQuiz = ({ quizData, title, currentPage, setCurrentPage, totalPages, qu
     }
   };
 
+  // Scroll to top when page changes and data is loaded
+  const prevPageRef = useRef(currentPage);
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [currentPage]);
+    // Only scroll if page actually changed and we have data
+    if (prevPageRef.current !== currentPage && quizData && quizData.length > 0) {
+      prevPageRef.current = currentPage;
+      // Use requestAnimationFrame to ensure DOM is updated before scrolling
+      requestAnimationFrame(() => {
+        window.scrollTo(0, 0);
+      });
+    } else if (prevPageRef.current === currentPage) {
+      // Update ref if page hasn't changed but this is initial load
+      prevPageRef.current = currentPage;
+    }
+  }, [currentPage, quizData]);
 
   return (
     <section className="full-screen px-4 py-8 bg-gray-100">
