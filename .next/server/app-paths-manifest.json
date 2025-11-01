@@ -5,5 +5,9 @@
   "/mcqs/[subject]/page": "app/mcqs/[subject]/page.js",
   "/past-interviews/page": "app/past-interviews/page.js",
   "/api/mcqs/general-knowledge/route": "app/api/mcqs/general-knowledge/route.js",
-  "/api/quiz/everyday-science/route": "app/api/quiz/everyday-science/route.js"
+  "/api/quiz/everyday-science/route": "app/api/quiz/everyday-science/route.js",
+  "/page": "app/page.js",
+  "/mock-tests/page": "app/mock-tests/page.js",
+  "/api/mock-tests/route": "app/api/mock-tests/route.js",
+  "/submit-mcqs/page": "app/submit-mcqs/page.js"
 }

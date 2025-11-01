@@ -31,7 +31,11 @@ export async function GET(request) {
       }
     ]);
 
-    return Response.json({ success: true, data: tests });
+    return Response.json({ success: true, data: tests }, {
+      headers: {
+        'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300'
+      }
+    });
   } catch (error) {
     console.error('Error fetching mock tests:', error);
     return Response.json({ success: false, message: 'Failed to fetch tests' }, { status: 500 });

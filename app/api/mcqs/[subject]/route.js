@@ -29,7 +29,7 @@ export async function GET(request, { params }) {
     const escapedSubject = escapeRegex(sanitizedSubject);
     const category = await Category.findOne({ 
       name: { $regex: new RegExp('^' + escapedSubject + '$', 'i') } 
-    });
+    }).lean(); // Use lean() for faster category lookup
     
     if (!category) {
       return NextResponse.json({ 
@@ -41,17 +41,26 @@ export async function GET(request, { params }) {
     }
 
     const filter = { categoryId: category._id };
-    const total = await MCQ.countDocuments(filter);
-    const mcqs = await MCQ.find(filter)
-      .sort({ createdAt: -1, _id: -1 })
-      .skip(skip)
-      .limit(limit);
+    
+    // Parallelize database queries for better performance
+    const [total, mcqs] = await Promise.all([
+      MCQ.countDocuments(filter),
+      MCQ.find(filter)
+        .sort({ createdAt: -1, _id: -1 })
+        .skip(skip)
+        .limit(limit)
+        .lean() // Use lean() for faster queries (returns plain JS objects)
+    ]);
 
     return NextResponse.json({
       results: mcqs,
       total,
       page,
       totalPages: Math.ceil(total / limit)
+    }, {
+      headers: {
+        'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300'
+      }
     });
   } catch (error) {
     console.error(`MCQs API error for subject ${params.subject}:`, error);

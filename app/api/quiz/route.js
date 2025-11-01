@@ -12,17 +12,25 @@ export async function GET(request) {
     const limit = parseInt(searchParams.get('limit')) || 10;
     const skip = (page - 1) * limit;
 
-    const total = await Quiz.countDocuments();
-    const quizzes = await Quiz.find()
-      .sort({ createdAt: -1, _id: -1 })
-      .skip(skip)
-      .limit(limit);
+    // Parallelize database queries for better performance
+    const [total, quizzes] = await Promise.all([
+      Quiz.countDocuments(),
+      Quiz.find()
+        .sort({ createdAt: -1, _id: -1 })
+        .skip(skip)
+        .limit(limit)
+        .lean() // Use lean() for faster queries
+    ]);
 
     return NextResponse.json({
       results: quizzes,
       total,
       page,
       totalPages: Math.ceil(total / limit)
+    }, {
+      headers: {
+        'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300'
+      }
     });
   } catch (error) {
     console.error('Quiz API error:', error);

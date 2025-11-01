@@ -27,17 +27,26 @@ export async function GET(request, { params }) {
     // Use escaped regex for security to prevent NoSQL injection
     const escapedSubject = escapeRegex(sanitizedSubject);
     const filter = { title: { $regex: new RegExp(escapedSubject, 'i') } };
-    const total = await PastPaper.countDocuments(filter);
-    const pastPapers = await PastPaper.find(filter)
-      .sort({ createdAt: -1, _id: -1 })
-      .skip(skip)
-      .limit(limit);
+    
+    // Parallelize database queries for better performance
+    const [total, pastPapers] = await Promise.all([
+      PastPaper.countDocuments(filter),
+      PastPaper.find(filter)
+        .sort({ createdAt: -1, _id: -1 })
+        .skip(skip)
+        .limit(limit)
+        .lean() // Use lean() for faster queries (returns plain JS objects)
+    ]);
 
     return NextResponse.json({
       results: pastPapers,
       total,
       page,
       totalPages: Math.ceil(total / limit)
+    }, {
+      headers: {
+        'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300'
+      }
     });
   } catch (error) {
     console.error(`Past Papers API error for subject ${params.subject}:`, error);
