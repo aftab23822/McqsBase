@@ -4,11 +4,12 @@ import React, { useState, useEffect } from 'react';
 import { apiFetch } from '../utils/api';
 import LoadingSpinner from './LoadingSpinner';
 import { getAllCategories } from '../utils/categoryUtils';
-import { getMockTestCategories, getUniversities } from '../utils/mockTestCategories';
-import { Shield, Upload, LogOut, User, Lock, FileText, AlertCircle, CheckCircle, ListChecks, Mail } from 'lucide-react';
+import { getMockTestCategories, getUniversities } from '../data/categories/mockTestCategories';
+import { Shield, Upload, LogOut, User, Lock, FileText, AlertCircle, CheckCircle, ListChecks, Mail, Plus } from 'lucide-react';
 import AdminUserSubmissions from './AdminUserSubmissions';
 import AdminContactSubmissions from './AdminContactSubmissions';
 import AdminMockTestsManager from './AdminMockTestsManager';
+import CategoryTreeManager from './CategoryTreeManager';
 import { ReCaptchaButton } from './recaptcha';
 
 const AdminLogin = () => {
@@ -20,6 +21,7 @@ const AdminLogin = () => {
   const [showSubmissions, setShowSubmissions] = useState(false);
   const [showContactMessages, setShowContactMessages] = useState(false);
   const [showMockTestsManager, setShowMockTestsManager] = useState(false);
+  const [showPagesManagement, setShowPagesManagement] = useState(false);
   const [validationErrors, setValidationErrors] = useState({});
   
   // Login state
@@ -111,15 +113,25 @@ const AdminLogin = () => {
       return;
     }
 
-    if (!uploadData.file || !uploadData.category) {
+    // Validate required fields based on type
+    if (uploadData.type === 'simple-mcqs') {
+      if (!uploadData.file || !uploadData.category) {
       setError('Please fill in all required fields');
       setIsLoading(false);
       return;
-    }
-
-    if (uploadData.type === 'mock-tests') {
-      if (!uploadData.subcategory) {
-        setError('Please provide Subcategory (e.g., university slug) for Mock Test');
+      }
+    } else if (uploadData.type === 'past-papers' || uploadData.type === 'past-interviews') {
+      if (!uploadData.file || !selectedCommission || !selectedDepartment || !selectedRole) {
+        setError('Please select Commission, Department, and Role');
+        setIsLoading(false);
+        return;
+      }
+      // Set category to role link for past papers/interviews
+      uploadData.category = selectedRole;
+      uploadData.subcategory = selectedCommission;
+    } else if (uploadData.type === 'mock-tests') {
+      if (!uploadData.file || !uploadData.category || !uploadData.subcategory) {
+        setError('Please fill in all required fields');
         setIsLoading(false);
         return;
       }
@@ -199,16 +211,16 @@ const AdminLogin = () => {
         });
       } else {
         response = await apiFetch(`/api/mcqs/batch?category=${uploadData.category}`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${token}`,
-          },
-          body: JSON.stringify({
-            mcqs: jsonData,
-            category: uploadData.category
-          }),
-        });
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          mcqs: jsonData,
+          category: uploadData.category
+        }),
+      });
       }
 
       if (response.ok) {
@@ -296,6 +308,252 @@ const AdminLogin = () => {
   const categories = getAllCategories();
   const mockCategories = getMockTestCategories();
   const universities = getUniversities();
+
+  // Category structure state for Past Papers/Interviews
+  const [categoryStructure, setCategoryStructure] = useState(null);
+  const [selectedCommission, setSelectedCommission] = useState('');
+  const [selectedDepartment, setSelectedDepartment] = useState('');
+  const [selectedRole, setSelectedRole] = useState('');
+  const [showNewCommission, setShowNewCommission] = useState(false);
+  const [showNewDepartment, setShowNewDepartment] = useState(false);
+  const [showNewRole, setShowNewRole] = useState(false);
+  const [showNewMcqCategory, setShowNewMcqCategory] = useState(false);
+  const [newCommissionName, setNewCommissionName] = useState('');
+  const [newDepartmentName, setNewDepartmentName] = useState('');
+  const [newRoleData, setNewRoleData] = useState({ label: '', link: '' });
+  const [newMcqCategory, setNewMcqCategory] = useState({ value: '', label: '' });
+  const [loadingStructure, setLoadingStructure] = useState(false);
+
+  // Fetch category structure when type changes
+  useEffect(() => {
+    const fetchCategoryStructure = async () => {
+      if (uploadData.type === 'past-papers' || uploadData.type === 'past-interviews') {
+        setLoadingStructure(true);
+        try {
+          const response = await fetch(`/api/categories/structure?type=${uploadData.type}`);
+          if (response.ok) {
+            const data = await response.json();
+            setCategoryStructure(data.data);
+          }
+        } catch (error) {
+          console.error('Error fetching category structure:', error);
+        } finally {
+          setLoadingStructure(false);
+        }
+      } else {
+        setCategoryStructure(null);
+      }
+      
+      // Reset selections when type changes
+      setSelectedCommission('');
+      setSelectedDepartment('');
+      setSelectedRole('');
+      setUploadData(prev => ({ ...prev, category: '', subcategory: '' }));
+    };
+
+    if (uploadData.type) {
+      fetchCategoryStructure();
+    } else {
+      setCategoryStructure(null);
+    }
+  }, [uploadData.type]);
+
+  // Get available commissions
+  const getCommissions = () => {
+    if (!categoryStructure || !categoryStructure.commissions) return [];
+    return categoryStructure.commissions.map(comm => ({
+      value: comm.title,
+      label: comm.title
+    }));
+  };
+
+  // Get available departments for selected commission
+  const getDepartments = () => {
+    if (!categoryStructure || !categoryStructure.commissions || !selectedCommission) return [];
+    const commission = categoryStructure.commissions.find(c => c.title === selectedCommission);
+    if (!commission || !commission.departments) return [];
+    return commission.departments.map(dept => ({
+      value: dept.label,
+      label: dept.label
+    }));
+  };
+
+  // Get available roles for selected department
+  const getRoles = () => {
+    if (!categoryStructure || !categoryStructure.commissions || !selectedCommission || !selectedDepartment) return [];
+    const commission = categoryStructure.commissions.find(c => c.title === selectedCommission);
+    if (!commission || !commission.departments) return [];
+    const department = commission.departments.find(d => d.label === selectedDepartment);
+    if (!department || !department.roles) return [];
+    return department.roles.map(role => ({
+      value: role.link,
+      label: role.label,
+      link: role.link
+    }));
+  };
+
+  // Handle adding new commission
+  const handleAddCommission = async () => {
+    if (!newCommissionName.trim()) return;
+    
+    const token = localStorage.getItem('adminToken');
+    try {
+      const response = await apiFetch('/api/categories/structure', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          type: uploadData.type,
+          action: 'add-commission',
+          data: { title: newCommissionName.trim(), icon: 'Building2' }
+        }),
+      });
+
+      if (response.ok) {
+        // Refresh category structure
+        const refreshResponse = await fetch(`/api/categories/structure?type=${uploadData.type}`);
+        if (refreshResponse.ok) {
+          const refreshData = await refreshResponse.json();
+          setCategoryStructure(refreshData.data);
+        }
+        setSelectedCommission(newCommissionName.trim());
+        setNewCommissionName('');
+        setShowNewCommission(false);
+        setSuccess('Commission added successfully!');
+      } else {
+        const errorData = await response.json();
+        setError(errorData.error || 'Failed to add commission');
+      }
+    } catch (error) {
+      setError('Network error. Please try again.');
+    }
+  };
+
+  // Handle adding new department
+  const handleAddDepartment = async () => {
+    if (!newDepartmentName.trim() || !selectedCommission) return;
+    
+    const token = localStorage.getItem('adminToken');
+    try {
+      const response = await apiFetch('/api/categories/structure', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          type: uploadData.type,
+          action: 'add-department',
+          data: {
+            commissionTitle: selectedCommission,
+            departmentLabel: newDepartmentName.trim()
+          }
+        }),
+      });
+
+      if (response.ok) {
+        // Refresh category structure
+        const refreshResponse = await fetch(`/api/categories/structure?type=${uploadData.type}`);
+        if (refreshResponse.ok) {
+          const refreshData = await refreshResponse.json();
+          setCategoryStructure(refreshData.data);
+        }
+        setSelectedDepartment(newDepartmentName.trim());
+        setNewDepartmentName('');
+        setShowNewDepartment(false);
+        setSuccess('Department added successfully!');
+      } else {
+        const errorData = await response.json();
+        setError(errorData.error || 'Failed to add department');
+      }
+    } catch (error) {
+      setError('Network error. Please try again.');
+    }
+  };
+
+  // Handle adding new role
+  const handleAddRole = async () => {
+    if (!newRoleData.label.trim() || !newRoleData.link.trim() || !selectedCommission || !selectedDepartment) return;
+    
+    const token = localStorage.getItem('adminToken');
+    try {
+      const response = await apiFetch('/api/categories/structure', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          type: uploadData.type,
+          action: 'add-role',
+          data: {
+            commissionTitle: selectedCommission,
+            departmentLabel: selectedDepartment,
+            roleLabel: newRoleData.label.trim(),
+            roleLink: newRoleData.link.trim()
+          }
+        }),
+      });
+
+      if (response.ok) {
+        // Refresh category structure
+        const refreshResponse = await fetch(`/api/categories/structure?type=${uploadData.type}`);
+        if (refreshResponse.ok) {
+          const refreshData = await refreshResponse.json();
+          setCategoryStructure(refreshData.data);
+        }
+        setSelectedRole(newRoleData.link.trim());
+        setNewRoleData({ label: '', link: '' });
+        setShowNewRole(false);
+        setSuccess('Role added successfully!');
+      } else {
+        const errorData = await response.json();
+        setError(errorData.error || 'Failed to add role');
+      }
+    } catch (error) {
+      setError('Network error. Please try again.');
+    }
+  };
+
+  // Handle adding new MCQ category
+  const handleAddMcqCategory = async () => {
+    if (!newMcqCategory.value.trim() || !newMcqCategory.label.trim()) return;
+    
+    const token = localStorage.getItem('adminToken');
+    try {
+      const response = await apiFetch('/api/categories/structure', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          type: 'mcqs',
+          action: 'add-category',
+          data: {
+            value: newMcqCategory.value.trim().toLowerCase().replace(/\s+/g, '-'),
+            label: newMcqCategory.label.trim()
+          }
+        }),
+      });
+
+      if (response.ok) {
+        setUploadData(prev => ({ ...prev, category: newMcqCategory.value.trim().toLowerCase().replace(/\s+/g, '-') }));
+        setNewMcqCategory({ value: '', label: '' });
+        setShowNewMcqCategory(false);
+        setSuccess('Category added successfully!');
+        // Reload page or refresh categories
+        window.location.reload();
+      } else {
+        const errorData = await response.json();
+        setError(errorData.error || 'Failed to add category');
+      }
+    } catch (error) {
+      setError('Network error. Please try again.');
+    }
+  };
 
   // Show loading spinner while checking authentication
   if (isCheckingAuth) {
@@ -455,11 +713,25 @@ const AdminLogin = () => {
             onClick={() => {
               setShowSubmissions(false);
               setShowContactMessages(false);
+              setShowMockTestsManager(false);
+              setShowPagesManagement(false);
             }}
-            className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${!showSubmissions && !showContactMessages ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
+            className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${!showSubmissions && !showContactMessages && !showMockTestsManager && !showPagesManagement ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
             <Upload className="w-5 h-5" />
             Upload Data
+          </button>
+          <button
+            onClick={() => {
+              setShowSubmissions(false);
+              setShowContactMessages(false);
+              setShowMockTestsManager(false);
+              setShowPagesManagement(true);
+            }}
+            className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showPagesManagement ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
+          >
+            <FileText className="w-5 h-5" />
+            Pages Management
           </button>
           <button
             onClick={() => {
@@ -503,7 +775,7 @@ const AdminLogin = () => {
         </div>
 
         {/* Main Content */}
-        {!showSubmissions && !showContactMessages && !showMockTestsManager ? (
+        {!showSubmissions && !showContactMessages && !showMockTestsManager && !showPagesManagement ? (
           <div className="bg-white rounded-2xl shadow-xl p-8">
             {error && (
               <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
@@ -584,10 +856,13 @@ const AdminLogin = () => {
                   />
                   <p className="text-sm text-gray-600 mt-2">Select a JSON file containing MCQs data</p>
                 </div>
+                {/* Category selection based on type */}
+                {uploadData.type === 'simple-mcqs' && (
                 <div>
                   <label htmlFor="category" className="block text-sm font-semibold text-gray-700 mb-2">
                     Category <span className="text-red-500">*</span>
                   </label>
+                    <div className="space-y-2">
                   <select
                     id="category"
                     value={uploadData.category}
@@ -596,50 +871,303 @@ const AdminLogin = () => {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
                   >
                     <option value="">Select Category</option>
-                    {uploadData.type === 'mock-tests'
-                      ? mockCategories.map(category => (
-                          <option key={category.value} value={category.value}>
-                            {category.label}
-                          </option>
-                        ))
-                      : categories.map(category => (
-                          <option key={category.value} value={category.value}>
-                            {category.label}
-                          </option>
-                        ))
-                    }
+                    {categories.map(category => (
+                      <option key={category.value} value={category.value}>
+                        {category.label}
+                      </option>
+                    ))}
                   </select>
+                      {/* Removed "Add New Category" button - now in Pages Management */}
+                      {false && showNewMcqCategory && (
+                        <div className="border border-indigo-200 rounded-lg p-4 bg-indigo-50">
+                          <div className="space-y-3">
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">Category Value (slug)</label>
+                              <input
+                                type="text"
+                                value={newMcqCategory.value}
+                                onChange={(e) => setNewMcqCategory(prev => ({ ...prev, value: e.target.value.toLowerCase().replace(/\s+/g, '-') }))}
+                                placeholder="e.g., new-subject"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"
+                              />
                 </div>
                 <div>
-                  <label htmlFor="subcategory" className="block text-sm font-semibold text-gray-700 mb-2">
-                    {uploadData.type === 'mock-tests' ? 'Subcategory (Select e.g., University)' : 'Subcategory (Optional)'}
+                              <label className="block text-sm font-medium text-gray-700 mb-1">Category Label</label>
+                              <input
+                                type="text"
+                                value={newMcqCategory.label}
+                                onChange={(e) => setNewMcqCategory(prev => ({ ...prev, label: e.target.value }))}
+                                placeholder="e.g., New Subject"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"
+                              />
+                            </div>
+                            <div className="flex gap-2">
+                              <button
+                                type="button"
+                                onClick={handleAddMcqCategory}
+                                className="flex-1 px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 font-medium"
+                              >
+                                Add Category
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  setShowNewMcqCategory(false);
+                                  setNewMcqCategory({ value: '', label: '' });
+                                }}
+                                className="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 font-medium"
+                              >
+                                Cancel
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                {/* Commission/Department/Role selection for Past Papers/Interviews */}
+                {(uploadData.type === 'past-papers' || uploadData.type === 'past-interviews') && (
+                  <>
+                    <div>
+                      <label className="block text-sm font-semibold text-gray-700 mb-2">
+                        Commission <span className="text-red-500">*</span>
                   </label>
-                  {uploadData.type === 'mock-tests' && uploadData.category === 'universities' ? (
-                    <select
-                      id="subcategory"
-                      value={uploadData.subcategory}
-                      onChange={(e) => setUploadData(prev => ({ ...prev, subcategory: e.target.value }))}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-                    >
-                      <option value="">Select University</option>
-                      {universities.map(u => (
-                        <option key={u.slug} value={u.slug} title={u.full}>
-                          {u.label}
-                        </option>
-                      ))}
-                    </select>
-                  ) : (
-                    <input
-                      type="text"
-                      id="subcategory"
-                      value={uploadData.subcategory}
-                      onChange={(e) => setUploadData(prev => ({ ...prev, subcategory: e.target.value }))}
-                      placeholder="e.g., FPSC, SPSC, etc."
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-                    />
-                  )}
+                      <div className="space-y-2">
+                        <select
+                          value={selectedCommission}
+                          onChange={(e) => {
+                            setSelectedCommission(e.target.value);
+                            setSelectedDepartment('');
+                            setSelectedRole('');
+                            setUploadData(prev => ({ ...prev, subcategory: e.target.value }));
+                          }}
+                          required
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                          disabled={loadingStructure}
+                        >
+                          <option value="">{loadingStructure ? 'Loading...' : 'Select Commission'}</option>
+                          {getCommissions().map(comm => (
+                            <option key={comm.value} value={comm.value}>{comm.label}</option>
+                          ))}
+                        </select>
+                        {/* Removed "Add New Commission" button - now in Pages Management */}
+                        {false && showNewCommission && (
+                          <div className="border border-indigo-200 rounded-lg p-4 bg-indigo-50">
+                            <div className="space-y-3">
+                              <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">Commission Name</label>
+                  <input
+                    type="text"
+                                  value={newCommissionName}
+                                  onChange={(e) => setNewCommissionName(e.target.value)}
+                                  placeholder="e.g., PPSC, NTS, etc."
+                                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"
+                                />
+                              </div>
+                              <div className="flex gap-2">
+                                <button
+                                  type="button"
+                                  onClick={handleAddCommission}
+                                  className="flex-1 px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 font-medium"
+                                >
+                                  Add Commission
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    setShowNewCommission(false);
+                                    setNewCommissionName('');
+                                  }}
+                                  className="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 font-medium"
+                                >
+                                  Cancel
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
+                    {selectedCommission && (
+                      <div>
+                        <label className="block text-sm font-semibold text-gray-700 mb-2">
+                          Department <span className="text-red-500">*</span>
+                        </label>
+                        <div className="space-y-2">
+                          <select
+                            value={selectedDepartment}
+                            onChange={(e) => {
+                              setSelectedDepartment(e.target.value);
+                              setSelectedRole('');
+                            }}
+                            required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                          >
+                            <option value="">Select Department</option>
+                            {getDepartments().map(dept => (
+                              <option key={dept.value} value={dept.value}>{dept.label.replace(/^[^\w\s]+/, '')}</option>
+                            ))}
+                          </select>
+                          {/* Removed "Add New Department" button - now in Pages Management */}
+                          {false && showNewDepartment && (
+                            <div className="border border-indigo-200 rounded-lg p-4 bg-indigo-50">
+                              <div className="space-y-3">
+                                <div>
+                                  <label className="block text-sm font-medium text-gray-700 mb-1">Department Name</label>
+                                  <input
+                                    type="text"
+                                    value={newDepartmentName}
+                                    onChange={(e) => setNewDepartmentName(e.target.value)}
+                                    placeholder="e.g., 🏫 College Education Department"
+                                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"
+                  />
                 </div>
+                                <div className="flex gap-2">
+                                  <button
+                                    type="button"
+                                    onClick={handleAddDepartment}
+                                    className="flex-1 px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 font-medium"
+                                  >
+                                    Add Department
+                                  </button>
+                                  <button
+                                    type="button"
+                                    onClick={() => {
+                                      setShowNewDepartment(false);
+                                      setNewDepartmentName('');
+                                    }}
+                                    className="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 font-medium"
+                                  >
+                                    Cancel
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )}
+
+                    {selectedDepartment && (
+                <div>
+                        <label className="block text-sm font-semibold text-gray-700 mb-2">
+                          Role <span className="text-red-500">*</span>
+                  </label>
+                        <div className="space-y-2">
+                  <select
+                            value={selectedRole}
+                            onChange={(e) => {
+                              setSelectedRole(e.target.value);
+                              setUploadData(prev => ({ ...prev, category: e.target.value }));
+                            }}
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                  >
+                            <option value="">Select Role</option>
+                            {getRoles().map(role => (
+                              <option key={role.value} value={role.value}>{role.label}</option>
+                            ))}
+                  </select>
+                          {/* Removed "Add New Role" button - now in Pages Management */}
+                          {false && showNewRole && (
+                            <div className="border border-indigo-200 rounded-lg p-4 bg-indigo-50">
+                              <div className="space-y-3">
+                                <div>
+                                  <label className="block text-sm font-medium text-gray-700 mb-1">Role Label</label>
+                                  <input
+                                    type="text"
+                                    value={newRoleData.label}
+                                    onChange={(e) => setNewRoleData(prev => ({ ...prev, label: e.target.value }))}
+                                    placeholder="e.g., Lecturer Computer Science BPS‑17"
+                                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"
+                                  />
+                </div>
+                                <div>
+                                  <label className="block text-sm font-medium text-gray-700 mb-1">Role Link (URL path)</label>
+                                  <input
+                                    type="text"
+                                    value={newRoleData.link}
+                                    onChange={(e) => setNewRoleData(prev => ({ ...prev, link: e.target.value }))}
+                                    placeholder={`/past-${uploadData.type === 'past-papers' ? 'papers' : 'interviews'}/${selectedCommission.toLowerCase().replace(/\s+/g, '-')}/department-slug/role-slug`}
+                                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"
+                                  />
+                                </div>
+                                <div className="flex gap-2">
+                                  <button
+                                    type="button"
+                                    onClick={handleAddRole}
+                                    className="flex-1 px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 font-medium"
+                                  >
+                                    Add Role
+                                  </button>
+                                  <button
+                                    type="button"
+                                    onClick={() => {
+                                      setShowNewRole(false);
+                                      setNewRoleData({ label: '', link: '' });
+                                    }}
+                                    className="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 font-medium"
+                                  >
+                                    Cancel
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                  </>
+                )}
+
+                {/* Mock Tests Category and University selection */}
+                {uploadData.type === 'mock-tests' && (
+                  <>
+                    <div>
+                      <label htmlFor="category" className="block text-sm font-semibold text-gray-700 mb-2">
+                        Category <span className="text-red-500">*</span>
+                      </label>
+                      <select
+                        id="category"
+                        value={uploadData.category}
+                        onChange={(e) => setUploadData(prev => ({ ...prev, category: e.target.value }))}
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                      >
+                        <option value="">Select Category</option>
+                        {mockCategories.map(category => (
+                          <option key={category.value} value={category.value}>
+                            {category.label}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                    {uploadData.category === 'universities' && (
+                      <div>
+                        <label htmlFor="subcategory" className="block text-sm font-semibold text-gray-700 mb-2">
+                          University <span className="text-red-500">*</span>
+                        </label>
+                        <select
+                          id="subcategory"
+                          value={uploadData.subcategory}
+                          onChange={(e) => setUploadData(prev => ({ ...prev, subcategory: e.target.value }))}
+                          required
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                        >
+                          <option value="">Select University</option>
+                          {universities.map(u => (
+                            <option key={u.slug} value={u.slug} title={u.full}>
+                              {u.label}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                    )}
+                  </>
+                )}
 
                 {/* Mock Test specific fields */}
                 {uploadData.type === 'mock-tests' && (
@@ -719,6 +1247,34 @@ const AdminLogin = () => {
         ) : showMockTestsManager ? (
           <div className="bg-white rounded-2xl shadow-xl p-8">
             <AdminMockTestsManager />
+          </div>
+        ) : showPagesManagement ? (
+          <div className="bg-white rounded-2xl shadow-xl p-8">
+            <div className="mb-6">
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
+                Select Type to Manage
+              </label>
+              <select
+                value={uploadData.type || ''}
+                onChange={(e) => {
+                  setUploadData(prev => ({ ...prev, type: e.target.value }));
+                  setCategoryStructure(null);
+                  setSelectedCommission('');
+                  setSelectedDepartment('');
+                  setSelectedRole('');
+                }}
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+              >
+                <option value="">Select Type</option>
+                <option value="simple-mcqs">Simple MCQs</option>
+                <option value="past-papers">Past Papers</option>
+                <option value="past-interviews">Past Interviews</option>
+                <option value="mock-tests">Mock Tests</option>
+              </select>
+            </div>
+            <CategoryTreeManager type={
+              uploadData.type === 'simple-mcqs' ? 'mcqs' : uploadData.type
+            } />
           </div>
         ) : showSubmissions ? (
           <div className="bg-white rounded-2xl shadow-xl p-8">

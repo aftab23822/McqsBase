@@ -133,7 +133,9 @@ export function normalizeCategoryName(raw) {
   return name;
 }
 
-// Get all available categories for the admin panel
+// Get all available categories for the admin panel (sorted alphabetically)
 export const getAllCategories = () => {
-  return CATEGORIES;
+  return [...CATEGORIES].sort((a, b) => 
+    a.label.localeCompare(b.label)
+  );
 }; 

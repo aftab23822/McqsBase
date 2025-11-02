@@ -1,12 +1,9 @@
 {
-  "/page": "app/page.js",
-  "/submit-mcqs/page": "app/submit-mcqs/page.js",
-  "/mcqs/[subject]/question/[questionId]/page": "app/mcqs/[subject]/question/[questionId]/page.js",
   "/404/admin/dashboard/page": "app/404/admin/dashboard/page.js",
-  "/api/admin/profile/route": "app/api/admin/profile/route.js",
+  "/past-interviews/page": "app/past-interviews/page.js",
+  "/mcqs/page": "app/mcqs/page.js",
+  "/past-papers/page": "app/past-papers/page.js",
+  "/mock-tests/page": "app/mock-tests/page.js",
   "/api/admin/submissions/route": "app/api/admin/submissions/route.js",
-  "/api/interviews/route": "app/api/interviews/route.js",
-  "/api/contact/route": "app/api/contact/route.js",
-  "/api/admin/submissions/[id]/route": "app/api/admin/submissions/[id]/route.js",
-  "/past-interviews/page": "app/past-interviews/page.js"
+  "/api/admin/submissions/[id]/route": "app/api/admin/submissions/[id]/route.js"
 }

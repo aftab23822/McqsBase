@@ -41,6 +41,28 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/past-interviews/page.js"
+    ],
+    "/mcqs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/mcqs/page.css",
+      "static/chunks/app/mcqs/page.js"
+    ],
+    "/past-papers/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/past-papers/page.js"
+    ],
+    "/quiz/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/quiz/page.css",
+      "static/chunks/app/quiz/page.js"
+    ],
+    "/mock-tests/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/mock-tests/page.js"
     ]
   }
 }

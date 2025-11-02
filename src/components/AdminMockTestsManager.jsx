@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
-import { getUniversities } from '../utils/mockTestCategories';
+import { getUniversities } from '../data/categories/mockTestCategories';
 
 const AdminMockTestsManager = () => {
   const [university, setUniversity] = useState('');

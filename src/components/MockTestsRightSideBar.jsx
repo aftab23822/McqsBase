@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Building2, Landmark, GraduationCap } from "lucide-react";
-import { getUniversities } from "../utils/mockTestCategories";
+import { getUniversities } from "../data/categories/mockTestCategories";
 
 const mockTestCategories = [
   {

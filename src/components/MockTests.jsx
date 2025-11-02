@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import MockTestsRightSideBar from './MockTestsRightSideBar';
-import { getUniversities } from '../utils/mockTestCategories';
+import { getUniversities } from '../data/categories/mockTestCategories';
 
 const MockTests = () => {
   const [latestTests, setLatestTests] = useState([]);
