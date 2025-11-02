@@ -101,6 +101,7 @@ const StatisticsMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="statistics"
         />
       </div>
       {isPageChanging && (

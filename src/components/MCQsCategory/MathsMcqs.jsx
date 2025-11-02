@@ -102,6 +102,7 @@ const MathsMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="maths"
         />
       </div>
       {isPageChanging && (

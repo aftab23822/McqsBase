@@ -102,6 +102,7 @@ const EnglishMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="english"
         />
       </div>
       {isPageChanging && (

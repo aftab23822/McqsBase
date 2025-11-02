@@ -101,6 +101,7 @@ const SociologyMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="sociology"
         />
       </div>
       {isPageChanging && (

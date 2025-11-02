@@ -100,6 +100,7 @@ const EverydayScienceMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="everyday-science"
         />
       </div>
       {isPageChanging && (

@@ -100,6 +100,7 @@ const PhysicsMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="physics"
         />
       </div>
       {isPageChanging && (

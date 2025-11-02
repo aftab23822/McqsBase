@@ -100,6 +100,7 @@ const PakistanCurrentAffairsMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="pakistan-current-affairs"
         />
       </div>
       {isPageChanging && (

@@ -101,6 +101,7 @@ const InternationalRelationsMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="international-relations"
         />
       </div>
       {isPageChanging && (

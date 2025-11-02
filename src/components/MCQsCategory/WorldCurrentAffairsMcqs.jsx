@@ -100,6 +100,7 @@ const WorldCurrentAffairsMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="world-current-affairs"
         />
       </div>
       {isPageChanging && (

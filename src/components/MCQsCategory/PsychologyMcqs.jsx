@@ -101,6 +101,7 @@ const PsychologyMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="psychology"
         />
       </div>
       {isPageChanging && (

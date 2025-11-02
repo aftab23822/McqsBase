@@ -17,6 +17,7 @@ const McqCard = ({
   questionNumber,
   subject = "General Knowledge",
   department = "General Department",
+  explanation,
 }) => {
   // Normalize correct answer for comparison
   const normalizedCorrect = correctAnswer ? stripPrefix(correctAnswer).toLowerCase() : '';
@@ -73,6 +74,14 @@ const McqCard = ({
           );
         })}
       </div>
+
+      {/* Explanation */}
+      {explanation && (
+        <div className="mt-4 p-3 bg-indigo-50 border-l-4 border-indigo-500 rounded">
+          <p className="text-sm font-semibold text-indigo-800 mb-1">Explanation:</p>
+          <p className="text-sm text-indigo-700 leading-relaxed">{explanation}</p>
+        </div>
+      )}
 
       {/* Simple footer */}
       <div className="flex items-center justify-between text-xs text-gray-500 pt-2 border-t border-gray-100">

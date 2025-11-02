@@ -101,6 +101,7 @@ const PakStudyMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="pak-study"
         />
       </div>
       {isPageChanging && (

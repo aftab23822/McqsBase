@@ -100,6 +100,7 @@ const ManagementSciencesMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="management-sciences"
         />
       </div>
       {isPageChanging && (

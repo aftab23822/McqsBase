@@ -100,6 +100,7 @@ const HRMMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="hrm"
         />
       </div>
       {isPageChanging && (

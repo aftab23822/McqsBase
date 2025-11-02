@@ -24,8 +24,16 @@ export async function GET(request) {
         .lean() // Use lean() for faster queries
     ]);
 
+    // Convert ObjectIds to strings for Client Components
+    const serializedMcqs = mcqs.map(mcq => ({
+      ...mcq,
+      _id: mcq._id.toString(),
+      categoryId: mcq.categoryId?.toString() || mcq.categoryId,
+      submittedBy: mcq.submittedBy?.toString() || mcq.submittedBy
+    }));
+
     return NextResponse.json({
-      results: mcqs,
+      results: serializedMcqs,
       total,
       page,
       totalPages: Math.ceil(total / limit)

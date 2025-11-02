@@ -100,6 +100,7 @@ const GeneralKnowledgeMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="general-knowledge"
         />
       </div>
       {isPageChanging && (

@@ -2,15 +2,31 @@
 
 import React, { useEffect, useRef } from 'react';
 import { useRouter, useSearchParams, usePathname } from 'next/navigation';
+import Link from 'next/link';
 import McqCard from '../McqCard';
 import RightSideBar from '../RightSideBar';
 import Pagination from '../Pagination';
+import { generateQuestionSlug } from '../../../lib/utils/slugGenerator.js';
 
-const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mcqsPerPage }) => {
+const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mcqsPerPage, subjectSlug }) => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const prevPageRef = useRef(currentPage);
+
+  // Extract subject slug from pathname if not provided as prop (fallback)
+  // First try prop, then pathname, with better extraction
+  let extractedSlug = '';
+  if (pathname && pathname.startsWith('/mcqs/')) {
+    const parts = pathname.replace('/mcqs/', '').split('/');
+    extractedSlug = parts[0].split('?')[0];
+  }
+  const finalSubjectSlug = subjectSlug || extractedSlug || '';
+  
+  // Debug: Log if slug is empty (remove in production)
+  if (!finalSubjectSlug && process.env.NODE_ENV === 'development') {
+    console.warn('BaseMcqs: subjectSlug is empty!', { subjectSlug, pathname, extractedSlug });
+  }
 
   // Sync URL with page changes on mount and when URL changes
   useEffect(() => {
@@ -66,14 +82,46 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
             <h1 className="text-2xl font-bold mb-4 text-center text-gray-800">
               {title}
             </h1>
-            {mcqsData.map((mcq, index) => (
-              <McqCard
-                key={index}
-                questionNumber={(currentPage - 1) * mcqsPerPage + index + 1}
-                correctAnswer={mcq.answer}
-                {...mcq}
-              />
-            ))}
+            {mcqsData.map((mcq, index) => {
+              // Use stored slug if available, otherwise generate one (backward compatibility)
+              const questionSlug = mcq.slug || generateQuestionSlug(mcq.question, mcq._id?.toString() || '');
+              // Only generate URL if we have a valid subject slug
+              const questionUrl = finalSubjectSlug 
+                ? `/mcqs/${finalSubjectSlug}/question/${questionSlug}`
+                : '#';
+              
+              return (
+                <div key={mcq._id?.toString() || index} className="group">
+                  <Link 
+                    href={questionUrl}
+                    className="block hover:opacity-95 transition-opacity"
+                    onClick={!finalSubjectSlug ? (e) => {
+                      e.preventDefault();
+                      console.error('Cannot generate question URL: subjectSlug is missing!', {
+                        subjectSlug,
+                        pathname,
+                        extractedSlug,
+                        mcqId: mcq._id
+                      });
+                    } : undefined}
+                  >
+                    <McqCard
+                      questionNumber={(currentPage - 1) * mcqsPerPage + index + 1}
+                      correctAnswer={mcq.answer}
+                      {...mcq}
+                    />
+                  </Link>
+                  <div className="mt-2 text-center">
+                    <Link
+                      href={questionUrl}
+                      className="inline-block text-sm text-blue-600 hover:text-blue-800 font-medium"
+                    >
+                      View Full Question →
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
             <Pagination
               currentPage={currentPage}
               totalPages={totalPages}

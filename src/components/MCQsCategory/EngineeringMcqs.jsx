@@ -101,6 +101,7 @@ const EngineeringMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="engineering"
         />
       </div>
       {isPageChanging && (

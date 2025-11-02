@@ -101,6 +101,7 @@ const JudiciaryLawMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="judiciary-law"
         />
       </div>
       {isPageChanging && (

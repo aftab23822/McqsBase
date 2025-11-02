@@ -101,6 +101,7 @@ const PhysiologyMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="physiology"
         />
       </div>
       {isPageChanging && (

@@ -101,6 +101,7 @@ const PhysicalEducationMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="physical-education"
         />
       </div>
       {isPageChanging && (

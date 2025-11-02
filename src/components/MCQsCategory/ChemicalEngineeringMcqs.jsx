@@ -101,6 +101,7 @@ const ChemicalEngineeringMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="chemical-engineering"
         />
       </div>
       {isPageChanging && (

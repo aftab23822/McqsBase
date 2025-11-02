@@ -101,6 +101,7 @@ const PathologyMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="pathology"
         />
       </div>
       {isPageChanging && (

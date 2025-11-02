@@ -101,6 +101,7 @@ const OralPathologyMedicineMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="oral-pathology-medicine"
         />
       </div>
       {isPageChanging && (

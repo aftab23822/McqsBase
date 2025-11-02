@@ -101,6 +101,7 @@ const EconomicsMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="economics"
         />
       </div>
       {isPageChanging && (

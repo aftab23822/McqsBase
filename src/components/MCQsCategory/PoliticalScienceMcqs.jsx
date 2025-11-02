@@ -101,6 +101,7 @@ const PoliticalScienceMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="political-science"
         />
       </div>
       {isPageChanging && (

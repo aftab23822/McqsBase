@@ -101,6 +101,7 @@ const ElectionOfficerMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="election-officer"
         />
       </div>
       {isPageChanging && (

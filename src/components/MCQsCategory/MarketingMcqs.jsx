@@ -100,6 +100,7 @@ const MarketingMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="marketing"
         />
       </div>
       {isPageChanging && (

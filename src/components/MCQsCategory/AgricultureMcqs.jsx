@@ -101,6 +101,7 @@ const AgricultureMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="agriculture"
         />
       </div>
       {isPageChanging && (

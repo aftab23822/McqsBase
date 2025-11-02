@@ -100,6 +100,7 @@ const FinanceMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="finance"
         />
       </div>
       {isPageChanging && (

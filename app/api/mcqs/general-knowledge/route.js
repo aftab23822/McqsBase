@@ -31,10 +31,19 @@ export async function GET(request) {
     const mcqs = await MCQ.find(filter)
       .sort({ createdAt: -1, _id: -1 })
       .skip(skip)
-      .limit(limit);
+      .limit(limit)
+      .lean();
+
+    // Convert ObjectIds to strings for Client Components
+    const serializedMcqs = mcqs.map(mcq => ({
+      ...mcq,
+      _id: mcq._id.toString(),
+      categoryId: mcq.categoryId?.toString() || mcq.categoryId,
+      submittedBy: mcq.submittedBy?.toString() || mcq.submittedBy
+    }));
 
     return NextResponse.json({
-      results: mcqs,
+      results: serializedMcqs,
       total,
       page,
       totalPages: Math.ceil(total / limit)

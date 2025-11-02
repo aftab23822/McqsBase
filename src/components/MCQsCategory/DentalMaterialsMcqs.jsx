@@ -101,6 +101,7 @@ const DentalMaterialsMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="dental-materials"
         />
       </div>
       {isPageChanging && (

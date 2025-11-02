@@ -100,6 +100,7 @@ const IslamicStudiesMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="islamic-studies"
         />
       </div>
       {isPageChanging && (

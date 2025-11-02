@@ -100,6 +100,7 @@ const URDUMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="urdu"
         />
       </div>
       {isPageChanging && (

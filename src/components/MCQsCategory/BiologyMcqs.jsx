@@ -100,6 +100,7 @@ const BiologyMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="biology"
         />
       </div>
       {isPageChanging && (

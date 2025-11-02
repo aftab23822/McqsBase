@@ -101,6 +101,7 @@ const BiochemistryMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="biochemistry"
         />
       </div>
       {isPageChanging && (

@@ -101,6 +101,7 @@ const ForestryMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="forestry"
         />
       </div>
       {isPageChanging && (

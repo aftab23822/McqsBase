@@ -101,6 +101,7 @@ const ComputerMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="computer"
         />
       </div>
       {isPageChanging && (

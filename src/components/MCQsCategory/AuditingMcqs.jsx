@@ -100,6 +100,7 @@ const AuditingMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="auditing"
         />
       </div>
       {isPageChanging && (

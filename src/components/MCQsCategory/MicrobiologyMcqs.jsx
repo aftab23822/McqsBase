@@ -101,6 +101,7 @@ const MicrobiologyMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="microbiology"
         />
       </div>
       {isPageChanging && (

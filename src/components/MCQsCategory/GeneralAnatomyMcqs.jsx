@@ -101,6 +101,7 @@ const GeneralAnatomyMcqs = () => {
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
           mcqsPerPage={mcqsPerPage}
+          subjectSlug="general-anatomy"
         />
       </div>
       {isPageChanging && (
