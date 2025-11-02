@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { apiFetch } from '../utils/api';
 import LoadingSpinner from './LoadingSpinner';
 import { getAllCategories } from '../utils/categoryUtils';
@@ -13,6 +13,7 @@ import { ReCaptchaButton } from './recaptcha';
 
 const AdminLogin = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isCheckingAuth, setIsCheckingAuth] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
@@ -255,9 +256,55 @@ const AdminLogin = () => {
     }
   };
 
+  // Check authentication on mount
+  useEffect(() => {
+    const checkAuth = async () => {
+      const token = localStorage.getItem('adminToken');
+      
+      if (!token) {
+        setIsCheckingAuth(false);
+        return;
+      }
+
+      try {
+        // Verify token is still valid by checking profile
+        const response = await apiFetch('/api/admin/profile', {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+          },
+        });
+
+        if (response.ok) {
+          // Token is valid, user is authenticated
+          setIsLoggedIn(true);
+        } else {
+          // Token is invalid or expired, remove it
+          localStorage.removeItem('adminToken');
+        }
+      } catch (error) {
+        // Network error or token invalid
+        localStorage.removeItem('adminToken');
+      } finally {
+        setIsCheckingAuth(false);
+      }
+    };
+
+    checkAuth();
+  }, []);
+
   const categories = getAllCategories();
   const mockCategories = getMockTestCategories();
   const universities = getUniversities();
+
+  // Show loading spinner while checking authentication
+  if (isCheckingAuth) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-100 flex items-center justify-center">
+        <LoadingSpinner />
+      </div>
+    );
+  }
 
   if (!isLoggedIn) {
     return (

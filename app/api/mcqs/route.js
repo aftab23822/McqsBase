@@ -71,7 +71,7 @@ export async function POST(request) {
 
     // Handle category mapping
     let finalCategoryId = categoryId;
-    if (category && !categoryId) {
+    if (!finalCategoryId && category) {
       const normalizedCategoryName = normalizeCategoryName(category);
       let categoryDoc = await Category.findOne({ name: normalizedCategoryName });
       if (!categoryDoc) {
@@ -79,6 +79,16 @@ export async function POST(request) {
         await categoryDoc.save();
       }
       finalCategoryId = categoryDoc._id;
+    }
+    
+    // If still no category ID, use default 'general-knowledge'
+    if (!finalCategoryId) {
+      let defaultCategory = await Category.findOne({ name: 'general-knowledge', type: 'MCQ' });
+      if (!defaultCategory) {
+        defaultCategory = new Category({ name: 'general-knowledge', type: 'MCQ' });
+        await defaultCategory.save();
+      }
+      finalCategoryId = defaultCategory._id;
     }
 
     // Check for duplicate question in the same category

@@ -23,6 +23,9 @@ const mapSubmissionToMcq = (item) => {
   }
   
   // Map user submission fields to MCQ fields
+  // Ensure category is provided, fallback to 'general-knowledge' if missing
+  const category = item.category || 'general-knowledge';
+  
   return {
     question: item.question,
     options: options,
@@ -30,7 +33,7 @@ const mapSubmissionToMcq = (item) => {
     detail_link: item.detail_link || '',
     submitter: item.username || item.sharedBy || '',
     explanation: item.explanation || '',
-    category: item.category || '', // Send category name instead of ID
+    category: category, // Send category name instead of ID
   };
 };
 
@@ -53,6 +56,9 @@ const mapSubmissionToPastPaper = (item) => {
   }
   
   // Map user submission fields to Past Paper fields
+  // Ensure category is provided, fallback to 'general-knowledge' if missing
+  const category = item.category || 'general-knowledge';
+  
   return {
     question: item.question,
     options: options,
@@ -60,7 +66,7 @@ const mapSubmissionToPastPaper = (item) => {
     detail_link: item.detail_link || '',
     submitter: item.username || item.sharedBy || '',
     explanation: item.explanation || '',
-    category: item.category || '', // Send category name instead of ID
+    category: category, // Send category name instead of ID
     year: item.year || new Date().getFullYear(),
     department: item.department || '',
   };
@@ -68,15 +74,29 @@ const mapSubmissionToPastPaper = (item) => {
 
 const mapSubmissionToPastInterview = (item) => {
   // Map user submission fields to Past Interview fields
+  // Use department to determine category if not provided
+  let category = item.category;
+  if (!category && item.department) {
+    const dept = item.department.toLowerCase();
+    if (dept.includes('fpsc')) category = 'fpsc';
+    else if (dept.includes('spsc')) category = 'spsc';
+    else if (dept.includes('ppsc')) category = 'ppsc';
+    else if (dept.includes('nts')) category = 'nts';
+    else category = 'general';
+  }
+  // Final fallback
+  if (!category) category = 'general';
+  
   return {
     question: item.question,
     answer: item.answer || item.correctAnswer || '',
     detail_link: item.detail_link || '',
     submitter: item.username || item.sharedBy || '',
     explanation: item.explanation || '',
-    category: item.category || '', // Send category name instead of ID
-    year: item.year || new Date().getFullYear(),
+    category: category, // Send category name instead of ID
+    year: item.year ? parseInt(item.year) : new Date().getFullYear(),
     department: item.department || '',
+    organization: item.department || '', // Map department to organization
     position: item.position || '',
     experience: item.experience || '',
   };
@@ -346,7 +366,18 @@ const AdminUserSubmissions = () => {
       }
       
       if (!saveResponse.ok) {
-        throw new Error('Failed to save to database');
+        let errorMessage = 'Failed to save to database';
+        try {
+          const errorData = await saveResponse.json();
+          errorMessage = errorData.message || errorData.error || `HTTP ${saveResponse.status}: ${saveResponse.statusText}`;
+          console.error('Save error response:', errorData);
+        } catch (parseError) {
+          // If JSON parsing fails, use status text
+          errorMessage = `HTTP ${saveResponse.status}: ${saveResponse.statusText || 'Unknown error'}`;
+          console.error('Failed to parse error response:', parseError);
+        }
+        console.error('Full response:', saveResponse);
+        throw new Error(errorMessage);
       }
       
       // 2. Mark as approved
