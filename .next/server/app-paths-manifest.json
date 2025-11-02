@@ -1,4 +1,7 @@
 {
-  "/sitemap-questions.xml/route": "app/sitemap-questions.xml/route.js",
-  "/sitemap-main.xml/route": "app/sitemap-main.xml/route.js"
+  "/submit-mcqs/page": "app/submit-mcqs/page.js",
+  "/page": "app/page.js",
+  "/mcqs/[subject]/question/[questionId]/page": "app/mcqs/[subject]/question/[questionId]/page.js",
+  "/api/admin/login/route": "app/api/admin/login/route.js",
+  "/404/admin/dashboard/page": "app/404/admin/dashboard/page.js"
 }
