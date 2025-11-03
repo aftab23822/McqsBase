@@ -2,15 +2,14 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import { ChevronLeft, ChevronRight, ArrowLeft } from 'lucide-react';
 import { generateQuestionSlug } from '../../lib/utils/slugGenerator.js';
 import McqCard from './McqCard';
 
 const IndividualQuestion = ({ question, subject, categoryName, nextQuestionId, prevQuestionId }) => {
-  const router = useRouter();
+  const questionToDisplay = question;
 
-  if (!question) {
+  if (!questionToDisplay) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
@@ -24,7 +23,7 @@ const IndividualQuestion = ({ question, subject, categoryName, nextQuestionId, p
     );
   }
 
-  const currentSlug = generateQuestionSlug(question.question, question._id.toString());
+  const currentSlug = generateQuestionSlug(questionToDisplay.question, questionToDisplay._id.toString());
   // For next/prev, use the ID directly - the API route can handle ID resolution
   const nextSlug = nextQuestionId || null;
   const prevSlug = prevQuestionId || null;
@@ -57,11 +56,11 @@ const IndividualQuestion = ({ question, subject, categoryName, nextQuestionId, p
         {/* Question Card */}
         <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
           <McqCard
-            question={question.question}
-            options={question.options}
-            correctAnswer={question.answer}
-            explanation={question.explanation}
-            submittedBy={question.submittedBy || 'Anonymous'}
+            question={questionToDisplay.question}
+            options={questionToDisplay.options}
+            correctAnswer={questionToDisplay.answer}
+            explanation={questionToDisplay.explanation}
+            submittedBy={questionToDisplay.submittedBy || 'Anonymous'}
             questionNumber={1}
             subject={categoryName}
           />

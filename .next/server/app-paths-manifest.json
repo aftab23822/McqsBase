@@ -1,9 +1,15 @@
 {
-  "/404/admin/dashboard/page": "app/404/admin/dashboard/page.js",
-  "/past-interviews/page": "app/past-interviews/page.js",
+  "/mcqs/[subject]/question/[questionId]/page": "app/mcqs/[subject]/question/[questionId]/page.js",
   "/mcqs/page": "app/mcqs/page.js",
+  "/mcqs/[subject]/page": "app/mcqs/[subject]/page.js",
+  "/page": "app/page.js",
+  "/past-interviews/page": "app/past-interviews/page.js",
   "/past-papers/page": "app/past-papers/page.js",
+  "/api/interviews/[commission]/[department]/[role]/route": "app/api/interviews/[commission]/[department]/[role]/route.js",
+  "/past-interviews/[commission]/[department]/[role]/page": "app/past-interviews/[commission]/[department]/[role]/page.js",
+  "/api/mcqs/general-knowledge/route": "app/api/mcqs/general-knowledge/route.js",
+  "/quiz/page": "app/quiz/page.js",
+  "/api/quiz/everyday-science/route": "app/api/quiz/everyday-science/route.js",
   "/mock-tests/page": "app/mock-tests/page.js",
-  "/api/admin/submissions/route": "app/api/admin/submissions/route.js",
-  "/api/admin/submissions/[id]/route": "app/api/admin/submissions/[id]/route.js"
+  "/api/mock-tests/route": "app/api/mock-tests/route.js"
 }

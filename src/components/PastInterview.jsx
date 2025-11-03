@@ -1,6 +1,7 @@
 import pastInterviewData from  "../data/mcqs/interviews/interviewData.json"; // Import the JSON file
 import React from 'react';
 import BasePastInterview from './PastInterviews/BasePastInterview';
+import PastInterviewsRightSideBar from './PastInterviewsRightSideBar';
 // SEO deprecated in App Router\n
 const PastInterview = () => {
   const structuredData = {
@@ -41,10 +42,19 @@ const PastInterview = () => {
   };
 
   return (
-    <>
-      {/* SEO handled by metadata API */}
-      <BasePastInterview pastInterviewData={pastInterviewData.questions} />
-    </>
+    <section className="full-screen px-4 py-8 bg-gray-100">
+      <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-2">
+        {/* Left Column */}
+        <div className="col-span-2 p-6 rounded-lg space-y-6">
+          {/* SEO handled by metadata API */}
+          <BasePastInterview pastInterviewData={pastInterviewData.questions} />
+        </div>
+        {/* Right Sidebar */}
+        <div className="col-span-1">
+          <PastInterviewsRightSideBar />
+        </div>
+      </div>
+    </section>
   );
 };
 

@@ -15,6 +15,7 @@ export async function POST(request) {
       answer,
       detail_link,
       submitter,
+      sharedBy,
       explanation,
       categoryId,
       category, // Category name
@@ -87,6 +88,9 @@ export async function POST(request) {
       categoryId: finalCategoryId,
       position: position || '',
       organization: organization || department || '',
+      department: department || '',
+      sharedBy: sharedBy || submitter || '',
+      experience: experience || '',
       year: year ? parseInt(year) : new Date().getFullYear(),
       // Note: explanation and detail_link are not in the schema but we can add them if needed
     });

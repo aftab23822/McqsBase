@@ -92,6 +92,7 @@ const mapSubmissionToPastInterview = (item) => {
     answer: item.answer || item.correctAnswer || '',
     detail_link: item.detail_link || '',
     submitter: item.username || item.sharedBy || '',
+    sharedBy: item.sharedBy || item.username || '',
     explanation: item.explanation || '',
     category: category, // Send category name instead of ID
     year: item.year ? parseInt(item.year) : new Date().getFullYear(),
@@ -110,6 +111,10 @@ const AdminUserSubmissions = () => {
   const [editingItem, setEditingItem] = useState(null);
   const [editForm, setEditForm] = useState({});
   const [expandedRows, setExpandedRows] = useState(new Set());
+  const [categoryStructure, setCategoryStructure] = useState(null);
+  const [selectedCommission, setSelectedCommission] = useState('');
+  const [selectedDepartment, setSelectedDepartment] = useState('');
+  const [selectedRole, setSelectedRole] = useState('');
 
   useEffect(() => {
     const fetchSubmissions = async () => {
@@ -273,7 +278,34 @@ const AdminUserSubmissions = () => {
     );
   };
 
-  const handleEdit = (item) => {
+  const fetchCategoryStructure = async (type) => {
+    try {
+      let apiType = 'mcqs';
+      if (type === 'pastpaper') apiType = 'past-papers';
+      else if (type === 'interview') apiType = 'past-interviews';
+      
+      const token = localStorage.getItem('adminToken');
+      const response = await apiFetch(`/api/categories/structure?type=${apiType}`, {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
+      const data = await response.json();
+      if (response.ok && data.success) {
+        // For MCQs, data.data contains { categories: [...] }
+        // For Past Papers/Interviews, data.data contains { commissions: [...] }
+        if (type === 'simple') {
+          setCategoryStructure(data.data.categories || []);
+        } else {
+          setCategoryStructure(data.data.commissions || []);
+        }
+      }
+    } catch (err) {
+      console.error('Error fetching category structure:', err);
+    }
+  };
+
+  const handleEdit = async (item) => {
     setEditingItem(item);
     setEditForm({
       question: item.question || '',
@@ -282,7 +314,96 @@ const AdminUserSubmissions = () => {
       detail_link: item.detail_link || '',
       explanation: item.explanation || ''
     });
+    
+    // Fetch category structure based on type
+    await fetchCategoryStructure(item.type);
+    
+    // Reset category selections
+    setSelectedCommission('');
+    setSelectedDepartment('');
+    setSelectedRole('');
+    
+    // If editing MCQs, set the category directly
+    if (item.type === 'simple') {
+      setSelectedRole(item.category || '');
+    } else if ((item.type === 'pastpaper' || item.type === 'interview') && categoryStructure) {
+      // For Past Papers/Interviews, restore selections from saved data
+      // Wait for categoryStructure to be set (using a small delay or useEffect)
+      // Actually, we need to set this after categoryStructure is fetched
+      // So we'll use a useEffect or set it after fetch completes
+    }
   };
+
+  // Effect to restore category selections after categoryStructure is loaded
+  useEffect(() => {
+    if (editingItem && categoryStructure) {
+      if (editingItem.type === 'simple') {
+        // MCQs already handled in handleEdit
+        return;
+      }
+      
+      if (editingItem.type === 'pastpaper' || editingItem.type === 'interview') {
+        // Try to match saved category, department, and position to the structure
+        const savedCategory = editingItem.category; // Commission slug
+        const savedDepartment = editingItem.department; // Department label
+        const savedRole = editingItem.position || ''; // Role label (for interviews) or we need to infer it
+        
+        if (!savedCategory || !savedDepartment) {
+          // Not enough data to restore selections
+          return;
+        }
+        
+        // Find the commission by matching the category slug in role links
+        for (const commission of categoryStructure) {
+          // Check if any role link contains this category slug
+          const hasMatchingLink = commission.departments?.some(dept => 
+            dept.roles?.some(role => {
+              if (!role.link) return false;
+              const linkParts = role.link.split('/').filter(Boolean);
+              // Link format: /past-{papers|interviews}/commission-slug/department-slug/role-slug
+              // Commission slug is typically the second part
+              return linkParts.length >= 2 && linkParts[1] === savedCategory;
+            })
+          );
+          
+          if (hasMatchingLink) {
+            // Found the commission, now find department
+            const department = commission.departments?.find(dept => 
+              dept.label === savedDepartment
+            );
+            
+            if (department) {
+              setSelectedCommission(commission.title || commission.label);
+              setSelectedDepartment(savedDepartment);
+              
+              // For interviews, match position (role label)
+              if (editingItem.type === 'interview' && savedRole) {
+                const role = department.roles?.find(r => r.label === savedRole);
+                if (role) {
+                  setSelectedRole(savedRole);
+                }
+              } else if (editingItem.type === 'pastpaper') {
+                // For past papers, try to find role by matching category slug in link
+                const role = department.roles?.find(r => {
+                  if (!r.link) return false;
+                  const linkParts = r.link.split('/').filter(Boolean);
+                  return linkParts.length >= 2 && linkParts[1] === savedCategory;
+                });
+                if (role) {
+                  setSelectedRole(role.label);
+                } else if (department.roles?.length === 1) {
+                  // Fallback: if only one role, select it
+                  setSelectedRole(department.roles[0].label);
+                }
+              }
+              
+              break;
+            }
+          }
+        }
+      }
+    }
+  }, [editingItem, categoryStructure]);
 
   const handleSaveEdit = async () => {
     if (!editingItem) return;
@@ -290,13 +411,56 @@ const AdminUserSubmissions = () => {
     setRowLoading((prev) => ({ ...prev, [editingItem._id]: 'edit' }));
     try {
       const token = localStorage.getItem('adminToken');
-              const response = await apiFetch(`/api/admin/submissions/${editingItem._id}/`, {
+      
+      // Build category data based on type
+      const updateData = { ...editForm };
+      
+      if (editingItem.type === 'simple') {
+        // MCQs: use selectedRole as category value
+        updateData.category = selectedRole || editingItem.category || 'general-knowledge';
+      } else if (editingItem.type === 'pastpaper' || editingItem.type === 'interview') {
+        // Past Papers/Interviews: build category path from commission > department > role
+        if (selectedCommission && selectedDepartment && selectedRole && categoryStructure) {
+          // Find the selected role's category by traversing the structure
+          const selectedComm = categoryStructure.find(
+            c => (c.title || c.label) === selectedCommission
+          );
+          
+          if (selectedComm) {
+            const selectedDept = selectedComm.departments?.find(
+              d => d.label === selectedDepartment
+            );
+            
+            if (selectedDept) {
+              const role = selectedDept.roles?.find(r => r.label === selectedRole);
+              
+              if (role && role.link) {
+                // Extract category from role link (format: /past-{papers|interviews}/commission-slug/...)
+                const linkParts = role.link.split('/').filter(Boolean);
+                if (linkParts.length >= 2) {
+                  // Get the commission slug (second part after past-papers or past-interviews)
+                  updateData.category = linkParts[1]; // Commission slug
+                  updateData.department = selectedDepartment;
+                  
+                  if (editingItem.type === 'interview') {
+                    updateData.position = selectedRole;
+                    // For interviews, also set organization from department
+                    updateData.organization = selectedDepartment;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      
+      const response = await apiFetch(`/api/admin/submissions/${editingItem._id}/`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`
         },
-        body: JSON.stringify(editForm)
+        body: JSON.stringify(updateData)
       });
       
       if (!response.ok) {
@@ -315,6 +479,10 @@ const AdminUserSubmissions = () => {
       
       setEditingItem(null);
       setEditForm({});
+      setCategoryStructure(null);
+      setSelectedCommission('');
+      setSelectedDepartment('');
+      setSelectedRole('');
     } catch (err) {
       alert(err.message || 'Error updating submission');
     } finally {
@@ -325,6 +493,10 @@ const AdminUserSubmissions = () => {
   const handleCancelEdit = () => {
     setEditingItem(null);
     setEditForm({});
+    setCategoryStructure(null);
+    setSelectedCommission('');
+    setSelectedDepartment('');
+    setSelectedRole('');
   };
 
   const handleApprove = async (item) => {
@@ -640,6 +812,120 @@ const AdminUserSubmissions = () => {
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
                   rows={2}
                 />
+              </div>
+
+              {/* Category Selection */}
+              <div className="border-t pt-4 mt-4">
+                <h4 className="text-sm font-semibold text-gray-700 mb-3">Category Assignment</h4>
+                
+                {editingItem.type === 'simple' && categoryStructure && (
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">
+                      Category <span className="text-red-500">*</span>
+                    </label>
+                    <select
+                      value={selectedRole}
+                      onChange={(e) => setSelectedRole(e.target.value)}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    >
+                      <option value="">Select Category</option>
+                      {categoryStructure.map((cat, idx) => (
+                        <option key={idx} value={cat.value}>{cat.label}</option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+
+                {(editingItem.type === 'pastpaper' || editingItem.type === 'interview') && categoryStructure && (
+                  <div className="space-y-4">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                        Commission <span className="text-red-500">*</span>
+                      </label>
+                      <select
+                        value={selectedCommission}
+                        onChange={(e) => {
+                          setSelectedCommission(e.target.value);
+                          setSelectedDepartment('');
+                          setSelectedRole('');
+                        }}
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                      >
+                        <option value="">Select Commission</option>
+                        {categoryStructure.map((comm, idx) => (
+                          <option key={idx} value={comm.title || comm.label}>
+                            {comm.title || comm.label}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    {selectedCommission && (
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">
+                          Department <span className="text-red-500">*</span>
+                        </label>
+                        <select
+                          value={selectedDepartment}
+                          onChange={(e) => {
+                            setSelectedDepartment(e.target.value);
+                            setSelectedRole('');
+                          }}
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        >
+                          <option value="">Select Department</option>
+                          {(() => {
+                            const selectedComm = categoryStructure.find(
+                              c => (c.title || c.label) === selectedCommission
+                            );
+                            return (selectedComm?.departments || []).map((dept, idx) => (
+                              <option key={idx} value={dept.label}>
+                                {dept.label}
+                              </option>
+                            ));
+                          })()}
+                        </select>
+                      </div>
+                    )}
+
+                    {selectedDepartment && (
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">
+                          Role <span className="text-red-500">*</span>
+                        </label>
+                        <select
+                          value={selectedRole}
+                          onChange={(e) => setSelectedRole(e.target.value)}
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        >
+                          <option value="">Select Role</option>
+                          {(() => {
+                            const selectedComm = categoryStructure.find(
+                              c => (c.title || c.label) === selectedCommission
+                            );
+                            const selectedDept = selectedComm?.departments?.find(
+                              d => d.label === selectedDepartment
+                            );
+                            return (selectedDept?.roles || []).map((role, idx) => (
+                              <option key={idx} value={role.label}>
+                                {role.label}
+                              </option>
+                            ));
+                          })()}
+                        </select>
+                      </div>
+                    )}
+
+                    {selectedCommission && selectedDepartment && selectedRole && (
+                      <div className="bg-indigo-50 border border-indigo-200 rounded-md p-3">
+                        <p className="text-sm text-indigo-800">
+                          <span className="font-semibold">Selected Path:</span>{' '}
+                          {selectedCommission} &gt; {selectedDepartment} &gt; {selectedRole}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
 

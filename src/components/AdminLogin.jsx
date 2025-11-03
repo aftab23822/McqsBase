@@ -738,6 +738,7 @@ const AdminLogin = () => {
               setShowSubmissions(true);
               setShowContactMessages(false);
               setShowMockTestsManager(false);
+              setShowPagesManagement(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showSubmissions ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
@@ -749,6 +750,7 @@ const AdminLogin = () => {
               setShowSubmissions(false);
               setShowContactMessages(true);
               setShowMockTestsManager(false);
+              setShowPagesManagement(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showContactMessages ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
@@ -760,6 +762,7 @@ const AdminLogin = () => {
               setShowSubmissions(false);
               setShowContactMessages(false);
               setShowMockTestsManager(true);
+              setShowPagesManagement(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showMockTestsManager ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >

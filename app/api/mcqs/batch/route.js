@@ -55,46 +55,58 @@ export async function POST(request) {
     console.log('Existing questions count:', existingQuestions.size);
     console.log('Sample existing questions:', Array.from(existingQuestions).slice(0, 3));
 
+    // Import slug generator
+    const { generateUniqueQuestionSlug } = await import('../../../../lib/utils/slugGenerator.js');
+    
     // Prepare MCQs for insertion (latest at top), skip duplicates
-    const docs = mcqs.filter(m => !existingQuestions.has(m.question)).map(m => {
-      // Convert options object to array format if needed
-      let optionsToSave = m.options;
-      if (m.options && typeof m.options === 'object' && !Array.isArray(m.options)) {
-        // Convert {A: "...", B: "...", C: "...", D: "...", E: "..."} to array
-        optionsToSave = Object.values(m.options);
-      }
-      
-      // Filter out empty strings from options array
-      if (Array.isArray(optionsToSave)) {
-        optionsToSave = optionsToSave.filter(opt => opt && opt.trim() !== '');
-      }
-      
-      // Convert answer from letter (A, B, C, D, E) to the actual option text
-      let normalizedAnswer = m.correct_option;
-      if (typeof normalizedAnswer === 'string') {
-        normalizedAnswer = normalizedAnswer.toUpperCase().trim();
-        
-        // If answer is a letter (A, B, C, D, E), convert it to the option text
-        if (['A', 'B', 'C', 'D', 'E'].includes(normalizedAnswer)) {
-          const optionIndex = normalizedAnswer.charCodeAt(0) - 65; // A=0, B=1, C=2, etc.
-          if (optionsToSave[optionIndex]) {
-            normalizedAnswer = optionsToSave[optionIndex];
-          }
+    // Generate slugs asynchronously to avoid blocking
+    const docsWithSlugs = await Promise.all(
+      mcqs.filter(m => !existingQuestions.has(m.question)).map(async (m) => {
+        // Convert options object to array format if needed
+        let optionsToSave = m.options;
+        if (m.options && typeof m.options === 'object' && !Array.isArray(m.options)) {
+          // Convert {A: "...", B: "...", C: "...", D: "...", E: "..."} to array
+          optionsToSave = Object.values(m.options);
         }
-        // If answer is already the full text, keep it as is
-      }
-      
-      return {
-        question: m.question,
-        options: optionsToSave,
-        answer: normalizedAnswer,
-        explanation: m.explanation || '',
-        categoryId: category._id,
-        link: m.detail_link,
-        submittedBy: m.submitter || 'Admin',
-        pageOrder: m.pageOrder || 0
-      };
-    });
+        
+        // Filter out empty strings from options array
+        if (Array.isArray(optionsToSave)) {
+          optionsToSave = optionsToSave.filter(opt => opt && opt.trim() !== '');
+        }
+        
+        // Convert answer from letter (A, B, C, D, E) to the actual option text
+        let normalizedAnswer = m.correct_option;
+        if (typeof normalizedAnswer === 'string') {
+          normalizedAnswer = normalizedAnswer.toUpperCase().trim();
+          
+          // If answer is a letter (A, B, C, D, E), convert it to the option text
+          if (['A', 'B', 'C', 'D', 'E'].includes(normalizedAnswer)) {
+            const optionIndex = normalizedAnswer.charCodeAt(0) - 65; // A=0, B=1, C=2, etc.
+            if (optionsToSave[optionIndex]) {
+              normalizedAnswer = optionsToSave[optionIndex];
+            }
+          }
+          // If answer is already the full text, keep it as is
+        }
+        
+        // Generate unique slug for this question
+        const slug = await generateUniqueQuestionSlug(m.question, null, category._id, MCQ);
+        
+        return {
+          question: m.question,
+          options: optionsToSave,
+          answer: normalizedAnswer,
+          explanation: m.explanation || '',
+          categoryId: category._id,
+          link: m.detail_link,
+          submittedBy: m.submitter || 'Admin',
+          pageOrder: m.pageOrder || 0,
+          slug: slug // Include slug for fast lookups
+        };
+      })
+    );
+    
+    const docs = docsWithSlugs;
 
     console.log('Prepared docs for insertion:', {
       count: docs.length,

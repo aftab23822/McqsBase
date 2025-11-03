@@ -104,6 +104,10 @@ export async function POST(request) {
       }, { status: 409 });
     }
 
+    // Generate unique slug for the question
+    const { generateUniqueQuestionSlug } = await import('../../../lib/utils/slugGenerator.js');
+    const slug = await generateUniqueQuestionSlug(question, null, finalCategoryId, MCQ);
+    
     const mcq = new MCQ({
       question,
       options,
@@ -112,7 +116,8 @@ export async function POST(request) {
       categoryId: finalCategoryId,
       subcategoryId,
       link: detail_link,
-      submittedBy: submitter
+      submittedBy: submitter,
+      slug: slug // Save slug for fast lookups
     });
 
     await mcq.save();

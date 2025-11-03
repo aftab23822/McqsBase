@@ -83,8 +83,9 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
               {title}
             </h1>
             {mcqsData.map((mcq, index) => {
-              // Use stored slug if available, otherwise generate one (backward compatibility)
-              const questionSlug = mcq.slug || generateQuestionSlug(mcq.question, mcq._id?.toString() || '');
+              // Always use stored slug from database for consistency and performance
+              // If slug doesn't exist, generate one (will be saved on first access)
+              const questionSlug = mcq.slug || generateQuestionSlug(mcq.question);
               // Only generate URL if we have a valid subject slug
               const questionUrl = finalSubjectSlug 
                 ? `/mcqs/${finalSubjectSlug}/question/${questionSlug}`
