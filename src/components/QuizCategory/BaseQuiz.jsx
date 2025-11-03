@@ -7,6 +7,7 @@ import QuizMcqCard from '../QuizMcqCard';
 import Pagination from '../Pagination';
 import ResultModal from '../ResultModal';
 import LeavePageModal from '../LeavePageModal';
+import Breadcrumb from '../Breadcrumb';
 
 const BaseQuiz = ({ quizData, title, currentPage, setCurrentPage, totalPages, quizPerPage, ...rest }) => {
   const router = useRouter();
@@ -219,11 +220,29 @@ const BaseQuiz = ({ quizData, title, currentPage, setCurrentPage, totalPages, qu
     }
   }, [currentPage, quizData]);
 
+  // Generate breadcrumb items - extract subject name from title
+  const getSubjectName = () => {
+    if (!title) return 'Subject';
+    // Remove " Quiz" suffix, "(Page X)" pattern, and any trailing whitespace
+    return title
+      .replace(/\s*\(Page\s+\d+\)/gi, '') // Remove "(Page X)"
+      .replace(/\s*Quiz\s*$/i, '') // Remove " Quiz"
+      .trim() || 'Subject';
+  };
+
+  const breadcrumbItems = [
+    { label: 'Home', href: '/' },
+    { label: 'Quiz', href: '/quiz' },
+    { label: getSubjectName(), href: `#` }
+  ];
+
   return (
     <section className="full-screen px-4 py-8 bg-gray-100">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-2">
         <div className="col-span-2 p-62rounded-lg space-y-6">
           <div className="p-1 sm:p-6 md:p-10 space-y-6 pb-20">
+            {/* Breadcrumb Navigation */}
+            <Breadcrumb items={breadcrumbItems} />
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center text-center sm:text-left gap-2">
               <h1 className="text-xl sm:text-2xl font-bold text-gray-800">
                 {title} (Page {currentPage})

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import McqCard from '../McqCard';
 import RightSideBar from '../RightSideBar';
 import Pagination from '../Pagination';
+import Breadcrumb from '../Breadcrumb';
 import { generateQuestionSlug } from '../../../lib/utils/slugGenerator.js';
 
 const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mcqsPerPage, subjectSlug }) => {
@@ -73,12 +74,27 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
     }
   }, [currentPage, mcqsData]);
 
+  // Generate breadcrumb items - extract subject name from title
+  const getSubjectName = () => {
+    if (!title) return 'Subject';
+    // Remove " MCQs" suffix and any trailing whitespace
+    return title.replace(/\s*MCQs\s*$/i, '').trim() || 'Subject';
+  };
+
+  const breadcrumbItems = [
+    { label: 'Home', href: '/' },
+    { label: 'MCQs', href: '/mcqs' },
+    { label: getSubjectName(), href: `#` }
+  ];
+
   return (
     <section className="full-screen px-4 py-8 bg-gray-100">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-2">
         {/* Left Column */}
         <div className="col-span-2 p-62rounded-lg space-y-6">
           <div className="p-1 sm:p-6 md:p-10 space-y-6 pb-20">
+            {/* Breadcrumb Navigation */}
+            <Breadcrumb items={breadcrumbItems} />
             <h1 className="text-2xl font-bold mb-4 text-center text-gray-800">
               {title}
             </h1>

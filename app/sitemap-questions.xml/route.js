@@ -3,106 +3,88 @@ import connectToDatabase from '@/lib/mongodb.js';
 import MCQ from '@/lib/models/MCQ.js';
 import Category from '@/lib/models/Category.js';
 import { generateQuestionSlug } from '@/lib/utils/slugGenerator.js';
-import { sanitizeSubject } from '@/lib/utils/security.js';
+import { normalizeCategoryName } from '@/utils/categoryConfig';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://mcqsbase.com';
-const MAX_URLS_PER_SITEMAP = 50000; // Google's recommended limit
+const FALLBACK_BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://mcqsbase.com';
+const PAGE_SIZE = 10000; // Reasonable chunk size well under Google's 50k limit
+
+// Derive absolute base URL from the request (works locally and in prod)
+function getBaseUrl(request) {
+  try {
+    const proto = request.headers.get('x-forwarded-proto') || 'http';
+    const host = request.headers.get('host') || '';
+    if (host) return `${proto}://${host}`;
+  } catch {}
+  return FALLBACK_BASE_URL;
+}
 
 /**
- * Generate XML sitemap for all MCQ questions
- * Supports pagination for large datasets
- * GET /sitemap-questions.xml or /sitemap-questions.xml?page=1
+ * Generate XML sitemap for MCQ question pages
+ * Supports pagination: /sitemap-questions.xml?page=1
  */
 export async function GET(request) {
+  const { searchParams } = new URL(request.url);
+  const pageParam = parseInt(searchParams.get('page') || '1', 10);
+  const page = Number.isFinite(pageParam) && pageParam > 0 ? pageParam : 1;
+  const limit = PAGE_SIZE;
+  const skip = (page - 1) * limit;
+
   try {
     await connectToDatabase();
 
-    const { searchParams } = new URL(request.url);
-    const page = parseInt(searchParams.get('page')) || 1;
-    const limit = MAX_URLS_PER_SITEMAP;
+    // Map categoryId => subjectSlug for MCQ categories only
+    const categories = await Category.find({ type: 'MCQ' }).select({ _id: 1, name: 1 }).lean();
+    const allowedCategoryIds = new Set(categories.map(c => c._id.toString()));
+    const categoryIdToSubjectSlug = new Map(
+      categories.map(c => [c._id.toString(), normalizeCategoryName(c.name || '')])
+    );
 
-    // Get all categories for MCQ type only
-    const categories = await Category.find({ type: 'MCQ' }).lean();
+    // Fetch MCQs that have a slug and belong to allowed categories
+    const filter = { slug: { $exists: true, $ne: null, $ne: '' }, categoryId: { $in: Array.from(allowedCategoryIds) } };
 
-    // Build subject slug mapping with proper normalization
-    const subjectSlugMap = {};
-    categories.forEach(cat => {
-      // Use the same normalization as in the API route
-      const normalizedName = cat.name.toLowerCase().trim();
-      const slug = sanitizeSubject(normalizedName.replace(/\s+/g, '-'));
-      subjectSlugMap[cat._id.toString()] = slug || normalizedName.replace(/\s+/g, '-');
-    });
+    const [total, mcqs] = await Promise.all([
+      MCQ.countDocuments(filter),
+      MCQ.find(filter)
+        .sort({ updatedAt: -1, _id: -1 })
+        .skip(skip)
+        .limit(limit)
+        .select({ slug: 1, question: 1, updatedAt: 1, categoryId: 1 })
+        .lean()
+    ]);
 
-    // Count total MCQs
-    const totalMcqs = await MCQ.countDocuments({});
-    
-    // Fetch MCQs for current page with category info
-    const skip = (page - 1) * limit;
-    const mcqs = await MCQ.find({})
-      .select('_id question categoryId createdAt updatedAt slug')
-      .sort({ createdAt: -1 })
-      .skip(skip)
-      .limit(limit)
-      .lean();
+    const baseUrl = getBaseUrl(request);
 
-    // Generate XML sitemap
-    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
-
-    const currentDate = new Date().toISOString().split('T')[0];
-
+    // Build XML entries
+    let urlsXml = '';
     for (const mcq of mcqs) {
-      const subjectSlug = subjectSlugMap[mcq.categoryId?.toString()];
-      if (!subjectSlug) {
-        console.warn(`No subject slug found for category ${mcq.categoryId}`);
-        continue;
-      }
-
-      // Use stored slug if available, otherwise generate one
-      const questionSlug = mcq.slug || generateQuestionSlug(mcq.question);
-      
-      // If no stored slug, generate and save it (async, don't block)
-      if (!mcq.slug) {
-        MCQ.findByIdAndUpdate(mcq._id, { slug: questionSlug }).catch(err => 
-          console.error('Failed to save slug:', err)
-        );
-      }
-
-      const url = `${BASE_URL}/mcqs/${subjectSlug}/question/${questionSlug}`;
-      
-      // Use updatedAt if available, otherwise createdAt, default to now
-      const lastModified = mcq.updatedAt 
-        ? new Date(mcq.updatedAt).toISOString().split('T')[0]
-        : (mcq.createdAt 
-          ? new Date(mcq.createdAt).toISOString().split('T')[0]
-          : currentDate);
-
-      xml += '  <url>\n';
-      xml += `    <loc>${escapeXml(url)}</loc>\n`;
-      xml += `    <lastmod>${lastModified}</lastmod>\n`;
-      xml += '    <changefreq>weekly</changefreq>\n';
-      xml += '    <priority>0.8</priority>\n';
-      xml += '  </url>\n';
+      const categoryId = mcq.categoryId?.toString();
+      if (!categoryId) continue;
+      const subjectSlug = categoryIdToSubjectSlug.get(categoryId);
+      if (!subjectSlug) continue;
+      const questionSlug = mcq.slug || generateQuestionSlug(mcq.question || 'question');
+      const loc = `${baseUrl}/mcqs/${subjectSlug}/question/${questionSlug}`;
+      const lastmod = new Date(mcq.updatedAt || Date.now()).toISOString();
+      urlsXml += `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.6</priority>\n  </url>\n`;
     }
 
-    xml += '</urlset>';
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>\n` +
+      `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+      `${urlsXml}</urlset>`;
 
-    return new NextResponse(xml, {
+    return new Response(xml, {
       headers: {
-        'Content-Type': 'application/xml; charset=utf-8',
-        'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400'
+        'content-type': 'application/xml; charset=utf-8',
+        'cache-control': 'public, s-maxage=3600, stale-while-revalidate=86400'
       }
     });
-  } catch (error) {
-    console.error('Error generating questions sitemap:', error);
-    
-    // Return minimal sitemap on error
-    const xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n</urlset>';
-    return new NextResponse(xml, {
+  } catch (err) {
+    // Fallback minimal empty sitemap on error
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>`;
+    return new Response(xml, {
       status: 200,
       headers: {
-        'Content-Type': 'application/xml; charset=utf-8',
-        'Cache-Control': 'public, s-maxage=60'
+        'content-type': 'application/xml; charset=utf-8',
+        'cache-control': 'no-store'
       }
     });
   }

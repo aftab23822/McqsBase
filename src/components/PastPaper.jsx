@@ -1,5 +1,8 @@
+"use client";
+
 import React from 'react';
 import BasePastPaper from './PastPapers/BasePastPaper';
+import Breadcrumb from './Breadcrumb';
 import pastpaperData from "../data/mcqs/past_papers/pastPaperData.json"; // Import the JSON file
 // SEO deprecated in App Router\n
 const PastPaper = () => {
@@ -40,10 +43,18 @@ const PastPaper = () => {
     }
   };
 
+  const breadcrumbItems = [
+    { label: 'Home', href: '/' },
+    { label: 'Past Papers', href: '#' }
+  ];
+
   return (
     <>
       {/* SEO handled by metadata API */}
-      <BasePastPaper pastpaperData={pastpaperData} />
+      <BasePastPaper 
+        pastpaperData={pastpaperData} 
+        breadcrumbItems={breadcrumbItems}
+      />
     </>
   );
 };

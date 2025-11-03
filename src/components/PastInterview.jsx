@@ -1,7 +1,10 @@
+"use client";
+
 import pastInterviewData from  "../data/mcqs/interviews/interviewData.json"; // Import the JSON file
 import React from 'react';
 import BasePastInterview from './PastInterviews/BasePastInterview';
 import PastInterviewsRightSideBar from './PastInterviewsRightSideBar';
+import Breadcrumb from './Breadcrumb';
 // SEO deprecated in App Router\n
 const PastInterview = () => {
   const structuredData = {
@@ -41,11 +44,18 @@ const PastInterview = () => {
     }
   };
 
+  const breadcrumbItems = [
+    { label: 'Home', href: '/' },
+    { label: 'Past Interviews', href: '#' }
+  ];
+
   return (
     <section className="full-screen px-4 py-8 bg-gray-100">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-2">
         {/* Left Column */}
         <div className="col-span-2 p-6 rounded-lg space-y-6">
+          {/* Breadcrumb Navigation */}
+          <Breadcrumb items={breadcrumbItems} />
           {/* SEO handled by metadata API */}
           <BasePastInterview pastInterviewData={pastInterviewData.questions} />
         </div>

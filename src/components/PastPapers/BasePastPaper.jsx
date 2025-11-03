@@ -4,8 +4,9 @@ import React, { useEffect } from 'react';
 import PastPaperMcqCard from '../PastPaperMcqCard';
 import PastPapersRightSideBar from '../PastPapersRightSideBar';
 import Pagination from '../Pagination';
+import Breadcrumb from '../Breadcrumb';
 
-const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, totalPages, mcqsPerPage }) =>  {
+const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, totalPages, mcqsPerPage, breadcrumbItems }) =>  {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -19,9 +20,8 @@ const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, tota
         {/* Left Column */}
         <div className="col-span-2 p-62rounded-lg space-y-6">
           <div className="p-1 sm:p-6 md:p-10 space-y-6 pb-20">
-            <h1 className="text-2xl font-bold mb-4 text-center text-gray-800">
-              {title || "General MCQs (All Subjects)"}
-            </h1>
+            {/* Breadcrumb Navigation */}
+            {breadcrumbItems && <Breadcrumb items={breadcrumbItems} />}
             {pastpaperData.map((mcq, index) => (
               <PastPaperMcqCard
                 key={index}

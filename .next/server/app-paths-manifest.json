@@ -1,7 +1,3 @@
 {
-  "/mcqs/page": "app/mcqs/page.js",
-  "/mcqs/[subject]/page": "app/mcqs/[subject]/page.js",
-  "/page": "app/page.js",
-  "/past-interviews/page": "app/past-interviews/page.js",
-  "/quiz/page": "app/quiz/page.js"
+  "/sitemap-questions.xml/route": "app/sitemap-questions.xml/route.js"
 }
