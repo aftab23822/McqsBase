@@ -1,13 +1,7 @@
 {
-  "/mcqs/[subject]/question/[questionId]/page": "app/mcqs/[subject]/question/[questionId]/page.js",
   "/mcqs/page": "app/mcqs/page.js",
   "/mcqs/[subject]/page": "app/mcqs/[subject]/page.js",
   "/page": "app/page.js",
   "/past-interviews/page": "app/past-interviews/page.js",
-  "/api/mcqs/general-knowledge/route": "app/api/mcqs/general-knowledge/route.js",
-  "/quiz/page": "app/quiz/page.js",
-  "/api/quiz/everyday-science/route": "app/api/quiz/everyday-science/route.js",
-  "/past-papers/page": "app/past-papers/page.js",
-  "/mock-tests/page": "app/mock-tests/page.js",
-  "/api/mock-tests/route": "app/api/mock-tests/route.js"
+  "/quiz/page": "app/quiz/page.js"
 }
