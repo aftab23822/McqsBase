@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
-import LoadingSpinner from './LoadingSpinner';
 
 /**
  * Global navigation loader component
@@ -57,7 +56,11 @@ const NavigationLoader = () => {
 
   return (
     <div className="fixed inset-0 bg-white bg-opacity-75 z-[9999] flex items-center justify-center transition-opacity duration-300 pointer-events-none">
-      <LoadingSpinner />
+      <div className="relative w-16 h-16">
+        {/* Circular ring spinner - navigation specific */}
+        <div className="absolute inset-0 border-4 border-blue-200 rounded-full"></div>
+        <div className="absolute inset-0 border-4 border-blue-600 rounded-full border-t-transparent animate-spin"></div>
+      </div>
     </div>
   );
 };
