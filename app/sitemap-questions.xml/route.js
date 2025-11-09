@@ -24,6 +24,7 @@ function getBaseUrl(request) {
  */
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
+  const hasPageParam = searchParams.has('page');
   const pageParam = parseInt(searchParams.get('page') || '1', 10);
   const page = Number.isFinite(pageParam) && pageParam > 0 ? pageParam : 1;
   const limit = PAGE_SIZE;
@@ -42,17 +43,48 @@ export async function GET(request) {
     // Fetch MCQs that have a slug and belong to allowed categories
     const filter = { slug: { $exists: true, $ne: null, $ne: '' }, categoryId: { $in: Array.from(allowedCategoryIds) } };
 
-    const [total, mcqs] = await Promise.all([
-      MCQ.countDocuments(filter),
-      MCQ.find(filter)
-        .sort({ updatedAt: -1, _id: -1 })
-        .skip(skip)
-        .limit(limit)
-        .select({ slug: 1, question: 1, updatedAt: 1, categoryId: 1 })
-        .lean()
-    ]);
+    const total = await MCQ.countDocuments(filter);
 
     const baseUrl = getBaseUrl(request);
+
+    // When no page is specified, serve a sitemap index that enumerates all pages
+    if (!hasPageParam) {
+      if (total === 0) {
+        const emptyIndexXml = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></sitemapindex>`;
+        return new Response(emptyIndexXml, {
+          headers: {
+            'content-type': 'application/xml; charset=utf-8',
+            'cache-control': 'public, s-maxage=3600, stale-while-revalidate=86400'
+          }
+        });
+      }
+
+      const totalPages = Math.max(1, Math.ceil(total / limit));
+      const lastmod = new Date().toISOString();
+      let sitemapEntries = '';
+      for (let pageIndex = 1; pageIndex <= totalPages; pageIndex += 1) {
+        const loc = `${baseUrl}/sitemap-questions.xml?page=${pageIndex}`;
+        sitemapEntries += `  <sitemap>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </sitemap>\n`;
+      }
+
+      const indexXml = `<?xml version="1.0" encoding="UTF-8"?>\n` +
+        `<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+        `${sitemapEntries}</sitemapindex>`;
+
+      return new Response(indexXml, {
+        headers: {
+          'content-type': 'application/xml; charset=utf-8',
+          'cache-control': 'public, s-maxage=3600, stale-while-revalidate=86400'
+        }
+      });
+    }
+
+    const mcqs = await MCQ.find(filter)
+      .sort({ updatedAt: -1, _id: -1 })
+      .skip(skip)
+      .limit(limit)
+      .select({ slug: 1, question: 1, updatedAt: 1, categoryId: 1 })
+      .lean();
 
     // Build XML entries
     let urlsXml = '';

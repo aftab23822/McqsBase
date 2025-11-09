@@ -1,3 +1,4 @@
 {
+  "/sitemap-questions.xml/route": "app/sitemap-questions.xml/route.js",
   "/404/admin/dashboard/page": "app/404/admin/dashboard/page.js"
 }
