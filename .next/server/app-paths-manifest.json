@@ -1,3 +1,6 @@
 {
-  "/sitemap-questions.xml/route": "app/sitemap-questions.xml/route.js"
+  "/page": "app/page.js",
+  "/404/admin/dashboard/page": "app/404/admin/dashboard/page.js",
+  "/api/admin/profile/route": "app/api/admin/profile/route.js",
+  "/api/admin/login/route": "app/api/admin/login/route.js"
 }
