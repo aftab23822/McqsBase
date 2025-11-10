@@ -1,4 +1,12 @@
 {
-  "/sitemap-questions.xml/route": "app/sitemap-questions.xml/route.js",
-  "/404/admin/dashboard/page": "app/404/admin/dashboard/page.js"
+  "/404/admin/dashboard/page": "app/404/admin/dashboard/page.js",
+  "/page": "app/page.js",
+  "/past-interviews/page": "app/past-interviews/page.js",
+  "/mcqs/page": "app/mcqs/page.js",
+  "/api/mcqs/general-knowledge/route": "app/api/mcqs/general-knowledge/route.js",
+  "/api/quiz/everyday-science/route": "app/api/quiz/everyday-science/route.js",
+  "/quiz/page": "app/quiz/page.js",
+  "/past-papers/page": "app/past-papers/page.js",
+  "/past-papers/[commission]/[department]/[role]/page": "app/past-papers/[commission]/[department]/[role]/page.js",
+  "/api/pastpapers/by-category/[commission]/[department]/[role]/route": "app/api/pastpapers/by-category/[commission]/[department]/[role]/route.js"
 }

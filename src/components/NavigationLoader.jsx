@@ -25,6 +25,19 @@ const NavigationLoader = () => {
         const href = target.getAttribute('href');
         // Only show loader for internal navigation
         if (href.startsWith('/') && !target.hasAttribute('download')) {
+          try {
+            const nextUrl = new URL(href, window.location.origin);
+            const currentPath = window.location.pathname + window.location.search + window.location.hash;
+            const nextPath = nextUrl.pathname + nextUrl.search + nextUrl.hash;
+
+            // Skip showing the loader when navigating to the same URL
+            if (nextPath === currentPath) {
+              return;
+            }
+          } catch {
+            // If URL parsing fails, fall back to showing the loader
+          }
+
           setIsNavigating(true);
         }
       }
