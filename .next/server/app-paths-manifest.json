@@ -4,5 +4,5 @@
   "/quiz/[subject]/[...subcategory]/page": "app/quiz/[subject]/[...subcategory]/page.js",
   "/mcqs/page": "app/mcqs/page.js",
   "/mcqs/[subject]/page": "app/mcqs/[subject]/page.js",
-  "/api/mcqs/[subject]/route": "app/api/mcqs/[subject]/route.js"
+  "/sitemap-questions.xml/route": "app/sitemap-questions.xml/route.js"
 }

@@ -23,7 +23,7 @@ function getBaseUrl(request) {
  * Supports pagination: /sitemap-questions.xml?page=1
  */
 export async function GET(request) {
-  const { searchParams } = new URL(request.url);
+  const searchParams = request.nextUrl?.searchParams ?? new URL(request.url).searchParams;
   const hasPageParam = searchParams.has('page');
   const pageParam = parseInt(searchParams.get('page') || '1', 10);
   const page = Number.isFinite(pageParam) && pageParam > 0 ? pageParam : 1;
