@@ -45,7 +45,8 @@ function NavigationCard({ child, index, activeSlug }) {
       : '';
 
   return (
-    <Link href={href} className={`${baseClasses} ${stateClasses}`}>
+    <Link href={href} className={`${baseClasses} ${stateClasses} relative overflow-hidden sm:overflow-visible`}>
+      <span className="absolute inset-0 bg-white/90 pointer-events-none sm:hidden" aria-hidden="true" />
       <div className="flex items-start justify-between gap-3">
         <div className="flex items-center gap-3 min-w-0">
           <span className={`inline-flex items-center justify-center w-6 h-6 text-xs font-bold rounded-full ${badgeClasses}`}>
@@ -72,7 +73,7 @@ function CollapsiblePillSection({ level, title, defaultVisible = 3, activeSlug }
   const visibleCount = expanded ? items.length : Math.min(items.length, effectiveVisible);
   const visibleItems = items.slice(0, visibleCount);
   const remaining = items.length - visibleItems.length;
-  const previewItems = !expanded ? items.slice(visibleCount, visibleCount + Math.min(3, remaining)) : [];
+  const previewItems = !expanded ? items.slice(visibleCount, visibleCount + Math.min(1, remaining)) : [];
   const levelHref = level.path ? `/mcqs/${level.path}` : null;
   const headerTitle = `Explore ${title} topics`;
 
@@ -120,7 +121,7 @@ function CollapsiblePillSection({ level, title, defaultVisible = 3, activeSlug }
         </div>
       ) : null}
 
-      {expanded && items.length > defaultVisible ? (
+      {expanded && items.length > effectiveVisible ? (
         <div className="flex justify-center mt-4">
           <button
             type="button"

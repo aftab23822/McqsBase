@@ -15,7 +15,8 @@ function humanizeSlug(slug) {
 
 function Card({ index, title, href, description, count }) {
   return (
-    <Link href={href} className="group block rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5 shadow-sm hover:shadow-md transition-shadow">
+    <Link href={href} className="group block rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden sm:overflow-visible">
+      <span className="absolute inset-0 bg-white/90 pointer-events-none sm:hidden" aria-hidden="true" />
       <div className="flex items-start justify-between gap-3">
         <div className="flex items-center gap-3 min-w-0">
           <span className="inline-flex items-center justify-center w-6 h-6 text-xs font-bold rounded-full bg-indigo-600 text-white flex-shrink-0">
@@ -64,9 +65,8 @@ export default function SubcategoriesGrid({ subject, tree, initialLimit = 3, bas
   // - Desktop (3 cols): show 3 (first row)
   // - Tablet (2 cols): show 2 (first row)
   // - Mobile (1 col): show 3 items
-  const limit = expanded
-    ? tree.length
-    : (numCols === 3 ? 3 : numCols === 2 ? 2 : Math.max(1, Number(initialLimit) || 3));
+  const collapsedLimit = numCols === 3 ? 3 : numCols === 2 ? 2 : Math.max(1, Number(initialLimit) || 3);
+  const limit = expanded ? tree.length : collapsedLimit;
 
   // Responsive preview items:
   // - Desktop (3 cols): preview 3 (next row)
@@ -150,7 +150,7 @@ export default function SubcategoriesGrid({ subject, tree, initialLimit = 3, bas
           </div>
         </div>
       ) : null}
-      {expanded && tree.length > limit ? (
+      {expanded && tree.length > collapsedLimit ? (
         <div className="flex justify-center mt-6">
           <button
             type="button"
