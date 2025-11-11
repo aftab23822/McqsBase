@@ -15,24 +15,24 @@ function humanizeSlug(slug) {
 
 function Card({ index, title, href, description, count, disableInteractions = false }) {
   const cardContent = (
-    <div className="group block rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5 shadow-sm hover:shadow-md transition-shadow">
+    <div className="group block rounded-xl border border-gray-200 bg-white p-5 shadow-sm hover:shadow-md transition-shadow">
       <div className="flex items-start justify-between gap-3">
         <div className="flex items-center gap-3 min-w-0">
           <span className="inline-flex items-center justify-center w-6 h-6 text-xs font-bold rounded-full bg-indigo-600 text-white flex-shrink-0">
             {index}
           </span>
-          <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 group-hover:text-indigo-600 truncate">
+          <h3 className="text-base font-semibold text-gray-900 group-hover:text-indigo-600 truncate">
             {title}
           </h3>
         </div>
         {typeof count === 'number' && count > 0 ? (
-          <span className="inline-flex items-center rounded-full bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 px-2.5 py-0.5 text-xs font-medium border border-indigo-100 dark:border-indigo-900">
+          <span className="inline-flex items-center rounded-full bg-indigo-50 text-indigo-700 px-2.5 py-0.5 text-xs font-medium border border-indigo-100">
             {count} {count === 1 ? 'Topic' : 'Topics'}
           </span>
         ) : null}
       </div>
       {description ? (
-        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{description}</p>
+        <p className="mt-2 text-sm text-gray-600">{description}</p>
       ) : null}
     </div>
   );
