@@ -115,7 +115,9 @@ const CATEGORIES = [
 
 // JavaScript version of normalizeCategoryName
 export function normalizeCategoryName(raw) {
-  let name = raw.toLowerCase().replace(/_/g, '-');
+  let name = raw.toLowerCase().replace(/_/g, '-').trim();
+  // Normalize whitespace to hyphens early to improve mapping hit rate
+  name = name.replace(/\s+/g, '-');
   if (name.endsWith('-mcqs')) name = name.slice(0, -5);
   if (name.endsWith('-mcq')) name = name.slice(0, -4);
   
@@ -130,7 +132,19 @@ export function normalizeCategoryName(raw) {
   for (const key of sortedKeys) {
     if (name.startsWith(key)) return CATEGORY_MAPPING[key];
   }
-  return name;
+  // As a fallback, sanitize for URL safety:
+  // - remove non word/space/hyphen chars
+  // - collapse whitespace to single hyphen
+  // - collapse multiple hyphens
+  // - trim leading/trailing hyphens
+  const sanitized = name
+    .normalize('NFKD')
+    .replace(/[^\w\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .replace(/_/g, '-');
+  return sanitized;
 }
 
 // Get all available categories for the admin panel (sorted alphabetically)
