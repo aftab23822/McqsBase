@@ -45,8 +45,7 @@ function NavigationCard({ child, index, activeSlug }) {
       : '';
 
   return (
-    <Link href={href} className={`${baseClasses} ${stateClasses} relative overflow-hidden sm:overflow-visible`}>
-      <span className="absolute inset-0 bg-white/90 pointer-events-none sm:hidden" aria-hidden="true" />
+    <Link href={href} className={`${baseClasses} ${stateClasses}`}>
       <div className="flex items-start justify-between gap-3">
         <div className="flex items-center gap-3 min-w-0">
           <span className={`inline-flex items-center justify-center w-6 h-6 text-xs font-bold rounded-full ${badgeClasses}`}>

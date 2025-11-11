@@ -13,10 +13,9 @@ function humanizeSlug(slug) {
     .join(' ');
 }
 
-function Card({ index, title, href, description, count }) {
-  return (
-    <Link href={href} className="group block rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden sm:overflow-visible">
-      <span className="absolute inset-0 bg-white/90 pointer-events-none sm:hidden" aria-hidden="true" />
+function Card({ index, title, href, description, count, disableInteractions = false }) {
+  const cardContent = (
+    <div className="group block rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5 shadow-sm hover:shadow-md transition-shadow">
       <div className="flex items-start justify-between gap-3">
         <div className="flex items-center gap-3 min-w-0">
           <span className="inline-flex items-center justify-center w-6 h-6 text-xs font-bold rounded-full bg-indigo-600 text-white flex-shrink-0">
@@ -35,6 +34,20 @@ function Card({ index, title, href, description, count }) {
       {description ? (
         <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{description}</p>
       ) : null}
+    </div>
+  );
+
+  if (disableInteractions) {
+    return (
+      <div className="opacity-60 blur-[0.3px] pointer-events-none select-none">
+        {cardContent}
+      </div>
+    );
+  }
+
+  return (
+    <Link href={href}>
+      {cardContent}
     </Link>
   );
 }
@@ -115,7 +128,7 @@ export default function SubcategoriesGrid({ subject, tree, initialLimit = 3, bas
       </div>
       {!expanded && previews.length > 0 ? (
         <div className="relative mt-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pointer-events-none select-none">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {previews.map((node, idx) => {
               const slugPath = node.fullSlug || node.slug;
               const fullPath = slugPath ? `${subject}/${slugPath}` : subject;
@@ -123,18 +136,15 @@ export default function SubcategoriesGrid({ subject, tree, initialLimit = 3, bas
               const childrenCount = Array.isArray(node.children) ? node.children.length : 0;
               const title = humanizeSlug(node.name || node.slug);
               return (
-                <div
+                <Card
                   key={node._id}
-                  className="opacity-60 blur-[0.3px]"
-                >
-                  <Card
-                    index={limit + idx + 1}
-                    title={title}
-                    href={href}
-                    description={childrenCount > 0 ? 'Includes nested sub-topics' : ''}
-                    count={childrenCount}
-                  />
-                </div>
+                  index={limit + idx + 1}
+                  title={title}
+                  href={href}
+                  description={childrenCount > 0 ? 'Includes nested sub-topics' : ''}
+                  count={childrenCount}
+                  disableInteractions
+                />
               );
             })}
           </div>
