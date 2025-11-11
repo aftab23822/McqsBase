@@ -1,10 +1,8 @@
 {
-  "/404/admin/dashboard/page": "app/404/admin/dashboard/page.js",
   "/mcqs/[subject]/[...subcategory]/page": "app/mcqs/[subject]/[...subcategory]/page.js",
-  "/mcqs/[subject]/page": "app/mcqs/[subject]/page.js",
-  "/page": "app/page.js",
-  "/mcqs/page": "app/mcqs/page.js",
-  "/api/mcqs/[subject]/[...subcategory]/route": "app/api/mcqs/[subject]/[...subcategory]/route.js",
-  "/api/mcqs/general-knowledge/route": "app/api/mcqs/general-knowledge/route.js",
-  "/api/mcqs/[subject]/route": "app/api/mcqs/[subject]/route.js"
+  "/404/admin/dashboard/page": "app/404/admin/dashboard/page.js",
+  "/quiz/page": "app/quiz/page.js",
+  "/quiz/[subject]/page": "app/quiz/[subject]/page.js",
+  "/quiz/[subject]/[...subcategory]/page": "app/quiz/[subject]/[...subcategory]/page.js",
+  "/api/quiz/[subject]/[...subcategory]/route": "app/api/quiz/[subject]/[...subcategory]/route.js"
 }

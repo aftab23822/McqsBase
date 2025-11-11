@@ -2,7 +2,40 @@ import { NextResponse } from 'next/server';
 import connectToDatabase from '../../../../lib/mongodb.js';
 import MCQ from '../../../../lib/models/MCQ.js';
 import Category from '../../../../lib/models/Category.js';
+import Subcategory from '../../../../lib/models/Subcategory.js';
 import { sanitizeSubject, sanitizeInt, escapeRegex } from '../../../../lib/utils/security.js';
+import { normalizeCategoryName } from '../../../../src/utils/categoryConfig';
+
+function buildTree(subcategories) {
+  const idToNode = new Map();
+  const roots = [];
+
+  for (const sc of subcategories) {
+    idToNode.set(sc._id.toString(), { ...sc, children: [] });
+  }
+  for (const sc of subcategories) {
+    const node = idToNode.get(sc._id.toString());
+    if (sc.parentSubcategoryId) {
+      const parent = idToNode.get(sc.parentSubcategoryId.toString());
+      if (parent) {
+        parent.children.push(node);
+      } else {
+        roots.push(node);
+      }
+    } else {
+      roots.push(node);
+    }
+  }
+
+  const assignPaths = (node, parentPath = '', depth = 0) => {
+    node.fullSlug = parentPath ? `${parentPath}/${node.slug}` : node.slug;
+    node.depth = depth;
+    node.children.forEach(child => assignPaths(child, node.fullSlug, depth + 1));
+  };
+
+  roots.forEach(root => assignPaths(root, '', 0));
+  return roots;
+}
 
 // Get Quiz by subject - returns MCQs from the database (same as MCQs but for quiz display)
 export async function GET(request, { params }) {
@@ -41,6 +74,7 @@ export async function GET(request, { params }) {
     }
 
     const filter = { categoryId: category._id };
+    const includeHierarchy = (searchParams.get('include') || '').toLowerCase().includes('hierarchy');
     
     // Parallelize database queries for better performance
     const [total, mcqs] = await Promise.all([
@@ -52,11 +86,51 @@ export async function GET(request, { params }) {
         .lean() // Use lean() for faster queries (returns plain JS objects)
     ]);
 
+    let hierarchy = undefined;
+    if (includeHierarchy) {
+      const allSubcategories = await Subcategory.find({ categoryId: category._id })
+        .select({ name: 1, categoryId: 1, parentSubcategoryId: 1, type: 1 })
+        .lean();
+
+      const subcategories = allSubcategories.map(sc => ({
+        ...sc,
+        slug: normalizeCategoryName(sc.name || '')
+      }));
+      const tree = buildTree(subcategories);
+      const slugMap = new Map();
+      const stack = [...tree];
+      while (stack.length > 0) {
+        const node = stack.pop();
+        if (node) {
+          slugMap.set(node._id.toString(), node.fullSlug);
+          if (Array.isArray(node.children) && node.children.length > 0) {
+            node.children.forEach(child => stack.push(child));
+          }
+        }
+      }
+      hierarchy = {
+        category: {
+          _id: category._id.toString(),
+          name: category.name,
+          type: category.type
+        },
+        subcategories: subcategories.map(sc => ({
+          ...sc,
+          _id: sc._id.toString(),
+          categoryId: sc.categoryId?.toString() || sc.categoryId,
+          parentSubcategoryId: sc.parentSubcategoryId?.toString() || sc.parentSubcategoryId,
+          fullSlug: slugMap.get(sc._id.toString()) || sc.slug
+        })),
+        tree
+      };
+    }
+
     return NextResponse.json({
       results: mcqs,
       total,
       page,
-      totalPages: Math.ceil(total / limit)
+      totalPages: Math.ceil(total / limit),
+      ...(hierarchy ? { hierarchy } : {})
     }, {
       headers: {
         'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300'

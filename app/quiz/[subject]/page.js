@@ -1,8 +1,10 @@
 import { notFound } from 'next/navigation';
+import { headers } from 'next/headers';
 import { generateSEOMetadata } from '../../../src/components/SEO';
 import Navbar from '../../../src/components/Navbar';
 import Footer from '../../../src/components/Footer';
 import { ReCaptchaProvider } from '../../../src/components/recaptcha';
+import SubcategoriesSection from '../../../src/components/SubcategoriesSection';
 
 // Dynamic imports for all Quiz category components
 const QuizComponents = {
@@ -125,31 +127,52 @@ export async function generateMetadata({ params }) {
   });
 }
 
-export default async function QuizCategoryPage({ params }) {
+export default async function QuizCategoryPage({ params, searchParams }) {
   const { subject } = params;
+  const pageParam = parseInt(searchParams?.page || '1', 10);
+  const page = Number.isFinite(pageParam) && pageParam > 0 ? pageParam : 1;
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || 'your-recaptcha-site-key';
+  let initialTree = undefined;
+  const hdrs = headers();
+  const host = hdrs.get('host');
+  const proto = hdrs.get('x-forwarded-proto') || (host && host.startsWith('localhost') ? 'http' : 'https');
+  const absoluteBase = host ? `${proto}://${host}` : '';
 
-  // Check if the subject has a corresponding component
   const componentImporter = QuizComponents[subject];
   if (!componentImporter) {
     notFound();
   }
 
+  let QuizComponent;
   try {
-    // Dynamically import the component
-    const { default: QuizComponent } = await componentImporter();
-
-    return (
-      <ReCaptchaProvider siteKey={recaptchaSiteKey}>
-        <Navbar />
-        <QuizComponent />
-        <Footer />
-      </ReCaptchaProvider>
-    );
+    ({ default: QuizComponent } = await componentImporter());
   } catch (error) {
     console.error(`Error loading Quiz component for ${subject}:`, error);
     notFound();
   }
+
+  if (page === 1) {
+    try {
+      const res = await fetch(`${absoluteBase}/api/quiz/${subject}?page=${page}&limit=10&include=hierarchy`, {
+        cache: 'no-store'
+      });
+      if (res.ok) {
+        const data = await res.json();
+        initialTree = data?.hierarchy?.tree || undefined;
+      }
+    } catch (e) {
+      // ignore
+    }
+  }
+
+  return (
+    <ReCaptchaProvider siteKey={recaptchaSiteKey}>
+      <Navbar />
+      {page === 1 ? <SubcategoriesSection subject={subject} initialTree={initialTree} basePath="quiz" /> : null}
+      <QuizComponent />
+      <Footer />
+    </ReCaptchaProvider>
+  );
 }
 
 // Generate static params for known subjects (optional - for static generation)
@@ -158,3 +181,5 @@ export async function generateStaticParams() {
     subject,
   }));
 }
+
+export const dynamic = 'force-dynamic';

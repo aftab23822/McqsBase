@@ -9,10 +9,27 @@ import ResultModal from '../ResultModal';
 import LeavePageModal from '../LeavePageModal';
 import Breadcrumb from '../Breadcrumb';
 
-const BaseQuiz = ({ quizData, title, currentPage, setCurrentPage, totalPages, quizPerPage, ...rest }) => {
+const normalizeAnswer = (value = '') =>
+  value
+    .replace(/^[A-Z][.、)] ?/i, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
+
+const BaseQuiz = ({ quizData, title, currentPage, setCurrentPage, totalPages, quizPerPage, subjectSlug }) => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  let extractedSlug = '';
+  if (pathname && pathname.startsWith('/quiz/')) {
+    extractedSlug = pathname.replace('/quiz/', '').split('?')[0];
+  }
+  const finalSubjectSlug = subjectSlug || extractedSlug || '';
+
+  if (!finalSubjectSlug && process.env.NODE_ENV === 'development') {
+    console.warn('BaseQuiz: subjectSlug is empty!', { subjectSlug, pathname, extractedSlug });
+  }
+
   const [userAnswers, setUserAnswers] = useState({});
   const [showModal, setShowModal] = useState(false);
   const [pageScore, setPageScore] = useState(0);
@@ -124,7 +141,14 @@ const BaseQuiz = ({ quizData, title, currentPage, setCurrentPage, totalPages, qu
     if (!timerStarted) startTimer();
 
     setUserAnswers(prev => {
-      const updated = { ...prev, [question]: { selected, correct } };
+      const updated = {
+        ...prev,
+        [question]: {
+          selected,
+          correct,
+          isCorrect: normalizeAnswer(selected) === normalizeAnswer(correct)
+        }
+      };
       if (Object.keys(updated).length === quizData.length) {
         clearInterval(timerRef.current);
         handleFinishPage(updated, 'completed');
@@ -137,7 +161,13 @@ const BaseQuiz = ({ quizData, title, currentPage, setCurrentPage, totalPages, qu
   const handleFinishPage = (answers = userAnswers, reason = 'manual') => {
     let score = 0;
     Object.values(answers).forEach(ans => {
-      if (ans.selected === ans.correct) score++;
+      if (ans?.isCorrect === true) {
+        score += 1;
+      } else if (ans?.selected && ans?.correct) {
+        if (normalizeAnswer(ans.selected) === normalizeAnswer(ans.correct)) {
+          score += 1;
+        }
+      }
     });
     setPageScore(score);
     setEndReason(reason);
@@ -230,11 +260,45 @@ const BaseQuiz = ({ quizData, title, currentPage, setCurrentPage, totalPages, qu
       .trim() || 'Subject';
   };
 
+  const humanizePart = (segment = '') =>
+    segment
+      .split('-')
+      .filter(Boolean)
+      .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+      .join(' ');
+
   const breadcrumbItems = [
     { label: 'Home', href: '/' },
     { label: 'Quiz', href: '/quiz' },
-    { label: getSubjectName(), href: `#` }
   ];
+
+  if (finalSubjectSlug) {
+    const slugParts = finalSubjectSlug.split('/').filter(Boolean);
+    if (slugParts.length >= 1) {
+      const subjectPart = slugParts[0];
+      const subjectHref = `/quiz/${subjectPart}`;
+      breadcrumbItems.push({
+        label: humanizePart(subjectPart),
+        href: subjectHref,
+      });
+
+      let accumulated = subjectPart;
+      for (let i = 1; i < slugParts.length; i += 1) {
+        accumulated += `/${slugParts[i]}`;
+        breadcrumbItems.push({
+          label: humanizePart(slugParts[i]),
+          href: `/quiz/${accumulated}`,
+        });
+      }
+      const lastIndex = breadcrumbItems.length - 1;
+      breadcrumbItems[lastIndex] = {
+        ...breadcrumbItems[lastIndex],
+        href: undefined,
+      };
+    }
+  } else {
+    breadcrumbItems.push({ label: getSubjectName() });
+  }
 
   return (
     <section className="full-screen px-4 py-8 bg-gray-100">

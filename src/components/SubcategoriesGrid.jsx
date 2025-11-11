@@ -55,7 +55,7 @@ function useNumCols() {
   return cols;
 }
 
-export default function SubcategoriesGrid({ subject, tree, initialLimit = 3 }) {
+export default function SubcategoriesGrid({ subject, tree, initialLimit = 3, basePath = 'mcqs' }) {
   if (!Array.isArray(tree) || tree.length === 0) return null;
   const [expanded, setExpanded] = useState(false);
   const numCols = useNumCols();
@@ -97,7 +97,7 @@ export default function SubcategoriesGrid({ subject, tree, initialLimit = 3 }) {
         {items.map((node, idx) => {
           const slugPath = node.fullSlug || node.slug;
           const fullPath = slugPath ? `${subject}/${slugPath}` : subject;
-          const href = `/mcqs/${fullPath}`;
+          const href = `/${basePath}/${fullPath}`;
           const childrenCount = Array.isArray(node.children) ? node.children.length : 0;
           const title = humanizeSlug(node.name || node.slug);
           const description = childrenCount > 0 ? 'Includes nested sub-topics' : '';
@@ -119,7 +119,7 @@ export default function SubcategoriesGrid({ subject, tree, initialLimit = 3 }) {
             {previews.map((node, idx) => {
               const slugPath = node.fullSlug || node.slug;
               const fullPath = slugPath ? `${subject}/${slugPath}` : subject;
-              const href = `/mcqs/${fullPath}`;
+              const href = `/${basePath}/${fullPath}`;
               const childrenCount = Array.isArray(node.children) ? node.children.length : 0;
               const title = humanizeSlug(node.name || node.slug);
               return (
