@@ -22,6 +22,7 @@ const AdminLogin = () => {
   const [showContactMessages, setShowContactMessages] = useState(false);
   const [showMockTestsManager, setShowMockTestsManager] = useState(false);
   const [showPagesManagement, setShowPagesManagement] = useState(false);
+  const [showCategoriesSync, setShowCategoriesSync] = useState(false);
   const [validationErrors, setValidationErrors] = useState({});
   
   // Login state
@@ -323,6 +324,8 @@ const AdminLogin = () => {
   const [newRoleData, setNewRoleData] = useState({ label: '', link: '' });
   const [newMcqCategory, setNewMcqCategory] = useState({ value: '', label: '' });
   const [loadingStructure, setLoadingStructure] = useState(false);
+  const [categoriesSeedFile, setCategoriesSeedFile] = useState(null);
+  const [isSeedingCategories, setIsSeedingCategories] = useState(false);
 
   // Fetch category structure when type changes
   useEffect(() => {
@@ -715,8 +718,9 @@ const AdminLogin = () => {
               setShowContactMessages(false);
               setShowMockTestsManager(false);
               setShowPagesManagement(false);
+              setShowCategoriesSync(false);
             }}
-            className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${!showSubmissions && !showContactMessages && !showMockTestsManager && !showPagesManagement ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
+            className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${!showSubmissions && !showContactMessages && !showMockTestsManager && !showPagesManagement && !showCategoriesSync ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
             <Upload className="w-5 h-5" />
             Upload Data
@@ -727,6 +731,7 @@ const AdminLogin = () => {
               setShowContactMessages(false);
               setShowMockTestsManager(false);
               setShowPagesManagement(true);
+              setShowCategoriesSync(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showPagesManagement ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
@@ -735,10 +740,24 @@ const AdminLogin = () => {
           </button>
           <button
             onClick={() => {
+              setShowSubmissions(false);
+              setShowContactMessages(false);
+              setShowMockTestsManager(false);
+              setShowPagesManagement(false);
+              setShowCategoriesSync(true);
+            }}
+            className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showCategoriesSync ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
+          >
+            <Upload className="w-5 h-5" />
+            Sync Categories
+          </button>
+          <button
+            onClick={() => {
               setShowSubmissions(true);
               setShowContactMessages(false);
               setShowMockTestsManager(false);
               setShowPagesManagement(false);
+              setShowCategoriesSync(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showSubmissions ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
@@ -751,6 +770,7 @@ const AdminLogin = () => {
               setShowContactMessages(true);
               setShowMockTestsManager(false);
               setShowPagesManagement(false);
+              setShowCategoriesSync(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showContactMessages ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
@@ -763,6 +783,7 @@ const AdminLogin = () => {
               setShowContactMessages(false);
               setShowMockTestsManager(true);
               setShowPagesManagement(false);
+              setShowCategoriesSync(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showMockTestsManager ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
@@ -778,7 +799,7 @@ const AdminLogin = () => {
         </div>
 
         {/* Main Content */}
-        {!showSubmissions && !showContactMessages && !showMockTestsManager && !showPagesManagement ? (
+        {!showSubmissions && !showContactMessages && !showMockTestsManager && !showPagesManagement && !showCategoriesSync ? (
           <div className="bg-white rounded-2xl shadow-xl p-8">
             {error && (
               <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
@@ -1247,6 +1268,78 @@ const AdminLogin = () => {
               </form>
             </div>
           </div>
+        ) : showCategoriesSync ? (
+          <div className="bg-white rounded-2xl shadow-xl p-8">
+            <div className="border border-gray-200 rounded-lg p-4">
+              <h4 className="text-lg font-semibold mb-2">Sync MCQ Categories Hierarchy</h4>
+              <p className="text-sm text-gray-600 mb-4">
+                Upload your categories_data.json to seed or update sub-categories for each MCQ category. Existing categories remain intact; duplicates are skipped.
+              </p>
+              <div className="grid gap-3 md:grid-cols-[1fr_auto] items-end">
+                <div>
+                  <label htmlFor="categories-seed-file" className="block text-sm font-medium text-gray-700 mb-2">
+                    categories_data.json
+                  </label>
+                  <input
+                    type="file"
+                    id="categories-seed-file"
+                    accept=".json"
+                    onChange={(e) => setCategoriesSeedFile(e.target.files?.[0] || null)}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent bg-white"
+                  />
+                </div>
+                <button
+                  type="button"
+                  disabled={isSeedingCategories || !categoriesSeedFile}
+                  onClick={async () => {
+                    if (!categoriesSeedFile) return;
+                    setIsSeedingCategories(true);
+                    setError('');
+                    setSuccess('');
+                    try {
+                      const text = await categoriesSeedFile.text();
+                      const parsed = JSON.parse(text);
+                      const categoriesPayload = Array.isArray(parsed?.categories) ? parsed.categories : [];
+                      if (!Array.isArray(categoriesPayload) || categoriesPayload.length === 0) {
+                        setError('Invalid categories_data.json: "categories" array missing or empty.');
+                        setIsSeedingCategories(false);
+                        return;
+                      }
+                      const token = localStorage.getItem('adminToken');
+                      const resp = await apiFetch('/api/categories/hierarchy/seed', {
+                        method: 'POST',
+                        headers: {
+                          'Content-Type': 'application/json',
+                          'Authorization': `Bearer ${token}`,
+                        },
+                        body: JSON.stringify({ categories: categoriesPayload })
+                      });
+                      if (resp.ok) {
+                        const data = await resp.json();
+                        setSuccess(`Synced categories. Created categories: ${data.createdCategories}, created subcategories: ${data.createdSubcategories}, skipped subcategories: ${data.skippedSubcategories}.`);
+                        setCategoriesSeedFile(null);
+                        const input = document.getElementById('categories-seed-file');
+                        if (input) input.value = '';
+                      } else {
+                        const err = await resp.json().catch(() => ({}));
+                        setError(err.error || 'Failed to sync categories');
+                      }
+                    } catch (e) {
+                      setError('Invalid JSON file or network error.');
+                    } finally {
+                      setIsSeedingCategories(false);
+                    }
+                  }}
+                  className={`px-6 py-3 rounded-lg font-semibold text-white transition-colors duration-200 ${isSeedingCategories || !categoriesSeedFile ? 'bg-gray-400 cursor-not-allowed' : 'bg-indigo-600 hover:bg-indigo-700'}`}
+                >
+                  {isSeedingCategories ? 'Syncing…' : 'Sync Categories'}
+                </button>
+              </div>
+              <p className="text-xs text-gray-500 mt-2">
+                Note: This action is idempotent. Running it multiple times will only add missing items.
+              </p>
+            </div>
+          </div>
         ) : showMockTestsManager ? (
           <div className="bg-white rounded-2xl shadow-xl p-8">
             <AdminMockTestsManager />
@@ -1275,6 +1368,7 @@ const AdminLogin = () => {
                 <option value="mock-tests">Mock Tests</option>
               </select>
             </div>
+            {/* Sync panel moved to its own section (Sync Categories) */}
             <CategoryTreeManager type={
               uploadData.type === 'simple-mcqs' ? 'mcqs' : uploadData.type
             } />

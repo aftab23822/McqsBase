@@ -1,12 +1,10 @@
 {
   "/404/admin/dashboard/page": "app/404/admin/dashboard/page.js",
+  "/mcqs/[subject]/[...subcategory]/page": "app/mcqs/[subject]/[...subcategory]/page.js",
+  "/mcqs/[subject]/page": "app/mcqs/[subject]/page.js",
   "/page": "app/page.js",
-  "/past-interviews/page": "app/past-interviews/page.js",
   "/mcqs/page": "app/mcqs/page.js",
+  "/api/mcqs/[subject]/[...subcategory]/route": "app/api/mcqs/[subject]/[...subcategory]/route.js",
   "/api/mcqs/general-knowledge/route": "app/api/mcqs/general-knowledge/route.js",
-  "/api/quiz/everyday-science/route": "app/api/quiz/everyday-science/route.js",
-  "/quiz/page": "app/quiz/page.js",
-  "/past-papers/page": "app/past-papers/page.js",
-  "/past-papers/[commission]/[department]/[role]/page": "app/past-papers/[commission]/[department]/[role]/page.js",
-  "/api/pastpapers/by-category/[commission]/[department]/[role]/route": "app/api/pastpapers/by-category/[commission]/[department]/[role]/route.js"
+  "/api/mcqs/[subject]/route": "app/api/mcqs/[subject]/route.js"
 }

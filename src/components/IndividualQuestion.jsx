@@ -6,8 +6,16 @@ import { ChevronLeft, ChevronRight, ArrowLeft } from 'lucide-react';
 import { generateQuestionSlug } from '../../lib/utils/slugGenerator.js';
 import McqCard from './McqCard';
 
-const IndividualQuestion = ({ question, subject, categoryName, nextQuestionId, prevQuestionId }) => {
+const IndividualQuestion = ({
+  question,
+  subject,
+  categoryName,
+  nextQuestionId,
+  prevQuestionId,
+  subjectPath
+}) => {
   const questionToDisplay = question;
+  const subjectLink = subjectPath && subjectPath.length > 0 ? subjectPath : subject;
 
   if (!questionToDisplay) {
     return (
@@ -15,7 +23,7 @@ const IndividualQuestion = ({ question, subject, categoryName, nextQuestionId, p
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-800 mb-4">Question Not Found</h1>
           <p className="text-gray-600 mb-6">The requested question could not be found.</p>
-          <Link href={`/mcqs/${subject}`} className="text-blue-600 hover:underline">
+          <Link href={`/mcqs/${subjectLink}`} className="text-blue-600 hover:underline">
             ← Back to {categoryName} MCQs
           </Link>
         </div>
@@ -38,7 +46,7 @@ const IndividualQuestion = ({ question, subject, categoryName, nextQuestionId, p
             <span>/</span>
             <Link href="/mcqs" className="hover:text-blue-600">MCQs</Link>
             <span>/</span>
-            <Link href={`/mcqs/${subject}`} className="hover:text-blue-600">{categoryName}</Link>
+            <Link href={`/mcqs/${subjectLink}`} className="hover:text-blue-600">{categoryName}</Link>
             <span>/</span>
             <span className="text-gray-800">Question</span>
           </div>
@@ -46,7 +54,7 @@ const IndividualQuestion = ({ question, subject, categoryName, nextQuestionId, p
 
         {/* Back to Category Link */}
         <Link
-          href={`/mcqs/${subject}`}
+          href={`/mcqs/${subjectLink}`}
           className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-6 transition-colors"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
@@ -71,7 +79,7 @@ const IndividualQuestion = ({ question, subject, categoryName, nextQuestionId, p
           <div className="flex-1">
             {prevQuestionId ? (
               <Link
-                href={`/mcqs/${subject}/question/${prevSlug}`}
+                href={`/mcqs/${subjectLink}/question/${prevSlug}`}
                 className="inline-flex items-center px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors"
               >
                 <ChevronLeft className="w-5 h-5 mr-2" />
@@ -87,7 +95,7 @@ const IndividualQuestion = ({ question, subject, categoryName, nextQuestionId, p
 
           <div className="flex-1 text-center">
             <Link
-              href={`/mcqs/${subject}`}
+              href={`/mcqs/${subjectLink}`}
               className="text-blue-600 hover:text-blue-800 font-medium"
             >
               View All {categoryName} MCQs
@@ -97,7 +105,7 @@ const IndividualQuestion = ({ question, subject, categoryName, nextQuestionId, p
           <div className="flex-1 text-right">
             {nextQuestionId ? (
               <Link
-                href={`/mcqs/${subject}/question/${nextSlug}`}
+                href={`/mcqs/${subjectLink}/question/${nextSlug}`}
                 className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors ml-auto"
               >
                 Next Question
@@ -119,12 +127,12 @@ const IndividualQuestion = ({ question, subject, categoryName, nextQuestionId, p
             <input
               type="text"
               readOnly
-              value={`${typeof window !== 'undefined' ? window.location.origin : ''}/mcqs/${subject}/question/${currentSlug}`}
+              value={`${typeof window !== 'undefined' ? window.location.origin : ''}/mcqs/${subjectLink}/question/${currentSlug}`}
               className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <button
               onClick={() => {
-                const url = `${typeof window !== 'undefined' ? window.location.origin : ''}/mcqs/${subject}/question/${currentSlug}`;
+                const url = `${typeof window !== 'undefined' ? window.location.origin : ''}/mcqs/${subjectLink}/question/${currentSlug}`;
                 navigator.clipboard.writeText(url);
                 alert('Link copied to clipboard!');
               }}

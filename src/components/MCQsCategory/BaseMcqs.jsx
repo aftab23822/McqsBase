@@ -81,11 +81,46 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
     return title.replace(/\s*MCQs\s*$/i, '').trim() || 'Subject';
   };
 
+  const humanizePart = (segment = '') =>
+    segment
+      .split('-')
+      .filter(Boolean)
+      .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+      .join(' ');
+
   const breadcrumbItems = [
     { label: 'Home', href: '/' },
     { label: 'MCQs', href: '/mcqs' },
-    { label: getSubjectName(), href: `#` }
   ];
+
+  if (finalSubjectSlug) {
+    const slugParts = finalSubjectSlug.split('/').filter(Boolean);
+    if (slugParts.length >= 1) {
+      const subjectPart = slugParts[0];
+      const subjectHref = `/mcqs/${subjectPart}`;
+      breadcrumbItems.push({
+        label: humanizePart(subjectPart),
+        href: subjectHref,
+      });
+
+      let accumulated = subjectPart;
+      for (let i = 1; i < slugParts.length; i += 1) {
+        accumulated += `/${slugParts[i]}`;
+        breadcrumbItems.push({
+          label: humanizePart(slugParts[i]),
+          href: `/mcqs/${accumulated}`,
+        });
+      }
+      // Ensure last breadcrumb is marked as current (no link)
+      const lastIndex = breadcrumbItems.length - 1;
+      breadcrumbItems[lastIndex] = {
+        ...breadcrumbItems[lastIndex],
+        href: undefined,
+      };
+    }
+  } else {
+    breadcrumbItems.push({ label: getSubjectName() });
+  }
 
   return (
     <section className="full-screen px-4 py-8 bg-gray-100">

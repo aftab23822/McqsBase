@@ -1,8 +1,10 @@
 import { notFound } from 'next/navigation';
+import { headers } from 'next/headers';
 import { generateSEOMetadata } from '../../../src/components/SEO';
 import Navbar from '../../../src/components/Navbar';
 import Footer from '../../../src/components/Footer';
 import { ReCaptchaProvider } from '../../../src/components/recaptcha';
+import SubcategoriesSection from '../../../src/components/SubcategoriesSection';
 
 // Dynamic imports for all MCQ category components
 const MCQComponents = {
@@ -182,9 +184,16 @@ export async function generateMetadata({ params }) {
   });
 }
 
-export default async function MCQCategoryPage({ params }) {
+export default async function MCQCategoryPage({ params, searchParams }) {
   const { subject } = params;
+  const pageParam = parseInt(searchParams?.page || '1', 10);
+  const page = Number.isFinite(pageParam) && pageParam > 0 ? pageParam : 1;
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || 'your-recaptcha-site-key';
+  let initialTree = undefined;
+  const hdrs = headers();
+  const host = hdrs.get('host');
+  const proto = hdrs.get('x-forwarded-proto') || (host && host.startsWith('localhost') ? 'http' : 'https');
+  const absoluteBase = host ? `${proto}://${host}` : '';
   
   // Check if the subject has a corresponding component
   const componentImporter = MCQComponents[subject];
@@ -192,21 +201,38 @@ export default async function MCQCategoryPage({ params }) {
     notFound();
   }
 
+  // Load category component; if this fails, 404
+  let MCQComponent;
   try {
-    // Dynamically import the component
-    const { default: MCQComponent } = await componentImporter();
-    
-    return (
-      <ReCaptchaProvider siteKey={recaptchaSiteKey}>
-        <Navbar />
-        <MCQComponent />
-        <Footer />
-      </ReCaptchaProvider>
-    );
+    ({ default: MCQComponent } = await componentImporter());
   } catch (error) {
     console.error(`Error loading MCQ component for ${subject}:`, error);
     notFound();
   }
+
+  // On page 1, fetch hierarchy along with MCQs in one API call and pass tree down
+  if (page === 1) {
+    try {
+      const res = await fetch(`${absoluteBase}/api/mcqs/${subject}?page=${page}&limit=10&include=hierarchy`, {
+        cache: 'no-store'
+      });
+      if (res.ok) {
+        const data = await res.json();
+        initialTree = data?.hierarchy?.tree || undefined;
+      }
+    } catch (e) {
+      // Ignore and render without initialTree
+    }
+  }
+
+  return (
+    <ReCaptchaProvider siteKey={recaptchaSiteKey}>
+      <Navbar />
+      {page === 1 ? <SubcategoriesSection subject={subject} initialTree={initialTree} /> : null}
+      <MCQComponent />
+      <Footer />
+    </ReCaptchaProvider>
+  );
 }
 
 // Generate static params for known subjects (optional - for static generation)
@@ -215,3 +241,6 @@ export async function generateStaticParams() {
     subject,
   }));
 }
+
+// Ensure this page is rendered at request time so relative/absolute fetch works
+export const dynamic = 'force-dynamic';

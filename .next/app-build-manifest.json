@@ -1,9 +1,10 @@
 {
   "pages": {
-    "/page": [
+    "/mcqs/[subject]/[...subcategory]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/css/app/mcqs/[subject]/[...subcategory]/page.css",
+      "static/chunks/app/mcqs/[subject]/[...subcategory]/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -27,10 +28,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/_not-found/page.js"
     ],
-    "/past-interviews/page": [
+    "/mcqs/[subject]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/past-interviews/page.js"
+      "static/css/app/mcqs/[subject]/page.css",
+      "static/chunks/app/mcqs/[subject]/page.js"
     ],
     "/mcqs/page": [
       "static/chunks/webpack.js",
@@ -38,22 +40,10 @@
       "static/css/app/mcqs/page.css",
       "static/chunks/app/mcqs/page.js"
     ],
-    "/quiz/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/quiz/page.css",
-      "static/chunks/app/quiz/page.js"
-    ],
-    "/past-papers/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/past-papers/page.js"
-    ],
-    "/past-papers/[commission]/[department]/[role]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/past-papers/[commission]/[department]/[role]/page.css",
-      "static/chunks/app/past-papers/[commission]/[department]/[role]/page.js"
+      "static/chunks/app/page.js"
     ]
   }
 }
