@@ -148,12 +148,12 @@ export default function SubcategoriesGrid({ subject, tree, initialLimit = 3, bas
               );
             })}
           </div>
-          <div className="absolute inset-0 flex items-end justify-center pb-2 bg-gradient-to-b from-transparent via-white/30 to-white dark:via-gray-900/30 dark:to-gray-900 rounded-xl pointer-events-none" />
+          <div className="absolute inset-0 flex items-end justify-center pb-2 bg-gradient-to-b from-transparent via-white/30 to-white rounded-xl pointer-events-none" />
           <div className="flex justify-center -mt-10 relative z-10">
             <button
               type="button"
               onClick={() => setExpanded(true)}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 dark:text-indigo-200 dark:bg-indigo-900/30 dark:hover:bg-indigo-900/50 dark:border-indigo-900 shadow-sm"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 shadow-sm"
             >
               Show {remaining} more
             </button>
@@ -165,7 +165,7 @@ export default function SubcategoriesGrid({ subject, tree, initialLimit = 3, bas
           <button
             type="button"
             onClick={() => setExpanded(false)}
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 dark:text-indigo-200 dark:bg-indigo-900/30 dark:hover:bg-indigo-900/50 dark:border-indigo-900"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200"
           >
             Show less
           </button>
