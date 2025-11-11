@@ -4,7 +4,7 @@ This project has been migrated from Vite + React Router to Next.js App Router.
 
 ## Migration Changes
 
-### What was changed:
+### What was changed: 
 - ✅ Converted from Vite to Next.js
 - ✅ Updated React Router to Next.js App Router
 - ✅ Converted `Link` components from `to` prop to `href` prop
