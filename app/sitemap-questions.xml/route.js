@@ -27,21 +27,18 @@ export async function GET(request) {
   const hasPageParam = searchParams.has('page');
   const pageParam = parseInt(searchParams.get('page') || '1', 10);
   const page = Number.isFinite(pageParam) && pageParam > 0 ? pageParam : 1;
+  const isDebug = searchParams.get('debug') === '1';
   const limit = PAGE_SIZE;
   const skip = (page - 1) * limit;
 
   try {
     await connectToDatabase();
 
-    // Map categoryId => subjectSlug for MCQ categories only
-    const categories = await Category.find({ type: 'MCQ' }).select({ _id: 1, name: 1 }).lean();
-    const allowedCategoryIds = new Set(categories.map(c => c._id.toString()));
-    const categoryIdToSubjectSlug = new Map(
-      categories.map(c => [c._id.toString(), normalizeCategoryName(c.name || '')])
-    );
-
-    // Fetch MCQs that have a slug and belong to allowed categories
-    const filter = { slug: { $exists: true, $ne: null, $ne: '' }, categoryId: { $in: Array.from(allowedCategoryIds) } };
+    // Fetch MCQs that have a question and a category
+    const filter = {
+      question: { $exists: true, $ne: null, $ne: '' },
+      categoryId: { $exists: true, $ne: null }
+    };
 
     const total = await MCQ.countDocuments(filter);
 
@@ -79,24 +76,97 @@ export async function GET(request) {
       });
     }
 
+    if (skip >= total) {
+      if (isDebug) {
+        return NextResponse.json({
+          page,
+          limit,
+          skip,
+          total,
+          reason: 'page_out_of_range'
+        });
+      }
+      const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>`;
+      return new Response(xml, {
+        status: hasPageParam ? 404 : 200,
+        headers: {
+          'content-type': 'application/xml; charset=utf-8',
+          'cache-control': hasPageParam ? 'no-store' : 'public, s-maxage=3600, stale-while-revalidate=86400'
+        }
+      });
+    }
+
     const mcqs = await MCQ.find(filter)
-      .sort({ updatedAt: -1, _id: -1 })
+      .sort({ _id: -1 })
       .skip(skip)
       .limit(limit)
       .select({ slug: 1, question: 1, updatedAt: 1, categoryId: 1 })
       .lean();
 
+    const categoryIdsForPage = Array.from(
+      new Set(
+        mcqs
+          .map(mcq => mcq.categoryId?.toString())
+          .filter(Boolean)
+      )
+    );
+
+    const categoriesForPage = categoryIdsForPage.length
+      ? await Category.find({ _id: { $in: categoryIdsForPage } })
+        .select({ _id: 1, name: 1 })
+        .lean()
+      : [];
+
+    const categoryIdToSubjectSlug = new Map();
+    for (const category of categoriesForPage) {
+      const normalized = normalizeCategoryName(category.name || '').trim();
+      const subjectSlug = normalized || `category-${category._id.toString()}`;
+      categoryIdToSubjectSlug.set(category._id.toString(), subjectSlug);
+    }
+
     // Build XML entries
+    let urlCount = 0;
     let urlsXml = '';
     for (const mcq of mcqs) {
       const categoryId = mcq.categoryId?.toString();
       if (!categoryId) continue;
-      const subjectSlug = categoryIdToSubjectSlug.get(categoryId);
-      if (!subjectSlug) continue;
+      const subjectSlug = categoryIdToSubjectSlug.get(categoryId) || `category-${categoryId}`;
       const questionSlug = mcq.slug || generateQuestionSlug(mcq.question || 'question');
       const loc = `${baseUrl}/mcqs/${subjectSlug}/question/${questionSlug}`;
       const lastmod = new Date(mcq.updatedAt || Date.now()).toISOString();
       urlsXml += `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.6</priority>\n  </url>\n`;
+      urlCount += 1;
+    }
+
+    if (isDebug) {
+      return new NextResponse(JSON.stringify({
+        page,
+        limit,
+        skip,
+        total,
+        mcqCount: mcqs.length,
+        urlCount,
+        categoryIds: categoryIdsForPage,
+        sample: mcqs.slice(0, 3)
+      }), {
+        status: 200,
+        headers: {
+          'content-type': 'application/json; charset=utf-8'
+        }
+      });
+    }
+
+    if (isDebug) {
+      return NextResponse.json({
+        page,
+        limit,
+        skip,
+        total,
+        mcqCount: mcqs.length,
+        urlCount,
+        categoryIds: categoryIdsForPage,
+        sample: mcqs.slice(0, 3)
+      });
     }
 
     const xml = `<?xml version="1.0" encoding="UTF-8"?>\n` +

@@ -1,8 +1,3 @@
 {
-  "/mcqs/[subject]/[...subcategory]/page": "app/mcqs/[subject]/[...subcategory]/page.js",
-  "/404/admin/dashboard/page": "app/404/admin/dashboard/page.js",
-  "/quiz/[subject]/[...subcategory]/page": "app/quiz/[subject]/[...subcategory]/page.js",
-  "/mcqs/page": "app/mcqs/page.js",
-  "/mcqs/[subject]/page": "app/mcqs/[subject]/page.js",
   "/sitemap-questions.xml/route": "app/sitemap-questions.xml/route.js"
 }
