@@ -1,3 +1,11 @@
 {
-  "/sitemap-questions.xml/route": "app/sitemap-questions.xml/route.js"
+  "/mcqs/[subject]/[...subcategory]/page": "app/mcqs/[subject]/[...subcategory]/page.js",
+  "/page": "app/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/mcqs/page": "app/mcqs/page.js",
+  "/mcqs/[subject]/page": "app/mcqs/[subject]/page.js",
+  "/api/mcqs/general-knowledge/route": "app/api/mcqs/general-knowledge/route.js",
+  "/api/mcqs/[subject]/route": "app/api/mcqs/[subject]/route.js",
+  "/quiz/page": "app/quiz/page.js",
+  "/api/quiz/everyday-science/route": "app/api/quiz/everyday-science/route.js"
 }

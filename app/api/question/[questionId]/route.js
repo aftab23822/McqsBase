@@ -3,7 +3,49 @@ import connectToDatabase from '../../../../lib/mongodb.js';
 import MCQ from '../../../../lib/models/MCQ.js';
 import Category from '../../../../lib/models/Category.js';
 import { sanitizeSubject, sanitizeString, escapeRegex } from '../../../../lib/utils/security.js';
-import mongoose from 'mongoose';
+import {
+  resolveQuestionByIdentifier
+} from '../../../../lib/services/questionResolver.js';
+
+const QUESTION_CACHE_TTL_MS = 1000 * 60 * 5; // 5 minutes
+const QUESTION_CACHE_MAX_SIZE = 5000;
+
+const globalWithCache = globalThis;
+if (!globalWithCache.__questionCache) {
+  globalWithCache.__questionCache = new Map();
+}
+
+const questionCache = globalWithCache.__questionCache;
+
+function makeCacheKey(categoryId, slug) {
+  return `${categoryId.toString()}::${slug}`;
+}
+
+function getCachedQuestion(categoryId, slug) {
+  const key = makeCacheKey(categoryId, slug);
+  const cached = questionCache.get(key);
+  if (!cached) return null;
+  if (Date.now() > cached.expiresAt) {
+    questionCache.delete(key);
+    return null;
+  }
+  return cached.value;
+}
+
+function setCachedQuestion(categoryId, slug, value) {
+  const key = makeCacheKey(categoryId, slug);
+  if (questionCache.size >= QUESTION_CACHE_MAX_SIZE) {
+    // Simple eviction: delete oldest entry
+    const firstKey = questionCache.keys().next().value;
+    if (firstKey) {
+      questionCache.delete(firstKey);
+    }
+  }
+  questionCache.set(key, {
+    expiresAt: Date.now() + QUESTION_CACHE_TTL_MS,
+    value
+  });
+}
 
 /**
  * GET /api/question/[questionId]?subject=general-knowledge
@@ -42,7 +84,7 @@ export async function GET(request, { params }) {
 
     // Find category
     const escapedSubject = escapeRegex(sanitizedSubject);
-    const category = await Category.findOne({ 
+    const category = await Category.findOne({
       name: { $regex: new RegExp('^' + escapedSubject + '$', 'i') }
     }).lean();
 
@@ -53,61 +95,21 @@ export async function GET(request, { params }) {
       );
     }
 
-    // Extract ID from slug
-    const parts = sanitizedQuestionId.split('-');
-    const lastPart = parts[parts.length - 1];
-    
-    let question = null;
+    const baseQuery = { categoryId: category._id };
 
-    // Try full ObjectId match first
-    if (/^[0-9a-f]{24}$/i.test(sanitizedQuestionId)) {
-      try {
-        const objectId = new mongoose.Types.ObjectId(sanitizedQuestionId);
-        question = await MCQ.findOne({
-          _id: objectId,
-          categoryId: category._id
-        }).lean();
-      } catch (e) {}
-    }
-    
-    // Try extracted ID
-    if (!question && lastPart.length === 24 && /^[0-9a-f]{24}$/i.test(lastPart)) {
-      try {
-        const objectId = new mongoose.Types.ObjectId(lastPart);
-        question = await MCQ.findOne({
-          _id: objectId,
-          categoryId: category._id
-        }).lean();
-      } catch (e) {}
-    }
-    
-    // Try partial ID match
-    if (!question && /^[0-9a-f]{8,23}$/i.test(lastPart)) {
-      const questions = await MCQ.find({
-        categoryId: category._id
-      })
-      .select('_id question options answer explanation createdAt')
-      .lean();
-      
-      question = questions.find(q => {
-        const idStr = q._id.toString();
-        return idStr.toLowerCase().startsWith(lastPart.toLowerCase());
+    const cached = getCachedQuestion(category._id, sanitizedQuestionId);
+    if (cached) {
+      return NextResponse.json(cached, {
+        headers: {
+          'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600'
+        }
       });
     }
 
-    // Fallback: search by question text
-    if (!question && parts.length > 1) {
-      const questionTextSlug = parts.slice(0, -1).join('-');
-      const questionText = questionTextSlug.replace(/-/g, ' ');
-      const escapedText = escapeRegex(questionText);
-      question = await MCQ.findOne({
-        categoryId: category._id,
-        question: { $regex: new RegExp(escapedText, 'i') }
-      })
-      .sort({ createdAt: -1 })
-      .limit(1)
-      .lean();
-    }
+    const question = await resolveQuestionByIdentifier({
+      categoryId: category._id,
+      identifier: sanitizedQuestionId
+    });
 
     if (!question) {
       return NextResponse.json(
@@ -140,7 +142,7 @@ export async function GET(request, { params }) {
         .lean()
     ]);
 
-    return NextResponse.json({
+    const responsePayload = {
       question,
       nextQuestionId: nextQuestion?._id?.toString() || null,
       prevQuestionId: prevQuestion?._id?.toString() || null,
@@ -148,7 +150,11 @@ export async function GET(request, { params }) {
         name: category.name,
         slug: subject
       }
-    }, {
+    };
+
+    setCachedQuestion(category._id, sanitizedQuestionId, responsePayload);
+
+    return NextResponse.json(responsePayload, {
       headers: {
         'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600'
       }

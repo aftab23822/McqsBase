@@ -12,6 +12,7 @@ import MCQ from '../../../../lib/models/MCQ.js';
 import Category from '../../../../lib/models/Category.js';
 import { sanitizeSubject, sanitizeString, escapeRegex } from '../../../../lib/utils/security.js';
 import mongoose from 'mongoose';
+import { resolveQuestionByIdentifier } from '../../../../lib/services/questionResolver.js';
 
 function humanize(slug) {
   if (!slug) return '';
@@ -119,7 +120,14 @@ async function fetchQuestionData({ subject, questionId, subcategorySegments = []
       return { error: `Category not found for subject: ${sanitizedSubject}`, status: 404 };
     }
 
-    let question = null;
+    let question = await resolveQuestionByIdentifier({
+      categoryId: category._id,
+      identifier: sanitizedQuestionId
+    });
+
+    if (question) {
+      return await buildQuestionResponse(question, category, subject, subjectPath);
+    }
 
     const questionTextFromSlug = sanitizedQuestionId.replace(/-/g, ' ');
 
