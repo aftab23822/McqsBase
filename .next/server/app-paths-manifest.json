@@ -1,5 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/mcqs/page": "app/mcqs/page.js",
-  "/api/mcqs/general-knowledge/route": "app/api/mcqs/general-knowledge/route.js"
-}
