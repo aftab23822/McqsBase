@@ -79,10 +79,28 @@ export const ReCaptchaProvider = ({ children, siteKey }) => {
     executeRecaptcha,
   };
 
+  const resolveEnvironment = () => {
+    if (typeof window === 'undefined') {
+      return (
+        process.env.VERCEL_ENV ||
+        process.env.NODE_ENV ||
+        'production'
+      );
+    }
+
+    return (
+      process.env.VERCEL_ENV ||
+      process.env.NODE_ENV ||
+      'production'
+    );
+  };
+
+  const environment = resolveEnvironment();
+
   return (
     <ReCaptchaContext.Provider value={value}>
       {children}
-      {process.env.NEXT_PUBLIC_ENVIRONMENT !== 'production' && (
+      {environment !== 'production' && (
         <div
           style={{
             position: 'fixed',
