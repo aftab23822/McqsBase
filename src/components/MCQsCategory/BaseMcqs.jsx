@@ -33,16 +33,11 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
   // Sync URL with page changes on mount and when URL changes
   useEffect(() => {
     const pageNum = Number.isFinite(pageFromUrl) && pageFromUrl > 0 ? pageFromUrl : 1;
+    const maxPage = totalPages > 0 ? totalPages : pageNum;
+    const nextPage = Math.min(pageNum, maxPage);
 
-    // Only update if URL page differs from current page state and is valid
-    if (pageNum !== currentPage && pageNum >= 1) {
-      // Only sync if totalPages is loaded (greater than 0) and pageNum is within range
-      if (totalPages > 0 && pageNum > totalPages) {
-        return; // Invalid page, don't update
-      }
-      setCurrentPage(pageNum);
-    }
-  }, [pageFromUrl, totalPages, currentPage, setCurrentPage]);
+    setCurrentPage((prev) => (prev === nextPage ? prev : nextPage));
+  }, [pageFromUrl, totalPages, setCurrentPage]);
 
   // Update URL when page changes
   const handlePageChange = (page) => {

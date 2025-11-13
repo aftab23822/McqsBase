@@ -1,25 +1,54 @@
 "use client";
 
-import { useMemo } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 const DEFAULT_PAGE = 1;
 
-/**
- * Reads the current `page` query parameter from the URL.
- * Consumers should wrap usage in a <Suspense> boundary when rendered from a Server Component.
- */
-export function usePageFromUrl(defaultValue = DEFAULT_PAGE) {
-  const searchParams = useSearchParams();
-
-  return useMemo(() => {
-    const raw = searchParams.get('page');
-    if (!raw) return defaultValue;
-
+function parsePageFromSearch(search, fallback) {
+  try {
+    const params = new URLSearchParams(search || '');
+    const raw = params.get('page');
+    if (!raw) return fallback;
     const parsed = parseInt(raw, 10);
     if (Number.isFinite(parsed) && parsed > 0) {
       return parsed;
     }
-    return defaultValue;
-  }, [searchParams, defaultValue]);
+    return fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+/**
+ * Reads the current `page` query parameter from `window.location.search`.
+ * Keeps the value in sync when the user navigates backwards/forwards.
+ */
+export function usePageFromUrl(defaultValue = DEFAULT_PAGE) {
+  const isBrowser = typeof window !== 'undefined';
+
+  const [page, setPage] = useState(() => {
+    if (!isBrowser) {
+      return defaultValue;
+    }
+    return parsePageFromSearch(window.location.search, defaultValue);
+  });
+
+  useEffect(() => {
+    if (!isBrowser) {
+      return () => {};
+    }
+
+    const syncFromLocation = () => {
+      setPage(parsePageFromSearch(window.location.search, defaultValue));
+    };
+
+    syncFromLocation();
+    window.addEventListener('popstate', syncFromLocation);
+
+    return () => {
+      window.removeEventListener('popstate', syncFromLocation);
+    };
+  }, [defaultValue, isBrowser]);
+
+  return page;
 }
