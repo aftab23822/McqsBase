@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { notFound } from 'next/navigation';
 import Navbar from '../../../../src/components/Navbar';
 import Footer from '../../../../src/components/Footer';
@@ -75,11 +76,13 @@ export default async function SubcategoryQuizPage({ params, searchParams }) {
   return (
     <ReCaptchaProvider siteKey={recaptchaSiteKey}>
       <Navbar />
-      <SubcategoryQuiz
-        subject={normalizedSubject}
-        subcategorySegments={normalizedSegments}
-        initialPage={page}
-      />
+      <Suspense fallback={<div className="py-12 text-center text-gray-500">Loading quiz…</div>}>
+        <SubcategoryQuiz
+          subject={normalizedSubject}
+          subcategorySegments={normalizedSegments}
+          initialPage={page}
+        />
+      </Suspense>
       <Footer />
     </ReCaptchaProvider>
   );

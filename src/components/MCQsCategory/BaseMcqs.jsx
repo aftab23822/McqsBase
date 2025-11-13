@@ -1,19 +1,20 @@
 "use client";
 
 import React, { useEffect, useRef } from 'react';
-import { useRouter, useSearchParams, usePathname } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
 import McqCard from '../McqCard';
 import RightSideBar from '../RightSideBar';
 import Pagination from '../Pagination';
 import Breadcrumb from '../Breadcrumb';
 import { generateQuestionSlug } from '../../../lib/utils/slugGenerator.js';
+import { usePageFromUrl } from '../../hooks/usePageFromUrl';
 
 const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mcqsPerPage, subjectSlug }) => {
   const router = useRouter();
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const prevPageRef = useRef(currentPage);
+  const pageFromUrl = usePageFromUrl();
 
   // Extract subject slug from pathname if not provided as prop (fallback)
   // First try prop, then pathname, with better extraction
@@ -31,9 +32,8 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
 
   // Sync URL with page changes on mount and when URL changes
   useEffect(() => {
-    const pageParam = searchParams.get('page');
-    const pageNum = pageParam ? Math.max(1, parseInt(pageParam, 10) || 1) : 1;
-    
+    const pageNum = Number.isFinite(pageFromUrl) && pageFromUrl > 0 ? pageFromUrl : 1;
+
     // Only update if URL page differs from current page state and is valid
     if (pageNum !== currentPage && pageNum >= 1) {
       // Only sync if totalPages is loaded (greater than 0) and pageNum is within range
@@ -42,12 +42,15 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
       }
       setCurrentPage(pageNum);
     }
-  }, [searchParams, totalPages, currentPage, setCurrentPage]);
+  }, [pageFromUrl, totalPages, currentPage, setCurrentPage]);
 
   // Update URL when page changes
   const handlePageChange = (page) => {
     setCurrentPage(page);
-    const params = new URLSearchParams(searchParams.toString());
+    if (typeof window === 'undefined') {
+      return;
+    }
+    const params = new URLSearchParams(window.location.search || '');
     if (page === 1) {
       params.delete('page');
     } else {

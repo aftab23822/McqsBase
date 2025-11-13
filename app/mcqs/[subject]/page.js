@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { notFound } from 'next/navigation';
 import { headers } from 'next/headers';
 import { generateSEOMetadata } from '../../../src/components/SEO';
@@ -229,7 +230,9 @@ export default async function MCQCategoryPage({ params, searchParams }) {
     <ReCaptchaProvider siteKey={recaptchaSiteKey}>
       <Navbar />
       {page === 1 ? <SubcategoriesSection subject={subject} initialTree={initialTree} /> : null}
-      <MCQComponent />
+      <Suspense fallback={<div className="py-12 text-center text-gray-500">Loading MCQs…</div>}>
+        <MCQComponent />
+      </Suspense>
       <Footer />
     </ReCaptchaProvider>
   );

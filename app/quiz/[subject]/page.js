@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { notFound } from 'next/navigation';
 import { headers } from 'next/headers';
 import { generateSEOMetadata } from '../../../src/components/SEO';
@@ -169,7 +170,9 @@ export default async function QuizCategoryPage({ params, searchParams }) {
     <ReCaptchaProvider siteKey={recaptchaSiteKey}>
       <Navbar />
       {page === 1 ? <SubcategoriesSection subject={subject} initialTree={initialTree} basePath="quiz" /> : null}
-      <QuizComponent />
+      <Suspense fallback={<div className="py-12 text-center text-gray-500">Loading quiz…</div>}>
+        <QuizComponent />
+      </Suspense>
       <Footer />
     </ReCaptchaProvider>
   );

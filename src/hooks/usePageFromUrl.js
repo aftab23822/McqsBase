@@ -1,15 +1,25 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useMemo } from 'react';
 import { useSearchParams } from 'next/navigation';
 
-/**
- * Hook to get initial page number from URL query params
- * @returns {number} Page number from URL or 1 if not present
- */
-export function usePageFromUrl() {
-  const searchParams = useSearchParams();
-  const pageParam = searchParams.get('page');
-  return pageParam ? Math.max(1, parseInt(pageParam, 10) || 1) : 1;
-}
+const DEFAULT_PAGE = 1;
 
+/**
+ * Reads the current `page` query parameter from the URL.
+ * Consumers should wrap usage in a <Suspense> boundary when rendered from a Server Component.
+ */
+export function usePageFromUrl(defaultValue = DEFAULT_PAGE) {
+  const searchParams = useSearchParams();
+
+  return useMemo(() => {
+    const raw = searchParams.get('page');
+    if (!raw) return defaultValue;
+
+    const parsed = parseInt(raw, 10);
+    if (Number.isFinite(parsed) && parsed > 0) {
+      return parsed;
+    }
+    return defaultValue;
+  }, [searchParams, defaultValue]);
+}
