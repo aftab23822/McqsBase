@@ -82,7 +82,7 @@ export const ReCaptchaProvider = ({ children, siteKey }) => {
   return (
     <ReCaptchaContext.Provider value={value}>
       {children}
-      {process.env.NODE_ENV !== 'production' && (
+      {process.env.VERCEL_ENV !== 'production' && (
         <div
           style={{
             position: 'fixed',
