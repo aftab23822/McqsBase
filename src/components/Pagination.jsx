@@ -103,6 +103,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
       <div className="flex gap-2 mt-2">
         <input
           type="number"
+          name="pagination-jump"
           min="1"
           max={totalPages}
           value={jumpInput}

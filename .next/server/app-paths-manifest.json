@@ -1,6 +1,1 @@
-{
-  "/quiz/[subject]/page": "app/quiz/[subject]/page.js",
-  "/quiz/[subject]/[...subcategory]/page": "app/quiz/[subject]/[...subcategory]/page.js",
-  "/api/quiz/[subject]/route": "app/api/quiz/[subject]/route.js",
-  "/api/quiz/[subject]/[...subcategory]/route": "app/api/quiz/[subject]/[...subcategory]/route.js"
-}
+{}
