@@ -3,6 +3,8 @@ import connectToDatabase from '../../../../lib/mongodb.js';
 import MCQ from '../../../../lib/models/MCQ.js';
 import Category from '../../../../lib/models/Category.js';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET(request) {
   try {
     await connectToDatabase();
