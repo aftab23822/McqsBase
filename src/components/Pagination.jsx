@@ -2,10 +2,11 @@
 
 import React, { useState } from 'react';
 
-const Pagination = ({ currentPage, totalPages, onPageChange }) => {
+const Pagination = ({ currentPage, totalPages, onPageChange, disableNavigation = false }) => {
   const [jumpInput, setJumpInput] = useState('');
 
   const handleJump = () => {
+    if (disableNavigation) return;
     const page = parseInt(jumpInput);
     if (!isNaN(page) && page >= 1 && page <= totalPages) {
       onPageChange(page);
@@ -14,12 +15,14 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   };
 
   const handlePrev = () => {
+    if (disableNavigation) return;
     if (currentPage > 1) {
       onPageChange(currentPage - 1);
     }
   };
 
   const handleNext = () => {
+    if (disableNavigation) return;
     if (currentPage < totalPages) {
       onPageChange(currentPage + 1);
     }
@@ -63,12 +66,13 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
     ) : (
       <button
         key={`page-${num}`}
-        onClick={() => onPageChange(num)}
+        onClick={() => !disableNavigation && onPageChange(num)}
+        disabled={disableNavigation}
         className={`px-3 py-1 rounded ${
           num === currentPage
             ? 'bg-green-700 text-white font-bold'
             : 'bg-white text-gray-700 border hover:bg-green-100'
-        }`}
+        } ${disableNavigation ? 'opacity-50 cursor-not-allowed' : ''}`}
       >
         {num}
       </button>
@@ -82,7 +86,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
       <div className="flex flex-wrap gap-2 justify-center">
         <button
           onClick={handlePrev}
-          disabled={currentPage === 1}
+          disabled={currentPage === 1 || disableNavigation}
           className="px-3 py-1 bg-white border rounded disabled:opacity-50"
         >
           ‹
@@ -92,7 +96,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
 
         <button
           onClick={handleNext}
-          disabled={currentPage === totalPages}
+          disabled={currentPage === totalPages || disableNavigation}
           className="px-3 py-1 bg-white border rounded disabled:opacity-50"
         >
           ›
@@ -109,11 +113,13 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
           value={jumpInput}
           onChange={(e) => setJumpInput(e.target.value)}
           placeholder="Jump to"
-          className="border px-3 py-1 rounded w-24"
+          disabled={disableNavigation}
+          className={`border px-3 py-1 rounded w-24 ${disableNavigation ? 'opacity-50 cursor-not-allowed' : ''}`}
         />
         <button
           onClick={handleJump}
-          className="bg-green-600 text-white px-4 py-1 rounded"
+          disabled={disableNavigation}
+          className={`bg-green-600 text-white px-4 py-1 rounded ${disableNavigation ? 'opacity-50 cursor-not-allowed' : ''}`}
         >
           GO
         </button>
