@@ -92,6 +92,22 @@ export async function POST(request) {
         // Generate unique slug for this question
         const slug = await generateUniqueQuestionSlug(m.question, null, category._id, MCQ);
         
+        // Parse year - handle both string and number formats
+        let parsedYear = null;
+        if (m.year) {
+          if (typeof m.year === 'string' && m.year.trim() !== '') {
+            const yearNum = parseInt(m.year.trim(), 10);
+            parsedYear = isNaN(yearNum) ? null : yearNum;
+          } else if (typeof m.year === 'number') {
+            parsedYear = m.year;
+          }
+        }
+        
+        // Parse department - handle string format
+        const parsedDepartment = m.department && typeof m.department === 'string' && m.department.trim() !== '' 
+          ? m.department.trim() 
+          : null;
+        
         return {
           question: m.question,
           options: optionsToSave,
@@ -101,7 +117,9 @@ export async function POST(request) {
           link: m.detail_link,
           submittedBy: m.submitter || 'Admin',
           pageOrder: m.pageOrder || 0,
-          slug: slug // Include slug for fast lookups
+          slug: slug, // Include slug for fast lookups
+          year: parsedYear,  // Year for past papers (parsed as number)
+          department: parsedDepartment  // Department for past papers
         };
       })
     );

@@ -14,6 +14,20 @@ import { Building2, Landmark, MapPin } from "lucide-react";
 
 export const pastPaperCategories = [
   {
+    title: "STS - SIBA TESTING SERVICES",
+    icon: Building2,
+    departments: [
+      {
+        label: "BPS 05 to 15  ",
+        roles: [
+          { label: "Graduation Category", link: "/past-papers/sts-siba-testing-services/bps-05-to-15-/graduation-category" },
+          { label: "Intermediate Category", link: "/past-papers/sts-siba-testing-services/bps-05-to-15-/intermediate-category" },
+          { label: "Matriculation Category", link: "/past-papers/sts-siba-testing-services/bps-05-to-15-/matriculation-category" }
+        ]
+      }
+    ]
+  },
+  {
     title: "Sindh Government",
     icon: MapPin,
     departments: [
@@ -126,6 +140,21 @@ export const pastPaperCategories = [
           { label: "Occupational Therapist BPS‑17", link: "/past-papers/fpsc/health/occupational-therapist-bps-17" },
           { label: "Physiotherapist BPS‑17", link: "/past-papers/fpsc/health/physiotherapist-bps-17" },
           { label: "Staff Nurse BPS‑17", link: "/past-papers/fpsc/health/staff-nurse-bps-17" }
+        ]
+      }
+    ]
+  },
+  {
+    title: "t",
+    icon: Building2,
+    departments: [
+      {
+        label: "tt",
+        roles: [
+          { label: "ttt", link: "/past-papers/t/tt/ttt",
+            subcategories: [
+            { label: "tttt", link: "/past-papers/t/tt/ttt/tttt", subcategories: [            { label: "eeee", link: "/past-papers/t/tt/ttt/tttt/eeee", subcategories: [            { label: "ffff", link: "/past-papers/t/tt/ttt/tttt/eeee/ffff", subcategories: [            { label: "eeee", link: "/past-papers/t/tt/ttt/tttt/eeee/ffff/eeee", subcategories: [            { label: "bbbb", link: "/past-papers/t/tt/ttt/tttt/eeee/ffff/eeee/bbbb", subcategories: [] }] }] }] }] }
+          ] }
         ]
       }
     ]

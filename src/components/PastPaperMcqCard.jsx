@@ -77,8 +77,8 @@ const PastPaperMcqCard = ({
 
             {/* Simple footer */}
             <div className="flex items-center justify-between text-xs text-gray-500 pt-2 border-t border-gray-100">
-            <span className="font-medium text-gray-700">📅 Year: {year}</span>
-            <span className="font-medium text-gray-700">🏢 Department: {department}</span>
+            <span className="font-medium text-gray-700">📅 Year: {year || 'N/A'}</span>
+            <span className="font-medium text-gray-700">🏢 Department: {department || 'General'}</span>
 
                 {hasCorrectAnswer && (
                     <div className="flex items-center space-x-1">

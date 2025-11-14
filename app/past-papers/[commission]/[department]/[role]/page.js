@@ -1,17 +1,76 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { useParams } from 'next/navigation';
+import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import BasePastPaper from '@/components/PastPapers/BasePastPaper';
 import PastPapersRightSideBar from '@/components/PastPapersRightSideBar';
 import LoadingSpinner from '@/components/LoadingSpinner';
 import Breadcrumb from '@/components/Breadcrumb';
+import SubcategoriesSection from '@/components/SubcategoriesSection';
 import { apiFetch } from '@/utils/api';
 import { getPastPaperCategories } from '@/data/categories/pastPapersCategories';
 
 const papersPerPage = 10;
+
+// Helper function to convert subcategories to tree format
+function convertSubcategoriesToTree(subcategories, roleLink, basePath = '') {
+  if (!subcategories || subcategories.length === 0) return [];
+  
+  return subcategories.map((subcat, index) => {
+    // Generate slug from label if link is empty or invalid
+    let slug = '';
+    let fullSlug = '';
+    
+    if (subcat.link && subcat.link.trim()) {
+      // Extract slug from link
+      const link = subcat.link.trim();
+      if (link.startsWith(roleLink)) {
+        // Link starts with role link, extract the part after it
+        slug = link.replace(roleLink, '').replace(/^\//, '').replace(/\/$/, '');
+      } else if (link.startsWith('/past-papers/')) {
+        // Full path, extract everything after /past-papers/
+        const pathParts = link.replace(/^\/past-papers\//, '').split('/');
+        // Find where role ends and subcategory begins
+        const roleParts = roleLink.replace(/^\/past-papers\//, '').split('/');
+        const roleEndIndex = pathParts.findIndex((part, idx) => 
+          idx >= roleParts.length - 1 && part !== roleParts[roleParts.length - 1]
+        );
+        if (roleEndIndex > 0) {
+          slug = pathParts.slice(roleEndIndex).join('/');
+        } else {
+          slug = pathParts.slice(roleParts.length).join('/');
+        }
+      } else {
+        // Just use the link as-is (relative path)
+        slug = link.replace(/^\//, '').replace(/\/$/, '');
+      }
+    }
+    
+    // If no slug extracted, generate from label
+    if (!slug) {
+      slug = subcat.label.toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-')
+        .replace(/^-+|-+$/g, '');
+    }
+    
+    fullSlug = basePath ? `${basePath}/${slug}` : slug;
+    
+    const node = {
+      _id: `subcat-${index}-${slug}`,
+      name: subcat.label,
+      slug: slug,
+      fullSlug: fullSlug,
+      children: convertSubcategoriesToTree(subcat.subcategories || [], roleLink, fullSlug)
+    };
+    
+    return node;
+  });
+}
 
 export default function PastPaperCategoryPage() {
   const params = useParams();
@@ -23,6 +82,7 @@ export default function PastPaperCategoryPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [pageTitle, setPageTitle] = useState('');
+  const [foundRole, setFoundRole] = useState(null);
   const [breadcrumbData, setBreadcrumbData] = useState({
     commissionLabel: '',
     departmentLabel: '',
@@ -84,6 +144,10 @@ export default function PastPaperCategoryPage() {
               return roleSlug === normalizedUrlRole || roleSlug.includes(role) || role.includes(roleSlug);
             });
 
+            if (foundRole) {
+              setFoundRole(foundRole);
+            }
+
             newBreadcrumbData = {
               commissionLabel: foundCategory.title,
               departmentLabel: foundDepartment.label.replace(/^[^\w\s]+/, ''), // Remove emoji
@@ -101,12 +165,11 @@ export default function PastPaperCategoryPage() {
         setBreadcrumbData(newBreadcrumbData);
 
         // Generate page title from breadcrumb data
-        const titleParts = [
-          newBreadcrumbData.commissionLabel,
-          newBreadcrumbData.departmentLabel,
-          newBreadcrumbData.roleLabel
-        ];
-        setPageTitle(`${titleParts[0]} > ${titleParts[1]} > ${titleParts[2]}`);
+        // Format: "Commission — Department / Role"
+        const commissionPart = newBreadcrumbData.commissionLabel;
+        const departmentPart = newBreadcrumbData.departmentLabel;
+        const rolePart = newBreadcrumbData.roleLabel;
+        setPageTitle(`${commissionPart} — ${departmentPart} / ${rolePart}`);
 
         setError(null);
       } catch (err) {
@@ -120,6 +183,14 @@ export default function PastPaperCategoryPage() {
 
     fetchPapers();
   }, [commission, department, role, currentPage]);
+
+  // Convert subcategories to tree format for SubcategoriesSection
+  const subcategoriesTree = useMemo(() => {
+    if (!foundRole || !foundRole.subcategories || foundRole.subcategories.length === 0) {
+      return [];
+    }
+    return convertSubcategoriesToTree(foundRole.subcategories, foundRole.link || '');
+  }, [foundRole]);
 
   if (loading) {
     return (
@@ -171,31 +242,33 @@ export default function PastPaperCategoryPage() {
   return (
     <>
       <Navbar />
-      <section className="full-screen px-4 py-8 bg-gray-100">
-        <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-2">
-          <div className="col-span-2">
-            {/* Breadcrumb Navigation */}
-            <Breadcrumb items={[
-              { label: 'Home', href: '/' },
-              { label: 'Past Papers', href: '/past-papers' },
-              { label: breadcrumbData.commissionLabel || commission, href: `/past-papers` },
-              breadcrumbData.departmentLabel && { label: breadcrumbData.departmentLabel, href: '#' },
-              breadcrumbData.roleLabel && { label: breadcrumbData.roleLabel, href: '#' }
-            ].filter(Boolean)} />
-            <BasePastPaper
-              pastpaperData={pastPaperData}
-              title={pageTitle || 'Past Papers'}
-              currentPage={currentPage}
-              setCurrentPage={setCurrentPage}
-              totalPages={totalPages}
-              mcqsPerPage={papersPerPage}
+      {/* Display subcategories on page 1 */}
+      {currentPage === 1 && subcategoriesTree.length > 0 && (
+        <div className="bg-gray-100">
+          <div className="max-w-screen-xl mx-auto px-4 py-8">
+            <SubcategoriesSection 
+              subject={breadcrumbData.roleLabel || role} 
+              initialTree={subcategoriesTree} 
+              basePath={`past-papers/${commission}/${department}/${role}`}
             />
           </div>
-          <div className="col-span-1">
-            <PastPapersRightSideBar />
-          </div>
         </div>
-      </section>
+      )}
+      <BasePastPaper
+        pastpaperData={pastPaperData}
+        title={pageTitle || 'Past Papers'}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+        totalPages={totalPages}
+        mcqsPerPage={papersPerPage}
+        breadcrumbItems={[
+          { label: 'Home', href: '/' },
+          { label: 'Past Papers', href: '/past-papers' },
+          { label: breadcrumbData.commissionLabel || commission, href: `/past-papers` },
+          breadcrumbData.departmentLabel && { label: breadcrumbData.departmentLabel, href: '#' },
+          breadcrumbData.roleLabel && { label: breadcrumbData.roleLabel, href: '#' }
+        ].filter(Boolean)}
+      />
       <Footer />
     </>
   );

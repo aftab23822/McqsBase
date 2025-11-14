@@ -252,7 +252,7 @@ const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, tota
     <section className="full-screen px-4 py-8 bg-gray-100">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-2">
         {/* Left Column */}
-        <div className="col-span-2 p-62rounded-lg space-y-6">
+        <div className="col-span-2 space-y-6">
           <div className="p-1 sm:p-6 md:p-10 space-y-6 pb-20">
             {/* Breadcrumb Navigation */}
             {breadcrumbItems && <Breadcrumb items={breadcrumbItems} />}
@@ -318,7 +318,7 @@ const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, tota
           </div>
         </div>
         {/* Right Sidebar - now scrolls with content */}
-        <div className="h-fit top-20">
+        <div className="col-span-1 h-fit top-20">
           <PastPapersRightSideBar />
         </div>
       </div>

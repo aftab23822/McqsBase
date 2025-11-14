@@ -127,8 +127,9 @@ const AdminLogin = () => {
         setIsLoading(false);
         return;
       }
-      // Set category to role link for past papers/interviews
-      uploadData.category = selectedRole;
+      // Set category to selected subcategory link or role link
+      const finalCategory = selectedSubcategoryPath.length > 0 ? getSelectedSubcategoryLink() : selectedRole;
+      uploadData.category = finalCategory;
       uploadData.subcategory = selectedCommission;
     } else if (uploadData.type === 'mock-tests') {
       if (!uploadData.file || !uploadData.category || !uploadData.subcategory) {
@@ -315,47 +316,57 @@ const AdminLogin = () => {
   const [selectedCommission, setSelectedCommission] = useState('');
   const [selectedDepartment, setSelectedDepartment] = useState('');
   const [selectedRole, setSelectedRole] = useState('');
+  const [selectedSubcategoryPath, setSelectedSubcategoryPath] = useState([]); // Array of subcategory indices
   const [showNewCommission, setShowNewCommission] = useState(false);
   const [showNewDepartment, setShowNewDepartment] = useState(false);
   const [showNewRole, setShowNewRole] = useState(false);
+  const [showNewSubcategory, setShowNewSubcategory] = useState(false);
   const [showNewMcqCategory, setShowNewMcqCategory] = useState(false);
+  const [editingSubcategoryIndex, setEditingSubcategoryIndex] = useState(null);
   const [newCommissionName, setNewCommissionName] = useState('');
   const [newDepartmentName, setNewDepartmentName] = useState('');
   const [newRoleData, setNewRoleData] = useState({ label: '', link: '' });
+  const [newSubcategoryData, setNewSubcategoryData] = useState({ label: '', link: '' });
+  const [editingSubcategoryData, setEditingSubcategoryData] = useState({ label: '', link: '' });
   const [newMcqCategory, setNewMcqCategory] = useState({ value: '', label: '' });
   const [loadingStructure, setLoadingStructure] = useState(false);
   const [categoriesSeedFile, setCategoriesSeedFile] = useState(null);
   const [isSeedingCategories, setIsSeedingCategories] = useState(false);
 
+  // Fetch category structure function (can be called manually)
+  const fetchCategoryStructure = async (forceRefresh = false) => {
+    if (uploadData.type === 'past-papers' || uploadData.type === 'past-interviews') {
+      setLoadingStructure(true);
+      try {
+        // Add cache-busting parameter when force refreshing
+        const cacheBuster = forceRefresh ? `&_=${Date.now()}` : '';
+        const response = await fetch(`/api/categories/structure?type=${uploadData.type}${cacheBuster}`);
+        if (response.ok) {
+          const data = await response.json();
+          // Force a new object reference to ensure React detects the change
+          setCategoryStructure(JSON.parse(JSON.stringify(data.data)));
+        }
+      } catch (error) {
+        console.error('Error fetching category structure:', error);
+      } finally {
+        setLoadingStructure(false);
+      }
+    } else {
+      setCategoryStructure(null);
+    }
+  };
+
   // Fetch category structure when type changes
   useEffect(() => {
-    const fetchCategoryStructure = async () => {
-      if (uploadData.type === 'past-papers' || uploadData.type === 'past-interviews') {
-        setLoadingStructure(true);
-        try {
-          const response = await fetch(`/api/categories/structure?type=${uploadData.type}`);
-          if (response.ok) {
-            const data = await response.json();
-            setCategoryStructure(data.data);
-          }
-        } catch (error) {
-          console.error('Error fetching category structure:', error);
-        } finally {
-          setLoadingStructure(false);
-        }
-      } else {
-        setCategoryStructure(null);
-      }
+    if (uploadData.type) {
+      fetchCategoryStructure();
       
       // Reset selections when type changes
       setSelectedCommission('');
       setSelectedDepartment('');
       setSelectedRole('');
+      setSelectedSubcategoryPath([]);
       setUploadData(prev => ({ ...prev, category: '', subcategory: '' }));
-    };
-
-    if (uploadData.type) {
-      fetchCategoryStructure();
     } else {
       setCategoryStructure(null);
     }
@@ -391,8 +402,54 @@ const AdminLogin = () => {
     return department.roles.map(role => ({
       value: role.link,
       label: role.label,
-      link: role.link
+      link: role.link,
+      subcategories: role.subcategories || []
     }));
+  };
+
+  // Get subcategories for a role or nested subcategory
+  const getSubcategories = (path = []) => {
+    const roles = getRoles();
+    const selectedRoleObj = roles.find(r => r.value === selectedRole);
+    if (!selectedRoleObj) return [];
+
+    let current = selectedRoleObj.subcategories || [];
+    // Navigate through the path to get nested subcategories
+    for (const index of path) {
+      if (current[index] && current[index].subcategories) {
+        current = current[index].subcategories;
+      } else {
+        return [];
+      }
+    }
+    return current || [];
+  };
+
+  // Get the full path (link) for the selected subcategory
+  const getSelectedSubcategoryLink = () => {
+    if (selectedSubcategoryPath.length === 0) return selectedRole;
+    
+    const roles = getRoles();
+    const selectedRoleObj = roles.find(r => r.value === selectedRole);
+    if (!selectedRoleObj) return selectedRole;
+    
+    let current = selectedRoleObj.subcategories || [];
+    let link = selectedRole;
+    
+    // Navigate through the path
+    for (let i = 0; i < selectedSubcategoryPath.length; i++) {
+      const index = selectedSubcategoryPath[i];
+      if (current[index]) {
+        link = current[index].link;
+        // Move to next level if not at the end
+        if (i < selectedSubcategoryPath.length - 1 && current[index].subcategories) {
+          current = current[index].subcategories;
+        }
+      } else {
+        break;
+      }
+    }
+    return link;
   };
 
   // Handle adding new commission
@@ -1085,6 +1142,7 @@ const AdminLogin = () => {
                             value={selectedRole}
                             onChange={(e) => {
                               setSelectedRole(e.target.value);
+                              setSelectedSubcategoryPath([]);
                               setUploadData(prev => ({ ...prev, category: e.target.value }));
                             }}
                     required
@@ -1142,6 +1200,577 @@ const AdminLogin = () => {
                             </div>
                           )}
                         </div>
+                      </div>
+                    )}
+
+                    {/* Subcategory Selection - supports nested subcategories */}
+                    {selectedRole && (
+                      <div className="mt-4">
+                        <div className="flex items-center justify-between mb-2">
+                          <label className="block text-sm font-semibold text-gray-700">
+                            Subcategories
+                          </label>
+                          <button
+                            type="button"
+                            onClick={() => fetchCategoryStructure(true)}
+                            disabled={loadingStructure}
+                            className="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded hover:bg-gray-200 font-medium disabled:opacity-50"
+                            title="Refresh subcategories"
+                          >
+                            {loadingStructure ? '⏳' : '🔄'} Refresh
+                          </button>
+                        </div>
+                        {(() => {
+                      // Force re-render when categoryStructure changes by using it in the key
+                      const structureKey = categoryStructure ? JSON.stringify(categoryStructure).slice(0, 100) : '';
+                      
+                      const renderSubcategoryLevel = (path = [], level = 0) => {
+                        const subcategories = getSubcategories(path);
+                        if (subcategories.length === 0 && level === 0) {
+                          // Show option to add subcategory if none exist
+                          return (
+                            <div key={`level-${level}`} className="mt-4">
+                              <div className="flex items-center justify-between mb-2">
+                                <label className="block text-sm font-semibold text-gray-700">
+                                  Subcategory (Optional)
+                                </label>
+                                <button
+                                  type="button"
+                                  onClick={() => setShowNewSubcategory(true)}
+                                  className="text-sm text-indigo-600 hover:text-indigo-800 font-medium"
+                                >
+                                  + Add Subcategory
+                                </button>
+                              </div>
+                              {showNewSubcategory && (
+                                <div className="border border-indigo-200 rounded-lg p-4 bg-indigo-50 mt-2">
+                                  <div className="space-y-3">
+                                    <div>
+                                      <label className="block text-sm font-medium text-gray-700 mb-1">Subcategory Label</label>
+                                      <input
+                                        type="text"
+                                        value={newSubcategoryData.label}
+                                        onChange={(e) => setNewSubcategoryData(prev => ({ ...prev, label: e.target.value }))}
+                                        placeholder="e.g., Test Past Paper 26-06-2023"
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label className="block text-sm font-medium text-gray-700 mb-1">Subcategory Link (URL path)</label>
+                                      <input
+                                        type="text"
+                                        value={newSubcategoryData.link}
+                                        onChange={(e) => setNewSubcategoryData(prev => ({ ...prev, link: e.target.value }))}
+                                        placeholder={`${selectedRole}/subcategory-slug`}
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"
+                                      />
+                                    </div>
+                                    <div className="flex gap-2">
+                                      <button
+                                        type="button"
+                                        onClick={async () => {
+                                          if (!newSubcategoryData.label || !newSubcategoryData.label.trim()) {
+                                            setError('Subcategory label is required');
+                                            return;
+                                          }
+                                          
+                                          const roles = getRoles();
+                                          const selectedRoleObj = roles.find(r => r.value === selectedRole);
+                                          if (!selectedRoleObj) {
+                                            setError('Role not found');
+                                            return;
+                                          }
+                                          
+                                          const token = localStorage.getItem('adminToken');
+                                          if (!token) {
+                                            setError('Not authenticated. Please login again.');
+                                            return;
+                                          }
+                                          
+                                          try {
+                                            const response = await apiFetch('/api/categories/structure', {
+                                              method: 'POST',
+                                              headers: {
+                                                'Content-Type': 'application/json',
+                                                'Authorization': `Bearer ${token}`,
+                                              },
+                                              body: JSON.stringify({
+                                                type: uploadData.type,
+                                                action: 'add-subcategory',
+                                                data: {
+                                                  commissionTitle: selectedCommission,
+                                                  departmentLabel: selectedDepartment,
+                                                  roleLabel: selectedRoleObj.label,
+                                                  subcategoryLabel: newSubcategoryData.label.trim(),
+                                                  subcategoryLink: newSubcategoryData.link.trim(),
+                                                  parentSubcategoryPath: path.length > 0 ? path : null
+                                                }
+                                              }),
+                                            });
+
+                                            if (response.ok) {
+                                              // Force refresh the category structure
+                                              await fetchCategoryStructure(true);
+                                              setNewSubcategoryData({ label: '', link: '' });
+                                              setShowNewSubcategory(false);
+                                              setSuccess('Subcategory added successfully!');
+                                            } else {
+                                              const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
+                                              setError(errorData.error || 'Failed to add subcategory');
+                                              console.error('Add subcategory error:', errorData);
+                                            }
+                                          } catch (error) {
+                                            console.error('Add subcategory exception:', error);
+                                            setError('Network error. Please try again.');
+                                          }
+                                        }}
+                                        className="flex-1 px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 font-medium"
+                                      >
+                                        Add Subcategory
+                                      </button>
+                                      <button
+                                        type="button"
+                                        onClick={() => {
+                                          setShowNewSubcategory(false);
+                                          setNewSubcategoryData({ label: '', link: '' });
+                                        }}
+                                        className="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 font-medium"
+                                      >
+                                        Cancel
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              )}
+                            </div>
+                          );
+                        }
+                        
+                        return (
+                          <div key={`level-${level}-${structureKey}-${subcategories.length}`} className="mt-4">
+                            <div className="flex items-center justify-between mb-2">
+                              <label className="block text-sm font-semibold text-gray-700">
+                                {level === 0 ? 'Subcategory (Optional)' : `Sub-subcategory (Level ${level + 1}, Optional)`}
+                              </label>
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  setShowNewSubcategory(true);
+                                  // Store the path for nested subcategory
+                                }}
+                                className="text-sm text-indigo-600 hover:text-indigo-800 font-medium"
+                              >
+                                + Add {level === 0 ? 'Subcategory' : 'Sub-subcategory'}
+                              </button>
+                            </div>
+                            <select
+                              key={`select-${level}-${structureKey}-${subcategories.length}`}
+                              value={selectedSubcategoryPath[level] !== undefined ? selectedSubcategoryPath[level] : ''}
+                              onChange={(e) => {
+                                const newPath = [...selectedSubcategoryPath];
+                                if (e.target.value === '') {
+                                  // Clear this level and all deeper levels
+                                  newPath.splice(level);
+                                } else {
+                                  newPath[level] = parseInt(e.target.value);
+                                  newPath.splice(level + 1); // Clear deeper levels
+                                }
+                                setSelectedSubcategoryPath(newPath);
+                                const selectedLink = newPath.length > 0 ? getSelectedSubcategoryLink() : selectedRole;
+                                setUploadData(prev => ({ ...prev, category: selectedLink }));
+                              }}
+                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                            >
+                              <option value="">None (Upload to Role directly)</option>
+                              {subcategories.map((subcat, idx) => (
+                                <option key={`opt-${idx}-${subcat.label}-${structureKey}`} value={idx}>{subcat.label}</option>
+                              ))}
+                            </select>
+                            
+                            {/* Subcategory Management - Edit/Delete/Reorder */}
+                            {subcategories.length > 0 && level === 0 && (
+                              <div className="mt-3 space-y-2" key={`subcats-manage-${selectedRole}-${subcategories.length}-${structureKey}`}>
+                                <div className="text-xs font-semibold text-gray-600 mb-2">Manage Subcategories:</div>
+                                {subcategories.map((subcat, idx) => (
+                                  <div key={`subcat-${subcat.label}-${idx}-${subcategories.length}-${structureKey}`} className="flex items-center gap-2 p-2 bg-gray-50 rounded border border-gray-200">
+                                    {editingSubcategoryIndex === idx ? (
+                                      <>
+                                        <input
+                                          type="text"
+                                          value={editingSubcategoryData.label}
+                                          onChange={(e) => setEditingSubcategoryData(prev => ({ ...prev, label: e.target.value }))}
+                                          className="flex-1 px-2 py-1 text-sm border border-gray-300 rounded"
+                                          placeholder="Label"
+                                        />
+                                        <input
+                                          type="text"
+                                          value={editingSubcategoryData.link}
+                                          onChange={(e) => setEditingSubcategoryData(prev => ({ ...prev, link: e.target.value }))}
+                                          className="flex-1 px-2 py-1 text-sm border border-gray-300 rounded"
+                                          placeholder="Link"
+                                        />
+                                        <button
+                                          type="button"
+                                          onClick={async () => {
+                                            if (!editingSubcategoryData.label || !editingSubcategoryData.label.trim()) {
+                                              setError('Subcategory label is required');
+                                              return;
+                                            }
+                                            
+                                            const roles = getRoles();
+                                            const selectedRoleObj = roles.find(r => r.value === selectedRole);
+                                            if (!selectedRoleObj) {
+                                              setError('Role not found');
+                                              return;
+                                            }
+                                            
+                                            const token = localStorage.getItem('adminToken');
+                                            if (!token) {
+                                              setError('Not authenticated. Please login again.');
+                                              return;
+                                            }
+                                            
+                                            try {
+                                              const response = await apiFetch('/api/categories/structure', {
+                                                method: 'POST',
+                                                headers: {
+                                                  'Content-Type': 'application/json',
+                                                  'Authorization': `Bearer ${token}`,
+                                                },
+                                                body: JSON.stringify({
+                                                  type: uploadData.type,
+                                                  action: 'edit-subcategory',
+                                                  data: {
+                                                    commissionTitle: selectedCommission,
+                                                    departmentLabel: selectedDepartment,
+                                                    roleLabel: selectedRoleObj.label,
+                                                    subcategoryIndex: idx,
+                                                    subcategoryLabel: editingSubcategoryData.label.trim(),
+                                                    subcategoryLink: editingSubcategoryData.link.trim()
+                                                  }
+                                                }),
+                                              });
+
+                                              if (response.ok) {
+                                                // Force refresh the category structure
+                                                await fetchCategoryStructure(true);
+                                                setEditingSubcategoryIndex(null);
+                                                setEditingSubcategoryData({ label: '', link: '' });
+                                                setSuccess('Subcategory updated successfully!');
+                                              } else {
+                                                const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
+                                                setError(errorData.error || 'Failed to update subcategory');
+                                                console.error('Edit subcategory error:', errorData);
+                                              }
+                                            } catch (error) {
+                                              console.error('Edit subcategory exception:', error);
+                                              setError('Network error. Please try again.');
+                                            }
+                                          }}
+                                          className="px-2 py-1 text-xs bg-green-600 text-white rounded hover:bg-green-700"
+                                        >
+                                          Save
+                                        </button>
+                                        <button
+                                          type="button"
+                                          onClick={() => {
+                                            setEditingSubcategoryIndex(null);
+                                            setEditingSubcategoryData({ label: '', link: '' });
+                                          }}
+                                          className="px-2 py-1 text-xs bg-gray-400 text-white rounded hover:bg-gray-500"
+                                        >
+                                          Cancel
+                                        </button>
+                                      </>
+                                    ) : (
+                                      <>
+                                        <span className="flex-1 text-sm text-gray-700">{subcat.label}</span>
+                                        <button
+                                          type="button"
+                                          onClick={() => {
+                                            setEditingSubcategoryIndex(idx);
+                                            setEditingSubcategoryData({ label: subcat.label, link: subcat.link || '' });
+                                          }}
+                                          className="px-2 py-1 text-xs bg-blue-600 text-white rounded hover:bg-blue-700"
+                                        >
+                                          Edit
+                                        </button>
+                                        <button
+                                          type="button"
+                                          onClick={async () => {
+                                            if (!confirm(`Delete "${subcat.label}"?`)) return;
+                                            
+                                            const roles = getRoles();
+                                            const selectedRoleObj = roles.find(r => r.value === selectedRole);
+                                            if (!selectedRoleObj) return;
+                                            
+                                            const token = localStorage.getItem('adminToken');
+                                            try {
+                                              const response = await apiFetch('/api/categories/structure', {
+                                                method: 'POST',
+                                                headers: {
+                                                  'Content-Type': 'application/json',
+                                                  'Authorization': `Bearer ${token}`,
+                                                },
+                                                body: JSON.stringify({
+                                                  type: uploadData.type,
+                                                  action: 'delete-subcategory',
+                                                  data: {
+                                                    commissionTitle: selectedCommission,
+                                                    departmentLabel: selectedDepartment,
+                                                    roleLabel: selectedRoleObj.label,
+                                                    subcategoryIndex: idx
+                                                  }
+                                                }),
+                                              });
+
+                                              if (response.ok) {
+                                                // Force refresh the category structure
+                                                await fetchCategoryStructure(true);
+                                                setSuccess('Subcategory deleted successfully!');
+                                                // Clear selection if needed
+                                                if (selectedSubcategoryPath.length > 0) {
+                                                  setSelectedSubcategoryPath([]);
+                                                }
+                                                // Force component update by resetting editing state
+                                                setEditingSubcategoryIndex(null);
+                                              } else {
+                                                const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
+                                                setError(errorData.error || 'Failed to delete subcategory');
+                                                console.error('Delete subcategory error:', errorData);
+                                              }
+                                            } catch (error) {
+                                              console.error('Delete subcategory exception:', error);
+                                              setError('Network error. Please try again.');
+                                            }
+                                          }}
+                                          className="px-2 py-1 text-xs bg-red-600 text-white rounded hover:bg-red-700"
+                                        >
+                                          Delete
+                                        </button>
+                                        {idx > 0 && (
+                                          <button
+                                            type="button"
+                                            onClick={async () => {
+                                              const roles = getRoles();
+                                              const selectedRoleObj = roles.find(r => r.value === selectedRole);
+                                              if (!selectedRoleObj) return;
+                                              
+                                              const token = localStorage.getItem('adminToken');
+                                              try {
+                                                const response = await apiFetch('/api/categories/structure', {
+                                                  method: 'POST',
+                                                  headers: {
+                                                    'Content-Type': 'application/json',
+                                                    'Authorization': `Bearer ${token}`,
+                                                  },
+                                                  body: JSON.stringify({
+                                                    type: uploadData.type,
+                                                    action: 'reorder-subcategory',
+                                                    data: {
+                                                      commissionTitle: selectedCommission,
+                                                      departmentLabel: selectedDepartment,
+                                                      roleLabel: selectedRoleObj.label,
+                                                      fromIndex: idx,
+                                                      toIndex: idx - 1
+                                                    }
+                                                  }),
+                                                });
+
+                                                if (response.ok) {
+                                                  const refreshResponse = await fetch(`/api/categories/structure?type=${uploadData.type}`);
+                                                  if (refreshResponse.ok) {
+                                                    const refreshData = await refreshResponse.json();
+                                                    setCategoryStructure(refreshData.data);
+                                                  }
+                                                  setSuccess('Subcategory moved up!');
+                                                } else {
+                                                  const errorData = await response.json();
+                                                  setError(errorData.error || 'Failed to reorder subcategory');
+                                                }
+                                              } catch (error) {
+                                                setError('Network error. Please try again.');
+                                              }
+                                            }}
+                                            className="px-2 py-1 text-xs bg-gray-600 text-white rounded hover:bg-gray-700"
+                                            title="Move up"
+                                          >
+                                            ↑
+                                          </button>
+                                        )}
+                                        {idx < subcategories.length - 1 && (
+                                          <button
+                                            type="button"
+                                            onClick={async () => {
+                                              const roles = getRoles();
+                                              const selectedRoleObj = roles.find(r => r.value === selectedRole);
+                                              if (!selectedRoleObj) return;
+                                              
+                                              const token = localStorage.getItem('adminToken');
+                                              try {
+                                                const response = await apiFetch('/api/categories/structure', {
+                                                  method: 'POST',
+                                                  headers: {
+                                                    'Content-Type': 'application/json',
+                                                    'Authorization': `Bearer ${token}`,
+                                                  },
+                                                  body: JSON.stringify({
+                                                    type: uploadData.type,
+                                                    action: 'reorder-subcategory',
+                                                    data: {
+                                                      commissionTitle: selectedCommission,
+                                                      departmentLabel: selectedDepartment,
+                                                      roleLabel: selectedRoleObj.label,
+                                                      fromIndex: idx,
+                                                      toIndex: idx + 1
+                                                    }
+                                                  }),
+                                                });
+
+                                                if (response.ok) {
+                                                  const refreshResponse = await fetch(`/api/categories/structure?type=${uploadData.type}`);
+                                                  if (refreshResponse.ok) {
+                                                    const refreshData = await refreshResponse.json();
+                                                    setCategoryStructure(refreshData.data);
+                                                  }
+                                                  setSuccess('Subcategory moved down!');
+                                                } else {
+                                                  const errorData = await response.json();
+                                                  setError(errorData.error || 'Failed to reorder subcategory');
+                                                }
+                                              } catch (error) {
+                                                setError('Network error. Please try again.');
+                                              }
+                                            }}
+                                            className="px-2 py-1 text-xs bg-gray-600 text-white rounded hover:bg-gray-700"
+                                            title="Move down"
+                                          >
+                                            ↓
+                                          </button>
+                                        )}
+                                      </>
+                                    )}
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                            
+                            {/* Recursively render next level if a subcategory is selected */}
+                            {selectedSubcategoryPath[level] !== undefined && subcategories[selectedSubcategoryPath[level]] && 
+                             subcategories[selectedSubcategoryPath[level]].subcategories && 
+                             subcategories[selectedSubcategoryPath[level]].subcategories.length > 0 && (
+                              <div className="ml-4 mt-2">
+                                {renderSubcategoryLevel([...path, selectedSubcategoryPath[level]], level + 1)}
+                              </div>
+                            )}
+                            
+                            {/* Show add subcategory form if needed */}
+                            {showNewSubcategory && level === selectedSubcategoryPath.length && (
+                              <div className="border border-indigo-200 rounded-lg p-4 bg-indigo-50 mt-2">
+                                <div className="space-y-3">
+                                  <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">Subcategory Label</label>
+                                    <input
+                                      type="text"
+                                      value={newSubcategoryData.label}
+                                      onChange={(e) => setNewSubcategoryData(prev => ({ ...prev, label: e.target.value }))}
+                                      placeholder={level === 0 ? "e.g., Test Past Paper 26-06-2023" : "e.g., Test Past Paper 24-06-2023 Morning"}
+                                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"
+                                    />
+                                  </div>
+                                  <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">Subcategory Link (URL path)</label>
+                                    <input
+                                      type="text"
+                                      value={newSubcategoryData.link}
+                                      onChange={(e) => setNewSubcategoryData(prev => ({ ...prev, link: e.target.value }))}
+                                      placeholder={`${path.length > 0 ? getSelectedSubcategoryLink() : selectedRole}/subcategory-slug`}
+                                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"
+                                    />
+                                  </div>
+                                  <div className="flex gap-2">
+                                    <button
+                                      type="button"
+                                      onClick={async () => {
+                                        if (!newSubcategoryData.label || !newSubcategoryData.label.trim()) {
+                                          setError('Subcategory label is required');
+                                          return;
+                                        }
+                                        
+                                        const roles = getRoles();
+                                        const selectedRoleObj = roles.find(r => r.value === selectedRole);
+                                        if (!selectedRoleObj) {
+                                          setError('Role not found');
+                                          return;
+                                        }
+                                        
+                                        const token = localStorage.getItem('adminToken');
+                                        if (!token) {
+                                          setError('Not authenticated. Please login again.');
+                                          return;
+                                        }
+                                        
+                                        try {
+                                          const response = await apiFetch('/api/categories/structure', {
+                                            method: 'POST',
+                                            headers: {
+                                              'Content-Type': 'application/json',
+                                              'Authorization': `Bearer ${token}`,
+                                            },
+                                            body: JSON.stringify({
+                                              type: uploadData.type,
+                                              action: 'add-subcategory',
+                                              data: {
+                                                commissionTitle: selectedCommission,
+                                                departmentLabel: selectedDepartment,
+                                                roleLabel: selectedRoleObj.label,
+                                                subcategoryLabel: newSubcategoryData.label.trim(),
+                                                subcategoryLink: newSubcategoryData.link.trim(),
+                                                parentSubcategoryPath: path.length > 0 ? path : null
+                                              }
+                                            }),
+                                          });
+
+                                          if (response.ok) {
+                                            // Force refresh the category structure
+                                            await fetchCategoryStructure(true);
+                                            setNewSubcategoryData({ label: '', link: '' });
+                                            setShowNewSubcategory(false);
+                                            setSuccess('Subcategory added successfully!');
+                                          } else {
+                                            const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
+                                            setError(errorData.error || 'Failed to add subcategory');
+                                            console.error('Add subcategory error:', errorData);
+                                          }
+                                        } catch (error) {
+                                          console.error('Add subcategory exception:', error);
+                                          setError('Network error. Please try again.');
+                                        }
+                                      }}
+                                      className="flex-1 px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 font-medium"
+                                    >
+                                      Add Subcategory
+                                    </button>
+                                    <button
+                                      type="button"
+                                      onClick={() => {
+                                        setShowNewSubcategory(false);
+                                        setNewSubcategoryData({ label: '', link: '' });
+                                      }}
+                                      className="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 font-medium"
+                                    >
+                                      Cancel
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        );
+                      };
+                      
+                      return renderSubcategoryLevel();
+                    })()}
                       </div>
                     )}
                   </>
