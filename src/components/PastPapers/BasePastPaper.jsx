@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 import PastPaperMcqCard from '../PastPaperMcqCard';
 import QuizMcqCard from '../QuizMcqCard';
 import QuizModeToggle from '../QuizModeToggle';
@@ -9,6 +10,7 @@ import LeavePageModal from '../LeavePageModal';
 import PastPapersRightSideBar from '../PastPapersRightSideBar';
 import Pagination from '../Pagination';
 import Breadcrumb from '../Breadcrumb';
+import { generateQuestionSlug } from '../../../lib/utils/slugGenerator.js';
 
 const normalizeAnswer = (value = '') =>
   value
@@ -17,7 +19,7 @@ const normalizeAnswer = (value = '') =>
     .trim()
     .toLowerCase();
 
-const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, totalPages, mcqsPerPage, breadcrumbItems }) =>  {
+const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, totalPages, mcqsPerPage, breadcrumbItems, categoryPath }) =>  {
   // Quiz mode state
   const [quizMode, setQuizMode] = useState(false);
   const [userAnswers, setUserAnswers] = useState({});
@@ -270,6 +272,12 @@ const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, tota
               )}
             </div>
             {pastpaperData.map((mcq, index) => {
+              // Generate question URL for SEO - similar to MCQs
+              const questionSlug = mcq.slug || generateQuestionSlug(mcq.question);
+              const questionUrl = categoryPath 
+                ? `/past-papers/${categoryPath}/question/${questionSlug}`
+                : '#';
+              
               if (quizMode) {
                 return (
                   <QuizMcqCard
@@ -285,12 +293,33 @@ const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, tota
               }
               
               return (
-                <PastPaperMcqCard
-                  key={index}
-                  questionNumber={(currentPage - 1) * mcqsPerPage + index + 1}
-                  correctAnswer={mcq.answer}
-                  {...mcq}
-                />
+                <div key={mcq._id?.toString() || index} className="group">
+                  <Link 
+                    href={questionUrl}
+                    className="block hover:opacity-95 transition-opacity"
+                    onClick={!categoryPath ? (e) => {
+                      e.preventDefault();
+                      console.error('Cannot generate question URL: categoryPath is missing!', {
+                        categoryPath,
+                        mcqId: mcq._id
+                      });
+                    } : undefined}
+                  >
+                    <PastPaperMcqCard
+                      questionNumber={(currentPage - 1) * mcqsPerPage + index + 1}
+                      correctAnswer={mcq.answer}
+                      {...mcq}
+                    />
+                  </Link>
+                  <div className="mt-2 text-center">
+                    <Link
+                      href={questionUrl}
+                      className="inline-block text-sm text-blue-600 hover:text-blue-800 font-medium"
+                    >
+                      View Full Question →
+                    </Link>
+                  </div>
+                </div>
               );
             })}
             {/* Pagination Component */}

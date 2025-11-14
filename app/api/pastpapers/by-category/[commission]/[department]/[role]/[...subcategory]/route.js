@@ -6,11 +6,11 @@ import { sanitizeSubject, sanitizeInt } from '@/lib/utils/security.js';
 import { normalizeCategoryName } from '@/lib/utils/categoryUtils.js';
 
 /**
- * GET - Fetch past papers (stored as MCQs) by commission, department, and role
- * URL: /api/pastpapers/by-category/[commission]/[department]/[role]
+ * GET - Fetch past papers (stored as MCQs) by commission, department, role, and subcategory path
+ * URL: /api/pastpapers/by-category/[commission]/[department]/[role]/[...subcategory]
  * 
  * Note: Past papers are stored in the MCQ collection with category information
- * that maps to commission/department/role structure. Categories are stored with
+ * that maps to commission/department/role/subcategory structure. Categories are stored with
  * normalized names based on the full path (e.g., /past-papers/commission/dept/role/subcategory)
  */
 export async function GET(request, { params }) {
@@ -21,6 +21,13 @@ export async function GET(request, { params }) {
     const commission = sanitizeSubject(params.commission);
     const department = sanitizeSubject(params.department);
     const role = sanitizeSubject(params.role);
+    
+    // subcategory is an array from catch-all route
+    const subcategoryArray = Array.isArray(params.subcategory) 
+      ? params.subcategory 
+      : (params.subcategory ? [params.subcategory] : []);
+    
+    const subcategoryPath = subcategoryArray.map(s => sanitizeSubject(s)).filter(Boolean);
 
     if (!commission || !department || !role) {
       return NextResponse.json(
@@ -34,35 +41,36 @@ export async function GET(request, { params }) {
     const limit = sanitizeInt(searchParams.get('limit'), 1, 100, 10);
     const skip = (page - 1) * limit;
 
-    // Build the full category path from commission/department/role
-    // This matches how categories are created during batch upload
-    const categoryPath = `/past-papers/${commission}/${department}/${role}`;
+    // Build the full category path from commission/department/role/subcategory
+    // Categories are stored with the full path including slashes (e.g., /past-papers/commission/dept/role/subcat)
+    const categoryPath = subcategoryPath.length > 0
+      ? `/past-papers/${commission}/${department}/${role}/${subcategoryPath.join('/')}`
+      : `/past-papers/${commission}/${department}/${role}`;
     
-    // Normalize the category path the same way batch upload does
-    const normalizedCategoryName = normalizeCategoryName(categoryPath);
+    // Escape special regex characters in the path for regex search
+    const escapedPath = categoryPath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     
-    // Find categories that match exactly OR start with the normalized path
-    // This includes the parent category and all its subcategories
-    // For example, if normalizedCategoryName is "past-papers-sts-siba-testing-services-bps-05-to-15-intermediate-category"
-    // it will also match "past-papers-sts-siba-testing-services-bps-05-to-15-intermediate-category-test-past-paper-26-06-2023"
+    // Also try without trailing slash if present
+    const categoryPathNoTrailing = categoryPath.replace(/\/$/, '');
+    const escapedPathNoTrailing = categoryPathNoTrailing.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     
-    // Escape special regex characters in the normalized name
-    const escapedName = normalizedCategoryName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    // Build parent path for fallback search
+    const parentPath = `/past-papers/${commission}/${department}/${role}`;
+    const escapedParentPath = parentPath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     
     // Combine all search patterns into a single query using $or for better performance
     // This reduces multiple sequential database calls to just one
     const searchConditions = [
-      { name: new RegExp(`^${escapedName}$`, 'i') }, // Exact match
-      { name: new RegExp(`^${escapedName}-`, 'i') }, // Starts with path followed by hyphen (subcategories)
-      { name: new RegExp(`^${escapedName}/`, 'i') }  // Starts with path followed by slash (if slashes weren't normalized)
+      { name: new RegExp(`^${escapedPath}$`, 'i') }, // Exact match
+      { name: new RegExp(`^${escapedPathNoTrailing}$`, 'i') }, // Exact match without trailing slash
+      { name: new RegExp(`^${escapedPath}/`, 'i') },  // Starts with path followed by slash (nested subcategories)
+      { name: new RegExp(`^${escapedPathNoTrailing}/`, 'i') }  // Starts with path (no trailing) followed by slash
     ];
     
-    // Also try searching with the full path format (with slashes) as categories might be stored that way
-    const categoryPathEscaped = categoryPath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    searchConditions.push(
-      { name: new RegExp(`^${categoryPathEscaped}$`, 'i') }, // Exact match with slashes
-      { name: new RegExp(`^${categoryPathEscaped}/`, 'i') }  // Starts with path followed by slash
-    );
+    // If we have subcategories, also include parent path search in the same query
+    if (subcategoryPath.length > 0) {
+      searchConditions.push({ name: new RegExp(`^${escapedParentPath}/`, 'i') });
+    }
     
     // Execute single combined query
     const matchingCategoriesRaw = await Category.find({
@@ -75,34 +83,16 @@ export async function GET(request, { params }) {
     matchingCategoriesRaw.forEach(cat => {
       matchingCategoriesMap.set(cat._id.toString(), cat);
     });
-    let matchingCategories = Array.from(matchingCategoriesMap.values());
+    const matchingCategories = Array.from(matchingCategoriesMap.values());
     
-    // Check if we should exclude subcategories (exact match only)
-    const excludeSubcategories = searchParams.get('exact') === 'true';
-    
-    if (excludeSubcategories && matchingCategories.length > 0) {
-      // Filter to only exact matches (no subcategories)
-      const exactMatches = matchingCategories.filter(cat => {
-        const catName = cat.name.toLowerCase();
-        const exactPath = categoryPath.toLowerCase();
-        const exactNormalized = normalizedCategoryName.toLowerCase();
-        // Check if it's an exact match (not a subcategory)
-        return catName === exactPath || catName === exactNormalized ||
-               catName === exactPath.replace(/\/$/, '') || catName === exactNormalized.replace(/\/$/, '');
-      });
-      
-      if (exactMatches.length > 0) {
-        matchingCategories = exactMatches;
-      }
-    }
-    
-    // If no exact matches, try a broader search - find any category that contains the key parts
+    // If still no matches, try a broader search - find any category that contains the key parts
     if (matchingCategories.length === 0) {
       // Build search terms from the path components
       const searchTerms = [
         normalizeCategoryName(commission),
         normalizeCategoryName(department),
-        normalizeCategoryName(role)
+        normalizeCategoryName(role),
+        ...subcategoryPath.map(s => normalizeCategoryName(s))
       ].filter(Boolean);
       
       // Find categories that contain all search terms
@@ -132,12 +122,12 @@ export async function GET(request, { params }) {
     // Get category IDs
     const categoryIds = matchingCategories.map(cat => cat._id);
 
-    // Get all MCQs for these categories (parent + all subcategories)
+    // Get all MCQs for these categories (the specific subcategory and its nested subcategories)
     const allMcqs = await MCQ.find({
       categoryId: { $in: categoryIds }
     }).lean();
 
-    const filteredMcqs = allMcqs; // All MCQs from parent and subcategories
+    const filteredMcqs = allMcqs; // All MCQs from the subcategory and its nested subcategories
 
     // Apply pagination
     const total = filteredMcqs.length;

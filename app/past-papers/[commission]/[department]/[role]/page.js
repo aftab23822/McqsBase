@@ -120,6 +120,7 @@ export default function PastPaperCategoryPage() {
 
         // Generate breadcrumb labels from category structure
         const categories = getPastPaperCategories();
+        
         let newBreadcrumbData = {
           commissionLabel: commission.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
           departmentLabel: department.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
@@ -127,21 +128,86 @@ export default function PastPaperCategoryPage() {
         };
 
         const foundCategory = categories.find(cat => {
-          const catSlug = cat.title.toLowerCase().replace(/\s+/g, '-');
-          return catSlug === commission || cat.title.toLowerCase().replace(/[^a-z0-9]/g, '-') === commission;
+          // Strategy 1: Match by slugified title (normalize multiple dashes)
+          const catSlug = cat.title.toLowerCase()
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-')  // Replace multiple dashes with single dash
+            .replace(/^-+|-+$/g, ''); // Remove leading/trailing dashes
+          
+          // Strategy 2: Match by removing all non-alphanumeric and normalizing
+          const catSlugAlt = cat.title.toLowerCase()
+            .replace(/[^a-z0-9\s]/g, '')  // Remove special chars first
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-')
+            .replace(/^-+|-+$/g, '');
+          
+          // Strategy 3: Match by link if available
+          let linkMatch = false;
+          if (cat.departments) {
+            for (const dept of cat.departments) {
+              if (dept.roles) {
+                for (const r of dept.roles) {
+                  if (r.link) {
+                    const linkParts = r.link.split('/').filter(Boolean);
+                    if (linkParts.length >= 2 && linkParts[1] === commission) {
+                      linkMatch = true;
+                      break;
+                    }
+                  }
+                }
+                if (linkMatch) break;
+              }
+            }
+          }
+          
+          return catSlug === commission || catSlugAlt === commission || linkMatch;
         });
 
         if (foundCategory) {
           const foundDepartment = foundCategory.departments?.find(dept => {
             const deptSlug = dept.label.replace(/^[^\w\s]+/, '').toLowerCase().replace(/\s+/g, '-');
-            return deptSlug.includes(department) || department.includes(deptSlug.split('-')[0]);
+            const match = deptSlug.includes(department) || department.includes(deptSlug.split('-')[0]);
+            return match;
           });
 
           if (foundDepartment) {
+            // Try multiple matching strategies
             const foundRole = foundDepartment.roles?.find(r => {
-              const roleSlug = r.label.toLowerCase().replace(/\s+/g, '-').replace(/bps-(\d+)/gi, 'bps-$1');
-              const normalizedUrlRole = role.replace(/bps(\d+)/gi, 'bps-$1');
-              return roleSlug === normalizedUrlRole || roleSlug.includes(role) || role.includes(roleSlug);
+              // Strategy 1: Match by link
+              if (r.link) {
+                const linkParts = r.link.split('/').filter(Boolean);
+                const lastPart = linkParts[linkParts.length - 1];
+                if (lastPart === role) {
+                  return true;
+                }
+              }
+              
+              // Strategy 2: Match by slugified label
+              const roleSlug = r.label.toLowerCase()
+                .replace(/\s+/g, '-')
+                .replace(/bps-(\d+)/gi, 'bps-$1')
+                .replace(/[^a-z0-9-]/g, '')
+                .replace(/-+/g, '-')
+                .replace(/^-+|-+$/g, '');
+              
+              const normalizedUrlRole = role
+                .replace(/bps(\d+)/gi, 'bps-$1')
+                .toLowerCase()
+                .replace(/[^a-z0-9-]/g, '')
+                .replace(/-+/g, '-')
+                .replace(/^-+|-+$/g, '');
+              
+              // Exact match
+              if (roleSlug === normalizedUrlRole) {
+                return true;
+              }
+              
+              // Partial match (contains)
+              if (roleSlug.includes(normalizedUrlRole) || normalizedUrlRole.includes(roleSlug)) {
+                return true;
+              }
+              
+              return false;
             });
 
             if (foundRole) {
@@ -186,10 +252,14 @@ export default function PastPaperCategoryPage() {
 
   // Convert subcategories to tree format for SubcategoriesSection
   const subcategoriesTree = useMemo(() => {
-    if (!foundRole || !foundRole.subcategories || foundRole.subcategories.length === 0) {
+    if (!foundRole) {
       return [];
     }
-    return convertSubcategoriesToTree(foundRole.subcategories, foundRole.link || '');
+    if (!foundRole.subcategories || foundRole.subcategories.length === 0) {
+      return [];
+    }
+    const tree = convertSubcategoriesToTree(foundRole.subcategories, foundRole.link || '');
+    return tree;
   }, [foundRole]);
 
   if (loading) {
@@ -215,9 +285,10 @@ export default function PastPaperCategoryPage() {
               <Breadcrumb items={[
                 { label: 'Home', href: '/' },
                 { label: 'Past Papers', href: '/past-papers' },
-                { label: breadcrumbData.commissionLabel || commission, href: `/past-papers` },
-                breadcrumbData.departmentLabel && { label: breadcrumbData.departmentLabel, href: '#' },
-                breadcrumbData.roleLabel && { label: breadcrumbData.roleLabel, href: '#' }
+                breadcrumbData.roleLabel && { 
+                  label: breadcrumbData.roleLabel, 
+                  href: `/past-papers/${commission}/${department}/${role}` 
+                }
               ].filter(Boolean)} />
               {error ? (
                 <div className="bg-red-50 border border-red-200 rounded-lg p-4">
@@ -243,31 +314,33 @@ export default function PastPaperCategoryPage() {
     <>
       <Navbar />
       {/* Display subcategories on page 1 */}
-      {currentPage === 1 && subcategoriesTree.length > 0 && (
+      {currentPage === 1 && subcategoriesTree && subcategoriesTree.length > 0 && (
         <div className="bg-gray-100">
           <div className="max-w-screen-xl mx-auto px-4 py-8">
             <SubcategoriesSection 
-              subject={breadcrumbData.roleLabel || role} 
+              subject={`${commission}/${department}/${role}`}
               initialTree={subcategoriesTree} 
-              basePath={`past-papers/${commission}/${department}/${role}`}
+              basePath="past-papers"
             />
           </div>
         </div>
       )}
-      <BasePastPaper
-        pastpaperData={pastPaperData}
-        title={pageTitle || 'Past Papers'}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-        totalPages={totalPages}
-        mcqsPerPage={papersPerPage}
-        breadcrumbItems={[
-          { label: 'Home', href: '/' },
-          { label: 'Past Papers', href: '/past-papers' },
-          { label: breadcrumbData.commissionLabel || commission, href: `/past-papers` },
-          breadcrumbData.departmentLabel && { label: breadcrumbData.departmentLabel, href: '#' },
-          breadcrumbData.roleLabel && { label: breadcrumbData.roleLabel, href: '#' }
-        ].filter(Boolean)}
+            <BasePastPaper
+              pastpaperData={pastPaperData}
+              title={pageTitle || 'Past Papers'}
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+              totalPages={totalPages}
+              mcqsPerPage={papersPerPage}
+              categoryPath={`${commission}/${department}/${role}`}
+              breadcrumbItems={[
+                { label: 'Home', href: '/' },
+                { label: 'Past Papers', href: '/past-papers' },
+                breadcrumbData.roleLabel && { 
+                  label: breadcrumbData.roleLabel, 
+                  href: `/past-papers/${commission}/${department}/${role}` 
+                }
+              ].filter(Boolean)}
       />
       <Footer />
     </>

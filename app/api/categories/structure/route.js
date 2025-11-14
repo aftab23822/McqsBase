@@ -8,6 +8,16 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs/promises';
 import path from 'path';
+import * as t from '@babel/types';
+import {
+  parseCategoryFile,
+  generateCode,
+  findRole,
+  navigateToSubcategory,
+  addSubcategoryToArray,
+  getSubcategoryLink,
+  generateSlug,
+} from '@/lib/utils/categoryFileParser';
 
 const CATEGORIES_DIR = path.join(process.cwd(), 'src', 'data', 'categories');
 
@@ -270,78 +280,132 @@ export async function POST(request) {
     } else if (action === 'add-subcategory' && (type === 'past-papers' || type === 'past-interviews')) {
       const { commissionTitle, departmentLabel, roleLabel, subcategoryLabel, subcategoryLink, parentSubcategoryPath } = data;
       
-      // Generate link from label if not provided
-      let finalLink = subcategoryLink.trim();
-      if (!finalLink) {
-        // Generate slug from label
-        const slug = subcategoryLabel.toLowerCase()
-          .replace(/[^a-z0-9\s-]/g, '')
-          .replace(/\s+/g, '-')
-          .replace(/-+/g, '-')
-          .replace(/^-+|-+$/g, '');
-        
-        // Find the role to get its link
-        const escapedRoleLabel = roleLabel.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        const roleLinkMatch = fileContent.match(new RegExp(`label:\\s*["']${escapedRoleLabel}["'][^}]*link:\\s*["']([^"]*)["']`, 's'));
-        const roleLink = roleLinkMatch ? roleLinkMatch[1] : '';
-        
-        finalLink = roleLink ? `${roleLink}/${slug}` : `/${type === 'past-papers' ? 'past-papers' : 'past-interviews'}/${slug}`;
+      // Validate required fields
+      if (!roleLabel || !subcategoryLabel) {
+        return NextResponse.json(
+          { error: 'Missing required fields: roleLabel and subcategoryLabel are required' },
+          { status: 400 }
+        );
       }
       
-      // Escape special characters in roleLabel for regex
-      const escapedRoleLabel = roleLabel.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      console.log('[API] Adding subcategory. parentSubcategoryPath received:', JSON.stringify(parentSubcategoryPath), 'type:', typeof parentSubcategoryPath, 'isArray:', Array.isArray(parentSubcategoryPath));
       
-      // Find the role - handle both cases: with and without subcategories array
-      // Pattern 1: Role with subcategories array
-      let roleRegex = new RegExp(
-        `(label:\\s*["']${escapedRoleLabel}["'][^}]*link:\\s*["'][^"]*["'][^}]*subcategories:\\s*\\[)([^\\]]*)(\\])`,
-        's'
-      );
-      
-      let match = fileContent.match(roleRegex);
-      
-      // Pattern 2: Role without subcategories array (need to add it)
-      if (!match) {
-        roleRegex = new RegExp(
-          `(label:\\s*["']${escapedRoleLabel}["'][^}]*link:\\s*["']([^"]*)["'])(\\s*)(\\})`,
-          's'
-        );
-        match = fileContent.match(roleRegex);
+      try {
+        // Parse the file using AST
+        const ast = parseCategoryFile(fileContent);
         
-        if (match) {
-          // Add subcategories array to role
-          const beforeLink = match[1]; // Everything up to closing quote
-          const roleLink = match[2];
-          const whitespace = match[3]; // Whitespace before closing brace
-          const closingBrace = match[4]; // The closing brace
-          
-          const newSubcat = `,\n            subcategories: [\n            { label: "${subcategoryLabel}", link: "${finalLink}", subcategories: [] }\n          ]`;
-          
-          fileContent = fileContent.replace(
-            roleRegex,
-            beforeLink + newSubcat + whitespace + closingBrace
+        // Find the role
+        const { role: roleObj } = findRole(ast, commissionTitle, departmentLabel, roleLabel);
+        
+        if (!roleObj) {
+          return NextResponse.json(
+            { error: `Role "${roleLabel}" not found in ${departmentLabel} > ${commissionTitle}` },
+            { status: 400 }
           );
-          updated = true;
         }
-      } else {
-        // Role already has subcategories array
-        const beforeSubcats = match[1];
-        const existingSubcats = match[2];
-        const afterSubcats = match[3];
         
-        const newSubcat = existingSubcats.trim()
-          ? `,\n            { label: "${subcategoryLabel}", link: "${finalLink}", subcategories: [] }`
-          : `            { label: "${subcategoryLabel}", link: "${finalLink}", subcategories: [] }`;
+        // Ensure parentSubcategoryPath is an array
+        const normalizedPath = Array.isArray(parentSubcategoryPath) ? parentSubcategoryPath : (parentSubcategoryPath ? [parentSubcategoryPath] : []);
         
-        fileContent = fileContent.replace(
-          roleRegex,
-          beforeSubcats + existingSubcats + newSubcat + afterSubcats
-        );
+        // Generate link if not provided
+        let finalLink = subcategoryLink?.trim() || '';
+        if (!finalLink) {
+          // Get parent link
+          let parentLink = '';
+          if (normalizedPath && normalizedPath.length > 0) {
+            parentLink = getSubcategoryLink(roleObj, normalizedPath) || '';
+          } else {
+            // Get role link
+            roleObj.properties.forEach((prop) => {
+              if (prop.key && prop.key.name === 'link' && prop.value && prop.value.value) {
+                parentLink = prop.value.value;
+              }
+            });
+          }
+          
+          const slug = generateSlug(subcategoryLabel);
+          finalLink = parentLink ? `${parentLink}/${slug}` : slug;
+        }
+        
+        // Navigate to the target subcategory or role
+        let targetArrayPath = null;
+        
+        if (!normalizedPath || normalizedPath.length === 0) {
+          // Add to role's direct subcategories
+          roleObj.properties.forEach((prop) => {
+            if (prop.key && prop.key.name === 'subcategories') {
+              if (!prop.value || !prop.value.elements) {
+                // Create new array
+                prop.value = t.arrayExpression([]);
+              }
+              targetArrayPath = prop.value;
+            }
+          });
+          
+          // If role doesn't have subcategories property, add it
+          if (!targetArrayPath) {
+            const subcategoriesProp = t.objectProperty(
+              t.identifier('subcategories'),
+              t.arrayExpression([])
+            );
+            roleObj.properties.push(subcategoriesProp);
+            targetArrayPath = subcategoriesProp.value;
+          }
+        } else {
+          // Navigate to the parent subcategory
+          console.log('[API] Navigating to subcategory with path:', JSON.stringify(normalizedPath));
+          const result = navigateToSubcategory(roleObj, normalizedPath);
+          
+          // Get the label of the found subcategory for debugging
+          let foundLabel = 'unknown';
+          if (result.subcategory && result.subcategory.properties) {
+            result.subcategory.properties.forEach((prop) => {
+              if (prop.key && prop.key.name === 'label' && prop.value && prop.value.value) {
+                foundLabel = prop.value.value;
+              }
+            });
+          }
+          console.log('[API] Navigation result:', {
+            found: !!result.subcategory,
+            hasArray: !!result.arrayPath,
+            subcategoryLabel: foundLabel
+          });
+          
+          if (!result.subcategory) {
+            return NextResponse.json(
+              { error: `Parent subcategory at path ${JSON.stringify(normalizedPath)} not found` },
+              { status: 400 }
+            );
+          }
+          
+          // Get or create subcategories array
+          if (result.arrayPath) {
+            targetArrayPath = result.arrayPath;
+          } else {
+            // Create subcategories array
+            const subcategoriesProp = t.objectProperty(
+              t.identifier('subcategories'),
+              t.arrayExpression([])
+            );
+            result.subcategory.properties.push(subcategoriesProp);
+            targetArrayPath = subcategoriesProp.value;
+          }
+        }
+        
+        // Add the new subcategory
+        addSubcategoryToArray(targetArrayPath, subcategoryLabel, finalLink);
+        
+        // Generate the updated code
+        fileContent = generateCode(ast);
         updated = true;
+        
+      } catch (error) {
+        console.error('Error adding subcategory:', error);
+        return NextResponse.json(
+          { error: `Failed to add subcategory: ${error.message}` },
+          { status: 500 }
+        );
       }
-      
-      // TODO: Handle nested subcategories (parentSubcategoryPath) - requires more complex parsing
-      // For now, nested subcategories are added to the role's direct subcategories
     } else if (action === 'edit-subcategory' && (type === 'past-papers' || type === 'past-interviews')) {
       const { commissionTitle, departmentLabel, roleLabel, subcategoryIndex, subcategoryLabel, subcategoryLink } = data;
       
@@ -512,148 +576,95 @@ export async function POST(request) {
       fileContent = beforeSubcatsArray + newSubcatsContent + afterSubcatsArray;
       updated = true;
     } else if (action === 'delete-subcategory' && (type === 'past-papers' || type === 'past-interviews')) {
-      const { commissionTitle, departmentLabel, roleLabel, subcategoryIndex } = data;
+      const { commissionTitle, departmentLabel, roleLabel, subcategoryIndex, parentSubcategoryPath } = data;
       
       if (!roleLabel || subcategoryIndex === undefined) {
         return NextResponse.json(
-          { error: 'Missing required fields: roleLabel or subcategoryIndex' },
+          { error: 'Missing required fields: roleLabel and subcategoryIndex are required' },
           { status: 400 }
         );
       }
       
-      const escapedRoleLabel = roleLabel.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      
-      // Find the role object first - handle multiline format
-      const roleMatch = fileContent.match(new RegExp(
-        `label:\\s*["']${escapedRoleLabel}["'][\\s\\S]*?link:\\s*["']([^"']*)["']`,
-        's'
-      ));
-      
-      if (!roleMatch) {
-        return NextResponse.json(
-          { error: `Role not found: ${roleLabel}` },
-          { status: 400 }
-        );
-      }
-      
-      // Find subcategories array in the role - need to handle nested brackets
-      const roleStart = roleMatch.index;
-      const afterRoleStart = roleMatch.index + roleMatch[0].length;
-      const subcatsMatch = fileContent.substring(afterRoleStart).match(/subcategories:\s*\[/);
-      
-      if (!subcatsMatch) {
-        return NextResponse.json(
-          { error: 'Subcategories array not found' },
-          { status: 400 }
-        );
-      }
-      
-      const subcatsArrayStart = afterRoleStart + subcatsMatch.index + subcatsMatch[0].length;
-      
-      // Find the matching closing bracket by counting
-      let bracketDepth = 1;
-      let bracketEnd = -1;
-      for (let i = subcatsArrayStart; i < fileContent.length; i++) {
-        if (fileContent[i] === '[') bracketDepth++;
-        else if (fileContent[i] === ']') {
-          bracketDepth--;
-          if (bracketDepth === 0) {
-            bracketEnd = i;
-            break;
-          }
-        }
-      }
-      
-      if (bracketEnd === -1) {
-        return NextResponse.json(
-          { error: 'Could not find closing bracket for subcategories array' },
-          { status: 400 }
-        );
-      }
-      
-      const subcatsContent = fileContent.substring(subcatsArrayStart, bracketEnd);
-      
-      // Parse subcategories by counting braces
-      const parseSubcategories = (str) => {
-        const subcats = [];
-        let depth = 0;
-        let start = -1;
+      try {
+        // Parse the file using AST
+        const ast = parseCategoryFile(fileContent);
         
-        for (let i = 0; i < str.length; i++) {
-          if (str[i] === '{') {
-            if (depth === 0) start = i;
-            depth++;
-          } else if (str[i] === '}') {
-            depth--;
-            if (depth === 0 && start !== -1) {
-              subcats.push({
-                text: str.substring(start, i + 1),
-                start: start,
-                end: i + 1
-              });
-              start = -1;
+        // Find the role
+        const { role: roleObj } = findRole(ast, commissionTitle, departmentLabel, roleLabel);
+        
+        if (!roleObj) {
+          return NextResponse.json(
+            { error: `Role "${roleLabel}" not found in ${departmentLabel} > ${commissionTitle}` },
+            { status: 400 }
+          );
+        }
+        
+        // Navigate to the target subcategories array
+        let targetArrayPath = null;
+        
+        // Ensure parentSubcategoryPath is an array
+        const normalizedPath = Array.isArray(parentSubcategoryPath) ? parentSubcategoryPath : (parentSubcategoryPath ? [parentSubcategoryPath] : []);
+        
+        if (!normalizedPath || normalizedPath.length === 0) {
+          // Delete from role's direct subcategories
+          roleObj.properties.forEach((prop) => {
+            if (prop.key && prop.key.name === 'subcategories' && prop.value && prop.value.elements) {
+              targetArrayPath = prop.value;
             }
+          });
+          
+          if (!targetArrayPath || !targetArrayPath.elements) {
+            return NextResponse.json(
+              { error: 'Subcategories array not found in role' },
+              { status: 400 }
+            );
           }
+        } else {
+          // Navigate to the parent subcategory
+          const result = navigateToSubcategory(roleObj, normalizedPath);
+          
+          if (!result.subcategory) {
+            return NextResponse.json(
+              { error: `Parent subcategory at path ${JSON.stringify(normalizedPath)} not found` },
+              { status: 400 }
+            );
+          }
+          
+          if (!result.arrayPath || !result.arrayPath.elements) {
+            return NextResponse.json(
+              { error: 'Subcategories array not found in parent subcategory' },
+              { status: 400 }
+            );
+          }
+          
+          targetArrayPath = result.arrayPath;
         }
-        return subcats;
-      };
-      
-      const subcats = parseSubcategories(subcatsContent);
-      
-      if (!subcats[subcategoryIndex]) {
+        
+        // Validate index
+        if (subcategoryIndex < 0 || subcategoryIndex >= targetArrayPath.elements.length) {
+          return NextResponse.json(
+            { error: `Subcategory index ${subcategoryIndex} is out of range. Array has ${targetArrayPath.elements.length} elements.` },
+            { status: 400 }
+          );
+        }
+        
+        // Remove the element at the specified index
+        targetArrayPath.elements.splice(subcategoryIndex, 1);
+        
+        // If the array is now empty, we could optionally remove the subcategories property
+        // But for now, we'll leave it as an empty array
+        
+        // Generate the updated code
+        fileContent = generateCode(ast);
+        updated = true;
+        
+      } catch (error) {
+        console.error('Error deleting subcategory:', error);
         return NextResponse.json(
-          { error: `Subcategory at index ${subcategoryIndex} not found` },
-          { status: 400 }
+          { error: `Failed to delete subcategory: ${error.message}` },
+          { status: 500 }
         );
       }
-      
-      const toRemove = subcats[subcategoryIndex];
-      
-      // Remove the subcategory and clean up commas
-      let beforeSubcat = subcatsContent.substring(0, toRemove.start).trim();
-      let afterSubcat = subcatsContent.substring(toRemove.end).trim();
-      
-      // Remove trailing comma from before, leading comma from after
-      beforeSubcat = beforeSubcat.replace(/,\s*$/, '');
-      afterSubcat = afterSubcat.replace(/^\s*,/, '');
-      
-      // Combine remaining subcategories
-      let newSubcats = '';
-      if (beforeSubcat && afterSubcat) {
-        newSubcats = beforeSubcat + ',\n            ' + afterSubcat;
-      } else if (beforeSubcat) {
-        newSubcats = beforeSubcat;
-      } else if (afterSubcat) {
-        newSubcats = afterSubcat;
-      }
-      newSubcats = newSubcats.trim();
-      
-      // Reconstruct the file
-      const beforeSubcatsArray = fileContent.substring(0, subcatsArrayStart);
-      const afterSubcatsArray = fileContent.substring(bracketEnd);
-      
-      if (!newSubcats) {
-        // Remove the entire subcategories property
-        // Find where subcategories: starts and remove it along with the array
-        const subcatsPropStart = afterRoleStart + subcatsMatch.index;
-        const beforeSubcatsProp = fileContent.substring(0, subcatsPropStart);
-        const afterSubcatsProp = fileContent.substring(bracketEnd + 1);
-        
-        // Check if there's a comma before subcategories: and remove it
-        // Also remove any whitespace/newlines before subcategories:
-        let cleanedBefore = beforeSubcatsProp;
-        // Remove trailing comma and whitespace
-        cleanedBefore = cleanedBefore.replace(/,\s*$/, '');
-        // Also handle case where subcategories might be on a new line
-        cleanedBefore = cleanedBefore.replace(/,\s*\n\s*$/, '');
-        
-        fileContent = cleanedBefore + afterSubcatsProp;
-      } else {
-        // Update with remaining subcategories
-        fileContent = beforeSubcatsArray + newSubcats + afterSubcatsArray;
-      }
-      
-      updated = true;
     } else if (action === 'reorder-subcategory' && (type === 'past-papers' || type === 'past-interviews')) {
       const { commissionTitle, departmentLabel, roleLabel, fromIndex, toIndex } = data;
       

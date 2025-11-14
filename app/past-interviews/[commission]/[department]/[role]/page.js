@@ -207,29 +207,25 @@ export default function PastInterviewCategoryPage() {
                 <div className="md:hidden flex items-center space-x-1 overflow-hidden">
                   <Link href="/" className="hover:text-blue-600 whitespace-nowrap">Home</Link>
                   <span className="text-gray-400">›</span>
-                  <Link href="/past-interviews" className="hover:text-blue-600 whitespace-nowrap">Interviews</Link>
-                  <span className="text-gray-400">›</span>
-                  <span className="text-gray-800 truncate" title={breadcrumbData.roleLabel || breadcrumbData.departmentLabel || breadcrumbData.commissionLabel}>
-                    {breadcrumbData.roleLabel || breadcrumbData.departmentLabel || breadcrumbData.commissionLabel || role}
-                  </span>
+                  <Link href="/past-interviews" className="hover:text-blue-600 whitespace-nowrap">Past Interviews</Link>
+                  {breadcrumbData.roleLabel && (
+                    <>
+                      <span className="text-gray-400">›</span>
+                      <span className="text-gray-800 truncate" title={breadcrumbData.roleLabel}>
+                        {breadcrumbData.roleLabel}
+                      </span>
+                    </>
+                  )}
                 </div>
                 {/* Desktop: Full breadcrumb */}
                 <div className="hidden md:flex items-center space-x-2">
                   <Link href="/" className="hover:text-blue-600">Home</Link>
                   <span className="text-gray-400">/</span>
                   <Link href="/past-interviews" className="hover:text-blue-600">Past Interviews</Link>
-                  <span className="text-gray-400">/</span>
-                  <Link href={`/past-interviews`} className="hover:text-blue-600">{breadcrumbData.commissionLabel || commission}</Link>
-                  {breadcrumbData.departmentLabel && (
-                    <>
-                      <span className="text-gray-400">/</span>
-                      <span className="text-gray-800">{breadcrumbData.departmentLabel}</span>
-                    </>
-                  )}
                   {breadcrumbData.roleLabel && (
                     <>
                       <span className="text-gray-400">/</span>
-                      <span className="text-gray-800">{breadcrumbData.roleLabel}</span>
+                      <Link href={`/past-interviews/${commission}/${department}/${role}`} className="text-gray-800 hover:text-blue-600">{breadcrumbData.roleLabel}</Link>
                     </>
                   )}
                 </div>
@@ -269,29 +265,25 @@ export default function PastInterviewCategoryPage() {
               <div className="md:hidden flex items-center space-x-1 overflow-hidden">
                 <Link href="/" className="hover:text-blue-600 whitespace-nowrap">Home</Link>
                 <span className="text-gray-400">›</span>
-                <Link href="/past-interviews" className="hover:text-blue-600 whitespace-nowrap">Interviews</Link>
-                <span className="text-gray-400">›</span>
-                <span className="text-gray-800 truncate" title={breadcrumbData.roleLabel || breadcrumbData.departmentLabel || breadcrumbData.commissionLabel}>
-                  {breadcrumbData.roleLabel || breadcrumbData.departmentLabel || breadcrumbData.commissionLabel || role}
-                </span>
+                <Link href="/past-interviews" className="hover:text-blue-600 whitespace-nowrap">Past Interviews</Link>
+                {breadcrumbData.roleLabel && (
+                  <>
+                    <span className="text-gray-400">›</span>
+                    <span className="text-gray-800 truncate" title={breadcrumbData.roleLabel}>
+                      {breadcrumbData.roleLabel}
+                    </span>
+                  </>
+                )}
               </div>
               {/* Desktop: Full breadcrumb */}
               <div className="hidden md:flex items-center space-x-2">
                 <Link href="/" className="hover:text-blue-600">Home</Link>
                 <span className="text-gray-400">/</span>
                 <Link href="/past-interviews" className="hover:text-blue-600">Past Interviews</Link>
-                <span className="text-gray-400">/</span>
-                <Link href={`/past-interviews`} className="hover:text-blue-600">{breadcrumbData.commissionLabel || commission}</Link>
-                {breadcrumbData.departmentLabel && (
-                  <>
-                    <span className="text-gray-400">/</span>
-                    <span className="text-gray-800">{breadcrumbData.departmentLabel}</span>
-                  </>
-                )}
                 {breadcrumbData.roleLabel && (
                   <>
                     <span className="text-gray-400">/</span>
-                    <span className="text-gray-800">{breadcrumbData.roleLabel}</span>
+                    <Link href={`/past-interviews/${commission}/${department}/${role}`} className="text-gray-800 hover:text-blue-600">{breadcrumbData.roleLabel}</Link>
                   </>
                 )}
               </div>
