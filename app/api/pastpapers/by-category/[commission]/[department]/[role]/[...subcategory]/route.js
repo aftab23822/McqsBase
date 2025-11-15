@@ -1,15 +1,15 @@
 import { NextResponse } from 'next/server';
 import connectToDatabase from '@/lib/mongodb.js';
-import MCQ from '@/lib/models/MCQ.js';
+import PastPaper from '@/lib/models/PastPaper.js';
 import Category from '@/lib/models/Category.js';
 import { sanitizeSubject, sanitizeInt } from '@/lib/utils/security.js';
 import { normalizeCategoryName } from '@/lib/utils/categoryUtils.js';
 
 /**
- * GET - Fetch past papers (stored as MCQs) by commission, department, role, and subcategory path
+ * GET - Fetch past papers from PastPaper collection by commission, department, role, and subcategory path
  * URL: /api/pastpapers/by-category/[commission]/[department]/[role]/[...subcategory]
  * 
- * Note: Past papers are stored in the MCQ collection with category information
+ * Note: Past papers are stored in the PastPaper collection with category information
  * that maps to commission/department/role/subcategory structure. Categories are stored with
  * normalized names based on the full path (e.g., /past-papers/commission/dept/role/subcategory)
  */
@@ -17,17 +17,22 @@ export async function GET(request, { params }) {
   try {
     await connectToDatabase();
 
-    // Sanitize parameters
-    const commission = sanitizeSubject(params.commission);
-    const department = sanitizeSubject(params.department);
-    const role = sanitizeSubject(params.role);
+    // In Next.js 15+, params is a Promise and must be awaited
+    const resolvedParams = await params;
+
+    // Normalize parameters using normalizeCategoryName to match database format
+    // This ensures trailing dashes and other formatting matches how categories are stored
+    const commission = normalizeCategoryName(resolvedParams.commission || '');
+    const department = normalizeCategoryName(resolvedParams.department || '');
+    const role = normalizeCategoryName(resolvedParams.role || '');
     
     // subcategory is an array from catch-all route
-    const subcategoryArray = Array.isArray(params.subcategory) 
-      ? params.subcategory 
-      : (params.subcategory ? [params.subcategory] : []);
+    // Handle empty strings and filter them out
+    const subcategoryArray = Array.isArray(resolvedParams.subcategory) 
+      ? resolvedParams.subcategory.filter(s => s && s.trim() !== '')
+      : (resolvedParams.subcategory && resolvedParams.subcategory.trim() !== '' ? [resolvedParams.subcategory] : []);
     
-    const subcategoryPath = subcategoryArray.map(s => sanitizeSubject(s)).filter(Boolean);
+    const subcategoryPath = subcategoryArray.map(s => normalizeCategoryName(s || '')).filter(Boolean);
 
     if (!commission || !department || !role) {
       return NextResponse.json(
@@ -73,8 +78,9 @@ export async function GET(request, { params }) {
     }
     
     // Execute single combined query
+    // Look for categories with type 'PastPaper' or 'MCQ' (for backward compatibility)
     const matchingCategoriesRaw = await Category.find({
-      type: 'MCQ',
+      type: { $in: ['PastPaper', 'MCQ'] },
       $or: searchConditions
     }).lean();
     
@@ -87,17 +93,17 @@ export async function GET(request, { params }) {
     
     // If still no matches, try a broader search - find any category that contains the key parts
     if (matchingCategories.length === 0) {
-      // Build search terms from the path components
+      // Build search terms from the path components (already normalized above)
       const searchTerms = [
-        normalizeCategoryName(commission),
-        normalizeCategoryName(department),
-        normalizeCategoryName(role),
-        ...subcategoryPath.map(s => normalizeCategoryName(s))
+        commission,
+        department,
+        role,
+        ...subcategoryPath
       ].filter(Boolean);
       
       // Find categories that contain all search terms
       const broaderMatches = await Category.find({
-        type: 'MCQ',
+        type: { $in: ['PastPaper', 'MCQ'] },
         $and: searchTerms.map(term => ({
           name: { $regex: new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i') }
         }))
@@ -122,28 +128,29 @@ export async function GET(request, { params }) {
     // Get category IDs
     const categoryIds = matchingCategories.map(cat => cat._id);
 
-    // Get all MCQs for these categories (the specific subcategory and its nested subcategories)
-    const allMcqs = await MCQ.find({
+    // Get all Past Papers for these categories (the specific subcategory and its nested subcategories)
+    // Now fetching from PastPaper collection instead of MCQ collection
+    const allPastPapers = await PastPaper.find({
       categoryId: { $in: categoryIds }
     }).lean();
 
-    const filteredMcqs = allMcqs; // All MCQs from the subcategory and its nested subcategories
+    const filteredPastPapers = allPastPapers; // All past papers from the subcategory and its nested subcategories
 
     // Apply pagination
-    const total = filteredMcqs.length;
-    const paginatedMcqs = filteredMcqs
+    const total = filteredPastPapers.length;
+    const paginatedPastPapers = filteredPastPapers
       .sort((a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0))
       .slice(skip, skip + limit);
 
     // Convert ObjectIds to strings and ensure year/department are included
-    const results = paginatedMcqs.map(mcq => ({
-      ...mcq,
-      _id: mcq._id.toString(),
-      categoryId: mcq.categoryId?.toString() || null,
-      subcategoryId: mcq.subcategoryId?.toString() || null,
-      submittedBy: mcq.submittedBy?.toString() || null,
-      year: mcq.year || null,
-      department: mcq.department || department || 'General'  // Use department from URL if not in MCQ
+    const results = paginatedPastPapers.map(pp => ({
+      ...pp,
+      _id: pp._id.toString(),
+      categoryId: pp.categoryId?.toString() || null,
+      subcategoryId: pp.subcategoryId?.toString() || null,
+      submittedBy: pp.submittedBy?.toString() || null,
+      year: pp.year || null,
+      department: pp.department || department || 'General'  // Use department from URL if not in past paper
     }));
 
     return NextResponse.json({
@@ -161,7 +168,7 @@ export async function GET(request, { params }) {
     return NextResponse.json(
       { 
         message: 'Error fetching past papers',
-        error: error.message 
+        error: error.message
       },
       { status: 500 }
     );

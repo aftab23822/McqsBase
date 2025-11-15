@@ -13,10 +13,13 @@ export async function GET(request, { params }) {
   try {
     await connectToDatabase();
 
+    // In Next.js 15+, params is a Promise and must be awaited
+    const resolvedParams = await params;
+
     // Sanitize parameters
-    const commission = sanitizeSubject(params.commission);
-    const department = sanitizeSubject(params.department);
-    const role = sanitizeSubject(params.role);
+    const commission = sanitizeSubject(resolvedParams.commission);
+    const department = sanitizeSubject(resolvedParams.department);
+    const role = sanitizeSubject(resolvedParams.role);
 
     if (!commission || !department || !role) {
       return NextResponse.json(

@@ -211,7 +211,21 @@ const AdminLogin = () => {
             }))
           }),
         });
+      } else if (uploadData.type === 'past-papers') {
+        // Use past papers batch endpoint for past paper uploads
+        response = await apiFetch(`/api/pastpapers/batch?category=${uploadData.category}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`,
+          },
+          body: JSON.stringify({
+            mcqs: jsonData,
+            category: uploadData.category
+          }),
+        });
       } else {
+        // Use MCQ batch endpoint for simple MCQs
         response = await apiFetch(`/api/mcqs/batch?category=${uploadData.category}`, {
         method: 'POST',
         headers: {

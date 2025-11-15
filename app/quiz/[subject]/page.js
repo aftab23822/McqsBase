@@ -115,7 +115,9 @@ const subjectTitles = {
 };
 
 export async function generateMetadata({ params }) {
-  const { subject } = params;
+  // In Next.js 15+, params might be a promise
+  const resolvedParams = await params;
+  const { subject } = resolvedParams;
   const title = subjectTitles[subject];
   const description = `Practice ${title} for Pakistan competitive exams including FPSC, SPSC, PPSC, and NTS.`;
   const keywords = `${subject} quiz, ${subject} questions, competitive exam preparation, FPSC, SPSC, PPSC, NTS`;
@@ -129,15 +131,39 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function QuizCategoryPage({ params, searchParams }) {
-  const { subject } = params;
-  const pageParam = parseInt(searchParams?.page || '1', 10);
+  // In Next.js 15+, params and searchParams might be promises
+  const resolvedParams = await params;
+  const resolvedSearchParams = await searchParams;
+  const { subject } = resolvedParams;
+  const pageParam = parseInt(resolvedSearchParams?.page || '1', 10);
   const page = Number.isFinite(pageParam) && pageParam > 0 ? pageParam : 1;
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || 'your-recaptcha-site-key';
   let initialTree = undefined;
-  const hdrs = headers();
-  const host = hdrs.get('host');
-  const proto = hdrs.get('x-forwarded-proto') || (host && host.startsWith('localhost') ? 'http' : 'https');
-  const absoluteBase = host ? `${proto}://${host}` : '';
+  
+  // Safely get headers
+  let host, proto, absoluteBase;
+  try {
+    let hdrs = headers();
+    // Handle if headers() returns a promise
+    if (hdrs && typeof hdrs.then === 'function') {
+      hdrs = await hdrs;
+    }
+    // Check if hdrs is a Headers object or has a get method
+    if (hdrs && typeof hdrs.get === 'function') {
+      host = hdrs.get('host');
+      proto = hdrs.get('x-forwarded-proto');
+    } else if (hdrs && typeof hdrs === 'object') {
+      // Fallback: try to access as plain object
+      host = hdrs.host || hdrs['host'];
+      proto = hdrs['x-forwarded-proto'] || hdrs['x-forwarded-proto'];
+    }
+  } catch (error) {
+    // If headers() fails, use fallback
+    console.warn('Failed to get headers:', error);
+  }
+  
+  proto = proto || (host && host.startsWith('localhost') ? 'http' : 'https');
+  absoluteBase = host ? `${proto}://${host}` : '';
 
   const componentImporter = QuizComponents[subject];
   if (!componentImporter) {

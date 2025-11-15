@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, useMemo } from 'react';
-import { useParams } from 'next/navigation';
+import { useParams, useSearchParams } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import BasePastPaper from '@/components/PastPapers/BasePastPaper';
@@ -111,6 +111,7 @@ function findSubcategoryByPath(role, subcategoryPath) {
 
 export default function PastPaperSubcategoryPage() {
   const params = useParams();
+  const searchParams = useSearchParams();
   const { commission, department, role, subcategory } = params;
   
   // subcategory is an array from catch-all route
@@ -121,7 +122,8 @@ export default function PastPaperSubcategoryPage() {
   const [pastPaperData, setPastPaperData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [currentPage, setCurrentPage] = useState(1);
+  const pageFromUrl = parseInt(searchParams?.get('page') || '1', 10);
+  const [currentPage, setCurrentPage] = useState(pageFromUrl);
   const [totalPages, setTotalPages] = useState(1);
   const [pageTitle, setPageTitle] = useState('');
   const [foundSubcategory, setFoundSubcategory] = useState(null);
@@ -141,6 +143,12 @@ export default function PastPaperSubcategoryPage() {
     setError(null);
     setQuestionData(null);
   }, [commission, department, role, rawSubcategoryPath.join('/')]);
+
+  // Sync currentPage with URL parameter
+  useEffect(() => {
+    const pageNum = Number.isFinite(pageFromUrl) && pageFromUrl > 0 ? pageFromUrl : 1;
+    setCurrentPage(pageNum);
+  }, [pageFromUrl]);
 
   // Fetch question data if it's a question route
   useEffect(() => {

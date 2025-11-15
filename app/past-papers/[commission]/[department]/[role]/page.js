@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, useMemo } from 'react';
-import { useParams } from 'next/navigation';
+import { useParams, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -74,12 +74,14 @@ function convertSubcategoriesToTree(subcategories, roleLink, basePath = '') {
 
 export default function PastPaperCategoryPage() {
   const params = useParams();
+  const searchParams = useSearchParams();
   const { commission, department, role } = params;
   
   const [pastPaperData, setPastPaperData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [currentPage, setCurrentPage] = useState(1);
+  const pageFromUrl = parseInt(searchParams?.get('page') || '1', 10);
+  const [currentPage, setCurrentPage] = useState(pageFromUrl);
   const [totalPages, setTotalPages] = useState(1);
   const [pageTitle, setPageTitle] = useState('');
   const [foundRole, setFoundRole] = useState(null);
@@ -95,6 +97,12 @@ export default function PastPaperCategoryPage() {
     setPastPaperData([]);
     setError(null);
   }, [commission, department, role]);
+
+  // Sync currentPage with URL parameter
+  useEffect(() => {
+    const pageNum = Number.isFinite(pageFromUrl) && pageFromUrl > 0 ? pageFromUrl : 1;
+    setCurrentPage(pageNum);
+  }, [pageFromUrl]);
 
   useEffect(() => {
     const fetchPapers = async () => {

@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { use, useEffect, useMemo, useRef, useState } from 'react';
 import Navbar from '../../../../../src/components/Navbar';
 import Footer from '../../../../../src/components/Footer';
 import MockTestsRightSideBar from '../../../../../src/components/MockTestsRightSideBar';
 
 export default function MockTestRunnerPage({ params }) {
-  const { university, slug } = params;
+  // In Next.js 15+, params is a Promise in client components - use React.use()
+  const { university, slug } = use(params);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [test, setTest] = useState(null);

@@ -6,8 +6,11 @@ export async function GET(_request, { params }) {
   try {
     await connectToDatabase();
     
+    // In Next.js 15+, params is a Promise and must be awaited
+    const resolvedParams = await params;
+    
     // Sanitize and validate university parameter
-    const university = sanitizeSubject(params.university);
+    const university = sanitizeSubject(resolvedParams.university);
     if (!university) {
       return Response.json({ success: false, message: 'Invalid university parameter' }, { status: 400 });
     }

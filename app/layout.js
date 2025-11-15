@@ -1,15 +1,10 @@
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import dynamic from 'next/dynamic'
+import NavigationLoaderWrapper from '../src/components/NavigationLoaderWrapper'
 import '../src/index.css'
 
 const inter = Inter({ subsets: ['latin'] })
-
-// Client-side navigation loader
-const NavigationLoader = dynamic(() => import('../src/components/NavigationLoader'), {
-  ssr: false
-})
 
 export const metadata = {
   title: 'McqsBase.com - Pakistan\'s Premier MCQ Platform',
@@ -98,7 +93,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         {children}
-        <NavigationLoader />
+        <NavigationLoaderWrapper />
         <Analytics />
         <SpeedInsights />
       </body>

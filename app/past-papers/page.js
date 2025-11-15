@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, useMemo } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Navbar from '../../src/components/Navbar';
 import Footer from '../../src/components/Footer';
 import BasePastPaper from '../../src/components/PastPapers/BasePastPaper';
@@ -78,13 +79,21 @@ const DEFAULT_CATEGORY = {
 };
 
 export default function PastPapersPage() {
+  const searchParams = useSearchParams();
   const [pastPaperData, setPastPaperData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [currentPage, setCurrentPage] = useState(1);
+  const pageFromUrl = parseInt(searchParams?.get('page') || '1', 10);
+  const [currentPage, setCurrentPage] = useState(pageFromUrl);
   const [totalPages, setTotalPages] = useState(1);
   const [pageTitle, setPageTitle] = useState('Past Papers');
   const [foundRole, setFoundRole] = useState(null);
+
+  // Sync currentPage with URL parameter
+  useEffect(() => {
+    const pageNum = Number.isFinite(pageFromUrl) && pageFromUrl > 0 ? pageFromUrl : 1;
+    setCurrentPage(pageNum);
+  }, [pageFromUrl]);
 
   useEffect(() => {
     const fetchPapers = async () => {

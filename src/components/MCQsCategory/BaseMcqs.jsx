@@ -279,8 +279,14 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
       } else {
         params.set('page', page.toString());
       }
-      const newUrl = params.toString() ? `${pathname}?${params.toString()}` : pathname;
-      router.push(newUrl, { scroll: false });
+      // Remove trailing slash before adding query parameters
+      // Use window.location.pathname to get the actual current pathname
+      const currentPathname = window.location.pathname || pathname;
+      const cleanPathname = currentPathname.replace(/\/$/, '');
+      const queryString = params.toString();
+      const newUrl = queryString ? `${cleanPathname}?${queryString}` : pathname;
+      // Use window.history.pushState to avoid Next.js adding trailing slash back
+      window.history.pushState({}, '', newUrl);
     }
   };
 

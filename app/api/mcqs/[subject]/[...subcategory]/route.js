@@ -29,11 +29,14 @@ export async function GET(request, { params }) {
   try {
     await connectToDatabase();
 
-    const sanitizedSubject = sanitizeSubject(params.subject);
-    const rawSegments = Array.isArray(params.subcategory)
-      ? params.subcategory
-      : typeof params.subcategory === 'string'
-        ? [params.subcategory]
+    // In Next.js 15+, params is a Promise and must be awaited
+    const resolvedParams = await params;
+
+    const sanitizedSubject = sanitizeSubject(resolvedParams.subject);
+    const rawSegments = Array.isArray(resolvedParams.subcategory)
+      ? resolvedParams.subcategory
+      : typeof resolvedParams.subcategory === 'string'
+        ? [resolvedParams.subcategory]
         : [];
 
     if (!sanitizedSubject || rawSegments.length === 0) {
@@ -221,7 +224,8 @@ export async function GET(request, { params }) {
       }
     });
   } catch (error) {
-    console.error(`MCQs API error for ${params.subject}/${params.subcategory}:`, error);
+    const resolvedParams = await params;
+    console.error(`MCQs API error for ${resolvedParams.subject}/${resolvedParams.subcategory}:`, error);
     return NextResponse.json(
       { error: 'Failed to fetch MCQs for requested subcategory' },
       { status: 500 }

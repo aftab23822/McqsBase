@@ -59,7 +59,9 @@ async function getContactModel() {
 // PATCH handler for updating contact status
 export async function PATCH(request, { params }) {
   try {
-    const { id } = params;
+    // In Next.js 15+, params is a Promise and must be awaited
+    const resolvedParams = await params;
+    const { id } = resolvedParams;
     const body = await request.json();
     const { status } = body;
 
@@ -103,7 +105,9 @@ export async function PATCH(request, { params }) {
 // DELETE handler for deleting a contact submission
 export async function DELETE(request, { params }) {
   try {
-    const { id } = params;
+    // In Next.js 15+, params is a Promise and must be awaited
+    const resolvedParams = await params;
+    const { id } = resolvedParams;
 
     const Contact = await getContactModel();
     

@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import { useRouter, usePathname } from 'next/navigation';
 import PastPaperMcqCard from '../PastPaperMcqCard';
 import QuizMcqCard from '../QuizMcqCard';
 import QuizModeToggle from '../QuizModeToggle';
@@ -20,6 +21,9 @@ const normalizeAnswer = (value = '') =>
     .toLowerCase();
 
 const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, totalPages, mcqsPerPage, breadcrumbItems, categoryPath }) =>  {
+  const router = useRouter();
+  const pathname = usePathname();
+  
   // Quiz mode state
   const [quizMode, setQuizMode] = useState(false);
   const [userAnswers, setUserAnswers] = useState({});
@@ -240,6 +244,23 @@ const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, tota
       handleFinishPage(userAnswers, 'manual');
     } else {
       setCurrentPage(page);
+      // Update URL with page query parameter
+      if (typeof window !== 'undefined') {
+        const params = new URLSearchParams(window.location.search || '');
+        if (page === 1) {
+          params.delete('page');
+        } else {
+          params.set('page', page.toString());
+        }
+        // Remove trailing slash before adding query parameters
+        // Use window.location.pathname to get the actual current pathname
+        const currentPathname = window.location.pathname || pathname;
+        const cleanPathname = currentPathname.replace(/\/$/, '');
+        const queryString = params.toString();
+        const newUrl = queryString ? `${cleanPathname}?${queryString}` : pathname;
+        // Use window.history.pushState to avoid Next.js adding trailing slash back
+        window.history.pushState({}, '', newUrl);
+      }
     }
   };
 

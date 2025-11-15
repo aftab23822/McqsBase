@@ -42,8 +42,11 @@ export async function GET(request, { params }) {
   try {
     await connectToDatabase();
 
+    // In Next.js 15+, params is a Promise and must be awaited
+    const resolvedParams = await params;
+
     // Sanitize and validate subject parameter
-    const sanitizedSubject = sanitizeSubject(params.subject);
+    const sanitizedSubject = sanitizeSubject(resolvedParams.subject);
     if (!sanitizedSubject) {
       return NextResponse.json({ 
         results: [], 
@@ -137,9 +140,10 @@ export async function GET(request, { params }) {
       }
     });
   } catch (error) {
-    console.error(`Quiz API error for subject ${params.subject}:`, error);
+    const resolvedParams = await params;
+    console.error(`Quiz API error for subject ${resolvedParams.subject}:`, error);
     return NextResponse.json(
-      { error: `Failed to fetch ${params.subject} quizzes` },
+      { error: `Failed to fetch ${resolvedParams.subject} quizzes` },
       { status: 500 }
     );
   }

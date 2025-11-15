@@ -4,7 +4,9 @@ import { getSubmissionById, updateSubmissionStatus, updateSubmissionContent } fr
 
 async function getHandler(request, { params }) {
   try {
-    const result = await getSubmissionById(params.id);
+    // In Next.js 15+, params is a Promise and must be awaited
+    const resolvedParams = await params;
+    const result = await getSubmissionById(resolvedParams.id);
     
     if (!result.success) {
       return NextResponse.json(
@@ -25,6 +27,8 @@ async function getHandler(request, { params }) {
 
 async function putHandler(request, { params }) {
   try {
+    // In Next.js 15+, params is a Promise and must be awaited
+    const resolvedParams = await params;
     const body = await request.json();
     
     // Check if this is a content update (has question, answer, etc.) or status update (has status)
@@ -39,8 +43,8 @@ async function putHandler(request, { params }) {
     // If it's a content update, use updateSubmissionContent
     // Otherwise, use updateSubmissionStatus (for approve/reject actions)
     const result = isContentUpdate 
-      ? await updateSubmissionContent(params.id, body)
-      : await updateSubmissionStatus(params.id, body);
+      ? await updateSubmissionContent(resolvedParams.id, body)
+      : await updateSubmissionStatus(resolvedParams.id, body);
     
     if (!result.success) {
       return NextResponse.json(

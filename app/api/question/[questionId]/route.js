@@ -53,11 +53,13 @@ function setCachedQuestion(categoryId, slug, value) {
 export async function GET(request, { params }) {
   console.log('\n========== [Question API] CALLED ==========');
   console.log('[Question API] URL:', request.url);
-  console.log('[Question API] Params:', params);
   try {
     await connectToDatabase();
 
-    const { questionId } = params || {};
+    // In Next.js 15+, params is a Promise and must be awaited
+    const resolvedParams = await params;
+    console.log('[Question API] Params:', resolvedParams);
+    const { questionId } = resolvedParams || {};
     const { searchParams } = new URL(request.url);
     const subject = searchParams.get('subject');
 

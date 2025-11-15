@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import connectToDatabase from '@/lib/mongodb.js';
-import MCQ from '@/lib/models/MCQ.js';
+import PastPaper from '@/lib/models/PastPaper.js';
 import Category from '@/lib/models/Category.js';
 import { generateQuestionSlug } from '@/lib/utils/slugGenerator.js';
 import { normalizeCategoryName } from '@/lib/utils/categoryUtils.js';
@@ -14,7 +14,9 @@ export async function GET(request, { params }) {
   try {
     await connectToDatabase();
 
-    const { path } = params;
+    // In Next.js 15+, params is a Promise and must be awaited
+    const resolvedParams = await params;
+    const { path } = resolvedParams;
     const pathArray = Array.isArray(path) ? path : (path ? [path] : []);
 
     if (pathArray.length < 4) {
@@ -60,7 +62,7 @@ export async function GET(request, { params }) {
     ];
 
     let matchingCategories = await Category.find({
-      type: 'MCQ',
+      type: { $in: ['PastPaper', 'MCQ'] },
       $or: searchConditions
     }).lean();
 
@@ -74,7 +76,7 @@ export async function GET(request, { params }) {
       
       // Find categories that start with the parent path
       matchingCategories = await Category.find({
-        type: 'MCQ',
+        type: { $in: ['PastPaper', 'MCQ'] },
         name: { $regex: new RegExp(`^${escapedParentPath}/`, 'i') }
       }).lean();
     }
@@ -89,14 +91,15 @@ export async function GET(request, { params }) {
     const categoryIds = matchingCategories.map(cat => cat._id);
 
     // Find the question by slug within these categories
-    let question = await MCQ.findOne({
+    // Now fetching from PastPaper collection instead of MCQ collection
+    let question = await PastPaper.findOne({
       categoryId: { $in: categoryIds },
       slug: questionSlug
     }).lean();
 
     if (!question) {
       // Try to find by generated slug if stored slug doesn't match
-      const allQuestions = await MCQ.find({
+      const allQuestions = await PastPaper.find({
         categoryId: { $in: categoryIds }
       }).lean();
 
@@ -107,7 +110,7 @@ export async function GET(request, { params }) {
 
       if (matchingQuestion) {
         // Update the question with the slug for future lookups
-        await MCQ.findByIdAndUpdate(matchingQuestion._id, { slug: questionSlug }).catch(() => {});
+        await PastPaper.findByIdAndUpdate(matchingQuestion._id, { slug: questionSlug }).catch(() => {});
         
         question = matchingQuestion;
       } else {
@@ -120,7 +123,7 @@ export async function GET(request, { params }) {
 
     // Find next and previous questions in the same category
     const [nextQuestion, prevQuestion] = await Promise.all([
-      MCQ.findOne({
+      PastPaper.findOne({
         categoryId: { $in: categoryIds },
         $or: [
           { createdAt: { $gt: question.createdAt } },
@@ -130,7 +133,7 @@ export async function GET(request, { params }) {
         .sort({ createdAt: 1, _id: 1 })
         .select('_id slug question')
         .lean(),
-      MCQ.findOne({
+      PastPaper.findOne({
         categoryId: { $in: categoryIds },
         $or: [
           { createdAt: { $lt: question.createdAt } },

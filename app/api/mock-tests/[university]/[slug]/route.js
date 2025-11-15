@@ -6,9 +6,12 @@ export async function GET(_request, { params }) {
   try {
     await connectToDatabase();
     
+    // In Next.js 15+, params is a Promise and must be awaited
+    const resolvedParams = await params;
+    
     // Sanitize and validate parameters
-    const university = sanitizeSubject(params.university);
-    const slug = sanitizeString(params.slug || '', 200);
+    const university = sanitizeSubject(resolvedParams.university);
+    const slug = sanitizeString(resolvedParams.slug || '', 200);
     
     if (!university || !slug) {
       return Response.json({ success: false, message: 'Invalid parameters' }, { status: 400 });
@@ -28,9 +31,12 @@ export async function PUT(request, { params }) {
   try {
     await connectToDatabase();
     
+    // In Next.js 15+, params is a Promise and must be awaited
+    const resolvedParams = await params;
+    
     // Sanitize and validate parameters
-    const university = sanitizeSubject(params.university);
-    const slug = sanitizeString(params.slug || '', 200);
+    const university = sanitizeSubject(resolvedParams.university);
+    const slug = sanitizeString(resolvedParams.slug || '', 200);
     
     if (!university || !slug) {
       return Response.json({ success: false, message: 'Invalid parameters' }, { status: 400 });
@@ -86,9 +92,12 @@ export async function DELETE(_request, { params }) {
   try {
     await connectToDatabase();
     
+    // In Next.js 15+, params is a Promise and must be awaited
+    const resolvedParams = await params;
+    
     // Sanitize and validate parameters
-    const university = sanitizeSubject(params.university);
-    const slug = sanitizeString(params.slug || '', 200);
+    const university = sanitizeSubject(resolvedParams.university);
+    const slug = sanitizeString(resolvedParams.slug || '', 200);
     
     if (!university || !slug) {
       return Response.json({ success: false, message: 'Invalid parameters' }, { status: 400 });

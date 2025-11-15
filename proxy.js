@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-export function middleware(request) {
+export function proxy(request) {
   // Add CORS headers for API routes
   if (request.nextUrl.pathname.startsWith('/api/')) {
     const response = NextResponse.next();
@@ -29,3 +29,4 @@ export const config = {
     // '/admin/:path*',
   ],
 }
+

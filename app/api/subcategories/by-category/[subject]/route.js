@@ -8,7 +8,10 @@ import { normalizeCategoryName } from '@/utils/categoryConfig';
 export async function GET(request, { params }) {
   try {
     await connectToDatabase();
-    const subjectRaw = params.subject || '';
+    
+    // In Next.js 15+, params is a Promise and must be awaited
+    const resolvedParams = await params;
+    const subjectRaw = resolvedParams.subject || '';
     const subject = normalizeCategoryName(subjectRaw);
     const escaped = escapeRegex(subject);
 
@@ -29,6 +32,8 @@ export async function GET(request, { params }) {
     return NextResponse.json({ error: 'Failed to fetch subcategories' }, { status: 500 });
   }
 }
+
+
 
 
 

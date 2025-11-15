@@ -687,11 +687,13 @@ async function generateStructuredData(question, category, subject, subjectPath) 
 }
 
 export async function generateMetadata({ params }) {
-  const { subject } = params;
-  const rawSegments = Array.isArray(params.subcategory)
-    ? params.subcategory
-    : typeof params.subcategory === 'string'
-      ? [params.subcategory]
+  // In Next.js 15+, params is a Promise and must be awaited
+  const resolvedParams = await params;
+  const { subject } = resolvedParams;
+  const rawSegments = Array.isArray(resolvedParams.subcategory)
+    ? resolvedParams.subcategory
+    : typeof resolvedParams.subcategory === 'string'
+      ? [resolvedParams.subcategory]
       : [];
 
   const isQuestion = isQuestionRoute(rawSegments);
@@ -762,11 +764,14 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function SubcategoryPage({ params, searchParams }) {
-  const { subject } = params;
-  const rawSegments = Array.isArray(params.subcategory)
-    ? params.subcategory
-    : typeof params.subcategory === 'string'
-      ? [params.subcategory]
+  // In Next.js 15+, params and searchParams are Promises and must be awaited
+  const resolvedParams = await params;
+  const resolvedSearchParams = await searchParams;
+  const { subject } = resolvedParams;
+  const rawSegments = Array.isArray(resolvedParams.subcategory)
+    ? resolvedParams.subcategory
+    : typeof resolvedParams.subcategory === 'string'
+      ? [resolvedParams.subcategory]
       : [];
 
   const isQuestion = isQuestionRoute(rawSegments);
@@ -816,7 +821,7 @@ export default async function SubcategoryPage({ params, searchParams }) {
     );
   }
 
-  const pageParam = parseInt(searchParams?.page || '1', 10);
+  const pageParam = parseInt(resolvedSearchParams?.page || '1', 10);
   const page = Number.isFinite(pageParam) && pageParam > 0 ? pageParam : 1;
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || 'your-recaptcha-site-key';
 
