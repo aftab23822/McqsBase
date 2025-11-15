@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState, useMemo } from 'react';
+import React, { useEffect, useState, useMemo, Suspense } from 'react';
 import { useParams, useSearchParams } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -109,7 +109,7 @@ function findSubcategoryByPath(role, subcategoryPath) {
   return found;
 }
 
-export default function PastPaperSubcategoryPage() {
+function PastPaperSubcategoryPageContent() {
   const params = useParams();
   const searchParams = useSearchParams();
   const { commission, department, role, subcategory } = params;
@@ -497,6 +497,22 @@ export default function PastPaperSubcategoryPage() {
       />
       <Footer />
     </>
+  );
+}
+
+export default function PastPaperSubcategoryPage() {
+  return (
+    <Suspense fallback={
+      <>
+        <Navbar />
+        <div className="min-h-screen flex items-center justify-center">
+          <LoadingSpinner />
+        </div>
+        <Footer />
+      </>
+    }>
+      <PastPaperSubcategoryPageContent />
+    </Suspense>
   );
 }
 

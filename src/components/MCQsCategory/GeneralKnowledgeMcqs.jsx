@@ -1,23 +1,33 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 import BaseMcqs from './BaseMcqs';
 import LoadingSpinner from '../LoadingSpinner';
 import { apiFetch } from '../../utils/api';
-import { usePageFromUrl } from '../../hooks/usePageFromUrl';
 
 const mcqsPerPage = 10;
 
-const GeneralKnowledgeMcqs = () => {
+function GeneralKnowledgeMcqsContent() {
+  const searchParams = useSearchParams();
   const [mcqsData, setMcqsData] = useState([]);
   const [displayData, setDisplayData] = useState([]); // Data actually displayed
   const [loading, setLoading] = useState(true);
   const [isPageChanging, setIsPageChanging] = useState(false);
   const [error, setError] = useState(null);
-    // Initialize currentPage from URL or default to 1
-  const initialPage = usePageFromUrl();
+  // Initialize currentPage from URL or default to 1 - read directly from searchParams
+  const pageFromUrl = parseInt(searchParams?.get('page') || '1', 10);
+  const initialPage = Number.isFinite(pageFromUrl) && pageFromUrl > 0 ? pageFromUrl : 1;
   const [currentPage, setCurrentPage] = useState(initialPage);
   const [totalPages, setTotalPages] = useState(1);
+
+  // Sync currentPage with URL parameter when it changes
+  useEffect(() => {
+    const pageNum = Number.isFinite(pageFromUrl) && pageFromUrl > 0 ? pageFromUrl : 1;
+    if (pageNum !== currentPage) {
+      setCurrentPage(pageNum);
+    }
+  }, [pageFromUrl]);
 
     useEffect(() => {
     let isCancelled = false;
@@ -109,6 +119,14 @@ const GeneralKnowledgeMcqs = () => {
         </div>
       )}
     </div>
+  );
+}
+
+const GeneralKnowledgeMcqs = () => {
+  return (
+    <Suspense fallback={<LoadingSpinner />}>
+      <GeneralKnowledgeMcqsContent />
+    </Suspense>
   );
 };
 

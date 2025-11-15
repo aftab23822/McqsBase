@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState, useMemo } from 'react';
+import React, { useEffect, useState, useMemo, Suspense } from 'react';
 import { useParams, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
@@ -72,7 +72,7 @@ function convertSubcategoriesToTree(subcategories, roleLink, basePath = '') {
   });
 }
 
-export default function PastPaperCategoryPage() {
+function PastPaperCategoryPageContent() {
   const params = useParams();
   const searchParams = useSearchParams();
   const { commission, department, role } = params;
@@ -352,6 +352,22 @@ export default function PastPaperCategoryPage() {
       />
       <Footer />
     </>
+  );
+}
+
+export default function PastPaperCategoryPage() {
+  return (
+    <Suspense fallback={
+      <>
+        <Navbar />
+        <div className="min-h-screen flex items-center justify-center">
+          <LoadingSpinner />
+        </div>
+        <Footer />
+      </>
+    }>
+      <PastPaperCategoryPageContent />
+    </Suspense>
   );
 }
 

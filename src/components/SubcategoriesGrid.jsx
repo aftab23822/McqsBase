@@ -95,16 +95,30 @@ export default function SubcategoriesGrid({ subject, tree, initialLimit = 3, bas
   const remaining = Math.max(0, tree.length - items.length);
   const previews = !expanded ? tree.slice(limit, limit + previewCount) : [];
 
+  // For past papers, extract just the role name (last part of the path) and simplify the text
+  const isPastPaper = basePath === 'past-papers';
+  let headerText = '';
+  if (isPastPaper && subject) {
+    // Extract the last part of the subject path (the role name)
+    const parts = subject.split('/').filter(Boolean);
+    const roleName = parts.length > 0 ? parts[parts.length - 1] : subject;
+    headerText = `Choose ${humanizeSlug(roleName)}`;
+  } else {
+    headerText = `Explore ${humanizeSlug(subject)} topics`;
+  }
+
   // Render top-level subcategories as cards; if a node has children, show count
   return (
     <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 my-8">
       <div className="mb-4">
         <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">
-          Explore {humanizeSlug(subject)} topics
+          {headerText}
         </h2>
-        <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-          Pick a topic to continue.
-        </p>
+        {!isPastPaper && (
+          <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+            Pick a topic to continue.
+          </p>
+        )}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {items.map((node, idx) => {

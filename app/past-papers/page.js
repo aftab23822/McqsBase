@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState, useMemo } from 'react';
+import React, { useEffect, useState, useMemo, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Navbar from '../../src/components/Navbar';
 import Footer from '../../src/components/Footer';
@@ -78,7 +78,7 @@ const DEFAULT_CATEGORY = {
   role: 'intermediate-category'
 };
 
-export default function PastPapersPage() {
+function PastPapersPageContent() {
   const searchParams = useSearchParams();
   const [pastPaperData, setPastPaperData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -265,5 +265,21 @@ export default function PastPapersPage() {
       />
       <Footer />
     </>
+  );
+}
+
+export default function PastPapersPage() {
+  return (
+    <Suspense fallback={
+      <>
+        <Navbar />
+        <div className="min-h-screen flex items-center justify-center">
+          <LoadingSpinner />
+        </div>
+        <Footer />
+      </>
+    }>
+      <PastPapersPageContent />
+    </Suspense>
   );
 }

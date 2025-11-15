@@ -1,7 +1,8 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { ChevronLeft, ChevronRight, ArrowLeft } from 'lucide-react';
 import { generateQuestionSlug } from '../../lib/utils/slugGenerator.js';
 import McqCard from './McqCard';
@@ -14,6 +15,7 @@ const IndividualQuestion = ({
   prevQuestionId,
   subjectPath
 }) => {
+  const router = useRouter();
   const questionToDisplay = question;
   const subjectLink = subjectPath && subjectPath.length > 0 ? subjectPath : subject;
   
@@ -22,6 +24,44 @@ const IndividualQuestion = ({
   const basePath = isPastPaper ? 'past-papers' : 'mcqs';
   const sectionName = isPastPaper ? 'Past Papers' : 'MCQs';
   const backText = isPastPaper ? `Back to ${categoryName}` : `Back to ${categoryName} MCQs`;
+  
+  // Get stored page number from sessionStorage if available - initialize immediately to avoid flash
+  const getInitialBackUrl = () => {
+    if (typeof window === 'undefined') {
+      return `/${basePath}/${subjectLink}`;
+    }
+    
+    const storageKey = isPastPaper ? 'pastPapersReturnPage' : 'mcqsReturnPage';
+    const categoryKey = isPastPaper ? 'pastPapersReturnCategory' : 'mcqsReturnCategory';
+    
+    const storedPage = sessionStorage.getItem(storageKey);
+    const storedCategory = sessionStorage.getItem(categoryKey);
+    
+    // Only use stored page if it's for the same category
+    if (storedPage && storedCategory && storedCategory === subjectLink) {
+      const page = parseInt(storedPage, 10);
+      if (page > 1) {
+        // Remove trailing slash before adding query parameter
+        const cleanPath = `/${basePath}/${subjectLink}`.replace(/\/$/, '');
+        return `${cleanPath}?page=${page}`;
+      }
+    }
+    
+    // Default to page 1 if no stored page or different category - remove trailing slash for consistency
+    return `/${basePath}/${subjectLink}`.replace(/\/$/, '');
+  };
+  
+  const [backUrl] = useState(getInitialBackUrl);
+  
+  // Handle navigation to preserve URL format (no trailing slash before query params)
+  const handleBackClick = (e) => {
+    e.preventDefault();
+    if (typeof window !== 'undefined') {
+      // Use window.location to navigate directly to the exact URL we want
+      // This ensures no trailing slash is added by Next.js
+      window.location.href = backUrl;
+    }
+  };
 
   if (!questionToDisplay) {
     return (
@@ -59,13 +99,14 @@ const IndividualQuestion = ({
         </nav>
 
         {/* Back to Category Link */}
-        <Link
-          href={`/${basePath}/${subjectLink}`}
-          className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-6 transition-colors"
+        <a
+          href={backUrl}
+          onClick={handleBackClick}
+          className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-6 transition-colors cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
           {backText}
-        </Link>
+        </a>
 
         {/* Question Card */}
         <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
@@ -100,12 +141,13 @@ const IndividualQuestion = ({
           </div>
 
           <div className="flex-1 text-center">
-            <Link
-              href={`/${basePath}/${subjectLink}`}
-              className="text-blue-600 hover:text-blue-800 font-medium"
+            <a
+              href={backUrl}
+              onClick={handleBackClick}
+              className="text-blue-600 hover:text-blue-800 font-medium cursor-pointer"
             >
               View All {categoryName} {sectionName}
-            </Link>
+            </a>
           </div>
 
           <div className="flex-1 text-right">

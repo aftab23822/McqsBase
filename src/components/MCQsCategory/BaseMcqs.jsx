@@ -383,6 +383,14 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
                 ? `/mcqs/${finalSubjectSlug}/question/${questionSlug}`
                 : '#';
               
+              // Store page number and category path when clicking question link
+              const handleQuestionClick = () => {
+                if (finalSubjectSlug && typeof window !== 'undefined') {
+                  sessionStorage.setItem('mcqsReturnPage', currentPage.toString());
+                  sessionStorage.setItem('mcqsReturnCategory', finalSubjectSlug);
+                }
+              };
+              
               if (quizMode) {
                 return (
                   <QuizMcqCard
@@ -410,7 +418,7 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
                         extractedSlug,
                         mcqId: mcq._id
                       });
-                    } : undefined}
+                    } : handleQuestionClick}
                   >
                     <McqCard
                       questionNumber={(currentPage - 1) * mcqsPerPage + index + 1}
@@ -422,6 +430,7 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
                     <Link
                       href={questionUrl}
                       className="inline-block text-sm text-blue-600 hover:text-blue-800 font-medium"
+                      onClick={handleQuestionClick}
                     >
                       View Full Question →
                     </Link>

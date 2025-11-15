@@ -257,7 +257,7 @@ export default async function MCQCategoryPage({ params, searchParams }) {
       <Navbar />
       {page === 1 ? <SubcategoriesSection subject={subject} initialTree={initialTree} /> : null}
       <Suspense fallback={<div className="py-12 text-center text-gray-500">Loading MCQs…</div>}>
-        <MCQComponent />
+        <MCQComponent key={`${subject}-${page}`} />
       </Suspense>
       <Footer />
     </ReCaptchaProvider>

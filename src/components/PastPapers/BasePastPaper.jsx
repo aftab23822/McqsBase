@@ -299,6 +299,14 @@ const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, tota
                 ? `/past-papers/${categoryPath}/question/${questionSlug}`
                 : '#';
               
+              // Store page number and category path when clicking question link
+              const handleQuestionClick = () => {
+                if (categoryPath && typeof window !== 'undefined') {
+                  sessionStorage.setItem('pastPapersReturnPage', currentPage.toString());
+                  sessionStorage.setItem('pastPapersReturnCategory', categoryPath);
+                }
+              };
+              
               if (quizMode) {
                 return (
                   <QuizMcqCard
@@ -324,7 +332,7 @@ const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, tota
                         categoryPath,
                         mcqId: mcq._id
                       });
-                    } : undefined}
+                    } : handleQuestionClick}
                   >
                     <PastPaperMcqCard
                       questionNumber={(currentPage - 1) * mcqsPerPage + index + 1}
@@ -336,6 +344,7 @@ const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, tota
                     <Link
                       href={questionUrl}
                       className="inline-block text-sm text-blue-600 hover:text-blue-800 font-medium"
+                      onClick={handleQuestionClick}
                     >
                       View Full Question →
                     </Link>
