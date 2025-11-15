@@ -63,19 +63,21 @@ export async function GET(request, { params }) {
     const parentPath = `/past-papers/${commission}/${department}/${role}`;
     const escapedParentPath = parentPath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     
-    // Combine all search patterns into a single query using $or for better performance
-    // This reduces multiple sequential database calls to just one
+    // For specific subcategory queries, only match the exact category path
+    // This prevents matching nested subcategories or other subcategories under the parent
     const searchConditions = [
       { name: new RegExp(`^${escapedPath}$`, 'i') }, // Exact match
-      { name: new RegExp(`^${escapedPathNoTrailing}$`, 'i') }, // Exact match without trailing slash
-      { name: new RegExp(`^${escapedPath}/`, 'i') },  // Starts with path followed by slash (nested subcategories)
-      { name: new RegExp(`^${escapedPathNoTrailing}/`, 'i') }  // Starts with path (no trailing) followed by slash
+      { name: new RegExp(`^${escapedPathNoTrailing}$`, 'i') } // Exact match without trailing slash
     ];
     
-    // If we have subcategories, also include parent path search in the same query
-    if (subcategoryPath.length > 0) {
-      searchConditions.push({ name: new RegExp(`^${escapedParentPath}/`, 'i') });
-    }
+    // Only include nested subcategories if explicitly needed (currently disabled to fix pagination issue)
+    // If you want to include nested subcategories in the future, uncomment these lines:
+    // if (subcategoryPath.length > 0) {
+    //   searchConditions.push(
+    //     { name: new RegExp(`^${escapedPath}/`, 'i') },  // Starts with path followed by slash (nested subcategories)
+    //     { name: new RegExp(`^${escapedPathNoTrailing}/`, 'i') }  // Starts with path (no trailing) followed by slash
+    //   );
+    // }
     
     // Execute single combined query
     // Look for categories with type 'PastPaper' or 'MCQ' (for backward compatibility)
