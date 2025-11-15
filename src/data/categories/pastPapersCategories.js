@@ -23,8 +23,36 @@ export const pastPaperCategories = [{
       label: "Intermediate Category",
       link: "/past-papers/sts-siba-testing-services/bps-05-to-15-/intermediate-category",
       subcategories: [{
-        label: "TEST PAST PAPER 23-06-2023",
+        label: "PAST PAPER 23-06-2023 Evening",
         link: "/past-papers/sts-siba-testing-services/bps-05-to-15-/intermediate-category/test-past-paper-23-06-2023",
+        subcategories: []
+      }, {
+        label: "PAST PAPER 24-06-2023 Morning",
+        link: "/past-papers/sts-siba-testing-services/bps-05-to-15-/intermediate-category/paper-24-06-2023-morning",
+        subcategories: []
+      }, {
+        label: "PAST PAPER 23-06-2023 Morning",
+        link: "/past-papers/sts-siba-testing-services/bps-05-to-15-/intermediate-category/past-paper-23-06-2023-morning",
+        subcategories: []
+      }, {
+        label: "PAST PAPER 22-06-2023 Evening",
+        link: "/past-papers/sts-siba-testing-services/bps-05-to-15-/intermediate-category/past-paper-22-06-2023-evening",
+        subcategories: []
+      }, {
+        label: "PAST PAPER 22-06-2023 Morning",
+        link: "/past-papers/sts-siba-testing-services/bps-05-to-15-/intermediate-category/past-paper-22-06-2023-morning",
+        subcategories: []
+      }, {
+        label: "PAST PAPER 14-06-2023",
+        link: "/past-papers/sts-siba-testing-services/bps-05-to-15-/intermediate-category/past-paper-14-06-2023",
+        subcategories: []
+      }, {
+        label: "PAST PAPER 13-06-2023",
+        link: "/past-papers/sts-siba-testing-services/bps-05-to-15-/intermediate-category/past-paper-13-06-2023",
+        subcategories: []
+      }, {
+        label: "PAST PAPER 12-06-2023",
+        link: "/past-papers/sts-siba-testing-services/bps-05-to-15-/intermediate-category/past-paper-12-06-2023",
         subcategories: []
       }]
     }, {
