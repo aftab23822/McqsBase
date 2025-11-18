@@ -1,16 +1,25 @@
 // Note: In Next.js App Router, use generateMetadata() in page.js instead of this component
 // This component is deprecated - use metadata API in your page.js files
 
+const DEFAULT_BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://mcqsbase.com').replace(/\/+$/, '');
+
+function toCanonicalUrl(input = '/') {
+  if (!input) return `${DEFAULT_BASE_URL}/`;
+  const isAbsolute = /^https?:\/\//i.test(input);
+  const normalizedPath = isAbsolute ? input : `${DEFAULT_BASE_URL}${input.startsWith('/') ? input : `/${input}`}`;
+  return normalizedPath.endsWith('/') ? normalizedPath : `${normalizedPath}/`;
+}
+
 // Utility function for generating metadata objects
 export const generateSEOMetadata = ({ 
   title, 
   description, 
   keywords, 
-  url, 
+  url = '/', 
   image = "https://mcqsbase.com/eagle.svg"
 }) => {
-  const fullUrl = `https://mcqsbase.com${url}`;
-  
+  const canonicalUrl = toCanonicalUrl(url);
+
   return {
     title,
     description,
@@ -19,7 +28,7 @@ export const generateSEOMetadata = ({
     openGraph: {
       title,
       description,
-      url: fullUrl,
+      url: canonicalUrl,
       images: [image],
       type: 'website',
     },
@@ -30,7 +39,7 @@ export const generateSEOMetadata = ({
       images: [image],
     },
     alternates: {
-      canonical: fullUrl,
+      canonical: canonicalUrl,
     },
   };
 };

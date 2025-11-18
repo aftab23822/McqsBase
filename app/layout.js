@@ -7,6 +7,7 @@ import '../src/index.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
+  metadataBase: new URL('https://mcqsbase.com'),
   title: 'McqsBase.com - Pakistan\'s Premier MCQ Platform',
   description: 'Comprehensive MCQ platform for Pakistan competitive exams. Practice MCQs, download past papers, and prepare for FPSC, SPSC, PPSC, and NTS exams with thousands of questions.',
   keywords: 'MCQs, Pakistan competitive exams, FPSC, SPSC, PPSC, NTS, past papers, interview preparation, exam preparation, online quiz',
@@ -43,6 +44,9 @@ export const metadata = {
   icons: {
     icon: '/eagle.svg',
   },
+  alternates: {
+    canonical: '/',
+  },
 }
 
 export default function RootLayout({ children }) {
@@ -51,7 +55,6 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link rel="canonical" href="https://mcqsbase.com/" />
         <meta name="google-site-verification" content="WGnVaxb3MaxbnE_dIZ_EYGB9mUMfA1knPGt7sIyhu0I" />
         
         <script

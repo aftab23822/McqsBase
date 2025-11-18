@@ -6,7 +6,7 @@ import Category from '@/lib/models/Category.js';
 import { generateQuestionSlug } from '@/lib/utils/slugGenerator.js';
 import { normalizeCategoryName } from '@/utils/categoryConfig';
 
-const FALLBACK_BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://mcqsbase.com';
+const FALLBACK_BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://mcqsbase.com').replace(/\/+$/, '');
 const PAGE_SIZE = 10000; // Reasonable chunk size well under Google's 50k limit
 
 // Derive absolute base URL from the request (works locally and in prod)
@@ -14,9 +14,14 @@ function getBaseUrl(request) {
   try {
     const proto = request.headers.get('x-forwarded-proto') || 'http';
     const host = request.headers.get('host') || '';
-    if (host) return `${proto}://${host}`;
+    if (host) return `${proto}://${host}`.replace(/\/+$/, '');
   } catch {}
   return FALLBACK_BASE_URL;
+}
+
+function withTrailingSlash(url = '') {
+  if (!url) return `${FALLBACK_BASE_URL}/`;
+  return url.endsWith('/') ? url : `${url}/`;
 }
 
 /**
@@ -220,7 +225,8 @@ export async function GET(request) {
       }
 
       if (loc) {
-        urlsXml += `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.6</priority>\n  </url>\n`;
+        const canonicalLoc = withTrailingSlash(loc);
+        urlsXml += `  <url>\n    <loc>${escapeXml(canonicalLoc)}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.6</priority>\n  </url>\n`;
         urlCount += 1;
       }
     }
