@@ -12,6 +12,7 @@ import SubcategoriesSection from '@/components/SubcategoriesSection';
 import { apiFetch } from '@/utils/api';
 import { getPastPaperCategories } from '@/data/categories/pastPapersCategories';
 import IndividualQuestion from '@/components/IndividualQuestion';
+import generateIntro from '@/lib/generateIntro';
 
 const papersPerPage = 10;
 const QUESTION_SEGMENT = 'question';
@@ -348,6 +349,61 @@ function PastPaperSubcategoryPageContent() {
     return convertSubcategoriesToTree(targetSubcategory.subcategories, targetSubcategory.link || foundRole?.link || '');
   }, [foundSubcategory, foundRole]);
 
+  const listingFaqData = useMemo(() => {
+    if (!Array.isArray(pastPaperData) || pastPaperData.length === 0) return null;
+    const topItems = pastPaperData
+      .filter(item => item?.question && item?.answer)
+      .slice(0, 3);
+    if (topItems.length === 0) return null;
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: topItems.map(item => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.explanation
+            ? `Correct answer: ${item.answer}. Explanation: ${item.explanation}`
+            : `Correct answer: ${item.answer}`
+        }
+      }))
+    };
+  }, [pastPaperData]);
+
+  const introText = useMemo(() => {
+    if (!isQuestion || !questionData?.question) return '';
+    const primaryLabel = breadcrumbData.subcategoryLabel || breadcrumbData.roleLabel || 'Past Papers';
+    return generateIntro(
+      questionData.question.question || '',
+      primaryLabel,
+      primaryLabel
+    );
+  }, [isQuestion, questionData, breadcrumbData]);
+
+  const questionStructuredData = useMemo(() => {
+    if (!isQuestion || !questionData?.question) return null;
+    const q = questionData.question;
+    const answerText = q.options?.find(
+      opt => typeof opt === 'string' && q.answer && opt.trim().toLowerCase() === q.answer.trim().toLowerCase()
+    ) || q.answer;
+
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: {
+        '@type': 'Question',
+        name: q.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: q.explanation
+            ? `Correct answer: ${answerText}. Explanation: ${q.explanation}`
+            : `Correct answer: ${answerText}`
+        }
+      }
+    };
+  }, [isQuestion, questionData]);
+
   // Render question page if it's a question route
   if (isQuestion) {
     if (questionLoading) {
@@ -396,6 +452,12 @@ function PastPaperSubcategoryPageContent() {
 
     return (
       <>
+        {questionStructuredData ? (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(questionStructuredData) }}
+          />
+        ) : null}
         <Navbar />
         <IndividualQuestion
           question={questionData.question}
@@ -404,6 +466,7 @@ function PastPaperSubcategoryPageContent() {
           categoryName={categoryName}
           nextQuestionId={questionData.nextQuestionSlug || questionData.nextQuestionId}
           prevQuestionId={questionData.prevQuestionSlug || questionData.prevQuestionId}
+          introText={introText}
         />
         <Footer />
       </>
@@ -470,6 +533,12 @@ function PastPaperSubcategoryPageContent() {
 
   return (
     <>
+      {listingFaqData ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(listingFaqData) }}
+        />
+      ) : null}
       <Navbar />
       {/* Display subcategories on page 1 */}
       {currentPage === 1 && subcategoriesTree && subcategoriesTree.length > 0 && (
