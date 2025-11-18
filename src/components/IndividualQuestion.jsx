@@ -13,7 +13,8 @@ const IndividualQuestion = ({
   categoryName,
   nextQuestionId,
   prevQuestionId,
-  subjectPath
+  subjectPath,
+  introText
 }) => {
   const router = useRouter();
   const questionToDisplay = question;
@@ -107,6 +108,12 @@ const IndividualQuestion = ({
           <ArrowLeft className="w-4 h-4 mr-2" />
           {backText}
         </a>
+
+        {introText ? (
+          <div className="bg-blue-50 border border-blue-100 rounded-lg p-4 mb-6 text-blue-900">
+            <p className="text-base leading-relaxed">{introText}</p>
+          </div>
+        ) : null}
 
         {/* Question Card */}
         <div className="bg-white rounded-lg shadow-lg p-6 mb-6">

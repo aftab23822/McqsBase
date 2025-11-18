@@ -167,6 +167,23 @@ const subjectTitles = {
   'world-current-affairs': 'World Current Affairs MCQs',
 };
 
+const FALLBACK_BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://mcqsbase.com').replace(/\/+$/, '');
+
+async function fetchSubjectFaqItems(baseUrl, subject) {
+  if (!subject) return [];
+  const effectiveBase = (baseUrl || FALLBACK_BASE_URL).replace(/\/+$/, '');
+  const endpoint = `${effectiveBase}/api/mcqs/${subject}?page=1&limit=3`;
+  try {
+    const res = await fetch(endpoint, { cache: 'no-store' });
+    if (!res.ok) return [];
+    const data = await res.json();
+    return Array.isArray(data?.results) ? data.results.slice(0, 3) : [];
+  } catch (error) {
+    console.warn(`Failed to fetch FAQ items for subject ${subject}:`, error);
+    return [];
+  }
+}
+
 export async function generateMetadata({ params }) {
   // In Next.js 15+, params might be a promise
   const resolvedParams = await params;
@@ -252,15 +269,41 @@ export default async function MCQCategoryPage({ params, searchParams }) {
     }
   }
 
+  const faqItems = await fetchSubjectFaqItems(absoluteBase || FALLBACK_BASE_URL, subject);
+  const faqStructuredData = faqItems.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map((item) => ({
+          '@type': 'Question',
+          name: item.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: item.explanation
+              ? `Correct answer: ${item.answer}. Explanation: ${item.explanation}`
+              : `Correct answer: ${item.answer}`
+          }
+        }))
+      }
+    : null;
+
   return (
-    <ReCaptchaProvider siteKey={recaptchaSiteKey}>
-      <Navbar />
-      {page === 1 ? <SubcategoriesSection subject={subject} initialTree={initialTree} /> : null}
-      <Suspense fallback={<div className="py-12 text-center text-gray-500">Loading MCQs…</div>}>
-        <MCQComponent key={`${subject}-${page}`} />
-      </Suspense>
-      <Footer />
-    </ReCaptchaProvider>
+    <>
+      {faqStructuredData ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
+        />
+      ) : null}
+      <ReCaptchaProvider siteKey={recaptchaSiteKey}>
+        <Navbar />
+        {page === 1 ? <SubcategoriesSection subject={subject} initialTree={initialTree} /> : null}
+        <Suspense fallback={<div className="py-12 text-center text-gray-500">Loading MCQs…</div>}>
+          <MCQComponent key={`${subject}-${page}`} />
+        </Suspense>
+        <Footer />
+      </ReCaptchaProvider>
+    </>
   );
 }
 

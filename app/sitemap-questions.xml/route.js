@@ -226,7 +226,7 @@ export async function GET(request) {
 
       if (loc) {
         const canonicalLoc = withTrailingSlash(loc);
-        urlsXml += `  <url>\n    <loc>${escapeXml(canonicalLoc)}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.6</priority>\n  </url>\n`;
+        urlsXml += `  <url>\n    <loc>${escapeXml(canonicalLoc)}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
         urlCount += 1;
       }
     }

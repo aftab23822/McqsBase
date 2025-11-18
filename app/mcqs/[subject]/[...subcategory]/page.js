@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import { notFound } from 'next/navigation';
+import { headers } from 'next/headers';
 import Navbar from '../../../../src/components/Navbar';
 import Footer from '../../../../src/components/Footer';
 import { ReCaptchaProvider } from '../../../../src/components/recaptcha';
@@ -14,6 +15,7 @@ import Category from '../../../../lib/models/Category.js';
 import { sanitizeSubject, sanitizeString, escapeRegex } from '../../../../lib/utils/security.js';
 import mongoose from 'mongoose';
 import { resolveQuestionByIdentifier } from '../../../../lib/services/questionResolver.js';
+import generateIntro from '../../../../lib/generateIntro.js';
 
 function humanize(slug) {
   if (!slug) return '';
@@ -54,6 +56,44 @@ function combineSubjectPath(subject, subpath) {
     segments,
     path: segments.join('/')
   };
+}
+
+async function resolveRequestBaseUrl() {
+  try {
+    let hdrs = headers();
+    if (hdrs && typeof hdrs.then === 'function') {
+      hdrs = await hdrs;
+    }
+    if (hdrs) {
+      const getter = typeof hdrs.get === 'function' ? hdrs.get.bind(hdrs) : (key) => hdrs[key];
+      const host = getter('host');
+      const proto = getter('x-forwarded-proto') || (host && host.startsWith('localhost') ? 'http' : 'https');
+      if (host) {
+        return `${proto}://${host}`.replace(/\/+$/, '');
+      }
+    }
+  } catch (error) {
+    console.warn('Failed to resolve request base URL:', error);
+  }
+  return (process.env.NEXT_PUBLIC_BASE_URL || 'https://mcqsbase.com').replace(/\/+$/, '');
+}
+
+async function fetchListingFaqItems(baseUrl, subject, categorySegmentsRaw) {
+  if (!subject || !Array.isArray(categorySegmentsRaw) || categorySegmentsRaw.length === 0) {
+    return [];
+  }
+  const subPath = categorySegmentsRaw.join('/').replace(/^\//, '');
+  if (!subPath) return [];
+  const endpoint = `${baseUrl}/api/mcqs/${subject}/${subPath}?page=1&limit=3`;
+  try {
+    const res = await fetch(endpoint, { cache: 'no-store' });
+    if (!res.ok) return [];
+    const data = await res.json();
+    return Array.isArray(data?.results) ? data.results.slice(0, 3) : [];
+  } catch (error) {
+    console.warn('Failed to fetch FAQ items for listing:', error);
+    return [];
+  }
 }
 
 async function buildQuestionResponse(question, category, subject, subjectPath) {
@@ -767,6 +807,7 @@ export default async function SubcategoryPage({ params, searchParams }) {
   // In Next.js 15+, params and searchParams are Promises and must be awaited
   const resolvedParams = await params;
   const resolvedSearchParams = await searchParams;
+  const baseUrl = await resolveRequestBaseUrl();
   const { subject } = resolvedParams;
   const rawSegments = Array.isArray(resolvedParams.subcategory)
     ? resolvedParams.subcategory
@@ -800,6 +841,11 @@ export default async function SubcategoryPage({ params, searchParams }) {
     }
 
     const structuredData = await generateStructuredData(question, category, subject, subjectPath);
+    const introText = generateIntro(
+      question.question,
+      humanize(subject),
+      category.name
+    );
 
     return (
       <>
@@ -815,6 +861,7 @@ export default async function SubcategoryPage({ params, searchParams }) {
           categoryName={category.name}
           nextQuestionId={nextQuestionId}
           prevQuestionId={prevQuestionId}
+          introText={introText}
         />
         <Footer />
       </>
@@ -824,19 +871,44 @@ export default async function SubcategoryPage({ params, searchParams }) {
   const pageParam = parseInt(resolvedSearchParams?.page || '1', 10);
   const page = Number.isFinite(pageParam) && pageParam > 0 ? pageParam : 1;
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || 'your-recaptcha-site-key';
+  const faqItems = await fetchListingFaqItems(baseUrl, subject, categorySegmentsRaw);
+  const faqStructuredData = faqItems.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map((item) => ({
+          '@type': 'Question',
+          name: item.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: item.explanation
+              ? `Correct answer: ${item.answer}. Explanation: ${item.explanation}`
+              : `Correct answer: ${item.answer}`
+          }
+        }))
+      }
+    : null;
 
   return (
-    <ReCaptchaProvider siteKey={recaptchaSiteKey}>
-      <Navbar />
-      <Suspense fallback={<div className="py-12 text-center text-gray-500">Loading MCQs…</div>}>
-        <SubcategoryMcqs
-          subject={normalizedSubject}
-          subcategorySegments={normalizedSegments}
-          initialPage={page}
+    <>
+      {faqStructuredData ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
         />
-      </Suspense>
-      <Footer />
-    </ReCaptchaProvider>
+      ) : null}
+      <ReCaptchaProvider siteKey={recaptchaSiteKey}>
+        <Navbar />
+        <Suspense fallback={<div className="py-12 text-center text-gray-500">Loading MCQs…</div>}>
+          <SubcategoryMcqs
+            subject={normalizedSubject}
+            subcategorySegments={normalizedSegments}
+            initialPage={page}
+          />
+        </Suspense>
+        <Footer />
+      </ReCaptchaProvider>
+    </>
   );
 }
 
