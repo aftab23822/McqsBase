@@ -46,8 +46,8 @@ export default function Navbar() {
       (path === '/' && currentPath === '/');
 
     return isActive
-      ? "text-blue-600 bg-blue-50 px-4 py-2 rounded-lg font-semibold transition-all duration-300"
-      : "text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 py-2 rounded-lg transition-all duration-300";
+      ? "inline-flex items-center whitespace-nowrap text-blue-600 bg-blue-50 px-4 py-2 rounded-lg font-semibold transition-all duration-300"
+      : "inline-flex items-center whitespace-nowrap text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 py-2 rounded-lg transition-all duration-300";
   };
 
   const getMobileLinkClass = (path) => {
@@ -140,7 +140,7 @@ export default function Navbar() {
                   className="w-6 h-6"
                 />
               </div>
-              <div>
+              <div className="text-center">
                 <h1 className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
                   McqsBase
                 </h1>
@@ -188,6 +188,21 @@ export default function Navbar() {
                <Link href="/submit-mcqs" className={getLinkClass("/submit-mcqs")}>
                  <Upload className="w-4 h-4 mr-2 inline" />
                  Submit
+               </Link>
+               
+               <Link href="/about" className={getLinkClass("/about")}>
+                 <Users className="w-4 h-4 mr-2 inline" />
+                 About
+               </Link>
+               
+               <Link href="/study-guides" className={getLinkClass("/study-guides")}>
+                 <BookOpen className="w-4 h-4 mr-2 inline" />
+                 Guides
+               </Link>
+               
+               <Link href="/blog" className={getLinkClass("/blog")}>
+                 <FileText className="w-4 h-4 mr-2 inline" />
+                 Blog
                </Link>
                
                <Link href="/contact" className={getLinkClass("/contact")}>
@@ -282,6 +297,24 @@ export default function Navbar() {
                >
                  <Upload className="w-4 h-4 mr-3" />
                  Submit MCQs
+               </Link>
+               
+               <Link 
+                 href="/about" 
+                 onClick={() => setIsOpen(false)} 
+                 className={`flex items-center w-full ${getMobileLinkClass("/about")}`}
+               >
+                 <Users className="w-4 h-4 mr-3" />
+                 About Us
+               </Link>
+               
+               <Link 
+                 href="/study-guides" 
+                 onClick={() => setIsOpen(false)} 
+                 className={`flex items-center w-full ${getMobileLinkClass("/study-guides")}`}
+               >
+                 <BookOpen className="w-4 h-4 mr-3" />
+                 Study Guides
                </Link>
                
                <Link 
