@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { headers } from 'next/headers';
 import Navbar from '../../../../src/components/Navbar';
 import Footer from '../../../../src/components/Footer';
@@ -666,7 +666,7 @@ async function fetchQuestionData({ subject, questionId, subcategorySegments = []
 
 async function generateStructuredData(question, category, subject, subjectPath) {
   const slug = generateQuestionSlug(question.question, question._id);
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://mcqsbase.com';
+  const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com').replace(/\/+$/, '');
   const subjectPathForUrl = subjectPath || subject;
   const questionUrl = `${baseUrl}/mcqs/${subjectPathForUrl}/question/${slug}`;
 
@@ -838,6 +838,15 @@ export default async function SubcategoryPage({ params, searchParams }) {
 
     if (error || !question || !category) {
       notFound();
+    }
+
+    // Enforce a single canonical URL for each question to avoid duplicate URLs
+    const canonicalSlug = question.slug || generateQuestionSlug(question.question);
+    const { path: combinedSubjectPath } = combineSubjectPath(subject, normalizedSegments);
+    const finalSubjectPath = combinedSubjectPath || subjectPath || subject;
+
+    if (questionId !== canonicalSlug) {
+      redirect(`/mcqs/${finalSubjectPath}/question/${canonicalSlug}/`);
     }
 
     const structuredData = await generateStructuredData(question, category, subject, subjectPath);

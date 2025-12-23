@@ -7,7 +7,7 @@ import '../src/index.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  metadataBase: new URL('https://mcqsbase.com'),
+  metadataBase: new URL('https://www.mcqsbase.com'),
   title: 'McqsBase.com - Pakistan\'s Premier MCQ Platform',
   description: 'Comprehensive MCQ platform for Pakistan competitive exams. Practice MCQs, download past papers, and prepare for FPSC, SPSC, PPSC, and NTS exams with thousands of questions.',
   keywords: 'MCQs, Pakistan competitive exams, FPSC, SPSC, PPSC, NTS, past papers, interview preparation, exam preparation, online quiz',
@@ -15,12 +15,12 @@ export const metadata = {
   robots: 'index, follow',
   openGraph: {
     type: 'website',
-    url: 'https://mcqsbase.com/',
+    url: 'https://www.mcqsbase.com/',
     title: 'McqsBase.com - Pakistan\'s Premier MCQ Platform',
     description: 'Comprehensive MCQ platform for Pakistan competitive exams. Practice MCQs, download past papers, and prepare for FPSC, SPSC, PPSC, and NTS exams with thousands of questions.',
     images: [
       {
-        url: 'https://mcqsbase.com/eagle.svg',
+        url: 'https://www.mcqsbase.com/eagle.svg',
         alt: 'McqsBase.com Logo'
       }
     ],
@@ -31,7 +31,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'McqsBase.com - Pakistan\'s Premier MCQ Platform',
     description: 'Comprehensive MCQ platform for Pakistan competitive exams. Practice MCQs, download past papers, and prepare for FPSC, SPSC, PPSC, and NTS exams with thousands of questions.',
-    images: ['https://mcqsbase.com/eagle.svg'],
+    images: ['https://www.mcqsbase.com/eagle.svg'],
   },
   other: {
     'theme-color': '#3B82F6',
