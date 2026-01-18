@@ -53,6 +53,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/eagle.svg" type="image/svg+xml" sizes="any" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <meta name="google-site-verification" content="WGnVaxb3MaxbnE_dIZ_EYGB9mUMfA1knPGt7sIyhu0I" />

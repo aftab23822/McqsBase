@@ -2,10 +2,10 @@ User-agent: *
 Allow: /
 
 # Sitemap Index
-Sitemap: https://mcqsbase.com/sitemap.xml
+Sitemap: https://www.mcqsbase.com/sitemap.xml
 # Individual Sitemaps (also referenced in index)
-Sitemap: https://mcqsbase.com/sitemap-main.xml
-Sitemap: https://mcqsbase.com/sitemap-questions.xml
+Sitemap: https://www.mcqsbase.com/sitemap-main.xml
+Sitemap: https://www.mcqsbase.com/sitemap-questions.xml
 
 # Disallow admin areas
 Disallow: /404/admin
