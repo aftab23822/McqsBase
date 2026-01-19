@@ -729,36 +729,27 @@ export async function generateMetadata({ params }) {
   const normalizedSegments = normalizeSegments(categorySegmentsRaw);
   const displaySubject = humanize(subject);
 
+  // IMPORTANT: Do NOT hit the database in generateMetadata.
+  // We derive metadata purely from the URL to keep this cheap and cache-friendly.
   if (isQuestion) {
-    const questionId = rawSegments[rawSegments.length - 1];
-    const { question, category } = await fetchQuestionData({
-      subject,
-      questionId,
-      subcategorySegments: normalizedSegments
-    });
-
-    if (!question || !category) {
-      return {
-        title: 'Question Not Found | McqsBase.com',
-        description: 'The requested question could not be found.'
-      };
-    }
-
-    const slug = generateQuestionSlug(question.question, question._id);
+    const questionSlug = rawSegments[rawSegments.length - 1] || '';
+    const questionTextFallback = humanize(questionSlug) || 'MCQ Question';
     const questionPreview =
-      question.question.length > 160 ? question.question.substring(0, 157) + '...' : question.question;
+      questionTextFallback.length > 160
+        ? questionTextFallback.substring(0, 157) + '...'
+        : questionTextFallback;
 
-    const title = `${questionPreview} - ${category.name} MCQs | McqsBase.com`;
-    const description = `Practice ${category.name.toLowerCase()} MCQ question: ${questionPreview}${
-      question.explanation ? ' Learn with detailed explanation.' : ''
-    } Part of comprehensive MCQ collection for FPSC, SPSC, PPSC, and NTS exams.`;
+    const displaySubPath = humanizePath(categorySegmentsRaw);
+    const categoryLabel = displaySubPath || displaySubject || 'MCQs';
+
+    const title = `${questionPreview} - ${categoryLabel} | McqsBase.com`;
+    const description = `Practice ${categoryLabel} MCQ: ${questionPreview}. Part of a comprehensive MCQ collection for FPSC, SPSC, PPSC, NTS and other competitive exams.`;
 
     const keywords = [
-      category.name.toLowerCase(),
+      categoryLabel.toLowerCase(),
       'mcq',
       'question',
       'answer',
-      'explanation',
       'competitive exam',
       'FPSC',
       'SPSC',
@@ -768,7 +759,7 @@ export async function generateMetadata({ params }) {
 
     const { path: subjectPath } = combineSubjectPath(subject, normalizedSegments);
     const safeSubjectPath = subjectPath || subject;
-    const url = `/mcqs/${safeSubjectPath}/question/${slug}`;
+    const url = `/mcqs/${safeSubjectPath}/question/${questionSlug}`;
 
     return generateSEOMetadata({
       title,
