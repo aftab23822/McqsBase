@@ -3,8 +3,6 @@ import connectToDatabase from '../../../../lib/mongodb.js';
 import MCQ from '../../../../lib/models/MCQ.js';
 import Category from '../../../../lib/models/Category.js';
 
-export const dynamic = 'force-dynamic';
-
 export async function GET(request) {
   try {
     await connectToDatabase();
@@ -44,12 +42,20 @@ export async function GET(request) {
       submittedBy: mcq.submittedBy?.toString() || mcq.submittedBy
     }));
 
-    return NextResponse.json({
-      results: serializedMcqs,
-      total,
-      page,
-      totalPages: Math.ceil(total / limit)
-    });
+    return NextResponse.json(
+      {
+        results: serializedMcqs,
+        total,
+        page,
+        totalPages: Math.ceil(total / limit)
+      },
+      {
+        // Cache at the edge for 24 hours, allow stale for 7 days
+        headers: {
+          'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=604800'
+        }
+      }
+    );
   } catch (error) {
     console.error('General Knowledge MCQs API error:', error);
     return NextResponse.json(

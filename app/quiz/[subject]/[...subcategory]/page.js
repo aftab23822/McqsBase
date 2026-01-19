@@ -93,6 +93,6 @@ export default async function SubcategoryQuizPage({ params, searchParams }) {
   );
 }
 
-export const dynamic = 'force-dynamic';
-
+// Enable ISR for quiz subcategory listings with 24-hour revalidation
+export const revalidate = 86400;
 

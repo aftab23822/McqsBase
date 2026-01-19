@@ -1,6 +1,5 @@
 import { Suspense } from 'react';
 import { notFound, redirect } from 'next/navigation';
-import { headers } from 'next/headers';
 import Navbar from '../../../../src/components/Navbar';
 import Footer from '../../../../src/components/Footer';
 import { ReCaptchaProvider } from '../../../../src/components/recaptcha';
@@ -59,22 +58,8 @@ function combineSubjectPath(subject, subpath) {
 }
 
 async function resolveRequestBaseUrl() {
-  try {
-    let hdrs = headers();
-    if (hdrs && typeof hdrs.then === 'function') {
-      hdrs = await hdrs;
-    }
-    if (hdrs) {
-      const getter = typeof hdrs.get === 'function' ? hdrs.get.bind(hdrs) : (key) => hdrs[key];
-      const host = getter('host');
-      const proto = getter('x-forwarded-proto') || (host && host.startsWith('localhost') ? 'http' : 'https');
-      if (host) {
-        return `${proto}://${host}`.replace(/\/+$/, '');
-      }
-    }
-  } catch (error) {
-    console.warn('Failed to resolve request base URL:', error);
-  }
+  // Use configured public base URL or canonical domain.
+  // Avoid using request headers so this route can benefit from ISR.
   return (process.env.NEXT_PUBLIC_BASE_URL || 'https://mcqsbase.com').replace(/\/+$/, '');
 }
 
@@ -86,7 +71,10 @@ async function fetchListingFaqItems(baseUrl, subject, categorySegmentsRaw) {
   if (!subPath) return [];
   const endpoint = `${baseUrl}/api/mcqs/${subject}/${subPath}?page=1&limit=3`;
   try {
-    const res = await fetch(endpoint, { cache: 'no-store' });
+    const res = await fetch(endpoint, {
+      // Cache FAQ items for 24 hours; MCQs change very rarely
+      next: { revalidate: 86400 }
+    });
     if (!res.ok) return [];
     const data = await res.json();
     return Array.isArray(data?.results) ? data.results.slice(0, 3) : [];
@@ -921,6 +909,6 @@ export default async function SubcategoryPage({ params, searchParams }) {
   );
 }
 
-export const dynamic = 'force-dynamic';
-
+// Enable ISR for this route (both listing and question pages) with 24-hour revalidation
+export const revalidate = 86400;
 

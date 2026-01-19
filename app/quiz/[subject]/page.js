@@ -1,6 +1,5 @@
 import { Suspense } from 'react';
 import { notFound } from 'next/navigation';
-import { headers } from 'next/headers';
 import { generateSEOMetadata } from '../../../src/components/SEO';
 import Navbar from '../../../src/components/Navbar';
 import Footer from '../../../src/components/Footer';
@@ -139,31 +138,10 @@ export default async function QuizCategoryPage({ params, searchParams }) {
   const page = Number.isFinite(pageParam) && pageParam > 0 ? pageParam : 1;
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || 'your-recaptcha-site-key';
   let initialTree = undefined;
-  
-  // Safely get headers
-  let host, proto, absoluteBase;
-  try {
-    let hdrs = headers();
-    // Handle if headers() returns a promise
-    if (hdrs && typeof hdrs.then === 'function') {
-      hdrs = await hdrs;
-    }
-    // Check if hdrs is a Headers object or has a get method
-    if (hdrs && typeof hdrs.get === 'function') {
-      host = hdrs.get('host');
-      proto = hdrs.get('x-forwarded-proto');
-    } else if (hdrs && typeof hdrs === 'object') {
-      // Fallback: try to access as plain object
-      host = hdrs.host || hdrs['host'];
-      proto = hdrs['x-forwarded-proto'] || hdrs['x-forwarded-proto'];
-    }
-  } catch (error) {
-    // If headers() fails, use fallback
-    console.warn('Failed to get headers:', error);
-  }
-  
-  proto = proto || (host && host.startsWith('localhost') ? 'http' : 'https');
-  absoluteBase = host ? `${proto}://${host}` : '';
+
+  // Prefer configured public base URL; fall back to canonical domain
+  const FALLBACK_BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://mcqsbase.com').replace(/\/+$/, '');
+  const absoluteBase = FALLBACK_BASE_URL;
 
   const componentImporter = QuizComponents[subject];
   if (!componentImporter) {
@@ -180,9 +158,13 @@ export default async function QuizCategoryPage({ params, searchParams }) {
 
   if (page === 1) {
     try {
-      const res = await fetch(`${absoluteBase}/api/quiz/${subject}?page=${page}&limit=10&include=hierarchy`, {
-        cache: 'no-store'
-      });
+      const res = await fetch(
+        `${absoluteBase}/api/quiz/${subject}?page=${page}&limit=10&include=hierarchy`,
+        {
+          // Revalidate quiz hierarchy/listing every 24 hours
+          next: { revalidate: 86400 }
+        }
+      );
       if (res.ok) {
         const data = await res.json();
         initialTree = data?.hierarchy?.tree || undefined;
@@ -211,4 +193,5 @@ export async function generateStaticParams() {
   }));
 }
 
-export const dynamic = 'force-dynamic';
+// Enable ISR for this route with 24-hour revalidation
+export const revalidate = 86400;
