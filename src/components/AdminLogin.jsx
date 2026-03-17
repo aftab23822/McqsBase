@@ -5,12 +5,13 @@ import { apiFetch } from '../utils/api';
 import LoadingSpinner from './LoadingSpinner';
 import { getAllCategories } from '../utils/categoryUtils';
 import { getMockTestCategories, getUniversities } from '../data/categories/mockTestCategories';
-import { Shield, Upload, LogOut, User, Lock, FileText, AlertCircle, CheckCircle, ListChecks, Mail, Plus, ChevronRight, ChevronDown, Trash2, Edit2 } from 'lucide-react';
+import { Shield, Upload, LogOut, User, Lock, FileText, AlertCircle, CheckCircle, ListChecks, Mail, Plus, ChevronRight, ChevronDown, Trash2, Edit2, Search } from 'lucide-react';
 import AdminUserSubmissions from './AdminUserSubmissions';
 import AdminContactSubmissions from './AdminContactSubmissions';
 import AdminMockTestsManager from './AdminMockTestsManager';
 import CategoryTreeManager from './CategoryTreeManager';
 import { ReCaptchaButton } from './recaptcha';
+import AdminSearch from './AdminSearch';
 
 const AdminLogin = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -23,6 +24,7 @@ const AdminLogin = () => {
   const [showMockTestsManager, setShowMockTestsManager] = useState(false);
   const [showPagesManagement, setShowPagesManagement] = useState(false);
   const [showCategoriesSync, setShowCategoriesSync] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
   const [validationErrors, setValidationErrors] = useState({});
   
   // Login state
@@ -883,8 +885,9 @@ const AdminLogin = () => {
               setShowMockTestsManager(false);
               setShowPagesManagement(false);
               setShowCategoriesSync(false);
+              setShowSearch(false);
             }}
-            className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${!showSubmissions && !showContactMessages && !showMockTestsManager && !showPagesManagement && !showCategoriesSync ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
+            className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${!showSubmissions && !showContactMessages && !showMockTestsManager && !showPagesManagement && !showCategoriesSync && !showSearch ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
             <Upload className="w-5 h-5" />
             Upload Data
@@ -896,6 +899,7 @@ const AdminLogin = () => {
               setShowMockTestsManager(false);
               setShowPagesManagement(true);
               setShowCategoriesSync(false);
+              setShowSearch(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showPagesManagement ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
@@ -909,6 +913,7 @@ const AdminLogin = () => {
               setShowMockTestsManager(false);
               setShowPagesManagement(false);
               setShowCategoriesSync(true);
+              setShowSearch(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showCategoriesSync ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
@@ -922,6 +927,7 @@ const AdminLogin = () => {
               setShowMockTestsManager(false);
               setShowPagesManagement(false);
               setShowCategoriesSync(false);
+              setShowSearch(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showSubmissions ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
@@ -935,6 +941,7 @@ const AdminLogin = () => {
               setShowMockTestsManager(false);
               setShowPagesManagement(false);
               setShowCategoriesSync(false);
+              setShowSearch(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showContactMessages ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
@@ -948,10 +955,25 @@ const AdminLogin = () => {
               setShowMockTestsManager(true);
               setShowPagesManagement(false);
               setShowCategoriesSync(false);
+              setShowSearch(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showMockTestsManager ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
             Manage Mock Tests
+          </button>
+          <button
+            onClick={() => {
+              setShowSubmissions(false);
+              setShowContactMessages(false);
+              setShowMockTestsManager(false);
+              setShowPagesManagement(false);
+              setShowCategoriesSync(false);
+              setShowSearch(true);
+            }}
+            className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showSearch ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
+          >
+            <Search className="w-5 h-5" />
+            Search & Edit Content
           </button>
           <button 
             onClick={handleLogout}
@@ -963,7 +985,7 @@ const AdminLogin = () => {
         </div>
 
         {/* Main Content */}
-        {!showSubmissions && !showContactMessages && !showMockTestsManager && !showPagesManagement && !showCategoriesSync ? (
+        {!showSubmissions && !showContactMessages && !showMockTestsManager && !showPagesManagement && !showCategoriesSync && !showSearch ? (
           <div className="bg-white rounded-2xl shadow-xl p-8">
             {error && (
               <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
@@ -2102,9 +2124,13 @@ const AdminLogin = () => {
               </select>
             </div>
             {/* Sync panel moved to its own section (Sync Categories) */}
-            <CategoryTreeManager type={
-              uploadData.type === 'simple-mcqs' ? 'mcqs' : uploadData.type
-            } />
+            <CategoryTreeManager
+              type={uploadData.type === 'simple-mcqs' ? 'mcqs' : uploadData.type}
+            />
+          </div>
+        ) : showSearch ? (
+          <div className="bg-white rounded-2xl shadow-xl p-8">
+            <AdminSearch />
           </div>
         ) : showSubmissions ? (
           <div className="bg-white rounded-2xl shadow-xl p-8">
