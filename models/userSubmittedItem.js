@@ -8,9 +8,10 @@ const userSubmittedItemSchema = new mongoose.Schema({
     required: true, 
     enum: ['simple', 'pastpaper', 'interview'] 
   },
-  question: { 
+  // For MCQs: full stem; for Interviews: short title ("Interview Title")
+  interviewTitle: { 
     type: String, 
-    required: true 
+    required: true
   },
   category: { 
     type: String, 
@@ -36,6 +37,11 @@ const userSubmittedItemSchema = new mongoose.Schema({
   },
   
   // Interview fields (for interview type)
+  // Full interview content (questions + answers) - "Description"
+  description: {
+    type: String,
+    required: function() { return this.type === 'interview'; }
+  },
   position: { 
     type: String, 
     required: function() { return this.type === 'interview'; } 

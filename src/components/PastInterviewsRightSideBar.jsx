@@ -17,9 +17,23 @@ const PastInterviewsRightSideBar = () => {
           </div>
 
           {cat.departments.map((dept, i) => (
-            <div key={i} className="bg-gray-50 p-3 rounded-lg shadow-sm hover:shadow-md transition-all">
-              <div className="font-medium text-gray-700 mb-1">{dept.label}</div>
-              {dept.roles && (
+            <div
+              key={i}
+              className="bg-gray-50 p-3 rounded-lg shadow-sm hover:shadow-md transition-all"
+            >
+              <div className="font-medium text-gray-700 mb-1">
+                {dept.link ? (
+                  <Link
+                    href={dept.link}
+                    className="hover:text-indigo-500 transition-colors"
+                  >
+                    {dept.label}
+                  </Link>
+                ) : (
+                  dept.label
+                )}
+              </div>
+              {dept.roles && dept.roles.length > 0 && (
                 <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
                   {dept.roles.map((role, j) => (
                     <li key={j}>

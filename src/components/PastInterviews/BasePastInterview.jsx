@@ -18,7 +18,9 @@ const BasePastInterview = ({ pastInterviewData, title, currentPage, setCurrentPa
         <PastInterviewCard
           key={index}
           questionNumber={(currentPage - 1) * interviewsPerPage + index + 1}
-          correctAnswer={q.answer}
+          title={q.interviewTitle}
+          description={q.description}
+          correctAnswer={q.description}
           {...q}
         />
       ))}

@@ -88,16 +88,16 @@ const mapSubmissionToPastInterview = (item) => {
   if (!category) category = 'general';
   
   return {
-    question: item.question,
-    answer: item.answer || item.correctAnswer || '',
+    interviewTitle: item.interviewTitle || item.question,
+    description: item.description || item.answer || item.correctAnswer || '',
     detail_link: item.detail_link || '',
     submitter: item.username || item.sharedBy || '',
     sharedBy: item.sharedBy || item.username || '',
     explanation: item.explanation || '',
     category: category, // Send category name instead of ID
     year: item.year ? parseInt(item.year) : new Date().getFullYear(),
+    // For interviews, department is the user's sub-topic (e.g. "Service Department", "Livestock Department")
     department: item.department || '',
-    organization: item.department || '', // Map department to organization
     position: item.position || '',
     experience: item.experience || '',
   };
@@ -204,9 +204,13 @@ const AdminUserSubmissions = () => {
               )}
               
               <div>
-                <h4 className="font-semibold text-gray-700 mb-2">Correct Answer</h4>
-                <p className="text-sm text-green-700 bg-green-50 p-2 rounded font-medium">
-                  {item.correctAnswer || item.answer || 'Not specified'}
+                <h4 className="font-semibold text-gray-700 mb-2">
+                  {item.type === 'interview' ? 'Interview Details' : 'Correct Answer'}
+                </h4>
+                <p className="text-sm text-green-700 bg-green-50 p-2 rounded font-medium whitespace-pre-line">
+                  {item.type === 'interview'
+                    ? (item.answer || item.description || 'Not specified')
+                    : (item.correctAnswer || 'Not specified')}
                 </p>
               </div>
             </div>
@@ -315,23 +319,15 @@ const AdminUserSubmissions = () => {
       explanation: item.explanation || ''
     });
     
-    // Fetch category structure based on type
-    await fetchCategoryStructure(item.type);
-    
-    // Reset category selections
-    setSelectedCommission('');
-    setSelectedDepartment('');
-    setSelectedRole('');
-    
-    // If editing MCQs, set the category directly
+    // For simple MCQs, prefill category selection directly.
+    // For pastpaper/interview, keep existing selections; useEffect will restore from saved data
     if (item.type === 'simple') {
+      setSelectedCommission('');
+      setSelectedDepartment('');
       setSelectedRole(item.category || '');
-    } else if ((item.type === 'pastpaper' || item.type === 'interview') && categoryStructure) {
-      // For Past Papers/Interviews, restore selections from saved data
-      // Wait for categoryStructure to be set (using a small delay or useEffect)
-      // Actually, we need to set this after categoryStructure is fetched
-      // So we'll use a useEffect or set it after fetch completes
     }
+
+    await fetchCategoryStructure(item.type);
   };
 
   // Effect to restore category selections after categoryStructure is loaded
@@ -344,7 +340,7 @@ const AdminUserSubmissions = () => {
       
       if (editingItem.type === 'pastpaper' || editingItem.type === 'interview') {
         // Try to match saved category, department, and position to the structure
-        const savedCategory = editingItem.category; // Commission slug
+        const savedCategory = editingItem.category; // Commission slug OR title (depending on when it was saved)
         const savedDepartment = editingItem.department; // Department label
         const savedRole = editingItem.position || ''; // Role label (for interviews) or we need to infer it
         
@@ -352,6 +348,17 @@ const AdminUserSubmissions = () => {
           // Not enough data to restore selections
           return;
         }
+
+        const slugify = (text) =>
+          (text || '')
+            .toLowerCase()
+            .replace(/^[^\w\s]+/, '')
+            .trim()
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-')
+            .replace(/^-+|-+$/g, '');
+
+        const savedCategorySlug = slugify(savedCategory);
         
         // Find the commission by matching the category slug in role links
         for (const commission of categoryStructure) {
@@ -362,7 +369,7 @@ const AdminUserSubmissions = () => {
               const linkParts = role.link.split('/').filter(Boolean);
               // Link format: /past-{papers|interviews}/commission-slug/department-slug/role-slug
               // Commission slug is typically the second part
-              return linkParts.length >= 2 && linkParts[1] === savedCategory;
+              return linkParts.length >= 2 && linkParts[1] === savedCategorySlug;
             })
           );
           
@@ -420,7 +427,10 @@ const AdminUserSubmissions = () => {
         updateData.category = selectedRole || editingItem.category || 'general-knowledge';
       } else if (editingItem.type === 'pastpaper' || editingItem.type === 'interview') {
         // Past Papers/Interviews: build category path from commission > department > role
-        if (selectedCommission && selectedDepartment && selectedRole && categoryStructure) {
+        const hasAllSelections = selectedCommission && selectedDepartment && selectedRole && categoryStructure;
+        const hasBasicSelections = selectedCommission && selectedDepartment && categoryStructure;
+
+        if (hasAllSelections) {
           // Find the selected role's category by traversing the structure
           const selectedComm = categoryStructure.find(
             c => (c.title || c.label) === selectedCommission
@@ -440,16 +450,38 @@ const AdminUserSubmissions = () => {
                 if (linkParts.length >= 2) {
                   // Get the commission slug (second part after past-papers or past-interviews)
                   updateData.category = linkParts[1]; // Commission slug
-                  updateData.department = selectedDepartment;
                   
                   if (editingItem.type === 'interview') {
+                    // For interviews, only set position/organization;
+                    // keep the original department field as the user's sub-topic (e.g. "Livestock Department")
                     updateData.position = selectedRole;
-                    // For interviews, also set organization from department
                     updateData.organization = selectedDepartment;
+                  } else if (editingItem.type === 'pastpaper') {
+                    // For past papers, department tracks the tree department
+                    updateData.department = selectedDepartment;
                   }
                 }
               }
             }
+          }
+        } else if (hasBasicSelections && editingItem.type === 'interview') {
+          // For interviews, allow Role to be optional: just persist commission;
+          // do NOT overwrite the existing department (sub-topic)
+          const selectedComm = categoryStructure.find(
+            c => (c.title || c.label) === selectedCommission
+          );
+          
+          if (selectedComm) {
+            const commSlug = (selectedComm.title || selectedComm.label || '')
+              .toLowerCase()
+              .replace(/^[^\w\s]+/, '')
+              .trim()
+              .replace(/\s+/g, '-')
+              .replace(/-+/g, '-')
+              .replace(/^-+|-+$/g, '');
+            
+            updateData.category = commSlug;
+            // Do not override department or position here
           }
         }
       }
@@ -777,18 +809,20 @@ const AdminUserSubmissions = () => {
                 </div>
               )}
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {editingItem.type === 'interview' ? 'Answer' : 'Correct Answer'} <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="text"
-                  value={editForm.correct_option}
-                  onChange={(e) => setEditForm(prev => ({ ...prev, correct_option: e.target.value }))}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  required
-                />
-              </div>
+              {editingItem.type !== 'interview' && (
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Correct Answer <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    value={editForm.correct_option}
+                    onChange={(e) => setEditForm(prev => ({ ...prev, correct_option: e.target.value }))}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    required
+                  />
+                </div>
+              )}
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -891,7 +925,8 @@ const AdminUserSubmissions = () => {
                     {selectedDepartment && (
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-1">
-                          Role <span className="text-red-500">*</span>
+                          Role{editingItem?.type === 'interview' ? ' (optional)' : ''}{' '}
+                          {editingItem?.type !== 'interview' && <span className="text-red-500">*</span>}
                         </label>
                         <select
                           value={selectedRole}

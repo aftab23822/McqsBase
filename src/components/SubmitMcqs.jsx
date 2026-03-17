@@ -22,6 +22,7 @@ const SubmitMcqs = () => {
     year: '',
     department: '',
     experience: '',
+    answer: '', // Full interview content (questions + answers)
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -63,10 +64,15 @@ const SubmitMcqs = () => {
     }
     
     if (!formData.question.trim()) {
-      errors.question = 'Question is required';
+      errors.question = formData.type === 'interview'
+        ? 'Interview title is required'
+        : 'Question is required';
     }
     
     if (formData.type === 'interview') {
+      if (!formData.answer.trim()) {
+        errors.answer = 'Interview details (questions + answers) are required';
+      }
       if (!formData.position.trim()) {
         errors.position = 'Position is required';
       }
@@ -147,6 +153,7 @@ const SubmitMcqs = () => {
           year: '',
           department: '',
           experience: '',
+          answer: '',
         });
         setValidationErrors({});
       } else {
@@ -201,10 +208,10 @@ const SubmitMcqs = () => {
               )}
             </div>
 
-            {/* Question */}
+            {/* Question / Title */}
             <div>
               <label htmlFor="question" className="block text-sm font-semibold text-gray-700 mb-2">
-                {formData.type === 'interview' ? 'Interview Question' : 'MCQ Question'} <span className="text-red-500">*</span>
+                {formData.type === 'interview' ? 'Interview Title (short)' : 'MCQ Question'} <span className="text-red-500">*</span>
               </label>
               <textarea
                 id="question"
@@ -213,7 +220,9 @@ const SubmitMcqs = () => {
                 onChange={handleInputChange}
                 rows={4}
                 className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent resize-none ${validationErrors.question ? 'border-red-500' : 'border-gray-300'}`}
-                placeholder={formData.type === 'interview' ? 'Enter the interview question asked...' : 'Enter your MCQ question here...'}
+                placeholder={formData.type === 'interview'
+                  ? 'e.g. Complete Junior Clerk Interview Questions (Service Department) - 12 March 2026'
+                  : 'Enter your MCQ question here...'}
                 required
               />
               {validationErrors.question && (
@@ -223,8 +232,27 @@ const SubmitMcqs = () => {
 
             {/* Interview Fields */}
             {formData.type === 'interview' && (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
+              <>
+                <div className="mb-4">
+                  <label htmlFor="answer" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Full Interview Details (Questions + Answers) <span className="text-red-500">*</span>
+                  </label>
+                  <textarea
+                    id="answer"
+                    name="answer"
+                    value={formData.answer}
+                    onChange={handleInputChange}
+                    rows={6}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent resize-none ${validationErrors.answer ? 'border-red-500' : 'border-gray-300'}`}
+                    placeholder="Paste or write the full interview here, including all questions and your answers."
+                    required
+                  />
+                  {validationErrors.answer && (
+                    <p className="text-red-500 text-sm mt-1">{validationErrors.answer}</p>
+                  )}
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
                   <label htmlFor="position" className="block text-sm font-semibold text-gray-700 mb-2">
                     Position/Job Title <span className="text-red-500">*</span>
                   </label>
@@ -241,8 +269,8 @@ const SubmitMcqs = () => {
                   {validationErrors.position && (
                     <p className="text-red-500 text-sm mt-1">{validationErrors.position}</p>
                   )}
-                </div>
-                <div>
+                  </div>
+                  <div>
                   <label htmlFor="sharedBy" className="block text-sm font-semibold text-gray-700 mb-2">
                     Shared By <span className="text-red-500">*</span>
                   </label>
@@ -259,8 +287,8 @@ const SubmitMcqs = () => {
                   {validationErrors.sharedBy && (
                     <p className="text-red-500 text-sm mt-1">{validationErrors.sharedBy}</p>
                   )}
-                </div>
-                <div>
+                  </div>
+                  <div>
                   <label htmlFor="year" className="block text-sm font-semibold text-gray-700 mb-2">
                     Year <span className="text-red-500">*</span>
                   </label>
@@ -277,8 +305,8 @@ const SubmitMcqs = () => {
                   {validationErrors.year && (
                     <p className="text-red-500 text-sm mt-1">{validationErrors.year}</p>
                   )}
-                </div>
-                <div>
+                  </div>
+                  <div>
                   <label htmlFor="department" className="block text-sm font-semibold text-gray-700 mb-2">
                     Department <span className="text-red-500">*</span>
                   </label>
@@ -289,14 +317,14 @@ const SubmitMcqs = () => {
                     value={formData.department}
                     onChange={handleInputChange}
                     className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent ${validationErrors.department ? 'border-red-500' : 'border-gray-300'}`}
-                    placeholder="e.g. FPSC"
+                    placeholder="e.g. Service Department, Health Department"
                     required
                   />
                   {validationErrors.department && (
                     <p className="text-red-500 text-sm mt-1">{validationErrors.department}</p>
                   )}
-                </div>
-                <div className="md:col-span-2">
+                  </div>
+                  <div className="md:col-span-2">
                   <label htmlFor="experience" className="block text-sm font-semibold text-gray-700 mb-2">
                     Experience (Details, Optional)
                   </label>
@@ -309,8 +337,9 @@ const SubmitMcqs = () => {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent resize-none"
                     placeholder="e.g. They also asked questions related to polymorphism and database normalization."
                   />
+                  </div>
                 </div>
-              </div>
+              </>
             )}
 
             {/* MCQ Options & Answer Fields (not for interview) */}

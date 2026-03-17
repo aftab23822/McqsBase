@@ -11,8 +11,8 @@ export async function POST(request) {
 
     const body = await request.json();
     const {
-      question,
-      answer,
+      interviewTitle,
+      description,
       detail_link,
       submitter,
       sharedBy,
@@ -22,8 +22,7 @@ export async function POST(request) {
       year,
       department,
       position,
-      experience,
-      organization
+      experience
     } = body;
 
     // Handle category mapping
@@ -69,9 +68,9 @@ export async function POST(request) {
       finalCategoryId = defaultCategory._id;
     }
 
-    // Check for duplicate question in the same category
+    // Check for duplicate title in the same category
     const existingInterview = await PastInterview.findOne({ 
-      question: question,
+      interviewTitle,
       categoryId: finalCategoryId 
     });
     
@@ -83,11 +82,10 @@ export async function POST(request) {
     }
 
     const pastInterview = new PastInterview({
-      question,
-      answer: answer || explanation || '',
+      interviewTitle,
+      description: description || explanation || '',
       categoryId: finalCategoryId,
       position: position || '',
-      organization: organization || department || '',
       department: department || '',
       sharedBy: sharedBy || submitter || '',
       experience: experience || '',

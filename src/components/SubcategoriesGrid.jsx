@@ -13,7 +13,7 @@ function humanizeSlug(slug) {
     .join(' ');
 }
 
-function Card({ index, title, href, description, count, disableInteractions = false }) {
+function Card({ index, title, href, description, count, disableInteractions = false, onClick }) {
   const cardContent = (
     <div className="group block rounded-xl border border-gray-200 bg-white p-5 shadow-sm hover:shadow-md transition-shadow">
       <div className="flex items-start justify-between gap-3">
@@ -45,6 +45,14 @@ function Card({ index, title, href, description, count, disableInteractions = fa
     );
   }
 
+  if (typeof onClick === 'function') {
+    return (
+      <button type="button" onClick={onClick} className="text-left w-full">
+        {cardContent}
+      </button>
+    );
+  }
+
   return (
     <Link href={href}>
       {cardContent}
@@ -69,7 +77,14 @@ function useNumCols() {
   return cols;
 }
 
-export default function SubcategoriesGrid({ subject, tree, initialLimit = 3, basePath = 'mcqs' }) {
+export default function SubcategoriesGrid({
+  subject,
+  tree,
+  initialLimit = 3,
+  basePath = 'mcqs',
+  disableAllLinks = false,
+  onSelectItem
+}) {
   if (!Array.isArray(tree) || tree.length === 0) return null;
   const [expanded, setExpanded] = useState(false);
   const numCols = useNumCols();
@@ -136,6 +151,12 @@ export default function SubcategoriesGrid({ subject, tree, initialLimit = 3, bas
               href={href}
               description={description}
               count={childrenCount}
+              disableInteractions={false}
+              onClick={
+                disableAllLinks && typeof onSelectItem === 'function'
+                  ? () => onSelectItem(node)
+                  : undefined
+              }
             />
           );
         })}

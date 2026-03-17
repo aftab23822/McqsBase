@@ -115,6 +115,14 @@ const CategoryTreeManager = ({ type }) => {
       .trim();
   };
 
+  // Auto-generate department link
+  const generateDepartmentLink = (commissionTitle, departmentLabel, type) => {
+    const typePath = type === 'past-papers' ? 'papers' : 'interviews';
+    const commSlug = generateSlug(commissionTitle);
+    const deptSlug = generateSlug(departmentLabel.replace(/^[^\w\s]+/, ''));
+    return `/past-${typePath}/${commSlug}/${deptSlug}`;
+  };
+
   // Auto-generate role link
   const generateRoleLink = (roleLabel, commissionTitle, departmentLabel, type) => {
     const typePath = type === 'past-papers' ? 'papers' : 'interviews';
@@ -161,6 +169,7 @@ const CategoryTreeManager = ({ type }) => {
           if (!commission.departments) commission.departments = [];
           commission.departments.push({
             label: newItemData.label || '',
+            link: newItemData.link || generateDepartmentLink(parentData.commissionTitle || '', newItemData.label || '', type),
             roles: []
           });
         }
@@ -308,7 +317,8 @@ const CategoryTreeManager = ({ type }) => {
       });
     } else if (item.type === 'department') {
       setNewItemData({
-        label: item.data.label || ''
+        label: item.data.label || '',
+        link: item.data.link || ''
       });
     } else if (item.type === 'role') {
       setNewItemData({
@@ -422,7 +432,12 @@ const CategoryTreeManager = ({ type }) => {
         if (commission && commission.departments && commission.departments[item.index] !== undefined) {
           commission.departments[item.index] = {
             ...commission.departments[item.index],
-            label: newItemData.label || ''
+            label: newItemData.label || '',
+            link: newItemData.link || generateDepartmentLink(
+              commission.title || '',
+              newItemData.label || commission.departments[item.index].label || '',
+              type
+            )
           };
         }
       } else if (level === 'role') {
@@ -739,6 +754,16 @@ const CategoryTreeManager = ({ type }) => {
                               value={newItemData.label || ''}
                               onChange={(e) => setNewItemData(prev => ({ ...prev, label: e.target.value }))}
                               placeholder="e.g., College Education Department"
+                              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                            />
+                          </div>
+                          <div>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">Department Link (optional)</label>
+                            <input
+                              type="text"
+                              value={newItemData.link || ''}
+                              onChange={(e) => setNewItemData(prev => ({ ...prev, link: e.target.value }))}
+                              placeholder={generateDepartmentLink(commission.title, newItemData.label || department.label, type)}
                               className="w-full px-3 py-2 border border-gray-300 rounded-md"
                             />
                           </div>

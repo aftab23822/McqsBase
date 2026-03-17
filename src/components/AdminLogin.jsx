@@ -122,14 +122,25 @@ const AdminLogin = () => {
       return;
       }
     } else if (uploadData.type === 'past-papers' || uploadData.type === 'past-interviews') {
-      if (!uploadData.file || !selectedCommission || !selectedDepartment || !selectedRole) {
-        setError('Please select Commission, Department, and Role');
+      const isPastPapers = uploadData.type === 'past-papers';
+
+      if (!uploadData.file || !selectedCommission || !selectedDepartment || (isPastPapers && !selectedRole)) {
+        setError(
+          isPastPapers
+            ? 'Please select Commission, Department, and Role'
+            : 'Please select Commission and Department (Role is optional for Past Interviews)'
+        );
         setIsLoading(false);
         return;
       }
-      // Set category to selected subcategory link or role link
-      const finalCategory = selectedSubcategoryPath.length > 0 ? getSelectedSubcategoryLink() : selectedRole;
-      uploadData.category = finalCategory;
+
+      // Set category to selected subcategory link or role/department link
+      const baseCategory =
+        selectedSubcategoryPath.length > 0
+          ? getSelectedSubcategoryLink()
+          : (selectedRole || selectedDepartment);
+
+      uploadData.category = baseCategory;
       uploadData.subcategory = selectedCommission;
     } else if (uploadData.type === 'mock-tests') {
       if (!uploadData.file || !uploadData.category || !uploadData.subcategory) {
@@ -173,7 +184,16 @@ const AdminLogin = () => {
         } else if (uploadData.type === 'past-papers') {
           return item.question && item.options && item.correct_option && item.year;
         } else if (uploadData.type === 'past-interviews') {
-          return item.question && item.answer && item.year;
+          // Latest required structure for Past Interviews:
+          // - question (string)
+          // - answer OR explanation (string)
+          // - year (string or number)
+          // - department (string) for topic grouping (e.g. "Service Department")
+          const hasQuestion = Boolean(item.question);
+          const hasAnswer = Boolean(item.answer || item.explanation);
+          const hasYear = Boolean(item.year);
+          const hasDepartment = Boolean(item.department);
+          return hasQuestion && hasAnswer && hasYear && hasDepartment;
         } else if (uploadData.type === 'mock-tests') {
           return item.question && item.options && item.correct_option;
         }
@@ -192,6 +212,9 @@ const AdminLogin = () => {
       console.log('MCQs data:', jsonData);
       
       let response;
+      let inserted = 0;
+      let skipped = 0;
+
       if (uploadData.type === 'mock-tests') {
         response = await apiFetch(`/api/mock-tests/batch`, {
           method: 'POST',
@@ -211,6 +234,12 @@ const AdminLogin = () => {
             }))
           }),
         });
+
+        if (response.ok) {
+          const data = await response.json();
+          inserted = data.inserted || 0;
+          skipped = data.skipped || 0;
+        }
       } else if (uploadData.type === 'past-papers') {
         // Use past papers batch endpoint for past paper uploads
         response = await apiFetch(`/api/pastpapers/batch?category=${uploadData.category}`, {
@@ -224,25 +253,88 @@ const AdminLogin = () => {
             category: uploadData.category
           }),
         });
+
+        if (response.ok) {
+          const data = await response.json();
+          inserted = data.inserted || 0;
+          skipped = data.skipped || 0;
+        }
+      } else if (uploadData.type === 'past-interviews') {
+        // No batch endpoint yet – insert interviews one by one
+        // Use a slugified commission name as category so it matches API routes
+        const commissionSlug = (selectedCommission || '')
+          .toLowerCase()
+          .replace(/^[^\w\s]+/, '')
+          .trim()
+          .replace(/\s+/g, '-')
+          .replace(/-+/g, '-')
+          .replace(/^-+|-+$/g, '');
+
+        for (const item of jsonData) {
+          const baseOrg = (selectedDepartment || '').replace(/^[^\w\s]+/, '').trim();
+          const dbDepartment = item.department || item.organization || baseOrg;
+
+          const payload = {
+            question: item.question,
+            answer: item.answer,
+            detail_link: item.detail_link || '',
+            submitter: item.submitter || '',
+            sharedBy: item.submitter || '',
+            explanation: item.explanation || '',
+            category: commissionSlug, // commission slug (e.g. sindh-government)
+            year: item.year,
+            // organization used for URL-level matching (e.g. Junior Clerk)
+            organization: baseOrg,
+            // department used as finer-grained topic (e.g. Service Department)
+            department: dbDepartment,
+            position: selectedRole || '',
+            experience: item.experience || ''
+          };
+
+          const res = await apiFetch(`/api/interviews`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${token}`,
+            },
+            body: JSON.stringify(payload),
+          });
+
+          if (res.status === 201) {
+            inserted += 1;
+          } else if (res.status === 409) {
+            skipped += 1;
+          } else if (!res.ok) {
+            const errData = await res.json().catch(() => ({}));
+            console.error('Past Interview upload error for item:', payload.question, errData);
+          }
+        }
       } else {
         // Use MCQ batch endpoint for simple MCQs
         response = await apiFetch(`/api/mcqs/batch?category=${uploadData.category}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`,
-        },
-        body: JSON.stringify({
-          mcqs: jsonData,
-          category: uploadData.category
-        }),
-      });
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`,
+          },
+          body: JSON.stringify({
+            mcqs: jsonData,
+            category: uploadData.category
+          }),
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          inserted = data.inserted || 0;
+          skipped = data.skipped || 0;
+        }
       }
 
-      if (response.ok) {
-        const data = await response.json();
-        console.log('Upload response:', data);
-        setSuccess(`Successfully uploaded ${data.inserted} items. ${data.skipped} items were skipped (duplicates).`);
+      if ((response && response.ok) || uploadData.type === 'past-interviews') {
+        if (uploadData.type !== 'past-interviews') {
+          console.log('Upload response:', { inserted, skipped });
+        }
+        setSuccess(`Successfully uploaded ${inserted} items. ${skipped} items were skipped (duplicates).`);
         setUploadData({
           file: null,
           category: '',
@@ -1150,7 +1242,8 @@ const AdminLogin = () => {
                     {selectedDepartment && (
                 <div>
                         <label className="block text-sm font-semibold text-gray-700 mb-2">
-                          Role <span className="text-red-500">*</span>
+                          Role{uploadData.type === 'past-papers' ? ' ' : ' (optional)'}
+                          {uploadData.type === 'past-papers' && <span className="text-red-500">*</span>}
                   </label>
                         <div className="space-y-2">
                   <select
@@ -1160,7 +1253,7 @@ const AdminLogin = () => {
                               setSelectedSubcategoryPath([]);
                               setUploadData(prev => ({ ...prev, category: e.target.value }));
                             }}
-                    required
+                            required={uploadData.type === 'past-papers'}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
                   >
                             <option value="">Select Role</option>

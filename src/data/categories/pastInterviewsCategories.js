@@ -18,10 +18,9 @@ export const pastInterviewCategories = [
     icon: MapPin,
     departments: [
       {
-        label: "🏛 General Administration and Coordination Department",
-        roles: [
-          { label: "Junior Clerk BPS‑11", link: "/past-interviews/government-of-sindh/general-administration/junior-clerk-bps-11" }
-        ]
+        label: "👨‍💻 Junior Clerk",
+        link: "/past-interviews/sindh-government/junior-clerk",
+        roles: []
       }
     ]
   },

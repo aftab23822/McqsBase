@@ -18,7 +18,8 @@ export const submitItem = async (req, res) => {
       sharedBy,
       year,
       department,
-      experience
+      experience,
+      answer
     } = req.body;
 
     // Validate required fields based on type
@@ -36,15 +37,16 @@ export const submitItem = async (req, res) => {
 
     if (type === 'interview') {
       // Validate interview fields
-      if (!position || !sharedBy || !year || !department) {
+      if (!position || !sharedBy || !year || !department || !answer) {
         return res.status(400).json({ 
           success: false, 
-          message: 'Position, shared by, year, and department are required for interview submissions' 
+          message: 'Title, full interview details, position, shared by, year, and department are required for interview submissions' 
         });
       }
       
       submissionData = {
         ...submissionData,
+        answer,
         position,
         sharedBy,
         year: parseInt(year),
