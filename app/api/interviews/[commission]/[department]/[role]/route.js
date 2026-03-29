@@ -2,7 +2,11 @@ import { NextResponse } from 'next/server';
 import connectToDatabase from '@/lib/mongodb.js';
 import PastInterview from '@/lib/models/PastInterview.js';
 import { sanitizeSubject, sanitizeString, sanitizeInt, escapeRegex } from '@/lib/utils/security.js';
-import { normalizeDepartmentName, normalizeRoleName } from '@/lib/utils/slugUtils.js';
+import {
+  generateSlug,
+  normalizeDepartmentName,
+  normalizeRoleName,
+} from '@/lib/utils/slugUtils.js';
 import Category from '@/lib/models/Category.js';
 
 /**
@@ -103,18 +107,31 @@ export async function GET(request, { params }) {
     let filteredInterviews;
 
     if (roleIsAll) {
-      // Department-level listing for a role: URL pattern is
       // /past-interviews/[commission]/[department]/all
-      // where [department] is actually the role slug (e.g. "junior-clerk").
+      // - Match interview.department (admin-assigned / submissions) against URL slug.
+      // - Legacy: some pages used this segment as a "position" slug (e.g. junior-clerk with roles: []).
+      const urlDeptSlug = generateSlug(department);
+
       filteredInterviews = normalizedInterviews.filter((interview) => {
-        const roleSlug = interview.position ? normalizeRoleName(interview.position) : '';
+        const deptSlug = normalizeDepartmentName(interview.department || '');
+        const posSlug = interview.position ? normalizeRoleName(interview.position) : '';
 
-        const isMatch =
-          roleSlug === department ||
-          roleSlug.includes(department) ||
-          department.includes(roleSlug);
+        const byDepartment =
+          !!deptSlug &&
+          (deptSlug === urlDeptSlug ||
+            deptSlug.includes(urlDeptSlug) ||
+            urlDeptSlug.includes(deptSlug));
 
-        return isMatch;
+        const byPositionLegacy =
+          !!posSlug &&
+          (posSlug === urlDeptSlug ||
+            posSlug === department ||
+            posSlug.includes(department) ||
+            department.includes(posSlug) ||
+            posSlug.includes(urlDeptSlug) ||
+            urlDeptSlug.includes(posSlug));
+
+        return byDepartment || byPositionLegacy;
       });
     } else {
       // Role-level listing: match by position only

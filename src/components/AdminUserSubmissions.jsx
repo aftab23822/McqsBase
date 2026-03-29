@@ -452,10 +452,9 @@ const AdminUserSubmissions = () => {
                   updateData.category = linkParts[1]; // Commission slug
                   
                   if (editingItem.type === 'interview') {
-                    // For interviews, only set position/organization;
-                    // keep the original department field as the user's sub-topic (e.g. "Livestock Department")
+                    // PastInterview listing API matches URL slug to this label (same as category tree).
                     updateData.position = selectedRole;
-                    updateData.organization = selectedDepartment;
+                    updateData.department = selectedDepartment;
                   } else if (editingItem.type === 'pastpaper') {
                     // For past papers, department tracks the tree department
                     updateData.department = selectedDepartment;
@@ -465,8 +464,7 @@ const AdminUserSubmissions = () => {
             }
           }
         } else if (hasBasicSelections && editingItem.type === 'interview') {
-          // For interviews, allow Role to be optional: just persist commission;
-          // do NOT overwrite the existing department (sub-topic)
+          // Department-only pages (no roles): still persist tree department for /commission/dept/all routing.
           const selectedComm = categoryStructure.find(
             c => (c.title || c.label) === selectedCommission
           );
@@ -481,7 +479,7 @@ const AdminUserSubmissions = () => {
               .replace(/^-+|-+$/g, '');
             
             updateData.category = commSlug;
-            // Do not override department or position here
+            updateData.department = selectedDepartment;
           }
         }
       }

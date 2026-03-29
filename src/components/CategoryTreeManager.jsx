@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronRight, ChevronDown, Plus, Edit2, Trash2, GripVertical, Building2, Folder, Save, X, Landmark, MapPin, Building, School, Hospital, Briefcase, Users, BookOpen, GraduationCap, Award, Shield, Globe, Calendar, ArrowUp, ArrowDown } from 'lucide-react';
 import { apiFetch } from '../utils/api';
+import { generateSlug } from '../../lib/utils/slugUtils.js';
 
 // Available icons for picker
 const AVAILABLE_ICONS = [
@@ -103,16 +104,6 @@ const CategoryTreeManager = ({ type }) => {
       newExpanded.add(id);
     }
     setExpandedItems(newExpanded);
-  };
-
-  // Generate slug from text
-  const generateSlug = (text) => {
-    return text
-      .toLowerCase()
-      .replace(/[^\w\s-]/g, '') // Remove special characters except hyphens
-      .replace(/\s+/g, '-') // Replace spaces with hyphens
-      .replace(/-+/g, '-') // Replace multiple hyphens with single
-      .trim();
   };
 
   // Auto-generate department link
