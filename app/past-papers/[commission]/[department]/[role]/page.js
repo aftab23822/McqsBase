@@ -11,7 +11,6 @@ import LoadingSpinner from '@/components/LoadingSpinner';
 import Breadcrumb from '@/components/Breadcrumb';
 import SubcategoriesSection from '@/components/SubcategoriesSection';
 import { apiFetch } from '@/utils/api';
-import { getPastPaperCategories } from '@/data/categories/pastPapersCategories';
 
 const papersPerPage = 10;
 
@@ -126,8 +125,12 @@ function PastPaperCategoryPageContent() {
         setPastPaperData(data.results || []);
         setTotalPages(data.totalPages || 1);
 
-        // Generate breadcrumb labels from category structure
-        const categories = getPastPaperCategories();
+        const structRes = await fetch('/api/categories/structure?type=past-papers');
+        const structJson = await structRes.json();
+        const categories =
+          structJson.success && Array.isArray(structJson.data?.commissions)
+            ? structJson.data.commissions
+            : [];
         
         let newBreadcrumbData = {
           commissionLabel: commission.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),

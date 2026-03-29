@@ -10,7 +10,6 @@ import LoadingSpinner from '../../src/components/LoadingSpinner';
 import Breadcrumb from '../../src/components/Breadcrumb';
 import SubcategoriesSection from '../../src/components/SubcategoriesSection';
 import { apiFetch } from '@/utils/api';
-import { getPastPaperCategories } from '@/data/categories/pastPapersCategories';
 
 const papersPerPage = 10;
 
@@ -115,8 +114,12 @@ function PastPapersPageContent() {
         setPageTitle('STS - SIBA Testing Services — BPS 05 to 15 / Intermediate Category');
         setError(null);
 
-        // Find the role in category structure to get subcategories
-        const categories = getPastPaperCategories();
+        const structRes = await fetch('/api/categories/structure?type=past-papers');
+        const structJson = await structRes.json();
+        const categories =
+          structJson.success && Array.isArray(structJson.data?.commissions)
+            ? structJson.data.commissions
+            : [];
         const foundCategory = categories.find(cat => {
           const catSlug = cat.title.toLowerCase()
             .replace(/\s+/g, '-')

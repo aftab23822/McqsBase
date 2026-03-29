@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
-import { getUniversities } from '../data/categories/mockTestCategories';
+import { getUniversities as getStaticUniversities } from '../data/categories/mockTestCategories';
 
 const AdminMockTestsManager = () => {
   const [university, setUniversity] = useState('');
@@ -11,7 +11,22 @@ const AdminMockTestsManager = () => {
   const [editing, setEditing] = useState(null);
   const [editForm, setEditForm] = useState({ name: '', durationMinutes: 30 });
 
-  const universities = getUniversities();
+  const [universities, setUniversities] = useState(() => getStaticUniversities());
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch('/api/categories/structure?type=mock-tests')
+      .then((r) => r.json())
+      .then((j) => {
+        if (!cancelled && j?.success && Array.isArray(j.data?.universities) && j.data.universities.length) {
+          setUniversities(j.data.universities);
+        }
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const fetchTests = async () => {
     if (!university) return;

@@ -1,10 +1,40 @@
-import React from "react";
-import Link from "next/link";
-import { getPastInterviewCategories } from "../data/categories/pastInterviewsCategories";
+'use client';
 
-const pastInterviewCategories = getPastInterviewCategories();
+import React, { useMemo } from 'react';
+import Link from 'next/link';
+import { useCategoryStructure } from '../hooks/useCategoryStructure';
+import { getLucideIconByName } from '../../lib/utils/lucideIconByName';
 
 const PastInterviewsRightSideBar = () => {
+  const { data, loading, error } = useCategoryStructure('past-interviews');
+
+  const pastInterviewCategories = useMemo(() => {
+    const commissions = data?.commissions;
+    if (!commissions?.length) return [];
+    return commissions.map((c) => ({
+      ...c,
+      icon: getLucideIconByName(c.icon),
+    }));
+  }, [data]);
+
+  if (loading) {
+    return (
+      <div className="col-span-1 p-5 border-l bg-white rounded-xl shadow-xl space-y-4">
+        <h3 className="text-2xl font-bold text-gray-800 border-b pb-2">Past Interviews</h3>
+        <p className="text-gray-500 text-sm">Loading categories…</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="col-span-1 p-5 border-l bg-white rounded-xl shadow-xl space-y-4">
+        <h3 className="text-2xl font-bold text-gray-800 border-b pb-2">Past Interviews</h3>
+        <p className="text-red-600 text-sm">{error}</p>
+      </div>
+    );
+  }
+
   return (
     <div className="col-span-1 p-5 border-l bg-white rounded-xl shadow-xl space-y-4">
       <h3 className="text-2xl font-bold text-gray-800 border-b pb-2">Past Interviews</h3>
@@ -23,10 +53,7 @@ const PastInterviewsRightSideBar = () => {
             >
               <div className="font-medium text-gray-700 mb-1">
                 {dept.link ? (
-                  <Link
-                    href={dept.link}
-                    className="hover:text-indigo-500 transition-colors"
-                  >
+                  <Link href={dept.link} className="hover:text-indigo-500 transition-colors">
                     {dept.label}
                   </Link>
                 ) : (
@@ -37,10 +64,7 @@ const PastInterviewsRightSideBar = () => {
                 <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
                   {dept.roles.map((role, j) => (
                     <li key={j}>
-                      <Link
-                        href={role.link}
-                        className="hover:text-indigo-500 transition-colors"
-                      >
+                      <Link href={role.link} className="hover:text-indigo-500 transition-colors">
                         {role.label}
                       </Link>
                     </li>

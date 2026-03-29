@@ -10,7 +10,6 @@ import LoadingSpinner from '@/components/LoadingSpinner';
 import Breadcrumb from '@/components/Breadcrumb';
 import SubcategoriesSection from '@/components/SubcategoriesSection';
 import { apiFetch } from '@/utils/api';
-import { getPastPaperCategories } from '@/data/categories/pastPapersCategories';
 import IndividualQuestion from '@/components/IndividualQuestion';
 import generateIntro from '@/lib/generateIntro';
 
@@ -219,8 +218,12 @@ function PastPaperSubcategoryPageContent() {
         setPastPaperData(data.results || []);
         setTotalPages(data.totalPages || 1);
 
-        // Find the role and subcategory in category structure
-        const categories = getPastPaperCategories();
+        const structRes = await fetch('/api/categories/structure?type=past-papers');
+        const structJson = await structRes.json();
+        const categories =
+          structJson.success && Array.isArray(structJson.data?.commissions)
+            ? structJson.data.commissions
+            : [];
         let newBreadcrumbData = {
           commissionLabel: commission.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
           departmentLabel: department.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),

@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import MockTestsRightSideBar from './MockTestsRightSideBar';
-import { getUniversities } from '../data/categories/mockTestCategories';
+import { getUniversities as getStaticUniversities } from '../data/categories/mockTestCategories';
 
 const MockTests = () => {
   const [latestTests, setLatestTests] = useState([]);
@@ -22,8 +22,17 @@ const MockTests = () => {
         const { success, data } = await res.json();
         if (!success) throw new Error('API returned error');
 
-        // Attach friendly university labels
-        const uniBySlug = Object.fromEntries(getUniversities().map(u => [u.slug, u.label]));
+        let uniList = getStaticUniversities();
+        try {
+          const uniRes = await fetch('/api/categories/structure?type=mock-tests');
+          const uniJson = await uniRes.json();
+          if (uniJson.success && Array.isArray(uniJson.data?.universities) && uniJson.data.universities.length) {
+            uniList = uniJson.data.universities;
+          }
+        } catch {
+          /* keep static */
+        }
+        const uniBySlug = Object.fromEntries(uniList.map((u) => [u.slug, u.label]));
         const enriched = (data || []).map(t => ({
           ...t,
           universityName: uniBySlug[t.universitySlug] || t.universitySlug,

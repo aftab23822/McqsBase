@@ -11,7 +11,6 @@ import LoadingSpinner from "@/components/LoadingSpinner";
 import SubcategoriesSection from "@/components/SubcategoriesSection";
 import SubcategoriesGrid from "@/components/SubcategoriesGrid";
 import { apiFetch } from "@/utils/api";
-import { getPastInterviewCategories } from "@/data/categories/pastInterviewsCategories";
 
 const interviewsPerPage = 10;
 
@@ -128,7 +127,12 @@ export default function PastInterviewDepartmentPage() {
         setPastInterviewData(data.results || []);
         setTotalPages(data.totalPages || 1);
 
-        const categories = getPastInterviewCategories();
+        const structRes = await fetch('/api/categories/structure?type=past-interviews');
+        const structJson = await structRes.json();
+        const categories =
+          structJson.success && Array.isArray(structJson.data?.commissions)
+            ? structJson.data.commissions
+            : [];
         const foundCommission = categories.find((cat) => {
           const catSlug = cat.title
             .toLowerCase()

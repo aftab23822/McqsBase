@@ -10,7 +10,6 @@ import PastInterviewsRightSideBar from '@/components/PastInterviewsRightSideBar'
 import LoadingSpinner from '@/components/LoadingSpinner';
 import SubcategoriesSection from '@/components/SubcategoriesSection';
 import { apiFetch } from '@/utils/api';
-import { getPastInterviewCategories } from '@/data/categories/pastInterviewsCategories';
 
 const interviewsPerPage = 10;
 
@@ -116,8 +115,12 @@ export default function PastInterviewCategoryPage() {
         setPastInterviewData(data.results || []);
         setTotalPages(data.totalPages || 1);
 
-        // Generate breadcrumb labels from category structure
-        const categories = getPastInterviewCategories();
+        const structRes = await fetch('/api/categories/structure?type=past-interviews');
+        const structJson = await structRes.json();
+        const categories =
+          structJson.success && Array.isArray(structJson.data?.commissions)
+            ? structJson.data.commissions
+            : [];
         const foundCategory = categories.find(cat => {
           const catSlug = cat.title.toLowerCase().replace(/\s+/g, '-');
           return catSlug === commission || cat.title.toLowerCase().replace(/[^a-z0-9]/g, '-') === commission;

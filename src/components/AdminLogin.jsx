@@ -416,8 +416,23 @@ const AdminLogin = () => {
   }, []);
 
   const categories = getAllCategories();
-  const mockCategories = getMockTestCategories();
-  const universities = getUniversities();
+  const [mockTestsStructure, setMockTestsStructure] = useState(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch('/api/categories/structure?type=mock-tests')
+      .then((r) => r.json())
+      .then((j) => {
+        if (!cancelled && j?.success) setMockTestsStructure(j.data);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const mockCategories = mockTestsStructure?.categories ?? getMockTestCategories();
+  const universities = mockTestsStructure?.universities ?? getUniversities();
 
   // Category structure state for Past Papers/Interviews
   const [categoryStructure, setCategoryStructure] = useState(null);
@@ -1465,7 +1480,7 @@ const AdminLogin = () => {
                                                 commissionTitle: selectedCommission,
                                                 departmentLabel: selectedDepartment,
                                                 roleLabel: selectedRoleObj.label,
-                                                subcategoryIndex: currentPath[0], // First level index
+                                                subcategoryIndex: currentPath[currentPath.length - 1],
                                                 subcategoryLabel: editingSubcategoryData.label.trim(),
                                                 subcategoryLink: editingSubcategoryData.link.trim(),
                                                 parentSubcategoryPath: currentPath.length > 1 ? currentPath.slice(0, -1) : null
