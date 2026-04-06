@@ -19,11 +19,6 @@ function getBaseUrl(request) {
   return FALLBACK_BASE_URL;
 }
 
-function withTrailingSlash(url = '') {
-  if (!url) return `${FALLBACK_BASE_URL}/`;
-  return url.endsWith('/') ? url : `${url}/`;
-}
-
 /**
  * Generate XML sitemap for MCQ and Past Paper question pages
  * Supports pagination: /sitemap-questions.xml?page=1
@@ -225,8 +220,7 @@ export async function GET(request) {
       }
 
       if (loc) {
-        const canonicalLoc = withTrailingSlash(loc);
-        urlsXml += `  <url>\n    <loc>${escapeXml(canonicalLoc)}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+        urlsXml += `  <url>\n    <loc>${escapeXml(loc)}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
         urlCount += 1;
       }
     }

@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  trailingSlash: true,
+  // false: avoid 308 redirects from /path to /path/ (fixes GSC "Page with redirect" for question URLs)
+  trailingSlash: false,
   images: {
     unoptimized: true
   },

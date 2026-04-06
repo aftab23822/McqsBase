@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+import { Suspense, cache } from 'react';
 import { notFound, redirect } from 'next/navigation';
 import Navbar from '../../../../src/components/Navbar';
 import Footer from '../../../../src/components/Footer';
@@ -652,8 +652,31 @@ async function fetchQuestionData({ subject, questionId, subcategorySegments = []
   }
 }
 
+function questionDataCacheKey(subject, questionId, subcategorySegments) {
+  return JSON.stringify({
+    subject: subject ?? '',
+    questionId: questionId ?? '',
+    subcategorySegments: Array.isArray(subcategorySegments) ? subcategorySegments : []
+  });
+}
+
+const fetchQuestionDataCached = cache(async (key) => {
+  const { subject, questionId, subcategorySegments } = JSON.parse(key);
+  return fetchQuestionData({ subject, questionId, subcategorySegments });
+});
+
+/** Same path logic as the page redirect — one canonical URL per question. */
+function canonicalMcqQuestionPath(subject, normalizedSegments, data) {
+  const { question, subjectPath, error } = data;
+  if (error || !question) return null;
+  const canonicalSlug = question.slug || generateQuestionSlug(question.question);
+  const { path: combinedSubjectPath } = combineSubjectPath(subject, normalizedSegments);
+  const finalSubjectPath = combinedSubjectPath || subjectPath || subject;
+  return `/mcqs/${finalSubjectPath}/question/${canonicalSlug}`;
+}
+
 async function generateStructuredData(question, category, subject, subjectPath) {
-  const slug = generateQuestionSlug(question.question, question._id);
+  const slug = question.slug || generateQuestionSlug(question.question);
   const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com').replace(/\/+$/, '');
   const subjectPathForUrl = subjectPath || subject;
   const questionUrl = `${baseUrl}/mcqs/${subjectPathForUrl}/question/${slug}`;
@@ -729,15 +752,24 @@ export async function generateMetadata({ params }) {
   const normalizedSegments = normalizeSegments(categorySegmentsRaw);
   const displaySubject = humanize(subject);
 
-  // IMPORTANT: Do NOT hit the database in generateMetadata.
-  // We derive metadata purely from the URL to keep this cheap and cache-friendly.
   if (isQuestion) {
     const questionSlug = rawSegments[rawSegments.length - 1] || '';
-    const questionTextFallback = humanize(questionSlug) || 'MCQ Question';
+    const data = await fetchQuestionDataCached(
+      questionDataCacheKey(subject, questionSlug, normalizedSegments)
+    );
+
+    if (data.error || !data.question || !data.category) {
+      notFound();
+    }
+
+    const canonicalPath = canonicalMcqQuestionPath(subject, normalizedSegments, data);
+    if (!canonicalPath) {
+      notFound();
+    }
+
+    const qText = (data.question.question || '').trim();
     const questionPreview =
-      questionTextFallback.length > 160
-        ? questionTextFallback.substring(0, 157) + '...'
-        : questionTextFallback;
+      qText.length > 160 ? `${qText.substring(0, 157)}...` : qText || humanize(questionSlug) || 'MCQ Question';
 
     const displaySubPath = humanizePath(categorySegmentsRaw);
     const categoryLabel = displaySubPath || displaySubject || 'MCQs';
@@ -757,15 +789,11 @@ export async function generateMetadata({ params }) {
       'NTS'
     ].join(', ');
 
-    const { path: subjectPath } = combineSubjectPath(subject, normalizedSegments);
-    const safeSubjectPath = subjectPath || subject;
-    const url = `/mcqs/${safeSubjectPath}/question/${questionSlug}`;
-
     return generateSEOMetadata({
       title,
       description,
       keywords,
-      url
+      url: canonicalPath
     });
   }
 
@@ -809,11 +837,8 @@ export default async function SubcategoryPage({ params, searchParams }) {
 
   if (isQuestion) {
     const questionId = rawSegments[rawSegments.length - 1];
-    const { question, nextQuestionId, prevQuestionId, category, subjectPath, error } = await fetchQuestionData({
-      subject,
-      questionId,
-      subcategorySegments: normalizedSegments
-    });
+    const { question, nextQuestionId, prevQuestionId, category, subjectPath, error } =
+      await fetchQuestionDataCached(questionDataCacheKey(subject, questionId, normalizedSegments));
 
     if (error || !question || !category) {
       notFound();
@@ -825,7 +850,7 @@ export default async function SubcategoryPage({ params, searchParams }) {
     const finalSubjectPath = combinedSubjectPath || subjectPath || subject;
 
     if (questionId !== canonicalSlug) {
-      redirect(`/mcqs/${finalSubjectPath}/question/${canonicalSlug}/`);
+      redirect(`/mcqs/${finalSubjectPath}/question/${canonicalSlug}`);
     }
 
     const structuredData = await generateStructuredData(question, category, subject, subjectPath);

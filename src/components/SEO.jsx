@@ -4,10 +4,11 @@
 const DEFAULT_BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com').replace(/\/+$/, '');
 
 function toCanonicalUrl(input = '/') {
-  if (!input) return `${DEFAULT_BASE_URL}/`;
+  if (!input || input === '/') return `${DEFAULT_BASE_URL}/`;
   const isAbsolute = /^https?:\/\//i.test(input);
   const normalizedPath = isAbsolute ? input : `${DEFAULT_BASE_URL}${input.startsWith('/') ? input : `/${input}`}`;
-  return normalizedPath.endsWith('/') ? normalizedPath : `${normalizedPath}/`;
+  // Match Next.js trailingSlash: false — no trailing slash on paths (home keeps trailing slash above)
+  return normalizedPath.replace(/\/+$/, '');
 }
 
 // Utility function for generating metadata objects
