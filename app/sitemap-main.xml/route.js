@@ -1,6 +1,15 @@
 import { NextResponse } from 'next/server';
+import { blogArticles } from '../../src/data/blogArticles';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://mcqsbase.com';
+const BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com').replace(/\/+$/, '');
+
+function lastmodForBlogArticle(article, fallbackDate) {
+  const d = article?.date;
+  if (typeof d === 'string' && /^\d{4}$/.test(d)) {
+    return `${d}-12-31`;
+  }
+  return fallbackDate;
+}
 
 /**
  * Main Pages Sitemap - Static pages, categories, etc.
@@ -8,6 +17,25 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://mcqsbase.com';
  */
 export async function GET() {
   const currentDate = new Date().toISOString().split('T')[0];
+
+  const blogSitemapXml = `
+  <url>
+    <loc>${BASE_URL}/blog</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+${Object.keys(blogArticles)
+  .map((slug) => {
+    const lm = lastmodForBlogArticle(blogArticles[slug], currentDate);
+    return `  <url>
+    <loc>${BASE_URL}/blog/${encodeURIComponent(slug)}</loc>
+    <lastmod>${lm}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>`;
+  })
+  .join('\n')}`;
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -87,7 +115,7 @@ export async function GET() {
     <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
+  </url>${blogSitemapXml}
 </urlset>`;
 
   return new NextResponse(xml, {

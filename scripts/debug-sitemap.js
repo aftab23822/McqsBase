@@ -4,7 +4,7 @@ import MCQ from '../lib/models/MCQ.js';
 import Category from '../lib/models/Category.js';
 import { normalizeCategoryName } from '../utils/categoryConfig.js';
 
-const PAGE_SIZE = 10000;
+const PAGE_SIZE = 1000;
 
 async function run() {
   const page = parseInt(process.argv[2] || '1', 10);

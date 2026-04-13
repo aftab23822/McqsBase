@@ -39,6 +39,12 @@ const BlogArticleDetail = ({ article }) => {
     return colors[article.category] || 'from-blue-500 to-blue-600';
   };
 
+  const getSectionTables = (section) => {
+    if (section.tables?.length) return section.tables;
+    if (section.table) return [section.table];
+    return [];
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       {/* Header */}
@@ -86,17 +92,59 @@ const BlogArticleDetail = ({ article }) => {
                 </h2>
                 
                 {section.content && (
-                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6 whitespace-pre-line">
                     {section.content}
                   </p>
                 )}
+
+                {getSectionTables(section).map((tbl, tblIndex) => (
+                  <div key={tblIndex} className="mb-6 overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
+                    {tbl.caption && (
+                      <p className="px-4 py-2 text-sm font-semibold text-gray-700 bg-gray-50 border-b border-gray-200">
+                        {tbl.caption}
+                      </p>
+                    )}
+                    <table className="min-w-full text-left text-sm text-gray-800 border-collapse">
+                      <thead>
+                        <tr className="bg-gradient-to-r from-slate-100 to-slate-50">
+                          {tbl.headers.map((header, hi) => (
+                            <th
+                              key={hi}
+                              scope="col"
+                              className="border-b border-gray-200 px-4 py-3 font-semibold text-gray-900 whitespace-nowrap"
+                            >
+                              {header}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {tbl.rows.map((row, ri) => (
+                          <tr
+                            key={ri}
+                            className={ri % 2 === 0 ? 'bg-white' : 'bg-slate-50/80'}
+                          >
+                            {row.map((cell, ci) => (
+                              <td
+                                key={ci}
+                                className="border-b border-gray-100 px-4 py-3 align-top whitespace-pre-line"
+                              >
+                                {cell}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                ))}
 
                 {section.subsections && section.subsections.map((subsection, subIndex) => (
                   <div key={subIndex} className="mb-6 pl-6 border-l-4 border-blue-500">
                     <h3 className="text-xl font-bold text-gray-900 mb-3">
                       {subsection.title}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-gray-700 leading-relaxed whitespace-pre-line">
                       {subsection.content}
                     </p>
                   </div>

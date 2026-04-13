@@ -19,6 +19,118 @@ import {
 const Blog = () => {
   const articles = [
     {
+      title:
+        "⚔️ PakMcqs vs McqsBase — Why McqsBase is the Better Choice for Serious Exam Preparation (2026 Guide)",
+      excerpt:
+        "Honest comparison: ads vs ad-free, structure, UX, quality vs volume, and a side-by-side table—plus when to use PakMcqs as optional extra and McqsBase as your main PPSC/FPSC/SPSC/NTS hub.",
+      category: "Exam Guide",
+      date: "2026",
+      readTime: "12 min",
+      image: "success",
+      slug: "pakmcqs-vs-mcqsbase-serious-exam-prep-2026"
+    },
+    {
+      title: "📚 Ultimate Guide to Past Papers for Pakistan's Competitive Exams (2026 Strategy)",
+      excerpt:
+        "Past papers show the real pattern—learn what they reveal, where to get authentic FPSC/PPSC papers, a 5-step active method, pairing with McqsBase MCQs, timing, mistakes to skip, and FAQs.",
+      category: "Exam Guide",
+      date: "2026",
+      readTime: "15 min",
+      image: "pak-studies",
+      slug: "ultimate-guide-past-papers-pakistan-competitive-exams-2026"
+    },
+    {
+      title: "🚀 The Future of Digital Exam Preparation in Pakistan (2026 & Beyond)",
+      excerpt:
+        "AI, gamification, data, mobile learning, EdTech, and hybrid study—how digital prep is reshaping competitive exams in Pakistan, the challenges ahead, and why early adopters win.",
+      category: "Exam Guide",
+      date: "2026",
+      readTime: "14 min",
+      image: "current-affairs",
+      slug: "future-digital-exam-preparation-pakistan-2026"
+    },
+    {
+      title: "📘 A Complete Guide to NTS Exam Preparation Tips (2026 Success Strategy)",
+      excerpt:
+        "NTS prep without the overwhelm: syllabus focus, daily MCQs, timers, English & quant, reasoning, GK, one main platform, mistakes to skip, and FAQs—plus a simple daily/weekly plan.",
+      category: "Exam Guide",
+      date: "2026",
+      readTime: "16 min",
+      image: "english",
+      slug: "nts-exam-preparation-complete-guide-2026"
+    },
+    {
+      title: "🏆 Why McqsBase is the Leading Platform for Pakistan's Exam Prep (2026 Guide)",
+      excerpt:
+        "PPSC, FPSC, SPSC, CSS—why McqsBase leads on Pakistan-focused patterns, all-in-one prep, structure, and daily usability, with a quick comparison table vs typical MCQ sites and FAQs.",
+      category: "Exam Guide",
+      date: "2026",
+      readTime: "15 min",
+      image: "success",
+      slug: "why-mcqsbase-leading-platform-pakistan-2026"
+    },
+    {
+      title: "💰 2026's Best-Priced and Most Comprehensive MCQ Practice Resources (Pakistan Guide)",
+      excerpt:
+        "Free MCQs aren't all equal—compare McqsBase, TestMarkaz, PakMcqs, MyMcqs, and PakistanBix with a price vs value table, how to pick a primary hub, and FAQs for PPSC, FPSC, SPSC, and CSS.",
+      category: "Exam Guide",
+      date: "2026",
+      readTime: "14 min",
+      image: "current-affairs",
+      slug: "best-priced-mcq-resources-pakistan-2026"
+    },
+    {
+      title: "🚀 How McqsBase's Practice Tests Help Boost Your Exam Success Rates (2026 Guide)",
+      excerpt:
+        "Simulate real exams—not just read. Why McqsBase-style practice builds speed and confidence for PPSC, FPSC, and SPSC, with a simple weekly plan and FAQs.",
+      category: "Study Skills",
+      date: "2026",
+      readTime: "13 min",
+      image: "success",
+      slug: "mcqsbase-practice-tests-exam-success-2026"
+    },
+    {
+      title: "🔍 Comparing Top MCQ Platforms for Pakistan Exam Preparation (2026 Guide)",
+      excerpt:
+        "Which MCQ site should you trust for PPSC, FPSC, SPSC, or CSS? Compare major platforms with a clear table, FAQs, and how to pick one primary hub plus light revision elsewhere.",
+      category: "Exam Guide",
+      date: "2026",
+      readTime: "14 min",
+      image: "fpsc",
+      slug: "compare-mcq-platforms-pakistan-2026"
+    },
+    {
+      title: "🚀 Why Online MCQs Practice Is Essential in 2026",
+      excerpt:
+        "One-paper MCQs are time-bound and speed-driven. Why focused online practice beats random sites, how to combine past papers with McqsBase, and 10 sample MCQs with answers.",
+      category: "Study Skills",
+      date: "2026",
+      readTime: "15 min",
+      image: "success",
+      slug: "why-online-mcqs-practice-essential-2026"
+    },
+    {
+      title:
+        "🎯 Best Resources for Interview Preparation in Pakistan's Public Sector Exams (PPSC, FPSC, SPSC)",
+      excerpt:
+        "Written test is only half the battle. Free resources and proven methods for PPSC, FPSC, and SPSC interviews—current affairs, mocks, body language, and a winning routine.",
+      category: "Interview Guide",
+      date: "2026",
+      readTime: "14 min",
+      image: "interview",
+      slug: "interview-preparation-public-sector-pakistan-ppsc-fpsc-spsc"
+    },
+    {
+      title: "📚 List of Best Free Resources for PPSC, FPSC, and SPSC Exams (2026 Guide)",
+      excerpt:
+        "A practical 2026 guide to free MCQ practice, past papers, books, and YouTube resources for PPSC, FPSC, and SPSC—with a daily routine that works.",
+      category: "Exam Guide",
+      date: "2026",
+      readTime: "12 min",
+      image: "fpsc",
+      slug: "best-free-resources-ppsc-fpsc-spsc-2026"
+    },
+    {
       title: "10 Essential Tips for Competitive Exam Success in Pakistan",
       excerpt: "Discover proven strategies and techniques that successful candidates use to ace competitive exams like FPSC, SPSC, PPSC, and NTS. Learn how to optimize your preparation and maximize your chances of success.",
       category: "Preparation Tips",

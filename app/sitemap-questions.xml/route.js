@@ -6,8 +6,9 @@ import Category from '@/lib/models/Category.js';
 import { generateQuestionSlug } from '@/lib/utils/slugGenerator.js';
 import { normalizeCategoryName } from '@/utils/categoryConfig';
 
-const FALLBACK_BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://mcqsbase.com').replace(/\/+$/, '');
-const PAGE_SIZE = 10000; // Reasonable chunk size well under Google's 50k limit
+const FALLBACK_BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com').replace(/\/+$/, '');
+/** URLs per sitemap shard; index page counts follow ceil(count / PAGE_SIZE) from live DB totals. */
+const PAGE_SIZE = 1000;
 
 // Derive absolute base URL from the request (works locally and in prod)
 function getBaseUrl(request) {
@@ -21,16 +22,32 @@ function getBaseUrl(request) {
 
 /**
  * Generate XML sitemap for MCQ and Past Paper question pages
- * Supports pagination: /sitemap-questions.xml?page=1
+ * Index: /sitemap-questions.xml — lists all ?source=mcq|pastpaper&page=N from current counts
+ * Shard: /sitemap-questions.xml?source=mcq|pastpaper&page=1 (page optional, defaults to 1)
  */
 export async function GET(request) {
   const searchParams = request.nextUrl?.searchParams ?? new URL(request.url).searchParams;
   const hasPageParam = searchParams.has('page');
+  const hasSourceParam = searchParams.has('source');
   const pageParam = parseInt(searchParams.get('page') || '1', 10);
   const page = Number.isFinite(pageParam) && pageParam > 0 ? pageParam : 1;
   const isDebug = searchParams.get('debug') === '1';
   const limit = PAGE_SIZE;
   const skip = (page - 1) * limit;
+  const sourceRaw = searchParams.get('source');
+  const source =
+    sourceRaw === 'mcq' || sourceRaw === 'pastpaper' ? sourceRaw : null;
+
+  if (hasSourceParam && !source) {
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>`;
+    return new Response(xml, {
+      status: 400,
+      headers: {
+        'content-type': 'application/xml; charset=utf-8',
+        'cache-control': 'no-store'
+      }
+    });
+  }
 
   try {
     await connectToDatabase();
@@ -57,8 +74,8 @@ export async function GET(request) {
 
     const baseUrl = getBaseUrl(request);
 
-    // When no page is specified, serve a sitemap index that enumerates all pages
-    if (!hasPageParam) {
+    // Sitemap index: no page and no source (avoids ?source=mcq alone being treated as index)
+    if (!hasPageParam && !hasSourceParam) {
       if (total === 0) {
         const emptyIndexXml = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></sitemapindex>`;
         return new Response(emptyIndexXml, {
@@ -69,11 +86,16 @@ export async function GET(request) {
         });
       }
 
-      const totalPages = Math.max(1, Math.ceil(total / limit));
       const lastmod = new Date().toISOString();
       let sitemapEntries = '';
-      for (let pageIndex = 1; pageIndex <= totalPages; pageIndex += 1) {
-        const loc = `${baseUrl}/sitemap-questions.xml?page=${pageIndex}`;
+      const mcqPages = mcqTotal > 0 ? Math.ceil(mcqTotal / limit) : 0;
+      const ppPages = pastPaperTotal > 0 ? Math.ceil(pastPaperTotal / limit) : 0;
+      for (let pageIndex = 1; pageIndex <= mcqPages; pageIndex += 1) {
+        const loc = `${baseUrl}/sitemap-questions.xml?source=mcq&page=${pageIndex}`;
+        sitemapEntries += `  <sitemap>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </sitemap>\n`;
+      }
+      for (let pageIndex = 1; pageIndex <= ppPages; pageIndex += 1) {
+        const loc = `${baseUrl}/sitemap-questions.xml?source=pastpaper&page=${pageIndex}`;
         sitemapEntries += `  <sitemap>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </sitemap>\n`;
       }
 
@@ -89,59 +111,51 @@ export async function GET(request) {
       });
     }
 
-    if (skip >= total) {
+    if (!source) {
+      const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>`;
+      return new Response(xml, {
+        status: 400,
+        headers: {
+          'content-type': 'application/xml; charset=utf-8',
+          'cache-control': 'no-store'
+        }
+      });
+    }
+
+    const sliceTotal = source === 'mcq' ? mcqTotal : pastPaperTotal;
+    if (skip >= sliceTotal) {
       if (isDebug) {
         return NextResponse.json({
           page,
           limit,
           skip,
-          total,
+          total: sliceTotal,
+          source,
           reason: 'page_out_of_range'
         });
       }
       const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>`;
       return new Response(xml, {
-        status: hasPageParam ? 404 : 200,
+        status: 404,
         headers: {
           'content-type': 'application/xml; charset=utf-8',
-          'cache-control': hasPageParam ? 'no-store' : 'public, s-maxage=3600, stale-while-revalidate=86400'
+          'cache-control': 'no-store'
         }
       });
     }
 
-    // Fetch questions from both collections
-    // We need to combine them and sort together to paginate correctly
-    // Strategy: Fetch enough from both collections to cover the pagination window,
-    // combine, sort, then slice the requested page
-    // Fetch a bit more than needed to ensure we have enough after combining
-    const fetchLimit = skip + limit + 1000; // Fetch extra to account for distribution
-
-    const [allMcqs, allPastPapers] = await Promise.all([
-      MCQ.find(mcqFilter)
-        .sort({ _id: -1 })
-        .limit(fetchLimit)
-        .select({ slug: 1, question: 1, updatedAt: 1, categoryId: 1, _id: 1 })
-        .lean(),
-      PastPaper.find(pastPaperFilter)
-        .sort({ _id: -1 })
-        .limit(fetchLimit)
-        .select({ slug: 1, question: 1, updatedAt: 1, categoryId: 1, _id: 1 })
-        .lean()
-    ]);
-
-    // Mark each item with its type and combine
-    const allQuestions = [
-      ...allMcqs.map(q => ({ ...q, type: 'mcq' })),
-      ...allPastPapers.map(q => ({ ...q, type: 'pastpaper' }))
-    ].sort((a, b) => {
-      // Sort by _id descending (newest first) - compare ObjectIds as strings
-      const aId = a._id.toString();
-      const bId = b._id.toString();
-      return aId > bId ? -1 : aId < bId ? 1 : 0;
-    });
-
-    // Apply pagination to combined results
-    const paginatedQuestions = allQuestions.slice(skip, skip + limit);
+    const Model = source === 'mcq' ? MCQ : PastPaper;
+    const filter = source === 'mcq' ? mcqFilter : pastPaperFilter;
+    const rows = await Model.find(filter)
+      .sort({ _id: -1 })
+      .skip(skip)
+      .limit(limit)
+      .select({ slug: 1, question: 1, updatedAt: 1, categoryId: 1, _id: 1 })
+      .lean();
+    const paginatedQuestions = rows.map((q) => ({
+      ...q,
+      type: source === 'pastpaper' ? 'pastpaper' : 'mcq'
+    }));
 
     // Get all unique category IDs from this page
     const categoryIdsForPage = Array.from(
@@ -230,9 +244,8 @@ export async function GET(request) {
         page,
         limit,
         skip,
-        total,
-        mcqCount: allMcqs.length,
-        pastPaperCount: allPastPapers.length,
+        total: sliceTotal,
+        source,
         paginatedCount: paginatedQuestions.length,
         urlCount,
         categoryIds: categoryIdsForPage,
@@ -256,7 +269,7 @@ export async function GET(request) {
       }
     });
   } catch (err) {
-    // Fallback minimal empty sitemap on error
+    console.error('[sitemap-questions.xml]', err);
     const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>`;
     return new Response(xml, {
       status: 200,

@@ -1,14 +1,11 @@
 User-agent: *
 
-# Block pagination & parameter spam
-Disallow: /*?page=
-Disallow: /*&page=
-Disallow: /*?limit=
-Disallow: /*&limit=
+# NOTE: Do not broadly disallow query strings on sitemap URLs. Question sitemap
+# shards use /sitemap-questions.xml?source=mcq|pastpaper&page=N; blocking those
+# queries would hide most URLs from crawlers.
 
-# Sitemap Index
+# Sitemap index
 Sitemap: https://www.mcqsbase.com/sitemap.xml
-# Individual Sitemaps (also referenced in index)
 Sitemap: https://www.mcqsbase.com/sitemap-main.xml
 Sitemap: https://www.mcqsbase.com/sitemap-questions.xml
 
@@ -16,7 +13,7 @@ Sitemap: https://www.mcqsbase.com/sitemap-questions.xml
 Disallow: /404/admin
 Disallow: /admin/
 
-# Allow important pages
+# Explicit allows (redundant with default allow-all; documents intent for reviewers)
 Allow: /mcqs/
 Allow: /past-papers/
 Allow: /past-interviews/
@@ -25,6 +22,3 @@ Allow: /contact
 Allow: /privacy-policy
 Allow: /terms-of-service
 Allow: /sitemap
-
-# Crawl delay (optional)
-Crawl-delay: 1
