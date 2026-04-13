@@ -92,11 +92,11 @@ export async function GET(request) {
       const ppPages = pastPaperTotal > 0 ? Math.ceil(pastPaperTotal / limit) : 0;
       for (let pageIndex = 1; pageIndex <= mcqPages; pageIndex += 1) {
         const loc = `${baseUrl}/sitemap-questions.xml?source=mcq&page=${pageIndex}`;
-        sitemapEntries += `  <sitemap>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </sitemap>\n`;
+        sitemapEntries += `  <sitemap>\n    <loc>${escapeXml(loc)}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </sitemap>\n`;
       }
       for (let pageIndex = 1; pageIndex <= ppPages; pageIndex += 1) {
         const loc = `${baseUrl}/sitemap-questions.xml?source=pastpaper&page=${pageIndex}`;
-        sitemapEntries += `  <sitemap>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </sitemap>\n`;
+        sitemapEntries += `  <sitemap>\n    <loc>${escapeXml(loc)}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </sitemap>\n`;
       }
 
       const indexXml = `<?xml version="1.0" encoding="UTF-8"?>\n` +
