@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import mongoose from 'mongoose';
 import connectToDatabase from '@/lib/mongodb.js';
 import MCQ from '@/lib/models/MCQ.js';
 import PastPaper from '@/lib/models/PastPaper.js';
@@ -22,8 +23,8 @@ function getBaseUrl(request) {
 
 /**
  * Generate XML sitemap for MCQ and Past Paper question pages
- * Index: /sitemap-questions.xml — lists all ?source=mcq|pastpaper&page=N from current counts
- * Shard: /sitemap-questions.xml?source=mcq|pastpaper&page=1 (page optional, defaults to 1)
+ * Index: /sitemap-questions.xml — child sitemaps use ?source=mcq|pastpaper&cursor=<ObjectId> (keyset; fast)
+ *        First shard: ?source=mcq only. Legacy ?page=N still supported but is slow for large N.
  */
 export async function GET(request) {
   const searchParams = request.nextUrl?.searchParams ?? new URL(request.url).searchParams;
@@ -34,11 +35,24 @@ export async function GET(request) {
   const isDebug = searchParams.get('debug') === '1';
   const limit = PAGE_SIZE;
   const skip = (page - 1) * limit;
+  const cursorRaw = searchParams.get('cursor');
+  const hasCursor = cursorRaw !== null && cursorRaw !== '';
   const sourceRaw = searchParams.get('source');
   const source =
     sourceRaw === 'mcq' || sourceRaw === 'pastpaper' ? sourceRaw : null;
 
   if (hasSourceParam && !source) {
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>`;
+    return new Response(xml, {
+      status: 400,
+      headers: {
+        'content-type': 'application/xml; charset=utf-8',
+        'cache-control': 'no-store'
+      }
+    });
+  }
+
+  if (hasCursor && !mongoose.Types.ObjectId.isValid(cursorRaw)) {
     const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>`;
     return new Response(xml, {
       status: 400,
@@ -88,14 +102,16 @@ export async function GET(request) {
 
       const lastmod = new Date().toISOString();
       let sitemapEntries = '';
-      const mcqPages = mcqTotal > 0 ? Math.ceil(mcqTotal / limit) : 0;
-      const ppPages = pastPaperTotal > 0 ? Math.ceil(pastPaperTotal / limit) : 0;
-      for (let pageIndex = 1; pageIndex <= mcqPages; pageIndex += 1) {
-        const loc = `${baseUrl}/sitemap-questions.xml?source=mcq&page=${pageIndex}`;
+      const mcqLocs =
+        mcqTotal > 0 ? await buildKeysetShardLocators(MCQ, mcqFilter, baseUrl, 'mcq') : [];
+      const ppLocs =
+        pastPaperTotal > 0
+          ? await buildKeysetShardLocators(PastPaper, pastPaperFilter, baseUrl, 'pastpaper')
+          : [];
+      for (const loc of mcqLocs) {
         sitemapEntries += `  <sitemap>\n    <loc>${escapeXml(loc)}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </sitemap>\n`;
       }
-      for (let pageIndex = 1; pageIndex <= ppPages; pageIndex += 1) {
-        const loc = `${baseUrl}/sitemap-questions.xml?source=pastpaper&page=${pageIndex}`;
+      for (const loc of ppLocs) {
         sitemapEntries += `  <sitemap>\n    <loc>${escapeXml(loc)}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </sitemap>\n`;
       }
 
@@ -123,35 +139,51 @@ export async function GET(request) {
     }
 
     const sliceTotal = source === 'mcq' ? mcqTotal : pastPaperTotal;
-    if (skip >= sliceTotal) {
-      if (isDebug) {
-        return NextResponse.json({
-          page,
-          limit,
-          skip,
-          total: sliceTotal,
-          source,
-          reason: 'page_out_of_range'
+    const baseFilter = source === 'mcq' ? mcqFilter : pastPaperFilter;
+    const Model = source === 'mcq' ? MCQ : PastPaper;
+
+    let mongoFilter = baseFilter;
+    let useLegacySkip = false;
+    let skipValue = 0;
+
+    if (hasCursor) {
+      mongoFilter = {
+        ...baseFilter,
+        _id: { $lt: new mongoose.Types.ObjectId(cursorRaw) }
+      };
+    } else if (hasPageParam && page > 1) {
+      useLegacySkip = true;
+      skipValue = skip;
+      if (skipValue >= sliceTotal) {
+        if (isDebug) {
+          return NextResponse.json({
+            page,
+            limit,
+            skip: skipValue,
+            total: sliceTotal,
+            source,
+            reason: 'page_out_of_range'
+          });
+        }
+        const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>`;
+        return new Response(xml, {
+          status: 404,
+          headers: {
+            'content-type': 'application/xml; charset=utf-8',
+            'cache-control': 'no-store'
+          }
         });
       }
-      const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>`;
-      return new Response(xml, {
-        status: 404,
-        headers: {
-          'content-type': 'application/xml; charset=utf-8',
-          'cache-control': 'no-store'
-        }
-      });
     }
 
-    const Model = source === 'mcq' ? MCQ : PastPaper;
-    const filter = source === 'mcq' ? mcqFilter : pastPaperFilter;
-    const rows = await Model.find(filter)
+    let query = Model.find(mongoFilter)
       .sort({ _id: -1 })
-      .skip(skip)
       .limit(limit)
-      .select({ slug: 1, question: 1, updatedAt: 1, categoryId: 1, _id: 1 })
-      .lean();
+      .select({ slug: 1, question: 1, updatedAt: 1, categoryId: 1, _id: 1 });
+    if (useLegacySkip) {
+      query = query.skip(skipValue);
+    }
+    const rows = await query.lean();
     const paginatedQuestions = rows.map((q) => ({
       ...q,
       type: source === 'pastpaper' ? 'pastpaper' : 'mcq'
@@ -243,7 +275,9 @@ export async function GET(request) {
       return new NextResponse(JSON.stringify({
         page,
         limit,
-        skip,
+        skip: useLegacySkip ? skipValue : 0,
+        cursor: hasCursor ? cursorRaw : null,
+        legacySkip: useLegacySkip,
         total: sliceTotal,
         source,
         paginatedCount: paginatedQuestions.length,
@@ -279,6 +313,33 @@ export async function GET(request) {
       }
     });
   }
+}
+
+/**
+ * Build shard URLs using keyset pagination on _id (desc). Avoids MongoDB skip(N) for large N (timeouts / GSC "could not be read").
+ */
+async function buildKeysetShardLocators(Model, filter, baseUrl, sourceParam) {
+  const locs = [];
+  let bound = null;
+  for (;;) {
+    const f = bound ? { ...filter, _id: { $lt: bound } } : filter;
+    const batch = await Model.find(f)
+      .sort({ _id: -1 })
+      .limit(PAGE_SIZE)
+      .select({ _id: 1 })
+      .lean();
+    if (!batch.length) break;
+
+    const loc =
+      bound === null
+        ? `${baseUrl}/sitemap-questions.xml?source=${sourceParam}`
+        : `${baseUrl}/sitemap-questions.xml?source=${sourceParam}&cursor=${encodeURIComponent(bound.toString())}`;
+    locs.push(loc);
+
+    bound = batch[batch.length - 1]._id;
+    if (batch.length < PAGE_SIZE) break;
+  }
+  return locs;
 }
 
 /**
