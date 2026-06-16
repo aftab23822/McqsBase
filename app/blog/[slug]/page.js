@@ -5,10 +5,18 @@ import { ReCaptchaProvider } from '../../../src/components/recaptcha';
 import { generateSEOMetadata } from '../../../src/components/SEO';
 import BlogArticleDetail from '../../../src/components/BlogArticleDetail';
 import { blogArticles } from '../../../src/data/blogArticles';
+import { getPublishedBlogBySlug } from '../../../lib/services/blogService';
+import { estimateReadTime } from '../../../lib/utils/blogContent';
+
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  const article = blogArticles[slug];
+  const databaseArticle = await getPublishedBlogBySlug(slug).catch((error) => {
+    console.error('Failed to load blog metadata:', error);
+    return null;
+  });
+  const article = databaseArticle || blogArticles[slug];
   
   if (!article) {
     return {
@@ -17,10 +25,12 @@ export async function generateMetadata({ params }) {
   }
 
   return generateSEOMetadata({
-    title: `${article.title} - McqsBase`,
-    description: article.excerpt || `Read about ${article.title}. Expert advice and strategies for competitive exam preparation in Pakistan.`,
-    keywords: `${article.category.toLowerCase()}, exam preparation, competitive exams pakistan, ${article.title.toLowerCase()}, study tips`,
-    canonical: `https://mcqsbase.com/blog/${slug}`
+    title: databaseArticle ? article.seoTitle : `${article.title} - McqsBase`,
+    description: databaseArticle ? article.metaDescription : article.excerpt || `Read about ${article.title}. Expert advice and strategies for competitive exam preparation in Pakistan.`,
+    keywords: databaseArticle
+      ? [article.primaryKeyword, ...(article.seoKeywords || [])].filter(Boolean).join(', ')
+      : `${article.category.toLowerCase()}, exam preparation, competitive exams pakistan, ${article.title.toLowerCase()}, study tips`,
+    url: `/blog/${slug}`
   });
 }
 
@@ -32,7 +42,17 @@ export async function generateStaticParams() {
 
 export default async function BlogArticlePage({ params }) {
   const { slug } = await params;
-  const article = blogArticles[slug];
+  const databaseArticle = await getPublishedBlogBySlug(slug).catch((error) => {
+    console.error('Failed to load blog article:', error);
+    return null;
+  });
+  const article = databaseArticle
+    ? {
+        ...databaseArticle,
+        date: databaseArticle.publishedAt ? new Date(databaseArticle.publishedAt).getFullYear().toString() : 'New',
+        readTime: estimateReadTime(databaseArticle.body)
+      }
+    : blogArticles[slug];
   
   if (!article) {
     notFound();

@@ -11,6 +11,7 @@ import {
   FileText,
   Users
 } from 'lucide-react';
+import { parseBlogBody } from '../../lib/utils/blogContent';
 
 const BlogArticleDetail = ({ article }) => {
   if (!article) {
@@ -43,6 +44,72 @@ const BlogArticleDetail = ({ article }) => {
     if (section.tables?.length) return section.tables;
     if (section.table) return [section.table];
     return [];
+  };
+
+  const dynamicBlocks = article.body ? parseBlogBody(article.body) : [];
+
+  const renderDynamicBlock = (block, index) => {
+    if (block.type === 'heading') {
+      return (
+        <h2 key={index} className="text-3xl font-bold text-gray-900 mt-10 mb-5">
+          {block.text}
+        </h2>
+      );
+    }
+
+    if (block.type === 'subheading') {
+      return (
+        <h3 key={index} className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+          {block.text}
+        </h3>
+      );
+    }
+
+    if (block.type === 'list') {
+      const ListTag = block.ordered ? 'ol' : 'ul';
+      return (
+        <ListTag key={index} className={`${block.ordered ? 'list-decimal' : 'list-disc'} pl-6 space-y-2 text-lg text-gray-700 leading-relaxed mb-6`}>
+          {block.items.map((item, itemIndex) => (
+            <li key={itemIndex}>{item}</li>
+          ))}
+        </ListTag>
+      );
+    }
+
+    if (block.type === 'table') {
+      return (
+        <div key={index} className="my-8 overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
+          <table className="min-w-full text-left text-sm text-gray-800 border-collapse">
+            <thead>
+              <tr className="bg-gradient-to-r from-slate-100 to-slate-50">
+                {block.headers.map((header, headerIndex) => (
+                  <th key={headerIndex} scope="col" className="border-b border-gray-200 px-4 py-3 font-semibold text-gray-900 whitespace-nowrap">
+                    {header}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {block.rows.map((row, rowIndex) => (
+                <tr key={rowIndex} className={rowIndex % 2 === 0 ? 'bg-white' : 'bg-slate-50/80'}>
+                  {block.headers.map((_, cellIndex) => (
+                    <td key={cellIndex} className="border-b border-gray-100 px-4 py-3 align-top whitespace-pre-line">
+                      {row[cellIndex] || ''}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    }
+
+    return (
+      <p key={index} className="text-lg text-gray-700 leading-relaxed mb-6 whitespace-pre-line">
+        {block.text}
+      </p>
+    );
   };
 
   return (
@@ -81,7 +148,7 @@ const BlogArticleDetail = ({ article }) => {
       {/* Content */}
       <section className="py-12">
         <div className="max-w-4xl mx-auto px-4">
-          {article.content.sections.map((section, sectionIndex) => (
+          {article.content?.sections ? article.content.sections.map((section, sectionIndex) => (
             <div key={sectionIndex} className="mb-12">
               <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
                 <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
@@ -168,7 +235,13 @@ const BlogArticleDetail = ({ article }) => {
                 )}
               </div>
             </div>
-          ))}
+          )) : (
+            <article className="bg-white rounded-xl shadow-lg p-6 md:p-10 border border-gray-100 mb-12">
+              <div className="prose max-w-none">
+                {dynamicBlocks.map(renderDynamicBlock)}
+              </div>
+            </article>
+          )}
 
           {/* Additional Resources */}
           <div className={`bg-gradient-to-r ${getCategoryColor(article.category)} rounded-xl shadow-lg p-8 text-white mb-12`}>

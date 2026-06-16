@@ -12,6 +12,7 @@ import AdminMockTestsManager from './AdminMockTestsManager';
 import CategoryTreeManager from './CategoryTreeManager';
 import { ReCaptchaButton } from './recaptcha';
 import AdminSearch from './AdminSearch';
+import AdminBlogManager from './AdminBlogManager';
 
 const AdminLogin = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -25,6 +26,7 @@ const AdminLogin = () => {
   const [showPagesManagement, setShowPagesManagement] = useState(false);
   const [showCategoriesSync, setShowCategoriesSync] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
+  const [showBlogManager, setShowBlogManager] = useState(false);
   const [validationErrors, setValidationErrors] = useState({});
   
   // Login state
@@ -901,8 +903,9 @@ const AdminLogin = () => {
               setShowPagesManagement(false);
               setShowCategoriesSync(false);
               setShowSearch(false);
+              setShowBlogManager(false);
             }}
-            className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${!showSubmissions && !showContactMessages && !showMockTestsManager && !showPagesManagement && !showCategoriesSync && !showSearch ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
+            className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${!showSubmissions && !showContactMessages && !showMockTestsManager && !showPagesManagement && !showCategoriesSync && !showSearch && !showBlogManager ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
             <Upload className="w-5 h-5" />
             Upload Data
@@ -915,6 +918,7 @@ const AdminLogin = () => {
               setShowPagesManagement(true);
               setShowCategoriesSync(false);
               setShowSearch(false);
+              setShowBlogManager(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showPagesManagement ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
@@ -929,6 +933,7 @@ const AdminLogin = () => {
               setShowPagesManagement(false);
               setShowCategoriesSync(true);
               setShowSearch(false);
+              setShowBlogManager(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showCategoriesSync ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
@@ -943,6 +948,7 @@ const AdminLogin = () => {
               setShowPagesManagement(false);
               setShowCategoriesSync(false);
               setShowSearch(false);
+              setShowBlogManager(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showSubmissions ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
@@ -957,6 +963,7 @@ const AdminLogin = () => {
               setShowPagesManagement(false);
               setShowCategoriesSync(false);
               setShowSearch(false);
+              setShowBlogManager(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showContactMessages ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
@@ -971,6 +978,7 @@ const AdminLogin = () => {
               setShowPagesManagement(false);
               setShowCategoriesSync(false);
               setShowSearch(false);
+              setShowBlogManager(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showMockTestsManager ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
@@ -983,7 +991,23 @@ const AdminLogin = () => {
               setShowMockTestsManager(false);
               setShowPagesManagement(false);
               setShowCategoriesSync(false);
+              setShowSearch(false);
+              setShowBlogManager(true);
+            }}
+            className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showBlogManager ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
+          >
+            <FileText className="w-5 h-5" />
+            Blog Manager
+          </button>
+          <button
+            onClick={() => {
+              setShowSubmissions(false);
+              setShowContactMessages(false);
+              setShowMockTestsManager(false);
+              setShowPagesManagement(false);
+              setShowCategoriesSync(false);
               setShowSearch(true);
+              setShowBlogManager(false);
             }}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow hover:shadow-lg ${showSearch ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-white text-indigo-700 border border-indigo-200'}`}
           >
@@ -1000,7 +1024,7 @@ const AdminLogin = () => {
         </div>
 
         {/* Main Content */}
-        {!showSubmissions && !showContactMessages && !showMockTestsManager && !showPagesManagement && !showCategoriesSync && !showSearch ? (
+        {!showSubmissions && !showContactMessages && !showMockTestsManager && !showPagesManagement && !showCategoriesSync && !showSearch && !showBlogManager ? (
           <div className="bg-white rounded-2xl shadow-xl p-8">
             {error && (
               <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
@@ -2142,6 +2166,10 @@ const AdminLogin = () => {
             <CategoryTreeManager
               type={uploadData.type === 'simple-mcqs' ? 'mcqs' : uploadData.type}
             />
+          </div>
+        ) : showBlogManager ? (
+          <div className="bg-white rounded-2xl shadow-xl p-8">
+            <AdminBlogManager />
           </div>
         ) : showSearch ? (
           <div className="bg-white rounded-2xl shadow-xl p-8">

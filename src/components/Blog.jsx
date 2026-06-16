@@ -16,8 +16,8 @@ import {
   CheckCircle
 } from 'lucide-react';
 
-const Blog = () => {
-  const articles = [
+const Blog = ({ dynamicArticles = [] }) => {
+  const legacyArticles = [
     {
       title:
         "⚔️ PakMcqs vs McqsBase — Why McqsBase is the Better Choice for Serious Exam Preparation (2026 Guide)",
@@ -211,6 +211,19 @@ const Blog = () => {
       image: "css",
       slug: "choosing-optional-subjects-css"
     }
+  ];
+
+  const articles = [
+    ...dynamicArticles.map((article) => ({
+      title: article.title,
+      excerpt: article.excerpt || article.metaDescription,
+      category: article.category || 'Exam Guide',
+      date: article.publishedAt ? new Date(article.publishedAt).getFullYear().toString() : 'New',
+      readTime: article.readTime || '5 min',
+      image: 'success',
+      slug: article.seoUri
+    })),
+    ...legacyArticles
   ];
 
   const categories = [

@@ -3,6 +3,10 @@ import Blog from '../../src/components/Blog'
 import Footer from '../../src/components/Footer'
 import { ReCaptchaProvider } from '../../src/components/recaptcha'
 import { generateSEOMetadata } from '../../src/components/SEO'
+import { listPublishedBlogs } from '../../lib/services/blogService'
+import { estimateReadTime } from '../../lib/utils/blogContent'
+
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -13,13 +17,24 @@ export async function generateMetadata() {
   });
 }
 
-export default function BlogPage() {
+export default async function BlogPage() {
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || 'your-recaptcha-site-key';
+  let dynamicArticles = [];
+
+  try {
+    const blogs = await listPublishedBlogs(100);
+    dynamicArticles = blogs.map((blog) => ({
+      ...blog,
+      readTime: estimateReadTime(blog.body)
+    }));
+  } catch (error) {
+    console.error('Failed to load dynamic blog articles:', error);
+  }
 
   return (
     <ReCaptchaProvider siteKey={recaptchaSiteKey}>
       <Navbar />
-      <Blog />
+      <Blog dynamicArticles={dynamicArticles} />
       <Footer />
     </ReCaptchaProvider>
   )

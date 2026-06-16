@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { blogArticles } from '../../src/data/blogArticles';
+import { listPublishedBlogs } from '../../lib/services/blogService';
 
 const BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com').replace(/\/+$/, '');
 
@@ -17,6 +18,13 @@ function lastmodForBlogArticle(article, fallbackDate) {
  */
 export async function GET() {
   const currentDate = new Date().toISOString().split('T')[0];
+  let dynamicBlogs = [];
+
+  try {
+    dynamicBlogs = await listPublishedBlogs(50000);
+  } catch (error) {
+    console.error('Failed to load dynamic blogs for sitemap:', error);
+  }
 
   const blogSitemapXml = `
   <url>
@@ -32,6 +40,17 @@ ${Object.keys(blogArticles)
     <loc>${BASE_URL}/blog/${encodeURIComponent(slug)}</loc>
     <lastmod>${lm}</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>`;
+  })
+  .join('\n')}
+${dynamicBlogs
+  .map((blog) => {
+    const lm = blog.updatedAt ? new Date(blog.updatedAt).toISOString().split('T')[0] : currentDate;
+    return `  <url>
+    <loc>${BASE_URL}/blog/${encodeURIComponent(blog.seoUri)}</loc>
+    <lastmod>${lm}</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>`;
   })
