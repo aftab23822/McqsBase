@@ -1,25 +1,40 @@
-// Note: In Next.js App Router, use generateMetadata() in page.js instead of this component
-// This component is deprecated - use metadata API in your page.js files
+// Note: In Next.js App Router, use generateMetadata() in page.js instead of this component.
+// This component is deprecated; use metadata API in page.js files.
 
 const DEFAULT_BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com').replace(/\/+$/, '');
 
 function toCanonicalUrl(input = '/') {
   if (!input || input === '/') return `${DEFAULT_BASE_URL}/`;
+
   const isAbsolute = /^https?:\/\//i.test(input);
-  const normalizedPath = isAbsolute ? input : `${DEFAULT_BASE_URL}${input.startsWith('/') ? input : `/${input}`}`;
-  // Match Next.js trailingSlash: false — no trailing slash on paths (home keeps trailing slash above)
+  let normalizedPath = isAbsolute ? input : `${DEFAULT_BASE_URL}${input.startsWith('/') ? input : `/${input}`}`;
+
+  if (isAbsolute) {
+    try {
+      const url = new URL(input);
+      const base = new URL(DEFAULT_BASE_URL);
+      if (url.hostname === 'mcqsbase.com' || url.hostname === 'www.mcqsbase.com') {
+        url.protocol = base.protocol;
+        url.hostname = base.hostname;
+        normalizedPath = url.toString();
+      }
+    } catch {
+      normalizedPath = input;
+    }
+  }
+
   return normalizedPath.replace(/\/+$/, '');
 }
 
-// Utility function for generating metadata objects
-export const generateSEOMetadata = ({ 
-  title, 
-  description, 
-  keywords, 
-  url = '/', 
-  image = "https://mcqsbase.com/eagle.svg"
+export const generateSEOMetadata = ({
+  title,
+  description,
+  keywords,
+  url,
+  canonical,
+  image = 'https://mcqsbase.com/eagle.svg'
 }) => {
-  const canonicalUrl = toCanonicalUrl(url);
+  const canonicalUrl = toCanonicalUrl(url || canonical || '/');
 
   return {
     title,
@@ -45,7 +60,6 @@ export const generateSEOMetadata = ({
   };
 };
 
-// Deprecated component - kept for backward compatibility but will not render
 const SEO = () => {
   console.warn('SEO component is deprecated in App Router. Use generateMetadata() function instead.');
   return null;
