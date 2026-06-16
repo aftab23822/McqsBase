@@ -17,7 +17,6 @@ Disallow: /admin/
 Allow: /mcqs/
 Allow: /past-papers/
 Allow: /past-interviews/
-Allow: /courses/
 Allow: /contact
 Allow: /privacy-policy
 Allow: /terms-of-service

@@ -3,6 +3,18 @@ import Courses from '../../src/components/Courses'
 import Footer from '../../src/components/Footer'
 import { ReCaptchaProvider } from '../../src/components/recaptcha'
 
+export const metadata = {
+  title: 'Courses - McqsBase',
+  robots: {
+    index: false,
+    follow: true,
+    googleBot: {
+      index: false,
+      follow: true,
+    },
+  },
+};
+
 export default function CoursesPage() {
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || 'your-recaptcha-site-key';
 

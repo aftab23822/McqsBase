@@ -10,7 +10,6 @@ import {
   Search, 
   FileText, 
   Users, 
-  GraduationCap, 
   Upload, 
   Shield, 
   Mail,
@@ -179,12 +178,6 @@ export default function Navbar() {
                 <FileText className="w-4 h-4 mr-2 inline" />
                 Mock Tests
               </Link>
-               
-               {/* <Link href="/courses" className={getLinkClass("/courses")}>
-                 <GraduationCap className="w-4 h-4 mr-2 inline" />
-                 Courses
-               </Link> */}
-               
                <Link href="/submit-mcqs" className={getLinkClass("/submit-mcqs")}>
                  <Upload className="w-4 h-4 mr-2 inline" />
                  Submit
@@ -280,15 +273,6 @@ export default function Navbar() {
                 <FileText className="w-4 h-4 mr-3" />
                 Mock Tests
               </Link>
-               
-               <Link 
-                 href="/courses" 
-                 onClick={() => setIsOpen(false)} 
-                 className={`flex items-center w-full ${getMobileLinkClass("/courses")}`}
-               >
-                 <GraduationCap className="w-4 h-4 mr-3" />
-                 Courses
-               </Link>
                
                <Link 
                  href="/submit-mcqs" 

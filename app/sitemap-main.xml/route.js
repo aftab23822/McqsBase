@@ -1,6 +1,9 @@
 import { NextResponse } from 'next/server';
 import { blogArticles } from '../../src/data/blogArticles';
+import { studyGuides } from '../../src/data/studyGuides';
 import { listPublishedBlogs } from '../../lib/services/blogService';
+import connectToDatabase from '../../lib/mongodb';
+import MockTest from '../../models/mockTest';
 
 const BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com').replace(/\/+$/, '');
 
@@ -19,11 +22,19 @@ function lastmodForBlogArticle(article, fallbackDate) {
 export async function GET() {
   const currentDate = new Date().toISOString().split('T')[0];
   let dynamicBlogs = [];
+  let mockTestCount = 0;
 
   try {
     dynamicBlogs = await listPublishedBlogs(50000);
   } catch (error) {
     console.error('Failed to load dynamic blogs for sitemap:', error);
+  }
+
+  try {
+    await connectToDatabase();
+    mockTestCount = await MockTest.countDocuments({});
+  } catch (error) {
+    console.error('Failed to load mock test count for sitemap:', error);
   }
 
   const blogSitemapXml = `
@@ -54,6 +65,22 @@ ${dynamicBlogs
     <priority>0.7</priority>
   </url>`;
   })
+  .join('\n')}`;
+
+  const studyGuideSitemapXml = `
+  <url>
+    <loc>${BASE_URL}/study-guides</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+${Object.keys(studyGuides)
+  .map((slug) => `  <url>
+    <loc>${BASE_URL}/study-guides/${encodeURIComponent(slug)}</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>`)
   .join('\n')}`;
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -94,12 +121,12 @@ ${dynamicBlogs
     <priority>0.8</priority>
   </url>
   
-  <url>
+  ${mockTestCount > 0 ? `<url>
     <loc>${BASE_URL}/mock-tests</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
+  </url>` : ''}
   
   <url>
     <loc>${BASE_URL}/contact</loc>
@@ -134,7 +161,7 @@ ${dynamicBlogs
     <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>${blogSitemapXml}
+  </url>${blogSitemapXml}${studyGuideSitemapXml}
 </urlset>`;
 
   return new NextResponse(xml, {

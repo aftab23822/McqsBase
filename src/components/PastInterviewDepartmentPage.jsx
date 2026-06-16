@@ -11,6 +11,7 @@ import LoadingSpinner from "@/components/LoadingSpinner";
 import SubcategoriesSection from "@/components/SubcategoriesSection";
 import SubcategoriesGrid from "@/components/SubcategoriesGrid";
 import { apiFetch } from "@/utils/api";
+import useRobotsNoindex from "@/hooks/useRobotsNoindex";
 
 const interviewsPerPage = 10;
 
@@ -54,6 +55,7 @@ export default function PastInterviewDepartmentPage() {
     departmentLabel: "",
   });
   const [departmentNode, setDepartmentNode] = useState(null);
+  useRobotsNoindex(!loading && (Boolean(error) || !pastInterviewData || pastInterviewData.length === 0));
   const departmentTopics = useMemo(() => {
     const labels = new Set();
     (pastInterviewData || []).forEach((item) => {

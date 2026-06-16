@@ -10,6 +10,7 @@ import PastInterviewsRightSideBar from '@/components/PastInterviewsRightSideBar'
 import LoadingSpinner from '@/components/LoadingSpinner';
 import SubcategoriesSection from '@/components/SubcategoriesSection';
 import { apiFetch } from '@/utils/api';
+import useRobotsNoindex from '@/hooks/useRobotsNoindex';
 
 const interviewsPerPage = 10;
 
@@ -85,6 +86,7 @@ export default function PastInterviewCategoryPage() {
     departmentLabel: '',
     roleLabel: ''
   });
+  useRobotsNoindex(!loading && (Boolean(error) || !pastInterviewData || pastInterviewData.length === 0));
 
   useEffect(() => {
     // Reset when params change

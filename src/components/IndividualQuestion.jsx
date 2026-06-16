@@ -128,6 +128,46 @@ const IndividualQuestion = ({
           />
         </div>
 
+        <div className="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h2 className="text-xl font-bold text-gray-900 mb-3">
+            How to Study This {categoryName} Question
+          </h2>
+          <div className="space-y-3 text-gray-700 leading-relaxed">
+            <p>
+              This question belongs to the {categoryName} preparation set on McqsBase. Read the question carefully,
+              compare every option, and focus on why the correct answer is better than the distractors. This method
+              improves recall and helps you handle similar MCQs in FPSC, SPSC, PPSC, NTS, CSS, PMS, and university
+              entry tests.
+            </p>
+            <p>
+              For stronger preparation, revise the related topic after solving the MCQ, then attempt more questions
+              from the same category. Repeated practice builds speed, accuracy, and confidence for one-paper exams
+              where small wording differences can change the answer.
+            </p>
+          </div>
+
+          <div className="mt-5 grid gap-3 sm:grid-cols-3">
+            <Link
+              href={`/${basePath}/${subjectLink}`}
+              className="rounded-lg border border-blue-100 bg-blue-50 px-4 py-3 text-sm font-semibold text-blue-700 hover:bg-blue-100"
+            >
+              More {categoryName} Questions
+            </Link>
+            <Link
+              href="/blog"
+              className="rounded-lg border border-indigo-100 bg-indigo-50 px-4 py-3 text-sm font-semibold text-indigo-700 hover:bg-indigo-100"
+            >
+              Exam Preparation Guides
+            </Link>
+            <Link
+              href="/past-papers"
+              className="rounded-lg border border-emerald-100 bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-700 hover:bg-emerald-100"
+            >
+              Practice Past Papers
+            </Link>
+          </div>
+        </div>
+
         {/* Navigation Buttons */}
         <div className="flex justify-between items-center bg-white rounded-lg shadow-md p-4">
           <div className="flex-1">
@@ -203,4 +243,3 @@ const IndividualQuestion = ({
 };
 
 export default IndividualQuestion;
-
