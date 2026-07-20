@@ -1,10 +1,7 @@
-import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import NavigationLoaderWrapper from '../src/components/NavigationLoaderWrapper'
 import '../src/index.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   metadataBase: new URL('https://www.mcqsbase.com'),
@@ -69,8 +66,6 @@ export default function RootLayout({ children }) {
           }}
         />
         <link rel="icon" href="/eagle.svg" type="image/svg+xml" sizes="any" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <meta name="google-site-verification" content="WGnVaxb3MaxbnE_dIZ_EYGB9mUMfA1knPGt7sIyhu0I" />
         
         <script
@@ -116,7 +111,7 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         />
       </head>
-      <body className={inter.className}>
+      <body>
         {children}
         <NavigationLoaderWrapper />
         <Analytics />

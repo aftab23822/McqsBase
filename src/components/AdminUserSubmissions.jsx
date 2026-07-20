@@ -122,7 +122,7 @@ const AdminUserSubmissions = () => {
       setError('');
       try {
         const token = localStorage.getItem('adminToken');
-        const response = await apiFetch('/api/admin/submissions/?status=pending', {
+        const response = await apiFetch('/api/admin/submissions?status=pending', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -484,7 +484,7 @@ const AdminUserSubmissions = () => {
         }
       }
       
-      const response = await apiFetch(`/api/admin/submissions/${editingItem._id}/`, {
+      const response = await apiFetch(`/api/admin/submissions/${editingItem._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -583,7 +583,7 @@ const AdminUserSubmissions = () => {
       }
       
       // 2. Mark as approved
-      const patchRes = await apiFetch(`/api/admin/submissions/${item._id}/`, {
+      const patchRes = await apiFetch(`/api/admin/submissions/${item._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -608,7 +608,7 @@ const AdminUserSubmissions = () => {
     setRowLoading((prev) => ({ ...prev, [item._id]: 'reject' }));
     try {
       const token = localStorage.getItem('adminToken');
-      const patchRes = await apiFetch(`/api/admin/submissions/${item._id}/`, {
+      const patchRes = await apiFetch(`/api/admin/submissions/${item._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

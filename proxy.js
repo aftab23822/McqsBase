@@ -1,19 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export function proxy(request) {
-  const { pathname, search } = request.nextUrl;
-
-  if (
-    request.method === 'GET' &&
-    pathname.length > 1 &&
-    pathname.endsWith('/') &&
-    !pathname.startsWith('/api/')
-  ) {
-    const url = request.nextUrl.clone();
-    url.pathname = pathname.replace(/\/+$/, '');
-    url.search = search;
-    return NextResponse.redirect(url, 308);
-  }
+  const { pathname } = request.nextUrl;
 
   // Add CORS headers for API routes
   if (pathname.startsWith('/api/')) {
@@ -37,7 +25,7 @@ export function proxy(request) {
 
 export const config = {
   matcher: [
-    '/((?!_next/static|_next/image|favicon.ico|eagle.svg|manifest.json|ads.txt).*)',
+    '/api/:path*',
   ],
 }
 

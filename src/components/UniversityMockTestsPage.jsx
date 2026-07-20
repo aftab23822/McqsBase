@@ -20,7 +20,7 @@ export default function UniversityMockTestsPage({ params }) {
       try {
         setLoading(true);
         setError('');
-        const url = `/api/mock-tests/${university}/`;
+        const url = `/api/mock-tests/${university}`;
         const res = await fetch(url, { 
           headers: {
             'Content-Type': 'application/json',

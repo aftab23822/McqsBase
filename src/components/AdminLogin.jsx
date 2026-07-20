@@ -80,7 +80,7 @@ const AdminLogin = () => {
     setError('');
     
     try {
-      const response = await apiFetch('/api/admin/login/', {
+      const response = await apiFetch('/api/admin/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

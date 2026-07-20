@@ -33,7 +33,7 @@ const AdminMockTestsManager = () => {
     try {
       setLoading(true);
       setError('');
-      const res = await fetch(`/api/mock-tests/${university}/`);
+      const res = await fetch(`/api/mock-tests/${university}`);
       const json = await res.json();
       if (!json.success) throw new Error(json.message || 'Failed');
       setTests(json.data || []);
