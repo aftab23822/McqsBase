@@ -2,15 +2,6 @@
 const nextConfig = {
   // false: avoid 308 redirects from /path to /path/ (fixes GSC "Page with redirect" for question URLs)
   trailingSlash: false,
-  async redirects() {
-    return [
-      {
-        source: '/:path*/',
-        destination: '/:path*',
-        permanent: true,
-      },
-    ];
-  },
   images: {
     unoptimized: true
   },
