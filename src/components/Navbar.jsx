@@ -188,11 +188,6 @@ export default function Navbar() {
                  About
                </Link>
                
-               <Link href="/study-guides" className={getLinkClass("/study-guides")}>
-                 <BookOpen className="w-4 h-4 mr-2 inline" />
-                 Guides
-               </Link>
-               
                <Link href="/blog" className={getLinkClass("/blog")}>
                  <FileText className="w-4 h-4 mr-2 inline" />
                  Blog
@@ -290,15 +285,6 @@ export default function Navbar() {
                >
                  <Users className="w-4 h-4 mr-3" />
                  About Us
-               </Link>
-               
-               <Link 
-                 href="/study-guides" 
-                 onClick={() => setIsOpen(false)} 
-                 className={`flex items-center w-full ${getMobileLinkClass("/study-guides")}`}
-               >
-                 <BookOpen className="w-4 h-4 mr-3" />
-                 Study Guides
                </Link>
                
                <Link 

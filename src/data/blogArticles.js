@@ -1,4 +1,7 @@
+import { importedBlogArticles } from './importedBlogArticles.js';
+
 export const blogArticles = {
+  ...importedBlogArticles,
   "best-free-resources-ppsc-fpsc-spsc-2026": {
     title: "📚 List of Best Free Resources for PPSC, FPSC, and SPSC Exams (2026 Guide)",
     excerpt:

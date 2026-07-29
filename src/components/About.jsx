@@ -120,7 +120,7 @@ const About = () => {
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Through our extensive database of MCQs, past papers, interview experiences, 
-                and study guides, we aim to level the playing field and give every student 
+                and exam preparation materials, we aim to level the playing field and give every student 
                 an equal opportunity to succeed in their chosen career path.
               </p>
             </div>

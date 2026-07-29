@@ -146,15 +146,6 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link 
-                    href="/study-guides" 
-                    className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group"
-                  >
-                    <span className="w-2 h-2 bg-blue-400 rounded-full mr-3 group-hover:scale-150 transition-transform"></span>
-                    Study Guides
-                  </Link>
-                </li>
-                <li>
-                  <Link 
                     href="/blog" 
                     className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group"
                   >

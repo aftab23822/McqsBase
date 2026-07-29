@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
 import { blogArticles } from '../../src/data/blogArticles';
-import { studyGuides } from '../../src/data/studyGuides';
 import { listPublishedBlogs } from '../../lib/services/blogService';
 import connectToDatabase from '../../lib/mongodb';
 import MockTest from '../../models/mockTest';
@@ -65,22 +64,6 @@ ${dynamicBlogs
     <priority>0.7</priority>
   </url>`;
   })
-  .join('\n')}`;
-
-  const studyGuideSitemapXml = `
-  <url>
-    <loc>${BASE_URL}/study-guides</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-${Object.keys(studyGuides)
-  .map((slug) => `  <url>
-    <loc>${BASE_URL}/study-guides/${encodeURIComponent(slug)}</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>`)
   .join('\n')}`;
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -161,7 +144,7 @@ ${Object.keys(studyGuides)
     <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>${blogSitemapXml}${studyGuideSitemapXml}
+  </url>${blogSitemapXml}
 </urlset>`;
 
   return new NextResponse(xml, {

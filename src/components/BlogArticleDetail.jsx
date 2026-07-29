@@ -48,6 +48,44 @@ const BlogArticleDetail = ({ article }) => {
 
   const dynamicBlocks = article.body ? parseBlogBody(article.body) : [];
 
+  const renderInlineText = (text = '') => {
+    const parts = [];
+    const pattern = /(\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]+)\)|<br\s*\/?>)/gi;
+    let lastIndex = 0;
+    let match;
+
+    while ((match = pattern.exec(text)) !== null) {
+      if (match.index > lastIndex) {
+        parts.push(text.slice(lastIndex, match.index));
+      }
+
+      if (match[0].toLowerCase().startsWith('<br')) {
+        parts.push(<br key={`br-${match.index}`} />);
+      } else {
+        const href = match[3];
+        const isExternal = href.startsWith('http');
+        parts.push(
+          <Link
+            key={`${href}-${match.index}`}
+            href={href}
+            className="font-semibold text-blue-700 underline decoration-blue-200 underline-offset-4 hover:text-blue-800 hover:decoration-blue-500"
+            {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+          >
+            {match[2]}
+          </Link>
+        );
+      }
+
+      lastIndex = pattern.lastIndex;
+    }
+
+    if (lastIndex < text.length) {
+      parts.push(text.slice(lastIndex));
+    }
+
+    return parts;
+  };
+
   const renderDynamicBlock = (block, index) => {
     if (block.type === 'heading') {
       return (
@@ -70,13 +108,34 @@ const BlogArticleDetail = ({ article }) => {
       return (
         <ListTag key={index} className={`${block.ordered ? 'list-decimal' : 'list-disc'} pl-6 space-y-2 text-lg text-gray-700 leading-relaxed mb-6`}>
           {block.items.map((item, itemIndex) => (
-            <li key={itemIndex}>{item}</li>
+            <li key={itemIndex}>{renderInlineText(item)}</li>
           ))}
         </ListTag>
       );
     }
 
+    if (block.type === 'image') {
+      return (
+        <figure key={index} className="my-8 overflow-hidden rounded-xl border border-gray-200 bg-slate-50 shadow-sm">
+          <img
+            src={block.src}
+            alt={block.alt || article.title}
+            className="h-auto w-full object-cover"
+            loading={index === 0 ? 'eager' : 'lazy'}
+          />
+        </figure>
+      );
+    }
+
     if (block.type === 'table') {
+      if (block.headers.length === 1 && block.rows.length === 0) {
+        return (
+          <div key={index} className="my-8 rounded-xl border-l-4 border-blue-500 bg-blue-50 px-5 py-4 text-lg leading-relaxed text-slate-800 shadow-sm">
+            {renderInlineText(block.headers[0])}
+          </div>
+        );
+      }
+
       return (
         <div key={index} className="my-8 overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
           <table className="min-w-full text-left text-sm text-gray-800 border-collapse">
@@ -94,7 +153,7 @@ const BlogArticleDetail = ({ article }) => {
                 <tr key={rowIndex} className={rowIndex % 2 === 0 ? 'bg-white' : 'bg-slate-50/80'}>
                   {block.headers.map((_, cellIndex) => (
                     <td key={cellIndex} className="border-b border-gray-100 px-4 py-3 align-top whitespace-pre-line">
-                      {row[cellIndex] || ''}
+                      {renderInlineText(row[cellIndex] || '')}
                     </td>
                   ))}
                 </tr>
@@ -107,7 +166,7 @@ const BlogArticleDetail = ({ article }) => {
 
     return (
       <p key={index} className="text-lg text-gray-700 leading-relaxed mb-6 whitespace-pre-line">
-        {block.text}
+        {renderInlineText(block.text)}
       </p>
     );
   };

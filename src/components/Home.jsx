@@ -566,27 +566,26 @@ const Home = () => {
               Learning Resources
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Explore our comprehensive guides, articles, and study materials to enhance your exam preparation
+              Explore articles, practice tools, and exam materials to enhance your preparation
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Link 
-              href="/study-guides"
+              href="/mcqs"
               className="bg-white p-8 rounded-xl border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 group"
             >
               <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
                 <BookOpen className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
-                Study Guides
+                MCQ Practice
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Comprehensive preparation guides for FPSC, SPSC, PPSC, and NTS exams. Learn effective strategies, 
-                time management techniques, and subject-wise preparation methods.
+                Practice topic-wise MCQs for FPSC, SPSC, PPSC, NTS, and other competitive exams with clear categories.
               </p>
               <div className="flex items-center text-blue-600 font-semibold">
-                <span>Explore Guides</span>
+                <span>Practice MCQs</span>
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
               </div>
             </Link>

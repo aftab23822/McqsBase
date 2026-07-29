@@ -356,15 +356,6 @@ const Sitemap = () => {
             <ul className="space-y-3">
               <li>
                 <Link 
-                  href="/study-guides" 
-                  className="text-gray-700 hover:text-red-600 transition-colors duration-300 flex items-center group"
-                >
-                  <span className="w-2 h-2 bg-red-400 rounded-full mr-3 group-hover:scale-150 transition-transform"></span>
-                  Study Guides
-                </Link>
-              </li>
-              <li>
-                <Link 
                   href="/blog" 
                   className="text-gray-700 hover:text-red-600 transition-colors duration-300 flex items-center group"
                 >

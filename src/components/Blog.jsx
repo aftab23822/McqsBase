@@ -19,6 +19,16 @@ import {
 const Blog = ({ dynamicArticles = [] }) => {
   const legacyArticles = [
     {
+      title: "How to Prepare for Any MCQ Test in 30 Days",
+      excerpt:
+        "Use this practical 30-day MCQ test preparation plan to improve recall, speed, accuracy, past-paper performance, and exam confidence.",
+      category: "Exam Guide",
+      date: "2026",
+      readTime: "14 min",
+      image: "success",
+      slug: "how-to-prepare-mcq-test-30-day-plan-pakistan"
+    },
+    {
       title:
         "⚔️ PakMcqs vs McqsBase — Why McqsBase is the Better Choice for Serious Exam Preparation (2026 Guide)",
       excerpt:
