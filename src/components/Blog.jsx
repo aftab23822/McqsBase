@@ -19,6 +19,16 @@ import {
 const Blog = ({ dynamicArticles = [] }) => {
   const legacyArticles = [
     {
+      title: "PPSC MCQs Preparation: The 6-Week Score-Building Plan for One-Paper Tests",
+      excerpt:
+        "Follow a practical 6-week PPSC MCQs preparation plan covering syllabus checks, daily practice, past papers, negative marking, mock tests, and exam-day strategy.",
+      category: "Exam Guide",
+      date: "2026",
+      readTime: "13 min",
+      image: "success",
+      slug: "ppsc-mcqs-preparation-6-week-study-plan-2026"
+    },
+    {
       title: "How to Prepare for Any MCQ Test in 30 Days",
       excerpt:
         "Use this practical 30-day MCQ test preparation plan to improve recall, speed, accuracy, past-paper performance, and exam confidence.",

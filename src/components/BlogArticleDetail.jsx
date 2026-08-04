@@ -127,6 +127,14 @@ const BlogArticleDetail = ({ article }) => {
       );
     }
 
+    if (block.type === 'callout') {
+      return (
+        <div key={index} className="my-8 rounded-xl border-l-4 border-blue-500 bg-blue-50 px-5 py-4 text-lg leading-relaxed text-slate-800 shadow-sm">
+          {renderInlineText(block.text)}
+        </div>
+      );
+    }
+
     if (block.type === 'table') {
       if (block.headers.length === 1 && block.rows.length === 0) {
         return (
