@@ -19,6 +19,16 @@ import {
 const Blog = ({ dynamicArticles = [] }) => {
   const legacyArticles = [
     {
+      title: "How to Improve MCQ Solving Speed and Accuracy: A 3-Pass System for Competitive Exams",
+      excerpt:
+        "Learn a practical three-pass method to solve MCQs faster and more accurately using time budgets, elimination, error tracking, and timed practice.",
+      category: "Study Skills",
+      date: "2026",
+      readTime: "12 min",
+      image: "success",
+      slug: "how-to-improve-mcq-solving-speed-and-accuracy"
+    },
+    {
       title: "PPSC MCQs Preparation: The 6-Week Score-Building Plan for One-Paper Tests",
       excerpt:
         "Follow a practical 6-week PPSC MCQs preparation plan covering syllabus checks, daily practice, past papers, negative marking, mock tests, and exam-day strategy.",
