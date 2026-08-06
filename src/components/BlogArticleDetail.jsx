@@ -47,6 +47,15 @@ const BlogArticleDetail = ({ article }) => {
   };
 
   const dynamicBlocks = article.body ? parseBlogBody(article.body) : [];
+  const wordTheme = {
+    navy: '#0B2A4A',
+    green: '#16865A',
+    gray: '#5C6770',
+    lightBlue: '#EDF3F8',
+    lightGreen: '#EAF6F0',
+    pale: '#F7FAFC',
+    amber: '#FFF8E1'
+  };
 
   const renderInlineText = (text = '') => {
     const parts = [];
@@ -89,7 +98,11 @@ const BlogArticleDetail = ({ article }) => {
   const renderDynamicBlock = (block, index) => {
     if (block.type === 'heading') {
       return (
-        <h2 key={index} className="text-3xl font-bold text-gray-900 mt-10 mb-5">
+        <h2
+          key={index}
+          className="mt-12 mb-5 border-b-2 pb-3 text-3xl font-bold"
+          style={{ color: wordTheme.navy, borderColor: wordTheme.green }}
+        >
           {block.text}
         </h2>
       );
@@ -97,16 +110,28 @@ const BlogArticleDetail = ({ article }) => {
 
     if (block.type === 'subheading') {
       return (
-        <h3 key={index} className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+        <h3 key={index} className="mt-8 mb-4 text-2xl font-bold" style={{ color: wordTheme.green }}>
           {block.text}
         </h3>
+      );
+    }
+
+    if (block.type === 'caption') {
+      return (
+        <p key={index} className="mt-[-1rem] mb-8 text-center text-sm font-medium italic" style={{ color: wordTheme.gray }}>
+          {renderInlineText(block.text)}
+        </p>
       );
     }
 
     if (block.type === 'list') {
       const ListTag = block.ordered ? 'ol' : 'ul';
       return (
-        <ListTag key={index} className={`${block.ordered ? 'list-decimal' : 'list-disc'} pl-6 space-y-2 text-lg text-gray-700 leading-relaxed mb-6`}>
+        <ListTag
+          key={index}
+          className={`${block.ordered ? 'list-decimal' : 'list-disc'} mb-6 space-y-2 pl-6 text-lg leading-relaxed marker:font-bold`}
+          style={{ color: wordTheme.gray }}
+        >
           {block.items.map((item, itemIndex) => (
             <li key={itemIndex}>{renderInlineText(item)}</li>
           ))}
@@ -116,7 +141,7 @@ const BlogArticleDetail = ({ article }) => {
 
     if (block.type === 'image') {
       return (
-        <figure key={index} className="my-8 overflow-hidden rounded-xl border border-gray-200 bg-slate-50 shadow-sm">
+        <figure key={index} className="my-8 overflow-hidden rounded-xl border bg-slate-50 shadow-md" style={{ borderColor: '#d7e5ee' }}>
           <img
             src={block.src}
             alt={block.alt || article.title}
@@ -129,7 +154,11 @@ const BlogArticleDetail = ({ article }) => {
 
     if (block.type === 'callout') {
       return (
-        <div key={index} className="my-8 rounded-xl border-l-4 border-blue-500 bg-blue-50 px-5 py-4 text-lg leading-relaxed text-slate-800 shadow-sm">
+        <div
+          key={index}
+          className="my-8 rounded-xl border-l-4 px-5 py-4 text-lg font-medium leading-relaxed shadow-sm"
+          style={{ backgroundColor: wordTheme.lightGreen, borderColor: wordTheme.green, color: wordTheme.navy }}
+        >
           {renderInlineText(block.text)}
         </div>
       );
@@ -138,19 +167,23 @@ const BlogArticleDetail = ({ article }) => {
     if (block.type === 'table') {
       if (block.headers.length === 1 && block.rows.length === 0) {
         return (
-          <div key={index} className="my-8 rounded-xl border-l-4 border-blue-500 bg-blue-50 px-5 py-4 text-lg leading-relaxed text-slate-800 shadow-sm">
+          <div
+            key={index}
+            className="my-8 rounded-xl border-l-4 px-5 py-4 text-lg font-medium leading-relaxed shadow-sm"
+            style={{ backgroundColor: wordTheme.lightGreen, borderColor: wordTheme.green, color: wordTheme.navy }}
+          >
             {renderInlineText(block.headers[0])}
           </div>
         );
       }
 
       return (
-        <div key={index} className="my-8 overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
-          <table className="min-w-full text-left text-sm text-gray-800 border-collapse">
+        <div key={index} className="my-8 overflow-x-auto rounded-lg border shadow-sm" style={{ borderColor: '#d7e5ee' }}>
+          <table className="min-w-full border-collapse text-left text-sm" style={{ color: wordTheme.navy }}>
             <thead>
-              <tr className="bg-gradient-to-r from-slate-100 to-slate-50">
+              <tr style={{ backgroundColor: wordTheme.navy }}>
                 {block.headers.map((header, headerIndex) => (
-                  <th key={headerIndex} scope="col" className="border-b border-gray-200 px-4 py-3 font-semibold text-gray-900 whitespace-nowrap">
+                  <th key={headerIndex} scope="col" className="whitespace-nowrap border-b px-4 py-3 font-semibold text-white" style={{ borderColor: wordTheme.navy }}>
                     {header}
                   </th>
                 ))}
@@ -158,9 +191,19 @@ const BlogArticleDetail = ({ article }) => {
             </thead>
             <tbody>
               {block.rows.map((row, rowIndex) => (
-                <tr key={rowIndex} className={rowIndex % 2 === 0 ? 'bg-white' : 'bg-slate-50/80'}>
+                <tr key={rowIndex} style={{ backgroundColor: rowIndex % 2 === 0 ? '#FFFFFF' : wordTheme.pale }}>
                   {block.headers.map((_, cellIndex) => (
-                    <td key={cellIndex} className="border-b border-gray-100 px-4 py-3 align-top whitespace-pre-line">
+                    <td
+                      key={cellIndex}
+                      className="border-b px-4 py-3 align-top leading-relaxed"
+                      style={{
+                        borderColor: '#e7eef3',
+                        backgroundColor: cellIndex === 2 ? wordTheme.lightGreen : undefined,
+                        color: cellIndex === 2 ? wordTheme.green : cellIndex === 3 ? wordTheme.gray : wordTheme.navy,
+                        fontWeight: cellIndex === 0 || cellIndex === 2 ? 700 : 400,
+                        minWidth: cellIndex === 1 ? '18rem' : undefined
+                      }}
+                    >
                       {renderInlineText(row[cellIndex] || '')}
                     </td>
                   ))}
@@ -173,7 +216,7 @@ const BlogArticleDetail = ({ article }) => {
     }
 
     return (
-      <p key={index} className="text-lg text-gray-700 leading-relaxed mb-6 whitespace-pre-line">
+      <p key={index} className="mb-6 whitespace-pre-line text-lg leading-relaxed" style={{ color: wordTheme.gray }}>
         {renderInlineText(block.text)}
       </p>
     );
@@ -303,7 +346,7 @@ const BlogArticleDetail = ({ article }) => {
               </div>
             </div>
           )) : (
-            <article className="bg-white rounded-xl shadow-lg p-6 md:p-10 border border-gray-100 mb-12">
+            <article className="mb-12 rounded-xl border bg-white p-6 shadow-lg md:p-10" style={{ borderColor: '#d7e5ee' }}>
               <div className="prose max-w-none">
                 {dynamicBlocks.map(renderDynamicBlock)}
               </div>
