@@ -19,6 +19,16 @@ import {
 const Blog = ({ dynamicArticles = [] }) => {
   const legacyArticles = [
     {
+      title: "100 High-Frequency SPSC MCQs with Verified Answers",
+      excerpt:
+        "Practice 100 high-frequency SPSC MCQs with verified answers, short explanations and source labels for smarter screening-test revision in 2026.",
+      category: "Exam Guide",
+      date: "2026",
+      readTime: "22 min",
+      image: "success",
+      slug: "100-high-frequency-spsc-mcqs-verified-answers-2026"
+    },
+    {
       title: "How to Improve MCQ Solving Speed and Accuracy: A 3-Pass System for Competitive Exams",
       excerpt:
         "Learn a practical three-pass method to solve MCQs faster and more accurately using time budgets, elimination, error tracking, and timed practice.",

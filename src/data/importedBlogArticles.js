@@ -1,4 +1,20 @@
+import { readFileSync } from 'fs';
+import path from 'path';
+
+const readImportedBlogBody = (slug) =>
+  readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
+
 export const importedBlogArticles = {
+  "100-high-frequency-spsc-mcqs-verified-answers-2026": {
+    title: "100 High-Frequency SPSC MCQs with Verified Answers",
+    excerpt:
+      "Practice 100 high-frequency SPSC MCQs with verified answers, short explanations and source labels for smarter screening-test revision in 2026.",
+    category: "Exam Guide",
+    date: "2026",
+    readTime: "22 min",
+    content: null,
+    body: readImportedBlogBody("100-high-frequency-spsc-mcqs-verified-answers-2026")
+  },
   "how-to-improve-mcq-solving-speed-and-accuracy": {
     title: "How to Improve MCQ Solving Speed and Accuracy: A 3-Pass System for Competitive Exams",
     excerpt:
