@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "100-english-vocabulary-mcqs-css-pms": {
+    title: "100 English Vocabulary MCQs for CSS and PMS",
+    excerpt:
+      "Practice 100 verified English vocabulary MCQs for CSS and PMS, including advanced synonyms, antonyms, answers, explanations, and a seven-day revision plan.",
+    category: "Subject Guide",
+    date: "2026",
+    readTime: "18 min",
+    content: null,
+    body: readImportedBlogBody("100-english-vocabulary-mcqs-css-pms")
+  },
   "100-high-frequency-spsc-mcqs-verified-answers-2026": {
     title: "100 High-Frequency SPSC MCQs with Verified Answers",
     excerpt:

@@ -19,6 +19,16 @@ import {
 const Blog = ({ dynamicArticles = [] }) => {
   const legacyArticles = [
     {
+      title: "100 English Vocabulary MCQs for CSS and PMS",
+      excerpt:
+        "Practice 100 verified English vocabulary MCQs for CSS and PMS, including advanced synonyms, antonyms, answers, explanations, and a seven-day revision plan.",
+      category: "Subject Guide",
+      date: "2026",
+      readTime: "18 min",
+      image: "english",
+      slug: "100-english-vocabulary-mcqs-css-pms"
+    },
+    {
       title: "100 High-Frequency SPSC MCQs with Verified Answers",
       excerpt:
         "Practice 100 high-frequency SPSC MCQs with verified answers, short explanations and source labels for smarter screening-test revision in 2026.",
