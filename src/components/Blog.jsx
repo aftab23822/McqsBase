@@ -19,6 +19,16 @@ import {
 const Blog = ({ dynamicArticles = [] }) => {
   const legacyArticles = [
     {
+      title: "100 Everyday Science MCQs with Answers",
+      excerpt:
+        "Practice 100 Everyday Science MCQs with answers covering biology, physics, chemistry, Earth science and space for fast general knowledge revision.",
+      category: "Subject Guide",
+      date: "2026",
+      readTime: "18 min",
+      image: "science",
+      slug: "100-everyday-science-mcqs-with-answers-general-knowledge-2026"
+    },
+    {
       title: "100 English Vocabulary MCQs for CSS and PMS",
       excerpt:
         "Practice 100 verified English vocabulary MCQs for CSS and PMS, including advanced synonyms, antonyms, answers, explanations, and a seven-day revision plan.",
