@@ -3,7 +3,10 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import MockTestsRightSideBar from './MockTestsRightSideBar';
-import { getUniversities as getStaticUniversities } from '../data/categories/mockTestCategories';
+import {
+  getMockTestCategories as getStaticMockTestCategories,
+  getUniversities as getStaticUniversities
+} from '../data/categories/mockTestCategories';
 
 const MockTests = () => {
   const [latestTests, setLatestTests] = useState([]);
@@ -22,10 +25,14 @@ const MockTests = () => {
         const { success, data } = await res.json();
         if (!success) throw new Error('API returned error');
 
+        let categoryList = getStaticMockTestCategories();
         let uniList = getStaticUniversities();
         try {
           const uniRes = await fetch('/api/categories/structure?type=mock-tests');
           const uniJson = await uniRes.json();
+          if (uniJson.success && Array.isArray(uniJson.data?.categories) && uniJson.data.categories.length) {
+            categoryList = uniJson.data.categories;
+          }
           if (uniJson.success && Array.isArray(uniJson.data?.universities) && uniJson.data.universities.length) {
             uniList = uniJson.data.universities;
           }
@@ -33,10 +40,14 @@ const MockTests = () => {
           /* keep static */
         }
         const uniBySlug = Object.fromEntries(uniList.map((u) => [u.slug, u.label]));
+        const categoryByValue = Object.fromEntries(categoryList.map((category) => [category.value, category.label]));
         const enriched = (data || []).map(t => ({
           ...t,
-          universityName: uniBySlug[t.universitySlug] || t.universitySlug,
-          universitySlug: t.universitySlug
+          category: t.category || 'universities',
+          targetName: (t.category || 'universities') === 'universities'
+            ? (uniBySlug[t.universitySlug] || t.universitySlug)
+            : (categoryByValue[t.category] || t.category || t.universitySlug),
+          targetSlug: t.universitySlug
         }));
 
         setLatestTests(enriched);
@@ -93,11 +104,11 @@ const MockTests = () => {
               {!loading && !error && latestTests.length > 0 && (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {latestTests.map((test, index) => (
-                    <div key={`${test.universitySlug}-${test.slug}`} className="bg-gradient-to-r from-indigo-50 to-blue-50 border border-indigo-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                    <div key={`${test.category}-${test.targetSlug}-${test.slug}`} className="bg-gradient-to-r from-indigo-50 to-blue-50 border border-indigo-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                       <div className="flex items-start justify-between mb-2">
                         <div className="flex-1">
                           <h3 className="font-semibold text-gray-800 mb-1">{test.name}</h3>
-                          <p className="text-sm text-indigo-600 font-medium">{test.universityName}</p>
+                          <p className="text-sm text-indigo-600 font-medium">{test.targetName}</p>
                         </div>
                         {index < 3 && (
                           <span className="bg-indigo-600 text-white text-xs font-bold px-2 py-1 rounded-full">
@@ -113,7 +124,9 @@ const MockTests = () => {
                         Updated: {new Date(test.lastUpdatedAt || test.updatedAt).toLocaleDateString()}
                       </div>
                       <Link 
-                        href={`/mock-tests/universities/${test.universitySlug}/${test.slug}`}
+                        href={test.category === 'universities'
+                          ? `/mock-tests/universities/${test.targetSlug}/${test.slug}`
+                          : `/mock-tests/${test.category}/${test.slug}`}
                         className="inline-flex items-center px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition-colors"
                         prefetch
                       >

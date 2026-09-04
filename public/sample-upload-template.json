@@ -34,17 +34,33 @@
     "submitter": "Admin"
   },
   {
-    "note": "Example 3: Past Interview Question - For interview type",
+    "note": "Example 3: Past Interview Question - Includes year and department fields",
     "type": "past-interview",
     "question": "What is polymorphism in object-oriented programming?",
     "answer": "Polymorphism is the ability of an object to take on many forms. It allows methods to do different things based on the object it is acting upon.",
     "year": "2023",
+    "department": "Computer Science",
     "explanation": "Common interview question for computer science positions.",
     "detail_link": "https://example.com/interview/1",
     "submitter": "Admin"
   },
   {
-    "note": "Example 4: MCQ with 5 options",
+    "note": "Example 4: Mock Test MCQ - Use this format when Upload Data type is Mock Tests",
+    "type": "mock-test",
+    "question": "Which document is required before leaving for Hajj training?",
+    "options": {
+      "A": "Valid CNIC",
+      "B": "Library card",
+      "C": "Driving learner permit",
+      "D": "Utility bill",
+      "E": ""
+    },
+    "correct_option": "A",
+    "explanation": "A valid CNIC is commonly required for identity verification during official training and travel processes.",
+    "submitter": "Admin"
+  },
+  {
+    "note": "Example 5: MCQ with 5 options",
     "type": "simple-mcq",
     "question": "What is the largest province of Pakistan by area?",
     "options": {

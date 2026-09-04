@@ -7,7 +7,11 @@ import MockTestsRightSideBar from '@/components/MockTestsRightSideBar';
 
 export default function MockTestRunnerPage({ params }) {
   // In Next.js 15+, params is a Promise in client components - use React.use()
-  const { university, slug } = use(params);
+  const resolvedParams = use(params);
+  const category = resolvedParams.category || 'universities';
+  const targetSlug = resolvedParams.target || resolvedParams.university || category;
+  const targetLabel = resolvedParams.label || targetSlug.toUpperCase();
+  const { slug } = resolvedParams;
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [test, setTest] = useState(null);
@@ -21,7 +25,8 @@ export default function MockTestRunnerPage({ params }) {
   useEffect(() => {
     async function load() {
       try {
-        const res = await fetch(`/api/mock-tests/${university}/${slug}`);
+        const categoryQuery = category !== 'universities' ? `?category=${category}` : '';
+        const res = await fetch(`/api/mock-tests/${targetSlug}/${slug}${categoryQuery}`);
         const json = await res.json();
         if (!json.success) {
           setError(json.message || 'Failed to load test');
@@ -35,7 +40,7 @@ export default function MockTestRunnerPage({ params }) {
       }
     }
     load();
-  }, [university, slug]);
+  }, [category, targetSlug, slug]);
 
   const total = test?.questions?.length || 0;
 
@@ -102,7 +107,7 @@ export default function MockTestRunnerPage({ params }) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="col-span-2">
             <h1 className="text-2xl font-bold mb-2">{test.name}</h1>
-            <p className="text-gray-600 mb-6">University: {university.toUpperCase()} • Duration: {test.durationMinutes} min • Questions: {total}</p>
+            <p className="text-gray-600 mb-6">Category: {targetLabel} • Duration: {test.durationMinutes} min • Questions: {total}</p>
 
             {!started && !isFinished && (
               <div className="bg-white p-6 rounded-lg shadow mb-6">

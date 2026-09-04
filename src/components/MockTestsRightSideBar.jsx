@@ -2,8 +2,11 @@
 
 import React, { useMemo, useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Building2, Landmark, GraduationCap } from 'lucide-react';
-import { getUniversities as getStaticUniversities } from '../data/categories/mockTestCategories';
+import { Building2, Landmark, GraduationCap, BookOpen } from 'lucide-react';
+import {
+  getMockTestCategories as getStaticMockTestCategories,
+  getUniversities as getStaticUniversities
+} from '../data/categories/mockTestCategories';
 
 const STATIC_MOCK_SECTIONS = [
   {
@@ -114,6 +117,7 @@ const STATIC_MOCK_SECTIONS = [
 ];
 
 const MockTestsRightSideBar = () => {
+  const [categories, setCategories] = useState(() => getStaticMockTestCategories());
   const [universities, setUniversities] = useState(() => getStaticUniversities());
 
   useEffect(() => {
@@ -122,8 +126,13 @@ const MockTestsRightSideBar = () => {
       try {
         const res = await fetch('/api/categories/structure?type=mock-tests');
         const json = await res.json();
-        if (!cancelled && json.success && Array.isArray(json.data?.universities) && json.data.universities.length) {
-          setUniversities(json.data.universities);
+        if (!cancelled && json.success) {
+          if (Array.isArray(json.data?.categories) && json.data.categories.length) {
+            setCategories(json.data.categories);
+          }
+          if (Array.isArray(json.data?.universities) && json.data.universities.length) {
+            setUniversities(json.data.universities);
+          }
         }
       } catch {
         /* keep static fallback */
@@ -135,20 +144,43 @@ const MockTestsRightSideBar = () => {
   }, []);
 
   const mockTestCategories = useMemo(() => {
-    const uniRoles = universities.map((u) => ({
+    const nonUniversityCategoryValues = new Set(
+      categories
+        .filter((category) => category.value && category.value !== 'universities')
+        .map((category) => category.value)
+    );
+    const uniRoles = universities
+      .filter((u) => !nonUniversityCategoryValues.has(u.slug))
+      .map((u) => ({
       label: u.label,
       full: u.full,
       link: `/mock-tests/universities/${u.slug}`,
     }));
+    const configuredSections = categories
+      .filter((category) => category.value && category.value !== 'universities')
+      .map((category) => ({
+        title: category.label,
+        icon: BookOpen,
+        departments: [{
+          label: 'Mock Tests',
+          roles: [{
+            label: `${category.label} Mock Tests`,
+            link: `/mock-tests/${category.value}`,
+          }],
+        }],
+      }));
+    const universitiesCategoryLabel = categories.find((category) => category.value === 'universities')?.label || 'Universities';
+
     return [
       {
-        title: 'Universities',
+        title: universitiesCategoryLabel,
         icon: GraduationCap,
         departments: [{ label: 'Top Universities', roles: uniRoles }],
       },
+      ...configuredSections,
       ...STATIC_MOCK_SECTIONS,
     ];
-  }, [universities]);
+  }, [categories, universities]);
 
   return (
     <div className="col-span-1 p-5 border-l bg-white rounded-xl shadow-xl space-y-4">

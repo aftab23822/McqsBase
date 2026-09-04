@@ -2,7 +2,41 @@ import connectToDatabase from '../../../../../lib/mongodb';
 import MockTest from '../../../../../models/mockTest';
 import { sanitizeSubject, sanitizeString } from '../../../../../lib/utils/security.js';
 
-export async function GET(_request, { params }) {
+function buildTargetQuery(target, slug, category) {
+  const query = { universitySlug: target, slug };
+  if (category && category !== 'universities') {
+    query.category = category;
+  } else {
+    query.$or = [{ category: 'universities' }, { category: { $exists: false } }];
+  }
+  return query;
+}
+
+function normalizeOptions(options) {
+  if (Array.isArray(options)) {
+    return options.slice(0, 10).map(opt => sanitizeString(opt || '', 500)).filter(Boolean);
+  }
+  if (options && typeof options === 'object') {
+    return Object.keys(options)
+      .sort()
+      .slice(0, 10)
+      .map(key => sanitizeString(options[key] || '', 500))
+      .filter(Boolean);
+  }
+  return [];
+}
+
+function normalizeAnswer(question, options) {
+  const rawAnswer = sanitizeString(question.answer || question.correct_option || '', 500);
+  const letter = rawAnswer.trim().toUpperCase();
+  if (/^[A-Z]$/.test(letter)) {
+    const index = letter.charCodeAt(0) - 65;
+    return options[index] || rawAnswer;
+  }
+  return rawAnswer;
+}
+
+export async function GET(request, { params }) {
   try {
     await connectToDatabase();
     
@@ -10,13 +44,15 @@ export async function GET(_request, { params }) {
     const resolvedParams = await params;
     
     // Sanitize and validate parameters
-    const university = sanitizeSubject(resolvedParams.university);
+    const target = sanitizeSubject(resolvedParams.university);
     const slug = sanitizeString(resolvedParams.slug || '', 200);
+    const { searchParams } = new URL(request.url);
+    const category = sanitizeSubject(searchParams.get('category'));
     
-    if (!university || !slug) {
+    if (!target || !slug) {
       return Response.json({ success: false, message: 'Invalid parameters' }, { status: 400 });
     }
-    const test = await MockTest.findOne({ universitySlug: university, slug });
+    const test = await MockTest.findOne(buildTargetQuery(target, slug, category));
     if (!test) {
       return Response.json({ success: false, message: 'Not found' }, { status: 404 });
     }
@@ -35,10 +71,12 @@ export async function PUT(request, { params }) {
     const resolvedParams = await params;
     
     // Sanitize and validate parameters
-    const university = sanitizeSubject(resolvedParams.university);
+    const target = sanitizeSubject(resolvedParams.university);
     const slug = sanitizeString(resolvedParams.slug || '', 200);
+    const { searchParams } = new URL(request.url);
+    const category = sanitizeSubject(searchParams.get('category'));
     
-    if (!university || !slug) {
+    if (!target || !slug) {
       return Response.json({ success: false, message: 'Invalid parameters' }, { status: 400 });
     }
     
@@ -58,12 +96,15 @@ export async function PUT(request, { params }) {
     }
     if (Array.isArray(questions) && questions.length > 0 && questions.length <= 1000) {
       // Sanitize questions array
-      const sanitizedQuestions = questions.slice(0, 1000).map(q => ({
-        question: sanitizeString(q.question || '', 2000),
-        options: Array.isArray(q.options) ? q.options.slice(0, 10).map(opt => sanitizeString(opt || '', 500)) : [],
-        answer: sanitizeString(q.answer || '', 500),
-        explanation: sanitizeString(q.explanation || '', 2000)
-      })).filter(q => q.question && q.options.length > 0 && q.answer);
+      const sanitizedQuestions = questions.slice(0, 1000).map(q => {
+        const options = normalizeOptions(q.options);
+        return {
+          question: sanitizeString(q.question || '', 2000),
+          options,
+          answer: normalizeAnswer(q, options),
+          explanation: sanitizeString(q.explanation || '', 2000)
+        };
+      }).filter(q => q.question && q.options.length > 0 && q.answer);
       if (sanitizedQuestions.length > 0) {
         update.questions = sanitizedQuestions;
       }
@@ -74,7 +115,7 @@ export async function PUT(request, { params }) {
     update.lastUpdatedAt = new Date();
 
     const updated = await MockTest.findOneAndUpdate(
-      { universitySlug: university, slug },
+      buildTargetQuery(target, slug, category),
       { $set: update },
       { new: true }
     );
@@ -88,7 +129,7 @@ export async function PUT(request, { params }) {
   }
 }
 
-export async function DELETE(_request, { params }) {
+export async function DELETE(request, { params }) {
   try {
     await connectToDatabase();
     
@@ -96,13 +137,15 @@ export async function DELETE(_request, { params }) {
     const resolvedParams = await params;
     
     // Sanitize and validate parameters
-    const university = sanitizeSubject(resolvedParams.university);
+    const target = sanitizeSubject(resolvedParams.university);
     const slug = sanitizeString(resolvedParams.slug || '', 200);
+    const { searchParams } = new URL(request.url);
+    const category = sanitizeSubject(searchParams.get('category'));
     
-    if (!university || !slug) {
+    if (!target || !slug) {
       return Response.json({ success: false, message: 'Invalid parameters' }, { status: 400 });
     }
-    const res = await MockTest.deleteOne({ universitySlug: university, slug });
+    const res = await MockTest.deleteOne(buildTargetQuery(target, slug, category));
     if (res.deletedCount === 0) {
       return Response.json({ success: false, message: 'Not found' }, { status: 404 });
     }

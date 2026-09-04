@@ -9,7 +9,13 @@ import useRobotsNoindex from '@/hooks/useRobotsNoindex'
 
 export default function UniversityMockTestsPage({ params }) {
   // In Next.js 15+, params is a Promise in client components - use React.use()
-  const { university } = use(params);
+  const resolvedParams = use(params);
+  const category = resolvedParams.category || 'universities';
+  const targetSlug = resolvedParams.target || resolvedParams.university || category;
+  const targetLabel = resolvedParams.label || targetSlug.toUpperCase();
+  const basePath = category === 'universities'
+    ? `/mock-tests/universities/${targetSlug}`
+    : `/mock-tests/${category}`;
   const [tests, setTests] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
@@ -20,7 +26,8 @@ export default function UniversityMockTestsPage({ params }) {
       try {
         setLoading(true);
         setError('');
-        const url = `/api/mock-tests/${university}`;
+        const categoryQuery = category !== 'universities' ? `?category=${category}` : '';
+        const url = `/api/mock-tests/${targetSlug}${categoryQuery}`;
         const res = await fetch(url, { 
           headers: {
             'Content-Type': 'application/json',
@@ -43,7 +50,7 @@ export default function UniversityMockTestsPage({ params }) {
     }
     
     getTests();
-  }, [university]);
+  }, [category, targetSlug]);
 
   return (
     <>
@@ -51,7 +58,7 @@ export default function UniversityMockTestsPage({ params }) {
       <div className="max-w-screen-xl mx-auto px-4 py-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="col-span-2">
-            <h1 className="text-2xl font-bold mb-6">Mock Tests for {university.toUpperCase()}</h1>
+            <h1 className="text-2xl font-bold mb-6">Mock Tests for {targetLabel}</h1>
             
             {loading && (
               <div className="text-center py-8">
@@ -78,7 +85,7 @@ export default function UniversityMockTestsPage({ params }) {
                       <div className="flex-1 min-w-0">
                         <h3 className="font-semibold text-gray-900 break-words whitespace-normal leading-relaxed" title={t.name}>{t.name}</h3>
                         <p className="text-sm text-indigo-600 mt-1 leading-relaxed">
-                          SBBU SBA
+                          {targetLabel}
                           {idx < 2 && (
                             <span className="ml-2 align-middle bg-indigo-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">NEW</span>
                           )}
@@ -92,7 +99,7 @@ export default function UniversityMockTestsPage({ params }) {
                     <div className="text-xs text-gray-500 mt-3 leading-relaxed">Updated: {new Date(t.lastUpdatedAt || t.updatedAt).toLocaleDateString()}</div>
                     <div className="mt-auto pt-5">
                       <Link
-                        href={`/mock-tests/universities/${university}/${t.slug}`}
+                        href={`${basePath}/${t.slug}`}
                         prefetch
                         className="inline-flex items-center px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition-colors"
                       >

@@ -10,18 +10,43 @@ function slugify(input) {
     .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
 
+function normalizeOptions(options) {
+  if (Array.isArray(options)) {
+    return options.slice(0, 10).map(opt => sanitizeString(opt || '', 500)).filter(Boolean);
+  }
+  if (options && typeof options === 'object') {
+    return Object.keys(options)
+      .sort()
+      .slice(0, 10)
+      .map(key => sanitizeString(options[key] || '', 500))
+      .filter(Boolean);
+  }
+  return [];
+}
+
+function normalizeAnswer(question, options) {
+  const rawAnswer = sanitizeString(question.answer || question.correct_option || '', 500);
+  const letter = rawAnswer.trim().toUpperCase();
+  if (/^[A-Z]$/.test(letter)) {
+    const index = letter.charCodeAt(0) - 65;
+    return options[index] || rawAnswer;
+  }
+  return rawAnswer;
+}
+
 export async function POST(request) {
   try {
     await connectToDatabase();
     const body = await request.json();
-    let { universitySlug, mockTestName, durationMinutes = 30, questions = [] } = body;
+    let { category = 'universities', universitySlug, targetSlug, mockTestName, durationMinutes = 30, questions = [] } = body;
 
     // Sanitize and validate inputs
-    universitySlug = sanitizeSubject(universitySlug);
+    category = sanitizeSubject(category) || 'universities';
+    universitySlug = sanitizeSubject(targetSlug || universitySlug || (category !== 'universities' ? category : ''));
     mockTestName = sanitizeString(mockTestName || '', 200);
     
     if (!universitySlug || !mockTestName || !Array.isArray(questions) || questions.length === 0) {
-      return Response.json({ success: false, message: 'universitySlug, mockTestName and questions are required' }, { status: 400 });
+      return Response.json({ success: false, message: 'category target, mockTestName and questions are required' }, { status: 400 });
     }
 
     // Validate durationMinutes
@@ -38,12 +63,15 @@ export async function POST(request) {
     const slug = slugify(mockTestName);
 
     // Sanitize questions before saving
-    const sanitizedQuestions = questions.slice(0, 1000).map(q => ({
-      question: sanitizeString(q.question || '', 2000),
-      options: Array.isArray(q.options) ? q.options.slice(0, 10).map(opt => sanitizeString(opt || '', 500)) : [],
-      answer: sanitizeString(q.answer || '', 500),
-      explanation: sanitizeString(q.explanation || '', 2000)
-    })).filter(q => q.question && q.options.length > 0 && q.answer);
+    const sanitizedQuestions = questions.slice(0, 1000).map(q => {
+      const options = normalizeOptions(q.options);
+      return {
+        question: sanitizeString(q.question || '', 2000),
+        options,
+        answer: normalizeAnswer(q, options),
+        explanation: sanitizeString(q.explanation || '', 2000)
+      };
+    }).filter(q => q.question && q.options.length > 0 && q.answer);
 
     if (sanitizedQuestions.length === 0) {
       return Response.json({ success: false, message: 'No valid questions after sanitization' }, { status: 400 });
@@ -55,6 +83,7 @@ export async function POST(request) {
         name: mockTestName,
         slug,
         universitySlug,
+        category,
         durationMinutes: sanitizedDuration,
         questions: sanitizedQuestions,
         lastUpdatedAt: new Date()

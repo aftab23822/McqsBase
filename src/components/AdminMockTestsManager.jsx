@@ -1,16 +1,21 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
-import { getUniversities as getStaticUniversities } from '../data/categories/mockTestCategories';
+import {
+  getMockTestCategories as getStaticMockTestCategories,
+  getUniversities as getStaticUniversities
+} from '../data/categories/mockTestCategories';
 
 const AdminMockTestsManager = () => {
-  const [university, setUniversity] = useState('');
+  const [category, setCategory] = useState('');
+  const [targetSlug, setTargetSlug] = useState('');
   const [tests, setTests] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [editing, setEditing] = useState(null);
   const [editForm, setEditForm] = useState({ name: '', durationMinutes: 30 });
 
+  const [categories, setCategories] = useState(() => getStaticMockTestCategories());
   const [universities, setUniversities] = useState(() => getStaticUniversities());
 
   useEffect(() => {
@@ -18,8 +23,13 @@ const AdminMockTestsManager = () => {
     fetch('/api/categories/structure?type=mock-tests')
       .then((r) => r.json())
       .then((j) => {
-        if (!cancelled && j?.success && Array.isArray(j.data?.universities) && j.data.universities.length) {
-          setUniversities(j.data.universities);
+        if (!cancelled && j?.success) {
+          if (Array.isArray(j.data?.categories) && j.data.categories.length) {
+            setCategories(j.data.categories);
+          }
+          if (Array.isArray(j.data?.universities) && j.data.universities.length) {
+            setUniversities(j.data.universities);
+          }
         }
       })
       .catch(() => {});
@@ -29,11 +39,13 @@ const AdminMockTestsManager = () => {
   }, []);
 
   const fetchTests = async () => {
-    if (!university) return;
+    const resolvedTarget = category === 'universities' ? targetSlug : category;
+    if (!category || !resolvedTarget) return;
     try {
       setLoading(true);
       setError('');
-      const res = await fetch(`/api/mock-tests/${university}`);
+      const categoryQuery = category !== 'universities' ? `?category=${category}` : '';
+      const res = await fetch(`/api/mock-tests/${resolvedTarget}${categoryQuery}`);
       const json = await res.json();
       if (!json.success) throw new Error(json.message || 'Failed');
       setTests(json.data || []);
@@ -48,7 +60,7 @@ const AdminMockTestsManager = () => {
   useEffect(() => {
     fetchTests();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [university]);
+  }, [category, targetSlug]);
 
   const onEdit = (t) => {
     setEditing(t.slug);
@@ -63,7 +75,9 @@ const AdminMockTestsManager = () => {
   const onSave = async () => {
     try {
       const token = localStorage.getItem('adminToken');
-      const res = await fetch(`/api/mock-tests/${university}/${editing}`, {
+      const resolvedTarget = category === 'universities' ? targetSlug : category;
+      const categoryQuery = category !== 'universities' ? `?category=${category}` : '';
+      const res = await fetch(`/api/mock-tests/${resolvedTarget}/${editing}${categoryQuery}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -85,7 +99,9 @@ const AdminMockTestsManager = () => {
     if (!confirm('Delete this mock test?')) return;
     try {
       const token = localStorage.getItem('adminToken');
-      const res = await fetch(`/api/mock-tests/${university}/${slug}`, {
+      const resolvedTarget = category === 'universities' ? targetSlug : category;
+      const categoryQuery = category !== 'universities' ? `?category=${category}` : '';
+      const res = await fetch(`/api/mock-tests/${resolvedTarget}/${slug}${categoryQuery}`, {
         method: 'DELETE',
         headers: {
           'Authorization': token ? `Bearer ${token}` : undefined,
@@ -104,15 +120,37 @@ const AdminMockTestsManager = () => {
       <h2 className="text-xl font-bold">Manage Mock Tests</h2>
       <div className="flex items-center gap-3">
         <select
-          value={university}
-          onChange={(e) => setUniversity(e.target.value)}
+          value={category}
+          onChange={(e) => {
+            const value = e.target.value;
+            setCategory(value);
+            setTargetSlug('');
+            setTests([]);
+          }}
           className="px-3 py-2 border rounded-lg"
         >
-          <option value="">Select University</option>
-          {universities.map(u => (
-            <option key={u.slug} value={u.slug}>{u.label}</option>
+          <option value="">Select Category</option>
+          {categories.map(c => (
+            <option key={c.value} value={c.value}>{c.label}</option>
           ))}
         </select>
+        {category === 'universities' && (
+          <select
+            value={targetSlug}
+            onChange={(e) => setTargetSlug(e.target.value)}
+            className="px-3 py-2 border rounded-lg"
+          >
+            <option value="">Select University</option>
+            {universities.map(u => (
+              <option key={u.slug} value={u.slug}>{u.label}</option>
+            ))}
+          </select>
+        )}
+        {category && category !== 'universities' && (
+          <span className="px-3 py-2 text-sm text-gray-700 bg-gray-50 border rounded-lg">
+            {categories.find(c => c.value === category)?.label || category}
+          </span>
+        )}
         <button onClick={fetchTests} className="px-3 py-2 border rounded-lg bg-white hover:bg-gray-50">Refresh</button>
       </div>
 

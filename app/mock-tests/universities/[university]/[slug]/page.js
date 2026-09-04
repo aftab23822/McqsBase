@@ -17,7 +17,11 @@ function humanizeSlug(value = '') {
 
 async function getMockTest(university, slug) {
   await connectToDatabase();
-  return MockTest.findOne({ universitySlug: university, slug }).lean();
+  return MockTest.findOne({
+    universitySlug: university,
+    slug,
+    $or: [{ category: 'universities' }, { category: { $exists: false } }]
+  }).lean();
 }
 
 export async function generateMetadata({ params }) {
@@ -67,5 +71,5 @@ export default async function Page({ params }) {
     notFound();
   }
 
-  return <MockTestRunnerPage params={Promise.resolve({ university, slug })} />;
+  return <MockTestRunnerPage params={Promise.resolve({ category: 'universities', target: university, university, slug })} />;
 }

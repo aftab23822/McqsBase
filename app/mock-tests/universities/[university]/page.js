@@ -17,7 +17,10 @@ function humanizeSlug(value = '') {
 
 async function getTestCount(university) {
   await connectToDatabase();
-  return MockTest.countDocuments({ universitySlug: university });
+  return MockTest.countDocuments({
+    universitySlug: university,
+    $or: [{ category: 'universities' }, { category: { $exists: false } }]
+  });
 }
 
 export async function generateMetadata({ params }) {
@@ -56,5 +59,5 @@ export default async function Page({ params }) {
     notFound();
   }
 
-  return <UniversityMockTestsPage params={Promise.resolve({ university })} />;
+  return <UniversityMockTestsPage params={Promise.resolve({ category: 'universities', target: university, university })} />;
 }

@@ -147,7 +147,7 @@ const AdminLogin = () => {
       uploadData.category = baseCategory;
       uploadData.subcategory = selectedCommission;
     } else if (uploadData.type === 'mock-tests') {
-      if (!uploadData.file || !uploadData.category || !uploadData.subcategory) {
+      if (!uploadData.file || !uploadData.category || (uploadData.category === 'universities' && !uploadData.subcategory)) {
         setError('Please fill in all required fields');
         setIsLoading(false);
         return;
@@ -220,6 +220,10 @@ const AdminLogin = () => {
       let skipped = 0;
 
       if (uploadData.type === 'mock-tests') {
+        const mockTargetSlug = uploadData.category === 'universities'
+          ? uploadData.subcategory
+          : uploadData.category;
+
         response = await apiFetch(`/api/mock-tests/batch`, {
           method: 'POST',
           headers: {
@@ -227,15 +231,11 @@ const AdminLogin = () => {
             'Authorization': `Bearer ${token}`,
           },
           body: JSON.stringify({
-            universitySlug: uploadData.subcategory,
+            category: uploadData.category,
+            universitySlug: mockTargetSlug,
             mockTestName: uploadData.mockTestName,
             durationMinutes: Number(uploadData.durationMinutes) || 30,
-            questions: jsonData.map(q => ({
-              question: q.question,
-              options: q.options,
-              answer: q.correct_option,
-              explanation: q.explanation || ''
-            }))
+            questions: jsonData
           }),
         });
 
@@ -420,12 +420,22 @@ const AdminLogin = () => {
   const categories = getAllCategories();
   const [mockTestsStructure, setMockTestsStructure] = useState(null);
 
+  const fetchMockTestsStructure = async (forceRefresh = false) => {
+    const cacheBuster = forceRefresh ? `&_=${Date.now()}` : '';
+    const response = await fetch(`/api/categories/structure?type=mock-tests${cacheBuster}`);
+    const data = await response.json();
+    if (data?.success) {
+      setMockTestsStructure(data.data);
+      return data.data;
+    }
+    return null;
+  };
+
   useEffect(() => {
     let cancelled = false;
-    fetch('/api/categories/structure?type=mock-tests')
-      .then((r) => r.json())
-      .then((j) => {
-        if (!cancelled && j?.success) setMockTestsStructure(j.data);
+    fetchMockTestsStructure()
+      .then((data) => {
+        if (!cancelled && data) setMockTestsStructure(data);
       })
       .catch(() => {});
     return () => {
@@ -1951,7 +1961,11 @@ const AdminLogin = () => {
                       <select
                         id="category"
                         value={uploadData.category}
-                        onChange={(e) => setUploadData(prev => ({ ...prev, category: e.target.value }))}
+                        onChange={(e) => setUploadData(prev => ({
+                          ...prev,
+                          category: e.target.value,
+                          subcategory: e.target.value === 'universities' ? prev.subcategory : ''
+                        }))}
                         required
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
                       >
@@ -2165,6 +2179,11 @@ const AdminLogin = () => {
             {/* Sync panel moved to its own section (Sync Categories) */}
             <CategoryTreeManager
               type={uploadData.type === 'simple-mcqs' ? 'mcqs' : uploadData.type}
+              onStructureSaved={(savedStructure, savedType) => {
+                if (savedType === 'mock-tests' && savedStructure) {
+                  setMockTestsStructure(savedStructure);
+                }
+              }}
             />
           </div>
         ) : showBlogManager ? (

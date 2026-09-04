@@ -11,7 +11,7 @@ const mockTestSchema = new mongoose.Schema({
   name: { type: String, required: true },
   slug: { type: String, required: true, index: true },
   universitySlug: { type: String, required: true, index: true },
-  category: { type: String, default: 'universities' },
+  category: { type: String, default: 'universities', index: true },
   durationMinutes: { type: Number, default: 30 },
   questions: [mockTestQuestionSchema],
   lastUpdatedAt: { type: Date, default: Date.now }

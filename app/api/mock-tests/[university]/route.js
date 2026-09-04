@@ -2,7 +2,7 @@ import connectToDatabase from '../../../../lib/mongodb';
 import MockTest from '../../../../models/mockTest';
 import { sanitizeSubject } from '../../../../lib/utils/security.js';
 
-export async function GET(_request, { params }) {
+export async function GET(request, { params }) {
   try {
     await connectToDatabase();
     
@@ -10,18 +10,28 @@ export async function GET(_request, { params }) {
     const resolvedParams = await params;
     
     // Sanitize and validate university parameter
-    const university = sanitizeSubject(resolvedParams.university);
-    if (!university) {
-      return Response.json({ success: false, message: 'Invalid university parameter' }, { status: 400 });
+    const target = sanitizeSubject(resolvedParams.university);
+    const { searchParams } = new URL(request.url);
+    const category = sanitizeSubject(searchParams.get('category'));
+    if (!target) {
+      return Response.json({ success: false, message: 'Invalid target parameter' }, { status: 400 });
     }
+    const matchStage = category && category !== 'universities'
+      ? { category, universitySlug: target }
+      : {
+          universitySlug: target,
+          $or: [{ category: 'universities' }, { category: { $exists: false } }]
+        };
+
     const tests = await MockTest.aggregate([
-      { $match: { universitySlug: university } },
+      { $match: matchStage },
       { $sort: { updatedAt: -1 } },
       { $project: {
           _id: 1,
           name: 1,
           slug: 1,
           universitySlug: 1,
+          category: 1,
           durationMinutes: 1,
           updatedAt: 1,
           lastUpdatedAt: 1,

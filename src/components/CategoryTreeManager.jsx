@@ -52,7 +52,7 @@ const iconMap = {
  * - Reordering items (via drag and drop or up/down buttons)
  */
 
-const CategoryTreeManager = ({ type }) => {
+const CategoryTreeManager = ({ type, onStructureSaved }) => {
   const [structure, setStructure] = useState(null);
   const [draftStructure, setDraftStructure] = useState(null); // Draft changes before saving
   const [loading, setLoading] = useState(false);
@@ -63,6 +63,10 @@ const CategoryTreeManager = ({ type }) => {
   const [newItemData, setNewItemData] = useState({});
   const [hasChanges, setHasChanges] = useState(false);
   const [message, setMessage] = useState(null); // { type: 'success' | 'error', text: string }
+
+  const normalizeSlug = (value) => (
+    generateSlug(value || '')
+  );
 
   // Fetch category structure
   useEffect(() => {
@@ -88,12 +92,14 @@ const CategoryTreeManager = ({ type }) => {
         setShowAddForm(null);
         setNewItemData({});
         setEditingItem(null);
+        return newStructure;
       }
     } catch (error) {
       console.error('Error fetching structure:', error);
     } finally {
       setLoading(false);
     }
+    return null;
   };
 
   const toggleExpand = (id) => {
@@ -134,15 +140,21 @@ const CategoryTreeManager = ({ type }) => {
       if (type === 'mcqs') {
         if (!newDraft.categories) newDraft.categories = [];
         newDraft.categories.push({
-          value: newItemData.value?.toLowerCase().replace(/\s+/g, '-') || '',
+          value: normalizeSlug(newItemData.value),
           label: newItemData.label || ''
         });
-      } else {
+      } else if (level === 'category') {
+        if (!newDraft.categories) newDraft.categories = [];
+        newDraft.categories.push({
+          value: normalizeSlug(newItemData.value || newItemData.label),
+          label: newItemData.label || ''
+        });
+      } else if (level === 'university') {
         if (!newDraft.universities) newDraft.universities = [];
         newDraft.universities.push({
           label: newItemData.label || '',
           full: newItemData.full || newItemData.label || '',
-          slug: newItemData.slug?.toLowerCase().replace(/\s+/g, '-') || newItemData.label?.toLowerCase().replace(/\s+/g, '-') || ''
+          slug: normalizeSlug(newItemData.slug || newItemData.label)
         });
       }
     } else {
@@ -215,7 +227,8 @@ const CategoryTreeManager = ({ type }) => {
 
       if (response.ok) {
         // Reload the structure from the API to get the latest saved data (force refresh)
-        await fetchStructure(true);
+        const savedStructure = await fetchStructure(true);
+        onStructureSaved?.(savedStructure, type);
         // Show success message
         setMessage({ type: 'success', text: 'Changes saved successfully!' });
         // Auto-dismiss after 3 seconds
@@ -256,11 +269,9 @@ const CategoryTreeManager = ({ type }) => {
     if (type === 'mcqs' || type === 'mock-tests') {
       // Simple category structure
       if (level === 'category') {
-        if (type === 'mcqs') {
-          newDraft.categories = newDraft.categories?.filter((_, idx) => idx !== itemData.index) || [];
-        } else {
-          newDraft.universities = newDraft.universities?.filter((_, idx) => idx !== itemData.index) || [];
-        }
+        newDraft.categories = newDraft.categories?.filter((_, idx) => idx !== itemData.index) || [];
+      } else if (level === 'university' && type === 'mock-tests') {
+        newDraft.universities = newDraft.universities?.filter((_, idx) => idx !== itemData.index) || [];
       }
     } else {
       // Hierarchical structure (Past Papers/Interviews)
@@ -292,6 +303,12 @@ const CategoryTreeManager = ({ type }) => {
       setNewItemData({
         value: item.data.value || '',
         label: item.data.label || ''
+      });
+    } else if (item.type === 'university') {
+      setNewItemData({
+        slug: item.data.slug || '',
+        label: item.data.label || '',
+        full: item.data.full || ''
       });
     } else if (item.type === 'commission') {
       let iconName = 'Building2';
@@ -327,8 +344,8 @@ const CategoryTreeManager = ({ type }) => {
 
     if (type === 'mcqs' || type === 'mock-tests') {
       // Simple category structure
-      if (level === 'category') {
-        const items = type === 'mcqs' ? newDraft.categories : newDraft.universities;
+      if (level === 'category' || (type === 'mock-tests' && level === 'university')) {
+        const items = level === 'category' ? newDraft.categories : newDraft.universities;
         if (!items || items.length < 2) return;
         
         const newIndex = direction === 'up' ? itemIndex - 1 : itemIndex + 1;
@@ -337,7 +354,7 @@ const CategoryTreeManager = ({ type }) => {
         // Swap items
         [items[itemIndex], items[newIndex]] = [items[newIndex], items[itemIndex]];
         
-        if (type === 'mcqs') {
+        if (level === 'category') {
           newDraft.categories = items;
         } else {
           newDraft.universities = items;
@@ -394,18 +411,25 @@ const CategoryTreeManager = ({ type }) => {
         if (type === 'mcqs') {
           if (newDraft.categories && newDraft.categories[item.index] !== undefined) {
             newDraft.categories[item.index] = {
-              value: newItemData.value?.toLowerCase().replace(/\s+/g, '-') || '',
+              value: normalizeSlug(newItemData.value),
               label: newItemData.label || ''
             };
           }
         } else {
-          if (newDraft.universities && newDraft.universities[item.index] !== undefined) {
-            newDraft.universities[item.index] = {
-              label: newItemData.label || '',
-              full: newItemData.full || newItemData.label || '',
-              slug: newItemData.slug?.toLowerCase().replace(/\s+/g, '-') || newItemData.label?.toLowerCase().replace(/\s+/g, '-') || ''
+          if (newDraft.categories && newDraft.categories[item.index] !== undefined) {
+            newDraft.categories[item.index] = {
+              value: normalizeSlug(newItemData.value || newItemData.label),
+              label: newItemData.label || ''
             };
           }
+        }
+      } else if (level === 'university' && type === 'mock-tests') {
+        if (newDraft.universities && newDraft.universities[item.index] !== undefined) {
+          newDraft.universities[item.index] = {
+            label: newItemData.label || '',
+            full: newItemData.full || newItemData.label || '',
+            slug: normalizeSlug(newItemData.slug || newItemData.label)
+          };
         }
       }
     } else {
@@ -598,6 +622,232 @@ const CategoryTreeManager = ({ type }) => {
           <Plus className="w-4 h-4" />
           Add New Category
         </button>
+      </div>
+    );
+  };
+
+  const renderMockTestStructure = () => {
+    if (!displayStructure) return null;
+
+    const categories = displayStructure.categories || [];
+    const universities = displayStructure.universities || [];
+
+    const renderMockItem = (item, index, level, total) => {
+      const isEditing = editingItem?.type === level && editingItem.index === index;
+      const isCategory = level === 'category';
+      const isProtectedUniversitiesCategory = isCategory && item.value === 'universities';
+
+      return (
+        <div key={`${level}-${index}`}>
+          {isEditing ? (
+            <div className="p-4 bg-yellow-50 rounded border border-yellow-300">
+              <div className="space-y-3">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    {isCategory ? 'Category Value (slug)' : 'University Value (slug)'}
+                  </label>
+                  <input
+                    type="text"
+                    value={isCategory ? (newItemData.value || '') : (newItemData.slug || '')}
+                    onChange={(e) => setNewItemData(prev => (
+                      isCategory
+                        ? { ...prev, value: e.target.value }
+                        : { ...prev, slug: e.target.value }
+                    ))}
+                    placeholder={isCategory ? 'e.g., moavineen-e-hujjaj' : 'e.g., nust'}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                    disabled={isProtectedUniversitiesCategory}
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    {isCategory ? 'Category Label' : 'University Label'}
+                  </label>
+                  <input
+                    type="text"
+                    value={newItemData.label || ''}
+                    onChange={(e) => setNewItemData(prev => ({ ...prev, label: e.target.value }))}
+                    placeholder={isCategory ? 'e.g., Moavineen-e-Hujjaj' : 'e.g., NUST'}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                  />
+                </div>
+                {!isCategory && (
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                    <input
+                      type="text"
+                      value={newItemData.full || ''}
+                      onChange={(e) => setNewItemData(prev => ({ ...prev, full: e.target.value }))}
+                      placeholder="e.g., National University of Sciences and Technology"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                    />
+                  </div>
+                )}
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => handleSaveEdit(level, editingItem)}
+                    className="flex-1 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700"
+                  >
+                    Save
+                  </button>
+                  <button
+                    onClick={() => {
+                      setEditingItem(null);
+                      setNewItemData({});
+                    }}
+                    className="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className="flex items-center gap-2 p-2 bg-gray-50 rounded border">
+              <GripVertical className="w-4 h-4 text-gray-400" />
+              <div className="flex flex-col gap-1">
+                <button
+                  onClick={() => handleMoveItem('up', level, index)}
+                  disabled={index === 0}
+                  className="p-0.5 text-gray-400 hover:text-gray-600 disabled:opacity-30 disabled:cursor-not-allowed"
+                  title="Move up"
+                >
+                  <ArrowUp className="w-3 h-3" />
+                </button>
+                <button
+                  onClick={() => handleMoveItem('down', level, index)}
+                  disabled={index === total - 1}
+                  className="p-0.5 text-gray-400 hover:text-gray-600 disabled:opacity-30 disabled:cursor-not-allowed"
+                  title="Move down"
+                >
+                  <ArrowDown className="w-3 h-3" />
+                </button>
+              </div>
+              <span className="flex-1">
+                {item.label || item.value || item.slug}
+                <span className="ml-2 text-xs text-gray-500">{item.value || item.slug}</span>
+              </span>
+              <button
+                onClick={() => handleEdit({ type: level, index, data: item })}
+                className="p-1 text-blue-600 hover:bg-blue-50 rounded"
+              >
+                <Edit2 className="w-4 h-4" />
+              </button>
+              <button
+                onClick={() => handleDelete(level, { index })}
+                disabled={isProtectedUniversitiesCategory}
+                className="p-1 text-red-600 hover:bg-red-50 rounded disabled:opacity-30 disabled:cursor-not-allowed"
+                title={isProtectedUniversitiesCategory ? 'The default Universities category is required for existing mock-test URLs' : 'Delete'}
+              >
+                <Trash2 className="w-4 h-4" />
+              </button>
+            </div>
+          )}
+        </div>
+      );
+    };
+
+    const renderAddForm = (level) => {
+      const isCategory = level === 'category';
+
+      return showAddForm?.level === level ? (
+        <div className="p-4 bg-blue-50 rounded border border-blue-200">
+          <div className="space-y-3">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                {isCategory ? 'Category Value (slug)' : 'University Value (slug)'}
+              </label>
+              <input
+                type="text"
+                value={isCategory ? (newItemData.value || '') : (newItemData.slug || '')}
+                onChange={(e) => setNewItemData(prev => (
+                  isCategory
+                    ? { ...prev, value: e.target.value }
+                    : { ...prev, slug: e.target.value }
+                ))}
+                placeholder={isCategory ? 'e.g., moavineen-e-hujjaj' : 'e.g., new-university'}
+                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                {isCategory ? 'Category Label' : 'University Label'}
+              </label>
+              <input
+                type="text"
+                value={newItemData.label || ''}
+                onChange={(e) => setNewItemData(prev => ({ ...prev, label: e.target.value }))}
+                placeholder={isCategory ? 'e.g., Moavineen-e-Hujjaj' : 'e.g., New University'}
+                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+              />
+            </div>
+            {!isCategory && (
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                <input
+                  type="text"
+                  value={newItemData.full || ''}
+                  onChange={(e) => setNewItemData(prev => ({ ...prev, full: e.target.value }))}
+                  placeholder="e.g., New University Full Name"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                />
+              </div>
+            )}
+            <div className="flex gap-2">
+              <button
+                onClick={() => handleAddToDraft(level)}
+                className="flex-1 px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700"
+              >
+                Add to Draft
+              </button>
+              <button
+                onClick={() => {
+                  setShowAddForm(null);
+                  setNewItemData({});
+                }}
+                className="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      ) : null;
+    };
+
+    return (
+      <div className="space-y-8">
+        <div className="space-y-2">
+          <div>
+            <h4 className="font-semibold text-gray-900">Top-Level Mock Test Categories</h4>
+            <p className="text-sm text-gray-600">These appear beside Universities on the Mock Tests page.</p>
+          </div>
+          {categories.map((category, index) => renderMockItem(category, index, 'category', categories.length))}
+          {renderAddForm('category')}
+          <button
+            onClick={() => setShowAddForm({ level: 'category' })}
+            className="w-full flex items-center gap-2 px-4 py-2 text-indigo-600 hover:bg-indigo-50 rounded border border-dashed border-indigo-300"
+          >
+            <Plus className="w-4 h-4" />
+            Add New Category
+          </button>
+        </div>
+
+        <div className="space-y-2">
+          <div>
+            <h4 className="font-semibold text-gray-900">Universities</h4>
+            <p className="text-sm text-gray-600">These appear inside the Universities category.</p>
+          </div>
+          {universities.map((university, index) => renderMockItem(university, index, 'university', universities.length))}
+          {renderAddForm('university')}
+          <button
+            onClick={() => setShowAddForm({ level: 'university' })}
+            className="w-full flex items-center gap-2 px-4 py-2 text-indigo-600 hover:bg-indigo-50 rounded border border-dashed border-indigo-300"
+          >
+            <Plus className="w-4 h-4" />
+            Add New University
+          </button>
+        </div>
       </div>
     );
   };
@@ -1247,7 +1497,11 @@ const CategoryTreeManager = ({ type }) => {
       </div>
 
       <div className="bg-white rounded-lg border p-6">
-        {(type === 'mcqs' || type === 'mock-tests') ? renderMcqCategories() : renderHierarchicalStructure()}
+        {type === 'mcqs'
+          ? renderMcqCategories()
+          : type === 'mock-tests'
+            ? renderMockTestStructure()
+            : renderHierarchicalStructure()}
       </div>
     </div>
   );
