@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "hajj-2027-field-support-staff-past-paper-2026-mcqs": {
+    title: "Hajj 2027 Field Support Staff Past Paper 2026 MCQs with Answers",
+    excerpt:
+      "Practice 80 Hajj 2027 Field / Support Staff past paper MCQs from 2026 with answers and explanations for exam-focused revision.",
+    category: "Exam Guide",
+    date: "2026",
+    readTime: "48 min",
+    content: null,
+    body: readImportedBlogBody("hajj-2027-field-support-staff-past-paper-2026-mcqs")
+  },
   "100-everyday-science-mcqs-with-answers-general-knowledge-2026": {
     title: "100 Everyday Science MCQs with Answers",
     excerpt:

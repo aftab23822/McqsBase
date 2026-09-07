@@ -19,6 +19,16 @@ import {
 const Blog = ({ dynamicArticles = [] }) => {
   const legacyArticles = [
     {
+      title: "Hajj 2027 Field Support Staff Past Paper 2026 MCQs with Answers",
+      excerpt:
+        "Practice 80 Hajj 2027 Field / Support Staff past paper MCQs from 2026 with answers and explanations for exam-focused revision.",
+      category: "Exam Guide",
+      date: "2026",
+      readTime: "48 min",
+      image: "success",
+      slug: "hajj-2027-field-support-staff-past-paper-2026-mcqs"
+    },
+    {
       title: "100 Everyday Science MCQs with Answers",
       excerpt:
         "Practice 100 Everyday Science MCQs with answers covering biology, physics, chemistry, Earth science and space for fast general knowledge revision.",
