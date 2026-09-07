@@ -56,6 +56,7 @@ const BlogArticleDetail = ({ article }) => {
     pale: '#F7FAFC',
     amber: '#FFF8E1'
   };
+  const mcqLabel = /past paper/i.test(article.title) ? 'Past Paper MCQ' : 'MCQ Practice';
 
   const renderInlineText = (text = '') => {
     const parts = [];
@@ -93,6 +94,36 @@ const BlogArticleDetail = ({ article }) => {
     }
 
     return parts;
+  };
+
+  const isMcqTable = (block) => {
+    const headers = block.headers.map((header) => header.toLowerCase());
+    return (
+      headers.some((header) => header.includes('question') && header.includes('option')) &&
+      headers.some((header) => header.includes('answer'))
+    );
+  };
+
+  const splitQuestionAndOptions = (text = '') => {
+    const parts = text
+      .split(/<br\s*\/?>/i)
+      .map((part) => part.trim())
+      .filter(Boolean);
+    const optionsStart = parts.findIndex((part) => /^[A-E][.)]\s+/.test(part));
+
+    if (optionsStart === -1) {
+      return { question: text, options: [] };
+    }
+
+    return {
+      question: parts.slice(0, optionsStart).join(' '),
+      options: parts.slice(optionsStart)
+    };
+  };
+
+  const getAnswerKey = (answer = '') => {
+    const match = answer.trim().match(/^([A-E])[.)]/);
+    return match ? match[1] : '';
   };
 
   const renderDynamicBlock = (block, index) => {
@@ -173,6 +204,102 @@ const BlogArticleDetail = ({ article }) => {
             style={{ backgroundColor: wordTheme.lightGreen, borderColor: wordTheme.green, color: wordTheme.navy }}
           >
             {renderInlineText(block.headers[0])}
+          </div>
+        );
+      }
+
+      if (isMcqTable(block)) {
+        const explanationIndex = block.headers.findIndex((header) => header.toLowerCase().includes('explanation'));
+
+        return (
+          <div key={index} className="my-10 space-y-5">
+            {block.rows.map((row, rowIndex) => {
+              const number = row[0] || rowIndex + 1;
+              const { question, options } = splitQuestionAndOptions(row[1] || '');
+              const answer = row[2] || '';
+              const answerKey = getAnswerKey(answer);
+              const explanation = explanationIndex >= 0 ? row[explanationIndex] : '';
+
+              return (
+                <article
+                  key={rowIndex}
+                  className="overflow-hidden rounded-lg border bg-white shadow-sm"
+                  style={{ borderColor: '#d7e5ee' }}
+                >
+                  <div className="flex items-center justify-between gap-4 border-b px-5 py-3" style={{ backgroundColor: wordTheme.lightBlue, borderColor: '#d7e5ee' }}>
+                    <div className="flex items-center gap-3">
+                      <span className="flex h-9 min-w-9 items-center justify-center rounded-full text-sm font-bold text-white" style={{ backgroundColor: wordTheme.navy }}>
+                        Q{number}
+                      </span>
+                      <span className="text-sm font-semibold uppercase" style={{ color: wordTheme.green }}>
+                        {mcqLabel}
+                      </span>
+                    </div>
+                    {answerKey && (
+                      <span className="rounded-full px-3 py-1 text-sm font-bold" style={{ backgroundColor: wordTheme.lightGreen, color: wordTheme.green }}>
+                        Answer {answerKey}
+                      </span>
+                    )}
+                  </div>
+
+                  <div className="px-5 py-5">
+                    <p className="mb-5 text-lg font-semibold leading-relaxed" style={{ color: wordTheme.navy }}>
+                      {renderInlineText(question)}
+                    </p>
+
+                    {options.length > 0 && (
+                      <div className="grid gap-3">
+                        {options.map((option, optionIndex) => {
+                          const optionKey = option.match(/^([A-E])[.)]/)?.[1] || '';
+                          const isCorrect = answerKey && optionKey === answerKey;
+
+                          return (
+                            <div
+                              key={optionIndex}
+                              className="flex gap-3 rounded-md border px-4 py-3 text-base leading-relaxed"
+                              style={{
+                                backgroundColor: isCorrect ? wordTheme.lightGreen : wordTheme.pale,
+                                borderColor: isCorrect ? '#9dd7bd' : '#e7eef3',
+                                color: isCorrect ? wordTheme.green : wordTheme.gray,
+                                fontWeight: isCorrect ? 700 : 500
+                              }}
+                            >
+                              <span className="font-bold" style={{ color: isCorrect ? wordTheme.green : wordTheme.navy }}>
+                                {optionKey || String.fromCharCode(65 + optionIndex)}.
+                              </span>
+                              <span>{renderInlineText(option.replace(/^[A-E][.)]\s+/, ''))}</span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    )}
+
+                    {answer && (
+                      <div className="mt-5 flex items-start gap-3 rounded-md px-4 py-3" style={{ backgroundColor: wordTheme.amber, color: wordTheme.navy }}>
+                        <CheckCircle className="mt-1 h-5 w-5 flex-none" style={{ color: wordTheme.green }} />
+                        <div>
+                          <p className="text-sm font-bold uppercase" style={{ color: wordTheme.green }}>
+                            Correct Answer
+                          </p>
+                          <p className="mt-1 text-base font-semibold leading-relaxed">{renderInlineText(answer)}</p>
+                        </div>
+                      </div>
+                    )}
+
+                    {explanation && (
+                      <div className="mt-4 rounded-md border-l-4 px-4 py-3" style={{ backgroundColor: '#FFFFFF', borderColor: wordTheme.navy }}>
+                        <p className="text-sm font-bold uppercase" style={{ color: wordTheme.navy }}>
+                          Explanation
+                        </p>
+                        <p className="mt-1 text-base leading-relaxed" style={{ color: wordTheme.gray }}>
+                          {renderInlineText(explanation)}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                </article>
+              );
+            })}
           </div>
         );
       }
