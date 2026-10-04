@@ -60,7 +60,7 @@ const BlogArticleDetail = ({ article }) => {
 
   const renderInlineText = (text = '') => {
     const parts = [];
-    const pattern = /(\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]+)\)|<br\s*\/?>)/gi;
+    const pattern = /(\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]+)\)|<br\s*\/?>|\*\*([^*]+)\*\*)/gi;
     let lastIndex = 0;
     let match;
 
@@ -71,6 +71,8 @@ const BlogArticleDetail = ({ article }) => {
 
       if (match[0].toLowerCase().startsWith('<br')) {
         parts.push(<br key={`br-${match.index}`} />);
+      } else if (match[0].startsWith('**')) {
+        parts.push(<strong key={`strong-${match.index}`}>{match[4]}</strong>);
       } else {
         const href = match[3];
         const isExternal = href.startsWith('http');
@@ -122,7 +124,8 @@ const BlogArticleDetail = ({ article }) => {
   };
 
   const getAnswerKey = (answer = '') => {
-    const match = answer.trim().match(/^([A-E])[.)]/);
+    const cleanAnswer = answer.trim().replace(/^\*\*|\*\*$/g, '');
+    const match = cleanAnswer.match(/^([A-E])[.)]/);
     return match ? match[1] : '';
   };
 

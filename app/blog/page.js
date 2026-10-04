@@ -5,6 +5,7 @@ import { ReCaptchaProvider } from '../../src/components/recaptcha'
 import { generateSEOMetadata } from '../../src/components/SEO'
 import { listPublishedBlogs } from '../../lib/services/blogService'
 import { estimateReadTime } from '../../lib/utils/blogContent'
+import { blogArticles } from '../../src/data/blogArticles'
 
 export const dynamic = 'force-dynamic';
 
@@ -20,6 +21,15 @@ export async function generateMetadata() {
 export default async function BlogPage() {
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || 'your-recaptcha-site-key';
   let dynamicArticles = [];
+  const staticArticles = Object.entries(blogArticles).map(([slug, article]) => ({
+    title: article.title,
+    excerpt: article.excerpt,
+    category: article.category || 'Exam Guide',
+    date: article.date || '2026',
+    readTime: article.readTime || estimateReadTime(article.body || ''),
+    image: 'success',
+    slug
+  }));
 
   try {
     const blogs = await listPublishedBlogs(100);
@@ -34,7 +44,7 @@ export default async function BlogPage() {
   return (
     <ReCaptchaProvider siteKey={recaptchaSiteKey}>
       <Navbar />
-      <Blog dynamicArticles={dynamicArticles} />
+      <Blog dynamicArticles={dynamicArticles} staticArticles={staticArticles} />
       <Footer />
     </ReCaptchaProvider>
   )

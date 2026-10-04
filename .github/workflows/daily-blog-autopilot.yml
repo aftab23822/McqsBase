@@ -1,0 +1,86 @@
+name: Daily Blog Autopilot
+
+on:
+  schedule:
+    # 09:15 Asia/Karachi
+    - cron: '15 4 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Publish date override, for example 2026-10-04'
+        required: false
+        type: string
+      category:
+        description: 'Optional category override, for example English'
+        required: false
+        type: string
+      auto_merge:
+        description: 'Merge the generated PR automatically'
+        required: false
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  daily-blog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate daily static blog
+        env:
+          BLOG_DATE: ${{ inputs.date }}
+          BLOG_CATEGORY: ${{ inputs.category }}
+          MCQSBASE_SOURCE_URL: https://www.mcqsbase.com
+        run: npm run generate:daily-blog
+
+      - name: Build check
+        run: npm run build
+
+      - name: Create and merge pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          AUTO_MERGE: ${{ inputs.auto_merge }}
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No daily blog changes to publish."
+            exit 0
+          fi
+
+          DATE_VALUE="${{ inputs.date }}"
+          if [ -z "$DATE_VALUE" ]; then
+            DATE_VALUE="$(date -u +%F)"
+          fi
+
+          BRANCH="automation/daily-blog-${DATE_VALUE}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add public/blog src/data/importedBlogArticles.js
+          git commit -m "Add daily MCQ blog for ${DATE_VALUE}"
+          git push --set-upstream origin "$BRANCH"
+
+          PR_URL="$(gh pr create \
+            --base master \
+            --head "$BRANCH" \
+            --title "Daily MCQ blog - ${DATE_VALUE}" \
+            --body "Adds the static daily MCQ blog article, registers it for the blog index, and makes it available through the generated sitemap.")"
+
+          if [ "$AUTO_MERGE" != "false" ]; then
+            gh pr merge "$PR_URL" --squash --delete-branch
+          fi

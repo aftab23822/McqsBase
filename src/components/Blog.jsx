@@ -16,8 +16,8 @@ import {
   CheckCircle
 } from 'lucide-react';
 
-const Blog = ({ dynamicArticles = [] }) => {
-  const legacyArticles = [
+const Blog = ({ dynamicArticles = [], staticArticles = [] }) => {
+  const legacyArticles = staticArticles.length > 0 ? staticArticles : [
     {
       title: "Hajj 2027 Field Support Staff Past Paper 2026 MCQs with Answers",
       excerpt:

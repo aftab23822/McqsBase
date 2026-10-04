@@ -10,6 +10,7 @@
     "lint": "next lint",
     "export": "next export",
     "setup": "node scripts/setup.js",
+    "generate:daily-blog": "node scripts/generate-daily-blog.mjs",
     "create-admin": "node scripts/nextjs-create-admin.js",
     "test-db": "node scripts/nextjs-test-db.js"
   },

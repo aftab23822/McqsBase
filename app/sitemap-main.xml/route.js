@@ -8,6 +8,9 @@ const BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com'
 
 function lastmodForBlogArticle(article, fallbackDate) {
   const d = article?.date;
+  if (typeof d === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d)) {
+    return d;
+  }
   if (typeof d === 'string' && /^\d{4}$/.test(d)) {
     return `${d}-12-31`;
   }
