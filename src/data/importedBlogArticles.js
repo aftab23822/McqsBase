@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "100-english-mcqs-with-answers-2026-10-05": {
+    title: "100 English MCQs with Answers for Competitive Exams - October 5, 2026",
+    excerpt:
+      "Practice 100 English MCQs with bold answers for CSS, PMS, PPSC, FPSC, SPSC, NTS and screening tests. This daily static MCQsBase set supports fast SEO-friendly revision and exam preparation.",
+    category: "Subject Guide",
+    date: "2026-10-05",
+    readTime: "15 min",
+    content: null,
+    body: readImportedBlogBody("100-english-mcqs-with-answers-2026-10-05")
+  },
   "100-english-mcqs-with-answers-2026-10-04": {
     title: "100 English MCQs with Answers for Competitive Exams - October 4, 2026",
     excerpt:
