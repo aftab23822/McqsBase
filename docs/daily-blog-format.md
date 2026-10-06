@@ -4,8 +4,8 @@ Every autopublished MCQsBase blog should be a static Markdown article under `pub
 
 ## Article Standard
 
-- Title: `100 {Category} MCQs with Answers for {Exam Focus} - {Date}`
-- Slug: `100-{category-slug}-mcqs-with-answers-{yyyy-mm-dd}`
+- Title: SEO-friendly, usually `100 {Topic} MCQs with Answers - {Date}` or a stronger test-specific variant.
+- Slug: `{topic-slug}-{yyyy-mm-dd}`
 - Category: `Subject Guide`
 - Author voice: clear, exam-focused, and useful for Pakistan competitive exam candidates.
 - Description: include one short SEO-supporting paragraph near the top with the primary keyword, related exam names, and an internal link to McqsBase.
@@ -14,16 +14,21 @@ Every autopublished MCQsBase blog should be a static Markdown article under `pub
 - Source wording: use "past-paper-style", "high-frequency", or "aligned with repeated competitive-test patterns" unless a real source proves exact past-paper origin.
 - Internal links: include links to the category page, MCQs homepage, quiz page, past papers page, and blog archive where natural.
 - Static SEO: sitemap inclusion should happen through `blogArticles`, not through database-only blog storage.
+- AI-first generation: the daily generator must choose the topic, SEO framing, focus table, FAQs, and all 100 MCQs using AI. It must not depend on existing local MCQ data.
+- Secret handling: add `OPENAI_API_KEY` in GitHub Secrets, never in repo files.
+- Topic intelligence: the generator may use seed ideas, but the AI should choose a smart high-intent exam topic dynamically and avoid duplicating recent posts.
+- Test-specific coverage: include focused preparation pages for junior clerk, Pak Army, Pakistan Air Force, Pakistan Navy, MDCAT, ISSB, Sindh Rangers, Motorway Police, Sindh University, MUET, COMSATS, NAT, HAT, NTS repeated MCQs, current affairs, general knowledge, and similar exam-intent topics.
 
 ## Article Structure
 
 1. Short opening line.
-2. `## Why this {Category} MCQs set is useful`
-3. `## What this set covers`
-4. Five MCQ tables of 20 questions each.
-5. `## How to revise this set`
-6. `## Frequently Asked Questions`
-7. `## Final Takeaway`
+2. `## Why this {Topic} set is useful`
+3. `## Test focus topics`
+4. `## What this set covers`
+5. Five MCQ tables of 20 questions each.
+6. `## How to revise this set`
+7. `## Frequently Asked Questions`
+8. `## Final Takeaway`
 
 ## MCQ Table Shape
 

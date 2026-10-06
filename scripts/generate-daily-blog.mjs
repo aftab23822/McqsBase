@@ -5,56 +5,32 @@ const ROOT = process.cwd();
 const BLOG_ROOT = path.join(ROOT, 'public', 'blog');
 const REGISTRY_PATH = path.join(ROOT, 'src', 'data', 'importedBlogArticles.js');
 
-const categories = [
-  {
-    name: 'General Knowledge',
-    slug: 'general-knowledge',
-    sourceFile: 'generalKnowledgeMcqsData.json',
-    primaryKeyword: 'general knowledge MCQs with answers',
-    focus: 'PPSC, FPSC, SPSC, NTS and one-paper competitive exams'
-  },
-  {
-    name: 'English',
-    slug: 'english',
-    sourceFile: 'englishMcqsData.json',
-    primaryKeyword: 'English MCQs with answers',
-    focus: 'CSS, PMS, PPSC, FPSC, SPSC, NTS and screening tests'
-  },
-  {
-    name: 'Mathematics',
-    slug: 'maths',
-    sourceFile: 'mathsMcqsData.json',
-    primaryKeyword: 'mathematics MCQs with answers',
-    focus: 'quantitative ability, aptitude, NTS, PPSC and FPSC tests'
-  },
-  {
-    name: 'Everyday Science',
-    slug: 'everyday-science',
-    sourceFile: 'everydayScienceMcqsData.json',
-    primaryKeyword: 'everyday science MCQs with answers',
-    focus: 'general science, CSS, PMS, PPSC, FPSC and SPSC exams'
-  },
-  {
-    name: 'Pakistan Studies',
-    slug: 'pakistan-studies',
-    sourceFile: 'pakStudyMcqsData.json',
-    primaryKeyword: 'Pakistan Studies MCQs with answers',
-    focus: 'Pakistan affairs, CSS, PMS, PPSC, FPSC and SPSC tests'
-  },
-  {
-    name: 'Islamic Studies',
-    slug: 'islamic-studies',
-    sourceFile: 'islamicStudiesMcqsData.json',
-    primaryKeyword: 'Islamic Studies MCQs with answers',
-    focus: 'Islamiat, CSS, PMS, PPSC, FPSC, SPSC and NTS exams'
-  },
-  {
-    name: 'Computer',
-    slug: 'computer',
-    sourceFile: 'computerMcqsData.json',
-    primaryKeyword: 'computer MCQs with answers',
-    focus: 'computer literacy, IT, PPSC, FPSC, SPSC and NTS tests'
-  }
+const TOPIC_IDEAS = [
+  'mcqs for junior clerk test preparation',
+  'mcqs for Pak Army test',
+  'mcqs for Pakistan Air Force test',
+  'mcqs for Pakistan Navy test',
+  'mcqs for MDCAT',
+  'mcqs for ISSB',
+  'mcqs for Sindh Rangers',
+  'mcqs for Motorway Police',
+  'mcqs for entry test Sindh University Jamshoro',
+  'mcqs for MUET Mehran University',
+  'mcqs for COMSATS entry test',
+  'mcqs for NAT',
+  'mcqs for HAT',
+  'top repeated 100 MCQs in NTS test',
+  'top repeated current affairs MCQs',
+  'top repeated general knowledge MCQs',
+  'PPSC one paper MCQs',
+  'FPSC screening test MCQs',
+  'SPSC screening test MCQs',
+  'police constable test MCQs',
+  'airport security force test MCQs',
+  'banking test MCQs',
+  'teaching jobs test MCQs',
+  'university entry test MCQs',
+  'scholarship test MCQs'
 ];
 
 function getArg(name) {
@@ -72,13 +48,18 @@ function isoDate(input = '') {
   return date.toISOString().slice(0, 10);
 }
 
+function daySeed(date) {
+  return Math.floor(new Date(`${date}T00:00:00Z`).getTime() / 86400000);
+}
+
 function slugify(value = '') {
   return String(value)
     .toLowerCase()
     .replace(/['"]/g, '')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/-+/g, '-')
-    .replace(/^-+|-+$/g, '');
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 120);
 }
 
 function escapeCell(value = '') {
@@ -88,27 +69,38 @@ function escapeCell(value = '') {
     .trim();
 }
 
-function collectMcqs(value, output = []) {
-  if (Array.isArray(value)) {
-    value.forEach((item) => collectMcqs(item, output));
-    return output;
+function extractOutputText(payload) {
+  if (typeof payload.output_text === 'string') {
+    return payload.output_text;
   }
 
-  if (value && typeof value === 'object') {
-    if (typeof value.question === 'string' && Array.isArray(value.options)) {
-      output.push(value);
+  const chunks = [];
+  for (const item of payload.output || []) {
+    for (const content of item.content || []) {
+      if (typeof content.text === 'string') {
+        chunks.push(content.text);
+      }
     }
-    Object.values(value).forEach((item) => collectMcqs(item, output));
   }
 
-  return output;
+  return chunks.join('\n').trim();
+}
+
+function readExistingBlogHints(limit = 60) {
+  if (!existsSync(REGISTRY_PATH)) return [];
+
+  const source = readFileSync(REGISTRY_PATH, 'utf8');
+  const matches = [...source.matchAll(/"([^"]+)":\s*\{\s*title:\s*"([^"]+)"/g)];
+  return matches
+    .slice(0, limit)
+    .map((match) => ({ slug: match[1], title: match[2] }));
 }
 
 function normalizeMcq(raw) {
   const options = Array.isArray(raw.options)
     ? raw.options.map((option) => String(option).trim()).filter(Boolean)
     : [];
-  const answer = String(raw.correctAnswer || raw.answer || raw.correct_option || raw.correct || '').trim();
+  const answer = String(raw.correctAnswer || '').trim();
   let answerIndex = options.findIndex((option) => option.toLowerCase() === answer.toLowerCase());
 
   const letterMatch = answer.match(/^([A-E])[.)]?\s*(.*)$/i);
@@ -116,15 +108,14 @@ function normalizeMcq(raw) {
     answerIndex = letterMatch[1].toUpperCase().charCodeAt(0) - 65;
   }
 
-  if (!raw.question || options.length < 2 || answerIndex < 0 || answerIndex >= options.length) {
+  if (!raw.question || options.length !== 4 || answerIndex < 0 || answerIndex >= options.length) {
     return null;
   }
 
   return {
     question: String(raw.question).trim(),
     options,
-    answerIndex,
-    explanation: raw.explanation ? String(raw.explanation).trim() : ''
+    answerIndex
   };
 }
 
@@ -143,62 +134,192 @@ function uniqueMcqs(items) {
   return clean;
 }
 
-function loadStaticMcqs(category) {
-  const filePath = path.join(ROOT, 'src', 'data', 'mcqs', category.sourceFile);
-  if (!existsSync(filePath)) return [];
-  return collectMcqs(JSON.parse(readFileSync(filePath, 'utf8')));
-}
-
-async function loadLiveMcqs(category) {
-  const baseUrl = (process.env.MCQSBASE_SOURCE_URL || '').replace(/\/+$/, '');
-  if (!baseUrl || typeof fetch !== 'function') return [];
-
-  try {
-    const response = await fetch(`${baseUrl}/api/mcqs/${category.slug}?page=1&limit=100`);
-    if (!response.ok) return [];
-    const payload = await response.json();
-    return payload.results || [];
-  } catch {
-    return [];
-  }
-}
-
-function rotate(items, seed) {
-  if (items.length === 0) return items;
-  const start = seed % items.length;
-  return [...items.slice(start), ...items.slice(0, start)];
-}
-
-function daySeed(date) {
-  return Math.floor(new Date(`${date}T00:00:00Z`).getTime() / 86400000);
-}
-
-async function chooseCategory(date) {
-  const requested = getArg('category') || process.env.BLOG_CATEGORY || '';
-  const normalizedRequested = slugify(requested);
-  const ordered = normalizedRequested
-    ? [...categories.filter((category) => category.slug === normalizedRequested || slugify(category.name) === normalizedRequested), ...categories]
-    : rotate(categories, daySeed(date));
-
-  const tried = new Set();
-  for (const category of ordered) {
-    if (tried.has(category.slug)) continue;
-    tried.add(category.slug);
-
-    const mcqs = uniqueMcqs([...(await loadLiveMcqs(category)), ...loadStaticMcqs(category)]);
-    if (process.env.DEBUG_DAILY_BLOG === '1') {
-      console.log(`${category.name}: ${mcqs.length} usable MCQs`);
-    }
-    if (mcqs.length >= 100) {
-      return { category, mcqs };
-    }
+function validateDraft(draft) {
+  const mcqs = uniqueMcqs(draft?.mcqs || []);
+  if (mcqs.length !== 100) {
+    throw new Error(`AI draft must contain exactly 100 unique valid MCQs; received ${mcqs.length}.`);
   }
 
-  throw new Error('No configured category currently has 100 usable MCQs. Add more MCQs or set MCQSBASE_SOURCE_URL to a live site with enough questions.');
+  const topicName = String(draft.topicName || '').trim();
+  const primaryKeyword = String(draft.primaryKeyword || '').trim();
+  const title = String(draft.title || '').trim();
+  const excerpt = String(draft.excerpt || '').trim();
+  const intro = String(draft.intro || '').trim();
+  const description = String(draft.description || '').trim();
+  const focusRows = Array.isArray(draft.focusRows) ? draft.focusRows : [];
+  const revisionTips = Array.isArray(draft.revisionTips) ? draft.revisionTips : [];
+  const faqs = Array.isArray(draft.faqs) ? draft.faqs : [];
+
+  if (!topicName || !primaryKeyword || !title || !excerpt || !intro || !description) {
+    throw new Error('AI draft is missing required SEO article fields.');
+  }
+  if (focusRows.length < 5 || revisionTips.length < 4 || faqs.length < 4) {
+    throw new Error('AI draft is missing focus rows, revision tips, or FAQs.');
+  }
+
+  return {
+    ...draft,
+    topicName,
+    topicSlug: slugify(draft.topicSlug || topicName),
+    primaryKeyword,
+    title,
+    excerpt,
+    intro,
+    description,
+    focusRows,
+    revisionTips,
+    faqs,
+    mcqs
+  };
+}
+
+async function generateAiDraft(date) {
+  const apiKey = process.env.OPENAI_API_KEY;
+  if (!apiKey) {
+    throw new Error('OPENAI_API_KEY is required for AI-first daily blog generation. Add it as a GitHub Actions secret.');
+  }
+
+  const requestedTopic = getArg('topic') || getArg('category') || process.env.BLOG_TOPIC || process.env.BLOG_CATEGORY || '';
+  const model = process.env.OPENAI_MODEL || 'gpt-5-mini';
+  const seed = daySeed(date);
+  const existingBlogs = readExistingBlogHints();
+  const ideaWindow = [
+    ...TOPIC_IDEAS.slice(seed % TOPIC_IDEAS.length),
+    ...TOPIC_IDEAS.slice(0, seed % TOPIC_IDEAS.length)
+  ].slice(0, 12);
+
+  const prompt = [
+    'Create one complete static SEO blog package for McqsBase.com.',
+    `Publish date: ${date}.`,
+    requestedTopic
+      ? `User-requested topic: ${requestedTopic}. Use this topic unless it is unsafe or impossible.`
+      : 'Choose the smartest topic yourself for today from Pakistan exam-preparation search intent. Do not simply rotate English. Prefer test-specific and high-search-intent topics.',
+    `Topic ideas, not limits: ${ideaWindow.join('; ')}.`,
+    `Avoid duplicating these recent blog slugs/titles: ${JSON.stringify(existingBlogs)}`,
+    '',
+    'Strict content requirements:',
+    '- Generate every part using AI. Do not depend on existing local MCQ data.',
+    '- Topic should be specific enough to rank, such as a job test, forces test, university entry test, NTS/HAT/NAT, current affairs, or repeated GK intent.',
+    '- Title must be SEO-rich, natural, and not clickbait.',
+    '- Description must support SEO and mention the exact exam/test intent.',
+    '- Include test focus topics that match the selected test.',
+    '- Generate exactly 100 original, high-quality MCQs with four options each.',
+    '- Correct answer must be one of the options exactly.',
+    '- MCQs should be exam-style, high-frequency, and aligned with repeated/past-paper-style patterns.',
+    '- Do not claim questions are copied from a real paper or exact official past paper.',
+    '- Avoid unstable current facts unless they are durable as of the publish date.',
+    '- No emojis, no markdown in JSON values, no promotional fluff.',
+    '- Return JSON only.'
+  ].join('\n');
+
+  const response = await fetch('https://api.openai.com/v1/responses', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      model,
+      input: [
+        {
+          role: 'system',
+          content: 'You are an expert SEO education editor for Pakistan MCQ test preparation. You create accurate, original, exam-style MCQs and structured static blog data. Return only schema-valid JSON.'
+        },
+        {
+          role: 'user',
+          content: prompt
+        }
+      ],
+      text: {
+        format: {
+          type: 'json_schema',
+          name: 'ai_daily_blog',
+          strict: true,
+          schema: {
+            type: 'object',
+            additionalProperties: false,
+            required: ['topicName', 'topicSlug', 'primaryKeyword', 'title', 'excerpt', 'intro', 'description', 'focusRows', 'revisionTips', 'faqs', 'mcqs'],
+            properties: {
+              topicName: { type: 'string' },
+              topicSlug: { type: 'string' },
+              primaryKeyword: { type: 'string' },
+              title: { type: 'string' },
+              excerpt: { type: 'string' },
+              intro: { type: 'string' },
+              description: { type: 'string' },
+              focusRows: {
+                type: 'array',
+                minItems: 5,
+                maxItems: 8,
+                items: {
+                  type: 'object',
+                  additionalProperties: false,
+                  required: ['area', 'whatToPractice'],
+                  properties: {
+                    area: { type: 'string' },
+                    whatToPractice: { type: 'string' }
+                  }
+                }
+              },
+              revisionTips: {
+                type: 'array',
+                minItems: 4,
+                maxItems: 7,
+                items: { type: 'string' }
+              },
+              faqs: {
+                type: 'array',
+                minItems: 4,
+                maxItems: 7,
+                items: {
+                  type: 'object',
+                  additionalProperties: false,
+                  required: ['question', 'answer'],
+                  properties: {
+                    question: { type: 'string' },
+                    answer: { type: 'string' }
+                  }
+                }
+              },
+              mcqs: {
+                type: 'array',
+                minItems: 100,
+                maxItems: 100,
+                items: {
+                  type: 'object',
+                  additionalProperties: false,
+                  required: ['question', 'options', 'correctAnswer'],
+                  properties: {
+                    question: { type: 'string' },
+                    options: {
+                      type: 'array',
+                      minItems: 4,
+                      maxItems: 4,
+                      items: { type: 'string' }
+                    },
+                    correctAnswer: { type: 'string' }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      max_output_tokens: 22000
+    })
+  });
+
+  if (!response.ok) {
+    const message = await response.text();
+    throw new Error(`OpenAI daily blog generation failed (${response.status}): ${message}`);
+  }
+
+  const payload = await response.json();
+  return validateDraft(JSON.parse(extractOutputText(payload)));
 }
 
 function formatQuestionCell(mcq) {
-  const labels = ['A', 'B', 'C', 'D', 'E'];
+  const labels = ['A', 'B', 'C', 'D'];
   const options = mcq.options.map((option, index) => `${labels[index]}) ${escapeCell(option)}`);
   return [escapeCell(mcq.question), ...options].join('<br />');
 }
@@ -224,71 +345,66 @@ function tableForSet(mcqs, offset, heading) {
   ].join('\n');
 }
 
-function buildArticle({ category, mcqs, date }) {
+function buildArticle(draft, date) {
   const prettyDate = new Date(`${date}T00:00:00Z`).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
     timeZone: 'UTC'
   });
+  const focusTableRows = draft.focusRows
+    .map((row, index) => `| ${index + 1} | ${escapeCell(row.area)} | ${escapeCell(row.whatToPractice)} |`)
+    .join('\n');
+  const revisionList = draft.revisionTips.map((tip, index) => `${index + 1}. ${tip}`).join('\n');
+  const faqBlocks = draft.faqs
+    .map((faq) => [`### ${faq.question}`, '', faq.answer, ''].join('\n'))
+    .join('\n');
 
-  const title = `100 ${category.name} MCQs with Answers for Competitive Exams - ${prettyDate}`;
-  const excerpt = `Practice 100 ${category.name} MCQs with bold answers for ${category.focus}. This daily static MCQsBase set supports fast SEO-friendly revision and exam preparation.`;
-  const sectionTitle = `${category.name} MCQs Practice Set`;
-  const article = [
-    `${sectionTitle} for ${prettyDate}`,
+  const body = [
+    `${draft.topicName} MCQs Practice Set for ${prettyDate}`,
     '',
-    `Practice 100 ${category.name} MCQs with answers selected in bold for quick checking. This daily McqsBase set is built for ${category.focus} and follows high-frequency, past-paper-style patterns commonly seen in similar objective tests.`,
+    draft.intro,
     '',
-    `## Why this ${category.name} MCQs set is useful`,
+    `## Why this ${draft.topicName} set is useful`,
     '',
-    `This page targets learners searching for [${category.primaryKeyword}](https://www.mcqsbase.com/mcqs/${category.slug}), online MCQ practice, solved MCQs, and competitive exam preparation in Pakistan. Use it as a focused daily revision block, then continue with the full [MCQsBase question bank](https://www.mcqsbase.com/mcqs), [online quiz practice](https://www.mcqsbase.com/quiz), and [past papers](https://www.mcqsbase.com/past-papers).`,
+    `${draft.description} Start with this focused set, then continue with the [MCQsBase question bank](https://www.mcqsbase.com/mcqs), [online quiz practice](https://www.mcqsbase.com/quiz), [past papers](https://www.mcqsbase.com/past-papers), and the complete [MCQsBase blog](https://www.mcqsbase.com/blog).`,
     '',
-    `The questions are arranged for fast scanning: read the stem, solve mentally, then compare with the bold answer. For broader strategy, visit the [MCQsBase blog](https://www.mcqsbase.com/blog) and combine this page with timed practice.`,
+    '## Test focus topics',
     '',
-    `## What this set covers`,
+    '| No. | Focus Area | What to Practice |',
+    '| --- | --- | --- |',
+    focusTableRows,
+    '',
+    '## What this set covers',
     '',
     '| Section | Questions | Focus |',
     '| --- | --- | --- |',
-    `| Set 1 | 1-20 | Core ${category.name} fundamentals |`,
-    `| Set 2 | 21-40 | Frequently repeated test concepts |`,
-    `| Set 3 | 41-60 | Mixed competitive-exam practice |`,
-    `| Set 4 | 61-80 | Fast recall and elimination practice |`,
-    `| Set 5 | 81-100 | Final revision and score-building |`,
+    `| Set 1 | 1-20 | Core ${draft.topicName} fundamentals |`,
+    '| Set 2 | 21-40 | Frequently repeated test concepts |',
+    '| Set 3 | 41-60 | Mixed exam-style practice |',
+    '| Set 4 | 61-80 | Fast recall and elimination practice |',
+    '| Set 5 | 81-100 | Final revision and score-building |',
     '',
-    tableForSet(mcqs, 0, `1-20. ${category.name} MCQs`),
-    tableForSet(mcqs, 20, `21-40. ${category.name} MCQs`),
-    tableForSet(mcqs, 40, `41-60. ${category.name} MCQs`),
-    tableForSet(mcqs, 60, `61-80. ${category.name} MCQs`),
-    tableForSet(mcqs, 80, `81-100. ${category.name} MCQs`),
-    `## How to revise this ${category.name} set`,
+    tableForSet(draft.mcqs, 0, `1-20. ${draft.topicName} MCQs`),
+    tableForSet(draft.mcqs, 20, `21-40. ${draft.topicName} MCQs`),
+    tableForSet(draft.mcqs, 40, `41-60. ${draft.topicName} MCQs`),
+    tableForSet(draft.mcqs, 60, `61-80. ${draft.topicName} MCQs`),
+    tableForSet(draft.mcqs, 80, `81-100. ${draft.topicName} MCQs`),
+    `## How to revise this ${draft.topicName} set`,
     '',
-    '1. Attempt all 100 MCQs before checking the bold answers.',
-    '2. Mark every wrong answer and re-attempt it after one day.',
-    '3. Use a timer on the second attempt to improve speed and accuracy.',
-    '4. Open the related MCQsBase category page for more topic-wise practice.',
+    revisionList,
     '',
     '## Frequently Asked Questions',
     '',
-    `### Are these ${category.name} MCQs useful for competitive exams?`,
-    '',
-    `Yes. The set is designed around high-frequency, past-paper-style MCQ patterns used in ${category.focus}.`,
-    '',
-    '### How should I use this page for daily preparation?',
-    '',
-    'Attempt the full set once, review only the wrong answers, and then repeat the missed questions the next day. This creates active recall instead of passive reading.',
-    '',
-    '### Does McqsBase publish MCQ practice daily?',
-    '',
-    'The autopilot format is designed to publish one static MCQ practice blog per day, using a different suitable category when enough verified questions are available.',
+    faqBlocks,
     '',
     '## Final Takeaway',
     '',
-    `Consistent daily MCQ practice is one of the simplest ways to improve recall, speed, and exam confidence. Bookmark this page, complete the 100 ${category.name} MCQs, and continue your preparation on [McqsBase](https://www.mcqsbase.com/).`,
+    `Consistent daily MCQ practice is one of the simplest ways to improve recall, speed, and exam confidence. Bookmark this page, complete the 100 ${draft.topicName} MCQs, and continue your preparation on [McqsBase](https://www.mcqsbase.com/).`,
     ''
   ].join('\n');
 
-  return { title, excerpt, body: article };
+  return { title: draft.title, excerpt: draft.excerpt, body };
 }
 
 function estimateReadTime(text) {
@@ -325,12 +441,11 @@ function insertRegistryEntry(slug, metadata) {
 
 async function main() {
   const date = isoDate(getArg('date'));
-  const { category, mcqs } = await chooseCategory(date);
-  const slug = `100-${category.slug}-mcqs-with-answers-${date}`;
+  const draft = await generateAiDraft(date);
+  const slug = `${draft.topicSlug}-${date}`;
   const targetDir = path.join(BLOG_ROOT, slug);
   const articlePath = path.join(targetDir, 'article.md');
-  const selected = rotate(mcqs, daySeed(date)).slice(0, 100);
-  const article = buildArticle({ category, mcqs: selected, date });
+  const article = buildArticle(draft, date);
 
   if (!existsSync(articlePath)) {
     mkdirSync(targetDir, { recursive: true });
@@ -344,7 +459,7 @@ async function main() {
     readTime: estimateReadTime(article.body)
   });
 
-  console.log(`${inserted ? 'Created' : 'Already registered'} ${slug} from ${category.name} with 100 MCQs.`);
+  console.log(`${inserted ? 'Created' : 'Already registered'} ${slug} from AI topic "${draft.topicName}" with 100 MCQs.`);
 }
 
 main().catch((error) => {

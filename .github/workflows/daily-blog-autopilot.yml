@@ -46,6 +46,8 @@ jobs:
           BLOG_DATE: ${{ inputs.date }}
           BLOG_CATEGORY: ${{ inputs.category }}
           MCQSBASE_SOURCE_URL: https://www.mcqsbase.com
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5-mini' }}
         run: npm run generate:daily-blog
 
       - name: Build check
@@ -70,17 +72,32 @@ jobs:
           BRANCH="automation/daily-blog-${DATE_VALUE}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$BRANCH"
+          git checkout -B "$BRANCH"
           git add public/blog src/data/importedBlogArticles.js
           git commit -m "Add daily MCQ blog for ${DATE_VALUE}"
-          git push --set-upstream origin "$BRANCH"
+          git push --force-with-lease --set-upstream origin "$BRANCH"
 
-          PR_URL="$(gh pr create \
-            --base master \
+          PR_NUMBER="$(gh pr list \
             --head "$BRANCH" \
-            --title "Daily MCQ blog - ${DATE_VALUE}" \
-            --body "Adds the static daily MCQ blog article, registers it for the blog index, and makes it available through the generated sitemap.")"
+            --base master \
+            --state open \
+            --json number \
+            --jq '.[0].number // empty')"
+
+          if [ -z "$PR_NUMBER" ]; then
+            if ! PR_JSON="$(gh api "repos/${GITHUB_REPOSITORY}/pulls" \
+              -f base="master" \
+              -f head="$BRANCH" \
+              -f title="Daily MCQ blog - ${DATE_VALUE}" \
+              -f body="Adds the static daily MCQ blog article, registers it for the blog index, and makes it available through the generated sitemap." 2>pr-create-error.log)"; then
+              cat pr-create-error.log
+              echo "::error::Could not create a pull request. In GitHub, check Settings > Actions > General > Workflow permissions and enable 'Allow GitHub Actions to create and approve pull requests'."
+              exit 1
+            fi
+
+            PR_NUMBER="$(echo "$PR_JSON" | jq -r '.number')"
+          fi
 
           if [ "$AUTO_MERGE" != "false" ]; then
-            gh pr merge "$PR_URL" --squash --delete-branch
+            gh pr merge "$PR_NUMBER" --squash --delete-branch
           fi
