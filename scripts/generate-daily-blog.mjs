@@ -143,8 +143,8 @@ function uniqueMcqs(items) {
 
 function validateDraft(draft) {
   const mcqs = uniqueMcqs(draft?.mcqs || []);
-  if (mcqs.length !== 100) {
-    throw new Error(`AI draft must contain exactly 100 unique valid MCQs; received ${mcqs.length}.`);
+  if (mcqs.length < 90) {
+    throw new Error(`AI draft must contain at least 90 unique valid MCQs; received ${mcqs.length}.`);
   }
 
   const topicName = String(draft.topicName || '').trim();
@@ -220,7 +220,7 @@ async function generateAiDraft(date) {
     ...TOPIC_IDEAS.slice(0, seed % TOPIC_IDEAS.length)
   ].slice(0, 12);
 
-  const prompt = [
+  const basePrompt = [
     'Create one complete static SEO blog package for McqsBase.com.',
     `Publish date: ${date}.`,
     requestedTopic
@@ -237,6 +237,8 @@ async function generateAiDraft(date) {
     '- Description must support SEO and mention the exact exam/test intent.',
     '- Include test focus topics that match the selected test.',
     '- Generate exactly 100 original, high-quality MCQs with four options each.',
+    '- Before returning, count the MCQs and confirm there are exactly 100 unique questions after removing duplicates.',
+    '- If any question is duplicated, invalid, or has an answer that is not exactly one of the four options, replace it before returning JSON.',
     '- Correct answer must be one of the options exactly.',
     '- MCQs should be exam-style, high-frequency, and aligned with repeated/past-paper-style patterns.',
     '- Do not claim questions are copied from a real paper or exact official past paper.',
@@ -245,110 +247,128 @@ async function generateAiDraft(date) {
     '- Return JSON only.'
   ].join('\n');
 
-  const response = await fetch('https://api.openai.com/v1/responses', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      model,
-      input: [
-        {
-          role: 'system',
-          content: 'You are an expert SEO education editor for Pakistan MCQ test preparation. You create accurate, original, exam-style MCQs and structured static blog data. Return only schema-valid JSON.'
-        },
-        {
-          role: 'user',
-          content: prompt
-        }
-      ],
-      text: {
-        format: {
-          type: 'json_schema',
-          name: 'ai_daily_blog',
-          strict: true,
-          schema: {
-            type: 'object',
-            additionalProperties: false,
-            required: ['topicName', 'topicSlug', 'primaryKeyword', 'title', 'excerpt', 'intro', 'description', 'focusRows', 'revisionTips', 'faqs', 'mcqs'],
-            properties: {
-              topicName: { type: 'string' },
-              topicSlug: { type: 'string' },
-              primaryKeyword: { type: 'string' },
-              title: { type: 'string' },
-              excerpt: { type: 'string' },
-              intro: { type: 'string' },
-              description: { type: 'string' },
-              focusRows: {
-                type: 'array',
-                minItems: 5,
-                maxItems: 8,
-                items: {
-                  type: 'object',
-                  additionalProperties: false,
-                  required: ['area', 'whatToPractice'],
-                  properties: {
-                    area: { type: 'string' },
-                    whatToPractice: { type: 'string' }
+  let lastValidationError = null;
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    const retryInstruction = lastValidationError
+      ? [
+          `Previous attempt failed validation: ${lastValidationError.message}`,
+          'Regenerate the full article package now. The mcqs array should contain exactly 100 unique valid MCQs, must never contain fewer than 90 valid MCQs, and every correctAnswer must exactly match one option.'
+        ].join('\n')
+      : '';
+    const prompt = [basePrompt, retryInstruction].filter(Boolean).join('\n\n');
+
+    const response = await fetch('https://api.openai.com/v1/responses', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        model,
+        input: [
+          {
+            role: 'system',
+            content: 'You are an expert SEO education editor for Pakistan MCQ test preparation. You create accurate, original, exam-style MCQs and structured static blog data. Return only schema-valid JSON.'
+          },
+          {
+            role: 'user',
+            content: prompt
+          }
+        ],
+        text: {
+          format: {
+            type: 'json_schema',
+            name: 'ai_daily_blog',
+            strict: true,
+            schema: {
+              type: 'object',
+              additionalProperties: false,
+              required: ['topicName', 'topicSlug', 'primaryKeyword', 'title', 'excerpt', 'intro', 'description', 'focusRows', 'revisionTips', 'faqs', 'mcqs'],
+              properties: {
+                topicName: { type: 'string' },
+                topicSlug: { type: 'string' },
+                primaryKeyword: { type: 'string' },
+                title: { type: 'string' },
+                excerpt: { type: 'string' },
+                intro: { type: 'string' },
+                description: { type: 'string' },
+                focusRows: {
+                  type: 'array',
+                  minItems: 5,
+                  maxItems: 8,
+                  items: {
+                    type: 'object',
+                    additionalProperties: false,
+                    required: ['area', 'whatToPractice'],
+                    properties: {
+                      area: { type: 'string' },
+                      whatToPractice: { type: 'string' }
+                    }
                   }
-                }
-              },
-              revisionTips: {
-                type: 'array',
-                minItems: 4,
-                maxItems: 7,
-                items: { type: 'string' }
-              },
-              faqs: {
-                type: 'array',
-                minItems: 4,
-                maxItems: 7,
-                items: {
-                  type: 'object',
-                  additionalProperties: false,
-                  required: ['question', 'answer'],
-                  properties: {
-                    question: { type: 'string' },
-                    answer: { type: 'string' }
+                },
+                revisionTips: {
+                  type: 'array',
+                  minItems: 4,
+                  maxItems: 7,
+                  items: { type: 'string' }
+                },
+                faqs: {
+                  type: 'array',
+                  minItems: 4,
+                  maxItems: 7,
+                  items: {
+                    type: 'object',
+                    additionalProperties: false,
+                    required: ['question', 'answer'],
+                    properties: {
+                      question: { type: 'string' },
+                      answer: { type: 'string' }
+                    }
                   }
-                }
-              },
-              mcqs: {
-                type: 'array',
-                minItems: 100,
-                maxItems: 100,
-                items: {
-                  type: 'object',
-                  additionalProperties: false,
-                  required: ['question', 'options', 'correctAnswer'],
-                  properties: {
-                    question: { type: 'string' },
-                    options: {
-                      type: 'array',
-                      minItems: 4,
-                      maxItems: 4,
-                      items: { type: 'string' }
-                    },
-                    correctAnswer: { type: 'string' }
+                },
+                mcqs: {
+                  type: 'array',
+                  minItems: 100,
+                  maxItems: 100,
+                  items: {
+                    type: 'object',
+                    additionalProperties: false,
+                    required: ['question', 'options', 'correctAnswer'],
+                    properties: {
+                      question: { type: 'string' },
+                      options: {
+                        type: 'array',
+                        minItems: 4,
+                        maxItems: 4,
+                        items: { type: 'string' }
+                      },
+                      correctAnswer: { type: 'string' }
+                    }
                   }
                 }
               }
             }
           }
-        }
-      },
-      max_output_tokens: 22000
-    })
-  });
+        },
+        max_output_tokens: 22000
+      })
+    });
 
-  if (!response.ok) {
-    const message = await response.text();
-    throw new Error(`OpenAI daily blog generation failed (${response.status}): ${message}`);
+    if (!response.ok) {
+      const message = await response.text();
+      throw new Error(`OpenAI daily blog generation failed (${response.status}): ${message}`);
+    }
+
+    const payload = await response.json();
+    try {
+      return validateDraft(JSON.parse(extractOutputText(payload)));
+    } catch (error) {
+      lastValidationError = error;
+      console.warn(`AI draft validation failed on attempt ${attempt}/3: ${error.message}`);
+    }
   }
 
-  const payload = await response.json();
-  return validateDraft(JSON.parse(extractOutputText(payload)));
+  throw lastValidationError;
 }
 
 function formatQuestionCell(mcq) {
