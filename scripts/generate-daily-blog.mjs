@@ -62,6 +62,13 @@ function slugify(value = '') {
     .slice(0, 120);
 }
 
+function cleanBlogSlug(value = '') {
+  return slugify(value)
+    .replace(/(^|-)\d{4}-\d{2}-\d{2}($|-)/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
 function escapeCell(value = '') {
   return String(value)
     .replace(/\r?\n/g, ' ')
@@ -160,7 +167,7 @@ function validateDraft(draft) {
   return {
     ...draft,
     topicName,
-    topicSlug: slugify(draft.topicSlug || topicName),
+    topicSlug: cleanBlogSlug(draft.topicSlug || topicName) || cleanBlogSlug(primaryKeyword) || 'daily-mcq-practice-set',
     primaryKeyword,
     title,
     excerpt,
@@ -171,6 +178,31 @@ function validateDraft(draft) {
     faqs,
     mcqs
   };
+}
+
+function slugAlreadyExists(slug) {
+  const articlePath = path.join(BLOG_ROOT, slug, 'article.md');
+  if (existsSync(articlePath)) {
+    return true;
+  }
+
+  if (!existsSync(REGISTRY_PATH)) {
+    return false;
+  }
+
+  return readFileSync(REGISTRY_PATH, 'utf8').includes(`"${slug}"`);
+}
+
+function resolveAvailableSlug(baseSlug) {
+  let candidate = baseSlug;
+  let suffix = 2;
+
+  while (slugAlreadyExists(candidate)) {
+    candidate = `${baseSlug}-${suffix}`;
+    suffix += 1;
+  }
+
+  return candidate;
 }
 
 async function generateAiDraft(date) {
@@ -200,6 +232,7 @@ async function generateAiDraft(date) {
     'Strict content requirements:',
     '- Generate every part using AI. Do not depend on existing local MCQ data.',
     '- Topic should be specific enough to rank, such as a job test, forces test, university entry test, NTS/HAT/NAT, current affairs, or repeated GK intent.',
+    '- Topic slug must be short and clean. Do not include the publish date or any yyyy-mm-dd pattern in the slug.',
     '- Title must be SEO-rich, natural, and not clickbait.',
     '- Description must support SEO and mention the exact exam/test intent.',
     '- Include test focus topics that match the selected test.',
@@ -442,7 +475,7 @@ function insertRegistryEntry(slug, metadata) {
 async function main() {
   const date = isoDate(getArg('date'));
   const draft = await generateAiDraft(date);
-  const slug = `${draft.topicSlug}-${date}`;
+  const slug = resolveAvailableSlug(draft.topicSlug);
   const targetDir = path.join(BLOG_ROOT, slug);
   const articlePath = path.join(targetDir, 'article.md');
   const article = buildArticle(draft, date);

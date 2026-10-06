@@ -5,7 +5,7 @@ Every autopublished MCQsBase blog should be a static Markdown article under `pub
 ## Article Standard
 
 - Title: SEO-friendly, usually `100 {Topic} MCQs with Answers - {Date}` or a stronger test-specific variant.
-- Slug: `{topic-slug}-{yyyy-mm-dd}`
+- Slug: `{topic-slug}`. Do not append the publish date; if the same slug already exists, use a short numeric suffix such as `{topic-slug}-2`.
 - Category: `Subject Guide`
 - Author voice: clear, exam-focused, and useful for Pakistan competitive exam candidates.
 - Description: include one short SEO-supporting paragraph near the top with the primary keyword, related exam names, and an internal link to McqsBase.
