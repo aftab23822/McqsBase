@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nhmp-motorway-police-test-mcqs-2026-2026-10-06": {
+    title: "100 Motorway Police Test MCQs with Answers for NHMP Preparation",
+    excerpt:
+      "Prepare for a National Highways and Motorway Police test with 100 original MCQs covering English, Pakistan studies, Islamiat, mathematics, reasoning, computer basics, and road safety.",
+    category: "Subject Guide",
+    date: "2026-10-06",
+    readTime: "19 min",
+    content: null,
+    body: readImportedBlogBody("nhmp-motorway-police-test-mcqs-2026-2026-10-06")
+  },
   "100-english-mcqs-with-answers-2026-10-05": {
     title: "100 English MCQs with Answers for Competitive Exams - October 5, 2026",
     excerpt:
