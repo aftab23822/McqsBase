@@ -47,7 +47,7 @@ jobs:
           BLOG_CATEGORY: ${{ inputs.category }}
           MCQSBASE_SOURCE_URL: https://www.mcqsbase.com
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-6.1-sol' }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-6-luna' }}
         run: npm run generate:daily-blog
 
       - name: Build check

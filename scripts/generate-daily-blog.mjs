@@ -180,7 +180,7 @@ async function generateAiDraft(date) {
   }
 
   const requestedTopic = getArg('topic') || getArg('category') || process.env.BLOG_TOPIC || process.env.BLOG_CATEGORY || '';
-  const model = process.env.OPENAI_MODEL || 'gpt-6.1-sol';
+  const model = process.env.OPENAI_MODEL || 'gpt-6-luna';
   const seed = daySeed(date);
   const existingBlogs = readExistingBlogHints();
   const ideaWindow = [
