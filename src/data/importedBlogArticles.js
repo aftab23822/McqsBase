@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "ppsc-junior-clerk-test-mcqs": {
+    title: "100 PPSC Junior Clerk Test MCQs with Answers",
+    excerpt:
+      "Prepare for the PPSC Junior Clerk written test with 100 original MCQs covering English, Pakistan affairs, Islamiat, mathematics, computer basics, and office skills.",
+    category: "Subject Guide",
+    date: "2026-10-09",
+    readTime: "17 min",
+    content: null,
+    body: readImportedBlogBody("ppsc-junior-clerk-test-mcqs")
+  },
   "asf-recruitment-test-mcqs": {
     title: "100 ASF Test MCQs with Answers for ASI and Corporal Preparation",
     excerpt:
