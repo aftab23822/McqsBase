@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "hat-test-mcqs": {
+    title: "100 HAT Test MCQs with Answers for HEC Aptitude Test Preparation",
+    excerpt:
+      "Prepare for the HEC Higher Education Aptitude Test with 100 original practice MCQs covering quantitative, verbal, and analytical reasoning.",
+    category: "Subject Guide",
+    date: "2026-10-11",
+    readTime: "17 min",
+    content: null,
+    body: readImportedBlogBody("hat-test-mcqs")
+  },
   "banking-jobs-test-mcqs": {
     title: "100 Banking Test MCQs with Answers for Pakistan Bank Jobs",
     excerpt:
