@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "punjab-police-constable-mcqs": {
+    title: "100 Punjab Police Constable Test MCQs with Answers",
+    excerpt:
+      "Prepare for Punjab Police constable recruitment tests with 100 original MCQs covering Pakistan studies, Islamiyat, English, mathematics, general knowledge, computer basics, and police awareness.",
+    category: "Subject Guide",
+    date: "2026-10-12",
+    readTime: "17 min",
+    content: null,
+    body: readImportedBlogBody("punjab-police-constable-mcqs")
+  },
   "hat-test-mcqs": {
     title: "100 HAT Test MCQs with Answers for HEC Aptitude Test Preparation",
     excerpt:
