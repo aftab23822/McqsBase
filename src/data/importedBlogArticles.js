@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nts-nat-im-mcqs": {
+    title: "100 NTS NAT-IM MCQs with Answers for Pre-Medical Entry Test Preparation",
+    excerpt:
+      "Practise 100 original NTS NAT-IM-style MCQs covering verbal reasoning, analytical reasoning, quantitative skills, biology, chemistry, and physics.",
+    category: "Subject Guide",
+    date: "2026-10-13",
+    readTime: "18 min",
+    content: null,
+    body: readImportedBlogBody("nts-nat-im-mcqs")
+  },
   "punjab-police-constable-mcqs": {
     title: "100 Punjab Police Constable Test MCQs with Answers",
     excerpt:
