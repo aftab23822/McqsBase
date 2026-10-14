@@ -5,6 +5,86 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "pak-army-initial-test-mcqs": {
+    title: "100 Pak Army Initial Test MCQs with Answers for Academic and Intelligence Practice",
+    excerpt:
+      "Practice 100 original Pak Army initial test MCQs covering verbal reasoning, mathematics, English, Pakistan Studies, general science, and computer basics.",
+    category: "Subject Guide",
+    date: "2026-10-14",
+    readTime: "16 min",
+    content: null,
+    body: readImportedBlogBody("pak-army-initial-test-mcqs")
+  },
+  "nts-nat-im-mcqs": {
+    title: "100 NTS NAT-IM MCQs with Answers for Pre-Medical Entry Test Preparation",
+    excerpt:
+      "Practise 100 original NTS NAT-IM-style MCQs covering verbal reasoning, analytical reasoning, quantitative skills, biology, chemistry, and physics.",
+    category: "Subject Guide",
+    date: "2026-10-13",
+    readTime: "18 min",
+    content: null,
+    body: readImportedBlogBody("nts-nat-im-mcqs")
+  },
+  "punjab-police-constable-mcqs": {
+    title: "100 Punjab Police Constable Test MCQs with Answers",
+    excerpt:
+      "Prepare for Punjab Police constable recruitment tests with 100 original MCQs covering Pakistan studies, Islamiyat, English, mathematics, general knowledge, computer basics, and police awareness.",
+    category: "Subject Guide",
+    date: "2026-10-12",
+    readTime: "17 min",
+    content: null,
+    body: readImportedBlogBody("punjab-police-constable-mcqs")
+  },
+  "hat-test-mcqs": {
+    title: "100 HAT Test MCQs with Answers for HEC Aptitude Test Preparation",
+    excerpt:
+      "Prepare for the HEC Higher Education Aptitude Test with 100 original practice MCQs covering quantitative, verbal, and analytical reasoning.",
+    category: "Subject Guide",
+    date: "2026-10-11",
+    readTime: "17 min",
+    content: null,
+    body: readImportedBlogBody("hat-test-mcqs")
+  },
+  "banking-jobs-test-mcqs": {
+    title: "100 Banking Test MCQs with Answers for Pakistan Bank Jobs",
+    excerpt:
+      "Prepare for bank recruitment tests in Pakistan with 100 original MCQs covering banking basics, quantitative aptitude, English, computer knowledge, general knowledge, and analytical reasoning.",
+    category: "Subject Guide",
+    date: "2026-10-10",
+    readTime: "19 min",
+    content: null,
+    body: readImportedBlogBody("banking-jobs-test-mcqs")
+  },
+  "ppsc-junior-clerk-test-mcqs": {
+    title: "100 PPSC Junior Clerk Test MCQs with Answers",
+    excerpt:
+      "Prepare for the PPSC Junior Clerk written test with 100 original MCQs covering English, Pakistan affairs, Islamiat, mathematics, computer basics, and office skills.",
+    category: "Subject Guide",
+    date: "2026-10-09",
+    readTime: "17 min",
+    content: null,
+    body: readImportedBlogBody("ppsc-junior-clerk-test-mcqs")
+  },
+  "asf-recruitment-test-mcqs": {
+    title: "100 ASF Test MCQs with Answers for ASI and Corporal Preparation",
+    excerpt:
+      "Practise 100 original ASF recruitment-test MCQs covering English, Pakistan studies, Islamiat, mathematics, analytical reasoning, computer basics and security awareness.",
+    category: "Subject Guide",
+    date: "2026-10-08",
+    readTime: "18 min",
+    content: null,
+    body: readImportedBlogBody("asf-recruitment-test-mcqs")
+  },
+  "nts-nat-ie-engineering-mcqs": {
+    title: "100 NTS NAT-IE Engineering Entry Test MCQs with Answers",
+    excerpt:
+      "Prepare for the NTS NAT-IE engineering entry test with 100 original practice MCQs covering English, analytical reasoning, quantitative skills, physics, chemistry, and mathematics.",
+    category: "Subject Guide",
+    date: "2026-10-07",
+    readTime: "18 min",
+    content: null,
+    body: readImportedBlogBody("nts-nat-ie-engineering-mcqs")
+  },
   "nhmp-motorway-police-test-mcqs-2026-2026-10-06": {
     title: "100 Motorway Police Test MCQs with Answers for NHMP Preparation",
     excerpt:
