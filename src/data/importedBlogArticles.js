@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "pak-army-initial-test-mcqs": {
+    title: "100 Pak Army Initial Test MCQs with Answers for Academic and Intelligence Practice",
+    excerpt:
+      "Practice 100 original Pak Army initial test MCQs covering verbal reasoning, mathematics, English, Pakistan Studies, general science, and computer basics.",
+    category: "Subject Guide",
+    date: "2026-10-14",
+    readTime: "16 min",
+    content: null,
+    body: readImportedBlogBody("pak-army-initial-test-mcqs")
+  },
   "nts-nat-im-mcqs": {
     title: "100 NTS NAT-IM MCQs with Answers for Pre-Medical Entry Test Preparation",
     excerpt:
