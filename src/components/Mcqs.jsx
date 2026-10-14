@@ -10,7 +10,7 @@ const Mcqs = () => {
     "@type": "CollectionPage",
     "name": "MCQs Collection",
     "description": "Comprehensive collection of MCQs for Pakistan competitive exams including FPSC, SPSC, PPSC, and NTS",
-    "url": "https://mcqsbase.com/mcqs",
+    "url": "https://www.mcqsbase.com/mcqs",
     "mainEntity": {
       "@type": "ItemList",
       "itemListElement": [
@@ -18,49 +18,49 @@ const Mcqs = () => {
           "@type": "ListItem",
           "position": 1,
           "name": "Accounting MCQs",
-          "url": "https://mcqsbase.com/mcqs/accounting"
+          "url": "https://www.mcqsbase.com/mcqs/accounting"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Biology MCQs",
-          "url": "https://mcqsbase.com/mcqs/biology"
+          "url": "https://www.mcqsbase.com/mcqs/biology"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Chemistry MCQs",
-          "url": "https://mcqsbase.com/mcqs/chemistry"
+          "url": "https://www.mcqsbase.com/mcqs/chemistry"
         },
         {
           "@type": "ListItem",
           "position": 4,
           "name": "Computer Science MCQs",
-          "url": "https://mcqsbase.com/mcqs/computer-science"
+          "url": "https://www.mcqsbase.com/mcqs/computer-science"
         },
         {
           "@type": "ListItem",
           "position": 5,
           "name": "Economics MCQs",
-          "url": "https://mcqsbase.com/mcqs/economics"
+          "url": "https://www.mcqsbase.com/mcqs/economics"
         },
         {
           "@type": "ListItem",
           "position": 6,
           "name": "English MCQs",
-          "url": "https://mcqsbase.com/mcqs/english"
+          "url": "https://www.mcqsbase.com/mcqs/english"
         },
         {
           "@type": "ListItem",
           "position": 7,
           "name": "Mathematics MCQs",
-          "url": "https://mcqsbase.com/mcqs/mathematics"
+          "url": "https://www.mcqsbase.com/mcqs/mathematics"
         },
         {
           "@type": "ListItem",
           "position": 8,
           "name": "Physics MCQs",
-          "url": "https://mcqsbase.com/mcqs/physics"
+          "url": "https://www.mcqsbase.com/mcqs/physics"
         }
       ]
     }

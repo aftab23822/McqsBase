@@ -299,8 +299,8 @@ const Footer = () => {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "McqsBase",
-            "url": "https://mcqsbase.com",
-            "logo": "https://mcqsbase.com/logo.png",
+            "url": "https://www.mcqsbase.com",
+            "logo": "https://www.mcqsbase.com/logo.png",
             "description": "Your premier destination for comprehensive MCQ preparation. Access thousands of practice questions, past papers, interview materials, and mock tests to excel in your competitive exams.",
             "contactPoint": {
               "@type": "ContactPoint",

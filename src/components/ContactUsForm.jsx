@@ -98,7 +98,7 @@ const ContactUsForm = () => {
     "@type": "ContactPage",
     "name": "Contact McqsBase.com",
     "description": "Get in touch with McqsBase.com for questions, feedback, or collaboration regarding Pakistan competitive exam preparation.",
-    "url": "https://mcqsbase.com/contact",
+    "url": "https://www.mcqsbase.com/contact",
     "mainEntity": {
       "@type": "Organization",
       "name": "McqsBase.com",

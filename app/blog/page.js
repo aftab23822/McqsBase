@@ -14,7 +14,7 @@ export async function generateMetadata() {
     title: 'Exam Preparation Articles & Blog - McqsBase',
     description: 'Read expert articles, preparation tips, and strategies for competitive exams in Pakistan. Learn effective techniques for FPSC, SPSC, PPSC, and NTS exam preparation.',
     keywords: 'exam preparation articles, competitive exam tips, study strategies pakistan, FPSC preparation, SPSC tips, PPSC exam preparation, NTS preparation articles, CSS preparation blog',
-    canonical: 'https://mcqsbase.com/blog'
+    url: '/blog'
   });
 }
 

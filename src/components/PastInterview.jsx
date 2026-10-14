@@ -12,7 +12,7 @@ const PastInterview = () => {
     "@type": "CollectionPage",
     "name": "Past Interview Questions",
     "description": "Access past interview questions from Pakistan competitive exams. Prepare for interviews with questions from FPSC, SPSC, PPSC, and NTS interviews.",
-    "url": "https://mcqsbase.com/past-interviews",
+    "url": "https://www.mcqsbase.com/past-interviews",
     "mainEntity": {
       "@type": "ItemList",
       "itemListElement": [
@@ -20,25 +20,25 @@ const PastInterview = () => {
           "@type": "ListItem",
           "position": 1,
           "name": "FPSC Interview Questions",
-          "url": "https://mcqsbase.com/past-interviews/fpsc"
+          "url": "https://www.mcqsbase.com/past-interviews/fpsc"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "SPSC Interview Questions",
-          "url": "https://mcqsbase.com/past-interviews/spsc"
+          "url": "https://www.mcqsbase.com/past-interviews/spsc"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "PPSC Interview Questions",
-          "url": "https://mcqsbase.com/past-interviews/ppsc"
+          "url": "https://www.mcqsbase.com/past-interviews/ppsc"
         },
         {
           "@type": "ListItem",
           "position": 4,
           "name": "NTS Interview Questions",
-          "url": "https://mcqsbase.com/past-interviews/nts"
+          "url": "https://www.mcqsbase.com/past-interviews/nts"
         }
       ]
     }

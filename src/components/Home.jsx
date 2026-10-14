@@ -40,11 +40,11 @@ const Home = () => {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "McqsBase.com",
-    "url": "https://mcqsbase.com",
+    "url": "https://www.mcqsbase.com",
     "description": "Pakistan's premier platform for competitive exam preparation",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://mcqsbase.com/search?q={search_term_string}",
+      "target": "https://www.mcqsbase.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };

@@ -11,7 +11,7 @@ const PastPaper = () => {
     "@type": "CollectionPage",
     "name": "Past Papers Collection",
     "description": "Download past papers from Pakistan competitive exams including FPSC, SPSC, PPSC, and NTS. Access historical exam papers for better preparation.",
-    "url": "https://mcqsbase.com/past-papers",
+    "url": "https://www.mcqsbase.com/past-papers",
     "mainEntity": {
       "@type": "ItemList",
       "itemListElement": [
@@ -19,25 +19,25 @@ const PastPaper = () => {
           "@type": "ListItem",
           "position": 1,
           "name": "FPSC Past Papers",
-          "url": "https://mcqsbase.com/past-papers/fpsc"
+          "url": "https://www.mcqsbase.com/past-papers/fpsc"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "SPSC Past Papers",
-          "url": "https://mcqsbase.com/past-papers/spsc"
+          "url": "https://www.mcqsbase.com/past-papers/spsc"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "PPSC Past Papers",
-          "url": "https://mcqsbase.com/past-papers/ppsc"
+          "url": "https://www.mcqsbase.com/past-papers/ppsc"
         },
         {
           "@type": "ListItem",
           "position": 4,
           "name": "NTS Past Papers",
-          "url": "https://mcqsbase.com/past-papers/nts"
+          "url": "https://www.mcqsbase.com/past-papers/nts"
         }
       ]
     }

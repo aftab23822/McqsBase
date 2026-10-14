@@ -75,11 +75,11 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "McqsBase.com",
-              "url": "https://mcqsbase.com",
+              "url": "https://www.mcqsbase.com",
               "description": "Pakistan's premier platform for competitive exam preparation with MCQs, past papers, and interview materials.",
               "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://mcqsbase.com/search?q={search_term_string}",
+                "target": "https://www.mcqsbase.com/search?q={search_term_string}",
                 "query-input": "required name=search_term_string"
               }
             })
@@ -93,8 +93,8 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "McqsBase.com",
-              "url": "https://mcqsbase.com",
-              "logo": "https://mcqsbase.com/eagle.svg",
+              "url": "https://www.mcqsbase.com",
+              "logo": "https://www.mcqsbase.com/eagle.svg",
               "description": "Pakistan's premier platform for competitive exam preparation with MCQs, past papers, and interview materials.",
               "contactPoint": {
                 "@type": "ContactPoint",

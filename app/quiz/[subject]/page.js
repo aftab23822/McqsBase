@@ -140,7 +140,7 @@ export default async function QuizCategoryPage({ params, searchParams }) {
   let initialTree = undefined;
 
   // Prefer configured public base URL; fall back to canonical domain
-  const FALLBACK_BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://mcqsbase.com').replace(/\/+$/, '');
+  const FALLBACK_BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com').replace(/\/+$/, '');
   const absoluteBase = FALLBACK_BASE_URL;
 
   const componentImporter = QuizComponents[subject];

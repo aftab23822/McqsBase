@@ -60,7 +60,7 @@ function combineSubjectPath(subject, subpath) {
 async function resolveRequestBaseUrl() {
   // Use configured public base URL or canonical domain.
   // Avoid using request headers so this route can benefit from ISR.
-  return (process.env.NEXT_PUBLIC_BASE_URL || 'https://mcqsbase.com').replace(/\/+$/, '');
+  return (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com').replace(/\/+$/, '');
 }
 
 async function fetchListingFaqItems(baseUrl, subject, categorySegmentsRaw) {

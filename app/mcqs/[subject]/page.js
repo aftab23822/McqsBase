@@ -166,7 +166,7 @@ const subjectTitles = {
   'world-current-affairs': 'World Current Affairs MCQs',
 };
 
-const FALLBACK_BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://mcqsbase.com').replace(/\/+$/, '');
+const FALLBACK_BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com').replace(/\/+$/, '');
 
 async function fetchSubjectFaqItems(baseUrl, subject) {
   if (!subject) return [];

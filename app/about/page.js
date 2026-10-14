@@ -9,7 +9,7 @@ export async function generateMetadata() {
     title: 'About Us - McqsBase | Pakistan\'s Premier MCQ Platform',
     description: 'Learn about McqsBase, Pakistan\'s leading free platform for competitive exam preparation. Discover our mission, vision, values, and commitment to providing quality education resources for FPSC, SPSC, PPSC, and NTS exams.',
     keywords: 'about mcqsbase, mcq platform pakistan, competitive exam preparation, free education resources, FPSC preparation, SPSC preparation, PPSC preparation, NTS preparation',
-    canonical: 'https://mcqsbase.com/about'
+    url: '/about'
   });
 }
 
