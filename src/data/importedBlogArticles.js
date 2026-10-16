@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "pakistan-navy-sailor-test-mcqs": {
+    title: "100 Pakistan Navy Sailor Test MCQs with Answers for Academic and Intelligence Practice",
+    excerpt:
+      "Prepare for the Pakistan Navy Sailor recruitment test with 100 original MCQs covering English, mathematics, science, Pakistan studies, general knowledge, and reasoning.",
+    category: "Subject Guide",
+    date: "2026-10-16",
+    readTime: "16 min",
+    content: null,
+    body: readImportedBlogBody("pakistan-navy-sailor-test-mcqs")
+  },
   "paf-airman-test-mcqs": {
     title: "100 PAF Airman Test MCQs with Answers for Academic and Intelligence Practice",
     excerpt:
