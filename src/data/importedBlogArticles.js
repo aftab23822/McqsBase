@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "mdcat-practice-mcqs": {
+    title: "100 MDCAT MCQs with Answers for Biology, Chemistry and Physics Practice",
+    excerpt:
+      "Practice 100 original MDCAT-style MCQs covering key Biology, Chemistry, Physics and English concepts, with answers for focused medical entry test revision.",
+    category: "Subject Guide",
+    date: "2026-10-17",
+    readTime: "18 min",
+    content: null,
+    body: readImportedBlogBody("mdcat-practice-mcqs")
+  },
   "pakistan-navy-sailor-test-mcqs": {
     title: "100 Pakistan Navy Sailor Test MCQs with Answers for Academic and Intelligence Practice",
     excerpt:
