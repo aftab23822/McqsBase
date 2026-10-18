@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "fia-test-mcqs": {
+    title: "100 FIA Test MCQs with Answers for ASI and Constable Preparation",
+    excerpt:
+      "Practice 100 original FIA test MCQs with answers covering English, mathematics, reasoning, Pakistan affairs, Islamiat, computer basics, science, and law-enforcement fundamentals for ASI and constable applicants.",
+    category: "Subject Guide",
+    date: "2026-10-18",
+    readTime: "18 min",
+    content: null,
+    body: readImportedBlogBody("fia-test-mcqs")
+  },
   "mdcat-practice-mcqs": {
     title: "100 MDCAT MCQs with Answers for Biology, Chemistry and Physics Practice",
     excerpt:
