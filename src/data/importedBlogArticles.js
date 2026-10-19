@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "pakistan-rangers-sindh-sipahi-test-mcqs": {
+    title: "100 Pakistan Rangers Sindh Sipahi Test MCQs with Answers",
+    excerpt:
+      "Practice 100 original Pakistan Rangers Sindh Sipahi test MCQs covering Pakistan Studies, Islamiat, English, mathematics, general knowledge, science and reasoning.",
+    category: "Subject Guide",
+    date: "2026-10-19",
+    readTime: "17 min",
+    content: null,
+    body: readImportedBlogBody("pakistan-rangers-sindh-sipahi-test-mcqs")
+  },
   "fia-test-mcqs": {
     title: "100 FIA Test MCQs with Answers for ASI and Constable Preparation",
     excerpt:
