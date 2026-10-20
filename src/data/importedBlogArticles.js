@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "teaching-jobs-test-mcqs": {
+    title: "100 Teaching Jobs Test MCQs with Answers for Pakistan Teacher Recruitment Tests",
+    excerpt:
+      "Practise 100 original teaching jobs test MCQs covering pedagogy, classroom assessment, English, Pakistan Studies, Islamiat, general science and basic mathematics.",
+    category: "Subject Guide",
+    date: "2026-10-20",
+    readTime: "20 min",
+    content: null,
+    body: readImportedBlogBody("teaching-jobs-test-mcqs")
+  },
   "pakistan-rangers-sindh-sipahi-test-mcqs": {
     title: "100 Pakistan Rangers Sindh Sipahi Test MCQs with Answers",
     excerpt:
