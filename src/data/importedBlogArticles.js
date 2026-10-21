@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "hec-lat-test-mcqs": {
+    title: "100 HEC LAT MCQs with Answers for Law Admission Test Preparation",
+    excerpt:
+      "Prepare for the HEC Law Admission Test with 100 original practice MCQs covering English, general knowledge, Pakistan Studies, Islamiat, Urdu, and basic mathematics.",
+    category: "Subject Guide",
+    date: "2026-10-21",
+    readTime: "16 min",
+    content: null,
+    body: readImportedBlogBody("hec-lat-test-mcqs")
+  },
   "teaching-jobs-test-mcqs": {
     title: "100 Teaching Jobs Test MCQs with Answers for Pakistan Teacher Recruitment Tests",
     excerpt:
