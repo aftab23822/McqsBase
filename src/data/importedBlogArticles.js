@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "university-of-sindh-entry-test-mcqs": {
+    title: "100 University of Sindh Entry Test MCQs with Answers for Jamshoro Admission Preparation",
+    excerpt:
+      "Practise 100 original University of Sindh entry test MCQs covering English, quantitative aptitude, analytical reasoning, general knowledge, and basic science and computer concepts.",
+    category: "Subject Guide",
+    date: "2026-10-23",
+    readTime: "16 min",
+    content: null,
+    body: readImportedBlogBody("university-of-sindh-entry-test-mcqs")
+  },
   "muet-entry-test-mcqs": {
     title: "100 MUET Entry Test MCQs with Answers for Mehran University Preparation",
     excerpt:
