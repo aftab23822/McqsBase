@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useEffect, useState, useMemo, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
+import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import BasePastPaper from '@/components/PastPapers/BasePastPaper';
@@ -78,15 +79,17 @@ const DEFAULT_CATEGORY = {
   role: 'intermediate-category'
 };
 
-function PastPapersPageContent() {
+function PastPapersPageContent({ initialData, initialPage = 1 }) {
+  const router = useRouter();
+  const pageUrl = page => `/past-papers${page > 1 ? `?page=${page}` : ''}`;
   const searchParams = useSearchParams();
-  const [pastPaperData, setPastPaperData] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [pastPaperData, setPastPaperData] = useState(initialData?.results || []);
+  const [loading, setLoading] = useState(!initialData);
   const [error, setError] = useState(null);
   const pageFromUrl = parseInt(searchParams?.get('page') || '1', 10);
-  const [currentPage, setCurrentPage] = useState(pageFromUrl);
-  const [totalPages, setTotalPages] = useState(1);
-  const [pageTitle, setPageTitle] = useState('Past Papers');
+  const [currentPage, setCurrentPage] = useState(initialPage);
+  const [totalPages, setTotalPages] = useState(initialData?.totalPages || 1);
+  const [pageTitle, setPageTitle] = useState('STS - SIBA Testing Services — BPS 05 to 15 / Intermediate Category');
   const [foundRole, setFoundRole] = useState(null);
   useRobotsNoindex(!loading && (Boolean(error) || !pastPaperData || pastPaperData.length === 0));
 
@@ -98,7 +101,7 @@ function PastPapersPageContent() {
 
   useEffect(() => {
     const fetchPapers = async () => {
-      setLoading(true);
+      if (!initialData || currentPage !== initialPage) setLoading(true);
       try {
         const categoryPath = `${DEFAULT_CATEGORY.commission}/${DEFAULT_CATEGORY.department}/${DEFAULT_CATEGORY.role}`;
         const apiUrl = `/api/pastpapers/by-category/${categoryPath}?page=${currentPage}&limit=${papersPerPage}&exact=true`;
@@ -267,13 +270,18 @@ function PastPapersPageContent() {
         mcqsPerPage={papersPerPage}
         categoryPath={`${DEFAULT_CATEGORY.commission}/${DEFAULT_CATEGORY.department}/${DEFAULT_CATEGORY.role}`}
         breadcrumbItems={breadcrumbItems}
+        onPageNavigate={initialData ? page => router.push(pageUrl(page)) : undefined}
       />
+      <nav aria-label="Past-paper pages" className="flex justify-center gap-8 p-6">
+        {currentPage > 1 && <Link href={pageUrl(currentPage - 1)}>Previous questions</Link>}
+        {currentPage < totalPages && <Link href={pageUrl(currentPage + 1)}>Next questions</Link>}
+      </nav>
       <Footer />
     </>
   );
 }
 
-export default function PastPapersPage() {
+export default function PastPapersPage({ initialData, initialPage }) {
   return (
     <Suspense fallback={
       <>
@@ -284,7 +292,7 @@ export default function PastPapersPage() {
         <Footer />
       </>
     }>
-      <PastPapersPageContent />
+      <PastPapersPageContent initialData={initialData} initialPage={initialPage} />
     </Suspense>
   );
 }

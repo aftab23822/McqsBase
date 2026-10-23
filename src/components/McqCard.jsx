@@ -18,7 +18,9 @@ const McqCard = ({
   subject = "General Knowledge",
   department = "General Department",
   explanation,
+  headingLevel = 'h2',
 }) => {
+  const QuestionHeading = headingLevel;
   // Normalize correct answer for comparison
   const normalizedCorrect = correctAnswer ? stripPrefix(correctAnswer).toLowerCase() : '';
   
@@ -32,12 +34,12 @@ const McqCard = ({
       
       {/* Question */}
       <div className="bg-blue-50 rounded-lg p-3 border-l-4 border-blue-500">
-        <h2 className="text-base font-semibold text-gray-800 leading-relaxed">
+        <QuestionHeading className="text-base font-semibold text-gray-800 leading-relaxed">
           <span className="inline-flex items-center justify-center w-10 h-6 bg-blue-500 text-white rounded-full text-xs font-bold mr-2">
             {questionNumber}
           </span>
           {question}
-        </h2>
+        </QuestionHeading>
       </div>
 
       {/* Options */}

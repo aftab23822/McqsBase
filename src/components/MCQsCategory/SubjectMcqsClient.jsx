@@ -6,9 +6,9 @@ import BaseMcqs from './BaseMcqs';
 
 const ignoreLocalPage = () => {};
 
-export default function SubjectMcqsClient({ initialData, page, subject, title }) {
+export default function SubjectMcqsClient({ initialData, page, subject, title, listingPath }) {
   const router = useRouter();
-  const pageUrl = number => '/mcqs/' + subject + (number > 1 ? '?page=' + number : '');
+  const pageUrl = number => (listingPath || '/mcqs/' + subject) + (number > 1 ? '?page=' + number : '');
   if (!initialData.results?.length) return <section className="p-8 text-center"><h1>{title}</h1><p>No questions are available in this subject yet.</p><Link href="/mcqs">Browse other subjects</Link></section>;
 
   return <>

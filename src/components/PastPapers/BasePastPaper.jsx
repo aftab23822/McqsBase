@@ -20,7 +20,7 @@ const normalizeAnswer = (value = '') =>
     .trim()
     .toLowerCase();
 
-const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, totalPages, mcqsPerPage, breadcrumbItems, categoryPath }) =>  {
+const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, totalPages, mcqsPerPage, breadcrumbItems, categoryPath, onPageNavigate }) =>  {
   const router = useRouter();
   const pathname = usePathname();
   
@@ -143,7 +143,7 @@ const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, tota
       resetQuiz();
       setShowModal(false);
       const nextPage = Math.min(currentPage + 1, totalPages);
-      setCurrentPage(nextPage);
+      if (!onPageNavigate) setCurrentPage(nextPage);
       handlePageChange(nextPage);
     }
   };
@@ -243,6 +243,10 @@ const BasePastPaper = ({ pastpaperData, title, currentPage, setCurrentPage, tota
       clearInterval(timerRef.current);
       handleFinishPage(userAnswers, 'manual');
     } else {
+      if (onPageNavigate) {
+        onPageNavigate(page);
+        return;
+      }
       setCurrentPage(page);
       // Update URL with page query parameter
       if (typeof window !== 'undefined') {

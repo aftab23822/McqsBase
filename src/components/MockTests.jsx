@@ -8,15 +8,15 @@ import {
   getUniversities as getStaticUniversities
 } from '../data/categories/mockTestCategories';
 
-const MockTests = () => {
-  const [latestTests, setLatestTests] = useState([]);
-  const [loading, setLoading] = useState(true);
+const MockTests = ({ initialTests }) => {
+  const [latestTests, setLatestTests] = useState(initialTests || []);
+  const [loading, setLoading] = useState(!initialTests);
   const [error, setError] = useState('');
 
   useEffect(() => {
     async function fetchLatestTests() {
       try {
-        setLoading(true);
+        if (!initialTests) setLoading(true);
         setError('');
 
         // Single fast API call for latest tests

@@ -31,13 +31,25 @@ export async function generateMetadata() {
   return metadata;
 }
 
-export default function MockTestsPage() {
+export default async function MockTestsPage() {
+  await connectToDatabase();
+  const tests = await MockTest.aggregate([
+    { $sort: { lastUpdatedAt: -1, _id: -1 } },
+    { $limit: 6 },
+    { $project: { name: 1, slug: 1, universitySlug: 1, category: 1, durationMinutes: 1, lastUpdatedAt: 1, updatedAt: 1, questionCount: { $size: { $ifNull: ['$questions', []] } } } }
+  ]);
+  const initialTests = JSON.parse(JSON.stringify(tests)).map(test => ({
+    ...test,
+    category: test.category || 'universities',
+    targetSlug: test.universitySlug,
+    targetName: (test.universitySlug || test.category || '').split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ')
+  }));
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || 'your-recaptcha-site-key';
 
   return (
     <ReCaptchaProvider siteKey={recaptchaSiteKey}>
       <Navbar />
-      <MockTests />
+      <MockTests initialTests={initialTests} />
       <Footer />
     </ReCaptchaProvider>
   )

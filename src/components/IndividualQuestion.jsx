@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import { ChevronLeft, ChevronRight, ArrowLeft } from 'lucide-react';
 import { generateQuestionSlug } from '../../lib/utils/slugGenerator.js';
 import McqCard from './McqCard';
+import { questionNotes } from '../../lib/content/questionNotes';
 
 const IndividualQuestion = ({
   question,
@@ -18,6 +19,8 @@ const IndividualQuestion = ({
 }) => {
   const router = useRouter();
   const questionToDisplay = question;
+  const reviewedNote = questionNotes[question?.slug || generateQuestionSlug(question?.question || '')];
+  const editorialNote = reviewedNote?.subject === subject ? reviewedNote : null;
   const subjectLink = subjectPath && subjectPath.length > 0 ? subjectPath : subject;
   
   // Determine base path (mcqs or past-papers)
@@ -109,7 +112,7 @@ const IndividualQuestion = ({
           {backText}
         </a>
 
-        {introText ? (
+        {introText && !editorialNote ? (
           <div className="bg-blue-50 border border-blue-100 rounded-lg p-4 mb-6 text-blue-900">
             <p className="text-base leading-relaxed">{introText}</p>
           </div>
@@ -121,14 +124,24 @@ const IndividualQuestion = ({
             question={questionToDisplay.question}
             options={questionToDisplay.options}
             correctAnswer={questionToDisplay.answer}
-            explanation={questionToDisplay.explanation}
+            explanation={questionToDisplay.explanation || editorialNote?.explanation}
+            headingLevel="h1"
             submittedBy={questionToDisplay.submittedBy || 'Anonymous'}
             questionNumber={1}
             subject={categoryName}
           />
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-6 mb-6">
+        {editorialNote && <section className="bg-white rounded-lg shadow-md p-6 mb-6 space-y-4 text-gray-700">
+          <h2 className="text-xl font-bold text-gray-900">Understand the answer</h2>
+          <p><strong>Answer key:</strong> {questionToDisplay.answer}</p>
+          <p>{editorialNote.distinction}</p>
+          <p>{editorialNote.example}</p>
+          <p><a href={editorialNote.source.url} className="text-blue-700 underline" rel="noopener noreferrer" target="_blank">{editorialNote.source.title}</a></p>
+          <p className="text-sm">Reviewed October 23, 2026. <Link href="/editorial-policy" className="underline">Corrections and editorial policy</Link></p>
+        </section>}
+
+        {!editorialNote && <div className="bg-white rounded-lg shadow-md p-6 mb-6">
           <h2 className="text-xl font-bold text-gray-900 mb-3">
             How to Study This {categoryName} Question
           </h2>
@@ -168,6 +181,7 @@ const IndividualQuestion = ({
           </div>
         </div>
 
+        }
         {/* Navigation Buttons */}
         <div className="flex justify-between items-center bg-white rounded-lg shadow-md p-4">
           <div className="flex-1">
