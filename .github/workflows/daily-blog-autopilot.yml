@@ -15,9 +15,9 @@ on:
         required: false
         type: string
       auto_merge:
-        description: 'Merge only after the generated article has been editorially reviewed'
+        description: 'Publish automatically after automated checks pass'
         required: false
-        default: false
+        default: true
         type: boolean
 
 permissions:
@@ -56,7 +56,7 @@ jobs:
       - name: Create and merge pull request
         env:
           GH_TOKEN: ${{ github.token }}
-          AUTO_MERGE: ${{ inputs.auto_merge }}
+          AUTO_MERGE: ${{ github.event_name == 'schedule' || inputs.auto_merge }}
         shell: bash
         run: |
           if git diff --quiet; then

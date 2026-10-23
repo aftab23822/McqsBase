@@ -16,7 +16,7 @@ export default function EditorialPolicy() {
     <h2 className="text-2xl font-bold">Practice sets and past papers</h2>
     <p>A practice set is not an official examination paper. A topic appearing here does not establish that it appears in an official syllabus or will be asked in an exam. Check the recruiting authority’s current notice for eligibility, dates, syllabus, marks, and selection procedures.</p>
     <h2 className="text-2xl font-bold">Publication standard</h2>
-    <p>New article drafts may be assisted by automated tools. They require editorial review before publication: check the answer against the options, explain the reasoning, verify changing facts using primary sources, and check overlap with existing articles. A publication date is not evidence that every fact was independently verified on that date.</p>
+    <p>New articles may be generated and published automatically. Automated publication checks require answer explanations, reject repeated question sets, and verify that the website builds successfully. These checks do not independently verify every fact or replace source verification. A publication date is not evidence that every fact was independently verified on that date. Readers can report errors through the contact form below.</p>
     <h2 className="text-2xl font-bold">Using answers responsibly</h2>
     <p>Some older questions have an answer key without a detailed explanation. Treat an answer key as a revision aid and cross-check disputed answers with your textbook or the official source. Content can contain errors; McqsBase does not guarantee selection, examination success, or a particular score.</p>
     <h2 className="text-2xl font-bold">Report an error</h2>
