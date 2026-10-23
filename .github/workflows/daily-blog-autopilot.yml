@@ -15,9 +15,9 @@ on:
         required: false
         type: string
       auto_merge:
-        description: 'Merge the generated PR automatically'
+        description: 'Merge only after the generated article has been editorially reviewed'
         required: false
-        default: true
+        default: false
         type: boolean
 
 permissions:
@@ -98,6 +98,6 @@ jobs:
             PR_NUMBER="$(echo "$PR_JSON" | jq -r '.number')"
           fi
 
-          if [ "$AUTO_MERGE" != "false" ]; then
+          if [ "$AUTO_MERGE" = "true" ]; then
             gh pr merge "$PR_NUMBER" --squash --delete-branch
           fi

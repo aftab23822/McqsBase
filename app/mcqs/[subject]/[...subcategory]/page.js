@@ -1,3 +1,4 @@
+import { SITE_URL } from '../../../../lib/utils/siteUrl';
 import { Suspense, cache } from 'react';
 import { notFound, redirect } from 'next/navigation';
 import Navbar from '../../../../src/components/Navbar';
@@ -60,7 +61,7 @@ function combineSubjectPath(subject, subpath) {
 async function resolveRequestBaseUrl() {
   // Use configured public base URL or canonical domain.
   // Avoid using request headers so this route can benefit from ISR.
-  return (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com').replace(/\/+$/, '');
+  return SITE_URL;
 }
 
 async function fetchListingFaqItems(baseUrl, subject, categorySegmentsRaw) {
@@ -677,7 +678,7 @@ function canonicalMcqQuestionPath(subject, normalizedSegments, data) {
 
 async function generateStructuredData(question, category, subject, subjectPath) {
   const slug = question.slug || generateQuestionSlug(question.question);
-  const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com').replace(/\/+$/, '');
+  const baseUrl = SITE_URL;
   const subjectPathForUrl = subjectPath || subject;
   const questionUrl = `${baseUrl}/mcqs/${subjectPathForUrl}/question/${slug}`;
 

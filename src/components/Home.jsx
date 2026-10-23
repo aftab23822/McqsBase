@@ -2,14 +2,14 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { 
-  BookOpen, 
-  Search, 
-  FileText, 
-  Users, 
-  Award, 
-  TrendingUp, 
-  Clock, 
+import {
+  BookOpen,
+  Search,
+  FileText,
+  Users,
+  Award,
+  TrendingUp,
+  Clock,
   CheckCircle,
   ArrowRight,
   Star,
@@ -36,18 +36,6 @@ const Home = () => {
   const [selectedQuizAnswer, setSelectedQuizAnswer] = useState(null);
   const [showQuizResult, setShowQuizResult] = useState(false);
 
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "McqsBase.com",
-    "url": "https://www.mcqsbase.com",
-    "description": "Pakistan's premier platform for competitive exam preparation",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://www.mcqsbase.com/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  };
 
   // Sample MCQs for Quick Practice
   const quickMcqs = [
@@ -92,7 +80,7 @@ const Home = () => {
   const features = [
     {
       icon: <BookOpen className="w-8 h-8" />,
-      title: "10,000+ MCQs",
+      title: "Subject-wise MCQs",
       description: "Comprehensive database covering all major subjects and competitive exams"
     },
     {
@@ -118,51 +106,31 @@ const Home = () => {
     {
       icon: <TrendingUp className="w-8 h-8" />,
       title: "Performance Tracking",
-      description: "Monitor your progress with detailed analytics and reports"
+      description: "Check your score at the end of each practice quiz"
     }
   ];
 
   const categories = [
-    { name: "General Knowledge", count: "2,500+", color: "blue", icon: <Globe className="w-6 h-6" /> },
-    { name: "Everyday Science", count: "1,800+", color: "emerald", icon: <Lightbulb className="w-6 h-6" /> },
-    { name: "Current Affairs", count: "1,200+", color: "purple", icon: <Calendar className="w-6 h-6" /> },
-    { name: "Pakistan Studies", count: "1,500+", color: "green", icon: <Flag className="w-6 h-6" /> },
-    { name: "Islamic Studies", count: "1,000+", color: "indigo", icon: <Shield className="w-6 h-6" /> },
-    { name: "English", count: "1,300+", color: "amber", icon: <BookOpen className="w-6 h-6" /> }
+    { name: "General Knowledge", color: "blue", icon: <Globe className="w-6 h-6" /> },
+    { name: "Everyday Science", color: "emerald", icon: <Lightbulb className="w-6 h-6" /> },
+    { name: "Pakistan Current Affairs", color: "purple", icon: <Calendar className="w-6 h-6" /> },
+    { name: "Pakistan Studies", color: "green", icon: <Flag className="w-6 h-6" /> },
+    { name: "Islamic Studies", color: "indigo", icon: <Shield className="w-6 h-6" /> },
+    { name: "English", color: "amber", icon: <BookOpen className="w-6 h-6" /> }
   ];
 
   const stats = [
-    { number: "50,000+", label: "Active Students", icon: <Users className="w-6 h-6" /> },
-    { number: "10,000+", label: "MCQs Available", icon: <BookOpen className="w-6 h-6" /> },
-    { number: "95%", label: "Success Rate", icon: <Award className="w-6 h-6" /> },
-    { number: "24/7", label: "Available", icon: <Clock className="w-6 h-6" /> }
+    { number: "Free", label: "Practice Access", icon: <BookOpen className="w-6 h-6" /> },
+    { number: "Quiz", label: "Check Your Answers", icon: <CheckCircle className="w-6 h-6" /> },
+    { number: "Topics", label: "Subject-wise Practice", icon: <Target className="w-6 h-6" /> },
+    { number: "Guides", label: "Exam Preparation", icon: <FileText className="w-6 h-6" /> }
   ];
 
-  const testimonials = [
-    {
-      name: "Ahmed Khan",
-      position: "FPSC CSS Officer",
-      content: "McqsBase helped me prepare for my CSS exam. The past papers and MCQs were exactly what I needed.",
-      rating: 5
-    },
-    {
-      name: "Fatima Ali",
-      position: "SPSC Lecturer",
-      content: "The interview experiences shared here gave me confidence. I got selected as a lecturer!",
-      rating: 5
-    },
-    {
-      name: "Usman Hassan",
-      position: "PPSC Inspector",
-      content: "Best platform for competitive exam preparation. Free access to quality content is amazing.",
-      rating: 5
-    }
-  ];
 
   return (
     <>
       {/* SEO handled by metadata API */}
-      
+
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 via-white to-purple-50 py-20">
         <div className="max-w-7xl mx-auto px-4">
@@ -171,27 +139,27 @@ const Home = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-2 text-blue-600 font-semibold">
                   <Award className="w-5 h-5" />
-                  <span>Pakistan's #1 MCQ Platform</span>
+                  <span>Free MCQ Practice for Pakistan</span>
                 </div>
                 <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                   Master Your
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"> Competitive Exams</span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Access Pakistan's largest database of MCQs, past papers, and interview experiences. 
+                  Explore subject-wise MCQs, past papers, and interview preparation materials.
                   Prepare for FPSC, SPSC, PPSC, and NTS exams with confidence.
                 </p>
               </div>
-              
+
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link 
+                <Link
                   href="/mcqs"
                   className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 group shadow-lg hover:shadow-xl"
                 >
                   <span>Start Practicing</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Link>
-                <Link 
+                <Link
                   href="/quiz"
                   className="bg-white border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold px-8 py-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 group"
                 >
@@ -220,12 +188,12 @@ const Home = () => {
               <div className="bg-white rounded-2xl shadow-2xl p-8 border border-gray-100">
                 <div className="space-y-6">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-xl font-bold text-gray-900">Quick Stats</h3>
+                    <h3 className="text-xl font-bold text-gray-900">Ways to Practise</h3>
                     <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
                       <BarChart3 className="w-6 h-6 text-white" />
                     </div>
                   </div>
-                  
+
                   <div className="grid grid-cols-2 gap-4">
                     {stats.map((stat, index) => (
                       <div key={index} className="text-center p-4 bg-gray-50 rounded-lg">
@@ -265,23 +233,23 @@ const Home = () => {
                   </span>
                   <span className="text-sm text-gray-500">Question {index + 1}</span>
                 </div>
-                
+
                 <h3 className="text-lg font-semibold text-gray-900 mb-4 leading-relaxed">
                   {mcq.question}
                 </h3>
-                
+
                 <div className="space-y-3 mb-6">
                   {mcq.options.map((option, optionIndex) => {
                     const isCorrect = option === mcq.correct;
                     return (
                       <div key={optionIndex} className={`flex items-center space-x-3 p-3 rounded-lg border transition-colors duration-200 ${
-                        isCorrect 
-                          ? 'border-green-300 bg-green-50' 
+                        isCorrect
+                          ? 'border-green-300 bg-green-50'
                           : 'border-gray-200 hover:border-blue-300'
                       }`}>
                         <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
-                          isCorrect 
-                            ? 'border-green-500 bg-green-500' 
+                          isCorrect
+                            ? 'border-green-500 bg-green-500'
                             : 'border-gray-300'
                         }`}>
                           {isCorrect ? (
@@ -300,7 +268,7 @@ const Home = () => {
 
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-green-600 font-medium">✓ Correct Answer Highlighted</span>
-                  <Link 
+                  <Link
                     href={`/mcqs/${mcq.category.toLowerCase().replace(/\s+/g, '-')}`}
                     className="text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center space-x-1 group"
                   >
@@ -313,7 +281,7 @@ const Home = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Link 
+            <Link
               href="/mcqs"
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 inline-flex items-center space-x-2 group"
             >
@@ -364,9 +332,9 @@ const Home = () => {
                   const isSelected = selectedQuizAnswer === option;
                   const isCorrect = option === featuredQuiz.correct;
                   const showResult = showQuizResult;
-                  
+
                   let optionClass = "flex items-center space-x-3 p-4 rounded-lg border cursor-pointer transition-all duration-200";
-                  
+
                   if (showResult) {
                     if (isCorrect) {
                       optionClass += " bg-green-50 border-green-200 text-green-800";
@@ -412,8 +380,8 @@ const Home = () => {
             {showQuizResult ? (
               <div className="space-y-4">
                 <div className={`p-4 rounded-lg ${
-                  selectedQuizAnswer === featuredQuiz.correct 
-                    ? "bg-green-50 border border-green-200" 
+                  selectedQuizAnswer === featuredQuiz.correct
+                    ? "bg-green-50 border border-green-200"
                     : "bg-red-50 border border-red-200"
                 }`}>
                   <div className="flex items-center space-x-2">
@@ -425,14 +393,14 @@ const Home = () => {
                     <span className={`font-semibold ${
                       selectedQuizAnswer === featuredQuiz.correct ? "text-green-800" : "text-red-800"
                     }`}>
-                      {selectedQuizAnswer === featuredQuiz.correct 
-                        ? "Correct! Well done!" 
+                      {selectedQuizAnswer === featuredQuiz.correct
+                        ? "Correct! Well done!"
                         : "Incorrect. The correct answer is highlighted above."
                       }
                     </span>
                   </div>
                 </div>
-                
+
                 <div className="flex space-x-4">
                   <button
                     onClick={resetQuiz}
@@ -440,7 +408,7 @@ const Home = () => {
                   >
                     Try Again
                   </button>
-                  <Link 
+                  <Link
                     href="/quiz"
                     className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 flex items-center space-x-2 group"
                   >
@@ -452,7 +420,7 @@ const Home = () => {
             ) : (
               <div className="text-center">
                 <p className="text-gray-600 mb-4">Select your answer to see the result</p>
-                <Link 
+                <Link
                   href="/quiz"
                   className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 inline-flex items-center space-x-2 group"
                 >
@@ -528,7 +496,7 @@ const Home = () => {
                };
 
               return (
-                <Link 
+                <Link
                   key={index}
                   href={`/mcqs/${category.name.toLowerCase().replace(/\s+/g, '-')}`}
                   className="bg-white p-6 rounded-xl border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 group"
@@ -540,14 +508,14 @@ const Home = () => {
                     <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors duration-300" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">{category.name}</h3>
-                  <p className="text-gray-600">{category.count} MCQs</p>
+                  <p className="text-gray-600">Practice MCQs</p>
                 </Link>
               );
             })}
           </div>
 
           <div className="text-center mt-12">
-            <Link 
+            <Link
               href="/mcqs"
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 inline-flex items-center space-x-2 group"
             >
@@ -571,7 +539,7 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Link 
+            <Link
               href="/mcqs"
               className="bg-white p-8 rounded-xl border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 group"
             >
@@ -590,7 +558,7 @@ const Home = () => {
               </div>
             </Link>
 
-            <Link 
+            <Link
               href="/blog"
               className="bg-white p-8 rounded-xl border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 group"
             >
@@ -601,7 +569,7 @@ const Home = () => {
                 Articles & Blog
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Expert advice, preparation tips, and insights from successful candidates. Stay updated with 
+                Expert advice, preparation tips, and insights from successful candidates. Stay updated with
                 the latest strategies and techniques for competitive exam success.
               </p>
               <div className="flex items-center text-purple-600 font-semibold">
@@ -610,7 +578,7 @@ const Home = () => {
               </div>
             </Link>
 
-            <Link 
+            <Link
               href="/about"
               className="bg-white p-8 rounded-xl border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 group"
             >
@@ -621,7 +589,7 @@ const Home = () => {
                 About Us
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Learn about McqsBase's mission, vision, and commitment to providing free, high-quality 
+                Learn about McqsBase's mission, vision, and commitment to providing free, high-quality
                 education resources for competitive exam preparation in Pakistan.
               </p>
               <div className="flex items-center text-green-600 font-semibold">
@@ -633,42 +601,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Success Stories
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Hear from students who achieved their goals with McqsBase
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-8 rounded-xl border border-gray-100 shadow-lg">
-                <div className="flex items-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-600 mb-6 leading-relaxed">"{testimonial.content}"</p>
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
-                    {testimonial.name.charAt(0)}
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-600">{testimonial.position}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-blue-600 to-purple-600">
         <div className="max-w-4xl mx-auto px-4 text-center">
@@ -676,17 +608,17 @@ const Home = () => {
             Ready to Start Your Success Journey?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Join thousands of students who are already preparing for their competitive exams with McqsBase
+            Build a study routine with subject-wise practice questions and quizzes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
+            <Link
               href="/mcqs"
               className="bg-white text-blue-600 hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 group"
             >
               <span>Start Practicing</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </Link>
-            <Link 
+            <Link
               href="/submit-mcqs"
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8 py-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 group"
             >

@@ -1,3 +1,4 @@
+import { SITE_URL } from '../../../lib/utils/siteUrl';
 import { Suspense } from 'react';
 import { notFound } from 'next/navigation';
 import { generateSEOMetadata } from '../../../src/components/SEO';
@@ -17,7 +18,7 @@ const QuizComponents = {
   'pakistan-studies': () => import('../../../src/components/QuizCategory/PakStudyQuiz'),
   'general-knowledge': () => import('../../../src/components/QuizCategory/GeneralKnowledgeQuiz'),
   'everyday-science': () => import('../../../src/components/QuizCategory/EverydayScienceQuiz'),
-  
+
   // Sciences
   'biology': () => import('../../../src/components/QuizCategory/BiologyQuiz'),
   'chemistry': () => import('../../../src/components/QuizCategory/ChemistryQuiz'),
@@ -25,12 +26,12 @@ const QuizComponents = {
   'mathematics': () => import('../../../src/components/QuizCategory/MathsQuiz'),
   'maths': () => import('../../../src/components/QuizCategory/MathsQuiz'),
   'statistics': () => import('../../../src/components/QuizCategory/StatisticsQuiz'),
-  
+
   // Computer Science
   'computer': () => import('../../../src/components/QuizCategory/ComputerQuiz'),
   'computer-science': () => import('../../../src/components/QuizCategory/ComputerQuiz'),
   'software-engineering': () => import('../../../src/components/QuizCategory/SoftwareEngineeringQuiz'),
-  
+
   // Business & Economics
   'accounting': () => import('../../../src/components/QuizCategory/AccountingQuiz'),
   'auditing': () => import('../../../src/components/QuizCategory/AuditingQuiz'),
@@ -39,14 +40,14 @@ const QuizComponents = {
   'hrm': () => import('../../../src/components/QuizCategory/HRMQuiz'),
   'management-sciences': () => import('../../../src/components/QuizCategory/ManagementSciencesQuiz'),
   'marketing': () => import('../../../src/components/QuizCategory/MarketingQuiz'),
-  
+
   // Engineering
   'chemical-engineering': () => import('../../../src/components/QuizCategory/ChemicalEngineeringQuiz'),
   'civil-engineering': () => import('../../../src/components/QuizCategory/CivilEngineeringQuiz'),
   'electrical-engineering': () => import('../../../src/components/QuizCategory/ElectricalEngineeringQuiz'),
   'engineering': () => import('../../../src/components/QuizCategory/EngineeringQuiz'),
   'mechanical-engineering': () => import('../../../src/components/QuizCategory/MechanicalEngineeringQuiz'),
-  
+
   // Medical
   'biochemistry': () => import('../../../src/components/QuizCategory/BiochemistryQuiz'),
   'election-officer': () => import('../../../src/components/QuizCategory/ElectionOfficerQuiz'),
@@ -140,7 +141,7 @@ export default async function QuizCategoryPage({ params, searchParams }) {
   let initialTree = undefined;
 
   // Prefer configured public base URL; fall back to canonical domain
-  const FALLBACK_BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com').replace(/\/+$/, '');
+  const FALLBACK_BASE_URL = SITE_URL;
   const absoluteBase = FALLBACK_BASE_URL;
 
   const componentImporter = QuizComponents[subject];

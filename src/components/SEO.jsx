@@ -1,7 +1,8 @@
 // Note: In Next.js App Router, use generateMetadata() in page.js instead of this component.
 // This component is deprecated; use metadata API in page.js files.
 
-export const DEFAULT_BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com').replace(/\/+$/, '');
+import { SITE_URL } from '../../lib/utils/siteUrl';
+export const DEFAULT_BASE_URL = SITE_URL;
 
 function toCanonicalUrl(input = '/') {
   if (!input || input === '/') return `${DEFAULT_BASE_URL}/`;

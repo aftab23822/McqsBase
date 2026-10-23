@@ -21,7 +21,7 @@ Prepare for the Pak Army initial test with 100 original practice MCQs and answer
 | Section | Questions | Focus |
 | --- | --- | --- |
 | Set 1 | 1-20 | Core Pak Army Initial Test fundamentals |
-| Set 2 | 21-40 | Frequently repeated test concepts |
+| Set 2 | 21-40 | Foundational test concepts |
 | Set 3 | 41-60 | Mixed exam-style practice |
 | Set 4 | 61-80 | Fast recall and elimination practice |
 | Set 5 | 81-100 | Final revision and score-building |
@@ -150,6 +150,39 @@ Prepare for the Pak Army initial test with 100 original practice MCQs and answer
 | 98 | What does the keyboard shortcut Ctrl+C commonly do?<br />A) Cut selected content<br />B) Copy selected content<br />C) Close the window<br />D) Print the page | **B) Copy selected content** |
 | 99 | Which unit is commonly used to measure computer file size?<br />A) Litre<br />B) Byte<br />C) Metre<br />D) Watt | **B) Byte** |
 | 100 | Which of these is an example of an input device?<br />A) Printer<br />B) Speaker<br />C) Mouse<br />D) Monitor | **C) Mouse** |
+
+## Worked solutions: understand questions 1 to 20
+
+The answer key tells you which option to select. These solutions show the method so you can solve a question with different numbers. Try each calculation before reading its solution.
+
+| Question | Reasoning and common mistake |
+| --- | --- |
+| 1: 18% of 250 | A percentage means out of 100. Calculate 250 × 18 ÷ 100 = 45. Mental method: 10% is 25 and 8% is 20; add them. Do not subtract 18 from 250. |
+| 2: Three-fifths of 90 | Divide by the denominator first: 90 ÷ 5 = 18. Then multiply by the numerator: 18 × 3 = 54. The word “of” means multiplication. |
+| 3: Ratio 2:3, total 40 | There are 2 + 3 = 5 equal shares. Each share is 40 ÷ 5 = 8, so the smaller quantity is 2 × 8 = 16. The larger is 24; together they give 40. |
+| 4: LCM of 12 and 18 | Multiples of 12 are 12, 24, 36; multiples of 18 are 18, 36. Their first common positive multiple is 36. The HCF is 6, a different quantity. |
+| 5: Average of 8, 12, 16 | Add the values and divide by their count: (8 + 12 + 16) ÷ 3 = 36 ÷ 3 = 12. Dividing by the largest value is not an average. |
+| 6: 150 km in 3 hours | Average speed = total distance ÷ total time = 150 ÷ 3 = 50 km/h. Keep the distance and time units consistent. |
+| 7: 25% increase on Rs. 80 | The increase is 80 × 25 ÷ 100 = Rs. 20. The new price is 80 + 20 = Rs. 100. Rs. 20 is the increase, not the final price. |
+| 8: Simple interest | Interest = principal × annual rate × years ÷ 100 = 5,000 × 8 × 2 ÷ 100 = Rs. 800. The total repayment would be Rs. 5,800; the question asks for interest only. |
+| 9: 4x = 28 | Divide both sides by 4: x = 7. Check by substituting: 4 × 7 = 28. |
+| 10: 7, 14, 28, 56 | Each term doubles, so the next term is 56 × 2 = 112. A difference of 7 applies only to the first pair. |
+| 11: 3, 6, 11, 18, 27 | Differences are 3, 5, 7, 9. Continue the odd differences with 11: 27 + 11 = 38. Check the whole sequence before choosing a rule. |
+| 12: 2, 5, 10, 17 | Differences are 3, 5, 7; the next is 9. Thus 17 + 9 = 26. Equivalently, the displayed rule is n² + 1 for n = 1, 2, 3, 4, 5. |
+| 13: Doctor and teacher | The relationship is worker to usual workplace: doctor → hospital; teacher → school. Match the relationship rather than an unrelated association. |
+| 14: Bird and bee | The relationship is animal to home: bird → nest; bee → hive. A stable is associated with horses. |
+| 15: Pen and knife | Match tool to usual action: pen → write; knife → cut. A knife can have several uses, but “cut” matches the relationship among the options. |
+| 16: Greatest decimal | Write all values to three decimal places: 0.700, 0.070, 0.707, 0.770. Compare digits from the left; 0.770 is greatest. More decimal digits do not imply a larger value. |
+| 17: Kilometre to metre | The prefix kilo means one thousand, so 1 km = 1,000 m. Multiply kilometres by 1,000 when converting to metres. |
+| 18: 45 minutes as an hour | One hour has 60 minutes, so the fraction is 45/60. Divide numerator and denominator by 15 to obtain 3/4. |
+| 19: Difference in ages | The present difference is 40 − 10 = 30 years. After five years, ages are 45 and 15; their difference remains 30. Both ages increase equally. |
+| 20: Workers and time | At the same constant work rate, total work is 5 × 10 = 50 worker-days. With 10 workers, time is 50 ÷ 10 = 5 days. This assumes the work can be shared without extra delay. |
+
+### Turn a wrong answer into a revision task
+
+Record the question number, the step you missed, and one new example with different numbers. For instance, after question 3, try a ratio of 3:5 with a total of 64: one share is 8, and the smaller quantity is 24. After question 7, try a 15% increase on Rs. 200: the increase is Rs. 30 and the new price is Rs. 230. Revisit the example the next day without the solution visible.
+
+These are foundational practice exercises, not evidence of the exact Pakistan Army recruitment syllabus. Use the current instructions for your recruitment category to decide which subjects to prioritize.
 
 ## How to revise this Pak Army Initial Test set
 

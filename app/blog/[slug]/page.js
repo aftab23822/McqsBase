@@ -27,7 +27,7 @@ export async function generateMetadata({ params }) {
     return null;
   });
   const article = databaseArticle || blogArticles[slug];
-  
+
   if (!article) {
     return {
       title: 'Article Not Found - McqsBase'
@@ -59,11 +59,11 @@ export default async function BlogArticlePage({ params }) {
   const article = databaseArticle
     ? {
         ...databaseArticle,
-        date: databaseArticle.publishedAt ? new Date(databaseArticle.publishedAt).getFullYear().toString() : 'New',
+        date: databaseArticle.publishedAt ? new Date(databaseArticle.publishedAt).toISOString().slice(0, 10) : 'New',
         readTime: estimateReadTime(databaseArticle.body)
       }
     : blogArticles[slug];
-  
+
   if (!article) {
     notFound();
   }
@@ -71,7 +71,7 @@ export default async function BlogArticlePage({ params }) {
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || 'your-recaptcha-site-key';
   const canonicalUrl = `${DEFAULT_BASE_URL}/blog/${slug}`;
   const publishedDate = toStructuredDate(databaseArticle?.publishedAt || article.date);
-  const modifiedDate = toStructuredDate(databaseArticle?.updatedAt || databaseArticle?.publishedAt || article.date);
+  const modifiedDate = toStructuredDate(databaseArticle?.updatedAt || article.updatedDate || databaseArticle?.publishedAt || article.date);
   const articleDescription = databaseArticle
     ? article.metaDescription || article.excerpt
     : article.excerpt || `Read about ${article.title}.`;

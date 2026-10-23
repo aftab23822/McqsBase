@@ -2,13 +2,13 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { 
-  Award, 
-  Target, 
-  Users, 
-  BookOpen, 
-  CheckCircle, 
-  TrendingUp, 
+import {
+  Award,
+  Target,
+  Users,
+  BookOpen,
+  CheckCircle,
+  TrendingUp,
   Heart,
   Globe,
   Zap,
@@ -44,7 +44,7 @@ const About = () => {
 
   const features = [
     {
-      title: "10,000+ MCQs",
+      title: "Subject-wise MCQs",
       description: "Comprehensive database covering all major subjects and exam categories",
       icon: <BookOpen className="w-6 h-6" />
     },
@@ -93,8 +93,8 @@ const About = () => {
               Empowering Pakistan's Future Leaders Through Quality Education
             </p>
             <p className="text-lg text-blue-50 max-w-3xl mx-auto leading-relaxed">
-              McqsBase is Pakistan's premier online platform dedicated to providing comprehensive, 
-              free, and high-quality preparation materials for competitive examinations. Our mission 
+              McqsBase is Pakistan's premier online platform dedicated to providing comprehensive,
+              free, and high-quality preparation materials for competitive examinations. Our mission
               is to democratize access to education and help aspiring students achieve their career goals.
             </p>
           </div>
@@ -113,14 +113,14 @@ const About = () => {
                 <h2 className="text-3xl font-bold text-gray-900">Our Mission</h2>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed">
-                To provide every student in Pakistan with free, comprehensive, and high-quality 
-                preparation materials for competitive examinations. We believe that access to 
-                quality education should not be limited by financial constraints, geographical 
+                To provide every student in Pakistan with free, comprehensive, and high-quality
+                preparation materials for competitive examinations. We believe that access to
+                quality education should not be limited by financial constraints, geographical
                 location, or social background.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Through our extensive database of MCQs, past papers, interview experiences, 
-                and exam preparation materials, we aim to level the playing field and give every student 
+                Through our extensive database of MCQs, past papers, interview experiences,
+                and exam preparation materials, we aim to level the playing field and give every student
                 an equal opportunity to succeed in their chosen career path.
               </p>
             </div>
@@ -133,14 +133,14 @@ const About = () => {
                 <h2 className="text-3xl font-bold text-gray-900">Our Vision</h2>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed">
-                To become the most trusted and comprehensive educational resource platform in 
-                Pakistan, recognized for excellence, innovation, and commitment to student success. 
-                We envision a future where every Pakistani student has access to world-class 
+                To become the most trusted and comprehensive educational resource platform in
+                Pakistan, recognized for excellence, innovation, and commitment to student success.
+                We envision a future where every Pakistani student has access to world-class
                 preparation materials right at their fingertips.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                We strive to continuously expand our content library, improve user experience, 
-                and develop new tools and features that help students prepare more effectively 
+                We strive to continuously expand our content library, improve user experience,
+                and develop new tools and features that help students prepare more effectively
                 for competitive examinations.
               </p>
             </div>
@@ -162,8 +162,8 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
               >
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white mb-6">
@@ -195,7 +195,7 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {values.map((value, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl border border-gray-200 hover:shadow-lg transition-all duration-300"
               >
@@ -237,7 +237,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-bold mb-4">100% Free</h3>
               <p className="text-blue-100 leading-relaxed">
-                All our content is completely free. No hidden charges, no premium subscriptions, 
+                All our content is completely free. No hidden charges, no premium subscriptions,
                 no paywalls. Access everything you need without spending a single rupee.
               </p>
             </div>
@@ -248,7 +248,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-bold mb-4">Regularly Updated</h3>
               <p className="text-blue-100 leading-relaxed">
-                Our content is continuously updated with new MCQs, past papers, and study materials 
+                Our content is continuously updated with new MCQs, past papers, and study materials
                 to ensure you have access to the latest and most relevant preparation resources.
               </p>
             </div>
@@ -259,7 +259,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-bold mb-4">Quality Assured</h3>
               <p className="text-blue-100 leading-relaxed">
-                Every question and answer is carefully reviewed and verified by our team of experts 
+                Every question and answer is carefully reviewed and verified by our team of experts
                 to ensure accuracy and relevance to actual competitive examinations.
               </p>
             </div>
@@ -270,7 +270,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-bold mb-4">User-Friendly Interface</h3>
               <p className="text-blue-100 leading-relaxed">
-                Our intuitive and responsive design ensures a seamless learning experience across 
+                Our intuitive and responsive design ensures a seamless learning experience across
                 all devices - desktop, tablet, or mobile.
               </p>
             </div>
@@ -281,7 +281,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-bold mb-4">Community Driven</h3>
               <p className="text-blue-100 leading-relaxed">
-                Built by students, for students. Our community contributes questions, shares 
+                Built by students, for students. Our community contributes questions, shares
                 experiences, and supports each other in their exam preparation journey.
               </p>
             </div>
@@ -292,41 +292,9 @@ const About = () => {
               </div>
               <h3 className="text-xl font-bold mb-4">No Registration Required</h3>
               <p className="text-blue-100 leading-relaxed">
-                Start practicing immediately without creating an account. We respect your privacy 
+                Start practicing immediately without creating an account. We respect your privacy
                 and believe learning should be barrier-free.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Statistics Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-2">
-                50,000+
-              </div>
-              <div className="text-gray-600 text-lg">Active Students</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-2">
-                10,000+
-              </div>
-              <div className="text-gray-600 text-lg">MCQs Available</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-2">
-                500+
-              </div>
-              <div className="text-gray-600 text-lg">Past Papers</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-2">
-                95%
-              </div>
-              <div className="text-gray-600 text-lg">Success Rate</div>
             </div>
           </div>
         </div>
@@ -339,18 +307,18 @@ const About = () => {
             Ready to Start Your Success Journey?
           </h2>
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            Join thousands of students who are already preparing for their competitive exams with McqsBase. 
+            Prepare at your own pace with subject-wise MCQs and quizzes.
             Start practicing today and take the first step towards achieving your career goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
+            <Link
               href="/mcqs"
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 group"
             >
               <span>Start Practicing</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </Link>
-            <Link 
+            <Link
               href="/contact"
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold px-8 py-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 group"
             >

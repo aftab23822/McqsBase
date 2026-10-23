@@ -1,3 +1,5 @@
+import { PAGE_SIZE, buildKeysetShardLocators } from '../../lib/services/questionSitemap';
+import { SITE_URL } from '../../lib/utils/siteUrl';
 import { NextResponse } from 'next/server';
 import mongoose from 'mongoose';
 import connectToDatabase from '@/lib/mongodb.js';
@@ -7,18 +9,13 @@ import Category from '@/lib/models/Category.js';
 import { generateQuestionSlug } from '@/lib/utils/slugGenerator.js';
 import { normalizeCategoryName } from '@/utils/categoryConfig';
 
-const FALLBACK_BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com').replace(/\/+$/, '');
+const FALLBACK_BASE_URL = SITE_URL;
 /** URLs per sitemap shard; index page counts follow ceil(count / PAGE_SIZE) from live DB totals. */
-const PAGE_SIZE = 1000;
+
 
 // Derive absolute base URL from the request (works locally and in prod)
-function getBaseUrl(request) {
-  try {
-    const proto = request.headers.get('x-forwarded-proto') || 'http';
-    const host = request.headers.get('host') || '';
-    if (host) return `${proto}://${host}`.replace(/\/+$/, '');
-  } catch {}
-  return FALLBACK_BASE_URL;
+function getBaseUrl() {
+  return SITE_URL;
 }
 
 /**
@@ -68,13 +65,13 @@ export async function GET(request) {
 
     // Fetch MCQs that have a question and a category
     const mcqFilter = {
-      question: { $exists: true, $ne: null, $ne: '' },
+      question: { $exists: true, $nin: [null, ''] },
       categoryId: { $exists: true, $ne: null }
     };
 
     // Fetch Past Papers that have a question and a category
     const pastPaperFilter = {
-      question: { $exists: true, $ne: null, $ne: '' },
+      question: { $exists: true, $nin: [null, ''] },
       categoryId: { $exists: true, $ne: null }
     };
 
@@ -215,7 +212,7 @@ export async function GET(request) {
     const isPastPaperCategory = (categoryName) => {
       if (!categoryName) return false;
       const name = categoryName.toLowerCase();
-      return name.startsWith('/past-papers/') || 
+      return name.startsWith('/past-papers/') ||
              name.startsWith('past-papers/') ||
              name.includes('/past-papers/');
     };
@@ -306,7 +303,7 @@ export async function GET(request) {
     console.error('[sitemap-questions.xml]', err);
     const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>`;
     return new Response(xml, {
-      status: 200,
+      status: 503,
       headers: {
         'content-type': 'application/xml; charset=utf-8',
         'cache-control': 'no-store'
@@ -318,29 +315,6 @@ export async function GET(request) {
 /**
  * Build shard URLs using keyset pagination on _id (desc). Avoids MongoDB skip(N) for large N (timeouts / GSC "could not be read").
  */
-async function buildKeysetShardLocators(Model, filter, baseUrl, sourceParam) {
-  const locs = [];
-  let bound = null;
-  for (;;) {
-    const f = bound ? { ...filter, _id: { $lt: bound } } : filter;
-    const batch = await Model.find(f)
-      .sort({ _id: -1 })
-      .limit(PAGE_SIZE)
-      .select({ _id: 1 })
-      .lean();
-    if (!batch.length) break;
-
-    const loc =
-      bound === null
-        ? `${baseUrl}/sitemap-questions.xml?source=${sourceParam}`
-        : `${baseUrl}/sitemap-questions.xml?source=${sourceParam}&cursor=${encodeURIComponent(bound.toString())}`;
-    locs.push(loc);
-
-    bound = batch[batch.length - 1]._id;
-    if (batch.length < PAGE_SIZE) break;
-  }
-  return locs;
-}
 
 /**
  * Escape XML special characters

@@ -21,7 +21,7 @@ const normalizeAnswer = (value = '') =>
     .trim()
     .toLowerCase();
 
-const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mcqsPerPage, subjectSlug }) => {
+const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mcqsPerPage, subjectSlug, onPageNavigate }) => {
   const router = useRouter();
   const pathname = usePathname();
   const prevPageRef = useRef(currentPage);
@@ -59,7 +59,7 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
       setShowLeaveModal(true);
       return;
     }
-    
+
     setQuizMode(enabled);
     if (typeof window !== 'undefined') {
       localStorage.setItem('mcqsQuizMode', enabled.toString());
@@ -77,7 +77,7 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
     extractedSlug = parts[0].split('?')[0];
   }
   const finalSubjectSlug = subjectSlug || extractedSlug || '';
-  
+
   // Debug: Log if slug is empty (remove in production)
   if (!finalSubjectSlug && process.env.NODE_ENV === 'development') {
     console.warn('BaseMcqs: subjectSlug is empty!', { subjectSlug, pathname, extractedSlug });
@@ -85,12 +85,13 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
 
   // Sync URL with page changes on mount and when URL changes
   useEffect(() => {
+    if (onPageNavigate) return;
     const pageNum = Number.isFinite(pageFromUrl) && pageFromUrl > 0 ? pageFromUrl : 1;
     const maxPage = totalPages > 0 ? totalPages : pageNum;
     const nextPage = Math.min(pageNum, maxPage);
 
     setCurrentPage((prev) => (prev === nextPage ? prev : nextPage));
-  }, [pageFromUrl, totalPages, setCurrentPage]);
+  }, [pageFromUrl, totalPages, setCurrentPage, onPageNavigate]);
 
   // Quiz mode functions
   const startTimer = () => {
@@ -169,7 +170,7 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
       resetQuiz();
       setShowModal(false);
       const nextPage = Math.min(currentPage + 1, totalPages);
-      setCurrentPage(nextPage);
+      if (!onPageNavigate) setCurrentPage(nextPage);
       handlePageChange(nextPage);
     }
   };
@@ -193,7 +194,7 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
       if (target && target.hasAttribute('href') && target.getAttribute('href').startsWith('/')) {
         e.preventDefault();
         e.stopPropagation();
-        
+
         const href = target.getAttribute('href');
         setPendingNavigation(href);
         setShowLeaveModal(true);
@@ -221,7 +222,7 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
 
   const confirmLeavePage = () => {
     setShowLeaveModal(false);
-    
+
     // If this is a Quiz Mode toggle, turn off Quiz Mode
     if (pendingNavigation === 'toggle-off') {
       resetQuiz();
@@ -232,15 +233,15 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
       setPendingNavigation(null);
       return;
     }
-    
+
     resetQuiz();
-    
+
     if (pendingNavigation) {
       if (handlersRef.current.handleClick && handlersRef.current.handleBeforeUnload) {
         window.removeEventListener('click', handlersRef.current.handleClick, true);
         window.removeEventListener('beforeunload', handlersRef.current.handleBeforeUnload);
       }
-      
+
       setTimeout(() => {
         window.location.href = pendingNavigation;
       }, 100);
@@ -264,11 +265,15 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
   // Update URL when page changes
   const handlePageChange = (page) => {
     if (page === currentPage) return;
-    
+
     if (quizMode && !showModal && Object.keys(userAnswers).length > 0) {
       clearInterval(timerRef.current);
       handleFinishPage(userAnswers, 'manual');
     } else {
+      if (onPageNavigate) {
+        onPageNavigate(page);
+        return;
+      }
       setCurrentPage(page);
       if (typeof window === 'undefined') {
         return;
@@ -379,10 +384,10 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
               // If slug doesn't exist, generate one (will be saved on first access)
               const questionSlug = mcq.slug || generateQuestionSlug(mcq.question);
               // Only generate URL if we have a valid subject slug
-              const questionUrl = finalSubjectSlug 
+              const questionUrl = finalSubjectSlug
                 ? `/mcqs/${finalSubjectSlug}/question/${questionSlug}`
                 : '#';
-              
+
               // Store page number and category path when clicking question link
               const handleQuestionClick = () => {
                 if (finalSubjectSlug && typeof window !== 'undefined') {
@@ -390,7 +395,7 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
                   sessionStorage.setItem('mcqsReturnCategory', finalSubjectSlug);
                 }
               };
-              
+
               if (quizMode) {
                 return (
                   <QuizMcqCard
@@ -404,10 +409,10 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
                   />
                 );
               }
-              
+
               return (
                 <div key={mcq._id?.toString() || index} className="group">
-                  <Link 
+                  <Link
                     href={questionUrl}
                     className="block hover:opacity-95 transition-opacity"
                     onClick={!finalSubjectSlug ? (e) => {
@@ -470,4 +475,4 @@ const BaseMcqs = ({ mcqsData, title, currentPage, setCurrentPage, totalPages, mc
   );
 };
 
-export default BaseMcqs; 
+export default BaseMcqs;

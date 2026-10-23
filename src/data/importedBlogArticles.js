@@ -96,6 +96,7 @@ export const importedBlogArticles = {
     body: readImportedBlogBody("paf-airman-test-mcqs")
   },
   "pak-army-initial-test-mcqs": {
+    updatedDate: "2026-10-23",
     title: "100 Pak Army Initial Test MCQs with Answers for Academic and Intelligence Practice",
     excerpt:
       "Practice 100 original Pak Army initial test MCQs covering verbal reasoning, mathematics, English, Pakistan Studies, general science, and computer basics.",
@@ -185,20 +186,10 @@ export const importedBlogArticles = {
     content: null,
     body: readImportedBlogBody("nhmp-motorway-police-test-mcqs-2026-2026-10-06")
   },
-  "100-english-mcqs-with-answers-2026-10-05": {
-    title: "100 English MCQs with Answers for Competitive Exams - October 5, 2026",
-    excerpt:
-      "Practice 100 English MCQs with bold answers for CSS, PMS, PPSC, FPSC, SPSC, NTS and screening tests. This daily static MCQsBase set supports fast SEO-friendly revision and exam preparation.",
-    category: "Subject Guide",
-    date: "2026-10-05",
-    readTime: "15 min",
-    content: null,
-    body: readImportedBlogBody("100-english-mcqs-with-answers-2026-10-05")
-  },
   "100-english-mcqs-with-answers-2026-10-04": {
-    title: "100 English MCQs with Answers for Competitive Exams - October 4, 2026",
+    title: "100 English MCQs with Answers for Competitive Exams",
     excerpt:
-      "Practice 100 English MCQs with bold answers for CSS, PMS, PPSC, FPSC, SPSC, NTS and screening tests. This daily static MCQsBase set supports fast SEO-friendly revision and exam preparation.",
+      "Practice 100 English MCQs with bold answers for CSS, PMS, PPSC, FPSC, SPSC, NTS and screening tests. Use the answer key to check grammar, vocabulary, and sentence structure practice.",
     category: "Subject Guide",
     date: "2026-10-04",
     readTime: "15 min",

@@ -41,9 +41,6 @@ export const metadata = {
   icons: {
     icon: '/eagle.svg',
   },
-  alternates: {
-    canonical: '/',
-  },
 }
 
 export default function RootLayout({ children }) {
@@ -67,7 +64,7 @@ export default function RootLayout({ children }) {
         />
         <link rel="icon" href="/eagle.svg" type="image/svg+xml" sizes="any" />
         <meta name="google-site-verification" content="WGnVaxb3MaxbnE_dIZ_EYGB9mUMfA1knPGt7sIyhu0I" />
-        
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -77,15 +74,10 @@ export default function RootLayout({ children }) {
               "name": "McqsBase.com",
               "url": "https://www.mcqsbase.com",
               "description": "Pakistan's premier platform for competitive exam preparation with MCQs, past papers, and interview materials.",
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://www.mcqsbase.com/search?q={search_term_string}",
-                "query-input": "required name=search_term_string"
-              }
             })
           }}
         />
-        
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -104,7 +96,7 @@ export default function RootLayout({ children }) {
             })
           }}
         />
-        
+
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5652591674967437"

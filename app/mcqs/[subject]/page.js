@@ -1,3 +1,6 @@
+import SubjectMcqsClient from '../../../src/components/MCQsCategory/SubjectMcqsClient';
+import { getSubjectPage } from '../../../lib/services/subjectPage';
+import { SITE_URL } from '../../../lib/utils/siteUrl';
 import { Suspense } from 'react';
 import { notFound } from 'next/navigation';
 import { generateSEOMetadata } from '../../../src/components/SEO';
@@ -17,7 +20,7 @@ const MCQComponents = {
   'pakistan-studies': () => import('../../../src/components/MCQsCategory/PakStudyMcqs'),
   'general-knowledge': () => import('../../../src/components/MCQsCategory/GeneralKnowledgeMcqs'),
   'everyday-science': () => import('../../../src/components/MCQsCategory/EverydayScienceMcqs'),
-  
+
   // Sciences
   'biology': () => import('../../../src/components/MCQsCategory/BiologyMcqs'),
   'chemistry': () => import('../../../src/components/MCQsCategory/ChemistryMcqs'),
@@ -25,12 +28,12 @@ const MCQComponents = {
   'mathematics': () => import('../../../src/components/MCQsCategory/MathsMcqs'),
   'maths': () => import('../../../src/components/MCQsCategory/MathsMcqs'),
   'statistics': () => import('../../../src/components/MCQsCategory/StatisticsMcqs'),
-  
+
   // Computer Science
   'computer': () => import('../../../src/components/MCQsCategory/ComputerMcqs'),
   'computer-science': () => import('../../../src/components/MCQsCategory/ComputerMcqs'),
   'software-engineering': () => import('../../../src/components/MCQsCategory/SoftwareEngineeringMcqs'),
-  
+
   // Business & Economics
   'accounting': () => import('../../../src/components/MCQsCategory/AccountingMcqs'),
   'auditing': () => import('../../../src/components/MCQsCategory/AuditingMcqs'),
@@ -40,7 +43,7 @@ const MCQComponents = {
   'hrm': () => import('../../../src/components/MCQsCategory/HRMMcqs'),
   'human-resource-management': () => import('../../../src/components/MCQsCategory/HRMMcqs'),
   'management-sciences': () => import('../../../src/components/MCQsCategory/ManagementSciencesMcqs'),
-  
+
   // Medical Sciences
   'medical': () => import('../../../src/components/MCQsCategory/MedicalMcqs'),
   'pathology': () => import('../../../src/components/MCQsCategory/PathologyMcqs'),
@@ -49,24 +52,24 @@ const MCQComponents = {
   'microbiology': () => import('../../../src/components/MCQsCategory/MicrobiologyMcqs'),
   'physiology': () => import('../../../src/components/MCQsCategory/PhysiologyMcqs'),
   'general-anatomy': () => import('../../../src/components/MCQsCategory/GeneralAnatomyMcqs'),
-  
-  // Dental Sciences  
+
+  // Dental Sciences
   'oral-histology': () => import('../../../src/components/MCQsCategory/OralHistologyMcqs'),
   'oral-anatomy': () => import('../../../src/components/MCQsCategory/OralAnatomyMcqs'),
   'oral-pathology-medicine': () => import('../../../src/components/MCQsCategory/OralPathologyMedicineMcqs'),
   'dental-materials': () => import('../../../src/components/MCQsCategory/DentalMaterialsMcqs'),
-  
+
   // Engineering
   'engineering': () => import('../../../src/components/MCQsCategory/EngineeringMcqs'),
   'civil-engineering': () => import('../../../src/components/MCQsCategory/CivilEngineeringMcqs'),
   'mechanical-engineering': () => import('../../../src/components/MCQsCategory/MechanicalEngineeringMcqs'),
   'chemical-engineering': () => import('../../../src/components/MCQsCategory/ChemicalEngineeringMcqs'),
   'electrical-engineering': () => import('../../../src/components/MCQsCategory/ElectricalEngineeringMcqs'),
-  
+
   // Agriculture & Forestry
   'agriculture': () => import('../../../src/components/MCQsCategory/AgricultureMcqs'),
   'forestry': () => import('../../../src/components/MCQsCategory/ForestryMcqs'),
-  
+
   // Education & Social Sciences
   'pedagogy': () => import('../../../src/components/MCQsCategory/PedagogyMcqs'),
   'education': () => import('../../../src/components/MCQsCategory/PedagogyMcqs'),
@@ -75,12 +78,12 @@ const MCQComponents = {
   'sociology': () => import('../../../src/components/MCQsCategory/SociologyMcqs'),
   'political-science': () => import('../../../src/components/MCQsCategory/PoliticalScienceMcqs'),
   'international-relations': () => import('../../../src/components/MCQsCategory/InternationalRelationsMcqs'),
-  
+
   // Law & Administration
   'judiciary-law': () => import('../../../src/components/MCQsCategory/JudiciaryLawMcqs'),
   'law': () => import('../../../src/components/MCQsCategory/JudiciaryLawMcqs'),
   'election-officer': () => import('../../../src/components/MCQsCategory/ElectionOfficerMcqs'),
-  
+
   // Current Affairs
   'pakistan-current-affairs': () => import('../../../src/components/MCQsCategory/PakistanCurrentAffairsMcqs'),
   'world-current-affairs': () => import('../../../src/components/MCQsCategory/WorldCurrentAffairsMcqs'),
@@ -97,20 +100,20 @@ const subjectTitles = {
   'pakistan-studies': 'Pakistan Studies MCQs',
   'general-knowledge': 'General Knowledge MCQs',
   'everyday-science': 'Everyday Science MCQs',
-  
+
   // Sciences
-  'biology': 'Biology MCQs', 
+  'biology': 'Biology MCQs',
   'chemistry': 'Chemistry MCQs',
   'physics': 'Physics MCQs',
   'mathematics': 'Mathematics MCQs',
   'maths': 'Mathematics MCQs',
   'statistics': 'Statistics MCQs',
-  
+
   // Computer Science
   'computer': 'Computer Science MCQs',
   'computer-science': 'Computer Science MCQs',
   'software-engineering': 'Software Engineering MCQs',
-  
+
   // Business & Economics
   'accounting': 'Accounting MCQs',
   'auditing': 'Auditing MCQs',
@@ -120,7 +123,7 @@ const subjectTitles = {
   'hrm': 'Human Resource Management MCQs',
   'human-resource-management': 'Human Resource Management MCQs',
   'management-sciences': 'Management Sciences MCQs',
-  
+
   // Medical Sciences
   'medical': 'Medical MCQs',
   'pathology': 'Pathology MCQs',
@@ -129,24 +132,24 @@ const subjectTitles = {
   'microbiology': 'Microbiology MCQs',
   'physiology': 'Physiology MCQs',
   'general-anatomy': 'General Anatomy MCQs',
-  
-  // Dental Sciences  
+
+  // Dental Sciences
   'oral-histology': 'Oral Histology MCQs',
   'oral-anatomy': 'Oral Anatomy MCQs',
   'oral-pathology-medicine': 'Oral Pathology & Medicine MCQs',
   'dental-materials': 'Dental Materials MCQs',
-  
+
   // Engineering
   'engineering': 'Engineering MCQs',
   'civil-engineering': 'Civil Engineering MCQs',
   'mechanical-engineering': 'Mechanical Engineering MCQs',
   'chemical-engineering': 'Chemical Engineering MCQs',
   'electrical-engineering': 'Electrical Engineering MCQs',
-  
+
   // Agriculture & Forestry
   'agriculture': 'Agriculture MCQs',
   'forestry': 'Forestry MCQs',
-  
+
   // Education & Social Sciences
   'pedagogy': 'Pedagogy MCQs',
   'education': 'Pedagogy MCQs',
@@ -155,55 +158,40 @@ const subjectTitles = {
   'sociology': 'Sociology MCQs',
   'political-science': 'Political Science MCQs',
   'international-relations': 'International Relations MCQs',
-  
+
   // Law & Administration
   'judiciary-law': 'Judiciary & Law MCQs',
   'law': 'Judiciary & Law MCQs',
   'election-officer': 'Election Officer MCQs',
-  
+
   // Current Affairs
   'pakistan-current-affairs': 'Pakistan Current Affairs MCQs',
   'world-current-affairs': 'World Current Affairs MCQs',
 };
 
-const FALLBACK_BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://www.mcqsbase.com').replace(/\/+$/, '');
+const FALLBACK_BASE_URL = SITE_URL;
 
-async function fetchSubjectFaqItems(baseUrl, subject) {
-  if (!subject) return [];
-  const effectiveBase = (baseUrl || FALLBACK_BASE_URL).replace(/\/+$/, '');
-  const endpoint = `${effectiveBase}/api/mcqs/${subject}?page=1&limit=3`;
-  try {
-    const res = await fetch(endpoint, {
-      // Cache FAQ items for 24 hours; MCQs change very rarely
-      next: { revalidate: 86400 }
-    });
-    if (!res.ok) return [];
-    const data = await res.json();
-    return Array.isArray(data?.results) ? data.results.slice(0, 3) : [];
-  } catch (error) {
-    console.warn(`Failed to fetch FAQ items for subject ${subject}:`, error);
-    return [];
-  }
-}
-
-export async function generateMetadata({ params }) {
+export async function generateMetadata({ params, searchParams }) {
   // In Next.js 15+, params might be a promise
   const resolvedParams = await params;
   const { subject } = resolvedParams;
   const title = subjectTitles[subject];
-  
+  const query = await searchParams;
+  const page = Math.max(1, parseInt(query?.page || '1', 10) || 1);
+
   if (!title) {
     return {
       title: 'MCQs Not Found',
     };
   }
 
-  return generateSEOMetadata({
+  const { data } = await getSubjectPage(subject, page);
+  return { ...generateSEOMetadata({
     title: `${title} - Practice Questions for Competitive Exams`,
     description: `Comprehensive ${title.toLowerCase()} for Pakistan competitive exams including FPSC, SPSC, PPSC, and NTS. Practice with authentic questions and detailed explanations.`,
     keywords: `${subject} mcqs, ${subject} questions, competitive exam preparation, FPSC, SPSC, PPSC, NTS`,
-    url: `/mcqs/${subject}`
-  });
+    url: `/mcqs/${subject}${page > 1 ? `?page=${page}` : ''}`
+  }), robots: data.results?.length ? 'index, follow' : 'noindex, follow' };
 }
 
 export default async function MCQCategoryPage({ params, searchParams }) {
@@ -214,76 +202,18 @@ export default async function MCQCategoryPage({ params, searchParams }) {
   const pageParam = parseInt(resolvedSearchParams?.page || '1', 10);
   const page = Number.isFinite(pageParam) && pageParam > 0 ? pageParam : 1;
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || 'your-recaptcha-site-key';
-  let initialTree = undefined;
-
-  // Prefer configured public base URL; fall back to canonical domain
-  const absoluteBase = FALLBACK_BASE_URL;
-  
-  // Check if the subject has a corresponding component
-  const componentImporter = MCQComponents[subject];
-  if (!componentImporter) {
-    notFound();
-  }
-
-  // Load category component; if this fails, 404
-  let MCQComponent;
-  try {
-    ({ default: MCQComponent } = await componentImporter());
-  } catch (error) {
-    console.error(`Error loading MCQ component for ${subject}:`, error);
-    notFound();
-  }
-
-  // On page 1, fetch hierarchy along with MCQs in one API call and pass tree down
-  if (page === 1) {
-    try {
-      const res = await fetch(
-        `${absoluteBase}/api/mcqs/${subject}?page=${page}&limit=10&include=hierarchy`,
-        {
-          // Revalidate listing/hierarchy every 24 hours
-          next: { revalidate: 86400 }
-        }
-      );
-      if (res.ok) {
-        const data = await res.json();
-        initialTree = data?.hierarchy?.tree || undefined;
-      }
-    } catch (e) {
-      // Ignore and render without initialTree
-    }
-  }
-
-  const faqItems = await fetchSubjectFaqItems(absoluteBase || FALLBACK_BASE_URL, subject);
-  const faqStructuredData = faqItems.length
-    ? {
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: faqItems.map((item) => ({
-          '@type': 'Question',
-          name: item.question,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: item.explanation
-              ? `Correct answer: ${item.answer}. Explanation: ${item.explanation}`
-              : `Correct answer: ${item.answer}`
-          }
-        }))
-      }
-    : null;
+  if (!MCQComponents[subject]) notFound();
+  const { apiSubject, data: initialData } = await getSubjectPage(subject, page);
+  if (page > 1 && !initialData.results?.length) notFound();
+  const initialTree = initialData.hierarchy?.tree;
 
   return (
     <>
-      {faqStructuredData ? (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
-        />
-      ) : null}
       <ReCaptchaProvider siteKey={recaptchaSiteKey}>
         <Navbar />
         {page === 1 ? <SubcategoriesSection subject={subject} initialTree={initialTree} /> : null}
         <Suspense fallback={<div className="py-12 text-center text-gray-500">Loading MCQs…</div>}>
-          <MCQComponent key={`${subject}-${page}`} />
+          <SubjectMcqsClient key={`${subject}-${page}`} initialData={initialData} page={page} subject={apiSubject} title={subjectTitles[subject]} />
         </Suspense>
         <Footer />
       </ReCaptchaProvider>

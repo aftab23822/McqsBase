@@ -1,3 +1,4 @@
+import { assertNoRepeatedSet } from './blog-quality.mjs';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import path from 'path';
 
@@ -115,14 +116,15 @@ function normalizeMcq(raw) {
     answerIndex = letterMatch[1].toUpperCase().charCodeAt(0) - 65;
   }
 
-  if (!raw.question || options.length !== 4 || answerIndex < 0 || answerIndex >= options.length) {
+  if (!String(raw.explanation || '').trim() || !raw.question || options.length !== 4 || answerIndex < 0 || answerIndex >= options.length) {
     return null;
   }
 
   return {
     question: String(raw.question).trim(),
     options,
-    answerIndex
+    answerIndex,
+    explanation: String(raw.explanation).trim()
   };
 }
 
@@ -240,6 +242,7 @@ async function generateAiDraft(date) {
     '- Before returning, count the MCQs and confirm there are exactly 100 unique questions after removing duplicates.',
     '- If any question is duplicated, invalid, or has an answer that is not exactly one of the four options, replace it before returning JSON.',
     '- Correct answer must be one of the options exactly.',
+    '- Every MCQ needs an explanation of the reasoning or rule, with a worked calculation where relevant. Do not just restate the answer.',
     '- MCQs should be exam-style, high-frequency, and aligned with repeated/past-paper-style patterns.',
     '- Do not claim questions are copied from a real paper or exact official past paper.',
     '- Avoid unstable current facts unless they are durable as of the publish date.',
@@ -333,7 +336,7 @@ async function generateAiDraft(date) {
                   items: {
                     type: 'object',
                     additionalProperties: false,
-                    required: ['question', 'options', 'correctAnswer'],
+                    required: ['question', 'options', 'correctAnswer', 'explanation'],
                     properties: {
                       question: { type: 'string' },
                       options: {
@@ -342,7 +345,8 @@ async function generateAiDraft(date) {
                         maxItems: 4,
                         items: { type: 'string' }
                       },
-                      correctAnswer: { type: 'string' }
+                      correctAnswer: { type: 'string' },
+                      explanation: { type: 'string' }
                     }
                   }
                 }
@@ -379,7 +383,7 @@ function formatQuestionCell(mcq) {
 
 function formatAnswerCell(mcq) {
   const letter = String.fromCharCode(65 + mcq.answerIndex);
-  return `**${letter}) ${escapeCell(mcq.options[mcq.answerIndex])}**`;
+  return `**${letter}) ${escapeCell(mcq.options[mcq.answerIndex])}**<br />${escapeCell(mcq.explanation)}`;
 }
 
 function tableForSet(mcqs, offset, heading) {
@@ -433,7 +437,7 @@ function buildArticle(draft, date) {
     '| Section | Questions | Focus |',
     '| --- | --- | --- |',
     `| Set 1 | 1-20 | Core ${draft.topicName} fundamentals |`,
-    '| Set 2 | 21-40 | Frequently repeated test concepts |',
+    '| Set 2 | 21-40 | Foundational test concepts |',
     '| Set 3 | 41-60 | Mixed exam-style practice |',
     '| Set 4 | 61-80 | Fast recall and elimination practice |',
     '| Set 5 | 81-100 | Final revision and score-building |',
@@ -499,6 +503,11 @@ async function main() {
   const targetDir = path.join(BLOG_ROOT, slug);
   const articlePath = path.join(targetDir, 'article.md');
   const article = buildArticle(draft, date);
+  const registry = readFileSync(REGISTRY_PATH, 'utf8');
+  const published = [...registry.matchAll(/^  "([^"]+)": \{/gm)].map(match => ({
+    slug: match[1], body: readFileSync(path.join(BLOG_ROOT, match[1], 'article.md'), 'utf8')
+  }));
+  assertNoRepeatedSet(draft.mcqs.map(mcq => mcq.question), published);
 
   if (!existsSync(articlePath)) {
     mkdirSync(targetDir, { recursive: true });

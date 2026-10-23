@@ -4,7 +4,7 @@ import { Shield, Lock, Eye, Database, Users, Mail, FileText, CheckCircle, AlertT
 
 const PrivacyPolicy = () => {
   const currentYear = new Date().getFullYear();
-  const lastUpdated = "December 2024";
+  const lastUpdated = "October 23, 2026";
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
@@ -17,8 +17,8 @@ const PrivacyPolicy = () => {
               <h1 className="text-4xl font-bold text-gray-900">Privacy Policy</h1>
             </div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Your privacy is important to us. This Privacy Policy explains how we collect, 
-              use, and protect your personal information 
+              Your privacy is important to us. This Privacy Policy explains how we collect,
+              use, and protect your personal information
               when you use McqsBase.
             </p>
             <div className="mt-4 flex items-center justify-center text-sm text-gray-500">
@@ -32,16 +32,16 @@ const PrivacyPolicy = () => {
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 py-12">
         <div className="bg-white rounded-xl shadow-lg p-8">
-          
+
           {/* Introduction */}
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Introduction</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              McqsBase ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, 
+              McqsBase ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect,
               use, disclose, and safeguard your information when you visit our website mcqsbase.com and use our services.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              By using our Service, you consent to the data practices described in this Privacy Policy. If you do not agree with 
+              By using our Service, you consent to the data practices described in this Privacy Policy. If you do not agree with
               the practices described in this policy, please do not use our Service.
             </p>
           </div>
@@ -49,7 +49,7 @@ const PrivacyPolicy = () => {
           {/* Information We Collect */}
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Information We Collect</h2>
-            
+
             <h3 className="text-xl font-semibold text-gray-800 mb-3">2.1 Personal Information</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
               We may collect personal information that you voluntarily provide to us when you:
@@ -122,6 +122,12 @@ const PrivacyPolicy = () => {
             </div>
           </div>
 
+          <section className="mb-8" aria-labelledby="advertising-cookies">
+            <h2 id="advertising-cookies" className="text-2xl font-bold text-gray-900 mb-4">Google advertising and cookies</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">If Google ads are enabled on McqsBase, third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites. Google advertising cookies enable Google and its partners to serve ads based on visits to this and other sites on the Internet.</p>
+            <p className="text-gray-700 leading-relaxed">You can opt out of personalized advertising in <a className="text-blue-700 underline" href="https://www.google.com/settings/ads">Google Ads Settings</a>, or manage participating vendors through <a className="text-blue-700 underline" href="https://www.aboutads.info/choices/">YourAdChoices</a>. Learn how Google uses data at <a className="text-blue-700 underline" href="https://policies.google.com/technologies/partner-sites">Google partner sites privacy information</a>.</p>
+          </section>
+
           {/* How We Use Information */}
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">3. How We Use Your Information</h2>
@@ -182,7 +188,7 @@ const PrivacyPolicy = () => {
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Information Sharing and Disclosure</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, 
+              We do not sell, trade, or otherwise transfer your personal information to third parties without your consent,
               except in the following circumstances:
             </p>
             <div className="space-y-4">
@@ -192,7 +198,7 @@ const PrivacyPolicy = () => {
                   <div>
                     <p className="text-yellow-800 font-medium">Service Providers</p>
                     <p className="text-yellow-700 text-sm mt-1">
-                      We may share information with trusted third-party service providers who assist us in operating our website, 
+                      We may share information with trusted third-party service providers who assist us in operating our website,
                       conducting business, or servicing you.
                     </p>
                   </div>
@@ -340,7 +346,7 @@ const PrivacyPolicy = () => {
               </div>
             </div>
             <p className="text-gray-700 leading-relaxed mt-4">
-              You can control cookie settings through your browser preferences. However, disabling certain cookies may affect 
+              You can control cookie settings through your browser preferences. However, disabling certain cookies may affect
               the functionality of our website.
             </p>
           </div>
@@ -349,8 +355,8 @@ const PrivacyPolicy = () => {
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Children's Privacy</h2>
             <p className="text-gray-700 leading-relaxed">
-              Our Service is not intended for children under the age of 13. We do not knowingly collect personal information 
-              from children under 13. If you are a parent or guardian and believe your child has provided us with personal 
+              Our Service is not intended for children under the age of 13. We do not knowingly collect personal information
+              from children under 13. If you are a parent or guardian and believe your child has provided us with personal
               information, please contact us immediately.
             </p>
           </div>
@@ -359,7 +365,7 @@ const PrivacyPolicy = () => {
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">9. International Data Transfers</h2>
             <p className="text-gray-700 leading-relaxed">
-              Your information may be transferred to and processed in countries other than your own. We ensure that such 
+              Your information may be transferred to and processed in countries other than your own. We ensure that such
               transfers comply with applicable data protection laws and implement appropriate safeguards to protect your information.
             </p>
           </div>
@@ -368,8 +374,8 @@ const PrivacyPolicy = () => {
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Changes to This Privacy Policy</h2>
             <p className="text-gray-700 leading-relaxed">
-              We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new 
-              Privacy Policy on this page and updating the "Last updated" date. We encourage you to review this Privacy Policy 
+              We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new
+              Privacy Policy on this page and updating the "Last updated" date. We encourage you to review this Privacy Policy
               periodically.
             </p>
           </div>
@@ -406,7 +412,7 @@ const PrivacyPolicy = () => {
               <div>
                 <h3 className="text-lg font-semibold text-blue-900 mb-2">Your Privacy Matters</h3>
                 <p className="text-blue-800">
-                  We are committed to protecting your privacy and ensuring the security of your personal information. 
+                  We are committed to protecting your privacy and ensuring the security of your personal information.
                   If you have any concerns about our privacy practices, please don't hesitate to contact us.
                 </p>
               </div>
@@ -430,4 +436,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy; 
+export default PrivacyPolicy;

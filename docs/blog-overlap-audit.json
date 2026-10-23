@@ -1,0 +1,122 @@
+{
+  "method": "Exact normalized question-text overlap in Markdown tables; this does not establish plagiarism or answer accuracy.",
+  "articlesScanned": 23,
+  "articles": [
+    {
+      "slug": "100-english-mcqs-with-answers-2026-10-04",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "100-english-vocabulary-mcqs-css-pms",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "100-everyday-science-mcqs-with-answers-general-knowledge-2026",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "100-high-frequency-spsc-mcqs-verified-answers-2026",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "asf-recruitment-test-mcqs",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "banking-jobs-test-mcqs",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "fia-test-mcqs",
+      "questionCount": 99,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "hajj-2027-field-support-staff-past-paper-2026-mcqs",
+      "questionCount": 80,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "hat-test-mcqs",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "hec-lat-test-mcqs",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 3
+    },
+    {
+      "slug": "mdcat-practice-mcqs",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "muet-entry-test-mcqs",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "nhmp-motorway-police-test-mcqs-2026-2026-10-06",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "nts-nat-ie-engineering-mcqs",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "nts-nat-im-mcqs",
+      "questionCount": 99,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "paf-airman-test-mcqs",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "pak-army-initial-test-mcqs",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "pakistan-navy-sailor-test-mcqs",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "pakistan-rangers-sindh-sipahi-test-mcqs",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "ppsc-junior-clerk-test-mcqs",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "punjab-police-constable-mcqs",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "teaching-jobs-test-mcqs",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    },
+    {
+      "slug": "university-of-sindh-entry-test-mcqs",
+      "questionCount": 100,
+      "duplicateQuestionsWithinArticle": 0
+    }
+  ],
+  "pairs": []
+}
