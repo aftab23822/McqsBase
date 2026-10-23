@@ -1,6 +1,5 @@
 import SubjectMcqsClient from '../../../src/components/MCQsCategory/SubjectMcqsClient';
 import { getSubjectPage } from '../../../lib/services/subjectPage';
-import { SITE_URL } from '../../../lib/utils/siteUrl';
 import { Suspense } from 'react';
 import { notFound } from 'next/navigation';
 import { generateSEOMetadata } from '../../../src/components/SEO';
@@ -169,26 +168,24 @@ const subjectTitles = {
   'world-current-affairs': 'World Current Affairs MCQs',
 };
 
-const FALLBACK_BASE_URL = SITE_URL;
+function subjectTitle(subject) {
+  return subjectTitles[subject] || subject.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ') + ' MCQs';
+}
 
 export async function generateMetadata({ params, searchParams }) {
   // In Next.js 15+, params might be a promise
   const resolvedParams = await params;
   const { subject } = resolvedParams;
-  const title = subjectTitles[subject];
+  const title = subjectTitle(subject);
   const query = await searchParams;
   const page = Math.max(1, parseInt(query?.page || '1', 10) || 1);
 
-  if (!title) {
-    return {
-      title: 'MCQs Not Found',
-    };
-  }
 
   const { data } = await getSubjectPage(subject, page);
+  if (!data.hierarchy?.category) notFound();
   return { ...generateSEOMetadata({
     title: `${title} - Practice Questions for Competitive Exams`,
-    description: `Comprehensive ${title.toLowerCase()} for Pakistan competitive exams including FPSC, SPSC, PPSC, and NTS. Practice with authentic questions and detailed explanations.`,
+    description: `Comprehensive ${title.toLowerCase()} for Pakistan competitive exams including FPSC, SPSC, PPSC, and NTS. Practise with answer keys and available explanations.`,
     keywords: `${subject} mcqs, ${subject} questions, competitive exam preparation, FPSC, SPSC, PPSC, NTS`,
     url: `/mcqs/${subject}${page > 1 ? `?page=${page}` : ''}`
   }), robots: data.results?.length ? 'index, follow' : 'noindex, follow' };
@@ -202,8 +199,8 @@ export default async function MCQCategoryPage({ params, searchParams }) {
   const pageParam = parseInt(resolvedSearchParams?.page || '1', 10);
   const page = Number.isFinite(pageParam) && pageParam > 0 ? pageParam : 1;
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || 'your-recaptcha-site-key';
-  if (!MCQComponents[subject]) notFound();
   const { apiSubject, data: initialData } = await getSubjectPage(subject, page);
+  if (!initialData.hierarchy?.category) notFound();
   if (page > 1 && !initialData.results?.length) notFound();
   const initialTree = initialData.hierarchy?.tree;
 
@@ -213,7 +210,7 @@ export default async function MCQCategoryPage({ params, searchParams }) {
         <Navbar />
         {page === 1 ? <SubcategoriesSection subject={subject} initialTree={initialTree} /> : null}
         <Suspense fallback={<div className="py-12 text-center text-gray-500">Loading MCQs…</div>}>
-          <SubjectMcqsClient key={`${subject}-${page}`} initialData={initialData} page={page} subject={apiSubject} title={subjectTitles[subject]} />
+          <SubjectMcqsClient key={`${subject}-${page}`} initialData={initialData} page={page} subject={apiSubject} title={subjectTitle(subject)} />
         </Suspense>
         <Footer />
       </ReCaptchaProvider>
