@@ -20,9 +20,9 @@ const TOPIC_IDEAS = [
   'mcqs for COMSATS entry test',
   'mcqs for NAT',
   'mcqs for HAT',
-  'top repeated 100 MCQs in NTS test',
-  'top repeated current affairs MCQs',
-  'top repeated general knowledge MCQs',
+  'NTS aptitude practice MCQs with explanations',
+  'civics and international organizations practice MCQs',
+  'general knowledge practice MCQs with explanations',
   'PPSC one paper MCQs',
   'FPSC screening test MCQs',
   'SPSC screening test MCQs',
@@ -223,29 +223,33 @@ async function generateAiDraft(date) {
   ].slice(0, 12);
 
   const basePrompt = [
-    'Create one complete static SEO blog package for McqsBase.com.',
+    'Create one complete educational MCQ practice article for McqsBase.com that helps a learner understand and apply the answers.',
     `Publish date: ${date}.`,
     requestedTopic
       ? `User-requested topic: ${requestedTopic}. Use this topic unless it is unsafe or impossible.`
-      : 'Choose the smartest topic yourself for today from Pakistan exam-preparation search intent. Do not simply rotate English. Prefer test-specific and high-search-intent topics.',
+      : 'Choose a focused Pakistan exam-preparation learning need not already covered by the recent articles. Prefer a distinct skill or test-specific practice need over another broad mixed set with a different exam name.',
     `Topic ideas, not limits: ${ideaWindow.join('; ')}.`,
     `Avoid duplicating these recent blog slugs/titles: ${JSON.stringify(existingBlogs)}`,
     '',
     'Strict content requirements:',
     '- Generate every part using AI. Do not depend on existing local MCQ data.',
-    '- Topic should be specific enough to rank, such as a job test, forces test, university entry test, NTS/HAT/NAT, current affairs, or repeated GK intent.',
+    '- Choose a specific learning scope, such as a job test, forces test, university entry test, NTS/HAT/NAT, or a defined aptitude skill. The questions must fit that scope; do not relabel a generic question set for another exam.',
     '- Topic slug must be short and clean. Do not include the publish date or any yyyy-mm-dd pattern in the slug.',
-    '- Title must be SEO-rich, natural, and not clickbait.',
-    '- Description must support SEO and mention the exact exam/test intent.',
-    '- Include test focus topics that match the selected test.',
+    '- Title and description must accurately describe the practice provided, use natural language, and avoid keyword stuffing or unsupported promises.',
+    '- Do not call content verified, official, most repeated, high-frequency, guaranteed, or based on past papers without supplied evidence. A publication date is not evidence that facts or a syllabus were checked.',
+    '- Include focus topics that match the actual questions. Explain the specific skills practised in the introduction, rather than filling it with generic exam-success or daily-practice claims.',
+    '- No official syllabus, recruitment notice, past paper, or live source has been supplied. Do not invent exam sections, weightings, eligibility rules, deadlines, citations, URLs, or claims of source verification. Describe the scope as independent practice and direct readers to the latest official notice when test arrangements may vary.',
     '- Generate exactly 100 original, high-quality MCQs with four options each.',
     '- Before returning, count the MCQs and confirm there are exactly 100 unique questions after removing duplicates.',
     '- If any question is duplicated, invalid, or has an answer that is not exactly one of the four options, replace it before returning JSON.',
     '- Correct answer must be one of the options exactly.',
+    '- Each question must be unambiguous and have exactly one defensible correct option. State necessary units, assumptions, jurisdiction, or context. Use four distinct, plausible options; avoid overlapping answers, all/none-of-the-above, and clueing the answer through wording.',
     '- Every MCQ needs an explanation of the reasoning or rule, with a worked calculation where relevant. Do not just restate the answer.',
-    '- MCQs should be exam-style, high-frequency, and aligned with repeated/past-paper-style patterns.',
+    '- Where useful, explain the misconception behind a plausible wrong option. Independently solve each calculation and check that the explanation, correctAnswer, and options agree before returning.',
+    '- Use varied original exam-style questions with a deliberate progression from fundamentals to application. Do not repeat the same fact or calculation with superficial wording or number changes.',
     '- Do not claim questions are copied from a real paper or exact official past paper.',
-    '- Avoid unstable current facts unless they are durable as of the publish date.',
+    '- Use stable facts and well-established rules. Omit questions you cannot answer confidently. Do not infer current officeholders, rankings, statistics, laws, policies, or events from the publish date; no live fact-checking is available in this generation step.',
+    '- Revision tips must address mistakes or skills in this particular set. FAQs must answer useful topic-specific learner questions without repeating the introduction or making unsupported exam claims.',
     '- No emojis, no markdown in JSON values, no promotional fluff.',
     '- Return JSON only.'
   ].join('\n');
@@ -271,7 +275,7 @@ async function generateAiDraft(date) {
         input: [
           {
             role: 'system',
-            content: 'You are an expert SEO education editor for Pakistan MCQ test preparation. You create accurate, original, exam-style MCQs and structured static blog data. Return only schema-valid JSON.'
+            content: 'You are an education writer for Pakistan MCQ test preparation. Prioritize clear questions, defensible answers, useful reasoning, and honest descriptions of independent practice. You have not browsed sources or verified an official syllabus. Do not claim otherwise. Return only schema-valid JSON.'
           },
           {
             role: 'user',
