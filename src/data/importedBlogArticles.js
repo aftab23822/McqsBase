@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "issb-verbal-reasoning-mcqs": {
+    title: "100 ISSB Verbal Reasoning MCQs with Answers and Explanations",
+    excerpt:
+      "Practise analogies, sequences, coding, directions, logic and basic quantitative reasoning with 100 original questions and worked explanations.",
+    category: "Subject Guide",
+    date: "2026-10-24",
+    readTime: "29 min",
+    content: null,
+    body: readImportedBlogBody("issb-verbal-reasoning-mcqs")
+  },
   "university-of-sindh-entry-test-mcqs": {
     title: "100 University of Sindh Entry Test MCQs with Answers for Jamshoro Admission Preparation",
     excerpt:
