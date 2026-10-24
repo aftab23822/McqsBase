@@ -41,6 +41,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Check published content and generator regressions
+        run: node --test scripts/blog-quality.test.mjs scripts/published-blogs.test.mjs
+
       - name: Generate daily static blog
         env:
           BLOG_DATE: ${{ inputs.date }}

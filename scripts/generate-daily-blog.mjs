@@ -1,4 +1,5 @@
 import { assertNoRepeatedSet } from './blog-quality.mjs';
+import { readPublishedBlogs } from './published-blogs.mjs';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import path from 'path';
 
@@ -502,15 +503,13 @@ function insertRegistryEntry(slug, metadata) {
 
 async function main() {
   const date = isoDate(getArg('date'));
+  // Fail on broken published content before making a paid generation request.
+  const published = await readPublishedBlogs(REGISTRY_PATH);
   const draft = await generateAiDraft(date);
   const slug = resolveAvailableSlug(draft.topicSlug);
   const targetDir = path.join(BLOG_ROOT, slug);
   const articlePath = path.join(targetDir, 'article.md');
   const article = buildArticle(draft, date);
-  const registry = readFileSync(REGISTRY_PATH, 'utf8');
-  const published = [...registry.matchAll(/^  "([^"]+)": \{/gm)].map(match => ({
-    slug: match[1], body: readFileSync(path.join(BLOG_ROOT, match[1], 'article.md'), 'utf8')
-  }));
   assertNoRepeatedSet(draft.mcqs.map(mcq => mcq.question), published);
 
   if (!existsSync(articlePath)) {
