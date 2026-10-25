@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "comsats-quantitative-aptitude-mcqs": {
+    title: "100 COMSATS Quantitative Aptitude MCQs with Answers and Explanations",
+    excerpt:
+      "Practise 100 original quantitative aptitude questions covering arithmetic, algebra, ratios, rates, geometry, sequences, and basic probability, with worked explanations.",
+    category: "Subject Guide",
+    date: "2026-10-25",
+    readTime: "27 min",
+    content: null,
+    body: readImportedBlogBody("comsats-quantitative-aptitude-mcqs")
+  },
   "issb-verbal-reasoning-mcqs": {
     title: "100 ISSB Verbal Reasoning MCQs with Answers and Explanations",
     excerpt:
