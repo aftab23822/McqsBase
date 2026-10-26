@@ -72,6 +72,18 @@ class QuizContentTests(unittest.TestCase):
         self.assertEqual(video.spoken_text('binary number 101101'), 'binary number 1 0 1 1 0 1')
         self.assertEqual(video.spoken_text('2 GHz and O(n log n)'), '2 gigahertz and big O of n log n')
 
+    def test_duration_budget_keeps_complete_questions_and_five_second_thinking(self):
+        args = SimpleNamespace(include_intro=False, include_outro=True, voice=True,
+                               seconds=5, reveal=True, reveal_seconds=3, max_duration=89)
+        voices = {'outro': 'outro', **{f'{kind}{n}': kind for n in range(1, 6) for kind in ('q', 'a')}}
+        # Every question costs 13 speech + 5 thinking + 4 reveal = 22 sec.
+        # Three plus a five-second outro fit; four do not. No speech is cut.
+        with patch.object(video, 'clip_duration', side_effect=lambda p: {'q': 12, 'a': 3, 'outro': 4}[p]):
+            self.assertEqual(video.fit_question_count([{}] * 5, voices, args), 3)
+        args.max_duration = 2
+        with patch.object(video, 'clip_duration', return_value=10):
+            self.assertEqual(video.fit_question_count([{}], voices, args), 0)
+
 
 if __name__ == '__main__':
     unittest.main()

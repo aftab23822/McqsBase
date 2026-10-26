@@ -5,6 +5,7 @@ No paid service, AI API, watermark, or publishing side effect.
 import argparse
 import hashlib
 import html
+import importlib.util
 import json
 import math
 from pathlib import Path
@@ -17,6 +18,9 @@ import wave
 from array import array
 
 ROOT = Path(__file__).resolve().parents[1]
+policy_spec = importlib.util.spec_from_file_location('quiz_social_policy', ROOT / 'scripts/quiz-social-policy.py')
+social = importlib.util.module_from_spec(policy_spec)
+policy_spec.loader.exec_module(social)
 LOCAL_PACKAGES = ROOT / '.social-automation' / 'python'
 if LOCAL_PACKAGES.exists():
     sys.path.insert(0, str(LOCAL_PACKAGES))
@@ -168,8 +172,7 @@ def prepare_voice(args, output, selected, display_title):
             jobs.append({'id': f'a{index}', 'text': f'The correct answer is option {"ABCD"[correct]}. '
                          f'{spoken_text(item["choices"][correct])}.'})
     if args.include_outro:
-        jobs.append({'id': 'outro', 'text': 'How many did you get right? Share your score in the comments. '
-                     'Find the full practice set using the link in the first comment. Follow M C Qs Base for more quizzes.'})
+        jobs.append({'id': 'outro', 'text': 'Share your score. Practise more at M C Qs Base dot com.'})
     for job in jobs:
         job['output'] = str(voice_dir / f'{job["id"]}.wav')
     job_path = output / 'voice-jobs.json'
@@ -202,6 +205,22 @@ def clip_duration(path):
         return 0
     with wave.open(str(path), 'rb') as wav:
         return wav.getnframes() / wav.getframerate()
+
+
+def fit_question_count(selected, voices, args):
+    """Fit whole question/reveal pairs; never truncate speech or thinking time."""
+    def stage(audio, minimum=1):
+        return max(minimum, math.ceil(clip_duration(voices.get(audio)) + .5))
+    fixed = (stage('intro', 5) if args.include_intro else 0) + (stage('outro', 5) if args.include_outro else 0)
+    total = fixed
+    for index, _ in enumerate(selected, 1):
+        cost = (stage(f'q{index}') if args.voice else 0) + args.seconds
+        if args.reveal:
+            cost += stage(f'a{index}', args.reveal_seconds)
+        if args.max_duration and total + cost > args.max_duration:
+            return index - 1
+        total += cost
+    return len(selected)
 
 
 def write_audio(timeline, output):
@@ -255,6 +274,11 @@ def create_video(args):
     frames_dir = output / 'frames'
     frames_dir.mkdir(exist_ok=True)
     voices = prepare_voice(args, output, selected, display_title)
+    requested_count = args.count
+    selected = selected[:fit_question_count(selected, voices, args)]
+    if not selected:
+        raise ValueError('No complete narrated question fits the short-video duration limit.')
+    args.count = len(selected)
     normal, bold = find_font(args.font), find_font(args.bold_font, bold=True)
     navy, muted, white, gold, cyan = '#0B1425', '#AEBBD0', '#F4F6FA', '#F4C568', '#5BDED3'
     base = Image.new('RGB', (1080, 1920), navy)
@@ -325,7 +349,7 @@ def create_video(args):
             text_block(card, option, (215, top + 25, 900, top + 126), 43)
             if correct:
                 check_mark(card, 930, top + 54)
-        text_block(card, 'Full practice set: link in comments', (92, 1640, 980, 1720), 32, color=gold)
+        text_block(card, 'Full practice set: mcqsbase.com/blog', (92, 1640, 980, 1720), 32, color=gold)
         return card
 
     intro = base.copy()
@@ -367,11 +391,13 @@ def create_video(args):
     text_block(outro, 'How many did\nyou solve?', (92, 480, 970, 800), 88, heavy=True)
     text_block(outro, 'Share your score\nin the comments.', (92, 930, 970, 1140), 55)
     text_block(outro, 'Open the full practice set\nfor answers and more MCQs.', (92, 1330, 970, 1500), 43, color=muted)
-    text_block(outro, 'Full link in the first comment', (92, 1580, 970, 1700), 36, color=gold)
+    text_block(outro, 'Visit mcqsbase.com/blog', (92, 1580, 970, 1700), 36, color=gold)
     if args.include_outro:
         save_frame(outro, stage_duration('outro', 5), 'outro', audio=voices.get('outro'))
 
     duration = sum(segment['duration'] for segment in timeline)
+    if args.max_duration and duration > args.max_duration:
+        raise ValueError('The complete timeline exceeds the short-video duration limit.')
     audio = output / 'soundtrack.wav'
     write_audio(timeline, audio)
 
@@ -397,20 +423,24 @@ def create_video(args):
                 'sourceVerifiedLive': bool(package and package.get('verifiedLive') is True),
                 'sourceFetchedAt': package.get('fetchedAt') if package else None,
                 'sourceContentHash': package.get('contentHash') if package else None,
+                'sourceVerification': package.get('verification') if package else None,
+                'productionDeployment': package.get('productionDeployment') if package else None,
                 'status': 'local-preview-only', 'count': args.count, 'secondsPerQuestion': args.seconds,
                 'durationSeconds': duration, 'width': 1080, 'height': 1920, 'answersIncluded': args.reveal,
                 'narration': args.voice, 'voiceName': args.voice_name if args.voice else None,
                 'countdownStartsAfterNarration': True, 'seed': args.seed, 'questions': selected, 'stages': stages}
     manifest['introIncluded'] = args.include_intro
     manifest['outroIncluded'] = args.include_outro
+    manifest['requestedCount'] = requested_count
+    manifest['maxDurationSeconds'] = args.max_duration
+    manifest['hashtags'] = social.hashtags(source_title)
     pending_manifest = output / 'manifest.tmp'
     pending_manifest.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding='utf-8')
     pending_manifest.replace(output / 'manifest.json')
     (output / 'first-comment.txt').write_text(f'Full practice set and answers: {source_url}\n', encoding='utf-8')
-    (output / 'caption.txt').write_text(f'{display_title}: try {args.count} questions from this set!\n'
-                                      'Choose A, B, C or D before the timer ends and share your score.\n'
-                                      'Full practice set in the first comment.\n'
-                                      '#MCQsBase #MCQs #TestPreparation\n', encoding='utf-8')
+    captions = social.social_copy(display_title, args.count, source_url)
+    (output / 'caption.txt').write_text(captions['facebook']['text'] + '\n', encoding='utf-8')
+    (output / 'platform-captions.json').write_text(json.dumps(captions, ensure_ascii=False, indent=2), encoding='utf-8')
     question_preview = next(segment['frame'] for segment in timeline if segment['question'] == 1)
     shutil.copyfile(question_preview, output / 'preview.png')
     reveal_frame = next((segment['frame'] for segment in timeline if segment['stage'] == 'reveal'), None)
@@ -424,7 +454,9 @@ if __name__ == '__main__':
     source_group = parser.add_mutually_exclusive_group(required=True)
     source_group.add_argument('--slug')
     source_group.add_argument('--article-json', help='Validated source package fetched from the live blog.')
-    parser.add_argument('--count', type=int, choices=(1, 10, 20), default=10)
+    parser.add_argument('--count', type=int, choices=range(1, 21), default=social.POLICY['questionLimit'])
+    parser.add_argument('--max-duration', type=int, default=social.POLICY['maxDurationSeconds'],
+                        help='Maximum complete timeline in seconds; reduce questions to fit, 0 for uncapped.')
     parser.add_argument('--include-intro', action='store_true', help='Opt in to the old opening card and narration.')
     parser.add_argument('--no-outro', action='store_false', dest='include_outro', help='Omit the closing card for short voice tests.')
     parser.add_argument('--seconds', type=int, choices=range(3, 31), default=5)

@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
 
 spec = importlib.util.spec_from_file_location('cloud', Path(__file__).with_name('cloud-blog-videos.py'))
 cloud = importlib.util.module_from_spec(spec)
@@ -36,6 +36,42 @@ class CloudPublishingTests(unittest.TestCase):
         storage.http.request = Mock()
         storage.save(state)
         storage.http.request.assert_not_called()
+
+    def test_preview_and_unsuccessful_deployments_cannot_supply_questions(self):
+        storage = Mock()
+        storage.api.return_value = [{'id': 1, 'sha': 'a' * 40, 'environment': 'Preview',
+                                     'creator': {'login': 'vercel[bot]'}}]
+        with self.assertRaisesRegex(RuntimeError, 'not successfully deployed'):
+            cloud.production_deployment(storage, 'a' * 40, attempts=1)
+        with self.assertRaises(ValueError):
+            cloud.deployed_sources({'sha': 'a' * 40, 'state': 'success', 'environment': 'Preview'}, {}, [])
+
+    def test_successful_exact_production_deployment_is_required(self):
+        storage = Mock()
+        storage.api.side_effect = [[{'id': 1, 'sha': 'a' * 40, 'environment': 'Production',
+                                     'creator': {'login': 'vercel[bot]'}}], [{'state': 'success', 'environment_url': 'https://example.vercel.app'}]]
+        proof = cloud.production_deployment(storage, 'a' * 40, attempts=1)
+        self.assertEqual(proof['sha'], 'a' * 40)
+        self.assertEqual(proof['state'], 'success')
+
+    def test_deployed_questions_are_validated_and_older_unseen_articles_excluded(self):
+        proof = {'sha': 'a' * 40, 'state': 'success', 'environment': 'Production', 'verifiedAt': 'now'}
+        body = '| 1 | Test?<br />A) One<br />B) Two<br />C) Three<br />D) Four | **B) Two** |'
+        articles = [{'slug': 'new-test', 'title': '100 Real Test MCQs', 'date': '2026-10-27', 'body': body},
+                    {'slug': 'old-test', 'title': 'Old', 'date': '2026-10-01', 'body': body}]
+        snapshot = cloud.deployed_sources(proof, {'initializedAt': '2026-10-26', 'articles': {}}, articles)
+        self.assertEqual([entry['slug'] for entry in snapshot['articles']], ['new-test'])
+        package = snapshot['packages']['new-test']
+        self.assertFalse(package['verifiedLive'])
+        self.assertEqual(package['questions'][0]['correctIndex'], 1)
+        self.assertEqual(package['verification'], 'production-deployment')
+
+    def test_failed_blog_publisher_prevents_manual_generation(self):
+        storage = Mock()
+        storage.api.return_value = {'workflow_runs': [{'id': 2, 'status': 'completed', 'conclusion': 'failure'}]}
+        with patch.dict(cloud.os.environ, {'GITHUB_EVENT_NAME': 'workflow_dispatch'}):
+            with self.assertRaisesRegex(RuntimeError, 'not completed successfully'):
+                cloud.successful_blog_run(storage)
 
 
 if __name__ == '__main__':
