@@ -37,3 +37,7 @@ out
 coverage
 *.tgz
 .vercel
+
+# Generated videos, local dependencies and durable queue snapshots
+.social-automation/
+__pycache__/
