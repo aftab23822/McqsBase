@@ -1,6 +1,8 @@
 name: Blog Quiz Videos
 
 on:
+  push:
+    branches: ['codex/blog-quiz-cloud']
   schedule:
     - cron: '30 * * * *'
   workflow_dispatch:
@@ -43,7 +45,7 @@ jobs:
           key: kokoro-english-fp16-v1-1
       - run: python scripts/download-kokoro-voice.py
       - name: Render a real narrated sample on Linux
-        if: github.event_name == 'pull_request'
+        if: github.event_name != 'schedule'
         run: >-
           python scripts/create-quiz-video.py
           --slug university-of-sindh-entry-test-mcqs
@@ -52,7 +54,7 @@ jobs:
           --kokoro-voices .social-automation/voices/kokoro/voices-v1.0.bin
           --output .social-automation/cloud-smoke
       - name: Save the cloud voice and video sample
-        if: github.event_name == 'pull_request'
+        if: github.event_name != 'schedule'
         uses: actions/upload-artifact@v4
         with:
           name: cloud-quiz-smoke
