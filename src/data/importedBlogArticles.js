@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nat-ics-computer-science-mcqs": {
+    title: "100 NTS NAT-ICS Computer Science MCQs with Answers and Explanations",
+    excerpt:
+      "Practise 100 original computer science questions covering number systems, programming logic, algorithms, databases, networking, and operating systems.",
+    category: "Subject Guide",
+    date: "2026-10-26",
+    readTime: "33 min",
+    content: null,
+    body: readImportedBlogBody("nat-ics-computer-science-mcqs")
+  },
   "comsats-quantitative-aptitude-mcqs": {
     title: "100 COMSATS Quantitative Aptitude MCQs with Answers and Explanations",
     excerpt:
