@@ -14,54 +14,28 @@ class CloudPublishingTests(unittest.TestCase):
     def test_state_does_not_export_local_machine_paths(self):
         result = cloud.portable_state({'lastCheckedAt': 'now', 'articles': {'test': {
             'slug': 'test', 'video': 'C:/private/local.mp4', 'manifest': 'C:/local.json',
-            'facebookVideoId': '123', 'publishingStatus': 'published'}}})
+            'metricoolPostId': '123', 'publishingStatus': 'published'}}})
         self.assertNotIn('lastCheckedAt', result)
         self.assertNotIn('video', result['articles']['test'])
-        self.assertEqual(result['articles']['test']['facebookVideoId'], '123')
+        self.assertEqual(result['articles']['test']['metricoolPostId'], '123')
 
-    def test_missing_api_version_blocks_writes(self):
-        with self.assertRaises(ValueError):
-            cloud.FacebookPublisher('example', '', lambda: None)
+    def test_existing_state_branch_with_missing_queue_is_not_reset(self):
+        storage = cloud.GitHubState('owner/repo', 'example')
+        missing = Mock(status_code=404)
+        present = Mock(status_code=200)
+        storage.http.get = Mock(side_effect=[missing, present])
+        with self.assertRaisesRegex(RuntimeError, 'queue is missing'):
+            storage.load()
 
-    def test_wrong_page_token_never_uploads(self):
-        publisher = cloud.FacebookPublisher('example', 'v23.0', lambda: None)
-        publisher.request = Mock(return_value={'id': 'wrong-page'})
-        with self.assertRaises(ValueError):
-            publisher.publish({}, Path('unused'))
-        self.assertEqual(publisher.request.call_count, 1)
-
-    def test_uncertain_upload_is_not_repeated(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            directory = Path(tmp)
-            (directory / 'caption.txt').write_text('Unique test caption')
-            (directory / 'first-comment.txt').write_text('Full source URL')
-            (directory / 'manifest.json').write_text(json.dumps({
-                'sourceVerifiedLive': True, 'sourceUrl': 'https://www.mcqsbase.com/blog/test', 'title': 'Test'}))
-            publisher = cloud.FacebookPublisher('example', 'v23.0', lambda: None)
-            publisher.request = Mock(side_effect=[{'id': cloud.PAGE_ID}, {'data': []}])
-            entry = {'url': 'https://www.mcqsbase.com/blog/test', 'facebookUploadIntentAt': 'earlier'}
-            with self.assertRaisesRegex(RuntimeError, 'uncertain'):
-                publisher.publish(entry, directory)
-            self.assertTrue(all(call.args[0] == 'GET' for call in publisher.request.call_args_list))
-
-    def test_existing_video_resumes_comment_without_uploading(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            directory = Path(tmp)
-            (directory / 'caption.txt').write_text('Caption')
-            (directory / 'first-comment.txt').write_text('Full source URL')
-            (directory / 'manifest.json').write_text(json.dumps({
-                'sourceVerifiedLive': True, 'sourceUrl': 'https://www.mcqsbase.com/blog/test', 'title': 'Test'}))
-            publisher = cloud.FacebookPublisher('example', 'v23.0', lambda: None)
-            publisher.request = Mock(side_effect=[{'id': cloud.PAGE_ID}, {
-                'status': {'video_status': 'ready', 'publishing_phase': {'status': 'complete'}},
-                'permalink_url': 'https://www.facebook.com/video'}, {'data': []},
-                {'id': 'comment-1'}, {'id': 'comment-1', 'message': 'Full source URL'}])
-            entry = {'url': 'https://www.mcqsbase.com/blog/test', 'facebookVideoId': 'video-1'}
-            publisher.publish(entry, directory)
-            writes = [call for call in publisher.request.call_args_list if call.args[0] == 'POST']
-            self.assertEqual(len(writes), 1)
-            self.assertEqual(writes[0].args[1], 'video-1/comments')
-            self.assertEqual(entry['publishingStatus'], 'published')
+    def test_unchanged_state_does_not_create_a_commit(self):
+        storage = cloud.GitHubState('owner/repo', 'example')
+        state = {'articles': {'test': {'slug': 'test', 'status': 'ready'}}}
+        storage.loaded = True
+        storage.sha = 'existing'
+        storage.previous = cloud.portable_state(state)
+        storage.http.request = Mock()
+        storage.save(state)
+        storage.http.request.assert_not_called()
 
 
 if __name__ == '__main__':

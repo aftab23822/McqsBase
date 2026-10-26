@@ -1,6 +1,10 @@
 import importlib.util
 from pathlib import Path
 import unittest
+from types import SimpleNamespace
+from unittest.mock import patch
+import json
+import tempfile
 
 spec = importlib.util.spec_from_file_location('quiz_video', Path(__file__).with_name('create-quiz-video.py'))
 video = importlib.util.module_from_spec(spec)
@@ -8,6 +12,17 @@ spec.loader.exec_module(video)
 
 
 class QuizContentTests(unittest.TestCase):
+    def test_future_voice_jobs_start_at_question_one_without_an_intro(self):
+        args = SimpleNamespace(voice=True, voice_engine='windows', include_intro=False, include_outro=False,
+                               reveal=True, count=1, seconds=5, voice_name='Test', voice_rate=0)
+        question = {'question': 'What is one plus one?', 'choices': ['One', 'Two', 'Three', 'Four'], 'correctIndex': 1}
+        with tempfile.TemporaryDirectory() as tmp, patch.object(video.sys, 'platform', 'win32'), patch.object(video.subprocess, 'run'):
+            output = Path(tmp)
+            video.prepare_voice(args, output, [question], '100 Source MCQs')
+            jobs = json.loads((output / 'voice-jobs.json').read_text(encoding='utf-8'))
+            self.assertEqual([job['id'] for job in jobs], ['q1', 'a1'])
+            self.assertTrue(jobs[0]['text'].startswith('Question 1.'))
+
     def test_answer_column_cannot_enter_output(self):
         questions = video.extract_questions('| 1 | Test?<br />A) One<br />B) Two<br />C) Three<br />D) Four | **B) Two**<br />SECRET_EXPLANATION |')
         self.assertEqual(questions[0]['choices'], ['One', 'Two', 'Three', 'Four'])

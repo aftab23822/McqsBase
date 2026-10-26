@@ -156,8 +156,10 @@ def prepare_voice(args, output, selected, display_title):
         raise RuntimeError('The current offline voice uses Windows speech. Use --no-voice on other systems.')
     voice_dir = output / 'voice'
     voice_dir.mkdir(exist_ok=True)
-    jobs = [{'id': 'intro', 'text': f'{spoken_text(display_title)}. Try {args.count} questions from this practice set. '
-             f'Listen to each question, then you have {args.seconds} seconds to choose your answer.'}]
+    jobs = []
+    if args.include_intro:
+        jobs.append({'id': 'intro', 'text': f'{spoken_text(display_title)}. Try {args.count} questions from this practice set. '
+                     f'Listen to each question, then you have {args.seconds} seconds to choose your answer.'})
     for index, item in enumerate(selected, 1):
         choices = ' '.join(f'Option {label}. {spoken_text(choice)}.' for label, choice in zip('ABCD', item['choices']))
         jobs.append({'id': f'q{index}', 'text': f'Question {index}. {spoken_text(item["question"])} {choices}'})
@@ -165,24 +167,29 @@ def prepare_voice(args, output, selected, display_title):
             correct = item['correctIndex']
             jobs.append({'id': f'a{index}', 'text': f'The correct answer is option {"ABCD"[correct]}. '
                          f'{spoken_text(item["choices"][correct])}.'})
-    jobs.append({'id': 'outro', 'text': 'How many did you get right? Share your score in the comments. '
-                 'Find the full practice set using the link in the first comment. Follow M C Qs Base for more quizzes.'})
+    if args.include_outro:
+        jobs.append({'id': 'outro', 'text': 'How many did you get right? Share your score in the comments. '
+                     'Find the full practice set using the link in the first comment. Follow M C Qs Base for more quizzes.'})
     for job in jobs:
         job['output'] = str(voice_dir / f'{job["id"]}.wav')
     job_path = output / 'voice-jobs.json'
     job_path.write_text(json.dumps(jobs, ensure_ascii=False), encoding='utf-8')
-    if args.voice_engine == 'piper':
-        if not args.piper_model:
-            raise ValueError('--piper-model is required for offline cloud narration.')
-        from piper import PiperVoice
-        voice = PiperVoice.load(args.piper_model)
+    if args.voice_engine == 'kokoro':
+        if not args.kokoro_model or not args.kokoro_voices:
+            raise ValueError('Kokoro requires --kokoro-model and --kokoro-voices.')
+        import soundfile as sf
+        import onnxruntime as ort
+        from kokoro_onnx import Kokoro
+        ort.set_default_logger_severity(3)
+        voice = Kokoro(args.kokoro_model, args.kokoro_voices)
         for job in jobs:
             raw = voice_dir / f'{job["id"]}-raw.wav'
-            with wave.open(str(raw), 'wb') as wav:
-                voice.synthesize_wav(job['text'], wav)
+            samples, sample_rate = voice.create(job['text'], voice=args.kokoro_voice, speed=.96, lang='en-us')
+            sf.write(str(raw), samples, sample_rate, subtype='PCM_16')
             subprocess.run([find_ffmpeg(args.ffmpeg), '-v', 'error', '-y', '-i', str(raw),
+                            '-af', 'highpass=f=65,loudnorm=I=-17:TP=-1.5:LRA=9',
                             '-ar', '48000', '-ac', '1', '-c:a', 'pcm_s16le', job['output']], check=True)
-        args.voice_name = Path(args.piper_model).stem
+        args.voice_name = 'Kokoro ' + args.kokoro_voice
     else:
         subprocess.run(['powershell.exe', '-NoProfile', '-NonInteractive', '-File',
                         str(ROOT / 'scripts/synthesize-quiz-voice.ps1'), '-JobsPath', str(job_path),
@@ -328,7 +335,8 @@ def create_video(args):
     text_block(intro, f'Listen. Choose. Check.\n{args.seconds} seconds to think after each question.',
                (92, 1260, 970, 1450), 39, color=muted)
     text_block(intro, 'Full set + answers in the comments', (92, 1540, 970, 1650), 34, color=gold)
-    save_frame(intro, stage_duration('intro', 5), 'intro', audio=voices.get('intro'))
+    if args.include_intro:
+        save_frame(intro, stage_duration('intro', 5), 'intro', audio=voices.get('intro'))
 
     for index, item in enumerate(selected, 1):
         card = question_card(item, index)
@@ -360,7 +368,8 @@ def create_video(args):
     text_block(outro, 'Share your score\nin the comments.', (92, 930, 970, 1140), 55)
     text_block(outro, 'Open the full practice set\nfor answers and more MCQs.', (92, 1330, 970, 1500), 43, color=muted)
     text_block(outro, 'Full link in the first comment', (92, 1580, 970, 1700), 36, color=gold)
-    save_frame(outro, stage_duration('outro', 5), 'outro', audio=voices.get('outro'))
+    if args.include_outro:
+        save_frame(outro, stage_duration('outro', 5), 'outro', audio=voices.get('outro'))
 
     duration = sum(segment['duration'] for segment in timeline)
     audio = output / 'soundtrack.wav'
@@ -392,6 +401,8 @@ def create_video(args):
                 'durationSeconds': duration, 'width': 1080, 'height': 1920, 'answersIncluded': args.reveal,
                 'narration': args.voice, 'voiceName': args.voice_name if args.voice else None,
                 'countdownStartsAfterNarration': True, 'seed': args.seed, 'questions': selected, 'stages': stages}
+    manifest['introIncluded'] = args.include_intro
+    manifest['outroIncluded'] = args.include_outro
     pending_manifest = output / 'manifest.tmp'
     pending_manifest.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding='utf-8')
     pending_manifest.replace(output / 'manifest.json')
@@ -400,7 +411,8 @@ def create_video(args):
                                       'Choose A, B, C or D before the timer ends and share your score.\n'
                                       'Full practice set in the first comment.\n'
                                       '#MCQsBase #MCQs #TestPreparation\n', encoding='utf-8')
-    shutil.copyfile(timeline[1]['frame'], output / 'preview.png')
+    question_preview = next(segment['frame'] for segment in timeline if segment['question'] == 1)
+    shutil.copyfile(question_preview, output / 'preview.png')
     reveal_frame = next((segment['frame'] for segment in timeline if segment['stage'] == 'reveal'), None)
     if reveal_frame:
         shutil.copyfile(reveal_frame, output / 'reveal-preview.png')
@@ -412,14 +424,18 @@ if __name__ == '__main__':
     source_group = parser.add_mutually_exclusive_group(required=True)
     source_group.add_argument('--slug')
     source_group.add_argument('--article-json', help='Validated source package fetched from the live blog.')
-    parser.add_argument('--count', type=int, choices=(10, 20), default=10)
+    parser.add_argument('--count', type=int, choices=(1, 10, 20), default=10)
+    parser.add_argument('--include-intro', action='store_true', help='Opt in to the old opening card and narration.')
+    parser.add_argument('--no-outro', action='store_false', dest='include_outro', help='Omit the closing card for short voice tests.')
     parser.add_argument('--seconds', type=int, choices=range(3, 31), default=5)
     parser.add_argument('--title', help='Optional display title; defaults to the actual registered article title.')
     parser.add_argument('--no-voice', action='store_false', dest='voice', help='Disable offline Windows narration.')
     parser.add_argument('--no-reveal', action='store_false', dest='reveal', help='Keep answers hidden throughout.')
     parser.add_argument('--voice-name', default='Microsoft Zira Desktop')
-    parser.add_argument('--voice-engine', choices=('windows', 'piper'), default='windows')
-    parser.add_argument('--piper-model')
+    parser.add_argument('--voice-engine', choices=('windows', 'kokoro'), default='kokoro')
+    parser.add_argument('--kokoro-model', default=str(ROOT / '.social-automation/voices/kokoro/kokoro-v1.0.fp16.onnx'))
+    parser.add_argument('--kokoro-voices', default=str(ROOT / '.social-automation/voices/kokoro/voices-v1.0.bin'))
+    parser.add_argument('--kokoro-voice', default='af_heart')
     parser.add_argument('--voice-rate', type=int, choices=range(-10, 11), default=1)
     parser.add_argument('--reveal-seconds', type=int, choices=range(2, 16), default=3)
     parser.add_argument('--seed', default='mcqsbase-demo')

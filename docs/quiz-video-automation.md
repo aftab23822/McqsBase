@@ -1,72 +1,43 @@
-# MCQsBase quiz videos without paid video services
+# MCQsBase quiz video automation
 
-The local renderer creates a vertical MP4 from existing article questions. It uses Pillow for typography, FFmpeg for encoding, and installed Windows speech voices for free offline narration. It does not call an AI or paid video API and adds no watermark. The source test title appears on the opening card and every question.
+Future videos start immediately at Question 1. The source test title stays visible on each question; there is no opening card or introductory narration. Each question has spoken choices, a five-second thinking countdown, and a highlighted/ticked correct answer with a spoken reveal. The approved navy, gold and turquoise design is preserved.
 
-The default sequence is question-and-choices narration, five seconds to think, then a green correct-option highlight and tick with a spoken answer. The answer remains hidden until the countdown finishes. Only answer keys whose letter and option text agree are accepted; explanation text is never narrated. A short original chime accompanies the reveal.
+## Voice and previews
 
-## Generate a preview
+The improved voice test uses the free Kokoro neural voice `af_heart`, with natural pacing and volume normalization. [Kokoro's upstream model](https://huggingface.co/hexgrad/Kokoro-82M) has Apache-licensed weights. No paid voice API is called.
 
-Install Python, Pillow, and FFmpeg. Alternatively, install `imageio-ffmpeg` with Pillow to provide a portable FFmpeg binary. The script also recognizes packages installed under `.social-automation/python`.
+Install `scripts/video-requirements.txt`, run `python scripts/download-kokoro-voice.py`, then render with:
 
 ```powershell
-python -m pip install Pillow imageio-ffmpeg==0.6.0
-python scripts/create-quiz-video.py --slug university-of-sindh-entry-test-mcqs --count 10
-python scripts/test-quiz-video.py
+python scripts/create-quiz-video.py --slug university-of-sindh-entry-test-mcqs --voice-engine kokoro --kokoro-model .social-automation/voices/kokoro/kokoro-v1.0.fp16.onnx --kokoro-voices .social-automation/voices/kokoro/voices-v1.0.bin
 ```
 
-Use `--count 20` for twenty questions, `--seconds 8` for a longer countdown after narration, and a different `--seed` to change the selection. `--reveal-seconds` sets the minimum reveal duration; a long spoken answer automatically gets enough time to finish. The seed makes a selection reproducible; it does not prevent repeats across different runs. A production scheduler must track question hashes across videos.
+Use `--count 20` for twenty questions. `--count 1 --no-outro` produces a short voice test. `--include-intro` explicitly restores the old opening, which is disabled by default. `--no-reveal` hides answers, and `--no-voice` disables speech. Local Windows speech remains available as a legacy engine, but the improved sample/cloud setup uses Kokoro. Video duration follows the real speech clips; speech never consumes the thinking interval or gets cut off.
 
-The title defaults to the actual title in `src/data/importedBlogArticles.js`, with the trailing 'with Answers...' SEO suffix removed for readability. The full source title is preserved in the manifest. For example, a ten-question video selected from a hundred-question article still shows the source title '100 University of Sindh Entry Test MCQs' and separately identifies the video as a ten-question selection. `--title` can override the display wording, but must accurately describe the source.
+## Latest articles and duplicate protection
 
-Local Windows narration uses the built-in speech engine through `synthesize-quiz-voice.ps1`, defaulting to `Microsoft Zira Desktop`. Select another installed voice with `--voice-name`, or adjust speed with `--voice-rate` (-10 to 10; default 1). Cloud narration uses Piper with the LJ Speech medium female English voice; the design, countdown and answer reveal stay the same. Its [upstream model card](https://huggingface.co/rhasspy/piper-voices/blob/main/en/en_US/ljspeech/medium/MODEL_CARD) identifies the training dataset as public domain. There is no paid-service fallback.
+`watch-blog-videos.py` reads the live list at https://www.mcqsbase.com/blog and the actual article HTML, so it does not depend on an up-to-date local checkout. The first run queues the newest article and baselines older articles; later runs discover each new listed article once. Featured/list duplicates are collapsed. Guides without enough validated MCQs are skipped; parsing/network failures remain retryable. Each answer's letter must match its option text.
 
-For the Linux/cloud voice, install `scripts/video-requirements.txt`, run `python scripts/download-quiz-voice.py`, then add `--voice-engine piper --piper-model .social-automation/voices/en_US-ljspeech-medium.onnx` to a render command. Speech is resampled to the same 48 kHz mono format before mixing with the original countdown/chime.
+The queue is stored in `.social-automation/blog-videos/state.json`; each video package includes MP4, preview, answer-reveal preview, timing manifest, caption and first-comment text. Preserve this state. Returned social post IDs are tracked separately from video generation. A failed render remains retryable; an OS lock prevents overlapping local workers. Generated files and dependencies are ignored by Git.
 
-For the original answer-hidden format, pass `--no-reveal`. For a silent quiz with just countdown tones, pass `--no-voice`. Use both flags together to keep both narration and answer reveals disabled.
+## Hosted video creation
 
-Video duration now adapts to the actual voice clips, so narration is never cut off and does not consume the thinking interval. Keep longer quizzes as ordinary Page video uploads or split them into parts if the current Facebook Reels upload endpoint rejects their duration. Native Facebook uploads and developer upload endpoints can have different limits. Verify current endpoint requirements rather than assuming all support the same length.
+`.github/workflows/blog-quiz-videos.yml` runs on standard GitHub-hosted Linux runners. Once merged onto `master`, it checks the live list hourly at thirty minutes past the hour while the user's PC is off. GitHub can delay scheduled starts. It leaves the existing daily blog workflow unchanged.
 
-The output directory contains `mcqsbase-quiz.mp4`, `preview.png`, `reveal-preview.png` (when enabled), `manifest.json`, `caption.txt`, `first-comment.txt`, voice clips, and a narration job file. The manifest includes the timing of every stage so reveals can be checked against countdowns. Everything generated stays in `.social-automation/`, which is ignored by Git. The manifest deliberately says `local-preview-only` and `sourceVerifiedLive: false`: publication must first verify the actual live article and selected question.
+The repository is public. [Standard GitHub-hosted runner time is free for public repositories](https://docs.github.com/en/actions/concepts/billing-and-usage); storage still has account limits. Only completed MP4s, small previews, manifests, captions and source comments are retained as Actions artifacts for seven days. Intermediate frames/WAVs are not uploaded. No paid runner or subscription is configured.
 
-## Watch the live latest-post list
+`cloud-blog-videos.py` preserves a portable queue on the dedicated orphan branch `codex/blog-video-state`. It creates that branch from `config/blog-video-state-seed.json` only on the first run. An existing branch with a missing queue is an error, never a reason to reset the baseline. Queue writes do not change the website branch. The state branch includes a Vercel configuration disabling Git deployments. Production workflow runs are serialized.
 
-Run `python scripts/watch-blog-videos.py` to check the actual published list at `https://www.mcqsbase.com/blog`, fetch the live article, and create a narrated ten-question video. This works for articles that are newer than the local Git checkout; it does not rewrite or synchronize the website's content files.
+The seed excludes older articles and records the first NAT-ICS video as already scheduled through Metricool. It must not be recreated or scheduled twice. Generated cloud videos wait at `awaiting-metricool-scheduling`; this worker does not create social posts.
 
-On the first run, the newest listed article is queued and all older entries become a baseline. Later runs queue every newly listed article. Existing articles do not receive a video again merely because they remain in Featured Articles or All Articles. Articles with fewer than ten valid MCQs are skipped with a recorded reason; parsing errors are retried rather than silently skipped. Each answer's letter and option text must agree.
+## Metricool is the publishing provider
 
-The watcher stores its queue, completion records and baseline at `.social-automation/blog-videos/state.json`. Each article's source package is stored in `sources/{slug}.json`; the video, caption, source comment and timing manifest are stored in `videos/{slug}/`. Preserve this state file to avoid duplicates. A crash during rendering leaves the article retryable; a completed render can be recovered from its verified manifest. An operating-system lock prevents two instances rendering concurrently.
+The confirmed Metricool brand is `7661098` (McqsBase), connected to Facebook asset `851782721355178`. The public Page URL uses profile ID `61582964920997`; the verified management UI maps these to the same Page.
 
-The default is at most one video per check. Use `--max-videos 2` to process a larger pending queue or `--count 20` to select twenty questions. Do not change the count just to rerender completed articles: completed entries remain completed unless explicitly requeued. HTTP rate limits, source failures and render failures are retried by a future scheduled run. The watcher never publishes, buys services or configures accounts.
+The first NAT-ICS video is uploaded and scheduled for **October 26, 2026 at 20:00 Asia/Karachi**, including its full article URL as the first comment. Metricool confirms `autoPublish: true`, `draft: false`, provider status `PENDING`, post ID `406453185`, UUID `6501464804590961517`. It can publish this queued post with the PC off.
 
-The local Codex automation initially ran this watcher hourly. The hosted replacement is `.github/workflows/blog-quiz-videos.yml`. Once that workflow is on `master`, GitHub checks the live list hourly at thirty minutes past the hour even when the user's PC and Codex are off. Scheduled starts may be delayed by GitHub. The existing daily blog workflow is unchanged. Retire the local rendering schedule after the hosted workflow is verified, so there are not two independent render queues.
+[Review the scheduled post](https://app.metricool.com/planner/calendar?blogId=7661098&openWithPostUuid=6501464804590961517)
 
-## Hosted operation and durable state
+Hosted video creation and recurring Metricool scheduling are tracked separately. The Metricool connection authorized in ChatGPT is not automatically a credential available inside a GitHub job. Unattended Metricool scheduling must be configured and tested before calling the full publishing pipeline operational. Metricool Free permits 20 posts/month; its script/API access requires an API-enabled plan. No plan upgrade or credential is purchased or assumed.
 
-The repository `aftab23822/McqsBase` is public. Standard GitHub-hosted runner time is [free in public repositories](https://docs.github.com/en/actions/concepts/billing-and-usage); artifact storage is still subject to account limits. Only MP4s, small previews, manifests, captions and comments are retained as Actions artifacts for seven days. Large intermediate frames and WAVs are not uploaded. No larger runner or paid service is configured.
-
-`cloud-blog-videos.py` restores a portable queue from the dedicated orphan branch `codex/blog-video-state`, creating that branch from the checked-in seed only on its first run. State commits do not change `master` or the website's source, and the state branch includes `vercel.json` with Git deployments disabled. An existing branch with a missing state file is treated as a state-loss error, never as permission to reset the baseline. A single workflow concurrency group serializes production runs.
-
-The seed excludes older articles and records the initial NAT-ICS video as already scheduled through Metricool for October 26, 2026 at 20:00 Asia/Karachi, post ID `406453185`, UUID `6501464804590961517`. Cloud publishing must not duplicate it. A generated video is reproducible from its article slug and can be restored on an ephemeral runner when publishing is later enabled. New videos remain available from each Actions run's artifacts. No local drive path is written to the public durable queue.
-
-## One-time setup for fully automatic Facebook publishing
-
-Cloud rendering works without Facebook credentials. To enable direct cloud publishing without a paid scheduler:
-
-1. Create/configure the owner's Meta app and obtain the appropriate **Page** access token for the confirmed McqsBase asset, ID `851782721355178`. The public Page URL uses profile ID `61582964920997`; these identify the same Page in the verified Facebook management UI. Request only the Page publishing, read-engagement and comment-management permissions needed by the current supported Graph API. Meta may require app configuration, review, or renewed authorization depending on the app/account setup.
-2. Add the token to this repository's Actions secrets as `FACEBOOK_PAGE_ACCESS_TOKEN`. Do not paste it into chat or commit it.
-3. Add the repository variable `FACEBOOK_GRAPH_VERSION` with the supported version selected in that Meta app, such as the exact `vNN.0` shown there. The publisher deliberately has no guessed version default.
-4. Set the repository variable `FACEBOOK_AUTO_PUBLISH` to `true`, then manually run **Blog Quiz Videos** once and inspect the result. Leaving this unset keeps all Facebook writes disabled.
-
-The publisher verifies the token's `/me` Page ID before writes, reconciles recent videos before an upload, checkpoints its upload intent and returned ID durably, and checks processing/publication. It then adds and verifies the full-source-link comment. A timed-out upload/comment with an uncertain result is held for reconciliation, never automatically duplicated. Processing is checked again on a later hosted run. This direct API route is implemented and covered by mocked regression tests; actual publishing must still be verified with the owner's real token before describing it as operational.
-
-Metricool's existing connection to ChatGPT is separate from a GitHub job's authorization. Its [Free plan permits 20 posts per month, and its HTTP API requires Advanced or Custom](https://help.metricool.com/plans-add-ons-and-api-access-explained-xux1u). No Metricool subscription upgrade is purchased or assumed here. The first uploaded video remains scheduled by Metricool and needs no running PC to publish.
-
-## Connect publishing
-
-Never treat an upload response alone as proof of publication. Tokens belong only in the repository's protected secret store, never in source code, generated assets, logs or chat messages. The cloud workflow's automatic publishing switch is off until explicitly configured as above.
-
-Instagram requires the intended MCQsBase professional account to be created and connected first. Its publishing setup also needs authorized access and a supported publicly accessible media URL. Do not guess that @MCQsBase is available. A renderer alone does not authorize publishing to either platform.
-
-Run rendering and publishing on an existing computer or server to avoid a video-tool subscription. A local scheduled job needs that computer on. Cloud runners and storage have quotas and may incur charges; do not describe them as unconditionally free. If replacing the Windows voice with a downloaded voice model, check that model's license before publishing.
-
-No Instagram account or Facebook groups are configured. The initial Metricool post has been scheduled and verified; future direct Facebook publishing remains disabled until the one-time repository secret and variables are configured.
+Instagram has not been set up. No Facebook groups are configured. Never guess an Instagram account or post into arbitrary groups. Never expose credentials in source, generated files, logs or chat.

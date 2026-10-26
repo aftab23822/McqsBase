@@ -238,8 +238,10 @@ def run(args):
                                     '--seed', slug, '--output', str(output)]
                     if getattr(args, 'voice_engine', None):
                         command.extend(['--voice-engine', args.voice_engine])
-                    if getattr(args, 'piper_model', None):
-                        command.extend(['--piper-model', args.piper_model])
+                    if getattr(args, 'kokoro_model', None):
+                        command.extend(['--kokoro-model', args.kokoro_model])
+                    if getattr(args, 'kokoro_voices', None):
+                        command.extend(['--kokoro-voices', args.kokoro_voices])
                     subprocess.run(command, check=True)
                     manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
                 entry.update(status='ready', video=str(video_path), manifest=str(manifest_path),
@@ -267,8 +269,9 @@ if __name__ == '__main__':
     parser.add_argument('--state-dir', default=str(ROOT / '.social-automation' / 'blog-videos'))
     parser.add_argument('--count', type=int, choices=(10, 20), default=10)
     parser.add_argument('--max-videos', type=int, choices=range(1, 11), default=1)
-    parser.add_argument('--voice-engine', choices=('windows', 'piper'))
-    parser.add_argument('--piper-model')
+    parser.add_argument('--voice-engine', choices=('windows', 'kokoro'), default='kokoro')
+    parser.add_argument('--kokoro-model')
+    parser.add_argument('--kokoro-voices')
     try:
         run(parser.parse_args())
     except Exception as error:

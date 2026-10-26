@@ -9,6 +9,7 @@ on:
       - '.github/workflows/blog-quiz-videos.yml'
       - 'scripts/*quiz*'
       - 'scripts/*blog-video*'
+      - 'scripts/*voice*'
       - 'scripts/video-requirements.txt'
       - 'config/blog-video-state-seed.json'
 
@@ -39,15 +40,16 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: .social-automation/voices
-          key: piper-ljspeech-medium-v1
-      - run: python scripts/download-quiz-voice.py
+          key: kokoro-english-fp16-v1-1
+      - run: python scripts/download-kokoro-voice.py
       - name: Render a real narrated sample on Linux
         if: github.event_name == 'pull_request'
         run: >-
           python scripts/create-quiz-video.py
           --slug university-of-sindh-entry-test-mcqs
-          --voice-engine piper
-          --piper-model .social-automation/voices/en_US-ljspeech-medium.onnx
+          --voice-engine kokoro
+          --kokoro-model .social-automation/voices/kokoro/kokoro-v1.0.fp16.onnx
+          --kokoro-voices .social-automation/voices/kokoro/voices-v1.0.bin
           --output .social-automation/cloud-smoke
       - name: Save the cloud voice and video sample
         if: github.event_name == 'pull_request'
@@ -79,14 +81,11 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: .social-automation/voices
-          key: piper-ljspeech-medium-v1
-      - run: python scripts/download-quiz-voice.py
-      - name: Create videos and optionally publish to the confirmed Facebook Page
+          key: kokoro-english-fp16-v1-1
+      - run: python scripts/download-kokoro-voice.py
+      - name: Create videos for Metricool
         env:
           GH_TOKEN: ${{ github.token }}
-          FACEBOOK_AUTO_PUBLISH: ${{ vars.FACEBOOK_AUTO_PUBLISH }}
-          FACEBOOK_GRAPH_VERSION: ${{ vars.FACEBOOK_GRAPH_VERSION }}
-          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
         run: python scripts/cloud-blog-videos.py
       - name: Save completed video packages
         if: always()
