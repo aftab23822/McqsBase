@@ -21,6 +21,9 @@ watcher = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(watcher)
 STATE_BRANCH = 'codex/blog-video-state'
 social = watcher.renderer.social
+plan_spec = importlib.util.spec_from_file_location('campaign_planner', ROOT / 'scripts/plan-blog-video-campaign.py')
+planner = importlib.util.module_from_spec(plan_spec)
+plan_spec.loader.exec_module(planner)
 
 
 def portable_state(state):
@@ -166,47 +169,62 @@ def main():
     storage = GitHubState(repository, token)
     state = storage.load()
     publisher_run = successful_blog_run(storage)
+    plan = planner.plan_campaign(state)
+    if not plan['generate']:
+        print(json.dumps(plan))
+        return
     sha = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
     proof = production_deployment(storage, sha)
     proof['publisherRunId'] = publisher_run
     snapshot = deployed_sources(proof, state)
+    watcher.discover(state, snapshot['articles'])
+    selected = state['articles'][plan['slug']]
+    campaign = social.reserve_campaign(state, selected)
+    if not campaign:
+        raise RuntimeError('The selected campaign no longer has a free reservation; no video was rendered.')
+    selected['publishingStatus'] = 'awaiting-render'
+    for entry in state['articles'].values():
+        if entry['slug'] != selected['slug'] and entry.get('status') == 'pending' and not entry.get('campaign'):
+            entry.update(status='not-selected', reason='No campaign slot selected for this article; video not rendered.')
     directory = ROOT / '.social-automation/blog-videos'
     directory.mkdir(parents=True, exist_ok=True)
     state_file = directory / 'state.json'
     watcher.save_json(state_file, state)
     storage.save(state)
     args = type('Options', (), {'state_dir': str(directory), 'count': social.POLICY['questionLimit'],
-                               'max_duration': social.POLICY['maxDurationSeconds'], 'max_videos': 3,
+                               'max_duration': social.POLICY['maxDurationSeconds'], 'max_videos': 1,
                                'voice_engine': 'kokoro',
                                'kokoro_model': str(ROOT / '.social-automation/voices/kokoro/kokoro-v1.0.fp16.onnx'),
                                'kokoro_voices': str(ROOT / '.social-automation/voices/kokoro/voices-v1.0.bin')})()
     try:
-        watcher.run(args, source_snapshot=snapshot)
+        watcher.run(args, source_snapshot=snapshot, render_slugs={selected['slug']})
     finally:
         # Preserve discovery and retry records even when a source/render step fails.
         storage.save(json.loads(state_file.read_text(encoding='utf-8')))
     state = json.loads(state_file.read_text(encoding='utf-8'))
     run_url = f'https://github.com/{repository}/actions/runs/{os.environ["GITHUB_RUN_ID"]}'
-    for entry in state.get('articles', {}).values():
-        if (entry.get('status') == 'ready' and entry.get('video')
-                and entry.get('publishingStatus') not in ('scheduled', 'published')):
-            campaign = social.reserve_campaign(state, entry)
-            entry['publishingStatus'] = 'awaiting-metricool-scheduling' if campaign else 'archive-only'
-            entry['metricoolBrandId'] = '7661098'
-            entry.setdefault('artifactRunUrl', run_url)
-            output = Path(entry['video']).parent
-            if campaign:
-                watcher.save_json(output / 'campaign.json', campaign)
+    entry = state['articles'][selected['slug']]
+    campaign = state['campaigns'][campaign['month']][str(campaign['window'])]
+    if entry.get('status') == 'ready' and entry.get('video'):
+        entry['publishingStatus'] = 'awaiting-metricool-scheduling'
+        entry['metricoolBrandId'] = '7661098'
+        entry['artifactRunUrl'] = run_url
+        campaign['status'] = 'awaiting-metricool-scheduling'
+        entry['campaign'] = campaign
+        watcher.save_json(Path(entry['video']).parent / 'campaign.json', campaign)
+    else:
+        campaign['status'] = 'render-retry'
+        entry['campaign'] = campaign
     state['socialPolicy'] = social.POLICY
     watcher.save_json(state_file, state)
     storage.save(state)
-    if any(entry.get('status') == 'retry' for entry in state.get('articles', {}).values()):
+    if entry.get('status') == 'retry':
         raise RuntimeError('Some article videos remain retryable; their queue records have been preserved.')
     summary = os.environ.get('GITHUB_STEP_SUMMARY')
     if summary:
         ready = [e for e in state.get('articles', {}).values() if e.get('status') == 'ready']
         lines = ['## MCQsBase blog quiz videos', '',
-                 'Shorts run only after the blog publisher succeeds and Production deployment is verified.',
+                 'Only a selected campaign is rendered, after successful blog publication and Production deployment.',
                  'Metricool: at most four campaigns / sixteen platform publications per month.',
                  'Publishing through the connected Metricool client remains a separate handoff.', '']
         lines.extend(f'- {e.get("sourceTitle", e["slug"])}: {e.get("publishingStatus", "ready")}' for e in ready)

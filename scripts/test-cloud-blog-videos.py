@@ -73,6 +73,50 @@ class CloudPublishingTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, 'not completed successfully'):
                 cloud.successful_blog_run(storage)
 
+    def test_filled_campaign_window_never_checks_deployment_or_calls_the_renderer(self):
+        storage = Mock()
+        storage.load.return_value = {'articles': {}}
+        with patch.dict(cloud.os.environ, {'GITHUB_REPOSITORY': 'owner/repo', 'GH_TOKEN': 'example'}), \
+                patch.object(cloud, 'GitHubState', return_value=storage), \
+                patch.object(cloud, 'successful_blog_run', return_value=123), \
+                patch.object(cloud.planner, 'plan_campaign', return_value={'generate': False, 'reason': 'filled'}), \
+                patch.object(cloud, 'production_deployment') as deploy, \
+                patch.object(cloud.watcher, 'run') as render:
+            cloud.main()
+            deploy.assert_not_called()
+            render.assert_not_called()
+
+    def test_campaign_is_reserved_before_only_the_selected_article_renders(self):
+        storage = Mock()
+        storage.load.return_value = {'initializedAt': '2026-10-26', 'articles': {}}
+        snapshot = {'articles': [
+            {'slug': slug, 'url': f'https://www.mcqsbase.com/blog/{slug}', 'listedTitle': slug}
+            for slug in ('selected-test', 'other-test')], 'packages': {}}
+        with tempfile.TemporaryDirectory() as tmp:
+            def render(args, source_snapshot, render_slugs):
+                self.assertEqual(render_slugs, {'selected-test'})
+                path = Path(args.state_dir) / 'state.json'
+                saved = json.loads(path.read_text())
+                self.assertEqual(saved['articles']['other-test']['status'], 'not-selected')
+                self.assertEqual(saved['articles']['selected-test']['campaign']['reservedPublications'], 4)
+                output = Path(tmp) / 'video'
+                output.mkdir()
+                saved['articles']['selected-test'].update(status='ready', video=str(output / 'quiz.mp4'))
+                cloud.watcher.save_json(path, saved)
+            with patch.dict(cloud.os.environ, {'GITHUB_REPOSITORY': 'owner/repo', 'GH_TOKEN': 'example', 'GITHUB_RUN_ID': '1'}), \
+                    patch.object(cloud, 'ROOT', Path(tmp)), patch.object(cloud, 'GitHubState', return_value=storage), \
+                    patch.object(cloud, 'successful_blog_run', return_value=123), \
+                    patch.object(cloud.planner, 'plan_campaign', return_value={'generate': True, 'slug': 'selected-test'}), \
+                    patch.object(cloud.subprocess, 'check_output', return_value='a' * 40), \
+                    patch.object(cloud, 'production_deployment', return_value={}), \
+                    patch.object(cloud, 'deployed_sources', return_value=snapshot), \
+                    patch.object(cloud.watcher, 'run', side_effect=render), \
+                    patch.object(cloud.social, 'publication_window', return_value={
+                        'month': '2026-11', 'window': 1, 'scheduledFor': '2026-11-02T20:00:00+05:00'}):
+                cloud.main()
+            saved = json.loads((Path(tmp) / '.social-automation/blog-videos/state.json').read_text())
+            self.assertEqual(saved['campaigns']['2026-11']['1']['status'], 'awaiting-metricool-scheduling')
+
 
 if __name__ == '__main__':
     unittest.main()

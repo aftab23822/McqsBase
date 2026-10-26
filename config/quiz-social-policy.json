@@ -1,4 +1,5 @@
 {
+  "generationMode": "selected-campaigns-only",
   "questionLimit": 5,
   "maxDurationSeconds": 89,
   "campaignWindowStarts": [1, 8, 15, 22],

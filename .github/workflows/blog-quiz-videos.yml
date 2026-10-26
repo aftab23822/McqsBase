@@ -2,7 +2,7 @@ name: Blog Quiz Videos
 
 on:
   push:
-    branches: ['codex/blog-quiz-shorts']
+    branches: ['codex/render-selected-campaigns']
   workflow_run:
     workflows: ['Daily Blog Autopilot']
     types: [completed]
@@ -29,7 +29,7 @@ concurrency:
 
 jobs:
   test:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -46,13 +46,14 @@ jobs:
           python scripts/test-blog-video-watcher.py
           python scripts/test-cloud-blog-videos.py
           python scripts/test-quiz-social-policy.py
+          python scripts/test-blog-video-campaign.py
       - uses: actions/cache@v4
         with:
           path: .social-automation/voices
           key: kokoro-english-fp16-v1-1
       - run: python scripts/download-kokoro-voice.py
       - name: Render a real narrated sample on Linux
-        if: github.event_name == 'push' || github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'
+        if: github.event_name == 'push' || github.event_name == 'pull_request'
         run: >-
           python scripts/create-quiz-video.py
           --slug university-of-sindh-entry-test-mcqs
@@ -62,7 +63,7 @@ jobs:
           --kokoro-voices .social-automation/voices/kokoro/voices-v1.0.bin
           --output .social-automation/cloud-smoke
       - name: Save the cloud voice and video sample
-        if: github.event_name == 'push' || github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'
+        if: github.event_name == 'push' || github.event_name == 'pull_request'
         uses: actions/upload-artifact@v4
         with:
           name: cloud-quiz-smoke
@@ -74,12 +75,28 @@ jobs:
             .social-automation/cloud-smoke/platform-captions.json
           retention-days: 3
 
-  create-new-videos:
+  campaign-plan:
     if: >-
       github.ref == 'refs/heads/master' &&
       (github.event_name == 'workflow_dispatch' ||
        (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success'))
-    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      generate: ${{ steps.plan.outputs.generate }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - name: Check campaign slot before installing video tools
+        id: plan
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/plan-blog-video-campaign.py
+
+  create-new-videos:
+    if: needs.campaign-plan.outputs.generate == 'true'
+    needs: campaign-plan
     runs-on: ubuntu-latest
     timeout-minutes: 25
     permissions:
