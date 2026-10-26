@@ -1,0 +1,361 @@
+{
+  "articles": {
+    "nat-ics-computer-science-mcqs": {
+      "slug": "nat-ics-computer-science-mcqs",
+      "url": "https://www.mcqsbase.com/blog/nat-ics-computer-science-mcqs",
+      "listedTitle": "100 NTS NAT-ICS Computer Science MCQs with Answers and Explanations",
+      "status": "ready",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00",
+      "checkedAt": "2026-10-26T10:12:01.012050+00:00",
+      "sourceTitle": "100 NTS NAT-ICS Computer Science MCQs with Answers and Explanations",
+      "startedAt": "2026-10-26T10:14:20.022701+00:00",
+      "completedAt": "2026-10-26T10:15:14.283271+00:00",
+      "publishingStatus": "scheduled",
+      "metricoolBrandId": "7661098",
+      "facebookPageId": "851782721355178",
+      "metricoolPostId": "406453185",
+      "metricoolPostUuid": "6501464804590961517",
+      "scheduledFor": "2026-10-26T20:00:00+05:00",
+      "mediaUrl": "https://static.metricool.com/video/5980238/202610/594a8a2583af4bb7.mp4",
+      "firstCommentScheduled": true
+    },
+    "comsats-quantitative-aptitude-mcqs": {
+      "slug": "comsats-quantitative-aptitude-mcqs",
+      "url": "https://www.mcqsbase.com/blog/comsats-quantitative-aptitude-mcqs",
+      "listedTitle": "100 COMSATS Quantitative Aptitude MCQs with Answers and Explanations",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "issb-verbal-reasoning-mcqs": {
+      "slug": "issb-verbal-reasoning-mcqs",
+      "url": "https://www.mcqsbase.com/blog/issb-verbal-reasoning-mcqs",
+      "listedTitle": "100 ISSB Verbal Reasoning MCQs with Answers and Explanations",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "university-of-sindh-entry-test-mcqs": {
+      "slug": "university-of-sindh-entry-test-mcqs",
+      "url": "https://www.mcqsbase.com/blog/university-of-sindh-entry-test-mcqs",
+      "listedTitle": "100 University of Sindh Entry Test MCQs with Answers for Jamshoro Admission Preparation",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "muet-entry-test-mcqs": {
+      "slug": "muet-entry-test-mcqs",
+      "url": "https://www.mcqsbase.com/blog/muet-entry-test-mcqs",
+      "listedTitle": "100 MUET Entry Test MCQs with Answers for Mehran University Preparation",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "hec-lat-test-mcqs": {
+      "slug": "hec-lat-test-mcqs",
+      "url": "https://www.mcqsbase.com/blog/hec-lat-test-mcqs",
+      "listedTitle": "100 HEC LAT MCQs with Answers for Law Admission Test Preparation",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "teaching-jobs-test-mcqs": {
+      "slug": "teaching-jobs-test-mcqs",
+      "url": "https://www.mcqsbase.com/blog/teaching-jobs-test-mcqs",
+      "listedTitle": "100 Teaching Jobs Test MCQs with Answers for Pakistan Teacher Recruitment Tests",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "pakistan-rangers-sindh-sipahi-test-mcqs": {
+      "slug": "pakistan-rangers-sindh-sipahi-test-mcqs",
+      "url": "https://www.mcqsbase.com/blog/pakistan-rangers-sindh-sipahi-test-mcqs",
+      "listedTitle": "100 Pakistan Rangers Sindh Sipahi Test MCQs with Answers",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "fia-test-mcqs": {
+      "slug": "fia-test-mcqs",
+      "url": "https://www.mcqsbase.com/blog/fia-test-mcqs",
+      "listedTitle": "100 FIA Test MCQs with Answers for ASI and Constable Preparation",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "mdcat-practice-mcqs": {
+      "slug": "mdcat-practice-mcqs",
+      "url": "https://www.mcqsbase.com/blog/mdcat-practice-mcqs",
+      "listedTitle": "100 MDCAT MCQs with Answers for Biology, Chemistry and Physics Practice",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "pakistan-navy-sailor-test-mcqs": {
+      "slug": "pakistan-navy-sailor-test-mcqs",
+      "url": "https://www.mcqsbase.com/blog/pakistan-navy-sailor-test-mcqs",
+      "listedTitle": "100 Pakistan Navy Sailor Test MCQs with Answers for Academic and Intelligence Practice",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "paf-airman-test-mcqs": {
+      "slug": "paf-airman-test-mcqs",
+      "url": "https://www.mcqsbase.com/blog/paf-airman-test-mcqs",
+      "listedTitle": "100 PAF Airman Test MCQs with Answers for Academic and Intelligence Practice",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "pak-army-initial-test-mcqs": {
+      "slug": "pak-army-initial-test-mcqs",
+      "url": "https://www.mcqsbase.com/blog/pak-army-initial-test-mcqs",
+      "listedTitle": "100 Pak Army Initial Test MCQs with Answers for Academic and Intelligence Practice",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "nts-nat-im-mcqs": {
+      "slug": "nts-nat-im-mcqs",
+      "url": "https://www.mcqsbase.com/blog/nts-nat-im-mcqs",
+      "listedTitle": "100 NTS NAT-IM MCQs with Answers for Pre-Medical Entry Test Preparation",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "punjab-police-constable-mcqs": {
+      "slug": "punjab-police-constable-mcqs",
+      "url": "https://www.mcqsbase.com/blog/punjab-police-constable-mcqs",
+      "listedTitle": "100 Punjab Police Constable Test MCQs with Answers",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "hat-test-mcqs": {
+      "slug": "hat-test-mcqs",
+      "url": "https://www.mcqsbase.com/blog/hat-test-mcqs",
+      "listedTitle": "100 HAT Test MCQs with Answers for HEC Aptitude Test Preparation",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "banking-jobs-test-mcqs": {
+      "slug": "banking-jobs-test-mcqs",
+      "url": "https://www.mcqsbase.com/blog/banking-jobs-test-mcqs",
+      "listedTitle": "100 Banking Test MCQs with Answers for Pakistan Bank Jobs",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "ppsc-junior-clerk-test-mcqs": {
+      "slug": "ppsc-junior-clerk-test-mcqs",
+      "url": "https://www.mcqsbase.com/blog/ppsc-junior-clerk-test-mcqs",
+      "listedTitle": "100 PPSC Junior Clerk Test MCQs with Answers",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "asf-recruitment-test-mcqs": {
+      "slug": "asf-recruitment-test-mcqs",
+      "url": "https://www.mcqsbase.com/blog/asf-recruitment-test-mcqs",
+      "listedTitle": "100 ASF Test MCQs with Answers for ASI and Corporal Preparation",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "nts-nat-ie-engineering-mcqs": {
+      "slug": "nts-nat-ie-engineering-mcqs",
+      "url": "https://www.mcqsbase.com/blog/nts-nat-ie-engineering-mcqs",
+      "listedTitle": "100 NTS NAT-IE Engineering Entry Test MCQs with Answers",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "nhmp-motorway-police-test-mcqs-2026-2026-10-06": {
+      "slug": "nhmp-motorway-police-test-mcqs-2026-2026-10-06",
+      "url": "https://www.mcqsbase.com/blog/nhmp-motorway-police-test-mcqs-2026-2026-10-06",
+      "listedTitle": "100 Motorway Police Test MCQs with Answers for NHMP Preparation",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "100-english-mcqs-with-answers-2026-10-04": {
+      "slug": "100-english-mcqs-with-answers-2026-10-04",
+      "url": "https://www.mcqsbase.com/blog/100-english-mcqs-with-answers-2026-10-04",
+      "listedTitle": "100 English MCQs with Answers for Competitive Exams",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "hajj-2027-field-support-staff-past-paper-2026-mcqs": {
+      "slug": "hajj-2027-field-support-staff-past-paper-2026-mcqs",
+      "url": "https://www.mcqsbase.com/blog/hajj-2027-field-support-staff-past-paper-2026-mcqs",
+      "listedTitle": "Hajj 2027 Field Support Staff Past Paper 2026 MCQs with Answers",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "100-everyday-science-mcqs-with-answers-general-knowledge-2026": {
+      "slug": "100-everyday-science-mcqs-with-answers-general-knowledge-2026",
+      "url": "https://www.mcqsbase.com/blog/100-everyday-science-mcqs-with-answers-general-knowledge-2026",
+      "listedTitle": "100 Everyday Science MCQs with Answers",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "100-english-vocabulary-mcqs-css-pms": {
+      "slug": "100-english-vocabulary-mcqs-css-pms",
+      "url": "https://www.mcqsbase.com/blog/100-english-vocabulary-mcqs-css-pms",
+      "listedTitle": "100 English Vocabulary MCQs for CSS and PMS",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "100-high-frequency-spsc-mcqs-verified-answers-2026": {
+      "slug": "100-high-frequency-spsc-mcqs-verified-answers-2026",
+      "url": "https://www.mcqsbase.com/blog/100-high-frequency-spsc-mcqs-verified-answers-2026",
+      "listedTitle": "100 High-Frequency SPSC MCQs with Verified Answers",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "how-to-improve-mcq-solving-speed-and-accuracy": {
+      "slug": "how-to-improve-mcq-solving-speed-and-accuracy",
+      "url": "https://www.mcqsbase.com/blog/how-to-improve-mcq-solving-speed-and-accuracy",
+      "listedTitle": "How to Improve MCQ Solving Speed and Accuracy: A 3-Pass System for Competitive Exams",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "ppsc-mcqs-preparation-6-week-study-plan-2026": {
+      "slug": "ppsc-mcqs-preparation-6-week-study-plan-2026",
+      "url": "https://www.mcqsbase.com/blog/ppsc-mcqs-preparation-6-week-study-plan-2026",
+      "listedTitle": "PPSC MCQs Preparation: The 6-Week Score-Building Plan for One-Paper Tests",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "how-to-prepare-mcq-test-30-day-plan-pakistan": {
+      "slug": "how-to-prepare-mcq-test-30-day-plan-pakistan",
+      "url": "https://www.mcqsbase.com/blog/how-to-prepare-mcq-test-30-day-plan-pakistan",
+      "listedTitle": "How to Prepare for Any MCQ Test in 30 Days",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "best-free-resources-ppsc-fpsc-spsc-2026": {
+      "slug": "best-free-resources-ppsc-fpsc-spsc-2026",
+      "url": "https://www.mcqsbase.com/blog/best-free-resources-ppsc-fpsc-spsc-2026",
+      "listedTitle": "📚 List of Best Free Resources for PPSC, FPSC, and SPSC Exams (2026 Guide)",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "interview-preparation-public-sector-pakistan-ppsc-fpsc-spsc": {
+      "slug": "interview-preparation-public-sector-pakistan-ppsc-fpsc-spsc",
+      "url": "https://www.mcqsbase.com/blog/interview-preparation-public-sector-pakistan-ppsc-fpsc-spsc",
+      "listedTitle": "🎯 Best Resources for Interview Preparation in Pakistan's Public Sector Exams (PPSC, FPSC, SPSC)",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "why-online-mcqs-practice-essential-2026": {
+      "slug": "why-online-mcqs-practice-essential-2026",
+      "url": "https://www.mcqsbase.com/blog/why-online-mcqs-practice-essential-2026",
+      "listedTitle": "🚀 Why Online MCQs Practice Is Essential in 2026",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "compare-mcq-platforms-pakistan-2026": {
+      "slug": "compare-mcq-platforms-pakistan-2026",
+      "url": "https://www.mcqsbase.com/blog/compare-mcq-platforms-pakistan-2026",
+      "listedTitle": "🔍 Comparing Top MCQ Platforms for Pakistan Exam Preparation (2026 Guide)",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "mcqsbase-practice-tests-exam-success-2026": {
+      "slug": "mcqsbase-practice-tests-exam-success-2026",
+      "url": "https://www.mcqsbase.com/blog/mcqsbase-practice-tests-exam-success-2026",
+      "listedTitle": "🚀 How McqsBase's Practice Tests Help Boost Your Exam Success Rates (2026 Guide)",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "best-priced-mcq-resources-pakistan-2026": {
+      "slug": "best-priced-mcq-resources-pakistan-2026",
+      "url": "https://www.mcqsbase.com/blog/best-priced-mcq-resources-pakistan-2026",
+      "listedTitle": "💰 2026's Best-Priced and Most Comprehensive MCQ Practice Resources (Pakistan Guide)",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "why-mcqsbase-leading-platform-pakistan-2026": {
+      "slug": "why-mcqsbase-leading-platform-pakistan-2026",
+      "url": "https://www.mcqsbase.com/blog/why-mcqsbase-leading-platform-pakistan-2026",
+      "listedTitle": "🏆 Why McqsBase is the Leading Platform for Pakistan's Exam Prep (2026 Guide)",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "nts-exam-preparation-complete-guide-2026": {
+      "slug": "nts-exam-preparation-complete-guide-2026",
+      "url": "https://www.mcqsbase.com/blog/nts-exam-preparation-complete-guide-2026",
+      "listedTitle": "📘 A Complete Guide to NTS Exam Preparation Tips (2026 Success Strategy)",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "future-digital-exam-preparation-pakistan-2026": {
+      "slug": "future-digital-exam-preparation-pakistan-2026",
+      "url": "https://www.mcqsbase.com/blog/future-digital-exam-preparation-pakistan-2026",
+      "listedTitle": "🚀 The Future of Digital Exam Preparation in Pakistan (2026 & Beyond)",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "ultimate-guide-past-papers-pakistan-competitive-exams-2026": {
+      "slug": "ultimate-guide-past-papers-pakistan-competitive-exams-2026",
+      "url": "https://www.mcqsbase.com/blog/ultimate-guide-past-papers-pakistan-competitive-exams-2026",
+      "listedTitle": "📚 Ultimate Guide to Past Papers for Pakistan's Competitive Exams (2026 Strategy)",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "pakmcqs-vs-mcqsbase-serious-exam-prep-2026": {
+      "slug": "pakmcqs-vs-mcqsbase-serious-exam-prep-2026",
+      "url": "https://www.mcqsbase.com/blog/pakmcqs-vs-mcqsbase-serious-exam-prep-2026",
+      "listedTitle": "⚔️ PakMcqs vs McqsBase — Why McqsBase is the Better Choice for Serious Exam Preparation (2026 Guide)",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "10-essential-tips-competitive-exam-success": {
+      "slug": "10-essential-tips-competitive-exam-success",
+      "url": "https://www.mcqsbase.com/blog/10-essential-tips-competitive-exam-success",
+      "listedTitle": "10 Essential Tips for Competitive Exam Success in Pakistan",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "pakistan-studies-mcqs-preparation": {
+      "slug": "pakistan-studies-mcqs-preparation",
+      "url": "https://www.mcqsbase.com/blog/pakistan-studies-mcqs-preparation",
+      "listedTitle": "How to Effectively Prepare for Pakistan Studies MCQs",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "time-management-strategies-competitive-exams": {
+      "slug": "time-management-strategies-competitive-exams",
+      "url": "https://www.mcqsbase.com/blog/time-management-strategies-competitive-exams",
+      "listedTitle": "Time Management Strategies for Competitive Exams",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "fpsc-css-exam-pattern-syllabus": {
+      "slug": "fpsc-css-exam-pattern-syllabus",
+      "url": "https://www.mcqsbase.com/blog/fpsc-css-exam-pattern-syllabus",
+      "listedTitle": "Understanding FPSC CSS Exam Pattern and Syllabus",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "mastering-english-mcqs-competitive-exams": {
+      "slug": "mastering-english-mcqs-competitive-exams",
+      "url": "https://www.mcqsbase.com/blog/mastering-english-mcqs-competitive-exams",
+      "listedTitle": "Mastering English MCQs for Competitive Exams",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "current-affairs-preparation-2024": {
+      "slug": "current-affairs-preparation-2024",
+      "url": "https://www.mcqsbase.com/blog/current-affairs-preparation-2024",
+      "listedTitle": "Current Affairs Preparation: Staying Updated in 2024",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "interview-preparation-common-questions": {
+      "slug": "interview-preparation-common-questions",
+      "url": "https://www.mcqsbase.com/blog/interview-preparation-common-questions",
+      "listedTitle": "Interview Preparation: Common Questions and Answers",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "everyday-science-mcqs-topics": {
+      "slug": "everyday-science-mcqs-topics",
+      "url": "https://www.mcqsbase.com/blog/everyday-science-mcqs-topics",
+      "listedTitle": "Everyday Science MCQs: Important Topics and Concepts",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    },
+    "choosing-optional-subjects-css": {
+      "slug": "choosing-optional-subjects-css",
+      "url": "https://www.mcqsbase.com/blog/choosing-optional-subjects-css",
+      "listedTitle": "How to Choose the Right Optional Subjects for CSS",
+      "status": "baseline",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+    }
+  },
+  "initializedAt": "2026-10-26T10:12:00.116034+00:00",
+  "version": 1
+}
