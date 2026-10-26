@@ -182,7 +182,7 @@ def discover(state, listed):
     return discovered
 
 
-def run(args, source_snapshot=None):
+def run(args, source_snapshot=None, render_slugs=None):
     state_dir = Path(args.state_dir).resolve()
     state_dir.mkdir(parents=True, exist_ok=True)
     # An OS file lock survives neither crashes nor process termination.
@@ -209,7 +209,8 @@ def run(args, source_snapshot=None):
         discovered = discover(state, listed)
         save_json(state_path, state)
         entries = state['articles']
-        pending = [entry for entry in entries.values() if entry['status'] in ('pending', 'rendering', 'retry')]
+        pending = [entry for entry in entries.values() if entry['status'] in ('pending', 'rendering', 'retry')
+                   and (render_slugs is None or entry['slug'] in render_slugs)]
         rendered, errors = [], []
         for entry in pending[:args.max_videos]:
             slug = entry['slug']

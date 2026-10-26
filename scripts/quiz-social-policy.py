@@ -46,6 +46,16 @@ def social_copy(title, count, source_url):
     return result
 
 
+def publication_window(instant=None):
+    current = (instant or datetime.now(ZoneInfo(POLICY['timezone']))).astimezone(ZoneInfo(POLICY['timezone']))
+    publication = (current + timedelta(days=1)).replace(hour=20, minute=0, second=0, microsecond=0)
+    if publication.month != current.month:
+        return None
+    return {'month': publication.strftime('%Y-%m'),
+            'window': sum(publication.day >= start for start in POLICY['campaignWindowStarts']),
+            'scheduledFor': publication.isoformat()}
+
+
 def reserve_campaign(state, entry, instant=None):
     """Reserve one article per window; repeats resume its existing reservation.
 
@@ -57,14 +67,11 @@ def reserve_campaign(state, entry, instant=None):
         return entry['campaign']
     if entry.get('publishingStatus') in ('scheduled', 'published'):
         return None
-    current = (instant or datetime.now(ZoneInfo(POLICY['timezone']))).astimezone(ZoneInfo(POLICY['timezone']))
-    # Schedule next evening so the local Metricool handoff has time to run.
-    publication = (current + timedelta(days=1)).replace(hour=20, minute=0, second=0, microsecond=0)
-    if publication.month != current.month:
+    slot = publication_window(instant)
+    if not slot:
         entry['campaignSelection'] = 'archive-only-month-end'
         return None
-    month = publication.strftime('%Y-%m')
-    window = sum(publication.day >= start for start in POLICY['campaignWindowStarts'])
+    month, window = slot['month'], slot['window']
     campaigns = state.setdefault('campaigns', {}).setdefault(month, {})
     if str(window) in campaigns or len(campaigns) >= POLICY['monthlyCampaignLimit']:
         entry['campaignSelection'] = 'archive-only-window-filled'
@@ -73,7 +80,7 @@ def reserve_campaign(state, entry, instant=None):
         entry['campaignSelection'] = 'archive-only-budget-full'
         return None
     campaign = {'id': f'{month}-{window}', 'slug': entry['slug'], 'month': month,
-                'window': window, 'scheduledFor': publication.isoformat(),
+                'window': window, 'scheduledFor': slot['scheduledFor'],
                 'reservedPublications': len(POLICY['networks']),
                 'status': 'awaiting-metricool-scheduling',
                 'networks': {network: {'status': 'reserved', 'account': identity}
