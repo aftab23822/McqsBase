@@ -182,7 +182,7 @@ def discover(state, listed):
     return discovered
 
 
-def run(args):
+def run(args, source_snapshot=None):
     state_dir = Path(args.state_dir).resolve()
     state_dir.mkdir(parents=True, exist_ok=True)
     # An OS file lock survives neither crashes nor process termination.
@@ -205,7 +205,7 @@ def run(args):
     try:
         state_path = state_dir / 'state.json'
         state = json.loads(state_path.read_text(encoding='utf-8')) if state_path.exists() else {}
-        listed = listed_articles(fetch_html(BLOG))
+        listed = source_snapshot['articles'] if source_snapshot else listed_articles(fetch_html(BLOG))
         discovered = discover(state, listed)
         save_json(state_path, state)
         entries = state['articles']
@@ -220,11 +220,19 @@ def run(args):
                 manifest = json.loads(manifest_path.read_text(encoding='utf-8')) if manifest_path.exists() else {}
                 video_path = output / 'mcqsbase-quiz.mp4'
                 if not (video_path.exists() and video_path.stat().st_size > 0
-                        and manifest.get('sourceUrl') == entry['url'] and manifest.get('sourceVerifiedLive') is True
-                        and manifest.get('count') == args.count and manifest.get('narration') is True
+                        and manifest.get('sourceUrl') == entry['url']
+                        and (manifest.get('sourceVerifiedLive') is True or
+                             (manifest.get('sourceVerification') == 'production-deployment'
+                              and manifest.get('productionDeployment', {}).get('state') == 'success'))
+                        and 0 < manifest.get('count', 0) <= args.count
+                        and manifest.get('durationSeconds', 9999) <= getattr(args, 'max_duration', 89)
+                        and manifest.get('introIncluded') is False and manifest.get('narration') is True
                         and manifest.get('answersIncluded') is True):
-                    package = article_package(fetch_html(entry['url']), slug)
-                    if len(package['questions']) < args.count:
+                    package = (source_snapshot['packages'][slug] if source_snapshot
+                               else article_package(fetch_html(entry['url']), slug))
+                    if package.get('invalidQuestionTable'):
+                        raise ValueError('MCQ table found but no answers could be validated; source review required.')
+                    if not package['questions']:
                         entry.update(status='skipped', reason='Not enough valid four-choice MCQs in this article.',
                                      checkedAt=now(), validQuestions=len(package['questions']))
                         save_json(state_path, state)
@@ -234,7 +242,8 @@ def run(args):
                     entry.update(status='rendering', sourceTitle=package['title'], startedAt=now())
                     save_json(state_path, state)
                     command = [sys.executable, str(ROOT / 'scripts/create-quiz-video.py'),
-                                    '--article-json', str(source), '--count', str(args.count),
+                                    '--article-json', str(source), '--count', str(min(args.count, len(package['questions']))),
+                                    '--max-duration', str(getattr(args, 'max_duration', 89)),
                                     '--seed', slug, '--output', str(output)]
                     if getattr(args, 'voice_engine', None):
                         command.extend(['--voice-engine', args.voice_engine])
@@ -267,7 +276,8 @@ def run(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--state-dir', default=str(ROOT / '.social-automation' / 'blog-videos'))
-    parser.add_argument('--count', type=int, choices=(10, 20), default=10)
+    parser.add_argument('--count', type=int, choices=range(1, 21), default=5)
+    parser.add_argument('--max-duration', type=int, default=89)
     parser.add_argument('--max-videos', type=int, choices=range(1, 11), default=1)
     parser.add_argument('--voice-engine', choices=('windows', 'kokoro'), default='kokoro')
     parser.add_argument('--kokoro-model')

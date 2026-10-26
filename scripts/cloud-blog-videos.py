@@ -5,10 +5,13 @@ post. Metricool is the sole publishing provider.
 """
 import base64
 import importlib.util
+import hashlib
 import json
 import os
 from pathlib import Path
 import re
+import subprocess
+import time
 
 import requests
 
@@ -17,6 +20,7 @@ spec = importlib.util.spec_from_file_location('watcher', ROOT / 'scripts/watch-b
 watcher = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(watcher)
 STATE_BRANCH = 'codex/blog-video-state'
+social = watcher.renderer.social
 
 
 def portable_state(state):
@@ -90,34 +94,121 @@ class GitHubState:
         self.previous = state
 
 
+def successful_blog_run(storage):
+    """Manual recovery also requires a successful daily publisher, never a failed run."""
+    if os.environ.get('GITHUB_EVENT_NAME') == 'workflow_run':
+        event = json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text(encoding='utf-8'))
+        run = event.get('workflow_run', {})
+        if (event.get('repository', {}).get('full_name') != os.environ['GITHUB_REPOSITORY']
+                or run.get('name') != 'Daily Blog Autopilot' or run.get('head_branch') != 'master'):
+            raise RuntimeError('Unexpected publisher workflow or repository; no video generation allowed.')
+    else:
+        runs = storage.api('GET', '/actions/workflows/daily-blog-autopilot.yml/runs',
+                           params={'branch': 'master', 'per_page': 1})['workflow_runs']
+        run = runs[0] if runs else {}
+    if run.get('status') != 'completed' or run.get('conclusion') != 'success':
+        raise RuntimeError('The daily blog publisher has not completed successfully; no video generation allowed.')
+    return run['id']
+
+
+def production_deployment(storage, sha, attempts=25):
+    """Verify the exact checked-out commit was deployed by Vercel to Production.
+
+    Read public deployment evidence rather than crawling a rate-limited website.
+    Preview builds, commit checks alone, and failed/queued deployments do not qualify.
+    """
+    for attempt in range(attempts):
+        deployments = storage.api('GET', '/deployments', params={
+            'sha': sha, 'environment': 'Production', 'per_page': 10})
+        for deployment in deployments:
+            if (deployment.get('sha') != sha or deployment.get('environment') != 'Production'
+                    or deployment.get('creator', {}).get('login') != 'vercel[bot]'):
+                continue
+            statuses = storage.api('GET', f'/deployments/{deployment["id"]}/statuses', params={'per_page': 1})
+            if statuses and statuses[0].get('state') == 'success':
+                return {'id': deployment['id'], 'sha': sha, 'environment': 'Production', 'state': 'success',
+                        'verifiedAt': watcher.now(), 'url': statuses[0].get('environment_url')}
+        if attempt + 1 < attempts:
+            time.sleep(12)
+    raise RuntimeError('The checked-out blog revision is not successfully deployed to Production yet. Retry this job later.')
+
+
+def deployed_sources(proof, state, articles=None):
+    if (proof.get('state') != 'success' or proof.get('environment') != 'Production'
+            or not re.fullmatch(r'[0-9a-f]{40}', proof.get('sha', ''))):
+        raise ValueError('Only a verified Production deployment may supply blog questions.')
+    if articles is None:
+        articles = json.loads(subprocess.check_output(
+            ['node', str(ROOT / 'scripts/export-blog-video-sources.mjs')], cwd=ROOT, text=True, encoding='utf-8'))
+    listed, packages = [], {}
+    baseline_day = state.get('initializedAt', '')[:10]
+    for article in articles:
+        slug, title, body = article['slug'], article['title'], article['body']
+        if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', slug) or not isinstance(body, str):
+            raise ValueError('Invalid registered blog source.')
+        if slug not in state.get('articles', {}) and baseline_day and article.get('date', '') < baseline_day:
+            continue  # A broader registry must not introduce old backfill.
+        url = f'{watcher.BLOG}/{slug}'
+        listed.append({'slug': slug, 'url': url, 'listedTitle': title})
+        packages[slug] = {'slug': slug, 'title': title, 'url': url, 'verifiedLive': False,
+                          'verification': 'production-deployment', 'productionDeployment': proof,
+                          'fetchedAt': proof['verifiedAt'], 'contentHash': hashlib.sha256(body.encode()).hexdigest(),
+                          'questions': watcher.renderer.extract_questions(body, include_answers=True)}
+        packages[slug]['invalidQuestionTable'] = (not packages[slug]['questions'] and
+            bool(re.search(r'^\|\s*\d+\s*\|.*A\).*B\).*C\).*D\)', body, re.M)))
+    if not listed:
+        raise ValueError('The deployed registry contains no eligible article sources.')
+    return {'articles': listed, 'packages': packages}
+
+
 def main():
     repository, token = os.environ['GITHUB_REPOSITORY'], os.environ['GH_TOKEN']
     storage = GitHubState(repository, token)
     state = storage.load()
+    publisher_run = successful_blog_run(storage)
+    sha = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
+    proof = production_deployment(storage, sha)
+    proof['publisherRunId'] = publisher_run
+    snapshot = deployed_sources(proof, state)
     directory = ROOT / '.social-automation/blog-videos'
     directory.mkdir(parents=True, exist_ok=True)
     state_file = directory / 'state.json'
     watcher.save_json(state_file, state)
     storage.save(state)
-    args = type('Options', (), {'state_dir': str(directory), 'count': 10, 'max_videos': 1,
+    args = type('Options', (), {'state_dir': str(directory), 'count': social.POLICY['questionLimit'],
+                               'max_duration': social.POLICY['maxDurationSeconds'], 'max_videos': 3,
                                'voice_engine': 'kokoro',
                                'kokoro_model': str(ROOT / '.social-automation/voices/kokoro/kokoro-v1.0.fp16.onnx'),
                                'kokoro_voices': str(ROOT / '.social-automation/voices/kokoro/voices-v1.0.bin')})()
-    watcher.run(args)
+    try:
+        watcher.run(args, source_snapshot=snapshot)
+    finally:
+        # Preserve discovery and retry records even when a source/render step fails.
+        storage.save(json.loads(state_file.read_text(encoding='utf-8')))
     state = json.loads(state_file.read_text(encoding='utf-8'))
     run_url = f'https://github.com/{repository}/actions/runs/{os.environ["GITHUB_RUN_ID"]}'
     for entry in state.get('articles', {}).values():
-        if entry.get('status') == 'ready' and entry.get('publishingStatus') != 'scheduled':
-            entry['publishingStatus'] = 'awaiting-metricool-scheduling'
+        if (entry.get('status') == 'ready' and entry.get('video')
+                and entry.get('publishingStatus') not in ('scheduled', 'published')):
+            campaign = social.reserve_campaign(state, entry)
+            entry['publishingStatus'] = 'awaiting-metricool-scheduling' if campaign else 'archive-only'
             entry['metricoolBrandId'] = '7661098'
             entry.setdefault('artifactRunUrl', run_url)
+            output = Path(entry['video']).parent
+            if campaign:
+                watcher.save_json(output / 'campaign.json', campaign)
+    state['socialPolicy'] = social.POLICY
     watcher.save_json(state_file, state)
     storage.save(state)
+    if any(entry.get('status') == 'retry' for entry in state.get('articles', {}).values()):
+        raise RuntimeError('Some article videos remain retryable; their queue records have been preserved.')
     summary = os.environ.get('GITHUB_STEP_SUMMARY')
     if summary:
         ready = [e for e in state.get('articles', {}).values() if e.get('status') == 'ready']
         lines = ['## MCQsBase blog quiz videos', '',
-                 'Video generation runs on GitHub. Publishing is handled separately by Metricool.', '']
+                 'Shorts run only after the blog publisher succeeds and Production deployment is verified.',
+                 'Metricool: at most four campaigns / sixteen platform publications per month.',
+                 'Publishing through the connected Metricool client remains a separate handoff.', '']
         lines.extend(f'- {e.get("sourceTitle", e["slug"])}: {e.get("publishingStatus", "ready")}' for e in ready)
         Path(summary).write_text('\n'.join(lines) + '\n', encoding='utf-8')
 

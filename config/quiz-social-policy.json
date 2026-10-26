@@ -1,0 +1,16 @@
+{
+  "questionLimit": 5,
+  "maxDurationSeconds": 89,
+  "campaignWindowStarts": [1, 8, 15, 22],
+  "monthlyCampaignLimit": 4,
+  "monthlyPublicationBudget": 16,
+  "reservedPublications": 4,
+  "timezone": "Asia/Karachi",
+  "metricoolBrandId": "7661098",
+  "networks": {
+    "facebook": "851782721355178",
+    "instagram": "mcqsbase",
+    "tiktok": "McqsBase",
+    "youtube": "UCLLKmoVGvg_Bf2YEFukUjQQ"
+  }
+}

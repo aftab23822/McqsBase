@@ -2,9 +2,11 @@ name: Blog Quiz Videos
 
 on:
   push:
-    branches: ['codex/blog-quiz-cloud']
-  schedule:
-    - cron: '30 * * * *'
+    branches: ['codex/blog-quiz-shorts']
+  workflow_run:
+    workflows: ['Daily Blog Autopilot']
+    types: [completed]
+    branches: [master]
   workflow_dispatch:
   pull_request:
     paths:
@@ -12,8 +14,11 @@ on:
       - 'scripts/*quiz*'
       - 'scripts/*blog-video*'
       - 'scripts/*voice*'
+      - 'scripts/*social-policy*'
+      - 'scripts/export-blog-video-sources.mjs'
       - 'scripts/video-requirements.txt'
       - 'config/blog-video-state-seed.json'
+      - 'config/quiz-social-policy.json'
 
 permissions:
   contents: read
@@ -24,6 +29,7 @@ concurrency:
 
 jobs:
   test:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -39,22 +45,24 @@ jobs:
           python scripts/test-quiz-video.py
           python scripts/test-blog-video-watcher.py
           python scripts/test-cloud-blog-videos.py
+          python scripts/test-quiz-social-policy.py
       - uses: actions/cache@v4
         with:
           path: .social-automation/voices
           key: kokoro-english-fp16-v1-1
       - run: python scripts/download-kokoro-voice.py
       - name: Render a real narrated sample on Linux
-        if: github.event_name != 'schedule'
+        if: github.event_name == 'push' || github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'
         run: >-
           python scripts/create-quiz-video.py
           --slug university-of-sindh-entry-test-mcqs
+          --count 5 --max-duration 89
           --voice-engine kokoro
           --kokoro-model .social-automation/voices/kokoro/kokoro-v1.0.fp16.onnx
           --kokoro-voices .social-automation/voices/kokoro/voices-v1.0.bin
           --output .social-automation/cloud-smoke
       - name: Save the cloud voice and video sample
-        if: github.event_name != 'schedule'
+        if: github.event_name == 'push' || github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'
         uses: actions/upload-artifact@v4
         with:
           name: cloud-quiz-smoke
@@ -63,17 +71,28 @@ jobs:
             .social-automation/cloud-smoke/preview.png
             .social-automation/cloud-smoke/reveal-preview.png
             .social-automation/cloud-smoke/manifest.json
-          retention-days: 7
+            .social-automation/cloud-smoke/platform-captions.json
+          retention-days: 3
 
   create-new-videos:
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+    if: >-
+      github.ref == 'refs/heads/master' &&
+      (github.event_name == 'workflow_dispatch' ||
+       (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success'))
     needs: test
     runs-on: ubuntu-latest
     timeout-minutes: 25
     permissions:
       contents: write
+      deployments: read
+      actions: read
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: master
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -101,5 +120,7 @@ jobs:
             .social-automation/blog-videos/videos/*/manifest.json
             .social-automation/blog-videos/videos/*/caption.txt
             .social-automation/blog-videos/videos/*/first-comment.txt
-          retention-days: 7
+            .social-automation/blog-videos/videos/*/platform-captions.json
+            .social-automation/blog-videos/videos/*/campaign.json
+          retention-days: 35
           if-no-files-found: ignore
