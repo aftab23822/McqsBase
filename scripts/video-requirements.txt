@@ -1,0 +1,4 @@
+Pillow==12.0.0
+imageio-ffmpeg==0.6.0
+piper-tts==1.8.0
+requests==2.32.5

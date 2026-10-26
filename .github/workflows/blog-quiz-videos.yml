@@ -1,0 +1,104 @@
+name: Blog Quiz Videos
+
+on:
+  schedule:
+    - cron: '30 * * * *'
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/blog-quiz-videos.yml'
+      - 'scripts/*quiz*'
+      - 'scripts/*blog-video*'
+      - 'scripts/video-requirements.txt'
+      - 'config/blog-video-state-seed.json'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: blog-quiz-videos-${{ github.event_name == 'pull_request' && github.head_ref || 'production' }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: scripts/video-requirements.txt
+      - run: python -m pip install -r scripts/video-requirements.txt
+      - name: Check parsing, title selection, answer reveals and duplicate protection
+        run: |
+          python scripts/test-quiz-video.py
+          python scripts/test-blog-video-watcher.py
+          python scripts/test-cloud-blog-videos.py
+      - uses: actions/cache@v4
+        with:
+          path: .social-automation/voices
+          key: piper-ljspeech-medium-v1
+      - run: python scripts/download-quiz-voice.py
+      - name: Render a real narrated sample on Linux
+        if: github.event_name == 'pull_request'
+        run: >-
+          python scripts/create-quiz-video.py
+          --slug university-of-sindh-entry-test-mcqs
+          --voice-engine piper
+          --piper-model .social-automation/voices/en_US-ljspeech-medium.onnx
+          --output .social-automation/cloud-smoke
+      - name: Save the cloud voice and video sample
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: cloud-quiz-smoke
+          path: |
+            .social-automation/cloud-smoke/mcqsbase-quiz.mp4
+            .social-automation/cloud-smoke/preview.png
+            .social-automation/cloud-smoke/reveal-preview.png
+            .social-automation/cloud-smoke/manifest.json
+          retention-days: 7
+
+  create-new-videos:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: scripts/video-requirements.txt
+      - run: python -m pip install -r scripts/video-requirements.txt
+      - uses: actions/cache@v4
+        with:
+          path: .social-automation/voices
+          key: piper-ljspeech-medium-v1
+      - run: python scripts/download-quiz-voice.py
+      - name: Create videos and optionally publish to the confirmed Facebook Page
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FACEBOOK_AUTO_PUBLISH: ${{ vars.FACEBOOK_AUTO_PUBLISH }}
+          FACEBOOK_GRAPH_VERSION: ${{ vars.FACEBOOK_GRAPH_VERSION }}
+          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+        run: python scripts/cloud-blog-videos.py
+      - name: Save completed video packages
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: blog-quiz-videos-${{ github.run_id }}
+          path: |
+            .social-automation/blog-videos/videos/*/mcqsbase-quiz.mp4
+            .social-automation/blog-videos/videos/*/preview.png
+            .social-automation/blog-videos/videos/*/reveal-preview.png
+            .social-automation/blog-videos/videos/*/manifest.json
+            .social-automation/blog-videos/videos/*/caption.txt
+            .social-automation/blog-videos/videos/*/first-comment.txt
+          retention-days: 7
+          if-no-files-found: ignore
