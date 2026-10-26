@@ -1,14 +1,20 @@
 """Download the upstream Kokoro model and voices for local/cloud narration."""
 from concurrent.futures import ThreadPoolExecutor
 import hashlib
-import json
 from pathlib import Path
 from urllib.request import urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 TARGET = ROOT / '.social-automation/voices/kokoro'
-RELEASE = 'https://api.github.com/repos/thewh1teagle/kokoro-onnx/releases/tags/model-files-v1.1'
-FILES = ('kokoro-v1.0.fp16.onnx', 'voices-v1.0.bin')
+RELEASE = 'https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/'
+# Pin the exact upstream files used for the user-approved voice sample. No
+# unauthenticated API lookup is needed on each fresh runner or cache restore.
+FILES = (
+    {'name': 'kokoro-v1.0.fp16.onnx', 'size': 163527961,
+     'digest': 'sha256:f3a290d384fbb27966d462905c71a46cef9e5fd00516b40df32a0b4afe77ac96'},
+    {'name': 'voices-v1.0.bin', 'size': 28214398,
+     'digest': 'sha256:bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d'},
+)
 
 
 def download(asset):
@@ -18,7 +24,7 @@ def download(asset):
         if not digest or 'sha256:' + hashlib.sha256(destination.read_bytes()).hexdigest() == digest:
             return
     temporary = destination.with_suffix(destination.suffix + '.download')
-    with urlopen(asset['browser_download_url'], timeout=60) as source, temporary.open('wb') as output:
+    with urlopen(RELEASE + asset['name'], timeout=60) as source, temporary.open('wb') as output:
         while chunk := source.read(1024 * 1024):
             output.write(chunk)
     if temporary.stat().st_size != asset['size']:
@@ -32,8 +38,5 @@ def download(asset):
 
 if __name__ == '__main__':
     TARGET.mkdir(parents=True, exist_ok=True)
-    with urlopen(RELEASE, timeout=30) as source:
-        release = json.load(source)
-    assets = {asset['name']: asset for asset in release['assets']}
     with ThreadPoolExecutor(max_workers=2) as pool:
-        list(pool.map(download, [assets[name] for name in FILES]))
+        list(pool.map(download, FILES))
