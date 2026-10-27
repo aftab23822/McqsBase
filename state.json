@@ -446,8 +446,9 @@
           "publicUrl": null
         },
         "youtube": {
-          "status": "reserved",
-          "account": "UCLLKmoVGvg_Bf2YEFukUjQQ"
+          "status": "uncertain",
+          "account": "UCLLKmoVGvg_Bf2YEFukUjQQ",
+          "attemptedAt": "2026-10-27T12:18:15.763100+05:00"
         }
       },
       "requests": {
