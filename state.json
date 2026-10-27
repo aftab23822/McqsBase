@@ -448,7 +448,9 @@
         "youtube": {
           "status": "uncertain",
           "account": "UCLLKmoVGvg_Bf2YEFukUjQQ",
-          "attemptedAt": "2026-10-27T12:18:15.763100+05:00"
+          "attemptedAt": "2026-10-27T12:18:15.763100+05:00",
+          "postId": 407498280,
+          "uuid": "-1470074426412479027"
         }
       },
       "requests": {
