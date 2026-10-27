@@ -87,21 +87,21 @@
             "providerPostId": "2728634507533145"
           },
           "instagram": {
-            "status": "scheduled",
+            "status": "published",
             "account": "mcqsbase",
             "postId": 407608092,
             "uuid": "-876230335756810443",
             "attemptedAt": "2026-10-27T14:41:31.165288+05:00",
-            "providerStatus": "PENDING",
+            "providerStatus": "PUBLISHED",
             "scheduledFor": {
               "dateTime": "2026-10-27T14:51:00",
               "timezone": "Asia/Karachi"
             },
-            "verifiedAt": "2026-10-27T14:50:42.379110+05:00",
+            "verifiedAt": "2026-10-27T14:53:12.418917+05:00",
             "media": [
               "https://static.metricool.com/planner/202610/7661098-file-3470209210286254834.mp4"
             ],
-            "publicUrl": null
+            "publicUrl": "https://www.instagram.com/reel/De_k78mDxf_/"
           },
           "tiktok": {
             "status": "scheduled",
@@ -868,21 +868,21 @@
             "providerPostId": "2728634507533145"
           },
           "instagram": {
-            "status": "scheduled",
+            "status": "published",
             "account": "mcqsbase",
             "postId": 407608092,
             "uuid": "-876230335756810443",
             "attemptedAt": "2026-10-27T14:41:31.165288+05:00",
-            "providerStatus": "PENDING",
+            "providerStatus": "PUBLISHED",
             "scheduledFor": {
               "dateTime": "2026-10-27T14:51:00",
               "timezone": "Asia/Karachi"
             },
-            "verifiedAt": "2026-10-27T14:50:42.379110+05:00",
+            "verifiedAt": "2026-10-27T14:53:12.418917+05:00",
             "media": [
               "https://static.metricool.com/planner/202610/7661098-file-3470209210286254834.mp4"
             ],
-            "publicUrl": null
+            "publicUrl": "https://www.instagram.com/reel/De_k78mDxf_/"
           },
           "tiktok": {
             "status": "scheduled",
