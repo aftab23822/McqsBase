@@ -1,0 +1,25 @@
+name: Metricool Cloud Handoff
+
+on:
+  push:
+    branches: ['codex/metricool-cloud-handoff']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: metricool-cloud-handoff-setup
+  cancel-in-progress: false
+
+jobs:
+  connection-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify cloud access without creating posts
+        env:
+          MCQS_MAKE_WEBHOOK_URL: ${{ secrets.MCQS_MAKE_WEBHOOK_URL }}
+          MCQS_MAKE_API_KEY: ${{ secrets.MCQS_MAKE_API_KEY }}
+        run: python scripts/probe-metricool-cloud.py
