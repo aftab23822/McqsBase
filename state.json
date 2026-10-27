@@ -63,7 +63,7 @@
           "facebook": {
             "status": "uncertain-update",
             "account": "851782721355178",
-            "postId": 407495566,
+            "postId": 407515600,
             "uuid": "2995370167056354792",
             "attemptedAt": "2026-10-27T12:45:48.002191+05:00",
             "rejectionRecoveryApplied": true,
@@ -682,7 +682,7 @@
         "facebook": {
           "status": "uncertain-update",
           "account": "851782721355178",
-          "postId": 407495566,
+          "postId": 407515600,
           "uuid": "2995370167056354792",
           "attemptedAt": "2026-10-27T12:45:48.002191+05:00",
           "rejectionRecoveryApplied": true,
@@ -746,7 +746,7 @@
           "facebook": {
             "status": "uncertain-update",
             "account": "851782721355178",
-            "postId": 407495566,
+            "postId": 407515600,
             "uuid": "2995370167056354792",
             "attemptedAt": "2026-10-27T12:45:48.002191+05:00",
             "rejectionRecoveryApplied": true,
