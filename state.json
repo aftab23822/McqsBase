@@ -411,11 +411,21 @@
           "publicUrl": null
         },
         "instagram": {
-          "status": "uncertain",
+          "status": "draft",
           "account": "mcqsbase",
           "attemptedAt": "2026-10-27T12:13:47.697809+05:00",
           "postId": 407495600,
-          "uuid": "-876230335756810443"
+          "uuid": "-876230335756810443",
+          "providerStatus": "PENDING",
+          "scheduledFor": {
+            "dateTime": "2026-10-28T20:00:00",
+            "timezone": "Asia/Karachi"
+          },
+          "verifiedAt": "2026-10-27T12:13:51.129253+05:00",
+          "media": [
+            "https://static.metricool.com/planner/202610/7661098-file-3470209210286254834.mp4"
+          ],
+          "publicUrl": null
         },
         "tiktok": {
           "status": "reserved",
