@@ -43,8 +43,290 @@
       "slug": "university-of-sindh-entry-test-mcqs",
       "url": "https://www.mcqsbase.com/blog/university-of-sindh-entry-test-mcqs",
       "listedTitle": "100 University of Sindh Entry Test MCQs with Answers for Jamshoro Admission Preparation",
-      "status": "baseline",
-      "discoveredAt": "2026-10-26T10:12:00.116034+00:00"
+      "status": "ready",
+      "discoveredAt": "2026-10-26T10:12:00.116034+00:00",
+      "sourceTitle": "100 University of Sindh Entry Test MCQs with Answers for Jamshoro Admission Preparation",
+      "previousQueueStatus": "baseline",
+      "approvedDraftLaunch": true,
+      "launchIntegrationTestId": "make-cloud-draft-v1",
+      "publishingStatus": "awaiting-metricool-scheduling",
+      "userApproval": "The user explicitly approved publishing the tested video on October 27, 2026. This single launch campaign may reuse its existing four drafts; other baseline articles remain excluded.",
+      "campaign": {
+        "id": "2026-10-4",
+        "slug": "university-of-sindh-entry-test-mcqs",
+        "month": "2026-10",
+        "window": 4,
+        "scheduledFor": "2026-10-27T12:47:38+05:00",
+        "reservedPublications": 4,
+        "status": "awaiting-metricool-scheduling",
+        "networks": {
+          "facebook": {
+            "status": "approved-draft",
+            "account": "851782721355178",
+            "postId": 407495566,
+            "uuid": "2995370167056354792"
+          },
+          "instagram": {
+            "status": "approved-draft",
+            "account": "mcqsbase",
+            "postId": 407495600,
+            "uuid": "-876230335756810443"
+          },
+          "tiktok": {
+            "status": "approved-draft",
+            "account": "McqsBase",
+            "postId": 407498238,
+            "uuid": "2894394623805638074"
+          },
+          "youtube": {
+            "status": "approved-draft",
+            "account": "UCLLKmoVGvg_Bf2YEFukUjQQ",
+            "postId": 407498280,
+            "uuid": "-1470074426412479027"
+          }
+        },
+        "selectionReason": "Explicit user approval to publish the already-tested video.",
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/university-of-sindh-entry-test-mcqs-4cf3dc8eece5cb91.mp4"
+      },
+      "campaignSelection": "selected",
+      "cloudPackage": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/university-of-sindh-entry-test-mcqs-4cf3dc8eece5cb91.mp4",
+        "videoSha256": "4cf3dc8eece5cb91548186a397de3d3e23c2630d1cc8457e84be8d833451ea50",
+        "assetId": 680833017,
+        "manifest": {
+          "title": "100 University of Sindh Entry Test MCQs",
+          "sourceTitle": "100 University of Sindh Entry Test MCQs with Answers for Jamshoro Admission Preparation",
+          "sourceUrl": "https://www.mcqsbase.com/blog/university-of-sindh-entry-test-mcqs",
+          "sourceVerifiedLive": false,
+          "sourceFetchedAt": "2026-10-27T07:37:37.729755+00:00",
+          "sourceContentHash": "8f9c0401c642908e483a04012f5c20dae02583b1f45def435d41f9102b384c77",
+          "sourceVerification": "production-deployment",
+          "productionDeployment": {
+            "id": 7352929119,
+            "sha": "f4978c5eb218e73b772a75e56de80f3f12ff1408",
+            "environment": "Production",
+            "state": "success",
+            "verifiedAt": "2026-10-27T07:37:37.729755+00:00",
+            "url": "https://mcqs-base-lwzs0r5ba-as-projects-10921176.vercel.app",
+            "publisherRunId": 40304362090
+          },
+          "status": "local-preview-only",
+          "count": 3,
+          "secondsPerQuestion": 5,
+          "durationSeconds": 76,
+          "width": 1080,
+          "height": 1920,
+          "answersIncluded": true,
+          "narration": true,
+          "voiceName": "Kokoro af_heart",
+          "countdownStartsAfterNarration": true,
+          "seed": "mcqsbase-demo",
+          "questions": [
+            {
+              "question": "What is the main function of the lungs?",
+              "choices": [
+                "Digest food",
+                "Exchange gases",
+                "Pump blood",
+                "Filter urine"
+              ],
+              "key": "f29a07425365160b50b602f7ffc8fdd59dcbfbe28b0a373ec68ed401a37e9086",
+              "correctIndex": 1
+            },
+            {
+              "question": "Which substance is commonly used as table salt?",
+              "choices": [
+                "Sodium chloride",
+                "Calcium carbonate",
+                "Potassium nitrate",
+                "Sodium bicarbonate"
+              ],
+              "key": "586946f3e6bd183dd6fc983b90c1d1e4d2d7800b15c63c653ea52aa14e125a2c",
+              "correctIndex": 0
+            },
+            {
+              "question": "Which number comes next in the sequence: 2, 5, 8, 11, ____?",
+              "choices": [
+                "12",
+                "13",
+                "14",
+                "15"
+              ],
+              "key": "e51f672a9e388be646e0e0eb5e84b6d181f832eaee0dabc4afbb5ea2b9166d7f",
+              "correctIndex": 2
+            }
+          ],
+          "stages": [
+            {
+              "start": 0,
+              "duration": 13,
+              "stage": "narration",
+              "question": 1,
+              "frame": "0000.png"
+            },
+            {
+              "start": 13,
+              "duration": 1,
+              "stage": "countdown",
+              "question": 1,
+              "frame": "0001.png"
+            },
+            {
+              "start": 14,
+              "duration": 1,
+              "stage": "countdown",
+              "question": 1,
+              "frame": "0002.png"
+            },
+            {
+              "start": 15,
+              "duration": 1,
+              "stage": "countdown",
+              "question": 1,
+              "frame": "0003.png"
+            },
+            {
+              "start": 16,
+              "duration": 1,
+              "stage": "countdown",
+              "question": 1,
+              "frame": "0004.png"
+            },
+            {
+              "start": 17,
+              "duration": 1,
+              "stage": "countdown",
+              "question": 1,
+              "frame": "0005.png"
+            },
+            {
+              "start": 18,
+              "duration": 4,
+              "stage": "reveal",
+              "question": 1,
+              "frame": "0006.png"
+            },
+            {
+              "start": 22,
+              "duration": 16,
+              "stage": "narration",
+              "question": 2,
+              "frame": "0007.png"
+            },
+            {
+              "start": 38,
+              "duration": 1,
+              "stage": "countdown",
+              "question": 2,
+              "frame": "0008.png"
+            },
+            {
+              "start": 39,
+              "duration": 1,
+              "stage": "countdown",
+              "question": 2,
+              "frame": "0009.png"
+            },
+            {
+              "start": 40,
+              "duration": 1,
+              "stage": "countdown",
+              "question": 2,
+              "frame": "0010.png"
+            },
+            {
+              "start": 41,
+              "duration": 1,
+              "stage": "countdown",
+              "question": 2,
+              "frame": "0011.png"
+            },
+            {
+              "start": 42,
+              "duration": 1,
+              "stage": "countdown",
+              "question": 2,
+              "frame": "0012.png"
+            },
+            {
+              "start": 43,
+              "duration": 4,
+              "stage": "reveal",
+              "question": 2,
+              "frame": "0013.png"
+            },
+            {
+              "start": 47,
+              "duration": 15,
+              "stage": "narration",
+              "question": 3,
+              "frame": "0014.png"
+            },
+            {
+              "start": 62,
+              "duration": 1,
+              "stage": "countdown",
+              "question": 3,
+              "frame": "0015.png"
+            },
+            {
+              "start": 63,
+              "duration": 1,
+              "stage": "countdown",
+              "question": 3,
+              "frame": "0016.png"
+            },
+            {
+              "start": 64,
+              "duration": 1,
+              "stage": "countdown",
+              "question": 3,
+              "frame": "0017.png"
+            },
+            {
+              "start": 65,
+              "duration": 1,
+              "stage": "countdown",
+              "question": 3,
+              "frame": "0018.png"
+            },
+            {
+              "start": 66,
+              "duration": 1,
+              "stage": "countdown",
+              "question": 3,
+              "frame": "0019.png"
+            },
+            {
+              "start": 67,
+              "duration": 4,
+              "stage": "reveal",
+              "question": 3,
+              "frame": "0020.png"
+            },
+            {
+              "start": 71,
+              "duration": 5,
+              "stage": "outro",
+              "question": null,
+              "frame": "0021.png"
+            }
+          ],
+          "introIncluded": false,
+          "outroIncluded": true,
+          "requestedCount": 5,
+          "maxDurationSeconds": 89,
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#EntryTest",
+            "#TestPreparation",
+            "#Shorts"
+          ],
+          "verificationNote": "Previously rendered CI sample, revalidated against the exact Production article after explicit user publication approval."
+        },
+        "decodedSuccessfully": true
+      }
     },
     "muet-entry-test-mcqs": {
       "slug": "muet-entry-test-mcqs",
@@ -389,7 +671,7 @@
     "make-cloud-draft-v1": {
       "id": "make-cloud-draft-v1",
       "month": "2026-10",
-      "status": "verified",
+      "status": "launch-in-progress",
       "scheduledFor": "2026-10-28T20:00:00+05:00",
       "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/make-draft-test-4cf3dc8eece5cb91.mp4",
       "networks": {
@@ -484,6 +766,47 @@
           "date": "2026-10-28T20:00:00+05:00",
           "info": "{\"autoPublish\": true, \"draft\": true, \"media\": [\"https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/make-draft-test-4cf3dc8eece5cb91.mp4\"], \"providers\": [{\"network\": \"youtube\"}], \"text\": \"[AUTOMATION DRAFT TEST — DO NOT PUBLISH]\\n100 University of Sindh Entry Test MCQs\\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\\nFull practice set: https://www.mcqsbase.com/blog/university-of-sindh-entry-test-mcqs\\nVisit mcqsbase.com/blog; look for the test title above.\\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts\", \"publicationDate\": {\"dateTime\": \"2026-10-28T20:00:00\", \"timezone\": \"Asia/Karachi\"}, \"youtubeData\": {\"type\": \"short\", \"privacy\": \"public\", \"title\": \"100 University of Sindh Entry Test MCQs | 3-Question Quiz\", \"category\": \"EDUCATION\", \"madeForKids\": false, \"isAiGeneratedContent\": true}}"
         }
+      }
+    }
+  },
+  "campaigns": {
+    "2026-10": {
+      "4": {
+        "id": "2026-10-4",
+        "slug": "university-of-sindh-entry-test-mcqs",
+        "month": "2026-10",
+        "window": 4,
+        "scheduledFor": "2026-10-27T12:47:38+05:00",
+        "reservedPublications": 4,
+        "status": "awaiting-metricool-scheduling",
+        "networks": {
+          "facebook": {
+            "status": "approved-draft",
+            "account": "851782721355178",
+            "postId": 407495566,
+            "uuid": "2995370167056354792"
+          },
+          "instagram": {
+            "status": "approved-draft",
+            "account": "mcqsbase",
+            "postId": 407495600,
+            "uuid": "-876230335756810443"
+          },
+          "tiktok": {
+            "status": "approved-draft",
+            "account": "McqsBase",
+            "postId": 407498238,
+            "uuid": "2894394623805638074"
+          },
+          "youtube": {
+            "status": "approved-draft",
+            "account": "UCLLKmoVGvg_Bf2YEFukUjQQ",
+            "postId": 407498280,
+            "uuid": "-1470074426412479027"
+          }
+        },
+        "selectionReason": "Explicit user approval to publish the already-tested video.",
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/university-of-sindh-entry-test-mcqs-4cf3dc8eece5cb91.mp4"
       }
     }
   }
