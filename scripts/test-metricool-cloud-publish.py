@@ -110,7 +110,8 @@ class CloudPublishingTests(unittest.TestCase):
             client.call('getBrandSettings')
 
     def test_approved_launch_updates_the_existing_draft_and_retains_its_uuid(self):
-        original = {**self.post, 'draft': True, 'text': 'DRAFT TEST', 'unrelatedField': 'preserve-me'}
+        original = {**self.post, 'draft': True, 'text': 'DRAFT TEST', 'unrelatedField': 'preserve-me',
+                    'twitterData': {'type': 'POST'}, 'instagramData': {'autoPublish': True}}
         campaign = {'networks': {'facebook': {'status': 'approved-draft', 'postId': 123, 'uuid': 'stable-id'}}}
         calls, saved = [], []
         class UpdateOnly:
@@ -124,6 +125,8 @@ class CloudPublishingTests(unittest.TestCase):
         self.assertEqual(calls[0][1]['id'], '123')
         self.assertEqual(calls[0][1]['uuid'], 'stable-id')
         self.assertEqual(json.loads(calls[0][1]['info'])['unrelatedField'], 'preserve-me')
+        self.assertNotIn('twitterData', json.loads(calls[0][1]['info']))
+        self.assertNotIn('instagramData', json.loads(calls[0][1]['info']))
         self.assertEqual(saved[0]['networks']['facebook']['status'], 'uncertain-update')
         self.assertEqual(campaign['networks']['facebook']['postId'], 456)
 

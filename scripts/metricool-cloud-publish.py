@@ -287,6 +287,13 @@ def promote_approved_drafts(client, requests, campaign, posts, save):
         for key in ('facebookData', 'instagramData', 'tiktokData', 'youtubeData'):
             if isinstance(original.get(key), dict) and isinstance(info.get(key), dict):
                 updated[key] = {**original[key], **info[key]}
+        # Calendar reads include default data for unrelated networks. MCP writes
+        # reject those defaults; retain all other original fields and the chosen
+        # provider's complete configuration.
+        for other in ('twitter', 'facebook', 'instagram', 'linkedin', 'pinterest', 'youtube',
+                      'tiktok', 'bluesky', 'threads', 'gmb'):
+            if other != network:
+                updated.pop(other + 'Data', None)
         receipt.update(status='uncertain-update', attemptedAt=now().isoformat())
         save()
         result = client.call('updateScheduledPost', {'blogId': POLICY['metricoolBrandId'],
@@ -295,6 +302,22 @@ def promote_approved_drafts(client, requests, campaign, posts, save):
         if not isinstance(post, dict):
             raise RuntimeError('The draft update has no verified receipt; reconcile it before another write.')
         apply_receipt(receipt, post, network, info, save)
+
+
+def recover_confirmed_launch_rejection(campaign, posts, save):
+    approval = json.loads((ROOT / 'config/quiz-approved-launch.json').read_text(encoding='utf-8'))
+    evidence = approval.get('confirmedRejectedUpdate', {})
+    if campaign.get('slug') != approval['slug'] or campaign.get('month') != approval['month']:
+        return
+    for receipt in campaign['networks'].values():
+        if receipt.get('status') != 'uncertain-update' or receipt.get('rejectionRecoveryApplied'):
+            continue
+        original = next((post for post in posts if str(post['uuid']) == str(receipt.get('uuid'))), {})
+        if (str(receipt.get('uuid')) == evidence.get('uuid')
+                and original.get('id') == evidence.get('originalPostId') and original.get('draft') is True):
+            receipt.update(status='approved-draft', rejectionRecoveryApplied=True,
+                           confirmedRejectedExecution=evidence['executionId'], rejectionReason=evidence['reason'])
+            save()
 
 
 def publish_campaign(storage, state, entry, client):
@@ -327,15 +350,18 @@ def publish_campaign(storage, state, entry, client):
     payload.validate_package(entry, manifest)
     verify_brand(client)
     posts = calendar(client, campaign['month'])
+    if entry.get('approvedDraftLaunch'):
+        recover_confirmed_launch_rejection(campaign, posts, lambda: storage.save(state))
     target = datetime.fromisoformat(campaign['scheduledFor'])
     if not verification_only:
         check_capacity(state, campaign['month'], posts)
     if target <= now() and not verification_only:
         replacement = payload.social.publication_window(now())
         if (not replacement or replacement['month'] != campaign['month'] or replacement['window'] != campaign['window']
-                or any(r.get('status') == 'uncertain' for r in campaign['networks'].values())):
+                or any(r.get('status', '').startswith('uncertain') for r in campaign['networks'].values())):
             raise RuntimeError('The reserved publication date expired; hold it rather than moving outside its window.')
-        campaign['scheduledFor'] = replacement['scheduledFor']
+        campaign['scheduledFor'] = ((now() + timedelta(minutes=10)).replace(microsecond=0).isoformat()
+                                    if entry.get('approvedDraftLaunch') else replacement['scheduledFor'])
         storage.save(state)
     requests = campaign_requests(state, entry, manifest, package['videoUrl'],
                                   target - timedelta(seconds=1) if verification_only else None)
