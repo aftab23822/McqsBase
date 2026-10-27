@@ -28,13 +28,16 @@ def validate_package(entry, manifest):
             or not re.fullmatch(r'[0-9a-f]{64}', manifest.get('sourceContentHash') or '')):
         raise ValueError('A selected, ready quiz with verified published source evidence is required.')
     count = manifest.get('count')
+    # Campaigns created before this setting was recorded used five seconds.
+    # Their published assets retain that format; new reservations snapshot three.
+    thinking_seconds = entry['campaign'].get('thinkingSeconds', 5)
     if (type(count) is not int or not 1 <= count <= social.POLICY['questionLimit']
             or len(manifest.get('questions', [])) != count
             or manifest.get('width') != 1080 or manifest.get('height') != 1920
             or manifest.get('introIncluded') is not False
             or manifest.get('narration') is not True or manifest.get('answersIncluded') is not True
             or manifest.get('voiceName') != 'Kokoro af_heart'
-            or manifest.get('secondsPerQuestion') != 5
+            or manifest.get('secondsPerQuestion') != thinking_seconds
             or manifest.get('countdownStartsAfterNarration') is not True):
         raise ValueError('The quiz does not match the approved Shorts format.')
     for question in manifest['questions']:
@@ -51,13 +54,13 @@ def validate_package(entry, manifest):
         elapsed += stage['duration']
     expected = []
     for number in range(1, count + 1):
-        expected.extend([('narration', number), *[('countdown', number)] * 5, ('reveal', number)])
+        expected.extend([('narration', number), *[('countdown', number)] * thinking_seconds, ('reveal', number)])
     if stages and stages[-1].get('stage') == 'outro':
         expected.append(('outro', stages[-1].get('question')))
     if [(s.get('stage'), s.get('question')) for s in stages] != expected:
-        raise ValueError('Answers must follow narration and a complete five-second countdown.')
+        raise ValueError(f'Answers must follow narration and a complete {thinking_seconds}-second countdown.')
     if any(s['duration'] != 1 for s in stages if s['stage'] == 'countdown'):
-        raise ValueError('Every thinking countdown must contain five full seconds.')
+        raise ValueError(f'Every thinking countdown must contain {thinking_seconds} full seconds.')
     if elapsed != manifest.get('durationSeconds') or not 0 < elapsed <= social.POLICY['maxDurationSeconds']:
         raise ValueError('The complete video must fit the approved duration limit.')
     return source_url

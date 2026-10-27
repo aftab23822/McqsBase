@@ -227,6 +227,7 @@ def run(args, source_snapshot=None, render_slugs=None):
                               and manifest.get('productionDeployment', {}).get('state') == 'success'))
                         and 0 < manifest.get('count', 0) <= args.count
                         and manifest.get('durationSeconds', 9999) <= getattr(args, 'max_duration', 89)
+                        and manifest.get('secondsPerQuestion') == getattr(args, 'seconds', renderer.social.POLICY['thinkingSeconds'])
                         and manifest.get('introIncluded') is False and manifest.get('narration') is True
                         and manifest.get('answersIncluded') is True):
                     package = (source_snapshot['packages'][slug] if source_snapshot
@@ -245,6 +246,7 @@ def run(args, source_snapshot=None, render_slugs=None):
                     command = [sys.executable, str(ROOT / 'scripts/create-quiz-video.py'),
                                     '--article-json', str(source), '--count', str(min(args.count, len(package['questions']))),
                                     '--max-duration', str(getattr(args, 'max_duration', 89)),
+                                    '--seconds', str(getattr(args, 'seconds', renderer.social.POLICY['thinkingSeconds'])),
                                     '--seed', slug, '--output', str(output)]
                     if getattr(args, 'voice_engine', None):
                         command.extend(['--voice-engine', args.voice_engine])
@@ -278,6 +280,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--state-dir', default=str(ROOT / '.social-automation' / 'blog-videos'))
     parser.add_argument('--count', type=int, choices=range(1, 21), default=5)
+    parser.add_argument('--seconds', type=int, choices=range(3, 31), default=renderer.social.POLICY['thinkingSeconds'])
     parser.add_argument('--max-duration', type=int, default=89)
     parser.add_argument('--max-videos', type=int, choices=range(1, 11), default=1)
     parser.add_argument('--voice-engine', choices=('windows', 'kokoro'), default='kokoro')

@@ -1,6 +1,7 @@
 {
   "generationMode": "selected-campaigns-only",
   "questionLimit": 5,
+  "thinkingSeconds": 3,
   "maxDurationSeconds": 89,
   "campaignWindowStarts": [1, 8, 15, 22],
   "monthlyCampaignLimit": 4,

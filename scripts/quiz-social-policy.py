@@ -81,6 +81,7 @@ def reserve_campaign(state, entry, instant=None):
         return None
     campaign = {'id': f'{month}-{window}', 'slug': entry['slug'], 'month': month,
                 'window': window, 'scheduledFor': slot['scheduledFor'],
+                'thinkingSeconds': POLICY['thinkingSeconds'],
                 'reservedPublications': len(POLICY['networks']),
                 'status': 'awaiting-metricool-scheduling',
                 'networks': {network: {'status': 'reserved', 'account': identity}
