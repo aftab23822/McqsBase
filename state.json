@@ -384,5 +384,54 @@
       "tiktok": "McqsBase",
       "youtube": "UCLLKmoVGvg_Bf2YEFukUjQQ"
     }
+  },
+  "integrationTests": {
+    "make-cloud-draft-v1": {
+      "id": "make-cloud-draft-v1",
+      "month": "2026-10",
+      "status": "testing",
+      "scheduledFor": "2026-10-28T20:00:00+05:00",
+      "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/make-draft-test-4cf3dc8eece5cb91.mp4",
+      "networks": {
+        "facebook": {
+          "status": "reserved",
+          "account": "851782721355178"
+        },
+        "instagram": {
+          "status": "reserved",
+          "account": "mcqsbase"
+        },
+        "tiktok": {
+          "status": "reserved",
+          "account": "McqsBase"
+        },
+        "youtube": {
+          "status": "reserved",
+          "account": "UCLLKmoVGvg_Bf2YEFukUjQQ"
+        }
+      },
+      "requests": {
+        "facebook": {
+          "blogId": "7661098",
+          "date": "2026-10-28T20:00:00+05:00",
+          "info": "{\"autoPublish\": true, \"draft\": true, \"media\": [\"https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/make-draft-test-4cf3dc8eece5cb91.mp4\"], \"providers\": [{\"network\": \"facebook\"}], \"text\": \"[AUTOMATION DRAFT TEST — DO NOT PUBLISH]\\n100 University of Sindh Entry Test MCQs\\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\\nFull practice set and answers in the first comment.\\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts\", \"publicationDate\": {\"dateTime\": \"2026-10-28T20:00:00\", \"timezone\": \"Asia/Karachi\"}, \"facebookData\": {\"type\": \"REEL\", \"title\": \"100 University of Sindh Entry Test MCQs | 3-Question Quiz\"}, \"firstCommentText\": \"Full practice set and answers: https://www.mcqsbase.com/blog/university-of-sindh-entry-test-mcqs\"}"
+        },
+        "instagram": {
+          "blogId": "7661098",
+          "date": "2026-10-28T20:00:00+05:00",
+          "info": "{\"autoPublish\": true, \"draft\": true, \"media\": [\"https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/make-draft-test-4cf3dc8eece5cb91.mp4\"], \"providers\": [{\"network\": \"instagram\"}], \"text\": \"[AUTOMATION DRAFT TEST — DO NOT PUBLISH]\\n100 University of Sindh Entry Test MCQs\\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\\nFull practice set: https://www.mcqsbase.com/blog/university-of-sindh-entry-test-mcqs\\nVisit mcqsbase.com/blog; look for the test title above.\\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts\", \"publicationDate\": {\"dateTime\": \"2026-10-28T20:00:00\", \"timezone\": \"Asia/Karachi\"}, \"instagramData\": {\"type\": \"REEL\", \"showReelOnFeed\": true, \"isAiGenerated\": true}}"
+        },
+        "tiktok": {
+          "blogId": "7661098",
+          "date": "2026-10-28T20:00:00+05:00",
+          "info": "{\"autoPublish\": true, \"draft\": true, \"media\": [\"https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/make-draft-test-4cf3dc8eece5cb91.mp4\"], \"providers\": [{\"network\": \"tiktok\"}], \"text\": \"[AUTOMATION DRAFT TEST — DO NOT PUBLISH]\\n100 University of Sindh Entry Test MCQs\\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\\nFull practice set: https://www.mcqsbase.com/blog/university-of-sindh-entry-test-mcqs\\nVisit mcqsbase.com/blog; look for the test title above.\\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts\", \"publicationDate\": {\"dateTime\": \"2026-10-28T20:00:00\", \"timezone\": \"Asia/Karachi\"}, \"tiktokData\": {\"privacyOption\": \"PUBLIC_TO_EVERYONE\", \"isAigc\": true}}"
+        },
+        "youtube": {
+          "blogId": "7661098",
+          "date": "2026-10-28T20:00:00+05:00",
+          "info": "{\"autoPublish\": true, \"draft\": true, \"media\": [\"https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/make-draft-test-4cf3dc8eece5cb91.mp4\"], \"providers\": [{\"network\": \"youtube\"}], \"text\": \"[AUTOMATION DRAFT TEST — DO NOT PUBLISH]\\n100 University of Sindh Entry Test MCQs\\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\\nFull practice set: https://www.mcqsbase.com/blog/university-of-sindh-entry-test-mcqs\\nVisit mcqsbase.com/blog; look for the test title above.\\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts\", \"publicationDate\": {\"dateTime\": \"2026-10-28T20:00:00\", \"timezone\": \"Asia/Karachi\"}, \"youtubeData\": {\"type\": \"short\", \"privacy\": \"public\", \"title\": \"100 University of Sindh Entry Test MCQs | 3-Question Quiz\", \"category\": \"EDUCATION\", \"madeForKids\": false, \"isAiGeneratedContent\": true}}"
+        }
+      }
+    }
   }
 }
