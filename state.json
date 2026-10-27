@@ -428,9 +428,9 @@
           "publicUrl": null
         },
         "tiktok": {
-          "status": "reserved",
+          "status": "uncertain",
           "account": "McqsBase",
-          "attemptedAt": "2026-10-27T12:13:52.147831+05:00",
+          "attemptedAt": "2026-10-27T12:18:10.980507+05:00",
           "rejectionConfirmedExecution": "712c13465d7b4061b7c2a5d0dee6aa37"
         },
         "youtube": {
