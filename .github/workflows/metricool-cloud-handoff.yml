@@ -44,7 +44,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           MCQS_MAKE_WEBHOOK_URL: ${{ secrets.MCQS_MAKE_WEBHOOK_URL }}
           MCQS_MAKE_API_KEY: ${{ secrets.MCQS_MAKE_API_KEY }}
-        run: python scripts/metricool-cloud-publish.py --draft-test
+        run: python scripts/metricool-cloud-publish.py --draft-test --confirmed-title-rejection
 
   publish-selected-campaigns:
     if: >-

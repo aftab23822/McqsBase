@@ -201,7 +201,7 @@ def publish_campaign(storage, state, entry, client):
     print(f'Campaign {campaign["id"]}: all four Metricool receipts verified ({campaign["status"]}).')
 
 
-def draft_test(storage, state, client):
+def draft_test(storage, state, client, confirmed_title_rejection=False):
     test_key = 'make-cloud-draft-v1'
     tests = state.setdefault('integrationTests', {})
     ledger = tests.get(test_key)
@@ -236,13 +236,29 @@ def draft_test(storage, state, client):
                 info['youtubeData'] = {'type': 'short', 'privacy': 'public', 'title': caption['title'],
                     'category': 'EDUCATION', 'madeForKids': False, 'isAiGeneratedContent': True}
             else:
-                info['tiktokData'] = {'privacyOption': 'PUBLIC_TO_EVERYONE', 'isAigc': True}
+                info['tiktokData'] = {'title': caption['title'], 'privacyOption': 'PUBLIC_TO_EVERYONE', 'isAigc': True}
             ledger['requests'][network] = {'blogId': POLICY['metricoolBrandId'], 'date': scheduled.isoformat(),
                                             'info': json.dumps(info, ensure_ascii=False)}
         tests[test_key] = ledger
         storage.save(state)
     verify_brand(client)
     posts = calendar(client, ledger['month'])
+    if confirmed_title_rejection:
+        # One-time recovery of the specifically inspected validation rejection.
+        # Make execution 712c13465d7b4061b7c2a5d0dee6aa37 rejected before creation:
+        # "Error processing post information: TikTok title is required".
+        arguments = ledger['requests']['tiktok']
+        info = json.loads(arguments['info'])
+        receipt = ledger['networks']['tiktok']
+        if not info['tiktokData'].get('title'):
+            if find_post(posts, 'tiktok', info, receipt):
+                raise RuntimeError('A TikTok draft now exists; reconcile it without changing the request.')
+            if receipt.get('status') != 'uncertain' or receipt.get('postId') or receipt.get('uuid'):
+                raise RuntimeError('The inspected validation rejection does not match this draft record.')
+            info['tiktokData']['title'] = '100 University of Sindh Entry Test MCQs | 3-Question Quiz'
+            arguments['info'] = json.dumps(info, ensure_ascii=False)
+            receipt.update(status='reserved', rejectionConfirmedExecution='712c13465d7b4061b7c2a5d0dee6aa37')
+            storage.save(state)
     send_missing(client, ledger['requests'], ledger, posts, lambda: storage.save(state))
     ledger['status'] = 'verified'
     storage.save(state)
@@ -252,11 +268,12 @@ def draft_test(storage, state, client):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--draft-test', action='store_true')
+    parser.add_argument('--confirmed-title-rejection', action='store_true')
     args = parser.parse_args()
     storage = cloud.GitHubState(os.environ['GITHUB_REPOSITORY'], os.environ['GH_TOKEN'])
     state = storage.load()
     if args.draft_test:
-        draft_test(storage, state, bridge.MakeClient())
+        draft_test(storage, state, bridge.MakeClient(), args.confirmed_title_rejection)
         return
     entries = [entry for entry in state.get('articles', {}).values()
                if entry.get('status') == 'ready' and entry.get('campaign')

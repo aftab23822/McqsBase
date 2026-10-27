@@ -119,7 +119,7 @@ def build_requests(state, entry, manifest, media_url, repository, instant=None):
                                    'isAiGeneratedContent': True,
                                    'tags': [tag.lstrip('#') for tag in caption['hashtags']]}
         else:
-            info['tiktokData'] = {'privacyOption': 'PUBLIC_TO_EVERYONE', 'isAigc': True}
+            info['tiktokData'] = {'title': caption['title'], 'privacyOption': 'PUBLIC_TO_EVERYONE', 'isAigc': True}
         result[network] = {'blogId': social.POLICY['metricoolBrandId'], 'date': publication.isoformat(),
                            'info': json.dumps(info, ensure_ascii=False)}
     return result
