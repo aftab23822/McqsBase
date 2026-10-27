@@ -104,21 +104,21 @@
             "publicUrl": "https://www.instagram.com/reel/De_k78mDxf_/"
           },
           "tiktok": {
-            "status": "scheduled",
+            "status": "published",
             "account": "McqsBase",
             "postId": 407608233,
             "uuid": "2894394623805638074",
             "attemptedAt": "2026-10-27T14:41:35.569737+05:00",
-            "providerStatus": "PENDING",
+            "providerStatus": "PUBLISHED",
             "scheduledFor": {
               "dateTime": "2026-10-27T14:51:00",
               "timezone": "Asia/Karachi"
             },
-            "verifiedAt": "2026-10-27T14:50:43.516496+05:00",
+            "verifiedAt": "2026-10-27T14:53:13.465489+05:00",
             "media": [
               "https://static.metricool.com/planner/202610/7661098-file-13812042282210479972.mp4"
             ],
-            "publicUrl": null
+            "publicUrl": "https://www.tiktok.com/@McqsBase/video/7701283036037467412"
           },
           "youtube": {
             "status": "scheduled",
@@ -885,21 +885,21 @@
             "publicUrl": "https://www.instagram.com/reel/De_k78mDxf_/"
           },
           "tiktok": {
-            "status": "scheduled",
+            "status": "published",
             "account": "McqsBase",
             "postId": 407608233,
             "uuid": "2894394623805638074",
             "attemptedAt": "2026-10-27T14:41:35.569737+05:00",
-            "providerStatus": "PENDING",
+            "providerStatus": "PUBLISHED",
             "scheduledFor": {
               "dateTime": "2026-10-27T14:51:00",
               "timezone": "Asia/Karachi"
             },
-            "verifiedAt": "2026-10-27T14:50:43.516496+05:00",
+            "verifiedAt": "2026-10-27T14:53:13.465489+05:00",
             "media": [
               "https://static.metricool.com/planner/202610/7661098-file-13812042282210479972.mp4"
             ],
-            "publicUrl": null
+            "publicUrl": "https://www.tiktok.com/@McqsBase/video/7701283036037467412"
           },
           "youtube": {
             "status": "scheduled",
