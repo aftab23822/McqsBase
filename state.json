@@ -389,7 +389,7 @@
     "make-cloud-draft-v1": {
       "id": "make-cloud-draft-v1",
       "month": "2026-10",
-      "status": "testing",
+      "status": "verified",
       "scheduledFor": "2026-10-28T20:00:00+05:00",
       "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/make-draft-test-4cf3dc8eece5cb91.mp4",
       "networks": {
