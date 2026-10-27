@@ -394,8 +394,9 @@
       "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/make-draft-test-4cf3dc8eece5cb91.mp4",
       "networks": {
         "facebook": {
-          "status": "reserved",
-          "account": "851782721355178"
+          "status": "uncertain",
+          "account": "851782721355178",
+          "attemptedAt": "2026-10-27T12:13:42.429917+05:00"
         },
         "instagram": {
           "status": "reserved",
