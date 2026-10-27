@@ -396,7 +396,9 @@
         "facebook": {
           "status": "uncertain",
           "account": "851782721355178",
-          "attemptedAt": "2026-10-27T12:13:42.429917+05:00"
+          "attemptedAt": "2026-10-27T12:13:42.429917+05:00",
+          "postId": 407495566,
+          "uuid": "2995370167056354792"
         },
         "instagram": {
           "status": "reserved",
