@@ -183,6 +183,7 @@ def main():
     if not campaign:
         raise RuntimeError('The selected campaign no longer has a free reservation; no video was rendered.')
     campaign['thinkingSeconds'] = social.POLICY['thinkingSeconds']
+    state['campaigns'][campaign['month']][str(campaign['window'])] = campaign
     selected['publishingStatus'] = 'awaiting-render'
     for entry in state['articles'].values():
         if entry['slug'] != selected['slug'] and entry.get('status') == 'pending' and not entry.get('campaign'):
