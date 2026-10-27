@@ -127,10 +127,18 @@ def verify_media_bytes(posts, ledger, digest):
 
 def apply_receipt(receipt, post, network, info, save):
     # Persist IDs even if a later content/status check fails. Never repeat the create.
+    if receipt.get('uuid') and post.get('uuid') and str(receipt['uuid']) != str(post['uuid']):
+        receipt.update(unexpectedPostId=post.get('id'), unexpectedUuid=str(post['uuid']))
+        save()
+        raise RuntimeError('Metricool changed the expected UUID; preserve both receipts and hold all writes.')
     if post.get('id') and post.get('uuid'):
         receipt.update(postId=post['id'], uuid=str(post['uuid']))
         save()
-    receipt.update(verify_post(post, network, info))
+    verified = verify_post(post, network, info)
+    if (network == 'facebook' and receipt.get('firstCommentStatus') == 'published' and receipt.get('commentId')
+            and receipt.get('firstCommentText') == verified.get('firstCommentText')):
+        verified['firstCommentStatus'] = 'published'
+    receipt.update(verified)
     save()
 
 
