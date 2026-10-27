@@ -431,7 +431,9 @@
           "status": "uncertain",
           "account": "McqsBase",
           "attemptedAt": "2026-10-27T12:18:10.980507+05:00",
-          "rejectionConfirmedExecution": "712c13465d7b4061b7c2a5d0dee6aa37"
+          "rejectionConfirmedExecution": "712c13465d7b4061b7c2a5d0dee6aa37",
+          "postId": 407498238,
+          "uuid": "2894394623805638074"
         },
         "youtube": {
           "status": "reserved",
