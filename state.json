@@ -411,8 +411,9 @@
           "publicUrl": null
         },
         "instagram": {
-          "status": "reserved",
-          "account": "mcqsbase"
+          "status": "uncertain",
+          "account": "mcqsbase",
+          "attemptedAt": "2026-10-27T12:13:47.697809+05:00"
         },
         "tiktok": {
           "status": "reserved",
