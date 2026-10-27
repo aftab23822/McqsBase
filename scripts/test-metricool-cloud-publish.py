@@ -32,6 +32,14 @@ class CloudPublishingTests(unittest.TestCase):
         self.assertEqual(receipt['status'], 'published')
         self.assertEqual(receipt['firstCommentStatus'], 'awaiting-public-verification')
 
+    def test_metricool_minute_precision_keeps_the_saved_receipt(self):
+        self.info['publicationDate']['dateTime'] = '2026-11-02T20:00:38'
+        receipt = publisher.verify_post(self.post, 'facebook', self.info)
+        self.assertEqual(receipt['scheduledFor']['dateTime'], '2026-11-02T20:00:00')
+        self.post['publicationDate']['dateTime'] = '2026-11-02T20:01:00'
+        with self.assertRaises(RuntimeError):
+            publisher.verify_post(self.post, 'facebook', self.info)
+
     def test_wrong_caption_comment_format_or_draft_is_rejected(self):
         for key, value in [('text', 'Wrong quiz'), ('firstCommentText', ''), ('draft', True),
                            ('facebookData', {'type': 'POST'})]:
@@ -73,6 +81,20 @@ class CloudPublishingTests(unittest.TestCase):
                                     lambda: saves.append(deepcopy(receipt)))
         self.assertEqual(saves[0]['postId'], 123)
         self.assertEqual(saves[0]['status'], 'uncertain')
+
+    def test_public_comment_verification_is_preserved_on_later_calendar_reads(self):
+        receipt = {'uuid': 'stable-id', 'firstCommentStatus': 'published', 'commentId': 'verified-comment',
+                   'firstCommentText': self.info['firstCommentText']}
+        publisher.apply_receipt(receipt, self.post, 'facebook', self.info, lambda: None)
+        self.assertEqual(receipt['firstCommentStatus'], 'published')
+        self.assertEqual(receipt['commentId'], 'verified-comment')
+
+    def test_unexpected_uuid_does_not_replace_the_known_post_identity(self):
+        receipt = {'uuid': 'original-id', 'postId': 122}
+        with self.assertRaisesRegex(RuntimeError, 'changed the expected UUID'):
+            publisher.apply_receipt(receipt, self.post, 'facebook', self.info, lambda: None)
+        self.assertEqual(receipt['uuid'], 'original-id')
+        self.assertEqual(receipt['unexpectedUuid'], 'stable-id')
 
     def test_real_usage_and_partial_reservations_consume_capacity(self):
         campaigns = {str(i): {'reservedPublications': 4, 'networks': {}} for i in range(1, 5)}

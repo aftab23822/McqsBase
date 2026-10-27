@@ -75,9 +75,14 @@ def find_post(posts, network, info, receipt):
 def verify_post(post, network, info):
     provider = next((p for p in post.get('providers', []) if p.get('network') == network), {})
     date = post.get('publicationDate', {})
+    def minute(value):
+        try:
+            return datetime.fromisoformat(value).replace(second=0, microsecond=0)
+        except (TypeError, ValueError):
+            return None
     if (not post.get('id') or not post.get('uuid') or post.get('text') != info['text']
             or post.get('draft', False) != info['draft']
-            or date.get('dateTime') != info['publicationDate']['dateTime']
+            or minute(date.get('dateTime')) != minute(info['publicationDate']['dateTime'])
             or date.get('timezone') != POLICY['timezone'] or len(post.get('media', [])) != 1
             or post.get('autoPublish') is not True
             or (network == 'facebook' and post.get('firstCommentText', '') != info.get('firstCommentText', ''))
@@ -122,10 +127,18 @@ def verify_media_bytes(posts, ledger, digest):
 
 def apply_receipt(receipt, post, network, info, save):
     # Persist IDs even if a later content/status check fails. Never repeat the create.
+    if receipt.get('uuid') and post.get('uuid') and str(receipt['uuid']) != str(post['uuid']):
+        receipt.update(unexpectedPostId=post.get('id'), unexpectedUuid=str(post['uuid']))
+        save()
+        raise RuntimeError('Metricool changed the expected UUID; preserve both receipts and hold all writes.')
     if post.get('id') and post.get('uuid'):
         receipt.update(postId=post['id'], uuid=str(post['uuid']))
         save()
-    receipt.update(verify_post(post, network, info))
+    verified = verify_post(post, network, info)
+    if (network == 'facebook' and receipt.get('firstCommentStatus') == 'published' and receipt.get('commentId')
+            and receipt.get('firstCommentText') == verified.get('firstCommentText')):
+        verified['firstCommentStatus'] = 'published'
+    receipt.update(verified)
     save()
 
 
@@ -251,7 +264,7 @@ def adopt_approved_launch(storage, state):
     if not campaign:
         raise RuntimeError('No campaign capacity remains for the approved launch.')
     # The user approved a live test. Leave time for cloud validation and four updates.
-    target = (now() + timedelta(minutes=10)).replace(microsecond=0)
+    target = (now() + timedelta(minutes=10)).replace(second=0, microsecond=0)
     if target.strftime('%Y-%m') != campaign['month']:
         raise RuntimeError('Do not move the launch outside its reserved month.')
     campaign['scheduledFor'] = target.isoformat()
@@ -353,6 +366,18 @@ def publish_campaign(storage, state, entry, client):
     if entry.get('approvedDraftLaunch'):
         recover_confirmed_launch_rejection(campaign, posts, lambda: storage.save(state))
     target = datetime.fromisoformat(campaign['scheduledFor'])
+    # Reconcile saved/uncertain writes before quota calculations or changing an
+    # expired date. Historical validation here builds expectations only; the
+    # regular future-date guard still runs before any new request is sent.
+    expectations = campaign_requests(state, entry, manifest, package['videoUrl'], target - timedelta(seconds=1))
+    for network, receipt in campaign['networks'].items():
+        expected_info = json.loads(expectations[network]['info'])
+        original = find_post(posts, network, expected_info, receipt)
+        if original and not original.get('draft'):
+            apply_receipt(receipt, original, network, expected_info,
+                           lambda: storage.save(state))
+    verification_only = all(r.get('status') in ('scheduled', 'published') and r.get('postId') and r.get('uuid')
+                            for r in campaign['networks'].values())
     if not verification_only:
         check_capacity(state, campaign['month'], posts)
     if target <= now() and not verification_only:
@@ -360,7 +385,7 @@ def publish_campaign(storage, state, entry, client):
         if (not replacement or replacement['month'] != campaign['month'] or replacement['window'] != campaign['window']
                 or any(r.get('status', '').startswith('uncertain') for r in campaign['networks'].values())):
             raise RuntimeError('The reserved publication date expired; hold it rather than moving outside its window.')
-        campaign['scheduledFor'] = ((now() + timedelta(minutes=10)).replace(microsecond=0).isoformat()
+        campaign['scheduledFor'] = ((now() + timedelta(minutes=10)).replace(second=0, microsecond=0).isoformat()
                                     if entry.get('approvedDraftLaunch') else replacement['scheduledFor'])
         storage.save(state)
     requests = campaign_requests(state, entry, manifest, package['videoUrl'],
