@@ -61,10 +61,11 @@
         "status": "awaiting-metricool-scheduling",
         "networks": {
           "facebook": {
-            "status": "approved-draft",
+            "status": "uncertain-update",
             "account": "851782721355178",
             "postId": 407495566,
-            "uuid": "2995370167056354792"
+            "uuid": "2995370167056354792",
+            "attemptedAt": "2026-10-27T12:37:46.274792+05:00"
           },
           "instagram": {
             "status": "approved-draft",
@@ -676,73 +677,29 @@
       "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/make-draft-test-4cf3dc8eece5cb91.mp4",
       "networks": {
         "facebook": {
-          "status": "draft",
+          "status": "uncertain-update",
           "account": "851782721355178",
-          "attemptedAt": "2026-10-27T12:13:42.429917+05:00",
           "postId": 407495566,
           "uuid": "2995370167056354792",
-          "providerStatus": "PENDING",
-          "scheduledFor": {
-            "dateTime": "2026-10-28T20:00:00",
-            "timezone": "Asia/Karachi"
-          },
-          "verifiedAt": "2026-10-27T12:18:21.488530+05:00",
-          "media": [
-            "https://static.metricool.com/planner/202610/7661098-file-4627950954428699620.mp4"
-          ],
-          "publicUrl": null
+          "attemptedAt": "2026-10-27T12:37:46.274792+05:00"
         },
         "instagram": {
-          "status": "draft",
+          "status": "approved-draft",
           "account": "mcqsbase",
-          "attemptedAt": "2026-10-27T12:13:47.697809+05:00",
           "postId": 407495600,
-          "uuid": "-876230335756810443",
-          "providerStatus": "PENDING",
-          "scheduledFor": {
-            "dateTime": "2026-10-28T20:00:00",
-            "timezone": "Asia/Karachi"
-          },
-          "verifiedAt": "2026-10-27T12:18:22.585304+05:00",
-          "media": [
-            "https://static.metricool.com/planner/202610/7661098-file-3470209210286254834.mp4"
-          ],
-          "publicUrl": null
+          "uuid": "-876230335756810443"
         },
         "tiktok": {
-          "status": "draft",
+          "status": "approved-draft",
           "account": "McqsBase",
-          "attemptedAt": "2026-10-27T12:18:10.980507+05:00",
-          "rejectionConfirmedExecution": "712c13465d7b4061b7c2a5d0dee6aa37",
           "postId": 407498238,
-          "uuid": "2894394623805638074",
-          "providerStatus": "PENDING",
-          "scheduledFor": {
-            "dateTime": "2026-10-28T20:00:00",
-            "timezone": "Asia/Karachi"
-          },
-          "verifiedAt": "2026-10-27T12:18:23.526531+05:00",
-          "media": [
-            "https://static.metricool.com/planner/202610/7661098-file-13812042282210479972.mp4"
-          ],
-          "publicUrl": null
+          "uuid": "2894394623805638074"
         },
         "youtube": {
-          "status": "draft",
+          "status": "approved-draft",
           "account": "UCLLKmoVGvg_Bf2YEFukUjQQ",
-          "attemptedAt": "2026-10-27T12:18:15.763100+05:00",
           "postId": 407498280,
-          "uuid": "-1470074426412479027",
-          "providerStatus": "PENDING",
-          "scheduledFor": {
-            "dateTime": "2026-10-28T20:00:00",
-            "timezone": "Asia/Karachi"
-          },
-          "verifiedAt": "2026-10-27T12:18:24.659668+05:00",
-          "media": [
-            "https://static.metricool.com/planner/202610/7661098-file-3978016956754801202.mp4"
-          ],
-          "publicUrl": null
+          "uuid": "-1470074426412479027"
         }
       },
       "requests": {
@@ -781,10 +738,11 @@
         "status": "awaiting-metricool-scheduling",
         "networks": {
           "facebook": {
-            "status": "approved-draft",
+            "status": "uncertain-update",
             "account": "851782721355178",
             "postId": 407495566,
-            "uuid": "2995370167056354792"
+            "uuid": "2995370167056354792",
+            "attemptedAt": "2026-10-27T12:37:46.274792+05:00"
           },
           "instagram": {
             "status": "approved-draft",
