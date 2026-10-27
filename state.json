@@ -117,11 +117,21 @@
             "publicUrl": null
           },
           "youtube": {
-            "status": "uncertain-update",
+            "status": "scheduled",
             "account": "UCLLKmoVGvg_Bf2YEFukUjQQ",
             "postId": 407608305,
             "uuid": "-1470074426412479027",
-            "attemptedAt": "2026-10-27T14:41:40.463231+05:00"
+            "attemptedAt": "2026-10-27T14:41:40.463231+05:00",
+            "providerStatus": "PENDING",
+            "scheduledFor": {
+              "dateTime": "2026-10-27T14:51:00",
+              "timezone": "Asia/Karachi"
+            },
+            "verifiedAt": "2026-10-27T14:41:44.074222+05:00",
+            "media": [
+              "https://static.metricool.com/planner/202610/7661098-file-3978016956754801202.mp4"
+            ],
+            "publicUrl": null
           }
         },
         "selectionReason": "Explicit user approval to publish the already-tested video.",
@@ -771,11 +781,21 @@
           "publicUrl": null
         },
         "youtube": {
-          "status": "uncertain-update",
+          "status": "scheduled",
           "account": "UCLLKmoVGvg_Bf2YEFukUjQQ",
           "postId": 407608305,
           "uuid": "-1470074426412479027",
-          "attemptedAt": "2026-10-27T14:41:40.463231+05:00"
+          "attemptedAt": "2026-10-27T14:41:40.463231+05:00",
+          "providerStatus": "PENDING",
+          "scheduledFor": {
+            "dateTime": "2026-10-27T14:51:00",
+            "timezone": "Asia/Karachi"
+          },
+          "verifiedAt": "2026-10-27T14:41:44.074222+05:00",
+          "media": [
+            "https://static.metricool.com/planner/202610/7661098-file-3978016956754801202.mp4"
+          ],
+          "publicUrl": null
         }
       },
       "requests": {
@@ -870,11 +890,21 @@
             "publicUrl": null
           },
           "youtube": {
-            "status": "uncertain-update",
+            "status": "scheduled",
             "account": "UCLLKmoVGvg_Bf2YEFukUjQQ",
             "postId": 407608305,
             "uuid": "-1470074426412479027",
-            "attemptedAt": "2026-10-27T14:41:40.463231+05:00"
+            "attemptedAt": "2026-10-27T14:41:40.463231+05:00",
+            "providerStatus": "PENDING",
+            "scheduledFor": {
+              "dateTime": "2026-10-27T14:51:00",
+              "timezone": "Asia/Karachi"
+            },
+            "verifiedAt": "2026-10-27T14:41:44.074222+05:00",
+            "media": [
+              "https://static.metricool.com/planner/202610/7661098-file-3978016956754801202.mp4"
+            ],
+            "publicUrl": null
           }
         },
         "selectionReason": "Explicit user approval to publish the already-tested video.",
