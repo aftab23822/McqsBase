@@ -32,6 +32,14 @@ class CloudPublishingTests(unittest.TestCase):
         self.assertEqual(receipt['status'], 'published')
         self.assertEqual(receipt['firstCommentStatus'], 'awaiting-public-verification')
 
+    def test_metricool_minute_precision_keeps_the_saved_receipt(self):
+        self.info['publicationDate']['dateTime'] = '2026-11-02T20:00:38'
+        receipt = publisher.verify_post(self.post, 'facebook', self.info)
+        self.assertEqual(receipt['scheduledFor']['dateTime'], '2026-11-02T20:00:00')
+        self.post['publicationDate']['dateTime'] = '2026-11-02T20:01:00'
+        with self.assertRaises(RuntimeError):
+            publisher.verify_post(self.post, 'facebook', self.info)
+
     def test_wrong_caption_comment_format_or_draft_is_rejected(self):
         for key, value in [('text', 'Wrong quiz'), ('firstCommentText', ''), ('draft', True),
                            ('facebookData', {'type': 'POST'})]:
