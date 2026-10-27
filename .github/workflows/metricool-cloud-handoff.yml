@@ -4,16 +4,21 @@ on:
   push:
     branches: ['codex/metricool-cloud-handoff']
   workflow_dispatch:
+  workflow_run:
+    workflows: ['Blog Quiz Videos']
+    types: [completed]
+    branches: [master]
 
 permissions:
   contents: read
 
 concurrency:
-  group: metricool-cloud-handoff-setup
+  group: metricool-cloud-handoff
   cancel-in-progress: false
 
 jobs:
   connection-test:
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
@@ -23,3 +28,43 @@ jobs:
           MCQS_MAKE_WEBHOOK_URL: ${{ secrets.MCQS_MAKE_WEBHOOK_URL }}
           MCQS_MAKE_API_KEY: ${{ secrets.MCQS_MAKE_API_KEY }}
         run: python scripts/probe-metricool-cloud.py
+
+  draft-test:
+    if: github.event_name == 'push' && contains(github.event.head_commit.message, '[draft-test]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install requests==2.32.5 imageio-ffmpeg==0.6.0
+      - name: Verify four video drafts through Make without publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MCQS_MAKE_WEBHOOK_URL: ${{ secrets.MCQS_MAKE_WEBHOOK_URL }}
+          MCQS_MAKE_API_KEY: ${{ secrets.MCQS_MAKE_API_KEY }}
+        run: python scripts/metricool-cloud-publish.py --draft-test
+
+  publish-selected-campaigns:
+    if: >-
+      github.ref == 'refs/heads/master' &&
+      (github.event_name == 'workflow_dispatch' ||
+       (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' &&
+        github.event.workflow_run.head_repository.full_name == github.repository))
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - run: python -m pip install requests==2.32.5 imageio-ffmpeg==0.6.0
+      - name: Schedule only selected ready campaigns through Metricool
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MCQS_MAKE_WEBHOOK_URL: ${{ secrets.MCQS_MAKE_WEBHOOK_URL }}
+          MCQS_MAKE_API_KEY: ${{ secrets.MCQS_MAKE_API_KEY }}
+        run: python scripts/metricool-cloud-publish.py
