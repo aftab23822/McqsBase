@@ -428,9 +428,10 @@
           "publicUrl": null
         },
         "tiktok": {
-          "status": "uncertain",
+          "status": "reserved",
           "account": "McqsBase",
-          "attemptedAt": "2026-10-27T12:13:52.147831+05:00"
+          "attemptedAt": "2026-10-27T12:13:52.147831+05:00",
+          "rejectionConfirmedExecution": "712c13465d7b4061b7c2a5d0dee6aa37"
         },
         "youtube": {
           "status": "reserved",
@@ -451,7 +452,7 @@
         "tiktok": {
           "blogId": "7661098",
           "date": "2026-10-28T20:00:00+05:00",
-          "info": "{\"autoPublish\": true, \"draft\": true, \"media\": [\"https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/make-draft-test-4cf3dc8eece5cb91.mp4\"], \"providers\": [{\"network\": \"tiktok\"}], \"text\": \"[AUTOMATION DRAFT TEST — DO NOT PUBLISH]\\n100 University of Sindh Entry Test MCQs\\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\\nFull practice set: https://www.mcqsbase.com/blog/university-of-sindh-entry-test-mcqs\\nVisit mcqsbase.com/blog; look for the test title above.\\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts\", \"publicationDate\": {\"dateTime\": \"2026-10-28T20:00:00\", \"timezone\": \"Asia/Karachi\"}, \"tiktokData\": {\"privacyOption\": \"PUBLIC_TO_EVERYONE\", \"isAigc\": true}}"
+          "info": "{\"autoPublish\": true, \"draft\": true, \"media\": [\"https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/make-draft-test-4cf3dc8eece5cb91.mp4\"], \"providers\": [{\"network\": \"tiktok\"}], \"text\": \"[AUTOMATION DRAFT TEST — DO NOT PUBLISH]\\n100 University of Sindh Entry Test MCQs\\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\\nFull practice set: https://www.mcqsbase.com/blog/university-of-sindh-entry-test-mcqs\\nVisit mcqsbase.com/blog; look for the test title above.\\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts\", \"publicationDate\": {\"dateTime\": \"2026-10-28T20:00:00\", \"timezone\": \"Asia/Karachi\"}, \"tiktokData\": {\"privacyOption\": \"PUBLIC_TO_EVERYONE\", \"isAigc\": true, \"title\": \"100 University of Sindh Entry Test MCQs | 3-Question Quiz\"}}"
         },
         "youtube": {
           "blogId": "7661098",
