@@ -4,5 +4,11 @@
   "integrationTestId": "make-cloud-draft-v1",
   "month": "2026-10",
   "window": 4,
-  "authorization": "The user explicitly approved publishing the tested video on October 27, 2026. This single launch campaign may reuse its existing four drafts; other baseline articles remain excluded."
+  "authorization": "The user explicitly approved publishing the tested video on October 27, 2026. This single launch campaign may reuse its existing four drafts; other baseline articles remain excluded.",
+  "confirmedRejectedUpdate": {
+    "executionId": "b001afe5b1d24df1b84845360f00e0df",
+    "reason": "MCP rejected before update: networkData contains data for network twitter not listed in providers.",
+    "uuid": "2995370167056354792",
+    "originalPostId": 407495566
+  }
 }
