@@ -459,7 +459,7 @@ if __name__ == '__main__':
                         help='Maximum complete timeline in seconds; reduce questions to fit, 0 for uncapped.')
     parser.add_argument('--include-intro', action='store_true', help='Opt in to the old opening card and narration.')
     parser.add_argument('--no-outro', action='store_false', dest='include_outro', help='Omit the closing card for short voice tests.')
-    parser.add_argument('--seconds', type=int, choices=range(3, 31), default=5)
+    parser.add_argument('--seconds', type=int, choices=range(3, 31), default=social.POLICY['thinkingSeconds'])
     parser.add_argument('--title', help='Optional display title; defaults to the actual registered article title.')
     parser.add_argument('--no-voice', action='store_false', dest='voice', help='Disable offline Windows narration.')
     parser.add_argument('--no-reveal', action='store_false', dest='reveal', help='Keep answers hidden throughout.')

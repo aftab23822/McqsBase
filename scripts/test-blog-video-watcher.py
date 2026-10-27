@@ -84,6 +84,30 @@ class WatcherTests(unittest.TestCase):
             self.assertEqual(state['articles']['new-test']['status'], 'retry')
             self.assertEqual(state['articles']['old-test']['status'], 'baseline')
 
+    def test_cached_five_second_render_is_replaced_for_new_three_second_work(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            args = type('Args', (), {'state_dir': tmp, 'count': 5, 'seconds': 3, 'max_videos': 1})()
+            url = watcher.BLOG + '/new-test'
+            state = {'initializedAt': '2026-10-26', 'articles': {
+                'new-test': {'slug': 'new-test', 'url': url, 'status': 'retry'}}}
+            watcher.save_json(Path(tmp) / 'state.json', state)
+            directory = Path(tmp) / 'videos/new-test'
+            directory.mkdir(parents=True)
+            (directory / 'mcqsbase-quiz.mp4').write_bytes(b'cached video')
+            manifest = {'sourceUrl': url, 'sourceTitle': '100 New Test MCQs', 'sourceVerifiedLive': True,
+                        'count': 1, 'durationSeconds': 20, 'introIncluded': False, 'narration': True,
+                        'answersIncluded': True, 'secondsPerQuestion': 5}
+            watcher.save_json(directory / 'manifest.json', manifest)
+            snapshot = {'articles': [{'slug': 'new-test', 'url': url}], 'packages': {
+                'new-test': {'title': manifest['sourceTitle'], 'questions': [{}]}}}
+            def render(command, **kwargs):
+                self.assertEqual(command[command.index('--seconds') + 1], '3')
+                watcher.save_json(directory / 'manifest.json', {**manifest, 'secondsPerQuestion': 3})
+            with patch.object(watcher.subprocess, 'run', side_effect=render) as invoked:
+                watcher.run(args, source_snapshot=snapshot, render_slugs={'new-test'})
+                invoked.assert_called_once()
+            self.assertEqual(json.loads((directory / 'manifest.json').read_text())['secondsPerQuestion'], 3)
+
 
 if __name__ == '__main__':
     unittest.main()

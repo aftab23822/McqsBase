@@ -4,7 +4,7 @@ Generate videos only for selected campaigns, at most four per calendar month. Ea
 
 ## Video format
 
-Use the approved Kokoro `af_heart` neural voice, normalized sound, and navy/gold/turquoise design. Start at Question 1 with no introductory speech or opening card. Keep the actual source-test title prominent. Read the question and choices; give a complete five-second countdown after narration; then tick/highlight and speak the correct answer.
+Use the approved Kokoro `af_heart` neural voice, normalized sound, and navy/gold/turquoise design. Start at Question 1 with no introductory speech or opening card. Keep the actual source-test title prominent. Read the question and choices; give a complete **three-second** countdown after narration; then tick/highlight and speak the correct answer. `thinkingSeconds` in the shared policy controls future renders and is saved in each new campaign. Existing published five-second videos retain their original timings and remain verifiable.
 
 Try up to five source questions. The shared vertical 1080×1920 MP4 is capped at **89 seconds**, below Metricool's documented 90-second Facebook Reel limit and YouTube's three-minute Shorts limit. Select fewer complete questions when necessary; never accelerate/cut speech, shorten the thinking interval or omit the answer reveal to fit. The question counter and captions use the actual number included.
 

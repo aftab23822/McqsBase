@@ -19,7 +19,7 @@ class PublicationBoundaryTests(unittest.TestCase):
         self.instant = datetime.fromisoformat('2026-11-01T12:00:00+05:00')
         payload.social.reserve_campaign(self.state, self.entry, self.instant)
         stages, elapsed = [], 0
-        for name, duration in [('narration', 10), *[('countdown', 1)] * 5, ('reveal', 3)]:
+        for name, duration in [('narration', 10), *[('countdown', 1)] * 3, ('reveal', 3)]:
             stages.append({'stage': name, 'question': 1, 'start': elapsed, 'duration': duration})
             elapsed += duration
         self.manifest = {
@@ -30,7 +30,7 @@ class PublicationBoundaryTests(unittest.TestCase):
                                      'environment': 'Production', 'state': 'success'},
             'count': 1, 'width': 1080, 'height': 1920, 'durationSeconds': elapsed,
             'introIncluded': False, 'narration': True, 'answersIncluded': True,
-            'voiceName': 'Kokoro af_heart', 'secondsPerQuestion': 5,
+            'voiceName': 'Kokoro af_heart', 'secondsPerQuestion': 3,
             'countdownStartsAfterNarration': True, 'stages': stages,
             'questions': [{'question': 'Test?', 'choices': ['A', 'B', 'C', 'D'], 'correctIndex': 2}],
         }
@@ -67,9 +67,19 @@ class PublicationBoundaryTests(unittest.TestCase):
             self.build()
 
     def test_early_reveal_and_short_countdown_rejected(self):
-        self.manifest['stages'][5]['stage'] = 'reveal'
-        with self.assertRaisesRegex(ValueError, 'complete five-second'):
+        self.manifest['stages'][2]['stage'] = 'reveal'
+        with self.assertRaisesRegex(ValueError, 'complete 3-second'):
             self.build()
+
+    def test_legacy_five_second_campaign_can_still_be_verified(self):
+        self.entry['campaign'].pop('thinkingSeconds')
+        self.manifest['secondsPerQuestion'] = 5
+        self.manifest['stages'] = [
+            {'stage': name, 'question': 1, 'start': start, 'duration': duration}
+            for name, start, duration in [('narration', 0, 10),
+                *[('countdown', second, 1) for second in range(10, 15)], ('reveal', 15, 3)]]
+        self.manifest['durationSeconds'] = 18
+        self.assertEqual(len(self.build()), 4)
 
     def test_oversized_video_rejected(self):
         self.manifest['stages'][-1]['duration'] += 90

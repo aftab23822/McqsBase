@@ -14,7 +14,7 @@ spec.loader.exec_module(video)
 class QuizContentTests(unittest.TestCase):
     def test_future_voice_jobs_start_at_question_one_without_an_intro(self):
         args = SimpleNamespace(voice=True, voice_engine='windows', include_intro=False, include_outro=False,
-                               reveal=True, count=1, seconds=5, voice_name='Test', voice_rate=0)
+                               reveal=True, count=1, seconds=3, voice_name='Test', voice_rate=0)
         question = {'question': 'What is one plus one?', 'choices': ['One', 'Two', 'Three', 'Four'], 'correctIndex': 1}
         with tempfile.TemporaryDirectory() as tmp, patch.object(video.sys, 'platform', 'win32'), patch.object(video.subprocess, 'run'):
             output = Path(tmp)
@@ -72,14 +72,14 @@ class QuizContentTests(unittest.TestCase):
         self.assertEqual(video.spoken_text('binary number 101101'), 'binary number 1 0 1 1 0 1')
         self.assertEqual(video.spoken_text('2 GHz and O(n log n)'), '2 gigahertz and big O of n log n')
 
-    def test_duration_budget_keeps_complete_questions_and_five_second_thinking(self):
+    def test_duration_budget_keeps_complete_questions_and_three_second_thinking(self):
         args = SimpleNamespace(include_intro=False, include_outro=True, voice=True,
-                               seconds=5, reveal=True, reveal_seconds=3, max_duration=89)
+                               seconds=3, reveal=True, reveal_seconds=3, max_duration=89)
         voices = {'outro': 'outro', **{f'{kind}{n}': kind for n in range(1, 6) for kind in ('q', 'a')}}
-        # Every question costs 13 speech + 5 thinking + 4 reveal = 22 sec.
-        # Three plus a five-second outro fit; four do not. No speech is cut.
+        # Every question costs 13 speech + 3 thinking + 4 reveal = 20 sec.
+        # Four plus a five-second outro fit; five do not. No speech is cut.
         with patch.object(video, 'clip_duration', side_effect=lambda p: {'q': 12, 'a': 3, 'outro': 4}[p]):
-            self.assertEqual(video.fit_question_count([{}] * 5, voices, args), 3)
+            self.assertEqual(video.fit_question_count([{}] * 5, voices, args), 4)
         args.max_duration = 2
         with patch.object(video, 'clip_duration', return_value=10):
             self.assertEqual(video.fit_question_count([{}], voices, args), 0)

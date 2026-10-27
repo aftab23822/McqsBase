@@ -182,6 +182,7 @@ def main():
     campaign = social.reserve_campaign(state, selected)
     if not campaign:
         raise RuntimeError('The selected campaign no longer has a free reservation; no video was rendered.')
+    campaign['thinkingSeconds'] = social.POLICY['thinkingSeconds']
     selected['publishingStatus'] = 'awaiting-render'
     for entry in state['articles'].values():
         if entry['slug'] != selected['slug'] and entry.get('status') == 'pending' and not entry.get('campaign'):
@@ -192,6 +193,7 @@ def main():
     watcher.save_json(state_file, state)
     storage.save(state)
     args = type('Options', (), {'state_dir': str(directory), 'count': social.POLICY['questionLimit'],
+                               'seconds': campaign['thinkingSeconds'],
                                'max_duration': social.POLICY['maxDurationSeconds'], 'max_videos': 1,
                                'voice_engine': 'kokoro',
                                'kokoro_model': str(ROOT / '.social-automation/voices/kokoro/kokoro-v1.0.fp16.onnx'),
