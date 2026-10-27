@@ -61,11 +61,11 @@
         "status": "awaiting-metricool-scheduling",
         "networks": {
           "facebook": {
-            "status": "approved-draft",
+            "status": "uncertain-update",
             "account": "851782721355178",
             "postId": 407495566,
             "uuid": "2995370167056354792",
-            "attemptedAt": "2026-10-27T12:37:46.274792+05:00",
+            "attemptedAt": "2026-10-27T12:45:48.002191+05:00",
             "rejectionRecoveryApplied": true,
             "confirmedRejectedExecution": "b001afe5b1d24df1b84845360f00e0df",
             "rejectionReason": "MCP rejected before update: networkData contains data for network twitter not listed in providers."
@@ -684,7 +684,10 @@
           "account": "851782721355178",
           "postId": 407495566,
           "uuid": "2995370167056354792",
-          "attemptedAt": "2026-10-27T12:37:46.274792+05:00"
+          "attemptedAt": "2026-10-27T12:45:48.002191+05:00",
+          "rejectionRecoveryApplied": true,
+          "confirmedRejectedExecution": "b001afe5b1d24df1b84845360f00e0df",
+          "rejectionReason": "MCP rejected before update: networkData contains data for network twitter not listed in providers."
         },
         "instagram": {
           "status": "approved-draft",
@@ -741,11 +744,11 @@
         "status": "awaiting-metricool-scheduling",
         "networks": {
           "facebook": {
-            "status": "approved-draft",
+            "status": "uncertain-update",
             "account": "851782721355178",
             "postId": 407495566,
             "uuid": "2995370167056354792",
-            "attemptedAt": "2026-10-27T12:37:46.274792+05:00",
+            "attemptedAt": "2026-10-27T12:45:48.002191+05:00",
             "rejectionRecoveryApplied": true,
             "confirmedRejectedExecution": "b001afe5b1d24df1b84845360f00e0df",
             "rejectionReason": "MCP rejected before update: networkData contains data for network twitter not listed in providers."
