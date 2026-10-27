@@ -49,7 +49,7 @@
       "previousQueueStatus": "baseline",
       "approvedDraftLaunch": true,
       "launchIntegrationTestId": "make-cloud-draft-v1",
-      "publishingStatus": "scheduled",
+      "publishingStatus": "published",
       "userApproval": "The user explicitly approved publishing the tested video on October 27, 2026. This single launch campaign may reuse its existing four drafts; other baseline articles remain excluded.",
       "campaign": {
         "id": "2026-10-4",
@@ -58,7 +58,7 @@
         "window": 4,
         "scheduledFor": "2026-10-27T14:51:00+05:00",
         "reservedPublications": 4,
-        "status": "scheduled",
+        "status": "published",
         "networks": {
           "facebook": {
             "status": "published",
@@ -839,7 +839,7 @@
         "window": 4,
         "scheduledFor": "2026-10-27T14:51:00+05:00",
         "reservedPublications": 4,
-        "status": "scheduled",
+        "status": "published",
         "networks": {
           "facebook": {
             "status": "published",
