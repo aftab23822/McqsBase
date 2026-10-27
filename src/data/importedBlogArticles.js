@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nts-analytical-reasoning-mcqs": {
+    title: "100 NTS Analytical Reasoning MCQs with Answers and Explanations",
+    excerpt:
+      "Practise number and letter patterns, logical deductions, ordering, and quantitative reasoning with 100 original questions and worked explanations.",
+    category: "Subject Guide",
+    date: "2026-10-27",
+    readTime: "31 min",
+    content: null,
+    body: readImportedBlogBody("nts-analytical-reasoning-mcqs")
+  },
   "nat-ics-computer-science-mcqs": {
     title: "100 NTS NAT-ICS Computer Science MCQs with Answers and Explanations",
     excerpt:
