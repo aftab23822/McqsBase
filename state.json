@@ -428,12 +428,22 @@
           "publicUrl": null
         },
         "tiktok": {
-          "status": "uncertain",
+          "status": "draft",
           "account": "McqsBase",
           "attemptedAt": "2026-10-27T12:18:10.980507+05:00",
           "rejectionConfirmedExecution": "712c13465d7b4061b7c2a5d0dee6aa37",
           "postId": 407498238,
-          "uuid": "2894394623805638074"
+          "uuid": "2894394623805638074",
+          "providerStatus": "PENDING",
+          "scheduledFor": {
+            "dateTime": "2026-10-28T20:00:00",
+            "timezone": "Asia/Karachi"
+          },
+          "verifiedAt": "2026-10-27T12:18:14.716135+05:00",
+          "media": [
+            "https://static.metricool.com/planner/202610/7661098-file-13812042282210479972.mp4"
+          ],
+          "publicUrl": null
         },
         "youtube": {
           "status": "reserved",
