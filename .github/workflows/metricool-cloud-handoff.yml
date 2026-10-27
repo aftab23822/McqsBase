@@ -4,6 +4,12 @@ on:
   push:
     branches: ['codex/metricool-cloud-handoff']
   workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/metricool-cloud-handoff.yml'
+      - 'scripts/*metricool*'
+      - 'scripts/quiz-cloud-media.py'
+      - 'config/quiz-approved-launch.json'
   workflow_run:
     workflows: ['Blog Quiz Videos']
     types: [completed]
@@ -17,8 +23,18 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  unit-tests:
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install requests==2.32.5
+      - run: |
+          python scripts/test-metricool-campaign-payload.py
+          python scripts/test-metricool-cloud-publish.py
   connection-test:
-    if: github.event_name == 'push'
+    if: github.event_name == 'push' && contains(github.event.head_commit.message, '[connection-test]')
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
@@ -44,7 +60,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           MCQS_MAKE_WEBHOOK_URL: ${{ secrets.MCQS_MAKE_WEBHOOK_URL }}
           MCQS_MAKE_API_KEY: ${{ secrets.MCQS_MAKE_API_KEY }}
-        run: python scripts/metricool-cloud-publish.py --draft-test --confirmed-title-rejection
+        run: python scripts/metricool-cloud-publish.py --draft-test
 
   publish-selected-campaigns:
     if: >-
@@ -61,8 +77,19 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: master
-      - run: python -m pip install requests==2.32.5 imageio-ffmpeg==0.6.0
+      - name: Check selected campaign queue before installing media tools
+        id: plan
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/plan-metricool-handoff.py
+      - if: steps.plan.outputs.handoff == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - if: steps.plan.outputs.handoff == 'true'
+        run: python -m pip install requests==2.32.5 imageio-ffmpeg==0.6.0
       - name: Schedule only selected ready campaigns through Metricool
+        if: steps.plan.outputs.handoff == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           MCQS_MAKE_WEBHOOK_URL: ${{ secrets.MCQS_MAKE_WEBHOOK_URL }}

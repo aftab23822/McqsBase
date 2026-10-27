@@ -1,11 +1,14 @@
 """PC-independent campaign handoff through authenticated Make and Metricool MCP only."""
 import argparse
 from datetime import datetime, timedelta
+import hashlib
 import importlib.util
 import json
 import os
 from pathlib import Path
 import subprocess
+from urllib.parse import urlsplit
+from urllib.request import urlopen
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -75,14 +78,46 @@ def verify_post(post, network, info):
     if (not post.get('id') or not post.get('uuid') or post.get('text') != info['text']
             or post.get('draft', False) != info['draft']
             or date.get('dateTime') != info['publicationDate']['dateTime']
-            or date.get('timezone') != POLICY['timezone'] or not post.get('media')
+            or date.get('timezone') != POLICY['timezone'] or len(post.get('media', [])) != 1
+            or post.get('autoPublish') is not True
             or (network == 'facebook' and post.get('firstCommentText', '') != info.get('firstCommentText', ''))
             or provider.get('status') in ('ERROR', 'FAILED', 'CANCELLED') or not provider):
         raise RuntimeError('Metricool returned a post that does not match the intended media, caption, date or comment.')
-    return {'status': 'draft' if info['draft'] else 'published' if provider.get('status') == 'PUBLISHED' else 'scheduled',
+    data_key = network + 'Data'
+    expected_type = info.get(data_key, {}).get('type')
+    if expected_type and post.get(data_key, {}).get('type') != expected_type:
+        raise RuntimeError('Metricool did not retain the intended Reel or Short format.')
+    result = {'status': 'draft' if info['draft'] else 'published' if provider.get('status') == 'PUBLISHED' else 'scheduled',
             'postId': post['id'], 'uuid': str(post['uuid']), 'providerStatus': provider.get('status'),
             'scheduledFor': date, 'verifiedAt': now().isoformat(),
             'media': post['media'], 'publicUrl': provider.get('publicUrl')}
+    if network == 'facebook':
+        result.update(firstCommentText=post.get('firstCommentText'),
+                      firstCommentStatus='awaiting-public-verification' if provider.get('status') == 'PUBLISHED'
+                                         else 'configured-with-post')
+    return result
+
+
+def verify_media_bytes(posts, ledger, digest):
+    checked = set()
+    for receipt in ledger['networks'].values():
+        matching = next((post for post in posts if str(post['uuid']) == str(receipt.get('uuid'))), None)
+        if not matching or len(matching.get('media', [])) != 1:
+            raise RuntimeError('The campaign video is missing from Metricool.')
+        url = matching['media'][0]
+        if url in checked:
+            continue
+        parsed = urlsplit(url)
+        if parsed.scheme != 'https' or parsed.netloc != 'static.metricool.com' or parsed.username:
+            raise RuntimeError('Metricool did not ingest the video into its expected media service.')
+        try:
+            with urlopen(url, timeout=45) as response:
+                data = response.read(50_000_001)
+        except Exception:
+            raise RuntimeError('The ingested Metricool video could not be verified yet.') from None
+        if len(data) > 50_000_000 or hashlib.sha256(data).hexdigest() != digest:
+            raise RuntimeError('The ingested video does not match the validated quiz file.')
+        checked.add(url)
 
 
 def apply_receipt(receipt, post, network, info, save):
@@ -143,9 +178,12 @@ def decode_video(path):
     import imageio_ffmpeg
     subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), '-v', 'error', '-i', str(path),
                     '-f', 'null', '-'], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+    _, seconds = imageio_ffmpeg.count_frames_and_secs(str(path))
+    if not 0 < seconds <= POLICY['maxDurationSeconds'] + 1 / 24:
+        raise RuntimeError('The actual decoded video exceeds the shared Shorts limit.')
 
 
-def campaign_requests(state, entry, manifest, url):
+def campaign_requests(state, entry, manifest, url, validation_instant=None):
     # Uncertain/saved receipts may only reconcile; build their expected immutable request
     # separately while preserving their real status in the authoritative ledger.
     shadow = json.loads(json.dumps(state))
@@ -154,13 +192,117 @@ def campaign_requests(state, entry, manifest, url):
     current['campaign'] = campaign
     for receipt in campaign['networks'].values():
         receipt['status'] = 'reserved'
-    return payload.build_requests(shadow, current, manifest, url, os.environ['GITHUB_REPOSITORY'])
+    requests = payload.build_requests(shadow, current, manifest, url, os.environ['GITHUB_REPOSITORY'], validation_instant)
+    for network, receipt in entry['campaign']['networks'].items():
+        if receipt.get('scheduledFor'):
+            info = json.loads(requests[network]['info'])
+            info['publicationDate'] = receipt['scheduledFor']
+            requests[network]['info'] = json.dumps(info, ensure_ascii=False)
+    return requests
+
+
+def adopt_approved_launch(storage, state):
+    """Bind the explicitly approved sample to its deployed source and one campaign.
+
+    This is a single named exception to baseline exclusion, not a backfill queue.
+    Existing draft UUIDs are adopted; no new social posts are created here.
+    """
+    approval = json.loads((ROOT / 'config/quiz-approved-launch.json').read_text(encoding='utf-8'))
+    slug = approval['slug']
+    existing = state.get('articles', {}).get(slug, {})
+    if existing.get('campaign'):
+        return
+    slot = payload.social.publication_window(now())
+    if not slot or slot['month'] != approval['month'] or slot['window'] != approval['window']:
+        return
+    test = state.get('integrationTests', {}).get(approval['integrationTestId'], {})
+    if test.get('status') != 'verified':
+        raise RuntimeError('The approved launch cannot proceed until all four draft checks pass.')
+    if str(approval['window']) in state.get('campaigns', {}).get(approval['month'], {}):
+        raise RuntimeError('The approved launch window is already reserved by another campaign.')
+    sha = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
+    proof = cloud.production_deployment(storage, sha)
+    runs = storage.api('GET', '/actions/workflows/daily-blog-autopilot.yml/runs',
+                       params={'branch': 'master', 'per_page': 1})['workflow_runs']
+    if not runs or runs[0].get('conclusion') != 'success':
+        raise RuntimeError('The existing daily publisher has not completed successfully; hold the launch.')
+    proof['publisherRunId'] = runs[0]['id']
+    source = cloud.deployed_sources(proof, state)['packages'][slug]
+    directory = media.download_package(storage, approval['sampleRunId'], slug,
+        ROOT / '.social-automation/make-handoff/approved-launch', sample=True)
+    manifest = json.loads((directory / 'manifest.json').read_text(encoding='utf-8'))
+    def question_signature(question):
+        return (question.get('question'), tuple(question.get('choices', [])), question.get('correctIndex'))
+    published_questions = {question_signature(q) for q in source['questions']}
+    if (manifest.get('sourceTitle') != source['title'] or manifest.get('sourceUrl') != source['url']
+            or not manifest.get('questions')
+            or any(question_signature(q) not in published_questions for q in manifest['questions'])):
+        raise RuntimeError('The sample questions do not exactly match the deployed article; do not publish it.')
+    manifest.update(sourceContentHash=source['contentHash'], sourceVerification='production-deployment',
+                    sourceFetchedAt=source['fetchedAt'], productionDeployment=proof,
+                    verificationNote='Previously rendered CI sample, revalidated against the exact Production article after explicit user publication approval.')
+    entry = existing
+    entry.update(slug=slug, url=source['url'], status='ready', sourceTitle=source['title'],
+                 previousQueueStatus=existing.get('status', 'baseline'), approvedDraftLaunch=True,
+                 launchIntegrationTestId=approval['integrationTestId'],
+                 publishingStatus='awaiting-metricool-scheduling', userApproval=approval['authorization'])
+    state.setdefault('articles', {})[slug] = entry
+    campaign = payload.social.reserve_campaign(state, entry, now())
+    if not campaign:
+        raise RuntimeError('No campaign capacity remains for the approved launch.')
+    # The user approved a live test. Leave time for cloud validation and four updates.
+    target = (now() + timedelta(minutes=10)).replace(microsecond=0)
+    if target.strftime('%Y-%m') != campaign['month']:
+        raise RuntimeError('Do not move the launch outside its reserved month.')
+    campaign['scheduledFor'] = target.isoformat()
+    campaign['selectionReason'] = 'Explicit user approval to publish the already-tested video.'
+    for network, receipt in campaign['networks'].items():
+        draft = test['networks'][network]
+        if draft.get('status') != 'draft' or not draft.get('postId') or not draft.get('uuid'):
+            raise RuntimeError('The approved launch is missing a verified existing draft receipt.')
+        receipt.update(status='approved-draft', postId=draft['postId'], uuid=draft['uuid'])
+    payload.validate_package(entry, manifest)
+    decode_video(directory / 'mcqsbase-quiz.mp4')
+    package = media.upload_video(storage, os.environ['GITHUB_REPOSITORY'], slug, directory / 'mcqsbase-quiz.mp4')
+    package.update(manifest=manifest, decodedSuccessfully=True)
+    entry['cloudPackage'] = package
+    campaign['videoUrl'] = package['videoUrl']
+    test['status'] = 'launch-in-progress'
+    storage.save(state)
+
+
+def promote_approved_drafts(client, requests, campaign, posts, save):
+    for network, arguments in requests.items():
+        receipt = campaign['networks'][network]
+        info = json.loads(arguments['info'])
+        original = next((p for p in posts if str(p['uuid']) == str(receipt.get('uuid'))), None)
+        if not original:
+            raise RuntimeError('An approved draft disappeared; do not replace it with a new post.')
+        if not original.get('draft'):
+            apply_receipt(receipt, original, network, info, save)
+            continue
+        if receipt.get('status') != 'approved-draft':
+            raise RuntimeError('An earlier draft update is uncertain; reconcile it before any further update.')
+        updated = {**original, **info, 'providers': original['providers'], 'media': original['media']}
+        for key in ('facebookData', 'instagramData', 'tiktokData', 'youtubeData'):
+            if isinstance(original.get(key), dict) and isinstance(info.get(key), dict):
+                updated[key] = {**original[key], **info[key]}
+        receipt.update(status='uncertain-update', attemptedAt=now().isoformat())
+        save()
+        result = client.call('updateScheduledPost', {'blogId': POLICY['metricoolBrandId'],
+            'id': str(original['id']), 'uuid': str(original['uuid']), 'info': json.dumps(updated, ensure_ascii=False)})
+        post = result.get('data', result) if isinstance(result, dict) else {}
+        if not isinstance(post, dict):
+            raise RuntimeError('The draft update has no verified receipt; reconcile it before another write.')
+        apply_receipt(receipt, post, network, info, save)
 
 
 def publish_campaign(storage, state, entry, client):
     campaign = state['campaigns'][entry['campaign']['month']][str(entry['campaign']['window'])]
     entry['campaign'] = campaign
-    if campaign['month'] != now().strftime('%Y-%m'):
+    verification_only = all(r.get('status') in ('scheduled', 'published') and r.get('postId') and r.get('uuid')
+                            for r in campaign['networks'].values())
+    if campaign['month'] != now().strftime('%Y-%m') and not verification_only:
         raise RuntimeError('An expired campaign cannot spend a different month’s publication slots.')
     package = entry.get('cloudPackage')
     if not package:
@@ -180,32 +322,47 @@ def publish_campaign(storage, state, entry, client):
         campaign['videoUrl'] = package['videoUrl']
         storage.save(state)
     manifest = package['manifest']
+    if package.get('decodedSuccessfully') is not True:
+        raise RuntimeError('The campaign video has no completed decode verification.')
     payload.validate_package(entry, manifest)
     verify_brand(client)
     posts = calendar(client, campaign['month'])
-    check_capacity(state, campaign['month'], posts)
     target = datetime.fromisoformat(campaign['scheduledFor'])
-    if target <= now():
+    if not verification_only:
+        check_capacity(state, campaign['month'], posts)
+    if target <= now() and not verification_only:
         replacement = payload.social.publication_window(now())
         if (not replacement or replacement['month'] != campaign['month'] or replacement['window'] != campaign['window']
                 or any(r.get('status') == 'uncertain' for r in campaign['networks'].values())):
             raise RuntimeError('The reserved publication date expired; hold it rather than moving outside its window.')
         campaign['scheduledFor'] = replacement['scheduledFor']
         storage.save(state)
-    requests = campaign_requests(state, entry, manifest, package['videoUrl'])
-    send_missing(client, requests, campaign, posts, lambda: storage.save(state))
+    requests = campaign_requests(state, entry, manifest, package['videoUrl'],
+                                  target - timedelta(seconds=1) if verification_only else None)
+    def save():
+        if entry.get('launchIntegrationTestId'):
+            test = state['integrationTests'][entry['launchIntegrationTestId']]
+            test['networks'] = campaign['networks']
+        storage.save(state)
+    if entry.get('approvedDraftLaunch'):
+        promote_approved_drafts(client, requests, campaign, posts, save)
+        posts = calendar(client, campaign['month'])
+    send_missing(client, requests, campaign, posts, save)
+    verify_media_bytes(calendar(client, campaign['month']), campaign, package['videoSha256'])
     statuses = {r['status'] for r in campaign['networks'].values()}
     campaign['status'] = 'published' if statuses == {'published'} else 'scheduled'
     entry['publishingStatus'] = campaign['status']
+    if entry.get('launchIntegrationTestId'):
+        state['integrationTests'][entry['launchIntegrationTestId']]['status'] = 'promoted'
     storage.save(state)
     print(f'Campaign {campaign["id"]}: all four Metricool receipts verified ({campaign["status"]}).')
 
 
-def draft_test(storage, state, client, confirmed_title_rejection=False):
+def draft_test(storage, state, client):
     test_key = 'make-cloud-draft-v1'
     tests = state.setdefault('integrationTests', {})
     ledger = tests.get(test_key)
-    if ledger and ledger.get('status') == 'verified':
+    if ledger and ledger.get('status') in ('verified', 'promoted', 'launch-in-progress'):
         print('The cloud draft test already passed; no duplicate drafts were created.')
         return
     if not ledger:
@@ -221,6 +378,7 @@ def draft_test(storage, state, client, confirmed_title_rejection=False):
         captions = payload.social.social_copy(manifest['title'], manifest['count'], manifest['sourceUrl'])
         ledger = {'id': test_key, 'month': scheduled.strftime('%Y-%m'), 'status': 'testing',
                   'scheduledFor': scheduled.isoformat(), 'videoUrl': asset['videoUrl'],
+                  'videoSha256': asset['videoSha256'],
                   'networks': {network: {'status': 'reserved', 'account': identity} for network, identity in POLICY['networks'].items()},
                   'requests': {}}
         for network, caption in captions.items():
@@ -243,23 +401,16 @@ def draft_test(storage, state, client, confirmed_title_rejection=False):
         storage.save(state)
     verify_brand(client)
     posts = calendar(client, ledger['month'])
-    if confirmed_title_rejection:
-        # One-time recovery of the specifically inspected validation rejection.
-        # Make execution 712c13465d7b4061b7c2a5d0dee6aa37 rejected before creation:
-        # "Error processing post information: TikTok title is required".
-        arguments = ledger['requests']['tiktok']
-        info = json.loads(arguments['info'])
-        receipt = ledger['networks']['tiktok']
-        if not info['tiktokData'].get('title'):
-            if find_post(posts, 'tiktok', info, receipt):
-                raise RuntimeError('A TikTok draft now exists; reconcile it without changing the request.')
-            if receipt.get('status') != 'uncertain' or receipt.get('postId') or receipt.get('uuid'):
-                raise RuntimeError('The inspected validation rejection does not match this draft record.')
-            info['tiktokData']['title'] = '100 University of Sindh Entry Test MCQs | 3-Question Quiz'
-            arguments['info'] = json.dumps(info, ensure_ascii=False)
-            receipt.update(status='reserved', rejectionConfirmedExecution='712c13465d7b4061b7c2a5d0dee6aa37')
-            storage.save(state)
     send_missing(client, ledger['requests'], ledger, posts, lambda: storage.save(state))
+    # The first test version predated storage of the hash; its immutable filename
+    # and GitHub release asset provide the full digest for safe recovery.
+    digest = ledger.get('videoSha256')
+    if not digest:
+        release = storage.api('GET', '/releases/tags/mcqsbase-quiz-media')
+        asset = next(a for a in release['assets'] if a['browser_download_url'] == ledger['videoUrl'])
+        digest = asset['digest'].removeprefix('sha256:')
+        ledger['videoSha256'] = digest
+    verify_media_bytes(calendar(client, ledger['month']), ledger, digest)
     ledger['status'] = 'verified'
     storage.save(state)
     print('All four cloud video drafts, captions, source fields and calendar receipts verified. No test post was published.')
@@ -268,13 +419,13 @@ def draft_test(storage, state, client, confirmed_title_rejection=False):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--draft-test', action='store_true')
-    parser.add_argument('--confirmed-title-rejection', action='store_true')
     args = parser.parse_args()
     storage = cloud.GitHubState(os.environ['GITHUB_REPOSITORY'], os.environ['GH_TOKEN'])
     state = storage.load()
     if args.draft_test:
-        draft_test(storage, state, bridge.MakeClient(), args.confirmed_title_rejection)
+        draft_test(storage, state, bridge.MakeClient())
         return
+    adopt_approved_launch(storage, state)
     entries = [entry for entry in state.get('articles', {}).values()
                if entry.get('status') == 'ready' and entry.get('campaign')
                and entry.get('publishingStatus') != 'published']

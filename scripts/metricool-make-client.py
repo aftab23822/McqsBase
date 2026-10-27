@@ -16,7 +16,7 @@ class NoRedirects(HTTPRedirectHandler):
 
 
 class MakeClient:
-    ALLOWED = {'getBrandSettings', 'getScheduledPosts', 'createScheduledPost'}
+    ALLOWED = {'getBrandSettings', 'getScheduledPosts', 'createScheduledPost', 'updateScheduledPost'}
 
     def __init__(self, endpoint=None, key=None, opener=None):
         self.endpoint = endpoint or os.environ.get('MCQS_MAKE_WEBHOOK_URL', '')
