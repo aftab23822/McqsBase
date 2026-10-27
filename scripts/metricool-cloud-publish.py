@@ -363,9 +363,10 @@ def publish_campaign(storage, state, entry, client):
     # regular future-date guard still runs before any new request is sent.
     expectations = campaign_requests(state, entry, manifest, package['videoUrl'], target - timedelta(seconds=1))
     for network, receipt in campaign['networks'].items():
-        original = next((post for post in posts if str(post['uuid']) == str(receipt.get('uuid'))), None)
+        expected_info = json.loads(expectations[network]['info'])
+        original = find_post(posts, network, expected_info, receipt)
         if original and not original.get('draft'):
-            apply_receipt(receipt, original, network, json.loads(expectations[network]['info']),
+            apply_receipt(receipt, original, network, expected_info,
                            lambda: storage.save(state))
     verification_only = all(r.get('status') in ('scheduled', 'published') and r.get('postId') and r.get('uuid')
                             for r in campaign['networks'].values())
