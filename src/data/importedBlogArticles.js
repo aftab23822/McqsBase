@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "pakistan-civics-international-organizations": {
+    title: "100 Pakistan Civics and International Organizations MCQs with Explanations",
+    excerpt:
+      "Practise constitutional concepts, public institutions, and the purposes of major international organizations through 100 original MCQs with explanations.",
+    category: "Subject Guide",
+    date: "2026-10-28",
+    readTime: "35 min",
+    content: null,
+    body: readImportedBlogBody("pakistan-civics-international-organizations")
+  },
   "nts-analytical-reasoning-mcqs": {
     title: "100 NTS Analytical Reasoning MCQs with Answers and Explanations",
     excerpt:
