@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "issb-nonverbal-reasoning": {
+    title: "100 ISSB-Style Non-Verbal Reasoning Practice MCQs with Explanations",
+    excerpt:
+      "Practise symbol sequences, visual analogies, rotations, pattern grids and spatial reasoning with 100 original questions and explained answers.",
+    category: "Subject Guide",
+    date: "2026-10-29",
+    readTime: "29 min",
+    content: null,
+    body: readImportedBlogBody("issb-nonverbal-reasoning")
+  },
   "pakistan-civics-international-organizations": {
     title: "100 Pakistan Civics and International Organizations MCQs with Explanations",
     excerpt:
