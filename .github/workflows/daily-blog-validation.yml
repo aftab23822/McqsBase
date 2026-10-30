@@ -1,0 +1,33 @@
+name: Daily Blog Validation
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/daily-blog-autopilot.yml'
+      - '.github/workflows/daily-blog-validation.yml'
+      - 'scripts/generate-daily-blog*'
+      - 'scripts/blog-quality*'
+      - 'scripts/published-blogs*'
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/daily-blog-autopilot.yml'
+      - '.github/workflows/daily-blog-validation.yml'
+      - 'scripts/generate-daily-blog*'
+      - 'scripts/blog-quality*'
+      - 'scripts/published-blogs*'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Test generator validation and bounded recovery without API calls
+        run: node --test scripts/blog-quality.test.mjs scripts/published-blogs.test.mjs scripts/generate-daily-blog.test.mjs

@@ -1,7 +1,8 @@
-import { assertNoRepeatedSet } from './blog-quality.mjs';
+import { assertNoRepeatedSet, questionKey } from './blog-quality.mjs';
 import { readPublishedBlogs } from './published-blogs.mjs';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import path from 'path';
+import { pathToFileURL } from 'node:url';
 
 const ROOT = process.cwd();
 const BLOG_ROOT = path.join(ROOT, 'public', 'blog');
@@ -132,23 +133,28 @@ function normalizeMcq(raw) {
 function uniqueMcqs(items) {
   const seen = new Set();
   const clean = [];
+  const duplicates = [];
 
   for (const item of items.map(normalizeMcq).filter(Boolean)) {
-    const key = item.question.toLowerCase().replace(/\s+/g, ' ');
+    const key = questionKey(item.question);
     if (!seen.has(key)) {
       seen.add(key);
       clean.push(item);
+    } else {
+      duplicates.push(item.question);
     }
   }
 
-  return clean;
+  return { mcqs: clean, duplicates };
 }
 
-function validateDraft(draft) {
-  const mcqs = uniqueMcqs(draft?.mcqs || []);
-  if (mcqs.length < 90) {
-    throw new Error(`AI draft must contain at least 90 unique valid MCQs; received ${mcqs.length}.`);
+export function validateDraft(draft, published = []) {
+  const { mcqs, duplicates } = uniqueMcqs(draft?.mcqs || []);
+  if (mcqs.length !== 100) {
+    const repeated = duplicates.length ? ` Repeated question examples: ${JSON.stringify(duplicates.slice(0, 3))}.` : '';
+    throw new Error(`AI draft must contain exactly 100 unique valid MCQs; received ${mcqs.length}. Replace invalid or repeated questions, including punctuation-only variants, before returning the full package.${repeated}`);
   }
+  assertNoRepeatedSet(mcqs.map(mcq => mcq.question), published);
 
   const topicName = String(draft.topicName || '').trim();
   const primaryKeyword = String(draft.primaryKeyword || '').trim();
@@ -208,7 +214,7 @@ function resolveAvailableSlug(baseSlug) {
   return candidate;
 }
 
-async function generateAiDraft(date) {
+export async function generateAiDraft(date, published, { fetchImpl = fetch } = {}) {
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) {
     throw new Error('OPENAI_API_KEY is required for AI-first daily blog generation. Add it as a GitHub Actions secret.');
@@ -260,12 +266,12 @@ async function generateAiDraft(date) {
     const retryInstruction = lastValidationError
       ? [
           `Previous attempt failed validation: ${lastValidationError.message}`,
-          'Regenerate the full article package now. The mcqs array should contain exactly 100 unique valid MCQs, must never contain fewer than 90 valid MCQs, and every correctAnswer must exactly match one option.'
+          'Regenerate the full article package now. Return exactly 100 unique valid MCQs. Replace rejected questions; do not just change punctuation, capitalization, or spacing. Avoid the reported published question set, and choose a distinct learning scope if necessary. Every correctAnswer must exactly match one option.'
         ].join('\n')
       : '';
     const prompt = [basePrompt, retryInstruction].filter(Boolean).join('\n\n');
 
-    const response = await fetch('https://api.openai.com/v1/responses', {
+    const response = await fetchImpl('https://api.openai.com/v1/responses', {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${apiKey}`,
@@ -370,7 +376,9 @@ async function generateAiDraft(date) {
 
     const payload = await response.json();
     try {
-      return validateDraft(JSON.parse(extractOutputText(payload)));
+      // All content checks belong here so rejected drafts can be corrected within
+      // the same bounded retry loop, before any article or registry is written.
+      return validateDraft(JSON.parse(extractOutputText(payload)), published);
     } catch (error) {
       lastValidationError = error;
       console.warn(`AI draft validation failed on attempt ${attempt}/3: ${error.message}`);
@@ -505,7 +513,7 @@ async function main() {
   const date = isoDate(getArg('date'));
   // Fail on broken published content before making a paid generation request.
   const published = await readPublishedBlogs(REGISTRY_PATH);
-  const draft = await generateAiDraft(date);
+  const draft = await generateAiDraft(date, published);
   const slug = resolveAvailableSlug(draft.topicSlug);
   const targetDir = path.join(BLOG_ROOT, slug);
   const articlePath = path.join(targetDir, 'article.md');
@@ -527,7 +535,9 @@ async function main() {
   console.log(`${inserted ? 'Created' : 'Already registered'} ${slug} from AI topic "${draft.topicName}" with 100 MCQs.`);
 }
 
-main().catch((error) => {
-  console.error(error.message);
-  process.exit(1);
-});
+if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
+  main().catch((error) => {
+    console.error(error.message);
+    process.exit(1);
+  });
+}

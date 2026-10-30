@@ -14,9 +14,10 @@ export function assertNoRepeatedSet(questions, published) {
   if (keys.size !== questions.length) throw new Error('Draft contains repeated questions.');
   for (const { slug, body } of published) {
     const prior = new Set(tableQuestions(body));
-    const common = [...keys].filter(key => prior.has(key)).length;
+    const matches = [...keys].filter(key => prior.has(key));
+    const common = matches.length;
     if (prior.size && common / Math.min(keys.size, prior.size) >= 0.25) {
-      throw new Error(`Draft repeats ${common} questions from ${slug}; revise or expand the existing article.`);
+      throw new Error(`Draft repeats ${common} questions from ${slug}; revise or expand the existing article. Matching question examples: ${JSON.stringify(matches.slice(0, 3))}.`);
     }
   }
 }
