@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nts-data-interpretation-mcqs": {
+    title: "100 NTS Data Interpretation MCQs with Answers and Explanations",
+    excerpt:
+      "Practise tables, charts, percentages, ratios, averages and rates with 100 original data interpretation questions and worked explanations.",
+    category: "Subject Guide",
+    date: "2026-10-30",
+    readTime: "30 min",
+    content: null,
+    body: readImportedBlogBody("nts-data-interpretation-mcqs")
+  },
   "issb-nonverbal-reasoning": {
     title: "100 ISSB-Style Non-Verbal Reasoning Practice MCQs with Explanations",
     excerpt:
