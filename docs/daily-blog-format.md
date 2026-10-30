@@ -9,7 +9,7 @@ Every autopublished MCQsBase blog should be a static Markdown article under `pub
 - Category: `Subject Guide`
 - Author voice: clear, exam-focused, and useful for Pakistan competitive exam candidates.
 - Description: include one short SEO-supporting paragraph near the top with the primary keyword, related exam names, and an internal link to McqsBase.
-- Question count: target exactly 100 MCQs. The autopilot may publish 90-100 valid unique MCQs if the AI response has a small number of duplicates or invalid items after validation; never publish below 90.
+- Question count: exactly 100 valid unique MCQs. Generation uses the same question normalization as the publication guard. Invalid items, punctuation-only repeats, and excessive overlap with a published set are checked inside the three-attempt generation loop. Rejected drafts receive validation feedback and must be replaced before any article or registry entry is written; retries never bypass the checks or publish a shorter set under a 100-question title.
 - Answer style: the correct answer must be bold in Markdown, for example `**B) Generous**`.
 - Source wording: use "past-paper-style", "high-frequency", or "aligned with repeated competitive-test patterns" unless a real source proves exact past-paper origin.
 - Internal links: include links to the category page, MCQs homepage, quiz page, past papers page, and blog archive where natural.
