@@ -11,4 +11,5 @@ test('blocks a dated re-publication while allowing a distinct practice set', () 
   assert.throws(() => assertNoRepeatedSet(['What is 2+2?'], published), /original/);
   assert.doesNotThrow(() => assertNoRepeatedSet(['Which word is an adjective?'], published));
   assert.throws(() => assertNoRepeatedSet(['Same question?', 'Same question!'], []), /repeated/);
+  assert.throws(() => assertNoRepeatedSet(['7. Which number is divisible by 9?', '8. Which number is divisible by 9?'], []), /repeated/);
 });

@@ -1,5 +1,6 @@
 export function questionKey(text) {
-  return String(text).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+  return String(text).replace(/^\s*(?:q(?:uestion)?\s*)?\d{1,3}[.)]\s+/i, '')
+    .toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 }
 
 export function tableQuestions(body) {
