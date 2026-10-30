@@ -7,6 +7,15 @@ import { pathToFileURL } from 'node:url';
 const ROOT = process.cwd();
 const BLOG_ROOT = path.join(ROOT, 'public', 'blog');
 const REGISTRY_PATH = path.join(ROOT, 'src', 'data', 'importedBlogArticles.js');
+const MCQ_SCHEMA = {
+  type: 'object', additionalProperties: false,
+  required: ['question', 'options', 'correctAnswer', 'explanation'],
+  properties: {
+    question: { type: 'string' },
+    options: { type: 'array', minItems: 4, maxItems: 4, items: { type: 'string' } },
+    correctAnswer: { type: 'string' }, explanation: { type: 'string' }
+  }
+};
 
 const TOPIC_IDEAS = [
   'mcqs for junior clerk test preparation',
@@ -150,11 +159,6 @@ function uniqueMcqs(items) {
 
 export function validateDraft(draft, published = []) {
   const { mcqs, duplicates } = uniqueMcqs(draft?.mcqs || []);
-  if (mcqs.length !== 100) {
-    const repeated = duplicates.length ? ` Repeated question examples: ${JSON.stringify(duplicates.slice(0, 3))}.` : '';
-    throw new Error(`AI draft must contain exactly 100 unique valid MCQs; received ${mcqs.length}. Replace invalid or repeated questions, including punctuation-only variants, before returning the full package.${repeated}`);
-  }
-  assertNoRepeatedSet(mcqs.map(mcq => mcq.question), published);
 
   const topicName = String(draft.topicName || '').trim();
   const primaryKeyword = String(draft.primaryKeyword || '').trim();
@@ -173,7 +177,7 @@ export function validateDraft(draft, published = []) {
     throw new Error('AI draft is missing focus rows, revision tips, or FAQs.');
   }
 
-  return {
+  const validated = {
     ...draft,
     topicName,
     topicSlug: cleanBlogSlug(draft.topicSlug || topicName) || cleanBlogSlug(primaryKeyword) || 'daily-mcq-practice-set',
@@ -187,6 +191,22 @@ export function validateDraft(draft, published = []) {
     faqs,
     mcqs
   };
+  // Keep only a usable article: missing metadata or overlap with an existing
+  // published set requires a new scope rather than patching an unsuitable one.
+  assertNoRepeatedSet(mcqs.map(mcq => mcq.question), published);
+  if (mcqs.length !== 100) {
+    const repeated = duplicates.length ? ` Repeated question examples: ${JSON.stringify(duplicates.slice(0, 3))}.` : '';
+    const error = new Error(`AI draft must contain exactly 100 unique valid MCQs; received ${mcqs.length}. Replace invalid or repeated questions, including punctuation-only variants.${repeated}`);
+    if (mcqs.length >= 90 && mcqs.length < 100) error.repairDraft = validated;
+    throw error;
+  }
+  return validated;
+}
+
+function rawMcqs(mcqs) {
+  return mcqs.map(({ question, options, answerIndex, explanation }) => ({
+    question, options, correctAnswer: options[answerIndex], explanation
+  }));
 }
 
 function slugAlreadyExists(slug) {
@@ -247,6 +267,7 @@ export async function generateAiDraft(date, published, { fetchImpl = fetch } = {
     '- Include focus topics that match the actual questions. Explain the specific skills practised in the introduction, rather than filling it with generic exam-success or daily-practice claims.',
     '- No official syllabus, recruitment notice, past paper, or live source has been supplied. Do not invent exam sections, weightings, eligibility rules, deadlines, citations, URLs, or claims of source verification. Describe the scope as independent practice and direct readers to the latest official notice when test arrangements may vary.',
     '- Generate exactly 100 original, high-quality MCQs with four options each.',
+    '- Do not put question numbers in question strings; the article renderer adds numbering.',
     '- Before returning, count the MCQs and confirm there are exactly 100 unique questions after removing duplicates.',
     '- If any question is duplicated, invalid, or has an answer that is not exactly one of the four options, replace it before returning JSON.',
     '- Correct answer must be one of the options exactly.',
@@ -262,14 +283,24 @@ export async function generateAiDraft(date, published, { fetchImpl = fetch } = {
   ].join('\n');
 
   let lastValidationError = null;
+  let repairDraft = null;
   for (let attempt = 1; attempt <= 3; attempt += 1) {
+    const missing = repairDraft ? 100 - repairDraft.mcqs.length : 0;
     const retryInstruction = lastValidationError
       ? [
           `Previous attempt failed validation: ${lastValidationError.message}`,
           'Regenerate the full article package now. Return exactly 100 unique valid MCQs. Replace rejected questions; do not just change punctuation, capitalization, or spacing. Avoid the reported published question set, and choose a distinct learning scope if necessary. Every correctAnswer must exactly match one option.'
         ].join('\n')
       : '';
-    const prompt = [basePrompt, retryInstruction].filter(Boolean).join('\n\n');
+    const prompt = repairDraft ? [
+      `Complete an independent MCQsBase practice article by generating exactly ${missing} replacement MCQ(s). Return only a JSON object with a mcqs array; do not regenerate metadata or retained questions.`,
+      `Topic: ${repairDraft.topicName}. Title: ${repairDraft.title}. Focus areas: ${JSON.stringify(repairDraft.focusRows)}.`,
+      `Previous attempt failed validation: ${lastValidationError.message}`,
+      `Retained questions (do not repeat or superficially reword): ${JSON.stringify(repairDraft.mcqs.map(item => item.question))}`,
+      `Avoid these published sets: ${JSON.stringify(existingBlogs)}.`,
+      'Use original, unambiguous questions in this same scope, four distinct plausible options, one defensible correctAnswer matching an option exactly, and a concise explanation of the reasoning. Independently solve calculations and check the answer, explanation and options agree.',
+      'Use stable facts and well-established rules; no live verification or official source has been supplied. No unsupported current facts, official/past-paper claims, all/none-of-the-above, numbering prefixes or markdown in values. Return complete JSON only.'
+    ].join('\n\n') : [basePrompt, retryInstruction].filter(Boolean).join('\n\n');
 
     const response = await fetchImpl('https://api.openai.com/v1/responses', {
       method: 'POST',
@@ -292,9 +323,12 @@ export async function generateAiDraft(date, published, { fetchImpl = fetch } = {
         text: {
           format: {
             type: 'json_schema',
-            name: 'ai_daily_blog',
+            name: repairDraft ? 'ai_daily_blog_replacements' : 'ai_daily_blog',
             strict: true,
-            schema: {
+            schema: repairDraft ? {
+              type: 'object', additionalProperties: false, required: ['mcqs'],
+              properties: { mcqs: { type: 'array', minItems: missing, maxItems: missing, items: MCQ_SCHEMA } }
+            } : {
               type: 'object',
               additionalProperties: false,
               required: ['topicName', 'topicSlug', 'primaryKeyword', 'title', 'excerpt', 'intro', 'description', 'focusRows', 'revisionTips', 'faqs', 'mcqs'],
@@ -344,22 +378,7 @@ export async function generateAiDraft(date, published, { fetchImpl = fetch } = {
                   type: 'array',
                   minItems: 100,
                   maxItems: 100,
-                  items: {
-                    type: 'object',
-                    additionalProperties: false,
-                    required: ['question', 'options', 'correctAnswer', 'explanation'],
-                    properties: {
-                      question: { type: 'string' },
-                      options: {
-                        type: 'array',
-                        minItems: 4,
-                        maxItems: 4,
-                        items: { type: 'string' }
-                      },
-                      correctAnswer: { type: 'string' },
-                      explanation: { type: 'string' }
-                    }
-                  }
+                  items: MCQ_SCHEMA
                 }
               }
             }
@@ -376,10 +395,21 @@ export async function generateAiDraft(date, published, { fetchImpl = fetch } = {
 
     const payload = await response.json();
     try {
+      if (payload.status === 'incomplete') {
+        const error = new Error(`OpenAI returned an incomplete response (${payload.incomplete_details?.reason || 'unknown reason'}); return concise, complete JSON.`);
+        error.incompleteResponse = true;
+        throw error;
+      }
       // All content checks belong here so rejected drafts can be corrected within
       // the same bounded retry loop, before any article or registry is written.
-      return validateDraft(JSON.parse(extractOutputText(payload)), published);
+      const parsed = JSON.parse(extractOutputText(payload));
+      const candidate = repairDraft ? {
+        ...repairDraft, mcqs: [...rawMcqs(repairDraft.mcqs), ...(Array.isArray(parsed.mcqs) ? parsed.mcqs : [])]
+      } : parsed;
+      return validateDraft(candidate, published);
     } catch (error) {
+      if (error.repairDraft) repairDraft = error.repairDraft;
+      else if (!(error instanceof SyntaxError) && !error.incompleteResponse) repairDraft = null;
       lastValidationError = error;
       console.warn(`AI draft validation failed on attempt ${attempt}/3: ${error.message}`);
     }
