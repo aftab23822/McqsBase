@@ -18,7 +18,7 @@ import wave
 from array import array
 
 ROOT = Path(__file__).resolve().parents[1]
-policy_spec = importlib.util.spec_from_file_location('quiz_social_policy', ROOT / 'scripts/quiz-social-policy.py')
+policy_spec = importlib.util.spec_from_file_location('quiz_social_policy', ROOT / 'scripts/quiz-social-copy.py')
 social = importlib.util.module_from_spec(policy_spec)
 policy_spec.loader.exec_module(social)
 LOCAL_PACKAGES = ROOT / '.social-automation' / 'python'
@@ -95,7 +95,7 @@ def ordered_questions(questions, start, count):
 
 
 def question_number(args, item, local_index):
-    return item['sourceNumber'] if getattr(args, 'selection', 'random') == 'ordered' else local_index
+    return item['sourceNumber'] if getattr(args, 'selection', 'random') in ('ordered', 'planned') else local_index
 
 
 def find_font(explicit=None, bold=False):
@@ -120,7 +120,7 @@ def find_ffmpeg(explicit=None):
         import imageio_ffmpeg
         return imageio_ffmpeg.get_ffmpeg_exe()
     except ImportError as exc:
-        raise RuntimeError('Install FFmpeg or imageio-ffmpeg; see docs/quiz-video-automation.md.') from exc
+        raise RuntimeError('Install FFmpeg or imageio-ffmpeg; see docs/quiz-video-batches.md.') from exc
 
 
 def article_titles(slug, override=None):
@@ -229,6 +229,24 @@ def clip_duration(path):
         return wav.getnframes() / wav.getframerate()
 
 
+def branding():
+    return {'logo': 'eagle', 'sourceSha256': hashlib.sha256((ROOT / 'public/eagle.svg').read_bytes()).hexdigest(),
+            'imageSha256': hashlib.sha256((ROOT / 'public/eagle-video.png').read_bytes()).hexdigest()}
+
+
+def planned_questions(questions, order, start, count):
+    """Use the saved batch order; source numbers remain the original article IDs."""
+    numbers = [q['sourceNumber'] for q in questions]
+    if (any(type(n) is not int or n < 1 for n in numbers + order)
+            or len(set(numbers)) != len(numbers) or len(set(order)) != len(order)
+            or set(order) != set(numbers)):
+        raise ValueError('The saved random question plan must contain each source question exactly once.')
+    if start < 1 or count < 1 or start + count - 1 > len(order):
+        raise ValueError('The saved question plan does not have enough unused questions.')
+    lookup = {q['sourceNumber']: q for q in questions}
+    return [lookup[n] for n in order[start - 1:start - 1 + count]]
+
+
 def fit_question_count(selected, voices, args):
     """Fit whole question/reveal pairs; never truncate speech or thinking time."""
     def stage(audio, minimum=1):
@@ -290,9 +308,14 @@ def create_video(args):
         questions = extract_questions(source.read_text(encoding='utf-8'), args.reveal)
     if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', args.slug):
         raise ValueError('Use an article slug containing lowercase letters, numbers and hyphens.')
-    ordered = getattr(args, 'selection', 'random') == 'ordered'
-    selected = (ordered_questions(questions, args.start_question, args.count) if ordered
-                else select_questions(questions, args.count, args.seed))
+    planned = getattr(args, 'selection', 'random') == 'planned'
+    ordered = getattr(args, 'selection', 'random') in ('ordered', 'planned')
+    if planned:
+        selected = planned_questions(questions, package['selectionPlan']['sourceQuestionNumbers'],
+                                     args.start_question, args.count)
+    else:
+        selected = (ordered_questions(questions, args.start_question, args.count) if ordered
+                    else select_questions(questions, args.count, args.seed))
     output = Path(args.output).resolve()
     output.mkdir(parents=True, exist_ok=True)
     frames_dir = output / 'frames'
@@ -309,9 +332,9 @@ def create_video(args):
     draw = ImageDraw.Draw(base)
     draw.rounded_rectangle((50, 195, 1030, 1740), radius=44, fill='#132139')
     draw.rounded_rectangle((70, 100, 132, 162), radius=15, fill=gold)
-    for x in (87, 108):
-        for y in (117, 138):
-            draw.rectangle((x, y, x + 8, y + 8), fill=navy)
+    eagle = Image.open(ROOT / 'public/eagle-video.png').convert('RGBA')
+    eagle.thumbnail((52, 52), Image.Resampling.LANCZOS)
+    base.paste(eagle, (101 - eagle.width // 2, 131 - eagle.height // 2), eagle)
     draw.text((154, 97), 'MCQsBase', font=ImageFont.truetype(bold, 50), fill=white)
     draw.text((72, 1794), 'www.mcqsbase.com', font=ImageFont.truetype(normal, 31), fill=muted)
 
@@ -460,6 +483,7 @@ def create_video(args):
     manifest['outroIncluded'] = args.include_outro
     manifest['requestedCount'] = requested_count
     manifest['maxDurationSeconds'] = args.max_duration
+    manifest['branding'] = branding()
     if ordered:
         manifest['sequence'] = {'part': args.batch_part, 'totalParts': args.batch_size,
                                 'sourceQuestionNumbers': [q['sourceNumber'] for q in selected]}
@@ -471,7 +495,8 @@ def create_video(args):
     captions = social.social_copy(display_title, args.count, source_url)
     if ordered:
         first, last = selected[0]['sourceNumber'], selected[-1]['sourceNumber']
-        source_range = str(first) if first == last else f'{first}–{last}'
+        source_range = (', '.join(str(q['sourceNumber']) for q in selected) if planned
+                        else str(first) if first == last else f'{first}–{last}')
         label = 'Source question' if first == last else 'Source questions'
         for caption in captions.values():
             caption['text'] = f'Part {args.batch_part}/{args.batch_size} · {label} {source_range}\n' + caption['text']
@@ -492,7 +517,7 @@ if __name__ == '__main__':
     source_group.add_argument('--slug')
     source_group.add_argument('--article-json', help='Validated source package fetched from the live blog.')
     parser.add_argument('--count', type=int, choices=range(1, 21), default=social.POLICY['questionLimit'])
-    parser.add_argument('--selection', choices=('random', 'ordered'), default='random')
+    parser.add_argument('--selection', choices=('random', 'ordered', 'planned'), default='random')
     parser.add_argument('--start-question', type=int, default=1)
     parser.add_argument('--batch-part', type=int, default=1)
     parser.add_argument('--batch-size', type=int, default=5)

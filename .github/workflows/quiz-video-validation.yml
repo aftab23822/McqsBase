@@ -1,0 +1,61 @@
+name: Quiz Video Validation
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/quiz-video-validation.yml'
+      - 'scripts/*quiz*'
+      - 'scripts/*blog-video*'
+      - 'scripts/*voice*'
+      - 'scripts/*social-policy*'
+      - 'scripts/export-blog-video-sources.mjs'
+      - 'scripts/video-requirements.txt'
+      - 'config/quiz-batch-policy.json'
+      - 'public/eagle*'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: blog-quiz-videos-${{ github.event_name == 'pull_request' && github.head_ref || 'production' }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: scripts/video-requirements.txt
+      - run: python -m pip install -r scripts/video-requirements.txt
+      - name: Check parsing, title selection, answer reveals and duplicate protection
+        run: |
+          python scripts/test-quiz-video.py
+          python scripts/test-quiz-video-quality.py
+          python scripts/test-quiz-batch.py
+          python scripts/test-quiz-cloud-state.py
+          python scripts/test-quiz-social-copy.py
+          python scripts/test-cloud-quiz-batches.py
+          python scripts/test-studio-cloud.py
+      - uses: actions/cache@v4
+        with:
+          path: .social-automation/voices
+          key: kokoro-english-fp16-v1-1
+      - run: python scripts/download-kokoro-voice.py
+      - name: Render a real narrated sample on Linux
+        run: python scripts/render-quiz-smoke.py
+      - name: Save the cloud voice and video sample
+        uses: actions/upload-artifact@v4
+        with:
+          name: cloud-quiz-smoke
+          path: |
+            .social-automation/cloud-smoke/mcqsbase-quiz.mp4
+            .social-automation/cloud-smoke/preview.png
+            .social-automation/cloud-smoke/reveal-preview.png
+            .social-automation/cloud-smoke/manifest.json
+            .social-automation/cloud-smoke/platform-captions.json
+          retention-days: 3
