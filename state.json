@@ -926,7 +926,7 @@
   },
   "videoBatches": {
     "nat-icom-accounting-fundamentals": {
-      "status": "scheduling",
+      "status": "scheduled",
       "ledger": "batches/nat-icom-accounting-fundamentals.json",
       "createdAt": "2026-10-31T11:54:37.478433+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
