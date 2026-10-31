@@ -30,7 +30,8 @@ def hashtags(title):
 
 def social_copy(title, count, source_url):
     tags = hashtags(title)
-    common = (f'{title}\n{count} questions. Choose A, B, C or D before the timer ends. '
+    noun = 'question' if count == 1 else 'questions'
+    common = (f'{title}\n{count} {noun}. Choose A, B, C or D before the timer ends. '
               'Share your score!\n')
     result = {}
     for network in POLICY['networks']:

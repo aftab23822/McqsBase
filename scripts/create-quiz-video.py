@@ -471,9 +471,11 @@ def create_video(args):
     captions = social.social_copy(display_title, args.count, source_url)
     if ordered:
         first, last = selected[0]['sourceNumber'], selected[-1]['sourceNumber']
+        source_range = str(first) if first == last else f'{first}–{last}'
+        label = 'Source question' if first == last else 'Source questions'
         for caption in captions.values():
-            caption['text'] = f'Part {args.batch_part}/{args.batch_size} · Source questions {first}–{last}\n' + caption['text']
-            caption['title'] = f'Part {args.batch_part}/{args.batch_size} | Q{first}–{last} | {display_title}'[:100]
+            caption['text'] = f'Part {args.batch_part}/{args.batch_size} · {label} {source_range}\n' + caption['text']
+            caption['title'] = f'Part {args.batch_part}/{args.batch_size} | Q{source_range} | {display_title}'[:100]
     (output / 'caption.txt').write_text(captions['facebook']['text'] + '\n', encoding='utf-8')
     (output / 'platform-captions.json').write_text(json.dumps(captions, ensure_ascii=False, indent=2), encoding='utf-8')
     question_preview = next(segment['frame'] for segment in timeline if segment['question'] == 1)
