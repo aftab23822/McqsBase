@@ -2344,7 +2344,11 @@
       },
       "uploadIntent": {
         "filename": "nat-icom-accounting-fundamentals-part-05-f8da680412581912.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "e9c2377e-5866-4d63-b2f6-df1bcb6321b4",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Om02CcmiZg.mp4"
       }
     }
   ],
