@@ -24,6 +24,7 @@ on:
       - 'scripts/*studio*'
       - 'scripts/*quiz-batch*'
       - 'config/quiz-batch-policy.json'
+      - 'config/quiz-batch-public-proof.json'
       - '.github/workflows/blog-quiz-batches.yml'
 permissions:
   contents: read

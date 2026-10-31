@@ -153,9 +153,10 @@ def generate(storage, state, slug, publisher_run):
 
 def publish(storage, state, channels, studio, spacing, verify_only=False):
     for slug, info in list(state.get('videoBatches', {}).items()):
-        if info['status'] not in ('ready', 'scheduling', 'scheduled'):
+        allowed = ('ready', 'scheduling', 'scheduled', 'provider-published') if verify_only else ('ready', 'scheduling', 'scheduled')
+        if info['status'] not in allowed:
             continue
-        if verify_only and info['status'] != 'scheduled':
+        if verify_only and info['status'] not in ('scheduled', 'provider-published'):
             continue
         ledger = Ledger(storage, slug)
         record = ledger.load()
@@ -165,7 +166,7 @@ def publish(storage, state, channels, studio, spacing, verify_only=False):
             ledger.save(updated)
             summary(state, updated, ledger)
             storage.save(state)
-        if record['status'] == 'scheduled':
+        if record['status'] in ('scheduled', 'provider-published'):
             # Read existing receipts on the next publication event, with no cron polling.
             start = (datetime.fromisoformat(record['schedule'][0]) - timedelta(days=1)).isoformat()
             end = (datetime.fromisoformat(record['schedule'][-1]) + timedelta(days=1)).isoformat()

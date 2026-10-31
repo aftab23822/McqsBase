@@ -1,6 +1,7 @@
 """Read-only Studio connection check. Never print credentials or raw account responses."""
 import json
 import os
+import re
 from pathlib import Path
 import urllib.request
 import urllib.error
@@ -46,8 +47,18 @@ def main():
         safe.append(entry)
     output = {'connectedChannels': safe, 'prices': request('/wallet/prices'), 'wallet': request('/wallet')}
     posts = request('/posts?startDate=2026-10-31T00%3A00%3A00Z&endDate=2026-11-01T00%3A00%3A00Z')['posts']
-    output['launchReceipts'] = [{field: post.get(field) for field in
-        ('id', 'state', 'releaseURL', 'releaseId', 'publishDate')} for post in posts]
+    output['launchReceipts'] = []
+    for post in posts:
+        receipt = {field: post.get(field) for field in ('id', 'state', 'releaseURL', 'releaseId', 'publishDate')}
+        receipt['availableFields'] = sorted(post)
+        for field in ('error', 'lastError', 'reason'):
+            value = post.get(field)
+            if isinstance(value, str):
+                value = value.replace(os.environ['MCQS_STUDIO_API_KEY'], '[redacted]')
+                receipt[field] = re.sub(r'https?://\S+|(?:access_token|refresh_token)=[^\s&]+', '[redacted]', value)[:1000]
+            elif isinstance(value, dict):
+                receipt[field] = {key: value.get(key) for key in ('message', 'code', 'type', 'error_subcode')}
+        output['launchReceipts'].append(receipt)
     for post in posts:
         if post.get('integration', {}).get('id') == 'cmvwbcule0222ro9dhocbic4w' and post.get('state') == 'PUBLISHED':
             try:

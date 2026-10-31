@@ -66,6 +66,24 @@ class Worker(unittest.TestCase):
         with patch.object(worker, 'Ledger', side_effect=AssertionError('Unexpected ledger write')):
             worker.publish(None, state, {}, NoAPI(), 30, verify_only=True)
 
+    def test_explicit_verification_can_reconcile_provider_only_results_without_new_posts(self):
+        fixture = worker.module('publisher_fixture', 'test-studio-cloud.py')
+        batch, api = fixture.record(), fixture.Fake()
+        fixture.studio.schedule_batch(api, batch, fixture.channels(), lambda r: None, fixture.slots())
+        batch.update(status='provider-published', slug='recent', createdAt='now',
+                     package={'url': 'https://www.mcqsbase.com/blog/new-test'})
+        for post in api.calendar:
+            post.update(state='PUBLISHED', releaseURL='https://www.tiktok.com/@mcqsbase')
+        state = {'videoBatches': {'recent': {'status': 'provider-published'}}}
+        ledger = type('Ledger', (), {'path': 'batches/recent.json', 'load': lambda _: batch,
+                                   'save': lambda *_: None})()
+        storage = type('Storage', (), {'save': lambda *_: None})()
+        with patch.object(worker, 'Ledger', return_value=ledger):
+            worker.publish(storage, state, fixture.channels(), api, 30, verify_only=True)
+        self.assertEqual(api.writes, 5)
+        self.assertEqual(state['videoBatches']['recent']['published'], 20)
+        self.assertEqual(state['videoBatches']['recent']['verifiedPublications'], 0)
+
     @unittest.skipUnless(worker.POLICY['enabled'], 'Only applies after the new route is enabled')
     def test_legacy_entry_points_skip_without_cloud_credentials(self):
         for script, key in [('plan-blog-video-campaign.py', 'generate'), ('plan-metricool-handoff.py', 'handoff')]:
