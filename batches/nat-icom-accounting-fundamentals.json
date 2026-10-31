@@ -1989,8 +1989,9 @@
           "postId": "cmvwcp1k5023wro9d90j4h7e2"
         },
         "youtube": {
-          "status": "uncertain",
-          "attemptedAt": "2026-10-31T12:01:42.527601+00:00"
+          "status": "accepted",
+          "attemptedAt": "2026-10-31T12:01:42.527601+00:00",
+          "postId": "cmvwcp1lh023xro9dquqtjvvp"
         }
       }
     },
