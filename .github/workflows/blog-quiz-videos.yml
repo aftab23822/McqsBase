@@ -3,10 +3,6 @@ name: Blog Quiz Videos
 on:
   push:
     branches: ['codex/render-selected-campaigns']
-  workflow_run:
-    workflows: ['Daily Blog Autopilot']
-    types: [completed]
-    branches: [master]
   workflow_dispatch:
   pull_request:
     paths:

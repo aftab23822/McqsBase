@@ -1,5 +1,7 @@
 # MCQsBase quiz Shorts automation
 
+**Historical Metricool campaign route.** The October 31 replacement is documented in [quiz-video-batches.md](quiz-video-batches.md): five sequential videos per newly published blog, twenty same-day platform posts through Studio Free. When `quiz-batch-policy.json` is enabled, the legacy routine generation and handoff gates skip. Preserve the records and controls below for historical verification; they no longer define the active publication cadence.
+
 Generate videos only for selected campaigns, at most four per calendar month. Each campaign reuses one Short/Reel on Facebook, Instagram, TikTok and YouTube through Metricool: 4 × 4 = 16 publications, leaving four of the Free plan's twenty publications for other use. Existing or manually scheduled posts also consume Metricool's allowance. Do not create or save unused daily videos.
 
 ## Video format

@@ -71,7 +71,10 @@ def load_state(repository, token):
 
 
 if __name__ == '__main__':
-    result = plan_campaign(load_state(os.environ['GITHUB_REPOSITORY'], os.environ['GH_TOKEN']))
+    batch_policy = json.loads((ROOT / 'config/quiz-batch-policy.json').read_text(encoding='utf-8'))
+    result = ({'generate': False, 'reason': 'Daily five-video Studio batches replace the legacy Metricool campaign renderer.'}
+              if batch_policy['enabled'] else
+              plan_campaign(load_state(os.environ['GITHUB_REPOSITORY'], os.environ['GH_TOKEN'])))
     print(json.dumps(result))
     with Path(os.environ['GITHUB_OUTPUT']).open('a', encoding='utf-8') as output:
         output.write('generate=' + str(result['generate']).lower() + '\n')
