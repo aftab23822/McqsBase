@@ -3089,7 +3089,8 @@
           ]
         }
       },
-      "scheduledAt": "2026-10-31T17:37:00+05:00"
+      "scheduledAt": "2026-10-31T17:37:00+05:00",
+      "receipts": {}
     }
   ],
   "thinkingSeconds": 3,
