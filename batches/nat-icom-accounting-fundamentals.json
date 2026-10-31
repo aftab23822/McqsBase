@@ -2708,8 +2708,9 @@
           "postId": "cmvwcpf9c0243ro9d11t56zkn"
         },
         "instagram": {
-          "status": "uncertain",
-          "attemptedAt": "2026-10-31T12:02:00.347791+00:00"
+          "status": "accepted",
+          "attemptedAt": "2026-10-31T12:02:00.347791+00:00",
+          "postId": "cmvwcpfb00245ro9dy2jpvd1i"
         },
         "tiktok": {
           "status": "uncertain",
