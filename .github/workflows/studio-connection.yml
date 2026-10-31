@@ -1,0 +1,23 @@
+name: Studio Connection Check
+on:
+  push:
+    branches: ['codex/five-video-blog-batches']
+    paths: ['scripts/probe-studio-cloud.py', '.github/workflows/studio-connection.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read four channel identities and posting schemas without creating posts
+        env:
+          MCQS_STUDIO_API_KEY: ${{ secrets.MCQS_STUDIO_API_KEY }}
+        run: python scripts/probe-studio-cloud.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: studio-connection
+          path: .social-automation/studio-connection.json
+          retention-days: 3
