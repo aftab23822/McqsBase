@@ -10,11 +10,6 @@ on:
         description: 'Validate the approved October 31 rollout article before enabling the cutover'
         type: boolean
         default: false
-      spacing:
-        description: 'Minutes between today’s five videos (5 for the practical launch, normally 30)'
-        type: choice
-        options: ['30', '5']
-        default: '30'
       verify_only:
         description: 'Read and reconcile existing post receipts without rendering or creating posts'
         type: boolean
@@ -23,6 +18,9 @@ on:
     paths:
       - 'scripts/*studio*'
       - 'scripts/*quiz-batch*'
+      - 'scripts/quiz-cloud*'
+      - 'scripts/quiz-social-copy.py'
+      - 'scripts/quiz-video-quality.py'
       - 'config/quiz-batch-policy.json'
       - 'config/quiz-batch-public-proof.json'
       - '.github/workflows/blog-quiz-batches.yml'
@@ -91,7 +89,7 @@ jobs:
           path: .social-automation/voices
           key: kokoro-english-fp16-v1-1
       - run: python scripts/download-kokoro-voice.py
-      - name: Render, decode and save all five sequential Shorts
+      - name: Render, decode and save all five distinct Shorts
         env:
           GH_TOKEN: ${{ github.token }}
           VALIDATE: ${{ inputs.validation == true && '--validation' || '' }}
@@ -128,6 +126,5 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           MCQS_STUDIO_API_KEY: ${{ secrets.MCQS_STUDIO_API_KEY }}
           VALIDATE: ${{ inputs.validation == true && '--validation' || '' }}
-          SPACING: ${{ inputs.spacing || '30' }}
           VERIFY: ${{ inputs.verify_only == true && '--verify-only' || '' }}
-        run: python scripts/cloud-quiz-batches.py --phase publish --spacing "$SPACING" $VALIDATE $VERIFY
+        run: python scripts/cloud-quiz-batches.py --phase publish $VALIDATE $VERIFY

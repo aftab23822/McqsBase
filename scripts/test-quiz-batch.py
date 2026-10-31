@@ -25,6 +25,8 @@ def source():
 
 
 def manifest(package, part, start, count=3):
+    selected = (batch.renderer.planned_questions(package['questions'], package['selectionPlan']['sourceQuestionNumbers'], start, count)
+                if package.get('selectionPlan') else package['questions'][start - 1:start - 1 + count])
     stages, elapsed = [], 0
     for n in range(1, count + 1):
         for kind, duration in [('narration', 12), ('countdown', 1), ('countdown', 1),
@@ -37,11 +39,75 @@ def manifest(package, part, start, count=3):
             'introIncluded': False, 'narration': True, 'answersIncluded': True,
             'voiceName': 'Kokoro af_heart', 'secondsPerQuestion': 3, 'countdownStartsAfterNarration': True,
             'durationSeconds': elapsed, 'stages': stages,
-            'questions': copy.deepcopy(package['questions'][start - 1:start - 1 + count]),
-            'sequence': {'part': part, 'totalParts': 5, 'sourceQuestionNumbers': list(range(start, start + count))}}
+            'questions': copy.deepcopy(selected), 'branding': package.get('videoBranding'),
+            'sequence': {'part': part, 'totalParts': 5, 'sourceQuestionNumbers': [q['sourceNumber'] for q in selected]}}
 
 
 class BatchTests(unittest.TestCase):
+    def test_random_plan_covers_all_source_bands_without_replacement(self):
+        questions = source()['questions']
+        plan = batch.selection_plan(questions, 'coverage-test')
+        order = plan['sourceQuestionNumbers']
+        self.assertEqual(sorted(order), list(range(1, 101)))
+        self.assertEqual({(n - 1) // 20 for n in order[:5]}, set(range(5)))
+        self.assertEqual(plan, batch.selection_plan(questions, 'coverage-test'))
+        self.assertNotEqual(order, batch.selection_plan(questions, 'another-seed')['sourceQuestionNumbers'])
+        self.assertNotEqual(batch.selection_plan(questions)['seed'], batch.selection_plan(questions)['seed'])
+
+    def test_random_batch_resumes_saved_plan_and_never_repeats_across_parts(self):
+        package = source()
+        package['selectionPlan'] = batch.selection_plan(package['questions'], 'retry-test')
+        package['videoBranding'] = batch.renderer.branding()
+        rendered = []
+        def render(part, start, folder):
+            rendered.append(part)
+            folder.mkdir(parents=True, exist_ok=True)
+            record = manifest(package, part, start, count=1 if part == 1 else 3)
+            (folder / 'manifest.json').write_text(json.dumps(record))
+            (folder / 'mcqsbase-quiz.mp4').write_bytes(f'fake-{part}'.encode())
+            if part == 2:
+                raise RuntimeError('interrupted after encoding')
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaisesRegex(RuntimeError, 'interrupted'):
+                batch.build_batch(package, tmp, render, lambda *_: None)
+            self.assertFalse((Path(tmp) / 'batch.json').exists())
+            result = batch.build_batch(package, tmp, render, lambda *_: None)
+            self.assertEqual(rendered, [1, 2, 3, 4, 5])
+            actual = [n for part in result['parts'] for n in part['sourceQuestionNumbers']]
+            self.assertEqual(actual, package['selectionPlan']['sourceQuestionNumbers'][:13])
+            self.assertEqual(len(actual), len(set(actual)))
+
+    def test_plan_tampering_duplicates_and_wrong_branding_are_rejected(self):
+        package = source()
+        package['selectionPlan'] = batch.selection_plan(package['questions'], 'test')
+        package['videoBranding'] = batch.renderer.branding()
+        record = manifest(package, 1, 1)
+        record['branding'] = {'logo': 'dice'}
+        with self.assertRaisesRegex(ValueError, 'eagle'):
+            batch.validate_part(record, package, 1, 1)
+        order = package['selectionPlan']['sourceQuestionNumbers']
+        order[1] = order[0]
+        with self.assertRaisesRegex(ValueError, 'exactly once'):
+            batch.renderer.planned_questions(package['questions'], order, 1, 3)
+        package['questions'][1]['question'] = package['questions'][0]['question'].upper()
+        with self.assertRaisesRegex(ValueError, 'non-repeated'):
+            batch.selection_plan(package['questions'])
+
+    def test_small_source_leaves_one_distinct_question_for_each_remaining_video(self):
+        package = source()
+        package['questions'] = package['questions'][:5]
+        self.assertEqual(batch.render_selection(package, 1, 1)[-1], '1')
+        self.assertEqual(batch.render_selection(package, 5, 5)[-1], '1')
+
+    def test_default_schedule_spreads_across_the_remaining_day(self):
+        now = datetime(2026, 10, 31, 9, 5, tzinfo=ZoneInfo('Asia/Karachi'))
+        slots = [datetime.fromisoformat(s) for s in batch.same_day_slots(now)]
+        self.assertEqual([s.hour for s in slots], [10, 13, 16, 19, 22])
+        now = now.replace(hour=16)
+        slots = [datetime.fromisoformat(s) for s in batch.same_day_slots(now)]
+        self.assertGreater((slots[-1] - slots[0]).total_seconds(), 5 * 3600)
+        self.assertTrue(all(s > now and s.date() == now.date() for s in slots))
+
     def test_ordered_selection_does_not_skip_long_or_missing_questions(self):
         questions = source()['questions']
         questions[0]['question'] = 'Long ' * 60

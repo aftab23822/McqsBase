@@ -16,6 +16,29 @@ spec.loader.exec_module(worker)
 
 
 class Worker(unittest.TestCase):
+    def test_random_plan_is_durable_before_render_and_is_reused_after_failure(self):
+        fixture = worker.module('worker_batch_fixture', 'test-quiz-batch.py')
+        package = fixture.source()
+        saved = []
+        ledger = type('Ledger', (), {'path': 'batches/example-quiz.json',
+            'load': lambda _: deepcopy(saved[-1]) if saved else None,
+            'save': lambda _, record: saved.append(deepcopy(record))})()
+        storage = type('Storage', (), {'save': lambda *_: None})()
+        with tempfile.TemporaryDirectory() as tmp, patch.object(worker, 'ROOT', Path(tmp)), \
+             patch.object(worker, 'Ledger', return_value=ledger), \
+             patch.object(worker.subprocess, 'check_output', return_value='b' * 40), \
+             patch.object(worker.cloud, 'production_deployment', return_value=deepcopy(package['productionDeployment'])), \
+             patch.object(worker.cloud, 'deployed_sources', return_value={'packages': {package['slug']: package}}), \
+             patch.object(worker.batcher, 'build_batch', side_effect=RuntimeError('simulated interrupted render')):
+            with self.assertRaisesRegex(RuntimeError, 'interrupted'):
+                worker.generate(storage, {}, package['slug'], 123)
+            first = deepcopy(saved[0]['package']['selectionPlan'])
+            self.assertEqual(len(first['sourceQuestionNumbers']), 100)
+            with patch.object(worker.batcher, 'selection_plan', side_effect=AssertionError('reshuffled on retry')):
+                with self.assertRaisesRegex(RuntimeError, 'interrupted'):
+                    worker.generate(storage, {}, package['slug'], 123)
+            self.assertEqual(saved[-1]['package']['selectionPlan'], first)
+
     def test_manual_verification_gate_keeps_provider_only_and_held_receipts_eligible(self):
         for status in ('provider-published', 'publication-needs-attention'):
             state = {'articles': {}, 'videoBatches': {'latest': {'status': status}}}
@@ -132,18 +155,15 @@ class Worker(unittest.TestCase):
         self.assertEqual(state['videoBatches']['recent']['published'], 20)
         self.assertEqual(state['videoBatches']['recent']['verifiedPublications'], 0)
 
-    @unittest.skipUnless(worker.POLICY['enabled'], 'Only applies after the new route is enabled')
-    def test_legacy_entry_points_skip_without_cloud_credentials(self):
-        for script, key in [('plan-blog-video-campaign.py', 'generate'), ('plan-metricool-handoff.py', 'handoff')]:
-            with tempfile.TemporaryDirectory() as temp:
-                output = Path(temp) / 'output.txt'
-                env = {**os.environ, 'GITHUB_OUTPUT': str(output)}
-                env.pop('GH_TOKEN', None)
-                env.pop('GITHUB_REPOSITORY', None)
-                result = subprocess.run([sys.executable, str(Path(__file__).with_name(script))], env=env,
-                    capture_output=True, text=True, timeout=15)
-                self.assertEqual(result.returncode, 0, result.stderr)
-                self.assertIn(key + '=false', output.read_text())
+    def test_obsolete_metricool_publishers_and_workflows_are_removed(self):
+        for filename in ('metricool-cloud-publish.py', 'metricool-campaign-payload.py',
+                         'plan-metricool-handoff.py', 'cloud-blog-videos.py'):
+            self.assertFalse((worker.ROOT / 'scripts' / filename).exists())
+        self.assertFalse((worker.ROOT / '.github/workflows/metricool-cloud-handoff.yml').exists())
+        workflow = (worker.ROOT / '.github/workflows/blog-quiz-batches.yml').read_text()
+        self.assertIn("workflows: ['Daily Blog Autopilot']", workflow)
+        self.assertNotIn('cron:', workflow)
+        self.assertNotIn('MCQS_MAKE', workflow)
 
 
 if __name__ == '__main__':

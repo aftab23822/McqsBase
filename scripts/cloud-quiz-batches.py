@@ -23,7 +23,7 @@ def module(name, filename):
 
 
 batcher = module('five_batcher', 'create-quiz-batch.py')
-cloud = module('five_cloud', 'cloud-blog-videos.py')
+cloud = module('five_cloud', 'quiz-cloud-state.py')
 media = module('five_media', 'quiz-cloud-media.py')
 publisher = module('five_publisher', 'studio-cloud.py')
 POLICY = json.loads((ROOT / 'config/quiz-batch-policy.json').read_text(encoding='utf-8'))
@@ -99,6 +99,8 @@ def generate(storage, state, slug, publisher_run):
         proof['publisherRunId'] = publisher_run
         snapshot = cloud.deployed_sources(proof, state)
         package = snapshot['packages'][slug]
+        package['selectionPlan'] = batcher.selection_plan(package['questions'])
+        package['videoBranding'] = batcher.renderer.branding()
         record = {'version': 1, 'slug': slug, 'createdAt': datetime.now(timezone.utc).isoformat(),
             'status': 'rendering', 'package': package, 'parts': [], 'thinkingSeconds': 3}
         ledger.save(record)
@@ -109,7 +111,7 @@ def generate(storage, state, slug, publisher_run):
         storage.save(state)
     save()
     if len(package['questions']) < 5:
-        record.update(status='skipped', reason=f'Only {len(package["questions"])} valid published MCQs; five sequential videos cannot be made.')
+        record.update(status='skipped', reason=f'Only {len(package["questions"])} valid published MCQs; five distinct videos cannot be made.')
         save()
         return
     output = ROOT / '.social-automation/five-video-batch' / slug
@@ -130,7 +132,7 @@ def generate(storage, state, slug, publisher_run):
 
     def render(part, start, folder):
         subprocess.run([os.sys.executable, str(ROOT / 'scripts/create-quiz-video.py'), '--article-json', str(source),
-            '--selection', 'ordered', '--start-question', str(start), '--count', '3', '--batch-part', str(part),
+            *batcher.render_selection(package, start, part), '--batch-part', str(part),
             '--batch-size', '5', '--seconds', '3', '--max-duration', '89', '--output', str(folder)], check=True)
 
     def complete(number, folder, manifest, part):
@@ -229,7 +231,8 @@ def publish(storage, state, channels, studio, spacing, verify_only=False):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--phase', choices=('plan', 'render', 'publish'), required=True)
-    parser.add_argument('--spacing', type=int, choices=(5, 30), default=30)
+    parser.add_argument('--spacing', type=int, choices=(5, 30), default=None,
+                        help='Explicit compact recovery override; routine batches spread through the day.')
     parser.add_argument('--validation', action='store_true', help='Allow the expressly approved first-article rollout check.')
     parser.add_argument('--verify-only', action='store_true')
     args = parser.parse_args()
