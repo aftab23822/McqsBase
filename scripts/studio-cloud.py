@@ -184,15 +184,20 @@ def reconcile(part, posts, channels):
             if abs((actual - planned).total_seconds()) > 60:
                 raise RuntimeError('Provider changed the saved publication time; hold.')
         url, proof = post.get('releaseURL'), PUBLIC_PROOFS.get(post['id'])
+        proof_applied = False
         if (proof and proof['integrationId'] == channels[network]['id']
                 and proof['videoSha256'] == part.get('sha256')
                 and proof['sourceUrl'] == part['captions'][network]['sourceUrl']):
             url = proof['url']
+            proof_applied = True
         verified = state == 'PUBLISHED' and post_url(network, url)
         receipts[network] = {**receipt, 'postId': post['id'], 'status': state,
             'url': url, 'providerUrl': post.get('releaseURL'), 'providerReleaseId': post.get('releaseId'),
-            'publicUrlVerified': verified, 'verification': proof['method'] if verified and proof else
+            'publicUrlVerified': verified, 'verification': proof['method'] if verified and proof_applied else
                 'provider-post-url' if verified else 'provider-status-only', 'integrationId': channels[network]['id']}
+        if proof_applied and proof.get('sourceCommentId'):
+            receipts[network]['sourceCommentId'] = proof['sourceCommentId']
+            receipts[network]['sourceCommentVerified'] = True
 
 
 def schedule_batch(studio, record, channels, save, slots):
