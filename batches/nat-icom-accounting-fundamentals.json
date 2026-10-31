@@ -1678,6 +1678,184 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        5
+      ],
+      "count": 1,
+      "durationSeconds": 52,
+      "sha256": "9fd7aa98f85980262e0903b25f540ea5487b656fc6b6f26f63370b9745cb4e57",
+      "manifest": {
+        "title": "100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+        "sourceTitle": "100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-10-31T11:54:37.301187+00:00",
+        "sourceContentHash": "8a6fcd5429294157cc114c910e6aff610dc3f1b1bca69aacdb0b2bbc211ec56c",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7458231260,
+          "sha": "befb67b6992588ffb05d61b532a69c37431ee2bc",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-10-31T11:54:37.301187+00:00",
+          "url": "https://mcqs-base-ecar7mvc7-as-projects-10921176.vercel.app",
+          "publisherRunId": 41192403443
+        },
+        "status": "local-preview-only",
+        "count": 1,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 52,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A business completes services worth Rs. 18,000 for a customer and will collect payment later. What is the immediate effect, before recording any related expenses?",
+            "choices": [
+              "Accounts receivable and equity each increase by Rs. 18,000",
+              "Cash and liabilities each increase by Rs. 18,000",
+              "Accounts receivable decreases and equity increases by Rs. 18,000",
+              "Assets remain unchanged"
+            ],
+            "correctIndex": 0,
+            "key": "87863b3ca3e78032ff8b31cc9eea38bcaf03348d0f092f8c142062ffec86d05f",
+            "sourceNumber": 5
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 36,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 36,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 37,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 38,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 39,
+            "duration": 8,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 47,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0005.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            5
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NATICOM",
+          "#Accounting",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-icom-accounting-fundamentals-part-03-9fd7aa98f8598026.mp4",
+        "videoSha256": "9fd7aa98f85980262e0903b25f540ea5487b656fc6b6f26f63370b9745cb4e57",
+        "assetId": 695264421
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q5–5 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+          "text": "Part 3/5 · Source questions 5–5\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n1 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICOM",
+            "#Accounting",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q5–5 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+          "text": "Part 3/5 · Source questions 5–5\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n1 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICOM",
+            "#Accounting",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q5–5 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+          "text": "Part 3/5 · Source questions 5–5\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n1 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICOM",
+            "#Accounting",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q5–5 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+          "text": "Part 3/5 · Source questions 5–5\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n1 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICOM",
+            "#Accounting",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
