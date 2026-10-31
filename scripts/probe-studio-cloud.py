@@ -8,11 +8,12 @@ import urllib.error
 BASE = 'https://studio.voholabs.com/api/public/v1'
 
 
-def request(path):
+def request(path, payload=None):
     key = os.environ.get('MCQS_STUDIO_API_KEY', '')
     if not key:
         raise RuntimeError('MCQS_STUDIO_API_KEY is not available to this cloud job.')
-    req = urllib.request.Request(BASE + path, headers={'Authorization': key, 'Accept': 'application/json',
+    req = urllib.request.Request(BASE + path, data=None if payload is None else json.dumps(payload).encode(),
+        headers={'Authorization': key, 'Accept': 'application/json', 'Content-Type': 'application/json',
         'User-Agent': 'MCQsBase-Cloud-Publisher/1.0'})
     try:
         with urllib.request.urlopen(req, timeout=60) as response:
@@ -32,10 +33,14 @@ def main():
     for channel in channels:
         if channel.get('identifier') not in ('facebook', 'instagram', 'instagram-standalone', 'tiktok', 'youtube'):
             continue
-        entry = {key: channel.get(key) for key in ('id', 'name', 'identifier', 'profile', 'disabled')}
+        entry = {key: channel.get(key) for key in ('id', 'name', 'identifier', 'profile', 'disabled',
+            'internalId', 'providerId', 'accountId', 'username')}
+        entry['availableFields'] = sorted(channel)
         entry['settings'] = request('/integration-settings/' + channel['id'])
+        if channel['identifier'] == 'tiktok':
+            entry['creatorInfo'] = request('/integration-trigger/' + channel['id'], {'methodName': 'creatorInfo', 'data': {}})
         safe.append(entry)
-    output = {'connectedChannels': safe, 'prices': request('/wallet/prices')}
+    output = {'connectedChannels': safe, 'prices': request('/wallet/prices'), 'wallet': request('/wallet')}
     path = Path('.social-automation/studio-connection.json')
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(output, indent=2), encoding='utf-8')
