@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-icom-accounting-fundamentals",
   "createdAt": "2026-10-31T11:54:37.478433+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "nat-icom-accounting-fundamentals",
     "title": "100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
@@ -1583,7 +1583,24 @@
         }
       },
       "scheduledAt": "2026-10-31T17:17:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-10-31T12:01:32.343443+00:00"
+        },
+        "instagram": {
+          "status": "uncertain",
+          "attemptedAt": "2026-10-31T12:01:32.343461+00:00"
+        },
+        "tiktok": {
+          "status": "uncertain",
+          "attemptedAt": "2026-10-31T12:01:32.343465+00:00"
+        },
+        "youtube": {
+          "status": "uncertain",
+          "attemptedAt": "2026-10-31T12:01:32.343467+00:00"
+        }
+      }
     },
     {
       "part": 2,
