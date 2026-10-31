@@ -35,6 +35,8 @@ Studio's legacy TikTok integration can report `PUBLISHED` with only an account p
 
 The Free Studio library is finite (2 GB). The worker holds if storage is full rather than buying capacity or deleting historical assets. Immutable source MP4s and ledgers remain in GitHub for recovery.
 
+An existing scheduled post/comment that later fails is saved as `publication-needs-attention`, preserving every successful receipt. The same run still schedules other ready daily batches, then reports the held record once as a workflow failure. Routine later runs skip that held record, while explicit `verify_only` can reconcile it after repair. A stale failure from yesterday must not suppress today's newly prepared five videos.
+
 ## Cutover requirements
 
 Metricool Free cannot support this volume: five videos across four networks consume its twenty-post monthly allowance in one batch. Do not remove the existing quota checks, split accounts to bypass a plan, spend reserved allowance, buy a plan, or imply that a laptop running a scheduler bypasses the service's limit.

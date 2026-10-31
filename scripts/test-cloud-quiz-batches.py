@@ -15,6 +15,38 @@ spec.loader.exec_module(worker)
 
 
 class Worker(unittest.TestCase):
+    def test_old_comment_failure_is_held_without_suppressing_a_new_ready_batch(self):
+        fixture = worker.module('isolation_fixture', 'test-studio-cloud.py')
+        old, api = fixture.record(), fixture.Fake()
+        fixture.studio.schedule_batch(api, old, fixture.channels(), lambda r: None, fixture.slots())
+        old.update(slug='old', createdAt='now', package={'url': 'https://www.mcqsbase.com/blog/old'})
+        for post in api.calendar:
+            post.update(state='PUBLISHED', releaseURL='https://www.tiktok.com/@mcqsbase')
+        api.calendar[0]['state'] = 'ERROR'
+        new = fixture.record()
+        new.update(slug='new', createdAt='now', package={'url': 'https://www.mcqsbase.com/blog/new'})
+        for part in new['parts']:
+            part.update(manifest={}, sha256='a', asset={'videoSha256': 'a'})
+        records = {'old': old, 'new': new}
+        state = {'videoBatches': {'old': {'status': 'scheduled'}, 'new': {'status': 'ready'}}}
+        def ledger_factory(storage, slug):
+            return type('Ledger', (), {'path': f'batches/{slug}.json', 'load': lambda _: records[slug],
+                                      'save': lambda _, record: records.update({slug: record})})()
+        scheduled = []
+        def schedule(api, record, channels, save, slots):
+            scheduled.append(record['slug'])
+            record['status'] = 'scheduled'
+            save(record)
+        storage = type('Storage', (), {'save': lambda *_: None})()
+        with patch.object(worker, 'Ledger', side_effect=ledger_factory), \
+             patch.object(worker.batcher, 'validate_part', return_value=1), \
+             patch.object(worker.publisher, 'schedule_batch', side_effect=schedule):
+            with self.assertRaisesRegex(RuntimeError, 'Other ready batches were processed'):
+                worker.publish(storage, state, fixture.channels(), api, 30)
+        self.assertEqual(scheduled, ['new'])
+        self.assertEqual(records['old']['status'], 'publication-needs-attention')
+        self.assertEqual(api.writes, 5)
+
     def test_only_latest_article_is_selected(self):
         articles = [{'slug': 'newest', 'date': '2026-11-01'}, {'slug': 'older', 'date': '2026-10-31'}]
         self.assertEqual(worker.choose({'articles': {}}, articles), 'newest')
