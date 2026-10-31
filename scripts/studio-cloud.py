@@ -172,6 +172,10 @@ def reconcile(part, posts, channels):
 def schedule_batch(studio, record, channels, save, slots):
     if record.get('status') not in ('ready', 'scheduling', 'scheduled', 'published') or len(record.get('parts', [])) != 5:
         raise ValueError('All five videos must be ready before any post can be scheduled.')
+    # Validate every network's complete payload before releasing any part to the scheduler.
+    for part in record['parts']:
+        part.setdefault('payloads', {network: post_item(network, channels[network], part['captions'][network], part['studioMedia'])
+                                     for network in NETWORKS})
     if not record.get('schedule'):
         record['schedule'] = slots
         for part, when in zip(record['parts'], slots):

@@ -27,6 +27,8 @@ def same_day_slots(instant, count=5, spacing_minutes=30):
     """Schedule only after the complete batch is ready, all on the same local day."""
     current = instant.astimezone(ZoneInfo('Asia/Karachi'))
     first = (current + timedelta(minutes=15)).replace(second=0, microsecond=0)
+    if first < current + timedelta(minutes=15):
+        first += timedelta(minutes=1)
     last_allowed = current.replace(hour=23, minute=55, second=0, microsecond=0)
     available = int((last_allowed - first).total_seconds() // 60)
     spacing = min(spacing_minutes, available // (count - 1)) if count > 1 else 0
