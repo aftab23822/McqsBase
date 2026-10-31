@@ -1595,8 +1595,9 @@
           "postId": "cmvwcoui5023qro9db2et61zj"
         },
         "tiktok": {
-          "status": "uncertain",
-          "attemptedAt": "2026-10-31T12:01:32.343465+00:00"
+          "status": "accepted",
+          "attemptedAt": "2026-10-31T12:01:32.343465+00:00",
+          "postId": "cmvwcoujf023rro9d9b8o6n1s"
         },
         "youtube": {
           "status": "uncertain",
