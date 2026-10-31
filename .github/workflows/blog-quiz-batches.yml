@@ -43,7 +43,6 @@ jobs:
           python scripts/test-quiz-batch.py
           python scripts/test-studio-cloud.py
           python scripts/test-cloud-quiz-batches.py
-          python scripts/test-studio-receipt-repair.py
   plan:
     if: >-
       github.ref == 'refs/heads/master' &&

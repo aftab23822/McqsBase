@@ -27,29 +27,6 @@ def request(path, payload=None, method=None):
             f'content type {error.headers.get("Content-Type", "unknown")}). No response body logged.') from None
 
 
-def reconcile_approved_receipt(posts, api=request, proofs=None):
-    """Metadata only: link the existing Reel after its missing comment was verified repaired."""
-    post_id = 'cmvwcp8fl023yro9di7laeszq'
-    if proofs is None:
-        proofs = json.loads((Path(__file__).resolve().parents[1] / 'config/quiz-batch-public-proof.json').read_text())
-    proof = proofs.get(post_id, {})
-    matches = [post for post in posts if post['id'] == post_id]
-    if (len(matches) != 1 or proof.get('sourceCommentId') != '1472595814813209'
-            or proof.get('repairReleaseId') != '2269299303907745'
-            or proof.get('integrationId') != 'cmvwb4faa021yro9dgcj8vlww'):
-        raise ValueError('The explicitly verified Facebook comment repair evidence is missing.')
-    post = matches[0]
-    if (post.get('releaseId') != proof['repairReleaseId'] or
-            post.get('integration', {}).get('id') != proof['integrationId']):
-        raise ValueError('The provider receipt differs from the existing public Reel; no metadata update allowed.')
-    if post['state'] == 'PUBLISHED':
-        return 'Already reconciled; no write.'
-    if post['state'] != 'ERROR':
-        raise ValueError('Unexpected receipt state; hold instead of changing a queued post.')
-    api('/posts/' + post_id + '/release-id', {'releaseId': proof['repairReleaseId']}, method='PUT')
-    return 'Linked the already published Reel. No video was uploaded, scheduled or republished.'
-
-
 def main():
     request('/is-connected')
     channels = request('/integrations')
@@ -70,11 +47,6 @@ def main():
         safe.append(entry)
     output = {'connectedChannels': safe, 'prices': request('/wallet/prices'), 'wallet': request('/wallet')}
     posts = request('/posts?startDate=2026-10-31T00%3A00%3A00Z&endDate=2026-11-01T00%3A00%3A00Z')['posts']
-    if os.environ.get('RECONCILE_LAUNCH_RECEIPT') == 'true':
-        if os.environ.get('GITHUB_EVENT_NAME') != 'workflow_dispatch':
-            raise ValueError('Receipt repair is permitted only through an explicit manual dispatch.')
-        output['receiptRepair'] = reconcile_approved_receipt(posts)
-        posts = request('/posts?startDate=2026-10-31T00%3A00%3A00Z&endDate=2026-11-01T00%3A00%3A00Z')['posts']
     output['launchReceipts'] = []
     for post in posts:
         receipt = {field: post.get(field) for field in ('id', 'state', 'releaseURL', 'releaseId', 'publishDate')}
