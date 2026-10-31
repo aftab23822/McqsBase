@@ -249,7 +249,9 @@ def main():
         raise ValueError('Rollout validation is restricted to the one approved latest article.')
     if args.phase == 'plan':
         generate_new = slug is not None and state.get('videoBatches', {}).get(slug, {}).get('status') not in ('ready', 'scheduling')
-        work = generate_new or any(item['status'] in ('ready', 'scheduling', 'scheduled') for item in state.get('videoBatches', {}).values())
+        work_states = ('ready', 'scheduling', 'scheduled') + (
+            ('provider-published', 'publication-needs-attention') if args.verify_only else ())
+        work = generate_new or any(item['status'] in work_states for item in state.get('videoBatches', {}).values())
         with Path(os.environ['GITHUB_OUTPUT']).open('a', encoding='utf-8') as stream:
             stream.write(f'generate={str(generate_new).lower()}\nwork={str(work).lower()}\n')
         print(json.dumps({'generate': generate_new, 'work': work, 'slug': slug}))

@@ -1,6 +1,7 @@
 """Publication selection and durable-state regressions for the new batch route."""
 from copy import deepcopy
 import importlib.util
+import json
 from pathlib import Path
 import os
 import subprocess
@@ -15,6 +16,20 @@ spec.loader.exec_module(worker)
 
 
 class Worker(unittest.TestCase):
+    def test_manual_verification_gate_keeps_provider_only_and_held_receipts_eligible(self):
+        for status in ('provider-published', 'publication-needs-attention'):
+            state = {'articles': {}, 'videoBatches': {'latest': {'status': status}}}
+            storage = type('Storage', (), {'sha': 'existing-state', 'load': lambda _: state})()
+            with tempfile.TemporaryDirectory() as temp, \
+                 patch.object(worker.cloud, 'GitHubState', return_value=storage), \
+                 patch.object(worker.subprocess, 'check_output', return_value=json.dumps([{'slug': 'latest', 'date': '2026-11-02'}])), \
+                 patch.object(sys, 'argv', ['worker', '--phase', 'plan', '--verify-only']), \
+                 patch.dict(os.environ, {'GH_TOKEN': 'test', 'GITHUB_REPOSITORY': 'owner/repo', 'GITHUB_OUTPUT': str(Path(temp) / 'output')}):
+                worker.main()
+                output = (Path(temp) / 'output').read_text()
+                self.assertIn('generate=false', output)
+                self.assertIn('work=true', output)
+
     def test_old_comment_failure_is_held_without_suppressing_a_new_ready_batch(self):
         fixture = worker.module('isolation_fixture', 'test-studio-cloud.py')
         old, api = fixture.record(), fixture.Fake()
@@ -36,6 +51,7 @@ class Worker(unittest.TestCase):
         def schedule(api, record, channels, save, slots):
             scheduled.append(record['slug'])
             record['status'] = 'scheduled'
+            record['schedule'] = slots
             save(record)
         storage = type('Storage', (), {'save': lambda *_: None})()
         with patch.object(worker, 'Ledger', side_effect=ledger_factory), \
