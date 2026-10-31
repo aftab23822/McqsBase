@@ -52,7 +52,7 @@ def validate_part(manifest, package, part, start):
     return expected[-1] + 1
 
 
-def build_batch(package, output, render_part, decode):
+def build_batch(package, output, render_part, decode, completed=None):
     """Recover complete parts, but release no scheduling manifest until all five pass."""
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
@@ -69,6 +69,8 @@ def build_batch(package, output, render_part, decode):
         parts.append({'part': part, 'directory': folder.name, 'sourceQuestionNumbers': manifest['sequence']['sourceQuestionNumbers'],
                       'count': manifest['count'], 'durationSeconds': manifest['durationSeconds'],
                       'sha256': hashlib.sha256(video.read_bytes()).hexdigest()})
+        if completed:
+            completed(part, folder, manifest, parts[-1])
     batch = {'version': 1, 'status': 'ready-for-scheduling', 'slug': package['slug'],
              'sourceUrl': package['url'], 'sourceTitle': package['title'],
              'sourceContentHash': package['contentHash'], 'productionDeployment': package['productionDeployment'],

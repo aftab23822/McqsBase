@@ -55,8 +55,13 @@ def upload_video(storage, repository, slug, video):
         release = response.json()
     if release.get('draft'):
         raise RuntimeError('Metricool cannot ingest media from a private draft release.')
-    assets = storage.api('GET', f'/releases/{release["id"]}/assets', params={'per_page': 100})
-    asset = next((a for a in assets if a['name'] == filename), None)
+    asset, page = None, 1
+    while asset is None:
+        assets = storage.api('GET', f'/releases/{release["id"]}/assets', params={'per_page': 100, 'page': page})
+        asset = next((a for a in assets if a['name'] == filename), None)
+        if asset or len(assets) < 100:
+            break
+        page += 1
     if asset is None:
         endpoint = release['upload_url'].split('{')[0]
         if endpoint != f'https://uploads.github.com/repos/{repository}/releases/{release["id"]}/assets':

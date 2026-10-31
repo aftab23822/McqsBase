@@ -38,7 +38,11 @@ def main():
         entry['availableFields'] = sorted(channel)
         entry['settings'] = request('/integration-settings/' + channel['id'])
         if channel['identifier'] == 'tiktok':
-            entry['creatorInfo'] = request('/integration-trigger/' + channel['id'], {'methodName': 'creatorInfo', 'data': {}})
+            creator = request('/integration-trigger/' + channel['id'], {'methodName': 'creatorInfo', 'data': {}})['output']
+            entry['creatorInfo'] = {field: creator.get(field) for field in ('canPost', 'errorCode', 'nickname',
+                'username', 'privacyLevelOptions', 'commentDisabled', 'maxVideoPostDurationSec')}
+        entry['freeEstimate'] = request('/wallet/estimate', {'provider': channel['identifier'],
+            'contents': ['MCQsBase quiz. https://www.mcqsbase.com/blog']})
         safe.append(entry)
     output = {'connectedChannels': safe, 'prices': request('/wallet/prices'), 'wallet': request('/wallet')}
     path = Path('.social-automation/studio-connection.json')
