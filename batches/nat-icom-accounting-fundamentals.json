@@ -1856,6 +1856,233 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 4,
+      "directory": "part-04",
+      "sourceQuestionNumbers": [
+        6,
+        7
+      ],
+      "count": 2,
+      "durationSeconds": 84,
+      "sha256": "d8fefe28a58a47ccd38a0b5cf5430e0e00e4a9cb93461e543b8240fdd987e6cf",
+      "manifest": {
+        "title": "100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+        "sourceTitle": "100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-10-31T11:54:37.301187+00:00",
+        "sourceContentHash": "8a6fcd5429294157cc114c910e6aff610dc3f1b1bca69aacdb0b2bbc211ec56c",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7458231260,
+          "sha": "befb67b6992588ffb05d61b532a69c37431ee2bc",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-10-31T11:54:37.301187+00:00",
+          "url": "https://mcqs-base-ecar7mvc7-as-projects-10921176.vercel.app",
+          "publisherRunId": 41192403443
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 84,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "The owner withdraws Rs. 7,000 cash for personal use. How should this transaction affect the business records?",
+            "choices": [
+              "Cash and owner's equity decrease by Rs. 7,000",
+              "Cash decreases and an expense increases by Rs. 7,000",
+              "Cash and revenue decrease by Rs. 7,000",
+              "Liabilities and cash decrease by Rs. 7,000"
+            ],
+            "correctIndex": 0,
+            "key": "0615ffcff7305634b80359ab05a382ab4fbac32cac439111bcba9b2515d89a07",
+            "sourceNumber": 6
+          },
+          {
+            "question": "A business buys supplies costing Rs. 9,000 on credit. What is the immediate effect on the accounting equation?",
+            "choices": [
+              "Assets and liabilities each increase by Rs. 9,000",
+              "Assets increase and equity decreases by Rs. 9,000",
+              "Liabilities and equity each increase by Rs. 9,000",
+              "Total assets remain unchanged"
+            ],
+            "correctIndex": 0,
+            "key": "8839ef72e8c62cf04afef9600002ea7f356e2923f67d9b76be6ea6f397fc1b2e",
+            "sourceNumber": 7
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 30,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 30,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 31,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 32,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 33,
+            "duration": 7,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 40,
+            "duration": 28,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 68,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 69,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 70,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 71,
+            "duration": 8,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 79,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "sequence": {
+          "part": 4,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            6,
+            7
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NATICOM",
+          "#Accounting",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-icom-accounting-fundamentals-part-04-d8fefe28a58a47cc.mp4",
+        "videoSha256": "d8fefe28a58a47ccd38a0b5cf5430e0e00e4a9cb93461e543b8240fdd987e6cf",
+        "assetId": 695266770
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 4/5 | Q6–7 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+          "text": "Part 4/5 · Source questions 6–7\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICOM",
+            "#Accounting",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 4/5 | Q6–7 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+          "text": "Part 4/5 · Source questions 6–7\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICOM",
+            "#Accounting",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 4/5 | Q6–7 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+          "text": "Part 4/5 · Source questions 6–7\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICOM",
+            "#Accounting",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 4/5 | Q6–7 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+          "text": "Part 4/5 · Source questions 6–7\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICOM",
+            "#Accounting",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
