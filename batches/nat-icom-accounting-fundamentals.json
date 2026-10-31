@@ -2083,6 +2083,233 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 5,
+      "directory": "part-05",
+      "sourceQuestionNumbers": [
+        8,
+        9
+      ],
+      "count": 2,
+      "durationSeconds": 67,
+      "sha256": "f8da6804125819120662425a6d6d52bb2e412603d45c9207bcc1c478db0ad528",
+      "manifest": {
+        "title": "100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+        "sourceTitle": "100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-10-31T11:54:37.301187+00:00",
+        "sourceContentHash": "8a6fcd5429294157cc114c910e6aff610dc3f1b1bca69aacdb0b2bbc211ec56c",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7458231260,
+          "sha": "befb67b6992588ffb05d61b532a69c37431ee2bc",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-10-31T11:54:37.301187+00:00",
+          "url": "https://mcqs-base-ecar7mvc7-as-projects-10921176.vercel.app",
+          "publisherRunId": 41192403443
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 67,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A business begins a period with capital of Rs. 100,000, earns profit of Rs. 22,000, and the owner withdraws Rs. 5,000. What is ending equity, assuming no other equity changes?",
+            "choices": [
+              "Rs. 117,000",
+              "Rs. 127,000",
+              "Rs. 83,000",
+              "Rs. 122,000"
+            ],
+            "correctIndex": 0,
+            "key": "32168bba336839275c1fa0dfce2c4c27056c8b434d20b4d534250ee6149ed3bf",
+            "sourceNumber": 8
+          },
+          {
+            "question": "Which item is normally an asset of a business before it is used up?",
+            "choices": [
+              "Prepaid insurance",
+              "Electricity expense",
+              "Accounts payable",
+              "Sales revenue"
+            ],
+            "correctIndex": 0,
+            "key": "a1fadb96747b100d2f00b54ec34ee83636993cb51a06a4cb62f7f5f926c734fb",
+            "sourceNumber": 9
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 30,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 30,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 31,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 32,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 33,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 39,
+            "duration": 16,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 55,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 56,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 57,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 58,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 62,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "sequence": {
+          "part": 5,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            8,
+            9
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NATICOM",
+          "#Accounting",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-icom-accounting-fundamentals-part-05-f8da680412581912.mp4",
+        "videoSha256": "f8da6804125819120662425a6d6d52bb2e412603d45c9207bcc1c478db0ad528",
+        "assetId": 695269101
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 5/5 | Q8–9 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+          "text": "Part 5/5 · Source questions 8–9\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICOM",
+            "#Accounting",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 5/5 | Q8–9 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+          "text": "Part 5/5 · Source questions 8–9\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICOM",
+            "#Accounting",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 5/5 | Q8–9 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+          "text": "Part 5/5 · Source questions 8–9\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICOM",
+            "#Accounting",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 5/5 | Q8–9 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+          "text": "Part 5/5 · Source questions 8–9\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICOM",
+            "#Accounting",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
