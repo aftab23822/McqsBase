@@ -67,7 +67,7 @@ def summary(state, record, ledger):
 def choose(state, articles):
     # Resume an existing incomplete batch before creating a second batch for that article.
     for slug, entry in state.get('videoBatches', {}).items():
-        if entry['status'] not in ('published', 'scheduled', 'skipped'):
+        if entry['status'] in ('rendering', 'retry'):
             return slug
     newest = articles[0]
     slug = newest['slug']
@@ -244,8 +244,9 @@ def main():
             stream.write(f'generate={str(generate_new).lower()}\nwork={str(work).lower()}\n')
         print(json.dumps({'generate': generate_new, 'work': work, 'slug': slug}))
     elif args.phase == 'render':
-        if slug:
+        while slug:
             generate(storage, state, slug, publisher_run)
+            slug = choose(state, articles)
     else:
         studio = publisher.Studio()
         channels = publisher.connected(studio, POLICY)

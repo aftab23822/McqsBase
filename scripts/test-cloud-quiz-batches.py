@@ -30,9 +30,14 @@ class Worker(unittest.TestCase):
         self.assertEqual(worker.choose({'articles': {slug: {'status': 'not-selected'}}},
             [{'slug': slug, 'date': '2026-10-31'}]), slug)
 
-    def test_existing_partial_batch_resumes_before_another_article(self):
-        state = {'articles': {}, 'videoBatches': {'reserved': {'status': 'scheduling'}}}
+    def test_existing_partial_render_resumes_before_another_article(self):
+        state = {'articles': {}, 'videoBatches': {'reserved': {'status': 'rendering'}}}
         self.assertEqual(worker.choose(state, [{'slug': 'latest', 'date': '2026-11-02'}]), 'reserved')
+
+    def test_ready_or_partial_publications_do_not_suppress_the_next_daily_article(self):
+        for status in ('ready', 'scheduling'):
+            state = {'articles': {}, 'videoBatches': {'reserved': {'status': status}}}
+            self.assertEqual(worker.choose(state, [{'slug': 'latest', 'date': '2026-11-02'}]), 'latest')
 
     def test_scheduled_batch_is_not_rendered_again(self):
         state = {'articles': {}, 'videoBatches': {'latest': {'status': 'scheduled'}}}
