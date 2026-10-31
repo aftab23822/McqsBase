@@ -53,7 +53,7 @@ def extract_questions(body, include_answers=False):
             choices.append(match.group(1))
         key = hashlib.sha256(question.casefold().encode()).hexdigest()
         if question and len(choices) == 4 and len(set(choices)) == 4 and key not in seen:
-            item = {'question': question, 'choices': choices, 'key': key}
+            item = {'question': question, 'choices': choices, 'key': key, 'sourceNumber': int(cells[1].strip())}
             if include_answers:
                 answer = plain_text(re.split(r'<br\s*/?\s*>', cells[3], flags=re.I)[0])
                 match = re.fullmatch(r'([A-D])\)\s*(.+)', answer)
@@ -78,6 +78,24 @@ def select_questions(questions, count, seed):
     if len(eligible) < count:
         raise ValueError(f'Only {len(eligible)} short questions found; need {count}.')
     return random.Random(seed).sample(eligible, count)
+
+
+def ordered_questions(questions, start, count):
+    """Use consecutive source rows, never silently skip an invalid source MCQ."""
+    if type(start) is not int or start < 1 or count < 1:
+        raise ValueError('Ordered selection requires a positive starting question and count.')
+    numbers = [q.get('sourceNumber') for q in questions]
+    if any(type(n) is not int or n < 1 for n in numbers) or len(numbers) != len(set(numbers)):
+        raise ValueError('Ordered selection requires unique original source question numbers.')
+    indexed = dict(zip(numbers, questions))
+    expected = list(range(start, start + count))
+    if not all(number in indexed for number in expected):
+        raise ValueError('A required consecutive source question is invalid or missing; do not skip it.')
+    return [indexed[number] for number in expected]
+
+
+def question_number(args, item, local_index):
+    return item['sourceNumber'] if getattr(args, 'selection', 'random') == 'ordered' else local_index
 
 
 def find_font(explicit=None, bold=False):
@@ -140,7 +158,7 @@ def load_article_package(filename):
     if package.get('url') != expected_url:
         raise ValueError('The source URL must match the canonical MCQsBase article URL.')
     questions, seen = [], set()
-    for item in package.get('questions', []):
+    for ordinal, item in enumerate(package.get('questions', []), 1):
         question, choices, correct = item.get('question'), item.get('choices'), item.get('correctIndex')
         if (not isinstance(question, str) or not question.strip() or not isinstance(choices, list)
                 or len(choices) != 4 or any(not isinstance(c, str) or not c.strip() for c in choices)
@@ -148,7 +166,11 @@ def load_article_package(filename):
             raise ValueError('The article package contains an invalid question or answer.')
         key = hashlib.sha256(question.casefold().encode()).hexdigest()
         if key not in seen:
-            questions.append({'question': question, 'choices': choices, 'correctIndex': correct, 'key': key})
+            source_number = item.get('sourceNumber', ordinal)
+            if type(source_number) is not int or source_number < 1:
+                raise ValueError('Invalid original source question number.')
+            questions.append({'question': question, 'choices': choices, 'correctIndex': correct,
+                              'key': key, 'sourceNumber': source_number})
             seen.add(key)
     return package, questions
 
@@ -166,7 +188,7 @@ def prepare_voice(args, output, selected, display_title):
                      f'Listen to each question, then you have {args.seconds} seconds to choose your answer.'})
     for index, item in enumerate(selected, 1):
         choices = ' '.join(f'Option {label}. {spoken_text(choice)}.' for label, choice in zip('ABCD', item['choices']))
-        jobs.append({'id': f'q{index}', 'text': f'Question {index}. {spoken_text(item["question"])} {choices}'})
+        jobs.append({'id': f'q{index}', 'text': f'Question {question_number(args, item, index)}. {spoken_text(item["question"])} {choices}'})
         if args.reveal:
             correct = item['correctIndex']
             jobs.append({'id': f'a{index}', 'text': f'The correct answer is option {"ABCD"[correct]}. '
@@ -268,7 +290,9 @@ def create_video(args):
         questions = extract_questions(source.read_text(encoding='utf-8'), args.reveal)
     if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', args.slug):
         raise ValueError('Use an article slug containing lowercase letters, numbers and hyphens.')
-    selected = select_questions(questions, args.count, args.seed)
+    ordered = getattr(args, 'selection', 'random') == 'ordered'
+    selected = (ordered_questions(questions, args.start_question, args.count) if ordered
+                else select_questions(questions, args.count, args.seed))
     output = Path(args.output).resolve()
     output.mkdir(parents=True, exist_ok=True)
     frames_dir = output / 'frames'
@@ -334,7 +358,9 @@ def create_video(args):
     def question_card(item, index, reveal=False):
         card = base.copy()
         text_block(card, display_title, (92, 240, 976, 384), 47, minimum=28, color=gold, heavy=True)
-        text_block(card, f'QUESTION {index:02d} / {args.count:02d}', (92, 402, 780, 467), 33, color=muted, heavy=True)
+        counter = (f'QUESTION {question_number(args, item, index):02d} · PART {args.batch_part}/{args.batch_size}'
+                   if ordered else f'QUESTION {index:02d} / {args.count:02d}')
+        text_block(card, counter, (92, 402, 780, 467), 33, color=muted, heavy=True)
         text_block(card, item['question'], (92, 520, 976, 790), 66, heavy=True)
         painter = ImageDraw.Draw(card)
         for i, option in enumerate(item['choices']):
@@ -408,7 +434,8 @@ def create_video(args):
     pending_video = output / 'mcqsbase-quiz.rendering.mp4'
     subprocess.run([find_ffmpeg(args.ffmpeg), '-hide_banner', '-loglevel', 'error', '-y',
                     '-f', 'concat', '-safe', '0', '-i', str(concat), '-i', str(audio),
-                    '-t', str(duration), '-r', '24', '-c:v', 'libx264', '-preset', 'fast',
+                    '-t', str(duration), '-vf', 'fps=24,tpad=stop_mode=clone:stop_duration=1',
+                    '-r', '24', '-c:v', 'libx264', '-preset', 'fast',
                     '-crf', '23', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '128k',
                     '-ar', '48000', '-movflags', '+faststart', str(pending_video)], check=True)
     pending_video.replace(video)
@@ -433,12 +460,20 @@ def create_video(args):
     manifest['outroIncluded'] = args.include_outro
     manifest['requestedCount'] = requested_count
     manifest['maxDurationSeconds'] = args.max_duration
+    if ordered:
+        manifest['sequence'] = {'part': args.batch_part, 'totalParts': args.batch_size,
+                                'sourceQuestionNumbers': [q['sourceNumber'] for q in selected]}
     manifest['hashtags'] = social.hashtags(source_title)
     pending_manifest = output / 'manifest.tmp'
     pending_manifest.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding='utf-8')
     pending_manifest.replace(output / 'manifest.json')
     (output / 'first-comment.txt').write_text(f'Full practice set and answers: {source_url}\n', encoding='utf-8')
     captions = social.social_copy(display_title, args.count, source_url)
+    if ordered:
+        first, last = selected[0]['sourceNumber'], selected[-1]['sourceNumber']
+        for caption in captions.values():
+            caption['text'] = f'Part {args.batch_part}/{args.batch_size} · Source questions {first}–{last}\n' + caption['text']
+            caption['title'] = f'Part {args.batch_part}/{args.batch_size} | Q{first}–{last} | {display_title}'[:100]
     (output / 'caption.txt').write_text(captions['facebook']['text'] + '\n', encoding='utf-8')
     (output / 'platform-captions.json').write_text(json.dumps(captions, ensure_ascii=False, indent=2), encoding='utf-8')
     question_preview = next(segment['frame'] for segment in timeline if segment['question'] == 1)
@@ -455,6 +490,10 @@ if __name__ == '__main__':
     source_group.add_argument('--slug')
     source_group.add_argument('--article-json', help='Validated source package fetched from the live blog.')
     parser.add_argument('--count', type=int, choices=range(1, 21), default=social.POLICY['questionLimit'])
+    parser.add_argument('--selection', choices=('random', 'ordered'), default='random')
+    parser.add_argument('--start-question', type=int, default=1)
+    parser.add_argument('--batch-part', type=int, default=1)
+    parser.add_argument('--batch-size', type=int, default=5)
     parser.add_argument('--max-duration', type=int, default=social.POLICY['maxDurationSeconds'],
                         help='Maximum complete timeline in seconds; reduce questions to fit, 0 for uncapped.')
     parser.add_argument('--include-intro', action='store_true', help='Opt in to the old opening card and narration.')

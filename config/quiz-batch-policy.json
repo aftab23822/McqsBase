@@ -1,0 +1,18 @@
+{
+  "enabled": false,
+  "provider": "voholabs-studio",
+  "firstArticle": "nat-icom-accounting-fundamentals",
+  "firstDate": "2026-10-31",
+  "videoCount": 5,
+  "questionLimit": 3,
+  "thinkingSeconds": 3,
+  "maxDurationSeconds": 89,
+  "timezone": "Asia/Karachi",
+  "spacingMinutes": 30,
+  "channels": {
+    "facebook": {"id": "cmvwb4faa021yro9dgcj8vlww", "name": "McqsBase", "profile": "", "identifier": "facebook"},
+    "instagram": {"id": "cmvwbbtq00220ro9du35l1wrs", "name": "McqsBase", "profile": "mcqsbase", "identifier": "instagram-standalone"},
+    "tiktok": {"id": "cmvwbcule0222ro9dhocbic4w", "name": "McqsBase", "profile": "mcqsbase", "identifier": "tiktok"},
+    "youtube": {"id": "cmvwb2nny021wro9d0gxp3wm4", "name": "McqsBase", "profile": "@mcqsbase", "identifier": "youtube"}
+  }
+}

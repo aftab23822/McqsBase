@@ -43,6 +43,7 @@ jobs:
       - name: Check parsing, title selection, answer reveals and duplicate protection
         run: |
           python scripts/test-quiz-video.py
+          python scripts/test-quiz-batch.py
           python scripts/test-blog-video-watcher.py
           python scripts/test-cloud-blog-videos.py
           python scripts/test-quiz-social-policy.py

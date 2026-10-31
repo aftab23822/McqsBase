@@ -1,0 +1,131 @@
+name: Blog Quiz Batches
+on:
+  workflow_run:
+    workflows: ['Daily Blog Autopilot']
+    types: [completed]
+    branches: [master]
+  workflow_dispatch:
+    inputs:
+      validation:
+        description: 'Validate the approved October 31 rollout article before enabling the cutover'
+        type: boolean
+        default: false
+      spacing:
+        description: 'Minutes between today’s five videos (5 for the practical launch, normally 30)'
+        type: choice
+        options: ['30', '5']
+        default: '30'
+      verify_only:
+        description: 'Read and reconcile existing post receipts without rendering or creating posts'
+        type: boolean
+        default: false
+  pull_request:
+    paths:
+      - 'scripts/*studio*'
+      - 'scripts/*quiz-batch*'
+      - 'config/quiz-batch-policy.json'
+      - '.github/workflows/blog-quiz-batches.yml'
+permissions:
+  contents: read
+concurrency:
+  group: blog-quiz-batches-${{ github.event_name == 'pull_request' && github.head_ref || 'production' }}
+  cancel-in-progress: false
+jobs:
+  tests:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install requests==2.32.5
+      - run: |
+          python scripts/test-quiz-batch.py
+          python scripts/test-studio-cloud.py
+  plan:
+    if: >-
+      github.ref == 'refs/heads/master' &&
+      (github.event_name == 'workflow_dispatch' ||
+       (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' &&
+        github.event.workflow_run.head_repository.full_name == github.repository))
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      actions: read
+    outputs:
+      generate: ${{ steps.plan.outputs.generate }}
+      work: ${{ steps.plan.outputs.work }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: master}
+      - run: python -m pip install requests==2.32.5
+      - name: Check latest article and existing ledger without voices or rendering
+        id: plan
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VALIDATE: ${{ inputs.validation == true && '--validation' || '' }}
+          VERIFY: ${{ inputs.verify_only == true && '--verify-only' || '' }}
+        run: python scripts/cloud-quiz-batches.py --phase plan $VALIDATE $VERIFY
+  render:
+    needs: plan
+    if: needs.plan.outputs.generate == 'true' && inputs.verify_only != true
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+      deployments: read
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: master}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: scripts/video-requirements.txt
+      - run: python -m pip install -r scripts/video-requirements.txt
+      - uses: actions/cache@v4
+        with:
+          path: .social-automation/voices
+          key: kokoro-english-fp16-v1-1
+      - run: python scripts/download-kokoro-voice.py
+      - name: Render, decode and save all five sequential Shorts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VALIDATE: ${{ inputs.validation == true && '--validation' || '' }}
+        run: python scripts/cloud-quiz-batches.py --phase render $VALIDATE
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: five-video-batch-${{ github.run_id }}
+          path: |
+            .social-automation/five-video-batch/*/batch.json
+            .social-automation/five-video-batch/*/part-*/mcqsbase-quiz.mp4
+            .social-automation/five-video-batch/*/part-*/manifest.json
+            .social-automation/five-video-batch/*/part-*/preview.png
+            .social-automation/five-video-batch/*/part-*/reveal-preview.png
+            .social-automation/five-video-batch/*/part-*/platform-captions.json
+          retention-days: 35
+          if-no-files-found: ignore
+  schedule:
+    needs: [plan, render]
+    if: >-
+      always() && needs.plan.result == 'success' && needs.plan.outputs.work == 'true' &&
+      (needs.render.result == 'success' || needs.render.result == 'skipped')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: master}
+      - run: python -m pip install requests==2.32.5
+      - name: Verify exact imported bytes, then schedule twenty free posts with durable receipts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MCQS_STUDIO_API_KEY: ${{ secrets.MCQS_STUDIO_API_KEY }}
+          VALIDATE: ${{ inputs.validation == true && '--validation' || '' }}
+          SPACING: ${{ inputs.spacing || '30' }}
+          VERIFY: ${{ inputs.verify_only == true && '--verify-only' || '' }}
+        run: python scripts/cloud-quiz-batches.py --phase publish --spacing "$SPACING" $VALIDATE $VERIFY

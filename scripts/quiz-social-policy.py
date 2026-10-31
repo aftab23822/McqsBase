@@ -11,6 +11,7 @@ POLICY = json.loads((ROOT / 'config/quiz-social-policy.json').read_text(encoding
 
 def hashtags(title):
     topic_rules = [
+        (r'\bnat[- ]?icom\b|\baccounting\b', ['NATICOM', 'Accounting']),
         (r'\bnat[- ]?ics\b', ['NATICS', 'ComputerScience']),
         (r'(?=.*\bcomsats\b)(?=.*\bquantitative\b)', ['COMSATS', 'QuantitativeAptitude']),
         (r'\bcomputer science\b', ['ComputerScience', 'ComputerQuiz']),

@@ -15,11 +15,18 @@ spec.loader.exec_module(social)
 
 def validate_package(entry, manifest):
     """Fail closed for samples, altered provenance, or an early answer reveal."""
-    source_url = 'https://www.mcqsbase.com/blog/' + entry['slug']
+    if entry.get('status') != 'ready' or not entry.get('campaign'):
+        raise ValueError('A selected, ready quiz with verified published source evidence is required.')
+    return validate_video(manifest, entry['slug'], entry.get('sourceTitle'),
+                          entry['campaign'].get('thinkingSeconds', 5))
+
+
+def validate_video(manifest, slug, source_title, thinking_seconds=3):
+    """Provider-independent checks of the approved source, voice and reveal timing."""
+    source_url = 'https://www.mcqsbase.com/blog/' + slug
     proof = manifest.get('productionDeployment') or {}
-    if (entry.get('status') != 'ready' or not entry.get('campaign')
-            or manifest.get('sourceUrl') != source_url
-            or manifest.get('sourceTitle') != entry.get('sourceTitle')
+    if (manifest.get('sourceUrl') != source_url
+            or manifest.get('sourceTitle') != source_title
             or not manifest.get('sourceTitle') or not manifest.get('title')
             or manifest.get('sourceVerification') != 'production-deployment'
             or proof.get('environment') != 'Production' or proof.get('state') != 'success'
@@ -30,7 +37,6 @@ def validate_package(entry, manifest):
     count = manifest.get('count')
     # Campaigns created before this setting was recorded used five seconds.
     # Their published assets retain that format; new reservations snapshot three.
-    thinking_seconds = entry['campaign'].get('thinkingSeconds', 5)
     if (type(count) is not int or not 1 <= count <= social.POLICY['questionLimit']
             or len(manifest.get('questions', [])) != count
             or manifest.get('width') != 1080 or manifest.get('height') != 1920
