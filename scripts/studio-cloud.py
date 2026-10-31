@@ -124,7 +124,8 @@ def post_item(network, channel, caption, media):
     settings = {'__type': channel['identifier']}
     if network == 'facebook':
         settings.update(post_type='post', title=caption['title'][:100])
-        value.append({'content': caption['firstCommentText'], 'image': [], 'delay': 0})
+        # Meta can return a Reel ID before it accepts comments against that ID.
+        value.append({'content': caption['firstCommentText'], 'image': [], 'delay': 1})
     elif network == 'instagram':
         settings.update(post_type='post', is_trial_reel=False)
     elif network == 'youtube':
@@ -174,6 +175,7 @@ def reconcile(part, posts, channels):
         if receipt.get('postId') and post['id'] != receipt['postId']:
             raise RuntimeError('Unexpected Studio post ID; hold rather than create another post.')
         state = post.get('state')
+        provider_state = state
         if state not in ('QUEUE', 'PUBLISHED', 'ERROR', 'DRAFT'):
             raise RuntimeError('Unrecognized provider status; hold publication.')
         if state == 'PUBLISHED' and not post.get('releaseURL'):
@@ -190,9 +192,16 @@ def reconcile(part, posts, channels):
                 and proof['sourceUrl'] == part['captions'][network]['sourceUrl']):
             url = proof['url']
             proof_applied = True
+        if (state == 'ERROR' and proof_applied and proof.get('resolvedProviderError') is True
+                and proof.get('sourceCommentId') and proof.get('repairReleaseId') == post.get('releaseId')
+                and post_url(network, url)):
+            # One explicitly verified comment-only repair may resolve a stale scheduler flag.
+            # Keep the actual provider error visible; never retry the already public video.
+            state = 'PUBLISHED'
         verified = state == 'PUBLISHED' and post_url(network, url)
         receipts[network] = {**receipt, 'postId': post['id'], 'status': state,
             'url': url, 'providerUrl': post.get('releaseURL'), 'providerReleaseId': post.get('releaseId'),
+            'providerStatus': provider_state,
             'publicUrlVerified': verified, 'verification': proof['method'] if verified and proof_applied else
                 'provider-post-url' if verified else 'provider-status-only', 'integrationId': channels[network]['id']}
         if proof_applied and proof.get('sourceCommentId'):

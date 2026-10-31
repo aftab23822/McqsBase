@@ -4,6 +4,11 @@ on:
     branches: ['codex/five-video-blog-batches', 'codex/activate-daily-quiz-batches', 'codex/quiz-batch-launch-proof']
     paths: ['scripts/probe-studio-cloud.py', '.github/workflows/studio-connection.yml']
   workflow_dispatch:
+    inputs:
+      reconcile_launch_receipt:
+        description: 'Metadata only: link the existing Facebook Part 3 after its source-comment repair (never republish)'
+        type: boolean
+        default: false
 permissions:
   contents: read
 jobs:
@@ -15,6 +20,7 @@ jobs:
       - name: Read four channel identities and posting schemas without creating posts
         env:
           MCQS_STUDIO_API_KEY: ${{ secrets.MCQS_STUDIO_API_KEY }}
+          RECONCILE_LAUNCH_RECEIPT: ${{ inputs.reconcile_launch_receipt == true && 'true' || 'false' }}
         run: python scripts/probe-studio-cloud.py
       - uses: actions/upload-artifact@v4
         with:

@@ -4,6 +4,7 @@ from datetime import datetime, timedelta, timezone
 import importlib.util
 from pathlib import Path
 import unittest
+from unittest.mock import patch
 
 spec = importlib.util.spec_from_file_location('studio', Path(__file__).with_name('studio-cloud.py'))
 studio = importlib.util.module_from_spec(spec)
@@ -56,6 +57,25 @@ class Fake:
 
 
 class Publishing(unittest.TestCase):
+    def test_verified_comment_only_repair_preserves_provider_error_and_never_reposts_video(self):
+        fake, batch = Fake(), record()
+        studio.schedule_batch(fake, batch, channels(), lambda r: None, slots())
+        part = batch['parts'][0]
+        part['sha256'] = 'a' * 64
+        fake.calendar[0].update(state='ERROR', releaseURL='https://www.facebook.com/reel/123', releaseId='123')
+        proof = {'integrationId': 'facebook', 'videoSha256': 'a' * 64,
+            'sourceUrl': part['captions']['facebook']['sourceUrl'], 'url': fake.calendar[0]['releaseURL'],
+            'method': 'Directly verified public Reel and repaired Page comment', 'sourceCommentId': '456',
+            'repairReleaseId': '123', 'resolvedProviderError': True}
+        with patch.object(studio, 'PUBLIC_PROOFS', {'1': proof}):
+            studio.schedule_batch(fake, batch, channels(), lambda r: None, slots())
+        receipt = part['receipts']['facebook']
+        self.assertEqual(receipt['providerStatus'], 'ERROR')
+        self.assertEqual(receipt['status'], 'PUBLISHED')
+        self.assertEqual(receipt['sourceCommentId'], '456')
+        self.assertTrue(receipt['publicUrlVerified'])
+        self.assertEqual(fake.writes, 5)
+
     def test_tiktok_profile_is_not_a_verified_public_video(self):
         self.assertFalse(studio.post_url('tiktok', 'https://www.tiktok.com/@mcqsbase'))
         self.assertTrue(studio.post_url('tiktok', 'https://www.tiktok.com/@mcqsbase/video/7702804896810011924'))
@@ -118,6 +138,7 @@ class Publishing(unittest.TestCase):
         batch = record()
         facebook = studio.post_item('facebook', channels()['facebook'], batch['parts'][0]['captions']['facebook'], batch['parts'][0]['studioMedia'])
         self.assertEqual(facebook['value'][1]['content'], batch['parts'][0]['captions']['facebook']['sourceUrl'])
+        self.assertEqual(facebook['value'][1]['delay'], 1)
         tiktok = studio.post_item('tiktok', channels()['tiktok'], batch['parts'][0]['captions']['tiktok'], batch['parts'][0]['studioMedia'])
         self.assertEqual(tiktok['settings']['content_posting_method'], 'DIRECT_POST')
         self.assertEqual(tiktok['settings']['privacy_level'], 'PUBLIC_TO_EVERYONE')
