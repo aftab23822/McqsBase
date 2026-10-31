@@ -12,12 +12,17 @@ def request(path):
     key = os.environ.get('MCQS_STUDIO_API_KEY', '')
     if not key:
         raise RuntimeError('MCQS_STUDIO_API_KEY is not available to this cloud job.')
-    req = urllib.request.Request(BASE + path, headers={'Authorization': key, 'Accept': 'application/json'})
+    req = urllib.request.Request(BASE + path, headers={'Authorization': key, 'Accept': 'application/json',
+        'User-Agent': 'MCQsBase-Cloud-Publisher/1.0'})
     try:
         with urllib.request.urlopen(req, timeout=60) as response:
             return json.load(response)
     except urllib.error.HTTPError as error:
-        raise RuntimeError(f'Studio read failed with HTTP {error.code}; no response body logged.') from None
+        body = error.read().decode('utf-8', errors='replace').lower()
+        reason = next((x for x in ('invalid api key', 'invalid oauth token', 'no api key found',
+            'insufficient', 'permission', 'cloudflare', 'not allowed', 'forbidden') if x in body), 'unclassified')
+        raise RuntimeError(f'Studio {path} returned HTTP {error.code} ({reason}; '
+            f'content type {error.headers.get("Content-Type", "unknown")}). No response body logged.') from None
 
 
 def main():
