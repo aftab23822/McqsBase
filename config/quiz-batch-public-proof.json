@@ -23,5 +23,67 @@
     "url": "https://www.tiktok.com/@mcqsbase/video/7702806197296041236",
     "verifiedDate": "2026-10-31",
     "method": "TikTok Studio Posts: exact Part 2 caption, 80-second video, Everyone visibility"
+  },
+  "cmvwcp8it0241ro9d1b6ilsdu": {
+    "integrationId": "cmvwbcule0222ro9dhocbic4w",
+    "videoSha256": "9fd7aa98f85980262e0903b25f540ea5487b656fc6b6f26f63370b9745cb4e57",
+    "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+    "url": "https://www.tiktok.com/@mcqsbase/video/7702807479578529044",
+    "verifiedDate": "2026-10-31",
+    "method": "TikTok Studio Posts: exact Part 3 caption and duration, Everyone visibility"
+  },
+  "cmvwcpfc20246ro9d85pk4dex": {
+    "integrationId": "cmvwbcule0222ro9dhocbic4w",
+    "videoSha256": "d8fefe28a58a47ccd38a0b5cf5430e0e00e4a9cb93461e543b8240fdd987e6cf",
+    "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+    "url": "https://www.tiktok.com/@mcqsbase/video/7702808764402961685",
+    "verifiedDate": "2026-10-31",
+    "method": "TikTok Studio Posts: exact Part 4 caption and duration, Everyone visibility"
+  },
+  "cmvwcpmbc024bro9d9us5r9ff": {
+    "integrationId": "cmvwbcule0222ro9dhocbic4w",
+    "videoSha256": "f8da6804125819120662425a6d6d52bb2e412603d45c9207bcc1c478db0ad528",
+    "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+    "url": "https://www.tiktok.com/@mcqsbase/video/7702810061378227477",
+    "verifiedDate": "2026-10-31",
+    "method": "TikTok Studio Posts: exact Part 5 caption, 67-second video, Everyone visibility"
+  },
+  "cmvwcp8fl023yro9di7laeszq": {
+    "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+    "videoSha256": "9fd7aa98f85980262e0903b25f540ea5487b656fc6b6f26f63370b9745cb4e57",
+    "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+    "url": "https://www.facebook.com/reel/2269299303907745",
+    "verifiedDate": "2026-10-31",
+    "method": "Facebook public Reel and MCQsBase author source-comment repair directly verified; original video not republished",
+    "sourceCommentId": "1472595814813209",
+    "repairReleaseId": "2269299303907745",
+    "resolvedProviderError": true
+  },
+  "cmvwcp1fe023tro9dato1vf99": {
+    "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+    "videoSha256": "f7d8aa734fcf010d2f4356e09d62ad18b4993e57c28d0bc4b56175cd62803363",
+    "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+    "url": "https://www.facebook.com/reel/1771639393889856",
+    "verifiedDate": "2026-10-31",
+    "method": "Facebook public Part 2 Reel and McqsBase author full-source comment directly verified",
+    "sourceCommentId": "1092124403829120"
+  },
+  "cmvwcpf9c0243ro9d11t56zkn": {
+    "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+    "videoSha256": "d8fefe28a58a47ccd38a0b5cf5430e0e00e4a9cb93461e543b8240fdd987e6cf",
+    "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+    "url": "https://www.facebook.com/reel/1670098791138950",
+    "verifiedDate": "2026-10-31",
+    "method": "Facebook public Part 4 Reel and McqsBase author full-source comment directly verified",
+    "sourceCommentId": "29400904606181378"
+  },
+  "cmvwcpm8k0248ro9datq7ab1c": {
+    "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+    "videoSha256": "f8da6804125819120662425a6d6d52bb2e412603d45c9207bcc1c478db0ad528",
+    "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+    "url": "https://www.facebook.com/reel/2347261369147309",
+    "verifiedDate": "2026-10-31",
+    "method": "Facebook public Part 5 Reel and McqsBase author full-source comment directly verified",
+    "sourceCommentId": "1477616394211569"
   }
 }

@@ -16,6 +16,9 @@ class SocialPolicyTests(unittest.TestCase):
         self.assertIn('1 question.', copy['youtube']['text'])
         self.assertIn('#NATICOM', copy['youtube']['hashtags'])
         self.assertIn('#Accounting', copy['youtube']['hashtags'])
+        other_exam = social.hashtags('100 CA Accounting MCQs')
+        self.assertIn('#Accounting', other_exam)
+        self.assertNotIn('#NATICOM', other_exam)
 
     def moment(self, day, month=11):
         return datetime(2026, month, day, 10, tzinfo=ZoneInfo('Asia/Karachi'))

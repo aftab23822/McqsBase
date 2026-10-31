@@ -152,10 +152,12 @@ def generate(storage, state, slug, publisher_run):
 
 
 def publish(storage, state, channels, studio, spacing, verify_only=False):
+    failures = []
     for slug, info in list(state.get('videoBatches', {}).items()):
-        if info['status'] not in ('ready', 'scheduling', 'scheduled'):
+        allowed = ('ready', 'scheduling', 'scheduled', 'provider-published', 'publication-needs-attention') if verify_only else ('ready', 'scheduling', 'scheduled')
+        if info['status'] not in allowed:
             continue
-        if verify_only and info['status'] != 'scheduled':
+        if verify_only and info['status'] not in ('scheduled', 'provider-published', 'publication-needs-attention'):
             continue
         ledger = Ledger(storage, slug)
         record = ledger.load()
@@ -165,7 +167,7 @@ def publish(storage, state, channels, studio, spacing, verify_only=False):
             ledger.save(updated)
             summary(state, updated, ledger)
             storage.save(state)
-        if record['status'] == 'scheduled':
+        if record['status'] in ('scheduled', 'provider-published', 'publication-needs-attention'):
             # Read existing receipts on the next publication event, with no cron polling.
             start = (datetime.fromisoformat(record['schedule'][0]) - timedelta(days=1)).isoformat()
             end = (datetime.fromisoformat(record['schedule'][-1]) + timedelta(days=1)).isoformat()
@@ -174,8 +176,11 @@ def publish(storage, state, channels, studio, spacing, verify_only=False):
                 publisher.reconcile(part, posts, channels)
             all_receipts = [r for p in record['parts'] for r in p['receipts'].values()]
             if any(r['status'] == 'ERROR' for r in all_receipts):
+                record['status'] = 'publication-needs-attention'
+                record['lastError'] = 'A provider failed an existing scheduled post or comment; preserve IDs and repair only the missing step.'
                 save(record)
-                raise RuntimeError('A scheduled provider publication failed; preserve the post IDs for repair.')
+                failures.append(slug)
+                continue  # An older comment failure must not suppress the next daily batch.
             if len(all_receipts) == 20 and all(r['status'] == 'PUBLISHED' for r in all_receipts):
                 record['status'] = 'published' if all(r.get('publicUrlVerified') for r in all_receipts) else 'provider-published'
             save(record)
@@ -216,6 +221,9 @@ def publish(storage, state, channels, studio, spacing, verify_only=False):
         slots = record.get('schedule') or batcher.same_day_slots(datetime.now(timezone.utc), spacing_minutes=spacing)
         publisher.schedule_batch(studio, record, channels, save, slots)
         print(json.dumps({'slug': slug, 'status': record['status'], 'platformPosts': 20, 'times': record['schedule']}))
+    if failures:
+        raise RuntimeError('Existing publication receipts need attention: ' + ', '.join(failures) +
+                           '. Other ready batches were processed; do not recreate successful posts.')
 
 
 def main():
@@ -241,7 +249,9 @@ def main():
         raise ValueError('Rollout validation is restricted to the one approved latest article.')
     if args.phase == 'plan':
         generate_new = slug is not None and state.get('videoBatches', {}).get(slug, {}).get('status') not in ('ready', 'scheduling')
-        work = generate_new or any(item['status'] in ('ready', 'scheduling', 'scheduled') for item in state.get('videoBatches', {}).values())
+        work_states = ('ready', 'scheduling', 'scheduled') + (
+            ('provider-published', 'publication-needs-attention') if args.verify_only else ())
+        work = generate_new or any(item['status'] in work_states for item in state.get('videoBatches', {}).values())
         with Path(os.environ['GITHUB_OUTPUT']).open('a', encoding='utf-8') as stream:
             stream.write(f'generate={str(generate_new).lower()}\nwork={str(work).lower()}\n')
         print(json.dumps({'generate': generate_new, 'work': work, 'slug': slug}))
