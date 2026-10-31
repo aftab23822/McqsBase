@@ -1974,24 +1974,32 @@
       "scheduledAt": "2026-10-31T17:22:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "accepted",
+          "status": "QUEUE",
           "attemptedAt": "2026-10-31T12:01:42.527580+00:00",
-          "postId": "cmvwcp1fe023tro9dato1vf99"
+          "postId": "cmvwcp1fe023tro9dato1vf99",
+          "url": null,
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
         },
         "instagram": {
-          "status": "accepted",
+          "status": "QUEUE",
           "attemptedAt": "2026-10-31T12:01:42.527597+00:00",
-          "postId": "cmvwcp1ik023vro9d0zgs91fo"
+          "postId": "cmvwcp1ik023vro9d0zgs91fo",
+          "url": null,
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
         },
         "tiktok": {
-          "status": "accepted",
+          "status": "QUEUE",
           "attemptedAt": "2026-10-31T12:01:42.527599+00:00",
-          "postId": "cmvwcp1k5023wro9d90j4h7e2"
+          "postId": "cmvwcp1k5023wro9d90j4h7e2",
+          "url": null,
+          "integrationId": "cmvwbcule0222ro9dhocbic4w"
         },
         "youtube": {
-          "status": "accepted",
+          "status": "QUEUE",
           "attemptedAt": "2026-10-31T12:01:42.527601+00:00",
-          "postId": "cmvwcp1lh023xro9dquqtjvvp"
+          "postId": "cmvwcp1lh023xro9dquqtjvvp",
+          "url": null,
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
         }
       }
     },
