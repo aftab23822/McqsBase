@@ -10,6 +10,13 @@ spec.loader.exec_module(social)
 
 
 class SocialPolicyTests(unittest.TestCase):
+    def test_accounting_hashtags_and_single_question_caption(self):
+        copy = social.social_copy('100 Accounting Fundamentals MCQs for NAT-ICOM Preparation', 1,
+            'https://www.mcqsbase.com/blog/accounting')
+        self.assertIn('1 question.', copy['youtube']['text'])
+        self.assertIn('#NATICOM', copy['youtube']['hashtags'])
+        self.assertIn('#Accounting', copy['youtube']['hashtags'])
+
     def moment(self, day, month=11):
         return datetime(2026, month, day, 10, tzinfo=ZoneInfo('Asia/Karachi'))
 

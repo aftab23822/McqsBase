@@ -4,6 +4,7 @@ import hashlib
 import html
 import json
 import os
+from pathlib import Path
 import re
 import urllib.error
 import urllib.parse
@@ -11,6 +12,23 @@ import urllib.request
 
 BASE = 'https://studio.voholabs.com/api/public/v1'
 NETWORKS = ('facebook', 'instagram', 'tiktok', 'youtube')
+PROOF_FILE = Path(__file__).resolve().parents[1] / 'config/quiz-batch-public-proof.json'
+PUBLIC_PROOFS = json.loads(PROOF_FILE.read_text(encoding='utf-8')) if PROOF_FILE.exists() else {}
+
+
+def post_url(network, url):
+    parsed = urllib.parse.urlparse(url or '')
+    if parsed.scheme != 'https':
+        return False
+    host = parsed.netloc.lower().removeprefix('www.')
+    if network == 'tiktok':
+        return host == 'tiktok.com' and bool(re.fullmatch(r'/@mcqsbase/video/\d+/?', parsed.path, re.I))
+    if network == 'instagram':
+        return host == 'instagram.com' and bool(re.fullmatch(r'/(reel|p)/[\w-]+/?', parsed.path))
+    if network == 'youtube':
+        return host == 'youtube.com' and (bool(re.fullmatch(r'/shorts/[\w-]{11}/?', parsed.path))
+            or parsed.path == '/watch' and bool(re.fullmatch(r'[\w-]{11}', urllib.parse.parse_qs(parsed.query).get('v', [''])[0])))
+    return host == 'facebook.com' and bool(re.search(r'/(reel|videos|posts)/[\w-]+', parsed.path))
 
 
 class StudioError(RuntimeError):
@@ -165,8 +183,21 @@ def reconcile(part, posts, channels):
             planned = datetime.fromisoformat(part['scheduledAt'])
             if abs((actual - planned).total_seconds()) > 60:
                 raise RuntimeError('Provider changed the saved publication time; hold.')
+        url, proof = post.get('releaseURL'), PUBLIC_PROOFS.get(post['id'])
+        proof_applied = False
+        if (proof and proof['integrationId'] == channels[network]['id']
+                and proof['videoSha256'] == part.get('sha256')
+                and proof['sourceUrl'] == part['captions'][network]['sourceUrl']):
+            url = proof['url']
+            proof_applied = True
+        verified = state == 'PUBLISHED' and post_url(network, url)
         receipts[network] = {**receipt, 'postId': post['id'], 'status': state,
-            'url': post.get('releaseURL'), 'integrationId': channels[network]['id']}
+            'url': url, 'providerUrl': post.get('releaseURL'), 'providerReleaseId': post.get('releaseId'),
+            'publicUrlVerified': verified, 'verification': proof['method'] if verified and proof_applied else
+                'provider-post-url' if verified else 'provider-status-only', 'integrationId': channels[network]['id']}
+        if proof_applied and proof.get('sourceCommentId'):
+            receipts[network]['sourceCommentId'] = proof['sourceCommentId']
+            receipts[network]['sourceCommentVerified'] = True
 
 
 def schedule_batch(studio, record, channels, save, slots):
@@ -230,6 +261,8 @@ def schedule_batch(studio, record, channels, save, slots):
     receipts = [receipt for part in record['parts'] for receipt in part.get('receipts', {}).values()]
     if len(receipts) != 20 or any(receipt['status'] not in ('QUEUE', 'PUBLISHED') for receipt in receipts):
         raise RuntimeError('Some networks need attention; successful receipts have been preserved.')
-    record['status'] = 'published' if all(receipt['status'] == 'PUBLISHED' for receipt in receipts) else 'scheduled'
+    all_published = all(receipt['status'] == 'PUBLISHED' for receipt in receipts)
+    record['status'] = ('published' if all(r.get('publicUrlVerified') for r in receipts) else
+                        'provider-published') if all_published else 'scheduled'
     save(record)
     return record

@@ -10,10 +10,6 @@ on:
       - 'scripts/*metricool*'
       - 'scripts/quiz-cloud-media.py'
       - 'config/quiz-approved-launch.json'
-  workflow_run:
-    workflows: ['Blog Quiz Videos']
-    types: [completed]
-    branches: [master]
 
 permissions:
   contents: read

@@ -56,6 +56,20 @@ class Fake:
 
 
 class Publishing(unittest.TestCase):
+    def test_tiktok_profile_is_not_a_verified_public_video(self):
+        self.assertFalse(studio.post_url('tiktok', 'https://www.tiktok.com/@mcqsbase'))
+        self.assertTrue(studio.post_url('tiktok', 'https://www.tiktok.com/@mcqsbase/video/7702804896810011924'))
+
+    def test_published_tiktok_profile_remains_provider_reported_only(self):
+        fake, batch = Fake(), record()
+        studio.schedule_batch(fake, batch, channels(), lambda r: None, slots())
+        for post in fake.calendar:
+            post.update(state='PUBLISHED', releaseURL='https://www.tiktok.com/@mcqsbase')
+        studio.schedule_batch(fake, batch, channels(), lambda r: None, slots())
+        self.assertEqual(batch['status'], 'provider-published')
+        self.assertFalse(batch['parts'][0]['receipts']['tiktok']['publicUrlVerified'])
+        self.assertEqual(fake.writes, 5)
+
     def test_complete_batch_and_idempotent_retry(self):
         fake, batch, saves = Fake(), record(), []
         studio.schedule_batch(fake, batch, channels(), lambda r: saves.append(deepcopy(r)), slots())

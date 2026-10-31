@@ -7,6 +7,12 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
+batch_policy = json.loads((ROOT / 'config/quiz-batch-policy.json').read_text(encoding='utf-8'))
+if batch_policy['enabled']:
+    with Path(os.environ['GITHUB_OUTPUT']).open('a', encoding='utf-8') as output:
+        output.write('handoff=false\n')
+    print('Daily five-video Studio batches replace the legacy Metricool handoff; no social calls.')
+    raise SystemExit(0)
 spec = importlib.util.spec_from_file_location('campaign_gate', ROOT / 'scripts/plan-blog-video-campaign.py')
 gate = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(gate)

@@ -1,6 +1,6 @@
 # Five-video batches from each new blog
 
-The user approved five sequential videos per article on October 31, 2026. Each video is intended for Facebook, Instagram, TikTok and YouTube: twenty platform publications per blog. This replaces the desired four-campaign monthly cadence once the replacement publisher has been connected and practically verified.
+The user approved five sequential videos per article on October 31, 2026. Each video is shared to Facebook, Instagram, TikTok and YouTube: twenty platform publications per blog. The enabled `quiz-batch-policy.json` replaces the old four-campaign monthly cadence. The daily blog writer and schedule are unchanged.
 
 ## Implemented and testable
 
@@ -21,15 +21,17 @@ python scripts/test-quiz-batch.py
 
 This renderer has no social publishing or scheduling side effects. Its `batch.json` is an artifact manifest, not a second production queue. Preserve the authoritative state branch and all historical campaign/post receipts.
 
-## Staged free cloud handoff
+## Free cloud handoff
 
 The user has connected all four MCQsBase channels in Studio and stored `MCQS_STUDIO_API_KEY` as a GitHub Actions secret. A hosted, read-only connection check succeeded on October 31. `config/quiz-batch-policy.json` pins the four Studio channel IDs and profiles; the worker rechecks them, TikTok public direct-post capability, the Free workspace and absence of automatic payments before publishing. Credentials never enter source, assets or logs.
 
-`Blog Quiz Batches` follows a successful `Daily Blog Autopilot` master run. The new route is initially disabled for automatic events until the practical rollout is verified. A manual `validation` run is restricted to the explicitly approved newest Accounting Fundamentals article. It verifies an exact successful Vercel Production deployment, stores one durable batch ledger per article under `batches/<slug>.json` on the existing `codex/blog-video-state` branch, uploads each completed part as immutable GitHub release media and resumes those exact bytes after a failed render. `state.json` retains the historical baseline/campaigns and only small batch summaries.
+`Blog Quiz Batches` follows a successful `Daily Blog Autopilot` master run. It verifies an exact successful Vercel Production deployment, stores one durable batch ledger per article under `batches/<slug>.json` on the existing `codex/blog-video-state` branch, uploads each completed part as immutable GitHub release media and resumes those exact bytes after a failed render. `state.json` retains the historical baseline/campaigns and only small batch summaries. The manual `validation` option is restricted to the explicitly approved October 31 Accounting Fundamentals rollout article.
 
 After all five pass, the cloud handoff imports each MP4 once and verifies the imported bytes by SHA-256. It freezes all five same-day times before scheduling. Each part creates one post on each of the four channels. Facebook receives its full-source first comment; the other channels retain full source links in their captions. Each write has a durable uncertain intent before the request, individual returned IDs saved immediately, and an exact account/caption/calendar reconciliation before recovery. A lost response does not cause another copy. Unexpected account/schema/time/cost/receipt changes hold the affected batch. No payment or automatic top-up is enabled.
 
 Use `verify_only` to reconcile scheduled public results without rendering or creating posts. Automatic publication events also reconcile existing queued batches. A queued post is reported as scheduled; only a provider `PUBLISHED` status with a public URL counts as published. No cron polling or local background worker is added. The original daily writer is unchanged.
+
+Studio's legacy TikTok integration can report `PUBLISHED` with only an account profile URL. That is stored as provider-reported publication, not verified public video visibility. A complete batch with such receipts is `provider-published`; no posts are recreated. `publicUrlVerified` requires a post-specific URL. The first launch video's actual TikTok URL and Everyone visibility were independently checked in TikTok Studio; the immutable file hash/account/source-bound evidence is in `config/quiz-batch-public-proof.json`. Platform moderation may temporarily keep a new TikTok post under review even though the scheduler reports it published.
 
 The Free Studio library is finite (2 GB). The worker holds if storage is full rather than buying capacity or deleting historical assets. Immutable source MP4s and ledgers remain in GitHub for recovery.
 
@@ -41,6 +43,6 @@ The free cloud candidate is [Voholabs Studio](https://voholabs.com/docs/billing)
 
 Metricool OAuth cannot be transferred to another provider. The user must sign in/connect the intended accounts and store any new cloud credential as a GitHub Actions secret, never in chat, source, artifacts or logs. No new credentials have been extracted. A free provider's actual storage and API limits must be checked without enabling payment or auto top-up.
 
-The existing production workflow/campaign policy remains active during preparation. Do not enable a second publisher alongside it. The final cutover must reconcile existing scheduled posts and the shared state, then switch the publication-driven cloud worker to one publisher. Both old routine gates must skip after the new policy is enabled. A fully local alternative cannot receive events while the laptop is powered off.
+At cutover, reconcile existing scheduled posts and the shared state, then use only the Studio batch publisher for new articles. The two old workflows retain manual recovery/CI entry points, but their automatic publication triggers are removed and both old routine gates skip while the new policy is enabled. No legacy posts or source assets are deleted. A fully local alternative cannot receive events while the laptop is powered off.
 
-Until those connections and practical tests pass, the batch generator is ready for review, but daily cloud publishing has **not** been activated. No sample or batch should be reported as scheduled/published from generation alone.
+Scheduling and publication remain separate states. A generated artifact or accepted request is never reported as a published post; consult the per-network provider receipts in the article's batch ledger.

@@ -45,6 +45,19 @@ def main():
             'contents': ['MCQsBase quiz. https://www.mcqsbase.com/blog']})
         safe.append(entry)
     output = {'connectedChannels': safe, 'prices': request('/wallet/prices'), 'wallet': request('/wallet')}
+    posts = request('/posts?startDate=2026-10-31T00%3A00%3A00Z&endDate=2026-11-01T00%3A00%3A00Z')['posts']
+    output['launchReceipts'] = [{field: post.get(field) for field in
+        ('id', 'state', 'releaseURL', 'releaseId', 'publishDate')} for post in posts]
+    for post in posts:
+        if post.get('integration', {}).get('id') == 'cmvwbcule0222ro9dhocbic4w' and post.get('state') == 'PUBLISHED':
+            try:
+                candidates = request('/posts/' + post['id'] + '/missing')
+                output['tiktokCandidates'] = [{field: item.get(field) for field in
+                    ('id', 'releaseId', 'url', 'releaseURL', 'title', 'content', 'description', 'date', 'createdAt')}
+                    for item in candidates]
+            except RuntimeError as error:
+                output['tiktokCandidateError'] = str(error)
+            break
     path = Path('.social-automation/studio-connection.json')
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(output, indent=2), encoding='utf-8')
