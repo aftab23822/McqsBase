@@ -1458,7 +1458,131 @@
       "studioMedia": {
         "id": "f69baf72-c401-4b41-b52d-78c9047390ee",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/X31inc2FPU.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 1/5 | Q1–2 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation"
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 1–2\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+              "image": [
+                {
+                  "id": "f69baf72-c401-4b41-b52d-78c9047390ee",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/X31inc2FPU.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+              "image": [],
+              "delay": 0
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 1–2\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+              "image": [
+                {
+                  "id": "f69baf72-c401-4b41-b52d-78c9047390ee",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/X31inc2FPU.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 1/5 | Q1–2 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 1–2\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+              "image": [
+                {
+                  "id": "f69baf72-c401-4b41-b52d-78c9047390ee",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/X31inc2FPU.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 1/5 | Q1–2 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NATICOM",
+                "label": "NATICOM"
+              },
+              {
+                "value": "Accounting",
+                "label": "Accounting"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 1–2\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+              "image": [
+                {
+                  "id": "f69baf72-c401-4b41-b52d-78c9047390ee",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/X31inc2FPU.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-10-31T17:17:00+05:00"
     },
     {
       "part": 2,
@@ -1693,7 +1817,131 @@
       "studioMedia": {
         "id": "46dc304f-5eac-4203-af5b-6341ea57a9df",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/DCi0hfLjvJ.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 2/5 | Q3–4 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation"
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 3–4\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+              "image": [
+                {
+                  "id": "46dc304f-5eac-4203-af5b-6341ea57a9df",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/DCi0hfLjvJ.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+              "image": [],
+              "delay": 0
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 3–4\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+              "image": [
+                {
+                  "id": "46dc304f-5eac-4203-af5b-6341ea57a9df",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/DCi0hfLjvJ.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 2/5 | Q3–4 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 3–4\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+              "image": [
+                {
+                  "id": "46dc304f-5eac-4203-af5b-6341ea57a9df",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/DCi0hfLjvJ.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 2/5 | Q3–4 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NATICOM",
+                "label": "NATICOM"
+              },
+              {
+                "value": "Accounting",
+                "label": "Accounting"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 3–4\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+              "image": [
+                {
+                  "id": "46dc304f-5eac-4203-af5b-6341ea57a9df",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/DCi0hfLjvJ.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-10-31T17:22:00+05:00"
     },
     {
       "part": 3,
@@ -1879,7 +2127,131 @@
       "studioMedia": {
         "id": "9b6bebc2-ec73-49b8-b70e-745f4a266ed5",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/9SGn1vDIqr.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 3/5 | Q5–5 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation"
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 5–5\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n1 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+              "image": [
+                {
+                  "id": "9b6bebc2-ec73-49b8-b70e-745f4a266ed5",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/9SGn1vDIqr.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+              "image": [],
+              "delay": 0
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 5–5\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n1 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+              "image": [
+                {
+                  "id": "9b6bebc2-ec73-49b8-b70e-745f4a266ed5",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/9SGn1vDIqr.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 3/5 | Q5–5 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 5–5\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n1 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+              "image": [
+                {
+                  "id": "9b6bebc2-ec73-49b8-b70e-745f4a266ed5",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/9SGn1vDIqr.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 3/5 | Q5–5 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NATICOM",
+                "label": "NATICOM"
+              },
+              {
+                "value": "Accounting",
+                "label": "Accounting"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 5–5\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n1 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+              "image": [
+                {
+                  "id": "9b6bebc2-ec73-49b8-b70e-745f4a266ed5",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/9SGn1vDIqr.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-10-31T17:27:00+05:00"
     },
     {
       "part": 4,
@@ -2114,7 +2486,131 @@
       "studioMedia": {
         "id": "54525ba5-115b-458e-8e55-07f0a65fa4db",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Nyi4T70jCX.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 4/5 | Q6–7 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation"
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 6–7\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+              "image": [
+                {
+                  "id": "54525ba5-115b-458e-8e55-07f0a65fa4db",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Nyi4T70jCX.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+              "image": [],
+              "delay": 0
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 6–7\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+              "image": [
+                {
+                  "id": "54525ba5-115b-458e-8e55-07f0a65fa4db",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Nyi4T70jCX.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 4/5 | Q6–7 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 6–7\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+              "image": [
+                {
+                  "id": "54525ba5-115b-458e-8e55-07f0a65fa4db",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Nyi4T70jCX.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 4/5 | Q6–7 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NATICOM",
+                "label": "NATICOM"
+              },
+              {
+                "value": "Accounting",
+                "label": "Accounting"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 6–7\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+              "image": [
+                {
+                  "id": "54525ba5-115b-458e-8e55-07f0a65fa4db",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Nyi4T70jCX.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-10-31T17:32:00+05:00"
     },
     {
       "part": 5,
@@ -2349,7 +2845,131 @@
       "studioMedia": {
         "id": "e9c2377e-5866-4d63-b2f6-df1bcb6321b4",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Om02CcmiZg.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 5/5 | Q8–9 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation"
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 8–9\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+              "image": [
+                {
+                  "id": "e9c2377e-5866-4d63-b2f6-df1bcb6321b4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Om02CcmiZg.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+              "image": [],
+              "delay": 0
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 8–9\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+              "image": [
+                {
+                  "id": "e9c2377e-5866-4d63-b2f6-df1bcb6321b4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Om02CcmiZg.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 5/5 | Q8–9 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 8–9\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+              "image": [
+                {
+                  "id": "e9c2377e-5866-4d63-b2f6-df1bcb6321b4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Om02CcmiZg.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 5/5 | Q8–9 | 100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NATICOM",
+                "label": "NATICOM"
+              },
+              {
+                "value": "Accounting",
+                "label": "Accounting"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 8–9\n100 Accounting Fundamentals MCQs for NAT-ICOM Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICOM #Accounting #Shorts",
+              "image": [
+                {
+                  "id": "e9c2377e-5866-4d63-b2f6-df1bcb6321b4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Om02CcmiZg.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-10-31T17:37:00+05:00"
     }
   ],
   "thinkingSeconds": 3,
@@ -2427,5 +3047,12 @@
         "sha256": "f8da6804125819120662425a6d6d52bb2e412603d45c9207bcc1c478db0ad528"
       }
     ]
-  }
+  },
+  "schedule": [
+    "2026-10-31T17:17:00+05:00",
+    "2026-10-31T17:22:00+05:00",
+    "2026-10-31T17:27:00+05:00",
+    "2026-10-31T17:32:00+05:00",
+    "2026-10-31T17:37:00+05:00"
+  ]
 }
