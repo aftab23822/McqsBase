@@ -923,5 +923,15 @@
         "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/university-of-sindh-entry-test-mcqs-4cf3dc8eece5cb91.mp4"
       }
     }
+  },
+  "videoBatches": {
+    "nat-icom-accounting-fundamentals": {
+      "status": "rendering",
+      "ledger": "batches/nat-icom-accounting-fundamentals.json",
+      "createdAt": "2026-10-31T11:54:37.478433+00:00",
+      "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+      "scheduledAt": [],
+      "published": 0
+    }
   }
 }
