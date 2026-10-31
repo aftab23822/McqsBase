@@ -1,7 +1,7 @@
 name: Studio Connection Check
 on:
   push:
-    branches: ['codex/five-video-blog-batches']
+    branches: ['codex/five-video-blog-batches', 'codex/activate-daily-quiz-batches']
     paths: ['scripts/probe-studio-cloud.py', '.github/workflows/studio-connection.yml']
   workflow_dispatch:
 permissions:
