@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nat-icom-accounting-fundamentals": {
+    title: "100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+    excerpt:
+      "Practise foundational accounting concepts and calculations with 100 original MCQs, four options per question, and explanations. This is independent practice, not an official test paper or syllabus.",
+    category: "Subject Guide",
+    date: "2026-10-31",
+    readTime: "40 min",
+    content: null,
+    body: readImportedBlogBody("nat-icom-accounting-fundamentals")
+  },
   "nts-data-interpretation-mcqs": {
     title: "100 NTS Data Interpretation MCQs with Answers and Explanations",
     excerpt:
