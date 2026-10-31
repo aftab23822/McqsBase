@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-icom-accounting-fundamentals",
   "createdAt": "2026-10-31T11:54:37.478433+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "nat-icom-accounting-fundamentals",
     "title": "100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
@@ -2312,5 +2312,80 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "nat-icom-accounting-fundamentals",
+    "sourceUrl": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+    "sourceTitle": "100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+    "sourceContentHash": "8a6fcd5429294157cc114c910e6aff610dc3f1b1bca69aacdb0b2bbc211ec56c",
+    "productionDeployment": {
+      "id": 7458231260,
+      "sha": "befb67b6992588ffb05d61b532a69c37431ee2bc",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-10-31T11:54:37.301187+00:00",
+      "url": "https://mcqs-base-ecar7mvc7-as-projects-10921176.vercel.app",
+      "publisherRunId": 41192403443
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          1,
+          2
+        ],
+        "count": 2,
+        "durationSeconds": 80,
+        "sha256": "30dcd46d56e3a16b46fc6745a44504f6384fbe0a31c07a7bea75bc5fdcd9f780"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          3,
+          4
+        ],
+        "count": 2,
+        "durationSeconds": 80,
+        "sha256": "f7d8aa734fcf010d2f4356e09d62ad18b4993e57c28d0bc4b56175cd62803363"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          5
+        ],
+        "count": 1,
+        "durationSeconds": 52,
+        "sha256": "9fd7aa98f85980262e0903b25f540ea5487b656fc6b6f26f63370b9745cb4e57"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          6,
+          7
+        ],
+        "count": 2,
+        "durationSeconds": 84,
+        "sha256": "d8fefe28a58a47ccd38a0b5cf5430e0e00e4a9cb93461e543b8240fdd987e6cf"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          8,
+          9
+        ],
+        "count": 2,
+        "durationSeconds": 67,
+        "sha256": "f8da6804125819120662425a6d6d52bb2e412603d45c9207bcc1c478db0ad528"
+      }
+    ]
+  }
 }
