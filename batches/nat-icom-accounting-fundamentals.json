@@ -1,0 +1,1229 @@
+{
+  "version": 1,
+  "slug": "nat-icom-accounting-fundamentals",
+  "createdAt": "2026-10-31T11:54:37.478433+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nat-icom-accounting-fundamentals",
+    "title": "100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
+    "url": "https://www.mcqsbase.com/blog/nat-icom-accounting-fundamentals",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7458231260,
+      "sha": "befb67b6992588ffb05d61b532a69c37431ee2bc",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-10-31T11:54:37.301187+00:00",
+      "url": "https://mcqs-base-ecar7mvc7-as-projects-10921176.vercel.app",
+      "publisherRunId": 41192403443
+    },
+    "fetchedAt": "2026-10-31T11:54:37.301187+00:00",
+    "contentHash": "8a6fcd5429294157cc114c910e6aff610dc3f1b1bca69aacdb0b2bbc211ec56c",
+    "questions": [
+      {
+        "question": "A business has assets of Rs. 500,000 and liabilities of Rs. 180,000. What is its owner's equity?",
+        "choices": [
+          "Rs. 320,000",
+          "Rs. 680,000",
+          "Rs. 180,000",
+          "Rs. 500,000"
+        ],
+        "key": "1e16c4d915973fb531d4063add18a5a48288ef25b7682fd4690344e0be36f12e",
+        "sourceNumber": 1,
+        "correctIndex": 0
+      },
+      {
+        "question": "An owner invests Rs. 80,000 cash in a business. What is the immediate effect on the accounting equation?",
+        "choices": [
+          "Assets and equity each increase by Rs. 80,000",
+          "Assets increase by Rs. 80,000 and liabilities increase by Rs. 80,000",
+          "Equity increases by Rs. 80,000 and assets decrease by Rs. 80,000",
+          "Total assets remain unchanged"
+        ],
+        "key": "0187f5e8fde26bc78b1c158a1c5a16b3d30fa0baa0ebad66293b1723e171ddf5",
+        "sourceNumber": 2,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business pays Rs. 25,000 cash to buy equipment. Ignoring any taxes or fees, what happens to total assets at the purchase date?",
+        "choices": [
+          "They increase by Rs. 25,000",
+          "They decrease by Rs. 25,000",
+          "They remain unchanged",
+          "They increase by Rs. 50,000"
+        ],
+        "key": "bcc3d277a061f6ad8211e8a1e8a3ec23271f4acefe7dba6460491d8321c8ff3b",
+        "sourceNumber": 3,
+        "correctIndex": 2
+      },
+      {
+        "question": "A business pays Rs. 12,000 to a supplier toward an existing account payable. What is the immediate effect?",
+        "choices": [
+          "Assets and liabilities each decrease by Rs. 12,000",
+          "Assets decrease and equity increases by Rs. 12,000",
+          "Liabilities decrease and equity decreases by Rs. 12,000",
+          "Assets and liabilities each increase by Rs. 12,000"
+        ],
+        "key": "ba250d45ad4e1aab792b7cc390abaef3401181b42afb6e8136aee0423434db29",
+        "sourceNumber": 4,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business completes services worth Rs. 18,000 for a customer and will collect payment later. What is the immediate effect, before recording any related expenses?",
+        "choices": [
+          "Accounts receivable and equity each increase by Rs. 18,000",
+          "Cash and liabilities each increase by Rs. 18,000",
+          "Accounts receivable decreases and equity increases by Rs. 18,000",
+          "Assets remain unchanged"
+        ],
+        "key": "87863b3ca3e78032ff8b31cc9eea38bcaf03348d0f092f8c142062ffec86d05f",
+        "sourceNumber": 5,
+        "correctIndex": 0
+      },
+      {
+        "question": "The owner withdraws Rs. 7,000 cash for personal use. How should this transaction affect the business records?",
+        "choices": [
+          "Cash and owner's equity decrease by Rs. 7,000",
+          "Cash decreases and an expense increases by Rs. 7,000",
+          "Cash and revenue decrease by Rs. 7,000",
+          "Liabilities and cash decrease by Rs. 7,000"
+        ],
+        "key": "0615ffcff7305634b80359ab05a382ab4fbac32cac439111bcba9b2515d89a07",
+        "sourceNumber": 6,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business buys supplies costing Rs. 9,000 on credit. What is the immediate effect on the accounting equation?",
+        "choices": [
+          "Assets and liabilities each increase by Rs. 9,000",
+          "Assets increase and equity decreases by Rs. 9,000",
+          "Liabilities and equity each increase by Rs. 9,000",
+          "Total assets remain unchanged"
+        ],
+        "key": "8839ef72e8c62cf04afef9600002ea7f356e2923f67d9b76be6ea6f397fc1b2e",
+        "sourceNumber": 7,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business begins a period with capital of Rs. 100,000, earns profit of Rs. 22,000, and the owner withdraws Rs. 5,000. What is ending equity, assuming no other equity changes?",
+        "choices": [
+          "Rs. 117,000",
+          "Rs. 127,000",
+          "Rs. 83,000",
+          "Rs. 122,000"
+        ],
+        "key": "32168bba336839275c1fa0dfce2c4c27056c8b434d20b4d534250ee6149ed3bf",
+        "sourceNumber": 8,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which item is normally an asset of a business before it is used up?",
+        "choices": [
+          "Prepaid insurance",
+          "Electricity expense",
+          "Accounts payable",
+          "Sales revenue"
+        ],
+        "key": "a1fadb96747b100d2f00b54ec34ee83636993cb51a06a4cb62f7f5f926c734fb",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "Under the perpetual inventory system, a business buys merchandise on credit for Rs. 30,000. What is the immediate effect, before any sale?",
+        "choices": [
+          "Inventory and accounts payable each increase by Rs. 30,000",
+          "Cost of goods sold and accounts payable each increase by Rs. 30,000",
+          "Cash decreases and inventory increases by Rs. 30,000",
+          "Inventory increases and equity decreases by Rs. 30,000"
+        ],
+        "key": "059b24a39c58c0b419d00315a3e526b963330cdd7e390b031dd0af82440497fe",
+        "sourceNumber": 10,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which entry increases the Cash account?",
+        "choices": [
+          "A debit to Cash",
+          "A credit to Cash",
+          "A debit to Accounts Payable",
+          "A credit to Sales Revenue"
+        ],
+        "key": "cafab5f62e33bb1bf89289bacc5cd51fec6b69a463d2a95566dd4711936a8ba9",
+        "sourceNumber": 11,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business pays Rs. 4,500 cash to settle an amount already owed to a supplier. Which journal entry is correct?",
+        "choices": [
+          "Debit Accounts Payable Rs. 4,500; credit Cash Rs. 4,500",
+          "Debit Cash Rs. 4,500; credit Accounts Payable Rs. 4,500",
+          "Debit Supplies Expense Rs. 4,500; credit Cash Rs. 4,500",
+          "Debit Accounts Payable Rs. 4,500; credit Revenue Rs. 4,500"
+        ],
+        "key": "d3e406c5a6a8d2805155382e578404a6098c84db6fdd7b94a8c7b50abf2916d9",
+        "sourceNumber": 12,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business earns Rs. 6,200 in cash from services performed today. Which entry records the transaction?",
+        "choices": [
+          "Debit Cash; credit Service Revenue",
+          "Debit Service Revenue; credit Cash",
+          "Debit Accounts Receivable; credit Cash",
+          "Debit Cash; credit Unearned Revenue"
+        ],
+        "key": "1493ae8bc242dce0698166816ccf14aee4ef82c798abf3600a38002cd0cbc741",
+        "sourceNumber": 13,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business pays Rs. 3,000 cash for this month's rent. Which entry is appropriate when the rent relates entirely to the current month?",
+        "choices": [
+          "Debit Rent Expense; credit Cash",
+          "Debit Prepaid Rent; credit Rent Expense",
+          "Debit Cash; credit Rent Expense",
+          "Debit Rent Expense; credit Accounts Payable"
+        ],
+        "key": "51eeadfa29c0919a2dbcec99601e77ea24c3c02fffcd05a7ad0692b4d2f33c29",
+        "sourceNumber": 14,
+        "correctIndex": 0
+      },
+      {
+        "question": "A customer pays Rs. 10,000 in advance for services the business has not yet performed. Which account should be credited at receipt?",
+        "choices": [
+          "Unearned Revenue",
+          "Service Revenue",
+          "Accounts Receivable",
+          "Owner's Capital"
+        ],
+        "key": "39adc6af2c7b9bc61817d102a04fef448e21ce3221ff6bff99dfd4775d8cf246",
+        "sourceNumber": 15,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business previously recorded a customer advance as Unearned Revenue. It now performs Rs. 2,500 of the promised service. Which adjustment is appropriate?",
+        "choices": [
+          "Debit Unearned Revenue; credit Service Revenue",
+          "Debit Service Revenue; credit Unearned Revenue",
+          "Debit Cash; credit Service Revenue",
+          "Debit Accounts Receivable; credit Unearned Revenue"
+        ],
+        "key": "442daa07ec1f173ee6a1f4a8dfaee0d0debcb0f3133bc956b548b221601d01d2",
+        "sourceNumber": 16,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business performs Rs. 14,000 of services on account. Which entry records the completed work?",
+        "choices": [
+          "Debit Accounts Receivable; credit Service Revenue",
+          "Debit Cash; credit Accounts Receivable",
+          "Debit Service Revenue; credit Accounts Payable",
+          "Debit Unearned Revenue; credit Cash"
+        ],
+        "key": "f5726ce6ef3d5c16f2b8ca348da18bbb203da49a07e02909950afb0324c14bda",
+        "sourceNumber": 17,
+        "correctIndex": 0
+      },
+      {
+        "question": "A retailer receives merchandise costing Rs. 8,400 on credit under a perpetual inventory system. Which entry is correct?",
+        "choices": [
+          "Debit Inventory; credit Accounts Payable",
+          "Debit Purchases; credit Cash",
+          "Debit Cost of Goods Sold; credit Accounts Payable",
+          "Debit Accounts Payable; credit Inventory"
+        ],
+        "key": "02a975c92e2fa80e8aa665d9ad143de0c2acbc6255e3a55ce3cddfe802b20777",
+        "sourceNumber": 18,
+        "correctIndex": 0
+      },
+      {
+        "question": "The owner takes Rs. 1,200 cash from the business for personal use. Which entry correctly records the withdrawal?",
+        "choices": [
+          "Debit Drawings; credit Cash",
+          "Debit Cash; credit Drawings",
+          "Debit Salaries Expense; credit Cash",
+          "Debit Owner's Capital; credit Revenue"
+        ],
+        "key": "db3d15aed7ef83df16cb2d85399ff5b843096cf4d41dd06887fc015d5e8ca7f4",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business buys a computer for cash to use in its operations. Which entry is appropriate at purchase, before depreciation?",
+        "choices": [
+          "Debit Equipment; credit Cash",
+          "Debit Computer Expense; credit Accounts Payable",
+          "Debit Cash; credit Equipment",
+          "Debit Depreciation Expense; credit Cash"
+        ],
+        "key": "634dcc977b45cd6e09a6747bc6c225bc1b753f22b7ed918f3c81072bf90c400c",
+        "sourceNumber": 20,
+        "correctIndex": 0
+      },
+      {
+        "question": "At month-end, employees have earned Rs. 6,000 in wages that will be paid next month. Which adjusting entry is needed?",
+        "choices": [
+          "Debit Wages Expense; credit Wages Payable",
+          "Debit Wages Payable; credit Cash",
+          "Debit Cash; credit Wages Expense",
+          "Debit Prepaid Wages; credit Wages Payable"
+        ],
+        "key": "ab884db92f2f1af016b10ab881fe7f12b50782a441f19b184296ad1cdc905b25",
+        "sourceNumber": 21,
+        "correctIndex": 0
+      },
+      {
+        "question": "A customer who owed Rs. 3,700 pays the amount in cash. Which entry records collection of the receivable?",
+        "choices": [
+          "Debit Cash; credit Accounts Receivable",
+          "Debit Accounts Receivable; credit Cash",
+          "Debit Cash; credit Service Revenue",
+          "Debit Accounts Payable; credit Cash"
+        ],
+        "key": "3cc56ce73e0caf315e6718f787a5c3ba7b628e9787a9627aca2c4783076d8235",
+        "sourceNumber": 22,
+        "correctIndex": 0
+      },
+      {
+        "question": "A shop sells inventory for cash under a perpetual inventory system. Which statement best describes the entries needed?",
+        "choices": [
+          "Record the sale and separately record the cost of the inventory sold",
+          "Record only a debit to Cash and a credit to Inventory",
+          "Record a debit to Accounts Payable and a credit to Sales Revenue",
+          "Record only the cost of goods sold"
+        ],
+        "key": "4e43e0863ce1bcc078aaf6ed7ed8f25327e0006f8bd8ef8a386014d06d8611b3",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "A customer returns merchandise sold for cash. Ignoring the cost-side entry, which account is normally debited to record the sales return?",
+        "choices": [
+          "Sales Returns and Allowances",
+          "Sales Revenue",
+          "Cash",
+          "Accounts Payable"
+        ],
+        "key": "ef3d503bfe774e0f4906c8429492deb60553db869d63a7fc2377f685c8e4e73b",
+        "sourceNumber": 24,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which account normally has a credit balance?",
+        "choices": [
+          "Service Revenue",
+          "Rent Expense",
+          "Cash",
+          "Drawings"
+        ],
+        "key": "33570a8ebf6d6b388c65dc15ccba4865cd467ec5122f597e4b9ac7bfc4886aee",
+        "sourceNumber": 25,
+        "correctIndex": 0
+      },
+      {
+        "question": "Accumulated Depreciation is best described as which type of account?",
+        "choices": [
+          "A contra-asset with a normal credit balance",
+          "A liability with a normal debit balance",
+          "An expense with a normal credit balance",
+          "A revenue account with a normal debit balance"
+        ],
+        "key": "a1bf423ec844d30b8439990d4b6b9556a9c5570eceeacca9d5513056a390cb4f",
+        "sourceNumber": 26,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does a trial balance primarily test?",
+        "choices": [
+          "Whether total recorded debits equal total recorded credits",
+          "Whether every transaction was recorded in the correct account",
+          "Whether the business earned a profit",
+          "Whether all cash has been deposited"
+        ],
+        "key": "7da38b7bdea059835e79515da374d01d66bafd3a3daeabb7d4574287ca73cf48",
+        "sourceNumber": 27,
+        "correctIndex": 0
+      },
+      {
+        "question": "A transaction is omitted entirely from the books. What is the likely effect on the trial balance totals?",
+        "choices": [
+          "The totals may still agree",
+          "Debits must exceed credits",
+          "Credits must exceed debits",
+          "The trial balance must show a suspense account"
+        ],
+        "key": "41934c335111acbf2308e557371b7567ba1d668886c2efbf3d997307aef8c834",
+        "sourceNumber": 28,
+        "correctIndex": 0
+      },
+      {
+        "question": "A payment that should have been debited to Repairs Expense is instead debited to Supplies Expense for the same amount. What is true of the trial balance?",
+        "choices": [
+          "It may still balance because the debit amount and side are unchanged",
+          "It must show debits greater than credits",
+          "It must show credits greater than debits",
+          "It cannot be prepared"
+        ],
+        "key": "b0ddd396039852b11ff5dff47658b7363706b56db3d9ecb65035374fc1bd396b",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main purpose of a ledger?",
+        "choices": [
+          "To collect account-by-account transaction and balance information",
+          "To list only cash receipts in date order",
+          "To replace all source documents",
+          "To calculate tax automatically"
+        ],
+        "key": "f9f6dee71c7559ae1695238e9ff34b91457a4815b4df9a00455d8ea49a3a0dd0",
+        "sourceNumber": 30,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which document commonly provides evidence of a credit purchase from a supplier?",
+        "choices": [
+          "Supplier invoice",
+          "Bank statement",
+          "Employee timesheet",
+          "Sales receipt issued to a customer"
+        ],
+        "key": "75418fc4e98568daed076fffa178678d31ef4c15fc14ec9b0a69c142f6dadfdc",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the purpose of a chart of accounts?",
+        "choices": [
+          "To provide an organized list of account names and codes used by a business",
+          "To summarize only the cash balance at year-end",
+          "To show all customers' unpaid invoices in date order",
+          "To record every transaction as a financial statement"
+        ],
+        "key": "3212902fb050fbbfdf8b83a1427af230efbf169a0d733429dbb1f88be3b9db44",
+        "sourceNumber": 32,
+        "correctIndex": 0
+      },
+      {
+        "question": "In the accounting cycle, what does posting usually mean?",
+        "choices": [
+          "Transferring journal-entry amounts to the relevant ledger accounts",
+          "Preparing a bank deposit slip",
+          "Calculating the owner's personal tax",
+          "Sending invoices to customers"
+        ],
+        "key": "739bf7a3d3926a02bc75f2dbd4be09d8d47906bc0e6b9e4e74cbbca7c3102a7e",
+        "sourceNumber": 33,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement is generally prepared to report revenues and expenses over a period?",
+        "choices": [
+          "Income statement",
+          "Statement of financial position",
+          "Bank reconciliation",
+          "Accounts receivable ledger"
+        ],
+        "key": "d4d5f28b9dd226c859e4468b025e9f280e78c74adb5a92e67c2ac56bb9ab8599",
+        "sourceNumber": 34,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business reports revenue of Rs. 90,000 and expenses of Rs. 67,500 for a period. What is its net income?",
+        "choices": [
+          "Rs. 22,500",
+          "Rs. 67,500",
+          "Rs. 90,000",
+          "Rs. 157,500"
+        ],
+        "key": "0bd6ded5e5d6d590ad2aeac6e6a0a44e87b54e8f77236a56e8b367d9e56461c1",
+        "sourceNumber": 35,
+        "correctIndex": 0
+      },
+      {
+        "question": "A retailer has net sales of Rs. 250,000 and cost of goods sold of Rs. 155,000. What is gross profit?",
+        "choices": [
+          "Rs. 95,000",
+          "Rs. 155,000",
+          "Rs. 250,000",
+          "Rs. 405,000"
+        ],
+        "key": "5cd7ea1fc7a6c086a32d3c1175e7aa6d2794382454af66c30a9d5787a8c85073",
+        "sourceNumber": 36,
+        "correctIndex": 0
+      },
+      {
+        "question": "Under a periodic inventory system, opening inventory is Rs. 18,000, net purchases are Rs. 72,000, and closing inventory is Rs. 21,000. What is cost of goods sold?",
+        "choices": [
+          "Rs. 69,000",
+          "Rs. 90,000",
+          "Rs. 93,000",
+          "Rs. 111,000"
+        ],
+        "key": "1b027a70bce0dcbc35284120ad3cd145a547cfd31246b080fcb37e18ad119dc6",
+        "sourceNumber": 37,
+        "correctIndex": 0
+      },
+      {
+        "question": "A statement of financial position reports assets, liabilities, and equity as at which kind of time reference?",
+        "choices": [
+          "A particular date",
+          "An entire accounting period only",
+          "The date the business first made a sale",
+          "The next expected payment date"
+        ],
+        "key": "03c0c16d5501bde44044f400de1722442bd87e236eded661f34af3ea9c4e980e",
+        "sourceNumber": 38,
+        "correctIndex": 0
+      },
+      {
+        "question": "Opening retained earnings are Rs. 40,000, net income is Rs. 12,000, and dividends are Rs. 3,000. What are ending retained earnings, assuming no other changes?",
+        "choices": [
+          "Rs. 49,000",
+          "Rs. 55,000",
+          "Rs. 31,000",
+          "Rs. 52,000"
+        ],
+        "key": "921659ef7c0697cbfce87d1a6e0eef61167ee9d49a0195f61df50ba23b88352c",
+        "sourceNumber": 39,
+        "correctIndex": 0
+      },
+      {
+        "question": "Under a common current/non-current classification, which asset is generally current?",
+        "choices": [
+          "Accounts receivable expected to be collected within the normal operating cycle",
+          "A building used for many years",
+          "A patent expected to provide long-term benefit",
+          "A delivery truck used in operations"
+        ],
+        "key": "fc5bb50c1ab5071f49a7c6b876396b14347fc1691d23d50f1c511623ae2c399b",
+        "sourceNumber": 40,
+        "correctIndex": 0
+      },
+      {
+        "question": "Current assets are Rs. 140,000 and current liabilities are Rs. 85,000. What is working capital?",
+        "choices": [
+          "Rs. 55,000",
+          "Rs. 85,000",
+          "Rs. 140,000",
+          "Rs. 225,000"
+        ],
+        "key": "cb9029cb05a03ed74764fed00b3025bccc26764ff2fcf949bcc7770beb7373f3",
+        "sourceNumber": 41,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which item is generally a current liability for a trading business?",
+        "choices": [
+          "Accounts payable due to suppliers",
+          "Owner's capital",
+          "Equipment",
+          "Sales revenue"
+        ],
+        "key": "ee09e321cdfe7022bebc174670d962669bc1abbf40cb30bdd1c651934d6ca721",
+        "sourceNumber": 42,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which payment is normally treated as a capital expenditure rather than an immediate routine expense?",
+        "choices": [
+          "Buying a delivery vehicle expected to be used for several years",
+          "Paying this month's electricity bill",
+          "Replacing a small, low-cost light bulb",
+          "Paying staff wages for the current week"
+        ],
+        "key": "721c438ea136bf75698f5b86076895bcac2e4a2f53405108e38ba285a2fe34ca",
+        "sourceNumber": 43,
+        "correctIndex": 0
+      },
+      {
+        "question": "Under accrual accounting, when is revenue generally recognized for a service business?",
+        "choices": [
+          "When the service is performed and the revenue is earned",
+          "Only when the owner withdraws cash",
+          "Only when the customer pays, regardless of service timing",
+          "When a supplier sends an invoice"
+        ],
+        "key": "bfd8c5e28fde812c9bd0b444ce24133e18cb30e464020ef609e9ad0c7f2d329b",
+        "sourceNumber": 44,
+        "correctIndex": 0
+      },
+      {
+        "question": "The matching principle is most closely concerned with which idea?",
+        "choices": [
+          "Recognizing expenses in the period in which they help generate related revenue, where applicable",
+          "Recording every expense only when cash is paid",
+          "Matching every asset with a liability of equal amount",
+          "Recording revenue only at the end of the year"
+        ],
+        "key": "c2c27c92af715105e5fb6be6578e3ab4b885da83c8024550410133123daed167",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business receives cash now for work it will perform next month. Under accrual accounting, the receipt is initially most appropriately recorded as what?",
+        "choices": [
+          "A liability",
+          "Earned revenue",
+          "An expense",
+          "A reduction in accounts receivable"
+        ],
+        "key": "449ca20cb7ef779f3c213a68785a0553dbaacac688d577dc07694ca0bd6673c8",
+        "sourceNumber": 46,
+        "correctIndex": 0
+      },
+      {
+        "question": "A company prepares financial statements for each twelve-month period ending 30 June. What accounting concept does this illustrate?",
+        "choices": [
+          "The periodicity assumption",
+          "The separate-entity assumption",
+          "The monetary-unit assumption",
+          "The going-concern assumption"
+        ],
+        "key": "eb14345fc2d655edf59b1da056efcee99ba1b8faf000987d050dbc4d45676315",
+        "sourceNumber": 47,
+        "correctIndex": 0
+      },
+      {
+        "question": "A proprietor pays a personal household bill from the business bank account. Which accounting idea requires keeping the personal transaction separate from business expenses?",
+        "choices": [
+          "Separate-entity assumption",
+          "Matching principle",
+          "Historical-cost principle",
+          "Consistency principle"
+        ],
+        "key": "d42924796a7956fb29f2259ad1fa99c2e193d5d3fcdf48bae11d4658a291eb5c",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business paid Rs. 24,000 for 12 months of insurance on 1 October. By 31 December, how much insurance expense has been used, assuming equal monthly coverage and no adjustment for purchase-day details?",
+        "choices": [
+          "Rs. 6,000",
+          "Rs. 2,000",
+          "Rs. 18,000",
+          "Rs. 24,000"
+        ],
+        "key": "43532675f13d723b136510d054fcbe12de4b2129689d1da6852ac04ee38dc050",
+        "sourceNumber": 49,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business received Rs. 15,000 in advance and initially credited Unearned Revenue. By period-end, it has performed one-third of the promised work. What amount should be recognized as revenue?",
+        "choices": [
+          "Rs. 5,000",
+          "Rs. 10,000",
+          "Rs. 15,000",
+          "Rs. 45,000"
+        ],
+        "key": "0e3f07382885efe7179140e6afb0c0bf3ea8f1125ddaf3a11960c491db3f2a7d",
+        "sourceNumber": 50,
+        "correctIndex": 0
+      },
+      {
+        "question": "At month-end, Rs. 4,800 of salaries have been earned by employees but not yet paid or recorded. Which adjustment is needed?",
+        "choices": [
+          "Debit Salaries Expense Rs. 4,800; credit Salaries Payable Rs. 4,800",
+          "Debit Salaries Payable Rs. 4,800; credit Cash Rs. 4,800",
+          "Debit Cash Rs. 4,800; credit Salaries Expense Rs. 4,800",
+          "Debit Prepaid Salaries Rs. 4,800; credit Salaries Payable Rs. 4,800"
+        ],
+        "key": "a0639dcf78ddce66145c5dfd255979f0861d922940bb9ae8dd5c115756337349",
+        "sourceNumber": 51,
+        "correctIndex": 0
+      },
+      {
+        "question": "A consultant has completed Rs. 9,000 of work by month-end but has not yet billed the client. Which adjusting entry is appropriate?",
+        "choices": [
+          "Debit Accounts Receivable; credit Service Revenue",
+          "Debit Cash; credit Service Revenue",
+          "Debit Service Revenue; credit Accounts Receivable",
+          "Debit Unearned Revenue; credit Cash"
+        ],
+        "key": "9018f7177534bc181293455c38b1d6e12cec2f2e8658366e469040588007801a",
+        "sourceNumber": 52,
+        "correctIndex": 0
+      },
+      {
+        "question": "A machine costs Rs. 100,000, has a residual value of Rs. 10,000, and a useful life of 5 years. Using straight-line depreciation, what is annual depreciation?",
+        "choices": [
+          "Rs. 18,000",
+          "Rs. 20,000",
+          "Rs. 22,000",
+          "Rs. 10,000"
+        ],
+        "key": "aceeb758b764a2969e1eb12b88753714ef3b2a26c0c041e53e14c14ec8a67d83",
+        "sourceNumber": 53,
+        "correctIndex": 0
+      },
+      {
+        "question": "Equipment costs Rs. 80,000, has no residual value, and is depreciated straight-line over 4 years. What is its carrying amount after 2 full years, assuming no impairment or disposal?",
+        "choices": [
+          "Rs. 40,000",
+          "Rs. 60,000",
+          "Rs. 20,000",
+          "Rs. 80,000"
+        ],
+        "key": "2bdbf5de40264643dbaf4e27099c2fd39e26736afdd5ff8333415cdde4b579c9",
+        "sourceNumber": 54,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does Accumulated Depreciation represent?",
+        "choices": [
+          "The total depreciation recorded on an asset up to a stated date",
+          "The cash set aside to replace an asset",
+          "The asset's original purchase price only",
+          "The amount of depreciation expected next year"
+        ],
+        "key": "f28ac0474bcd4f8791c3ee314ded4cca3b293d1888dd1c2675edaffd4aca0f56",
+        "sourceNumber": 55,
+        "correctIndex": 0
+      },
+      {
+        "question": "Under straight-line depreciation, how does a higher estimated residual value affect annual depreciation, if cost and useful life remain unchanged?",
+        "choices": [
+          "It decreases annual depreciation",
+          "It increases annual depreciation",
+          "It has no effect on annual depreciation",
+          "It makes annual depreciation equal to the asset's cost"
+        ],
+        "key": "eb8040de5abd9c7d373e9c7c2b7965769ce0bc593884497ec3506e0c67aacf8d",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "Under the periodic inventory method, opening inventory is Rs. 25,000, purchases are Rs. 90,000, purchase returns are Rs. 5,000, and closing inventory is Rs. 30,000. What is cost of goods sold?",
+        "choices": [
+          "Rs. 80,000",
+          "Rs. 85,000",
+          "Rs. 110,000",
+          "Rs. 120,000"
+        ],
+        "key": "9c53f47b55743dc1b0e5c64aa0341fc17aad8837973d431bf203b72d14e2cf4a",
+        "sourceNumber": 57,
+        "correctIndex": 0
+      },
+      {
+        "question": "If purchase prices rise during a period, and a business uses FIFO rather than LIFO, which statement is generally true when costs are assigned consistently and inventory quantities are comparable?",
+        "choices": [
+          "FIFO generally assigns older, lower costs to cost of goods sold and leaves newer, higher costs in ending inventory",
+          "FIFO always gives the same ending inventory as LIFO",
+          "FIFO assigns the newest costs to cost of goods sold first",
+          "FIFO eliminates the need to count inventory"
+        ],
+        "key": "e54256ea4795b0bea4b60f52f90be62fa398970dff421c70304955ce97d2f16e",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "A physical count shows inventory worth Rs. 18,000, while the records show Rs. 20,000. Before considering any other cause, what does the difference indicate?",
+        "choices": [
+          "Recorded inventory exceeds counted inventory by Rs. 2,000",
+          "Counted inventory exceeds recorded inventory by Rs. 2,000",
+          "The two amounts are equal",
+          "Cost of goods sold is necessarily overstated by Rs. 20,000"
+        ],
+        "key": "6a6c999f6555c470f4f0ed05f438c609d192328af8db3ce60f74cb2c1af85ea2",
+        "sourceNumber": 59,
+        "correctIndex": 0
+      },
+      {
+        "question": "If closing inventory is overstated by Rs. 4,000 and all other figures are correct under a periodic system, what is the effect on cost of goods sold and gross profit?",
+        "choices": [
+          "Cost of goods sold is understated by Rs. 4,000 and gross profit is overstated by Rs. 4,000",
+          "Cost of goods sold is overstated by Rs. 4,000 and gross profit is understated by Rs. 4,000",
+          "Both cost of goods sold and gross profit are overstated by Rs. 4,000",
+          "Neither amount changes"
+        ],
+        "key": "dc287ae8d2869ae2bc9de71e42f0d7a0a6f20e49fe48e2e77b6ebe491dd38eb0",
+        "sourceNumber": 60,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business paid Rs. 5,500 for supplies during the period. At period-end, supplies on hand are Rs. 1,300 and the opening supplies asset was zero. What supplies expense should be recognized?",
+        "choices": [
+          "Rs. 4,200",
+          "Rs. 1,300",
+          "Rs. 5,500",
+          "Rs. 6,800"
+        ],
+        "key": "91744a63ffda4d24384b8421dcb4b383ef981290b0f957710408fe2b83d7aa2f",
+        "sourceNumber": 61,
+        "correctIndex": 0
+      },
+      {
+        "question": "Under the allowance method, a business estimates that some customer balances will not be collected. Which entry generally records the period's estimated credit loss?",
+        "choices": [
+          "Debit Bad Debt Expense; credit Allowance for Doubtful Accounts",
+          "Debit Accounts Receivable; credit Bad Debt Expense",
+          "Debit Cash; credit Allowance for Doubtful Accounts",
+          "Debit Allowance for Doubtful Accounts; credit Service Revenue"
+        ],
+        "key": "25c07454e60241b60fe9438ad1faae47535f770baf0f629848482cce2bb828cb",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "Rent of Rs. 2,000 has accrued by period-end but has not yet been paid or recorded. What is the effect of the adjusting entry?",
+        "choices": [
+          "Expenses and liabilities each increase by Rs. 2,000",
+          "Assets and revenue each increase by Rs. 2,000",
+          "Cash and expenses each decrease by Rs. 2,000",
+          "Liabilities decrease and equity increases by Rs. 2,000"
+        ],
+        "key": "f381f63bc2dccb1eec89dbdb39983eec51b1a72497b51e63831ac522cea02d36",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business fails to adjust an expired prepaid insurance amount. Compared with correct statements, what is the likely effect for that period?",
+        "choices": [
+          "Assets and net income are overstated; expenses are understated",
+          "Assets and net income are understated; expenses are overstated",
+          "Liabilities and expenses are overstated",
+          "Revenue and cash are understated"
+        ],
+        "key": "4c84f5b1f4496f6baafa44bdcc14ae8a8a193a3e8bf46194f707455515342692",
+        "sourceNumber": 64,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business has earned Rs. 3,000 of a customer advance but fails to make the required adjustment. What is the likely effect at period-end?",
+        "choices": [
+          "Unearned Revenue is overstated and revenue is understated by Rs. 3,000",
+          "Unearned Revenue is understated and revenue is overstated by Rs. 3,000",
+          "Cash and revenue are both overstated by Rs. 3,000",
+          "Expenses are overstated by Rs. 3,000"
+        ],
+        "key": "4b5a207e09178acd3f5455ca257c2ce0c610fbd1b66bf34925d8f74080de3b9e",
+        "sourceNumber": 65,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which entry records one period's depreciation on equipment under the usual accumulated-depreciation method?",
+        "choices": [
+          "Debit Depreciation Expense; credit Accumulated Depreciation",
+          "Debit Equipment; credit Depreciation Expense",
+          "Debit Accumulated Depreciation; credit Cash",
+          "Debit Cash; credit Depreciation Expense"
+        ],
+        "key": "697793173ecbdeae0514a769fc1b4d01d086ea8adadde5e6359e00d004809d96",
+        "sourceNumber": 66,
+        "correctIndex": 0
+      },
+      {
+        "question": "Current assets are Rs. 120,000 and current liabilities are Rs. 60,000. What is the current ratio?",
+        "choices": [
+          "2.0:1",
+          "0.5:1",
+          "60:1",
+          "180:1"
+        ],
+        "key": "a9156cae910416fd433261acd8ef040a87a56f6529949a9796802d388987a99e",
+        "sourceNumber": 67,
+        "correctIndex": 0
+      },
+      {
+        "question": "Cash is Rs. 20,000, accounts receivable is Rs. 30,000, inventory is Rs. 40,000, and current liabilities are Rs. 50,000. Using quick assets as cash plus receivables, what is the quick ratio?",
+        "choices": [
+          "1.0:1",
+          "1.8:1",
+          "0.4:1",
+          "2.0:1"
+        ],
+        "key": "cd49876dac04d4e41fb922f6382e6866ac6e6992519a75004edaddd58b65084f",
+        "sourceNumber": 68,
+        "correctIndex": 0
+      },
+      {
+        "question": "Net sales are Rs. 200,000 and cost of goods sold is Rs. 120,000. What is the gross profit margin as a percentage of net sales?",
+        "choices": [
+          "40%",
+          "60%",
+          "80%",
+          "20%"
+        ],
+        "key": "fafcac4675d9d9de830793efa4f977ec70669e330dcb267b09618613329c679f",
+        "sourceNumber": 69,
+        "correctIndex": 0
+      },
+      {
+        "question": "Net income is Rs. 18,000 and net sales are Rs. 180,000. What is the net profit margin?",
+        "choices": [
+          "10%",
+          "18%",
+          "90%",
+          "1%"
+        ],
+        "key": "3ad3dbc441ac650db6c83544ed7a372d02da1523c18f609eb75720a0245044eb",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "Total liabilities are Rs. 90,000 and owner's equity is Rs. 60,000. What is the liabilities-to-equity ratio?",
+        "choices": [
+          "1.5:1",
+          "0.67:1",
+          "2.5:1",
+          "30:1"
+        ],
+        "key": "212ef3d6703f9641ea5d9be8a243beb2f8848fdc1717279a2c561803e62e4406",
+        "sourceNumber": 71,
+        "correctIndex": 0
+      },
+      {
+        "question": "Cost of goods sold is Rs. 240,000 and average inventory is Rs. 60,000. What is inventory turnover for the period?",
+        "choices": [
+          "4 times",
+          "0.25 times",
+          "180 times",
+          "300 times"
+        ],
+        "key": "7cfc126e072539709fbc9616ee62efbd9e711996922a0e377a979ebf95fbea44",
+        "sourceNumber": 72,
+        "correctIndex": 0
+      },
+      {
+        "question": "Credit sales for a period are Rs. 300,000 and average accounts receivable is Rs. 50,000. What is receivables turnover, using these figures?",
+        "choices": [
+          "6 times",
+          "0.17 times",
+          "250 times",
+          "350 times"
+        ],
+        "key": "778732a38ad952237c539b7c6133015d1ac463ac57551ffe1e8c508a838bb35d",
+        "sourceNumber": 73,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business has current assets of Rs. 95,000 and current liabilities of Rs. 108,000. What is its working capital?",
+        "choices": [
+          "Negative Rs. 13,000",
+          "Rs. 13,000",
+          "Rs. 95,000",
+          "Rs. 203,000"
+        ],
+        "key": "0ea614e4b95f43a154a62c769f759b6218f8a8e58eb061304de0072106317c90",
+        "sourceNumber": 74,
+        "correctIndex": 0
+      },
+      {
+        "question": "Net income is Rs. 12,000 and average total assets are Rs. 120,000. What is return on average assets, using net income as the numerator?",
+        "choices": [
+          "10%",
+          "1%",
+          "12%",
+          "90%"
+        ],
+        "key": "948dfae1078c29a302c3e473b17171f0cf73fc2724522730568dd6fc613ee4a8",
+        "sourceNumber": 75,
+        "correctIndex": 0
+      },
+      {
+        "question": "An item costs Rs. 100 and is priced with a 25% markup on cost. What is its selling price before tax?",
+        "choices": [
+          "Rs. 125",
+          "Rs. 120",
+          "Rs. 25",
+          "Rs. 75"
+        ],
+        "key": "9baff96b6ffb5838276da6b767ae4f624a5a621c988a2365af1f381a9bc0fb1e",
+        "sourceNumber": 76,
+        "correctIndex": 0
+      },
+      {
+        "question": "Within the relevant range and for a fixed time period, which statement about total fixed cost is generally correct?",
+        "choices": [
+          "It remains constant as activity changes",
+          "It rises in direct proportion to units produced",
+          "It is always zero when production stops",
+          "It changes by the same amount per unit as variable cost"
+        ],
+        "key": "6f76376d7c42ad5e32cc07c16e2f1a4aa2f626c90c7cc28f1793ce93138abf5e",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "Within the relevant range, which statement about variable cost per unit is generally correct?",
+        "choices": [
+          "It stays approximately constant as volume changes",
+          "It doubles every time output doubles",
+          "It remains zero at every positive output level",
+          "It always equals total fixed cost"
+        ],
+        "key": "47fe1f4d8f3c9abf1ff7a003399f501d65d456ff975d2adfb823cd47870761a6",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "A product has a variable cost of Rs. 8 per unit. What is the total variable cost for 500 units?",
+        "choices": [
+          "Rs. 4,000",
+          "Rs. 508",
+          "Rs. 3,992",
+          "Rs. 40,000"
+        ],
+        "key": "967135d96995bdc48725ba7ba4f237d0b5d1945ef4f2d383ec1664cbcd6f895c",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "A product sells for Rs. 20 per unit and has a variable cost of Rs. 12 per unit. What is its contribution per unit?",
+        "choices": [
+          "Rs. 8",
+          "Rs. 12",
+          "Rs. 20",
+          "Rs. 32"
+        ],
+        "key": "161fab6d724d0ead308fd140f99bc2820e0bcf6bc030bdadb049a2b2aa12ed9d",
+        "sourceNumber": 80,
+        "correctIndex": 0
+      },
+      {
+        "question": "Fixed costs are Rs. 24,000 and contribution per unit is Rs. 8. How many units must be sold to break even?",
+        "choices": [
+          "3,000 units",
+          "192,000 units",
+          "24,008 units",
+          "2,000 units"
+        ],
+        "key": "f4026af97bc9283ea5344d8c3cd4327940d8d550982a7b12db1a59c4ccc0f80d",
+        "sourceNumber": 81,
+        "correctIndex": 0
+      },
+      {
+        "question": "Fixed costs are Rs. 30,000 and the contribution-margin ratio is 30%. What sales revenue is needed to break even?",
+        "choices": [
+          "Rs. 100,000",
+          "Rs. 90,000",
+          "Rs. 30,000",
+          "Rs. 10,000"
+        ],
+        "key": "0c518cf12547de28cd95020ba49123f5a3d9eb1b34deba65cc93000c0a267da6",
+        "sourceNumber": 82,
+        "correctIndex": 0
+      },
+      {
+        "question": "Actual sales are Rs. 150,000 and break-even sales are Rs. 100,000. What is the margin of safety in sales value?",
+        "choices": [
+          "Rs. 50,000",
+          "Rs. 100,000",
+          "Rs. 150,000",
+          "Rs. 250,000"
+        ],
+        "key": "fb74ba9778a1094bb7e96c94aae025a929bd9c00c3dfb38b2bbf4c0e7c5df2a0",
+        "sourceNumber": 83,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business makes distinct products to customer specifications and tracks costs for each customer order. Which costing method is most suitable?",
+        "choices": [
+          "Job-order costing",
+          "Process costing",
+          "Retail inventory method",
+          "Cash-basis costing"
+        ],
+        "key": "7b57a660871929c93efa4f3b9f5779efb77993690cf3279aba5009cc2ba31d20",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "A factory continuously produces large quantities of an identical liquid through successive stages. Which costing method is generally appropriate?",
+        "choices": [
+          "Process costing",
+          "Job-order costing",
+          "Specific identification of each customer order",
+          "Bank-reconciliation costing"
+        ],
+        "key": "8bd579adb392b46200aa33b8a7b6cadfb37ce02cbb84b9ea50e21210dd6cb8a6",
+        "sourceNumber": 85,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which cost is normally a direct material cost for a furniture maker producing a particular table?",
+        "choices": [
+          "Wood used in that table",
+          "Factory manager's salary",
+          "Factory rent",
+          "General factory electricity"
+        ],
+        "key": "0af4e14ea0faaf55957f6e2ea7c1324d270676ad28de733e670d783d7f4fa895",
+        "sourceNumber": 86,
+        "correctIndex": 0
+      },
+      {
+        "question": "Factory rent for a production facility is usually classified as which product-cost category?",
+        "choices": [
+          "Manufacturing overhead",
+          "Direct materials",
+          "Direct labour",
+          "Selling expense"
+        ],
+        "key": "304bda60251a83a45f88e36b361ff7017a978adf8e05722fabc572e079750f91",
+        "sourceNumber": 87,
+        "correctIndex": 0
+      },
+      {
+        "question": "Direct materials are Rs. 40,000 and direct labour is Rs. 25,000. What is prime cost?",
+        "choices": [
+          "Rs. 65,000",
+          "Rs. 15,000",
+          "Rs. 40,000",
+          "Rs. 25,000"
+        ],
+        "key": "fe855d10d68e6f8d2c687fb5ebca960c799e8fa5b4208988fbb8f284891873fe",
+        "sourceNumber": 88,
+        "correctIndex": 0
+      },
+      {
+        "question": "Direct labour is Rs. 18,000 and manufacturing overhead is Rs. 22,000. What is conversion cost?",
+        "choices": [
+          "Rs. 40,000",
+          "Rs. 4,000",
+          "Rs. 18,000",
+          "Rs. 22,000"
+        ],
+        "key": "312cc8c6354352ebefcce8c1c2beb7e18a81e159b3726165ae35c69a36643203",
+        "sourceNumber": 89,
+        "correctIndex": 0
+      },
+      {
+        "question": "A product has been partly manufactured at the reporting date but is not yet complete. Which inventory category best describes it?",
+        "choices": [
+          "Work in process",
+          "Raw materials",
+          "Finished goods",
+          "Cost of goods sold"
+        ],
+        "key": "662b9d85e1dc10ef75a63d15f93f18d911ba444b6408353f1b2b97e35acb7355",
+        "sourceNumber": 90,
+        "correctIndex": 0
+      },
+      {
+        "question": "Goods have completed production but remain unsold at the reporting date. Which inventory category applies to a manufacturer?",
+        "choices": [
+          "Finished goods",
+          "Raw materials",
+          "Work in process",
+          "Supplies expense"
+        ],
+        "key": "f9869fba1aa9675151b45727a7e61cedf52c2d9f57a01acd7d0cb9dd9a938590",
+        "sourceNumber": 91,
+        "correctIndex": 0
+      },
+      {
+        "question": "A manager is choosing between two alternatives. Which cost is most relevant to the decision, all else equal?",
+        "choices": [
+          "A future cost that differs between the alternatives",
+          "A cost already incurred that cannot be changed",
+          "A past cost recorded at the original purchase date",
+          "A cost that is identical under every alternative"
+        ],
+        "key": "2e6b0a9f3ae2ab870108f78ef01e2ff4ec5a772b94f5e773cb83562a5156dfee",
+        "sourceNumber": 92,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business's bank statement shows Rs. 52,000. There is an outstanding cheque of Rs. 7,000 and a deposit in transit of Rs. 5,000. Before considering other differences, what is the adjusted bank-statement balance?",
+        "choices": [
+          "Rs. 50,000",
+          "Rs. 54,000",
+          "Rs. 60,000",
+          "Rs. 40,000"
+        ],
+        "key": "c521a2382aba602dc4db2acc5c6acfc9250dcccca7c6dab7651972aba2e52435",
+        "sourceNumber": 93,
+        "correctIndex": 0
+      },
+      {
+        "question": "A bank charges a Rs. 500 service fee that is not yet recorded in the business's books. What entry is generally needed in the books?",
+        "choices": [
+          "Debit Bank Charges Expense; credit Cash",
+          "Debit Cash; credit Bank Charges Expense",
+          "Debit Accounts Payable; credit Bank Charges Expense",
+          "Debit Bank Charges Expense; credit Accounts Receivable"
+        ],
+        "key": "2487d4d3219b544f8f92e895ca10d6212bedf57c942a274b6f1d76cfae9b8e16",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business purchases equipment by paying cash. In a cash-flow statement, this cash payment is generally classified as which type of activity?",
+        "choices": [
+          "Investing activity",
+          "Operating activity",
+          "Financing activity",
+          "Non-cash revenue activity"
+        ],
+        "key": "3621de770fd914be50abee3770dbaea175bc01ec60c2049290a898ecce8eaadc",
+        "sourceNumber": 95,
+        "correctIndex": 0
+      },
+      {
+        "question": "A company repays part of the principal on a bank loan using cash. Which cash-flow category generally applies to the principal repayment?",
+        "choices": [
+          "Financing activity",
+          "Investing activity",
+          "Operating activity",
+          "Non-cash activity"
+        ],
+        "key": "5d2aa23ed2ea626427dc043cce5c178ea412ea061b6a82e9d14861f1dea209fc",
+        "sourceNumber": 96,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business receives cash from a customer to settle an invoice that was recorded as revenue in an earlier period. What is the effect of the cash receipt now?",
+        "choices": [
+          "Cash increases and Accounts Receivable decreases; no new revenue is recorded",
+          "Cash and revenue both increase",
+          "Accounts Receivable and revenue both increase",
+          "Cash decreases and Accounts Payable decreases"
+        ],
+        "key": "da2424c5cf4202bf302d78143238007409b445f08832ff1eb8fe016222201331",
+        "sourceNumber": 97,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business records a cash purchase of office supplies as an expense immediately. At period-end, it still has Rs. 600 of those supplies unused. What is the appropriate adjustment, assuming the unused amount is material?",
+        "choices": [
+          "Debit Supplies Asset; credit Supplies Expense for Rs. 600",
+          "Debit Supplies Expense; credit Supplies Asset for Rs. 600",
+          "Debit Cash; credit Supplies Expense for Rs. 600",
+          "Debit Accounts Payable; credit Supplies Asset for Rs. 600"
+        ],
+        "key": "20e2f77c30fd4691df283e15490b0b3e2a085129513801e1c4e6c0f36761e6cb",
+        "sourceNumber": 98,
+        "correctIndex": 0
+      },
+      {
+        "question": "A company has total assets of Rs. 400,000 and total liabilities of Rs. 150,000. If the accounting equation holds, what is equity?",
+        "choices": [
+          "Rs. 250,000",
+          "Rs. 550,000",
+          "Rs. 150,000",
+          "Rs. 400,000"
+        ],
+        "key": "b17e89de06eb765c3e24d09868eddf55c0700d7824045b1c7a1df72b28f63da2",
+        "sourceNumber": 99,
+        "correctIndex": 0
+      },
+      {
+        "question": "After the closing entries are posted, which account normally has a zero balance?",
+        "choices": [
+          "Cash",
+          "Accounts Payable",
+          "Service Revenue",
+          "Owner's Capital"
+        ],
+        "key": "0e6b521cad5b84d238898ecbfff55ae3e16f14719758a10d26625c142c2942ec",
+        "sourceNumber": 100,
+        "correctIndex": 2
+      }
+    ],
+    "invalidQuestionTable": false
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
