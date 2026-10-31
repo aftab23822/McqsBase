@@ -31,6 +31,8 @@ After all five pass, the cloud handoff imports each MP4 once and verifies the im
 
 Use `verify_only` to reconcile scheduled public results without rendering or creating posts. Automatic publication events also reconcile existing queued batches. A queued post is reported as scheduled; only a provider `PUBLISHED` status with a public URL counts as published. No cron polling or local background worker is added. The original daily writer is unchanged.
 
+Studio's legacy TikTok integration can report `PUBLISHED` with only an account profile URL. That is stored as provider-reported publication, not verified public video visibility. A complete batch with such receipts is `provider-published`; no posts are recreated. `publicUrlVerified` requires a post-specific URL. The first launch video's actual TikTok URL and Everyone visibility were independently checked in TikTok Studio; the immutable file hash/account/source-bound evidence is in `config/quiz-batch-public-proof.json`. Platform moderation may temporarily keep a new TikTok post under review even though the scheduler reports it published.
+
 The Free Studio library is finite (2 GB). The worker holds if storage is full rather than buying capacity or deleting historical assets. Immutable source MP4s and ledgers remain in GitHub for recovery.
 
 ## Cutover requirements

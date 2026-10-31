@@ -61,6 +61,8 @@ def summary(state, record, ledger):
         'sourceUrl': record['package']['url'],
         'scheduledAt': record.get('schedule', []),
         'published': sum(receipt.get('status') == 'PUBLISHED' for part in record.get('parts', [])
+                         for receipt in part.get('receipts', {}).values()),
+        'verifiedPublications': sum(receipt.get('publicUrlVerified', False) for part in record.get('parts', [])
                          for receipt in part.get('receipts', {}).values())}
 
 
@@ -175,7 +177,7 @@ def publish(storage, state, channels, studio, spacing, verify_only=False):
                 save(record)
                 raise RuntimeError('A scheduled provider publication failed; preserve the post IDs for repair.')
             if len(all_receipts) == 20 and all(r['status'] == 'PUBLISHED' for r in all_receipts):
-                record['status'] = 'published'
+                record['status'] = 'published' if all(r.get('publicUrlVerified') for r in all_receipts) else 'provider-published'
             save(record)
             print(json.dumps({'slug': slug, 'status': record['status'], 'published': sum(r['status'] == 'PUBLISHED' for r in all_receipts)}))
             continue
