@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-icom-accounting-fundamentals",
   "createdAt": "2026-10-31T11:54:37.478433+00:00",
-  "status": "scheduled",
+  "status": "published",
   "package": {
     "slug": "nat-icom-accounting-fundamentals",
     "title": "100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
@@ -1589,28 +1589,50 @@
           "attemptedAt": "2026-10-31T12:01:32.343443+00:00",
           "postId": "cmvwcougc023oro9d93d446cv",
           "url": "https://www.facebook.com/reel/3652682098223647",
-          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+          "providerUrl": "https://www.facebook.com/reel/3652682098223647",
+          "providerReleaseId": "3652682098223647",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "Facebook public Reel: intended Page 61582964920997 and author full-source comment verified",
+          "sourceCommentId": "2655641061547350",
+          "sourceCommentVerified": true
         },
         "instagram": {
           "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:01:32.343461+00:00",
           "postId": "cmvwcoui5023qro9db2et61zj",
           "url": "https://www.instagram.com/reel/DfKIyCFjMsS/",
-          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs",
+          "providerUrl": "https://www.instagram.com/reel/DfKIyCFjMsS/",
+          "providerReleaseId": "18101091059093079",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url"
         },
         "tiktok": {
           "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:01:32.343465+00:00",
           "postId": "cmvwcoujf023rro9d9b8o6n1s",
-          "url": "https://www.tiktok.com/@mcqsbase",
-          "integrationId": "cmvwbcule0222ro9dhocbic4w"
+          "url": "https://www.tiktok.com/@mcqsbase/video/7702804896810011924",
+          "integrationId": "cmvwbcule0222ro9dhocbic4w",
+          "providerUrl": "https://www.tiktok.com/@mcqsbase",
+          "providerReleaseId": "v_pub_file~v2-1.7702804600249681941",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "TikTok Studio Posts: exact Part 1 caption, 80-second video, Everyone visibility"
         },
         "youtube": {
           "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:01:32.343467+00:00",
           "postId": "cmvwcoul9023sro9derjxpuet",
           "url": "https://www.youtube.com/watch?v=pxOCX-CnZ1c",
-          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
+          "providerUrl": "https://www.youtube.com/watch?v=pxOCX-CnZ1c",
+          "providerReleaseId": "pxOCX-CnZ1c",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url"
         }
       }
     },
@@ -1974,32 +1996,54 @@
       "scheduledAt": "2026-10-31T17:22:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:01:42.527580+00:00",
           "postId": "cmvwcp1fe023tro9dato1vf99",
-          "url": null,
-          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+          "url": "https://www.facebook.com/reel/1771639393889856",
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+          "providerUrl": "https://www.facebook.com/reel/1771639393889856",
+          "providerReleaseId": "1771639393889856",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "Facebook public Part 2 Reel and McqsBase author full-source comment directly verified",
+          "sourceCommentId": "1092124403829120",
+          "sourceCommentVerified": true
         },
         "instagram": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:01:42.527597+00:00",
           "postId": "cmvwcp1ik023vro9d0zgs91fo",
-          "url": null,
-          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
+          "url": "https://www.instagram.com/reel/DfKJWsakUt-/",
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs",
+          "providerUrl": "https://www.instagram.com/reel/DfKJWsakUt-/",
+          "providerReleaseId": "18108976732961684",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url"
         },
         "tiktok": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:01:42.527599+00:00",
           "postId": "cmvwcp1k5023wro9d90j4h7e2",
-          "url": null,
-          "integrationId": "cmvwbcule0222ro9dhocbic4w"
+          "url": "https://www.tiktok.com/@mcqsbase/video/7702806197296041236",
+          "integrationId": "cmvwbcule0222ro9dhocbic4w",
+          "providerUrl": "https://www.tiktok.com/@mcqsbase",
+          "providerReleaseId": "v_pub_file~v2-1.7702805835587635221",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "TikTok Studio Posts: exact Part 2 caption, 80-second video, Everyone visibility"
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:01:42.527601+00:00",
           "postId": "cmvwcp1lh023xro9dquqtjvvp",
-          "url": null,
-          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
+          "url": "https://www.youtube.com/watch?v=N-tiui2cqqQ",
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
+          "providerUrl": "https://www.youtube.com/watch?v=N-tiui2cqqQ",
+          "providerReleaseId": "N-tiui2cqqQ",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url"
         }
       }
     },
@@ -2314,32 +2358,54 @@
       "scheduledAt": "2026-10-31T17:27:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:01:51.649331+00:00",
           "postId": "cmvwcp8fl023yro9di7laeszq",
-          "url": null,
-          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+          "url": "https://www.facebook.com/reel/2269299303907745",
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+          "providerUrl": "https://www.facebook.com/reel/2269299303907745",
+          "providerReleaseId": "2269299303907745",
+          "providerStatus": "ERROR",
+          "publicUrlVerified": true,
+          "verification": "Facebook public Reel and MCQsBase author source-comment repair directly verified; original video not republished",
+          "sourceCommentId": "1472595814813209",
+          "sourceCommentVerified": true
         },
         "instagram": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:01:51.649348+00:00",
           "postId": "cmvwcp8hh0240ro9dgpt8csjk",
-          "url": null,
-          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
+          "url": "https://www.instagram.com/reel/DfKJ7LGFhPt/",
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs",
+          "providerUrl": "https://www.instagram.com/reel/DfKJ7LGFhPt/",
+          "providerReleaseId": "18035446910909391",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url"
         },
         "tiktok": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:01:51.649350+00:00",
           "postId": "cmvwcp8it0241ro9d1b6ilsdu",
-          "url": null,
-          "integrationId": "cmvwbcule0222ro9dhocbic4w"
+          "url": "https://www.tiktok.com/@mcqsbase/video/7702807479578529044",
+          "integrationId": "cmvwbcule0222ro9dhocbic4w",
+          "providerUrl": "https://www.tiktok.com/@mcqsbase",
+          "providerReleaseId": "v_pub_file~v2-1.7702807126381742100",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "TikTok Studio Posts: exact Part 3 caption and duration, Everyone visibility"
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:01:51.649353+00:00",
           "postId": "cmvwcp8ks0242ro9df0yc68du",
-          "url": null,
-          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
+          "url": "https://www.youtube.com/watch?v=b7E_iV0D_7M",
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
+          "providerUrl": "https://www.youtube.com/watch?v=b7E_iV0D_7M",
+          "providerReleaseId": "b7E_iV0D_7M",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url"
         }
       }
     },
@@ -2703,32 +2769,54 @@
       "scheduledAt": "2026-10-31T17:32:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:02:00.347774+00:00",
           "postId": "cmvwcpf9c0243ro9d11t56zkn",
-          "url": null,
-          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+          "url": "https://www.facebook.com/reel/1670098791138950",
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+          "providerUrl": "https://www.facebook.com/reel/1670098791138950",
+          "providerReleaseId": "1670098791138950",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "Facebook public Part 4 Reel and McqsBase author full-source comment directly verified",
+          "sourceCommentId": "29400904606181378",
+          "sourceCommentVerified": true
         },
         "instagram": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:02:00.347791+00:00",
           "postId": "cmvwcpfb00245ro9dy2jpvd1i",
-          "url": null,
-          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
+          "url": "https://www.instagram.com/reel/DfKKf8yiqwM/",
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs",
+          "providerUrl": "https://www.instagram.com/reel/DfKKf8yiqwM/",
+          "providerReleaseId": "18189716383412315",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url"
         },
         "tiktok": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:02:00.347793+00:00",
           "postId": "cmvwcpfc20246ro9d85pk4dex",
-          "url": null,
-          "integrationId": "cmvwbcule0222ro9dhocbic4w"
+          "url": "https://www.tiktok.com/@mcqsbase/video/7702808764402961685",
+          "integrationId": "cmvwbcule0222ro9dhocbic4w",
+          "providerUrl": "https://www.tiktok.com/@mcqsbase",
+          "providerReleaseId": "v_pub_file~v2-1.7702808543805360149",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "TikTok Studio Posts: exact Part 4 caption and duration, Everyone visibility"
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:02:00.347796+00:00",
           "postId": "cmvwcpfd80247ro9d16zt9md9",
-          "url": null,
-          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
+          "url": "https://www.youtube.com/watch?v=EWUqRScQMCE",
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
+          "providerUrl": "https://www.youtube.com/watch?v=EWUqRScQMCE",
+          "providerReleaseId": "EWUqRScQMCE",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url"
         }
       }
     },
@@ -3092,32 +3180,54 @@
       "scheduledAt": "2026-10-31T17:37:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:02:09.508553+00:00",
           "postId": "cmvwcpm8k0248ro9datq7ab1c",
-          "url": null,
-          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+          "url": "https://www.facebook.com/reel/2347261369147309",
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+          "providerUrl": "https://www.facebook.com/reel/2347261369147309",
+          "providerReleaseId": "2347261369147309",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "Facebook public Part 5 Reel and McqsBase author full-source comment directly verified",
+          "sourceCommentId": "1477616394211569",
+          "sourceCommentVerified": true
         },
         "instagram": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:02:09.508569+00:00",
           "postId": "cmvwcpma4024aro9dh0rli8yx",
-          "url": null,
-          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
+          "url": "https://www.instagram.com/reel/DfKLKVIgUZp/",
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs",
+          "providerUrl": "https://www.instagram.com/reel/DfKLKVIgUZp/",
+          "providerReleaseId": "18007678406790653",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url"
         },
         "tiktok": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:02:09.508571+00:00",
           "postId": "cmvwcpmbc024bro9d9us5r9ff",
-          "url": null,
-          "integrationId": "cmvwbcule0222ro9dhocbic4w"
+          "url": "https://www.tiktok.com/@mcqsbase/video/7702810061378227477",
+          "integrationId": "cmvwbcule0222ro9dhocbic4w",
+          "providerUrl": "https://www.tiktok.com/@mcqsbase",
+          "providerReleaseId": "v_pub_file~v2-1.7702809680988588053",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "TikTok Studio Posts: exact Part 5 caption, 67-second video, Everyone visibility"
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:02:09.508574+00:00",
           "postId": "cmvwcpmcl024cro9d8v44evjj",
-          "url": null,
-          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
+          "url": "https://www.youtube.com/watch?v=RdaLJH4-YEE",
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
+          "providerUrl": "https://www.youtube.com/watch?v=RdaLJH4-YEE",
+          "providerReleaseId": "RdaLJH4-YEE",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url"
         }
       }
     }
