@@ -3092,8 +3092,9 @@
       "scheduledAt": "2026-10-31T17:37:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "uncertain",
-          "attemptedAt": "2026-10-31T12:02:09.508553+00:00"
+          "status": "accepted",
+          "attemptedAt": "2026-10-31T12:02:09.508553+00:00",
+          "postId": "cmvwcpm8k0248ro9datq7ab1c"
         },
         "instagram": {
           "status": "uncertain",
