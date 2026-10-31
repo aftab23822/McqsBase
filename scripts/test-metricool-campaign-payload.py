@@ -51,7 +51,7 @@ class PublicationBoundaryTests(unittest.TestCase):
             self.assertEqual(info['providers'], [{'network': network}])
             self.assertEqual(info['media'], [self.url])
             self.assertIn('#MCQsBase', info['text'])
-            self.assertIn('1 questions.', info['text'])
+            self.assertIn('1 question.', info['text'])
             if network == 'facebook':
                 self.assertIn(self.manifest['sourceUrl'], info['firstCommentText'])
                 self.assertEqual(info['facebookData']['type'], 'REEL')
