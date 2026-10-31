@@ -1585,31 +1585,31 @@
       "scheduledAt": "2026-10-31T17:17:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:01:32.343443+00:00",
           "postId": "cmvwcougc023oro9d93d446cv",
-          "url": null,
+          "url": "https://www.facebook.com/reel/3652682098223647",
           "integrationId": "cmvwb4faa021yro9dgcj8vlww"
         },
         "instagram": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:01:32.343461+00:00",
           "postId": "cmvwcoui5023qro9db2et61zj",
-          "url": null,
+          "url": "https://www.instagram.com/reel/DfKIyCFjMsS/",
           "integrationId": "cmvwbbtq00220ro9du35l1wrs"
         },
         "tiktok": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:01:32.343465+00:00",
           "postId": "cmvwcoujf023rro9d9b8o6n1s",
-          "url": null,
+          "url": "https://www.tiktok.com/@mcqsbase",
           "integrationId": "cmvwbcule0222ro9dhocbic4w"
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-10-31T12:01:32.343467+00:00",
           "postId": "cmvwcoul9023sro9derjxpuet",
-          "url": null,
+          "url": "https://www.youtube.com/watch?v=pxOCX-CnZ1c",
           "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
         }
       }
