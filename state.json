@@ -945,7 +945,13 @@
       "ledger": "batches/nts-quantitative-arithmetic-practice.json",
       "createdAt": "2026-11-01T11:20:59.234670+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
-      "scheduledAt": [],
+      "scheduledAt": [
+        "2026-11-01T16:40:00+05:00",
+        "2026-11-01T18:00:00+05:00",
+        "2026-11-01T19:20:00+05:00",
+        "2026-11-01T20:40:00+05:00",
+        "2026-11-01T22:00:00+05:00"
+      ],
       "published": 0,
       "verifiedPublications": 0
     }
