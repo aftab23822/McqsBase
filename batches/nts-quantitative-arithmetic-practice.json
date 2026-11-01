@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nts-quantitative-arithmetic-practice",
   "createdAt": "2026-11-01T11:20:59.234670+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "nts-quantitative-arithmetic-practice",
     "title": "100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
@@ -2743,5 +2743,86 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "nts-quantitative-arithmetic-practice",
+    "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+    "sourceTitle": "100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+    "sourceContentHash": "f97f56d48495f1b76d5f6167d541f2e878e013505614327b5c8ac6fb696553e6",
+    "productionDeployment": {
+      "id": 7472273676,
+      "sha": "b98b6c11545f88dbcae4a6f9a3ec0eebbf324336",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-01T11:20:59.126093+00:00",
+      "url": "https://mcqs-base-710qe03nl-as-projects-10921176.vercel.app",
+      "publisherRunId": 41300969691
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          77,
+          56,
+          100
+        ],
+        "count": 3,
+        "durationSeconds": 85,
+        "sha256": "6dfe1bc30f3769168f57997f2d9e01860fdd6938db70c360be4b64998518e3bc"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          32,
+          10,
+          23
+        ],
+        "count": 3,
+        "durationSeconds": 86,
+        "sha256": "da73ad965a54987bd220e15770f6ebd6b869904543722c90ea8f07f6696e0b83"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          93,
+          14,
+          55
+        ],
+        "count": 3,
+        "durationSeconds": 80,
+        "sha256": "1255afaa3596f8f92d8b04b525512bda2dcde9adeac0a46516571c6e6f4ed8cf"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          70,
+          74,
+          15
+        ],
+        "count": 3,
+        "durationSeconds": 80,
+        "sha256": "2f0ec0c6a9ab3a545db31a79e9a861ab849f8d5ab399693c057fd9a1c58f6ae7"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          37,
+          45,
+          95
+        ],
+        "count": 3,
+        "durationSeconds": 84,
+        "sha256": "f57a9f092eab2b5fa35fab0ef8fda84bd46c62b53b5053950672db77c4236b31"
+      }
+    ]
+  }
 }
