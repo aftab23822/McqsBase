@@ -1898,6 +1898,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        93,
+        14,
+        55
+      ],
+      "count": 3,
+      "durationSeconds": 80,
+      "sha256": "1255afaa3596f8f92d8b04b525512bda2dcde9adeac0a46516571c6e6f4ed8cf",
+      "manifest": {
+        "title": "100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+        "sourceTitle": "100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-01T11:20:59.126093+00:00",
+        "sourceContentHash": "f97f56d48495f1b76d5f6167d541f2e878e013505614327b5c8ac6fb696553e6",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7472273676,
+          "sha": "b98b6c11545f88dbcae4a6f9a3ec0eebbf324336",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-01T11:20:59.126093+00:00",
+          "url": "https://mcqs-base-710qe03nl-as-projects-10921176.vercel.app",
+          "publisherRunId": 41300969691
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 80,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A container has 15 litres of milk. If 3 litres are removed and replaced with water, what fraction of the resulting mixture is milk?",
+            "choices": [
+              "1/5",
+              "3/5",
+              "4/5",
+              "5/6"
+            ],
+            "correctIndex": 2,
+            "key": "934dde46721818fb385e32562e6e0303629e8d21aac0f97de2369955552488de",
+            "sourceNumber": 93
+          },
+          {
+            "question": "What is 7/8 − 1/3?",
+            "choices": [
+              "11/24",
+              "13/24",
+              "5/8",
+              "2/3"
+            ],
+            "correctIndex": 1,
+            "key": "41d62e832f45b8b1e2e18cfd179e46ad9b802e2bfe0259464019d2b59e884aea",
+            "sourceNumber": 14
+          },
+          {
+            "question": "At 6% simple interest per year, how long does Rs 3,000 take to earn Rs 540 interest?",
+            "choices": [
+              "2 years",
+              "3 years",
+              "4 years",
+              "5 years"
+            ],
+            "correctIndex": 1,
+            "key": "c487355f12d65d9e9e1b84c2b2abf1f640e153fe07bd2c986c77b22ad32dc578",
+            "sourceNumber": 55
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 20,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 20,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 21,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 23,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 27,
+            "duration": 15,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 42,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 43,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 44,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 45,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 50,
+            "duration": 18,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 68,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 69,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 70,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 71,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 75,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            93,
+            14,
+            55
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MathQuiz",
+          "#QuantitativeAptitude",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nts-quantitative-arithmetic-practice-part-03-1255afaa3596f8f9.mp4",
+        "videoSha256": "1255afaa3596f8f92d8b04b525512bda2dcde9adeac0a46516571c6e6f4ed8cf",
+        "assetId": 698130384
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q93, 14, 55 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 93, 14, 55\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MathQuiz",
+            "#QuantitativeAptitude",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q93, 14, 55 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 93, 14, 55\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MathQuiz",
+            "#QuantitativeAptitude",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q93, 14, 55 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 93, 14, 55\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MathQuiz",
+            "#QuantitativeAptitude",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q93, 14, 55 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 93, 14, 55\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MathQuiz",
+            "#QuantitativeAptitude",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
