@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "nts-quantitative-arithmetic-practice",
+  "createdAt": "2026-11-01T11:20:59.234670+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nts-quantitative-arithmetic-practice",
+    "title": "100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+    "url": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7472273676,
+      "sha": "b98b6c11545f88dbcae4a6f9a3ec0eebbf324336",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-01T11:20:59.126093+00:00",
+      "url": "https://mcqs-base-710qe03nl-as-projects-10921176.vercel.app",
+      "publisherRunId": 41300969691
+    },
+    "fetchedAt": "2026-11-01T11:20:59.126093+00:00",
+    "contentHash": "f97f56d48495f1b76d5f6167d541f2e878e013505614327b5c8ac6fb696553e6",
+    "questions": [
+      {
+        "question": "What is 15% of 240?",
+        "choices": [
+          "24",
+          "30",
+          "36",
+          "40"
+        ],
+        "key": "fd58f5a4e848a7b840e9f18ef10ecbce779c40299a3e1b097c909fef85d3c133",
+        "sourceNumber": 1,
+        "correctIndex": 2
+      },
+      {
+        "question": "A price of Rs 800 is increased by 12%. What is the new price?",
+        "choices": [
+          "Rs 884",
+          "Rs 896",
+          "Rs 912",
+          "Rs 920"
+        ],
+        "key": "bbdd937b3826cb1d40d6bc2621cc48bc09cf640120d0f4f0b460ff4f829c59dc",
+        "sourceNumber": 2,
+        "correctIndex": 1
+      },
+      {
+        "question": "A quantity falls from 500 to 425. What is the percentage decrease?",
+        "choices": [
+          "12%",
+          "15%",
+          "17%",
+          "20%"
+        ],
+        "key": "68b296565ea01657edbe5cc6211170e146d078f7411134a4c3f90a151dae37a1",
+        "sourceNumber": 3,
+        "correctIndex": 1
+      },
+      {
+        "question": "A candidate answers 42 of 60 questions correctly. What percentage is correct?",
+        "choices": [
+          "65%",
+          "68%",
+          "70%",
+          "72%"
+        ],
+        "key": "9159085e41cc5877e22bb17f690aac61422ace23d29ce2aa6ee052b50b677e02",
+        "sourceNumber": 4,
+        "correctIndex": 2
+      },
+      {
+        "question": "After a 20% discount, an item costs Rs 1,200. What was its marked price?",
+        "choices": [
+          "Rs 1,440",
+          "Rs 1,500",
+          "Rs 1,520",
+          "Rs 1,600"
+        ],
+        "key": "13371ee2801af6cd3d07a6e3e200526d416c0e34f20fad22a6064b12323a06d0",
+        "sourceNumber": 5,
+        "correctIndex": 1
+      },
+      {
+        "question": "A number is increased by 25% and becomes 250. What was the original number?",
+        "choices": [
+          "180",
+          "200",
+          "210",
+          "225"
+        ],
+        "key": "961a43056253c5e7b33632102af1a3cbae0f1caf8473c555d7e72f854da9c702",
+        "sourceNumber": 6,
+        "correctIndex": 1
+      },
+      {
+        "question": "A value rises from 80 to 100. What is the percentage increase?",
+        "choices": [
+          "20%",
+          "25%",
+          "แ30%",
+          "40%"
+        ],
+        "key": "e84577133f6102070eecaa2c311b20d732bed2a893e176cbd461d947c57cddf3",
+        "sourceNumber": 7,
+        "correctIndex": 1
+      },
+      {
+        "question": "A shop sells 30% of its stock and has 280 items left. How many items were there initially?",
+        "choices": [
+          "360",
+          "380",
+          "400",
+          "420"
+        ],
+        "key": "282cc33f69114b5c0c44579c98726af6fdcc58bc132f86f5a195b640438b5047",
+        "sourceNumber": 8,
+        "correctIndex": 2
+      },
+      {
+        "question": "If 40% of a number is 72, what is the number?",
+        "choices": [
+          "160",
+          "170",
+          "180",
+          "190"
+        ],
+        "key": "73c7b7dab10c73581fb4bca9a2617ed2fae3af0fa5834963176882ef85c7f51d",
+        "sourceNumber": 9,
+        "correctIndex": 2
+      },
+      {
+        "question": "A salary of Rs 50,000 increases by 10% and then by 10% again. What is the final salary?",
+        "choices": [
+          "Rs 60,000",
+          "Rs 60,500",
+          "Rs 61,000",
+          "Rs 61,500"
+        ],
+        "key": "d90de0622a98a3e0160aef318a5256bf74696788f32eb1eb580455ddb423920d",
+        "sourceNumber": 10,
+        "correctIndex": 1
+      },
+      {
+        "question": "Simplify the fraction 36/48.",
+        "choices": [
+          "2/3",
+          "3/4",
+          "4/5",
+          "5/6"
+        ],
+        "key": "ef16856e678a0496c6d3b686737950ad02d3f9c5d06faf839b95ddd9931df23d",
+        "sourceNumber": 11,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is 3/5 of 250?",
+        "choices": [
+          "125",
+          "140",
+          "150",
+          "175"
+        ],
+        "key": "8a7ca5ed1661496b3e1529a56d5e3a0b0f651f3b043ec72541efa0e65618f16b",
+        "sourceNumber": 12,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is 2/3 + 1/4?",
+        "choices": [
+          "3/7",
+          "5/7",
+          "11/12",
+          "1"
+        ],
+        "key": "f53bcb468c438ac684bac4199b1deeed29ab8eeb1d894e7b603b889fa84e4999",
+        "sourceNumber": 13,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is 7/8 − 1/3?",
+        "choices": [
+          "11/24",
+          "13/24",
+          "5/8",
+          "2/3"
+        ],
+        "key": "41d62e832f45b8b1e2e18cfd179e46ad9b802e2bfe0259464019d2b59e884aea",
+        "sourceNumber": 14,
+        "correctIndex": 1
+      },
+      {
+        "question": "A tank is 2/5 full. After adding 18 litres, it is 4/5 full. What is the tank's capacity?",
+        "choices": [
+          "36 litres",
+          "40 litres",
+          "45 litres",
+          "54 litres"
+        ],
+        "key": "9162001aadb24d3fd2a900d7c001f16ff8e62672affafec30db20efa4e3641e8",
+        "sourceNumber": 15,
+        "correctIndex": 2
+      },
+      {
+        "question": "The ratio of red to blue marbles is 3:5. If there are 64 marbles altogether, how many are red?",
+        "choices": [
+          "18",
+          "24",
+          "32",
+          "40"
+        ],
+        "key": "c0abb3fa9b0a6f3e3882a5c837a31606c2534506f26ce40b5c96e9dfefa48292",
+        "sourceNumber": 16,
+        "correctIndex": 1
+      },
+      {
+        "question": "Divide Rs 840 in the ratio 2:5. What is the smaller share?",
+        "choices": [
+          "Rs 210",
+          "Rs 240",
+          "Rs 280",
+          "Rs 600"
+        ],
+        "key": "b412a521948d45b3074657bde706d81de38a73fd1970c2bfabb7723028401879",
+        "sourceNumber": 17,
+        "correctIndex": 1
+      },
+      {
+        "question": "If a:b = 4:7 and b = 35, what is a?",
+        "choices": [
+          "16",
+          "20",
+          "24",
+          "28"
+        ],
+        "key": "474ec3c28773a31a4350e9194a2f51ffc8c130ccaa0deb2cb8bd9ecb741705ea",
+        "sourceNumber": 18,
+        "correctIndex": 1
+      },
+      {
+        "question": "The ratio of boys to girls in a group is 5:4. If there are 36 people, how many are girls?",
+        "choices": [
+          "16",
+          "18",
+          "20",
+          "24"
+        ],
+        "key": "98fbd557a98a2aacc1239d1bff4bede26d82547235f1e580a9199c4d0c99d91c",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "A map uses a scale of 1 cm to 5 km. What actual distance does 7.2 cm represent?",
+        "choices": [
+          "30 km",
+          "32 km",
+          "36 km",
+          "40 km"
+        ],
+        "key": "aee1bf441b925b7b814f86ddcbcc09ff72132480b2a57721de8c3d5085dba4d5",
+        "sourceNumber": 20,
+        "correctIndex": 2
+      },
+      {
+        "question": "The average of 8, 12, 15, and 25 is what?",
+        "choices": [
+          "14",
+          "15",
+          "16",
+          "17"
+        ],
+        "key": "be3f8a3f562b3a2c352ec052a01631c3c5e42dc5e2f8c2f26162b2ddbf40e249",
+        "sourceNumber": 21,
+        "correctIndex": 1
+      },
+      {
+        "question": "The average of five numbers is 18. What is their total?",
+        "choices": [
+          "80",
+          "85",
+          "90",
+          "95"
+        ],
+        "key": "d7eb766c238272786e9cb715a066a7ed3f4697a39f3ca4ff0097a960371f7ff4",
+        "sourceNumber": 22,
+        "correctIndex": 2
+      },
+      {
+        "question": "The average of 6 numbers is 14. If one number, 9, is removed, what is the average of the remaining numbers?",
+        "choices": [
+          "14",
+          "15",
+          "16",
+          "17"
+        ],
+        "key": "9580550f1d711d2f4d7ea05472f2f28b361b7541359427f260f0c7f7f27622a8",
+        "sourceNumber": 23,
+        "correctIndex": 1
+      },
+      {
+        "question": "A group of 20 students has an average score of 70. A group of 30 students has an average score of 80. What is the combined average?",
+        "choices": [
+          "74",
+          "76",
+          "77",
+          "78"
+        ],
+        "key": "c50be752e94f832340ca80ba180619e315a4f084dd5fa180163d30af5ada3ae4",
+        "sourceNumber": 24,
+        "correctIndex": 1
+      },
+      {
+        "question": "The average of 4, 6, and x is 8. What is x?",
+        "choices": [
+          "10",
+          "12",
+          "14",
+          "16"
+        ],
+        "key": "0523eb57964e1f23d012f2794e70f4f0d9d34ed1dec91a64c5a5e378ddc20849",
+        "sourceNumber": 25,
+        "correctIndex": 2
+      },
+      {
+        "question": "The average age of 5 people is 24 years. When one person joins, the average becomes 25 years. What is the age of the new person?",
+        "choices": [
+          "25 years",
+          "28 years",
+          "30 years",
+          "35 years"
+        ],
+        "key": "6d7c5e7b86c9c1797f90254592ff418b067cf2bf1370fccdc533ca32b6869cce",
+        "sourceNumber": 26,
+        "correctIndex": 2
+      },
+      {
+        "question": "A student scores 70, 80, and 90 on three tests. What score is needed on a fourth test to average 85?",
+        "choices": [
+          "90",
+          "95",
+          "100",
+          "105"
+        ],
+        "key": "fa8a70a9938f255cd039165f871971dd7e0821e4c6e2bcb4741bb03b5e605c2b",
+        "sourceNumber": 27,
+        "correctIndex": 2
+      },
+      {
+        "question": "A mixture contains 2 litres of juice and 3 litres of water. What percentage of the mixture is juice?",
+        "choices": [
+          "30%",
+          "35%",
+          "40%",
+          "60%"
+        ],
+        "key": "22fb447d3ce9828efe4c35eae16afd1631d905b2858123b6b329cb289c53e9e8",
+        "sourceNumber": 28,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 10-litre solution is 20% salt. How much salt does it contain?",
+        "choices": [
+          "1 litre",
+          "2 litres",
+          "4 litres",
+          "8 litres"
+        ],
+        "key": "5e17fd3a31bedaa8ba6b085b85df0e3183520dcbf7fc25127f3699d1a243307f",
+        "sourceNumber": 29,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many litres of water should be added to 8 litres of a 25% salt solution to make it a 20% salt solution?",
+        "choices": [
+          "1 litre",
+          "2 litres",
+          "3 litres",
+          "4 litres"
+        ],
+        "key": "af5fa24d8b83f384e7bd4514d2bb042d8fe2e0f9b0246e501fe9141a41a51d64",
+        "sourceNumber": 30,
+        "correctIndex": 1
+      },
+      {
+        "question": "A cyclist travels 60 km in 3 hours at a constant speed. What is the speed?",
+        "choices": [
+          "15 km/h",
+          "18 km/h",
+          "20 km/h",
+          "24 km/h"
+        ],
+        "key": "d6b6be7310552db7e7ed4d78e5658a2d15b20f6da3928713d6481559dcaab14a",
+        "sourceNumber": 31,
+        "correctIndex": 2
+      },
+      {
+        "question": "How far does a vehicle travel in 2.5 hours at 72 km/h?",
+        "choices": [
+          "160 km",
+          "170 km",
+          "180 km",
+          "190 km"
+        ],
+        "key": "49cc87c6f9cd67685e6c6931f6c80d3aae2a1ef0d5f57409bef38ba569f40abc",
+        "sourceNumber": 32,
+        "correctIndex": 2
+      },
+      {
+        "question": "How long does it take to travel 150 km at 50 km/h?",
+        "choices": [
+          "2 hours",
+          "2.5 hours",
+          "3 hours",
+          "3.5 hours"
+        ],
+        "key": "448289c6274b96fa68560318e44057d3641d7e40da522faae4d9c8d48c91b112",
+        "sourceNumber": 33,
+        "correctIndex": 2
+      },
+      {
+        "question": "A car travels 120 km at 60 km/h and then 120 km at 40 km/h. What is its average speed for the whole journey?",
+        "choices": [
+          "45 km/h",
+          "48 km/h",
+          "50 km/h",
+          "52 km/h"
+        ],
+        "key": "be7dfff22a8b381fb877f592b7bac6f5afd397f88b100f4d314413aa50bc2b15",
+        "sourceNumber": 34,
+        "correctIndex": 1
+      },
+      {
+        "question": "A person walks at 5 km/h for 36 minutes. How far does the person walk?",
+        "choices": [
+          "2 km",
+          "3 km",
+          "4 km",
+          "5 km"
+        ],
+        "key": "3701878dedb86ee96930f1d47ee0170338b34614f3e3be04ff84a3e8d706e6e5",
+        "sourceNumber": 35,
+        "correctIndex": 1
+      },
+      {
+        "question": "A train 150 metres long passes a pole in 10 seconds. What is its speed in metres per second?",
+        "choices": [
+          "10 m/s",
+          "12 m/s",
+          "15 m/s",
+          "20 m/s"
+        ],
+        "key": "0b409abf34114cc1fa3523b0fc6d36cdbe4eb34d16747dc46fcd8428643d0990",
+        "sourceNumber": 36,
+        "correctIndex": 2
+      },
+      {
+        "question": "A worker can complete a job in 12 days at a constant rate. What fraction of the job is completed in 3 days?",
+        "choices": [
+          "1/6",
+          "1/4",
+          "1/3",
+          "1/2"
+        ],
+        "key": "fb96edb8d8aae1acdfce6e8a9fbd0f0f10ea94e96dc955e7930c0bf7aece414e",
+        "sourceNumber": 37,
+        "correctIndex": 1
+      },
+      {
+        "question": "One pipe fills a tank in 6 hours and another fills it in 3 hours. How long do they take together, if both work at constant rates?",
+        "choices": [
+          "1 hour",
+          "2 hours",
+          "3 hours",
+          "4 hours"
+        ],
+        "key": "6f10b047aef8f1413585781c17cef97173f0a63009942511e07082b70ca28d5b",
+        "sourceNumber": 38,
+        "correctIndex": 1
+      },
+      {
+        "question": "A can complete a job in 10 days and B in 15 days. How long will they take together at constant rates?",
+        "choices": [
+          "5 days",
+          "6 days",
+          "7.5 days",
+          "12 days"
+        ],
+        "key": "4b130220c4c47a7ccf9944046eb3959258beb2fdb8194ee32b0d78368af1d276",
+        "sourceNumber": 39,
+        "correctIndex": 1
+      },
+      {
+        "question": "A can finish a job in 8 days. After A works alone for 2 days, what fraction of the job remains?",
+        "choices": [
+          "1/4",
+          "1/2",
+          "3/4",
+          "7/8"
+        ],
+        "key": "cc5f362ce4b5758499012235d6d61202a52e9b320e5f037552165fb825d11611",
+        "sourceNumber": 40,
+        "correctIndex": 2
+      },
+      {
+        "question": "Four identical machines make 240 parts in 6 hours. At the same rate, how many parts do 2 machines make in 3 hours?",
+        "choices": [
+          "40",
+          "60",
+          "80",
+          "120"
+        ],
+        "key": "7f6805732834252bc7c35cb2e1bab9a1ca62962e152c9d7c762587d0daf2691d",
+        "sourceNumber": 41,
+        "correctIndex": 1
+      },
+      {
+        "question": "A tap fills 3/5 of a tank in 12 minutes at a constant rate. How long does it take to fill the whole tank?",
+        "choices": [
+          "18 minutes",
+          "20 minutes",
+          "22 minutes",
+          "24 minutes"
+        ],
+        "key": "9981b0ffa272f5fc5e15b7ccd7526abf50065705d8bbadb610915558780e29ba",
+        "sourceNumber": 42,
+        "correctIndex": 1
+      },
+      {
+        "question": "A person completes 40% of a job in 8 days at a constant rate. How many days are needed for the whole job?",
+        "choices": [
+          "16 days",
+          "18 days",
+          "20 days",
+          "24 days"
+        ],
+        "key": "bfb3d9f0955e7a34525ca3f7f3eaf8461fa20c909afa3f2712b0500f98309f22",
+        "sourceNumber": 43,
+        "correctIndex": 2
+      },
+      {
+        "question": "An item bought for Rs 500 is sold for Rs 600. What is the profit percentage on cost price?",
+        "choices": [
+          "15%",
+          "20%",
+          "25%",
+          "30%"
+        ],
+        "key": "049d67ae53596cbefee9fb7a6f97dee29891133f5c096b8dbbd28ab1acce8143",
+        "sourceNumber": 44,
+        "correctIndex": 1
+      },
+      {
+        "question": "An item costs Rs 800 and is sold at a 15% loss. What is the selling price?",
+        "choices": [
+          "Rs 660",
+          "Rs 680",
+          "Rs 700",
+          "Rs 720"
+        ],
+        "key": "3c346b83bbc01fa26a937ecea36cb6a42e149110292c31d513965306b2f0bb36",
+        "sourceNumber": 45,
+        "correctIndex": 1
+      },
+      {
+        "question": "An item is sold for Rs 960 at a profit of 20% on cost price. What was its cost price?",
+        "choices": [
+          "Rs 760",
+          "Rs 800",
+          "Rs 820",
+          "Rs 840"
+        ],
+        "key": "407d408de6a8c02280a0667da819340de27b34783696c84f9cd02106c911214b",
+        "sourceNumber": 46,
+        "correctIndex": 1
+      },
+      {
+        "question": "A trader marks an item at Rs 2,000 and gives a 10% discount. What is the selling price?",
+        "choices": [
+          "Rs 1,700",
+          "Rs 1,750",
+          "Rs 1,800",
+          "Rs 1,900"
+        ],
+        "key": "503f67e9d03274a6180a3cd73ef599c0e78152af1719e45c59410c00a5200aea",
+        "sourceNumber": 47,
+        "correctIndex": 2
+      },
+      {
+        "question": "An item with a cost price of Rs 1,000 is marked 25% above cost and then discounted by 10% of the marked price. What is the selling price?",
+        "choices": [
+          "Rs 1,100",
+          "Rs 1,125",
+          "Rs 1,150",
+          "Rs 1,200"
+        ],
+        "key": "c1e273c4791d2c7d4bcf1dfcc17e38b07b1d41606725087c3815ee1a14116eea",
+        "sourceNumber": 48,
+        "correctIndex": 1
+      },
+      {
+        "question": "A trader buys 20 identical notebooks for Rs 600 and sells each for Rs 36. What is the total profit?",
+        "choices": [
+          "Rs 100",
+          "Rs 120",
+          "Rs 140",
+          "Rs 160"
+        ],
+        "key": "30fb408c5cf8d81a6a150c7cb3f874a14496f531cb7411b73bcb732fd950c739",
+        "sourceNumber": 49,
+        "correctIndex": 1
+      },
+      {
+        "question": "An item is sold for Rs 450 at a loss of 10% on cost price. What was the cost price?",
+        "choices": [
+          "Rs 480",
+          "Rs 500",
+          "Rs 510",
+          "Rs 550"
+        ],
+        "key": "7e49aefcab6f3835646eda77f568a07676da995d5a8be9b2b3e587b46947847e",
+        "sourceNumber": 50,
+        "correctIndex": 1
+      },
+      {
+        "question": "A shop offers successive discounts of 20% and 10% on a marked price of Rs 1,000. What is the final price?",
+        "choices": [
+          "Rs 700",
+          "Rs 720",
+          "Rs 750",
+          "Rs 780"
+        ],
+        "key": "7965cef56b6e98b308c4270979a4111dda5aa7191253772ca35713091e9e7a18",
+        "sourceNumber": 51,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the simple interest on Rs 5,000 at 8% per year for 3 years?",
+        "choices": [
+          "Rs 1,000",
+          "Rs 1,200",
+          "Rs 1,400",
+          "Rs 1,500"
+        ],
+        "key": "174f7987c7586cdef144eb2f542c4084f56a39413f77284e7df915e0191b7db3",
+        "sourceNumber": 52,
+        "correctIndex": 1
+      },
+      {
+        "question": "At 5% simple interest per year, what is the interest on Rs 2,400 for 2 years?",
+        "choices": [
+          "Rs 220",
+          "Rs 240",
+          "Rs 260",
+          "Rs 280"
+        ],
+        "key": "c27507c6f5020563e3b1cc1c7a7cb828519e81664e54c38c57cdb923ec3bf3cd",
+        "sourceNumber": 53,
+        "correctIndex": 1
+      },
+      {
+        "question": "A principal of Rs 4,000 earns Rs 600 simple interest in 3 years. What is the annual interest rate?",
+        "choices": [
+          "4%",
+          "5%",
+          "6%",
+          "7.5%"
+        ],
+        "key": "d4ba9734db1f2b112fd3e0cc4c4cb56f4f42ce7c78d6b971cc4cc9e255d36acc",
+        "sourceNumber": 54,
+        "correctIndex": 1
+      },
+      {
+        "question": "At 6% simple interest per year, how long does Rs 3,000 take to earn Rs 540 interest?",
+        "choices": [
+          "2 years",
+          "3 years",
+          "4 years",
+          "5 years"
+        ],
+        "key": "c487355f12d65d9e9e1b84c2b2abf1f640e153fe07bd2c986c77b22ad32dc578",
+        "sourceNumber": 55,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the total amount after 2 years on Rs 10,000 at 4% simple interest per year?",
+        "choices": [
+          "Rs 10,400",
+          "Rs 10,800",
+          "Rs 10,820",
+          "Rs 11,000"
+        ],
+        "key": "7730c065a5fe799fb6c1bb27f18ad9d7c3522291ce1a4e0283ebefec1ddaf243",
+        "sourceNumber": 56,
+        "correctIndex": 1
+      },
+      {
+        "question": "A number is multiplied by 3 and then 7 is added; the result is 31. What is the number?",
+        "choices": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "key": "fecf4e1374da7006d46dc2774bb1b329fb240f0587b3296bdaeb4d385d46ab33",
+        "sourceNumber": 57,
+        "correctIndex": 2
+      },
+      {
+        "question": "Solve 5x − 9 = 26.",
+        "choices": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "key": "b3f3b8cd1b6646a173968b8cf4fa0b5e8a4041d4cb0706061ad1e7bbaa7b7190",
+        "sourceNumber": 58,
+        "correctIndex": 2
+      },
+      {
+        "question": "If 2x + 3 = 15, what is x?",
+        "choices": [
+          "5",
+          "6",
+          "7",
+          "9"
+        ],
+        "key": "7828c9bfb3e8f6087ce72850248da7c0dc65000ea9cf5a493f9a5c293a20267e",
+        "sourceNumber": 59,
+        "correctIndex": 1
+      },
+      {
+        "question": "The sum of two consecutive integers is 41. What is the smaller integer?",
+        "choices": [
+          "19",
+          "20",
+          "21",
+          "22"
+        ],
+        "key": "c55835d28ba6632009e1d98acb5d75b4513209ba560931cfc9f260b3cfdc1ad7",
+        "sourceNumber": 60,
+        "correctIndex": 1
+      },
+      {
+        "question": "Three times a number is 12 more than the number. What is the number?",
+        "choices": [
+          "4",
+          "5",
+          "6",
+          "8"
+        ],
+        "key": "d7cd2042b81de081cb8a868c67f9ef8aca43a2f8fb2479cfed8a3aaf27a16a99",
+        "sourceNumber": 61,
+        "correctIndex": 2
+      },
+      {
+        "question": "A rectangle has length 12 cm and width 7 cm. What is its perimeter?",
+        "choices": [
+          "19 cm",
+          "38 cm",
+          "42 cm",
+          "84 cm"
+        ],
+        "key": "e0b1df9fe91ce71b34c11a60bdb2189dc52501352a15a82ed18915e31de2795d",
+        "sourceNumber": 62,
+        "correctIndex": 1
+      },
+      {
+        "question": "A rectangle is 9 m long and 4 m wide. What is its area?",
+        "choices": [
+          "13 m²",
+          "26 m²",
+          "36 m²",
+          "72 m²"
+        ],
+        "key": "4af366a3d908424a62db8adfbd3189e35012e5665c47d4cb0cbc98075808227a",
+        "sourceNumber": 63,
+        "correctIndex": 2
+      },
+      {
+        "question": "A square has side length 11 cm. What is its area?",
+        "choices": [
+          "22 cm²",
+          "44 cm²",
+          "121 cm²",
+          "242 cm²"
+        ],
+        "key": "a4ea945ebf7ad04101d568faae76dcb4471a44c8c124efc9b5450dc8706531db",
+        "sourceNumber": 64,
+        "correctIndex": 2
+      },
+      {
+        "question": "A triangle has base 10 cm and perpendicular height 6 cm. What is its area?",
+        "choices": [
+          "16 cm²",
+          "30 cm²",
+          "60 cm²",
+          "120 cm²"
+        ],
+        "key": "45ac83d47f267221c2760ca7020e100381f38da705daf421ec5a0d50568244e2",
+        "sourceNumber": 65,
+        "correctIndex": 1
+      },
+      {
+        "question": "A circle has radius 7 cm. Using π = 22/7, what is its circumference?",
+        "choices": [
+          "22 cm",
+          "44 cm",
+          "154 cm",
+          "308 cm"
+        ],
+        "key": "05fbd58384eb5ed99108b5c6629a8481d44eedb32fbad47246341f0ec9cce049",
+        "sourceNumber": 66,
+        "correctIndex": 1
+      },
+      {
+        "question": "A rectangular floor measures 8 m by 5 m. How many square metres of flooring are needed to cover it?",
+        "choices": [
+          "13 m²",
+          "26 m²",
+          "40 m²",
+          "80 m²"
+        ],
+        "key": "335e255f2d82fc1e574ffcbf6c6c3e9aaeca00acf1562b554effd6e96dafa833",
+        "sourceNumber": 67,
+        "correctIndex": 2
+      },
+      {
+        "question": "A cube has side length 4 cm. What is its volume?",
+        "choices": [
+          "16 cm³",
+          "48 cm³",
+          "64 cm³",
+          "96 cm³"
+        ],
+        "key": "7202234e0cad0f913d02d50e51a25c8a7fe0d384cd4e32c09c072cd5118b2b1a",
+        "sourceNumber": 68,
+        "correctIndex": 2
+      },
+      {
+        "question": "A rectangular box is 5 cm long, 3 cm wide, and 2 cm high. What is its volume?",
+        "choices": [
+          "10 cm³",
+          "15 cm³",
+          "30 cm³",
+          "60 cm³"
+        ],
+        "key": "619ebe6bffaa096fd3e958cc9574b7bfd45884e59a9a7524e3ec96fbb29d1303",
+        "sourceNumber": 69,
+        "correctIndex": 2
+      },
+      {
+        "question": "A rectangle has area 72 cm² and width 8 cm. What is its length?",
+        "choices": [
+          "8 cm",
+          "9 cm",
+          "10 cm",
+          "12 cm"
+        ],
+        "key": "9d49de0e0e649dd0a8d46e2c26f4013c1dcd41167636c99c040d6488a3bf78d3",
+        "sourceNumber": 70,
+        "correctIndex": 1
+      },
+      {
+        "question": "The perimeter of a square is 36 cm. What is its area?",
+        "choices": [
+          "36 cm²",
+          "64 cm²",
+          "81 cm²",
+          "144 cm²"
+        ],
+        "key": "0fd8cc5ee7f326019c03ccd56f7db548ba215498c374814dd5ee3fd2ba4cab21",
+        "sourceNumber": 71,
+        "correctIndex": 2
+      },
+      {
+        "question": "A bag contains 3 red and 5 blue balls. One ball is selected at random. What is the probability it is red?",
+        "choices": [
+          "3/8",
+          "5/8",
+          "1/2",
+          "3/5"
+        ],
+        "key": "36ba0ddcf24bdd2d8214492634185ec7a437982074bee18d4e32c8d405dad97e",
+        "sourceNumber": 72,
+        "correctIndex": 0
+      },
+      {
+        "question": "A fair six-sided die is rolled once. What is the probability of rolling an even number?",
+        "choices": [
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3"
+        ],
+        "key": "7937ca2763080bca40391ba370499f318c6f2e3752ff5454709bda6ac1866a84",
+        "sourceNumber": 73,
+        "correctIndex": 2
+      },
+      {
+        "question": "A fair coin is tossed twice. What is the probability of getting two heads?",
+        "choices": [
+          "1/2",
+          "1/3",
+          "1/4",
+          "3/4"
+        ],
+        "key": "ce69b85de308395af541602783afcc488bbd1fce9e1ac8e6f53409eada1ce9d6",
+        "sourceNumber": 74,
+        "correctIndex": 2
+      },
+      {
+        "question": "A box contains 4 green and 6 yellow counters. One counter is selected at random. What is the probability it is not green?",
+        "choices": [
+          "2/5",
+          "3/5",
+          "1/2",
+          "4/5"
+        ],
+        "key": "2d59072e2e56adbc0188a44d4cf3c22c1a74652f93aa70f00fd628a234904fb4",
+        "sourceNumber": 75,
+        "correctIndex": 1
+      },
+      {
+        "question": "A fair six-sided die is rolled once. What is the probability of getting a number greater than 4?",
+        "choices": [
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3"
+        ],
+        "key": "e23697d3ae133a0256ab48ea7ab826152daab8760bd18f4ae08b6ccb605d3faf",
+        "sourceNumber": 76,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many different two-digit numbers can be formed using the digits 1, 2, and 3 without repeating a digit?",
+        "choices": [
+          "3",
+          "6",
+          "9",
+          "12"
+        ],
+        "key": "bfaa6602f941cd9cbf5a4370c44a928248c5076dae34c9b21efb514aad77c8f9",
+        "sourceNumber": 77,
+        "correctIndex": 1
+      },
+      {
+        "question": "A bus has 48 seats, of which 36 are occupied. What fraction of the seats are empty?",
+        "choices": [
+          "1/4",
+          "1/3",
+          "3/8",
+          "1/2"
+        ],
+        "key": "81417ac745cf4bdf45e35bad27ecb0d65b077deb0ea1311d827de78e1125446a",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "A water container holds 2.4 litres. How many millilitres is this?",
+        "choices": [
+          "240 ml",
+          "2,040 ml",
+          "2,400 ml",
+          "24,000 ml"
+        ],
+        "key": "b19842a36344aa1c3da7abe66e1b58119af7b96544433351fd5ce72ed0c68605",
+        "sourceNumber": 79,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 3.5 kg bag of rice is divided equally into 7 portions. What is the mass of each portion?",
+        "choices": [
+          "0.25 kg",
+          "0.5 kg",
+          "0.7 kg",
+          "1.5 kg"
+        ],
+        "key": "f51ef4c22d2ad7545f33700a099d6021657c924767a16dfe1043807f91d96027",
+        "sourceNumber": 80,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the value of 3.6 ÷ 0.6?",
+        "choices": [
+          "0.6",
+          "6",
+          "60",
+          "0.06"
+        ],
+        "key": "b4a116da7d2c350470ad42830f84b82090cbfe63152294a24fd38710fc1daabd",
+        "sourceNumber": 81,
+        "correctIndex": 1
+      },
+      {
+        "question": "A trader has 80 kg of flour and sells 3/8 of it. How many kilograms remain?",
+        "choices": [
+          "30 kg",
+          "40 kg",
+          "50 kg",
+          "60 kg"
+        ],
+        "key": "30e0c409a7a4d5bf5397138d906e426f37b37243d71fa253cc75607666ddf926",
+        "sourceNumber": 82,
+        "correctIndex": 2
+      },
+      {
+        "question": "A number is divisible by both 6 and 8. What is the least positive such number?",
+        "choices": [
+          "12",
+          "18",
+          "24",
+          "48"
+        ],
+        "key": "10f28ac2b6f1819d6cf46edbfe1b12849078b735cdce47f5f49d274274ce48d8",
+        "sourceNumber": 83,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the greatest common divisor of 42 and 56?",
+        "choices": [
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "key": "2e48ba03eb4b1ab248f25194af4f015e2725d257ab734bbcafaa242d020d1f5e",
+        "sourceNumber": 84,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the next number in the sequence 4, 9, 14, 19, ...?",
+        "choices": [
+          "22",
+          "23",
+          "24",
+          "25"
+        ],
+        "key": "781b839ab844ffcd8a7c8951a6b7f994c1a864762faca2419a8e1163a69271e5",
+        "sourceNumber": 85,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 6, 18, 54, ...?",
+        "choices": [
+          "108",
+          "144",
+          "162",
+          "216"
+        ],
+        "key": "2b2701421757ed88da1a9793826dde9a02b8196aa33da65cd93a1eb94cdbc703",
+        "sourceNumber": 86,
+        "correctIndex": 2
+      },
+      {
+        "question": "A number is divided by 4 and then increased by 6 to give 15. What is the number?",
+        "choices": [
+          "24",
+          "32",
+          "36",
+          "44"
+        ],
+        "key": "cc7561f3852e33fcd39627f26ff6193b5781e9be776aafdfd0254259e107fe8a",
+        "sourceNumber": 87,
+        "correctIndex": 2
+      },
+      {
+        "question": "A sum of Rs 900 is shared by Ali and Sana in the ratio 4:5. How much does Sana receive?",
+        "choices": [
+          "Rs 400",
+          "Rs 450",
+          "Rs 500",
+          "Rs 550"
+        ],
+        "key": "4352cf32fb3e04a510b11141f01b95b401ede4c7e412c0274f691b08f128cb1b",
+        "sourceNumber": 88,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 240 km journey is completed in 4 hours. The first 3 hours are at 50 km/h. What is the average speed during the final hour?",
+        "choices": [
+          "70 km/h",
+          "80 km/h",
+          "90 km/h",
+          "100 km/h"
+        ],
+        "key": "6c13fe6615b3fb81118eb63a5b86f370dbf69ee31042d3f75bedfd3307e8b7db",
+        "sourceNumber": 89,
+        "correctIndex": 2
+      },
+      {
+        "question": "A worker earns Rs 1,200 for 8 hours of work at a constant hourly rate. What is the worker's pay for 5 hours?",
+        "choices": [
+          "Rs 600",
+          "Rs 700",
+          "Rs 750",
+          "Rs 800"
+        ],
+        "key": "aad6d34f67d8f44a3893ee0d8fa64eca605ce12d97f27f901b24d0965586ede0",
+        "sourceNumber": 90,
+        "correctIndex": 2
+      },
+      {
+        "question": "A shopkeeper buys 12 cups for Rs 1,080. At the same unit cost, what do 5 cups cost?",
+        "choices": [
+          "Rs 400",
+          "Rs 425",
+          "Rs 450",
+          "Rs 500"
+        ],
+        "key": "acc0b568ae3064b8f6f4e312f5efb2a1cda9b2dba46965f6f2c29ce76fe2459e",
+        "sourceNumber": 91,
+        "correctIndex": 2
+      },
+      {
+        "question": "An item is discounted by 25% and then by a further 20% of the reduced price. What percentage of the original marked price remains?",
+        "choices": [
+          "50%",
+          "55%",
+          "60%",
+          "65%"
+        ],
+        "key": "5ea2f39e56384646f9090165a682524add7979c5d81a6b17d4dea7022d64e890",
+        "sourceNumber": 92,
+        "correctIndex": 2
+      },
+      {
+        "question": "A container has 15 litres of milk. If 3 litres are removed and replaced with water, what fraction of the resulting mixture is milk?",
+        "choices": [
+          "1/5",
+          "3/5",
+          "4/5",
+          "5/6"
+        ],
+        "key": "934dde46721818fb385e32562e6e0303629e8d21aac0f97de2369955552488de",
+        "sourceNumber": 93,
+        "correctIndex": 2
+      },
+      {
+        "question": "The mean of 10, 14, and 18 is what?",
+        "choices": [
+          "12",
+          "14",
+          "16",
+          "18"
+        ],
+        "key": "b93fc10c8df152148b78374b887877f099e9ca16144f02f7f86342b9746bca8d",
+        "sourceNumber": 94,
+        "correctIndex": 1
+      },
+      {
+        "question": "The average of 9 numbers is 12. If a tenth number, 23, is added, what is the new average?",
+        "choices": [
+          "12.5",
+          "13",
+          "13.1",
+          "13.5"
+        ],
+        "key": "8719ed41b2684b3898a88804a412ac2954acf978be634a0beeeb843429dcc5a9",
+        "sourceNumber": 95,
+        "correctIndex": 2
+      },
+      {
+        "question": "A rectangular garden is 15 m long and 8 m wide. How many metres of fencing are needed to go once around it?",
+        "choices": [
+          "23 m",
+          "38 m",
+          "46 m",
+          "120 m"
+        ],
+        "key": "da7deb6ad4c9ecbd357f73d9b17f7f4c73a891f870e48f1add5daf6f6f62b07a",
+        "sourceNumber": 96,
+        "correctIndex": 2
+      },
+      {
+        "question": "A fair die is rolled once. What is the probability of getting a prime number?",
+        "choices": [
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3"
+        ],
+        "key": "5d418b81ff216b692bf70413a856f496b49221beee2fdff1438acbbaab7b1bfe",
+        "sourceNumber": 97,
+        "correctIndex": 2
+      },
+      {
+        "question": "A quantity of 180 is shared so that one person receives twice as much as another. What is the smaller share?",
+        "choices": [
+          "50",
+          "60",
+          "90",
+          "120"
+        ],
+        "key": "23f22c8786f8e7baf8db5cb846809f2de044c6de8c6a90783622633d0389b7d0",
+        "sourceNumber": 98,
+        "correctIndex": 1
+      },
+      {
+        "question": "If 3/4 of a number is 45, what is the number?",
+        "choices": [
+          "54",
+          "60",
+          "64",
+          "72"
+        ],
+        "key": "0e926c1db8ec9cc1da7796427fac488938e7421176e0cc6eb344040d6a318906",
+        "sourceNumber": 99,
+        "correctIndex": 1
+      },
+      {
+        "question": "A bill of Rs 2,400 is shared equally among 6 people. How much does each person pay?",
+        "choices": [
+          "Rs 300",
+          "Rs 350",
+          "Rs 400",
+          "Rs 450"
+        ],
+        "key": "7855617bc1a08cba106ba3480fa5864fe309d97d1f956eafe83667ad7deffd33",
+        "sourceNumber": 100,
+        "correctIndex": 2
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "78dd0782160942d81e0574c526df50b477d962e63f48f1f31168028015ef6f57",
+      "sourceQuestionNumbers": [
+        77,
+        56,
+        100,
+        32,
+        10,
+        23,
+        93,
+        14,
+        55,
+        70,
+        74,
+        15,
+        37,
+        45,
+        95,
+        26,
+        52,
+        87,
+        11,
+        78,
+        96,
+        29,
+        65,
+        50,
+        6,
+        9,
+        36,
+        48,
+        99,
+        79,
+        80,
+        33,
+        49,
+        4,
+        85,
+        71,
+        91,
+        46,
+        18,
+        35,
+        73,
+        41,
+        7,
+        83,
+        21,
+        67,
+        34,
+        57,
+        1,
+        82,
+        62,
+        51,
+        24,
+        88,
+        13,
+        86,
+        28,
+        60,
+        68,
+        3,
+        81,
+        20,
+        30,
+        69,
+        47,
+        94,
+        54,
+        64,
+        25,
+        12,
+        90,
+        40,
+        75,
+        58,
+        17,
+        92,
+        5,
+        27,
+        44,
+        72,
+        39,
+        43,
+        63,
+        97,
+        8,
+        61,
+        84,
+        59,
+        2,
+        31,
+        53,
+        19,
+        98,
+        76,
+        22,
+        89,
+        66,
+        38,
+        16,
+        42
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
