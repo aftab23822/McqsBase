@@ -2229,8 +2229,9 @@
           "postId": "cmvxqtalb040aro9du43ba57z"
         },
         "youtube": {
-          "status": "uncertain",
-          "attemptedAt": "2026-11-01T11:24:41.808635+00:00"
+          "status": "accepted",
+          "attemptedAt": "2026-11-01T11:24:41.808635+00:00",
+          "postId": "cmvxqtamx040bro9dvzny1ans"
         }
       }
     },
