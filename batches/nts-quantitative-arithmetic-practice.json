@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nts-quantitative-arithmetic-practice",
   "createdAt": "2026-11-01T11:20:59.234670+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "nts-quantitative-arithmetic-practice",
     "title": "100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
@@ -1749,7 +1749,24 @@
         }
       },
       "scheduledAt": "2026-11-01T16:40:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-01T11:24:32.066959+00:00"
+        },
+        "instagram": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-01T11:24:32.066976+00:00"
+        },
+        "tiktok": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-01T11:24:32.066980+00:00"
+        },
+        "youtube": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-01T11:24:32.066983+00:00"
+        }
+      }
     },
     {
       "part": 2,
