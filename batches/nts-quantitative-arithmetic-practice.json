@@ -1617,6 +1617,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 2,
+      "directory": "part-02",
+      "sourceQuestionNumbers": [
+        32,
+        10,
+        23
+      ],
+      "count": 3,
+      "durationSeconds": 86,
+      "sha256": "da73ad965a54987bd220e15770f6ebd6b869904543722c90ea8f07f6696e0b83",
+      "manifest": {
+        "title": "100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+        "sourceTitle": "100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-01T11:20:59.126093+00:00",
+        "sourceContentHash": "f97f56d48495f1b76d5f6167d541f2e878e013505614327b5c8ac6fb696553e6",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7472273676,
+          "sha": "b98b6c11545f88dbcae4a6f9a3ec0eebbf324336",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-01T11:20:59.126093+00:00",
+          "url": "https://mcqs-base-710qe03nl-as-projects-10921176.vercel.app",
+          "publisherRunId": 41300969691
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 86,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "How far does a vehicle travel in 2.5 hours at 72 km/h?",
+            "choices": [
+              "160 km",
+              "170 km",
+              "180 km",
+              "190 km"
+            ],
+            "correctIndex": 2,
+            "key": "49cc87c6f9cd67685e6c6931f6c80d3aae2a1ef0d5f57409bef38ba569f40abc",
+            "sourceNumber": 32
+          },
+          {
+            "question": "A salary of Rs 50,000 increases by 10% and then by 10% again. What is the final salary?",
+            "choices": [
+              "Rs 60,000",
+              "Rs 60,500",
+              "Rs 61,000",
+              "Rs 61,500"
+            ],
+            "correctIndex": 1,
+            "key": "d90de0622a98a3e0160aef318a5256bf74696788f32eb1eb580455ddb423920d",
+            "sourceNumber": 10
+          },
+          {
+            "question": "The average of 6 numbers is 14. If one number, 9, is removed, what is the average of the remaining numbers?",
+            "choices": [
+              "14",
+              "15",
+              "16",
+              "17"
+            ],
+            "correctIndex": 1,
+            "key": "9580550f1d711d2f4d7ea05472f2f28b361b7541359427f260f0c7f7f27622a8",
+            "sourceNumber": 23
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 19,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 19,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 20,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 21,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 22,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 27,
+            "duration": 22,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 49,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 50,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 51,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 52,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 57,
+            "duration": 17,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 74,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 75,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 76,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 77,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 81,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 2,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            32,
+            10,
+            23
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MathQuiz",
+          "#QuantitativeAptitude",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nts-quantitative-arithmetic-practice-part-02-da73ad965a54987b.mp4",
+        "videoSha256": "da73ad965a54987bd220e15770f6ebd6b869904543722c90ea8f07f6696e0b83",
+        "assetId": 698129253
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 2/5 | Q32, 10, 23 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 32, 10, 23\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MathQuiz",
+            "#QuantitativeAptitude",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 2/5 | Q32, 10, 23 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 32, 10, 23\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MathQuiz",
+            "#QuantitativeAptitude",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 2/5 | Q32, 10, 23 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 32, 10, 23\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MathQuiz",
+            "#QuantitativeAptitude",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 2/5 | Q32, 10, 23 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 32, 10, 23\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MathQuiz",
+            "#QuantitativeAptitude",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
