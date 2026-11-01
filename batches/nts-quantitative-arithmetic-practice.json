@@ -2212,7 +2212,24 @@
         }
       },
       "scheduledAt": "2026-11-01T18:00:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-01T11:24:41.808614+00:00"
+        },
+        "instagram": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-01T11:24:41.808629+00:00"
+        },
+        "tiktok": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-01T11:24:41.808633+00:00"
+        },
+        "youtube": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-01T11:24:41.808635+00:00"
+        }
+      }
     },
     {
       "part": 3,
