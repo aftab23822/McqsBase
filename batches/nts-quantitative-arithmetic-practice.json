@@ -1624,7 +1624,131 @@
       "studioMedia": {
         "id": "adc124dc-083c-49bd-b485-8a2c2a886604",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/BbrMkc8H1s.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 1/5 | Q77, 56, 100 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 77, 56, 100\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+              "image": [
+                {
+                  "id": "adc124dc-083c-49bd-b485-8a2c2a886604",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/BbrMkc8H1s.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 77, 56, 100\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+              "image": [
+                {
+                  "id": "adc124dc-083c-49bd-b485-8a2c2a886604",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/BbrMkc8H1s.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 1/5 | Q77, 56, 100 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 77, 56, 100\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+              "image": [
+                {
+                  "id": "adc124dc-083c-49bd-b485-8a2c2a886604",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/BbrMkc8H1s.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 1/5 | Q77, 56, 100 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "MathQuiz",
+                "label": "MathQuiz"
+              },
+              {
+                "value": "QuantitativeAptitude",
+                "label": "QuantitativeAptitude"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 77, 56, 100\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+              "image": [
+                {
+                  "id": "adc124dc-083c-49bd-b485-8a2c2a886604",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/BbrMkc8H1s.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-01T16:40:00+05:00"
     },
     {
       "part": 2,
@@ -1913,7 +2037,131 @@
       "studioMedia": {
         "id": "a2820ccf-c3e4-4121-a444-6e0b819d9b52",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/fB49y4MkuB.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 2/5 | Q32, 10, 23 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 32, 10, 23\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+              "image": [
+                {
+                  "id": "a2820ccf-c3e4-4121-a444-6e0b819d9b52",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/fB49y4MkuB.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 32, 10, 23\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+              "image": [
+                {
+                  "id": "a2820ccf-c3e4-4121-a444-6e0b819d9b52",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/fB49y4MkuB.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 2/5 | Q32, 10, 23 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 32, 10, 23\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+              "image": [
+                {
+                  "id": "a2820ccf-c3e4-4121-a444-6e0b819d9b52",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/fB49y4MkuB.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 2/5 | Q32, 10, 23 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "MathQuiz",
+                "label": "MathQuiz"
+              },
+              {
+                "value": "QuantitativeAptitude",
+                "label": "QuantitativeAptitude"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 32, 10, 23\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+              "image": [
+                {
+                  "id": "a2820ccf-c3e4-4121-a444-6e0b819d9b52",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/fB49y4MkuB.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-01T18:00:00+05:00"
     },
     {
       "part": 3,
@@ -2202,7 +2450,131 @@
       "studioMedia": {
         "id": "501a2978-4472-48dc-a2d4-f3a8f1f2bf77",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/MyDEkx4nAI.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 3/5 | Q93, 14, 55 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 93, 14, 55\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+              "image": [
+                {
+                  "id": "501a2978-4472-48dc-a2d4-f3a8f1f2bf77",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/MyDEkx4nAI.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 93, 14, 55\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+              "image": [
+                {
+                  "id": "501a2978-4472-48dc-a2d4-f3a8f1f2bf77",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/MyDEkx4nAI.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 3/5 | Q93, 14, 55 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 93, 14, 55\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+              "image": [
+                {
+                  "id": "501a2978-4472-48dc-a2d4-f3a8f1f2bf77",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/MyDEkx4nAI.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 3/5 | Q93, 14, 55 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "MathQuiz",
+                "label": "MathQuiz"
+              },
+              {
+                "value": "QuantitativeAptitude",
+                "label": "QuantitativeAptitude"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 93, 14, 55\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+              "image": [
+                {
+                  "id": "501a2978-4472-48dc-a2d4-f3a8f1f2bf77",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/MyDEkx4nAI.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-01T19:20:00+05:00"
     },
     {
       "part": 4,
@@ -2491,7 +2863,131 @@
       "studioMedia": {
         "id": "7f1568d9-49ec-422b-92c3-7dc81507be1b",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/5zZFRkWHoN.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 4/5 | Q70, 74, 15 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 70, 74, 15\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+              "image": [
+                {
+                  "id": "7f1568d9-49ec-422b-92c3-7dc81507be1b",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/5zZFRkWHoN.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 70, 74, 15\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+              "image": [
+                {
+                  "id": "7f1568d9-49ec-422b-92c3-7dc81507be1b",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/5zZFRkWHoN.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 4/5 | Q70, 74, 15 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 70, 74, 15\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+              "image": [
+                {
+                  "id": "7f1568d9-49ec-422b-92c3-7dc81507be1b",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/5zZFRkWHoN.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 4/5 | Q70, 74, 15 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "MathQuiz",
+                "label": "MathQuiz"
+              },
+              {
+                "value": "QuantitativeAptitude",
+                "label": "QuantitativeAptitude"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 70, 74, 15\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+              "image": [
+                {
+                  "id": "7f1568d9-49ec-422b-92c3-7dc81507be1b",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/5zZFRkWHoN.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-01T20:40:00+05:00"
     },
     {
       "part": 5,
@@ -2780,7 +3276,131 @@
       "studioMedia": {
         "id": "75923725-9e2c-42a0-b937-a140657f75ef",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/gL9AIqFZUJ.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 5/5 | Q37, 45, 95 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 37, 45, 95\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+              "image": [
+                {
+                  "id": "75923725-9e2c-42a0-b937-a140657f75ef",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/gL9AIqFZUJ.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 37, 45, 95\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+              "image": [
+                {
+                  "id": "75923725-9e2c-42a0-b937-a140657f75ef",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/gL9AIqFZUJ.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 5/5 | Q37, 45, 95 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 37, 45, 95\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+              "image": [
+                {
+                  "id": "75923725-9e2c-42a0-b937-a140657f75ef",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/gL9AIqFZUJ.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 5/5 | Q37, 45, 95 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "MathQuiz",
+                "label": "MathQuiz"
+              },
+              {
+                "value": "QuantitativeAptitude",
+                "label": "QuantitativeAptitude"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 37, 45, 95\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+              "image": [
+                {
+                  "id": "75923725-9e2c-42a0-b937-a140657f75ef",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/gL9AIqFZUJ.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-01T22:00:00+05:00"
     }
   ],
   "thinkingSeconds": 3,
@@ -2864,5 +3484,12 @@
         "sha256": "f57a9f092eab2b5fa35fab0ef8fda84bd46c62b53b5053950672db77c4236b31"
       }
     ]
-  }
+  },
+  "schedule": [
+    "2026-11-01T16:40:00+05:00",
+    "2026-11-01T18:00:00+05:00",
+    "2026-11-01T19:20:00+05:00",
+    "2026-11-01T20:40:00+05:00",
+    "2026-11-01T22:00:00+05:00"
+  ]
 }
