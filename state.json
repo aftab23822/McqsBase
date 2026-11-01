@@ -939,6 +939,15 @@
       ],
       "published": 20,
       "verifiedPublications": 20
+    },
+    "nts-quantitative-arithmetic-practice": {
+      "status": "rendering",
+      "ledger": "batches/nts-quantitative-arithmetic-practice.json",
+      "createdAt": "2026-11-01T11:20:59.234670+00:00",
+      "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+      "scheduledAt": [],
+      "published": 0,
+      "verifiedPublications": 0
     }
   }
 }
