@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nts-quantitative-arithmetic-practice": {
+    title: "100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+    excerpt:
+      "Practise percentages, ratios, averages, rates, work problems, and other core arithmetic skills with 100 original MCQs and worked explanations.",
+    category: "Subject Guide",
+    date: "2026-11-01",
+    readTime: "28 min",
+    content: null,
+    body: readImportedBlogBody("nts-quantitative-arithmetic-practice")
+  },
   "nat-icom-accounting-fundamentals": {
     title: "100 Accounting Fundamentals MCQs for NAT-ICOM Preparation",
     excerpt:
