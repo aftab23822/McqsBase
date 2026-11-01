@@ -2179,6 +2179,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 4,
+      "directory": "part-04",
+      "sourceQuestionNumbers": [
+        70,
+        74,
+        15
+      ],
+      "count": 3,
+      "durationSeconds": 80,
+      "sha256": "2f0ec0c6a9ab3a545db31a79e9a861ab849f8d5ab399693c057fd9a1c58f6ae7",
+      "manifest": {
+        "title": "100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+        "sourceTitle": "100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-01T11:20:59.126093+00:00",
+        "sourceContentHash": "f97f56d48495f1b76d5f6167d541f2e878e013505614327b5c8ac6fb696553e6",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7472273676,
+          "sha": "b98b6c11545f88dbcae4a6f9a3ec0eebbf324336",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-01T11:20:59.126093+00:00",
+          "url": "https://mcqs-base-710qe03nl-as-projects-10921176.vercel.app",
+          "publisherRunId": 41300969691
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 80,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A rectangle has area 72 cm² and width 8 cm. What is its length?",
+            "choices": [
+              "8 cm",
+              "9 cm",
+              "10 cm",
+              "12 cm"
+            ],
+            "correctIndex": 1,
+            "key": "9d49de0e0e649dd0a8d46e2c26f4013c1dcd41167636c99c040d6488a3bf78d3",
+            "sourceNumber": 70
+          },
+          {
+            "question": "A fair coin is tossed twice. What is the probability of getting two heads?",
+            "choices": [
+              "1/2",
+              "1/3",
+              "1/4",
+              "3/4"
+            ],
+            "correctIndex": 2,
+            "key": "ce69b85de308395af541602783afcc488bbd1fce9e1ac8e6f53409eada1ce9d6",
+            "sourceNumber": 74
+          },
+          {
+            "question": "A tank is 2/5 full. After adding 18 litres, it is 4/5 full. What is the tank's capacity?",
+            "choices": [
+              "36 litres",
+              "40 litres",
+              "45 litres",
+              "54 litres"
+            ],
+            "correctIndex": 2,
+            "key": "9162001aadb24d3fd2a900d7c001f16ff8e62672affafec30db20efa4e3641e8",
+            "sourceNumber": 15
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 17,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 17,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 18,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 19,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 20,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 24,
+            "duration": 16,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 40,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 41,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 42,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 43,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 47,
+            "duration": 20,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 67,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 68,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 69,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 70,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 75,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 4,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            70,
+            74,
+            15
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MathQuiz",
+          "#QuantitativeAptitude",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nts-quantitative-arithmetic-practice-part-04-2f0ec0c6a9ab3a54.mp4",
+        "videoSha256": "2f0ec0c6a9ab3a545db31a79e9a861ab849f8d5ab399693c057fd9a1c58f6ae7",
+        "assetId": 698131597
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 4/5 | Q70, 74, 15 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+          "text": "Part 4/5 · Source questions 70, 74, 15\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MathQuiz",
+            "#QuantitativeAptitude",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 4/5 | Q70, 74, 15 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+          "text": "Part 4/5 · Source questions 70, 74, 15\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MathQuiz",
+            "#QuantitativeAptitude",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 4/5 | Q70, 74, 15 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+          "text": "Part 4/5 · Source questions 70, 74, 15\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MathQuiz",
+            "#QuantitativeAptitude",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 4/5 | Q70, 74, 15 | 100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
+          "text": "Part 4/5 · Source questions 70, 74, 15\n100 NTS-Style Quantitative Arithmetic MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MathQuiz",
+            "#QuantitativeAptitude",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
