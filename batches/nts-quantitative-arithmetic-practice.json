@@ -1908,7 +1908,11 @@
       },
       "uploadIntent": {
         "filename": "nts-quantitative-arithmetic-practice-part-02-da73ad965a54987b.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "a2820ccf-c3e4-4121-a444-6e0b819d9b52",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/fB49y4MkuB.mp4"
       }
     },
     {
