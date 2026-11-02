@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "clerical-computer-literacy-mcqs",
   "createdAt": "2026-11-02T12:24:14.925104+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "clerical-computer-literacy-mcqs",
     "title": "100 Computer Literacy MCQs for Clerical Recruitment Practice",
@@ -1749,7 +1749,24 @@
         }
       },
       "scheduledAt": "2026-11-02T19:39:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-02T14:23:45.825109+00:00"
+        },
+        "instagram": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-02T14:23:45.825129+00:00"
+        },
+        "tiktok": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-02T14:23:45.825133+00:00"
+        },
+        "youtube": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-02T14:23:45.825136+00:00"
+        }
+      }
     },
     {
       "part": 2,
