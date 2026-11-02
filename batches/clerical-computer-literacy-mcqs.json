@@ -1756,8 +1756,9 @@
           "postId": "cmvzcng2l09f9ro9d1m8sx7n2"
         },
         "instagram": {
-          "status": "uncertain",
-          "attemptedAt": "2026-11-02T14:23:45.825129+00:00"
+          "status": "accepted",
+          "attemptedAt": "2026-11-02T14:23:45.825129+00:00",
+          "postId": "cmvzcng5509fbro9ddqv5ffl9"
         },
         "tiktok": {
           "status": "uncertain",
