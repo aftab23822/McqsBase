@@ -1336,6 +1336,288 @@
       "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
     }
   },
-  "parts": [],
+  "parts": [
+    {
+      "part": 1,
+      "directory": "part-01",
+      "sourceQuestionNumbers": [
+        35,
+        5,
+        60
+      ],
+      "count": 3,
+      "durationSeconds": 83,
+      "sha256": "d7e6b8667b91be7291ab7666e5d80dfb1b6663de13045ed6630c7bd9daa71fbb",
+      "manifest": {
+        "title": "100 Computer Literacy MCQs for Clerical Recruitment Practice",
+        "sourceTitle": "100 Computer Literacy MCQs for Clerical Recruitment Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-02T12:24:14.802068+00:00",
+        "sourceContentHash": "bf24c39cea3f8f0b3f97809c4312f39cd70f1cae1e610d3e26606e1a9ac35790",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7492034443,
+          "sha": "06cadcc35638e6596e31549c0d2eaf891e2a7499",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-02T12:24:14.802068+00:00",
+          "url": "https://mcqs-base-70ra3rhd8-as-projects-10921176.vercel.app",
+          "publisherRunId": 41443604141
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 83,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "In a word processor, which feature changes the space between lines of a paragraph?",
+            "choices": [
+              "Line spacing",
+              "Page orientation",
+              "File extension",
+              "Zoom level"
+            ],
+            "correctIndex": 0,
+            "key": "b8109fab793a71985a71d32b88149fb2771d28e5b6c77eb7f366a082fc76ced7",
+            "sourceNumber": 35
+          },
+          {
+            "question": "What is the main purpose of an operating system?",
+            "choices": [
+              "To manage computer resources and provide services for applications",
+              "To print every document automatically",
+              "To replace the computer's processor",
+              "To act only as a storage device"
+            ],
+            "correctIndex": 0,
+            "key": "21fa5c87853f61c3703e17eb783f62fc24cd292a1d0bf1a8dc3a79cfc5eb01c1",
+            "sourceNumber": 5
+          },
+          {
+            "question": "Which function counts cells containing numbers in a referenced range in common spreadsheet software?",
+            "choices": [
+              "COUNT",
+              "SUM",
+              "MIN",
+              "CONCAT"
+            ],
+            "correctIndex": 0,
+            "key": "5e8f30e439870adfa6bd3686fa9214c3771c0650502ff30aa5745b09a75ee110",
+            "sourceNumber": 60
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 17,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 17,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 18,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 19,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 20,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 24,
+            "duration": 22,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 46,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 47,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 48,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 49,
+            "duration": 8,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 57,
+            "duration": 14,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 71,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 72,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 73,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 74,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 78,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 1,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            35,
+            5,
+            60
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#TestPreparation",
+          "#QuizTime",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/clerical-computer-literacy-mcqs-part-01-d7e6b8667b91be72.mp4",
+        "videoSha256": "d7e6b8667b91be7291ab7666e5d80dfb1b6663de13045ed6630c7bd9daa71fbb",
+        "assetId": 701672655
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 1/5 | Q35, 5, 60 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+          "text": "Part 1/5 · Source questions 35, 5, 60\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 1/5 | Q35, 5, 60 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+          "text": "Part 1/5 · Source questions 35, 5, 60\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 1/5 | Q35, 5, 60 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+          "text": "Part 1/5 · Source questions 35, 5, 60\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 1/5 | Q35, 5, 60 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+          "text": "Part 1/5 · Source questions 35, 5, 60\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+          "format": "short"
+        }
+      }
+    }
+  ],
   "thinkingSeconds": 3
 }
