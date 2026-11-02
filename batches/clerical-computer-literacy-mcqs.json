@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "clerical-computer-literacy-mcqs",
+  "createdAt": "2026-11-02T12:24:14.925104+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "clerical-computer-literacy-mcqs",
+    "title": "100 Computer Literacy MCQs for Clerical Recruitment Practice",
+    "url": "https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7492034443,
+      "sha": "06cadcc35638e6596e31549c0d2eaf891e2a7499",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-02T12:24:14.802068+00:00",
+      "url": "https://mcqs-base-70ra3rhd8-as-projects-10921176.vercel.app",
+      "publisherRunId": 41443604141
+    },
+    "fetchedAt": "2026-11-02T12:24:14.802068+00:00",
+    "contentHash": "bf24c39cea3f8f0b3f97809c4312f39cd70f1cae1e610d3e26606e1a9ac35790",
+    "questions": [
+      {
+        "question": "Which component executes instructions and performs calculations in a computer?",
+        "choices": [
+          "Central processing unit",
+          "Monitor",
+          "Keyboard",
+          "Solid-state drive"
+        ],
+        "key": "a1cceb4f41a41e36b6d98e6ecd0f8a256978da9111314bc89c079c599a4824ff",
+        "sourceNumber": 1,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which of these is an input device?",
+        "choices": [
+          "Scanner",
+          "Projector",
+          "Speaker",
+          "Monitor"
+        ],
+        "key": "45a8fc4b8f17b00caf9f00d0430f3020a0897b67b99fe0bc11e82582a9282d80",
+        "sourceNumber": 2,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which device is primarily used to produce a paper copy of a document?",
+        "choices": [
+          "Printer",
+          "Microphone",
+          "Webcam",
+          "Touchpad"
+        ],
+        "key": "68b7984c9f734ea9d5bcf665a380609e48ade44ffb9235ad2c8274d112d1be80",
+        "sourceNumber": 3,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which type of memory normally loses its contents when the computer is switched off?",
+        "choices": [
+          "RAM",
+          "ROM",
+          "SSD storage",
+          "USB flash storage"
+        ],
+        "key": "077d0956159c5c46248a108409d14369fee4b7a65314176d5b047271568d7941",
+        "sourceNumber": 4,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main purpose of an operating system?",
+        "choices": [
+          "To manage computer resources and provide services for applications",
+          "To print every document automatically",
+          "To replace the computer's processor",
+          "To act only as a storage device"
+        ],
+        "key": "21fa5c87853f61c3703e17eb783f62fc24cd292a1d0bf1a8dc3a79cfc5eb01c1",
+        "sourceNumber": 5,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which item is software rather than physical hardware?",
+        "choices": [
+          "A spreadsheet application",
+          "A mouse",
+          "A monitor",
+          "A USB cable"
+        ],
+        "key": "08c32e5838dc5254ec70df7da932cab3b5f75d495270fd1dcab0d9d16669c7b8",
+        "sourceNumber": 6,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which unit is commonly used to describe a processor's clock frequency?",
+        "choices": [
+          "Gigahertz",
+          "Litres",
+          "Pixels per page",
+          "Degrees Celsius"
+        ],
+        "key": "5013f6bdef7362aae9e86e73b97bf61f8eb174dab47c531f119d5eb1ec8b644d",
+        "sourceNumber": 7,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which storage device has no moving disk platters and commonly uses flash memory?",
+        "choices": [
+          "Solid-state drive",
+          "Optical disc drive",
+          "Mechanical hard disk drive",
+          "Dot-matrix printer"
+        ],
+        "key": "933eaf05106dab231389c09514d832fa34d56c9f761bc6d229e8da2a4d100f25",
+        "sourceNumber": 8,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does a computer's power supply unit do?",
+        "choices": [
+          "Converts incoming electrical power into forms usable by computer components",
+          "Stores all user documents permanently",
+          "Displays text on the screen",
+          "Scans paper documents"
+        ],
+        "key": "e46825e549eae0fd0f99f86381af1da9ffaface71232aa4e678d7a62d1c984a9",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which device is most suitable for entering spoken instructions into a computer?",
+        "choices": [
+          "Microphone",
+          "Speaker",
+          "Projector",
+          "Printer"
+        ],
+        "key": "00cf196849186d0262ccd6f0399cd2dc2b62a8b9334ca6daca72ba65c89809b9",
+        "sourceNumber": 10,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which is an example of an output device?",
+        "choices": [
+          "Monitor",
+          "Barcode reader",
+          "Keyboard",
+          "Microphone"
+        ],
+        "key": "bd4ecd5caf553702f4a34952838b168fc29da43f9d0301d33c033a6fdfc854eb",
+        "sourceNumber": 11,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the usual purpose of a computer network?",
+        "choices": [
+          "To connect devices so they can communicate or share resources",
+          "To make every computer use the same password",
+          "To prevent all software errors",
+          "To convert every file into a printed page"
+        ],
+        "key": "ddb6d512b72604a7587ad767d331fa725103b346fb96b2944f3d5278f8148b70",
+        "sourceNumber": 12,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which unit is the smallest among these data-size units?",
+        "choices": [
+          "Bit",
+          "Byte",
+          "Kilobyte",
+          "Megabyte"
+        ],
+        "key": "aab66ab2bece8e001efdbf221f0699d0f56f8aa915f1b508766ddef62409fb5c",
+        "sourceNumber": 13,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does a UPS commonly provide to a desktop computer during a brief power failure?",
+        "choices": [
+          "Temporary backup power",
+          "A faster internet connection",
+          "Permanent file compression",
+          "Automatic translation of documents"
+        ],
+        "key": "2f626448dec452af2a7611a3ad4dcb95c747114dd2e3521b4e027505da4a32a6",
+        "sourceNumber": 14,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which is an example of application software?",
+        "choices": [
+          "Word-processing program",
+          "Computer motherboard",
+          "Power cable",
+          "CPU cooling fan"
+        ],
+        "key": "78007e59be3194286ad5b2f8b02748f466df363909526201cb2b8826e73885ef",
+        "sourceNumber": 15,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main function of a web browser?",
+        "choices": [
+          "To retrieve and display web pages",
+          "To manufacture computer hardware",
+          "To supply electrical power",
+          "To permanently repair damaged storage"
+        ],
+        "key": "547e6b94a5d295711efb020cec3225e11a480572d3ed86f515f4b100df64a639",
+        "sourceNumber": 16,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which device can convert a paper page into a digital image?",
+        "choices": [
+          "Scanner",
+          "Speaker",
+          "Projector",
+          "UPS"
+        ],
+        "key": "b1599cf799cbf6b35183fb5dd2c17e23a0704e3226009f248093c832e5153003",
+        "sourceNumber": 17,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement best describes a folder on a computer?",
+        "choices": [
+          "A container used to organise files and other folders",
+          "A physical part that stores electricity",
+          "A command that permanently deletes the operating system",
+          "A type of printer ink"
+        ],
+        "key": "2c31bcf72818968b7a6d0ae7fd805f3788aee8616289b061eb544a5d145d59ca",
+        "sourceNumber": 18,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the primary purpose of a backup?",
+        "choices": [
+          "To keep a recoverable copy of data in case the original is lost or damaged",
+          "To make a monitor brighter",
+          "To guarantee that a file has no viruses",
+          "To increase the keyboard's typing speed"
+        ],
+        "key": "99678131519b28b0535b47beec14c66f0a6f22a2ee06ce531d517834fae4edaf",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which action is most likely to reduce the risk of losing unsaved work during a power interruption?",
+        "choices": [
+          "Save the document regularly",
+          "Keep more browser tabs open",
+          "Turn off the monitor only",
+          "Rename the file repeatedly"
+        ],
+        "key": "0eb237477bc755268323dcd4af2b4ca0b7602cd23b3052e8028efceebc7b6c93",
+        "sourceNumber": 20,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a file manager, what does a file extension such as .pdf generally indicate?",
+        "choices": [
+          "A file format or type",
+          "The file's exact physical location",
+          "The author's password",
+          "The amount of electricity the file uses"
+        ],
+        "key": "5b8e052ca7151fec90482975628a4037d982edec311fd08dd22f8d4a6ae614f7",
+        "sourceNumber": 21,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which extension is commonly associated with a plain-text file?",
+        "choices": [
+          ".txt",
+          ".mp3",
+          ".jpg",
+          ".xlsx"
+        ],
+        "key": "f4df5c83234701826816347cc87fa44f75c2f54f780d581134a6c45f1dbb465b",
+        "sourceNumber": 22,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which action normally copies selected text without removing it from its original location?",
+        "choices": [
+          "Copy",
+          "Cut",
+          "Delete",
+          "Undo"
+        ],
+        "key": "6fcdf00d4313f9ca449df57796690e5fefab1e531dba4cd37b15b53059315503",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the usual effect of pressing Ctrl+Z in many desktop applications?",
+        "choices": [
+          "Undo the most recent action",
+          "Save and close the current file",
+          "Print the current page",
+          "Open a new email account"
+        ],
+        "key": "a0ef912d2b862415ad9b091fdae20ad60d528fbb74dcaff986a09273d0915363",
+        "sourceNumber": 24,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which keyboard shortcut commonly saves the current document on Windows desktop applications?",
+        "choices": [
+          "Ctrl+S",
+          "Ctrl+P",
+          "Ctrl+F",
+          "Ctrl+N"
+        ],
+        "key": "c3e5dd4da64d97b6c9e94c8e71293751d4ec16fb0fbf89d64076c1a3ffd3e0f7",
+        "sourceNumber": 25,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which shortcut commonly opens a search or Find box in a document?",
+        "choices": [
+          "Ctrl+F",
+          "Ctrl+S",
+          "Ctrl+V",
+          "Ctrl+W"
+        ],
+        "key": "29eb14ecd02ad02728e7ea9dac8d9f4345a51aa65580b3ebc11eab933d07bc55",
+        "sourceNumber": 26,
+        "correctIndex": 0
+      },
+      {
+        "question": "A user wants to rename a file without changing its contents. Which action is appropriate?",
+        "choices": [
+          "Use the file manager's Rename command",
+          "Format the storage device",
+          "Empty the recycle bin",
+          "Uninstall the operating system"
+        ],
+        "key": "eaa0b3d5fc1725dd4bb9a6e46bc1adb092671803d9e50c80304178550e783927",
+        "sourceNumber": 27,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the usual purpose of the Recycle Bin or Trash?",
+        "choices": [
+          "To hold certain deleted items temporarily before permanent removal",
+          "To store every password used on the computer",
+          "To scan all emails for spelling errors",
+          "To improve the computer's screen resolution"
+        ],
+        "key": "2fac2a2f7ef99f0db7ea57578ebda46e146643f6bbbef91875e2d63b68b748a1",
+        "sourceNumber": 28,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which action is safest before removing a USB storage device from a computer?",
+        "choices": [
+          "Use the system's eject or safely remove option when available",
+          "Pull it out while files are being copied",
+          "Rename every file on it",
+          "Switch off the keyboard"
+        ],
+        "key": "41b3083d8bc177d45d938e3835fe7c6c5e7fc81e766b79d952dbb4e89837874d",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "A file appears in the wrong folder. Which action moves it without intentionally creating a second copy?",
+        "choices": [
+          "Cut the file and paste it into the destination folder",
+          "Copy the file and leave both copies in place",
+          "Print the file and delete the folder",
+          "Change the screen brightness"
+        ],
+        "key": "3481824395524a84f774fb36a5289d23059196332f46f58d748a5035cd601d42",
+        "sourceNumber": 30,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which file extension commonly identifies a Microsoft Word document in the modern DOCX format?",
+        "choices": [
+          ".docx",
+          ".pptx",
+          ".png",
+          ".csv"
+        ],
+        "key": "a280d6cd43fb47abaed7ff1a490d346688063deb4f3a677ab5c3f1c2537cbe2c",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which file extension commonly identifies a modern Microsoft Excel workbook?",
+        "choices": [
+          ".xlsx",
+          ".docx",
+          ".html",
+          ".wav"
+        ],
+        "key": "508519e8d6f1766ce72735743acd8213bb95b026cff520c1964941c6325054a3",
+        "sourceNumber": 32,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main purpose of a compressed archive file?",
+        "choices": [
+          "To package files together and often reduce their storage size",
+          "To display a spreadsheet as a video",
+          "To identify a user's fingerprint",
+          "To prevent all possible malware infections"
+        ],
+        "key": "dd4ad4acc0b4d9538b9a79d2844d39119db3ac0026d1cb71d2de22ac07f436f0",
+        "sourceNumber": 33,
+        "correctIndex": 0
+      },
+      {
+        "question": "A user accidentally deletes a file and has not emptied the Recycle Bin. What is a sensible first recovery step?",
+        "choices": [
+          "Open the Recycle Bin and restore the file if it is there",
+          "Format the entire drive",
+          "Install a random program from an unknown website",
+          "Rename the monitor"
+        ],
+        "key": "a71c758b0d9a2803dc8c4f35351bb93fce4e379ca6347c040418c1f368fd57ef",
+        "sourceNumber": 34,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a word processor, which feature changes the space between lines of a paragraph?",
+        "choices": [
+          "Line spacing",
+          "Page orientation",
+          "File extension",
+          "Zoom level"
+        ],
+        "key": "b8109fab793a71985a71d32b88149fb2771d28e5b6c77eb7f366a082fc76ced7",
+        "sourceNumber": 35,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which alignment setting places text evenly between the left and right margins?",
+        "choices": [
+          "Justify",
+          "Align left",
+          "Align right",
+          "Center"
+        ],
+        "key": "39bc9c51708bc7acd3820b764351a83e16e5cf7bf56051e4c9c0522be0c5fd51",
+        "sourceNumber": 36,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which command applies a slanted style to selected text?",
+        "choices": [
+          "Italic",
+          "Underline",
+          "Superscript",
+          "Strikethrough"
+        ],
+        "key": "25ebc531c67c5b2abe9ccbacf3ca208471f3dc4b2f08d90aaf06ac1925df3f41",
+        "sourceNumber": 37,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main benefit of using built-in heading styles in a long document?",
+        "choices": [
+          "They apply consistent formatting and can support automatic navigation",
+          "They permanently prevent editing",
+          "They convert all text into images",
+          "They automatically verify every factual claim"
+        ],
+        "key": "733348c8fce0f7afb1f89655976f25a65b06ce2a9b4c84e197e5051b7d58f65f",
+        "sourceNumber": 38,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which feature is best suited to creating a list with items marked by dots?",
+        "choices": [
+          "Bulleted list",
+          "Page border",
+          "Mail merge",
+          "Word count"
+        ],
+        "key": "0c53e27ce7241f33f6d51a695a3749aad3651535dd5bfd886f149140ba3542ce",
+        "sourceNumber": 39,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does the spell-check feature generally do?",
+        "choices": [
+          "Flags words that may be misspelled according to its dictionary",
+          "Guarantees that every sentence is factually correct",
+          "Automatically translates every paragraph",
+          "Creates a backup on a separate computer"
+        ],
+        "key": "657b4777d98426c9d8b183f48f043ad71e4dca25f266e95ea3a164e8e529b21d",
+        "sourceNumber": 40,
+        "correctIndex": 0
+      },
+      {
+        "question": "A report needs page numbers at the bottom of each page. Which area is commonly used?",
+        "choices": [
+          "Footer",
+          "Clipboard",
+          "Status bar",
+          "Taskbar"
+        ],
+        "key": "255c88d125c562e5d11ceac0dcf955d4ee40dac5a915b3f10b582c01f74bc614",
+        "sourceNumber": 41,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which page orientation makes a page wider than it is tall?",
+        "choices": [
+          "Landscape",
+          "Portrait",
+          "Subscript",
+          "Outline"
+        ],
+        "key": "92c8235b2cf05797f69ded73048c984f5272b813eddc0ae149d329ef6ca9a208",
+        "sourceNumber": 42,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does the Print Preview feature help a user do?",
+        "choices": [
+          "Check how a document is likely to appear when printed",
+          "Correct every grammar error automatically",
+          "Send the document to every contact",
+          "Recover a file that was never saved"
+        ],
+        "key": "2804ba83c0034578003fadf3cf3971a8e373a63672f8f98cfc32a6f0ac12e515",
+        "sourceNumber": 43,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which feature is appropriate for creating personalised letters from a standard document and a recipient list?",
+        "choices": [
+          "Mail merge",
+          "Find and replace",
+          "Track changes",
+          "Page colour"
+        ],
+        "key": "2c430eb2787b3067e9d2622dd1c8ccbb9fe090cd64e066a9e2b6830b72c02854",
+        "sourceNumber": 44,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a word processor, what does Find and Replace do?",
+        "choices": [
+          "Searches for specified text and substitutes other text",
+          "Changes the computer's operating system",
+          "Creates a second monitor",
+          "Measures internet speed"
+        ],
+        "key": "e11c04b3fe224c4c5803a9579e73918492e89995075528f059169350d0129c34",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which feature records edits and comments so another reviewer can inspect proposed changes?",
+        "choices": [
+          "Track Changes",
+          "Page Orientation",
+          "AutoSum",
+          "Screen Saver"
+        ],
+        "key": "c4d7a4ce59566d79219ad8b2a26628a0354102c2eac5921d0a992af036febe42",
+        "sourceNumber": 46,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does the Undo command do after an accidental formatting change?",
+        "choices": [
+          "Reverses the most recent action if it is undoable",
+          "Deletes every version of the document",
+          "Sends the document to a printer",
+          "Changes the page size permanently"
+        ],
+        "key": "64ea3201f18fdd1a75a11e2cc785adc4367ea2bf75e39dc371a298d12e58f6bd",
+        "sourceNumber": 47,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which command is best for keeping headings visually distinct from body text throughout a report?",
+        "choices": [
+          "Apply a consistent heading style",
+          "Insert repeated spaces",
+          "Change the file extension",
+          "Turn off spell-check"
+        ],
+        "key": "dfde1d70f6dcf551029b2b428860ff534a722d6d8f02db5915d1bd80960656d1",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is a page break used for in a document?",
+        "choices": [
+          "To start following content on a new page",
+          "To delete the previous paragraph",
+          "To change a word into a hyperlink",
+          "To sort a list alphabetically"
+        ],
+        "key": "ee442628fc9403a357a4542b8e2b84e042a97e35d90f5de164247d523eb0cfcb",
+        "sourceNumber": 49,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which word-processing feature is most suitable for checking the total number of words in a report?",
+        "choices": [
+          "Word Count",
+          "Mail Merge",
+          "Page Colour",
+          "Zoom"
+        ],
+        "key": "1b3569450d2c12974f7c052ac320fd7593f01acb79b13306e7d8da94919edfea",
+        "sourceNumber": 50,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which command commonly places a copy of selected text at the current cursor position?",
+        "choices": [
+          "Paste",
+          "Cut",
+          "Save As",
+          "Page Break"
+        ],
+        "key": "613829d9421f9a0889005ec100ab32556f1d4ba0ddabeeef8bc13f7975641aab",
+        "sourceNumber": 51,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a spreadsheet, what is the address of the cell at column C and row 5?",
+        "choices": [
+          "C5",
+          "5C",
+          "C:5",
+          "Row C5"
+        ],
+        "key": "b1538819fb40ddb96db544b10f10c41d499e897f249213540d97b1bbae62b5dc",
+        "sourceNumber": 52,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a spreadsheet, what does the formula =B2+C2 calculate?",
+        "choices": [
+          "The sum of the values in B2 and C2",
+          "The average of every cell in row 2",
+          "The text in B2 followed by the text in C2 in every spreadsheet program",
+          "The number of empty cells in column C"
+        ],
+        "key": "d0e8cedb0cecd37827710b768cbc9faedeca7b8e91242afb6d6432ec9d3991c8",
+        "sourceNumber": 53,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which spreadsheet function calculates the arithmetic mean of a range of numeric cells?",
+        "choices": [
+          "AVERAGE",
+          "COUNT",
+          "MAX",
+          "ROUND"
+        ],
+        "key": "a86e2c28d76cf5647f58cf05227f7ee124cb9d3594213ddf74861d49f9e44223",
+        "sourceNumber": 54,
+        "correctIndex": 0
+      },
+      {
+        "question": "If A1 contains 7 and A2 contains 5, what value does =A1*A2 return?",
+        "choices": [
+          "35",
+          "12",
+          "2",
+          "75"
+        ],
+        "key": "179e728e3bc9da3f02461b4f47456eece3ba0377606ee4d5e19ad5ee5ddc0ab7",
+        "sourceNumber": 55,
+        "correctIndex": 0
+      },
+      {
+        "question": "If B1 is 20 and B2 is 4, what does =B1/B2 return?",
+        "choices": [
+          "5",
+          "16",
+          "24",
+          "80"
+        ],
+        "key": "96fc9a44758161b1cd064517142955d8203e0f8c204a75beff040234454ba821",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which formula adds the values in cells C2 through C8 in a typical spreadsheet?",
+        "choices": [
+          "=SUM(C2:C8)",
+          "=ADD(C2-C8)",
+          "=TOTAL(C2;C8)",
+          "=C2:C8"
+        ],
+        "key": "b0006b0e1ddb6bce1c6f943cf1b94773608fc1d720066852e4212d00af82bec8",
+        "sourceNumber": 57,
+        "correctIndex": 0
+      },
+      {
+        "question": "A spreadsheet formula in D2 is =B2+C2. If it is copied one row down using a relative reference, what will it normally become?",
+        "choices": [
+          "=B3+C3",
+          "=B2+C2",
+          "=$B$2+$C$2",
+          "=D2+E2"
+        ],
+        "key": "a7addfbaf1e0822cfd47c7bc1b3cde13fc1c9806f9744d4a7f0d113abeae0c5f",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a spreadsheet formula, what does the reference $A$1 indicate?",
+        "choices": [
+          "Both the column and row are fixed when the formula is copied",
+          "Only the row is fixed",
+          "Only the column is fixed",
+          "The cell contains a currency symbol"
+        ],
+        "key": "9300e882434c9d56f4bef645b8c3ff7008890ff16332edb246b947f56a3d8390",
+        "sourceNumber": 59,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which function counts cells containing numbers in a referenced range in common spreadsheet software?",
+        "choices": [
+          "COUNT",
+          "SUM",
+          "MIN",
+          "CONCAT"
+        ],
+        "key": "5e8f30e439870adfa6bd3686fa9214c3771c0650502ff30aa5745b09a75ee110",
+        "sourceNumber": 60,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which function returns the largest numeric value in a range?",
+        "choices": [
+          "MAX",
+          "MIN",
+          "AVERAGE",
+          "COUNT"
+        ],
+        "key": "dfba664a4574d508483a463d978073e48715863789fc0c36f18a5c8d23a41ff7",
+        "sourceNumber": 61,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the result of =SUM(3,4,5) in a spreadsheet that uses commas to separate function arguments?",
+        "choices": [
+          "12",
+          "60",
+          "8",
+          "345"
+        ],
+        "key": "ae9d9dbc178f810153aec298f0c5a5df1aff22bf91e284627bea171177e3b880",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "A cell shows #### instead of a numeric value. What is a common first adjustment to try?",
+        "choices": [
+          "Widen the column",
+          "Delete the workbook",
+          "Turn off the computer immediately",
+          "Change the cell value to a password"
+        ],
+        "key": "ac53e4d186ddb0f672a5c0abc1efe621136bf98b126a8b20b2fd25cba02e3064",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which chart is generally suitable for comparing values across separate categories, such as monthly office expenses?",
+        "choices": [
+          "Column chart",
+          "A single-cell formula",
+          "Text box",
+          "Page break"
+        ],
+        "key": "e7925eb9d430155ab0ccca25fb1ef2bf34a6e6de94041103699e91a26ca948a2",
+        "sourceNumber": 64,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which chart is commonly used to show how categories make up a single whole, when there are only a few categories?",
+        "choices": [
+          "Pie chart",
+          "Scatter plot",
+          "Line chart",
+          "Histogram"
+        ],
+        "key": "a243a50237eb126853711160c8bb8aa084f846bf0af60acdeed1bcbcc92dff91",
+        "sourceNumber": 65,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which formula calculates the difference between the value in A2 and the value in B2?",
+        "choices": [
+          "=A2-B2",
+          "=A2+B2",
+          "=A2/B2",
+          "=SUM(A2:B2)"
+        ],
+        "key": "b7707ed331696e6759269f17aadb767a84bb879275da41da550a58eab3ce11b4",
+        "sourceNumber": 66,
+        "correctIndex": 0
+      },
+      {
+        "question": "If a spreadsheet cell contains the formula =2+3*4, what is the result under standard arithmetic precedence?",
+        "choices": [
+          "14",
+          "20",
+          "24",
+          "9"
+        ],
+        "key": "8e8f4c4cac05294a5fd59da2c8fc99e5f37db4174181f390e8fdd5c32227fcc0",
+        "sourceNumber": 67,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which formula returns the smaller of the values in cells D1 and D2?",
+        "choices": [
+          "=MIN(D1,D2)",
+          "=MAX(D1,D2)",
+          "=AVERAGE(D1,D2)",
+          "=COUNT(D1,D2)"
+        ],
+        "key": "96c26f2dadc514e28d23027a49db7fe7625d7ef9d11ba1003f5a7c29d21c838d",
+        "sourceNumber": 68,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does a filter in a spreadsheet typically do to a table?",
+        "choices": [
+          "Shows rows that meet selected conditions while hiding other rows from view",
+          "Permanently deletes every row that does not match",
+          "Changes all numbers into text",
+          "Adds a password to every cell"
+        ],
+        "key": "a47bb66688929aa0b4d5e53defdaca30c15b461373998a9527a1d0e02ef96415",
+        "sourceNumber": 69,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which feature arranges spreadsheet records alphabetically by a selected text column?",
+        "choices": [
+          "Sort",
+          "Merge cells",
+          "Freeze panes",
+          "Wrap text"
+        ],
+        "key": "c0e5f22883f56a455fe886dc024728026381720a8c680b490d7d4a4ffcc5200a",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why might a user freeze the top row of a long spreadsheet?",
+        "choices": [
+          "To keep column headings visible while scrolling",
+          "To prevent all data from being edited",
+          "To calculate the average automatically",
+          "To convert the sheet into a PDF"
+        ],
+        "key": "4160377bdc60804ef97d9edcac24a1d616daa690fc785fc1b5c2d3f16c52fc50",
+        "sourceNumber": 71,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which formula adds 10 percent to the value in A1?",
+        "choices": [
+          "=A1*1.10",
+          "=A1*0.10",
+          "=A1+0.10",
+          "=A1/10"
+        ],
+        "key": "d12e9acfefdaf03f640a04ddbb44c12c4ca9f6eab428c3388cc9e91bc3a0671e",
+        "sourceNumber": 72,
+        "correctIndex": 0
+      },
+      {
+        "question": "If A1 contains 80, what is the result of =A1*0.25?",
+        "choices": [
+          "20",
+          "25",
+          "55",
+          "320"
+        ],
+        "key": "a8bd517dad30e8c2806db9bdb0410321584acfb392cd3b234d7aa64df617386c",
+        "sourceNumber": 73,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which spreadsheet command is suitable for displaying long text on multiple lines within a cell?",
+        "choices": [
+          "Wrap Text",
+          "Sort",
+          "Filter",
+          "Freeze Panes"
+        ],
+        "key": "1ede6fb7ae3a8ae50449dc30214dd8094adf386bb8340ee45717d60e5214e318",
+        "sourceNumber": 74,
+        "correctIndex": 0
+      },
+      {
+        "question": "In an email, what does the CC field normally do?",
+        "choices": [
+          "Sends a visible copy of the message to additional recipients",
+          "Hides all recipients from one another",
+          "Deletes the message after delivery",
+          "Encrypts every attachment automatically"
+        ],
+        "key": "eda06b521f7bd6f4c6575d1dcbfaffb9d1516f802a2db34e60bf340c28e3b16c",
+        "sourceNumber": 75,
+        "correctIndex": 0
+      },
+      {
+        "question": "When is BCC especially useful in an email?",
+        "choices": [
+          "When sending to many recipients whose addresses should not be shown to one another",
+          "When attaching a file too large to send",
+          "When correcting a misspelled word",
+          "When marking a message as unread"
+        ],
+        "key": "e86e95d9561ed7a1a8231b01ed83baf42d76696e76d86750ac27a1726505c8da",
+        "sourceNumber": 76,
+        "correctIndex": 0
+      },
+      {
+        "question": "What should a user normally do before opening an unexpected email attachment?",
+        "choices": [
+          "Check whether the sender and message are genuine, and avoid opening it if suspicious",
+          "Forward it to every contact",
+          "Disable all security software",
+          "Rename it without inspecting the message"
+        ],
+        "key": "b6a9638eac3e9b80ce6a52cc5cb417d5d7484cd38c28547aa42d78d6fb327ff7",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which is the strongest password among these choices?",
+        "choices": [
+          "A long, unique passphrase with a mix of words and characters",
+          "12345678",
+          "password",
+          "The user's first name"
+        ],
+        "key": "3932bd63b79dd07289b0d2ec9c04fe71796651dc3b8bbb26fd391d9f0c6049f6",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main purpose of multi-factor authentication?",
+        "choices": [
+          "To require an additional proof of identity beyond the password",
+          "To make every email public",
+          "To remove the need for software updates",
+          "To increase the size of a file"
+        ],
+        "key": "70e9098a54a8e8b5107da70f27837dc863ec25b124b75c2b05425098dbde97d8",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "A message claims that an account will be closed unless the user clicks an unfamiliar link and enters a password. What is the safest response?",
+        "choices": [
+          "Avoid the link and check the account through its known official app or address",
+          "Enter the password immediately",
+          "Reply with the password to confirm identity",
+          "Forward the message to unknown contacts"
+        ],
+        "key": "2e96730f3223a9a30b6a43dbb091d394478b4900f77c08a255687ef7c0bab138",
+        "sourceNumber": 80,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does HTTPS in a website address indicate in ordinary browsing?",
+        "choices": [
+          "The connection uses encryption between the browser and the site",
+          "The website is guaranteed to be honest and safe",
+          "The page contains no advertisements",
+          "The user's computer cannot be infected"
+        ],
+        "key": "b2e23d3d0ed6b7df0b3a781510bea7b94bb7ddfcc242011d4a22e9cc5e8dee55",
+        "sourceNumber": 81,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which practice is safest when using a public computer to access an account?",
+        "choices": [
+          "Sign out when finished and avoid saving the password in the browser",
+          "Leave the account open for the next user",
+          "Use the same password as every other account",
+          "Save private files to a shared desktop"
+        ],
+        "key": "c69e6161497456d03a0e953fe1e9f036f469122fc312fc24c0cd445af9846aee",
+        "sourceNumber": 82,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is phishing?",
+        "choices": [
+          "A deceptive attempt to obtain sensitive information by impersonation",
+          "A method of cooling a processor",
+          "A way to organise folders alphabetically",
+          "A type of spreadsheet chart"
+        ],
+        "key": "753d33bb4cc3e248e0f45eef8f8bafc8a0790a34828de9f2982ce3bd53a67466",
+        "sourceNumber": 83,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which action is appropriate if a work email contains confidential information and was sent to the wrong recipient?",
+        "choices": [
+          "Follow workplace reporting procedures promptly and avoid further sharing",
+          "Post the message publicly to warn others",
+          "Send it to more people to confirm delivery",
+          "Delete the sent message and assume no one received it"
+        ],
+        "key": "4312000f1bc5a852543d3316462e000986fece9fb1fd519b47bec69721b143e9",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is a browser bookmark used for?",
+        "choices": [
+          "Saving a link for easier access later",
+          "Blocking every advertisement on the internet",
+          "Encrypting a hard drive",
+          "Changing a spreadsheet formula"
+        ],
+        "key": "02fca915bdc65eb8b57e3e1bfd21ac0d4320b291939cfbfc6e106c463d973d84",
+        "sourceNumber": 85,
+        "correctIndex": 0
+      },
+      {
+        "question": "A website requests a file download that the user did not intend to obtain. What is a sensible action?",
+        "choices": [
+          "Cancel the download and verify the site's legitimacy before proceeding",
+          "Open the file immediately",
+          "Disable the browser's security settings",
+          "Share the download link with colleagues"
+        ],
+        "key": "85f21bb83d82a60c581ff34497222eabe37a8ef5e33e7658a8e97ddd606b0d7f",
+        "sourceNumber": 86,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which email subject line is most useful for a message requesting approval of a specific office supply purchase?",
+        "choices": [
+          "Approval requested: printer paper purchase",
+          "Hello",
+          "Important!!!",
+          "Read now"
+        ],
+        "key": "a81acb5f965b122301a1e5ac85ff20aa42736b4f9390d37dfb2b2681fb5f5586",
+        "sourceNumber": 87,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the purpose of an email attachment?",
+        "choices": [
+          "To send a file along with the message",
+          "To hide the sender's identity automatically",
+          "To make a message impossible to forward",
+          "To replace the subject line"
+        ],
+        "key": "95d395eca2f0507c36f95d2fac0e7656618dc51d96263170c84deb62092e221e",
+        "sourceNumber": 88,
+        "correctIndex": 0
+      },
+      {
+        "question": "What should a user check before sending a document as an email attachment?",
+        "choices": [
+          "That the intended file is attached and the message is addressed correctly",
+          "That the monitor is set to maximum brightness",
+          "That every folder on the computer is renamed",
+          "That the document has been printed twice"
+        ],
+        "key": "cc1d3eeefcbe09fa033e7b3a9224ca7a6528dc8db47836776e6d5339b0c16856",
+        "sourceNumber": 89,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which practice helps reduce the risk of losing important office files?",
+        "choices": [
+          "Keep regular backups in an appropriate separate location",
+          "Store the only copy on a shared public computer",
+          "Rename files with no pattern and never back them up",
+          "Delete files whenever the computer is slow"
+        ],
+        "key": "e9b03edec53bdf535761135ec5aed8f9ef666b45a2556a338c1eb17e7cba8525",
+        "sourceNumber": 90,
+        "correctIndex": 0
+      },
+      {
+        "question": "A printer is switched on but prints from the wrong application-selected printer. What should the user check first?",
+        "choices": [
+          "Whether the correct printer is selected in the print dialog",
+          "Whether the document's font is italic",
+          "Whether the mouse pad is clean",
+          "Whether the computer's clock uses a 12-hour format"
+        ],
+        "key": "e44cdd5a17e894fe78f6d17ca9aa58abdbae849a1b48d321776c1384d283e0fb",
+        "sourceNumber": 91,
+        "correctIndex": 0
+      },
+      {
+        "question": "A printer produces blank pages even though the computer shows that a job was sent. Which basic check is most relevant?",
+        "choices": [
+          "Check the printer's paper, ink or toner, and displayed status",
+          "Change the computer's wallpaper",
+          "Delete the user's email account",
+          "Increase the spreadsheet zoom"
+        ],
+        "key": "6dc7144f6a29d7aa0c14ae1fac0a9b95ba8c1e9fc64b05d6998bd6bd51e8bf60",
+        "sourceNumber": 92,
+        "correctIndex": 0
+      },
+      {
+        "question": "A computer cannot access a website, but other websites load normally. What is a sensible first step?",
+        "choices": [
+          "Check the address and try again, then consider whether that site is temporarily unavailable",
+          "Format the computer's drive",
+          "Delete all saved documents",
+          "Replace the keyboard"
+        ],
+        "key": "c796c7f76fda3d99c082416413144d9518a8b187fa8c1a134c49a6544056c61d",
+        "sourceNumber": 93,
+        "correctIndex": 0
+      },
+      {
+        "question": "A document application stops responding while a user is editing. Which action best protects recent work if recovery options are available?",
+        "choices": [
+          "Wait briefly and use the application's recovery prompt or saved recovery copy",
+          "Immediately format the storage drive",
+          "Unplug every connected device while saving is in progress",
+          "Delete the document from the file manager"
+        ],
+        "key": "58d9e36c71fd83c195e10aa91943dcc57511c845271cac11a105ace8127cc5be",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "A user receives a message that appears to come from a colleague but asks for an urgent password reset through a strange link. What should the user do?",
+        "choices": [
+          "Verify the request with the colleague through a known channel and avoid the strange link",
+          "Enter the current password to test the link",
+          "Send the password to the colleague by email",
+          "Disable account security"
+        ],
+        "key": "40d4ea59972c3e9177ff56c6c140124ecacbe243c64e673291d5d81ad43a91fc",
+        "sourceNumber": 95,
+        "correctIndex": 0
+      },
+      {
+        "question": "A spreadsheet formula returns a division-by-zero error. What should the user inspect first?",
+        "choices": [
+          "Whether the divisor cell is zero or blank",
+          "Whether the monitor is plugged in",
+          "Whether the workbook has a page footer",
+          "Whether a printer has paper"
+        ],
+        "key": "2d74916ecb7c9c3eb37dbfea33906bec73e709cd9a706fa0f42661cfd72619e6",
+        "sourceNumber": 96,
+        "correctIndex": 0
+      },
+      {
+        "question": "A user wants to share a document for review while reducing the chance that the recipient changes the original file. What is a practical approach?",
+        "choices": [
+          "Send a separate copy or an appropriately restricted review version",
+          "Send the only original and delete all backups",
+          "Rename the document to .jpg",
+          "Paste the document into the email subject"
+        ],
+        "key": "7a55cd4250495ea2871e7f238c4eb2dc80fae878c0118eb77bd230446b4d0227",
+        "sourceNumber": 97,
+        "correctIndex": 0
+      },
+      {
+        "question": "A user is about to install a software update on an office computer. Which practice is generally safest?",
+        "choices": [
+          "Use the recognised update mechanism or an authorised source and follow workplace procedures",
+          "Download an installer from an unknown pop-up",
+          "Share administrator credentials in a public message",
+          "Ignore all workplace instructions"
+        ],
+        "key": "8ee0889a7873e10f1eba50e17246a035f760578cfd1c3c109ff3dcfefebd9db6",
+        "sourceNumber": 98,
+        "correctIndex": 0
+      },
+      {
+        "question": "A user wants to make text easy to scan in a short office notice. Which layout choice is usually most helpful for separate action items?",
+        "choices": [
+          "Use a concise bulleted list",
+          "Put all items in one unbroken paragraph",
+          "Insert random blank pages",
+          "Use a different font for every word"
+        ],
+        "key": "0a1f953979e56c0d634f156c061e62ea7918e6899b84b1f62889099f37368358",
+        "sourceNumber": 99,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement best describes firmware in a computer device?",
+        "choices": [
+          "It is software stored in a device that helps control its basic operation.",
+          "It is temporary data held only while an application is open.",
+          "It is a physical connection used to link a computer to a printer.",
+          "It is a folder used to organise downloaded files."
+        ],
+        "key": "46316bb4ece1896a868b7f1c51791c2a75279844f97ebf304cb7bc38dacb6053",
+        "sourceNumber": 100,
+        "correctIndex": 0
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "0a6b1ca59f9ff01d4962d9e72d6aa072ef72deaa5250f0f2e399632f86b1e32c",
+      "sourceQuestionNumbers": [
+        35,
+        5,
+        60,
+        65,
+        81,
+        100,
+        48,
+        9,
+        37,
+        73,
+        47,
+        96,
+        14,
+        68,
+        32,
+        15,
+        92,
+        22,
+        70,
+        52,
+        21,
+        98,
+        53,
+        78,
+        3,
+        18,
+        94,
+        34,
+        69,
+        41,
+        20,
+        30,
+        45,
+        61,
+        84,
+        89,
+        6,
+        24,
+        43,
+        72,
+        71,
+        51,
+        97,
+        25,
+        4,
+        36,
+        1,
+        54,
+        93,
+        77,
+        55,
+        7,
+        91,
+        80,
+        28,
+        29,
+        42,
+        12,
+        62,
+        88,
+        57,
+        63,
+        85,
+        33,
+        16,
+        79,
+        50,
+        27,
+        90,
+        19,
+        10,
+        38,
+        82,
+        49,
+        66,
+        11,
+        23,
+        86,
+        44,
+        64,
+        95,
+        75,
+        17,
+        58,
+        26,
+        76,
+        39,
+        2,
+        46,
+        83,
+        67,
+        40,
+        99,
+        59,
+        13,
+        31,
+        56,
+        74,
+        87,
+        8
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
