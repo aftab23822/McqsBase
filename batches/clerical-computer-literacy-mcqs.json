@@ -1617,6 +1617,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 2,
+      "directory": "part-02",
+      "sourceQuestionNumbers": [
+        65,
+        81
+      ],
+      "count": 2,
+      "durationSeconds": 62,
+      "sha256": "8e3bc30f01e0bdc5ea47f056f1963de0d2d53e2c2f422ecabc68585ae952f03b",
+      "manifest": {
+        "title": "100 Computer Literacy MCQs for Clerical Recruitment Practice",
+        "sourceTitle": "100 Computer Literacy MCQs for Clerical Recruitment Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-02T12:24:14.802068+00:00",
+        "sourceContentHash": "bf24c39cea3f8f0b3f97809c4312f39cd70f1cae1e610d3e26606e1a9ac35790",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7492034443,
+          "sha": "06cadcc35638e6596e31549c0d2eaf891e2a7499",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-02T12:24:14.802068+00:00",
+          "url": "https://mcqs-base-70ra3rhd8-as-projects-10921176.vercel.app",
+          "publisherRunId": 41443604141
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 62,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Which chart is commonly used to show how categories make up a single whole, when there are only a few categories?",
+            "choices": [
+              "Pie chart",
+              "Scatter plot",
+              "Line chart",
+              "Histogram"
+            ],
+            "correctIndex": 0,
+            "key": "a243a50237eb126853711160c8bb8aa084f846bf0af60acdeed1bcbcc92dff91",
+            "sourceNumber": 65
+          },
+          {
+            "question": "What does HTTPS in a website address indicate in ordinary browsing?",
+            "choices": [
+              "The connection uses encryption between the browser and the site",
+              "The website is guaranteed to be honest and safe",
+              "The page contains no advertisements",
+              "The user's computer cannot be infected"
+            ],
+            "correctIndex": 0,
+            "key": "b2e23d3d0ed6b7df0b3a781510bea7b94bb7ddfcc242011d4a22e9cc5e8dee55",
+            "sourceNumber": 81
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 17,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 17,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 18,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 19,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 20,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 24,
+            "duration": 23,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 47,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 48,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 49,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 50,
+            "duration": 7,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 57,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 2,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            65,
+            81
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#TestPreparation",
+          "#QuizTime",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/clerical-computer-literacy-mcqs-part-02-8e3bc30f01e0bdc5.mp4",
+        "videoSha256": "8e3bc30f01e0bdc5ea47f056f1963de0d2d53e2c2f422ecabc68585ae952f03b",
+        "assetId": 701674212
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 2/5 | Q65, 81 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+          "text": "Part 2/5 · Source questions 65, 81\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 2/5 | Q65, 81 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+          "text": "Part 2/5 · Source questions 65, 81\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 2/5 | Q65, 81 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+          "text": "Part 2/5 · Source questions 65, 81\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 2/5 | Q65, 81 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+          "text": "Part 2/5 · Source questions 65, 81\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
