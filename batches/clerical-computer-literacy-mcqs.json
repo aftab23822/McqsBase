@@ -1859,7 +1859,11 @@
       },
       "uploadIntent": {
         "filename": "clerical-computer-literacy-mcqs-part-02-8e3bc30f01e0bdc5.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "3457e8e0-e29b-4bd5-a840-65dd0dc00447",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/JDsw0vPds0.mp4"
       }
     },
     {
