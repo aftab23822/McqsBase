@@ -1624,7 +1624,131 @@
       "studioMedia": {
         "id": "dbd1c087-657c-4dad-ba6f-aa0997176f5f",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/lruNR6sIYS.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 1/5 | Q35, 5, 60 | 100 Computer Literacy MCQs for Clerical Recruitment Practice"
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 35, 5, 60\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+              "image": [
+                {
+                  "id": "dbd1c087-657c-4dad-ba6f-aa0997176f5f",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/lruNR6sIYS.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 35, 5, 60\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "dbd1c087-657c-4dad-ba6f-aa0997176f5f",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/lruNR6sIYS.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 1/5 | Q35, 5, 60 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 35, 5, 60\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "dbd1c087-657c-4dad-ba6f-aa0997176f5f",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/lruNR6sIYS.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 1/5 | Q35, 5, 60 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "TestPreparation",
+                "label": "TestPreparation"
+              },
+              {
+                "value": "QuizTime",
+                "label": "QuizTime"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 35, 5, 60\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "dbd1c087-657c-4dad-ba6f-aa0997176f5f",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/lruNR6sIYS.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-02T19:39:00+05:00"
     },
     {
       "part": 2,
@@ -1864,7 +1988,131 @@
       "studioMedia": {
         "id": "3457e8e0-e29b-4bd5-a840-65dd0dc00447",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/JDsw0vPds0.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 2/5 | Q65, 81 | 100 Computer Literacy MCQs for Clerical Recruitment Practice"
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 65, 81\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+              "image": [
+                {
+                  "id": "3457e8e0-e29b-4bd5-a840-65dd0dc00447",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/JDsw0vPds0.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 65, 81\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "3457e8e0-e29b-4bd5-a840-65dd0dc00447",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/JDsw0vPds0.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 2/5 | Q65, 81 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 65, 81\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "3457e8e0-e29b-4bd5-a840-65dd0dc00447",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/JDsw0vPds0.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 2/5 | Q65, 81 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "TestPreparation",
+                "label": "TestPreparation"
+              },
+              {
+                "value": "QuizTime",
+                "label": "QuizTime"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 65, 81\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "3457e8e0-e29b-4bd5-a840-65dd0dc00447",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/JDsw0vPds0.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-02T20:14:00+05:00"
     },
     {
       "part": 3,
@@ -2104,7 +2352,131 @@
       "studioMedia": {
         "id": "f7f74543-9434-4a09-bb20-a2ead1e83d88",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/DXZb1IPbaB.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 3/5 | Q100, 48 | 100 Computer Literacy MCQs for Clerical Recruitment Practice"
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 100, 48\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+              "image": [
+                {
+                  "id": "f7f74543-9434-4a09-bb20-a2ead1e83d88",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/DXZb1IPbaB.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 100, 48\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "f7f74543-9434-4a09-bb20-a2ead1e83d88",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/DXZb1IPbaB.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 3/5 | Q100, 48 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 100, 48\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "f7f74543-9434-4a09-bb20-a2ead1e83d88",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/DXZb1IPbaB.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 3/5 | Q100, 48 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "TestPreparation",
+                "label": "TestPreparation"
+              },
+              {
+                "value": "QuizTime",
+                "label": "QuizTime"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 100, 48\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "f7f74543-9434-4a09-bb20-a2ead1e83d88",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/DXZb1IPbaB.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-02T20:49:00+05:00"
     },
     {
       "part": 4,
@@ -2393,7 +2765,131 @@
       "studioMedia": {
         "id": "72c8350b-df0d-4321-a30b-dcbb74203214",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/3z1yjeIqL7.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 4/5 | Q9, 37, 73 | 100 Computer Literacy MCQs for Clerical Recruitment Practice"
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 9, 37, 73\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+              "image": [
+                {
+                  "id": "72c8350b-df0d-4321-a30b-dcbb74203214",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/3z1yjeIqL7.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 9, 37, 73\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "72c8350b-df0d-4321-a30b-dcbb74203214",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/3z1yjeIqL7.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 4/5 | Q9, 37, 73 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 9, 37, 73\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "72c8350b-df0d-4321-a30b-dcbb74203214",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/3z1yjeIqL7.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 4/5 | Q9, 37, 73 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "TestPreparation",
+                "label": "TestPreparation"
+              },
+              {
+                "value": "QuizTime",
+                "label": "QuizTime"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 9, 37, 73\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "72c8350b-df0d-4321-a30b-dcbb74203214",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/3z1yjeIqL7.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-02T21:24:00+05:00"
     },
     {
       "part": 5,
@@ -2633,7 +3129,131 @@
       "studioMedia": {
         "id": "01173ebd-68d1-441e-839d-cc4f89626951",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/D94CnWWBrc.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 5/5 | Q47, 96 | 100 Computer Literacy MCQs for Clerical Recruitment Practice"
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 47, 96\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+              "image": [
+                {
+                  "id": "01173ebd-68d1-441e-839d-cc4f89626951",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/D94CnWWBrc.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 47, 96\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "01173ebd-68d1-441e-839d-cc4f89626951",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/D94CnWWBrc.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 5/5 | Q47, 96 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 47, 96\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "01173ebd-68d1-441e-839d-cc4f89626951",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/D94CnWWBrc.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 5/5 | Q47, 96 | 100 Computer Literacy MCQs for Clerical Recruitment Practice",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "TestPreparation",
+                "label": "TestPreparation"
+              },
+              {
+                "value": "QuizTime",
+                "label": "QuizTime"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 47, 96\n100 Computer Literacy MCQs for Clerical Recruitment Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "01173ebd-68d1-441e-839d-cc4f89626951",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/D94CnWWBrc.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-02T21:59:00+05:00"
     }
   ],
   "thinkingSeconds": 3,
@@ -2714,5 +3334,12 @@
         "sha256": "2eee4364d73ba73bea519c6308dde1df9923fdedffe98191472eb0013cac113e"
       }
     ]
-  }
+  },
+  "schedule": [
+    "2026-11-02T19:39:00+05:00",
+    "2026-11-02T20:14:00+05:00",
+    "2026-11-02T20:49:00+05:00",
+    "2026-11-02T21:24:00+05:00",
+    "2026-11-02T21:59:00+05:00"
+  ]
 }
