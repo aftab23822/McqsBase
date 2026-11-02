@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "clerical-computer-literacy-mcqs": {
+    title: "100 Computer Literacy MCQs for Clerical Recruitment Practice",
+    excerpt:
+      "Practise computer fundamentals, file management, word processing, spreadsheets, email, internet use and basic cybersecurity with 100 explained MCQs.",
+    category: "Subject Guide",
+    date: "2026-11-02",
+    readTime: "36 min",
+    content: null,
+    body: readImportedBlogBody("clerical-computer-literacy-mcqs")
+  },
   "nts-quantitative-arithmetic-practice": {
     title: "100 NTS-Style Quantitative Arithmetic MCQs with Explanations",
     excerpt:
