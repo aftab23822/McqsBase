@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "clerical-computer-literacy-mcqs",
   "createdAt": "2026-11-02T12:24:14.925104+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "clerical-computer-literacy-mcqs",
     "title": "100 Computer Literacy MCQs for Clerical Recruitment Practice",
@@ -2596,5 +2596,83 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "clerical-computer-literacy-mcqs",
+    "sourceUrl": "https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
+    "sourceTitle": "100 Computer Literacy MCQs for Clerical Recruitment Practice",
+    "sourceContentHash": "bf24c39cea3f8f0b3f97809c4312f39cd70f1cae1e610d3e26606e1a9ac35790",
+    "productionDeployment": {
+      "id": 7492034443,
+      "sha": "06cadcc35638e6596e31549c0d2eaf891e2a7499",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-02T12:24:14.802068+00:00",
+      "url": "https://mcqs-base-70ra3rhd8-as-projects-10921176.vercel.app",
+      "publisherRunId": 41443604141
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          35,
+          5,
+          60
+        ],
+        "count": 3,
+        "durationSeconds": 83,
+        "sha256": "d7e6b8667b91be7291ab7666e5d80dfb1b6663de13045ed6630c7bd9daa71fbb"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          65,
+          81
+        ],
+        "count": 2,
+        "durationSeconds": 62,
+        "sha256": "8e3bc30f01e0bdc5ea47f056f1963de0d2d53e2c2f422ecabc68585ae952f03b"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          100,
+          48
+        ],
+        "count": 2,
+        "durationSeconds": 70,
+        "sha256": "b2d57619d5a849e907b13334fd5d7d1c6f3d1d239f0abe8f2dd3cd46e9217c26"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          9,
+          37,
+          73
+        ],
+        "count": 3,
+        "durationSeconds": 81,
+        "sha256": "9bf1637865178532d0607a1ecb783f1e223d196214bc535a783c22379c1ef4f3"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          47,
+          96
+        ],
+        "count": 2,
+        "durationSeconds": 66,
+        "sha256": "2eee4364d73ba73bea519c6308dde1df9923fdedffe98191472eb0013cac113e"
+      }
+    ]
+  }
 }
