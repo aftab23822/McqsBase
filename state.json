@@ -941,7 +941,7 @@
       "verifiedPublications": 20
     },
     "nts-quantitative-arithmetic-practice": {
-      "status": "scheduled",
+      "status": "provider-published",
       "ledger": "batches/nts-quantitative-arithmetic-practice.json",
       "createdAt": "2026-11-01T11:20:59.234670+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-arithmetic-practice",
@@ -952,8 +952,8 @@
         "2026-11-01T20:40:00+05:00",
         "2026-11-01T22:00:00+05:00"
       ],
-      "published": 0,
-      "verifiedPublications": 0
+      "published": 20,
+      "verifiedPublications": 15
     },
     "clerical-computer-literacy-mcqs": {
       "status": "ready",
