@@ -975,7 +975,13 @@
       "ledger": "batches/nat-ie-electricity-circuits.json",
       "createdAt": "2026-11-03T04:49:16.782507+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-electricity-circuits",
-      "scheduledAt": [],
+      "scheduledAt": [
+        "2026-11-03T10:09:00+05:00",
+        "2026-11-03T13:06:00+05:00",
+        "2026-11-03T16:03:00+05:00",
+        "2026-11-03T19:00:00+05:00",
+        "2026-11-03T21:57:00+05:00"
+      ],
       "published": 0,
       "verifiedPublications": 0
     }
