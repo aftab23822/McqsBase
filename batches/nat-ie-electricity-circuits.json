@@ -1617,6 +1617,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 2,
+      "directory": "part-02",
+      "sourceQuestionNumbers": [
+        95,
+        56,
+        43
+      ],
+      "count": 3,
+      "durationSeconds": 73,
+      "sha256": "8ac3018cbdf647faf66f0134cb69ca697b04c3a59d75b1853c140d2375480b3d",
+      "manifest": {
+        "title": "100 Basic Electricity and DC Circuit MCQs for NAT-IE Practice",
+        "sourceTitle": "100 Basic Electricity and DC Circuit MCQs for NAT-IE Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-electricity-circuits",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-03T04:49:16.642123+00:00",
+        "sourceContentHash": "84e34fc0d032f93ef13f8da6ac0c3c68dae86f8d870656284773c1235acf55e2",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7510702535,
+          "sha": "77842c8590deaa545efe6d609740b56970ff0cbf",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-03T04:49:16.642123+00:00",
+          "url": "https://mcqs-base-2jlsp457m-as-projects-10921176.vercel.app",
+          "publisherRunId": 41579864699
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 73,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Which is the SI unit of electrical resistance?",
+            "choices": [
+              "Farad",
+              "Ohm",
+              "Watt",
+              "Weber"
+            ],
+            "correctIndex": 1,
+            "key": "a4064ce9804dfd2079e660ca7a5c64dcffff71b476dfa38a6a9ba0aa7e37e837",
+            "sourceNumber": 95
+          },
+          {
+            "question": "A 0.5 A current flows through a 20 Ω resistor. What is the voltage across it?",
+            "choices": [
+              "10 V",
+              "20 V",
+              "40 V",
+              "100 V"
+            ],
+            "correctIndex": 0,
+            "key": "41a2b66576c06f31b6d065984af2476099d89e5106d9d7155bc24752b0866a0b",
+            "sourceNumber": 56
+          },
+          {
+            "question": "A 9 V battery is connected to a 3 Ω resistor. What current flows in the ideal circuit?",
+            "choices": [
+              "0.33 A",
+              "3 A",
+              "6 A",
+              "27 A"
+            ],
+            "correctIndex": 1,
+            "key": "a086c16326f745a326f4201c5b965782f8534c689f351d9619bbae2b773c3f06",
+            "sourceNumber": 43
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 12,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 12,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 13,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 14,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 15,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 19,
+            "duration": 17,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 36,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 37,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 38,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 39,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 43,
+            "duration": 18,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 61,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 62,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 63,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 64,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 68,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 2,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            95,
+            56,
+            43
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-electricity-circuits-part-02-8ac3018cbdf647fa.mp4",
+        "videoSha256": "8ac3018cbdf647faf66f0134cb69ca697b04c3a59d75b1853c140d2375480b3d",
+        "assetId": 704338232
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 2/5 | Q95, 56, 43 | 100 Basic Electricity and DC Circuit MCQs for NAT-IE Practice",
+          "text": "Part 2/5 · Source questions 95, 56, 43\n100 Basic Electricity and DC Circuit MCQs for NAT-IE Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-electricity-circuits",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-electricity-circuits",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 2/5 | Q95, 56, 43 | 100 Basic Electricity and DC Circuit MCQs for NAT-IE Practice",
+          "text": "Part 2/5 · Source questions 95, 56, 43\n100 Basic Electricity and DC Circuit MCQs for NAT-IE Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-electricity-circuits\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-electricity-circuits",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-electricity-circuits",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 2/5 | Q95, 56, 43 | 100 Basic Electricity and DC Circuit MCQs for NAT-IE Practice",
+          "text": "Part 2/5 · Source questions 95, 56, 43\n100 Basic Electricity and DC Circuit MCQs for NAT-IE Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-electricity-circuits\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-electricity-circuits",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-electricity-circuits",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 2/5 | Q95, 56, 43 | 100 Basic Electricity and DC Circuit MCQs for NAT-IE Practice",
+          "text": "Part 2/5 · Source questions 95, 56, 43\n100 Basic Electricity and DC Circuit MCQs for NAT-IE Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-electricity-circuits\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-electricity-circuits",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-electricity-circuits",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
