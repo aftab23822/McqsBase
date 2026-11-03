@@ -3603,8 +3603,9 @@
       "scheduledAt": "2026-11-03T21:57:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "uncertain",
-          "attemptedAt": "2026-11-03T04:54:37.254568+00:00"
+          "status": "accepted",
+          "attemptedAt": "2026-11-03T04:54:37.254568+00:00",
+          "postId": "cmw07rcr10ahero9d1dvjesn8"
         },
         "instagram": {
           "status": "uncertain",
