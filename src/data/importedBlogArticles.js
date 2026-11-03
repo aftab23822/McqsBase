@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nat-ie-electricity-circuits": {
+    title: "100 Basic Electricity and DC Circuit MCQs for NAT-IE Practice",
+    excerpt:
+      "Practise charge, current, resistance, circuit laws, power, and capacitors with 100 original multiple-choice questions and worked explanations.",
+    category: "Subject Guide",
+    date: "2026-11-03",
+    readTime: "31 min",
+    content: null,
+    body: readImportedBlogBody("nat-ie-electricity-circuits")
+  },
   "clerical-computer-literacy-mcqs": {
     title: "100 Computer Literacy MCQs for Clerical Recruitment Practice",
     excerpt:
