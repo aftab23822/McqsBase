@@ -2,6 +2,10 @@
 
 Every autopublished MCQsBase blog should be a static Markdown article under `public/blog/{slug}/article.md` and must be registered in `src/data/importedBlogArticles.js`.
 
+## Publication Schedule
+
+Daily Blog Autopilot is scheduled for 05:00 Asia/Karachi every day (`0 0 * * *` in UTC). This starts generation; the article is published after validation, build, merge and Production deployment. GitHub scheduled runs can be delayed, so an exact 05:00 live publication is not guaranteed. Successful publication triggers Blog Quiz Batches automatically. Once all five videos are ready, an early batch uses 10:00, 13:00, 16:00, 19:00 and 22:00 Pakistan time across all four platforms. Later readiness uses the remaining same-day window. No laptop needs to remain on.
+
 ## Article Standard
 
 - Title: SEO-friendly, usually `100 {Topic} MCQs with Answers - {Date}` or a stronger test-specific variant.

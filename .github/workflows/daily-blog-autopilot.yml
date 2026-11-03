@@ -2,8 +2,9 @@ name: Daily Blog Autopilot
 
 on:
   schedule:
-    # 09:15 Asia/Karachi
-    - cron: '15 4 * * *'
+    # 05:00 Asia/Karachi (UTC+05:00). GitHub cron uses UTC.
+    # Publication follows generation/build checks; scheduled starts can be delayed.
+    - cron: '0 0 * * *'
   workflow_dispatch:
     inputs:
       date:
