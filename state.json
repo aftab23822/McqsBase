@@ -956,7 +956,7 @@
       "verifiedPublications": 15
     },
     "clerical-computer-literacy-mcqs": {
-      "status": "scheduled",
+      "status": "provider-published",
       "ledger": "batches/clerical-computer-literacy-mcqs.json",
       "createdAt": "2026-11-02T12:24:14.925104+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/clerical-computer-literacy-mcqs",
@@ -967,8 +967,8 @@
         "2026-11-02T21:24:00+05:00",
         "2026-11-02T21:59:00+05:00"
       ],
-      "published": 0,
-      "verifiedPublications": 0
+      "published": 20,
+      "verifiedPublications": 15
     },
     "nat-ie-electricity-circuits": {
       "status": "ready",
