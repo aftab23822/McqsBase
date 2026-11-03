@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-ie-electricity-circuits",
   "createdAt": "2026-11-03T04:49:16.782507+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "nat-ie-electricity-circuits",
     "title": "100 Basic Electricity and DC Circuit MCQs for NAT-IE Practice",
@@ -1749,7 +1749,24 @@
         }
       },
       "scheduledAt": "2026-11-03T10:09:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-03T04:54:00.028757+00:00"
+        },
+        "instagram": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-03T04:54:00.028779+00:00"
+        },
+        "tiktok": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-03T04:54:00.028783+00:00"
+        },
+        "youtube": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-03T04:54:00.028786+00:00"
+        }
+      }
     },
     {
       "part": 2,
