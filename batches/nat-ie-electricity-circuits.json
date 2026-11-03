@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "nat-ie-electricity-circuits",
+  "createdAt": "2026-11-03T04:49:16.782507+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nat-ie-electricity-circuits",
+    "title": "100 Basic Electricity and DC Circuit MCQs for NAT-IE Practice",
+    "url": "https://www.mcqsbase.com/blog/nat-ie-electricity-circuits",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7510702535,
+      "sha": "77842c8590deaa545efe6d609740b56970ff0cbf",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-03T04:49:16.642123+00:00",
+      "url": "https://mcqs-base-2jlsp457m-as-projects-10921176.vercel.app",
+      "publisherRunId": 41579864699
+    },
+    "fetchedAt": "2026-11-03T04:49:16.642123+00:00",
+    "contentHash": "84e34fc0d032f93ef13f8da6ac0c3c68dae86f8d870656284773c1235acf55e2",
+    "questions": [
+      {
+        "question": "A steady current of 2 A flows for 3 s. How much charge passes a point in the circuit?",
+        "choices": [
+          "1.5 C",
+          "5 C",
+          "6 C",
+          "9 C"
+        ],
+        "key": "e24bf44a35652eae2d0ea2662690c4fa0b07b6d8ae2c729cd1af8733bd607310",
+        "sourceNumber": 1,
+        "correctIndex": 2
+      },
+      {
+        "question": "A charge of 12 C passes a point in 4 s. What is the current?",
+        "choices": [
+          "0.33 A",
+          "3 A",
+          "8 A",
+          "48 A"
+        ],
+        "key": "33f925386aaa7dec22f14e3ade3876e8c88b520a93f8bdbd97dba093e138aef6",
+        "sourceNumber": 2,
+        "correctIndex": 1
+      },
+      {
+        "question": "In a metal wire, which statement correctly compares conventional current with electron motion?",
+        "choices": [
+          "They move in the same direction",
+          "They move in opposite directions",
+          "Electrons remain stationary",
+          "Conventional current is always zero"
+        ],
+        "key": "75a5f4d5066ea33bac23cc9355fe72fe6b954e9138aa55cfea070d48145b2e1c",
+        "sourceNumber": 3,
+        "correctIndex": 1
+      },
+      {
+        "question": "A potential difference of 10 V transfers 20 J of energy. How much charge is transferred?",
+        "choices": [
+          "0.5 C",
+          "2 C",
+          "10 C",
+          "200 C"
+        ],
+        "key": "ed7abde1504888ae28a6e988725d7624b88f1922fc2b4af0a782003c27827a31",
+        "sourceNumber": 4,
+        "correctIndex": 1
+      },
+      {
+        "question": "A resistor has 12 V across it and carries 3 A. What is its resistance?",
+        "choices": [
+          "0.25 Ω",
+          "4 Ω",
+          "9 Ω",
+          "36 Ω"
+        ],
+        "key": "07072f48f0bf3f76ff06b48a08d6cddacfa7492cb5a341cf7a3ebe04dab2f2c2",
+        "sourceNumber": 5,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the equivalent resistance of 2 Ω, 3 Ω, and 5 Ω resistors connected in series?",
+        "choices": [
+          "1 Ω",
+          "5 Ω",
+          "10 Ω",
+          "30 Ω"
+        ],
+        "key": "ef26d36a5e35db81e2e2af640b7d985af059acb34d795a3460dc7936a21b27d5",
+        "sourceNumber": 6,
+        "correctIndex": 2
+      },
+      {
+        "question": "Two resistors of 6 Ω and 3 Ω are connected in parallel. What is their equivalent resistance?",
+        "choices": [
+          "2 Ω",
+          "3 Ω",
+          "4.5 Ω",
+          "9 Ω"
+        ],
+        "key": "5b1de84880293af30452a5f81494d22bb60b3158fc24c21fbc054362469b6968",
+        "sourceNumber": 7,
+        "correctIndex": 0
+      },
+      {
+        "question": "A set of resistors is connected in parallel. Which statement about its equivalent resistance is generally correct for two or more positive resistances?",
+        "choices": [
+          "It is greater than the largest resistance",
+          "It equals the sum of all resistances",
+          "It is less than the smallest branch resistance",
+          "It is always zero"
+        ],
+        "key": "343a9d9f725dcbe14cde1c5e3c267d90b9c82e3ad9afe1638205a411139ae55b",
+        "sourceNumber": 8,
+        "correctIndex": 2
+      },
+      {
+        "question": "Three resistors are connected in series to a battery. What is the same through each resistor in the ideal steady-state circuit?",
+        "choices": [
+          "Current",
+          "Voltage drop",
+          "Power",
+          "Resistance"
+        ],
+        "key": "6385585fe3b1e5cba827f226bc2252eac929d41927b99ef559457d992bebf8c2",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "Two resistors are connected in parallel across an ideal 9 V source. What is the voltage across each resistor?",
+        "choices": [
+          "0 V",
+          "4.5 V",
+          "9 V",
+          "18 V"
+        ],
+        "key": "b34789ee367c9eb379e45b28dc05696db1acba54680a0c15c53b872e3705e76c",
+        "sourceNumber": 10,
+        "correctIndex": 2
+      },
+      {
+        "question": "A device draws 2 A from a 12 V supply. What is its electrical power?",
+        "choices": [
+          "6 W",
+          "10 W",
+          "14 W",
+          "24 W"
+        ],
+        "key": "3b71fdbce576833d473c0eab95fa8436e6f16f8b1190269c97dada7dfca24497",
+        "sourceNumber": 11,
+        "correctIndex": 3
+      },
+      {
+        "question": "A 2 Ω resistor carries 3 A. How much power does it dissipate?",
+        "choices": [
+          "6 W",
+          "9 W",
+          "18 W",
+          "36 W"
+        ],
+        "key": "ea17dca4b4bd173b5dd964434633c08fa7986a74c3a4170e84bd6ebbc2203dc3",
+        "sourceNumber": 12,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 60 W lamp operates for 10 s. How much electrical energy does it use?",
+        "choices": [
+          "6 J",
+          "60 J",
+          "600 J",
+          "6,000 J"
+        ],
+        "key": "434968e9b67aae67567a3b421cd0672dc21f36fb29c5c955a363015d02c42ce0",
+        "sourceNumber": 13,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 1 kW heater runs for 2 hours. How much energy does it use?",
+        "choices": [
+          "0.5 kWh",
+          "2 kWh",
+          "3 kWh",
+          "2,000 kWh"
+        ],
+        "key": "a224e8d50ae2d0a2045f30377c33f2aa2ebfe532d3799d9a82c692e8e1df50e7",
+        "sourceNumber": 14,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 100 W appliance is rated for operation at 200 V. What is its operating current at that rating?",
+        "choices": [
+          "0.5 A",
+          "2 A",
+          "20 A",
+          "200 A"
+        ],
+        "key": "8fc0b76c34e76e5d8b394a662a7ead214be87d23332f780f815b4157c92816e0",
+        "sourceNumber": 15,
+        "correctIndex": 0
+      },
+      {
+        "question": "A 4 Ω resistor carries 2 A. What is the voltage across it?",
+        "choices": [
+          "2 V",
+          "6 V",
+          "8 V",
+          "16 V"
+        ],
+        "key": "77d0e1d03cbf8eeb9a38f5d2a5e1255010a1f52bdf29f2cf8b117fd53c0b6ce7",
+        "sourceNumber": 16,
+        "correctIndex": 2
+      },
+      {
+        "question": "For an ordinary metallic resistor, what usually happens to its resistance as its temperature rises?",
+        "choices": [
+          "It decreases to zero",
+          "It usually increases",
+          "It remains exactly unchanged",
+          "It becomes negative"
+        ],
+        "key": "6395ae951269e8c11bb043483491a44b99001c9956432e16134f48ea007267cc",
+        "sourceNumber": 17,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which expression relates the resistance R of a uniform wire to its resistivity ρ, length L, and cross-sectional area A?",
+        "choices": [
+          "R = ρA/L",
+          "R = ρL/A",
+          "R = LA/ρ",
+          "R = ρ/(LA)"
+        ],
+        "key": "18de01f9fe6ebe12f4cd654886ae58d7ba0b32eba4e02401c466cf3b15e64115",
+        "sourceNumber": 18,
+        "correctIndex": 1
+      },
+      {
+        "question": "A uniform wire is stretched to twice its original length without changing its material or volume. What happens to its resistance?",
+        "choices": [
+          "It becomes half",
+          "It stays the same",
+          "It doubles",
+          "It becomes four times as large"
+        ],
+        "key": "bb86f2c824d3fe06ca47cafacbda644bc4e7eefb9870634b4b7401375d0983e6",
+        "sourceNumber": 19,
+        "correctIndex": 3
+      },
+      {
+        "question": "Two wires have the same material and length. The second wire has twice the cross-sectional area of the first. How does its resistance compare?",
+        "choices": [
+          "It is half as large",
+          "It is twice as large",
+          "It is four times as large",
+          "It is unchanged"
+        ],
+        "key": "8be25658b099883a7ae39806b2c74496e861a94ffb369a054fc1c65e2fda20c1",
+        "sourceNumber": 20,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which quantity is a property of a material rather than a particular wire’s dimensions?",
+        "choices": [
+          "Resistance",
+          "Resistivity",
+          "Length",
+          "Cross-sectional area"
+        ],
+        "key": "b0acbb86ac5cf72c193a063dd01a226dbe253ea0f8261495d7d714470206339d",
+        "sourceNumber": 21,
+        "correctIndex": 1
+      },
+      {
+        "question": "In the circuit model, what does the electromotive force (emf) of a source represent?",
+        "choices": [
+          "Charge supplied per second",
+          "Energy supplied per unit charge",
+          "Resistance per unit length",
+          "Power used per unit resistance"
+        ],
+        "key": "5986d4e19bbf0c8c4a89e9941e0312e8e9c2321e485f3970d853e0a3f9ebc300",
+        "sourceNumber": 22,
+        "correctIndex": 1
+      },
+      {
+        "question": "A cell with emf 12 V and internal resistance 1 Ω supplies 2 A. What is its terminal voltage while delivering current?",
+        "choices": [
+          "2 V",
+          "10 V",
+          "12 V",
+          "14 V"
+        ],
+        "key": "915b5e5853da5e5bf36c95ae8421eaff0726018440863207818548589300d719",
+        "sourceNumber": 23,
+        "correctIndex": 1
+      },
+      {
+        "question": "Two identical ideal cells, each with emf 1.5 V, are connected in series with the same orientation. What is their combined emf?",
+        "choices": [
+          "0 V",
+          "0.75 V",
+          "1.5 V",
+          "3.0 V"
+        ],
+        "key": "a198c0f4f28adb0950de9d5060cd6c301e9f5f51ab06faf626bda0bb56cf715b",
+        "sourceNumber": 24,
+        "correctIndex": 3
+      },
+      {
+        "question": "At a junction, 5 A enters while 2 A and 1 A leave in two branches. How much current must leave through a third branch?",
+        "choices": [
+          "1 A",
+          "2 A",
+          "3 A",
+          "8 A"
+        ],
+        "key": "e741d4469a39377027cbb0ee135b7a4169c8ebfbd0387fb3c12e57f4917d5f2b",
+        "sourceNumber": 25,
+        "correctIndex": 1
+      },
+      {
+        "question": "A charge moves once around a closed loop in a steady circuit. What does Kirchhoff’s voltage law state about the signed potential changes around that loop?",
+        "choices": [
+          "Their sum is zero",
+          "Their sum equals the current",
+          "Their sum always equals the emf",
+          "Their sum is negative resistance"
+        ],
+        "key": "98c7a834c17f71d28528fae3c0c5b609068cc4529a54ef0f2e108439cc6eba08",
+        "sourceNumber": 26,
+        "correctIndex": 0
+      },
+      {
+        "question": "How should an ammeter be connected to measure the current through a resistor?",
+        "choices": [
+          "In series with the resistor",
+          "In parallel across the resistor",
+          "Across the battery only",
+          "Between two points without completing the circuit"
+        ],
+        "key": "3c45cf28a911470768060e8cd0c79f64b8f6f90089301a23fecf2289d1397d41",
+        "sourceNumber": 27,
+        "correctIndex": 0
+      },
+      {
+        "question": "How should a voltmeter be connected to measure the potential difference across a resistor?",
+        "choices": [
+          "In series with the resistor",
+          "In parallel across the resistor",
+          "In series with the battery only",
+          "Across an open switch only"
+        ],
+        "key": "9bb11491bb887f72cf3a593b738ddc9f5f39c8b67fb11d4def1b3f94c5adba11",
+        "sourceNumber": 28,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is a likely result of connecting an ideal voltage source directly across a wire of negligible resistance?",
+        "choices": [
+          "A very large current may flow",
+          "The source voltage becomes infinite",
+          "The wire becomes an ideal voltmeter",
+          "No charge can move"
+        ],
+        "key": "455e08534e29b401937f64dc7eccb2df88ed3f888dabc8d413f401dfc35b0e94",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does an open switch do in an otherwise simple DC circuit?",
+        "choices": [
+          "Provides a zero-resistance path",
+          "Breaks the conducting path",
+          "Doubles the source voltage",
+          "Makes all resistors parallel"
+        ],
+        "key": "3f11051626ac0b201a81a67ca2c125490ffd707a46ff801f7be67ac105e6fd5f",
+        "sourceNumber": 30,
+        "correctIndex": 1
+      },
+      {
+        "question": "An ideal 10 V source is connected to a 20 Ω resistor. What current flows?",
+        "choices": [
+          "0.2 A",
+          "0.5 A",
+          "2 A",
+          "200 A"
+        ],
+        "key": "2510c57bbc27d7f4745f32cfb271172fcdc083896cc08f53da3387b23a10e008",
+        "sourceNumber": 31,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 10 V source is connected across a series pair of 2 Ω and 3 Ω resistors. What is the voltage across the 2 Ω resistor?",
+        "choices": [
+          "2 V",
+          "4 V",
+          "6 V",
+          "10 V"
+        ],
+        "key": "4982b35ae4ea42c07f496964ebfa68ef506bbc3342506173a4aac2efec61e675",
+        "sourceNumber": 32,
+        "correctIndex": 1
+      },
+      {
+        "question": "Two parallel branches carry currents of 2 A and 3 A. What is the total current supplied to the parallel combination?",
+        "choices": [
+          "1 A",
+          "2.5 A",
+          "5 A",
+          "6 A"
+        ],
+        "key": "bd7b71dfd40c36939046a86c2d1dfbbe5c0eca3f83aec7aefaee8bd0b25ffb3b",
+        "sourceNumber": 33,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the equivalent resistance of two 4 Ω resistors connected in parallel?",
+        "choices": [
+          "1 Ω",
+          "2 Ω",
+          "4 Ω",
+          "8 Ω"
+        ],
+        "key": "cde730c0fbdc66f1d5c039a0ebf10f822143136f71ae6991270d6a576d009a46",
+        "sourceNumber": 34,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the equivalent resistance of 2 Ω and 3 Ω resistors connected in parallel?",
+        "choices": [
+          "1.2 Ω",
+          "2.5 Ω",
+          "5 Ω",
+          "6 Ω"
+        ],
+        "key": "dab0bc967f38f2da42806025f2c78fb40230c89002a6862bf988f46bcf8f40ff",
+        "sourceNumber": 35,
+        "correctIndex": 0
+      },
+      {
+        "question": "A 2 Ω resistor is in series with a parallel combination of 6 Ω and 3 Ω. What is the total resistance?",
+        "choices": [
+          "2.5 Ω",
+          "4 Ω",
+          "5 Ω",
+          "11 Ω"
+        ],
+        "key": "2c0890e30555da49db6c579d03740111683441b212c9363e118a8d32e077ca13",
+        "sourceNumber": 36,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 12 V source is connected across a 6 Ω resistor. What power does the resistor dissipate?",
+        "choices": [
+          "2 W",
+          "12 W",
+          "24 W",
+          "72 W"
+        ],
+        "key": "49cbd8dcadc1e271c544e90814b59e1fa6c250024ae1a9f9146b7a2137ce1621",
+        "sourceNumber": 37,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 5 Ω resistor has 10 V across it. What power does it dissipate?",
+        "choices": [
+          "2 W",
+          "20 W",
+          "25 W",
+          "50 W"
+        ],
+        "key": "d2edbfc849ddf539a07a713c6a3dc2668b5e7757f0a0e17808656bfb33fc13fb",
+        "sourceNumber": 38,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 2 Ω resistor carries a current of 3 A. How much electrical energy does it dissipate in 2 s?",
+        "choices": [
+          "9 J",
+          "18 J",
+          "36 J",
+          "72 J"
+        ],
+        "key": "7609dfed47f03c577b9b634bb4e6238b29e6fa0bf1dbc840dc8a5ada9e50c4fa",
+        "sourceNumber": 39,
+        "correctIndex": 2
+      },
+      {
+        "question": "Two resistors of 2 Ω and 6 Ω are in series. How do their voltage drops compare?",
+        "choices": [
+          "The 2 Ω resistor has three times the drop",
+          "The 6 Ω resistor has three times the drop",
+          "They have equal drops",
+          "The 6 Ω resistor has six times the drop"
+        ],
+        "key": "e47490b35f5387eecf908657b4290926b0bab4530cdd7c26418c2cc11d016c92",
+        "sourceNumber": 40,
+        "correctIndex": 1
+      },
+      {
+        "question": "Three identical 3 Ω resistors are connected in parallel. What is their equivalent resistance?",
+        "choices": [
+          "1 Ω",
+          "3 Ω",
+          "6 Ω",
+          "9 Ω"
+        ],
+        "key": "22f0d22af0cef2d385b6b3f973a2caabc1b38d156971557886234a48c4f0fa73",
+        "sourceNumber": 41,
+        "correctIndex": 0
+      },
+      {
+        "question": "Four identical 8 Ω resistors are connected in series. What is their equivalent resistance?",
+        "choices": [
+          "2 Ω",
+          "8 Ω",
+          "24 Ω",
+          "32 Ω"
+        ],
+        "key": "19239471301d008a8ef6174882f88f5acaabf7281697a7cca66db103045fcd15",
+        "sourceNumber": 42,
+        "correctIndex": 3
+      },
+      {
+        "question": "A 9 V battery is connected to a 3 Ω resistor. What current flows in the ideal circuit?",
+        "choices": [
+          "0.33 A",
+          "3 A",
+          "6 A",
+          "27 A"
+        ],
+        "key": "a086c16326f745a326f4201c5b965782f8534c689f351d9619bbae2b773c3f06",
+        "sourceNumber": 43,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 12 V source is connected to 4 Ω and 2 Ω resistors in series. What is the circuit current?",
+        "choices": [
+          "1 A",
+          "2 A",
+          "3 A",
+          "6 A"
+        ],
+        "key": "bd0bbeee30057b210f4ce011ce1159849a11d5a444ef1f9c4911908659e7cb9e",
+        "sourceNumber": 44,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 6 Ω resistor is connected across 12 V. What current passes through it?",
+        "choices": [
+          "0.5 A",
+          "2 A",
+          "6 A",
+          "72 A"
+        ],
+        "key": "eff1873e7b72e0607f585f97450618ad467c717e10757255e7e7767876cd122a",
+        "sourceNumber": 45,
+        "correctIndex": 1
+      },
+      {
+        "question": "A device is marked 100 W, 200 V. What is the resistance at its stated operating condition, assuming it behaves as a resistor?",
+        "choices": [
+          "2 Ω",
+          "20 Ω",
+          "200 Ω",
+          "400 Ω"
+        ],
+        "key": "d67150c086885a841f180ec47b75451517578fbc21269f8f154612f80446f269",
+        "sourceNumber": 46,
+        "correctIndex": 3
+      },
+      {
+        "question": "A device operates at 120 V and draws 0.5 A. What is its power?",
+        "choices": [
+          "60 W",
+          "120 W",
+          "240 W",
+          "600 W"
+        ],
+        "key": "650871303d0282d7e49ddf87963877ecff3adf8592ed7fa6f26fb35e24597038",
+        "sourceNumber": 47,
+        "correctIndex": 0
+      },
+      {
+        "question": "Two identical ideal lamps, each with resistance R, are connected in series to an ideal voltage source V. What voltage is across each lamp?",
+        "choices": [
+          "V/4",
+          "V/2",
+          "V",
+          "2V"
+        ],
+        "key": "a119a04c934efa8131e67ff8c72488ea829a5e85b4609ca9ab53c11dfb1663a7",
+        "sourceNumber": 48,
+        "correctIndex": 1
+      },
+      {
+        "question": "In an ideal current source circuit, what quantity does the source maintain at its specified value, within its operating limits?",
+        "choices": [
+          "Current",
+          "Resistance",
+          "Charge stored in every component",
+          "Power in every branch"
+        ],
+        "key": "58f7c2132d68f77021b7dbfd2a7bb10de8d92720aea379f5b04bde0a7ccea74e",
+        "sourceNumber": 49,
+        "correctIndex": 0
+      },
+      {
+        "question": "A resistor obeys Ohm’s law at constant temperature. If the voltage across it doubles, what happens to the current?",
+        "choices": [
+          "It halves",
+          "It doubles",
+          "It becomes four times as large",
+          "It stays zero"
+        ],
+        "key": "fde32ceaab44ffb3a364f9ca5181ebbe4611f759504de2aa3ffc51d905a8ec16",
+        "sourceNumber": 50,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 10 Ω resistor carries 2 A. What is the potential difference across it?",
+        "choices": [
+          "5 V",
+          "12 V",
+          "20 V",
+          "40 V"
+        ],
+        "key": "a65b73d63d1563929e4392b5f7d021f4cc7f9bebfb05172bb5d992c5995f6069",
+        "sourceNumber": 51,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 4 Ω resistor has 2 A through it. What is its power dissipation?",
+        "choices": [
+          "8 W",
+          "12 W",
+          "16 W",
+          "32 W"
+        ],
+        "key": "0d90084962a5b31fb183ebfd4b5133d2bb7701fca98a6eeb5bbf4b0701468003",
+        "sourceNumber": 52,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 1.5 kW heater runs for 30 minutes. How much electrical energy does it use?",
+        "choices": [
+          "0.5 kWh",
+          "0.75 kWh",
+          "1.5 kWh",
+          "3 kWh"
+        ],
+        "key": "3b1f7b9d0ab0a7ce7d741bf3428bd405339d0a0684e1f6a11c357a85fe295440",
+        "sourceNumber": 53,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many joules are in 1 kWh?",
+        "choices": [
+          "3,600 J",
+          "36,000 J",
+          "360,000 J",
+          "3,600,000 J"
+        ],
+        "key": "a280d5eb820e1e3a5d115fa88be1e9ec0bf4fbf048d82685c94623407ad60ad4",
+        "sourceNumber": 54,
+        "correctIndex": 3
+      },
+      {
+        "question": "A 2 kΩ resistor is connected across 10 V. What current flows?",
+        "choices": [
+          "0.005 A",
+          "0.05 A",
+          "0.2 A",
+          "20 A"
+        ],
+        "key": "8634bd7fa740deefa56734df4acc92fdae04c31d9259e6fdc983be6c7bce544b",
+        "sourceNumber": 55,
+        "correctIndex": 0
+      },
+      {
+        "question": "A 0.5 A current flows through a 20 Ω resistor. What is the voltage across it?",
+        "choices": [
+          "10 V",
+          "20 V",
+          "40 V",
+          "100 V"
+        ],
+        "key": "41a2b66576c06f31b6d065984af2476099d89e5106d9d7155bc24752b0866a0b",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "A 12 V source supplies 3 A to a load. What is the load’s power?",
+        "choices": [
+          "4 W",
+          "9 W",
+          "36 W",
+          "144 W"
+        ],
+        "key": "38d1271aa5aa7ad584b2a3a246fd483fa52fdcc55c84bc0eea636fad2ab05a2d",
+        "sourceNumber": 57,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the SI unit of capacitance?",
+        "choices": [
+          "Coulomb",
+          "Farad",
+          "Henry",
+          "Ohm"
+        ],
+        "key": "d598e9c0a7676832e856c1ae8b020994716001f7f7107d3fcbc9cb6d04e41499",
+        "sourceNumber": 58,
+        "correctIndex": 1
+      },
+      {
+        "question": "A capacitor stores 10 μC of charge at a potential difference of 5 V. What is its capacitance?",
+        "choices": [
+          "0.5 μF",
+          "2 μF",
+          "5 μF",
+          "50 μF"
+        ],
+        "key": "80d55de7ea1a1f79b0e52399ad8010a627296ee46b62ff591e05384696426d7b",
+        "sourceNumber": 59,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 2 μF capacitor is connected across 5 V. What charge does it store?",
+        "choices": [
+          "0.4 μC",
+          "2.5 μC",
+          "10 μC",
+          "25 μC"
+        ],
+        "key": "33d0a22cf78bbdbf5e1f9fb5ff8b1c9b90e5811bab82d366302b67157b57795b",
+        "sourceNumber": 60,
+        "correctIndex": 2
+      },
+      {
+        "question": "Two capacitors of 2 μF and 3 μF are connected in parallel. What is their total capacitance?",
+        "choices": [
+          "1.2 μF",
+          "2.5 μF",
+          "5 μF",
+          "6 μF"
+        ],
+        "key": "1541a77d4dfa93dd73f17ecf30a3aaab2666fce3c1c2f5f62a354b4a3d97cc33",
+        "sourceNumber": 61,
+        "correctIndex": 2
+      },
+      {
+        "question": "Two capacitors of 2 μF and 3 μF are connected in series. What is their equivalent capacitance?",
+        "choices": [
+          "1.2 μF",
+          "2 μF",
+          "2.5 μF",
+          "5 μF"
+        ],
+        "key": "1fb6ef9cc056ba36ac89f01008aef9f7cc95411749977ddcb0b86359f843adf6",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "What usually happens to the capacitance of a parallel-plate capacitor when a dielectric material is inserted between its plates, with geometry unchanged?",
+        "choices": [
+          "It increases",
+          "It decreases to zero",
+          "It remains unchanged in every case",
+          "It becomes negative"
+        ],
+        "key": "2571a01aab39ae5b9d9409c695ee8c5443199e86d233094e22cc6ca3b5fa6bd2",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "After a capacitor in a simple DC circuit has fully charged, how does an ideal capacitor behave for steady current?",
+        "choices": [
+          "As a short circuit",
+          "As an open circuit",
+          "As a fixed 1 Ω resistor",
+          "As a current source of infinite current"
+        ],
+        "key": "1619bf48afa251e4e9f3d783fa72958efd910208283dcea646621fe79669bcea",
+        "sourceNumber": 64,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the energy stored in a capacitor of capacitance C at voltage V?",
+        "choices": [
+          "CV",
+          "½CV²",
+          "C/V",
+          "2CV²"
+        ],
+        "key": "bc2248188cad6b4734a12776ff5a7f8d9ad743dd69df9d8dec31114b403cfc23",
+        "sourceNumber": 65,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 4 μF capacitor is charged to 10 V. How much energy does it store?",
+        "choices": [
+          "20 μJ",
+          "100 μJ",
+          "200 μJ",
+          "400 μJ"
+        ],
+        "key": "b959337abc2fc51e958490e237327b3d9e4639f9b9ef2e62ed5fd91da28baf3c",
+        "sourceNumber": 66,
+        "correctIndex": 2
+      },
+      {
+        "question": "For a parallel-plate capacitor with plate area unchanged, what happens to capacitance if the plate separation increases?",
+        "choices": [
+          "It increases in proportion to separation",
+          "It decreases",
+          "It is always doubled",
+          "It becomes independent of separation"
+        ],
+        "key": "ee7960e2c3e450bf0c90c13321403b261d43693d0414b13be7f452428110259a",
+        "sourceNumber": 67,
+        "correctIndex": 1
+      },
+      {
+        "question": "A capacitor stores 6 μC when connected across 3 V. What is its capacitance?",
+        "choices": [
+          "0.5 μF",
+          "2 μF",
+          "3 μF",
+          "18 μF"
+        ],
+        "key": "fc2e2ebcaddd3f5751d143d18f4e85cc453735d43a85027a5a80f2a3f10ecdd4",
+        "sourceNumber": 68,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 5 μF capacitor has a charge of 20 μC. What is the voltage across it?",
+        "choices": [
+          "0.25 V",
+          "4 V",
+          "15 V",
+          "100 V"
+        ],
+        "key": "891c9617485809ad7d9d4651075237487e29e6c412a5aae21d1d7cfe24af5549",
+        "sourceNumber": 69,
+        "correctIndex": 1
+      },
+      {
+        "question": "Two identical 6 μF capacitors are connected in series. What is their equivalent capacitance?",
+        "choices": [
+          "3 μF",
+          "6 μF",
+          "12 μF",
+          "36 μF"
+        ],
+        "key": "b4f8b1536d281990da3881fae68726137a90931f63c1db922d4c62a8fde7cb82",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "Two identical 6 μF capacitors are connected in parallel. What is their equivalent capacitance?",
+        "choices": [
+          "3 μF",
+          "6 μF",
+          "12 μF",
+          "36 μF"
+        ],
+        "key": "5238476d2897607426ba40f89d7c0d4d5097dc1b718eb5fb8691a65bf6305cf2",
+        "sourceNumber": 71,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the direction of the electric field at a point, by definition?",
+        "choices": [
+          "The direction of force on a positive test charge",
+          "The direction of motion of an electron",
+          "The direction of decreasing resistance",
+          "The direction of conventional current in every circuit"
+        ],
+        "key": "05cf8453767cb99289c4c7e2bcb4eb18e6b9b29570607a8b11095fbd3528310c",
+        "sourceNumber": 72,
+        "correctIndex": 0
+      },
+      {
+        "question": "A uniform electric field of 200 V/m exists between parallel plates separated by 0.05 m. What is the potential difference between the plates?",
+        "choices": [
+          "4 V",
+          "10 V",
+          "200 V",
+          "4,000 V"
+        ],
+        "key": "567b8ab871317485bb6f15ea6f61e03ea0321540b8af64e95b3cd8a3d451a2a8",
+        "sourceNumber": 73,
+        "correctIndex": 1
+      },
+      {
+        "question": "How much work is needed to move 3 C of charge through a potential difference of 4 V?",
+        "choices": [
+          "0.75 J",
+          "7 J",
+          "12 J",
+          "24 J"
+        ],
+        "key": "c44bdb1654722b261ab07912f53f9b8e83a459e91e785d4ed69ab6153aef1124",
+        "sourceNumber": 74,
+        "correctIndex": 2
+      },
+      {
+        "question": "How much work is done by the electric force when a charge moves along an equipotential surface?",
+        "choices": [
+          "Zero",
+          "Equal to the charge in coulombs",
+          "Always positive and nonzero",
+          "Always equal to the source emf"
+        ],
+        "key": "12c2c67e8dbbab5f4676b9ab6f080f84f1ac87f88506a641133223a3a4565a89",
+        "sourceNumber": 75,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement correctly describes the charge of an electron?",
+        "choices": [
+          "It is positive",
+          "It is negative",
+          "It is zero",
+          "It changes sign in a circuit"
+        ],
+        "key": "77660ded74a61f8a49fed344e1b3067b41737f2e76a6e031da5307f8f51ef775",
+        "sourceNumber": 76,
+        "correctIndex": 1
+      },
+      {
+        "question": "Why does a metal generally conduct electric current?",
+        "choices": [
+          "It contains mobile charge carriers",
+          "Its atoms have no nuclei",
+          "It has no resistance at every temperature",
+          "It cannot contain electric fields"
+        ],
+        "key": "2a35f0c9b05e8d1ce3b62802b4de84538eac82c75638edab1b23ee875edac5fa",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why does a good electrical insulator usually carry little steady current under ordinary conditions?",
+        "choices": [
+          "It has very few freely mobile charge carriers",
+          "Its resistance is always exactly zero",
+          "It produces an unlimited supply of electrons",
+          "Its voltage must always be zero"
+        ],
+        "key": "20c37db30d676ddc0847e67525ebd452fb3e6ad8ef88cb79abe34f027bb6ff4c",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "An atom has equal numbers of protons and electrons. What is its net electric charge?",
+        "choices": [
+          "Positive",
+          "Negative",
+          "Zero",
+          "It must equal one coulomb"
+        ],
+        "key": "6a9e8876950b21ae1cffc994f05036a569ced52e733e27afdecee2ecb7ebf56f",
+        "sourceNumber": 79,
+        "correctIndex": 2
+      },
+      {
+        "question": "Two resistors in series have resistances R₁ and R₂. Which expression gives their equivalent resistance?",
+        "choices": [
+          "R₁ + R₂",
+          "R₁R₂/(R₁ + R₂)",
+          "R₁ − R₂",
+          "1/(R₁ + R₂)"
+        ],
+        "key": "b8fcae5ce4490f79ef00ec727582ee140734c74a5f032a881381f2b080573195",
+        "sourceNumber": 80,
+        "correctIndex": 0
+      },
+      {
+        "question": "A battery is connected to a circuit with an open switch. In an ideal circuit, what current flows through the broken path?",
+        "choices": [
+          "Zero",
+          "The battery’s emf in amperes",
+          "An infinite current",
+          "The same current as in a closed circuit"
+        ],
+        "key": "c9adfc01edfb02bb9af6e2ff597ad87148dd224dad0a42fb76bb1a7c5514b2e0",
+        "sourceNumber": 81,
+        "correctIndex": 0
+      },
+      {
+        "question": "A 12 V ideal source is connected across a 4 Ω resistor. What power is dissipated?",
+        "choices": [
+          "3 W",
+          "16 W",
+          "36 W",
+          "48 W"
+        ],
+        "key": "e03465b92ac601f6965fb4ccf89ea45b6c8a4ea80e185a51885974453d91c00a",
+        "sourceNumber": 82,
+        "correctIndex": 2
+      },
+      {
+        "question": "At a junction, 7 A enters and 4 A leaves through one branch. If there are no other incoming branches, how much current leaves through the remaining branch?",
+        "choices": [
+          "1 A",
+          "3 A",
+          "4 A",
+          "11 A"
+        ],
+        "key": "df92d6c7ebcb8a84a674aa220051b0ff4a045633a276cdff1d4da89b66205f87",
+        "sourceNumber": 83,
+        "correctIndex": 1
+      },
+      {
+        "question": "A closed circuit loop has a 9 V battery and two resistors with voltage drops of 4 V and 5 V. What is the algebraic total of the voltage changes around the loop?",
+        "choices": [
+          "0 V",
+          "1 V",
+          "9 V",
+          "18 V"
+        ],
+        "key": "f0ffff7087277c6771e2201851a88a101a550d6d0412f1e55bea726e7202a57c",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which property is desirable for an ideal ammeter?",
+        "choices": [
+          "Very low resistance",
+          "Very high resistance",
+          "Infinite capacitance",
+          "A resistance equal to the measured load"
+        ],
+        "key": "06a2ed82abf83df2716613308b1e152e2bfcaabbbdf1dce432f8e0f0f0d685f9",
+        "sourceNumber": 85,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which property is desirable for an ideal voltmeter?",
+        "choices": [
+          "Very low resistance",
+          "Very high resistance",
+          "Zero voltage range",
+          "Resistance that changes the measured voltage substantially"
+        ],
+        "key": "0e370554f5b61a2d8fbbcf4932b54bafcd9d566c0a618d3eb22e151958a4ab6a",
+        "sourceNumber": 86,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 3 Ω resistor and a 6 Ω resistor are connected in parallel across 12 V. What current flows through the 3 Ω branch?",
+        "choices": [
+          "2 A",
+          "3 A",
+          "4 A",
+          "6 A"
+        ],
+        "key": "f2258ddb20abacdb6c6c3f6e2a3c1dd5bb66b469e616fe8669ec6cac787aa65b",
+        "sourceNumber": 87,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 3 Ω resistor and a 6 Ω resistor are connected in parallel across 12 V. What is the total source current?",
+        "choices": [
+          "2 A",
+          "4 A",
+          "6 A",
+          "8 A"
+        ],
+        "key": "ad141403d90467cc43a3828bb73fc0a26c33772b2ce7a23417f213d0a4547360",
+        "sourceNumber": 88,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 2 Ω resistor is connected in series with a 4 Ω resistor across a 12 V source. What is the voltage across the 4 Ω resistor?",
+        "choices": [
+          "4 V",
+          "6 V",
+          "8 V",
+          "12 V"
+        ],
+        "key": "680df1eb287e0e47449d703edbd6a2e1f188d003b0e695d158972b37e64014ab",
+        "sourceNumber": 89,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 24 V source is connected across a 12 Ω resistor. What current flows?",
+        "choices": [
+          "0.5 A",
+          "2 A",
+          "12 A",
+          "288 A"
+        ],
+        "key": "9e10d1bdec8f2b58c42e099a99c8b3074917e4af3043e2f109edd719275a949a",
+        "sourceNumber": 90,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 24 V source is connected across a 12 Ω resistor. What power is dissipated?",
+        "choices": [
+          "2 W",
+          "24 W",
+          "48 W",
+          "288 W"
+        ],
+        "key": "cdfff41ab7a0f0dfca8737e619228a969ee95c946f78c109f00cdde5b9d1af89",
+        "sourceNumber": 91,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 2 Ω resistor and a 4 Ω resistor are connected in series to a 12 V source. What is the voltage drop across the 2 Ω resistor?",
+        "choices": [
+          "2 V",
+          "4 V",
+          "8 V",
+          "12 V"
+        ],
+        "key": "45a67e2eeaad880f795a82c1bd63221cac2c5f369baf544f1ca6d9e9f18b6126",
+        "sourceNumber": 92,
+        "correctIndex": 1
+      },
+      {
+        "question": "A wire’s resistance is 8 Ω. If its length is doubled while its material, temperature, and cross-sectional area stay unchanged, what is the new resistance?",
+        "choices": [
+          "4 Ω",
+          "8 Ω",
+          "16 Ω",
+          "32 Ω"
+        ],
+        "key": "206e76be5503a481ab8844df9452f7d2b8baa6e87d9b68cb7ae09da7d2b30702",
+        "sourceNumber": 93,
+        "correctIndex": 2
+      },
+      {
+        "question": "Which is the SI unit of electric current?",
+        "choices": [
+          "Ampere",
+          "Coulomb",
+          "Joule",
+          "Volt"
+        ],
+        "key": "f37968e396594abeb97645415a4e072798dc05de085a407ad78818c9858379f0",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which is the SI unit of electrical resistance?",
+        "choices": [
+          "Farad",
+          "Ohm",
+          "Watt",
+          "Weber"
+        ],
+        "key": "a4064ce9804dfd2079e660ca7a5c64dcffff71b476dfa38a6a9ba0aa7e37e837",
+        "sourceNumber": 95,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which is the SI unit of electric charge?",
+        "choices": [
+          "Ampere",
+          "Coulomb",
+          "Farad",
+          "Watt"
+        ],
+        "key": "0cffb5bc819fc8a2d6d19a8e3d3443b31c8372da97af156c5ef7cc1d25a4854d",
+        "sourceNumber": 96,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which is the SI unit of electrical power?",
+        "choices": [
+          "Joule",
+          "Ohm",
+          "Volt",
+          "Watt"
+        ],
+        "key": "9a77de43f81b200f944c383788de602d0dcb00ca2feb8fce4d5517e40c68e76b",
+        "sourceNumber": 97,
+        "correctIndex": 3
+      },
+      {
+        "question": "A charge of 1 C moves through a potential difference of 1 V. How much energy is transferred?",
+        "choices": [
+          "0.5 J",
+          "1 J",
+          "2 J",
+          "1 W"
+        ],
+        "key": "6211d0adde2011b1fcc60cdb426b1a8906acd03c5c8de82062a987044b9f1f3d",
+        "sourceNumber": 98,
+        "correctIndex": 1
+      },
+      {
+        "question": "A source maintains a potential difference of 6 V across a 3 Ω resistor. What is the current?",
+        "choices": [
+          "0.5 A",
+          "2 A",
+          "3 A",
+          "18 A"
+        ],
+        "key": "f4daa81146d6312d9104efe79095c8402151d0245c13a06b019376d68209aa20",
+        "sourceNumber": 99,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 5 Ω resistor carries 2 A. What is its voltage drop?",
+        "choices": [
+          "2.5 V",
+          "7 V",
+          "10 V",
+          "25 V"
+        ],
+        "key": "fa8be23096b5c606f1502aa3b7828111c59afe9ed34c4228018f2cd374305c97",
+        "sourceNumber": 100,
+        "correctIndex": 2
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "8795cb4028014fc210c265193d1177d6874197edc1e00fbcc433025afb8d05e5",
+      "sourceQuestionNumbers": [
+        63,
+        32,
+        15,
+        95,
+        56,
+        43,
+        93,
+        24,
+        69,
+        12,
+        10,
+        71,
+        99,
+        39,
+        58,
+        7,
+        33,
+        50,
+        86,
+        61,
+        80,
+        9,
+        51,
+        96,
+        22,
+        47,
+        79,
+        90,
+        40,
+        6,
+        57,
+        84,
+        8,
+        72,
+        31,
+        37,
+        16,
+        74,
+        87,
+        49,
+        85,
+        38,
+        1,
+        59,
+        64,
+        20,
+        48,
+        94,
+        28,
+        75,
+        35,
+        4,
+        100,
+        78,
+        42,
+        46,
+        89,
+        3,
+        77,
+        21,
+        30,
+        17,
+        53,
+        91,
+        70,
+        81,
+        27,
+        41,
+        76,
+        2,
+        88,
+        36,
+        44,
+        73,
+        13,
+        34,
+        60,
+        5,
+        97,
+        66,
+        62,
+        14,
+        26,
+        55,
+        98,
+        18,
+        25,
+        67,
+        52,
+        92,
+        68,
+        83,
+        19,
+        54,
+        29,
+        23,
+        11,
+        82,
+        45,
+        65
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
