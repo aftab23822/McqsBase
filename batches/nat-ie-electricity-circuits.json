@@ -2197,7 +2197,11 @@
       },
       "uploadIntent": {
         "filename": "nat-ie-electricity-circuits-part-03-d950e242cdf1028a.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "796a1fd9-fa19-4127-b83c-f14842196bfb",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/h46230LWAg.mp4"
       }
     },
     {
