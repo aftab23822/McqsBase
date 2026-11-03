@@ -1619,7 +1619,11 @@
       },
       "uploadIntent": {
         "filename": "nat-ie-electricity-circuits-part-01-d44765f4fae5fd1d.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "8e1cfde5-8c35-431c-a9b2-ebf35b75cd74",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/b5ijvBUUvs.mp4"
       }
     },
     {
