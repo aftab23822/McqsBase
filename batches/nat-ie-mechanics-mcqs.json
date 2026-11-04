@@ -2081,6 +2081,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 4,
+      "directory": "part-04",
+      "sourceQuestionNumbers": [
+        74,
+        36,
+        97
+      ],
+      "count": 3,
+      "durationSeconds": 86,
+      "sha256": "422169b1269bce4b19772414b9a8caa7a971c17345c59a8e9f41adbab07cc12c",
+      "manifest": {
+        "title": "100 NAT-IE Mechanics MCQs",
+        "sourceTitle": "100 NAT-IE Mechanics MCQs with Answers and Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-04T05:49:24.804946+00:00",
+        "sourceContentHash": "4227b3da644a5b33d8ce24daa10b9f847b521c8a5ade0394f9c78658d3af8ec8",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7539021918,
+          "sha": "e332c6fa04df5d03df0ec3373e8ead701d76c28f",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-04T05:49:24.804946+00:00",
+          "url": "https://mcqs-base-m499ki0q9-as-projects-10921176.vercel.app",
+          "publisherRunId": 41781019885
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 86,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A 2 kg object is 3 m above a chosen reference level. Taking g = 10 m/s², what is its gravitational potential energy relative to that level?",
+            "choices": [
+              "6 J",
+              "15 J",
+              "60 J",
+              "90 J"
+            ],
+            "correctIndex": 2,
+            "key": "5db7ca9952a82383951f32b03177395823cbdbbebff2e0eff8c9f76752b7680c",
+            "sourceNumber": 74
+          },
+          {
+            "question": "A machine does 600 J of work in 3 s. What is its average power?",
+            "choices": [
+              "200 W",
+              "300 W",
+              "600 W",
+              "1800 W"
+            ],
+            "correctIndex": 0,
+            "key": "0aa4f155bcbcaeb4e49b7420e499a167559608f0b5fe80b32ea7041755d5655c",
+            "sourceNumber": 36
+          },
+          {
+            "question": "A spring obeying Hooke's law is stretched from 2 cm to 4 cm. How does the magnitude of its restoring force change?",
+            "choices": [
+              "It halves",
+              "It stays the same",
+              "It doubles",
+              "It becomes four times as large"
+            ],
+            "correctIndex": 2,
+            "key": "84246066f126416c89e54c6b558175f42e5b22ec18bf3adc365698135e9d7acc",
+            "sourceNumber": 97
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 22,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 25,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 29,
+            "duration": 18,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 47,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 48,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 49,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 50,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 54,
+            "duration": 20,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 74,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 75,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 76,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 77,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 81,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 4,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            74,
+            36,
+            97
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-mechanics-mcqs-part-04-422169b1269bce4b.mp4",
+        "videoSha256": "422169b1269bce4b19772414b9a8caa7a971c17345c59a8e9f41adbab07cc12c",
+        "assetId": 708408166
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 4/5 | Q74, 36, 97 | 100 NAT-IE Mechanics MCQs",
+          "text": "Part 4/5 · Source questions 74, 36, 97\n100 NAT-IE Mechanics MCQs\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 4/5 | Q74, 36, 97 | 100 NAT-IE Mechanics MCQs",
+          "text": "Part 4/5 · Source questions 74, 36, 97\n100 NAT-IE Mechanics MCQs\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 4/5 | Q74, 36, 97 | 100 NAT-IE Mechanics MCQs",
+          "text": "Part 4/5 · Source questions 74, 36, 97\n100 NAT-IE Mechanics MCQs\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 4/5 | Q74, 36, 97 | 100 NAT-IE Mechanics MCQs",
+          "text": "Part 4/5 · Source questions 74, 36, 97\n100 NAT-IE Mechanics MCQs\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
