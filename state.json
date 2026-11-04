@@ -971,7 +971,7 @@
       "verifiedPublications": 15
     },
     "nat-ie-electricity-circuits": {
-      "status": "scheduled",
+      "status": "provider-published",
       "ledger": "batches/nat-ie-electricity-circuits.json",
       "createdAt": "2026-11-03T04:49:16.782507+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-electricity-circuits",
@@ -982,8 +982,8 @@
         "2026-11-03T19:00:00+05:00",
         "2026-11-03T21:57:00+05:00"
       ],
-      "published": 0,
-      "verifiedPublications": 0
+      "published": 20,
+      "verifiedPublications": 15
     },
     "nat-ie-mechanics-mcqs": {
       "status": "ready",
