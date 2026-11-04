@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-ie-mechanics-mcqs",
   "createdAt": "2026-11-04T05:49:24.990502+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "nat-ie-mechanics-mcqs",
     "title": "100 NAT-IE Mechanics MCQs with Answers and Explanations",
@@ -1749,7 +1749,24 @@
         }
       },
       "scheduledAt": "2026-11-04T11:11:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-04T05:55:30.835687+00:00"
+        },
+        "instagram": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-04T05:55:30.835709+00:00"
+        },
+        "tiktok": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-04T05:55:30.835712+00:00"
+        },
+        "youtube": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-04T05:55:30.835715+00:00"
+        }
+      }
     },
     {
       "part": 2,
