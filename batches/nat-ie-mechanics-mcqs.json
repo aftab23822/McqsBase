@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-ie-mechanics-mcqs",
   "createdAt": "2026-11-04T05:49:24.990502+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "nat-ie-mechanics-mcqs",
     "title": "100 NAT-IE Mechanics MCQs with Answers and Explanations",
@@ -2596,5 +2596,83 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "nat-ie-mechanics-mcqs",
+    "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+    "sourceTitle": "100 NAT-IE Mechanics MCQs with Answers and Explanations",
+    "sourceContentHash": "4227b3da644a5b33d8ce24daa10b9f847b521c8a5ade0394f9c78658d3af8ec8",
+    "productionDeployment": {
+      "id": 7539021918,
+      "sha": "e332c6fa04df5d03df0ec3373e8ead701d76c28f",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-04T05:49:24.804946+00:00",
+      "url": "https://mcqs-base-m499ki0q9-as-projects-10921176.vercel.app",
+      "publisherRunId": 41781019885
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          71,
+          18,
+          59
+        ],
+        "count": 3,
+        "durationSeconds": 88,
+        "sha256": "645aa7a0340cc572a58a432f0f9d17c5e80a9308ee4affaf2d9e111312e4a977"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          83,
+          21
+        ],
+        "count": 2,
+        "durationSeconds": 65,
+        "sha256": "3cc27748a1f795bc8602bf289b0fedf7f2973c4dd96362e2d5613e8f3f787da6"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          15,
+          50
+        ],
+        "count": 2,
+        "durationSeconds": 66,
+        "sha256": "4e24bbb80d0ea3f05982ae38f1f73e58e9f49f1835bca789bfdedd76dde66bcf"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          74,
+          36,
+          97
+        ],
+        "count": 3,
+        "durationSeconds": 86,
+        "sha256": "422169b1269bce4b19772414b9a8caa7a971c17345c59a8e9f41adbab07cc12c"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          26,
+          94
+        ],
+        "count": 2,
+        "durationSeconds": 71,
+        "sha256": "dbb8022023e4157fb8f6acb8c1e7936739201d5fbf8f1bc4bba67e41fa620a15"
+      }
+    ]
+  }
 }
