@@ -1336,6 +1336,288 @@
       "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
     }
   },
-  "parts": [],
+  "parts": [
+    {
+      "part": 1,
+      "directory": "part-01",
+      "sourceQuestionNumbers": [
+        71,
+        18,
+        59
+      ],
+      "count": 3,
+      "durationSeconds": 88,
+      "sha256": "645aa7a0340cc572a58a432f0f9d17c5e80a9308ee4affaf2d9e111312e4a977",
+      "manifest": {
+        "title": "100 NAT-IE Mechanics MCQs",
+        "sourceTitle": "100 NAT-IE Mechanics MCQs with Answers and Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-04T05:49:24.804946+00:00",
+        "sourceContentHash": "4227b3da644a5b33d8ce24daa10b9f847b521c8a5ade0394f9c78658d3af8ec8",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7539021918,
+          "sha": "e332c6fa04df5d03df0ec3373e8ead701d76c28f",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-04T05:49:24.804946+00:00",
+          "url": "https://mcqs-base-m499ki0q9-as-projects-10921176.vercel.app",
+          "publisherRunId": 41781019885
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 88,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "An astronaut's mass is 60 kg on Earth. What is the astronaut's mass on the Moon?",
+            "choices": [
+              "10 kg",
+              "60 kg",
+              "98 kg",
+              "360 kg"
+            ],
+            "correctIndex": 1,
+            "key": "36d521779699a9b7948f67963af03a740591c33314f3079fdcf8b226b0b4a4fe",
+            "sourceNumber": 71
+          },
+          {
+            "question": "A person pushes a wall with a force of 80 N. According to Newton's third law, what force does the wall exert on the person?",
+            "choices": [
+              "80 N in the same direction",
+              "80 N in the opposite direction",
+              "40 N in the opposite direction",
+              "Zero"
+            ],
+            "correctIndex": 1,
+            "key": "53e3f4957744c790a662032db8b9f0578cec3a345641365a2e523d587b66d929",
+            "sourceNumber": 18
+          },
+          {
+            "question": "A 1 kg object moving at 4 m/s collides with a stationary 3 kg object and they stick together. What is the final speed?",
+            "choices": [
+              "0.5 m/s",
+              "1 m/s",
+              "2 m/s",
+              "4 m/s"
+            ],
+            "correctIndex": 1,
+            "key": "434a1231ac1e73019a933186bff79dbdaacdebdbc75b5b4adc3d2fc71cbc5795",
+            "sourceNumber": 59
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 18,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 18,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 19,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 20,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 21,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 25,
+            "duration": 21,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 46,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 47,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 48,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 49,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 54,
+            "duration": 22,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 76,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 77,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 78,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 79,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 83,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 1,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            71,
+            18,
+            59
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-mechanics-mcqs-part-01-645aa7a0340cc572.mp4",
+        "videoSha256": "645aa7a0340cc572a58a432f0f9d17c5e80a9308ee4affaf2d9e111312e4a977",
+        "assetId": 708401171
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 1/5 | Q71, 18, 59 | 100 NAT-IE Mechanics MCQs",
+          "text": "Part 1/5 · Source questions 71, 18, 59\n100 NAT-IE Mechanics MCQs\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 1/5 | Q71, 18, 59 | 100 NAT-IE Mechanics MCQs",
+          "text": "Part 1/5 · Source questions 71, 18, 59\n100 NAT-IE Mechanics MCQs\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 1/5 | Q71, 18, 59 | 100 NAT-IE Mechanics MCQs",
+          "text": "Part 1/5 · Source questions 71, 18, 59\n100 NAT-IE Mechanics MCQs\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 1/5 | Q71, 18, 59 | 100 NAT-IE Mechanics MCQs",
+          "text": "Part 1/5 · Source questions 71, 18, 59\n100 NAT-IE Mechanics MCQs\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "format": "short"
+        }
+      }
+    }
+  ],
   "thinkingSeconds": 3
 }
