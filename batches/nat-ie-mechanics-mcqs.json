@@ -1849,6 +1849,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        15,
+        50
+      ],
+      "count": 2,
+      "durationSeconds": 66,
+      "sha256": "4e24bbb80d0ea3f05982ae38f1f73e58e9f49f1835bca789bfdedd76dde66bcf",
+      "manifest": {
+        "title": "100 NAT-IE Mechanics MCQs",
+        "sourceTitle": "100 NAT-IE Mechanics MCQs with Answers and Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-04T05:49:24.804946+00:00",
+        "sourceContentHash": "4227b3da644a5b33d8ce24daa10b9f847b521c8a5ade0394f9c78658d3af8ec8",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7539021918,
+          "sha": "e332c6fa04df5d03df0ec3373e8ead701d76c28f",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-04T05:49:24.804946+00:00",
+          "url": "https://mcqs-base-m499ki0q9-as-projects-10921176.vercel.app",
+          "publisherRunId": 41781019885
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 66,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A 2 kg object has a resultant force of 10 N acting on it. What is its acceleration?",
+            "choices": [
+              "0.2 m/s²",
+              "5 m/s²",
+              "8 m/s²",
+              "20 m/s²"
+            ],
+            "correctIndex": 1,
+            "key": "2634cf5c37ec9ec05f1be65fd55854589e2c993eab37c8b0c639e7694505633e",
+            "sourceNumber": 15
+          },
+          {
+            "question": "A 1 kg object moving east at 4 m/s collides with a stationary 3 kg object. They stick together. What is their velocity after collision?",
+            "choices": [
+              "1 m/s east",
+              "1 m/s west",
+              "4 m/s east",
+              "3 m/s east"
+            ],
+            "correctIndex": 0,
+            "key": "59ba2449b0afa0aa2e5632d0dfae0d8ea617a142bea5c1dedb8a23fb3da73ff2",
+            "sourceNumber": 50
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 21,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 21,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 24,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 29,
+            "duration": 24,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 53,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 54,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 55,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 56,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 61,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            15,
+            50
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-mechanics-mcqs-part-03-4e24bbb80d0ea3f0.mp4",
+        "videoSha256": "4e24bbb80d0ea3f05982ae38f1f73e58e9f49f1835bca789bfdedd76dde66bcf",
+        "assetId": 708405709
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q15, 50 | 100 NAT-IE Mechanics MCQs",
+          "text": "Part 3/5 · Source questions 15, 50\n100 NAT-IE Mechanics MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q15, 50 | 100 NAT-IE Mechanics MCQs",
+          "text": "Part 3/5 · Source questions 15, 50\n100 NAT-IE Mechanics MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q15, 50 | 100 NAT-IE Mechanics MCQs",
+          "text": "Part 3/5 · Source questions 15, 50\n100 NAT-IE Mechanics MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q15, 50 | 100 NAT-IE Mechanics MCQs",
+          "text": "Part 3/5 · Source questions 15, 50\n100 NAT-IE Mechanics MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
