@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "nat-ie-mechanics-mcqs",
+  "createdAt": "2026-11-04T05:49:24.990502+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nat-ie-mechanics-mcqs",
+    "title": "100 NAT-IE Mechanics MCQs with Answers and Explanations",
+    "url": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7539021918,
+      "sha": "e332c6fa04df5d03df0ec3373e8ead701d76c28f",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-04T05:49:24.804946+00:00",
+      "url": "https://mcqs-base-m499ki0q9-as-projects-10921176.vercel.app",
+      "publisherRunId": 41781019885
+    },
+    "fetchedAt": "2026-11-04T05:49:24.804946+00:00",
+    "contentHash": "4227b3da644a5b33d8ce24daa10b9f847b521c8a5ade0394f9c78658d3af8ec8",
+    "questions": [
+      {
+        "question": "Which quantity is a vector?",
+        "choices": [
+          "Distance",
+          "Speed",
+          "Mass",
+          "Displacement"
+        ],
+        "key": "2fe0e4b7ad8ad3158d1679d41523ad90f8c0023edf8300cfeb721edcd3b28443",
+        "sourceNumber": 1,
+        "correctIndex": 3
+      },
+      {
+        "question": "A car travels 150 m in 10 s at constant speed. What is its speed?",
+        "choices": [
+          "10 m/s",
+          "15 m/s",
+          "20 m/s",
+          "1500 m/s"
+        ],
+        "key": "939a5c89e72be6e15889ba2996e640d99887167d14162ec7669563fdd6361fbb",
+        "sourceNumber": 2,
+        "correctIndex": 1
+      },
+      {
+        "question": "A runner moves 8 m east and then 3 m west along a straight track. What is the runner's displacement?",
+        "choices": [
+          "11 m east",
+          "5 m east",
+          "5 m west",
+          "11 m west"
+        ],
+        "key": "b1fd24b9f019c5f062481dee7c6afa2005a8a908d6dfc27ec261a5fc08fb9e32",
+        "sourceNumber": 3,
+        "correctIndex": 1
+      },
+      {
+        "question": "A body starts from rest and accelerates uniformly at 2 m/s² for 6 s. What is its final velocity?",
+        "choices": [
+          "3 m/s",
+          "8 m/s",
+          "12 m/s",
+          "18 m/s"
+        ],
+        "key": "456a259bef2b3d6a3f613070861e869f3118e43d06ebf1e4f47bee7e008f62b4",
+        "sourceNumber": 4,
+        "correctIndex": 2
+      },
+      {
+        "question": "A vehicle moving at 20 m/s slows uniformly to 5 m/s in 3 s. What is its acceleration?",
+        "choices": [
+          "−5 m/s²",
+          "−3 m/s²",
+          "5 m/s²",
+          "15 m/s²"
+        ],
+        "key": "0443830e81364fa7e5517a831383de175d53328a59c1e09d4595ea9396cd73f8",
+        "sourceNumber": 5,
+        "correctIndex": 0
+      },
+      {
+        "question": "An object starts from rest and accelerates at 3 m/s² for 4 s. How far does it travel in that time?",
+        "choices": [
+          "12 m",
+          "18 m",
+          "24 m",
+          "48 m"
+        ],
+        "key": "e549124446dc89dceb282a63263e4553ddcd7925a957f4bd932b56b39c911375",
+        "sourceNumber": 6,
+        "correctIndex": 2
+      },
+      {
+        "question": "A cyclist moving at 6 m/s accelerates at 2 m/s² over a distance of 16 m. What is the final speed?",
+        "choices": [
+          "8 m/s",
+          "10 m/s",
+          "12 m/s",
+          "14 m/s"
+        ],
+        "key": "29ae805d0e2d15420d327d95f27b0b961b45415a7e64868b413cced9bc4839ae",
+        "sourceNumber": 7,
+        "correctIndex": 1
+      },
+      {
+        "question": "A ball is dropped from rest and falls freely for 2 s. Taking g = 10 m/s² and neglecting air resistance, how far does it fall?",
+        "choices": [
+          "10 m",
+          "20 m",
+          "30 m",
+          "40 m"
+        ],
+        "key": "1943c81df5f14049189821fc640207bb12b6f05e4f4956a98bc188a72a5109e7",
+        "sourceNumber": 8,
+        "correctIndex": 1
+      },
+      {
+        "question": "A stone is thrown vertically upward at 20 m/s. Taking g = 10 m/s², how long does it take to reach its highest point?",
+        "choices": [
+          "1 s",
+          "2 s",
+          "4 s",
+          "5 s"
+        ],
+        "key": "cee048efdbc5b81120419602ecb5c0e53c140f44f5f7a4aadcdca309c33fb80b",
+        "sourceNumber": 9,
+        "correctIndex": 1
+      },
+      {
+        "question": "A ball is thrown vertically upward at 30 m/s. Taking g = 10 m/s², what maximum height does it reach above its starting point?",
+        "choices": [
+          "30 m",
+          "40 m",
+          "45 m",
+          "90 m"
+        ],
+        "key": "676d8876dfe7265824b1e696ef7c4c7bd839e1ea6f4db12d4be6f5e26893a641",
+        "sourceNumber": 10,
+        "correctIndex": 2
+      },
+      {
+        "question": "A car's velocity increases uniformly from 4 m/s to 16 m/s in 6 s. What is its average velocity during this interval?",
+        "choices": [
+          "8 m/s",
+          "10 m/s",
+          "12 m/s",
+          "20 m/s"
+        ],
+        "key": "30e6b076d70ba7de2f8586430ba675f7c15b46d1be7bd89ae5bc4b85ea66090e",
+        "sourceNumber": 11,
+        "correctIndex": 1
+      },
+      {
+        "question": "On a velocity-time graph, what does the area between the graph and the time axis represent?",
+        "choices": [
+          "Acceleration",
+          "Displacement",
+          "Momentum",
+          "Force"
+        ],
+        "key": "652f8acf9a23d02a394354462e35b0bf9e099054cdea02a29d16e01d6af3ae33",
+        "sourceNumber": 12,
+        "correctIndex": 1
+      },
+      {
+        "question": "A particle moves with constant velocity in a straight line. What is its acceleration?",
+        "choices": [
+          "Zero",
+          "Equal to its velocity",
+          "Increasing with time",
+          "Equal to its displacement"
+        ],
+        "key": "9261d30287f7ea39469f23319cf751cad2650f63cf585493860b54bad009aeaf",
+        "sourceNumber": 13,
+        "correctIndex": 0
+      },
+      {
+        "question": "A displacement of 6 m east is followed by 8 m north. What is the magnitude of the net displacement?",
+        "choices": [
+          "2 m",
+          "10 m",
+          "14 m",
+          "48 m"
+        ],
+        "key": "02eb8d32e5b7f0879d3f2d8931477be9a86e5f257bdceb202ac4705db35f3320",
+        "sourceNumber": 14,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 2 kg object has a resultant force of 10 N acting on it. What is its acceleration?",
+        "choices": [
+          "0.2 m/s²",
+          "5 m/s²",
+          "8 m/s²",
+          "20 m/s²"
+        ],
+        "key": "2634cf5c37ec9ec05f1be65fd55854589e2c993eab37c8b0c639e7694505633e",
+        "sourceNumber": 15,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 5 kg box rests on a horizontal floor. Taking g = 10 m/s², what is the normal force from the floor?",
+        "choices": [
+          "5 N",
+          "10 N",
+          "50 N",
+          "500 N"
+        ],
+        "key": "4a74e40ce41037e4b5b4fa1fd383e113b73685115bf1489ec0492e3ee26f8057",
+        "sourceNumber": 16,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 4 kg object is acted on by a 20 N force to the right and a 4 N force to the left. What is its acceleration?",
+        "choices": [
+          "4 m/s² right",
+          "4 m/s² left",
+          "6 m/s² right",
+          "6 m/s² left"
+        ],
+        "key": "4f5f76de9423e6514ef6a65fd5a0285b9bf2475ff76cf2887a82581fb94a2b08",
+        "sourceNumber": 17,
+        "correctIndex": 0
+      },
+      {
+        "question": "A person pushes a wall with a force of 80 N. According to Newton's third law, what force does the wall exert on the person?",
+        "choices": [
+          "80 N in the same direction",
+          "80 N in the opposite direction",
+          "40 N in the opposite direction",
+          "Zero"
+        ],
+        "key": "53e3f4957744c790a662032db8b9f0578cec3a345641365a2e523d587b66d929",
+        "sourceNumber": 18,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 3 kg object is in free fall near Earth's surface. Taking g = 10 m/s² and neglecting air resistance, what is the gravitational force on it?",
+        "choices": [
+          "0.3 N downward",
+          "3 N downward",
+          "30 N downward",
+          "300 N downward"
+        ],
+        "key": "9e4903a10f0417d4eb0842aab6b4bca836f4fec0f1e979b4e9346e37df969188",
+        "sourceNumber": 19,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 10 kg block is pulled horizontally by 30 N while 10 N of kinetic friction opposes its motion. What is its acceleration?",
+        "choices": [
+          "1 m/s²",
+          "2 m/s²",
+          "3 m/s²",
+          "4 m/s²"
+        ],
+        "key": "e0a955ed736a65e104fb31a3381cc146bcda40b76a2b3a3510212d41f22a5100",
+        "sourceNumber": 20,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 10 kg block rests on a horizontal surface. The coefficient of static friction is 0.4 and g = 10 m/s². What is the maximum static friction force?",
+        "choices": [
+          "4 N",
+          "25 N",
+          "40 N",
+          "100 N"
+        ],
+        "key": "6c72f83c8a49dc39fe831dedadb5c3762a94b84b62c5ccd38bd55aaa7f44e9e1",
+        "sourceNumber": 21,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 5 kg block slides on a horizontal surface with coefficient of kinetic friction 0.2. Taking g = 10 m/s², what is the kinetic friction force?",
+        "choices": [
+          "1 N",
+          "5 N",
+          "10 N",
+          "25 N"
+        ],
+        "key": "7269cf2592c1c061ed638ba439bbc9084a167f889beb65cef5fca6d21c4e16e6",
+        "sourceNumber": 22,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 2 kg object hangs at rest from a light vertical string. Taking g = 10 m/s², what is the tension in the string?",
+        "choices": [
+          "2 N",
+          "10 N",
+          "20 N",
+          "40 N"
+        ],
+        "key": "722f33e81fba82a017d2013d62875bddef38ca8966e70940272e3c4bb9e72535",
+        "sourceNumber": 23,
+        "correctIndex": 2
+      },
+      {
+        "question": "Two blocks of masses 2 kg and 3 kg are connected by a light string on a frictionless horizontal surface. A 10 N horizontal force pulls the 3 kg block. What is the acceleration of the system?",
+        "choices": [
+          "1 m/s²",
+          "2 m/s²",
+          "3 m/s²",
+          "5 m/s²"
+        ],
+        "key": "cb8e9ef6cd87fedabfe26d21c01b1751a05a6c16a0b8782be0c88f325cf613fe",
+        "sourceNumber": 24,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 4 kg mass hangs at rest from a vertical rope. Taking g = 10 m/s², what is the rope tension?",
+        "choices": [
+          "4 N",
+          "20 N",
+          "40 N",
+          "80 N"
+        ],
+        "key": "40fa3236f66ab2a10f3dd83cd04faa15f2e81596c36dbc781be571c7752d7011",
+        "sourceNumber": 25,
+        "correctIndex": 2
+      },
+      {
+        "question": "An object rests on a frictionless incline that is 30° above the horizontal. Taking g = 10 m/s², what is its acceleration down the incline?",
+        "choices": [
+          "2.5 m/s²",
+          "5 m/s²",
+          "8.7 m/s²",
+          "10 m/s²"
+        ],
+        "key": "3523be8e65c99c4945d2683efb9d8e75ad60f7cd1287bc93e94c0fc0e9cc173f",
+        "sourceNumber": 26,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 2 kg object moves in a straight line at constant velocity. What is the net force on it?",
+        "choices": [
+          "0 N",
+          "2 N",
+          "9.8 N",
+          "20 N"
+        ],
+        "key": "b45cfa67e5b190b3f630aa61d4ce2eb0bac9425e08944801da9175a09c762206",
+        "sourceNumber": 27,
+        "correctIndex": 0
+      },
+      {
+        "question": "A lift accelerates upward at 2 m/s². What is the apparent weight of a 50 kg passenger if g = 10 m/s²?",
+        "choices": [
+          "400 N",
+          "500 N",
+          "600 N",
+          "700 N"
+        ],
+        "key": "c481f12c45bf88d07e75e90f3340c911d8d56a0ab00bf07f24fb4d9325cd494f",
+        "sourceNumber": 28,
+        "correctIndex": 2
+      },
+      {
+        "question": "A lift accelerates downward at 3 m/s². What is the apparent weight of a 60 kg passenger if g = 10 m/s²?",
+        "choices": [
+          "180 N",
+          "420 N",
+          "600 N",
+          "780 N"
+        ],
+        "key": "3344af17c85b3740d185787464a91f05071edef5bfa8803a87eba5c7447e1bec",
+        "sourceNumber": 29,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 2 kg object moves at 3 m/s. What is its kinetic energy?",
+        "choices": [
+          "3 J",
+          "6 J",
+          "9 J",
+          "18 J"
+        ],
+        "key": "ddfc6f705d6b48b7ad116788ed72551027fd2a3b687d644252e8f76f276beb36",
+        "sourceNumber": 30,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 4 kg object is raised 5 m vertically. Taking g = 10 m/s², how much gravitational potential energy does it gain?",
+        "choices": [
+          "20 J",
+          "100 J",
+          "200 J",
+          "400 J"
+        ],
+        "key": "24db8f3c3d501b6db1e0f7b241fe3a8884073b506ca33dc04831ca082659a0ed",
+        "sourceNumber": 31,
+        "correctIndex": 2
+      },
+      {
+        "question": "A constant force of 12 N moves an object 5 m in the same direction as the force. How much work is done?",
+        "choices": [
+          "2.4 J",
+          "17 J",
+          "60 J",
+          "120 J"
+        ],
+        "key": "1c80cef0cbe179515050a47930bb34a53ba08ff655ef723c9004a7bcb7b5f7c2",
+        "sourceNumber": 32,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 20 N force acts perpendicular to an object's 3 m displacement. How much work does this force do?",
+        "choices": [
+          "0 J",
+          "17 J",
+          "60 J",
+          "120 J"
+        ],
+        "key": "49388ec4726131de1d4452171e57750a51982a9e0160d330a0b5bab21cf061ee",
+        "sourceNumber": 33,
+        "correctIndex": 0
+      },
+      {
+        "question": "A net force does 50 J of work on an object initially at rest. What is the object's final kinetic energy?",
+        "choices": [
+          "0 J",
+          "25 J",
+          "50 J",
+          "100 J"
+        ],
+        "key": "13e5aa9fe64dc4becee1dbbff47fb4294328fc38b63986831bff402c97bc5fe8",
+        "sourceNumber": 34,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 2 kg object initially at rest gains 36 J of kinetic energy. What is its final speed?",
+        "choices": [
+          "3 m/s",
+          "6 m/s",
+          "9 m/s",
+          "18 m/s"
+        ],
+        "key": "c58875df3995d583360f9ac9c03f1197663ecca2c4aaebdf64cff3dbec5a8995",
+        "sourceNumber": 35,
+        "correctIndex": 1
+      },
+      {
+        "question": "A machine does 600 J of work in 3 s. What is its average power?",
+        "choices": [
+          "200 W",
+          "300 W",
+          "600 W",
+          "1800 W"
+        ],
+        "key": "0aa4f155bcbcaeb4e49b7420e499a167559608f0b5fe80b32ea7041755d5655c",
+        "sourceNumber": 36,
+        "correctIndex": 0
+      },
+      {
+        "question": "A motor delivers 1000 W while lifting a load vertically at a steady speed of 2 m/s. What upward force does it exert?",
+        "choices": [
+          "200 N",
+          "500 N",
+          "1000 N",
+          "2000 N"
+        ],
+        "key": "55201dd36db080c9bbdbd8495ddff50e7d74c1392326c310be08d6eb52be8f1b",
+        "sourceNumber": 37,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 2 kg object falls from rest through 5 m. Neglecting air resistance and taking g = 10 m/s², what speed does it have just before reaching the ground?",
+        "choices": [
+          "5 m/s",
+          "10 m/s",
+          "15 m/s",
+          "20 m/s"
+        ],
+        "key": "9eb329e98d5fa6e49a4c25fe7957298911729c1b59f43299ef0ab1294099f8cd",
+        "sourceNumber": 38,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 1 kg object moving at 4 m/s is brought to rest. What is the change in its kinetic energy?",
+        "choices": [
+          "−8 J",
+          "−4 J",
+          "4 J",
+          "8 J"
+        ],
+        "key": "758c4930bb338d25dca3495f5a93d76747fa717fb8d90d772186b0b30a79498e",
+        "sourceNumber": 39,
+        "correctIndex": 0
+      },
+      {
+        "question": "A force of 5 N acts opposite to the displacement of an object through 4 m. What work does the force do?",
+        "choices": [
+          "−20 J",
+          "−1.25 J",
+          "20 J",
+          "25 J"
+        ],
+        "key": "a979bd470e75c394ad2f93001db9b82dcb43320da47e165eaedb34b676d2aa1b",
+        "sourceNumber": 40,
+        "correctIndex": 0
+      },
+      {
+        "question": "A 3 kg object moves at 4 m/s. What is its momentum?",
+        "choices": [
+          "0.75 kg·m/s",
+          "7 kg·m/s",
+          "12 kg·m/s",
+          "48 kg·m/s"
+        ],
+        "key": "bd008e94eb25d94fe6540ed7dc876c652e3abd8ad86d6c484128e3fa0ab6c5e9",
+        "sourceNumber": 41,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 2 kg ball moving at 5 m/s is brought to rest in 0.5 s. What is the magnitude of the average force on it?",
+        "choices": [
+          "5 N",
+          "10 N",
+          "20 N",
+          "25 N"
+        ],
+        "key": "de9f51bfcb69c9483463cbf3d3e849123ca0614b9f9bbd18a003cd7104298eab",
+        "sourceNumber": 42,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 2 kg object moving at 4 m/s collides and sticks to a stationary 2 kg object. What is their common velocity immediately after the collision?",
+        "choices": [
+          "1 m/s",
+          "2 m/s",
+          "4 m/s",
+          "8 m/s"
+        ],
+        "key": "7785bae7673f98b032ba27f4d1f408d5f15cbc170cc4e4af3552aadd591713bb",
+        "sourceNumber": 43,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 1 kg object moving east at 6 m/s collides with a 2 kg object at rest. They stick together. What is their velocity after collision?",
+        "choices": [
+          "2 m/s east",
+          "3 m/s east",
+          "6 m/s east",
+          "2 m/s west"
+        ],
+        "key": "a6bd5c695033db4bd41bf68b16af1f56637132691a9fc0eeb4ed1a5b66141713",
+        "sourceNumber": 44,
+        "correctIndex": 0
+      },
+      {
+        "question": "A 0.2 kg ball changes velocity from 10 m/s east to 5 m/s west. What is the magnitude of its change in momentum?",
+        "choices": [
+          "1 kg·m/s",
+          "2 kg·m/s",
+          "3 kg·m/s",
+          "15 kg·m/s"
+        ],
+        "key": "22e27e9ae9d9dd8714ea4f0c35c3598b3e4154ec1a3ae5690e8584deb8409bff",
+        "sourceNumber": 45,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 3 kg object moving at 4 m/s has what momentum?",
+        "choices": [
+          "0.75 kg·m/s",
+          "7 kg·m/s",
+          "12 kg·m/s",
+          "24 kg·m/s"
+        ],
+        "key": "9e9dbc5d5fbfba941eb1338fbb5826fdc75afa0849fe4eea68c95a0d9bcaa6a9",
+        "sourceNumber": 46,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 0.5 kg ball moving at 8 m/s is caught and stopped in 0.2 s. What is the magnitude of the average force exerted on it?",
+        "choices": [
+          "4 N",
+          "10 N",
+          "20 N",
+          "40 N"
+        ],
+        "key": "b76c2f49ce9cfd6847f495ddf20f92840bec71b4ad1e76a5bf4569b874a1311f",
+        "sourceNumber": 47,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 1 kg object moving at 6 m/s collides head-on with an identical object initially at rest. They stick together. What is their shared speed after collision?",
+        "choices": [
+          "1.5 m/s",
+          "3 m/s",
+          "6 m/s",
+          "12 m/s"
+        ],
+        "key": "44512c22f710eb5c6d9221a43451a00f1d686d572b354b4d8ca44274b0ff0e05",
+        "sourceNumber": 48,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 2 kg object moving at 5 m/s collides with a 3 kg object moving in the same direction at 1 m/s. They stick together. What is their final velocity?",
+        "choices": [
+          "1.8 m/s",
+          "2.6 m/s",
+          "3.0 m/s",
+          "4.0 m/s"
+        ],
+        "key": "4fbe67b0f2a37e3e5fd8a2f6343485340c69e0c8aa7775b3266e980071b2d2a8",
+        "sourceNumber": 49,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 1 kg object moving east at 4 m/s collides with a stationary 3 kg object. They stick together. What is their velocity after collision?",
+        "choices": [
+          "1 m/s east",
+          "1 m/s west",
+          "4 m/s east",
+          "3 m/s east"
+        ],
+        "key": "59ba2449b0afa0aa2e5632d0dfae0d8ea617a142bea5c1dedb8a23fb3da73ff2",
+        "sourceNumber": 50,
+        "correctIndex": 0
+      },
+      {
+        "question": "A 2 kg object moving at 3 m/s is acted on by a constant 4 N force in its direction of motion for 2 s. What is its final speed?",
+        "choices": [
+          "4 m/s",
+          "5 m/s",
+          "7 m/s",
+          "11 m/s"
+        ],
+        "key": "c3ae4ba665fea5fb30d0eb4d119d6bc326e6fbcf613235f04c6206a2cbe03190",
+        "sourceNumber": 51,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 2 kg object moving at 3 m/s is acted on by a constant 4 N force in the direction of motion over 5 m. What is its final speed?",
+        "choices": [
+          "5 m/s",
+          "6 m/s",
+          "7 m/s",
+          "13 m/s"
+        ],
+        "key": "60857d0f611eeac7a1ab68c53e91f63a109da091bebd1f1e3768c6bf4da68e97",
+        "sourceNumber": 52,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 2 kg object moving at 3 m/s is acted on by a constant 4 N force in its direction of motion for 2 s. What is the change in its momentum?",
+        "choices": [
+          "4 kg·m/s",
+          "8 kg·m/s",
+          "12 kg·m/s",
+          "16 kg·m/s"
+        ],
+        "key": "8c871250fcaa0bcd375c7f5a76682c0c9b694f55744b817b937c7ec97148dc47",
+        "sourceNumber": 53,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 1 kg object initially at rest receives an impulse of 6 N·s. What is its speed immediately afterward?",
+        "choices": [
+          "3 m/s",
+          "6 m/s",
+          "7 m/s",
+          "12 m/s"
+        ],
+        "key": "21645c8e83a49ca647f22ee69fb26b3da7a57c57938d62240b7fc0b0c03fb97c",
+        "sourceNumber": 54,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 2 kg object moving at 4 m/s has what kinetic energy?",
+        "choices": [
+          "8 J",
+          "16 J",
+          "32 J",
+          "64 J"
+        ],
+        "key": "c17d1b3edda16a3551e0fdff090e56107ddfdf392b169fbe90a6c547f531b4ac",
+        "sourceNumber": 55,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 2 kg object moves at 4 m/s. What is its momentum?",
+        "choices": [
+          "2 kg·m/s",
+          "4 kg·m/s",
+          "8 kg·m/s",
+          "16 kg·m/s"
+        ],
+        "key": "4d6e40cfa4d85c513887f19cabb0c125ebec60f81ebb66d9e5ed828e6083beab",
+        "sourceNumber": 56,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 2 kg object moving at 3 m/s experiences a net force of 4 N in the same direction for 2 s. What is its final speed?",
+        "choices": [
+          "5 m/s",
+          "6 m/s",
+          "7 m/s",
+          "8 m/s"
+        ],
+        "key": "5fbc766eb6f3b9abb8ce6b2e4e1b3501dd2631b96b511b8ef3f867fc9e6cd2f4",
+        "sourceNumber": 57,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 1 kg object moving at 5 m/s is acted on by a 3 N force in the direction of motion over 4 m. What is its final speed?",
+        "choices": [
+          "√37 m/s",
+          "7 m/s",
+          "8 m/s",
+          "17 m/s"
+        ],
+        "key": "74e5f333fae8ebb8ff39a947b3e78ff2212d46a2a44265a43765f80b2aa29a2a",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "A 1 kg object moving at 4 m/s collides with a stationary 3 kg object and they stick together. What is the final speed?",
+        "choices": [
+          "0.5 m/s",
+          "1 m/s",
+          "2 m/s",
+          "4 m/s"
+        ],
+        "key": "434a1231ac1e73019a933186bff79dbdaacdebdbc75b5b4adc3d2fc71cbc5795",
+        "sourceNumber": 59,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 2 kg object moves in a circle of radius 3 m at 6 m/s. What is its centripetal acceleration?",
+        "choices": [
+          "2 m/s²",
+          "6 m/s²",
+          "12 m/s²",
+          "18 m/s²"
+        ],
+        "key": "58635e08d9e1565c9146ae9d4554a3f4cd6dd500b62fd81e57164df0ac08ab94",
+        "sourceNumber": 60,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 2 kg object moves in a circle of radius 4 m at 6 m/s. What is the magnitude of the net centripetal force?",
+        "choices": [
+          "12 N",
+          "18 N",
+          "24 N",
+          "36 N"
+        ],
+        "key": "bca9128375024ce4b8be32f2ce75ea78e092449e4a2e5c9a4dd6999a27266495",
+        "sourceNumber": 61,
+        "correctIndex": 1
+      },
+      {
+        "question": "An object moves in a circle at constant speed. What is true of its velocity?",
+        "choices": [
+          "It remains constant because speed is constant",
+          "Its direction changes continuously",
+          "It is always directed toward the centre",
+          "It is zero at every point"
+        ],
+        "key": "6315abe7517152498083861770541c9bfeb49f94c9fb54c13b084edd4011542b",
+        "sourceNumber": 62,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 0.5 kg object moves in a circle of radius 2 m at 4 m/s. What is its centripetal force?",
+        "choices": [
+          "2 N",
+          "4 N",
+          "8 N",
+          "16 N"
+        ],
+        "key": "d99f851757a673237176a9a7cbfb3721148d26e34850dfa1c64a7978fd1f9252",
+        "sourceNumber": 63,
+        "correctIndex": 1
+      },
+      {
+        "question": "A vehicle moves at 10 m/s around a level circular track of radius 20 m. What centripetal acceleration is required?",
+        "choices": [
+          "2 m/s²",
+          "5 m/s²",
+          "10 m/s²",
+          "20 m/s²"
+        ],
+        "key": "e76520c99b9068087f4f714fa70a31f8ea548ea82574e7347f730f3dac1b73a9",
+        "sourceNumber": 64,
+        "correctIndex": 1
+      },
+      {
+        "question": "If the speed of an object in a circle doubles while the radius remains unchanged, how does its centripetal acceleration change?",
+        "choices": [
+          "It halves",
+          "It doubles",
+          "It becomes four times as large",
+          "It remains unchanged"
+        ],
+        "key": "355b3ca8860f1f07c8e1a5583e8f9764ffdea3d60fbe01b41d0abe3feaaef413",
+        "sourceNumber": 65,
+        "correctIndex": 2
+      },
+      {
+        "question": "An object travels once around a circular track at constant speed. What is its displacement after the complete lap?",
+        "choices": [
+          "Equal to the circumference",
+          "Equal to the radius",
+          "Zero",
+          "Twice the radius"
+        ],
+        "key": "2144f4b686860c5ede831352929aced2ced7d7e37e51d02db366786799fbe3f4",
+        "sourceNumber": 66,
+        "correctIndex": 2
+      },
+      {
+        "question": "A wheel completes 5 revolutions in 10 s. What is its frequency?",
+        "choices": [
+          "0.2 Hz",
+          "0.5 Hz",
+          "2 Hz",
+          "5 Hz"
+        ],
+        "key": "a5afb66f672063705bfeb1096db2f7b15822d29f94f50e33d81ae014f0833235",
+        "sourceNumber": 67,
+        "correctIndex": 1
+      },
+      {
+        "question": "A rotating object has a period of 0.25 s. What is its frequency?",
+        "choices": [
+          "0.25 Hz",
+          "2 Hz",
+          "4 Hz",
+          "25 Hz"
+        ],
+        "key": "f9de155521e008b88abf28de8cc32f52af32a8cc97bd3474d152e929601158a0",
+        "sourceNumber": 68,
+        "correctIndex": 2
+      },
+      {
+        "question": "An object moves at constant speed around a circle. In which direction does its instantaneous acceleration point?",
+        "choices": [
+          "Along its direction of motion",
+          "Opposite its direction of motion",
+          "Toward the centre of the circle",
+          "Away from the centre"
+        ],
+        "key": "dcf39607aec532aa9e55043926a0293f7f1799b03669f3196e31b5e208023275",
+        "sourceNumber": 69,
+        "correctIndex": 2
+      },
+      {
+        "question": "A body has mass 5 kg. What is its weight on Earth if g = 9.8 m/s²?",
+        "choices": [
+          "0.51 N",
+          "5 N",
+          "49 N",
+          "98 N"
+        ],
+        "key": "77e7891898473a5de3ae9c4ee4c2e514aae4125965bb2eb82f0be7331eb272bf",
+        "sourceNumber": 70,
+        "correctIndex": 2
+      },
+      {
+        "question": "An astronaut's mass is 60 kg on Earth. What is the astronaut's mass on the Moon?",
+        "choices": [
+          "10 kg",
+          "60 kg",
+          "98 kg",
+          "360 kg"
+        ],
+        "key": "36d521779699a9b7948f67963af03a740591c33314f3079fdcf8b226b0b4a4fe",
+        "sourceNumber": 71,
+        "correctIndex": 1
+      },
+      {
+        "question": "If the distance between two point masses is doubled, what happens to the magnitude of their gravitational force?",
+        "choices": [
+          "It doubles",
+          "It becomes half",
+          "It becomes one-quarter",
+          "It becomes four times as large"
+        ],
+        "key": "e0c58b64d6521f3365e2a7ebbf03a3ba9cc74699e5cf471be033a78cd8ebfe18",
+        "sourceNumber": 72,
+        "correctIndex": 2
+      },
+      {
+        "question": "A planet has the same radius as Earth but four times Earth's mass. If Earth's surface gravitational field is g, what is the planet's surface gravitational field?",
+        "choices": [
+          "g/4",
+          "g",
+          "2g",
+          "4g"
+        ],
+        "key": "c36116e2451f6bf7079667e6239f2886fc415f27ebdf91641cac3cd9d341d86d",
+        "sourceNumber": 73,
+        "correctIndex": 3
+      },
+      {
+        "question": "A 2 kg object is 3 m above a chosen reference level. Taking g = 10 m/s², what is its gravitational potential energy relative to that level?",
+        "choices": [
+          "6 J",
+          "15 J",
+          "60 J",
+          "90 J"
+        ],
+        "key": "5db7ca9952a82383951f32b03177395823cbdbbebff2e0eff8c9f76752b7680c",
+        "sourceNumber": 74,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 2 kg object is raised vertically by 4 m at constant speed. Taking g = 10 m/s², how much work is done against gravity?",
+        "choices": [
+          "8 J",
+          "20 J",
+          "40 J",
+          "80 J"
+        ],
+        "key": "d2a70ec1489eafc262bc5a0ef46989b4e5ca10fbc74a004da9a85c1e52d77f2e",
+        "sourceNumber": 75,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the SI unit of gravitational field strength?",
+        "choices": [
+          "N/kg",
+          "N·m",
+          "kg/N",
+          "J/s"
+        ],
+        "key": "b4bec9fa177ac9c31e14e89ca611a2589546d52322e4d9d5319040993673e662",
+        "sourceNumber": 76,
+        "correctIndex": 0
+      },
+      {
+        "question": "At a point between two equal point masses, what is the net gravitational field due to the two masses?",
+        "choices": [
+          "Zero",
+          "Directed toward the nearer mass",
+          "Directed away from both masses",
+          "Twice the field from either mass in one direction"
+        ],
+        "key": "1add190fb14f6e0d789abb655a102bfb8c48d010500eea8e9613076ea1e276dd",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "A 2 kg object has a weight of 20 N in a gravitational field. What is the field strength?",
+        "choices": [
+          "0.1 N/kg",
+          "10 N/kg",
+          "18 N/kg",
+          "40 N/kg"
+        ],
+        "key": "eb4528f4d13d5fa46797373eca22e4032f64cd75fe69ccd7942786beae41e678",
+        "sourceNumber": 78,
+        "correctIndex": 1
+      },
+      {
+        "question": "An object is moved to a location where the gravitational field strength is half its original value. What happens to its weight?",
+        "choices": [
+          "It doubles",
+          "It halves",
+          "It is unchanged",
+          "It becomes four times as large"
+        ],
+        "key": "b914a4163a6f8ba46c0716df8671ac2e98e5dfa2fdb8586e54bcbc541c8345e7",
+        "sourceNumber": 79,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 3 kg object is 2 m above a reference level. Taking g = 10 m/s², what is its gravitational potential energy?",
+        "choices": [
+          "6 J",
+          "15 J",
+          "60 J",
+          "120 J"
+        ],
+        "key": "bf96b5091d234697717734c1696a8bcf8f9f0d885e28cee213cf5f2916d98fbd",
+        "sourceNumber": 80,
+        "correctIndex": 2
+      },
+      {
+        "question": "A force of 100 N acts uniformly over an area of 2 m². What pressure does it exert?",
+        "choices": [
+          "50 Pa",
+          "100 Pa",
+          "200 Pa",
+          "500 Pa"
+        ],
+        "key": "0fe23e0542358945b542cc30b45c4818fcaf53c2dced3e83c1745b475d591576",
+        "sourceNumber": 81,
+        "correctIndex": 0
+      },
+      {
+        "question": "A liquid has density 1000 kg/m³. What is the gauge pressure 2 m below its surface if g = 10 m/s²?",
+        "choices": [
+          "2000 Pa",
+          "5000 Pa",
+          "20,000 Pa",
+          "200,000 Pa"
+        ],
+        "key": "78ac453d564f2381ac9f76642a47795ae0a1e7c5bf7b627bc1cf6da6f5953e4e",
+        "sourceNumber": 82,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 0.02 m³ object is fully submerged in water of density 1000 kg/m³. Taking g = 10 m/s², what is the buoyant force?",
+        "choices": [
+          "20 N",
+          "100 N",
+          "200 N",
+          "2000 N"
+        ],
+        "key": "2a589e2e089d55774954ee6ec27e05830f918eb38d7285012394d8ddb018e50a",
+        "sourceNumber": 83,
+        "correctIndex": 2
+      },
+      {
+        "question": "An object floats at rest in water. How does the buoyant force compare with the object's weight?",
+        "choices": [
+          "It is smaller than the weight",
+          "It equals the weight",
+          "It is greater than the weight",
+          "It is zero"
+        ],
+        "key": "c389aeb42d754c656dd565ba7d096c651c5a28de9f3286215ba09abd1ebf6af3",
+        "sourceNumber": 84,
+        "correctIndex": 1
+      },
+      {
+        "question": "A fluid flows through a pipe that narrows. For steady flow of an incompressible fluid, what happens to the fluid speed in the narrower section?",
+        "choices": [
+          "It decreases",
+          "It stays the same",
+          "It increases",
+          "It becomes zero"
+        ],
+        "key": "650644f53c79a1eda41404f265ad337657270ebbcd6139a75092084ab98aae7e",
+        "sourceNumber": 85,
+        "correctIndex": 2
+      },
+      {
+        "question": "Water flows steadily through a pipe whose cross-sectional area changes from 4 cm² to 2 cm². If its speed in the wider section is 3 m/s, what is its speed in the narrower section?",
+        "choices": [
+          "1.5 m/s",
+          "3 m/s",
+          "6 m/s",
+          "12 m/s"
+        ],
+        "key": "b526f700263b67f51fe4f72c142c4702fdcab5c85a9b5e1f49dd3fb01a4f676c",
+        "sourceNumber": 86,
+        "correctIndex": 2
+      },
+      {
+        "question": "A solid object has mass 600 g and volume 200 cm³. What is its density?",
+        "choices": [
+          "0.3 g/cm³",
+          "3 g/cm³",
+          "30 g/cm³",
+          "120,000 g/cm³"
+        ],
+        "key": "72193879b8b3d882499bbc4b17480d36c58bdbefbbb42dc2b7da9f0d6f39e465",
+        "sourceNumber": 87,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 2 m² piston experiences a pressure of 5000 Pa. What force acts on it?",
+        "choices": [
+          "2500 N",
+          "5000 N",
+          "7500 N",
+          "10,000 N"
+        ],
+        "key": "fb526984e1050f329bb0b02ac6577904d2ab926bb2eb863e30c39bd261986b5c",
+        "sourceNumber": 88,
+        "correctIndex": 3
+      },
+      {
+        "question": "A hydraulic system has an input piston area of 0.01 m² and an output piston area of 0.2 m². If the input force is 50 N, what output force is produced in an ideal system?",
+        "choices": [
+          "2.5 N",
+          "50 N",
+          "1000 N",
+          "10,000 N"
+        ],
+        "key": "036732664f7dd357fc8191236bec275562c7383d1d42a629c55e55a63248f1e7",
+        "sourceNumber": 89,
+        "correctIndex": 2
+      },
+      {
+        "question": "A block has volume 0.01 m³ and is fully submerged in a liquid of density 800 kg/m³. Taking g = 10 m/s², what is the buoyant force?",
+        "choices": [
+          "8 N",
+          "80 N",
+          "800 N",
+          "8000 N"
+        ],
+        "key": "a78c1328cbab2d4e9030802a1fe8d69b65fd643b9b7319440bce0f3433534150",
+        "sourceNumber": 90,
+        "correctIndex": 1
+      },
+      {
+        "question": "A liquid pressure is measured 1 m below its surface and again 3 m below its surface. For the same stationary liquid, how does the gauge pressure at 3 m compare with that at 1 m?",
+        "choices": [
+          "It is one-third as large",
+          "It is the same",
+          "It is three times as large",
+          "It is nine times as large"
+        ],
+        "key": "5d6615e17bb23ab3fb3afa969be1e721740b08d237fce0324a007edc135dc496",
+        "sourceNumber": 91,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 3 kg object rests on a horizontal surface and exerts a force over an area of 0.5 m². Taking g = 10 m/s², what pressure does it exert?",
+        "choices": [
+          "6 Pa",
+          "15 Pa",
+          "60 Pa",
+          "150 Pa"
+        ],
+        "key": "59bf8ed77c449c56e1dfd7722910dab0bc90aed40d38e42e2dbdf706ddb69308",
+        "sourceNumber": 92,
+        "correctIndex": 2
+      },
+      {
+        "question": "For steady flow of an incompressible liquid through a pipe, what quantity remains constant along the pipe?",
+        "choices": [
+          "Area multiplied by speed",
+          "Area divided by speed",
+          "Pressure multiplied by area",
+          "Density divided by speed"
+        ],
+        "key": "b2ef3eeea799c3aa9d65817fb81be1c5be93474297b6af885bcb908859b75811",
+        "sourceNumber": 93,
+        "correctIndex": 0
+      },
+      {
+        "question": "A spring extends 0.04 m when a force of 8 N is applied, within its elastic limit. What is its spring constant?",
+        "choices": [
+          "0.005 N/m",
+          "0.32 N/m",
+          "200 N/m",
+          "320 N/m"
+        ],
+        "key": "fbc91f9ddd452ee17fe03f66af5b2d1366240007019c203a2632e3ea96091e67",
+        "sourceNumber": 94,
+        "correctIndex": 2
+      },
+      {
+        "question": "A spring with spring constant 100 N/m is compressed by 0.2 m. What elastic potential energy is stored?",
+        "choices": [
+          "1 J",
+          "2 J",
+          "10 J",
+          "20 J"
+        ],
+        "key": "50ffb18dde81e00fd950ccedc8dcbe734651063fdcc54ba5fc9df77733c9d233",
+        "sourceNumber": 95,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 2 kg object attached to a spring of spring constant 50 N/m is displaced 0.1 m from equilibrium. What is the magnitude of the restoring force?",
+        "choices": [
+          "2.5 N",
+          "5 N",
+          "10 N",
+          "50 N"
+        ],
+        "key": "e2ebe15118ebd12efb0c53be2e6737a08c50c716ee6d4192525d1727847fa990",
+        "sourceNumber": 96,
+        "correctIndex": 1
+      },
+      {
+        "question": "A spring obeying Hooke's law is stretched from 2 cm to 4 cm. How does the magnitude of its restoring force change?",
+        "choices": [
+          "It halves",
+          "It stays the same",
+          "It doubles",
+          "It becomes four times as large"
+        ],
+        "key": "84246066f126416c89e54c6b558175f42e5b22ec18bf3adc365698135e9d7acc",
+        "sourceNumber": 97,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 2 kg object moves around a level circular path of radius 5 m at 10 m/s. What net inward force is required?",
+        "choices": [
+          "20 N",
+          "40 N",
+          "100 N",
+          "200 N"
+        ],
+        "key": "3638cbde588e8d6acf0725fca0fa9d9ecd5a0697f5d4a32af6b513e86e28076c",
+        "sourceNumber": 98,
+        "correctIndex": 1
+      },
+      {
+        "question": "An object of mass 1 kg moves in a circle of radius 2 m at 4 m/s. What is its centripetal acceleration?",
+        "choices": [
+          "2 m/s²",
+          "4 m/s²",
+          "8 m/s²",
+          "16 m/s²"
+        ],
+        "key": "2aeaa1fedd4e05d4f9e54329a8fdbea94842cfdc9f55cf3773d569288d5b4d83",
+        "sourceNumber": 99,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 4 kg object moves at 3 m/s in a circle of radius 2 m. What is the centripetal force?",
+        "choices": [
+          "6 N",
+          "12 N",
+          "18 N",
+          "36 N"
+        ],
+        "key": "f6a38353ae3a8c4711984a1a5478e47fee827fb3c09e14ae2cb1fd83c96bf2b8",
+        "sourceNumber": 100,
+        "correctIndex": 2
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "79021e19f11035a1a605165e1208a43c8a566a1a853daeddb400ad7fa8dd6e95",
+      "sourceQuestionNumbers": [
+        71,
+        18,
+        59,
+        83,
+        21,
+        15,
+        50,
+        74,
+        36,
+        97,
+        26,
+        94,
+        19,
+        63,
+        48,
+        3,
+        85,
+        47,
+        64,
+        40,
+        93,
+        37,
+        53,
+        4,
+        66,
+        10,
+        60,
+        96,
+        68,
+        32,
+        17,
+        38,
+        67,
+        82,
+        56,
+        80,
+        1,
+        24,
+        95,
+        55,
+        77,
+        16,
+        88,
+        31,
+        45,
+        84,
+        54,
+        11,
+        39,
+        65,
+        72,
+        91,
+        49,
+        33,
+        9,
+        92,
+        58,
+        2,
+        25,
+        69,
+        28,
+        12,
+        51,
+        78,
+        89,
+        29,
+        87,
+        75,
+        13,
+        43,
+        22,
+        57,
+        100,
+        70,
+        7,
+        41,
+        27,
+        14,
+        98,
+        76,
+        99,
+        46,
+        20,
+        23,
+        62,
+        86,
+        30,
+        73,
+        5,
+        52,
+        35,
+        61,
+        81,
+        42,
+        8,
+        79,
+        34,
+        90,
+        44,
+        6
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
