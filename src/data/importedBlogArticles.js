@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nat-ie-mechanics-mcqs": {
+    title: "100 NAT-IE Mechanics MCQs with Answers and Explanations",
+    excerpt:
+      "Practise engineering-physics mechanics with original MCQs on motion, forces, energy, momentum, circular motion and fluids. Each answer includes a reasoned explanation.",
+    category: "Subject Guide",
+    date: "2026-11-04",
+    readTime: "33 min",
+    content: null,
+    body: readImportedBlogBody("nat-ie-mechanics-mcqs")
+  },
   "nat-ie-electricity-circuits": {
     title: "100 Basic Electricity and DC Circuit MCQs for NAT-IE Practice",
     excerpt:
