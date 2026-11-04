@@ -1617,6 +1617,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 2,
+      "directory": "part-02",
+      "sourceQuestionNumbers": [
+        83,
+        21
+      ],
+      "count": 2,
+      "durationSeconds": 65,
+      "sha256": "3cc27748a1f795bc8602bf289b0fedf7f2973c4dd96362e2d5613e8f3f787da6",
+      "manifest": {
+        "title": "100 NAT-IE Mechanics MCQs",
+        "sourceTitle": "100 NAT-IE Mechanics MCQs with Answers and Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-04T05:49:24.804946+00:00",
+        "sourceContentHash": "4227b3da644a5b33d8ce24daa10b9f847b521c8a5ade0394f9c78658d3af8ec8",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7539021918,
+          "sha": "e332c6fa04df5d03df0ec3373e8ead701d76c28f",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-04T05:49:24.804946+00:00",
+          "url": "https://mcqs-base-m499ki0q9-as-projects-10921176.vercel.app",
+          "publisherRunId": 41781019885
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 65,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A 0.02 m³ object is fully submerged in water of density 1000 kg/m³. Taking g = 10 m/s², what is the buoyant force?",
+            "choices": [
+              "20 N",
+              "100 N",
+              "200 N",
+              "2000 N"
+            ],
+            "correctIndex": 2,
+            "key": "2a589e2e089d55774954ee6ec27e05830f918eb38d7285012394d8ddb018e50a",
+            "sourceNumber": 83
+          },
+          {
+            "question": "A 10 kg block rests on a horizontal surface. The coefficient of static friction is 0.4 and g = 10 m/s². What is the maximum static friction force?",
+            "choices": [
+              "4 N",
+              "25 N",
+              "40 N",
+              "100 N"
+            ],
+            "correctIndex": 2,
+            "key": "6c72f83c8a49dc39fe831dedadb5c3762a94b84b62c5ccd38bd55aaa7f44e9e1",
+            "sourceNumber": 21
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 23,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 25,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 26,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 30,
+            "duration": 23,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 53,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 54,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 55,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 56,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 60,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 2,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            83,
+            21
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-mechanics-mcqs-part-02-3cc27748a1f795bc.mp4",
+        "videoSha256": "3cc27748a1f795bc8602bf289b0fedf7f2973c4dd96362e2d5613e8f3f787da6",
+        "assetId": 708403436
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 2/5 | Q83, 21 | 100 NAT-IE Mechanics MCQs",
+          "text": "Part 2/5 · Source questions 83, 21\n100 NAT-IE Mechanics MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 2/5 | Q83, 21 | 100 NAT-IE Mechanics MCQs",
+          "text": "Part 2/5 · Source questions 83, 21\n100 NAT-IE Mechanics MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 2/5 | Q83, 21 | 100 NAT-IE Mechanics MCQs",
+          "text": "Part 2/5 · Source questions 83, 21\n100 NAT-IE Mechanics MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 2/5 | Q83, 21 | 100 NAT-IE Mechanics MCQs",
+          "text": "Part 2/5 · Source questions 83, 21\n100 NAT-IE Mechanics MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
