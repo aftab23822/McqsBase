@@ -2388,7 +2388,11 @@
       },
       "uploadIntent": {
         "filename": "nat-ie-mechanics-mcqs-part-04-422169b1269bce4b.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "cc632ec7-7c34-4d72-9522-88a88c02e05d",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/KQh1WNFLLb.mp4"
       }
     },
     {
