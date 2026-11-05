@@ -986,7 +986,7 @@
       "verifiedPublications": 15
     },
     "nat-ie-mechanics-mcqs": {
-      "status": "scheduled",
+      "status": "provider-published",
       "ledger": "batches/nat-ie-mechanics-mcqs.json",
       "createdAt": "2026-11-04T05:49:24.990502+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
@@ -997,8 +997,8 @@
         "2026-11-04T19:17:00+05:00",
         "2026-11-04T21:59:00+05:00"
       ],
-      "published": 0,
-      "verifiedPublications": 0
+      "published": 20,
+      "verifiedPublications": 15
     },
     "nts-probability-counting-practice": {
       "status": "ready",
