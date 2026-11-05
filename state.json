@@ -1005,7 +1005,13 @@
       "ledger": "batches/nts-probability-counting-practice.json",
       "createdAt": "2026-11-05T06:07:25.518993+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
-      "scheduledAt": [],
+      "scheduledAt": [
+        "2026-11-05T11:28:00+05:00",
+        "2026-11-05T14:06:00+05:00",
+        "2026-11-05T16:44:00+05:00",
+        "2026-11-05T19:22:00+05:00",
+        "2026-11-05T22:00:00+05:00"
+      ],
       "published": 0,
       "verifiedPublications": 0
     }
