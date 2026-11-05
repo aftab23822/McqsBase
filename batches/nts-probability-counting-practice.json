@@ -1898,6 +1898,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        60,
+        36,
+        67
+      ],
+      "count": 3,
+      "durationSeconds": 75,
+      "sha256": "984ec65d643a4b875bd17f8df31e63a28afbac0e121cc2a72c1c3dc192b4f354",
+      "manifest": {
+        "title": "100 NTS Probability and Counting MCQs with Explanations",
+        "sourceTitle": "100 NTS Probability and Counting MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-05T06:07:25.322703+00:00",
+        "sourceContentHash": "6facc3bc26e92609dce4993f9175fa269dbe686cb3496ef169066a057db25510",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7566586082,
+          "sha": "5fe0fbf65960f9b5dcee0e5573e4b85e7808482e",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-05T06:07:25.322703+00:00",
+          "url": "https://mcqs-base-2lue9n5bg-as-projects-10921176.vercel.app",
+          "publisherRunId": 41977706315
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 75,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "How many binary strings of length 5 are possible?",
+            "choices": [
+              "16",
+              "25",
+              "32",
+              "64"
+            ],
+            "correctIndex": 2,
+            "key": "719274a710514fe8735319d42975a42e0a8dc9c26c3cf692424b17beabaafa47",
+            "sourceNumber": 60
+          },
+          {
+            "question": "How many ways can 3 people be selected from a group of 7?",
+            "choices": [
+              "21",
+              "28",
+              "35",
+              "42"
+            ],
+            "correctIndex": 2,
+            "key": "7c364395b353d785f54878255d8dc9eafbd4d568e94ea2ee180bb7d34b64131e",
+            "sourceNumber": 36
+          },
+          {
+            "question": "A bag contains 4 red and 3 blue balls. Three balls are drawn without replacement. What is the probability that exactly 2 are red?",
+            "choices": [
+              "12/35",
+              "18/35",
+              "3/5",
+              "2/3"
+            ],
+            "correctIndex": 1,
+            "key": "b5458d03adb47ae1a3d5393cf2ba82eabdcf8a31ffb222a213af70d695cf5bc7",
+            "sourceNumber": 67
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 13,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 13,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 14,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 15,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 16,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 20,
+            "duration": 14,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 34,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 35,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 36,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 37,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 41,
+            "duration": 21,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 62,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 63,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 64,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 65,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 70,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            60,
+            36,
+            67
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nts-probability-counting-practice-part-03-984ec65d643a4b87.mp4",
+        "videoSha256": "984ec65d643a4b875bd17f8df31e63a28afbac0e121cc2a72c1c3dc192b4f354",
+        "assetId": 712291523
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q60, 36, 67 | 100 NTS Probability and Counting MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 60, 36, 67\n100 NTS Probability and Counting MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q60, 36, 67 | 100 NTS Probability and Counting MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 60, 36, 67\n100 NTS Probability and Counting MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-probability-counting-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q60, 36, 67 | 100 NTS Probability and Counting MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 60, 36, 67\n100 NTS Probability and Counting MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-probability-counting-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q60, 36, 67 | 100 NTS Probability and Counting MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 60, 36, 67\n100 NTS Probability and Counting MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-probability-counting-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
