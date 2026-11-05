@@ -1766,8 +1766,9 @@
           "postId": "cmw35fyb10gefro9d9vd74etv"
         },
         "youtube": {
-          "status": "uncertain",
-          "attemptedAt": "2026-11-05T06:13:03.043734+00:00"
+          "status": "accepted",
+          "attemptedAt": "2026-11-05T06:13:03.043734+00:00",
+          "postId": "cmw35fyca0gegro9d21mrwpg6"
         }
       }
     },
