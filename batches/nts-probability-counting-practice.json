@@ -2677,7 +2677,11 @@
       },
       "uploadIntent": {
         "filename": "nts-probability-counting-practice-part-05-061e91a3ddaa5651.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "15dfa7fc-fd5a-4445-ba45-be17b675eb6d",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/HdW8oB5QAx.mp4"
       }
     }
   ],
