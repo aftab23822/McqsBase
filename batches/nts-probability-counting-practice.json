@@ -2411,6 +2411,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 5,
+      "directory": "part-05",
+      "sourceQuestionNumbers": [
+        19,
+        26
+      ],
+      "count": 2,
+      "durationSeconds": 69,
+      "sha256": "061e91a3ddaa565121b872266a490e3c3e1436ab937e71bbd45dc38c48d331d9",
+      "manifest": {
+        "title": "100 NTS Probability and Counting MCQs with Explanations",
+        "sourceTitle": "100 NTS Probability and Counting MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-05T06:07:25.322703+00:00",
+        "sourceContentHash": "6facc3bc26e92609dce4993f9175fa269dbe686cb3496ef169066a057db25510",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7566586082,
+          "sha": "5fe0fbf65960f9b5dcee0e5573e4b85e7808482e",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-05T06:07:25.322703+00:00",
+          "url": "https://mcqs-base-2lue9n5bg-as-projects-10921176.vercel.app",
+          "publisherRunId": 41977706315
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 69,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Two cards are drawn without replacement from a standard 52-card deck. What is the probability that exactly one is an ace?",
+            "choices": [
+              "16/221",
+              "32/221",
+              "48/221",
+              "64/221"
+            ],
+            "correctIndex": 1,
+            "key": "5973eab8561e82b15cfc2379efba01118fb9de85b3e18d916fb57b1b602e9a45",
+            "sourceNumber": 19
+          },
+          {
+            "question": "Events A and B are independent, with P(A) = 0.80 and P(B) = 0.30. What is P(A and B)?",
+            "choices": [
+              "0.24",
+              "0.50",
+              "0.80",
+              "1.10"
+            ],
+            "correctIndex": 0,
+            "key": "446960789145f9acff4aa37bdeee82a7f56970e2777e073c93091a88c4515151",
+            "sourceNumber": 26
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 24,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 25,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 26,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 27,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 33,
+            "duration": 23,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 56,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 57,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 58,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 59,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 64,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 5,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            19,
+            26
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nts-probability-counting-practice-part-05-061e91a3ddaa5651.mp4",
+        "videoSha256": "061e91a3ddaa565121b872266a490e3c3e1436ab937e71bbd45dc38c48d331d9",
+        "assetId": 712295526
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 5/5 | Q19, 26 | 100 NTS Probability and Counting MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 19, 26\n100 NTS Probability and Counting MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 5/5 | Q19, 26 | 100 NTS Probability and Counting MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 19, 26\n100 NTS Probability and Counting MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-probability-counting-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 5/5 | Q19, 26 | 100 NTS Probability and Counting MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 19, 26\n100 NTS Probability and Counting MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-probability-counting-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 5/5 | Q19, 26 | 100 NTS Probability and Counting MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 19, 26\n100 NTS Probability and Counting MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-probability-counting-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
