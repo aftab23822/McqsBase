@@ -1336,6 +1336,288 @@
       "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
     }
   },
-  "parts": [],
+  "parts": [
+    {
+      "part": 1,
+      "directory": "part-01",
+      "sourceQuestionNumbers": [
+        62,
+        43,
+        15
+      ],
+      "count": 3,
+      "durationSeconds": 77,
+      "sha256": "88c40e86e26d18177fe24b6e3474d6f176b7bdce0e05d785caf6d3dd06bf7335",
+      "manifest": {
+        "title": "100 NTS Probability and Counting MCQs with Explanations",
+        "sourceTitle": "100 NTS Probability and Counting MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-05T06:07:25.322703+00:00",
+        "sourceContentHash": "6facc3bc26e92609dce4993f9175fa269dbe686cb3496ef169066a057db25510",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7566586082,
+          "sha": "5fe0fbf65960f9b5dcee0e5573e4b85e7808482e",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-05T06:07:25.322703+00:00",
+          "url": "https://mcqs-base-2lue9n5bg-as-projects-10921176.vercel.app",
+          "publisherRunId": 41977706315
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 77,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "How many possible sequences are there when 3 coins are tossed?",
+            "choices": [
+              "6",
+              "8",
+              "12",
+              "16"
+            ],
+            "correctIndex": 1,
+            "key": "b947f2ec768a4c4ebc3c3ba7ca278fc2d52719305fff0b2691c332219707df7f",
+            "sourceNumber": 62
+          },
+          {
+            "question": "In how many ways can 5 distinct people sit around a circular table, where rotations of the same seating are considered identical?",
+            "choices": [
+              "24",
+              "60",
+              "120",
+              "720"
+            ],
+            "correctIndex": 0,
+            "key": "af8ef908d839317d5d887f69aa3c440ae6b0ed5c565dbbe147f54e9efc2ff112",
+            "sourceNumber": 43
+          },
+          {
+            "question": "One card is drawn from a standard 52-card deck. What is the probability that it is a jack, queen or king?",
+            "choices": [
+              "3/13",
+              "4/13",
+              "1/4",
+              "1/3"
+            ],
+            "correctIndex": 0,
+            "key": "00100d4b1b2084d045d12c828ba025318787cc497536821e5f6349100e700e96",
+            "sourceNumber": 15
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 13,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 13,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 14,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 15,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 16,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 20,
+            "duration": 19,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 39,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 40,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 41,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 42,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 46,
+            "duration": 19,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 65,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 66,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 67,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 68,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 72,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 1,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            62,
+            43,
+            15
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nts-probability-counting-practice-part-01-88c40e86e26d1817.mp4",
+        "videoSha256": "88c40e86e26d18177fe24b6e3474d6f176b7bdce0e05d785caf6d3dd06bf7335",
+        "assetId": 712287118
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 1/5 | Q62, 43, 15 | 100 NTS Probability and Counting MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 62, 43, 15\n100 NTS Probability and Counting MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 1/5 | Q62, 43, 15 | 100 NTS Probability and Counting MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 62, 43, 15\n100 NTS Probability and Counting MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-probability-counting-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 1/5 | Q62, 43, 15 | 100 NTS Probability and Counting MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 62, 43, 15\n100 NTS Probability and Counting MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-probability-counting-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 1/5 | Q62, 43, 15 | 100 NTS Probability and Counting MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 62, 43, 15\n100 NTS Probability and Counting MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-probability-counting-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+          "format": "short"
+        }
+      }
+    }
+  ],
   "thinkingSeconds": 3
 }
