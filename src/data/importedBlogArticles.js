@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nts-probability-counting-practice": {
+    title: "100 NTS Probability and Counting MCQs with Explanations",
+    excerpt:
+      "Practise probability, permutations and combinations with 100 original aptitude questions and step-by-step reasoning.",
+    category: "Subject Guide",
+    date: "2026-11-05",
+    readTime: "31 min",
+    content: null,
+    body: readImportedBlogBody("nts-probability-counting-practice")
+  },
   "nat-ie-mechanics-mcqs": {
     title: "100 NAT-IE Mechanics MCQs with Answers and Explanations",
     excerpt:
