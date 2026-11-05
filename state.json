@@ -1001,7 +1001,7 @@
       "verifiedPublications": 15
     },
     "nts-probability-counting-practice": {
-      "status": "scheduling",
+      "status": "scheduled",
       "ledger": "batches/nts-probability-counting-practice.json",
       "createdAt": "2026-11-05T06:07:25.518993+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
