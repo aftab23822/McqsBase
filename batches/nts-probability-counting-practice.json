@@ -1619,7 +1619,11 @@
       },
       "uploadIntent": {
         "filename": "nts-probability-counting-practice-part-01-88c40e86e26d1817.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "1f5bc5c2-eed0-4b6a-b105-9c9cc34bf24f",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/lKQgpfnehy.mp4"
       }
     },
     {
