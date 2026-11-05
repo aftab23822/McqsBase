@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nts-probability-counting-practice",
   "createdAt": "2026-11-05T06:07:25.518993+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "nts-probability-counting-practice",
     "title": "100 NTS Probability and Counting MCQs with Explanations",
@@ -2645,5 +2645,84 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "nts-probability-counting-practice",
+    "sourceUrl": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+    "sourceTitle": "100 NTS Probability and Counting MCQs with Explanations",
+    "sourceContentHash": "6facc3bc26e92609dce4993f9175fa269dbe686cb3496ef169066a057db25510",
+    "productionDeployment": {
+      "id": 7566586082,
+      "sha": "5fe0fbf65960f9b5dcee0e5573e4b85e7808482e",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-05T06:07:25.322703+00:00",
+      "url": "https://mcqs-base-2lue9n5bg-as-projects-10921176.vercel.app",
+      "publisherRunId": 41977706315
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          62,
+          43,
+          15
+        ],
+        "count": 3,
+        "durationSeconds": 77,
+        "sha256": "88c40e86e26d18177fe24b6e3474d6f176b7bdce0e05d785caf6d3dd06bf7335"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          21,
+          96,
+          8
+        ],
+        "count": 3,
+        "durationSeconds": 81,
+        "sha256": "965b3127c4ed814ca2d0e7f596e70b1b827315bfd69f65805b6ebdf7f27ddcea"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          60,
+          36,
+          67
+        ],
+        "count": 3,
+        "durationSeconds": 75,
+        "sha256": "984ec65d643a4b875bd17f8df31e63a28afbac0e121cc2a72c1c3dc192b4f354"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          97,
+          89
+        ],
+        "count": 2,
+        "durationSeconds": 58,
+        "sha256": "2f1dce46c0f018b1749fc06cc8cb020027a346813c6a2962f35e1f77beace2dc"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          19,
+          26
+        ],
+        "count": 2,
+        "durationSeconds": 69,
+        "sha256": "061e91a3ddaa565121b872266a490e3c3e1436ab937e71bbd45dc38c48d331d9"
+      }
+    ]
+  }
 }
