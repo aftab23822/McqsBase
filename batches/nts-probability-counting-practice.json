@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "nts-probability-counting-practice",
+  "createdAt": "2026-11-05T06:07:25.518993+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nts-probability-counting-practice",
+    "title": "100 NTS Probability and Counting MCQs with Explanations",
+    "url": "https://www.mcqsbase.com/blog/nts-probability-counting-practice",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7566586082,
+      "sha": "5fe0fbf65960f9b5dcee0e5573e4b85e7808482e",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-05T06:07:25.322703+00:00",
+      "url": "https://mcqs-base-2lue9n5bg-as-projects-10921176.vercel.app",
+      "publisherRunId": 41977706315
+    },
+    "fetchedAt": "2026-11-05T06:07:25.322703+00:00",
+    "contentHash": "6facc3bc26e92609dce4993f9175fa269dbe686cb3496ef169066a057db25510",
+    "questions": [
+      {
+        "question": "A fair coin is tossed once. What is the probability of getting heads?",
+        "choices": [
+          "1/4",
+          "1/2",
+          "2/3",
+          "1"
+        ],
+        "key": "0d80b4640b9c2f8c9c04ac53306e37ff273c405c5cfd3773360990cbbf116015",
+        "sourceNumber": 1,
+        "correctIndex": 1
+      },
+      {
+        "question": "Two fair coins are tossed. What is the probability of getting exactly one head?",
+        "choices": [
+          "1/4",
+          "1/3",
+          "1/2",
+          "3/4"
+        ],
+        "key": "3fe9e6bfcbb1e996740e97df916a270c9b9cc3fb40029ca677e616fe0f790d11",
+        "sourceNumber": 2,
+        "correctIndex": 2
+      },
+      {
+        "question": "Three fair coins are tossed. What is the probability of getting at least one head?",
+        "choices": [
+          "1/8",
+          "3/8",
+          "7/8",
+          "1"
+        ],
+        "key": "b9d21d8b8f124273c2c90886616622069fe0dee72d98cafbc4438594ea40fd1a",
+        "sourceNumber": 3,
+        "correctIndex": 2
+      },
+      {
+        "question": "A fair six-sided die is rolled. What is the probability that the result is even?",
+        "choices": [
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3"
+        ],
+        "key": "c9d61689aaf740ff9741f77ea269de916504d9672e96da2ed8762c48e05a0ca2",
+        "sourceNumber": 4,
+        "correctIndex": 2
+      },
+      {
+        "question": "A fair six-sided die is rolled. What is the probability of getting a number greater than 4?",
+        "choices": [
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3"
+        ],
+        "key": "3f7cb280db40ba8329623264885084f8e26460358be1ee3fcf373df8f1cbdf98",
+        "sourceNumber": 5,
+        "correctIndex": 1
+      },
+      {
+        "question": "A fair six-sided die is rolled. What is the probability of getting a multiple of 3?",
+        "choices": [
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3"
+        ],
+        "key": "3b9e72e3098451a969bf6b705be6f41f0ac22a4b0a8036c55863fdd41f0d295a",
+        "sourceNumber": 6,
+        "correctIndex": 1
+      },
+      {
+        "question": "Two fair six-sided dice are rolled. What is the probability that their sum is 7?",
+        "choices": [
+          "1/12",
+          "1/9",
+          "1/6",
+          "1/4"
+        ],
+        "key": "8270e77e842af12626496eff60c1ae6cc41b3ef2eed270da7aa50de597f4408b",
+        "sourceNumber": 7,
+        "correctIndex": 2
+      },
+      {
+        "question": "Two fair six-sided dice are rolled. What is the probability that their sum is 8?",
+        "choices": [
+          "1/9",
+          "5/36",
+          "1/6",
+          "7/36"
+        ],
+        "key": "b57c2471aaf2d6cdb3f0034842eafe81c3cd93d4b162fa8252fff42c6a4fcb59",
+        "sourceNumber": 8,
+        "correctIndex": 1
+      },
+      {
+        "question": "Two fair six-sided dice are rolled. What is the probability that both show the same number?",
+        "choices": [
+          "1/12",
+          "1/6",
+          "1/3",
+          "1/2"
+        ],
+        "key": "58b9a7303ae2eaf8a6e728ca127de44fe0e27c1e1c72b98204f1c8a2ee8e3e40",
+        "sourceNumber": 9,
+        "correctIndex": 1
+      },
+      {
+        "question": "A bag contains 3 red and 2 blue balls. One ball is chosen at random. What is the probability that it is red?",
+        "choices": [
+          "2/5",
+          "3/5",
+          "1/2",
+          "2/3"
+        ],
+        "key": "96492169e3b0f9f1f52ec7f6fa74bc0028fdc82bea1fe35548ee4aa1ba8ebbf2",
+        "sourceNumber": 10,
+        "correctIndex": 1
+      },
+      {
+        "question": "A bag contains 4 red and 3 blue balls. Two balls are drawn without replacement. What is the probability that both are red?",
+        "choices": [
+          "1/7",
+          "2/7",
+          "3/7",
+          "4/7"
+        ],
+        "key": "1de407d1cc91db4cd4e35eb92d99491d39add596d9ca0fc671d53ff5689b765e",
+        "sourceNumber": 11,
+        "correctIndex": 1
+      },
+      {
+        "question": "A bag contains 4 red and 3 blue balls. Two balls are drawn with replacement. What is the probability that both are red?",
+        "choices": [
+          "4/49",
+          "12/49",
+          "16/49",
+          "3/7"
+        ],
+        "key": "fec048b963fed1adda5beb49e7364c97b100ecd9c99765a1fdb510f0bbc4d06b",
+        "sourceNumber": 12,
+        "correctIndex": 2
+      },
+      {
+        "question": "A bag contains 5 red and 4 blue balls. Two balls are drawn without replacement. What is the probability that both are blue?",
+        "choices": [
+          "1/9",
+          "1/6",
+          "2/9",
+          "1/4"
+        ],
+        "key": "665fe9793cd54e952d2df62b8807c5909ca25188be9c79f5288ae73ed83ab1df",
+        "sourceNumber": 13,
+        "correctIndex": 1
+      },
+      {
+        "question": "One card is drawn from a standard 52-card deck. What is the probability that it is an ace?",
+        "choices": [
+          "1/26",
+          "1/13",
+          "1/4",
+          "4/13"
+        ],
+        "key": "d62c61093bbf3133676406a04776adf20cebdeffc8c2c861697b8d44b31b50d8",
+        "sourceNumber": 14,
+        "correctIndex": 1
+      },
+      {
+        "question": "One card is drawn from a standard 52-card deck. What is the probability that it is a jack, queen or king?",
+        "choices": [
+          "3/13",
+          "4/13",
+          "1/4",
+          "1/3"
+        ],
+        "key": "00100d4b1b2084d045d12c828ba025318787cc497536821e5f6349100e700e96",
+        "sourceNumber": 15,
+        "correctIndex": 0
+      },
+      {
+        "question": "One card is drawn from a standard 52-card deck. What is the probability that it is red?",
+        "choices": [
+          "1/4",
+          "1/3",
+          "1/2",
+          "3/4"
+        ],
+        "key": "b2938e0b100379baf8f06435b6cca5a53c534929dcc973630a6e143922fc85be",
+        "sourceNumber": 16,
+        "correctIndex": 2
+      },
+      {
+        "question": "One card is drawn from a standard 52-card deck. What is the probability that it is not a spade?",
+        "choices": [
+          "1/4",
+          "1/2",
+          "3/4",
+          "13/52"
+        ],
+        "key": "42abbff4a954c06ae9ff2b14828192d3d5a3d484be520108de3d2d47f8306113",
+        "sourceNumber": 17,
+        "correctIndex": 2
+      },
+      {
+        "question": "Two cards are drawn without replacement from a standard 52-card deck. What is the probability that both are aces?",
+        "choices": [
+          "1/169",
+          "1/221",
+          "1/52",
+          "1/13"
+        ],
+        "key": "dcdf09d9476174c152f7808c9872dde4c7c5ea74e30339002e25e05ac8075fe9",
+        "sourceNumber": 18,
+        "correctIndex": 1
+      },
+      {
+        "question": "Two cards are drawn without replacement from a standard 52-card deck. What is the probability that exactly one is an ace?",
+        "choices": [
+          "16/221",
+          "32/221",
+          "48/221",
+          "64/221"
+        ],
+        "key": "5973eab8561e82b15cfc2379efba01118fb9de85b3e18d916fb57b1b602e9a45",
+        "sourceNumber": 19,
+        "correctIndex": 1
+      },
+      {
+        "question": "An integer is selected uniformly from 1 through 10. What is the probability that it is divisible by 2 or 3?",
+        "choices": [
+          "3/5",
+          "7/10",
+          "4/5",
+          "9/10"
+        ],
+        "key": "5cfcd6ba1d4b792aff73fee101aa04bbd0f39f3cd990a325118a5a1be387f3ad",
+        "sourceNumber": 20,
+        "correctIndex": 1
+      },
+      {
+        "question": "An integer is selected uniformly from 1 through 20. What is the probability that it is prime?",
+        "choices": [
+          "1/4",
+          "2/5",
+          "1/2",
+          "3/5"
+        ],
+        "key": "e0e41cc89da717ca5f917f74f02aca57267934cc48250090da03bed2e9c914c9",
+        "sourceNumber": 21,
+        "correctIndex": 1
+      },
+      {
+        "question": "An integer is selected uniformly from 1 through 12. What is the probability that it is a multiple of 4 or 6?",
+        "choices": [
+          "1/4",
+          "1/3",
+          "5/12",
+          "1/2"
+        ],
+        "key": "82eabb588f18abddea07556c029e08ecd1f24f33a3dee614ff74835a1af66cc8",
+        "sourceNumber": 22,
+        "correctIndex": 1
+      },
+      {
+        "question": "A spinner has 8 equal sectors, of which 3 are red. What is the probability that it lands on red?",
+        "choices": [
+          "3/8",
+          "1/2",
+          "5/8",
+          "3/5"
+        ],
+        "key": "f19c6c9310eb67289e3945e87fee9170ac524f94eb6045c7367e8ec7409c2e7e",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "If the probability of rain tomorrow is 0.35, what is the probability that it does not rain?",
+        "choices": [
+          "0.35",
+          "0.55",
+          "0.65",
+          "0.75"
+        ],
+        "key": "dcd0ad5e23443b5bad199e55bf8f36ae8cf7c4f8c228aa43ad9d7b27cc46880f",
+        "sourceNumber": 24,
+        "correctIndex": 2
+      },
+      {
+        "question": "Events A and B are mutually exclusive, with P(A) = 0.40 and P(B) = 0.35. What is P(A or B)?",
+        "choices": [
+          "0.14",
+          "0.40",
+          "0.65",
+          "0.75"
+        ],
+        "key": "506f004702043ac363af41d21da49c08850f68b685d1768f290b6f2b7683328a",
+        "sourceNumber": 25,
+        "correctIndex": 3
+      },
+      {
+        "question": "Events A and B are independent, with P(A) = 0.80 and P(B) = 0.30. What is P(A and B)?",
+        "choices": [
+          "0.24",
+          "0.50",
+          "0.80",
+          "1.10"
+        ],
+        "key": "446960789145f9acff4aa37bdeee82a7f56970e2777e073c93091a88c4515151",
+        "sourceNumber": 26,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a group of 30 students, 12 study French. If a student is selected at random from those who study French, what is the probability that the student studies French?",
+        "choices": [
+          "2/5",
+          "1/2",
+          "3/5",
+          "1"
+        ],
+        "key": "787ad11c1c0d98f2e7210e54550ad92daf43249600af417b692f1fa782ab3157",
+        "sourceNumber": 27,
+        "correctIndex": 3
+      },
+      {
+        "question": "A box contains 3 red and 2 blue balls. A red ball is drawn first and not replaced. What is the probability that the second ball is blue?",
+        "choices": [
+          "1/5",
+          "1/2",
+          "2/5",
+          "3/5"
+        ],
+        "key": "c8a84a4d2ce386d9d6dba981e561d7bbf6c2408338f1f561ce6fd85b24c8091c",
+        "sourceNumber": 28,
+        "correctIndex": 1
+      },
+      {
+        "question": "A fair six-sided die is rolled twice. What is the probability of getting at least one 6?",
+        "choices": [
+          "1/6",
+          "5/18",
+          "11/36",
+          "1/3"
+        ],
+        "key": "27784542266e14ca2a3f6ab368f25b575b45d33a0c4e13a46929f83acba9c547",
+        "sourceNumber": 29,
+        "correctIndex": 2
+      },
+      {
+        "question": "Four fair coins are tossed. What is the probability of getting exactly two heads?",
+        "choices": [
+          "1/4",
+          "3/8",
+          "1/2",
+          "5/8"
+        ],
+        "key": "8a90418ecf21ac6adfeb55a0073dc5c8cdb77f3f43a007eb8f12e4c57016ec5f",
+        "sourceNumber": 30,
+        "correctIndex": 1
+      },
+      {
+        "question": "In how many ways can 5 distinct books be arranged in a row?",
+        "choices": [
+          "25",
+          "60",
+          "120",
+          "240"
+        ],
+        "key": "ba202e2a25b208bf25f1e1d8f78a724c7b54f18997afa21b7955d5de47509eae",
+        "sourceNumber": 31,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the value of 7 factorial, written 7!?",
+        "choices": [
+          "720",
+          "1,440",
+          "5,040",
+          "40,320"
+        ],
+        "key": "869fff72769e4b7f6226eb2e3d28490b2cc98fb456778181459e62a1d6aedca6",
+        "sourceNumber": 32,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many different arrangements can be made from the letters of CAT, using each letter once?",
+        "choices": [
+          "3",
+          "6",
+          "9",
+          "12"
+        ],
+        "key": "32c42e46aca1040d3d332c3dd469cd157125e2e5fdb169b8792602e3521c2b32",
+        "sourceNumber": 33,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many distinct arrangements can be made from all the letters of LEVEL?",
+        "choices": [
+          "20",
+          "30",
+          "60",
+          "120"
+        ],
+        "key": "b65cd22083fef95ccdf9b70177d3052220b80dd68bb99516dc3b936fc1909938",
+        "sourceNumber": 34,
+        "correctIndex": 1
+      },
+      {
+        "question": "From 8 people, how many ways can a president and a vice-president be selected, with one person holding each role?",
+        "choices": [
+          "28",
+          "56",
+          "64",
+          "70"
+        ],
+        "key": "6b0c13b0dc7e5c02e054dd79d0312687e330821b15a5f064de168b3d9014c92b",
+        "sourceNumber": 35,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many ways can 3 people be selected from a group of 7?",
+        "choices": [
+          "21",
+          "28",
+          "35",
+          "42"
+        ],
+        "key": "7c364395b353d785f54878255d8dc9eafbd4d568e94ea2ee180bb7d34b64131e",
+        "sourceNumber": 36,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many pairs can be selected from 10 people?",
+        "choices": [
+          "35",
+          "40",
+          "45",
+          "90"
+        ],
+        "key": "06e6dbd0ae4eff6bcc3cb0c40ed9ccbbd9378d01cee1b110fbf62aaa12deabdf",
+        "sourceNumber": 37,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many three-digit numbers can be formed from 1, 2, 3 and 4 without repeating a digit?",
+        "choices": [
+          "12",
+          "18",
+          "24",
+          "64"
+        ],
+        "key": "9077c0396743023f44f7d7e96bdc182a3da65df4bb8fe7cda93fb167c7166d18",
+        "sourceNumber": 38,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many three-digit numbers can be formed from 0, 1, 2 and 3 without repeating a digit?",
+        "choices": [
+          "12",
+          "18",
+          "24",
+          "36"
+        ],
+        "key": "d01727a2dcea7d3546ada51b5966189eaac5bbe47afb74b7d04d2827171e1795",
+        "sourceNumber": 39,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many four-digit PINs can be made using digits 0 through 9 if repetition is allowed and leading zero is permitted?",
+        "choices": [
+          "1,000",
+          "5,040",
+          "9,000",
+          "10,000"
+        ],
+        "key": "dcb96f8f191f37502aa4a67eff4bc29358cec8d782030261d36daa2d72f56b7a",
+        "sourceNumber": 40,
+        "correctIndex": 3
+      },
+      {
+        "question": "How many four-digit PINs can be made using digits 0 through 9 without repetition, if leading zero is permitted?",
+        "choices": [
+          "2,520",
+          "4,320",
+          "5,040",
+          "9,000"
+        ],
+        "key": "d468bfb08549bd54e7a0222ecccf4759f6e75122dbbee1e1cbca25ca9330b6c3",
+        "sourceNumber": 41,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many three-letter strings can be formed from the 26-letter English alphabet if repetition is allowed?",
+        "choices": [
+          "1,755",
+          "6,760",
+          "17,576",
+          "26,000"
+        ],
+        "key": "9d2a5e0317afa5e2de712547ea2d0b0591766a34220d82b19b095407e72100a7",
+        "sourceNumber": 42,
+        "correctIndex": 2
+      },
+      {
+        "question": "In how many ways can 5 distinct people sit around a circular table, where rotations of the same seating are considered identical?",
+        "choices": [
+          "24",
+          "60",
+          "120",
+          "720"
+        ],
+        "key": "af8ef908d839317d5d887f69aa3c440ae6b0ed5c565dbbe147f54e9efc2ff112",
+        "sourceNumber": 43,
+        "correctIndex": 0
+      },
+      {
+        "question": "In how many ways can 6 distinct people sit around a circular table, where rotations of the same seating are considered identical?",
+        "choices": [
+          "24",
+          "120",
+          "360",
+          "720"
+        ],
+        "key": "b8b53e5d63fc950db791788adabe4c7007db234f841d7831e64224a9c91199be",
+        "sourceNumber": 44,
+        "correctIndex": 1
+      },
+      {
+        "question": "A café offers 5 distinct flavours. How many ways can a customer choose 2 different flavours if order does not matter?",
+        "choices": [
+          "10",
+          "20",
+          "25",
+          "30"
+        ],
+        "key": "35ce71fc7c6067ad9d79b824cece04508b6681977da3ebde5cc8b1f2952ea94a",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "How many committees of 3 can be selected from 5 women if all committee members must be women?",
+        "choices": [
+          "5",
+          "10",
+          "15",
+          "35"
+        ],
+        "key": "1c0e0bcd2674140664159bd637b3124005545ad1057b19df5b71d001cd70ec0d",
+        "sourceNumber": 46,
+        "correctIndex": 1
+      },
+      {
+        "question": "A group has 4 men and 3 women. How many committees contain 2 men and 1 woman?",
+        "choices": [
+          "12",
+          "18",
+          "24",
+          "36"
+        ],
+        "key": "9b77c27d629e6532c8a5df87ea67af7d353882f42746108ac9b756685e7437b1",
+        "sourceNumber": 47,
+        "correctIndex": 1
+      },
+      {
+        "question": "On a grid, a shortest route from the start to the finish requires 3 moves east and 2 moves north. How many such routes are there?",
+        "choices": [
+          "5",
+          "10",
+          "20",
+          "32"
+        ],
+        "key": "ef7afde0fa11d8ce01d5c75783a4644869f5a99e1e0b75b99bb68117d6a53ab6",
+        "sourceNumber": 48,
+        "correctIndex": 1
+      },
+      {
+        "question": "A shortest grid route consists of 2 moves right and 2 moves up. How many different shortest routes are possible?",
+        "choices": [
+          "4",
+          "6",
+          "8",
+          "12"
+        ],
+        "key": "b58e11de3ff0c16f40489dd5f4c35a2bc5205da3a5e14ab200420a7380de9401",
+        "sourceNumber": 49,
+        "correctIndex": 1
+      },
+      {
+        "question": "Five distinct people sit in a row. If person A must sit at the left end, how many arrangements are possible?",
+        "choices": [
+          "24",
+          "60",
+          "120",
+          "240"
+        ],
+        "key": "54e008498889f8ea509adf46abaa5ea53dcef80d2ab0773e8eabc9c14cf98c7d",
+        "sourceNumber": 50,
+        "correctIndex": 0
+      },
+      {
+        "question": "Six distinct people sit in a row. In how many arrangements are two specified people seated next to each other?",
+        "choices": [
+          "120",
+          "240",
+          "360",
+          "720"
+        ],
+        "key": "9067b027ebca2cb3c147a6e444607aa5ff532673b443058bba3502ecbcc0c1e6",
+        "sourceNumber": 51,
+        "correctIndex": 1
+      },
+      {
+        "question": "Six distinct people sit in a row. In how many arrangements are two specified people not seated next to each other?",
+        "choices": [
+          "240",
+          "360",
+          "480",
+          "600"
+        ],
+        "key": "b3e27150067577ef7f125dd4e769763b9b0bdabe9b7b6e897c05fe2a8db4a092",
+        "sourceNumber": 52,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many arrangements of 6 distinct objects have a specified object in the first position?",
+        "choices": [
+          "24",
+          "120",
+          "360",
+          "720"
+        ],
+        "key": "c6aea50632671a1a895328c3fe315e09632f0c778cfb8a9208828ee78cc4e897",
+        "sourceNumber": 53,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many four-digit even numbers can be formed from 1, 2, 3, 4, 5 and 6 without repetition?",
+        "choices": [
+          "120",
+          "150",
+          "180",
+          "240"
+        ],
+        "key": "428314770917a98bd99e435de87c8a61ae0a605ff24f4802061fe6a0a8ee2dbb",
+        "sourceNumber": 54,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many three-digit odd numbers can be formed from 0, 1, 2, 3, 4 and 5 without repetition?",
+        "choices": [
+          "36",
+          "48",
+          "60",
+          "72"
+        ],
+        "key": "539ab78967d59ecd9fd85276c2a2a4a9eed706a9106be3fd0f4da0c2bf49ec02",
+        "sourceNumber": 55,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many three-digit numbers greater than 300 can be formed from 1, 2, 3, 4 and 5 without repetition?",
+        "choices": [
+          "24",
+          "30",
+          "36",
+          "48"
+        ],
+        "key": "93ea191fed19c7e3d5234652d2fb3c59b7f16800cbd01767d5f9c8773d6b9bff",
+        "sourceNumber": 56,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many five-letter strings can be formed from 7 distinct letters without repeating a letter?",
+        "choices": [
+          "840",
+          "1,680",
+          "2,520",
+          "5,040"
+        ],
+        "key": "a10ad625a421a0d2cba02fda2036947487d35905a657149faf5d9d7dc87cfa50",
+        "sourceNumber": 57,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many groups of 4 can be selected from 9 people?",
+        "choices": [
+          "84",
+          "126",
+          "252",
+          "3,024"
+        ],
+        "key": "73a2f6f9d65199a79d566de2325e88b4246dba68506d230c9df00470c5799667",
+        "sourceNumber": 58,
+        "correctIndex": 1
+      },
+      {
+        "question": "A set contains 5 distinct items. How many non-empty subsets does it have?",
+        "choices": [
+          "15",
+          "16",
+          "31",
+          "32"
+        ],
+        "key": "9cb3c5c6934db197b6f2e4b0ef5da6ca187252c4e7c22f6e82e7fa352da46481",
+        "sourceNumber": 59,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many binary strings of length 5 are possible?",
+        "choices": [
+          "16",
+          "25",
+          "32",
+          "64"
+        ],
+        "key": "719274a710514fe8735319d42975a42e0a8dc9c26c3cf692424b17beabaafa47",
+        "sourceNumber": 60,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many ordered outcomes are possible when two standard six-sided dice are rolled?",
+        "choices": [
+          "12",
+          "24",
+          "36",
+          "42"
+        ],
+        "key": "22290084cfb89be4a1cae228113a258214ed1abeb4201fa4bdfbf181591e5ba4",
+        "sourceNumber": 61,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many possible sequences are there when 3 coins are tossed?",
+        "choices": [
+          "6",
+          "8",
+          "12",
+          "16"
+        ],
+        "key": "b947f2ec768a4c4ebc3c3ba7ca278fc2d52719305fff0b2691c332219707df7f",
+        "sourceNumber": 62,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many five-digit PINs are possible using digits 0 through 9 if repetition and leading zero are allowed?",
+        "choices": [
+          "10,000",
+          "50,000",
+          "100,000",
+          "900,000"
+        ],
+        "key": "d88f9b0d087da4289704609d1fb080b2ec8479d8623faf2a6e9dd04adc5275db",
+        "sourceNumber": 63,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many four-digit numbers can be formed from the digits 1 through 9 if the digits must be in strictly increasing order?",
+        "choices": [
+          "84",
+          "126",
+          "252",
+          "3,024"
+        ],
+        "key": "774e45fdbadcb131136357fe9c2101de96e17483f3c6da54cd3e9ea6fecc6c4c",
+        "sourceNumber": 64,
+        "correctIndex": 1
+      },
+      {
+        "question": "A bag contains 3 red and 2 blue balls. Two balls are drawn without replacement. What is the probability that both are red?",
+        "choices": [
+          "1/5",
+          "3/10",
+          "2/5",
+          "1/2"
+        ],
+        "key": "70c7b1753bac19c014b48c44163633bdfc539a57909dc170e58f472a8b58228e",
+        "sourceNumber": 65,
+        "correctIndex": 1
+      },
+      {
+        "question": "A bag contains 5 red and 3 blue balls. Two balls are drawn without replacement. What is the probability that both are blue?",
+        "choices": [
+          "1/14",
+          "3/28",
+          "1/7",
+          "3/8"
+        ],
+        "key": "85c9e532dc1e890561bde7f6a91d67e9d6aac237a1cb2c8e1af7a3174b25351b",
+        "sourceNumber": 66,
+        "correctIndex": 1
+      },
+      {
+        "question": "A bag contains 4 red and 3 blue balls. Three balls are drawn without replacement. What is the probability that exactly 2 are red?",
+        "choices": [
+          "12/35",
+          "18/35",
+          "3/5",
+          "2/3"
+        ],
+        "key": "b5458d03adb47ae1a3d5393cf2ba82eabdcf8a31ffb222a213af70d695cf5bc7",
+        "sourceNumber": 67,
+        "correctIndex": 1
+      },
+      {
+        "question": "Two cards are drawn without replacement from a standard 52-card deck. What is the probability that exactly one card is a heart?",
+        "choices": [
+          "13/34",
+          "1/2",
+          "13/26",
+          "3/4"
+        ],
+        "key": "c0653c406a579b64fae441e3e8b77ea64a311fbca64baa26b00bed05a9a9117b",
+        "sourceNumber": 68,
+        "correctIndex": 0
+      },
+      {
+        "question": "A card is selected uniformly from the 26 black cards in a standard deck. What is the probability that its rank is 8, 9 or 10?",
+        "choices": [
+          "3/13",
+          "1/4",
+          "3/10",
+          "1/2"
+        ],
+        "key": "d78b1bf27decc3daa24f42566b0b3c664264a291b9abb53766f53094acca841e",
+        "sourceNumber": 69,
+        "correctIndex": 0
+      },
+      {
+        "question": "Two fair six-sided dice are rolled. What is the probability that their sum is even?",
+        "choices": [
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6"
+        ],
+        "key": "5a37e40dc2117833af58f4b646d94398094ed307025058e01148e454152bb807",
+        "sourceNumber": 70,
+        "correctIndex": 1
+      },
+      {
+        "question": "Two fair six-sided dice are rolled. What is the probability that their sum is at most 4?",
+        "choices": [
+          "1/12",
+          "1/6",
+          "1/4",
+          "5/18"
+        ],
+        "key": "edb08670aca7c6c8903d7238e7df8eafa8e8ce3160f081650eaef7aefe246c5c",
+        "sourceNumber": 71,
+        "correctIndex": 1
+      },
+      {
+        "question": "Two fair six-sided dice are rolled. What is the probability that at least one die shows 5?",
+        "choices": [
+          "1/6",
+          "5/18",
+          "11/36",
+          "1/3"
+        ],
+        "key": "2fa1d049fc23f2b8c0909f9911b02c8c620044de4ed286df42a7abd3ca71a912",
+        "sourceNumber": 72,
+        "correctIndex": 2
+      },
+      {
+        "question": "Two fair six-sided dice are rolled. What is the probability that the difference between their results is exactly 1?",
+        "choices": [
+          "1/6",
+          "2/9",
+          "5/18",
+          "1/3"
+        ],
+        "key": "aaaac15d9131d10d88c53f8546fa392844d63a48212555c48d7d4dc563d094ba",
+        "sourceNumber": 73,
+        "correctIndex": 2
+      },
+      {
+        "question": "A fair spinner has 10 equal sectors numbered 1 through 10. What is the probability that it lands on a number greater than 6?",
+        "choices": [
+          "2/5",
+          "1/2",
+          "3/5",
+          "7/10"
+        ],
+        "key": "197f997d61013e5d83dad4a45d6b131c2acf77c5a7ab7443ad0e6f576b18d924",
+        "sourceNumber": 74,
+        "correctIndex": 0
+      },
+      {
+        "question": "Independent events A and B have probabilities 0.7 and 0.4. What is the probability that neither event occurs?",
+        "choices": [
+          "0.12",
+          "0.18",
+          "0.42",
+          "0.60"
+        ],
+        "key": "711dff24c659af59be87047a436a701135902789843f85a642ead26eaacd986c",
+        "sourceNumber": 75,
+        "correctIndex": 1
+      },
+      {
+        "question": "Events A and B have P(A) = 0.45, P(B) = 0.60 and P(A and B) = 0.25. What is P(A or B)?",
+        "choices": [
+          "0.55",
+          "0.70",
+          "0.80",
+          "1.05"
+        ],
+        "key": "9582886835c0e699e79b600c36cae984b42611e7e003fc32b01446caee5cd2a3",
+        "sourceNumber": 76,
+        "correctIndex": 2
+      },
+      {
+        "question": "If P(A and B) = 0.20 and P(B) = 0.50, what is P(A given B)?",
+        "choices": [
+          "0.10",
+          "0.25",
+          "0.40",
+          "0.70"
+        ],
+        "key": "094ff320e3b9b0bc9c16ea80b1768d0ebfee19d0501dfeb4712ee8304d4e878d",
+        "sourceNumber": 77,
+        "correctIndex": 2
+      },
+      {
+        "question": "One of two boxes is selected at random. Box A contains 2 red and 1 blue ball; Box B contains 1 red and 3 blue balls. A ball is drawn from the selected box. What is the probability it is red?",
+        "choices": [
+          "11/24",
+          "1/2",
+          "7/12",
+          "5/8"
+        ],
+        "key": "3343915a5b61bfb038fd19d8a9d634e6c0324b6b10bf88370230fd9de3e98b1f",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "A fair six-sided die is rolled twice. What is the probability that the sum of the two results is divisible by 12?",
+        "choices": [
+          "1/36",
+          "1/18",
+          "1/12",
+          "1/6"
+        ],
+        "key": "c2fa3afe40332f52d7db665179fb1037f048b062931b3aab2b5213db8e35e349",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "An integer is chosen uniformly from 1 through 50. What is the probability that it is divisible by 3 or 5?",
+        "choices": [
+          "19/50",
+          "21/50",
+          "23/50",
+          "25/50"
+        ],
+        "key": "f702c9cd055bb9c30d3086e37db234b6a3428b13d27a55ead5eaae70dcab836f",
+        "sourceNumber": 80,
+        "correctIndex": 2
+      },
+      {
+        "question": "Two different integers are chosen from 1 through 5, with each unordered pair equally likely. What is the probability their sum is even?",
+        "choices": [
+          "1/5",
+          "2/5",
+          "1/2",
+          "3/5"
+        ],
+        "key": "4d3266d81bc502c17fb5d0cf84d181b53cc5bbc680241a2f205741d522a939c0",
+        "sourceNumber": 81,
+        "correctIndex": 1
+      },
+      {
+        "question": "A group has 5 qualified and 3 unqualified applicants. Three are selected at random. What is the probability that at least 2 selected applicants are qualified?",
+        "choices": [
+          "5/7",
+          "9/14",
+          "3/4",
+          "6/7"
+        ],
+        "key": "abe31ebe6aa6934df63af7c1ce90003197c21c1088727891754a6b03ac34bbf9",
+        "sourceNumber": 82,
+        "correctIndex": 0
+      },
+      {
+        "question": "A committee of 4 is selected from 6 men and 4 women. What is the probability it contains exactly 2 women?",
+        "choices": [
+          "2/7",
+          "3/7",
+          "4/7",
+          "5/14"
+        ],
+        "key": "5676c697b728f330ed283c75e2d8abc26f507ea29db700be337987504a76e1a4",
+        "sourceNumber": 83,
+        "correctIndex": 1
+      },
+      {
+        "question": "A committee of 3 is selected from 4 women and 5 men. What is the probability it has at least one woman?",
+        "choices": [
+          "5/42",
+          "1/2",
+          "37/42",
+          "5/6"
+        ],
+        "key": "566fbc205515251ab55851b98e0e4cacd2d68abe4781ec42ce497f7e7c31ad05",
+        "sourceNumber": 84,
+        "correctIndex": 2
+      },
+      {
+        "question": "One card is drawn from a standard 52-card deck. What is the probability that it is an ace or a king?",
+        "choices": [
+          "1/13",
+          "2/13",
+          "3/13",
+          "4/13"
+        ],
+        "key": "700bb4cf767b56d1794df0139fac8add531dffe6796a7fa56c1b446d292fd82b",
+        "sourceNumber": 85,
+        "correctIndex": 1
+      },
+      {
+        "question": "Three cards are drawn without replacement from a standard 52-card deck. What is the probability that all three cards are from the same suit?",
+        "choices": [
+          "1/85",
+          "13/425",
+          "13/1,105",
+          "13/1,005"
+        ],
+        "key": "63449dad6cf77f7699bbea9cbce351466feefebe27bad8ed00eda7c70166ab01",
+        "sourceNumber": 86,
+        "correctIndex": 2
+      },
+      {
+        "question": "A four-digit code is selected uniformly from 0000 through 9999. What is the probability that the code is divisible by 5, treating the code as an integer from 0 to 9999?",
+        "choices": [
+          "1/10",
+          "1/5",
+          "1/4",
+          "1/2"
+        ],
+        "key": "ecb7bb0085017e2205201e3c92ed5621c4ab280681b72a71eaa8512a397f46d1",
+        "sourceNumber": 87,
+        "correctIndex": 1
+      },
+      {
+        "question": "A code consists of 2 letters followed by 2 digits. Letters are chosen from the 26-letter English alphabet and digits from 0 through 9, with repetition allowed. What is the probability that the two letters are different?",
+        "choices": [
+          "1/26",
+          "1/2",
+          "25/26",
+          "25/36"
+        ],
+        "key": "c0caed0aa0a413f3869cc8e1bde835206db9136f5233c0b978eb9256569067b7",
+        "sourceNumber": 88,
+        "correctIndex": 2
+      },
+      {
+        "question": "The letters A, B, C and D are randomly arranged in a row. What is the probability that A is first and B is last?",
+        "choices": [
+          "1/24",
+          "1/12",
+          "1/6",
+          "1/4"
+        ],
+        "key": "4288a4c51509d4ea7bff2466c6601d5a043cef246cc1e6181cd36e699aa934c5",
+        "sourceNumber": 89,
+        "correctIndex": 1
+      },
+      {
+        "question": "Five distinct people are randomly arranged in a row. What is the probability that two specified people are adjacent?",
+        "choices": [
+          "1/5",
+          "2/5",
+          "1/2",
+          "3/5"
+        ],
+        "key": "d1135519876a8df0fb6860ae491bd80e27e1aa5bafa0f21e4cf5a7ceb0af4f00",
+        "sourceNumber": 90,
+        "correctIndex": 1
+      },
+      {
+        "question": "Three fair six-sided dice are rolled. What is the probability that all three results are different?",
+        "choices": [
+          "5/18",
+          "1/2",
+          "5/9",
+          "2/3"
+        ],
+        "key": "2e6e43d3f2591bc627c2e95a591b3e1628d0c88575e94edf51cf49eb28bf3f45",
+        "sourceNumber": 91,
+        "correctIndex": 2
+      },
+      {
+        "question": "Three fair six-sided dice are rolled. What is the probability that exactly one die shows 6?",
+        "choices": [
+          "25/72",
+          "5/18",
+          "1/2",
+          "125/216"
+        ],
+        "key": "c2c357223b21e4508f4e074c6f7394640f6e7d7ce90ca0534c62821caafb9ced",
+        "sourceNumber": 92,
+        "correctIndex": 0
+      },
+      {
+        "question": "A fair coin is tossed 4 times. What is the probability of getting exactly 3 heads?",
+        "choices": [
+          "1/8",
+          "1/4",
+          "3/8",
+          "1/2"
+        ],
+        "key": "4b2ea17a24111680355b07e18ac7756e4216a75c30691eb0046bc5977ca95a2b",
+        "sourceNumber": 93,
+        "correctIndex": 1
+      },
+      {
+        "question": "A trial succeeds with probability 0.2, independently on each attempt. What is the probability of at least one success in 5 attempts?",
+        "choices": [
+          "0.32768",
+          "0.5904",
+          "0.67232",
+          "0.80000"
+        ],
+        "key": "89872ef72a04fc3093650cc161abd0070d52a19197344a3e2e30f0227c0322bb",
+        "sourceNumber": 94,
+        "correctIndex": 2
+      },
+      {
+        "question": "Two independent components work with probabilities 0.9 and 0.8. What is the probability that both work?",
+        "choices": [
+          "0.17",
+          "0.72",
+          "0.80",
+          "0.90"
+        ],
+        "key": "4e4e9611cf700504d2546d9c01fba935aa114408b68423c93c0d06db81b6a45a",
+        "sourceNumber": 95,
+        "correctIndex": 1
+      },
+      {
+        "question": "An integer is chosen uniformly from 1 through 100. What is the probability that it is a perfect square?",
+        "choices": [
+          "1/20",
+          "1/10",
+          "1/5",
+          "1/4"
+        ],
+        "key": "b312df3c516dc0883b64e382f33fd5df3379087c99a1e244c70ee224d600baf8",
+        "sourceNumber": 96,
+        "correctIndex": 1
+      },
+      {
+        "question": "An integer is chosen uniformly from 1 through 100. What is the probability that it is composite?",
+        "choices": [
+          "1/4",
+          "37/50",
+          "3/4",
+          "4/5"
+        ],
+        "key": "1e23cd2a24e5b6ef0ee3c12b0eadc490f7287cb9ea2690dc437390c734d9afba",
+        "sourceNumber": 97,
+        "correctIndex": 1
+      },
+      {
+        "question": "A fair coin is tossed twice. Given that at least one toss is heads, what is the probability that both tosses are heads?",
+        "choices": [
+          "1/4",
+          "1/3",
+          "1/2",
+          "2/3"
+        ],
+        "key": "148f03204ebf4bc5fdfb5ac923c05d3cfe63b5d0b59dea64b83533776f77ed58",
+        "sourceNumber": 98,
+        "correctIndex": 1
+      },
+      {
+        "question": "A fair six-sided die is rolled. Given that the result is greater than 3, what is the probability that it is even?",
+        "choices": [
+          "1/3",
+          "1/2",
+          "2/3",
+          "3/4"
+        ],
+        "key": "fbb4843f54f859710212831d196f6cc07421d0d033b8f8e8672e653a8a6d0345",
+        "sourceNumber": 99,
+        "correctIndex": 2
+      },
+      {
+        "question": "A box contains 3 red and 2 blue balls. Two balls are drawn without replacement. What is the probability that the second ball is red?",
+        "choices": [
+          "2/5",
+          "1/2",
+          "3/5",
+          "4/5"
+        ],
+        "key": "d69abec5913f4c1f4390805f3f72be09cf9cc44771d035919ab8bcb886c011cf",
+        "sourceNumber": 100,
+        "correctIndex": 2
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "fb1579f11a3640f9a7b4890c230392683efd363708e488d1aa6d75992a53c6ed",
+      "sourceQuestionNumbers": [
+        62,
+        43,
+        15,
+        21,
+        96,
+        8,
+        60,
+        36,
+        67,
+        97,
+        89,
+        19,
+        26,
+        48,
+        66,
+        49,
+        77,
+        9,
+        86,
+        35,
+        46,
+        11,
+        98,
+        69,
+        24,
+        32,
+        100,
+        63,
+        18,
+        53,
+        76,
+        52,
+        91,
+        2,
+        23,
+        45,
+        83,
+        74,
+        5,
+        37,
+        12,
+        90,
+        70,
+        55,
+        22,
+        50,
+        64,
+        99,
+        14,
+        30,
+        3,
+        88,
+        75,
+        25,
+        59,
+        73,
+        16,
+        29,
+        93,
+        41,
+        47,
+        61,
+        85,
+        13,
+        34,
+        79,
+        6,
+        58,
+        95,
+        27,
+        20,
+        31,
+        94,
+        44,
+        65,
+        10,
+        80,
+        57,
+        28,
+        87,
+        84,
+        71,
+        7,
+        51,
+        33,
+        38,
+        17,
+        56,
+        78,
+        92,
+        42,
+        72,
+        81,
+        4,
+        40,
+        68,
+        39,
+        82,
+        1,
+        54
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
