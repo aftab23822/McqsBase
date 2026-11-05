@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nts-probability-counting-practice",
   "createdAt": "2026-11-05T06:07:25.518993+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "nts-probability-counting-practice",
     "title": "100 NTS Probability and Counting MCQs with Explanations",
@@ -1749,7 +1749,24 @@
         }
       },
       "scheduledAt": "2026-11-05T11:28:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-05T06:13:03.043707+00:00"
+        },
+        "instagram": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-05T06:13:03.043728+00:00"
+        },
+        "tiktok": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-05T06:13:03.043732+00:00"
+        },
+        "youtube": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-05T06:13:03.043734+00:00"
+        }
+      }
     },
     {
       "part": 2,
