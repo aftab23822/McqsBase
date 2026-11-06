@@ -7,6 +7,8 @@ import { pathToFileURL } from 'node:url';
 const ROOT = process.cwd();
 const BLOG_ROOT = path.join(ROOT, 'public', 'blog');
 const REGISTRY_PATH = path.join(ROOT, 'src', 'data', 'importedBlogArticles.js');
+const TARGET_MCQ_COUNT = 100;
+const MIN_MCQ_COUNT = 99;
 const MCQ_SCHEMA = {
   type: 'object', additionalProperties: false,
   required: ['question', 'options', 'correctAnswer', 'explanation'],
@@ -157,6 +159,18 @@ function uniqueMcqs(items) {
   return { mcqs: clean, duplicates };
 }
 
+function withActualQuestionCount(value, count) {
+  // Update article count claims only; never rewrite numbers inside an MCQ.
+  if (typeof value === 'string') {
+    return value.replace(/\b100(?=\s+(?:[\w-]+\s+){0,12}(?:mcqs?|questions?)\b)/gi, String(count));
+  }
+  if (Array.isArray(value)) return value.map(item => withActualQuestionCount(item, count));
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, withActualQuestionCount(item, count)]));
+  }
+  return value;
+}
+
 export function validateDraft(draft, published = []) {
   const { mcqs, duplicates } = uniqueMcqs(draft?.mcqs || []);
 
@@ -194,13 +208,14 @@ export function validateDraft(draft, published = []) {
   // Keep only a usable article: missing metadata or overlap with an existing
   // published set requires a new scope rather than patching an unsuitable one.
   assertNoRepeatedSet(mcqs.map(mcq => mcq.question), published);
-  if (mcqs.length !== 100) {
+  if (mcqs.length < MIN_MCQ_COUNT || mcqs.length > TARGET_MCQ_COUNT) {
     const repeated = duplicates.length ? ` Repeated question examples: ${JSON.stringify(duplicates.slice(0, 3))}.` : '';
-    const error = new Error(`AI draft must contain exactly 100 unique valid MCQs; received ${mcqs.length}. Replace invalid or repeated questions, including punctuation-only variants.${repeated}`);
-    if (mcqs.length >= 90 && mcqs.length < 100) error.repairDraft = validated;
+    const error = new Error(`AI draft must contain 99 or 100 unique valid MCQs; received ${mcqs.length}. Replace invalid or repeated questions, including punctuation-only variants.${repeated}`);
+    if (mcqs.length >= 90 && mcqs.length < MIN_MCQ_COUNT) error.repairDraft = validated;
     throw error;
   }
-  return validated;
+  const { mcqs: _questions, ...metadata } = validated;
+  return { ...withActualQuestionCount(metadata, mcqs.length), mcqs };
 }
 
 function rawMcqs(mcqs) {
@@ -266,9 +281,9 @@ export async function generateAiDraft(date, published, { fetchImpl = fetch } = {
     '- Do not call content verified, official, most repeated, high-frequency, guaranteed, or based on past papers without supplied evidence. A publication date is not evidence that facts or a syllabus were checked.',
     '- Include focus topics that match the actual questions. Explain the specific skills practised in the introduction, rather than filling it with generic exam-success or daily-practice claims.',
     '- No official syllabus, recruitment notice, past paper, or live source has been supplied. Do not invent exam sections, weightings, eligibility rules, deadlines, citations, URLs, or claims of source verification. Describe the scope as independent practice and direct readers to the latest official notice when test arrangements may vary.',
-    '- Generate exactly 100 original, high-quality MCQs with four options each.',
+    '- Aim for 100 original, high-quality MCQs with four options each. A complete set of 99 valid unique MCQs is also acceptable; never pad it with a duplicate or invalid question.',
     '- Do not put question numbers in question strings; the article renderer adds numbering.',
-    '- Before returning, count the MCQs and confirm there are exactly 100 unique questions after removing duplicates.',
+    '- Before returning, count the MCQs and confirm there are 99 or 100 unique questions after removing duplicates. Make article count claims match the actual number.',
     '- If any question is duplicated, invalid, or has an answer that is not exactly one of the four options, replace it before returning JSON.',
     '- Correct answer must be one of the options exactly.',
     '- Each question must be unambiguous and have exactly one defensible correct option. State necessary units, assumptions, jurisdiction, or context. Use four distinct, plausible options; avoid overlapping answers, all/none-of-the-above, and clueing the answer through wording.',
@@ -285,11 +300,11 @@ export async function generateAiDraft(date, published, { fetchImpl = fetch } = {
   let lastValidationError = null;
   let repairDraft = null;
   for (let attempt = 1; attempt <= 3; attempt += 1) {
-    const missing = repairDraft ? 100 - repairDraft.mcqs.length : 0;
+    const missing = repairDraft ? TARGET_MCQ_COUNT - repairDraft.mcqs.length : 0;
     const retryInstruction = lastValidationError
       ? [
           `Previous attempt failed validation: ${lastValidationError.message}`,
-          'Regenerate the full article package now. Return exactly 100 unique valid MCQs. Replace rejected questions; do not just change punctuation, capitalization, or spacing. Avoid the reported published question set, and choose a distinct learning scope if necessary. Every correctAnswer must exactly match one option.'
+          'Regenerate the full article package now. Aim for 100 unique valid MCQs; a complete set of 99 is acceptable. Replace rejected questions; do not just change punctuation, capitalization, or spacing. Avoid the reported published question set, and choose a distinct learning scope if necessary. Every correctAnswer must exactly match one option.'
         ].join('\n')
       : '';
     const prompt = repairDraft ? [
@@ -376,8 +391,8 @@ export async function generateAiDraft(date, published, { fetchImpl = fetch } = {
                 },
                 mcqs: {
                   type: 'array',
-                  minItems: 100,
-                  maxItems: 100,
+                  minItems: MIN_MCQ_COUNT,
+                  maxItems: TARGET_MCQ_COUNT,
                   items: MCQ_SCHEMA
                 }
               }
@@ -445,7 +460,8 @@ function tableForSet(mcqs, offset, heading) {
   ].join('\n');
 }
 
-function buildArticle(draft, date) {
+export function buildArticle(draft, date) {
+  const count = draft.mcqs.length;
   const prettyDate = new Date(`${date}T00:00:00Z`).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
@@ -483,13 +499,13 @@ function buildArticle(draft, date) {
     '| Set 2 | 21-40 | Foundational test concepts |',
     '| Set 3 | 41-60 | Mixed exam-style practice |',
     '| Set 4 | 61-80 | Fast recall and elimination practice |',
-    '| Set 5 | 81-100 | Final revision and score-building |',
+    `| Set 5 | 81-${count} | Final revision and score-building |`,
     '',
     tableForSet(draft.mcqs, 0, `1-20. ${draft.topicName} MCQs`),
     tableForSet(draft.mcqs, 20, `21-40. ${draft.topicName} MCQs`),
     tableForSet(draft.mcqs, 40, `41-60. ${draft.topicName} MCQs`),
     tableForSet(draft.mcqs, 60, `61-80. ${draft.topicName} MCQs`),
-    tableForSet(draft.mcqs, 80, `81-100. ${draft.topicName} MCQs`),
+    tableForSet(draft.mcqs, 80, `81-${count}. ${draft.topicName} MCQs`),
     `## How to revise this ${draft.topicName} set`,
     '',
     revisionList,
@@ -500,7 +516,7 @@ function buildArticle(draft, date) {
     '',
     '## Final Takeaway',
     '',
-    `Consistent daily MCQ practice is one of the simplest ways to improve recall, speed, and exam confidence. Bookmark this page, complete the 100 ${draft.topicName} MCQs, and continue your preparation on [McqsBase](https://www.mcqsbase.com/).`,
+    `Consistent daily MCQ practice is one of the simplest ways to improve recall, speed, and exam confidence. Bookmark this page, complete the ${count} ${draft.topicName} MCQs, and continue your preparation on [McqsBase](https://www.mcqsbase.com/).`,
     ''
   ].join('\n');
 
@@ -562,7 +578,7 @@ async function main() {
     readTime: estimateReadTime(article.body)
   });
 
-  console.log(`${inserted ? 'Created' : 'Already registered'} ${slug} from AI topic "${draft.topicName}" with 100 MCQs.`);
+  console.log(`${inserted ? 'Created' : 'Already registered'} ${slug} from AI topic "${draft.topicName}" with ${draft.mcqs.length} MCQs.`);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
