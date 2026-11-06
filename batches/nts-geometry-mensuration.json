@@ -2165,24 +2165,52 @@
       "scheduledAt": "2026-11-06T15:42:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "accepted",
+          "status": "QUEUE",
           "attemptedAt": "2026-11-06T08:21:52.279391+00:00",
-          "postId": "cmw4phfkw02k0roivzntqne7y"
+          "postId": "cmw4phfkw02k0roivzntqne7y",
+          "url": null,
+          "providerUrl": null,
+          "providerReleaseId": null,
+          "providerStatus": "QUEUE",
+          "publicUrlVerified": false,
+          "verification": "provider-status-only",
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
         },
         "instagram": {
-          "status": "accepted",
+          "status": "QUEUE",
           "attemptedAt": "2026-11-06T08:21:52.279410+00:00",
-          "postId": "cmw4phfoc02k2roiv3121gq3k"
+          "postId": "cmw4phfoc02k2roiv3121gq3k",
+          "url": null,
+          "providerUrl": null,
+          "providerReleaseId": null,
+          "providerStatus": "QUEUE",
+          "publicUrlVerified": false,
+          "verification": "provider-status-only",
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
         },
         "tiktok": {
-          "status": "accepted",
+          "status": "QUEUE",
           "attemptedAt": "2026-11-06T08:21:52.279412+00:00",
-          "postId": "cmw4phfq202k3roivcdijx9op"
+          "postId": "cmw4phfq202k3roivcdijx9op",
+          "url": null,
+          "providerUrl": null,
+          "providerReleaseId": null,
+          "providerStatus": "QUEUE",
+          "publicUrlVerified": false,
+          "verification": "provider-status-only",
+          "integrationId": "cmvwbcule0222ro9dhocbic4w"
         },
         "youtube": {
-          "status": "accepted",
+          "status": "QUEUE",
           "attemptedAt": "2026-11-06T08:21:52.279414+00:00",
-          "postId": "cmw4phfrg02k4roivtkvpf7ui"
+          "postId": "cmw4phfrg02k4roivtkvpf7ui",
+          "url": null,
+          "providerUrl": null,
+          "providerReleaseId": null,
+          "providerStatus": "QUEUE",
+          "publicUrlVerified": false,
+          "verification": "provider-status-only",
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
         }
       }
     },
