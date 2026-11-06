@@ -3089,7 +3089,24 @@
         }
       },
       "scheduledAt": "2026-11-06T19:52:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-06T08:22:08.612616+00:00"
+        },
+        "instagram": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-06T08:22:08.612636+00:00"
+        },
+        "tiktok": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-06T08:22:08.612638+00:00"
+        },
+        "youtube": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-06T08:22:08.612640+00:00"
+        }
+      }
     },
     {
       "part": 5,
