@@ -1568,6 +1568,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 2,
+      "directory": "part-02",
+      "sourceQuestionNumbers": [
+        36,
+        65,
+        51
+      ],
+      "count": 3,
+      "durationSeconds": 89,
+      "sha256": "0097ed5dc98655fe3f9f9d22bdad01fb32d70fe3717eb3031cc0fff0843bf762",
+      "manifest": {
+        "title": "100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+        "sourceTitle": "100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-06T08:16:02.011750+00:00",
+        "sourceContentHash": "f6c7863af4d41f41c1c647f5fcdd4ec28e4fc47c7259e72bba410a5c40c858a2",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7595549784,
+          "sha": "2437e6632a815a53bca097c4082ebd52c9ef2aaf",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-06T08:16:02.011750+00:00",
+          "url": "https://mcqs-base-qhby0v7bv-as-projects-10921176.vercel.app",
+          "publisherRunId": 42185754429
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 89,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A cylinder has radius 4 cm and height 7 cm. What is its curved surface area?",
+            "choices": [
+              "28π cm²",
+              "56π cm²",
+              "88π cm²",
+              "112π cm²"
+            ],
+            "correctIndex": 1,
+            "key": "66a2e93d21289360564dce75127769065dd9a7b9b72725a434ce3a517eefc9d4",
+            "sourceNumber": 36
+          },
+          {
+            "question": "On a scale drawing, 1 cm represents 2 m. A wall measures 6.5 cm on the drawing. What is its actual length?",
+            "choices": [
+              "3.25 m",
+              "8.5 m",
+              "13 m",
+              "26 m"
+            ],
+            "correctIndex": 2,
+            "key": "1b80fcdc36d62abfae7f7eb7b6cd71f5e94c79de9117b181e6d21e42d6b65aab",
+            "sourceNumber": 65
+          },
+          {
+            "question": "What is the area of the triangle with vertices (0, 0), (6, 0), and (0, 4)?",
+            "choices": [
+              "10 square units",
+              "12 square units",
+              "24 square units",
+              "48 square units"
+            ],
+            "correctIndex": 1,
+            "key": "fe01e32028cc2285057dae93e73564b9386e467df8b699970d7cb7ef572f5f64",
+            "sourceNumber": 51
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 22,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 25,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 30,
+            "duration": 21,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 51,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 52,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 53,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 54,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 58,
+            "duration": 19,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 77,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 78,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 79,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 80,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 84,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 2,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            36,
+            65,
+            51
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nts-geometry-mensuration-part-02-0097ed5dc98655fe.mp4",
+        "videoSha256": "0097ed5dc98655fe3f9f9d22bdad01fb32d70fe3717eb3031cc0fff0843bf762",
+        "assetId": 716424809
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 2/5 | Q36, 65, 51 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 36, 65, 51\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 2/5 | Q36, 65, 51 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 36, 65, 51\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 2/5 | Q36, 65, 51 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 36, 65, 51\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 2/5 | Q36, 65, 51 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 36, 65, 51\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
