@@ -2411,6 +2411,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 5,
+      "directory": "part-05",
+      "sourceQuestionNumbers": [
+        87,
+        14,
+        79
+      ],
+      "count": 3,
+      "durationSeconds": 84,
+      "sha256": "e98ab5e120bf40b04bbbc05f41f4930fdcd646fb52a74897b0365c043d9cdf18",
+      "manifest": {
+        "title": "100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+        "sourceTitle": "100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-06T08:16:02.011750+00:00",
+        "sourceContentHash": "f6c7863af4d41f41c1c647f5fcdd4ec28e4fc47c7259e72bba410a5c40c858a2",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7595549784,
+          "sha": "2437e6632a815a53bca097c4082ebd52c9ef2aaf",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-06T08:16:02.011750+00:00",
+          "url": "https://mcqs-base-qhby0v7bv-as-projects-10921176.vercel.app",
+          "publisherRunId": 42185754429
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 84,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A cube has side length 2.5 cm. What is its volume?",
+            "choices": [
+              "6.25 cm³",
+              "12.5 cm³",
+              "15.625 cm³",
+              "25 cm³"
+            ],
+            "correctIndex": 2,
+            "key": "1fe9e959fb96c41790459b7772f5d8b7eda8b48872e6d90bf544a7746bbe2cb9",
+            "sourceNumber": 87
+          },
+          {
+            "question": "A parallelogram has adjacent side lengths of 9 cm and 5 cm. What is its perimeter?",
+            "choices": [
+              "14 cm",
+              "28 cm",
+              "45 cm",
+              "90 cm"
+            ],
+            "correctIndex": 1,
+            "key": "6af2d53a1e4ee75f0c09b0d5a875f3797f648d1d3d21dc4826bbac95cc203a60",
+            "sourceNumber": 14
+          },
+          {
+            "question": "A regular hexagon has side length 4 cm. What is its perimeter?",
+            "choices": [
+              "16 cm",
+              "20 cm",
+              "24 cm",
+              "32 cm"
+            ],
+            "correctIndex": 2,
+            "key": "d5651de36062bddb7eb73607c3fd3d2486dac2ef9fb6bd08ccc7c81e054566f6",
+            "sourceNumber": 79
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 21,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 21,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 24,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 30,
+            "duration": 18,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 48,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 49,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 50,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 51,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 55,
+            "duration": 17,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 72,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 73,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 74,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 75,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 79,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 5,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            87,
+            14,
+            79
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nts-geometry-mensuration-part-05-e98ab5e120bf40b0.mp4",
+        "videoSha256": "e98ab5e120bf40b04bbbc05f41f4930fdcd646fb52a74897b0365c043d9cdf18",
+        "assetId": 716432174
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 5/5 | Q87, 14, 79 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 87, 14, 79\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 5/5 | Q87, 14, 79 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 87, 14, 79\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 5/5 | Q87, 14, 79 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 87, 14, 79\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 5/5 | Q87, 14, 79 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 87, 14, 79\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
