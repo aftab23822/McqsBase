@@ -84,7 +84,9 @@ test('drops invalid questions while accepting 99 and rejects counts outside 99-1
   const long = makeDraft();
   long.mcqs.push(makeDraft('Extra').mcqs[0]);
   assert.throws(() => validateDraft(long), /99 or 100.*received 101/);
-  const complete = validateDraft(makeDraft());
+  const completeDraft = makeDraft();
+  completeDraft.title = '99 Number Reasoning MCQs';
+  const complete = validateDraft(completeDraft);
   assert.equal(complete.title, '100 Number Reasoning MCQs');
   assert.match(buildArticle(complete, '2026-11-06').body, /81-100/);
 });

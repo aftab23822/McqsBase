@@ -162,7 +162,7 @@ function uniqueMcqs(items) {
 function withActualQuestionCount(value, count) {
   // Update article count claims only; never rewrite numbers inside an MCQ.
   if (typeof value === 'string') {
-    return value.replace(/\b100(?=\s+(?:[\w-]+\s+){0,12}(?:mcqs?|questions?)\b)/gi, String(count));
+    return value.replace(/\b(?:99|100)(?=\s+(?:[\w-]+\s+){0,12}(?:mcqs?|questions?)\b)/gi, String(count));
   }
   if (Array.isArray(value)) return value.map(item => withActualQuestionCount(item, count));
   if (value && typeof value === 'object') {
