@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nts-geometry-mensuration": {
+    title: "100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+    excerpt:
+      "Practise 100 original aptitude-style questions on plane geometry, circles, solid measurement, coordinates, and scale, with a worked explanation for every answer.",
+    category: "Subject Guide",
+    date: "2026-11-06",
+    readTime: "28 min",
+    content: null,
+    body: readImportedBlogBody("nts-geometry-mensuration")
+  },
   "nts-probability-counting-practice": {
     title: "100 NTS Probability and Counting MCQs with Explanations",
     excerpt:
