@@ -2726,7 +2726,11 @@
       },
       "uploadIntent": {
         "filename": "nts-geometry-mensuration-part-05-e98ab5e120bf40b0.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "44b02901-8127-4d6d-a59c-99adf1aaf93f",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/DU1nxKnWjh.mp4"
       }
     }
   ],
