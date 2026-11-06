@@ -1707,8 +1707,9 @@
           "postId": "cmw4ph9fv02jvroivl2inh4la"
         },
         "instagram": {
-          "status": "uncertain",
-          "attemptedAt": "2026-11-06T08:21:43.384981+00:00"
+          "status": "accepted",
+          "attemptedAt": "2026-11-06T08:21:43.384981+00:00",
+          "postId": "cmw4ph9i002jxroivcegj0dgg"
         },
         "tiktok": {
           "status": "uncertain",
