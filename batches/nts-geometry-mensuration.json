@@ -3552,7 +3552,24 @@
         }
       },
       "scheduledAt": "2026-11-06T21:57:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-06T08:22:16.596999+00:00"
+        },
+        "instagram": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-06T08:22:16.597020+00:00"
+        },
+        "tiktok": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-06T08:22:16.597023+00:00"
+        },
+        "youtube": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-06T08:22:16.597025+00:00"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3,
