@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "nts-geometry-mensuration",
+  "createdAt": "2026-11-06T08:16:02.215252+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nts-geometry-mensuration",
+    "title": "100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+    "url": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7595549784,
+      "sha": "2437e6632a815a53bca097c4082ebd52c9ef2aaf",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-06T08:16:02.011750+00:00",
+      "url": "https://mcqs-base-qhby0v7bv-as-projects-10921176.vercel.app",
+      "publisherRunId": 42185754429
+    },
+    "fetchedAt": "2026-11-06T08:16:02.011750+00:00",
+    "contentHash": "f6c7863af4d41f41c1c647f5fcdd4ec28e4fc47c7259e72bba410a5c40c858a2",
+    "questions": [
+      {
+        "question": "A rectangle is 9 cm long and 4 cm wide. What is its perimeter?",
+        "choices": [
+          "13 cm",
+          "26 cm",
+          "36 cm",
+          "72 cm"
+        ],
+        "key": "f495d7d7521c8c4af230fbd3b269da3349a37d8a1518ade3da6170cc2a94a6c2",
+        "sourceNumber": 1,
+        "correctIndex": 1
+      },
+      {
+        "question": "A rectangle measures 12 m by 7 m. What is its area?",
+        "choices": [
+          "19 m²",
+          "38 m²",
+          "84 m²",
+          "168 m²"
+        ],
+        "key": "611eca36192b20fbb651b361ee56c6c15ec6405aa5d1b6446256590a4cc2e4e1",
+        "sourceNumber": 2,
+        "correctIndex": 2
+      },
+      {
+        "question": "A square has side length 8 cm. What is its perimeter?",
+        "choices": [
+          "16 cm",
+          "24 cm",
+          "32 cm",
+          "64 cm"
+        ],
+        "key": "8c3a01971e70c5ce1f275db80cf6165639f179649229a8e6ffe80931fbfcca1a",
+        "sourceNumber": 3,
+        "correctIndex": 2
+      },
+      {
+        "question": "A square has side length 6 m. What is its area?",
+        "choices": [
+          "12 m²",
+          "24 m²",
+          "36 m²",
+          "48 m²"
+        ],
+        "key": "e78e2589651662670c4ffcc1407de40edb704fdc61a77f53dc798296d31db83f",
+        "sourceNumber": 4,
+        "correctIndex": 2
+      },
+      {
+        "question": "Two angles of a triangle measure 48° and 67°. What is the third angle?",
+        "choices": [
+          "55°",
+          "65°",
+          "75°",
+          "115°"
+        ],
+        "key": "0a522c32e11c2a2da38b5102d12e4935d803136394993bde1aeb9d56b6262bbc",
+        "sourceNumber": 5,
+        "correctIndex": 1
+      },
+      {
+        "question": "An isosceles triangle has a vertex angle of 40°. What is the measure of each base angle?",
+        "choices": [
+          "40°",
+          "60°",
+          "70°",
+          "140°"
+        ],
+        "key": "0b11faeb06b387a31d21e45980704e129ac6d249ef208f0ddb87b47eedfd68a9",
+        "sourceNumber": 6,
+        "correctIndex": 2
+      },
+      {
+        "question": "Two opposite interior angles of a triangle are 52° and 63°. What is the exterior angle at the third vertex?",
+        "choices": [
+          "105°",
+          "115°",
+          "125°",
+          "127°"
+        ],
+        "key": "80555d06a3e396f9a8bfa251afb5a67d2f206222e36f2c658cd57ae687cca084",
+        "sourceNumber": 7,
+        "correctIndex": 1
+      },
+      {
+        "question": "A right triangle has legs of 6 cm and 8 cm. What is the hypotenuse?",
+        "choices": [
+          "9 cm",
+          "10 cm",
+          "12 cm",
+          "14 cm"
+        ],
+        "key": "f21087d908cf6c8f4e6c47c74e0280c5d97eab0665c75ca05f5265d6b4133b74",
+        "sourceNumber": 8,
+        "correctIndex": 1
+      },
+      {
+        "question": "A triangle has side lengths 7 cm, 24 cm, and 25 cm. What is its perimeter?",
+        "choices": [
+          "49 cm",
+          "52 cm",
+          "56 cm",
+          "60 cm"
+        ],
+        "key": "697cc8d1a730043a1a5f57408c7931c029f6072fd20163f9d6f1f7fe30bc9265",
+        "sourceNumber": 9,
+        "correctIndex": 2
+      },
+      {
+        "question": "A triangle has base 12 cm and perpendicular height 5 cm. What is its area?",
+        "choices": [
+          "17 cm²",
+          "30 cm²",
+          "60 cm²",
+          "120 cm²"
+        ],
+        "key": "45684963b6fcc993c547136d17317293621b0b574db2a3ae37971808540180ee",
+        "sourceNumber": 10,
+        "correctIndex": 1
+      },
+      {
+        "question": "A parallelogram has base 11 cm and perpendicular height 6 cm. What is its area?",
+        "choices": [
+          "17 cm²",
+          "34 cm²",
+          "66 cm²",
+          "132 cm²"
+        ],
+        "key": "e0ee7bbec65277131b1188154025deddf17e1ba596a76d7931daead75723bfee",
+        "sourceNumber": 11,
+        "correctIndex": 2
+      },
+      {
+        "question": "A rhombus has diagonals of 10 cm and 16 cm. What is its area?",
+        "choices": [
+          "26 cm²",
+          "80 cm²",
+          "160 cm²",
+          "320 cm²"
+        ],
+        "key": "f8892ff38be4f7914b6d653437433dbaf8ecb7a1f9da99ba6205964217937a8b",
+        "sourceNumber": 12,
+        "correctIndex": 1
+      },
+      {
+        "question": "A trapezoid has parallel sides of 8 cm and 14 cm, and a perpendicular height of 5 cm. What is its area?",
+        "choices": [
+          "55 cm²",
+          "70 cm²",
+          "110 cm²",
+          "140 cm²"
+        ],
+        "key": "c13a4370a702240830d7bd1f4942a42fb12c74f06673c622ef1fb08831b91bb5",
+        "sourceNumber": 13,
+        "correctIndex": 0
+      },
+      {
+        "question": "A parallelogram has adjacent side lengths of 9 cm and 5 cm. What is its perimeter?",
+        "choices": [
+          "14 cm",
+          "28 cm",
+          "45 cm",
+          "90 cm"
+        ],
+        "key": "6af2d53a1e4ee75f0c09b0d5a875f3797f648d1d3d21dc4826bbac95cc203a60",
+        "sourceNumber": 14,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the sum of the interior angles of a nonagon?",
+        "choices": [
+          "1,080°",
+          "1,260°",
+          "1,440°",
+          "1,620°"
+        ],
+        "key": "397dfe8d99d6143475770323a3cd4dd24e6e5003cff4a147cf1da5dce3ab4790",
+        "sourceNumber": 15,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is each interior angle of a regular hexagon?",
+        "choices": [
+          "90°",
+          "108°",
+          "120°",
+          "135°"
+        ],
+        "key": "964cac1cc6e9a2036f959434c62d479f3319736e490c26030159a17b22417454",
+        "sourceNumber": 16,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many diagonals does a pentagon have?",
+        "choices": [
+          "3",
+          "5",
+          "7",
+          "10"
+        ],
+        "key": "f64dc81ef882e89150d201a2fc2ba43c621710e849e8f960a37c716250a800b5",
+        "sourceNumber": 17,
+        "correctIndex": 1
+      },
+      {
+        "question": "An angle is 37°. What is its complement?",
+        "choices": [
+          "43°",
+          "53°",
+          "143°",
+          "153°"
+        ],
+        "key": "9729e5e4b076b63afbdcc1521313de41b83749b72bfe7ac0b0f459f2ffa1952e",
+        "sourceNumber": 18,
+        "correctIndex": 1
+      },
+      {
+        "question": "An angle is 128°. What is its supplement?",
+        "choices": [
+          "42°",
+          "52°",
+          "62°",
+          "232°"
+        ],
+        "key": "c91849039f38e94e93782396e2bc941cf96f7a876b421847588e3477959ccf92",
+        "sourceNumber": 19,
+        "correctIndex": 1
+      },
+      {
+        "question": "One of a pair of vertically opposite angles is 68°. What is the other angle?",
+        "choices": [
+          "22°",
+          "68°",
+          "112°",
+          "292°"
+        ],
+        "key": "c7977a1831f3f98d574d6f06efd38aadf7ede4c46cb91408048518782a478b95",
+        "sourceNumber": 20,
+        "correctIndex": 1
+      },
+      {
+        "question": "Using π = 22/7, what is the circumference of a circle with radius 7 cm?",
+        "choices": [
+          "22 cm",
+          "44 cm",
+          "77 cm",
+          "154 cm"
+        ],
+        "key": "2f7a6d586be7b313376e9992561454717486260ac1cf957810115414d5810be7",
+        "sourceNumber": 21,
+        "correctIndex": 1
+      },
+      {
+        "question": "Using π = 22/7, what is the area of a circle with radius 7 cm?",
+        "choices": [
+          "44 cm²",
+          "77 cm²",
+          "154 cm²",
+          "308 cm²"
+        ],
+        "key": "0efe533416c60cc6152fcf0aa327a5bf1dbd7c3170e7caa711ca84bf6da34a8a",
+        "sourceNumber": 22,
+        "correctIndex": 2
+      },
+      {
+        "question": "A circle has circumference 31.4 cm. Using π = 3.14, what is its diameter?",
+        "choices": [
+          "5 cm",
+          "10 cm",
+          "15.7 cm",
+          "31.4 cm"
+        ],
+        "key": "e2ee20b47bab9fbe0ea8feb5cc86b352b79a25844ef3354435b52ecaf854ca01",
+        "sourceNumber": 23,
+        "correctIndex": 1
+      },
+      {
+        "question": "A semicircular garden has radius 7 m. Using π = 22/7, what is the perimeter including its straight diameter?",
+        "choices": [
+          "22 m",
+          "36 m",
+          "44 m",
+          "58 m"
+        ],
+        "key": "060c807fc002b58ca7de2b2ff896c62bd60116062471e08113d29d1175e9b031",
+        "sourceNumber": 24,
+        "correctIndex": 1
+      },
+      {
+        "question": "A sector has radius 4 cm and central angle 90°. What is its area?",
+        "choices": [
+          "2π cm²",
+          "4π cm²",
+          "8π cm²",
+          "16π cm²"
+        ],
+        "key": "4183704297d41b0271b47cf9185fb3563fc470ac3b2e7fbae2d0bf64be28b3db",
+        "sourceNumber": 25,
+        "correctIndex": 1
+      },
+      {
+        "question": "A circle has radius 6 cm. What is the length of an arc subtended by a 60° central angle?",
+        "choices": [
+          "π cm",
+          "2π cm",
+          "4π cm",
+          "6π cm"
+        ],
+        "key": "fc72988fc078fd256b2bceafae370d07c8105d3f1e1a01ef5e6d74ebedc10b74",
+        "sourceNumber": 26,
+        "correctIndex": 1
+      },
+      {
+        "question": "A circular ring has outer radius 5 cm and inner radius 3 cm. What is its area?",
+        "choices": [
+          "8π cm²",
+          "16π cm²",
+          "25π cm²",
+          "34π cm²"
+        ],
+        "key": "552c2097770e6f855fcedcc22497f2ee1a40fd8de42ac4b5400b83ba6a58cef5",
+        "sourceNumber": 27,
+        "correctIndex": 1
+      },
+      {
+        "question": "A circle has radius 10 cm. What is the length of a 90° arc?",
+        "choices": [
+          "5π cm",
+          "10π cm",
+          "15π cm",
+          "20π cm"
+        ],
+        "key": "c28478d2771e3fb43a2591b2ed0e2025bdeb34c72082c5a1451e20e228fe9615",
+        "sourceNumber": 28,
+        "correctIndex": 0
+      },
+      {
+        "question": "The diameter of a circle is 18 cm. What is its radius?",
+        "choices": [
+          "6 cm",
+          "9 cm",
+          "18 cm",
+          "36 cm"
+        ],
+        "key": "df1ced41836506c13bb784693246fe1cdfe5d9a68589ed82b387aae376354e42",
+        "sourceNumber": 29,
+        "correctIndex": 1
+      },
+      {
+        "question": "A circle has radius 3 cm. What is its area?",
+        "choices": [
+          "3π cm²",
+          "6π cm²",
+          "9π cm²",
+          "12π cm²"
+        ],
+        "key": "9fd4b3394449488b6c8e7b71e05d3d3ff8a48d31bd3c7c45a902f18ed5d20976",
+        "sourceNumber": 30,
+        "correctIndex": 2
+      },
+      {
+        "question": "A cube has side length 4 cm. What is its volume?",
+        "choices": [
+          "16 cm³",
+          "48 cm³",
+          "64 cm³",
+          "96 cm³"
+        ],
+        "key": "7202234e0cad0f913d02d50e51a25c8a7fe0d384cd4e32c09c072cd5118b2b1a",
+        "sourceNumber": 31,
+        "correctIndex": 2
+      },
+      {
+        "question": "A cube has side length 3 m. What is its total surface area?",
+        "choices": [
+          "9 m²",
+          "18 m²",
+          "36 m²",
+          "54 m²"
+        ],
+        "key": "b4dc819df28c15ef1580fe5ac3819dc2f48267dc74a2c90359387a6df479104b",
+        "sourceNumber": 32,
+        "correctIndex": 3
+      },
+      {
+        "question": "A cuboid measures 5 cm by 4 cm by 3 cm. What is its volume?",
+        "choices": [
+          "12 cm³",
+          "47 cm³",
+          "60 cm³",
+          "120 cm³"
+        ],
+        "key": "f0b24f779ee9700db5ad2f0915968eea95a3cb4f09ddc6b07108b6f947db71d8",
+        "sourceNumber": 33,
+        "correctIndex": 2
+      },
+      {
+        "question": "A cuboid has length 4 cm, width 3 cm, and height 2 cm. What is its total surface area?",
+        "choices": [
+          "24 cm²",
+          "36 cm²",
+          "52 cm²",
+          "72 cm²"
+        ],
+        "key": "440256e8ff225143f3a13133c6ee67fb31ebaa954a85898a4c7004ef6efcb0d6",
+        "sourceNumber": 34,
+        "correctIndex": 2
+      },
+      {
+        "question": "A cylinder has radius 3 cm and height 5 cm. What is its volume?",
+        "choices": [
+          "15π cm³",
+          "30π cm³",
+          "45π cm³",
+          "90π cm³"
+        ],
+        "key": "f08ef0902e540eaa161a065c740f9c8d04c88e6423402c98b932de6444d63d2c",
+        "sourceNumber": 35,
+        "correctIndex": 2
+      },
+      {
+        "question": "A cylinder has radius 4 cm and height 7 cm. What is its curved surface area?",
+        "choices": [
+          "28π cm²",
+          "56π cm²",
+          "88π cm²",
+          "112π cm²"
+        ],
+        "key": "66a2e93d21289360564dce75127769065dd9a7b9b72725a434ce3a517eefc9d4",
+        "sourceNumber": 36,
+        "correctIndex": 1
+      },
+      {
+        "question": "A closed cylinder has radius 3 cm and height 4 cm. What is its total surface area?",
+        "choices": [
+          "24π cm²",
+          "42π cm²",
+          "48π cm²",
+          "72π cm²"
+        ],
+        "key": "80b2cba2b35758485737ec9944e977267010fd0be35c9b3e3aa6d4813d47f5b7",
+        "sourceNumber": 37,
+        "correctIndex": 1
+      },
+      {
+        "question": "A cone has radius 3 cm and perpendicular height 8 cm. What is its volume?",
+        "choices": [
+          "8π cm³",
+          "24π cm³",
+          "72π cm³",
+          "216π cm³"
+        ],
+        "key": "913150ca069627ac887b1d9c6b039205440479f12eccbc8039420de09bebef91",
+        "sourceNumber": 38,
+        "correctIndex": 1
+      },
+      {
+        "question": "A cone has radius 5 cm and slant height 13 cm. What is its curved surface area?",
+        "choices": [
+          "18π cm²",
+          "50π cm²",
+          "65π cm²",
+          "90π cm²"
+        ],
+        "key": "0134e5aebea14e79aa648010acc376d3fef2630b2683fc99f7de3a7044be3b2a",
+        "sourceNumber": 39,
+        "correctIndex": 2
+      },
+      {
+        "question": "A sphere has radius 3 cm. What is its volume?",
+        "choices": [
+          "9π cm³",
+          "18π cm³",
+          "36π cm³",
+          "108π cm³"
+        ],
+        "key": "bee6a912b956fdf45dcefa2a2f327b5439a058aaf84e2601341ef5b6b5ce5edc",
+        "sourceNumber": 40,
+        "correctIndex": 2
+      },
+      {
+        "question": "A sphere has radius 4 cm. What is its surface area?",
+        "choices": [
+          "16π cm²",
+          "32π cm²",
+          "64π cm²",
+          "256π cm²"
+        ],
+        "key": "0cfb9ebfc8c8fb39c4480ca5fd565d7c32b235e10446cacf53c3cb9f5e1d6803",
+        "sourceNumber": 41,
+        "correctIndex": 2
+      },
+      {
+        "question": "A prism has a triangular cross-section with base 6 cm and perpendicular height 4 cm. The prism is 10 cm long. What is its volume?",
+        "choices": [
+          "60 cm³",
+          "120 cm³",
+          "240 cm³",
+          "600 cm³"
+        ],
+        "key": "1fc049df53021832c8be46a5ad4420bee64840bec93bf6914ecc749a02aa72bd",
+        "sourceNumber": 42,
+        "correctIndex": 1
+      },
+      {
+        "question": "A square-based pyramid has base side 6 cm and perpendicular height 9 cm. What is its volume?",
+        "choices": [
+          "54 cm³",
+          "108 cm³",
+          "162 cm³",
+          "324 cm³"
+        ],
+        "key": "38736cbe678d7e64745a8128eefc7f0f46848aa34083b7afc4668b404874d27e",
+        "sourceNumber": 43,
+        "correctIndex": 1
+      },
+      {
+        "question": "A cube has volume 125 cm³. What is its side length?",
+        "choices": [
+          "5 cm",
+          "12.5 cm",
+          "25 cm",
+          "625 cm"
+        ],
+        "key": "61473c55dfe170a7c7aa467374470f3e12582d4446bf7559fdae68ccce67ec1d",
+        "sourceNumber": 44,
+        "correctIndex": 0
+      },
+      {
+        "question": "A cuboid has volume 72 cm³, length 6 cm, and width 4 cm. What is its height?",
+        "choices": [
+          "2 cm",
+          "3 cm",
+          "4 cm",
+          "6 cm"
+        ],
+        "key": "85496b62fd2d965c6086e13c7dc43d1df9025b46769402e51a56b219e1cb9f9a",
+        "sourceNumber": 45,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the distance between the points (1, 2) and (4, 6)?",
+        "choices": [
+          "3 units",
+          "4 units",
+          "5 units",
+          "7 units"
+        ],
+        "key": "875b6ab8a1d7e2aeece46e9fd969ebb7c2ff1796787b71f019c916037ac41497",
+        "sourceNumber": 46,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the midpoint of the line segment joining (2, 3) and (8, 7)?",
+        "choices": [
+          "(4, 5)",
+          "(5, 5)",
+          "(5, 6)",
+          "(10, 10)"
+        ],
+        "key": "3cadc5a4c7400e095bc09e108a6543168cc1e746375f3010ef14568076f259d1",
+        "sourceNumber": 47,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the slope of the line through (1, 2) and (5, 10)?",
+        "choices": [
+          "1",
+          "2",
+          "4",
+          "8"
+        ],
+        "key": "8710277154cc4bfddc5bfca2ae42b879ed03a3fded9050d88e810844582c770f",
+        "sourceNumber": 48,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the slope of a horizontal line?",
+        "choices": [
+          "−1",
+          "0",
+          "1",
+          "Undefined"
+        ],
+        "key": "42783d854370b1b4710617533262226801ad42358983541824cd855fc4455a41",
+        "sourceNumber": 49,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the y-intercept of the line y = 3x − 4?",
+        "choices": [
+          "−4",
+          "−3",
+          "3",
+          "4"
+        ],
+        "key": "3cb02cc9522d6c082b2910c1b5ab61282b9695a78b85a2da4e8d6f2a4ab6a9d8",
+        "sourceNumber": 50,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the area of the triangle with vertices (0, 0), (6, 0), and (0, 4)?",
+        "choices": [
+          "10 square units",
+          "12 square units",
+          "24 square units",
+          "48 square units"
+        ],
+        "key": "fe01e32028cc2285057dae93e73564b9386e467df8b699970d7cb7ef572f5f64",
+        "sourceNumber": 51,
+        "correctIndex": 1
+      },
+      {
+        "question": "A rectangle has side lengths 5 cm and 12 cm. What is the length of its diagonal?",
+        "choices": [
+          "13 cm",
+          "15 cm",
+          "17 cm",
+          "60 cm"
+        ],
+        "key": "73176f9d7c303e76375ee42ebcb77034027a501443b66d3606f3d5f2778fe783",
+        "sourceNumber": 52,
+        "correctIndex": 0
+      },
+      {
+        "question": "A square has a diagonal of 10 cm. What is its area?",
+        "choices": [
+          "25 cm²",
+          "50 cm²",
+          "100 cm²",
+          "200 cm²"
+        ],
+        "key": "a319828a5806656c8f01c8243960868a810ef5da24da7b650b35dda40ae6f322",
+        "sourceNumber": 53,
+        "correctIndex": 1
+      },
+      {
+        "question": "A line has slope 3 and passes through (0, 2). Which equation represents it?",
+        "choices": [
+          "y = 2x + 3",
+          "y = 3x + 2",
+          "y = 3x − 2",
+          "y = x + 2"
+        ],
+        "key": "a0da1c11147a0f3f4e886ca57fd59f55c32693f18361e36ee942d0e61b7801ce",
+        "sourceNumber": 54,
+        "correctIndex": 1
+      },
+      {
+        "question": "A triangle's vertices are (0, 0), (4, 0), and (0, 3). What is the length of the side joining (4, 0) and (0, 3)?",
+        "choices": [
+          "3 units",
+          "4 units",
+          "5 units",
+          "7 units"
+        ],
+        "key": "4ffaff0d0ed7e483a533993c05afc33ccc2017adc5c898fd92da38ac958a1974",
+        "sourceNumber": 55,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the midpoint of the segment joining (−2, 4) and (6, 4)?",
+        "choices": [
+          "(2, 0)",
+          "(2, 4)",
+          "(4, 4)",
+          "(8, 8)"
+        ],
+        "key": "501edf1ee41f779eac49f42dcb86cfc3e42b1731444708d0e3ee4561eff99b6f",
+        "sourceNumber": 56,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the slope of the line through (2, 1) and (2, 7)?",
+        "choices": [
+          "0",
+          "1",
+          "6",
+          "Undefined"
+        ],
+        "key": "20481f9741187e1ce2419d8a8c71920119e5eac6b620eacf279e7e003c582dd5",
+        "sourceNumber": 57,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the distance between (−1, −2) and (2, 2)?",
+        "choices": [
+          "3 units",
+          "4 units",
+          "5 units",
+          "7 units"
+        ],
+        "key": "01dd4abb926d5b083b868138feca8e904a0902435f0437142c70f2838ccd123f",
+        "sourceNumber": 58,
+        "correctIndex": 2
+      },
+      {
+        "question": "The perimeter of a square is 44 cm. What is its area?",
+        "choices": [
+          "44 cm²",
+          "88 cm²",
+          "121 cm²",
+          "484 cm²"
+        ],
+        "key": "0ad2ba1bdef482595b26b35369f5b31b75c2a3b50613892f263d874ce2559939",
+        "sourceNumber": 59,
+        "correctIndex": 2
+      },
+      {
+        "question": "A rectangular floor is 8 m long and 6 m wide. How many 1 m² tiles are needed to cover it without gaps or overlaps?",
+        "choices": [
+          "14",
+          "28",
+          "48",
+          "56"
+        ],
+        "key": "1e7e589cff9896699b264b8d63cfe4cb256bdb99354c876e030ee9365ceed040",
+        "sourceNumber": 60,
+        "correctIndex": 2
+      },
+      {
+        "question": "A rectangular field is 20 m long and 12 m wide. How much fencing is needed to go once around its boundary?",
+        "choices": [
+          "32 m",
+          "64 m",
+          "120 m",
+          "240 m"
+        ],
+        "key": "628c41b1c0c8849abc7bfdea00ab2bc6ed227264e041100d9fa79b705c8522c7",
+        "sourceNumber": 61,
+        "correctIndex": 1
+      },
+      {
+        "question": "A rectangular garden is 15 m by 10 m. A path runs all around the outside and is 1 m wide. What is the area of the path?",
+        "choices": [
+          "50 m²",
+          "54 m²",
+          "74 m²",
+          "204 m²"
+        ],
+        "key": "d3455a88d5e00e5931a224c88bcad3a94565889a4f0c7773cac5ef6a413b3bb3",
+        "sourceNumber": 62,
+        "correctIndex": 1
+      },
+      {
+        "question": "A rectangular plot is 18 m long and 12 m wide. What is the ratio of its length to its width in simplest form?",
+        "choices": [
+          "2:3",
+          "3:2",
+          "3:4",
+          "6:5"
+        ],
+        "key": "7a15523395fa8e22fa9f6041ed43aa220aff85d1d831742ef46ccf908cdc95f9",
+        "sourceNumber": 63,
+        "correctIndex": 1
+      },
+      {
+        "question": "On a map, 1 cm represents 5 km. Two towns are 7 cm apart on the map. What is their actual distance?",
+        "choices": [
+          "12 km",
+          "25 km",
+          "35 km",
+          "50 km"
+        ],
+        "key": "23858e4bc0a5aa24da8ce404745c34a3a7b80e4d74933e54d4d877f7ed2312cf",
+        "sourceNumber": 64,
+        "correctIndex": 2
+      },
+      {
+        "question": "On a scale drawing, 1 cm represents 2 m. A wall measures 6.5 cm on the drawing. What is its actual length?",
+        "choices": [
+          "3.25 m",
+          "8.5 m",
+          "13 m",
+          "26 m"
+        ],
+        "key": "1b80fcdc36d62abfae7f7eb7b6cd71f5e94c79de9117b181e6d21e42d6b65aab",
+        "sourceNumber": 65,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 2 m by 3 m floor is covered with square tiles, each 50 cm by 50 cm. How many tiles are needed with no gaps or overlaps?",
+        "choices": [
+          "12",
+          "18",
+          "24",
+          "30"
+        ],
+        "key": "cc2dedc150de7206d8bff4902c34c130b33fb5bbbafcccaaf77b777e605637b4",
+        "sourceNumber": 66,
+        "correctIndex": 2
+      },
+      {
+        "question": "A circular track has radius 14 m. Using π = 22/7, what is one lap around the track?",
+        "choices": [
+          "44 m",
+          "88 m",
+          "154 m",
+          "616 m"
+        ],
+        "key": "52735f08412f45ccf2da5c6ef8871e5142335b07a343e1b58aa3dfced4a232c1",
+        "sourceNumber": 67,
+        "correctIndex": 1
+      },
+      {
+        "question": "A rectangular tank measures 2 m by 1.5 m by 1 m. What is its capacity in cubic metres?",
+        "choices": [
+          "1.5 m³",
+          "3 m³",
+          "4.5 m³",
+          "6 m³"
+        ],
+        "key": "4ab16e8762087a5bdcde0878a3aed76c3b60e71a705c68d51750919789b06dff",
+        "sourceNumber": 68,
+        "correctIndex": 1
+      },
+      {
+        "question": "A room is 5 m long and 4 m wide. How much skirting board is needed to run once around its floor boundary, ignoring a doorway?",
+        "choices": [
+          "9 m",
+          "18 m",
+          "20 m",
+          "40 m"
+        ],
+        "key": "48aeb285c6aaef593add1f3ff82c9d540caa3e1b90690635544f28aa543290ad",
+        "sourceNumber": 69,
+        "correctIndex": 1
+      },
+      {
+        "question": "A rectangular sheet is 30 cm by 20 cm. What is its area in square metres?",
+        "choices": [
+          "0.06 m²",
+          "0.6 m²",
+          "6 m²",
+          "600 m²"
+        ],
+        "key": "427d883fff0e5318638c2c40128953feced3798d831e228df41fdf9ea1fbd553",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "A rectangular plot has area 96 m² and width 8 m. What is its length?",
+        "choices": [
+          "10 m",
+          "12 m",
+          "16 m",
+          "24 m"
+        ],
+        "key": "2047ebe5474a0885e57affa5db5f540d18d5e21511690f7dd58c04453a83172f",
+        "sourceNumber": 71,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 10 m by 8 m rectangular lawn is enclosed by a path 1 m wide on the inside. What is the area of the lawn remaining inside the path?",
+        "choices": [
+          "48 m²",
+          "60 m²",
+          "64 m²",
+          "80 m²"
+        ],
+        "key": "f4172a368ca35f69bec2bfa920d57722b9dc557453ba8b963b0e5aaab82aff1d",
+        "sourceNumber": 72,
+        "correctIndex": 0
+      },
+      {
+        "question": "A triangular banner has base 2.4 m and perpendicular height 1.5 m. What is its area?",
+        "choices": [
+          "1.2 m²",
+          "1.8 m²",
+          "3.6 m²",
+          "7.2 m²"
+        ],
+        "key": "1a8762862eb38d4abee30ba7872c129cfbb11a33d0735d4534c4ccf5c7d83fe6",
+        "sourceNumber": 73,
+        "correctIndex": 1
+      },
+      {
+        "question": "A trapezoidal plot has parallel sides of 20 m and 12 m, with a perpendicular distance of 7 m between them. What is its area?",
+        "choices": [
+          "84 m²",
+          "112 m²",
+          "224 m²",
+          "448 m²"
+        ],
+        "key": "12b25f8730b1aa6cfd820d168338f6f1c8380cd3e24ffdd2ca8ed176a9cffa80",
+        "sourceNumber": 74,
+        "correctIndex": 1
+      },
+      {
+        "question": "A circular table has diameter 1.4 m. Using π = 22/7, what is its area?",
+        "choices": [
+          "0.44 m²",
+          "1.54 m²",
+          "3.08 m²",
+          "6.16 m²"
+        ],
+        "key": "df08c1371583473170b9b2cdcd33819127b55f9fc63db165ac7f03665e237bfd",
+        "sourceNumber": 75,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 12 cm long wire is bent into a square. What is the area enclosed by the square?",
+        "choices": [
+          "6 cm²",
+          "9 cm²",
+          "12 cm²",
+          "36 cm²"
+        ],
+        "key": "19b9bc80b8f673281e5013eeee3f30bfb1e237468e00b9546ba66c188b79a514",
+        "sourceNumber": 76,
+        "correctIndex": 1
+      },
+      {
+        "question": "A circular pond has radius 7 m. A circular path extends from radius 7 m to radius 10 m. Using π = 22/7, what is the path's area?",
+        "choices": [
+          "51 m²",
+          "66 m²",
+          "160.3 m²",
+          "314 m²"
+        ],
+        "key": "0e4a648119a5963c83216d721177ca6cd64c2671a5ab53570abcc28180e2c6e3",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "A rectangular sheet is 14 cm long and 10 cm wide. A 2 cm square is cut from each of its four corners. What is the total area removed?",
+        "choices": [
+          "8 cm²",
+          "16 cm²",
+          "24 cm²",
+          "32 cm²"
+        ],
+        "key": "340050903265f252459ff8e6f05c68dc8e2e92da7bb98ac322fd4add3327a5b5",
+        "sourceNumber": 78,
+        "correctIndex": 1
+      },
+      {
+        "question": "A regular hexagon has side length 4 cm. What is its perimeter?",
+        "choices": [
+          "16 cm",
+          "20 cm",
+          "24 cm",
+          "32 cm"
+        ],
+        "key": "d5651de36062bddb7eb73607c3fd3d2486dac2ef9fb6bd08ccc7c81e054566f6",
+        "sourceNumber": 79,
+        "correctIndex": 2
+      },
+      {
+        "question": "The circumference of a circle is 66 cm. Using π = 22/7, what is its radius?",
+        "choices": [
+          "7 cm",
+          "10.5 cm",
+          "21 cm",
+          "42 cm"
+        ],
+        "key": "2220c26cd17f56d126be44a01f2a82bfee88523fd33c7f63ade1b4d3e5dcfe6f",
+        "sourceNumber": 80,
+        "correctIndex": 1
+      },
+      {
+        "question": "A wheel has radius 35 cm. Using π = 22/7, how far does it travel in 10 complete rotations without slipping?",
+        "choices": [
+          "11 m",
+          "22 m",
+          "44 m",
+          "110 m"
+        ],
+        "key": "c4711e16f05ea766fa033a2f0f8bcf209902bca7fd68fdccfdc6b880de8c22c4",
+        "sourceNumber": 81,
+        "correctIndex": 1
+      },
+      {
+        "question": "A cube has total surface area 150 cm². What is its volume?",
+        "choices": [
+          "25 cm³",
+          "100 cm³",
+          "125 cm³",
+          "150 cm³"
+        ],
+        "key": "1a3b9b9163b2249259a85c1f7c6d442e90abf26ce7c062a1a0eb1ad4468bfc70",
+        "sourceNumber": 82,
+        "correctIndex": 2
+      },
+      {
+        "question": "A cylinder has diameter 10 cm and height 8 cm. What is its volume?",
+        "choices": [
+          "100π cm³",
+          "200π cm³",
+          "400π cm³",
+          "800π cm³"
+        ],
+        "key": "5bacd998e426b285253fd8edc21628a2173a9cb293159f5c28e36190d4c6b816",
+        "sourceNumber": 83,
+        "correctIndex": 1
+      },
+      {
+        "question": "A cone has radius 6 cm and perpendicular height 8 cm. What is its slant height?",
+        "choices": [
+          "8 cm",
+          "10 cm",
+          "12 cm",
+          "14 cm"
+        ],
+        "key": "bdc627243964c0814cc71161a8aab74766e9cec4c7172e23efdd83ad72835076",
+        "sourceNumber": 84,
+        "correctIndex": 1
+      },
+      {
+        "question": "A sphere has diameter 12 cm. What is its surface area?",
+        "choices": [
+          "36π cm²",
+          "72π cm²",
+          "144π cm²",
+          "288π cm²"
+        ],
+        "key": "b19b0f0502034d8bfec7484a274d85af602f96b331e20b087761ce9a76d7fde4",
+        "sourceNumber": 85,
+        "correctIndex": 2
+      },
+      {
+        "question": "A cylinder has radius 2 cm and height 9 cm. What is its volume?",
+        "choices": [
+          "18π cm³",
+          "27π cm³",
+          "36π cm³",
+          "72π cm³"
+        ],
+        "key": "3bb8a9c1b963793200298c0b3a12003346bf1908029d69cd568215d1dc49c288",
+        "sourceNumber": 86,
+        "correctIndex": 2
+      },
+      {
+        "question": "A cube has side length 2.5 cm. What is its volume?",
+        "choices": [
+          "6.25 cm³",
+          "12.5 cm³",
+          "15.625 cm³",
+          "25 cm³"
+        ],
+        "key": "1fe9e959fb96c41790459b7772f5d8b7eda8b48872e6d90bf544a7746bbe2cb9",
+        "sourceNumber": 87,
+        "correctIndex": 2
+      },
+      {
+        "question": "A rectangle has area 72 cm² and length 9 cm. What is its perimeter?",
+        "choices": [
+          "17 cm",
+          "26 cm",
+          "34 cm",
+          "81 cm"
+        ],
+        "key": "4997db646f9d24d49a1c7a13f364d7ad41ebac48a9b0ae4c69585b3f67010b61",
+        "sourceNumber": 88,
+        "correctIndex": 1
+      },
+      {
+        "question": "A triangle has base 15 cm and area 60 cm². What is its perpendicular height?",
+        "choices": [
+          "4 cm",
+          "6 cm",
+          "8 cm",
+          "12 cm"
+        ],
+        "key": "e0f8e5175982be2ced5c5046e023a83f4683fa9180f5db1c8b11acddd0c63edf",
+        "sourceNumber": 89,
+        "correctIndex": 2
+      },
+      {
+        "question": "A parallelogram has area 84 cm² and base 12 cm. What is its perpendicular height?",
+        "choices": [
+          "6 cm",
+          "7 cm",
+          "8 cm",
+          "12 cm"
+        ],
+        "key": "1afc45510907bb3fd248170986618c94c79102f6d2b4bcb4769921e1d2a8cea6",
+        "sourceNumber": 90,
+        "correctIndex": 1
+      },
+      {
+        "question": "A rhombus has area 96 cm² and one diagonal is 12 cm. What is the other diagonal?",
+        "choices": [
+          "8 cm",
+          "12 cm",
+          "16 cm",
+          "24 cm"
+        ],
+        "key": "cc63c3b1471cdb8ce4b21abc3e2787220fb5c5c8fe0af2cfc7cda0ff3574a351",
+        "sourceNumber": 91,
+        "correctIndex": 2
+      },
+      {
+        "question": "An equilateral triangle has side length 6 cm. What is its perimeter?",
+        "choices": [
+          "12 cm",
+          "18 cm",
+          "24 cm",
+          "36 cm"
+        ],
+        "key": "d6a5e9760c0941f51476bee93d13cd2294f4f46a4295b4c9ee63e94b0ef059ff",
+        "sourceNumber": 92,
+        "correctIndex": 1
+      },
+      {
+        "question": "A regular octagon has side length 3 cm. What is its perimeter?",
+        "choices": [
+          "11 cm",
+          "18 cm",
+          "24 cm",
+          "36 cm"
+        ],
+        "key": "7b05dddc8ac85e46928d472d5ca4b2926713e1697b406a388b7efad79b4d8ea2",
+        "sourceNumber": 93,
+        "correctIndex": 2
+      },
+      {
+        "question": "One angle of a parallelogram is 70°. What is the measure of an adjacent angle?",
+        "choices": [
+          "70°",
+          "90°",
+          "110°",
+          "140°"
+        ],
+        "key": "e93534c6a8a2f2a910cc89f809ca8a168488305aa78d68b8fe400bac7bb02da9",
+        "sourceNumber": 94,
+        "correctIndex": 2
+      },
+      {
+        "question": "Two parallel lines are crossed by a transversal. If one corresponding angle is 74°, what is the other corresponding angle?",
+        "choices": [
+          "74°",
+          "106°",
+          "148°",
+          "286°"
+        ],
+        "key": "2877241779a1ee00bc40cb9dffeb1310e617decd63b522c5185ddf4f7cf2ebe5",
+        "sourceNumber": 95,
+        "correctIndex": 0
+      },
+      {
+        "question": "A regular polygon has 8 sides. What is the sum of its interior angles?",
+        "choices": [
+          "720°",
+          "900°",
+          "1,080°",
+          "1,440°"
+        ],
+        "key": "d9d1eb0573a1dd8fc01c64f840fe80717b990926c49f51f85c5acdfe1076474d",
+        "sourceNumber": 96,
+        "correctIndex": 2
+      },
+      {
+        "question": "A regular pentagon has an interior-angle sum of 540°. What is the measure of each interior angle?",
+        "choices": [
+          "72°",
+          "90°",
+          "108°",
+          "120°"
+        ],
+        "key": "644bc6e832014613067794c2e8d3a7ca40c653e539b1070f6dd954ef48265c14",
+        "sourceNumber": 97,
+        "correctIndex": 2
+      },
+      {
+        "question": "A circle is divided into 8 equal sectors. What is the central angle of each sector?",
+        "choices": [
+          "30°",
+          "40°",
+          "45°",
+          "60°"
+        ],
+        "key": "a0de7ce3a60da7a4b68897015421c6edcf2c789b7826f4d6f0b101611d6118f3",
+        "sourceNumber": 98,
+        "correctIndex": 2
+      },
+      {
+        "question": "A sector is 25% of a circle with radius 8 cm. What is the sector's area?",
+        "choices": [
+          "8π cm²",
+          "16π cm²",
+          "32π cm²",
+          "64π cm²"
+        ],
+        "key": "66df984ea839cb2cbb9d2d41b1c325347d20cd5236aafca8d17f3e1721257e1c",
+        "sourceNumber": 99,
+        "correctIndex": 1
+      },
+      {
+        "question": "The area of a circle is 49π cm². What is its radius?",
+        "choices": [
+          "7 cm",
+          "14 cm",
+          "24.5 cm",
+          "49 cm"
+        ],
+        "key": "d70c083cdf9e5ebddf4160fcde97e8aa922a7276669a7573b8e70276f6406044",
+        "sourceNumber": 100,
+        "correctIndex": 0
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "8dbfb0d777d457f710e23da4ce1131f145c888c888512c2ff23f6e8e126c0b31",
+      "sourceQuestionNumbers": [
+        13,
+        88,
+        36,
+        65,
+        51,
+        2,
+        31,
+        70,
+        57,
+        91,
+        34,
+        87,
+        14,
+        79,
+        59,
+        67,
+        97,
+        21,
+        1,
+        48,
+        68,
+        6,
+        83,
+        54,
+        39,
+        7,
+        26,
+        49,
+        96,
+        73,
+        10,
+        28,
+        52,
+        94,
+        64,
+        27,
+        45,
+        11,
+        74,
+        95,
+        53,
+        20,
+        71,
+        81,
+        23,
+        56,
+        78,
+        4,
+        30,
+        89,
+        99,
+        16,
+        46,
+        22,
+        61,
+        85,
+        60,
+        5,
+        37,
+        75,
+        44,
+        29,
+        15,
+        66,
+        84,
+        58,
+        33,
+        18,
+        69,
+        92,
+        62,
+        12,
+        25,
+        98,
+        50,
+        80,
+        35,
+        100,
+        42,
+        3,
+        24,
+        19,
+        63,
+        55,
+        93,
+        90,
+        47,
+        77,
+        17,
+        40,
+        82,
+        38,
+        43,
+        9,
+        72,
+        76,
+        32,
+        8,
+        86,
+        41
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
