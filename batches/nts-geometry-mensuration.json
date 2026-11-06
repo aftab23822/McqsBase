@@ -1336,6 +1336,239 @@
       "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
     }
   },
-  "parts": [],
+  "parts": [
+    {
+      "part": 1,
+      "directory": "part-01",
+      "sourceQuestionNumbers": [
+        13,
+        88
+      ],
+      "count": 2,
+      "durationSeconds": 60,
+      "sha256": "6f60c00649bf20487feac36386cdc9930bd892c852ade051fbe63bee0adb0fef",
+      "manifest": {
+        "title": "100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+        "sourceTitle": "100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-06T08:16:02.011750+00:00",
+        "sourceContentHash": "f6c7863af4d41f41c1c647f5fcdd4ec28e4fc47c7259e72bba410a5c40c858a2",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7595549784,
+          "sha": "2437e6632a815a53bca097c4082ebd52c9ef2aaf",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-06T08:16:02.011750+00:00",
+          "url": "https://mcqs-base-qhby0v7bv-as-projects-10921176.vercel.app",
+          "publisherRunId": 42185754429
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 60,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A trapezoid has parallel sides of 8 cm and 14 cm, and a perpendicular height of 5 cm. What is its area?",
+            "choices": [
+              "55 cm²",
+              "70 cm²",
+              "110 cm²",
+              "140 cm²"
+            ],
+            "correctIndex": 0,
+            "key": "c13a4370a702240830d7bd1f4942a42fb12c74f06673c622ef1fb08831b91bb5",
+            "sourceNumber": 13
+          },
+          {
+            "question": "A rectangle has area 72 cm² and length 9 cm. What is its perimeter?",
+            "choices": [
+              "17 cm",
+              "26 cm",
+              "34 cm",
+              "81 cm"
+            ],
+            "correctIndex": 1,
+            "key": "4997db646f9d24d49a1c7a13f364d7ad41ebac48a9b0ae4c69585b3f67010b61",
+            "sourceNumber": 88
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 22,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 25,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 30,
+            "duration": 18,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 48,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 49,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 50,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 51,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 55,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 1,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            13,
+            88
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nts-geometry-mensuration-part-01-6f60c00649bf2048.mp4",
+        "videoSha256": "6f60c00649bf20487feac36386cdc9930bd892c852ade051fbe63bee0adb0fef",
+        "assetId": 716421924
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 1/5 | Q13, 88 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 13, 88\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 1/5 | Q13, 88 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 13, 88\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 1/5 | Q13, 88 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 13, 88\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 1/5 | Q13, 88 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 13, 88\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+          "format": "short"
+        }
+      }
+    }
+  ],
   "thinkingSeconds": 3
 }
