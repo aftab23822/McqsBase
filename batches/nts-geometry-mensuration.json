@@ -1575,7 +1575,131 @@
       "studioMedia": {
         "id": "c7859700-09c1-46f0-a380-32da90c29ccf",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/wXLdIHUxkF.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 1/5 | Q13, 88 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 13, 88\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+              "image": [
+                {
+                  "id": "c7859700-09c1-46f0-a380-32da90c29ccf",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/wXLdIHUxkF.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 13, 88\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "c7859700-09c1-46f0-a380-32da90c29ccf",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/wXLdIHUxkF.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 1/5 | Q13, 88 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 13, 88\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "c7859700-09c1-46f0-a380-32da90c29ccf",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/wXLdIHUxkF.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 1/5 | Q13, 88 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 13, 88\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "c7859700-09c1-46f0-a380-32da90c29ccf",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/wXLdIHUxkF.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-06T13:37:00+05:00"
     },
     {
       "part": 2,
@@ -1864,7 +1988,131 @@
       "studioMedia": {
         "id": "8325eb7f-21d5-48f1-9495-3326b511f656",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/ZKCNc8Ix9J.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 2/5 | Q36, 65, 51 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 36, 65, 51\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+              "image": [
+                {
+                  "id": "8325eb7f-21d5-48f1-9495-3326b511f656",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/ZKCNc8Ix9J.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 36, 65, 51\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "8325eb7f-21d5-48f1-9495-3326b511f656",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/ZKCNc8Ix9J.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 2/5 | Q36, 65, 51 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 36, 65, 51\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "8325eb7f-21d5-48f1-9495-3326b511f656",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/ZKCNc8Ix9J.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 2/5 | Q36, 65, 51 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 36, 65, 51\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "8325eb7f-21d5-48f1-9495-3326b511f656",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/ZKCNc8Ix9J.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-06T15:42:00+05:00"
     },
     {
       "part": 3,
@@ -2153,7 +2401,131 @@
       "studioMedia": {
         "id": "b33733b0-aeea-4657-b637-eb087fabc87d",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/oRuDvCNfiS.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 3/5 | Q2, 31, 70 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 2, 31, 70\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+              "image": [
+                {
+                  "id": "b33733b0-aeea-4657-b637-eb087fabc87d",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/oRuDvCNfiS.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 2, 31, 70\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "b33733b0-aeea-4657-b637-eb087fabc87d",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/oRuDvCNfiS.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 3/5 | Q2, 31, 70 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 2, 31, 70\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "b33733b0-aeea-4657-b637-eb087fabc87d",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/oRuDvCNfiS.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 3/5 | Q2, 31, 70 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 2, 31, 70\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "b33733b0-aeea-4657-b637-eb087fabc87d",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/oRuDvCNfiS.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-06T17:47:00+05:00"
     },
     {
       "part": 4,
@@ -2442,7 +2814,131 @@
       "studioMedia": {
         "id": "446ecbbe-3f0d-4252-93fc-d206a8a5f1fd",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/98Nn3trPS5.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 4/5 | Q57, 91, 34 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 57, 91, 34\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+              "image": [
+                {
+                  "id": "446ecbbe-3f0d-4252-93fc-d206a8a5f1fd",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/98Nn3trPS5.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 57, 91, 34\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "446ecbbe-3f0d-4252-93fc-d206a8a5f1fd",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/98Nn3trPS5.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 4/5 | Q57, 91, 34 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 57, 91, 34\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "446ecbbe-3f0d-4252-93fc-d206a8a5f1fd",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/98Nn3trPS5.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 4/5 | Q57, 91, 34 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 57, 91, 34\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "446ecbbe-3f0d-4252-93fc-d206a8a5f1fd",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/98Nn3trPS5.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-06T19:52:00+05:00"
     },
     {
       "part": 5,
@@ -2731,7 +3227,131 @@
       "studioMedia": {
         "id": "44b02901-8127-4d6d-a59c-99adf1aaf93f",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/DU1nxKnWjh.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 5/5 | Q87, 14, 79 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 87, 14, 79\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+              "image": [
+                {
+                  "id": "44b02901-8127-4d6d-a59c-99adf1aaf93f",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/DU1nxKnWjh.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 87, 14, 79\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "44b02901-8127-4d6d-a59c-99adf1aaf93f",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/DU1nxKnWjh.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 5/5 | Q87, 14, 79 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 87, 14, 79\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "44b02901-8127-4d6d-a59c-99adf1aaf93f",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/DU1nxKnWjh.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 5/5 | Q87, 14, 79 | 100 NTS-Style Geometry and Mensuration MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 87, 14, 79\n100 NTS-Style Geometry and Mensuration MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-geometry-mensuration\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "44b02901-8127-4d6d-a59c-99adf1aaf93f",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/DU1nxKnWjh.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-06T21:57:00+05:00"
     }
   ],
   "thinkingSeconds": 3,
@@ -2814,5 +3434,12 @@
         "sha256": "e98ab5e120bf40b04bbbc05f41f4930fdcd646fb52a74897b0365c043d9cdf18"
       }
     ]
-  }
+  },
+  "schedule": [
+    "2026-11-06T13:37:00+05:00",
+    "2026-11-06T15:42:00+05:00",
+    "2026-11-06T17:47:00+05:00",
+    "2026-11-06T19:52:00+05:00",
+    "2026-11-06T21:57:00+05:00"
+  ]
 }
