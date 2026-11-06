@@ -2180,8 +2180,9 @@
           "postId": "cmw4phfq202k3roivcdijx9op"
         },
         "youtube": {
-          "status": "uncertain",
-          "attemptedAt": "2026-11-06T08:21:52.279414+00:00"
+          "status": "accepted",
+          "attemptedAt": "2026-11-06T08:21:52.279414+00:00",
+          "postId": "cmw4phfrg02k4roivtkvpf7ui"
         }
       }
     },
