@@ -1570,7 +1570,11 @@
       },
       "uploadIntent": {
         "filename": "nts-geometry-mensuration-part-01-6f60c00649bf2048.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "c7859700-09c1-46f0-a380-32da90c29ccf",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/wXLdIHUxkF.mp4"
       }
     },
     {
