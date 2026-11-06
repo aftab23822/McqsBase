@@ -1016,7 +1016,7 @@
       "verifiedPublications": 0
     },
     "nts-geometry-mensuration": {
-      "status": "rendering",
+      "status": "ready",
       "ledger": "batches/nts-geometry-mensuration.json",
       "createdAt": "2026-11-06T08:16:02.215252+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
