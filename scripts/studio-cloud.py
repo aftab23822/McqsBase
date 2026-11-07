@@ -4,8 +4,11 @@ import hashlib
 import html
 import json
 import os
+import random
 from pathlib import Path
 import re
+import time
+from email.utils import parsedate_to_datetime
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -37,11 +40,18 @@ class StudioError(RuntimeError):
         super().__init__(message)
 
 
+class NoCredentialRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, *args, **kwargs):
+        return None  # Never forward the cloud credential to a redirect target.
+
+
 class Studio:
-    def __init__(self, key=None):
-        self.key = key if key is not None else os.environ['MCQS_STUDIO_API_KEY']
+    def __init__(self, key=None, open_request=None, sleep=time.sleep):
+        self.key = (key if key is not None else os.environ.get('MCQS_STUDIO_API_KEY', '')).strip()
         if not self.key:
             raise ValueError('The cloud Studio secret is missing.')
+        self.open_request = open_request or urllib.request.build_opener(NoCredentialRedirect()).open
+        self.sleep = sleep
 
     def call(self, method, path, payload=None):
         if not path.startswith('/') or '://' in path:
@@ -50,12 +60,42 @@ class Studio:
             data=None if payload is None else json.dumps(payload).encode(), headers={
                 'Authorization': self.key, 'Accept': 'application/json',
                 'Content-Type': 'application/json', 'User-Agent': 'MCQsBase-Cloud-Publisher/1.0'})
-        try:
-            with urllib.request.urlopen(req, timeout=180) as response:
-                return json.load(response)
-        except urllib.error.HTTPError as error:
+        # POST /posts and media imports are deliberately NOT retried. Their outcome
+        # can be uncertain; the durable ledger/calendar must reconcile them first.
+        safe_read = method == 'GET' or (method == 'POST' and (
+            path == '/wallet/estimate' or (path.startswith('/integration-trigger/')
+            and payload and payload.get('methodName') == 'creatorInfo')))
+        for attempt in range(3 if safe_read else 1):
+            try:
+                with self.open_request(req, timeout=90) as response:
+                    return json.load(response)
+            except urllib.error.HTTPError as error:
+                status, headers = error.code, error.headers
+                body = error.read().decode('utf-8', errors='replace').replace(self.key, '[redacted]')
+            except (urllib.error.URLError, TimeoutError, ConnectionError):
+                if safe_read and attempt < 2:
+                    self.sleep(2 ** attempt + random.random())
+                    continue
+                raise RuntimeError('Studio connection failed. Saved work is preserved; reconcile before retrying any write.') from None
+            except (ValueError, UnicodeDecodeError):
+                if safe_read and attempt < 2:
+                    self.sleep(2 ** attempt + random.random())
+                    continue
+                raise StudioError(502, 'Studio returned an unreadable response; saved work is preserved.') from None
+            if safe_read and status in (408, 429, 500, 502, 503, 504) and attempt < 2:
+                retry_after = headers.get('Retry-After', '') if headers else ''
+                try:
+                    delay = float(retry_after)
+                except ValueError:
+                    try:
+                        delay = (parsedate_to_datetime(retry_after) - datetime.now(timezone.utc)).total_seconds()
+                    except (TypeError, ValueError, OverflowError):
+                        delay = 2 ** attempt + random.random()
+                if delay > 60:
+                    raise StudioError(status, 'Studio requested a longer wait; defer recovery without repeating writes.') from None
+                self.sleep(max(0, delay))
+                continue
             # A validation error can help repair a payload; never include a key or raw response.
-            body = error.read().decode('utf-8', errors='replace').replace(self.key, '[redacted]')
             try:
                 parsed = json.loads(body)
                 detail = parsed.get('message', parsed.get('msg', parsed.get('error', 'request rejected')))
@@ -63,10 +103,10 @@ class Studio:
                     detail = 'request rejected; inspect the provider calendar'
             except (ValueError, AttributeError):
                 detail = 'non-JSON response; inspect service availability'
+            if status in (401, 403):
+                detail = 'Cloud API access was rejected; inspect the Studio connection/key. Browser sign-in alone does not renew this credential.'
             detail = re.sub(r'https?://\S+', '[URL]', detail)[:450]
-            raise StudioError(error.code, f'Studio HTTP {error.code}: {detail}') from None
-        except (urllib.error.URLError, TimeoutError):
-            raise RuntimeError('Studio transport outcome is uncertain; reconcile before any retry.') from None
+            raise StudioError(status, f'Studio HTTP {status}: {detail}') from None
 
     def posts(self, start, end):
         query = urllib.parse.urlencode({'startDate': start, 'endDate': end})
@@ -76,37 +116,58 @@ class Studio:
         return result['posts']
 
 
-def connected(studio, policy):
-    wallet = studio.call('GET', '/wallet')
-    if (wallet.get('usesWallet') is not True or wallet.get('payAsYouGo') is not False
-            or wallet.get('autoTopUp', {}).get('enabled') is not False or wallet.get('frozen')):
-        raise ValueError('The expected free workspace without automatic payments could not be verified.')
+def connected(studio, policy, verify_only=False):
+    if not verify_only:
+        wallet = studio.call('GET', '/wallet')
+        if (wallet.get('usesWallet') is not True or wallet.get('payAsYouGo') is not False
+                or wallet.get('autoTopUp', {}).get('enabled') is not False or wallet.get('frozen')):
+            raise ValueError('The expected free workspace without automatic payments could not be verified.')
     actual = studio.call('GET', '/integrations')
+    if not isinstance(actual, list):
+        raise ValueError('Studio returned an unreadable channel list; no publication allowed.')
     result = {}
     for network, expected in policy['channels'].items():
-        found = [channel for channel in actual if channel['id'] == expected['id']]
-        if len(found) != 1 or found[0].get('disabled'):
-            raise ValueError(f'The verified {network} channel is absent or disabled.')
-        channel = found[0]
-        if any(str(channel.get(key, '')).lower() != str(expected[key]).lower()
-               for key in ('name', 'profile', 'identifier')):
-            raise ValueError(f'The {network} account identity has changed; hold publication.')
-        rules = studio.call('GET', '/integration-settings/' + channel['id'])['output']
-        if not isinstance(rules.get('settings'), dict):
-            raise ValueError(f'The {network} posting schema is unavailable.')
-        result[network] = {**expected, 'rules': rules}
-    creator = studio.call('POST', '/integration-trigger/' + result['tiktok']['id'],
-                         {'methodName': 'creatorInfo', 'data': {}})['output']
-    if isinstance(creator, str):
-        creator = json.loads(creator)
-    # Helpers can wrap TikTok's standard response in data.
-    while isinstance(creator, dict) and isinstance(creator.get('data'), dict):
-        creator = creator['data']
-    if (creator.get('canPost') is not True or creator.get('username', '').lower() != 'mcqsbase'
-            or 'PUBLIC_TO_EVERYONE' not in creator.get('privacyLevelOptions', [])
-            or creator.get('maxVideoPostDurationSec', 0) < policy['maxDurationSeconds']):
-        raise ValueError('TikTok does not currently allow automatic public posts for this account.')
-    result['tiktok']['creator'] = creator
+        result[network] = {**expected, 'identityVerified': False}
+        try:
+            found = [channel for channel in actual if channel.get('id') == expected['id']]
+            if len(found) != 1:
+                raise ValueError(f'The verified {network} channel is absent; reconnect the existing account.')
+            channel = found[0]
+            if any(str(channel.get(key, '')).lower() != str(expected[key]).lower()
+                   for key in ('name', 'profile', 'identifier')):
+                raise ValueError(f'The {network} account identity changed; verify the original account.')
+            result[network]['identityVerified'] = True
+            if verify_only:
+                continue  # Reading old receipts needs neither posting permission nor wallet estimates.
+            if channel.get('disabled'):
+                raise ValueError(f'The {network} channel is disabled; reconnect or enable the existing channel.')
+            rules = studio.call('GET', '/integration-settings/' + channel['id'])['output']
+            if not isinstance(rules.get('settings'), dict):
+                raise ValueError(f'The {network} posting schema is unavailable.')
+            result[network]['rules'] = rules
+            if network != 'tiktok':
+                continue
+            creator = studio.call('POST', '/integration-trigger/' + channel['id'],
+                                 {'methodName': 'creatorInfo', 'data': {}})['output']
+            if isinstance(creator, str):
+                creator = json.loads(creator)
+            while isinstance(creator, dict) and isinstance(creator.get('data'), dict):
+                creator = creator['data']
+            if not isinstance(creator, dict):
+                raise ValueError('TikTok account details are unavailable; reconnect the existing channel.')
+            code = str(creator.get('errorCode', ''))
+            code = code if re.fullmatch(r'[A-Za-z0-9_.-]{1,80}', code) else 'unavailable'
+            if creator.get('canPost') is not True:
+                raise ValueError(f'TikTok cannot load or post for this account (code={code}); inspect/reconnect its existing Studio channel.')
+            if creator.get('username', '').lower() != 'mcqsbase':
+                raise ValueError('TikTok creator identity differs from the approved account; verify the connection.')
+            if 'PUBLIC_TO_EVERYONE' not in creator.get('privacyLevelOptions', []):
+                raise ValueError('TikTok does not allow Everyone visibility; hold public posting.')
+            if creator.get('maxVideoPostDurationSec', 0) < policy['maxDurationSeconds']:
+                raise ValueError('TikTok currently allows a shorter video duration; hold this channel.')
+            result[network]['creator'] = creator
+        except (StudioError, ValueError, KeyError, TypeError, RuntimeError) as error:
+            result[network]['blockedReason'] = str(error)
     return result
 
 
@@ -156,9 +217,13 @@ def assert_free(studio, item):
         raise ValueError('This post is no longer free; no paid publication is permitted.')
 
 
-def reconcile(part, posts, channels):
+def reconcile(part, posts, channels, only_network=None):
     """Recover known or uncertain writes by exact account + caption; never create duplicates."""
     for network, item in part.get('payloads', {}).items():
+        if only_network and network != only_network:
+            continue
+        if channels[network].get('identityVerified') is False:
+            continue
         receipts = part.setdefault('receipts', {})
         receipt = receipts.get(network, {})
         expected = text_only(item['value'][0]['content'])
@@ -210,12 +275,37 @@ def reconcile(part, posts, channels):
 
 
 def schedule_batch(studio, record, channels, save, slots):
-    if record.get('status') not in ('ready', 'scheduling', 'scheduled', 'published') or len(record.get('parts', [])) != 5:
+    if record.get('status') not in ('ready', 'scheduling', 'partially-scheduled', 'scheduled', 'published', 'provider-published') or len(record.get('parts', [])) != 5:
         raise ValueError('All five videos must be ready before any post can be scheduled.')
-    # Validate every network's complete payload before releasing any part to the scheduler.
-    for part in record['parts']:
-        part.setdefault('payloads', {network: post_item(network, channels[network], part['captions'][network], part['studioMedia'])
-                                     for network in NETWORKS})
+    blocked = {}
+
+    def hold(network, reason):
+        blocked[network] = str(reason)
+        for part in record['parts']:
+            receipts = part.setdefault('receipts', {})
+            prior = receipts.get(network, {})
+            if not prior.get('postId') and prior.get('status') != 'uncertain':
+                receipts[network] = {'status': 'blocked', 'reason': str(reason)}
+        record['blockedNetworks'] = dict(blocked)
+        save(record)
+
+    # Check all five payloads per network first. One expired token or changed
+    # schema must not suppress the other three approved, free destinations.
+    for network in NETWORKS:
+        if all(part.get('receipts', {}).get(network, {}).get('postId')
+               and part['receipts'][network].get('status') in ('QUEUE', 'PUBLISHED')
+               for part in record['parts']):
+            continue  # Existing posts can be reconciled without permission to make new ones.
+        if channels[network].get('blockedReason'):
+            hold(network, channels[network]['blockedReason'])
+            continue
+        try:
+            prepared = [post_item(network, channels[network], part['captions'][network], part['studioMedia'])
+                        for part in record['parts']]
+            for part, item in zip(record['parts'], prepared):
+                part.setdefault('payloads', {}).setdefault(network, item)
+        except (ValueError, KeyError, TypeError) as error:
+            hold(network, error)
     if not record.get('schedule'):
         record['schedule'] = slots
         for part, when in zip(record['parts'], slots):
@@ -227,49 +317,61 @@ def schedule_batch(studio, record, channels, save, slots):
     start = (datetime.fromisoformat(record['schedule'][0]) - timedelta(days=1)).isoformat()
     end = (datetime.fromisoformat(record['schedule'][-1]) + timedelta(days=1)).isoformat()
     for part in record['parts']:
-        part.setdefault('payloads', {network: post_item(network, channels[network], part['captions'][network], part['studioMedia'])
-                                     for network in NETWORKS})
-        reconcile(part, studio.posts(start, end), channels)
-        save(record)
-        missing = [network for network in NETWORKS if not part.get('receipts', {}).get(network)
-                   or part['receipts'][network].get('status') == 'rejected']
-        if not missing:
-            continue
-        if datetime.fromisoformat(part['scheduledAt']) <= datetime.now(timezone.utc) + timedelta(minutes=2):
-            raise ValueError('The reserved same-day slot has passed; keep receipts and hold missing networks.')
-        for network in missing:
-            part['payloads'][network] = post_item(network, channels[network], part['captions'][network], part['studioMedia'])
-            assert_free(studio, part['payloads'][network])
-        record['status'] = 'scheduling'
-        for network in missing:
-            part.setdefault('receipts', {})[network] = {'status': 'uncertain', 'attemptedAt': datetime.now(timezone.utc).isoformat()}
-        save(record)  # Durable intent before a possibly uncertain network request.
-        payload = {'type': 'schedule', 'date': datetime.fromisoformat(part['scheduledAt']).astimezone(timezone.utc).isoformat(),
-                   'shortLink': False, 'tags': [], 'creationMethod': 'API',
-                   'posts': [part['payloads'][network] for network in missing]}
-        try:
-            results = studio.call('POST', '/posts', payload)
-        except StudioError as error:
-            if error.status in (400, 401, 402, 403, 413, 429):
-                # Definitive rejection: retain the intent and require reconciliation on recovery.
-                record['lastError'] = str(error)
-            if error.status == 400:
-                # Documented validation failure creates no posts. Recovery still reconciles first.
-                for network in missing:
-                    part['receipts'][network]['status'] = 'rejected'
+        posts = studio.posts(start, end)
+        for network in NETWORKS:
+            try:
+                reconcile(part, posts, channels, only_network=network)
+            except (RuntimeError, ValueError, KeyError, TypeError) as error:
+                hold(network, error)
+                continue
             save(record)
-            raise
-        for returned in results:
-            network = next((name for name in missing if channels[name]['id'] == returned.get('integration')), None)
-            if not network or not returned.get('postId'):
-                raise RuntimeError('Unexpected create response; reconcile the saved uncertain intent before retrying.')
-            part['receipts'][network].update(postId=returned['postId'], status='accepted')
-            save(record)  # Preserve every partial success immediately.
-        reconcile(part, studio.posts(start, end), channels)
-        save(record)
+            receipt = part.get('receipts', {}).get(network, {})
+            if receipt.get('status') == 'ERROR':
+                hold(network, 'An existing provider post failed; repair its saved ID without recreating the video.')
+                continue
+            if receipt.get('postId') or receipt.get('status') not in (None, 'blocked', 'rejected'):
+                continue
+            if network in blocked:
+                continue
+            if datetime.fromisoformat(part['scheduledAt']) <= datetime.now(timezone.utc) + timedelta(minutes=2):
+                hold(network, 'The reserved same-day slot passed; retain receipts and request recovery of missing posts only.')
+                continue
+            try:
+                assert_free(studio, part['payloads'][network])
+            except (StudioError, ValueError, RuntimeError) as error:
+                hold(network, error)
+                continue
+            record['status'] = 'scheduling'
+            part.setdefault('receipts', {})[network] = {'status': 'uncertain', 'attemptedAt': datetime.now(timezone.utc).isoformat()}
+            save(record)  # One durable network intent before each possibly uncertain write.
+            payload = {'type': 'schedule', 'date': datetime.fromisoformat(part['scheduledAt']).astimezone(timezone.utc).isoformat(),
+                       'shortLink': False, 'tags': [], 'creationMethod': 'API', 'posts': [part['payloads'][network]]}
+            try:
+                results = studio.call('POST', '/posts', payload)
+                if (not isinstance(results, list) or len(results) != 1
+                        or results[0].get('integration') != channels[network]['id'] or not results[0].get('postId')):
+                    raise RuntimeError('Unexpected create response; reconcile the saved uncertain intent before retrying.')
+                part['receipts'][network].update(postId=results[0]['postId'], status='accepted')
+                save(record)
+                reconcile(part, studio.posts(start, end), channels, only_network=network)
+                save(record)
+            except (StudioError, RuntimeError) as error:
+                if isinstance(error, StudioError) and error.status == 400:
+                    part['receipts'][network]['status'] = 'rejected'
+                hold(network, error)  # Preserve uncertain/post IDs, then continue healthy destinations.
     receipts = [receipt for part in record['parts'] for receipt in part.get('receipts', {}).values()]
-    if len(receipts) != 20 or any(receipt['status'] not in ('QUEUE', 'PUBLISHED') for receipt in receipts):
-        raise RuntimeError('Some networks need attention; successful receipts have been preserved.')
+    if blocked or len(receipts) != 20 or any(receipt['status'] not in ('QUEUE', 'PUBLISHED') for receipt in receipts):
+        incomplete = [part for part in record['parts'] if any(
+            part.get('receipts', {}).get(n, {}).get('status') not in ('QUEUE', 'PUBLISHED') for n in NETWORKS)]
+        expired = incomplete and all(datetime.fromisoformat(p['scheduledAt']) <= datetime.now(timezone.utc) + timedelta(minutes=2)
+                                     for p in incomplete)
+        record['status'] = 'publication-needs-attention' if expired else 'partially-scheduled'
+        record['blockedNetworks'] = blocked
+        record['lastError'] = 'Some networks need attention; successful receipts have been preserved.'
+        save(record)
+        raise RuntimeError(record['lastError'] + ' ' + '; '.join(f'{n}: {r}' for n, r in blocked.items()))
+    record.pop('blockedNetworks', None)
+    record.pop('lastError', None)
     all_published = all(receipt['status'] == 'PUBLISHED' for receipt in receipts)
     record['status'] = ('published' if all(r.get('publicUrlVerified') for r in receipts) else
                         'provider-published') if all_published else 'scheduled'

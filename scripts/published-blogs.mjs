@@ -9,6 +9,6 @@ export async function readPublishedBlogs(registryPath = path.join(process.cwd(),
     if (typeof article.body !== 'string') {
       throw new Error(`Published article ${slug} has no readable body.`);
     }
-    return { slug, body: article.body };
+    return { slug, date: article.date, body: article.body };
   });
 }

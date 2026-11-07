@@ -84,7 +84,7 @@ class Worker(unittest.TestCase):
                 worker.publish(storage, state, fixture.channels(), api, 30)
         self.assertEqual(scheduled, ['new'])
         self.assertEqual(records['old']['status'], 'publication-needs-attention')
-        self.assertEqual(api.writes, 5)
+        self.assertEqual(api.writes, 20)
 
     def test_only_latest_article_is_selected(self):
         articles = [{'slug': 'newest', 'date': '2026-11-01'}, {'slug': 'older', 'date': '2026-10-31'}]
@@ -151,7 +151,7 @@ class Worker(unittest.TestCase):
         storage = type('Storage', (), {'save': lambda *_: None})()
         with patch.object(worker, 'Ledger', return_value=ledger):
             worker.publish(storage, state, fixture.channels(), api, 30, verify_only=True)
-        self.assertEqual(api.writes, 5)
+        self.assertEqual(api.writes, 20)
         self.assertEqual(state['videoBatches']['recent']['published'], 20)
         self.assertEqual(state['videoBatches']['recent']['verifiedPublications'], 0)
 

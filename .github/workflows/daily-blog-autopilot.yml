@@ -25,9 +25,14 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: daily-blog-autopilot-production
+  cancel-in-progress: false
+
 jobs:
   daily-blog:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -39,6 +44,19 @@ jobs:
         with:
           node-version: 20
 
+      - name: Resolve the Pakistan publication date
+        id: publication-date
+        env:
+          BLOG_DATE: ${{ inputs.date }}
+        run: node --input-type=module -e "import {isoDate} from './scripts/generate-daily-blog.mjs'; import fs from 'node:fs'; fs.appendFileSync(process.env.GITHUB_OUTPUT, 'date=' + isoDate() + '\n');"
+
+      - name: Restore a previously validated draft for this date
+        id: draft-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .social-automation/daily-blog-drafts/${{ steps.publication-date.outputs.date }}.json
+          key: daily-blog-draft-v1-${{ steps.publication-date.outputs.date }}
+
       - name: Install dependencies
         run: npm ci
 
@@ -46,13 +64,21 @@ jobs:
         run: node --test scripts/blog-quality.test.mjs scripts/published-blogs.test.mjs scripts/generate-daily-blog.test.mjs
 
       - name: Generate daily static blog
+        id: generate
         env:
-          BLOG_DATE: ${{ inputs.date }}
+          BLOG_DATE: ${{ steps.publication-date.outputs.date }}
           BLOG_CATEGORY: ${{ inputs.category }}
           MCQSBASE_SOURCE_URL: https://www.mcqsbase.com
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-6-luna' }}
         run: npm run generate:daily-blog
+
+      - name: Keep the validated draft before building or merging
+        if: steps.draft-cache.outputs.cache-hit != 'true' && steps.generate.outcome == 'success' && hashFiles(format('.social-automation/daily-blog-drafts/{0}.json', steps.publication-date.outputs.date)) != ''
+        uses: actions/cache/save@v4
+        with:
+          path: .social-automation/daily-blog-drafts/${{ steps.publication-date.outputs.date }}.json
+          key: daily-blog-draft-v1-${{ steps.publication-date.outputs.date }}
 
       - name: Build check
         run: npm run build
@@ -61,16 +87,12 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           AUTO_MERGE: ${{ github.event_name == 'schedule' || inputs.auto_merge }}
+          DATE_VALUE: ${{ steps.publication-date.outputs.date }}
         shell: bash
         run: |
           if git diff --quiet; then
             echo "No daily blog changes to publish."
             exit 0
-          fi
-
-          DATE_VALUE="${{ inputs.date }}"
-          if [ -z "$DATE_VALUE" ]; then
-            DATE_VALUE="$(date -u +%F)"
           fi
 
           BRANCH="automation/daily-blog-${DATE_VALUE}"

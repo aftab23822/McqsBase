@@ -3,6 +3,7 @@ import argparse
 import base64
 from datetime import datetime, timedelta, timezone
 import hashlib
+import html
 import importlib.util
 import json
 import os
@@ -27,6 +28,23 @@ cloud = module('five_cloud', 'quiz-cloud-state.py')
 media = module('five_media', 'quiz-cloud-media.py')
 publisher = module('five_publisher', 'studio-cloud.py')
 POLICY = json.loads((ROOT / 'config/quiz-batch-policy.json').read_text(encoding='utf-8'))
+
+
+def report_handoff(state, error=None):
+    target = os.environ.get('GITHUB_STEP_SUMMARY')
+    if not target:
+        return
+    lines = ['## Social handoff results', '',
+             'Blog publication is a separate successful prerequisite. These rows describe social work only.', '',
+             '| Article | Social status | Provider published | Verified URLs | Blocked channels |',
+             '| --- | --- | --- | --- | --- |']
+    for slug, info in state.get('videoBatches', {}).items():
+        blocked = ', '.join(info.get('blockedNetworks', [])) or 'none'
+        lines.append(f'| {slug} | {info["status"]} | {info.get("published", 0)} / 20 | '
+                     f'{info.get("verifiedPublications", 0)} / 20 | {blocked} |')
+    if error:
+        lines.extend(['', '**Action needed:** ' + html.escape(str(error)).replace('|', '&#124;')])
+    Path(target).write_text('\n'.join(lines) + '\n', encoding='utf-8')
 
 
 class Ledger:
@@ -59,6 +77,7 @@ def summary(state, record, ledger):
     state.setdefault('videoBatches', {})[record['slug']] = {
         'status': record['status'], 'ledger': ledger.path, 'createdAt': record['createdAt'],
         'sourceUrl': record['package']['url'],
+        'blockedNetworks': list(record.get('blockedNetworks', {})),
         'scheduledAt': record.get('schedule', []),
         'published': sum(receipt.get('status') == 'PUBLISHED' for part in record.get('parts', [])
                          for receipt in part.get('receipts', {}).values()),
@@ -156,10 +175,10 @@ def generate(storage, state, slug, publisher_run):
 def publish(storage, state, channels, studio, spacing, verify_only=False):
     failures = []
     for slug, info in list(state.get('videoBatches', {}).items()):
-        allowed = ('ready', 'scheduling', 'scheduled', 'provider-published', 'publication-needs-attention') if verify_only else ('ready', 'scheduling', 'scheduled')
+        allowed = ('ready', 'scheduling', 'partially-scheduled', 'scheduled', 'provider-published', 'publication-needs-attention') if verify_only else ('ready', 'scheduling', 'partially-scheduled', 'scheduled')
         if info['status'] not in allowed:
             continue
-        if verify_only and info['status'] not in ('scheduled', 'provider-published', 'publication-needs-attention'):
+        if verify_only and info['status'] not in ('partially-scheduled', 'scheduled', 'provider-published', 'publication-needs-attention'):
             continue
         ledger = Ledger(storage, slug)
         record = ledger.load()
@@ -169,17 +188,23 @@ def publish(storage, state, channels, studio, spacing, verify_only=False):
             ledger.save(updated)
             summary(state, updated, ledger)
             storage.save(state)
-        if record['status'] in ('scheduled', 'provider-published', 'publication-needs-attention'):
+        if record['status'] in ('scheduled', 'provider-published', 'publication-needs-attention') or (verify_only and record['status'] == 'partially-scheduled'):
             # Read existing receipts on the next publication event, with no cron polling.
             start = (datetime.fromisoformat(record['schedule'][0]) - timedelta(days=1)).isoformat()
             end = (datetime.fromisoformat(record['schedule'][-1]) + timedelta(days=1)).isoformat()
             posts = studio.posts(start, end)
+            receipt_errors = []
             for part in record['parts']:
-                publisher.reconcile(part, posts, channels)
+                for network in publisher.NETWORKS:
+                    try:
+                        publisher.reconcile(part, posts, channels, only_network=network)
+                    except (RuntimeError, ValueError, KeyError, TypeError) as error:
+                        receipt_errors.append(f'{network}: {error}')
             all_receipts = [r for p in record['parts'] for r in p['receipts'].values()]
-            if any(r['status'] == 'ERROR' for r in all_receipts):
+            if receipt_errors or any(r['status'] == 'ERROR' for r in all_receipts):
                 record['status'] = 'publication-needs-attention'
-                record['lastError'] = 'A provider failed an existing scheduled post or comment; preserve IDs and repair only the missing step.'
+                record['lastError'] = ('An existing receipt needs attention; preserve IDs and repair only the missing step. '
+                                       + '; '.join(receipt_errors))
                 save(record)
                 failures.append(slug)
                 continue  # An older comment failure must not suppress the next daily batch.
@@ -195,6 +220,12 @@ def publish(storage, state, channels, studio, spacing, verify_only=False):
             next_question = batcher.validate_part(part['manifest'], record['package'], number, next_question)
             if part['sha256'] != part['asset']['videoSha256']:
                 raise ValueError('The saved asset hash differs from its validated batch part.')
+        if all(channels[name].get('blockedReason') for name in publisher.NETWORKS):
+            record['blockedNetworks'] = {name: channels[name]['blockedReason'] for name in publisher.NETWORKS}
+            record['lastError'] = 'All channels are unavailable; validated media and existing receipts are preserved.'
+            save(record)
+            failures.append(slug)
+            continue
         for part in record['parts']:
             if part.get('studioMedia'):
                 continue
@@ -221,11 +252,21 @@ def publish(storage, state, channels, studio, spacing, verify_only=False):
             part['uploadIntent'] = {'filename': filename, 'status': 'verified'}
             save(record)
         slots = record.get('schedule') or batcher.same_day_slots(datetime.now(timezone.utc), spacing_minutes=spacing)
-        publisher.schedule_batch(studio, record, channels, save, slots)
-        print(json.dumps({'slug': slug, 'status': record['status'], 'platformPosts': 20, 'times': record['schedule']}))
+        try:
+            publisher.schedule_batch(studio, record, channels, save, slots)
+            print(json.dumps({'slug': slug, 'status': record['status'], 'platformPosts': 20, 'times': record['schedule']}))
+        except RuntimeError as error:
+            record['lastError'] = str(error)
+            save(record)
+            failures.append(slug)
+            print(json.dumps({'slug': slug, 'status': record['status'],
+                              'blockedNetworks': record.get('blockedNetworks', {}), 'error': str(error)}))
+            continue
     if failures:
-        raise RuntimeError('Existing publication receipts need attention: ' + ', '.join(failures) +
+        report_handoff(state, 'Social batches need attention: ' + ', '.join(failures))
+        raise RuntimeError('Social batches need attention: ' + ', '.join(failures) +
                            '. Other ready batches were processed; do not recreate successful posts.')
+    report_handoff(state)
 
 
 def main():
@@ -252,7 +293,7 @@ def main():
         raise ValueError('Rollout validation is restricted to the one approved latest article.')
     if args.phase == 'plan':
         generate_new = slug is not None and state.get('videoBatches', {}).get(slug, {}).get('status') not in ('ready', 'scheduling')
-        work_states = ('ready', 'scheduling', 'scheduled') + (
+        work_states = ('ready', 'scheduling', 'partially-scheduled', 'scheduled') + (
             ('provider-published', 'publication-needs-attention') if args.verify_only else ())
         work = generate_new or any(item['status'] in work_states for item in state.get('videoBatches', {}).values())
         with Path(os.environ['GITHUB_OUTPUT']).open('a', encoding='utf-8') as stream:
@@ -264,7 +305,17 @@ def main():
             slug = choose(state, articles)
     else:
         studio = publisher.Studio()
-        channels = publisher.connected(studio, POLICY)
+        try:
+            channels = publisher.connected(studio, POLICY, verify_only=args.verify_only)
+        except (publisher.StudioError, RuntimeError, ValueError) as error:
+            state['socialService'] = {'status': 'blocked', 'reason': str(error),
+                                      'checkedAt': datetime.now(timezone.utc).isoformat()}
+            storage.save(state)
+            report_handoff(state, error)
+            raise SystemExit('Social access check failed; the blog and validated videos are preserved. ' + str(error))
+        state['socialService'] = {'status': 'checked', 'checkedAt': datetime.now(timezone.utc).isoformat(),
+                                  'blockedNetworks': {n: c['blockedReason'] for n, c in channels.items() if c.get('blockedReason')}}
+        storage.save(state)
         publish(storage, state, channels, studio, args.spacing, args.verify_only)
 
 
