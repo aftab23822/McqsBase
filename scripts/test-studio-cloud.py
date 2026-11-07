@@ -276,6 +276,51 @@ class Transport(unittest.TestCase):
 
 
 class Connections(unittest.TestCase):
+    def test_expired_tiktok_uses_supported_server_refresh_path_then_revalidates(self):
+        api, policy, calls = self.provider(can_post=True)
+        original = api.call
+        count = [0]
+        def call(method, path, payload=None):
+            if path.startswith('/analytics/'):
+                calls.append(path)
+                return []  # Empty analytics alone cannot prove successful renewal.
+            if path.startswith('/integration-trigger/'):
+                count[0] += 1
+                if count[0] == 1:
+                    return {'output': {'canPost': False, 'errorCode': 'access_token_invalid'}}
+            return original(method, path, payload)
+        api.call = call
+        actual = studio.connected(api, policy)
+        self.assertEqual(count[0], 2)
+        self.assertEqual(sum(p.startswith('/analytics/') for p in calls), 1)
+        self.assertEqual(actual['tiktok']['authRecovery'], 'creator-verified-after-studio-renewal')
+        self.assertNotIn('blockedReason', actual['tiktok'])
+
+    def test_failed_server_renewal_is_bounded_and_never_treated_as_success(self):
+        api, policy, calls = self.provider(can_post=False)
+        original = api.call
+        def call(method, path, payload=None):
+            if path.startswith('/analytics/'):
+                calls.append(path)
+                return []
+            value = original(method, path, payload)
+            if path.startswith('/integration-trigger/'):
+                value['output']['errorCode'] = 'access_token_invalid'
+            return value
+        api.call = call
+        actual = studio.connected(api, policy)
+        self.assertEqual(sum(p.startswith('/analytics/') for p in calls), 1)
+        self.assertEqual(sum(p.startswith('/integration-trigger/') for p in calls), 2)
+        self.assertIn('blockedReason', actual['tiktok'])
+        self.assertEqual(actual['tiktok']['authRecovery'], 'attempted-studio-renewal')
+        self.assertTrue(all('blockedReason' not in actual[n] for n in ('facebook', 'instagram', 'youtube')))
+
+    def test_non_expiry_tiktok_restrictions_do_not_trigger_token_renewal(self):
+        api, policy, calls = self.provider(can_post=False)
+        actual = studio.connected(api, policy)
+        self.assertNotIn('authRecovery', actual['tiktok'])
+        self.assertFalse(any(p.startswith('/analytics/') for p in calls))
+
     def provider(self, can_post=False):
         expected = channels()
         calls = []

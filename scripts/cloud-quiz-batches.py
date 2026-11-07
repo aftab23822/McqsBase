@@ -314,7 +314,8 @@ def main():
             report_handoff(state, error)
             raise SystemExit('Social access check failed; the blog and validated videos are preserved. ' + str(error))
         state['socialService'] = {'status': 'checked', 'checkedAt': datetime.now(timezone.utc).isoformat(),
-                                  'blockedNetworks': {n: c['blockedReason'] for n, c in channels.items() if c.get('blockedReason')}}
+                                  'blockedNetworks': {n: c['blockedReason'] for n, c in channels.items() if c.get('blockedReason')},
+                                  'authRecovery': {n: c['authRecovery'] for n, c in channels.items() if c.get('authRecovery')}}
         storage.save(state)
         publish(storage, state, channels, studio, args.spacing, args.verify_only)
 

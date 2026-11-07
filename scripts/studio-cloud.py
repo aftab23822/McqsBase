@@ -147,12 +147,27 @@ def connected(studio, policy, verify_only=False):
             result[network]['rules'] = rules
             if network != 'tiktok':
                 continue
-            creator = studio.call('POST', '/integration-trigger/' + channel['id'],
-                                 {'methodName': 'creatorInfo', 'data': {}})['output']
-            if isinstance(creator, str):
-                creator = json.loads(creator)
-            while isinstance(creator, dict) and isinstance(creator.get('data'), dict):
-                creator = creator['data']
+            def creator_info():
+                value = studio.call('POST', '/integration-trigger/' + channel['id'],
+                                    {'methodName': 'creatorInfo', 'data': {}})['output']
+                if isinstance(value, str):
+                    value = json.loads(value)
+                while isinstance(value, dict) and isinstance(value.get('data'), dict):
+                    value = value['data']
+                return value
+            creator = creator_info()
+            if (isinstance(creator, dict) and creator.get('canPost') is not True
+                    and creator.get('errorCode') in ('access_token_invalid', 'access_token_expired', 'invalid_token')):
+                # Studio's creator helper currently bypasses its refresh handler.
+                # Its documented free analytics route checks stored expiry and
+                # invokes the server-side refresh service, even before its cache.
+                # Tokens stay inside Studio. An empty analytics result is NOT
+                # evidence of recovery: query creator info again and verify it.
+                result[network]['authRecovery'] = 'attempted-studio-renewal'
+                studio.call('GET', '/analytics/' + channel['id'] + '?date=1&fresh=true')
+                creator = creator_info()
+                if isinstance(creator, dict) and creator.get('canPost') is True:
+                    result[network]['authRecovery'] = 'creator-verified-after-studio-renewal'
             if not isinstance(creator, dict):
                 raise ValueError('TikTok account details are unavailable; reconnect the existing channel.')
             code = str(creator.get('errorCode', ''))
