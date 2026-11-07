@@ -52,6 +52,7 @@ jobs:
 
       - name: Restore a previously validated draft for this date
         id: draft-cache
+        continue-on-error: true
         uses: actions/cache/restore@v4
         with:
           path: .social-automation/daily-blog-drafts/${{ steps.publication-date.outputs.date }}.json
@@ -75,6 +76,7 @@ jobs:
 
       - name: Keep the validated draft before building or merging
         if: steps.draft-cache.outputs.cache-hit != 'true' && steps.generate.outcome == 'success' && hashFiles(format('.social-automation/daily-blog-drafts/{0}.json', steps.publication-date.outputs.date)) != ''
+        continue-on-error: true
         uses: actions/cache/save@v4
         with:
           path: .social-automation/daily-blog-drafts/${{ steps.publication-date.outputs.date }}.json
