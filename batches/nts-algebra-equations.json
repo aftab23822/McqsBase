@@ -2250,8 +2250,9 @@
           "integrationId": "cmvwbcule0222ro9dhocbic4w"
         },
         "youtube": {
-          "status": "uncertain",
-          "attemptedAt": "2026-11-07T10:30:02.463097+00:00"
+          "status": "accepted",
+          "attemptedAt": "2026-11-07T10:30:02.463097+00:00",
+          "postId": "cmw69i41j04gmroivr3s1kvn9"
         }
       }
     },
