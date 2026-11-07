@@ -1619,7 +1619,11 @@
       },
       "uploadIntent": {
         "filename": "nts-algebra-equations-part-01-2ecb2e7102f9fd02.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "8ac12f49-c17a-4cc5-b30d-025a2aeb9dcc",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/A6bQZuge2s.mp4"
       }
     },
     {
