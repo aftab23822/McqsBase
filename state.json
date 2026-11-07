@@ -1036,6 +1036,7 @@
       "ledger": "batches/nts-algebra-equations.json",
       "createdAt": "2026-11-07T05:37:32.483197+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nts-algebra-equations",
+      "blockedNetworks": [],
       "scheduledAt": [],
       "published": 0,
       "verifiedPublications": 0
