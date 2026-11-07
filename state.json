@@ -1020,6 +1020,7 @@
       "ledger": "batches/nts-geometry-mensuration.json",
       "createdAt": "2026-11-06T08:16:02.215252+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nts-geometry-mensuration",
+      "blockedNetworks": [],
       "scheduledAt": [
         "2026-11-06T13:37:00+05:00",
         "2026-11-06T15:42:00+05:00",
@@ -1027,8 +1028,8 @@
         "2026-11-06T19:52:00+05:00",
         "2026-11-06T21:57:00+05:00"
       ],
-      "published": 0,
-      "verifiedPublications": 0
+      "published": 16,
+      "verifiedPublications": 12
     },
     "nts-algebra-equations": {
       "status": "ready",
