@@ -2460,6 +2460,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 5,
+      "directory": "part-05",
+      "sourceQuestionNumbers": [
+        44,
+        86,
+        61
+      ],
+      "count": 3,
+      "durationSeconds": 75,
+      "sha256": "93eaf350fb3d39d8ba460e14341b706420b42207388192bb76c2b03243ab77d7",
+      "manifest": {
+        "title": "100 NTS-Style Algebra and Equations MCQs with Explanations",
+        "sourceTitle": "100 NTS-Style Algebra and Equations MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nts-algebra-equations",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-07T05:37:32.306717+00:00",
+        "sourceContentHash": "df0eea7052541fc7f5f81630e031a66ae8aa07ccec469d427388a6067c77767c",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7617172834,
+          "sha": "6607465fbdb4119c2135daa1302b7f2186cf3c7f",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-07T05:37:32.306717+00:00",
+          "url": "https://mcqs-base-2kboyr3p1-as-projects-10921176.vercel.app",
+          "publisherRunId": 42342931910
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 75,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Solve 2x - 3 = 5x + 6.",
+            "choices": [
+              "-3",
+              "3",
+              "-1",
+              "1"
+            ],
+            "correctIndex": 0,
+            "key": "ea8f7844d5f8ccf99ef0cc6e6d5a77b571967de91b8ff418ce1ce0de0a95b5e9",
+            "sourceNumber": 44
+          },
+          {
+            "question": "Solve x² - 4 = 0 over the real numbers.",
+            "choices": [
+              "x = 2 or x = -2",
+              "x = 4 or x = -4",
+              "x = 2 only",
+              "x = -2 only"
+            ],
+            "correctIndex": 0,
+            "key": "3e2823e79e807f92dbac158b912fe22ca68dab77660eae0a66d76e59dcbe133e",
+            "sourceNumber": 86
+          },
+          {
+            "question": "Solve 3(2x + 1) = 5x + 8.",
+            "choices": [
+              "5",
+              "11",
+              "3",
+              "-5"
+            ],
+            "correctIndex": 0,
+            "key": "85db9ad6b1dc414dd3c1f8d57ebecfb85bfb4574cdcd1fedbb399865e115bfb7",
+            "sourceNumber": 61
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 13,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 13,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 14,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 15,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 16,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 20,
+            "duration": 20,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 40,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 41,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 42,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 43,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 49,
+            "duration": 14,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 63,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 64,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 65,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 66,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 70,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 5,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            44,
+            86,
+            61
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nts-algebra-equations-part-05-93eaf350fb3d39d8.mp4",
+        "videoSha256": "93eaf350fb3d39d8ba460e14341b706420b42207388192bb76c2b03243ab77d7",
+        "assetId": 719749344
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 5/5 | Q44, 86, 61 | 100 NTS-Style Algebra and Equations MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 44, 86, 61\n100 NTS-Style Algebra and Equations MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-algebra-equations",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-algebra-equations",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 5/5 | Q44, 86, 61 | 100 NTS-Style Algebra and Equations MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 44, 86, 61\n100 NTS-Style Algebra and Equations MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-algebra-equations\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-algebra-equations",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-algebra-equations",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 5/5 | Q44, 86, 61 | 100 NTS-Style Algebra and Equations MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 44, 86, 61\n100 NTS-Style Algebra and Equations MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-algebra-equations\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-algebra-equations",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-algebra-equations",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 5/5 | Q44, 86, 61 | 100 NTS-Style Algebra and Equations MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 44, 86, 61\n100 NTS-Style Algebra and Equations MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-algebra-equations\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-algebra-equations",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-algebra-equations",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
