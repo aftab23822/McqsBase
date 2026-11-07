@@ -1773,6 +1773,10 @@
           "publicUrlVerified": false,
           "verification": "provider-status-only",
           "integrationId": "cmvwbbtq00220ro9du35l1wrs"
+        },
+        "tiktok": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-07T10:29:38.986717+00:00"
         }
       }
     },
