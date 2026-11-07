@@ -2775,7 +2775,11 @@
       },
       "uploadIntent": {
         "filename": "nts-algebra-equations-part-05-93eaf350fb3d39d8.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "c08271c6-f491-42b4-a589-66e648f2eea8",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/lClIUFdsI9.mp4"
       }
     }
   ],
