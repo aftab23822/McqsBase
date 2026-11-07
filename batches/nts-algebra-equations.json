@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nts-algebra-equations",
   "createdAt": "2026-11-07T05:37:32.483197+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "nts-algebra-equations",
     "title": "100 NTS-Style Algebra and Equations MCQs with Explanations",
@@ -1749,7 +1749,12 @@
         }
       },
       "scheduledAt": "2026-11-07T15:45:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-07T10:29:28.284300+00:00"
+        }
+      }
     },
     {
       "part": 2,
