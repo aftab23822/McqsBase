@@ -1,6 +1,6 @@
 import { assertNoRepeatedSet, questionKey } from './blog-quality.mjs';
 import { readPublishedBlogs } from './published-blogs.mjs';
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
+import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from 'fs';
 import path from 'path';
 import { pathToFileURL } from 'node:url';
 
@@ -53,10 +53,14 @@ function getArg(name) {
   return item ? item.slice(prefix.length) : '';
 }
 
-function isoDate(input = '') {
-  const source = input || process.env.BLOG_DATE || new Date().toISOString();
+export function isoDate(input = '', instant = new Date()) {
+  const source = input || process.env.BLOG_DATE || '';
+  if (!source) {
+    return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Karachi',
+      year: 'numeric', month: '2-digit', day: '2-digit' }).format(instant);
+  }
   const date = new Date(source);
-  if (Number.isNaN(date.getTime())) {
+  if (Number.isNaN(date.getTime()) || (/^\d{4}-\d{2}-\d{2}$/.test(source) && date.toISOString().slice(0, 10) !== source)) {
     throw new Error(`Invalid BLOG_DATE: ${source}`);
   }
   return date.toISOString().slice(0, 10);
@@ -224,6 +228,29 @@ function rawMcqs(mcqs) {
   }));
 }
 
+export async function prepareDailyDraft(date, published, { cacheDir = path.join(ROOT, '.social-automation', 'daily-blog-drafts'),
+                                                        fetchImpl = fetch } = {}) {
+  const existing = published.find(article => article.date === date);
+  if (existing) return { existingSlug: existing.slug };
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) throw new Error('Invalid publication cache date.');
+  const file = path.join(cacheDir, `${date}.json`);
+  if (existsSync(file)) {
+    try {
+      const saved = JSON.parse(readFileSync(file, 'utf8'));
+      if (saved.version !== 1 || saved.date !== date) throw new Error('Checkpoint belongs to another publication date.');
+      return { draft: validateDraft(saved.draft, published), fromCache: true };
+    } catch {
+      console.warn('Saved daily draft did not pass current validation; requesting a fresh validated draft.');
+    }
+  }
+  const draft = await generateAiDraft(date, published, { fetchImpl });
+  mkdirSync(cacheDir, { recursive: true });
+  const checkpoint = { version: 1, date, draft: { ...draft, mcqs: rawMcqs(draft.mcqs) } };
+  writeFileSync(file + '.tmp', JSON.stringify(checkpoint), 'utf8');
+  renameSync(file + '.tmp', file);
+  return { draft, fromCache: false };
+}
+
 function slugAlreadyExists(slug) {
   const articlePath = path.join(BLOG_ROOT, slug, 'article.md');
   if (existsSync(articlePath)) {
@@ -249,7 +276,8 @@ function resolveAvailableSlug(baseSlug) {
   return candidate;
 }
 
-export async function generateAiDraft(date, published, { fetchImpl = fetch } = {}) {
+export async function generateAiDraft(date, published, { fetchImpl = fetch,
+    sleep = ms => new Promise(resolve => setTimeout(resolve, ms)), timeoutMs = 180000 } = {}) {
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) {
     throw new Error('OPENAI_API_KEY is required for AI-first daily blog generation. Add it as a GitHub Actions secret.');
@@ -288,6 +316,7 @@ export async function generateAiDraft(date, published, { fetchImpl = fetch } = {
     '- Correct answer must be one of the options exactly.',
     '- Each question must be unambiguous and have exactly one defensible correct option. State necessary units, assumptions, jurisdiction, or context. Use four distinct, plausible options; avoid overlapping answers, all/none-of-the-above, and clueing the answer through wording.',
     '- Every MCQ needs an explanation of the reasoning or rule, with a worked calculation where relevant. Do not just restate the answer.',
+    '- Keep explanations concise, normally one or two sentences. Include the necessary worked steps without repetitive prose so the complete JSON fits the output limit.',
     '- Where useful, explain the misconception behind a plausible wrong option. Independently solve each calculation and check that the explanation, correctAnswer, and options agree before returning.',
     '- Use varied original exam-style questions with a deliberate progression from fundamentals to application. Do not repeat the same fact or calculation with superficial wording or number changes.',
     '- Do not claim questions are copied from a real paper or exact official past paper.',
@@ -317,8 +346,11 @@ export async function generateAiDraft(date, published, { fetchImpl = fetch } = {
       'Use stable facts and well-established rules; no live verification or official source has been supplied. No unsupported current facts, official/past-paper claims, all/none-of-the-above, numbering prefixes or markdown in values. Return complete JSON only.'
     ].join('\n\n') : [basePrompt, retryInstruction].filter(Boolean).join('\n\n');
 
-    const response = await fetchImpl('https://api.openai.com/v1/responses', {
+    let response;
+    try {
+      response = await fetchImpl('https://api.openai.com/v1/responses', {
       method: 'POST',
+      signal: AbortSignal.timeout(timeoutMs),
       headers: {
         Authorization: `Bearer ${apiKey}`,
         'Content-Type': 'application/json'
@@ -401,15 +433,38 @@ export async function generateAiDraft(date, published, { fetchImpl = fetch } = {
         },
         max_output_tokens: 22000
       })
-    });
-
-    if (!response.ok) {
-      const message = await response.text();
-      throw new Error(`OpenAI daily blog generation failed (${response.status}): ${message}`);
+      });
+    } catch {
+      lastValidationError = new Error('OpenAI request timed out or the connection failed; retained questions were preserved.');
+      if (attempt === 3) throw lastValidationError;
+      console.warn(`OpenAI temporary connection failure on attempt ${attempt}/3; retrying within the same request budget.`);
+      await sleep(1000 * 2 ** (attempt - 1));
+      continue;
     }
 
-    const payload = await response.json();
+    if (!response.ok) {
+      let details = {};
+      try { details = JSON.parse(await response.text()); } catch { /* Never log raw upstream responses. */ }
+      const rawCode = String(details.error?.code || details.error?.type || 'request_rejected');
+      const code = /^[a-zA-Z0-9_.-]{1,80}$/.test(rawCode) ? rawCode : 'request_rejected';
+      const error = new Error(`OpenAI daily blog generation failed (${response.status}, ${code}).`);
+      const retryable = [408, 409, 429].includes(response.status) || response.status >= 500;
+      const permanentQuota = /quota|billing|credit_balance|spend_limit|usage_limit/.test(code);
+      if (!retryable || permanentQuota || attempt === 3) throw error;
+      const header = response.headers?.get('Retry-After');
+      const numeric = header == null ? NaN : Number(header);
+      const delay = Number.isFinite(numeric) ? numeric * 1000
+        : header && Number.isFinite(Date.parse(header)) ? Math.max(0, Date.parse(header) - Date.now())
+        : 1000 * 2 ** (attempt - 1);
+      if (delay > 30000) throw new Error('OpenAI requested a longer wait; retry the saved workflow later without increasing the generation budget.');
+      lastValidationError = error;
+      console.warn(`OpenAI temporary HTTP ${response.status} on attempt ${attempt}/3; retrying within the same request budget.`);
+      await sleep(Math.max(0, delay));
+      continue;
+    }
+
     try {
+      const payload = await response.json();
       if (payload.status === 'incomplete') {
         const error = new Error(`OpenAI returned an incomplete response (${payload.incomplete_details?.reason || 'unknown reason'}); return concise, complete JSON.`);
         error.incompleteResponse = true;
@@ -559,7 +614,12 @@ async function main() {
   const date = isoDate(getArg('date'));
   // Fail on broken published content before making a paid generation request.
   const published = await readPublishedBlogs(REGISTRY_PATH);
-  const draft = await generateAiDraft(date, published);
+  const prepared = await prepareDailyDraft(date, published);
+  if (prepared.existingSlug) {
+    console.log(`Already published daily blog for ${date}: ${prepared.existingSlug}. No generation or duplicate article needed.`);
+    return;
+  }
+  const draft = prepared.draft;
   const slug = resolveAvailableSlug(draft.topicSlug);
   const targetDir = path.join(BLOG_ROOT, slug);
   const articlePath = path.join(targetDir, 'article.md');

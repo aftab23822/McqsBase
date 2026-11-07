@@ -1,6 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildArticle, generateAiDraft, validateDraft } from './generate-daily-blog.mjs';
+import { buildArticle, generateAiDraft, isoDate, prepareDailyDraft, validateDraft } from './generate-daily-blog.mjs';
+import { mkdtempSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import path from 'node:path';
 import { assertNoRepeatedSet, tableQuestions } from './blog-quality.mjs';
 
 function makeDraft(prefix = 'Practice') {
@@ -207,9 +210,100 @@ test('malformed JSON retries without changing the publication guard', async t =>
   });
 });
 
-test('transport rejection is not mistaken for a correctable content failure', async t => {
+test('authentication rejection is not retried as a content failure', async t => {
   await withResponses(t, [makeDraft()], async ({ fetchImpl, requests }) => {
-    await assert.rejects(generateAiDraft('2026-10-30', [], { fetchImpl }), /generation failed \(429\)/);
+    await assert.rejects(generateAiDraft('2026-10-30', [], { fetchImpl }), /generation failed \(401,/);
     assert.equal(requests.length, 1);
-  }, 429);
+  }, 401);
+});
+
+test('temporary HTTP failures use bounded retries and honor Retry-After', async t => {
+  await withResponses(t, [makeDraft()], async ({ fetchImpl }) => {
+    let calls = 0;
+    const delays = [];
+    const transient = async (...args) => ++calls === 1
+      ? { ok: false, status: 429, headers: { get: () => '2' }, text: async () => '{"error":{"code":"rate_limit_exceeded"}}' }
+      : fetchImpl(...args);
+    const draft = await generateAiDraft('2026-11-07', [], { fetchImpl: transient, sleep: async ms => delays.push(ms) });
+    assert.equal(draft.mcqs.length, 100);
+    assert.equal(calls, 2);
+    assert.deepEqual(delays, [2000]);
+  });
+});
+
+test('temporary connection failures have a request deadline and share the three-request budget', async t => {
+  await withResponses(t, [makeDraft()], async ({ fetchImpl }) => {
+    let calls = 0;
+    const transient = async (...args) => {
+      assert.ok(args[1].signal instanceof AbortSignal);
+      if (++calls === 1) throw new TypeError('network unavailable');
+      return fetchImpl(...args);
+    };
+    assert.equal((await generateAiDraft('2026-11-07', [], { fetchImpl: transient, sleep: async () => {} })).mcqs.length, 100);
+    assert.equal(calls, 2);
+    let rejectedCalls = 0;
+    await assert.rejects(generateAiDraft('2026-11-07', [], { sleep: async () => {}, fetchImpl: async () => {
+      rejectedCalls++;
+      throw new TypeError('network unavailable');
+    } }), /connection failed/);
+    assert.equal(rejectedCalls, 3);
+  });
+});
+
+test('quota exhaustion and excessive Retry-After do not make repeated paid requests', async t => {
+  await withResponses(t, [makeDraft()], async () => {
+    for (const [code, delay, expected] of [['insufficient_quota', null, /insufficient_quota/],
+                                        ['rate_limit_exceeded', '300', /longer wait/]]) {
+      let calls = 0;
+      await assert.rejects(generateAiDraft('2026-11-07', [], { sleep: async () => assert.fail('Unexpected wait'),
+        fetchImpl: async () => { calls++; return { ok: false, status: 429,
+          headers: { get: () => delay }, text: async () => JSON.stringify({ error: { code } }) }; } }), expected);
+      assert.equal(calls, 1);
+    }
+  });
+});
+
+test('already published dates are idempotent before any generation or filesystem work', async () => {
+  const result = await prepareDailyDraft('2026-11-07', [{ slug: 'already-published', date: '2026-11-07' }], {
+    fetchImpl: async () => assert.fail('Must not generate a second article for this date'), cacheDir: 'unused'
+  });
+  assert.deepEqual(result, { existingSlug: 'already-published' });
+});
+
+test('a validated 99-question draft survives a later build/merge retry without another API call', async t => {
+  const folder = mkdtempSync(path.join(tmpdir(), 'mcqs-blog-test-'));
+  t.after(() => rmSync(folder, { recursive: true, force: true }));
+  const accepted = makeDraft(); accepted.mcqs.pop();
+  await withResponses(t, [accepted], async ({ fetchImpl, requests }) => {
+    const first = await prepareDailyDraft('2026-11-07', [], { cacheDir: folder, fetchImpl });
+    const second = await prepareDailyDraft('2026-11-07', [], { cacheDir: folder,
+      fetchImpl: async () => assert.fail('Validated draft must be reused') });
+    assert.equal(first.fromCache, false);
+    assert.equal(second.fromCache, true);
+    assert.equal(second.draft.mcqs.length, 99);
+    assert.equal(second.draft.title, '99 Number Reasoning MCQs');
+    assert.deepEqual(second.draft, first.draft);
+    assert.equal(requests.length, 1);
+  });
+});
+
+test('cached drafts are revalidated against the latest published content', async t => {
+  const folder = mkdtempSync(path.join(tmpdir(), 'mcqs-blog-test-'));
+  t.after(() => rmSync(folder, { recursive: true, force: true }));
+  await withResponses(t, [makeDraft(), makeDraft('Fresh')], async ({ fetchImpl, requests }) => {
+    await prepareDailyDraft('2026-11-07', [], { cacheDir: folder, fetchImpl });
+    const prior = [{ slug: 'new-overlap', date: '2026-11-06', body: buildArticle(validateDraft(makeDraft()), '2026-11-06').body }];
+    const next = await prepareDailyDraft('2026-11-07', prior, { cacheDir: folder, fetchImpl });
+    assert.equal(next.fromCache, false);
+    assert.match(next.draft.mcqs[0].question, /^Fresh/);
+    assert.equal(requests.length, 2);
+  });
+});
+
+test('automatic publication date follows Pakistan midnight and rejects invalid dates', t => {
+  const previous = process.env.BLOG_DATE; delete process.env.BLOG_DATE;
+  t.after(() => { if (previous === undefined) delete process.env.BLOG_DATE; else process.env.BLOG_DATE = previous; });
+  assert.equal(isoDate('', new Date('2026-11-07T21:00:00Z')), '2026-11-08');
+  assert.equal(isoDate('2026-11-07'), '2026-11-07');
+  assert.throws(() => isoDate('2026-02-31'), /Invalid BLOG_DATE/);
 });

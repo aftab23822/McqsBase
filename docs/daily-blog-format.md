@@ -6,6 +6,8 @@ Every autopublished MCQsBase blog should be a static Markdown article under `pub
 
 Daily Blog Autopilot is scheduled for 05:00 Asia/Karachi every day (`0 0 * * *` in UTC). This starts generation; the article is published after validation, build, merge and Production deployment. GitHub scheduled runs can be delayed, so an exact 05:00 live publication is not guaranteed. Successful publication triggers Blog Quiz Batches automatically. Once all five videos are ready, an early batch uses 10:00, 13:00, 16:00, 19:00 and 22:00 Pakistan time across all four platforms. Later readiness uses the remaining same-day window. No laptop needs to remain on.
 
+Publication runs are serialized. The effective date is resolved once in Pakistan time and used for generation, the branch and the validated-draft cache. A date already present in the published registry is skipped before any AI request. Complete validated drafts are saved atomically and cached before the build/merge steps, then revalidated against the current published registry on recovery. Temporary API/network errors use bounded backoff and request deadlines within the same maximum of three generation requests; authentication/quota errors and long server-directed waits stop with an actionable error. Partial JSON is never published.
+
 ## Article Standard
 
 - Title: SEO-friendly, usually `100 {Topic} MCQs with Answers - {Date}` or a stronger test-specific variant.
@@ -29,7 +31,7 @@ Daily Blog Autopilot is scheduled for 05:00 Asia/Karachi every day (`0 0 * * *` 
 2. `## Why this {Topic} set is useful`
 3. `## Test focus topics`
 4. `## What this set covers`
-5. Five MCQ tables of 20 questions each.
+5. Five MCQ tables of up to 20 questions each; the last table has 19 when the accepted total is 99.
 6. `## How to revise this set`
 7. `## Frequently Asked Questions`
 8. `## Final Takeaway`
