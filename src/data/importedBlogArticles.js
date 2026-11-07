@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nts-algebra-equations": {
+    title: "100 NTS-Style Algebra and Equations MCQs with Explanations",
+    excerpt:
+      "Practise algebraic simplification, linear equations, inequalities, systems, exponents and word problems with 100 original MCQs and worked reasoning.",
+    category: "Subject Guide",
+    date: "2026-11-07",
+    readTime: "24 min",
+    content: null,
+    body: readImportedBlogBody("nts-algebra-equations")
+  },
   "nts-geometry-mensuration": {
     title: "100 NTS-Style Geometry and Mensuration MCQs with Explanations",
     excerpt:
