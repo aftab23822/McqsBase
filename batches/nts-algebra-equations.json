@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "nts-algebra-equations",
+  "createdAt": "2026-11-07T05:37:32.483197+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nts-algebra-equations",
+    "title": "100 NTS-Style Algebra and Equations MCQs with Explanations",
+    "url": "https://www.mcqsbase.com/blog/nts-algebra-equations",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7617172834,
+      "sha": "6607465fbdb4119c2135daa1302b7f2186cf3c7f",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-07T05:37:32.306717+00:00",
+      "url": "https://mcqs-base-2kboyr3p1-as-projects-10921176.vercel.app",
+      "publisherRunId": 42342931910
+    },
+    "fetchedAt": "2026-11-07T05:37:32.306717+00:00",
+    "contentHash": "df0eea7052541fc7f5f81630e031a66ae8aa07ccec469d427388a6067c77767c",
+    "questions": [
+      {
+        "question": "Simplify 4x + 3x - 5.",
+        "choices": [
+          "7x - 5",
+          "7x + 5",
+          "12x - 5",
+          "x - 5"
+        ],
+        "key": "91435f36da7432df60342f237ab7add3fe46aeb12bdc920863a39fb0446dba9c",
+        "sourceNumber": 1,
+        "correctIndex": 0
+      },
+      {
+        "question": "Evaluate 2a - 3b when a = 5 and b = 2.",
+        "choices": [
+          "4",
+          "10",
+          "16",
+          "1"
+        ],
+        "key": "cc624fc2e8211cb0ffcd94d3c741ca186ac4d7746c5c84ba7c38365bc81566e2",
+        "sourceNumber": 2,
+        "correctIndex": 0
+      },
+      {
+        "question": "Expand 3(x + 4).",
+        "choices": [
+          "3x + 4",
+          "3x + 12",
+          "x + 12",
+          "7x"
+        ],
+        "key": "880f88c2481fbd083bbc7160520fd10db8a36301911369145e4270e1aee7f450",
+        "sourceNumber": 3,
+        "correctIndex": 1
+      },
+      {
+        "question": "Simplify 5y - 2(y - 3).",
+        "choices": [
+          "3y - 6",
+          "3y + 6",
+          "7y - 6",
+          "7y + 6"
+        ],
+        "key": "92fda124de7eb921f23d6fca45e36b4a146b8999cebcb6cb453ef47db6b86c2c",
+        "sourceNumber": 4,
+        "correctIndex": 1
+      },
+      {
+        "question": "Simplify 2(3x - 1) + 4.",
+        "choices": [
+          "6x + 2",
+          "6x - 6",
+          "5x + 3",
+          "6x + 6"
+        ],
+        "key": "8c4f08e48d1df2a426449ee4c90d22b53cf19f48cb15eb93cf07ee39de19bcb6",
+        "sourceNumber": 5,
+        "correctIndex": 0
+      },
+      {
+        "question": "If x = -2, what is x² + 3x?",
+        "choices": [
+          "-2",
+          "-10",
+          "10",
+          "2"
+        ],
+        "key": "73cf18641aefd042875501c3e35adbaf43fb37f20e1fa1f549545df35c5b58ae",
+        "sourceNumber": 6,
+        "correctIndex": 0
+      },
+      {
+        "question": "Simplify 8m - 3m + 2m.",
+        "choices": [
+          "7m",
+          "13m",
+          "7m²",
+          "3m"
+        ],
+        "key": "e6c95ffe7ce12295140a81b5b462f850a8f7fdc34e6aa10b474e0b8b2ff8814a",
+        "sourceNumber": 7,
+        "correctIndex": 0
+      },
+      {
+        "question": "Expand (x + 2)(x + 3).",
+        "choices": [
+          "x² + 5x + 6",
+          "x² + 6x + 5",
+          "x² + x + 6",
+          "x² + 5"
+        ],
+        "key": "ddbed6753da817894a544b124621176d775ddfabd0c114312db8c701629da361",
+        "sourceNumber": 8,
+        "correctIndex": 0
+      },
+      {
+        "question": "Factorise 6x + 12 by taking out the greatest common factor.",
+        "choices": [
+          "6(x + 2)",
+          "3(2x + 12)",
+          "2(3x + 12)",
+          "6(x + 12)"
+        ],
+        "key": "b3ba8cda5162e03987730fd5dc59ffde1e5d057e5597e12e82040ea2ebeb93ef",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "Simplify 4(2p - 3) - 3p.",
+        "choices": [
+          "5p - 12",
+          "11p - 12",
+          "5p + 12",
+          "8p - 3"
+        ],
+        "key": "f422fcf8299607777ae8478f5319d848abab6698757d6516df2a7906c3eaeaec",
+        "sourceNumber": 10,
+        "correctIndex": 0
+      },
+      {
+        "question": "Evaluate 3x² - 2 when x = 3.",
+        "choices": [
+          "25",
+          "21",
+          "7",
+          "15"
+        ],
+        "key": "3e846cd1ef771b5ab96f30456e94330b2297e7e9651f6329f273aec3ae11afc6",
+        "sourceNumber": 11,
+        "correctIndex": 0
+      },
+      {
+        "question": "Simplify (2a + 5) - (a - 4).",
+        "choices": [
+          "a + 1",
+          "a + 9",
+          "3a + 1",
+          "a - 9"
+        ],
+        "key": "67454021fb2fac2701b38e536c92093306e48f99abddb87562f1cafe513d5f93",
+        "sourceNumber": 12,
+        "correctIndex": 1
+      },
+      {
+        "question": "If x = 4 and y = -1, find 2x - y.",
+        "choices": [
+          "7",
+          "9",
+          "5",
+          "-9"
+        ],
+        "key": "a197adff58ec6f5406275c498b8d7864d14e73b9812b6190c0b2a773aff84b53",
+        "sourceNumber": 13,
+        "correctIndex": 1
+      },
+      {
+        "question": "Simplify 7r - 2(2r + 5).",
+        "choices": [
+          "3r - 10",
+          "3r + 10",
+          "11r - 10",
+          "5r - 5"
+        ],
+        "key": "dc506b77569e2c7f7313e966fb7206222e618f146550912514983f1ae245e11b",
+        "sourceNumber": 14,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which expression is equivalent to 2(x - 3) + 5(x + 1)?",
+        "choices": [
+          "7x - 1",
+          "7x + 8",
+          "3x - 1",
+          "7x - 11"
+        ],
+        "key": "c47ff9f23a30c958e3ca07614cc1d4b2534d44d3f1a8c8ade7c83ba541e16737",
+        "sourceNumber": 15,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve x + 7 = 15.",
+        "choices": [
+          "8",
+          "22",
+          "7",
+          "-8"
+        ],
+        "key": "962250a12c3d66f4d775beb56b82dc94f02bcceb6b63b70f8817dea5a1901c13",
+        "sourceNumber": 16,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 3x = 27.",
+        "choices": [
+          "9",
+          "24",
+          "81",
+          "3"
+        ],
+        "key": "a09492065cae93c7c37426eab71d1ae9ece0c66538aac88f0b786c45e1e26295",
+        "sourceNumber": 17,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 2x - 5 = 11.",
+        "choices": [
+          "8",
+          "3",
+          "13",
+          "16"
+        ],
+        "key": "e5602ed39e757ee6b066886b8046e19412cfb6400439dec1dc524fcd251b313e",
+        "sourceNumber": 18,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 5x + 4 = 2x + 19.",
+        "choices": [
+          "5",
+          "15",
+          "7",
+          "-5"
+        ],
+        "key": "9dd5f67cc0ddb442147d381c2f0af84f0ccff86c67a96d797a5feb019b58fb99",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 4(x - 2) = 20.",
+        "choices": [
+          "7",
+          "3",
+          "5",
+          "13"
+        ],
+        "key": "06909d651d00169eb899a70475faa8f64ac82ddd2d202d4de1c44b56f4a40043",
+        "sourceNumber": 20,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve (x/3) + 2 = 6.",
+        "choices": [
+          "12",
+          "4",
+          "8",
+          "18"
+        ],
+        "key": "99fffe2f03870bb7a20ad80ebb176548303633f55fd606b90dd9baae857ad418",
+        "sourceNumber": 21,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 7 - 2x = 1.",
+        "choices": [
+          "3",
+          "-3",
+          "4",
+          "6"
+        ],
+        "key": "bfa65ead2554d3fd4cd61b1450ed172ebb5c429f0846b93716e4d63e8df72fb0",
+        "sourceNumber": 22,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 3(x + 2) = 2x + 11.",
+        "choices": [
+          "5",
+          "17",
+          "3",
+          "-5"
+        ],
+        "key": "6491763b4a4e9acb29e789bf7a659c3c9172a191a2e1dd08bfda6a0eadd6a04b",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 2(x - 1) + 3 = 13.",
+        "choices": [
+          "6",
+          "5",
+          "8",
+          "4"
+        ],
+        "key": "41fe002d60bbca882cdce492a4b6d486df7de5e6613629474b7a0946058f3c46",
+        "sourceNumber": 24,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 5 - (x + 2) = 0.",
+        "choices": [
+          "3",
+          "7",
+          "-3",
+          "5"
+        ],
+        "key": "4968c63eea578f110ab21322f54a410b3a068206bb1cb86025a9f8107f958699",
+        "sourceNumber": 25,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 0.5x = 6.",
+        "choices": [
+          "12",
+          "3",
+          "6.5",
+          "0.5"
+        ],
+        "key": "18d88f0050a65fd2334ee70e6c696751c4ddc5e7437ec0faa1aa7d4f51fef606",
+        "sourceNumber": 26,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve (2x + 1)/5 = 3.",
+        "choices": [
+          "7",
+          "8",
+          "5",
+          "16"
+        ],
+        "key": "328154e215784e110649bf1565b6ae42b368af38d7ee730897efc062a5e5a4c6",
+        "sourceNumber": 27,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 6x - 4 = 2x + 12.",
+        "choices": [
+          "4",
+          "2",
+          "8",
+          "16"
+        ],
+        "key": "63c8171a11421bc7b9629865837dd494ade78381b9bcfc78c8afdc7e20dbcd85",
+        "sourceNumber": 28,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 9 - 3(x - 1) = 0.",
+        "choices": [
+          "4",
+          "2",
+          "6",
+          "-4"
+        ],
+        "key": "911e9cacd07ec2cd7f32f48df4101ef1ab6712e2dd268574bbe0eab49713bea8",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 2x/3 = 8.",
+        "choices": [
+          "12",
+          "6",
+          "16",
+          "24"
+        ],
+        "key": "5bfec50916cbe3f2b467e865d0df025bcd74798da1a82ee4842d12e4ca728b0d",
+        "sourceNumber": 30,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 4x + 7 = 3x - 2.",
+        "choices": [
+          "-9",
+          "9",
+          "-5",
+          "5"
+        ],
+        "key": "065904cf1189a028be2976f5950877ed083b9502dbf53b113c0256e6efe372d2",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 3(2x + 1) - 4 = 11.",
+        "choices": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "key": "8251b48d74032657a7232603d8a76b39631f79029d1f84c332a428e8400f8691",
+        "sourceNumber": 32,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve (x - 4)/2 = 5.",
+        "choices": [
+          "14",
+          "6",
+          "10",
+          "9"
+        ],
+        "key": "5b9af2944876a30f2372fe2686b4b5bd7cf92a05c436c9357fb87db3bf9e0696",
+        "sourceNumber": 33,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 2 - 5x = 17.",
+        "choices": [
+          "-3",
+          "3",
+          "-5",
+          "5"
+        ],
+        "key": "1f2c2b395b29eeed52b4579c64c979b48ff97b9484040b6ba307c2b4762b9733",
+        "sourceNumber": 34,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 0.2x + 3 = 7.",
+        "choices": [
+          "20",
+          "5",
+          "10",
+          "2"
+        ],
+        "key": "84b8238ab6590b3f1854a0e15505acd3530a5cb9acb1b2291bc1408eec335a07",
+        "sourceNumber": 35,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 2(x + 4) = 3(x - 1).",
+        "choices": [
+          "11",
+          "5",
+          "7",
+          "-11"
+        ],
+        "key": "a9238f45020fc1319261c975aca87a4fa27100d2e7bcd12fcbd485873e2650ff",
+        "sourceNumber": 36,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 5(x - 2) + 2x = 3.",
+        "choices": [
+          "13/7",
+          "7/13",
+          "1",
+          "2"
+        ],
+        "key": "0e7b4eb1527712c5b37e228119a65d0ce6507b6ae90d1ca29b85df883675c128",
+        "sourceNumber": 37,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 3x/4 - 2 = 4.",
+        "choices": [
+          "8",
+          "6",
+          "4",
+          "12"
+        ],
+        "key": "044ebf16b0bc4954627b4d468864220cc16777fc1b7e93618f72cdd74de96f76",
+        "sourceNumber": 38,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 2(3x - 2) = 4x + 10.",
+        "choices": [
+          "7",
+          "3",
+          "6",
+          "-7"
+        ],
+        "key": "bc49d0b4c9809245d2ab2fc792671c279ecfe9bb19baf61ae3e97b5a09d79ea9",
+        "sourceNumber": 39,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 8 - (2x - 3) = 5.",
+        "choices": [
+          "3",
+          "0",
+          "5",
+          "-3"
+        ],
+        "key": "d025ce2a6d05ed00a784b9196dd5d234e785b004fbdde20e897134268b0aff1b",
+        "sourceNumber": 40,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve x/2 + x/3 = 10.",
+        "choices": [
+          "12",
+          "6",
+          "30",
+          "5"
+        ],
+        "key": "26c52eb98c72616dcb503eda65898f0325e3a40a203649785449fcc60f57271a",
+        "sourceNumber": 41,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 4(x + 1) - 2(x - 3) = 18.",
+        "choices": [
+          "2",
+          "4",
+          "5",
+          "7"
+        ],
+        "key": "bc48c615a2c50f3c30f47b417227aa3c0d3cde3278defa4399d3513c68bde5ec",
+        "sourceNumber": 42,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 7x + 2 = 3(2x + 5).",
+        "choices": [
+          "13",
+          "11",
+          "-13",
+          "7"
+        ],
+        "key": "5ccd645a3fba76ea3864fb15361c18cffe26c9cb80b094e8bd0f760964b71c25",
+        "sourceNumber": 43,
+        "correctIndex": 2
+      },
+      {
+        "question": "Solve 2x - 3 = 5x + 6.",
+        "choices": [
+          "-3",
+          "3",
+          "-1",
+          "1"
+        ],
+        "key": "ea8f7844d5f8ccf99ef0cc6e6d5a77b571967de91b8ff418ce1ce0de0a95b5e9",
+        "sourceNumber": 44,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 3(x - 1) + 2(x + 4) = 18.",
+        "choices": [
+          "3",
+          "2",
+          "5",
+          "7"
+        ],
+        "key": "9b28fb585c6f5b0aeef568bbb83e141979398cc38be5b742a93ac845c63ab7fe",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 4 - 2(x + 1) = -8.",
+        "choices": [
+          "5",
+          "6",
+          "-5",
+          "4"
+        ],
+        "key": "6578f626b6c9e5afcad8fa06eaffa590abc50f45a2830abbc5d734520e7c0599",
+        "sourceNumber": 46,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 3x + 5 = 2(x + 7).",
+        "choices": [
+          "9",
+          "19",
+          "7",
+          "-9"
+        ],
+        "key": "2b32f137d7955b38761538b68745abd8257ab83137df1919ae42834f94b361f8",
+        "sourceNumber": 47,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve (3x - 2)/4 = 4.",
+        "choices": [
+          "6",
+          "5",
+          "18",
+          "14"
+        ],
+        "key": "2d2d0c75ff75568155cda9ebae1191ebdd0b5bf1baf449df7e7d22ab99247dd5",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 5 - 2(3x - 4) = 1.",
+        "choices": [
+          "2",
+          "1",
+          "3",
+          "-2"
+        ],
+        "key": "37bbf6148384a2c9cb0ff094ef98984695abba41c994934b4399f595edb0b0db",
+        "sourceNumber": 49,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 4x - 3 = 2x + 9.",
+        "choices": [
+          "6",
+          "3",
+          "12",
+          "-6"
+        ],
+        "key": "cd976b8b99b200ae21d48b75160b3ebe37e67055ff7a5eeff142224f77e926f6",
+        "sourceNumber": 50,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 2(x + 3) + 4 = 3x - 1.",
+        "choices": [
+          "11",
+          "3",
+          "5",
+          "-11"
+        ],
+        "key": "710ad14d5d59c7edfecdea9d00caf554c393af6722bad76165ee49f0d48e9204",
+        "sourceNumber": 51,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 9x/5 = 18.",
+        "choices": [
+          "10",
+          "5",
+          "2",
+          "45"
+        ],
+        "key": "1198a61af15bc5b9cf14f6277cbec17ccb597e11395152f1302aaee73c434536",
+        "sourceNumber": 52,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 3(x + 2) - 2(x - 1) = 12.",
+        "choices": [
+          "4",
+          "2",
+          "6",
+          "8"
+        ],
+        "key": "da1c504e36b7812081b6d0881a6627e1295d93bab92ab2290f988354b5d67fa6",
+        "sourceNumber": 53,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 2 - (3x - 4) = 12.",
+        "choices": [
+          "-2",
+          "2",
+          "-14/3",
+          "14/3"
+        ],
+        "key": "890c21ea9fbdf08f4921e500a84578c8f1c8ee529d1747ddb2921e4076153a3a",
+        "sourceNumber": 54,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 5(x + 1) = 2(2x + 7).",
+        "choices": [
+          "9",
+          "5",
+          "14",
+          "-9"
+        ],
+        "key": "a3b6415f396fa721d8b25c8539552c6d58bc2c6a8f346ffc6507c372eb834065",
+        "sourceNumber": 55,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve x/4 - 3 = 2.",
+        "choices": [
+          "20",
+          "8",
+          "5",
+          "12"
+        ],
+        "key": "1333620c995778dc6d6e4fa3916d696660efa3ce94763dc903ad688886f1e110",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 6 - 2x = 3x - 9.",
+        "choices": [
+          "3",
+          "-3",
+          "5",
+          "-5"
+        ],
+        "key": "13b375a5c70599a16ffbecf761acdf2461db73ab1d4c3c348cc5cb18ec98892a",
+        "sourceNumber": 57,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 4(2x - 1) = 3(2x + 2).",
+        "choices": [
+          "5",
+          "1",
+          "2",
+          "-5"
+        ],
+        "key": "f419d98d7a8f78cb68eb707b68a61d8a1086eaf911b6c2c2e450602a86e3a4c4",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 7 - (x - 5) = 10.",
+        "choices": [
+          "2",
+          "-2",
+          "12",
+          "-12"
+        ],
+        "key": "cebefcacb8e1311ebaaae87571d78fb73d0f0e4fc7101fbd7822c737cdc5a94f",
+        "sourceNumber": 59,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 2x/5 + 1 = 7.",
+        "choices": [
+          "15",
+          "12",
+          "10",
+          "30"
+        ],
+        "key": "1b70b32e4dd3931ad62641084fd7c766b0b0799f6c2467707df6242c8f159abd",
+        "sourceNumber": 60,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 3(2x + 1) = 5x + 8.",
+        "choices": [
+          "5",
+          "11",
+          "3",
+          "-5"
+        ],
+        "key": "85db9ad6b1dc414dd3c1f8d57ebecfb85bfb4574cdcd1fedbb399865e115bfb7",
+        "sourceNumber": 61,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 2(4 - x) = 3x - 6.",
+        "choices": [
+          "2",
+          "-2",
+          "14/5",
+          "5"
+        ],
+        "key": "2d7456dfec4b00895595aa90a379aae94ac488b478499fe67a4154fc749385c9",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 5 - 3(x - 2) = 2x + 5.",
+        "choices": [
+          "1",
+          "2",
+          "-1",
+          "0"
+        ],
+        "key": "0afd41af80dc4e65b91c0da44a61edfe81e46cf2783f574dfcbbaf50bd829849",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 4x + 1 = 2(2x + 3).",
+        "choices": [
+          "No solution",
+          "x = 5",
+          "x = 0",
+          "All real numbers"
+        ],
+        "key": "5124a687edfcbaf729b5c6bf0578f59a4c7f6c4900e5a213d645da019751bf82",
+        "sourceNumber": 64,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 3(x + 2) = 3x + 6.",
+        "choices": [
+          "All real numbers",
+          "No solution",
+          "x = 0 only",
+          "x = 2 only"
+        ],
+        "key": "14163a1847071bd663fa7a23e28034b0d931a844f7c250efa0cd18392be93ca3",
+        "sourceNumber": 65,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve the inequality x + 4 > 9.",
+        "choices": [
+          "x > 5",
+          "x < 5",
+          "x > 13",
+          "x < 13"
+        ],
+        "key": "ccba71d249064aad0e13031cab896c995b749bfb28ec1c2a1772ddd0e175aff9",
+        "sourceNumber": 66,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 3x ≤ 18.",
+        "choices": [
+          "x ≤ 6",
+          "x ≥ 6",
+          "x ≤ 15",
+          "x ≥ 15"
+        ],
+        "key": "bad1f390d04018f575cbc0e58e5d3af4bcb0b2722aaf9a87922c71b5c8f08492",
+        "sourceNumber": 67,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve -2x > 8.",
+        "choices": [
+          "x < -4",
+          "x > -4",
+          "x < 4",
+          "x > 4"
+        ],
+        "key": "29632a451fb3809eb9fc2da72184febcb5b6dc68dced12b9956c881e7751280b",
+        "sourceNumber": 68,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 2x - 3 ≥ 7.",
+        "choices": [
+          "x ≥ 5",
+          "x ≤ 5",
+          "x ≥ 2",
+          "x ≤ 2"
+        ],
+        "key": "9a246c16e3d58866e0ef11f1a128b47d3302425447e95698c6b05fdb0c74c93f",
+        "sourceNumber": 69,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve 5 - x < 2.",
+        "choices": [
+          "x > 3",
+          "x < 3",
+          "x > -3",
+          "x < -3"
+        ],
+        "key": "f8acd7d3ceea595be5865cd68d39ea0ac750d4aa08b3a6c93992809a27f325a6",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which value satisfies x/2 ≥ 4?",
+        "choices": [
+          "8",
+          "6",
+          "7",
+          "3"
+        ],
+        "key": "541ef1b2aa0dcf6df954ce0b3475d5c3ad4d13e4b473e47025382b7acba87339",
+        "sourceNumber": 71,
+        "correctIndex": 0
+      },
+      {
+        "question": "Simplify 2³ × 2⁴.",
+        "choices": [
+          "2⁷",
+          "2¹²",
+          "4⁷",
+          "2"
+        ],
+        "key": "a6d9c6911b86abc5ff79e5a9b3b8b9b849a487219a213920a6f8c10774abd56e",
+        "sourceNumber": 72,
+        "correctIndex": 0
+      },
+      {
+        "question": "Simplify 5⁶ ÷ 5².",
+        "choices": [
+          "5⁴",
+          "5³",
+          "5⁸",
+          "1⁴"
+        ],
+        "key": "8cdac8beacaa8d476f57b38bee62f14f7d5e525752a29f582fab143634c4a4ac",
+        "sourceNumber": 73,
+        "correctIndex": 0
+      },
+      {
+        "question": "Evaluate (3²)³.",
+        "choices": [
+          "3⁶",
+          "3⁵",
+          "9⁵",
+          "3"
+        ],
+        "key": "c94308712268b01e93d326ab0b622dd696f9820b443e21c106891638852bfb4b",
+        "sourceNumber": 74,
+        "correctIndex": 0
+      },
+      {
+        "question": "Evaluate 2⁰ + 4.",
+        "choices": [
+          "5",
+          "4",
+          "1",
+          "0"
+        ],
+        "key": "61e581278c34624810438f63892cd91d08889839d267b0c749892abb9f6529fd",
+        "sourceNumber": 75,
+        "correctIndex": 0
+      },
+      {
+        "question": "Evaluate 10⁻².",
+        "choices": [
+          "0.01",
+          "0.1",
+          "-100",
+          "100"
+        ],
+        "key": "3215b2d6e9338b6cf5b3cff45abef7f546c7d5cc2235bcfa43ecf92d32acfd60",
+        "sourceNumber": 76,
+        "correctIndex": 0
+      },
+      {
+        "question": "Simplify x³ × x².",
+        "choices": [
+          "x⁵",
+          "x⁶",
+          "2x⁵",
+          "x"
+        ],
+        "key": "6808b590fad4eb4d9cab8ee5aa65648d8e2f25a9d2abfa16953c52ad365e6668",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "Simplify y⁷ ÷ y³, where y is nonzero.",
+        "choices": [
+          "y⁴",
+          "y¹⁰",
+          "y²¹",
+          "y³"
+        ],
+        "key": "2ffbcee2394a126107d95995cd8962a8b22f12a5ba59b0fd67f85827c1c50098",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "Simplify (2x)³.",
+        "choices": [
+          "8x³",
+          "6x³",
+          "8x",
+          "2x³"
+        ],
+        "key": "17d40e919b6979db39196c10b5f63751b623a54fcd73ba87ba50adef61b4f044",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "Evaluate 4² - 2³.",
+        "choices": [
+          "8",
+          "12",
+          "24",
+          "4"
+        ],
+        "key": "315fbbbaf05f3729a82329f8f88007966c3adf42a7abccde6ba13a4f168341b1",
+        "sourceNumber": 80,
+        "correctIndex": 0
+      },
+      {
+        "question": "Factorise x² - 9.",
+        "choices": [
+          "(x - 3)(x + 3)",
+          "(x - 9)(x + 1)",
+          "(x - 3)²",
+          "(x + 9)(x - 1)"
+        ],
+        "key": "41f69e1ff76262d32f73fe5099ccfcfa3a368f32a88c00e56ddecbd74a8c6735",
+        "sourceNumber": 81,
+        "correctIndex": 0
+      },
+      {
+        "question": "Factorise x² + 7x + 12.",
+        "choices": [
+          "(x + 3)(x + 4)",
+          "(x + 2)(x + 6)",
+          "(x - 3)(x - 4)",
+          "(x + 1)(x + 12)"
+        ],
+        "key": "268501d1ac2215cd7ab689bfece56bb76dba690ae95e4885d52aae17e9aff399",
+        "sourceNumber": 82,
+        "correctIndex": 0
+      },
+      {
+        "question": "Factorise x² - 5x + 6.",
+        "choices": [
+          "(x - 2)(x - 3)",
+          "(x + 2)(x + 3)",
+          "(x - 1)(x - 6)",
+          "(x + 2)(x - 3)"
+        ],
+        "key": "ff05e25eeda47e23cbf5fd337a5e62343e3251a3709e118241f5412d5ebf0a04",
+        "sourceNumber": 83,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve x² = 49 over the real numbers.",
+        "choices": [
+          "x = 7 or x = -7",
+          "x = 7 only",
+          "x = -7 only",
+          "x = 49 or x = -49"
+        ],
+        "key": "09e97d0ad23df55e7a771c06a0a21da04d29f5eee52dd8f53c1d777ef0b51510",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve x² - 5x + 6 = 0.",
+        "choices": [
+          "x = 2 or x = 3",
+          "x = -2 or x = -3",
+          "x = 1 or x = 6",
+          "x = 0 or x = 5"
+        ],
+        "key": "20e7093f0264f4cd5e0c32e9c9a1e6c538419d3bc4d0d908c4cee52cf6533645",
+        "sourceNumber": 85,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve x² - 4 = 0 over the real numbers.",
+        "choices": [
+          "x = 2 or x = -2",
+          "x = 4 or x = -4",
+          "x = 2 only",
+          "x = -2 only"
+        ],
+        "key": "3e2823e79e807f92dbac158b912fe22ca68dab77660eae0a66d76e59dcbe133e",
+        "sourceNumber": 86,
+        "correctIndex": 0
+      },
+      {
+        "question": "For x ≠ 0, simplify x⁵/x².",
+        "choices": [
+          "x³",
+          "x⁷",
+          "x²·⁵",
+          "x¹⁰"
+        ],
+        "key": "a5ef59b75f76923f8d6a9f332219b8982be5e1e09124b2369ef77d9fee14bda3",
+        "sourceNumber": 87,
+        "correctIndex": 0
+      },
+      {
+        "question": "If 2ˣ = 16, what is x?",
+        "choices": [
+          "4",
+          "8",
+          "2",
+          "16"
+        ],
+        "key": "870d9ed625553250b2db12f2291b7851f2b42b20d0d251f19ac666a1705c185b",
+        "sourceNumber": 88,
+        "correctIndex": 0
+      },
+      {
+        "question": "Simplify (a²b³)(a³b), assuming the variables are nonzero.",
+        "choices": [
+          "a⁵b⁴",
+          "a⁶b³",
+          "a⁵b³",
+          "a⁶b⁴"
+        ],
+        "key": "3444e880fa6cfbdaa37e3eac84946bca9475fe76e66535f3a81d346a82f67501",
+        "sourceNumber": 89,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve the system x + y = 10 and x - y = 2.",
+        "choices": [
+          "x = 6, y = 4",
+          "x = 4, y = 6",
+          "x = 8, y = 2",
+          "x = 5, y = 5"
+        ],
+        "key": "b9aa963bb3084f0a9846789b967ee8c4ac74b38e4dc15253a965777922a7c3d2",
+        "sourceNumber": 90,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve the system 2x + y = 11 and x - y = 1.",
+        "choices": [
+          "x = 4, y = 3",
+          "x = 3, y = 4",
+          "x = 5, y = 1",
+          "x = 2, y = 7"
+        ],
+        "key": "dda90082523b35e28730e0509884d76714c7d54cad6208dd02db9b49f4f251f1",
+        "sourceNumber": 91,
+        "correctIndex": 0
+      },
+      {
+        "question": "Solve the system 3x + 2y = 16 and x + y = 6.",
+        "choices": [
+          "x = 4, y = 2",
+          "x = 2, y = 4",
+          "x = 6, y = 0",
+          "x = 3, y = 3"
+        ],
+        "key": "598a2db61cf8e6506e4736c39ea986cdac731fc4e0dd230033f298d69ebc6740",
+        "sourceNumber": 92,
+        "correctIndex": 0
+      },
+      {
+        "question": "Two numbers have sum 18 and difference 4. What is the larger number?",
+        "choices": [
+          "11",
+          "7",
+          "12",
+          "9"
+        ],
+        "key": "f9d4bd3e96793b8d01b845a6eea4dbe183f606b43f837172bc0447b167cbade3",
+        "sourceNumber": 93,
+        "correctIndex": 0
+      },
+      {
+        "question": "The sum of three consecutive integers is 36. What is the middle integer?",
+        "choices": [
+          "12",
+          "11",
+          "13",
+          "10"
+        ],
+        "key": "ea9b959e1233791de420ffb359c26f66f0eefca10d86f796e9b9dfd6f92d630a",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "A number increased by 9 is 23. What is the number?",
+        "choices": [
+          "14",
+          "32",
+          "12",
+          "16"
+        ],
+        "key": "a909a39329c1cf276c4ad11d3935da1d879d90f11b74aa8265032cc0e4befebc",
+        "sourceNumber": 95,
+        "correctIndex": 0
+      },
+      {
+        "question": "Three times a number is 7 more than the number. What is the number?",
+        "choices": [
+          "3.5",
+          "7",
+          "2",
+          "10.5"
+        ],
+        "key": "a4ac6020d3892e143b2fbd6ff17140089361030caafc6dda30cbc21ac39b8c4f",
+        "sourceNumber": 96,
+        "correctIndex": 0
+      },
+      {
+        "question": "A rectangle has width w and length w + 3. If its perimeter is 30 units, what is its width?",
+        "choices": [
+          "6 units",
+          "9 units",
+          "12 units",
+          "3 units"
+        ],
+        "key": "386f41b494518967a1ac26f76a82528c529909ad6bbf853f7c1830ed02df14e3",
+        "sourceNumber": 97,
+        "correctIndex": 0
+      },
+      {
+        "question": "A taxi fare has a fixed charge of Rs 100 plus Rs 20 per kilometre. What is the fare for 7 kilometres?",
+        "choices": [
+          "Rs 240",
+          "Rs 140",
+          "Rs 220",
+          "Rs 270"
+        ],
+        "key": "b03f03b2d5c266595e5bb9cd0cb62aef6af5d628511bd8fce436b8b6a1e10781",
+        "sourceNumber": 98,
+        "correctIndex": 0
+      },
+      {
+        "question": "A father is 3 times as old as his 12-year-old child. How old is the father?",
+        "choices": [
+          "36 years",
+          "15 years",
+          "24 years",
+          "48 years"
+        ],
+        "key": "a55b61f4d9f34beac3393324332113368736015d49a4c5199e9fa30abbe08023",
+        "sourceNumber": 99,
+        "correctIndex": 0
+      },
+      {
+        "question": "A number is multiplied by 4 and then reduced by 6 to give 26. What is the number?",
+        "choices": [
+          "8",
+          "5",
+          "20",
+          "32"
+        ],
+        "key": "be7ca3c4b3a1119dc9c89dabc8f2dfc55ac6fe8a4d0bd367d8291fd0f6b14d27",
+        "sourceNumber": 100,
+        "correctIndex": 0
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "e9a5aa6a42f481ae12b34b53bfa8d69a5a165fc878aed69514cd404eaddd1d2a",
+      "sourceQuestionNumbers": [
+        95,
+        3,
+        59,
+        62,
+        30,
+        20,
+        25,
+        57,
+        88,
+        71,
+        13,
+        38,
+        44,
+        86,
+        61,
+        36,
+        18,
+        92,
+        63,
+        47,
+        98,
+        43,
+        76,
+        4,
+        26,
+        99,
+        23,
+        7,
+        52,
+        66,
+        9,
+        45,
+        82,
+        29,
+        67,
+        65,
+        97,
+        48,
+        31,
+        1,
+        27,
+        50,
+        93,
+        19,
+        77,
+        40,
+        16,
+        89,
+        64,
+        49,
+        6,
+        58,
+        37,
+        68,
+        81,
+        41,
+        17,
+        75,
+        94,
+        21,
+        14,
+        34,
+        51,
+        96,
+        73,
+        2,
+        90,
+        74,
+        28,
+        53,
+        22,
+        79,
+        87,
+        56,
+        5,
+        85,
+        24,
+        46,
+        78,
+        8,
+        33,
+        72,
+        11,
+        54,
+        83,
+        35,
+        69,
+        12,
+        42,
+        100,
+        84,
+        80,
+        60,
+        39,
+        15,
+        91,
+        32,
+        70,
+        55,
+        10
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
