@@ -12,6 +12,48 @@ spec.loader.exec_module(video)
 
 
 class QuizContentTests(unittest.TestCase):
+    def test_long_options_fit_without_clipping_or_changing_the_source(self):
+        from PIL import Image, ImageDraw, ImageFont
+        painter = ImageDraw.Draw(Image.new('RGB', (1080, 1920)))
+        font_path = video.find_font()
+        choices = [
+            'Arid conditions dominate much of the country, while northern high mountains are markedly cooler',
+            'The whole country has a tropical rainforest climate throughout the year',
+            'All regions experience the same temperatures and rainfall',
+            'Only coastal regions experience seasonal temperature changes',
+        ]
+        original = choices.copy()
+        layout = video.option_layout(painter, choices, font_path)
+        self.assertEqual(choices, original)
+        self.assertEqual(len(layout), 4)
+        for text, (top, height, size) in zip(choices, layout):
+            font = ImageFont.truetype(font_path, size)
+            lines = video.wrap_text(painter, text, font, 685)
+            self.assertEqual(' '.join(lines), text)
+            self.assertGreaterEqual(size, 28)
+            self.assertLessEqual(len(lines) * round(size * 1.32), height - 36)
+            self.assertLessEqual(top + height, 1445)
+        for previous, current in zip(layout, layout[1:]):
+            self.assertEqual(current[0] - (previous[0] + previous[1]), 20)
+
+    def test_all_published_answer_options_fit_the_video_layout(self):
+        from PIL import Image, ImageDraw
+        painter = ImageDraw.Draw(Image.new('RGB', (1080, 1920)))
+        font_path = video.find_font()
+        count = 0
+        for article in (video.ROOT / 'public/blog').glob('*/article.md'):
+            for question in video.extract_questions(article.read_text(encoding='utf-8'), True):
+                with self.subTest(article=article.parent.name, question=question['sourceNumber']):
+                    video.option_layout(painter, question['choices'], font_path)
+                count += 1
+        self.assertGreater(count, 100)
+
+    def test_unbreakable_options_fail_only_after_trying_readable_sizes(self):
+        from PIL import Image, ImageDraw
+        painter = ImageDraw.Draw(Image.new('RGB', (1080, 1920)))
+        with self.assertRaisesRegex(ValueError, 'minimum readable font'):
+            video.option_layout(painter, ['W' * 200] * 4, video.find_font())
+
     def test_future_voice_jobs_start_at_question_one_without_an_intro(self):
         args = SimpleNamespace(voice=True, voice_engine='windows', include_intro=False, include_outro=False,
                                reveal=True, count=1, seconds=3, voice_name='Test', voice_rate=0)

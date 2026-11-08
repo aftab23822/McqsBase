@@ -294,6 +294,44 @@ def write_audio(timeline, output):
             wav.writeframes(samples.tobytes())
 
 
+def wrap_text(painter, text, font, width):
+    lines = []
+    for paragraph in text.split('\n'):
+        line = ''
+        for word in paragraph.split():
+            if painter.textlength(word, font=font) > width:
+                return None
+            trial = f'{line} {word}'.strip()
+            if painter.textlength(trial, font=font) > width:
+                lines.append(line)
+                line = word
+            else:
+                line = trial
+        lines.append(line)
+    return lines
+
+
+def option_layout(painter, choices, font_path):
+    """Share the existing option area while keeping every source word readable."""
+    from PIL import ImageFont
+    for size in range(43, 27, -1):
+        font = ImageFont.truetype(font_path, size)
+        wrapped = [wrap_text(painter, text, font, 685) for text in choices]
+        if any(lines is None for lines in wrapped):
+            continue
+        heights = [max(112, len(lines) * round(size * 1.32) + 36) for lines in wrapped]
+        spare = 560 - sum(heights)  # 620 pixels, minus three 20-pixel gaps.
+        if spare < 0:
+            continue
+        top, result = 825, []
+        for i, height in enumerate(heights):
+            height += spare // 4 + (i < spare % 4)
+            result.append((top, height, size))
+            top += height + 20
+        return result
+    raise ValueError('Answer options do not fit safely at the minimum readable font size.')
+
+
 def create_video(args):
     from PIL import Image, ImageDraw, ImageFont
     package = None
@@ -341,21 +379,11 @@ def create_video(args):
     def text_block(image, text, box, size=64, minimum=28, color=white, heavy=False):
         painter = ImageDraw.Draw(image)
         x0, y0, x1, y1 = box
-        for current_size in range(size, minimum - 1, -2):
+        for current_size in range(size, minimum - 1, -1):
             font = ImageFont.truetype(bold if heavy else normal, current_size)
-            lines = []
-            for paragraph in text.split('\n'):
-                line = ''
-                for word in paragraph.split():
-                    trial = f'{line} {word}'.strip()
-                    if painter.textlength(trial, font=font) > x1 - x0:
-                        if not line or painter.textlength(word, font=font) > x1 - x0:
-                            raise ValueError('Unbreakable word is too wide for the video.')
-                        lines.append(line)
-                        line = word
-                    else:
-                        line = trial
-                lines.append(line)
+            lines = wrap_text(painter, text, font, x1 - x0)
+            if lines is None:
+                continue
             line_height = round(current_size * 1.32)
             if len(lines) * line_height <= y1 - y0:
                 for i, line in enumerate(lines):
@@ -386,18 +414,20 @@ def create_video(args):
         text_block(card, counter, (92, 402, 780, 467), 33, color=muted, heavy=True)
         text_block(card, item['question'], (92, 520, 976, 790), 66, heavy=True)
         painter = ImageDraw.Draw(card)
+        layout = option_layout(painter, item['choices'], normal)
         for i, option in enumerate(item['choices']):
-            top = 825 + i * 160
+            top, height, option_size = layout[i]
+            center = top + height // 2
             correct = reveal and i == item['correctIndex']
-            painter.rounded_rectangle((88, top, 992, top + 140), radius=23,
+            painter.rounded_rectangle((88, top, 992, top + height), radius=23,
                                       fill='#16483F' if correct else '#1B2F4B',
                                       outline=cyan if correct else '#344862', width=4 if correct else 2)
-            painter.rounded_rectangle((108, top + 30, 184, top + 108), radius=17,
+            painter.rounded_rectangle((108, center - 39, 184, center + 39), radius=17,
                                       fill=cyan if correct else '#29415E')
-            text_block(card, 'ABCD'[i], (128, top + 42, 175, top + 106), 38, color=navy if correct else white, heavy=True)
-            text_block(card, option, (215, top + 25, 900, top + 126), 43)
+            text_block(card, 'ABCD'[i], (128, center - 27, 175, center + 37), 38, color=navy if correct else white, heavy=True)
+            text_block(card, option, (215, top + 18, 900, top + height - 18), option_size)
             if correct:
-                check_mark(card, 930, top + 54)
+                check_mark(card, 930, center - 16)
         text_block(card, 'Full practice set: mcqsbase.com/blog', (92, 1640, 980, 1720), 32, color=gold)
         return card
 
