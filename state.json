@@ -1048,7 +1048,7 @@
       "verifiedPublications": 0
     },
     "pakistan-geography-map-skills": {
-      "status": "rendering",
+      "status": "ready",
       "ledger": "batches/pakistan-geography-map-skills.json",
       "createdAt": "2026-11-08T05:36:36.233064+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
