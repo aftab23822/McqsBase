@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "pakistan-geography-map-skills": {
+    title: "100 Pakistan Geography and Map Skills MCQs with Explanations",
+    excerpt:
+      "Practise Pakistan’s physical geography, regional locations, rivers, mountain ranges, map directions, coordinates and scale calculations with 100 original MCQs and concise explanations.",
+    category: "Subject Guide",
+    date: "2026-11-08",
+    readTime: "26 min",
+    content: null,
+    body: readImportedBlogBody("pakistan-geography-map-skills")
+  },
   "nts-algebra-equations": {
     title: "100 NTS-Style Algebra and Equations MCQs with Explanations",
     excerpt:
