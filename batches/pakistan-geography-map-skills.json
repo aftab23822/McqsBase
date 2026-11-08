@@ -2437,7 +2437,11 @@
       },
       "uploadIntent": {
         "filename": "pakistan-geography-map-skills-part-04-a7b519e4f1612ec9.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "fd793fe8-2bbe-4699-83f3-d9f0fc24dd6f",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/8686DL3jIh.mp4"
       }
     },
     {
