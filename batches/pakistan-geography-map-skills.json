@@ -3552,7 +3552,12 @@
         }
       },
       "scheduledAt": "2026-11-08T21:58:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-08T05:56:00.282651+00:00"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3,
