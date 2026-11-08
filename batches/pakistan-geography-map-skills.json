@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "pakistan-geography-map-skills",
+  "createdAt": "2026-11-08T05:36:36.233064+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "pakistan-geography-map-skills",
+    "title": "100 Pakistan Geography and Map Skills MCQs with Explanations",
+    "url": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7631921637,
+      "sha": "80ff56bc4f05a6a9698f4026e39ba011a9899215",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-08T05:36:36.102572+00:00",
+      "url": "https://mcqs-base-8ozuko90b-as-projects-10921176.vercel.app",
+      "publisherRunId": 42450957437
+    },
+    "fetchedAt": "2026-11-08T05:36:36.102572+00:00",
+    "contentHash": "c3719dd4bbaf31e1d3db0b72a79d30129caf3c37e29053dc9bc44ab5843bf1d9",
+    "questions": [
+      {
+        "question": "Which sea lies along Pakistan’s southern coastline?",
+        "choices": [
+          "Arabian Sea",
+          "Red Sea",
+          "Caspian Sea",
+          "Mediterranean Sea"
+        ],
+        "key": "47a230ce5e4adabac925c68de249b28ef85739cf4c78c67cb815ec202f5868e4",
+        "sourceNumber": 1,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which country lies to the west of Pakistan?",
+        "choices": [
+          "Iran",
+          "Nepal",
+          "Bhutan",
+          "Bangladesh"
+        ],
+        "key": "348fa351e63b66351bd8613fd46b4f13934abd0ea0e28b51ad14a9b6b32d71d2",
+        "sourceNumber": 2,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which country is situated northeast of Pakistan?",
+        "choices": [
+          "China",
+          "Oman",
+          "Sri Lanka",
+          "Qatar"
+        ],
+        "key": "fe55d1cd994182ca9b51ecbf35a08f622a4d6c5da997106f1e90e79c9f50c403",
+        "sourceNumber": 3,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which country lies mainly east of Pakistan?",
+        "choices": [
+          "India",
+          "Iran",
+          "Afghanistan",
+          "China"
+        ],
+        "key": "7b32be9c44cffd39859702729b7b16b3ffaa6f80219bb46b9db99d4447c2917a",
+        "sourceNumber": 4,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which Pakistani province has a coastline on the Arabian Sea?",
+        "choices": [
+          "Sindh",
+          "Khyber Pakhtunkhwa",
+          "Punjab",
+          "Gilgit-Baltistan"
+        ],
+        "key": "c7ef310eddde911fd4906f17fa591f33ca5c30975452af2d9fd83501527bd9fd",
+        "sourceNumber": 5,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which listed region is landlocked and mountainous in Pakistan’s far north?",
+        "choices": [
+          "Gilgit-Baltistan",
+          "Sindh",
+          "Balochistan",
+          "Punjab"
+        ],
+        "key": "cddcdc97d0bd85e76852dd138003015378cf4c7447689f192ff04f326be6d2c1",
+        "sourceNumber": 6,
+        "correctIndex": 0
+      },
+      {
+        "question": "The Potohar Plateau is located mainly in which province?",
+        "choices": [
+          "Punjab",
+          "Sindh",
+          "Balochistan",
+          "Khyber Pakhtunkhwa"
+        ],
+        "key": "26aefd4448af8e15cca955219f05a8d95ab6f9f3950d5d965356c3ea3f9bf4a1",
+        "sourceNumber": 7,
+        "correctIndex": 0
+      },
+      {
+        "question": "The Thar Desert is primarily associated with which Pakistani province?",
+        "choices": [
+          "Sindh",
+          "Punjab",
+          "Khyber Pakhtunkhwa",
+          "Gilgit-Baltistan"
+        ],
+        "key": "823aa956422675a657d6132466edde3dbf9d7c9512c4b7070fd0f6b4a6103911",
+        "sourceNumber": 8,
+        "correctIndex": 0
+      },
+      {
+        "question": "The Cholistan Desert is in which province?",
+        "choices": [
+          "Punjab",
+          "Sindh",
+          "Balochistan",
+          "Khyber Pakhtunkhwa"
+        ],
+        "key": "c9ec398c049d409fd75586d4d321a37940a307c3fc6f04879b966257fd2ef1ac",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "The Kharan Desert is associated with which province?",
+        "choices": [
+          "Balochistan",
+          "Punjab",
+          "Sindh",
+          "Khyber Pakhtunkhwa"
+        ],
+        "key": "03284dedb320c5057cde61774bfd92f0f91e1cf4aaeee2eb3e80750ce493d621",
+        "sourceNumber": 10,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which river is the principal river of Pakistan’s Indus Basin?",
+        "choices": [
+          "Indus",
+          "Ravi",
+          "Swat",
+          "Haro"
+        ],
+        "key": "32af3e44705a703e7f304728843f2d6af018c32892b2ec6560b0399010dd8d1e",
+        "sourceNumber": 11,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which river flows through the city of Lahore?",
+        "choices": [
+          "Ravi",
+          "Jhelum",
+          "Sutlej",
+          "Kabul"
+        ],
+        "key": "adab3056bc6b36502989cadae334674825cfce683c6171056c90eab61adca69f",
+        "sourceNumber": 12,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which river flows through the valley of Kashmir before entering Pakistan-administered territory?",
+        "choices": [
+          "Jhelum",
+          "Hub",
+          "Dasht",
+          "Hingol"
+        ],
+        "key": "1ca055df61753ce96e685d29980f844eab05e714bf63f02b6908c2e7b77a756a",
+        "sourceNumber": 13,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which river flows through Peshawar before joining the Indus?",
+        "choices": [
+          "Kabul",
+          "Ravi",
+          "Sutlej",
+          "Hingol"
+        ],
+        "key": "ec76f05a12fc29a34c8a8baeb0ab0b2f97e7e352f65d75f5ea7113f0b130c394",
+        "sourceNumber": 14,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which river is associated with the city of Multan and joins the Indus near it?",
+        "choices": [
+          "Chenab",
+          "Swat",
+          "Hub",
+          "Kunhar"
+        ],
+        "key": "d6a3e5228f7c8fa461edca0008115fd7fcf825623817e79e6cd33b81c82e4f7f",
+        "sourceNumber": 15,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which river joins the Chenab at Trimmu in Punjab?",
+        "choices": [
+          "Jhelum",
+          "Ravi",
+          "Kabul",
+          "Indus"
+        ],
+        "key": "4488478f0ea3798a931678a0adc1de9e1bd8956c90e040c2cd3a19e073c2c719",
+        "sourceNumber": 16,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which river is the easternmost of the five major Punjab rivers named in the traditional Punjab grouping?",
+        "choices": [
+          "Sutlej",
+          "Indus",
+          "Kabul",
+          "Swat"
+        ],
+        "key": "be130cc7da2fd7f7b8800086a5bbca2544d9777d14be76e73f1c6d8819970437",
+        "sourceNumber": 17,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which river is the westernmost of the five rivers in the traditional Punjab grouping?",
+        "choices": [
+          "Jhelum",
+          "Ravi",
+          "Sutlej",
+          "Beas"
+        ],
+        "key": "3dd9a1c3a2045f3d2b6b23902274c701d32f2660df03ddd577107254dcda36fc",
+        "sourceNumber": 18,
+        "correctIndex": 0
+      },
+      {
+        "question": "Where does the Indus River ultimately discharge?",
+        "choices": [
+          "Arabian Sea",
+          "Caspian Sea",
+          "Bay of Bengal",
+          "Red Sea"
+        ],
+        "key": "6932936810c9c68e7e746f0f24ac4b042fd62cd0e265ee364a8b342bc55db2d6",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "In which general direction does the Indus flow through most of Pakistan?",
+        "choices": [
+          "North to south",
+          "South to north",
+          "East to west",
+          "West to east"
+        ],
+        "key": "96d7564acecadf3e4a66e57e00060b1683be8587f67dc9ed39c1942dcc713404",
+        "sourceNumber": 20,
+        "correctIndex": 0
+      },
+      {
+        "question": "K2 belongs to which mountain range?",
+        "choices": [
+          "Karakoram",
+          "Hindu Kush",
+          "Salt Range",
+          "Sulaiman Range"
+        ],
+        "key": "a8982595acd4ecafc43a59b8ea3636a116c701282d8a81bd4256fd8ba6c1f89d",
+        "sourceNumber": 21,
+        "correctIndex": 0
+      },
+      {
+        "question": "Nanga Parbat is part of which mountain system?",
+        "choices": [
+          "Himalaya",
+          "Kirthar Range",
+          "Salt Range",
+          "Sulaiman Range"
+        ],
+        "key": "4d27d562c2440df4964296a7e302a9654e3c46094836d80f1e53094204915544",
+        "sourceNumber": 22,
+        "correctIndex": 0
+      },
+      {
+        "question": "Tirich Mir is the highest peak of which range?",
+        "choices": [
+          "Hindu Kush",
+          "Karakoram",
+          "Salt Range",
+          "Kirthar Range"
+        ],
+        "key": "f0ca5063086f4c64ed693bae4f2a6ae29979102aad735bf4f888f77399ce2759",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which range lies along much of the border between Balochistan and Sindh?",
+        "choices": [
+          "Kirthar Range",
+          "Karakoram",
+          "Himalaya",
+          "Salt Range"
+        ],
+        "key": "47505535befc1cd995420f596da2300830cea2baa03dff23138d3061c1b2dd33",
+        "sourceNumber": 24,
+        "correctIndex": 0
+      },
+      {
+        "question": "The Salt Range is located mainly in which province?",
+        "choices": [
+          "Punjab",
+          "Sindh",
+          "Balochistan",
+          "Gilgit-Baltistan"
+        ],
+        "key": "c9a4cfcefcff1e1d8e0477d721891b56f2bf92148299823ae2814fc425c4d81a",
+        "sourceNumber": 25,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which plateau is located in northern Balochistan around Quetta and adjoining areas?",
+        "choices": [
+          "Balochistan Plateau",
+          "Deosai Plateau",
+          "Potohar Plateau",
+          "Tibetan Plateau"
+        ],
+        "key": "051bcbf86001cda9261a7c51d10c9b2bebe226c093608ba3ea1a1a1ac6cce0c1",
+        "sourceNumber": 26,
+        "correctIndex": 0
+      },
+      {
+        "question": "The Deosai Plateau is in which northern region of Pakistan?",
+        "choices": [
+          "Gilgit-Baltistan",
+          "Sindh",
+          "Punjab",
+          "Balochistan"
+        ],
+        "key": "b5e6f6631ece0ed8da43ee2dda489dfb16db6ce2a473e0c30986a688a43c3871",
+        "sourceNumber": 27,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which broad plain is formed largely by deposits from the Indus and its tributaries?",
+        "choices": [
+          "Indus Plain",
+          "Thar Desert",
+          "Potohar Plateau",
+          "Makran Coast"
+        ],
+        "key": "71dd1fb2d2ed7b68d207ab549457129dc539da7d44402d0bcefca129ed2e0f95",
+        "sourceNumber": 28,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which landform best describes the Makran region along Pakistan’s southwestern coast?",
+        "choices": [
+          "Coastal belt",
+          "High inland plateau",
+          "Glacial basin",
+          "River delta plain"
+        ],
+        "key": "bb914f2b725ebe596d921ef6c0a601ba0d50316948c59345673cecf76d9dfbd4",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which pass connects the Peshawar region with Afghanistan through the border mountains?",
+        "choices": [
+          "Khyber Pass",
+          "Khunjerab Pass",
+          "Lowari Pass",
+          "Bolan Pass"
+        ],
+        "key": "ee810ac5e62a95d76be5622038f649de8d226ae4fc546395a21d96e1665acf1f",
+        "sourceNumber": 30,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which pass connects Pakistan with China in the Karakoram region?",
+        "choices": [
+          "Khunjerab Pass",
+          "Bolan Pass",
+          "Khyber Pass",
+          "Gomal Pass"
+        ],
+        "key": "6be84b44c04021e1aca474637e99f8049df4f5d42afb602798beee96dfbf070b",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which pass provides a route between the Quetta area and the plains near Sibi?",
+        "choices": [
+          "Bolan Pass",
+          "Lowari Pass",
+          "Khunjerab Pass",
+          "Khyber Pass"
+        ],
+        "key": "67eba5e9388fe0f18f3a63c401448ff4dc4674860556035d7eacdcdd464bb4df",
+        "sourceNumber": 32,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which pass is associated with the route between Dir and Chitral?",
+        "choices": [
+          "Lowari Pass",
+          "Bolan Pass",
+          "Khunjerab Pass",
+          "Khyber Pass"
+        ],
+        "key": "4b6d673244e29f356733594c204c1bd2b00679a9118fce33d07e119bf5757b05",
+        "sourceNumber": 33,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which pass lies on a traditional route between Afghanistan and Pakistan through South Waziristan?",
+        "choices": [
+          "Gomal Pass",
+          "Khunjerab Pass",
+          "Lowari Pass",
+          "Bolan Pass"
+        ],
+        "key": "7930b14af45c2913db3737193e321bc5cf62dcedffcf16d883c0f1c98c1a276d",
+        "sourceNumber": 34,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which is the correct order of the four principal compass directions clockwise from north?",
+        "choices": [
+          "North, east, south, west",
+          "North, west, south, east",
+          "East, north, west, south",
+          "South, east, north, west"
+        ],
+        "key": "80c8faf1b219dd827c51631766b14aebb213b0c8f7736f7cf6c42d320381071e",
+        "sourceNumber": 35,
+        "correctIndex": 0
+      },
+      {
+        "question": "A traveller faces east and turns right. Which direction does the traveller face now?",
+        "choices": [
+          "South",
+          "North",
+          "West",
+          "East"
+        ],
+        "key": "f7abd1b75288f8e864796d4512297c52679c3f8e9e85c84d22a0edb9bf3cc3f0",
+        "sourceNumber": 36,
+        "correctIndex": 0
+      },
+      {
+        "question": "A vehicle is heading south and makes a left turn. Which direction is it heading afterward?",
+        "choices": [
+          "East",
+          "West",
+          "North",
+          "South"
+        ],
+        "key": "ad64bb81f29b99899546dc1ce5a2c3966dbc24772e42edbfc89281fe20da8aec",
+        "sourceNumber": 37,
+        "correctIndex": 0
+      },
+      {
+        "question": "A hiker walks north, then turns 90 degrees clockwise. What direction is the hiker facing?",
+        "choices": [
+          "East",
+          "West",
+          "South",
+          "North"
+        ],
+        "key": "8bb5c1f68192f78102d79be0c65a5af891d44c0b0fa07a251d7a68620fb386d5",
+        "sourceNumber": 38,
+        "correctIndex": 0
+      },
+      {
+        "question": "What bearing, measured clockwise from north, represents due east?",
+        "choices": [
+          "090°",
+          "180°",
+          "270°",
+          "360°"
+        ],
+        "key": "42a8c99fd9eae47f139a5d5eeab041498292cd157d67632a7e6f4fd9e20dcb77",
+        "sourceNumber": 39,
+        "correctIndex": 0
+      },
+      {
+        "question": "What bearing represents due south when measured clockwise from north?",
+        "choices": [
+          "180°",
+          "090°",
+          "270°",
+          "360°"
+        ],
+        "key": "29a14daad19bcb181ce0bfaaea44dc575f1d4c946e0f1a6753121e9b40872e09",
+        "sourceNumber": 40,
+        "correctIndex": 0
+      },
+      {
+        "question": "A map bearing is 270°. Which cardinal direction does it indicate?",
+        "choices": [
+          "West",
+          "East",
+          "North",
+          "South"
+        ],
+        "key": "871a9eeec5326d4d4788854f7758377e1eefa6e25677e6420c3af7f602a2d1dc",
+        "sourceNumber": 41,
+        "correctIndex": 0
+      },
+      {
+        "question": "A person walks 4 km north and then 4 km south along the same straight route. Where are they relative to the starting point?",
+        "choices": [
+          "At the starting point",
+          "4 km north",
+          "4 km south",
+          "8 km north"
+        ],
+        "key": "97aabd59c86465dcc3e8d19e9153d78cd776cb747c8923db1112989d4982de4f",
+        "sourceNumber": 42,
+        "correctIndex": 0
+      },
+      {
+        "question": "A person walks 3 km east and then 4 km north. What is the straight-line distance from the start?",
+        "choices": [
+          "5 km",
+          "7 km",
+          "1 km",
+          "12 km"
+        ],
+        "key": "f8d05e25038a01ded191b335e728958eaa60d2ed5305685a748b56b58db40d6e",
+        "sourceNumber": 43,
+        "correctIndex": 0
+      },
+      {
+        "question": "From a starting point, a traveller goes 6 km north and 8 km east. What is the shortest distance back to the start?",
+        "choices": [
+          "10 km",
+          "14 km",
+          "2 km",
+          "48 km"
+        ],
+        "key": "dfecc452faefc947f5c505e297b13e2274652c09da3e4563bba1cf46e050fc92",
+        "sourceNumber": 44,
+        "correctIndex": 0
+      },
+      {
+        "question": "A town lies northeast of a village. In which direction is the village from the town?",
+        "choices": [
+          "Southwest",
+          "Northwest",
+          "Southeast",
+          "Northeast"
+        ],
+        "key": "268808f607fa71b9fc8f19bbefccaa6b54f07cff6d44fb00eb049b009da11d4e",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "On a standard map with north at the top, what direction is to the left?",
+        "choices": [
+          "West",
+          "East",
+          "South",
+          "North"
+        ],
+        "key": "6a0e0e913baed9a994e0a324a9c333678afe8b7499cdb6ab7e97ddeb6b1d5906",
+        "sourceNumber": 46,
+        "correctIndex": 0
+      },
+      {
+        "question": "On a map, a location is at 32° N, 74° E. What does 32° N describe?",
+        "choices": [
+          "Latitude north of the Equator",
+          "Longitude east of Greenwich",
+          "Latitude south of the Equator",
+          "Longitude west of Greenwich"
+        ],
+        "key": "29f99a83940e14f3a72ae93a5ff9707e87652d289ef9ecec96713f5952ce2bd1",
+        "sourceNumber": 47,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does the coordinate 70° E describe?",
+        "choices": [
+          "Longitude east of the Prime Meridian",
+          "Latitude north of the Equator",
+          "Longitude west of the Prime Meridian",
+          "Latitude south of the Equator"
+        ],
+        "key": "aea66a96e350f651ae838815bbc26158848348a76053a7b5c3211e24b42f6c2a",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which line of latitude is defined as 0°?",
+        "choices": [
+          "Equator",
+          "Tropic of Cancer",
+          "Arctic Circle",
+          "Prime Meridian"
+        ],
+        "key": "34a088a077ebe9b0c78d1cccd799e1c773fa28c7b76ddea7bdcd43a5b3999db6",
+        "sourceNumber": 49,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which reference line is defined as 0° longitude?",
+        "choices": [
+          "Prime Meridian",
+          "Equator",
+          "Tropic of Capricorn",
+          "International Date Line"
+        ],
+        "key": "5d9a72dde289e222e6a5fe0b82b6bfff636ae981ce672662f9bb0e643d34e32c",
+        "sourceNumber": 50,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which coordinate changes when moving directly north or south along a meridian?",
+        "choices": [
+          "Latitude",
+          "Longitude",
+          "Map scale",
+          "Bearing"
+        ],
+        "key": "8bf5df5c7e69aa082c082a2219765eaa76462e256fe855fb5df715bd63421a73",
+        "sourceNumber": 51,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which coordinate changes when travelling directly east or west along a parallel of latitude?",
+        "choices": [
+          "Longitude",
+          "Latitude",
+          "Elevation",
+          "Map scale"
+        ],
+        "key": "4c84ec0d1865b45955c5023a229548d025fb7b5788b7bf7c32505880b0213a4c",
+        "sourceNumber": 52,
+        "correctIndex": 0
+      },
+      {
+        "question": "A map scale states 1 cm represents 2 km. What ground distance does 6 cm represent?",
+        "choices": [
+          "12 km",
+          "3 km",
+          "8 km",
+          "18 km"
+        ],
+        "key": "d879bcde4e50e3642c82181d4c85aa38d67b60545c98c9d51f7d7eb25756cdca",
+        "sourceNumber": 53,
+        "correctIndex": 0
+      },
+      {
+        "question": "At a scale of 1 cm to 5 km, what distance on the ground is represented by 3 cm?",
+        "choices": [
+          "15 km",
+          "8 km",
+          "5 km",
+          "20 km"
+        ],
+        "key": "530d66ffeb622c8cc42960cedce69060b1518ebcf998dc6fa5d26bd23a4536f6",
+        "sourceNumber": 54,
+        "correctIndex": 0
+      },
+      {
+        "question": "A map uses the scale 1:100,000. What ground distance does 1 cm represent?",
+        "choices": [
+          "1 km",
+          "100 m",
+          "10 km",
+          "100 km"
+        ],
+        "key": "8e06743734b378b30def7c585434eb727862afb0d2fa2ed09382a50f21910471",
+        "sourceNumber": 55,
+        "correctIndex": 0
+      },
+      {
+        "question": "On a 1:50,000 map, two points are 4 cm apart. What is their ground distance?",
+        "choices": [
+          "2 km",
+          "200 m",
+          "20 km",
+          "8 km"
+        ],
+        "key": "f86910f0589cf407e3383d341ec32414446d3a33a37750e6ad38b4d9a1ced44e",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "A road is 18 km long. On a map with a scale of 1 cm to 3 km, how long is the road on the map?",
+        "choices": [
+          "6 cm",
+          "9 cm",
+          "15 cm",
+          "54 cm"
+        ],
+        "key": "8f26b8e749a3b323bdf093b23039af8589159f60afac2cb52870bc1d45e18f06",
+        "sourceNumber": 57,
+        "correctIndex": 0
+      },
+      {
+        "question": "On a map with a scale of 1:25,000, how far on the ground does 2 cm represent?",
+        "choices": [
+          "500 m",
+          "50 m",
+          "5 km",
+          "2.5 km"
+        ],
+        "key": "9b36af5d7e4b867560faa29ed75eb23a1eee539ce1d286bc748f00fbf3ca377f",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "A map scale is 1 cm to 4 km. A route measures 7.5 cm. What is its ground length?",
+        "choices": [
+          "30 km",
+          "11.5 km",
+          "28 km",
+          "3.4 km"
+        ],
+        "key": "d227c2e607b8a336a7e40a03293496052844a4a9cf989b5505654b9ac261e75c",
+        "sourceNumber": 59,
+        "correctIndex": 0
+      },
+      {
+        "question": "A 24 km route is shown as 6 cm on a map. What ground distance does 1 cm represent?",
+        "choices": [
+          "4 km",
+          "18 km",
+          "6 km",
+          "144 km"
+        ],
+        "key": "25da58f97881e5b0e7c34a6297363bfc7a706dc3360592de7dfbc9ef51557467",
+        "sourceNumber": 60,
+        "correctIndex": 0
+      },
+      {
+        "question": "A map scale of 1:200,000 is used. What ground distance does 3 cm represent?",
+        "choices": [
+          "6 km",
+          "600 m",
+          "3 km",
+          "60 km"
+        ],
+        "key": "d419bc210387c398577dd74ce61b4314c1993c1d113f4d56b8f836892b49f2ca",
+        "sourceNumber": 61,
+        "correctIndex": 0
+      },
+      {
+        "question": "On a map, 1 cm represents 8 km. How many centimetres represent 40 km?",
+        "choices": [
+          "5 cm",
+          "8 cm",
+          "32 cm",
+          "48 cm"
+        ],
+        "key": "60da9eac1f844144e60536bdb75b18b189357884b1041f82fa12db27486783cc",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "A straight line measures 2.5 cm on a 1:40,000 map. What is the ground distance?",
+        "choices": [
+          "1 km",
+          "100 m",
+          "10 km",
+          "4 km"
+        ],
+        "key": "effd5eb01e1aad1ea386659a1b9129ab4e1d2db0541a489e7cbbb6ea2018b9db",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "A map scale is 1:250,000. What distance on the map represents 5 km on the ground?",
+        "choices": [
+          "2 cm",
+          "5 cm",
+          "20 cm",
+          "0.5 cm"
+        ],
+        "key": "160a5757d9a92241cebf3618a19d0792c00b0e51dec2d610de20b2929c78e5a3",
+        "sourceNumber": 64,
+        "correctIndex": 0
+      },
+      {
+        "question": "A map shows a river segment as 9 cm. The scale is 1 cm to 2 km. What is the segment’s ground length?",
+        "choices": [
+          "18 km",
+          "11 km",
+          "4.5 km",
+          "20 km"
+        ],
+        "key": "ed124529685a0a1d9d1d69cfe38ee580fb73f9122522d99901801d1ce28b1b90",
+        "sourceNumber": 65,
+        "correctIndex": 0
+      },
+      {
+        "question": "A map’s scale is 1:500,000. What does 1 mm on the map represent on the ground?",
+        "choices": [
+          "500 m",
+          "50 m",
+          "5 km",
+          "50 km"
+        ],
+        "key": "ccc5af628977a888d7ca6b09e99a7623415629087500e64a504692e074fc5f9c",
+        "sourceNumber": 66,
+        "correctIndex": 0
+      },
+      {
+        "question": "A route of 15 km is represented by 5 cm. What is the scale in words?",
+        "choices": [
+          "1 cm represents 3 km",
+          "1 cm represents 5 km",
+          "1 cm represents 10 km",
+          "1 cm represents 75 km"
+        ],
+        "key": "8267609ef8cbac00404c1761e3dcafba3f8729adf2d2ea78c93dbb71e02fff38",
+        "sourceNumber": 67,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement correctly describes a large-scale map compared with a small-scale map of the same area?",
+        "choices": [
+          "It shows more detail over a smaller area",
+          "It shows less detail over a smaller area",
+          "It shows more area with more detail",
+          "It always uses a smaller paper sheet"
+        ],
+        "key": "253872564ee773d20294ee190616ba0fcec3e85ba1278d46e425c92e9e63c9e8",
+        "sourceNumber": 68,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which type of map is most useful for showing the heights and shapes of land?",
+        "choices": [
+          "Topographic map",
+          "Political boundary map",
+          "Time-zone map",
+          "Road distance table"
+        ],
+        "key": "0fef1ac962a30f5661eaaadb6fa087bc4c7a31157169e7c9fd0f69abc615d535",
+        "sourceNumber": 69,
+        "correctIndex": 0
+      },
+      {
+        "question": "On a contour map, what does a contour line connect?",
+        "choices": [
+          "Points of equal elevation",
+          "Points of equal longitude",
+          "Roads of equal length",
+          "Rivers with equal flow"
+        ],
+        "key": "e3b6fda1e938e0fd35e3b10c9ff4a08ae04e0339a4dfe98f0a17545944466d62",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "On a contour map, what do tightly spaced contour lines generally indicate?",
+        "choices": [
+          "A steep slope",
+          "A flat plain",
+          "A river mouth",
+          "A political border"
+        ],
+        "key": "462247b4e1ab07e1d414dca7d27fe7ebc3950e82d894f5875e947806c2503bfe",
+        "sourceNumber": 71,
+        "correctIndex": 0
+      },
+      {
+        "question": "On a contour map, what do widely spaced contour lines usually indicate?",
+        "choices": [
+          "A gentle slope",
+          "A vertical cliff",
+          "A mountain summit only",
+          "A deep river channel"
+        ],
+        "key": "d4ee66f2d7574e7ffd540151c4598b88f3fd6a75f4c01aa22e32692d0763c018",
+        "sourceNumber": 72,
+        "correctIndex": 0
+      },
+      {
+        "question": "If a map has no north arrow but its grid is aligned with the page edges, what direction is conventionally at the top?",
+        "choices": [
+          "North",
+          "South",
+          "East",
+          "West"
+        ],
+        "key": "1cb3e9f379ead42c143a6537cf2d589e7357300221e4612d699fdc90bb29404a",
+        "sourceNumber": 73,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which direction is opposite southeast?",
+        "choices": [
+          "Northwest",
+          "Northeast",
+          "Southwest",
+          "Southeast"
+        ],
+        "key": "91ed7d29d79f86d11bcbfb3451a51942b3efb354dbe4778365f37678e9b0e657",
+        "sourceNumber": 74,
+        "correctIndex": 0
+      },
+      {
+        "question": "A traveller faces west and turns left. Which direction does the traveller face?",
+        "choices": [
+          "South",
+          "North",
+          "East",
+          "West"
+        ],
+        "key": "14d72f9b8a468d3cd754665d8192683d302623e5bbfb0252247b299e4fb7f45e",
+        "sourceNumber": 75,
+        "correctIndex": 0
+      },
+      {
+        "question": "A boat travels on a bearing of 045°. Which direction is closest to this bearing?",
+        "choices": [
+          "Northeast",
+          "Southeast",
+          "Southwest",
+          "Northwest"
+        ],
+        "key": "7810be1ab8e2790539e222e0db2e80112c502635dcaaf264253f0c276fc27bd2",
+        "sourceNumber": 76,
+        "correctIndex": 0
+      },
+      {
+        "question": "A plane flies on a bearing of 135°. Which direction is closest to its course?",
+        "choices": [
+          "Southeast",
+          "Northeast",
+          "Southwest",
+          "Northwest"
+        ],
+        "key": "4732cc195fce306c2d3004e8d9c9d248021454f65713362e1b696e43de4345b2",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "A person walks 5 km west and then 5 km east. What is the net displacement?",
+        "choices": [
+          "0 km",
+          "5 km west",
+          "10 km east",
+          "10 km west"
+        ],
+        "key": "86f67b58ea3716c8f4e3f969800e0ddc0bb390d6c4c1fb2c07904f6b6dc8dca3",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "A hiker walks 2 km south, then 2 km east. In which general direction is the hiker from the starting point?",
+        "choices": [
+          "Southeast",
+          "Northeast",
+          "Southwest",
+          "Northwest"
+        ],
+        "key": "92a9179e2fc634ea03d487b053f57bb4e6b071ad147aad602e09886e717f3ec5",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "Town B is due west of Town A. In which direction is Town A from Town B?",
+        "choices": [
+          "East",
+          "West",
+          "North",
+          "South"
+        ],
+        "key": "91d99102011e85a716052db993f601d87c0ed5f30e6049b3769056b5fcfae6f1",
+        "sourceNumber": 80,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which pair of directions are opposite on a compass?",
+        "choices": [
+          "North and south",
+          "North and east",
+          "West and south",
+          "East and north"
+        ],
+        "key": "d6782378a3a6e2086867ab31fbec729cb4a4e03e9f19eb9e43219733921f7a36",
+        "sourceNumber": 81,
+        "correctIndex": 0
+      },
+      {
+        "question": "In which general direction is the Indus Delta from the city of Lahore?",
+        "choices": [
+          "Southwest",
+          "Northeast",
+          "Northwest",
+          "Southeast"
+        ],
+        "key": "03e31abf553caeaf870f96060136276650179abe8090fa9bf146845e8cd667be",
+        "sourceNumber": 82,
+        "correctIndex": 0
+      },
+      {
+        "question": "In which broad direction is the Karakoram region from Karachi?",
+        "choices": [
+          "Northeast",
+          "Southeast",
+          "Southwest",
+          "Northwest"
+        ],
+        "key": "d34244c14af60d25f85f6301f3a76ccaea2143032c6d833bf2ed0e6c69259f84",
+        "sourceNumber": 83,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which option correctly identifies Pakistan’s broad climate contrast?",
+        "choices": [
+          "Arid conditions dominate much of the country, while northern high mountains are markedly cooler",
+          "The entire country has a uniform equatorial climate",
+          "The whole country is covered by permanent ice",
+          "Pakistan has no dry regions"
+        ],
+        "key": "fff74aca9c1a5ea733612b2d6410a89f760802ed338fdb3a2b8e6e5a39a3ddeb",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why is the Indus Plain generally more suitable for extensive farming than the high Karakoram?",
+        "choices": [
+          "It has broad, low-lying alluvial land and river irrigation",
+          "It is higher and colder than the Karakoram",
+          "It receives no river water",
+          "It is a permanent ice sheet"
+        ],
+        "key": "68385c2af919b9f195b578d2d90fc4a1042759f85795ad7befb82050592d996f",
+        "sourceNumber": 85,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which region is most directly associated with glaciers and very high mountain peaks?",
+        "choices": [
+          "Northern Pakistan",
+          "Thar Desert",
+          "Indus Delta",
+          "Makran Coast"
+        ],
+        "key": "bb537763add27271b68530f16e9a4bc6cfeebcfc3c8c55d31c67aca2be19c67c",
+        "sourceNumber": 86,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which feature is most likely to be found where a large river meets the sea and deposits sediment?",
+        "choices": [
+          "Delta",
+          "Mountain pass",
+          "Plateau",
+          "Watershed ridge"
+        ],
+        "key": "af579a1a857d9eae10503d741d766bdcbadc93d4bd27368a18e74d752df9709c",
+        "sourceNumber": 87,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is a watershed divide?",
+        "choices": [
+          "High ground separating drainage basins",
+          "A channel where two rivers merge",
+          "A flat area at a river mouth",
+          "A line joining equal elevations only"
+        ],
+        "key": "ed10a0e194c52a81d03502b8d010a283b419c5e2e64a9574ce53624bcf8622d1",
+        "sourceNumber": 88,
+        "correctIndex": 0
+      },
+      {
+        "question": "A tributary is best described as what?",
+        "choices": [
+          "A smaller river that flows into a larger river",
+          "A river mouth formed by sediment",
+          "A ridge separating two basins",
+          "A canal that always flows into the sea"
+        ],
+        "key": "3da2f6721b23fb25e5422b761a96011765ca0a4ba7912df6c5dc943e72dd939e",
+        "sourceNumber": 89,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement distinguishes a plateau from a plain?",
+        "choices": [
+          "A plateau is elevated relatively flat land; a plain is broad low-relief land",
+          "A plateau is always below sea level; a plain is always mountainous",
+          "A plateau is a river mouth; a plain is a pass",
+          "They are both names for a glacier"
+        ],
+        "key": "e335b58aef9bd177ece712bdce6274f0618621b34ee03291cb89e3e14c6390ee",
+        "sourceNumber": 90,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which description best fits a mountain pass?",
+        "choices": [
+          "A lower route through a mountain barrier",
+          "A flat area at a river mouth",
+          "A line of equal elevation",
+          "A dry basin with no outlet"
+        ],
+        "key": "ce41427d89678dd7910a1857af587a0b79d9cfd18d08e1a4de7f0bc05582afcb",
+        "sourceNumber": 91,
+        "correctIndex": 0
+      },
+      {
+        "question": "On a map with a north arrow, a river flows from a point at 33° N to one at 30° N. In which general direction has it moved?",
+        "choices": [
+          "South",
+          "North",
+          "East",
+          "West"
+        ],
+        "key": "e610cb13abd61165648c7cc7d9065c5990a7192fd0f9beaf1bca1091720357aa",
+        "sourceNumber": 92,
+        "correctIndex": 0
+      },
+      {
+        "question": "A location at 68° E is compared with one at 72° E on the same parallel. Which location is farther east?",
+        "choices": [
+          "72° E",
+          "68° E",
+          "Both are equally far east",
+          "Latitude determines which is farther east"
+        ],
+        "key": "95296e12229ef282215cf6953ec110a9bee8072c8fbb0fabe9d6c80dba5d305d",
+        "sourceNumber": 93,
+        "correctIndex": 0
+      },
+      {
+        "question": "A location at 35° N is compared with one at 30° N on the same meridian. Which is farther north?",
+        "choices": [
+          "35° N",
+          "30° N",
+          "Both are equally far north",
+          "Longitude determines which is farther north"
+        ],
+        "key": "4e65cc16be15b895830a6c1b6b8aeb60f85291ff25f1cad781487416627e0b16",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "A map uses 1 cm to represent 10 km. A measured route is 0.8 cm. What is the ground distance?",
+        "choices": [
+          "8 km",
+          "0.8 km",
+          "10.8 km",
+          "80 km"
+        ],
+        "key": "1d8184345d0a51e5a6465253f6656effaf48e12b5eaa41882137e042fe517dbf",
+        "sourceNumber": 95,
+        "correctIndex": 0
+      },
+      {
+        "question": "On a 1:100,000 map, what map distance represents a ground distance of 3 km?",
+        "choices": [
+          "3 cm",
+          "30 cm",
+          "0.3 cm",
+          "300 cm"
+        ],
+        "key": "571113a9e0e248fb6850930e3eddc062598ed4a98e9ef7fe8f9148751f0efcdb",
+        "sourceNumber": 96,
+        "correctIndex": 0
+      },
+      {
+        "question": "A map shows a route as 12 cm at a scale of 1 cm to 1.5 km. What is the ground distance?",
+        "choices": [
+          "18 km",
+          "13.5 km",
+          "8 km",
+          "24 km"
+        ],
+        "key": "798f469af8fc8a0edb15815dfdd7fda482531567735aef66eeea12f486ca6c34",
+        "sourceNumber": 97,
+        "correctIndex": 0
+      },
+      {
+        "question": "A 1:20,000 map shows two points 7 cm apart. What is the ground distance in metres?",
+        "choices": [
+          "1,400 m",
+          "140 m",
+          "14,000 m",
+          "350 m"
+        ],
+        "key": "1d67fa1fcc504651b5b1e3a99d13dcf7b8bab74d79615c14a5eff86e64b2ce3c",
+        "sourceNumber": 98,
+        "correctIndex": 0
+      },
+      {
+        "question": "A route covers 36 km and appears as 9 cm on a map. What is the scale in kilometres per centimetre?",
+        "choices": [
+          "4 km per cm",
+          "9 km per cm",
+          "27 km per cm",
+          "324 km per cm"
+        ],
+        "key": "49b9f5869f655f2346fd8960ecbee8ff061eca01136a8950633950301641b891",
+        "sourceNumber": 99,
+        "correctIndex": 0
+      },
+      {
+        "question": "A 1:300,000 map shows a distance of 2 cm. What is the ground distance?",
+        "choices": [
+          "6 km",
+          "600 m",
+          "3 km",
+          "60 km"
+        ],
+        "key": "0ea76b652431eb7e8f5fca20703f50d920cf9f80e508b38de76179a0f311f1a2",
+        "sourceNumber": 100,
+        "correctIndex": 0
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "5d70391428307bb62212d0767043a38a5c9a2568dcd9c52b04b50fd461e478b3",
+      "sourceQuestionNumbers": [
+        84,
+        64,
+        34,
+        20,
+        47,
+        89,
+        63,
+        38,
+        42,
+        13,
+        87,
+        59,
+        8,
+        75,
+        29,
+        69,
+        11,
+        33,
+        44,
+        82,
+        5,
+        31,
+        86,
+        79,
+        48,
+        67,
+        9,
+        27,
+        98,
+        53,
+        96,
+        80,
+        54,
+        23,
+        1,
+        12,
+        57,
+        73,
+        97,
+        30,
+        18,
+        32,
+        81,
+        50,
+        62,
+        4,
+        88,
+        70,
+        46,
+        24,
+        91,
+        14,
+        41,
+        71,
+        21,
+        40,
+        43,
+        78,
+        95,
+        7,
+        15,
+        94,
+        65,
+        51,
+        26,
+        25,
+        66,
+        55,
+        3,
+        83,
+        58,
+        85,
+        36,
+        76,
+        2,
+        90,
+        16,
+        61,
+        56,
+        39,
+        92,
+        37,
+        72,
+        6,
+        60,
+        52,
+        68,
+        22,
+        17,
+        100,
+        49,
+        99,
+        77,
+        35,
+        19,
+        74,
+        28,
+        93,
+        10,
+        45
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
