@@ -1849,6 +1849,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        89,
+        63,
+        38
+      ],
+      "count": 3,
+      "durationSeconds": 82,
+      "sha256": "6b782adf6b0649c33722f97d2ece0c2c35fdf9ac8df1807444ddf5e8c0b48691",
+      "manifest": {
+        "title": "100 Pakistan Geography and Map Skills MCQs with Explanations",
+        "sourceTitle": "100 Pakistan Geography and Map Skills MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-08T05:36:36.102572+00:00",
+        "sourceContentHash": "c3719dd4bbaf31e1d3db0b72a79d30129caf3c37e29053dc9bc44ab5843bf1d9",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7631921637,
+          "sha": "80ff56bc4f05a6a9698f4026e39ba011a9899215",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-08T05:36:36.102572+00:00",
+          "url": "https://mcqs-base-8ozuko90b-as-projects-10921176.vercel.app",
+          "publisherRunId": 42450957437
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 82,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A tributary is best described as what?",
+            "choices": [
+              "A smaller river that flows into a larger river",
+              "A river mouth formed by sediment",
+              "A ridge separating two basins",
+              "A canal that always flows into the sea"
+            ],
+            "correctIndex": 0,
+            "key": "3da2f6721b23fb25e5422b761a96011765ca0a4ba7912df6c5dc943e72dd939e",
+            "sourceNumber": 89
+          },
+          {
+            "question": "A straight line measures 2.5 cm on a 1:40,000 map. What is the ground distance?",
+            "choices": [
+              "1 km",
+              "100 m",
+              "10 km",
+              "4 km"
+            ],
+            "correctIndex": 0,
+            "key": "effd5eb01e1aad1ea386659a1b9129ab4e1d2db0541a489e7cbbb6ea2018b9db",
+            "sourceNumber": 63
+          },
+          {
+            "question": "A hiker walks north, then turns 90 degrees clockwise. What direction is the hiker facing?",
+            "choices": [
+              "East",
+              "West",
+              "South",
+              "North"
+            ],
+            "correctIndex": 0,
+            "key": "8bb5c1f68192f78102d79be0c65a5af891d44c0b0fa07a251d7a68620fb386d5",
+            "sourceNumber": 38
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 20,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 20,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 21,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 23,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 29,
+            "duration": 18,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 47,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 48,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 49,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 50,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 54,
+            "duration": 16,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 70,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 71,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 72,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 73,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 77,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            89,
+            63,
+            38
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#TestPreparation",
+          "#QuizTime",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/pakistan-geography-map-skills-part-03-6b782adf6b0649c3.mp4",
+        "videoSha256": "6b782adf6b0649c33722f97d2ece0c2c35fdf9ac8df1807444ddf5e8c0b48691",
+        "assetId": 723041852
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q89, 63, 38 | 100 Pakistan Geography and Map Skills MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 89, 63, 38\n100 Pakistan Geography and Map Skills MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q89, 63, 38 | 100 Pakistan Geography and Map Skills MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 89, 63, 38\n100 Pakistan Geography and Map Skills MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/pakistan-geography-map-skills\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q89, 63, 38 | 100 Pakistan Geography and Map Skills MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 89, 63, 38\n100 Pakistan Geography and Map Skills MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/pakistan-geography-map-skills\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q89, 63, 38 | 100 Pakistan Geography and Map Skills MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 89, 63, 38\n100 Pakistan Geography and Map Skills MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/pakistan-geography-map-skills\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
