@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "pakistan-geography-map-skills",
   "createdAt": "2026-11-08T05:36:36.233064+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "pakistan-geography-map-skills",
     "title": "100 Pakistan Geography and Map Skills MCQs with Explanations",
@@ -2694,5 +2694,85 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "pakistan-geography-map-skills",
+    "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+    "sourceTitle": "100 Pakistan Geography and Map Skills MCQs with Explanations",
+    "sourceContentHash": "c3719dd4bbaf31e1d3db0b72a79d30129caf3c37e29053dc9bc44ab5843bf1d9",
+    "productionDeployment": {
+      "id": 7631921637,
+      "sha": "80ff56bc4f05a6a9698f4026e39ba011a9899215",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-08T05:36:36.102572+00:00",
+      "url": "https://mcqs-base-8ozuko90b-as-projects-10921176.vercel.app",
+      "publisherRunId": 42450957437
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          84,
+          64
+        ],
+        "count": 2,
+        "durationSeconds": 68,
+        "sha256": "a8b348bd38fef0384e142cca1bb32a81c88a4be0bffb5f9d984da743d60d8cf8"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          34,
+          20,
+          47
+        ],
+        "count": 3,
+        "durationSeconds": 82,
+        "sha256": "56db8f4527de0c9d515fe9447687f1cef646897afba67da1a566d63f93b14b77"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          89,
+          63,
+          38
+        ],
+        "count": 3,
+        "durationSeconds": 82,
+        "sha256": "6b782adf6b0649c33722f97d2ece0c2c35fdf9ac8df1807444ddf5e8c0b48691"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          42,
+          13,
+          87
+        ],
+        "count": 3,
+        "durationSeconds": 76,
+        "sha256": "a7b519e4f1612ec92bfbf2ff3a8081be6702bcd9b8f57855ed7a9344ae20d2a4"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          59,
+          8,
+          75
+        ],
+        "count": 3,
+        "durationSeconds": 76,
+        "sha256": "f3f4353c3c4211c7cb9ec2a22a308f74652b5c97c9f0cc1f9e0dae854174cdc2"
+      }
+    ]
+  }
 }
