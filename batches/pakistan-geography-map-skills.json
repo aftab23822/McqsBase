@@ -1568,6 +1568,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 2,
+      "directory": "part-02",
+      "sourceQuestionNumbers": [
+        34,
+        20,
+        47
+      ],
+      "count": 3,
+      "durationSeconds": 82,
+      "sha256": "56db8f4527de0c9d515fe9447687f1cef646897afba67da1a566d63f93b14b77",
+      "manifest": {
+        "title": "100 Pakistan Geography and Map Skills MCQs with Explanations",
+        "sourceTitle": "100 Pakistan Geography and Map Skills MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-08T05:36:36.102572+00:00",
+        "sourceContentHash": "c3719dd4bbaf31e1d3db0b72a79d30129caf3c37e29053dc9bc44ab5843bf1d9",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7631921637,
+          "sha": "80ff56bc4f05a6a9698f4026e39ba011a9899215",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-08T05:36:36.102572+00:00",
+          "url": "https://mcqs-base-8ozuko90b-as-projects-10921176.vercel.app",
+          "publisherRunId": 42450957437
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 82,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Which pass lies on a traditional route between Afghanistan and Pakistan through South Waziristan?",
+            "choices": [
+              "Gomal Pass",
+              "Khunjerab Pass",
+              "Lowari Pass",
+              "Bolan Pass"
+            ],
+            "correctIndex": 0,
+            "key": "7930b14af45c2913db3737193e321bc5cf62dcedffcf16d883c0f1c98c1a276d",
+            "sourceNumber": 34
+          },
+          {
+            "question": "In which general direction does the Indus flow through most of Pakistan?",
+            "choices": [
+              "North to south",
+              "South to north",
+              "East to west",
+              "West to east"
+            ],
+            "correctIndex": 0,
+            "key": "96d7564acecadf3e4a66e57e00060b1683be8587f67dc9ed39c1942dcc713404",
+            "sourceNumber": 20
+          },
+          {
+            "question": "On a map, a location is at 32° N, 74° E. What does 32° N describe?",
+            "choices": [
+              "Latitude north of the Equator",
+              "Longitude east of Greenwich",
+              "Latitude south of the Equator",
+              "Longitude west of Greenwich"
+            ],
+            "correctIndex": 0,
+            "key": "29f99a83940e14f3a72ae93a5ff9707e87652d289ef9ecec96713f5952ce2bd1",
+            "sourceNumber": 47
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 17,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 17,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 18,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 19,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 20,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 24,
+            "duration": 16,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 40,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 41,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 42,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 43,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 47,
+            "duration": 22,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 69,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 70,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 71,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 72,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 77,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 2,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            34,
+            20,
+            47
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#TestPreparation",
+          "#QuizTime",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/pakistan-geography-map-skills-part-02-56db8f4527de0c9d.mp4",
+        "videoSha256": "56db8f4527de0c9d515fe9447687f1cef646897afba67da1a566d63f93b14b77",
+        "assetId": 723040494
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 2/5 | Q34, 20, 47 | 100 Pakistan Geography and Map Skills MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 34, 20, 47\n100 Pakistan Geography and Map Skills MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 2/5 | Q34, 20, 47 | 100 Pakistan Geography and Map Skills MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 34, 20, 47\n100 Pakistan Geography and Map Skills MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/pakistan-geography-map-skills\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 2/5 | Q34, 20, 47 | 100 Pakistan Geography and Map Skills MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 34, 20, 47\n100 Pakistan Geography and Map Skills MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/pakistan-geography-map-skills\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 2/5 | Q34, 20, 47 | 100 Pakistan Geography and Map Skills MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 34, 20, 47\n100 Pakistan Geography and Map Skills MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/pakistan-geography-map-skills\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
