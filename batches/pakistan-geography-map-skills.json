@@ -1336,6 +1336,239 @@
       "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
     }
   },
-  "parts": [],
+  "parts": [
+    {
+      "part": 1,
+      "directory": "part-01",
+      "sourceQuestionNumbers": [
+        84,
+        64
+      ],
+      "count": 2,
+      "durationSeconds": 68,
+      "sha256": "a8b348bd38fef0384e142cca1bb32a81c88a4be0bffb5f9d984da743d60d8cf8",
+      "manifest": {
+        "title": "100 Pakistan Geography and Map Skills MCQs with Explanations",
+        "sourceTitle": "100 Pakistan Geography and Map Skills MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-08T05:36:36.102572+00:00",
+        "sourceContentHash": "c3719dd4bbaf31e1d3db0b72a79d30129caf3c37e29053dc9bc44ab5843bf1d9",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7631921637,
+          "sha": "80ff56bc4f05a6a9698f4026e39ba011a9899215",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-08T05:36:36.102572+00:00",
+          "url": "https://mcqs-base-8ozuko90b-as-projects-10921176.vercel.app",
+          "publisherRunId": 42450957437
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 68,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Which option correctly identifies Pakistan’s broad climate contrast?",
+            "choices": [
+              "Arid conditions dominate much of the country, while northern high mountains are markedly cooler",
+              "The entire country has a uniform equatorial climate",
+              "The whole country is covered by permanent ice",
+              "Pakistan has no dry regions"
+            ],
+            "correctIndex": 0,
+            "key": "fff74aca9c1a5ea733612b2d6410a89f760802ed338fdb3a2b8e6e5a39a3ddeb",
+            "sourceNumber": 84
+          },
+          {
+            "question": "A map scale is 1:250,000. What distance on the map represents 5 km on the ground?",
+            "choices": [
+              "2 cm",
+              "5 cm",
+              "20 cm",
+              "0.5 cm"
+            ],
+            "correctIndex": 0,
+            "key": "160a5757d9a92241cebf3618a19d0792c00b0e51dec2d610de20b2929c78e5a3",
+            "sourceNumber": 64
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 25,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 25,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 26,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 27,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 28,
+            "duration": 9,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 37,
+            "duration": 19,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 56,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 57,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 58,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 59,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 63,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 1,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            84,
+            64
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#TestPreparation",
+          "#QuizTime",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/pakistan-geography-map-skills-part-01-a8b348bd38fef038.mp4",
+        "videoSha256": "a8b348bd38fef0384e142cca1bb32a81c88a4be0bffb5f9d984da743d60d8cf8",
+        "assetId": 723039066
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 1/5 | Q84, 64 | 100 Pakistan Geography and Map Skills MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 84, 64\n100 Pakistan Geography and Map Skills MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 1/5 | Q84, 64 | 100 Pakistan Geography and Map Skills MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 84, 64\n100 Pakistan Geography and Map Skills MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/pakistan-geography-map-skills\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 1/5 | Q84, 64 | 100 Pakistan Geography and Map Skills MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 84, 64\n100 Pakistan Geography and Map Skills MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/pakistan-geography-map-skills\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 1/5 | Q84, 64 | 100 Pakistan Geography and Map Skills MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 84, 64\n100 Pakistan Geography and Map Skills MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/pakistan-geography-map-skills\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
+          "format": "short"
+        }
+      }
+    }
+  ],
   "thinkingSeconds": 3
 }
