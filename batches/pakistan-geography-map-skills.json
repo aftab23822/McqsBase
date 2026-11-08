@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "pakistan-geography-map-skills",
   "createdAt": "2026-11-08T05:36:36.233064+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "pakistan-geography-map-skills",
     "title": "100 Pakistan Geography and Map Skills MCQs with Explanations",
@@ -1700,7 +1700,12 @@
         }
       },
       "scheduledAt": "2026-11-08T11:10:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-08T05:54:36.464614+00:00"
+        }
+      }
     },
     {
       "part": 2,
