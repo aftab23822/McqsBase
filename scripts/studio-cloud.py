@@ -53,6 +53,15 @@ class Studio:
         self.open_request = open_request or urllib.request.build_opener(NoCredentialRedirect()).open
         self.sleep = sleep
 
+    def upload_video(self, filename, data):
+        import requests
+        response = requests.post(BASE + '/upload', headers={'Authorization': self.key},
+                                 files={'file': (filename, data, 'video/mp4')},
+                                 allow_redirects=False, timeout=180)
+        if not 200 <= response.status_code < 300:
+            raise StudioError(response.status_code, f'Studio file upload returned HTTP {response.status_code}.')
+        return response.json()
+
     def call(self, method, path, payload=None):
         if not path.startswith('/') or '://' in path:
             raise ValueError('Only the fixed Studio API is allowed.')

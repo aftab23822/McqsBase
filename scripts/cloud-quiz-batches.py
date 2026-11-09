@@ -241,9 +241,13 @@ def publish(storage, state, channels, studio, spacing, verify_only=False):
             else:
                 if part.get('uploadIntent', {}).get('status') == 'uncertain':
                     raise RuntimeError('The earlier media import is uncertain and absent from the library; hold rather than duplicate it.')
+                # Fetch and validate before recording a possibly interrupted Studio write.
+                data = public_bytes(part['asset']['videoUrl'])
+                if hashlib.sha256(data).hexdigest() != part['sha256']:
+                    raise ValueError('Source video bytes differ from the validated batch part.')
                 part['uploadIntent'] = {'filename': filename, 'status': 'uncertain'}
                 save(record)
-                imported = studio.call('POST', '/upload-from-url', {'url': part['asset']['videoUrl']})
+                imported = studio.upload_video(filename, data)
             if not imported.get('id') or not imported.get('path'):
                 raise RuntimeError('Studio did not return a verifiable media ID and path.')
             if hashlib.sha256(public_bytes(imported['path'])).hexdigest() != part['sha256']:
