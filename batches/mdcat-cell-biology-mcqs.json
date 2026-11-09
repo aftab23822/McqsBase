@@ -1898,6 +1898,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        12,
+        61
+      ],
+      "count": 2,
+      "durationSeconds": 64,
+      "sha256": "a98aa718d47c03bd210a72e14e6562456fe3c87bd4e8e4b0180791b83e6a46be",
+      "manifest": {
+        "title": "100 MDCAT Cell Biology MCQs",
+        "sourceTitle": "100 MDCAT Cell Biology MCQs with Answers and Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-09T05:47:15.531400+00:00",
+        "sourceContentHash": "f595d3afe2cd93acb54472668ef87155f06bf0a7cd31d7605b97ebe5171a9a53",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7647961350,
+          "sha": "65452c83e8f4effa7acee7681a0d1b7cb47cc3a4",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-09T05:47:15.531400+00:00",
+          "url": "https://mcqs-base-8cpf4rgr9-as-projects-10921176.vercel.app",
+          "publisherRunId": 42568693180
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 64,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A red blood cell is placed in a solution with a lower solute concentration than its cytoplasm. What is the likely result?",
+            "choices": [
+              "Water enters the cell, which may swell",
+              "Water leaves the cell, which shrinks",
+              "No net water movement occurs",
+              "The cell immediately forms a cell wall"
+            ],
+            "correctIndex": 0,
+            "key": "95a537993f398b80b99ff995b3c3818f153b1c2b21c58aa0de6f19e85c39973b",
+            "sourceNumber": 12
+          },
+          {
+            "question": "A specimen is 0.5 mm long and viewed at 40× magnification. What is its image length?",
+            "choices": [
+              "0.0125 mm",
+              "2 mm",
+              "20 mm",
+              "200 mm"
+            ],
+            "correctIndex": 2,
+            "key": "808ede3279d0262443470ecb5b34ecb5f4e8e12fdabd29cd4e2bd2b7f1d20aca",
+            "sourceNumber": 61
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 23,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 25,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 26,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 32,
+            "duration": 20,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 52,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 53,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 54,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 55,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 59,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            12,
+            61
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MDCAT",
+          "#MedicalEntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/mdcat-cell-biology-mcqs-part-03-a98aa718d47c03bd.mp4",
+        "videoSha256": "a98aa718d47c03bd210a72e14e6562456fe3c87bd4e8e4b0180791b83e6a46be",
+        "assetId": 726388653
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q12, 61 | 100 MDCAT Cell Biology MCQs",
+          "text": "Part 3/5 · Source questions 12, 61\n100 MDCAT Cell Biology MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q12, 61 | 100 MDCAT Cell Biology MCQs",
+          "text": "Part 3/5 · Source questions 12, 61\n100 MDCAT Cell Biology MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q12, 61 | 100 MDCAT Cell Biology MCQs",
+          "text": "Part 3/5 · Source questions 12, 61\n100 MDCAT Cell Biology MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q12, 61 | 100 MDCAT Cell Biology MCQs",
+          "text": "Part 3/5 · Source questions 12, 61\n100 MDCAT Cell Biology MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
