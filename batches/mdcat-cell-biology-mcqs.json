@@ -1787,8 +1787,9 @@
           "integrationId": "cmvwbcule0222ro9dhocbic4w"
         },
         "youtube": {
-          "status": "uncertain",
-          "attemptedAt": "2026-11-09T06:46:06.647982+00:00"
+          "status": "accepted",
+          "attemptedAt": "2026-11-09T06:46:06.647982+00:00",
+          "postId": "cmw8wdudi083broiv5y4ozb8u"
         }
       }
     },
