@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "mdcat-cell-biology-mcqs",
   "createdAt": "2026-11-09T05:47:15.732366+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "mdcat-cell-biology-mcqs",
     "title": "100 MDCAT Cell Biology MCQs with Answers and Explanations",
@@ -1749,7 +1749,12 @@
         }
       },
       "scheduledAt": "2026-11-09T12:01:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-09T06:45:50.462710+00:00"
+        }
+      }
     },
     {
       "part": 2,
