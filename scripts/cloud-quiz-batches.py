@@ -10,6 +10,8 @@ import os
 from pathlib import Path
 import re
 import subprocess
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -105,8 +107,18 @@ def public_bytes(url):
     if urllib.parse.urlparse(url).scheme != 'https':
         raise ValueError('Public media must use HTTPS.')
     # Separate unauthenticated request: never forward either cloud credential to media hosts.
-    with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'MCQsBase-Cloud-Publisher/1.0'}), timeout=180) as response:
-        return response.read(100_000_001)
+    request = urllib.request.Request(url, headers={'User-Agent': 'MCQsBase-Cloud-Publisher/1.0'})
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(request, timeout=180) as response:
+                return response.read(100_000_001)
+        except urllib.error.HTTPError as error:
+            if error.code not in (408, 500, 502, 503, 504) or attempt == 2:
+                raise
+        except (urllib.error.URLError, TimeoutError, ConnectionError):
+            if attempt == 2:
+                raise
+        time.sleep(2 ** attempt)
 
 
 def generate(storage, state, slug, publisher_run):
@@ -170,6 +182,20 @@ def generate(storage, state, slug, publisher_run):
     save()
     print(json.dumps({'slug': slug, 'status': 'ready', 'videos': len(record['parts']),
                       'questions': [part['sourceQuestionNumbers'] for part in record['parts']]}))
+
+
+def upload_part(studio, part, filename, data, save):
+    intent = part['uploadIntent'] = {'filename': filename, 'status': 'uncertain'}
+    save()
+    try:
+        return studio.upload_video(filename, data)
+    except publisher.StudioError as error:
+        # These responses explicitly reject the file. A timeout or server error
+        # can follow a successful write and must still be reconciled by name.
+        if error.status in (400, 401, 402, 403, 413, 415, 422, 429):
+            intent.update(status='rejected', httpStatus=error.status)
+            save()
+        raise
 
 
 def publish(storage, state, channels, studio, spacing, verify_only=False):
@@ -245,9 +271,7 @@ def publish(storage, state, channels, studio, spacing, verify_only=False):
                 data = public_bytes(part['asset']['videoUrl'])
                 if hashlib.sha256(data).hexdigest() != part['sha256']:
                     raise ValueError('Source video bytes differ from the validated batch part.')
-                part['uploadIntent'] = {'filename': filename, 'status': 'uncertain'}
-                save(record)
-                imported = studio.upload_video(filename, data)
+                imported = upload_part(studio, part, filename, data, lambda: save(record))
             if not imported.get('id') or not imported.get('path'):
                 raise RuntimeError('Studio did not return a verifiable media ID and path.')
             if hashlib.sha256(public_bytes(imported['path'])).hexdigest() != part['sha256']:

@@ -16,6 +16,21 @@ spec.loader.exec_module(worker)
 
 
 class Worker(unittest.TestCase):
+    def test_upload_rejection_can_resume_but_uncertain_writes_require_reconciliation(self):
+        from unittest.mock import Mock
+        for failure, expected in [(worker.publisher.StudioError(400, 'rejected'), 'rejected'),
+                                  (worker.publisher.StudioError(503, 'unavailable'), 'uncertain'),
+                                  (TimeoutError(), 'uncertain')]:
+            part, saved = {}, []
+            client = Mock()
+            client.upload_video.side_effect = failure
+            with self.assertRaises(type(failure)):
+                worker.upload_part(client, part, 'example.mp4', b'video',
+                                   lambda: saved.append(deepcopy(part['uploadIntent'])))
+            self.assertEqual(saved[0]['status'], 'uncertain')
+            self.assertEqual(saved[-1]['status'], expected)
+            client.upload_video.assert_called_once_with('example.mp4', b'video')
+
     def test_random_plan_is_durable_before_render_and_is_reused_after_failure(self):
         fixture = worker.module('worker_batch_fixture', 'test-quiz-batch.py')
         package = fixture.source()
