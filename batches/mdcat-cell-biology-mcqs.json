@@ -1617,6 +1617,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 2,
+      "directory": "part-02",
+      "sourceQuestionNumbers": [
+        42,
+        88,
+        92
+      ],
+      "count": 3,
+      "durationSeconds": 89,
+      "sha256": "7d9b85ac3bd7ed312fcf21c673acbbd31f53c8430039756b66f0322546d14e72",
+      "manifest": {
+        "title": "100 MDCAT Cell Biology MCQs",
+        "sourceTitle": "100 MDCAT Cell Biology MCQs with Answers and Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-09T05:47:15.531400+00:00",
+        "sourceContentHash": "f595d3afe2cd93acb54472668ef87155f06bf0a7cd31d7605b97ebe5171a9a53",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7647961350,
+          "sha": "65452c83e8f4effa7acee7681a0d1b7cb47cc3a4",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-09T05:47:15.531400+00:00",
+          "url": "https://mcqs-base-8cpf4rgr9-as-projects-10921176.vercel.app",
+          "publisherRunId": 42568693180
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 89,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Which statement about a typical bacterial ribosome is correct?",
+            "choices": [
+              "It is 70S",
+              "It is 80S",
+              "It is a membrane-bound organelle",
+              "It is found only inside the nucleus"
+            ],
+            "correctIndex": 0,
+            "key": "672717378a8756907e99f41b41777e93b70f7169cc4540328cbce2cc8f32e2ff",
+            "sourceNumber": 42
+          },
+          {
+            "question": "A cell has 8 chromosomes at the start of mitosis. After normal mitosis and cytokinesis, how many chromosomes are expected in each daughter cell?",
+            "choices": [
+              "4",
+              "8",
+              "16",
+              "32"
+            ],
+            "correctIndex": 1,
+            "key": "38d7ad36f89bad0ad4bb337c4731e0afef7310fb0d1aae783dd6ad739b360ca6",
+            "sourceNumber": 88
+          },
+          {
+            "question": "A cell's membrane proteins are damaged, but its phospholipid bilayer remains intact. Which process is most likely to be impaired?",
+            "choices": [
+              "Transport of many ions across the membrane",
+              "Diffusion of oxygen through the bilayer",
+              "Movement of every water molecule",
+              "Formation of the cell wall"
+            ],
+            "correctIndex": 0,
+            "key": "146b40015a3ccce9683b0ee03e3b0d62dd8a523338a44657c1b847cc7bcbfdf5",
+            "sourceNumber": 92
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 18,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 18,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 19,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 20,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 21,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 25,
+            "duration": 19,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 44,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 45,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 46,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 47,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 51,
+            "duration": 24,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 75,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 76,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 77,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 78,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 84,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 2,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            42,
+            88,
+            92
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MDCAT",
+          "#MedicalEntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/mdcat-cell-biology-mcqs-part-02-7d9b85ac3bd7ed31.mp4",
+        "videoSha256": "7d9b85ac3bd7ed312fcf21c673acbbd31f53c8430039756b66f0322546d14e72",
+        "assetId": 726386790
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 2/5 | Q42, 88, 92 | 100 MDCAT Cell Biology MCQs",
+          "text": "Part 2/5 · Source questions 42, 88, 92\n100 MDCAT Cell Biology MCQs\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 2/5 | Q42, 88, 92 | 100 MDCAT Cell Biology MCQs",
+          "text": "Part 2/5 · Source questions 42, 88, 92\n100 MDCAT Cell Biology MCQs\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 2/5 | Q42, 88, 92 | 100 MDCAT Cell Biology MCQs",
+          "text": "Part 2/5 · Source questions 42, 88, 92\n100 MDCAT Cell Biology MCQs\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 2/5 | Q42, 88, 92 | 100 MDCAT Cell Biology MCQs",
+          "text": "Part 2/5 · Source questions 42, 88, 92\n100 MDCAT Cell Biology MCQs\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
