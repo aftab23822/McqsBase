@@ -2148,7 +2148,11 @@
       },
       "uploadIntent": {
         "filename": "mdcat-cell-biology-mcqs-part-03-a98aa718d47c03bd.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "0ccbb78f-a272-4ed7-929e-9ddf4714753d",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/npyD06uTeO.mp4"
       }
     },
     {
