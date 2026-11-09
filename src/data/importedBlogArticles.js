@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "mdcat-cell-biology-mcqs": {
+    title: "100 MDCAT Cell Biology MCQs with Answers and Explanations",
+    excerpt:
+      "Practise cell structure, membranes, transport, organelles, microscopy and cell division with 100 original questions and concise explanations.",
+    category: "Subject Guide",
+    date: "2026-11-09",
+    readTime: "33 min",
+    content: null,
+    body: readImportedBlogBody("mdcat-cell-biology-mcqs")
+  },
   "pakistan-geography-map-skills": {
     title: "100 Pakistan Geography and Map Skills MCQs with Explanations",
     excerpt:
