@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "mdcat-cell-biology-mcqs",
+  "createdAt": "2026-11-09T05:47:15.732366+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "mdcat-cell-biology-mcqs",
+    "title": "100 MDCAT Cell Biology MCQs with Answers and Explanations",
+    "url": "https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7647961350,
+      "sha": "65452c83e8f4effa7acee7681a0d1b7cb47cc3a4",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-09T05:47:15.531400+00:00",
+      "url": "https://mcqs-base-8cpf4rgr9-as-projects-10921176.vercel.app",
+      "publisherRunId": 42568693180
+    },
+    "fetchedAt": "2026-11-09T05:47:15.531400+00:00",
+    "contentHash": "f595d3afe2cd93acb54472668ef87155f06bf0a7cd31d7605b97ebe5171a9a53",
+    "questions": [
+      {
+        "question": "Which description best fits the fluid mosaic model of a cell membrane?",
+        "choices": [
+          "A rigid layer of cellulose with embedded DNA",
+          "A phospholipid bilayer containing mobile proteins",
+          "A single protein sheet surrounding the cytoplasm",
+          "Two carbohydrate layers joined by ribosomes"
+        ],
+        "key": "c9b3ce55ab84f0757274eb5d2f6e8b4961dad4a65c2430adb4b30af65c1dd80a",
+        "sourceNumber": 1,
+        "correctIndex": 1
+      },
+      {
+        "question": "In a phospholipid bilayer, where do the hydrophilic heads normally face?",
+        "choices": [
+          "Toward the watery environments inside and outside the cell",
+          "Toward the center of the bilayer only",
+          "Into the hydrophobic tails of neighboring lipids",
+          "Away from both the cytoplasm and extracellular fluid"
+        ],
+        "key": "f70959b7e1ac6bad8b7959b6caf9d5e77f0f975f3a6aaffbe7411164ebf1f745",
+        "sourceNumber": 2,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which substance crosses a pure phospholipid bilayer most readily by simple diffusion?",
+        "choices": [
+          "A large starch molecule",
+          "A sodium ion",
+          "A small nonpolar oxygen molecule",
+          "A charged amino acid"
+        ],
+        "key": "35cb277b3cb634c06b9df5e159261e477d0311d646ced07e2c6bb4583de288fe",
+        "sourceNumber": 3,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the principal role of cholesterol in many animal cell membranes?",
+        "choices": [
+          "It forms the cell's hereditary material",
+          "It helps moderate membrane fluidity and stability",
+          "It pumps glucose directly across the membrane",
+          "It replaces all membrane phospholipids"
+        ],
+        "key": "7ed36a293b4d42a63a07cba967c941ebb76ba22a29cd1c0bb4fabbf8301005a2",
+        "sourceNumber": 4,
+        "correctIndex": 1
+      },
+      {
+        "question": "A membrane protein that spans the entire phospholipid bilayer is called what?",
+        "choices": [
+          "Integral protein",
+          "Peripheral protein",
+          "Histone",
+          "Cellulose protein"
+        ],
+        "key": "ea7a4425361732168d0ed97f621d2bd79db48c3c38026ea7a578eb0f3d7d9532",
+        "sourceNumber": 5,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which membrane component commonly helps cells recognize one another?",
+        "choices": [
+          "Carbohydrate chains attached to proteins or lipids",
+          "Free DNA strands in the bilayer",
+          "Cellulose fibers embedded in every animal membrane",
+          "Ribosomal RNA on the outer surface"
+        ],
+        "key": "b8334288e55e7c047dcb537b3cb8cd2978e9163c7b4b14e8364fc68b40353051",
+        "sourceNumber": 6,
+        "correctIndex": 0
+      },
+      {
+        "question": "A membrane allows water through but blocks a particular solute. What property does this demonstrate?",
+        "choices": [
+          "Selective permeability",
+          "Contractility",
+          "Chromosome condensation",
+          "Enzyme denaturation"
+        ],
+        "key": "814e955830db1f12b03684d35013b4c013024806e22a70926ed11fe9c421f2df",
+        "sourceNumber": 7,
+        "correctIndex": 0
+      },
+      {
+        "question": "A molecule moves from a region of higher concentration to lower concentration without a transport protein. What process is occurring?",
+        "choices": [
+          "Simple diffusion",
+          "Active transport",
+          "Endocytosis",
+          "Exocytosis"
+        ],
+        "key": "a2a12ea36021cdfe288ce338b130f05c993e71caa28b47a972c4f9e2d57c7a46",
+        "sourceNumber": 8,
+        "correctIndex": 0
+      },
+      {
+        "question": "Glucose moves down its concentration gradient through a carrier protein. Which process is this?",
+        "choices": [
+          "Facilitated diffusion",
+          "Primary active transport",
+          "Phagocytosis",
+          "Osmosis"
+        ],
+        "key": "eb74c8bea1036f918497607a544b96fef5816665feca462afd890e1dc33acb7f",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "A cell uses ATP to move calcium ions against their concentration gradient. This is an example of what?",
+        "choices": [
+          "Simple diffusion",
+          "Osmosis",
+          "Active transport",
+          "Facilitated diffusion"
+        ],
+        "key": "3567b9cd10b87c9cb58a5e8d94138b81358110cb2682d7553f14485950b53344",
+        "sourceNumber": 10,
+        "correctIndex": 2
+      },
+      {
+        "question": "Which description defines osmosis?",
+        "choices": [
+          "Net movement of water across a selectively permeable membrane",
+          "Movement of solute particles through a membrane protein",
+          "Engulfment of a particle by the cell membrane",
+          "Release of vesicle contents outside a cell"
+        ],
+        "key": "82dcfd97b3cc1e115138c4b77d0cfe173ae8b1d375a718c391c34d37ce1fc3e6",
+        "sourceNumber": 11,
+        "correctIndex": 0
+      },
+      {
+        "question": "A red blood cell is placed in a solution with a lower solute concentration than its cytoplasm. What is the likely result?",
+        "choices": [
+          "Water enters the cell, which may swell",
+          "Water leaves the cell, which shrinks",
+          "No net water movement occurs",
+          "The cell immediately forms a cell wall"
+        ],
+        "key": "95a537993f398b80b99ff995b3c3818f153b1c2b21c58aa0de6f19e85c39973b",
+        "sourceNumber": 12,
+        "correctIndex": 0
+      },
+      {
+        "question": "An animal cell is placed in a solution with a higher solute concentration than its cytoplasm. What is the expected effect?",
+        "choices": [
+          "Water leaves the cell and it shrinks",
+          "Water enters the cell and it swells",
+          "The cell develops a large central vacuole",
+          "The solute concentration inside immediately becomes zero"
+        ],
+        "key": "e6903edbec134d40a1ce3842345903901abf1dc73304ec78ba4e1bf85db0ae36",
+        "sourceNumber": 13,
+        "correctIndex": 0
+      },
+      {
+        "question": "A plant cell placed in distilled water becomes firm rather than bursting. Which structure most directly limits excessive expansion?",
+        "choices": [
+          "Cell wall",
+          "Nucleolus",
+          "Ribosome",
+          "Golgi apparatus"
+        ],
+        "key": "aac48f727bdd48f19b91ad2c79fb242a4e574963c438a8dbd8d1495d258312ef",
+        "sourceNumber": 14,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main function of the sodium-potassium pump in an animal cell?",
+        "choices": [
+          "To move sodium and potassium ions across the membrane using energy",
+          "To copy DNA before cell division",
+          "To digest proteins in the cytoplasm",
+          "To move water through a channel without any ion movement"
+        ],
+        "key": "2d3d422341197eba2f7e20de3d33616e25630eb1a2dc34a8e5d1bf85500520fb",
+        "sourceNumber": 15,
+        "correctIndex": 0
+      },
+      {
+        "question": "A cell takes in a large particle by surrounding it with its plasma membrane. What is this process called?",
+        "choices": [
+          "Endocytosis",
+          "Exocytosis",
+          "Diffusion",
+          "Transcription"
+        ],
+        "key": "eb52ba6e35dc4d4bd4d0362e3620e4a37e445a030ef47d815e4a2f6782004d0c",
+        "sourceNumber": 16,
+        "correctIndex": 0
+      },
+      {
+        "question": "A secretory vesicle fuses with the plasma membrane and releases its contents outside the cell. Which process is involved?",
+        "choices": [
+          "Exocytosis",
+          "Osmosis",
+          "Phagocytosis",
+          "DNA replication"
+        ],
+        "key": "c8e3af7f9178ae351405c99d0c4fc1e9e601f087a9ef4f933a75cf5364c7ffa0",
+        "sourceNumber": 17,
+        "correctIndex": 0
+      },
+      {
+        "question": "A white blood cell surrounds and internalizes a bacterium. Which form of endocytosis is this?",
+        "choices": [
+          "Phagocytosis",
+          "Pinocytosis",
+          "Facilitated diffusion",
+          "Exocytosis"
+        ],
+        "key": "bffb3a170bf900f0fce864cb31287409f923ec4fbbf08c349b7e2a6b08bf0894",
+        "sourceNumber": 18,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is a typical function of an aquaporin?",
+        "choices": [
+          "To provide a channel through which water can cross a membrane",
+          "To synthesize DNA in the nucleus",
+          "To break down hydrogen peroxide",
+          "To attach amino acids to transfer RNA"
+        ],
+        "key": "43719bc3c8d327dd1d7ee788225b06d28b6c66d474ea59cf941ebff1082e3b72",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "A substance crosses a membrane through a channel protein from high concentration to low concentration. Which statement is correct?",
+        "choices": [
+          "The movement is facilitated diffusion and is down the gradient",
+          "The movement is active transport because a protein is involved",
+          "The movement is osmosis regardless of the substance",
+          "The movement must use ATP because it crosses a membrane"
+        ],
+        "key": "ec2723d1c1ca18561506cef69fe5485ab9f6b31e7a95f71f59bc8b65955a1067",
+        "sourceNumber": 20,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which organelle contains most of the genetic material in a typical eukaryotic cell?",
+        "choices": [
+          "Nucleus",
+          "Golgi apparatus",
+          "Lysosome",
+          "Smooth endoplasmic reticulum"
+        ],
+        "key": "e57cdc608758073b67eaac2d928857143c70325daa5e677a735506f4aec1d320",
+        "sourceNumber": 21,
+        "correctIndex": 0
+      },
+      {
+        "question": "Where are ribosomal subunits assembled in a eukaryotic cell?",
+        "choices": [
+          "Nucleolus",
+          "Lysosome",
+          "Centrosome",
+          "Vacuole"
+        ],
+        "key": "3f822c2cd44f91600d5d8a0c451997221cbf5bf4fbadc82be8b0ba5d08a12e32",
+        "sourceNumber": 22,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the primary role of ribosomes?",
+        "choices": [
+          "Protein synthesis",
+          "Lipid storage",
+          "Cellular digestion",
+          "Chromosome separation"
+        ],
+        "key": "f60450f85b2c3d1a711313d792968b861f885f7f3fd25b84ef851c3d76815897",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which organelle is especially associated with producing proteins for secretion from the cell?",
+        "choices": [
+          "Rough endoplasmic reticulum",
+          "Smooth endoplasmic reticulum",
+          "Peroxisome",
+          "Central vacuole"
+        ],
+        "key": "5a3100d1ee6658c576f223bdd050f274d4b29462f62cbf6f7f3b0c8f70bb34f4",
+        "sourceNumber": 24,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which function is commonly associated with smooth endoplasmic reticulum?",
+        "choices": [
+          "Lipid synthesis",
+          "Assembly of ribosomal subunits",
+          "Spindle formation in every cell",
+          "Digestion of engulfed bacteria"
+        ],
+        "key": "56c173c93190d1a508efcf258879de1c1c9fc8716a5e20faf3cc268aac9adb2d",
+        "sourceNumber": 25,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which organelle modifies, sorts and packages many proteins received from the endoplasmic reticulum?",
+        "choices": [
+          "Golgi apparatus",
+          "Nucleolus",
+          "Mitochondrion",
+          "Centriole"
+        ],
+        "key": "11b93c635fcf97a40b2a8dc3c902a4a0067c00a0dadae21414cf2341934b0015",
+        "sourceNumber": 26,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which organelle contains digestive enzymes that break down material inside the cell?",
+        "choices": [
+          "Lysosome",
+          "Ribosome",
+          "Chloroplast",
+          "Nucleolus"
+        ],
+        "key": "2d703ca89ba2124ec046675e5e21ec6fcd2146ad08ad72e29e10311ed6625851",
+        "sourceNumber": 27,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which organelle contains catalase, an enzyme that helps break down hydrogen peroxide?",
+        "choices": [
+          "Peroxisome",
+          "Golgi apparatus",
+          "Nucleolus",
+          "Rough endoplasmic reticulum"
+        ],
+        "key": "cb31effa6fbf2e89e3c99d6660635d7778e0b6e173e8bd7dc839c177a7ce437b",
+        "sourceNumber": 28,
+        "correctIndex": 0
+      },
+      {
+        "question": "In which organelle does most aerobic cellular respiration occur in a typical eukaryotic cell?",
+        "choices": [
+          "Mitochondrion",
+          "Lysosome",
+          "Golgi apparatus",
+          "Nucleolus"
+        ],
+        "key": "e118fda6fe3a13f587dfa665ebf077f615cbad91763d7fb24ced8ce3db778fd9",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which organelle captures light energy for photosynthesis in plant cells?",
+        "choices": [
+          "Chloroplast",
+          "Mitochondrion",
+          "Lysosome",
+          "Centrosome"
+        ],
+        "key": "83b484606e6a7a8bc6ad9a00e1b59a6a0d93a84cf666f96c1531581cc09e7601",
+        "sourceNumber": 30,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main role of a large central vacuole in many plant cells?",
+        "choices": [
+          "Storage and maintenance of turgor",
+          "Production of ribosomal subunits",
+          "Assembly of the mitotic spindle",
+          "Synthesis of all cell-wall cellulose"
+        ],
+        "key": "38743b14c8f6badc3f4cfa5e81985ad05801ff155bf8de361c3faf95432f83e3",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which cytoskeletal component forms the tracks used by cilia and many spindle structures?",
+        "choices": [
+          "Microtubules",
+          "Cellulose microfibrils",
+          "Phospholipid tails",
+          "Chromatin fibers"
+        ],
+        "key": "1a77e17edf87502e61ff97acd43a329b7873cedc80c32e02535300e2a83ad5e2",
+        "sourceNumber": 32,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which cytoskeletal component is made mainly of actin and supports cell shape and movement?",
+        "choices": [
+          "Microfilaments",
+          "Microtubules",
+          "Ribosomal subunits",
+          "Nuclear pores"
+        ],
+        "key": "573acf931f2ddb40227a57ee97ec080e2d6585af65a03f072ab9f6c8c88f0c2a",
+        "sourceNumber": 33,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is one major function of the cytoskeleton?",
+        "choices": [
+          "Supporting cell shape and helping move materials within the cell",
+          "Storing all hereditary information in every cell",
+          "Making the phospholipid bilayer impermeable to every molecule",
+          "Converting sunlight to chemical energy in animal cells"
+        ],
+        "key": "b78986ddd3a64910ed1b56e90172918619d25cab13cf943dc7f0ac9dbb4f301a",
+        "sourceNumber": 34,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which structure is found in plant cells and commonly contains cellulose?",
+        "choices": [
+          "Cell wall",
+          "Centrosome",
+          "Lysosome",
+          "Nuclear envelope"
+        ],
+        "key": "ead593a1345551c34acba2e7d6851500742115cd5080bb69407927796ae43ff9",
+        "sourceNumber": 35,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which molecule is a major structural component of fungal cell walls?",
+        "choices": [
+          "Chitin",
+          "Cellulose",
+          "Peptidoglycan",
+          "Glycogen"
+        ],
+        "key": "36ceebbfae25fb54983f1112299d130e0ace3ed4463b74232c8dd56474f7a1da",
+        "sourceNumber": 36,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which substance is a major component of bacterial cell walls?",
+        "choices": [
+          "Peptidoglycan",
+          "Cellulose",
+          "Chitin",
+          "Cholesterol"
+        ],
+        "key": "510d0fb47927c57778e9759405f643afa4b2e7a556b60660d3834f5fd85563e9",
+        "sourceNumber": 37,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which structure is the site of protein synthesis in both prokaryotic and eukaryotic cells?",
+        "choices": [
+          "Ribosome",
+          "Nucleus",
+          "Golgi apparatus",
+          "Mitochondrion"
+        ],
+        "key": "1ac4ed89beca28b5aa5f3e10b6272a30b3864b5c1105a7f3ee6ab221140059fb",
+        "sourceNumber": 38,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main function of the nuclear envelope?",
+        "choices": [
+          "To enclose the nucleus and regulate exchange through nuclear pores",
+          "To digest worn-out organelles",
+          "To synthesize ATP in the cytoplasm",
+          "To form the cell wall"
+        ],
+        "key": "642c95b9f3701b0fd9aaa836a87a27136066f720a35a6b21e095f43681bb6e5a",
+        "sourceNumber": 39,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which feature is characteristic of prokaryotic cells?",
+        "choices": [
+          "They lack a membrane-bound nucleus",
+          "They always contain chloroplasts",
+          "They have a Golgi apparatus",
+          "Their DNA is enclosed in a nuclear envelope"
+        ],
+        "key": "e0514325cccd8163d7ed8bc70d58548a0e0b37ef7770a62514f08d8d32a31e2f",
+        "sourceNumber": 40,
+        "correctIndex": 0
+      },
+      {
+        "question": "Where is the main chromosome located in a typical bacterial cell?",
+        "choices": [
+          "In the nucleoid region",
+          "Inside a membrane-bound nucleus",
+          "Inside a Golgi vesicle",
+          "Within the cell wall"
+        ],
+        "key": "edd39dafd8d097c791652882dbcab0de7586e3d4aebea8a4aae9dd5cfb967786",
+        "sourceNumber": 41,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement about a typical bacterial ribosome is correct?",
+        "choices": [
+          "It is 70S",
+          "It is 80S",
+          "It is a membrane-bound organelle",
+          "It is found only inside the nucleus"
+        ],
+        "key": "672717378a8756907e99f41b41777e93b70f7169cc4540328cbce2cc8f32e2ff",
+        "sourceNumber": 42,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which structure is generally absent from prokaryotic cells?",
+        "choices": [
+          "Membrane-bound nucleus",
+          "Plasma membrane",
+          "Cytoplasm",
+          "Ribosomes"
+        ],
+        "key": "0e36c1930590300e3a713df0c8daf6f64867850428f999bc6b5fa9702ec2b8a4",
+        "sourceNumber": 43,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which structure is present in plant cells but absent from animal cells?",
+        "choices": [
+          "Chloroplast",
+          "Plasma membrane",
+          "Cytoplasm",
+          "Ribosome"
+        ],
+        "key": "eec6ad3f0bb24cd10cbe662e4ac1d7b7c13a3306384e32f97c2e92556113aab4",
+        "sourceNumber": 44,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which feature is common to both plant and animal cells?",
+        "choices": [
+          "A plasma membrane",
+          "A cellulose cell wall",
+          "Chloroplasts",
+          "A large central vacuole in every cell"
+        ],
+        "key": "fb9ed89139b943145b4950571557f825825c350a4c5df83c9574b5be87d7c9e2",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which organelle is found in eukaryotic cells but is absent from bacteria?",
+        "choices": [
+          "Mitochondrion",
+          "Ribosome",
+          "Plasma membrane",
+          "Cytoplasm"
+        ],
+        "key": "a7e5a58debef44a5e3259ab2e0f6fa156ff82eaf721fc900fad8841b00328d49",
+        "sourceNumber": 46,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which pair of organelles has its own DNA in eukaryotic cells?",
+        "choices": [
+          "Mitochondria and chloroplasts",
+          "Golgi apparatus and lysosomes",
+          "Ribosomes and centrioles",
+          "Smooth ER and nuclear pores"
+        ],
+        "key": "625d7e4ec9d011e2c45c5cba1ac245d5e5a94dc2e346a69f6eb6ebc0f9de76a7",
+        "sourceNumber": 47,
+        "correctIndex": 0
+      },
+      {
+        "question": "A cell has a nucleus, mitochondria and a plasma membrane but no chloroplasts. Which conclusion is most defensible?",
+        "choices": [
+          "It is eukaryotic, but these clues do not prove it is a plant cell",
+          "It must be a bacterium",
+          "It must be a photosynthetic plant cell",
+          "It cannot carry out cellular respiration"
+        ],
+        "key": "f65c288540c00cc21843dd40d2663402a93d870b8c2cd72f70293bfa54608826",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main role of centrioles in many animal cells?",
+        "choices": [
+          "Helping organize microtubules during cell division",
+          "Making glucose during photosynthesis",
+          "Packaging secreted proteins",
+          "Breaking down hydrogen peroxide"
+        ],
+        "key": "93e1d33696ebc0dee09d06d01c8bb309e86fa228c20cd3f366861a387e8aca2e",
+        "sourceNumber": 49,
+        "correctIndex": 0
+      },
+      {
+        "question": "A typical motile eukaryotic cilium has which internal arrangement of microtubules?",
+        "choices": [
+          "A 9+2 arrangement",
+          "A 9+0 arrangement in every case",
+          "A single ring of nine actin filaments",
+          "Two rings of phospholipid molecules"
+        ],
+        "key": "f542540d4fd32a4520b5b96355317b42e68905d4a3016187daa4cc21db54ee40",
+        "sourceNumber": 50,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the function of the cell plate that forms during plant-cell cytokinesis?",
+        "choices": [
+          "It develops into a partition between the daughter cells",
+          "It separates sister chromatids during anaphase",
+          "It makes the nuclear DNA",
+          "It dissolves the plasma membrane"
+        ],
+        "key": "724d85cbf8acbd8ff02d77279aa49b540ebb9697fb0b925f142ae88f486b328b",
+        "sourceNumber": 51,
+        "correctIndex": 0
+      },
+      {
+        "question": "A microscope has an eyepiece magnification of 10× and an objective magnification of 40×. What is the total magnification?",
+        "choices": [
+          "4×",
+          "40×",
+          "50×",
+          "400×"
+        ],
+        "key": "a1a971b3f517dc0f3cd024cbf2e37959027ff9d2f471cef6b4feb35c9fc1d550",
+        "sourceNumber": 52,
+        "correctIndex": 3
+      },
+      {
+        "question": "An image is 30 mm long when the actual specimen is 0.15 mm long. What is the magnification?",
+        "choices": [
+          "20×",
+          "45×",
+          "200×",
+          "450×"
+        ],
+        "key": "fffd062542571fb04488b57dd986517c460227eb4a18bba106bef2fde322687d",
+        "sourceNumber": 53,
+        "correctIndex": 2
+      },
+      {
+        "question": "An object 0.02 mm long is viewed at 500× magnification. How long is its image?",
+        "choices": [
+          "0.01 mm",
+          "0.1 mm",
+          "10 mm",
+          "25 mm"
+        ],
+        "key": "862e0db59626d33528623157cf472fda1ea4f78b1f51d1e10a309ec1e3a5fa3b",
+        "sourceNumber": 54,
+        "correctIndex": 2
+      },
+      {
+        "question": "What does resolution describe in microscopy?",
+        "choices": [
+          "The ability to distinguish two nearby points as separate",
+          "The ability to make an image larger without limit",
+          "The brightness of the microscope lamp only",
+          "The mass of the specimen"
+        ],
+        "key": "e65ea1d3a25de3f43a330f484f782d90609050c58dccc456ac82cb16369a43aa",
+        "sourceNumber": 55,
+        "correctIndex": 0
+      },
+      {
+        "question": "All else being equal, which change can improve the resolving power of a light microscope?",
+        "choices": [
+          "Using light of a shorter wavelength",
+          "Using a thicker glass slide",
+          "Reducing the objective lens quality",
+          "Increasing the specimen's mass"
+        ],
+        "key": "a56a08351c7325db569de84d7c61a9de0f153ca840cd1f165ceaa828cf2ec038",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which microscope is generally more suitable for viewing the three-dimensional surface detail of a specimen?",
+        "choices": [
+          "Scanning electron microscope",
+          "Transmission electron microscope",
+          "Simple hand lens",
+          "Standard light microscope at low power"
+        ],
+        "key": "e4643b6b3ca8b89af913a87cc9b48375ac5b5e61c2cad4c617d943e8863dace1",
+        "sourceNumber": 57,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which microscope is generally used to examine internal ultrastructure in a thin specimen section?",
+        "choices": [
+          "Transmission electron microscope",
+          "Scanning electron microscope",
+          "Dissecting microscope",
+          "Unaided eye"
+        ],
+        "key": "a6b68a1810a374b1c2cc4d074c906933bf7d5560b666b890591f4dca2e75359c",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why are many biological specimens stained before viewing with a light microscope?",
+        "choices": [
+          "To increase contrast between structures",
+          "To increase the specimen's actual size",
+          "To create additional chromosomes",
+          "To make every structure transparent"
+        ],
+        "key": "463702abbb98978558335e0ec2753260e398b93567ef6e204ac87596c5621e05",
+        "sourceNumber": 59,
+        "correctIndex": 0
+      },
+      {
+        "question": "A microscope image measures 24 mm, and the specimen's actual length is 0.08 mm. What is the magnification?",
+        "choices": [
+          "30×",
+          "192×",
+          "300×",
+          "3,000×"
+        ],
+        "key": "a78f0ea54d2369af7ce4c69148de4f7b364c414f17ebdfe75fa15473ef048037",
+        "sourceNumber": 60,
+        "correctIndex": 2
+      },
+      {
+        "question": "A specimen is 0.5 mm long and viewed at 40× magnification. What is its image length?",
+        "choices": [
+          "0.0125 mm",
+          "2 mm",
+          "20 mm",
+          "200 mm"
+        ],
+        "key": "808ede3279d0262443470ecb5b34ecb5f4e8e12fdabd29cd4e2bd2b7f1d20aca",
+        "sourceNumber": 61,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is a likely advantage of an electron microscope over a light microscope?",
+        "choices": [
+          "It can resolve much smaller details",
+          "It always shows living cells in natural color",
+          "It requires no specimen preparation",
+          "It uses visible light to form its image"
+        ],
+        "key": "4366884a8be0830076d8d3b855278cae58d1425565efb7eeccd8c11b49fd3fac",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why can a conventional light microscope not resolve structures much smaller than the wavelength of visible light?",
+        "choices": [
+          "Diffraction limits the detail that can be distinguished",
+          "The specimen has no cytoplasm",
+          "Visible light permanently destroys all small structures",
+          "The eyepiece converts every small structure into DNA"
+        ],
+        "key": "6e6d446fe0659bad9b32ac37fa4ff625f376829bbee691c3df21edd3831f8f84",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "During which part of the cell cycle is DNA replicated?",
+        "choices": [
+          "S phase",
+          "G1 phase",
+          "G2 phase",
+          "Cytokinesis"
+        ],
+        "key": "a12536a0dfa6755facf7dc2f89c021f574321ecdb69d7a4a349ee24dedd4fe86",
+        "sourceNumber": 64,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which sequence gives the usual order of the main cell-cycle stages?",
+        "choices": [
+          "G1, S, G2, M",
+          "S, M, G1, G2",
+          "G2, G1, M, S",
+          "M, G2, S, G1"
+        ],
+        "key": "27f1171e7de7c226e6420832aceb768bf884d233d159ad8d35b68f13f6054143",
+        "sourceNumber": 65,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main event of G1 phase?",
+        "choices": [
+          "Cell growth and normal cellular activity",
+          "Separation of sister chromatids",
+          "Crossing over between homologous chromosomes",
+          "Formation of four haploid cells"
+        ],
+        "key": "3fb42e1e1c716ff5d4cc746cfd78bb7fdea800b2c336b9b767eae5457eeada71",
+        "sourceNumber": 66,
+        "correctIndex": 0
+      },
+      {
+        "question": "What happens to DNA during S phase?",
+        "choices": [
+          "It is replicated",
+          "It is translated into protein directly",
+          "It is destroyed",
+          "It is divided equally between four cells"
+        ],
+        "key": "9499de61c3ee6ec3cb11bf4321e9b369d77b5e5e9e6d1e3b75db557954de5e1c",
+        "sourceNumber": 67,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is a typical role of G2 phase?",
+        "choices": [
+          "Preparing for cell division after DNA replication",
+          "Replicating the cell's DNA for the first time",
+          "Separating homologous chromosomes in meiosis I",
+          "Releasing proteins by exocytosis only"
+        ],
+        "key": "6f02974064bbe595ae23099898e5c66a18eba372985d851386c1272f32faec66",
+        "sourceNumber": 68,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the usual outcome of mitosis followed by cytokinesis in a diploid body cell?",
+        "choices": [
+          "Two daughter cells with the same chromosome number as the parent",
+          "Four cells with half the parent's chromosome number",
+          "Two genetically unrelated gametes",
+          "One cell with twice the parent's chromosome number"
+        ],
+        "key": "3b42372d4a8bc4f3219a7d1700cfb07de7a4dbdf03aef3cd331c7c5c3b7e75cc",
+        "sourceNumber": 69,
+        "correctIndex": 0
+      },
+      {
+        "question": "During which stage of mitosis do chromosomes line up near the cell's equator?",
+        "choices": [
+          "Metaphase",
+          "Prophase",
+          "Anaphase",
+          "Telophase"
+        ],
+        "key": "85d1e89876d8c436a2ed795d3abc73c0baa04fb2a6af84a3a2199aafdcfe89a8",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "During which stage of mitosis do sister chromatids separate and move toward opposite poles?",
+        "choices": [
+          "Anaphase",
+          "Prophase",
+          "Metaphase",
+          "Telophase"
+        ],
+        "key": "01360fc13d9976ed4dd511a3cfd777237283f76f1030eedf6bc56c50b4c64f87",
+        "sourceNumber": 71,
+        "correctIndex": 0
+      },
+      {
+        "question": "What generally happens to the nuclear envelope during early mitosis in animal cells?",
+        "choices": [
+          "It breaks down",
+          "It becomes the cell wall",
+          "It duplicates the DNA",
+          "It turns into a chloroplast"
+        ],
+        "key": "2d97507ab63171d807836fd5b22c9adb68392722230e6c1abf723ba01f0a2547",
+        "sourceNumber": 72,
+        "correctIndex": 0
+      },
+      {
+        "question": "At the end of mitosis, what forms around each set of separated chromosomes?",
+        "choices": [
+          "A new nuclear envelope",
+          "A bacterial cell wall",
+          "A new chloroplast",
+          "A second plasma membrane inside the nucleus"
+        ],
+        "key": "033f99cb83c88433a58390f63049980c6a6aa2cd531d304933002ca225539061",
+        "sourceNumber": 73,
+        "correctIndex": 0
+      },
+      {
+        "question": "How does cytokinesis differ in a typical animal cell and a typical plant cell?",
+        "choices": [
+          "Animal cells form a cleavage furrow; plant cells form a cell plate",
+          "Animal cells form a cell plate; plant cells form a cleavage furrow",
+          "Only animal cells divide their cytoplasm",
+          "Only plant cells separate their chromosomes"
+        ],
+        "key": "140ffa8182cc9141c65f98bddbaf0fa69f667adfa43c0c3c0254956049e1cc31",
+        "sourceNumber": 74,
+        "correctIndex": 0
+      },
+      {
+        "question": "A diploid cell has 12 chromosomes before DNA replication. How many chromosomes does it have after S phase, before chromatids separate?",
+        "choices": [
+          "6",
+          "12",
+          "24",
+          "48"
+        ],
+        "key": "9af366d80924d72554ad168a09f543ff9ecece1694ae5ea2973094a82d14196a",
+        "sourceNumber": 75,
+        "correctIndex": 1
+      },
+      {
+        "question": "A human body cell has completed DNA replication but has not yet divided. How many chromosomes and chromatids does it contain?",
+        "choices": [
+          "46 chromosomes and 92 chromatids",
+          "92 chromosomes and 92 chromatids",
+          "23 chromosomes and 46 chromatids",
+          "46 chromosomes and 46 chromatids"
+        ],
+        "key": "e200d666359c20295443b01c1ad6887a5878b7475bf3dbbd0fc31b79dde92192",
+        "sourceNumber": 76,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the chromosome number in a normal human gamete?",
+        "choices": [
+          "23",
+          "46",
+          "69",
+          "92"
+        ],
+        "key": "f37a82e307fe7f07b2c6c80f9a8e9485f966a873ae5bcac8e2c2e6c43f9a7f8f",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main purpose of meiosis in sexually reproducing organisms?",
+        "choices": [
+          "To produce haploid cells for sexual reproduction",
+          "To make genetically identical body cells for growth",
+          "To double chromosome number in every generation",
+          "To repair every damaged cell membrane"
+        ],
+        "key": "8d5c4c663c7eeb6dff1b96323fc7f291aae2570dab37967e5bd4c4d6091ce576",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "In which stage does crossing over normally occur?",
+        "choices": [
+          "Prophase I of meiosis",
+          "Metaphase of mitosis",
+          "Anaphase II of meiosis",
+          "Telophase of mitosis"
+        ],
+        "key": "490afb0bba500a398833c7fb35a97e5d49d5c042053022adb1e32cd1dbeb9ca9",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "What separates during anaphase I of meiosis?",
+        "choices": [
+          "Homologous chromosomes",
+          "Sister chromatids",
+          "Nucleoli from ribosomes",
+          "The two DNA strands of every gene"
+        ],
+        "key": "6a32d0e0c7ab833a5df50522fdf4e13f2a5438a3b57b06af308b26d9bb6f61af",
+        "sourceNumber": 80,
+        "correctIndex": 0
+      },
+      {
+        "question": "What separates during anaphase II of meiosis?",
+        "choices": [
+          "Sister chromatids",
+          "Homologous chromosome pairs",
+          "The cell wall from the plasma membrane",
+          "The two nuclei formed in meiosis I"
+        ],
+        "key": "86925ad0e79a41b63054941769a9dd23ea4cb4265ca1a7a9dc6f5a581b951878",
+        "sourceNumber": 81,
+        "correctIndex": 0
+      },
+      {
+        "question": "A diploid cell with 20 chromosomes completes meiosis. How many chromosomes will each normal haploid product have?",
+        "choices": [
+          "5",
+          "10",
+          "20",
+          "40"
+        ],
+        "key": "d0924e1ca120dee5c18ac577cf83a98578cda208f82c6dfe2f7399f89dadd528",
+        "sourceNumber": 82,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many cells are typically produced from one cell after meiosis I and meiosis II are complete?",
+        "choices": [
+          "Two haploid cells",
+          "Four haploid cells",
+          "Two diploid cells",
+          "Four diploid cells"
+        ],
+        "key": "deb248909ed1fdfea72a229a751c646e137e4af92a7b2b56cb2688d37e3568bf",
+        "sourceNumber": 83,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which process usually produces daughter cells genetically most similar to the original body cell?",
+        "choices": [
+          "Mitosis",
+          "Meiosis",
+          "Crossing over",
+          "Fertilization"
+        ],
+        "key": "41ea954e834f8f48473790989e3f26e9acdceb317d6a753985a45fcb139fd390",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main source of genetic variation created during prophase I of meiosis?",
+        "choices": [
+          "Crossing over between homologous chromosomes",
+          "Replication of the plasma membrane",
+          "Formation of lysosomes",
+          "Separation of sister chromatids in mitosis"
+        ],
+        "key": "97630fbb93540b09125f214c7952b43ff546bef4432500da055f211d11e5371d",
+        "sourceNumber": 85,
+        "correctIndex": 0
+      },
+      {
+        "question": "If a cell completes DNA replication but does not proceed through division, what has happened to its DNA amount compared with before S phase?",
+        "choices": [
+          "It has approximately doubled",
+          "It has been reduced by half",
+          "It has remained exactly unchanged",
+          "It has become four times greater"
+        ],
+        "key": "b27d6ac2ab245224eb87c5874d3f8442ea97302ec9b4934a5e6965217625cd4a",
+        "sourceNumber": 86,
+        "correctIndex": 0
+      },
+      {
+        "question": "A drug prevents spindle microtubules from attaching to chromosomes. Which event is most directly disrupted?",
+        "choices": [
+          "Accurate movement and separation of chromosomes",
+          "Synthesis of phospholipids in smooth ER",
+          "Digestion inside lysosomes",
+          "Water movement through aquaporins"
+        ],
+        "key": "b37066432099e9ab29198b8c4d126e2a254708dddc0d45d3c70c1cdc86258518",
+        "sourceNumber": 87,
+        "correctIndex": 0
+      },
+      {
+        "question": "A cell has 8 chromosomes at the start of mitosis. After normal mitosis and cytokinesis, how many chromosomes are expected in each daughter cell?",
+        "choices": [
+          "4",
+          "8",
+          "16",
+          "32"
+        ],
+        "key": "38d7ad36f89bad0ad4bb337c4731e0afef7310fb0d1aae783dd6ad739b360ca6",
+        "sourceNumber": 88,
+        "correctIndex": 1
+      },
+      {
+        "question": "A plant cell is placed in a concentrated salt solution and its membrane pulls away from the cell wall. What best explains this observation?",
+        "choices": [
+          "Water left the cell by osmosis",
+          "Salt entered and dissolved the cell wall",
+          "The nucleus moved out through the cell wall",
+          "The cell made a new chloroplast"
+        ],
+        "key": "0155927e3ac1213d37f1aa24c690c53a26cf28793cb4428aeb0374a1b92955a7",
+        "sourceNumber": 89,
+        "correctIndex": 0
+      },
+      {
+        "question": "A cell placed in an isotonic solution shows no net change in volume. Which statement best explains why?",
+        "choices": [
+          "Water moves in both directions at equal rates",
+          "Water molecules stop moving entirely",
+          "Solutes cannot move anywhere in the cell",
+          "The membrane has become completely impermeable"
+        ],
+        "key": "0db6a2c81943a68e97bf8ae27884354cfb630e60e6807ce52f09b366f5d66015",
+        "sourceNumber": 90,
+        "correctIndex": 0
+      },
+      {
+        "question": "A membrane pump transports a substance from lower concentration to higher concentration. Which condition is generally necessary?",
+        "choices": [
+          "An energy source",
+          "A concentration gradient pointing in the same direction",
+          "The absence of all membrane proteins",
+          "A cell wall made of cellulose"
+        ],
+        "key": "6d237bdd3d98c604de6df755f5133d4fa8ea7728020eb7429b4ef22c42e8ab38",
+        "sourceNumber": 91,
+        "correctIndex": 0
+      },
+      {
+        "question": "A cell's membrane proteins are damaged, but its phospholipid bilayer remains intact. Which process is most likely to be impaired?",
+        "choices": [
+          "Transport of many ions across the membrane",
+          "Diffusion of oxygen through the bilayer",
+          "Movement of every water molecule",
+          "Formation of the cell wall"
+        ],
+        "key": "146b40015a3ccce9683b0ee03e3b0d62dd8a523338a44657c1b847cc7bcbfdf5",
+        "sourceNumber": 92,
+        "correctIndex": 0
+      },
+      {
+        "question": "A secreted protein is being made by a cell. Which route best describes its usual path?",
+        "choices": [
+          "Ribosome on rough ER, transport vesicle, Golgi apparatus, secretory vesicle",
+          "Lysosome, nucleolus, chloroplast, plasma membrane",
+          "Smooth ER, centriole, nucleus, ribosome",
+          "Mitochondrion, cell wall, peroxisome, nucleoid"
+        ],
+        "key": "5c737554ddedeb232a3f68184b0ea1c73c75a3283a62fda836ea919229e149c6",
+        "sourceNumber": 93,
+        "correctIndex": 0
+      },
+      {
+        "question": "A cell that produces large amounts of steroid hormones would be expected to have abundant what?",
+        "choices": [
+          "Smooth endoplasmic reticulum",
+          "Lysosomes",
+          "Nucleoli only",
+          "Cellulose cell walls"
+        ],
+        "key": "5eddf4168e78459e3e0f82dc0206c9f9f31c2c1b2d2707617c3aa00f7983b1ec",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "A cell that engulfs and digests many bacteria would especially rely on which organelle?",
+        "choices": [
+          "Lysosome",
+          "Chloroplast",
+          "Nucleolus",
+          "Centrosome"
+        ],
+        "key": "56bb6fe1efdf87c2aa62d333d20ff545e4ea998deda295964f41177f27b98609",
+        "sourceNumber": 95,
+        "correctIndex": 0
+      },
+      {
+        "question": "A cell's mitochondria are severely impaired. Which cellular process is most directly affected?",
+        "choices": [
+          "Aerobic ATP production",
+          "Protein translation at every ribosome",
+          "Water diffusion across every membrane",
+          "DNA base pairing in the nucleus"
+        ],
+        "key": "e38c9b7fde6cb68470add243f18bda0faabadfd0ad19c2ce931669423cd2e8b1",
+        "sourceNumber": 96,
+        "correctIndex": 0
+      },
+      {
+        "question": "A mutation prevents a cell from producing functional ribosomes. Which process is directly impaired?",
+        "choices": [
+          "Protein synthesis",
+          "Osmosis",
+          "Cell recognition by surface carbohydrates",
+          "Formation of the phospholipid bilayer"
+        ],
+        "key": "cd4e3e8a1ab0724b2c0c210612f8b7010071bf671e6abf4d4148df86ba2669de",
+        "sourceNumber": 97,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which observation best indicates that a cell is actively dividing by mitosis?",
+        "choices": [
+          "Condensed chromosomes attached to spindle fibers",
+          "A large number of dissolved sugars in the cytoplasm",
+          "Water moving through membrane channels",
+          "Proteins being packaged in the Golgi apparatus"
+        ],
+        "key": "d035c5707e2b90e33373024ac66f1eb062c81d69d9d2a916cd28b75204d15c43",
+        "sourceNumber": 98,
+        "correctIndex": 0
+      },
+      {
+        "question": "A cell has 6 homologous pairs of chromosomes. How many chromosomes does it have in total?",
+        "choices": [
+          "6",
+          "12",
+          "18",
+          "36"
+        ],
+        "key": "6019bc654455f4f140c7034f1229698ea72fc4a3681e82e6fbc6b81b2f824105",
+        "sourceNumber": 99,
+        "correctIndex": 1
+      },
+      {
+        "question": "A cell's chromosome number is 2n = 14. How many chromosomes are in a normal haploid cell from this organism?",
+        "choices": [
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "key": "3aaf2bfd37cd1c607d97822022d35e84e45da2a13ee4149b287c3911377ddec7",
+        "sourceNumber": 100,
+        "correctIndex": 0
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "0f7298d149c6461d81a1268f99a26142a3bd607dfa219b471899aa349f757807",
+      "sourceQuestionNumbers": [
+        14,
+        22,
+        76,
+        42,
+        88,
+        92,
+        12,
+        61,
+        57,
+        33,
+        40,
+        95,
+        47,
+        20,
+        62,
+        64,
+        7,
+        59,
+        87,
+        39,
+        53,
+        84,
+        2,
+        78,
+        34,
+        55,
+        4,
+        93,
+        29,
+        69,
+        49,
+        99,
+        24,
+        18,
+        63,
+        73,
+        17,
+        35,
+        100,
+        56,
+        67,
+        89,
+        19,
+        37,
+        41,
+        46,
+        25,
+        5,
+        77,
+        85,
+        94,
+        21,
+        79,
+        60,
+        9,
+        1,
+        81,
+        68,
+        48,
+        31,
+        26,
+        8,
+        50,
+        96,
+        65,
+        10,
+        30,
+        72,
+        52,
+        90,
+        54,
+        27,
+        83,
+        13,
+        71,
+        6,
+        51,
+        32,
+        66,
+        82,
+        28,
+        97,
+        11,
+        75,
+        44,
+        16,
+        36,
+        86,
+        43,
+        70,
+        45,
+        38,
+        91,
+        74,
+        15,
+        23,
+        58,
+        3,
+        98,
+        80
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
