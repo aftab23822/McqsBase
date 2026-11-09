@@ -2677,7 +2677,11 @@
       },
       "uploadIntent": {
         "filename": "mdcat-cell-biology-mcqs-part-05-b8f4ebedaaa9df29.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "b81e1ad0-6e45-44a8-b794-98729f74c77e",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/xbVBlPopwL.mp4"
       }
     }
   ],
