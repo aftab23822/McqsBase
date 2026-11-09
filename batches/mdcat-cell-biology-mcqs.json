@@ -3529,8 +3529,9 @@
           "integrationId": "cmvwbbtq00220ro9du35l1wrs"
         },
         "tiktok": {
-          "status": "uncertain",
-          "attemptedAt": "2026-11-09T06:47:20.566119+00:00"
+          "status": "accepted",
+          "attemptedAt": "2026-11-09T06:47:20.566119+00:00",
+          "postId": "cmw8wffj2083wroivhjl3dt1z"
         }
       }
     }
