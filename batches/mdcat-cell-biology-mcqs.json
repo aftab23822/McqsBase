@@ -2411,6 +2411,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 5,
+      "directory": "part-05",
+      "sourceQuestionNumbers": [
+        95,
+        47
+      ],
+      "count": 2,
+      "durationSeconds": 56,
+      "sha256": "b8f4ebedaaa9df29ac1e4ce35010a5af86e0ed5b73e47976d85948e126b91a58",
+      "manifest": {
+        "title": "100 MDCAT Cell Biology MCQs",
+        "sourceTitle": "100 MDCAT Cell Biology MCQs with Answers and Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-09T05:47:15.531400+00:00",
+        "sourceContentHash": "f595d3afe2cd93acb54472668ef87155f06bf0a7cd31d7605b97ebe5171a9a53",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7647961350,
+          "sha": "65452c83e8f4effa7acee7681a0d1b7cb47cc3a4",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-09T05:47:15.531400+00:00",
+          "url": "https://mcqs-base-8cpf4rgr9-as-projects-10921176.vercel.app",
+          "publisherRunId": 42568693180
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 56,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A cell that engulfs and digests many bacteria would especially rely on which organelle?",
+            "choices": [
+              "Lysosome",
+              "Chloroplast",
+              "Nucleolus",
+              "Centrosome"
+            ],
+            "correctIndex": 0,
+            "key": "56bb6fe1efdf87c2aa62d333d20ff545e4ea998deda295964f41177f27b98609",
+            "sourceNumber": 95
+          },
+          {
+            "question": "Which pair of organelles has its own DNA in eukaryotic cells?",
+            "choices": [
+              "Mitochondria and chloroplasts",
+              "Golgi apparatus and lysosomes",
+              "Ribosomes and centrioles",
+              "Smooth ER and nuclear pores"
+            ],
+            "correctIndex": 0,
+            "key": "625d7e4ec9d011e2c45c5cba1ac245d5e5a94dc2e346a69f6eb6ebc0f9de76a7",
+            "sourceNumber": 47
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 16,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 16,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 17,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 18,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 19,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 23,
+            "duration": 20,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 43,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 44,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 45,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 46,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 51,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 5,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            95,
+            47
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MDCAT",
+          "#MedicalEntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/mdcat-cell-biology-mcqs-part-05-b8f4ebedaaa9df29.mp4",
+        "videoSha256": "b8f4ebedaaa9df29ac1e4ce35010a5af86e0ed5b73e47976d85948e126b91a58",
+        "assetId": 726391662
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 5/5 | Q95, 47 | 100 MDCAT Cell Biology MCQs",
+          "text": "Part 5/5 · Source questions 95, 47\n100 MDCAT Cell Biology MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 5/5 | Q95, 47 | 100 MDCAT Cell Biology MCQs",
+          "text": "Part 5/5 · Source questions 95, 47\n100 MDCAT Cell Biology MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 5/5 | Q95, 47 | 100 MDCAT Cell Biology MCQs",
+          "text": "Part 5/5 · Source questions 95, 47\n100 MDCAT Cell Biology MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 5/5 | Q95, 47 | 100 MDCAT Cell Biology MCQs",
+          "text": "Part 5/5 · Source questions 95, 47\n100 MDCAT Cell Biology MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
