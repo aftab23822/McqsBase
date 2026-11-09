@@ -1048,7 +1048,7 @@
       "verifiedPublications": 15
     },
     "pakistan-geography-map-skills": {
-      "status": "scheduled",
+      "status": "provider-published",
       "ledger": "batches/pakistan-geography-map-skills.json",
       "createdAt": "2026-11-08T05:36:36.233064+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/pakistan-geography-map-skills",
@@ -1060,8 +1060,8 @@
         "2026-11-08T19:16:00+05:00",
         "2026-11-08T21:58:00+05:00"
       ],
-      "published": 0,
-      "verifiedPublications": 0
+      "published": 20,
+      "verifiedPublications": 15
     },
     "mdcat-cell-biology-mcqs": {
       "status": "ready",
