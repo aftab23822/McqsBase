@@ -2638,6 +2638,10 @@
           "publicUrlVerified": false,
           "verification": "provider-status-only",
           "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+        },
+        "instagram": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-09T06:46:36.660120+00:00"
         }
       }
     },
