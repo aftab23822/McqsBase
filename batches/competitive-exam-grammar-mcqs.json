@@ -1323,6 +1323,288 @@
       "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
     }
   },
-  "parts": [],
+  "parts": [
+    {
+      "part": 1,
+      "directory": "part-01",
+      "sourceQuestionNumbers": [
+        67,
+        95,
+        57
+      ],
+      "count": 3,
+      "durationSeconds": 79,
+      "sha256": "c5dd88e74a6621be6f950c838e5051a9179a733c68cd9d35e6e686d0f4193cfc",
+      "manifest": {
+        "title": "99 English Grammar MCQs for PPSC and PMS-Style Practice",
+        "sourceTitle": "99 English Grammar MCQs for PPSC and PMS-Style Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-10T06:54:55.718742+00:00",
+        "sourceContentHash": "df712ce968632bd3d8d3368b06cbbeae18820656c97ebaac11afd1acd25ef24b",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7675625749,
+          "sha": "2d5f73ff5cd40e3d1c976811bea10e20ee73c7bc",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-10T06:54:55.718742+00:00",
+          "url": "https://mcqs-base-37nfweh18-as-projects-10921176.vercel.app",
+          "publisherRunId": 42771115746
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 79,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Choose the sentence in which “broken” describes the window.",
+            "choices": [
+              "The broken window was repaired yesterday.",
+              "The window broke repaired yesterday.",
+              "The repaired broke window yesterday.",
+              "Yesterday the broken was window repaired."
+            ],
+            "correctIndex": 0,
+            "key": "dfc13538ac632f913fa27fe0d9a582cb30012a1e642a7ea032d7dfba7a45518f",
+            "sourceNumber": 67
+          },
+          {
+            "question": "Choose the sentence with the correct verb form.",
+            "choices": [
+              "The clerk has wrote the receipt.",
+              "The clerk has written the receipt.",
+              "The clerk have written the receipt.",
+              "The clerk has writing the receipt."
+            ],
+            "correctIndex": 1,
+            "key": "574328ed06c68aee397d74a064c2756139ac7f03cef8ebeb6f28ffb74826da4d",
+            "sourceNumber": 95
+          },
+          {
+            "question": "We need ___ information before making a decision.",
+            "choices": [
+              "fewer",
+              "many",
+              "less",
+              "few"
+            ],
+            "correctIndex": 2,
+            "key": "cedaff439bc7d5f530ecc247550bdc27014d8a12cfddead7c90121317b8edb56",
+            "sourceNumber": 57
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 20,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 20,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 21,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 23,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 29,
+            "duration": 18,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 47,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 48,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 49,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 50,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 55,
+            "duration": 12,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 67,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 68,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 69,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 70,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 74,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 1,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            67,
+            95,
+            57
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#EnglishMCQs",
+          "#Vocabulary",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/competitive-exam-grammar-mcqs-part-01-c5dd88e74a6621be.mp4",
+        "videoSha256": "c5dd88e74a6621be6f950c838e5051a9179a733c68cd9d35e6e686d0f4193cfc",
+        "assetId": 730438075
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 1/5 | Q67, 95, 57 | 99 English Grammar MCQs for PPSC and PMS-Style Practice",
+          "text": "Part 1/5 · Source questions 67, 95, 57\n99 English Grammar MCQs for PPSC and PMS-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #EnglishMCQs #Vocabulary #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#EnglishMCQs",
+            "#Vocabulary",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 1/5 | Q67, 95, 57 | 99 English Grammar MCQs for PPSC and PMS-Style Practice",
+          "text": "Part 1/5 · Source questions 67, 95, 57\n99 English Grammar MCQs for PPSC and PMS-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EnglishMCQs #Vocabulary #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#EnglishMCQs",
+            "#Vocabulary",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 1/5 | Q67, 95, 57 | 99 English Grammar MCQs for PPSC and PMS-Style Practice",
+          "text": "Part 1/5 · Source questions 67, 95, 57\n99 English Grammar MCQs for PPSC and PMS-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EnglishMCQs #Vocabulary #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#EnglishMCQs",
+            "#Vocabulary",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 1/5 | Q67, 95, 57 | 99 English Grammar MCQs for PPSC and PMS-Style Practice",
+          "text": "Part 1/5 · Source questions 67, 95, 57\n99 English Grammar MCQs for PPSC and PMS-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EnglishMCQs #Vocabulary #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#EnglishMCQs",
+            "#Vocabulary",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+          "format": "short"
+        }
+      }
+    }
+  ],
   "thinkingSeconds": 3
 }
