@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "competitive-exam-grammar-mcqs",
   "createdAt": "2026-11-10T06:54:55.922993+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "competitive-exam-grammar-mcqs",
     "title": "99 English Grammar MCQs for PPSC and PMS-Style Practice",
@@ -2730,5 +2730,86 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "competitive-exam-grammar-mcqs",
+    "sourceUrl": "https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+    "sourceTitle": "99 English Grammar MCQs for PPSC and PMS-Style Practice",
+    "sourceContentHash": "df712ce968632bd3d8d3368b06cbbeae18820656c97ebaac11afd1acd25ef24b",
+    "productionDeployment": {
+      "id": 7675625749,
+      "sha": "2d5f73ff5cd40e3d1c976811bea10e20ee73c7bc",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-10T06:54:55.718742+00:00",
+      "url": "https://mcqs-base-37nfweh18-as-projects-10921176.vercel.app",
+      "publisherRunId": 42771115746
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          67,
+          95,
+          57
+        ],
+        "count": 3,
+        "durationSeconds": 79,
+        "sha256": "c5dd88e74a6621be6f950c838e5051a9179a733c68cd9d35e6e686d0f4193cfc"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          4,
+          26,
+          54
+        ],
+        "count": 3,
+        "durationSeconds": 67,
+        "sha256": "80bcf92e8c0b22378b87e2c6ddcf56efe71bcd082ea3e9149e6bdd3688e4737e"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          21,
+          85,
+          60
+        ],
+        "count": 3,
+        "durationSeconds": 75,
+        "sha256": "6de90e0f2aa8069f6223e08cb537642701ac50b7e5e2a508ec9f151239ebc8c4"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          11,
+          20,
+          63
+        ],
+        "count": 3,
+        "durationSeconds": 68,
+        "sha256": "5f49eac87361105c6a3697e6f4a14e7166767e3b9a4e7816e549c54dd10e0f0d"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          9,
+          53,
+          98
+        ],
+        "count": 3,
+        "durationSeconds": 74,
+        "sha256": "1f2c91dd39e24574cd88be8a01ed248c0f80222d8c7b9a2b454bacf545ecde3e"
+      }
+    ]
+  }
 }
