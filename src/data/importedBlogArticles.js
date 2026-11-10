@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "competitive-exam-grammar-mcqs": {
+    title: "99 English Grammar MCQs for PPSC and PMS-Style Practice",
+    excerpt:
+      "Practise subject–verb agreement, tense, pronouns, prepositions, modifiers, clauses, voice and reported speech with concise explanations.",
+    category: "Subject Guide",
+    date: "2026-11-10",
+    readTime: "27 min",
+    content: null,
+    body: readImportedBlogBody("competitive-exam-grammar-mcqs")
+  },
   "mdcat-cell-biology-mcqs": {
     title: "100 MDCAT Cell Biology MCQs with Answers and Explanations",
     excerpt:
