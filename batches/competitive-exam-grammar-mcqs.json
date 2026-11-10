@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "competitive-exam-grammar-mcqs",
   "createdAt": "2026-11-10T06:54:55.922993+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "competitive-exam-grammar-mcqs",
     "title": "99 English Grammar MCQs for PPSC and PMS-Style Practice",
@@ -1736,7 +1736,12 @@
         }
       },
       "scheduledAt": "2026-11-10T12:16:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-10T07:00:17.921362+00:00"
+        }
+      }
     },
     {
       "part": 2,
