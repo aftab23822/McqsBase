@@ -1080,7 +1080,7 @@
       "verifiedPublications": 15
     },
     "competitive-exam-grammar-mcqs": {
-      "status": "ready",
+      "status": "scheduling",
       "ledger": "batches/competitive-exam-grammar-mcqs.json",
       "createdAt": "2026-11-10T06:54:55.922993+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
