@@ -1606,7 +1606,11 @@
       },
       "uploadIntent": {
         "filename": "competitive-exam-grammar-mcqs-part-01-c5dd88e74a6621be.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "76a2c9b0-08c9-419d-8a50-90a5638f9614",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/0z1MlqIgT1.mp4"
       }
     },
     {
