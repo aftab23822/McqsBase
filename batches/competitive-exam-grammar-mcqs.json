@@ -3602,9 +3602,16 @@
           "integrationId": "cmvwb4faa021yro9dgcj8vlww"
         },
         "instagram": {
-          "status": "accepted",
+          "status": "QUEUE",
           "attemptedAt": "2026-11-10T07:01:44.785481+00:00",
-          "postId": "cmwacdsua0hg2roiv6xcy93bb"
+          "postId": "cmwacdsua0hg2roiv6xcy93bb",
+          "url": null,
+          "providerUrl": null,
+          "providerReleaseId": null,
+          "providerStatus": "QUEUE",
+          "publicUrlVerified": false,
+          "verification": "provider-status-only",
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
         }
       }
     }
