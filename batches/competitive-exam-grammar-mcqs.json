@@ -1885,6 +1885,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        21,
+        85,
+        60
+      ],
+      "count": 3,
+      "durationSeconds": 75,
+      "sha256": "6de90e0f2aa8069f6223e08cb537642701ac50b7e5e2a508ec9f151239ebc8c4",
+      "manifest": {
+        "title": "99 English Grammar MCQs for PPSC and PMS-Style Practice",
+        "sourceTitle": "99 English Grammar MCQs for PPSC and PMS-Style Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-10T06:54:55.718742+00:00",
+        "sourceContentHash": "df712ce968632bd3d8d3368b06cbbeae18820656c97ebaac11afd1acd25ef24b",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7675625749,
+          "sha": "2d5f73ff5cd40e3d1c976811bea10e20ee73c7bc",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-10T06:54:55.718742+00:00",
+          "url": "https://mcqs-base-37nfweh18-as-projects-10921176.vercel.app",
+          "publisherRunId": 42771115746
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 75,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "He is ___ honest officer.",
+            "choices": [
+              "a",
+              "an",
+              "the",
+              "no article"
+            ],
+            "correctIndex": 1,
+            "key": "fd60d14ce8a3bbfa73fd4223377c3af4772a5623b13f6b54cf1ecdd5565f552c",
+            "sourceNumber": 21
+          },
+          {
+            "question": "Choose the sentence with a parallel list.",
+            "choices": [
+              "The course teaches reading, writing, and how to calculate.",
+              "The course teaches reading, writing, and calculating.",
+              "The course teaches to read, writing, and calculation.",
+              "The course teaches reading, to write, and calculating."
+            ],
+            "correctIndex": 1,
+            "key": "54110496a2392081b0a1c17bbd78f824f93332fe82138637708f526d15482a0f",
+            "sourceNumber": 85
+          },
+          {
+            "question": "This exercise is not as difficult ___ the previous one.",
+            "choices": [
+              "than",
+              "like",
+              "as",
+              "from"
+            ],
+            "correctIndex": 2,
+            "key": "4562956cb1545fdefcdeb55ce83109a43193b54c8327dbcb14b34f2ea04fe4d1",
+            "sourceNumber": 60
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 11,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 11,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 12,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 13,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 14,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 18,
+            "duration": 22,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 40,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 41,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 42,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 43,
+            "duration": 7,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 50,
+            "duration": 13,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 63,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 64,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 65,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 66,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 70,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            21,
+            85,
+            60
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#EnglishMCQs",
+          "#Vocabulary",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/competitive-exam-grammar-mcqs-part-03-6de90e0f2aa8069f.mp4",
+        "videoSha256": "6de90e0f2aa8069f6223e08cb537642701ac50b7e5e2a508ec9f151239ebc8c4",
+        "assetId": 730441486
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q21, 85, 60 | 99 English Grammar MCQs for PPSC and PMS-Style Practice",
+          "text": "Part 3/5 · Source questions 21, 85, 60\n99 English Grammar MCQs for PPSC and PMS-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #EnglishMCQs #Vocabulary #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#EnglishMCQs",
+            "#Vocabulary",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q21, 85, 60 | 99 English Grammar MCQs for PPSC and PMS-Style Practice",
+          "text": "Part 3/5 · Source questions 21, 85, 60\n99 English Grammar MCQs for PPSC and PMS-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EnglishMCQs #Vocabulary #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#EnglishMCQs",
+            "#Vocabulary",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q21, 85, 60 | 99 English Grammar MCQs for PPSC and PMS-Style Practice",
+          "text": "Part 3/5 · Source questions 21, 85, 60\n99 English Grammar MCQs for PPSC and PMS-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EnglishMCQs #Vocabulary #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#EnglishMCQs",
+            "#Vocabulary",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q21, 85, 60 | 99 English Grammar MCQs for PPSC and PMS-Style Practice",
+          "text": "Part 3/5 · Source questions 21, 85, 60\n99 English Grammar MCQs for PPSC and PMS-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EnglishMCQs #Vocabulary #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#EnglishMCQs",
+            "#Vocabulary",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
