@@ -1,0 +1,1328 @@
+{
+  "version": 1,
+  "slug": "competitive-exam-grammar-mcqs",
+  "createdAt": "2026-11-10T06:54:55.922993+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "competitive-exam-grammar-mcqs",
+    "title": "99 English Grammar MCQs for PPSC and PMS-Style Practice",
+    "url": "https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7675625749,
+      "sha": "2d5f73ff5cd40e3d1c976811bea10e20ee73c7bc",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-10T06:54:55.718742+00:00",
+      "url": "https://mcqs-base-37nfweh18-as-projects-10921176.vercel.app",
+      "publisherRunId": 42771115746
+    },
+    "fetchedAt": "2026-11-10T06:54:55.718742+00:00",
+    "contentHash": "df712ce968632bd3d8d3368b06cbbeae18820656c97ebaac11afd1acd25ef24b",
+    "questions": [
+      {
+        "question": "Neither the clerk nor the assistants ___ available to answer the query.",
+        "choices": [
+          "is",
+          "are",
+          "was",
+          "has been"
+        ],
+        "key": "1a0cce53564f5949ab91f87aceb939f7a088aafac1609a741aed423981341dab",
+        "sourceNumber": 1,
+        "correctIndex": 1
+      },
+      {
+        "question": "Every one of the application forms ___ a signature.",
+        "choices": [
+          "require",
+          "requires",
+          "have required",
+          "were requiring"
+        ],
+        "key": "3515ae44ac9376ae4eb83e6fa6f499be8aca699b79cc4365e04cfc3b979c0e36",
+        "sourceNumber": 2,
+        "correctIndex": 1
+      },
+      {
+        "question": "A number of applicants ___ asked for additional time.",
+        "choices": [
+          "has",
+          "is",
+          "have",
+          "was"
+        ],
+        "key": "d4ff1fb58d01c3cc92e0d2601601da2367d8ed8a7062d62845961860813b51c3",
+        "sourceNumber": 3,
+        "correctIndex": 2
+      },
+      {
+        "question": "The number of vacant positions ___ lower than expected.",
+        "choices": [
+          "are",
+          "is",
+          "were",
+          "have been"
+        ],
+        "key": "e0f299687f1708ebc5a2d8c070a959cddf4a1205f9c0f6c776585c7148d95900",
+        "sourceNumber": 4,
+        "correctIndex": 1
+      },
+      {
+        "question": "The news about the selection ___ encouraging.",
+        "choices": [
+          "are",
+          "were",
+          "is",
+          "have been"
+        ],
+        "key": "27f962128b35913455f3c6352c972c48a85019df1febfc16da2141b12b57f48d",
+        "sourceNumber": 5,
+        "correctIndex": 2
+      },
+      {
+        "question": "Economics ___ one of the subjects in her course.",
+        "choices": [
+          "are",
+          "is",
+          "were",
+          "have"
+        ],
+        "key": "ca14b0b62c99013cec1418203a292b4cddc22e4653300e00e62a08ed1434e471",
+        "sourceNumber": 6,
+        "correctIndex": 1
+      },
+      {
+        "question": "Each boy and girl ___ given a separate entry card.",
+        "choices": [
+          "were",
+          "have been",
+          "was",
+          "are"
+        ],
+        "key": "53ef5f81aa91c7e08eebffa5bc6a91b61d0f87354cff411918973e88eb86b85c",
+        "sourceNumber": 7,
+        "correctIndex": 2
+      },
+      {
+        "question": "The committee ___ its final recommendation as a single group.",
+        "choices": [
+          "have submitted",
+          "has submitted",
+          "are submitting",
+          "were submitting"
+        ],
+        "key": "db6c5d24601f9f1bcab4666f759a712f919f7a2388a585f9f2eed34b8631b6b4",
+        "sourceNumber": 8,
+        "correctIndex": 1
+      },
+      {
+        "question": "The police ___ the damaged equipment at the site.",
+        "choices": [
+          "is examining",
+          "has examined",
+          "are examining",
+          "was examined"
+        ],
+        "key": "ac4b8eb9ab14105717b346dee800a2549733b2942f42d220b971c82bfd738470",
+        "sourceNumber": 9,
+        "correctIndex": 2
+      },
+      {
+        "question": "Neither the teacher nor the students ___ ready to leave.",
+        "choices": [
+          "was",
+          "is",
+          "were",
+          "has been"
+        ],
+        "key": "ffcdee9bd2b75a7c0fff7113ddf42fff23efc91772765fa6fc3f42c17bcebefa",
+        "sourceNumber": 10,
+        "correctIndex": 2
+      },
+      {
+        "question": "She ___ in Lahore since 2021.",
+        "choices": [
+          "lived",
+          "has lived",
+          "is living",
+          "had lived"
+        ],
+        "key": "9993d97f725126d6ee937211fab60b0685ddbaec3567799ed7f56059f494b220",
+        "sourceNumber": 11,
+        "correctIndex": 1
+      },
+      {
+        "question": "By the time we reached the station, the train ___.",
+        "choices": [
+          "leaves",
+          "has left",
+          "had left",
+          "was leaving tomorrow"
+        ],
+        "key": "49246e13398224e77215bcd30e63674a0a7a841e6a1a174855e05c59746a4dc3",
+        "sourceNumber": 12,
+        "correctIndex": 2
+      },
+      {
+        "question": "If you heat ice, it ___.",
+        "choices": [
+          "melted",
+          "will melted",
+          "melts",
+          "would melt yesterday"
+        ],
+        "key": "e67a33b9d35e74f35e7194f2a9a9b1a691f489a644a8625cd91202cabd03a36b",
+        "sourceNumber": 13,
+        "correctIndex": 2
+      },
+      {
+        "question": "If I ___ the principal, I would extend the library hours.",
+        "choices": [
+          "am",
+          "was",
+          "were",
+          "will be"
+        ],
+        "key": "f6284ded94df253b57c1d1e60a2f6ce1791897bdcc45e0d105cec0caf582c9c5",
+        "sourceNumber": 14,
+        "correctIndex": 2
+      },
+      {
+        "question": "If she had left earlier, she ___ the bus.",
+        "choices": [
+          "would catch",
+          "would have caught",
+          "will catch",
+          "had caught"
+        ],
+        "key": "0c30f907fe26e355ee708aa88b65280fd2c36449d6fbc1e461d9dae880ff5a23",
+        "sourceNumber": 15,
+        "correctIndex": 1
+      },
+      {
+        "question": "When the meeting ___, I will send you the notes.",
+        "choices": [
+          "will finish",
+          "finishes",
+          "finished",
+          "would finish"
+        ],
+        "key": "fc3431d5d194db078d1dfb72bfc1b764eb0046ed5df5a36c49911c5e76a44225",
+        "sourceNumber": 16,
+        "correctIndex": 1
+      },
+      {
+        "question": "The technician ___ the printer at the moment.",
+        "choices": [
+          "repairs",
+          "repaired",
+          "is repairing",
+          "has repaired yesterday"
+        ],
+        "key": "479306b97330fb395dc41e1796401d53faca8870431f8cd9d1185e17b6aea062",
+        "sourceNumber": 17,
+        "correctIndex": 2
+      },
+      {
+        "question": "We ___ the notice on Monday.",
+        "choices": [
+          "see",
+          "have seen",
+          "saw",
+          "had see"
+        ],
+        "key": "bb223a543ddb434db423a67544bc403162809d045b4d0258b14cfb822c794dba",
+        "sourceNumber": 18,
+        "correctIndex": 2
+      },
+      {
+        "question": "My uncle ___ in Multan, but he moved to Quetta last year.",
+        "choices": [
+          "used to live",
+          "is used to live",
+          "use to lived",
+          "was used living"
+        ],
+        "key": "da9a6882e1e368abb85d2b49a6d3f4ca95a7df97b710e7b5eb0a2826446390d7",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "At 8 a.m., Sana ___ for the bus for thirty minutes.",
+        "choices": [
+          "waits",
+          "has waited",
+          "had been waiting",
+          "will wait"
+        ],
+        "key": "85cdd656cbcb901e469a6a2f60c73db1bd306a46ff5bd6b1f8979e81b631e93a",
+        "sourceNumber": 20,
+        "correctIndex": 2
+      },
+      {
+        "question": "He is ___ honest officer.",
+        "choices": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "key": "fd60d14ce8a3bbfa73fd4223377c3af4772a5623b13f6b54cf1ecdd5565f552c",
+        "sourceNumber": 21,
+        "correctIndex": 1
+      },
+      {
+        "question": "She hopes to study at ___ university near her home.",
+        "choices": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "key": "5e0bde2b6c76a605b7675abe9bf3a91b0741be7ac62a840a863a9cf214112e2e",
+        "sourceNumber": 22,
+        "correctIndex": 0
+      },
+      {
+        "question": "The Earth moves around ___ Sun.",
+        "choices": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "key": "d819e7f9358c917223c245453526971cf48fc4b021e1934fbe7d994028b47aa3",
+        "sourceNumber": 23,
+        "correctIndex": 2
+      },
+      {
+        "question": "They hope to climb ___ Mount Everest one day.",
+        "choices": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "key": "afbb605dddf12e0ad9ff6783a982ffd8087702665eb93801c3d421cd75f96f41",
+        "sourceNumber": 24,
+        "correctIndex": 3
+      },
+      {
+        "question": "Imran has ___ MBA and works in administration.",
+        "choices": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "key": "524e33fe3027af6bc4de36bdc8772c1823fc7255e6535bd6ce916239d412f2bc",
+        "sourceNumber": 25,
+        "correctIndex": 1
+      },
+      {
+        "question": "In the sentence “___ rich should help those in need,” which article completes the sentence?",
+        "choices": [
+          "A",
+          "An",
+          "The",
+          "No article"
+        ],
+        "key": "b3010b68d7b5d0584589b8b4b923e5d84a3ca457e91972cb4649d5b9827e0be3",
+        "sourceNumber": 26,
+        "correctIndex": 2
+      },
+      {
+        "question": "We waited for ___ hour before the doors opened.",
+        "choices": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "key": "6ec251859b69937891b19a24e821442a1ce399365f0e869ff0f5af9e9ec46c16",
+        "sourceNumber": 27,
+        "correctIndex": 1
+      },
+      {
+        "question": "She bought ___ European history book at the sale.",
+        "choices": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "key": "f496c282e6747ffbef462adea9e70a72ed76878baf1eff3f73cdd32cf9a27c52",
+        "sourceNumber": 28,
+        "correctIndex": 0
+      },
+      {
+        "question": "___ Indus is a major river in Pakistan.",
+        "choices": [
+          "A",
+          "An",
+          "The",
+          "No article"
+        ],
+        "key": "7b85032fce628f186f1305b163287afca3fd3631ead079bd17a3681e35065b05",
+        "sourceNumber": 29,
+        "correctIndex": 2
+      },
+      {
+        "question": "He gave the document to Ali and ___.",
+        "choices": [
+          "I",
+          "me",
+          "myself",
+          "mine"
+        ],
+        "key": "7a4e7bcbb12e03162a7610ff4da694e60ca338ce18fda77414ada2f350fe052c",
+        "sourceNumber": 30,
+        "correctIndex": 1
+      },
+      {
+        "question": "The person ___ chaired the meeting thanked the staff.",
+        "choices": [
+          "whom",
+          "whose",
+          "who",
+          "which"
+        ],
+        "key": "460a149b98221289936803184e12e98132d9f930e169f194512168a5085ff8f2",
+        "sourceNumber": 31,
+        "correctIndex": 2
+      },
+      {
+        "question": "The colleague to ___ I sent the file replied quickly.",
+        "choices": [
+          "who",
+          "whom",
+          "whose",
+          "which"
+        ],
+        "key": "4233b3009b4455fd0e8aedc45ace975c5272b312b732441f1930b3d92ad3a694",
+        "sourceNumber": 32,
+        "correctIndex": 1
+      },
+      {
+        "question": "One should keep ___ promises.",
+        "choices": [
+          "his",
+          "one's",
+          "theirself",
+          "him"
+        ],
+        "key": "afb2e609fc8db7424aad7533736e0c0340b9f9d2d21b0495aec004d094a8ecab",
+        "sourceNumber": 33,
+        "correctIndex": 1
+      },
+      {
+        "question": "This is the writer ___ novel won the prize.",
+        "choices": [
+          "who",
+          "whom",
+          "whose",
+          "which"
+        ],
+        "key": "4fff5684f6e5125caca31ab80862a82916e06da4483e1f71fd3bb07e41b6a398",
+        "sourceNumber": 34,
+        "correctIndex": 2
+      },
+      {
+        "question": "The two researchers prepared the presentation ___.",
+        "choices": [
+          "ourselves",
+          "themselves",
+          "theirself",
+          "them"
+        ],
+        "key": "361441924ac82ee1e4edf31185fcf43fe28be622d80c37e6ea2cbcd4cb423fab",
+        "sourceNumber": 35,
+        "correctIndex": 1
+      },
+      {
+        "question": "The company changed ___ name last year.",
+        "choices": [
+          "it's",
+          "its",
+          "it",
+          "their"
+        ],
+        "key": "f65fbb336944a7a377ee84db326da01e5bb150825cf8007d59ca18d032372581",
+        "sourceNumber": 36,
+        "correctIndex": 1
+      },
+      {
+        "question": "The applicant ___ the panel selected accepted the offer.",
+        "choices": [
+          "who",
+          "whom",
+          "whose",
+          "which"
+        ],
+        "key": "36cfde5196a9b9c7332c8c6145bc9068bccb4c313a1bf030aa2d77bfcc11f9e0",
+        "sourceNumber": 37,
+        "correctIndex": 1
+      },
+      {
+        "question": "The director, along with two assistants, ___ attending the briefing.",
+        "choices": [
+          "are",
+          "were",
+          "is",
+          "have been"
+        ],
+        "key": "991243fa06c5c86b5cc9f9cf93b3da5d152d5c104c9a139573847e5245a76956",
+        "sourceNumber": 38,
+        "correctIndex": 2
+      },
+      {
+        "question": "She is interested ___ environmental research.",
+        "choices": [
+          "on",
+          "in",
+          "at",
+          "for"
+        ],
+        "key": "53766518b5695d75bd0e960d910396b105d226b8fec4ae3b1a3a3693f14f9b82",
+        "sourceNumber": 39,
+        "correctIndex": 1
+      },
+      {
+        "question": "Hamza is good ___ solving word problems.",
+        "choices": [
+          "in",
+          "on",
+          "at",
+          "for"
+        ],
+        "key": "46a479e17f85899c6c52794d42d3d151cff51e7fd1d14d6995041b654ba7ebc3",
+        "sourceNumber": 40,
+        "correctIndex": 2
+      },
+      {
+        "question": "The success of the plan depends ___ careful preparation.",
+        "choices": [
+          "at",
+          "on",
+          "with",
+          "by"
+        ],
+        "key": "b87a5b585384fdbf7613a4c61904b05ecc78b16d3deca74c82935f586f5435f6",
+        "sourceNumber": 41,
+        "correctIndex": 1
+      },
+      {
+        "question": "All staff members must comply ___ the safety instructions.",
+        "choices": [
+          "to",
+          "for",
+          "with",
+          "by"
+        ],
+        "key": "929d51669a73da61e4ff6aad19049f30ea46dcd88e147fba874249e40ea6890d",
+        "sourceNumber": 42,
+        "correctIndex": 2
+      },
+      {
+        "question": "The witness accused the driver ___ careless driving.",
+        "choices": [
+          "for",
+          "of",
+          "with",
+          "by"
+        ],
+        "key": "2a06dd2ed067e74bbc13ff119e4082e19abba208a6c41aba072bf6116f5271cf",
+        "sourceNumber": 43,
+        "correctIndex": 1
+      },
+      {
+        "question": "I prefer tea ___ coffee in the morning.",
+        "choices": [
+          "than",
+          "over",
+          "to",
+          "with"
+        ],
+        "key": "33a37926e8092f9078a4c62e45c12db188a35e309ce063ae4f1470695d1e454a",
+        "sourceNumber": 44,
+        "correctIndex": 2
+      },
+      {
+        "question": "The bus arrived ___ the station just before noon.",
+        "choices": [
+          "in",
+          "at",
+          "on",
+          "by"
+        ],
+        "key": "475e8d0c92ef575f8673ff45d8cabbe6b3b45319cc5bc2ef007e04520b1e0260",
+        "sourceNumber": 45,
+        "correctIndex": 1
+      },
+      {
+        "question": "The teacher divided the class ___ four groups.",
+        "choices": [
+          "between",
+          "among",
+          "into",
+          "with"
+        ],
+        "key": "d6b6b0a4d72de0eb101f077a1defa1e173eee6ca4db9466cf37d9aa6c9b4d626",
+        "sourceNumber": 46,
+        "correctIndex": 2
+      },
+      {
+        "question": "They have lived in this neighbourhood ___ five years.",
+        "choices": [
+          "since",
+          "for",
+          "from",
+          "during"
+        ],
+        "key": "8d56fb96b2f7b261eacbbb6622da8a091c9cbd5e0b005f61fbc0ccc299b10e72",
+        "sourceNumber": 47,
+        "correctIndex": 1
+      },
+      {
+        "question": "___ the heavy rain, the match continued.",
+        "choices": [
+          "Although",
+          "Despite",
+          "Because",
+          "Unless"
+        ],
+        "key": "48a8f2d3fbfc66e8e731b202acbe6fdc4e516804e8254d69dfa99f33f284a717",
+        "sourceNumber": 48,
+        "correctIndex": 1
+      },
+      {
+        "question": "The supervisor is responsible ___ checking the final figures.",
+        "choices": [
+          "to",
+          "of",
+          "for",
+          "with"
+        ],
+        "key": "7491f5ca95a104f9d28ce88f2950c137fedea209568eb7eb0225e81db9a58035",
+        "sourceNumber": 49,
+        "correctIndex": 2
+      },
+      {
+        "question": "The committee insisted ___ reviewing the figures once more.",
+        "choices": [
+          "at",
+          "on",
+          "for",
+          "to"
+        ],
+        "key": "2fd53267f89d880200aff7fc522daaa3c2d69e8f6c788ded544a27ab982bda25",
+        "sourceNumber": 50,
+        "correctIndex": 1
+      },
+      {
+        "question": "The coach congratulated the team ___ its victory.",
+        "choices": [
+          "for",
+          "at",
+          "on",
+          "with"
+        ],
+        "key": "f58cd6d049190b2ca718318a0bc04fbd677bc5e8b2078c16d57a9861bb0a3141",
+        "sourceNumber": 51,
+        "correctIndex": 2
+      },
+      {
+        "question": "This edition is different ___ the earlier one.",
+        "choices": [
+          "than",
+          "from",
+          "to",
+          "with"
+        ],
+        "key": "4af719cbd4332e03a397452a65f23245d735d017224d1ebb8e962a21e744109a",
+        "sourceNumber": 52,
+        "correctIndex": 1
+      },
+      {
+        "question": "This container is capable ___ holding ten litres.",
+        "choices": [
+          "to",
+          "for",
+          "of",
+          "with"
+        ],
+        "key": "7aa896f1b3419a787a968ae1d994782195f60629dd19bc6a0081b40688189647",
+        "sourceNumber": 53,
+        "correctIndex": 2
+      },
+      {
+        "question": "The speaker explained the procedure ___.",
+        "choices": [
+          "clear",
+          "clearly",
+          "clearness",
+          "clearing"
+        ],
+        "key": "bffcc7db60da8215b6db8c73b44058de24667e5280ec150b902244697f33d7b1",
+        "sourceNumber": 54,
+        "correctIndex": 1
+      },
+      {
+        "question": "After completing the difficult puzzle, she worked ___ on the next one.",
+        "choices": [
+          "hard",
+          "hardly",
+          "hardness",
+          "harderly"
+        ],
+        "key": "837f0bd4453016fd884a23dd11669b2e5fd840c7a6bc0055c7b305d0176734bf",
+        "sourceNumber": 55,
+        "correctIndex": 0
+      },
+      {
+        "question": "There are ___ applicants this year than last year.",
+        "choices": [
+          "less",
+          "fewer",
+          "little",
+          "fewest"
+        ],
+        "key": "fcc0ac1f62d4bc75ae1f7c386106ed297fc1586e8b03f45986c139b7f3f31d6e",
+        "sourceNumber": 56,
+        "correctIndex": 1
+      },
+      {
+        "question": "We need ___ information before making a decision.",
+        "choices": [
+          "fewer",
+          "many",
+          "less",
+          "few"
+        ],
+        "key": "cedaff439bc7d5f530ecc247550bdc27014d8a12cfddead7c90121317b8edb56",
+        "sourceNumber": 57,
+        "correctIndex": 2
+      },
+      {
+        "question": "This route is shorter ___ the one we took yesterday.",
+        "choices": [
+          "from",
+          "then",
+          "than",
+          "to"
+        ],
+        "key": "1fcb628c34fa9ce3ae07477e49ed55881658c5784bc1bae08acbe7ba147ccf84",
+        "sourceNumber": 58,
+        "correctIndex": 2
+      },
+      {
+        "question": "Of the three candidates, Nadia is the ___ speaker.",
+        "choices": [
+          "more confident",
+          "most confident",
+          "confidenter",
+          "much confident"
+        ],
+        "key": "3f423203e980af46c215e02d3b6fb334962e91899a0e2d9cadf3ae2acb7cc039",
+        "sourceNumber": 59,
+        "correctIndex": 1
+      },
+      {
+        "question": "This exercise is not as difficult ___ the previous one.",
+        "choices": [
+          "than",
+          "like",
+          "as",
+          "from"
+        ],
+        "key": "4562956cb1545fdefcdeb55ce83109a43193b54c8327dbcb14b34f2ea04fe4d1",
+        "sourceNumber": 60,
+        "correctIndex": 2
+      },
+      {
+        "question": "The road was ___ narrow that the bus could not pass.",
+        "choices": [
+          "too",
+          "so",
+          "such",
+          "very"
+        ],
+        "key": "33dfdb9373bff2cf827214e28aa1acb18d854af9c86f0f4891d52bcaa8b5a762",
+        "sourceNumber": 61,
+        "correctIndex": 1
+      },
+      {
+        "question": "The tea was too hot ___ immediately.",
+        "choices": [
+          "to drink",
+          "for drink",
+          "drinking",
+          "that drink"
+        ],
+        "key": "5d302ed952c6cce18b61b515e5c2bc5ff03a7d55ad59759c100b199e65220f67",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "The room is large enough ___ a group of twenty.",
+        "choices": [
+          "to accommodate",
+          "accommodating",
+          "for accommodate",
+          "that accommodate"
+        ],
+        "key": "474a194bcb5f406af02f9fba8ec8f19a8a836fd53da298d153c54f4100762510",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which sentence correctly says that the room was completely quiet?",
+        "choices": [
+          "The room was quiet complete.",
+          "The room was completely quiet.",
+          "The room completely was quietness.",
+          "The room was complete quietly."
+        ],
+        "key": "a450a4e024c84a652aecc8c5079fc2501c9bc332693c7c7033f32b41b50b106a",
+        "sourceNumber": 64,
+        "correctIndex": 1
+      },
+      {
+        "question": "___ the report, Sara emailed it to her manager.",
+        "choices": [
+          "Having finished",
+          "Finished by",
+          "To finishing",
+          "Having been finish"
+        ],
+        "key": "4e550e4805aecda4e7a1428f230d94840c7e4644f70ae5e57e478e0c059a867f",
+        "sourceNumber": 65,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which sentence has a modifier that clearly refers to Ali?",
+        "choices": [
+          "Walking to the bus stop, Ali found a wallet.",
+          "Walking to the bus stop, a wallet was found by Ali.",
+          "A wallet walking to the bus stop was found by Ali.",
+          "Ali found walking to the bus stop a wallet."
+        ],
+        "key": "9b45fec12947293628a7e15a714b6a86aa57d89e933d31c3de9df7ee8f0734c9",
+        "sourceNumber": 66,
+        "correctIndex": 0
+      },
+      {
+        "question": "Choose the sentence in which “broken” describes the window.",
+        "choices": [
+          "The broken window was repaired yesterday.",
+          "The window broke repaired yesterday.",
+          "The repaired broke window yesterday.",
+          "Yesterday the broken was window repaired."
+        ],
+        "key": "dfc13538ac632f913fa27fe0d9a582cb30012a1e642a7ea032d7dfba7a45518f",
+        "sourceNumber": 67,
+        "correctIndex": 0
+      },
+      {
+        "question": "___ the manager and the accountant attended the briefing.",
+        "choices": [
+          "Not only",
+          "Neither",
+          "Both",
+          "Either"
+        ],
+        "key": "4f43b4a77b0f53a9c8058fd50db0dd4d389589e4ea23ae5960998556e7986c9a",
+        "sourceNumber": 68,
+        "correctIndex": 2
+      },
+      {
+        "question": "The office is open ___ on Fridays ___ on public holidays.",
+        "choices": [
+          "either; nor",
+          "neither; or",
+          "neither; nor",
+          "both; nor"
+        ],
+        "key": "c5d991288c0096eeb97e5d13ff115e5023b87441ee1090d902d468747e637130",
+        "sourceNumber": 69,
+        "correctIndex": 2
+      },
+      {
+        "question": "___ tired, Ayesha completed the assignment before dinner.",
+        "choices": [
+          "Although",
+          "Despite",
+          "Because of",
+          "Unless"
+        ],
+        "key": "5c499c9f0f5c3bad6c4d4952829e8d84dfdc1473283fe15fb710e28754e3db14",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "___ you save the file, you may lose your changes.",
+        "choices": [
+          "Unless",
+          "Because",
+          "Although",
+          "Whereas"
+        ],
+        "key": "7d3767086734649a2e5625a92c177782992b75d0da1c99c391cb6957a8cd459a",
+        "sourceNumber": 71,
+        "correctIndex": 0
+      },
+      {
+        "question": "No sooner had the train stopped ___ the passengers began to leave.",
+        "choices": [
+          "when",
+          "then",
+          "than",
+          "while"
+        ],
+        "key": "4b3fd0f7cd18df1c12688ffd5c24e71e3f359b0f44a39a9de59073218db728b5",
+        "sourceNumber": 72,
+        "correctIndex": 2
+      },
+      {
+        "question": "Scarcely had the lecture begun ___ the power went out.",
+        "choices": [
+          "than",
+          "when",
+          "then",
+          "as"
+        ],
+        "key": "1ad6d08562b8daf1ea4306089af434d5d838d3885ac20df075bd1bf0bf6f42c7",
+        "sourceNumber": 73,
+        "correctIndex": 1
+      },
+      {
+        "question": "You may choose ___ the blue folder ___ the green one.",
+        "choices": [
+          "neither; nor",
+          "either; or",
+          "both; nor",
+          "not only; and"
+        ],
+        "key": "d4013ec4e9116bafba147f9666957d447940e32e3817b24c5d022a5a02798a57",
+        "sourceNumber": 74,
+        "correctIndex": 1
+      },
+      {
+        "question": "___ the players ___ the coach knew the revised schedule.",
+        "choices": [
+          "Neither; nor",
+          "Either; nor",
+          "Both; or",
+          "Not only; nor"
+        ],
+        "key": "42105e59248ad5581036cbb02ba5c7853dbb8c3c3d52a8b61feeb0cc82d274d8",
+        "sourceNumber": 75,
+        "correctIndex": 0
+      },
+      {
+        "question": "The report ___ by the finance officer yesterday.",
+        "choices": [
+          "prepared",
+          "was prepared",
+          "has preparing",
+          "is prepare"
+        ],
+        "key": "d130b192aaad25e015c828d940adacc6528ea4a491db53b2df5042d03c28054a",
+        "sourceNumber": 76,
+        "correctIndex": 1
+      },
+      {
+        "question": "The road ___ by workers at this moment.",
+        "choices": [
+          "repairs",
+          "is repairing",
+          "is being repaired",
+          "has repaired"
+        ],
+        "key": "2618496be028a58d8a8bcce301006abef246b7ac8e91d3c65b70798b09314589",
+        "sourceNumber": 77,
+        "correctIndex": 2
+      },
+      {
+        "question": "People speak Urdu in many parts of Pakistan. Which is the correct passive form?",
+        "choices": [
+          "Urdu speaks in many parts of Pakistan.",
+          "Urdu is spoken in many parts of Pakistan.",
+          "Urdu has spoke in many parts of Pakistan.",
+          "Urdu was speaking in many parts of Pakistan."
+        ],
+        "key": "5a35d75858e0b4f3666046181df6cc522e18bcd3068bbfe3f29839fa46953431",
+        "sourceNumber": 78,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which is the correct passive form of “Who wrote this letter?”",
+        "choices": [
+          "By whom was this letter written?",
+          "By who this letter wrote?",
+          "Whom did this letter write?",
+          "By whom this letter was writing?"
+        ],
+        "key": "4bc837c701ef6037fb76bd98af8328b2be96928c25ae2196e6c05925d33086c7",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "Choose the correct reported form: He said, “I am tired.”",
+        "choices": [
+          "He said that I am tired.",
+          "He said that he was tired.",
+          "He says that he had tired.",
+          "He said he is tiring."
+        ],
+        "key": "9935f67c4c20a9cf536a575d83871af31ffc7a935553ab8d97f1f7f42ec267dc",
+        "sourceNumber": 80,
+        "correctIndex": 1
+      },
+      {
+        "question": "Choose the correct reported form: She said, “I have completed the task.”",
+        "choices": [
+          "She said that she completed the task tomorrow.",
+          "She said that I had completed the task.",
+          "She said that she had completed the task.",
+          "She said that she has complete the task."
+        ],
+        "key": "22028e7416c7d4159baeede8394141b40f305cf55e531061210eff7fb3b365d5",
+        "sourceNumber": 81,
+        "correctIndex": 2
+      },
+      {
+        "question": "A teacher addressed Ali and asked, “Will you help me?” Which report correctly preserves that context?",
+        "choices": [
+          "The teacher asked Ali whether he would help her.",
+          "The teacher said Ali that will he help me.",
+          "The teacher asked Ali whether I would help him.",
+          "The teacher asked that Ali will help her."
+        ],
+        "key": "2efd578383f3259b1be374d0a51860d1e25f5159ff728e6622dc72b166f84ae8",
+        "sourceNumber": 82,
+        "correctIndex": 0
+      },
+      {
+        "question": "The teacher said to Ali, “Close the window.” Choose the correct reported form.",
+        "choices": [
+          "The teacher told Ali close the window.",
+          "The teacher told Ali to close the window.",
+          "The teacher said Ali that close the window.",
+          "The teacher asked that Ali closed the window."
+        ],
+        "key": "c3056ddaf5f2f52fd2c02cda5be1153d525a7f6393e02c7034785d2b3030ca81",
+        "sourceNumber": 83,
+        "correctIndex": 1
+      },
+      {
+        "question": "The guard said to us, “Do not touch the equipment.” Choose the correct report.",
+        "choices": [
+          "The guard told us not to touch the equipment.",
+          "The guard told us do not touched the equipment.",
+          "The guard said us not touching the equipment.",
+          "The guard asked us to not touched the equipment."
+        ],
+        "key": "b8a67fb515ca47d5ef8b7a74ef1fdec489135105908d06f25c619bf7eb1e2f6f",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "Choose the sentence with a parallel list.",
+        "choices": [
+          "The course teaches reading, writing, and how to calculate.",
+          "The course teaches reading, writing, and calculating.",
+          "The course teaches to read, writing, and calculation.",
+          "The course teaches reading, to write, and calculating."
+        ],
+        "key": "54110496a2392081b0a1c17bbd78f824f93332fe82138637708f526d15482a0f",
+        "sourceNumber": 85,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which sentence uses the standard comparison for two employees?",
+        "choices": [
+          "Zara is senior than Hina.",
+          "Zara is senior to Hina.",
+          "Zara is more senior from Hina.",
+          "Zara is senior over Hina."
+        ],
+        "key": "81f24cf36c8065a290df1fd5959cfb3efb3b83b12db2c0019b513a6cd8349139",
+        "sourceNumber": 86,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which sentence uses the standard construction for preference?",
+        "choices": [
+          "He prefers walking than driving.",
+          "He prefers walking to driving.",
+          "He prefers walking over than driving.",
+          "He prefers to walking than driving."
+        ],
+        "key": "84a6f47cd4e3ddfd738326e78a8cef7646e5abc6b8f3d12c949b794e307f9cc5",
+        "sourceNumber": 87,
+        "correctIndex": 1
+      },
+      {
+        "question": "Choose the grammatically correct sentence.",
+        "choices": [
+          "She is one of the employees who works on weekends.",
+          "She is one of the employees who work on weekends.",
+          "She is one of the employee who work on weekends.",
+          "She is one of employees who works on weekends."
+        ],
+        "key": "94bee28f7d0281ae0c6710278b80fe5a6652580d1beb2c219e06e9e9e775a7d5",
+        "sourceNumber": 88,
+        "correctIndex": 1
+      },
+      {
+        "question": "Choose the correct sentence.",
+        "choices": [
+          "She is the only one of the employees who work on weekends.",
+          "She is the only one of the employees who works on weekends.",
+          "She is the only one of employees who works on weekends.",
+          "She is the only one of the employee who work on weekends."
+        ],
+        "key": "6cce4aab5aca42b6940e615bc2d2c1fed42db0752e5547799ef00dcddf9427a0",
+        "sourceNumber": 89,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which sentence correctly shows that the device belongs to the company?",
+        "choices": [
+          "The company changed it's policy.",
+          "The company changed its policy.",
+          "The company changed its' policy.",
+          "The company changed it policy."
+        ],
+        "key": "1f0ccd3aa73f902957c6af1636b0b4601131855e0660d0bc79fed3dce0472d31",
+        "sourceNumber": 90,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which sentence correctly joins two complete, closely related statements?",
+        "choices": [
+          "The rain stopped, we resumed the match.",
+          "The rain stopped; we resumed the match.",
+          "The rain stopped because; we resumed the match.",
+          "The rain stopped we; resumed the match."
+        ],
+        "key": "6134c1232a7c0d9fb6cd411a29ca82ad28e61df93648b778f9c005a4fe40ad38",
+        "sourceNumber": 91,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which sentence correctly addresses Ahmed by name?",
+        "choices": [
+          "Please submit the form Ahmed before noon.",
+          "Please Ahmed, submit the form before noon.",
+          "Please, Ahmed, submit the form before noon.",
+          "Please Ahmed submit, the form before noon."
+        ],
+        "key": "dfa597759d3c1d13fc85ba24ebec7806b02970b7322095f73fe7d4cd05366804",
+        "sourceNumber": 92,
+        "correctIndex": 2
+      },
+      {
+        "question": "Choose the sentence with correct subject–verb agreement.",
+        "choices": [
+          "The list of supplies are on the desk.",
+          "The list of supplies is on the desk.",
+          "The list of supplies were on the desk.",
+          "The list of supplies have been on the desk."
+        ],
+        "key": "de5f9e4448797ae9c6557df1b23dadc7f5f905fdda67537afb8f59e9c7b6d4ea",
+        "sourceNumber": 93,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which sentence correctly uses an apostrophe to show that the files belong to several teachers?",
+        "choices": [
+          "The teachers' files are ready.",
+          "The teacher's files are ready.",
+          "The teachers files' are ready.",
+          "The teachers's files are ready."
+        ],
+        "key": "af68955fd76752cab9620b5c1c4150da997af3b28165a3f09673440daad9a644",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "Choose the sentence with the correct verb form.",
+        "choices": [
+          "The clerk has wrote the receipt.",
+          "The clerk has written the receipt.",
+          "The clerk have written the receipt.",
+          "The clerk has writing the receipt."
+        ],
+        "key": "574328ed06c68aee397d74a064c2756139ac7f03cef8ebeb6f28ffb74826da4d",
+        "sourceNumber": 95,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which sentence correctly uses an adjective after a linking verb?",
+        "choices": [
+          "The soup smells deliciously.",
+          "The soup smells delicious.",
+          "The soup smells deliciousness.",
+          "The soup smells deliciouslyly."
+        ],
+        "key": "c2d6ff462c3683b9b83d8b87ff979ac7844e594f53a11d0e899a19a22d842baf",
+        "sourceNumber": 96,
+        "correctIndex": 1
+      },
+      {
+        "question": "Choose the correct sentence for a completed action with a present result.",
+        "choices": [
+          "I have lost my key, so I cannot open the door.",
+          "I lost my key yesterday, so I cannot open the door now.",
+          "I have lose my key, so I cannot open the door.",
+          "I am losing my key, so I could not open the door."
+        ],
+        "key": "a3f306f8195f66dce34b6434b4896ae4cf7aba1b546e3632fc63ad51ae6913d3",
+        "sourceNumber": 97,
+        "correctIndex": 0
+      },
+      {
+        "question": "Select the sentence with a correctly placed adverb of frequency.",
+        "choices": [
+          "She checks usually the figures twice.",
+          "She usually checks the figures twice.",
+          "Usually she checks twice the figures.",
+          "She checks the figures twice usually always."
+        ],
+        "key": "a8c42b9381fbb7913f508b2d8c1449764dccaa20cbd3a797ccd7020b58c42160",
+        "sourceNumber": 98,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which sentence correctly uses the possessive form of the plural noun children?",
+        "choices": [
+          "The childrens' books are on the shelf.",
+          "The children's books are on the shelf.",
+          "The childrens books' are on the shelf.",
+          "The childrens's books are on the shelf."
+        ],
+        "key": "76cf4b4d451395a45896ad996252f9efac395f0841b6ce40e0a110b0abd4aa48",
+        "sourceNumber": 99,
+        "correctIndex": 1
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "086b9ca631e8c4620dd4ad9f921b43ffc3e2953efd67a4eb6679a1b87cc4c2b5",
+      "sourceQuestionNumbers": [
+        67,
+        95,
+        57,
+        4,
+        26,
+        54,
+        21,
+        85,
+        60,
+        11,
+        20,
+        63,
+        9,
+        53,
+        98,
+        45,
+        17,
+        31,
+        96,
+        62,
+        39,
+        66,
+        46,
+        82,
+        12,
+        93,
+        3,
+        33,
+        75,
+        44,
+        99,
+        15,
+        76,
+        47,
+        30,
+        61,
+        90,
+        25,
+        51,
+        16,
+        27,
+        81,
+        77,
+        2,
+        59,
+        28,
+        56,
+        80,
+        74,
+        1,
+        71,
+        5,
+        55,
+        36,
+        89,
+        72,
+        41,
+        88,
+        22,
+        8,
+        19,
+        34,
+        50,
+        64,
+        87,
+        94,
+        79,
+        40,
+        23,
+        13,
+        43,
+        91,
+        73,
+        32,
+        14,
+        37,
+        97,
+        6,
+        49,
+        78,
+        83,
+        24,
+        48,
+        69,
+        7,
+        38,
+        42,
+        10,
+        86,
+        70,
+        35,
+        52,
+        18,
+        92,
+        65,
+        68,
+        58,
+        84,
+        29
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
