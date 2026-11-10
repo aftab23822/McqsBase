@@ -1064,7 +1064,7 @@
       "verifiedPublications": 15
     },
     "mdcat-cell-biology-mcqs": {
-      "status": "scheduled",
+      "status": "provider-published",
       "ledger": "batches/mdcat-cell-biology-mcqs.json",
       "createdAt": "2026-11-09T05:47:15.732366+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-cell-biology-mcqs",
@@ -1076,8 +1076,8 @@
         "2026-11-09T19:28:00+05:00",
         "2026-11-09T21:57:00+05:00"
       ],
-      "published": 0,
-      "verifiedPublications": 0
+      "published": 20,
+      "verifiedPublications": 15
     },
     "competitive-exam-grammar-mcqs": {
       "status": "ready",
