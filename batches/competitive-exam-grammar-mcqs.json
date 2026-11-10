@@ -3626,9 +3626,16 @@
           "integrationId": "cmvwbcule0222ro9dhocbic4w"
         },
         "youtube": {
-          "status": "accepted",
+          "status": "QUEUE",
           "attemptedAt": "2026-11-10T07:01:54.480666+00:00",
-          "postId": "cmwace0fe0hg4roivsvizqmo7"
+          "postId": "cmwace0fe0hg4roivsvizqmo7",
+          "url": null,
+          "providerUrl": null,
+          "providerReleaseId": null,
+          "providerStatus": "QUEUE",
+          "publicUrlVerified": false,
+          "verification": "provider-status-only",
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
         }
       }
     }
