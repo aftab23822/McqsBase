@@ -1849,6 +1849,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        55,
+        87
+      ],
+      "count": 2,
+      "durationSeconds": 68,
+      "sha256": "e9ea66f0eeeffdbbd967dd8694cda9ae2030e265cea79bfcbd98fb222c13cad0",
+      "manifest": {
+        "title": "100 Database and SQL MCQs for NAT-ICS-Style Practice",
+        "sourceTitle": "100 Database and SQL MCQs for NAT-ICS-Style Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-11T05:43:23.321294+00:00",
+        "sourceContentHash": "fb2b0de5bd70a934f784dee2a65ee5b612fa22ed3cf4038f00181891d411f2d7",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7702774701,
+          "sha": "a6d9258044dbea51b0d98f5240d4dd33d60b9364",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-11T05:43:23.321294+00:00",
+          "url": "https://mcqs-base-jxvgxhcpy-as-projects-10921176.vercel.app",
+          "publisherRunId": 42967099009
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 68,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "What result does a CROSS JOIN produce for two input tables?",
+            "choices": [
+              "The Cartesian product of their rows",
+              "Only matching key values",
+              "Only unmatched left rows",
+              "A sorted list of column names"
+            ],
+            "correctIndex": 0,
+            "key": "5916766e44e47c7d10287854d2b5356944de817f8deca8b48b1b54b9d6599115",
+            "sourceNumber": 55
+          },
+          {
+            "question": "A query needs rows with Salary between 30000 and 50000, including both endpoints. Which condition is correct?",
+            "choices": [
+              "Salary BETWEEN 30000 AND 50000",
+              "Salary BETWEEN 30000 OR 50000",
+              "Salary > 30000 AND Salary < 50000",
+              "Salary = 30000 AND Salary = 50000"
+            ],
+            "correctIndex": 0,
+            "key": "aabb61726c81168b1945e3037def8f071b7e909e493618cc4578e0d9f22fa171",
+            "sourceNumber": 87
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 19,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 19,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 20,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 21,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 22,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 27,
+            "duration": 27,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 54,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 55,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 56,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 57,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 63,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            55,
+            87
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NATICS",
+          "#ComputerScience",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ics-database-sql-part-03-e9ea66f0eeeffdbb.mp4",
+        "videoSha256": "e9ea66f0eeeffdbbd967dd8694cda9ae2030e265cea79bfcbd98fb222c13cad0",
+        "assetId": 734309094
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q55, 87 | 100 Database and SQL MCQs for NAT-ICS-Style Practice",
+          "text": "Part 3/5 · Source questions 55, 87\n100 Database and SQL MCQs for NAT-ICS-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NATICS #ComputerScience #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICS",
+            "#ComputerScience",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q55, 87 | 100 Database and SQL MCQs for NAT-ICS-Style Practice",
+          "text": "Part 3/5 · Source questions 55, 87\n100 Database and SQL MCQs for NAT-ICS-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ics-database-sql\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICS #ComputerScience #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICS",
+            "#ComputerScience",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q55, 87 | 100 Database and SQL MCQs for NAT-ICS-Style Practice",
+          "text": "Part 3/5 · Source questions 55, 87\n100 Database and SQL MCQs for NAT-ICS-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ics-database-sql\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICS #ComputerScience #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICS",
+            "#ComputerScience",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q55, 87 | 100 Database and SQL MCQs for NAT-ICS-Style Practice",
+          "text": "Part 3/5 · Source questions 55, 87\n100 Database and SQL MCQs for NAT-ICS-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ics-database-sql\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICS #ComputerScience #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICS",
+            "#ComputerScience",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
