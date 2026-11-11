@@ -2339,7 +2339,11 @@
       },
       "uploadIntent": {
         "filename": "nat-ics-database-sql-part-04-68a883b4237536cc.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "6d0c37d2-1bab-4fea-9720-be3f490a44ca",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/yrDgrUnNf4.mp4"
       }
     },
     {
