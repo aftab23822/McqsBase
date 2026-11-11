@@ -2613,6 +2613,10 @@
           "publicUrlVerified": false,
           "verification": "provider-status-only",
           "integrationId": "cmvwbcule0222ro9dhocbic4w"
+        },
+        "youtube": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-11T05:50:16.652875+00:00"
         }
       }
     },
