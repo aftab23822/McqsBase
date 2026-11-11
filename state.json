@@ -993,6 +993,7 @@
       "ledger": "batches/nat-ie-mechanics-mcqs.json",
       "createdAt": "2026-11-04T05:49:24.990502+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-mechanics-mcqs",
+      "blockedNetworks": [],
       "scheduledAt": [
         "2026-11-04T11:11:00+05:00",
         "2026-11-04T13:53:00+05:00",
