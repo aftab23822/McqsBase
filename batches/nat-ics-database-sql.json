@@ -2313,6 +2313,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 5,
+      "directory": "part-05",
+      "sourceQuestionNumbers": [
+        67,
+        4,
+        77
+      ],
+      "count": 3,
+      "durationSeconds": 87,
+      "sha256": "d31480d99a5a00c925a2e17cdb1f1f9d2b5d8c187b3307ffdeaa7989a48ee0bd",
+      "manifest": {
+        "title": "100 Database and SQL MCQs for NAT-ICS-Style Practice",
+        "sourceTitle": "100 Database and SQL MCQs for NAT-ICS-Style Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-11T05:43:23.321294+00:00",
+        "sourceContentHash": "fb2b0de5bd70a934f784dee2a65ee5b612fa22ed3cf4038f00181891d411f2d7",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7702774701,
+          "sha": "a6d9258044dbea51b0d98f5240d4dd33d60b9364",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-11T05:43:23.321294+00:00",
+          "url": "https://mcqs-base-jxvgxhcpy-as-projects-10921176.vercel.app",
+          "publisherRunId": 42967099009
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 87,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "What is the main purpose of an index on a database table?",
+            "choices": [
+              "To help locate rows more efficiently for suitable queries",
+              "To guarantee that every query becomes faster",
+              "To replace the need for table data",
+              "To prevent all changes to indexed columns"
+            ],
+            "correctIndex": 0,
+            "key": "0e4ab87bd6c43d685bbb3201c3a71e65ee5e88867c97cd4cec50b3114ceeede6",
+            "sourceNumber": 67
+          },
+          {
+            "question": "In a relational table, one row describing one entity or event is called a:",
+            "choices": [
+              "Tuple",
+              "Domain",
+              "View",
+              "Constraint"
+            ],
+            "correctIndex": 0,
+            "key": "ee2d67d3b9d4a7f205fa19833645bea9bd4016434b824684fc20fe92be8ca6b8",
+            "sourceNumber": 4
+          },
+          {
+            "question": "In an entity-relationship model, an attribute is best understood as:",
+            "choices": [
+              "A property describing an entity",
+              "A connection between two unrelated queries",
+              "A command that deletes a table",
+              "A transaction failure"
+            ],
+            "correctIndex": 0,
+            "key": "c4791d8f37a5a38e78b1d80885192cfd5e4de3dbaced0f9abcb62bb659014d33",
+            "sourceNumber": 77
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 23,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 25,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 26,
+            "duration": 7,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 33,
+            "duration": 14,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 47,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 48,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 49,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 50,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 54,
+            "duration": 20,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 74,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 75,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 76,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 77,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 82,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 5,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            67,
+            4,
+            77
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NATICS",
+          "#ComputerScience",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ics-database-sql-part-05-d31480d99a5a00c9.mp4",
+        "videoSha256": "d31480d99a5a00c925a2e17cdb1f1f9d2b5d8c187b3307ffdeaa7989a48ee0bd",
+        "assetId": 734314347
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 5/5 | Q67, 4, 77 | 100 Database and SQL MCQs for NAT-ICS-Style Practice",
+          "text": "Part 5/5 · Source questions 67, 4, 77\n100 Database and SQL MCQs for NAT-ICS-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NATICS #ComputerScience #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICS",
+            "#ComputerScience",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 5/5 | Q67, 4, 77 | 100 Database and SQL MCQs for NAT-ICS-Style Practice",
+          "text": "Part 5/5 · Source questions 67, 4, 77\n100 Database and SQL MCQs for NAT-ICS-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ics-database-sql\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICS #ComputerScience #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICS",
+            "#ComputerScience",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 5/5 | Q67, 4, 77 | 100 Database and SQL MCQs for NAT-ICS-Style Practice",
+          "text": "Part 5/5 · Source questions 67, 4, 77\n100 Database and SQL MCQs for NAT-ICS-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ics-database-sql\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICS #ComputerScience #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICS",
+            "#ComputerScience",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 5/5 | Q67, 4, 77 | 100 Database and SQL MCQs for NAT-ICS-Style Practice",
+          "text": "Part 5/5 · Source questions 67, 4, 77\n100 Database and SQL MCQs for NAT-ICS-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ics-database-sql\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICS #ComputerScience #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICS",
+            "#ComputerScience",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
