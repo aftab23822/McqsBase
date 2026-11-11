@@ -2081,6 +2081,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 4,
+      "directory": "part-04",
+      "sourceQuestionNumbers": [
+        19,
+        27
+      ],
+      "count": 2,
+      "durationSeconds": 66,
+      "sha256": "68a883b4237536cc742be88470233ed6d34f712925d42d6b3948823c62ffdade",
+      "manifest": {
+        "title": "100 Database and SQL MCQs for NAT-ICS-Style Practice",
+        "sourceTitle": "100 Database and SQL MCQs for NAT-ICS-Style Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-11T05:43:23.321294+00:00",
+        "sourceContentHash": "fb2b0de5bd70a934f784dee2a65ee5b612fa22ed3cf4038f00181891d411f2d7",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7702774701,
+          "sha": "a6d9258044dbea51b0d98f5240d4dd33d60b9364",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-11T05:43:23.321294+00:00",
+          "url": "https://mcqs-base-jxvgxhcpy-as-projects-10921176.vercel.app",
+          "publisherRunId": 42967099009
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 66,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Which statement about a foreign key is generally correct?",
+            "choices": [
+              "It may contain repeated values when several rows refer to the same parent.",
+              "It must always be the primary key of its own table.",
+              "It must be unique in every table.",
+              "It cannot refer to a column in another table."
+            ],
+            "correctIndex": 0,
+            "key": "68d3446deb98f56bef88e4589edb857eec46ee707a34dc90cfa18399fd743ae9",
+            "sourceNumber": 19
+          },
+          {
+            "question": "A department's details cannot be stored until at least one employee is assigned to it. Which common anomaly is this?",
+            "choices": [
+              "Insertion anomaly",
+              "Sorting anomaly",
+              "Projection anomaly",
+              "Index anomaly"
+            ],
+            "correctIndex": 0,
+            "key": "b65c398544e102fa03a4ddd6629ac7218526f531fa5dc56f4ce92b987db76f27",
+            "sourceNumber": 27
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 23,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 25,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 26,
+            "duration": 8,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 34,
+            "duration": 20,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 54,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 55,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 56,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 57,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 61,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 4,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            19,
+            27
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NATICS",
+          "#ComputerScience",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ics-database-sql-part-04-68a883b4237536cc.mp4",
+        "videoSha256": "68a883b4237536cc742be88470233ed6d34f712925d42d6b3948823c62ffdade",
+        "assetId": 734311973
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 4/5 | Q19, 27 | 100 Database and SQL MCQs for NAT-ICS-Style Practice",
+          "text": "Part 4/5 · Source questions 19, 27\n100 Database and SQL MCQs for NAT-ICS-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NATICS #ComputerScience #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICS",
+            "#ComputerScience",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 4/5 | Q19, 27 | 100 Database and SQL MCQs for NAT-ICS-Style Practice",
+          "text": "Part 4/5 · Source questions 19, 27\n100 Database and SQL MCQs for NAT-ICS-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ics-database-sql\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICS #ComputerScience #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICS",
+            "#ComputerScience",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 4/5 | Q19, 27 | 100 Database and SQL MCQs for NAT-ICS-Style Practice",
+          "text": "Part 4/5 · Source questions 19, 27\n100 Database and SQL MCQs for NAT-ICS-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ics-database-sql\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICS #ComputerScience #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICS",
+            "#ComputerScience",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 4/5 | Q19, 27 | 100 Database and SQL MCQs for NAT-ICS-Style Practice",
+          "text": "Part 4/5 · Source questions 19, 27\n100 Database and SQL MCQs for NAT-ICS-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ics-database-sql\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICS #ComputerScience #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICS",
+            "#ComputerScience",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
