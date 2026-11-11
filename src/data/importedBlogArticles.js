@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nat-ics-database-sql": {
+    title: "100 Database and SQL MCQs for NAT-ICS-Style Practice",
+    excerpt:
+      "Practise database concepts, relational keys, normalization, and foundational SQL with 100 original MCQs and concise explanations.",
+    category: "Subject Guide",
+    date: "2026-11-11",
+    readTime: "33 min",
+    content: null,
+    body: readImportedBlogBody("nat-ics-database-sql")
+  },
   "competitive-exam-grammar-mcqs": {
     title: "99 English Grammar MCQs for PPSC and PMS-Style Practice",
     excerpt:
