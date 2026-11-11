@@ -2099,7 +2099,11 @@
       },
       "uploadIntent": {
         "filename": "nat-ics-database-sql-part-03-e9ea66f0eeeffdbb.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "3dc95446-2dc8-4fe0-860a-bb7babcabacd",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/txmyHw7QTd.mp4"
       }
     },
     {
