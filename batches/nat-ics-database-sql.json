@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "nat-ics-database-sql",
+  "createdAt": "2026-11-11T05:43:23.546796+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nat-ics-database-sql",
+    "title": "100 Database and SQL MCQs for NAT-ICS-Style Practice",
+    "url": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7702774701,
+      "sha": "a6d9258044dbea51b0d98f5240d4dd33d60b9364",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-11T05:43:23.321294+00:00",
+      "url": "https://mcqs-base-jxvgxhcpy-as-projects-10921176.vercel.app",
+      "publisherRunId": 42967099009
+    },
+    "fetchedAt": "2026-11-11T05:43:23.321294+00:00",
+    "contentHash": "fb2b0de5bd70a934f784dee2a65ee5b612fa22ed3cf4038f00181891d411f2d7",
+    "questions": [
+      {
+        "question": "Which statement best distinguishes data from information?",
+        "choices": [
+          "Data are raw facts; information is data processed into a meaningful form.",
+          "Data are always numbers; information is always text.",
+          "Data are stored only in files; information is stored only in databases.",
+          "Data are conclusions; information is unprocessed observations."
+        ],
+        "key": "7591a65bdba055086fedfbc4cabc1d726ca92888c766054e312722f4f5a00547",
+        "sourceNumber": 1,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main role of a database management system (DBMS)?",
+        "choices": [
+          "To manage the creation, storage, retrieval, and control of database data",
+          "To replace every operating system on a computer",
+          "To convert all database values into images",
+          "To guarantee that stored data can never be changed"
+        ],
+        "key": "f2d7638ddbf92a6bdbfd17b324a48c80ceb596540092a956e17d1fda559009ca",
+        "sourceNumber": 2,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a relational database, a table is also commonly called a:",
+        "choices": [
+          "Relation",
+          "Pointer",
+          "Compiler",
+          "Protocol"
+        ],
+        "key": "cf99c3dc029e307eb10077a1c2ab5d2fb919a7b612761fed0f3f4eecb59ec96d",
+        "sourceNumber": 3,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a relational table, one row describing one entity or event is called a:",
+        "choices": [
+          "Tuple",
+          "Domain",
+          "View",
+          "Constraint"
+        ],
+        "key": "ee2d67d3b9d4a7f205fa19833645bea9bd4016434b824684fc20fe92be8ca6b8",
+        "sourceNumber": 4,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a table, what does an attribute represent?",
+        "choices": [
+          "A column describing a property",
+          "A complete database backup",
+          "A group of unrelated databases",
+          "A transaction log entry only"
+        ],
+        "key": "95c384c5608fcd043d90b4b918023e9e1fac850bcd4216708f41d21f913c0002",
+        "sourceNumber": 5,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is a domain in the relational model?",
+        "choices": [
+          "The permitted set of values for an attribute",
+          "The number of tables in a database",
+          "A query that removes duplicate rows",
+          "A key shared by every database"
+        ],
+        "key": "2ccaeff11b874c6af63f8a81e72461a9247d42fa2850553a41a071e1b7922c36",
+        "sourceNumber": 6,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does a database schema primarily describe?",
+        "choices": [
+          "The database's structure and defined objects",
+          "The current value of every row at a particular second",
+          "The physical location of every user",
+          "The sequence of keyboard commands used to open a database"
+        ],
+        "key": "f54ebf68e3173dca82be5498caabb6ab7610c38f5f99c32e96f112d730f8f4f1",
+        "sourceNumber": 7,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is a database instance in this context?",
+        "choices": [
+          "The data stored in the database at a particular time",
+          "A rule that every table must have exactly two columns",
+          "A diagram of a network connection",
+          "A programming language used only for sorting"
+        ],
+        "key": "ab557507bc91bc998f8ff4e61e694b1a77764e4dfeb346206b067f34945629ff",
+        "sourceNumber": 8,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which is a typical benefit of storing related records in a database rather than separate, uncontrolled files?",
+        "choices": [
+          "Centralized control can help reduce inconsistent duplicate data.",
+          "A database eliminates the need to validate data.",
+          "Every database automatically prevents all unauthorized access.",
+          "A database makes every query run in constant time."
+        ],
+        "key": "e10c4b2ddaf16c91cb8ec1f0a859b64ccb5ee88d3a6c5702f883b5e33e5854e7",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which key is selected to identify each row uniquely in a table?",
+        "choices": [
+          "Primary key",
+          "Foreign key",
+          "Sort key",
+          "Display key"
+        ],
+        "key": "c3752cda20290c69a0d9253b9a7daa4b18860e763de964818b7150260419c00c",
+        "sourceNumber": 10,
+        "correctIndex": 0
+      },
+      {
+        "question": "A table has two different minimal column sets that each uniquely identify every row. What are both sets called before one is chosen as the primary key?",
+        "choices": [
+          "Candidate keys",
+          "Foreign keys",
+          "Partial dependencies",
+          "Non-key attributes"
+        ],
+        "key": "62fafc6a451240a03efb85717cff3bb51988f74c43205d73ba13445012596f5d",
+        "sourceNumber": 11,
+        "correctIndex": 0
+      },
+      {
+        "question": "A key consists of both StudentID and CourseID because neither column alone uniquely identifies an enrolment. What kind of key is it?",
+        "choices": [
+          "Composite key",
+          "Foreign key",
+          "Surrogate value",
+          "Single-column key"
+        ],
+        "key": "c3ea18e3a30ef2d0b4a8e2111a3d487439e45effa0f8173621d80e4695cabeb4",
+        "sourceNumber": 12,
+        "correctIndex": 0
+      },
+      {
+        "question": "In an Enrolment table, StudentID refers to Student.StudentID. What role does Enrolment.StudentID play?",
+        "choices": [
+          "Foreign key",
+          "Candidate key by definition",
+          "Database schema",
+          "Aggregate function"
+        ],
+        "key": "d8bb60701a948e7a7904bcb399961e7cb8f16b0a218274d654bdec8342d1fde4",
+        "sourceNumber": 13,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which property is required of a primary key value in each row?",
+        "choices": [
+          "It must be unique and non-NULL.",
+          "It must be a text value.",
+          "It must be identical in all rows.",
+          "It must be calculated from the row number."
+        ],
+        "key": "58ee86b7c88d781c04176b8be39fb02ba043cf9d5a4bb4390d5d352e7d7b9e2c",
+        "sourceNumber": 14,
+        "correctIndex": 0
+      },
+      {
+        "question": "A table's chosen primary key uses StudentNumber, but Email is also unique and non-NULL. How is Email best described?",
+        "choices": [
+          "An alternate candidate key",
+          "A foreign key necessarily",
+          "A composite key necessarily",
+          "A repeating group"
+        ],
+        "key": "0289674b4ca85cda39590994ea236dfd2ab19e0dc131c798c1614e8b650421e4",
+        "sourceNumber": 15,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does a referential-integrity rule generally require of a non-NULL foreign-key value?",
+        "choices": [
+          "It matches a referenced key value in the related table.",
+          "It is greater than every value in its own table.",
+          "It is unique across the entire database.",
+          "It contains no letters."
+        ],
+        "key": "ab830ce26cb77dfe0d4ce689840dbae8dca319dae05151679c9e806e3371530f",
+        "sourceNumber": 16,
+        "correctIndex": 0
+      },
+      {
+        "question": "A column is constrained to contain no duplicate values. Which common SQL constraint expresses this rule?",
+        "choices": [
+          "UNIQUE",
+          "ORDER BY",
+          "GROUP BY",
+          "ROLLBACK"
+        ],
+        "key": "ba819686cc0536aa680b9e7d2e224fbe3ca2c0ad160039091224c40a4f2d9539",
+        "sourceNumber": 17,
+        "correctIndex": 0
+      },
+      {
+        "question": "A table requires every row to have a value in its ContactName column. Which constraint expresses this requirement?",
+        "choices": [
+          "NOT NULL",
+          "DEFAULT",
+          "FOREIGN KEY",
+          "INDEX"
+        ],
+        "key": "041cf7a6d3c23eb67b4c961fe55bb319bd25001e32b18e32ee83c836f844673b",
+        "sourceNumber": 18,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement about a foreign key is generally correct?",
+        "choices": [
+          "It may contain repeated values when several rows refer to the same parent.",
+          "It must always be the primary key of its own table.",
+          "It must be unique in every table.",
+          "It cannot refer to a column in another table."
+        ],
+        "key": "68d3446deb98f56bef88e4589edb857eec46ee707a34dc90cfa18399fd743ae9",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which issue is most directly associated with a repeating group in a table, such as storing Phone1, Phone2, and Phone3 for the same kind of value?",
+        "choices": [
+          "The structure is not in first normal form.",
+          "The table necessarily has no candidate key.",
+          "The table is already in third normal form.",
+          "The table has a transaction isolation problem."
+        ],
+        "key": "c0b90249618cb364ac2f06e7d7d7750071df5d409add8b0e76b9209858de5150",
+        "sourceNumber": 20,
+        "correctIndex": 0
+      },
+      {
+        "question": "A relation is in first normal form when, among other requirements, each field contains:",
+        "choices": [
+          "One atomic value for that row and column",
+          "An entire unrelated table",
+          "A list of all possible values",
+          "A mandatory foreign key"
+        ],
+        "key": "271aaa09afac222c2f196f220285701be9cdacec118c47b13015c036c2ef107c",
+        "sourceNumber": 21,
+        "correctIndex": 0
+      },
+      {
+        "question": "For a table with a composite candidate key, what does second normal form rule out?",
+        "choices": [
+          "Partial dependency of a non-key attribute on only part of a candidate key",
+          "Every foreign-key relationship",
+          "All NULL values in every possible column",
+          "Every use of a numeric attribute"
+        ],
+        "key": "c6c46d9766d44c5a3c79f99cd8c5c92ca1090f9e1a320d77b92f574363808eb4",
+        "sourceNumber": 22,
+        "correctIndex": 0
+      },
+      {
+        "question": "A relation is in third normal form, under the usual introductory definition, if it is in second normal form and has no:",
+        "choices": [
+          "Transitive dependency of a non-key attribute on a key",
+          "Primary key",
+          "Numeric column",
+          "Foreign-key reference"
+        ],
+        "key": "42e939c5dfe3ec2d8e36b74f04e51b7d472e3514c687098130eec3eaf0dbb7ae",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a table keyed by (StudentID, CourseID), suppose StudentName depends only on StudentID. What design issue does this illustrate?",
+        "choices": [
+          "Partial dependency",
+          "Transitive dependency only",
+          "Referential integrity",
+          "A sorting anomaly"
+        ],
+        "key": "822d990a034e51c1282fde4c898197a82bbcc0021833edb4e04fc48ba283e763",
+        "sourceNumber": 24,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a relation, suppose EmployeeID determines DepartmentID and DepartmentID determines DepartmentName. If EmployeeID is the key, what dependency of DepartmentName on EmployeeID is illustrated?",
+        "choices": [
+          "Transitive dependency",
+          "Partial dependency on a composite key",
+          "Multivalued primary key",
+          "Referential action"
+        ],
+        "key": "bd4ea12770a17ea1fa2d94b8a9c92046a1d08b7cf0310f88b65f89b2c4de946b",
+        "sourceNumber": 25,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which problem can arise when the same department name is repeated in every employee row and is updated inconsistently?",
+        "choices": [
+          "Update anomaly",
+          "Compilation error",
+          "Cartesian coordinate",
+          "Deadlock by definition"
+        ],
+        "key": "775434c5f6297d80672b33988a65337ba2bc2b78107e303ef864f39130a281b3",
+        "sourceNumber": 26,
+        "correctIndex": 0
+      },
+      {
+        "question": "A department's details cannot be stored until at least one employee is assigned to it. Which common anomaly is this?",
+        "choices": [
+          "Insertion anomaly",
+          "Sorting anomaly",
+          "Projection anomaly",
+          "Index anomaly"
+        ],
+        "key": "b65c398544e102fa03a4ddd6629ac7218526f531fa5dc56f4ce92b987db76f27",
+        "sourceNumber": 27,
+        "correctIndex": 0
+      },
+      {
+        "question": "Deleting the last employee row also unintentionally removes the only stored details of that employee's department. What is this called?",
+        "choices": [
+          "Deletion anomaly",
+          "Join condition",
+          "Candidate key",
+          "Domain constraint"
+        ],
+        "key": "aa8a191ce980ad7d8b449137ae217c06cca09b7a8f7d2ae8da00c33887f3fd29",
+        "sourceNumber": 28,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which SQL statement is used to retrieve rows from a table?",
+        "choices": [
+          "SELECT",
+          "INSERT",
+          "UPDATE",
+          "DROP"
+        ],
+        "key": "820eb2eac33a6c9ffa0ab0917ab04e9643fa453efa7ba84511d72ca787a1f878",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which SQL statement adds a new row to a table?",
+        "choices": [
+          "INSERT",
+          "SELECT",
+          "ALTER",
+          "COMMIT"
+        ],
+        "key": "6f1d6952ef8fd551f19868015127aa185acb3bd0692599d7f399c077ec5bdb67",
+        "sourceNumber": 30,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which SQL statement changes existing values in selected rows?",
+        "choices": [
+          "UPDATE",
+          "CREATE",
+          "SELECT",
+          "GRANT"
+        ],
+        "key": "eebfa3072e92df48f8319bdd4c9c028490784777338d6f969b443da723e5cc49",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which SQL statement removes selected rows from a table while leaving the table definition in place?",
+        "choices": [
+          "DELETE",
+          "DROP",
+          "CREATE",
+          "RENAME"
+        ],
+        "key": "9c14cda6210be7e52138f6c3d0d7204b5ba9000c7ec7d1bdf4d4fe82df5d059b",
+        "sourceNumber": 32,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which SQL command is commonly classified as a data-definition language (DDL) command?",
+        "choices": [
+          "CREATE TABLE",
+          "SELECT",
+          "INSERT",
+          "UPDATE"
+        ],
+        "key": "378dd494d1915e9b84acde266d8849af4af2a82041afa7acf833eb438de5364a",
+        "sourceNumber": 33,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which SQL command is commonly classified as a data-manipulation language (DML) command?",
+        "choices": [
+          "INSERT",
+          "CREATE DATABASE",
+          "ALTER TABLE",
+          "DROP TABLE"
+        ],
+        "key": "f233998b00345eaa85cda994295d783b14d5c36c97ff176fe4af0f56257e40a4",
+        "sourceNumber": 34,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which clause chooses the columns to appear in a query result?",
+        "choices": [
+          "SELECT",
+          "WHERE",
+          "ORDER BY",
+          "HAVING"
+        ],
+        "key": "e45208452f8ec27c36d27c95e46adc5fe9265b123601d4e34cdcc74cbd820ba4",
+        "sourceNumber": 35,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which clause filters individual rows before grouping in a basic SELECT query?",
+        "choices": [
+          "WHERE",
+          "HAVING",
+          "ORDER BY",
+          "AS"
+        ],
+        "key": "486fa1cd020b9ee43d754eac054b74733fbf477b1c7941c993242e34977b00a7",
+        "sourceNumber": 36,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which clause sorts the rows returned by a query?",
+        "choices": [
+          "ORDER BY",
+          "GROUP BY",
+          "WHERE",
+          "VALUES"
+        ],
+        "key": "fd93a366b844ec2ffd272a2ee60567ea2187f88fc83ccac4a84f213acbd7342e",
+        "sourceNumber": 37,
+        "correctIndex": 0
+      },
+      {
+        "question": "In standard SQL usage, what does DISTINCT do in SELECT DISTINCT City FROM Customers?",
+        "choices": [
+          "Returns each distinct City value once in the result",
+          "Sorts all cities alphabetically",
+          "Deletes duplicate city values from the table",
+          "Counts the number of cities"
+        ],
+        "key": "ed6d5b7abc8a40c33a2b5687e13ac8774043f7ec338ce6de2247d85dcd460bbb",
+        "sourceNumber": 38,
+        "correctIndex": 0
+      },
+      {
+        "question": "A query must return employees whose salary is greater than 50000. Which condition is appropriate?",
+        "choices": [
+          "WHERE Salary > 50000",
+          "WHERE Salary < 50000",
+          "ORDER BY Salary > 50000",
+          "GROUP BY Salary > 50000"
+        ],
+        "key": "e49a0ace47b047bd3a223432b617623416f04df1357fb571e37825ee5fcfeb35",
+        "sourceNumber": 39,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which condition selects rows where Status is either Active or Pending?",
+        "choices": [
+          "WHERE Status = 'Active' OR Status = 'Pending'",
+          "WHERE Status = 'Active' AND Status = 'Pending'",
+          "ORDER BY Status = 'Active' OR 'Pending'",
+          "GROUP BY Status = 'Active' AND 'Pending'"
+        ],
+        "key": "f8314cb00d7cbf7e7357b9f99314589caaf938bdfd0851da36c15948858e47e4",
+        "sourceNumber": 40,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which SQL condition tests whether a column has no value represented as NULL?",
+        "choices": [
+          "ColumnName IS NULL",
+          "ColumnName = NULL",
+          "ColumnName == 0",
+          "ColumnName IS EMPTY"
+        ],
+        "key": "de5bd0513fc69e8517b56bd0caf5f896536122afc9fe669d03d2accc06f78b1f",
+        "sourceNumber": 41,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which condition finds names beginning with the letters Al using the SQL LIKE pattern convention?",
+        "choices": [
+          "Name LIKE 'Al%'",
+          "Name LIKE '%Al'",
+          "Name = 'Al_'",
+          "Name LIKE '_Al'"
+        ],
+        "key": "a07bd768d6be41b52add0bd7b12f9036c0aecd3a81d4f9afd9cebb7830065046",
+        "sourceNumber": 42,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a LIKE pattern, what does the underscore wildcard commonly match?",
+        "choices": [
+          "Exactly one character",
+          "Any number of characters",
+          "Only a digit",
+          "A missing value"
+        ],
+        "key": "4d5d713cd2fa7c24d89a44632065d00b4632780835423aa63651db42bc3a7545",
+        "sourceNumber": 43,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which clause groups rows that share the same value in a selected column?",
+        "choices": [
+          "GROUP BY",
+          "ORDER BY",
+          "WHERE",
+          "INSERT INTO"
+        ],
+        "key": "3364c81c2ea6c0ea37b07262615d2622d597654124a5bf9d111275820ece75c8",
+        "sourceNumber": 44,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which clause is used to filter groups based on an aggregate result such as COUNT(*)?",
+        "choices": [
+          "HAVING",
+          "WHERE",
+          "VALUES",
+          "DISTINCT"
+        ],
+        "key": "b35ba809b3026f8b05dfaf6f448ee6cfff540673487e8d95c1aedc36838636a7",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "A query groups orders by CustomerID and should keep customers with at least three orders. Which condition belongs in HAVING?",
+        "choices": [
+          "HAVING COUNT(*) >= 3",
+          "WHERE COUNT(*) >= 3",
+          "ORDER BY COUNT(*) >= 3",
+          "GROUP BY COUNT(*) >= 3"
+        ],
+        "key": "d965f3a51ae19021b4710c6025a841992aed83c8df04ea4974384e1d4c37f200",
+        "sourceNumber": 46,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does COUNT(*) count in a query over a set of rows?",
+        "choices": [
+          "The number of rows",
+          "Only rows whose every column is non-NULL",
+          "The number of distinct tables",
+          "The sum of all numeric values"
+        ],
+        "key": "d1e1cd658d9429231a0b17bccf24c422a5947115a190ba1af0e4872012809aa2",
+        "sourceNumber": 47,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does COUNT(Email) count in a SQL query?",
+        "choices": [
+          "Rows where Email is not NULL",
+          "All rows, even when Email is NULL",
+          "Only distinct email addresses in all SQL systems",
+          "The total characters in Email values"
+        ],
+        "key": "ea917727a494d6732cd9fc615e81393f4263dca0ee9a754890724d77e704b460",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "For a set of non-NULL numeric values, what does AVG(Score) calculate?",
+        "choices": [
+          "Their arithmetic mean",
+          "Their largest value",
+          "Their middle value after sorting",
+          "Their total number of rows"
+        ],
+        "key": "e78c3d0755ff02e14069cebb9a30ca44ae32990cc6f30edd5dd5560ff31a2f5e",
+        "sourceNumber": 49,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which aggregate function returns the largest value in a set of comparable values?",
+        "choices": [
+          "MAX",
+          "MIN",
+          "SUM",
+          "COUNT"
+        ],
+        "key": "e70ead168141893aecf62531347b42be4b5cdf7ef03e10dded807eab0181fb22",
+        "sourceNumber": 50,
+        "correctIndex": 0
+      },
+      {
+        "question": "If a query uses SUM(Amount), which kind of column is normally appropriate for Amount?",
+        "choices": [
+          "A numeric column",
+          "A table name",
+          "A join keyword",
+          "A row identifier made of punctuation only"
+        ],
+        "key": "57dd57530784859b585657059a35ddf6cffdb2d96c38974386c537a686dd04a7",
+        "sourceNumber": 51,
+        "correctIndex": 0
+      },
+      {
+        "question": "A table has values 4, 7, and 9 in its non-NULL Score rows. What is AVG(Score)?",
+        "choices": [
+          "6.67 approximately",
+          "20",
+          "7",
+          "9"
+        ],
+        "key": "ba429d32522f26cfe3ab037b8b0f97d49b91e340e556f20c4f4f9005d2903ee7",
+        "sourceNumber": 52,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does a basic INNER JOIN return for two tables joined on a matching key?",
+        "choices": [
+          "Rows with matching join values in both tables",
+          "Every row from the left table, whether matched or not",
+          "Every possible combination of rows without a condition",
+          "Only rows that have NULL in both join columns"
+        ],
+        "key": "ca0a1381152a6da0375048f242ea7de5f4f2b45f1e987ccf519d5866b970b7b5",
+        "sourceNumber": 53,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main purpose of a LEFT JOIN?",
+        "choices": [
+          "Keep every left-table row and include matching right-table data when available",
+          "Keep only rows that match in both tables",
+          "Remove every row from the left table",
+          "Sort the left table in descending order"
+        ],
+        "key": "aa4342d8ede66f1fb4a013b641731ff781881c0e8b740e9d515abd32ea8e92c0",
+        "sourceNumber": 54,
+        "correctIndex": 0
+      },
+      {
+        "question": "What result does a CROSS JOIN produce for two input tables?",
+        "choices": [
+          "The Cartesian product of their rows",
+          "Only matching key values",
+          "Only unmatched left rows",
+          "A sorted list of column names"
+        ],
+        "key": "5916766e44e47c7d10287854d2b5356944de817f8deca8b48b1b54b9d6599115",
+        "sourceNumber": 55,
+        "correctIndex": 0
+      },
+      {
+        "question": "Table A has 3 rows and table B has 5 rows. How many row combinations does their CROSS JOIN produce?",
+        "choices": [
+          "15",
+          "8",
+          "5",
+          "2"
+        ],
+        "key": "bb7dbaddaa25c6263794c9b34c5b93d7ad9f601d466ac347f2d6c0fdc0fe80af",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a join between Orders and Customers, which condition most directly pairs each order with its customer?",
+        "choices": [
+          "Orders.CustomerID = Customers.CustomerID",
+          "Orders.OrderDate = Customers.CustomerName",
+          "Orders.Amount > Customers.CustomerID",
+          "Orders.OrderID = Customers.City"
+        ],
+        "key": "f3393468f9b672127f108848848333d5dcdf5731eb5b5fb9e2306e839dc7112a",
+        "sourceNumber": 57,
+        "correctIndex": 0
+      },
+      {
+        "question": "A row from the left table has no match in the right table in a LEFT JOIN. What is returned for the right-table columns in that result row?",
+        "choices": [
+          "NULL values",
+          "Zeros in every column",
+          "The first row from the right table",
+          "The text value 'NO MATCH' automatically"
+        ],
+        "key": "4910c56872163caef0753f560e7e4284e530ab89180304723101198d1afdc56d",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does an alias do in a SQL query such as Employees AS e?",
+        "choices": [
+          "Gives a table or expression a temporary name within the query",
+          "Permanently renames the table in the database",
+          "Deletes all rows from the table",
+          "Creates a required primary key"
+        ],
+        "key": "69391743861154f35ee79b7b5307d079fe5fbc40180caad3b4edc321ce6736b0",
+        "sourceNumber": 59,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which SQL set operator combines result rows from two compatible queries and removes duplicate rows by default?",
+        "choices": [
+          "UNION",
+          "JOIN",
+          "UPDATE",
+          "CHECK"
+        ],
+        "key": "56452dc07a1c56f8705cf6a9048923b55ec87404437a49ec8231e31bbeb23ac0",
+        "sourceNumber": 60,
+        "correctIndex": 0
+      },
+      {
+        "question": "What must generally be true for the two SELECT statements combined by UNION?",
+        "choices": [
+          "They return the same number of columns with compatible corresponding data types.",
+          "They must read the same table.",
+          "They must both contain ORDER BY in the same position.",
+          "They must return exactly the same rows."
+        ],
+        "key": "f73b838396aaef8e3746ff4f8f8ed4ee6b834519e9e0b104a313bcff6b601a0a",
+        "sourceNumber": 61,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement about a subquery is correct?",
+        "choices": [
+          "It is a query nested within another SQL statement.",
+          "It is a table that cannot be queried.",
+          "It is another name for a primary key.",
+          "It always returns exactly one row."
+        ],
+        "key": "b69acd6f1ca7c59e22b671530907bcd70bd5a1dd7b5cb65a3ff65b436b390bd2",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which operator is commonly used to test whether a value matches any value returned by a list-producing subquery?",
+        "choices": [
+          "IN",
+          "ALTER",
+          "COMMIT",
+          "DESC"
+        ],
+        "key": "868c4fdc4061477d6b26199b07fa346e04984e26fe593a29cf4700fa4aaa1b2d",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "A column Age should accept only values from 0 through 120 inclusive. Which constraint is designed to restrict allowed values with a condition?",
+        "choices": [
+          "CHECK",
+          "ORDER BY",
+          "JOIN",
+          "COMMIT"
+        ],
+        "key": "de4d6e35a589d79919dc8dd91b82539eb235ca631df4703d13ebc9ca3381fe21",
+        "sourceNumber": 64,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does a DEFAULT constraint or default definition generally do when an INSERT omits that column?",
+        "choices": [
+          "Supplies a predefined value for the omitted column",
+          "Rejects every insert into the table",
+          "Copies a value from every other table",
+          "Sorts the inserted row"
+        ],
+        "key": "c069f3105b371225f98e5040a678b93c4f4eaa336df906fec9066e011ec4e9c0",
+        "sourceNumber": 65,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which SQL constraint is specifically used to require that a column value match a key in a referenced table?",
+        "choices": [
+          "FOREIGN KEY",
+          "CHECK",
+          "NOT NULL",
+          "DEFAULT"
+        ],
+        "key": "7e11b8263d330309408790426bbfd2b8191fdb7eab376575880896700419824b",
+        "sourceNumber": 66,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main purpose of an index on a database table?",
+        "choices": [
+          "To help locate rows more efficiently for suitable queries",
+          "To guarantee that every query becomes faster",
+          "To replace the need for table data",
+          "To prevent all changes to indexed columns"
+        ],
+        "key": "0e4ab87bd6c43d685bbb3201c3a71e65ee5e88867c97cd4cec50b3114ceeede6",
+        "sourceNumber": 67,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is one common trade-off of adding indexes to a table?",
+        "choices": [
+          "They can improve some reads but add storage and maintenance work.",
+          "They make all inserts impossible.",
+          "They always reduce the size of the database.",
+          "They eliminate the need for a primary key."
+        ],
+        "key": "a9cc79680c762d4b0dbe1d1511c51ccc308c5189c4750dae3750358b7d34f461",
+        "sourceNumber": 68,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which transaction property means that a transaction's changes are treated as an all-or-nothing unit?",
+        "choices": [
+          "Atomicity",
+          "Consistency",
+          "Isolation",
+          "Durability"
+        ],
+        "key": "cad57ddf51fb551813d065acab404dfe9c11ba227297440378700219f0931c03",
+        "sourceNumber": 69,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which ACID property requires a transaction to preserve defined database rules when it completes successfully?",
+        "choices": [
+          "Consistency",
+          "Atomicity",
+          "Isolation",
+          "Durability"
+        ],
+        "key": "425d47b4f90bd373086b2bde8939cd444097738a9028c156324108c9f6a31e16",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which ACID property concerns concurrent transactions behaving without improperly interfering with one another?",
+        "choices": [
+          "Isolation",
+          "Durability",
+          "Atomicity",
+          "Normalization"
+        ],
+        "key": "eafbf7dc5f38112b26ca6f48adf1b5622ee1454427cbcf932c8bf3ea1ea97f74",
+        "sourceNumber": 71,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which ACID property means committed changes should persist despite a subsequent system failure?",
+        "choices": [
+          "Durability",
+          "Isolation",
+          "Atomicity",
+          "Projection"
+        ],
+        "key": "5790e5eefff85dc5b0a3556af0a11ed4d5d86c7655fed6414a0d5774320b25ba",
+        "sourceNumber": 72,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does COMMIT generally do at the end of a transaction?",
+        "choices": [
+          "Makes the transaction's changes permanent according to the DBMS transaction rules",
+          "Reverses all changes in the transaction",
+          "Creates a new table",
+          "Sorts the transaction's rows"
+        ],
+        "key": "667b4686c6335c68ad97eaab43a6141fe5440ee6d5c0ddbd514ef0adc1aa293b",
+        "sourceNumber": 73,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does ROLLBACK generally do to uncommitted changes in a transaction?",
+        "choices": [
+          "Undoes them",
+          "Adds them to an index",
+          "Displays them in sorted order",
+          "Converts them into a table definition"
+        ],
+        "key": "bec1c2016ba234e2f0ae8816a7b807653761f6e8f4c9f97514a4346e1a95434d",
+        "sourceNumber": 74,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which database model organizes data primarily as tables connected through keys?",
+        "choices": [
+          "Relational model",
+          "Hierarchical file-folder model only",
+          "Optical model",
+          "Sequential model"
+        ],
+        "key": "8f7ccbd65b35dbc82f87feb9b92f73ef7ce40ea81b50c043b2670291b185eccc",
+        "sourceNumber": 75,
+        "correctIndex": 0
+      },
+      {
+        "question": "In an entity-relationship diagram, what does an entity usually represent?",
+        "choices": [
+          "A distinguishable real-world object or concept about which data is stored",
+          "A sorting direction",
+          "A SQL comparison operator",
+          "A numeric calculation only"
+        ],
+        "key": "8b148778074578103b5b9a1043f1f554118e48171c66509388a555628908327d",
+        "sourceNumber": 76,
+        "correctIndex": 0
+      },
+      {
+        "question": "In an entity-relationship model, an attribute is best understood as:",
+        "choices": [
+          "A property describing an entity",
+          "A connection between two unrelated queries",
+          "A command that deletes a table",
+          "A transaction failure"
+        ],
+        "key": "c4791d8f37a5a38e78b1d80885192cfd5e4de3dbaced0f9abcb62bb659014d33",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "If each department can have many employees and each employee belongs to one department, what is the relationship from Department to Employee?",
+        "choices": [
+          "One-to-many",
+          "One-to-one",
+          "Many-to-many",
+          "No relationship"
+        ],
+        "key": "821d3c39d4b2ea8b4f0c38423df7d4ccf03ec516c00b6e2fc16712679957dde5",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "If students can take many courses and each course can have many students, what relationship exists between Student and Course?",
+        "choices": [
+          "Many-to-many",
+          "One-to-one",
+          "One-to-many in only one direction",
+          "No relationship"
+        ],
+        "key": "5b00c04d23e4d76be89729ba9d035df2717be90b9a719ac8495fc5d6de0a82a5",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "How is a many-to-many relationship commonly represented in a relational database?",
+        "choices": [
+          "With an associative table containing foreign keys to the two related tables",
+          "By placing every course name in one student column",
+          "By removing both tables' keys",
+          "By making one table a database index"
+        ],
+        "key": "61b754d95df87a4b7ac74d34f250928884a309c0a2b4ee4501405326af5db886",
+        "sourceNumber": 80,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which SQL keyword introduces the table or tables from which a SELECT query reads data?",
+        "choices": [
+          "FROM",
+          "SET",
+          "VALUES",
+          "COMMIT"
+        ],
+        "key": "ce4ad40fe58ca55d535646317741166d57136359e1c23926eacfecbcce3f227b",
+        "sourceNumber": 81,
+        "correctIndex": 0
+      },
+      {
+        "question": "A query uses SELECT Name FROM Student WHERE City = 'Lahore'. What determines which Student rows are included?",
+        "choices": [
+          "The WHERE condition on City",
+          "The Name column in the SELECT list",
+          "The table's physical storage order",
+          "The word FROM by itself"
+        ],
+        "key": "95ff471d8628cf40589ca6026f9b51edd1348759b53662bc5ee5277e69b9600f",
+        "sourceNumber": 82,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the effect of omitting a WHERE clause from a basic UPDATE statement?",
+        "choices": [
+          "The update can affect every row in the target table.",
+          "The statement updates only the first row.",
+          "The statement becomes a SELECT query.",
+          "The statement cannot change any value."
+        ],
+        "key": "f4a1bde8132fe199e43662d1500d5f4d532a52ebb306c93f9af0c47aaa9b5ed1",
+        "sourceNumber": 83,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the effect of omitting a WHERE clause from a basic DELETE statement?",
+        "choices": [
+          "It can delete every row from the target table.",
+          "It deletes only rows containing NULL.",
+          "It drops the table definition in every SQL system.",
+          "It sorts the rows before deleting one."
+        ],
+        "key": "7840c4f29c79b11645dad010b05929e9b5e08c88605d837d6bd17466c6fa47bc",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which query fragment sorts Salary from highest to lowest?",
+        "choices": [
+          "ORDER BY Salary DESC",
+          "ORDER BY Salary ASC",
+          "GROUP BY Salary DESC",
+          "WHERE Salary DESC"
+        ],
+        "key": "f169ecb554fb69a5d9123b929236e18979e4781d4138337c7f844803c9b396a1",
+        "sourceNumber": 85,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which query fragment sorts a column in ascending order?",
+        "choices": [
+          "ORDER BY Name ASC",
+          "ORDER BY Name DESC",
+          "WHERE Name ASC",
+          "HAVING Name ASC"
+        ],
+        "key": "bedcfc62b413b309f90219c031b8be2e8d09f553c74599de35420aa06236204c",
+        "sourceNumber": 86,
+        "correctIndex": 0
+      },
+      {
+        "question": "A query needs rows with Salary between 30000 and 50000, including both endpoints. Which condition is correct?",
+        "choices": [
+          "Salary BETWEEN 30000 AND 50000",
+          "Salary BETWEEN 30000 OR 50000",
+          "Salary > 30000 AND Salary < 50000",
+          "Salary = 30000 AND Salary = 50000"
+        ],
+        "key": "aabb61726c81168b1945e3037def8f071b7e909e493618cc4578e0d9f22fa171",
+        "sourceNumber": 87,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which condition selects records where Age is not 18?",
+        "choices": [
+          "Age <> 18",
+          "Age BETWEEN 18 AND 18",
+          "Age IS NULL",
+          "Age LIKE 18"
+        ],
+        "key": "afbb78e36a4422ece35ac3d02d046d47b6b536133c1a5f53113803de3f8b7963",
+        "sourceNumber": 88,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement about SQL NULL is most accurate?",
+        "choices": [
+          "It represents missing or unknown information and is not the same as zero.",
+          "It always means the number zero.",
+          "It is the same as an empty string in every database.",
+          "It is a reserved value that sorts first in every query."
+        ],
+        "key": "575baaa79baae8c2000633cbf89b5e1039ad1aa713d9876c98a258c7ed25d5eb",
+        "sourceNumber": 89,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which logical operator requires both conditions to be true for a row to pass the condition?",
+        "choices": [
+          "AND",
+          "OR",
+          "NOT",
+          "LIKE"
+        ],
+        "key": "4d29262dc7cfb01af7f019bd9f959b2223a4bad362b2570d7976906eb44ce8da",
+        "sourceNumber": 90,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which logical operator is used to reverse a condition's truth value?",
+        "choices": [
+          "NOT",
+          "AND",
+          "OR",
+          "UNION"
+        ],
+        "key": "713e5e36ae0c9891e1b7a09acdcf6444ff74c0da57083b8b10657ccd4eaa7fca",
+        "sourceNumber": 91,
+        "correctIndex": 0
+      },
+      {
+        "question": "A table contains 12 rows, of which 3 have NULL in the Email column. What does COUNT(Email) return?",
+        "choices": [
+          "9",
+          "12",
+          "3",
+          "15"
+        ],
+        "key": "4bf3fad5c86d649eb89ebde041d77cd331b4adabf239b58e7ba63030f7eecc23",
+        "sourceNumber": 92,
+        "correctIndex": 0
+      },
+      {
+        "question": "A table has 8 rows, including 2 rows where every value in the selected column is NULL. What does COUNT(*) return?",
+        "choices": [
+          "8",
+          "6",
+          "2",
+          "0"
+        ],
+        "key": "0d2ee38e461afe1e337ec46423e88cf3faca2a076dc89cabf67cef1dc6fdaeff",
+        "sourceNumber": 93,
+        "correctIndex": 0
+      },
+      {
+        "question": "A GROUP BY query selects DepartmentID and COUNT(*). What does each output row normally represent?",
+        "choices": [
+          "One department group and its row count",
+          "One individual employee and their salary",
+          "One table and its number of columns",
+          "One index and its storage size"
+        ],
+        "key": "fa1fdf4376cc6bd55d3899e987384a7f719d54cbd920398af36087aa67a54cb1",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which clause should be used to require each grouped DepartmentID to have a COUNT(*) greater than 5?",
+        "choices": [
+          "HAVING COUNT(*) > 5",
+          "WHERE COUNT(*) > 5",
+          "ORDER BY COUNT(*) > 5",
+          "FROM COUNT(*) > 5"
+        ],
+        "key": "e3518504ae50b1e0d6a428e1574d26f5904d0e034084c08ae20cbb3129920eee",
+        "sourceNumber": 95,
+        "correctIndex": 0
+      },
+      {
+        "question": "What does a view commonly represent in a relational database?",
+        "choices": [
+          "A named query that presents data derived from one or more sources",
+          "A physical keyboard attached to a database server",
+          "A required duplicate of every table",
+          "A transaction that cannot be rolled back"
+        ],
+        "key": "c521cf74b120fb6598a6637bfeb9901004aee5887e91bcf89ce192f3929e9351",
+        "sourceNumber": 96,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement best describes a database backup?",
+        "choices": [
+          "A separate copy used to help restore data after loss or damage",
+          "A constraint that makes values unique",
+          "A query that groups rows",
+          "A synonym for a foreign key"
+        ],
+        "key": "52014162eb30a8f4c82790eb5197f3227dc5ebba36db238baabb61bfc6600da2",
+        "sourceNumber": 97,
+        "correctIndex": 0
+      },
+      {
+        "question": "A database rule requires a product's Price to be greater than or equal to zero. Which design feature is most appropriate?",
+        "choices": [
+          "A CHECK constraint on Price",
+          "An ORDER BY clause",
+          "A CROSS JOIN",
+          "A ROLLBACK statement"
+        ],
+        "key": "41b97666e7e0649dbef84c059a3f374adf2d30e7edd8d20c6e384ffaac4af9d1",
+        "sourceNumber": 98,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which feature most directly ensures that two rows in a table cannot share the same selected identifier?",
+        "choices": [
+          "A primary-key constraint",
+          "An ORDER BY clause",
+          "A LEFT JOIN",
+          "A default value"
+        ],
+        "key": "c8f5d3a6f24394f2f37cb16cf0a2af3ca2a6c4e0dda15c34b1513bc90642148c",
+        "sourceNumber": 99,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a Student table, StudentID is the primary key and ClassID references Class.ClassID. Which statement best describes ClassID in Student?",
+        "choices": [
+          "It is a foreign key that can link multiple students to one class.",
+          "It must be unique for every student.",
+          "It is necessarily the Student table's primary key.",
+          "It is an aggregate function."
+        ],
+        "key": "945e2faf96980b0da51373640d9321520adae954d732aa25c55dc8d6291f2da3",
+        "sourceNumber": 100,
+        "correctIndex": 0
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "9c84df086b1f8ca22d17844fa43d58bac0aa3acaceca1bc9b109d755bf59efe0",
+      "sourceQuestionNumbers": [
+        53,
+        32,
+        84,
+        69,
+        13,
+        55,
+        87,
+        19,
+        27,
+        67,
+        4,
+        77,
+        28,
+        54,
+        98,
+        18,
+        33,
+        99,
+        79,
+        41,
+        12,
+        56,
+        83,
+        78,
+        35,
+        26,
+        88,
+        58,
+        71,
+        20,
+        42,
+        81,
+        36,
+        17,
+        66,
+        3,
+        63,
+        45,
+        39,
+        93,
+        37,
+        6,
+        95,
+        61,
+        49,
+        40,
+        94,
+        68,
+        10,
+        57,
+        74,
+        11,
+        34,
+        59,
+        89,
+        80,
+        2,
+        46,
+        92,
+        38,
+        44,
+        96,
+        29,
+        75,
+        1,
+        15,
+        31,
+        62,
+        50,
+        85,
+        30,
+        70,
+        91,
+        43,
+        5,
+        64,
+        14,
+        47,
+        22,
+        97,
+        73,
+        51,
+        86,
+        23,
+        7,
+        21,
+        82,
+        8,
+        52,
+        76,
+        9,
+        90,
+        24,
+        72,
+        60,
+        100,
+        65,
+        48,
+        25,
+        16
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
