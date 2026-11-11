@@ -1570,7 +1570,11 @@
       },
       "uploadIntent": {
         "filename": "nat-ics-database-sql-part-01-65775507beaea292.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "d479115d-aa01-4fd9-96f1-23dcb29460aa",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/WwXBBftWLc.mp4"
       }
     },
     {
