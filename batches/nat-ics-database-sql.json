@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-ics-database-sql",
   "createdAt": "2026-11-11T05:43:23.546796+00:00",
-  "status": "scheduled",
+  "status": "publication-needs-attention",
   "package": {
     "slug": "nat-ics-database-sql",
     "title": "100 Database and SQL MCQs for NAT-ICS-Style Practice",
@@ -1702,49 +1702,49 @@
       "scheduledAt": "2026-11-11T11:05:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:49:25.061246+00:00",
           "postId": "cmwbp8nq20tfkroiv12vj2t6m",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
+          "url": "https://www.facebook.com/reel/1464951948947571",
+          "providerUrl": "https://www.facebook.com/reel/1464951948947571",
+          "providerReleaseId": "1464951948947571",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
           "integrationId": "cmvwb4faa021yro9dgcj8vlww"
         },
         "instagram": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:49:31.015571+00:00",
           "postId": "cmwbp8rj80tfmroiv7i6qoe5e",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
+          "url": "https://www.instagram.com/reel/DflzCWjFGhB/",
+          "providerUrl": "https://www.instagram.com/reel/DflzCWjFGhB/",
+          "providerReleaseId": "18094085324198771",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
           "integrationId": "cmvwbbtq00220ro9du35l1wrs"
         },
         "tiktok": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:49:35.411295+00:00",
           "postId": "cmwbp8uxx0tfnroiv47rxqfqp",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
+          "url": "https://www.tiktok.com/@mcqsbase",
+          "providerUrl": "https://www.tiktok.com/@mcqsbase",
+          "providerReleaseId": "v_pub_file~v2-1.7706789814443608084",
+          "providerStatus": "PUBLISHED",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
           "integrationId": "cmvwbcule0222ro9dhocbic4w"
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "ERROR",
           "attemptedAt": "2026-11-11T05:49:39.851997+00:00",
           "postId": "cmwbp8yf70tforoiv2o9lap1g",
           "url": null,
           "providerUrl": null,
           "providerReleaseId": null,
-          "providerStatus": "QUEUE",
+          "providerStatus": "ERROR",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
           "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
@@ -3591,5 +3591,6 @@
     "2026-11-11T16:31:00+05:00",
     "2026-11-11T19:14:00+05:00",
     "2026-11-11T21:57:00+05:00"
-  ]
+  ],
+  "lastError": "An existing receipt needs attention; preserve IDs and repair only the missing step. "
 }
