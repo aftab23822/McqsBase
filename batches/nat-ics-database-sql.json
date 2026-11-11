@@ -1336,6 +1336,239 @@
       "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
     }
   },
-  "parts": [],
+  "parts": [
+    {
+      "part": 1,
+      "directory": "part-01",
+      "sourceQuestionNumbers": [
+        53,
+        32
+      ],
+      "count": 2,
+      "durationSeconds": 61,
+      "sha256": "65775507beaea2922481e133334177ee516a503fd47f09ae4e9c97d86ab8798d",
+      "manifest": {
+        "title": "100 Database and SQL MCQs for NAT-ICS-Style Practice",
+        "sourceTitle": "100 Database and SQL MCQs for NAT-ICS-Style Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-11T05:43:23.321294+00:00",
+        "sourceContentHash": "fb2b0de5bd70a934f784dee2a65ee5b612fa22ed3cf4038f00181891d411f2d7",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7702774701,
+          "sha": "a6d9258044dbea51b0d98f5240d4dd33d60b9364",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-11T05:43:23.321294+00:00",
+          "url": "https://mcqs-base-jxvgxhcpy-as-projects-10921176.vercel.app",
+          "publisherRunId": 42967099009
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 61,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "What does a basic INNER JOIN return for two tables joined on a matching key?",
+            "choices": [
+              "Rows with matching join values in both tables",
+              "Every row from the left table, whether matched or not",
+              "Every possible combination of rows without a condition",
+              "Only rows that have NULL in both join columns"
+            ],
+            "correctIndex": 0,
+            "key": "ca0a1381152a6da0375048f242ea7de5f4f2b45f1e987ccf519d5866b970b7b5",
+            "sourceNumber": 53
+          },
+          {
+            "question": "Which SQL statement removes selected rows from a table while leaving the table definition in place?",
+            "choices": [
+              "DELETE",
+              "DROP",
+              "CREATE",
+              "RENAME"
+            ],
+            "correctIndex": 0,
+            "key": "9c14cda6210be7e52138f6c3d0d7204b5ba9000c7ec7d1bdf4d4fe82df5d059b",
+            "sourceNumber": 32
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 24,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 25,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 26,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 27,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 33,
+            "duration": 16,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 49,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 50,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 51,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 52,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 56,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 1,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            53,
+            32
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NATICS",
+          "#ComputerScience",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ics-database-sql-part-01-65775507beaea292.mp4",
+        "videoSha256": "65775507beaea2922481e133334177ee516a503fd47f09ae4e9c97d86ab8798d",
+        "assetId": 734304694
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 1/5 | Q53, 32 | 100 Database and SQL MCQs for NAT-ICS-Style Practice",
+          "text": "Part 1/5 · Source questions 53, 32\n100 Database and SQL MCQs for NAT-ICS-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NATICS #ComputerScience #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICS",
+            "#ComputerScience",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 1/5 | Q53, 32 | 100 Database and SQL MCQs for NAT-ICS-Style Practice",
+          "text": "Part 1/5 · Source questions 53, 32\n100 Database and SQL MCQs for NAT-ICS-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ics-database-sql\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICS #ComputerScience #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICS",
+            "#ComputerScience",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 1/5 | Q53, 32 | 100 Database and SQL MCQs for NAT-ICS-Style Practice",
+          "text": "Part 1/5 · Source questions 53, 32\n100 Database and SQL MCQs for NAT-ICS-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ics-database-sql\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICS #ComputerScience #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICS",
+            "#ComputerScience",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 1/5 | Q53, 32 | 100 Database and SQL MCQs for NAT-ICS-Style Practice",
+          "text": "Part 1/5 · Source questions 53, 32\n100 Database and SQL MCQs for NAT-ICS-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ics-database-sql\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NATICS #ComputerScience #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NATICS",
+            "#ComputerScience",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ics-database-sql",
+          "format": "short"
+        }
+      }
+    }
+  ],
   "thinkingSeconds": 3
 }
