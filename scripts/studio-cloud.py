@@ -263,6 +263,11 @@ def reconcile(part, posts, channels, only_network=None):
         post = matches[0]
         if receipt.get('postId') and post['id'] != receipt['postId']:
             raise RuntimeError('Unexpected Studio post ID; hold rather than create another post.')
+        if post.get('state') == 'ERROR':
+            diagnostic = {key: value for key, value in post.items()
+                          if any(word in key.lower() for word in ('error', 'reason', 'message'))}
+            print(json.dumps({'failedPostId': post['id'], 'network': network,
+                              'diagnostic': diagnostic, 'fields': list(post)}))
         state = post.get('state')
         provider_state = state
         if state not in ('QUEUE', 'PUBLISHED', 'ERROR', 'DRAFT'):
