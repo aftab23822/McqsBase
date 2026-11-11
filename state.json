@@ -1080,7 +1080,7 @@
       "verifiedPublications": 15
     },
     "competitive-exam-grammar-mcqs": {
-      "status": "scheduled",
+      "status": "publication-needs-attention",
       "ledger": "batches/competitive-exam-grammar-mcqs.json",
       "createdAt": "2026-11-10T06:54:55.922993+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/competitive-exam-grammar-mcqs",
@@ -1092,8 +1092,8 @@
         "2026-11-10T19:34:00+05:00",
         "2026-11-10T22:00:00+05:00"
       ],
-      "published": 0,
-      "verifiedPublications": 0
+      "published": 19,
+      "verifiedPublications": 14
     },
     "nat-ics-database-sql": {
       "status": "ready",
