@@ -1741,7 +1741,7 @@
           "providerError": null
         },
         "youtube": {
-          "status": "ERROR",
+          "status": "QUEUE",
           "attemptedAt": "2026-11-11T05:49:39.851997+00:00",
           "postId": "cmwbp8yf70tforoiv2o9lap1g",
           "url": null,
@@ -1753,7 +1753,7 @@
           "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
           "providerError": "YouTube's daily upload quota is exhausted for today, please reschedule this post for a later time.",
           "quotaRecovery": {
-            "status": "uncertain",
+            "status": "scheduled",
             "scheduledAt": "2026-11-12T00:15:00-08:00"
           },
           "scheduledAt": "2026-11-12T00:15:00-08:00"
