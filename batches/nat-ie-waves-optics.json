@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-ie-waves-optics",
   "createdAt": "2026-11-12T06:49:06.328155+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "nat-ie-waves-optics",
     "title": "100 NAT-IE-Style Waves and Optics MCQs with Explanations",
@@ -1749,7 +1749,12 @@
         }
       },
       "scheduledAt": "2026-11-12T12:08:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-12T06:52:53.179860+00:00"
+        }
+      }
     },
     {
       "part": 2,
