@@ -1711,7 +1711,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": true,
           "verification": "provider-post-url",
-          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+          "providerError": null
         },
         "instagram": {
           "status": "PUBLISHED",
@@ -1723,7 +1724,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": true,
           "verification": "provider-post-url",
-          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs",
+          "providerError": null
         },
         "tiktok": {
           "status": "PUBLISHED",
@@ -1735,7 +1737,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
-          "integrationId": "cmvwbcule0222ro9dhocbic4w"
+          "integrationId": "cmvwbcule0222ro9dhocbic4w",
+          "providerError": null
         },
         "youtube": {
           "status": "PUBLISHED",
@@ -1747,7 +1750,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": true,
           "verification": "provider-post-url",
-          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
+          "providerError": null
         }
       }
     },
@@ -2174,7 +2178,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": true,
           "verification": "provider-post-url",
-          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+          "providerError": null
         },
         "instagram": {
           "status": "PUBLISHED",
@@ -2186,7 +2191,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": true,
           "verification": "provider-post-url",
-          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs",
+          "providerError": null
         },
         "tiktok": {
           "status": "PUBLISHED",
@@ -2198,7 +2204,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
-          "integrationId": "cmvwbcule0222ro9dhocbic4w"
+          "integrationId": "cmvwbcule0222ro9dhocbic4w",
+          "providerError": null
         },
         "youtube": {
           "status": "PUBLISHED",
@@ -2210,7 +2217,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": true,
           "verification": "provider-post-url",
-          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
+          "providerError": null
         }
       }
     },
@@ -2637,7 +2645,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": true,
           "verification": "provider-post-url",
-          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+          "providerError": null
         },
         "instagram": {
           "status": "PUBLISHED",
@@ -2649,7 +2658,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": true,
           "verification": "provider-post-url",
-          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs",
+          "providerError": null
         },
         "tiktok": {
           "status": "PUBLISHED",
@@ -2661,7 +2671,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
-          "integrationId": "cmvwbcule0222ro9dhocbic4w"
+          "integrationId": "cmvwbcule0222ro9dhocbic4w",
+          "providerError": null
         },
         "youtube": {
           "status": "PUBLISHED",
@@ -2673,7 +2684,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": true,
           "verification": "provider-post-url",
-          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
+          "providerError": null
         }
       }
     },
@@ -3100,7 +3112,8 @@
           "providerStatus": "QUEUE",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
-          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+          "providerError": null
         },
         "instagram": {
           "status": "QUEUE",
@@ -3112,7 +3125,8 @@
           "providerStatus": "QUEUE",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
-          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs",
+          "providerError": null
         },
         "tiktok": {
           "status": "QUEUE",
@@ -3124,7 +3138,8 @@
           "providerStatus": "QUEUE",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
-          "integrationId": "cmvwbcule0222ro9dhocbic4w"
+          "integrationId": "cmvwbcule0222ro9dhocbic4w",
+          "providerError": null
         },
         "youtube": {
           "status": "QUEUE",
@@ -3136,7 +3151,8 @@
           "providerStatus": "QUEUE",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
-          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
+          "providerError": null
         }
       }
     },
@@ -3563,7 +3579,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": true,
           "verification": "provider-post-url",
-          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+          "providerError": null
         },
         "instagram": {
           "status": "PUBLISHED",
@@ -3575,7 +3592,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": true,
           "verification": "provider-post-url",
-          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs",
+          "providerError": null
         },
         "tiktok": {
           "status": "PUBLISHED",
@@ -3587,7 +3605,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
-          "integrationId": "cmvwbcule0222ro9dhocbic4w"
+          "integrationId": "cmvwbcule0222ro9dhocbic4w",
+          "providerError": null
         },
         "youtube": {
           "status": "PUBLISHED",
@@ -3599,7 +3618,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": true,
           "verification": "provider-post-url",
-          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
+          "providerError": null
         }
       }
     }
