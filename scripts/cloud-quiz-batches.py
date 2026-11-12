@@ -201,7 +201,7 @@ def upload_part(studio, part, filename, data, save):
 def publish(storage, state, channels, studio, spacing, verify_only=False):
     failures = []
     for slug, info in list(state.get('videoBatches', {}).items()):
-        allowed = ('ready', 'scheduling', 'partially-scheduled', 'scheduled', 'provider-published', 'publication-needs-attention') if verify_only else ('ready', 'scheduling', 'partially-scheduled', 'scheduled')
+        allowed = ('ready', 'scheduling', 'partially-scheduled', 'scheduled', 'provider-published', 'publication-needs-attention') if verify_only else ('ready', 'scheduling', 'partially-scheduled', 'scheduled', 'publication-needs-attention')
         if info['status'] not in allowed:
             continue
         if verify_only and info['status'] not in ('partially-scheduled', 'scheduled', 'provider-published', 'publication-needs-attention'):
@@ -217,7 +217,7 @@ def publish(storage, state, channels, studio, spacing, verify_only=False):
         if record['status'] in ('scheduled', 'provider-published', 'publication-needs-attention') or (verify_only and record['status'] == 'partially-scheduled'):
             # Read existing receipts on the next publication event, with no cron polling.
             start = (datetime.fromisoformat(record['schedule'][0]) - timedelta(days=1)).isoformat()
-            end = (datetime.fromisoformat(record['schedule'][-1]) + timedelta(days=1)).isoformat()
+            end = (max(datetime.fromisoformat(record['schedule'][-1]), datetime.now(timezone.utc)) + timedelta(days=2)).isoformat()
             posts = studio.posts(start, end)
             receipt_errors = []
             for part in record['parts']:
@@ -226,6 +226,8 @@ def publish(storage, state, channels, studio, spacing, verify_only=False):
                         publisher.reconcile(part, posts, channels, only_network=network)
                     except (RuntimeError, ValueError, KeyError, TypeError) as error:
                         receipt_errors.append(f'{network}: {error}')
+            if not verify_only and not receipt_errors:
+                publisher.recover_youtube_quota(studio, record, posts, save)
             all_receipts = [r for p in record['parts'] for r in p['receipts'].values()]
             if receipt_errors or any(r['status'] == 'ERROR' for r in all_receipts):
                 record['status'] = 'publication-needs-attention'
@@ -236,6 +238,8 @@ def publish(storage, state, channels, studio, spacing, verify_only=False):
                 continue  # An older comment failure must not suppress the next daily batch.
             if len(all_receipts) == 20 and all(r['status'] == 'PUBLISHED' for r in all_receipts):
                 record['status'] = 'published' if all(r.get('publicUrlVerified') for r in all_receipts) else 'provider-published'
+            if any(r['status'] == 'QUEUE' for r in all_receipts):
+                record['status'] = 'scheduled'
             save(record)
             print(json.dumps({'slug': slug, 'status': record['status'], 'published': sum(r['status'] == 'PUBLISHED' for r in all_receipts)}))
             continue

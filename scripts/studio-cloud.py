@@ -1,5 +1,7 @@
 """Free Studio REST client and resumable four-network scheduling. No credential logging."""
 from datetime import datetime, timedelta, timezone
+from copy import deepcopy
+from zoneinfo import ZoneInfo
 import hashlib
 import html
 import json
@@ -263,11 +265,6 @@ def reconcile(part, posts, channels, only_network=None):
         post = matches[0]
         if receipt.get('postId') and post['id'] != receipt['postId']:
             raise RuntimeError('Unexpected Studio post ID; hold rather than create another post.')
-        if post.get('state') == 'ERROR':
-            diagnostic = {key: value for key, value in post.items()
-                          if any(word in key.lower() for word in ('error', 'reason', 'message'))}
-            print(json.dumps({'failedPostId': post['id'], 'network': network,
-                              'diagnostic': diagnostic, 'fields': list(post)}))
         state = post.get('state')
         provider_state = state
         if state not in ('QUEUE', 'PUBLISHED', 'ERROR', 'DRAFT'):
@@ -276,7 +273,7 @@ def reconcile(part, posts, channels, only_network=None):
             raise RuntimeError('Studio claims publication without a public receipt.')
         if state != 'PUBLISHED':
             actual = datetime.fromisoformat(post['publishDate'].replace('Z', '+00:00'))
-            planned = datetime.fromisoformat(part['scheduledAt'])
+            planned = datetime.fromisoformat(receipt.get('scheduledAt', part['scheduledAt']))
             if abs((actual - planned).total_seconds()) > 60:
                 raise RuntimeError('Provider changed the saved publication time; hold.')
         url, proof = post.get('releaseURL'), PUBLIC_PROOFS.get(post['id'])
@@ -295,12 +292,43 @@ def reconcile(part, posts, channels, only_network=None):
         verified = state == 'PUBLISHED' and post_url(network, url)
         receipts[network] = {**receipt, 'postId': post['id'], 'status': state,
             'url': url, 'providerUrl': post.get('releaseURL'), 'providerReleaseId': post.get('releaseId'),
-            'providerStatus': provider_state,
+            'providerStatus': provider_state, 'providerError': post.get('error'),
             'publicUrlVerified': verified, 'verification': proof['method'] if verified and proof_applied else
                 'provider-post-url' if verified else 'provider-status-only', 'integrationId': channels[network]['id']}
         if proof_applied and proof.get('sourceCommentId'):
             receipts[network]['sourceCommentId'] = proof['sourceCommentId']
             receipts[network]['sourceCommentVerified'] = True
+
+
+def recover_youtube_quota(studio, record, posts, save, now=None):
+    now = now or datetime.now(timezone.utc)
+    pacific = ZoneInfo('America/Los_Angeles')
+    for part in record['parts']:
+        receipt = part.get('receipts', {}).get('youtube', {})
+        post = next((p for p in posts if p['id'] == receipt.get('postId')), None)
+        if not post or post.get('state') != 'ERROR' or post.get('releaseId') or post.get('releaseURL'):
+            continue
+        if "daily upload quota is exhausted" not in str(post.get('error', '')).lower():
+            continue
+        if receipt.get('quotaRecovery', {}).get('status') == 'uncertain':
+            raise RuntimeError('Quota reschedule response was lost; reconcile the existing post before retrying.')
+        failed_at = datetime.fromisoformat(post['publishDate'].replace('Z', '+00:00')).astimezone(pacific)
+        reset = (failed_at + timedelta(days=1)).replace(hour=0, minute=15, second=0, microsecond=0)
+        next_reset = (now.astimezone(pacific) + timedelta(days=1)).replace(hour=0, minute=15, second=0, microsecond=0)
+        when = max(reset, next_reset)
+        item = deepcopy(part['payloads']['youtube'])
+        item['group'] = post['group']
+        item['value'][0]['id'] = post['id']
+        receipt['quotaRecovery'] = {'status': 'uncertain', 'scheduledAt': when.isoformat()}
+        receipt['scheduledAt'] = when.isoformat()
+        save(record)
+        result = studio.call('POST', '/posts', {'type': 'schedule', 'date': when.astimezone(timezone.utc).isoformat(),
+                            'shortLink': False, 'tags': [], 'posts': [item]})
+        if len(result) != 1 or result[0].get('postId') != post['id']:
+            raise RuntimeError('Quota recovery did not preserve the existing post ID.')
+        receipt['quotaRecovery']['status'] = 'scheduled'
+        receipt['status'] = 'QUEUE'
+        save(record)
 
 
 def schedule_batch(studio, record, channels, save, slots):

@@ -359,5 +359,30 @@ class Connections(unittest.TestCase):
         self.assertIn('shorter video', studio.connected(api, policy)['tiktok']['blockedReason'])
 
 
+class QuotaRecoveryTests(unittest.TestCase):
+    def test_preserves_post_id_and_waits_for_pacific_reset(self):
+        from unittest.mock import Mock
+        batch = record()
+        batch['parts'] = batch['parts'][:1]
+        part = batch['parts'][0]
+        part['payloads'] = {'youtube': {'value': [{'content': 'quiz', 'image': []}]}}
+        part['receipts'] = {'youtube': {'postId': 'existing', 'status': 'ERROR'}}
+        client = Mock()
+        client.call.return_value = [{'postId': 'existing'}]
+        post = {'id': 'existing', 'group': 'group', 'state': 'ERROR',
+                'error': "YouTube's daily upload quota is exhausted for today",
+                'publishDate': '2026-11-10T06:00:00Z'}
+        studio.recover_youtube_quota(client, batch, [post], Mock(),
+                                    datetime(2026, 11, 12, 6, tzinfo=timezone.utc))
+        payload = client.call.call_args.args[2]
+        self.assertEqual(payload['date'], '2026-11-12T08:15:00+00:00')
+        self.assertEqual(payload['posts'][0]['value'][0]['id'], 'existing')
+        self.assertEqual(part['receipts']['youtube']['status'], 'QUEUE')
+        client.reset_mock()
+        post['releaseId'] = 'already-uploaded'
+        studio.recover_youtube_quota(client, batch, [post], Mock())
+        client.call.assert_not_called()
+
+
 if __name__ == '__main__':
     unittest.main()
