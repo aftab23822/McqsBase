@@ -1624,7 +1624,131 @@
       "studioMedia": {
         "id": "a42f33e3-e916-437f-bf3e-661d8b6c2671",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/G4l4KiGWH6.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 1/5 | Q59, 14, 29 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 59, 14, 29\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+              "image": [
+                {
+                  "id": "a42f33e3-e916-437f-bf3e-661d8b6c2671",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/G4l4KiGWH6.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 59, 14, 29\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "a42f33e3-e916-437f-bf3e-661d8b6c2671",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/G4l4KiGWH6.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 1/5 | Q59, 14, 29 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 59, 14, 29\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "a42f33e3-e916-437f-bf3e-661d8b6c2671",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/G4l4KiGWH6.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 1/5 | Q59, 14, 29 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 59, 14, 29\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "a42f33e3-e916-437f-bf3e-661d8b6c2671",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/G4l4KiGWH6.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-12T12:08:00+05:00"
     },
     {
       "part": 2,
@@ -1913,7 +2037,131 @@
       "studioMedia": {
         "id": "a6b9a6b2-9c8e-4e80-818d-8927e01c3a24",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/zPL9D5XiBM.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 2/5 | Q64, 86, 85 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 64, 86, 85\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+              "image": [
+                {
+                  "id": "a6b9a6b2-9c8e-4e80-818d-8927e01c3a24",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/zPL9D5XiBM.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 64, 86, 85\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "a6b9a6b2-9c8e-4e80-818d-8927e01c3a24",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/zPL9D5XiBM.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 2/5 | Q64, 86, 85 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 64, 86, 85\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "a6b9a6b2-9c8e-4e80-818d-8927e01c3a24",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/zPL9D5XiBM.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 2/5 | Q64, 86, 85 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 64, 86, 85\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "a6b9a6b2-9c8e-4e80-818d-8927e01c3a24",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/zPL9D5XiBM.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-12T14:36:00+05:00"
     },
     {
       "part": 3,
@@ -2202,7 +2450,131 @@
       "studioMedia": {
         "id": "fce1187c-943a-465f-bf87-8c4f2af31fb2",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/7rMpXUrK5t.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 3/5 | Q21, 50, 67 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 21, 50, 67\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+              "image": [
+                {
+                  "id": "fce1187c-943a-465f-bf87-8c4f2af31fb2",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/7rMpXUrK5t.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 21, 50, 67\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "fce1187c-943a-465f-bf87-8c4f2af31fb2",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/7rMpXUrK5t.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 3/5 | Q21, 50, 67 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 21, 50, 67\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "fce1187c-943a-465f-bf87-8c4f2af31fb2",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/7rMpXUrK5t.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 3/5 | Q21, 50, 67 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 21, 50, 67\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "fce1187c-943a-465f-bf87-8c4f2af31fb2",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/7rMpXUrK5t.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-12T17:04:00+05:00"
     },
     {
       "part": 4,
@@ -2491,7 +2863,131 @@
       "studioMedia": {
         "id": "c04fd2bb-1a41-4b14-9b36-b5657cf2c1e8",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/S0iRoibgSm.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 4/5 | Q12, 36, 52 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 12, 36, 52\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+              "image": [
+                {
+                  "id": "c04fd2bb-1a41-4b14-9b36-b5657cf2c1e8",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/S0iRoibgSm.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 12, 36, 52\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "c04fd2bb-1a41-4b14-9b36-b5657cf2c1e8",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/S0iRoibgSm.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 4/5 | Q12, 36, 52 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 12, 36, 52\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "c04fd2bb-1a41-4b14-9b36-b5657cf2c1e8",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/S0iRoibgSm.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 4/5 | Q12, 36, 52 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 12, 36, 52\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "c04fd2bb-1a41-4b14-9b36-b5657cf2c1e8",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/S0iRoibgSm.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-12T19:32:00+05:00"
     },
     {
       "part": 5,
@@ -2780,7 +3276,131 @@
       "studioMedia": {
         "id": "537acc44-9a68-4fcc-b56c-19fe40503b5a",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/nnx76pa1OW.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 5/5 | Q82, 9, 75 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 82, 9, 75\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+              "image": [
+                {
+                  "id": "537acc44-9a68-4fcc-b56c-19fe40503b5a",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/nnx76pa1OW.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 82, 9, 75\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "537acc44-9a68-4fcc-b56c-19fe40503b5a",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/nnx76pa1OW.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 5/5 | Q82, 9, 75 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 82, 9, 75\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "537acc44-9a68-4fcc-b56c-19fe40503b5a",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/nnx76pa1OW.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 5/5 | Q82, 9, 75 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 82, 9, 75\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "537acc44-9a68-4fcc-b56c-19fe40503b5a",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/nnx76pa1OW.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-12T22:00:00+05:00"
     }
   ],
   "thinkingSeconds": 3,
@@ -2864,5 +3484,12 @@
         "sha256": "17b4b2d079c8f8d6fb393e242dc10593780a43550b353f3343120eabd2309bef"
       }
     ]
-  }
+  },
+  "schedule": [
+    "2026-11-12T12:08:00+05:00",
+    "2026-11-12T14:36:00+05:00",
+    "2026-11-12T17:04:00+05:00",
+    "2026-11-12T19:32:00+05:00",
+    "2026-11-12T22:00:00+05:00"
+  ]
 }
