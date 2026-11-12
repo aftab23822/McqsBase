@@ -1117,7 +1117,7 @@
       "verifiedPublications": 14
     },
     "nat-ie-waves-optics": {
-      "status": "rendering",
+      "status": "ready",
       "ledger": "batches/nat-ie-waves-optics.json",
       "createdAt": "2026-11-12T06:49:06.328155+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-waves-optics",
