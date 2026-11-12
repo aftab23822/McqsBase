@@ -1783,7 +1783,7 @@
           "url": null,
           "providerUrl": null,
           "providerReleaseId": null,
-          "providerStatus": "ERROR",
+          "providerStatus": "QUEUE",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
           "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
