@@ -2197,7 +2197,11 @@
       },
       "uploadIntent": {
         "filename": "nat-ie-waves-optics-part-03-d4c48cbe6faeb505.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "fce1187c-943a-465f-bf87-8c4f2af31fb2",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/7rMpXUrK5t.mp4"
       }
     },
     {
