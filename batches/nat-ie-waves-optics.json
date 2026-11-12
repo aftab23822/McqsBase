@@ -1336,6 +1336,288 @@
       "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
     }
   },
-  "parts": [],
+  "parts": [
+    {
+      "part": 1,
+      "directory": "part-01",
+      "sourceQuestionNumbers": [
+        59,
+        14,
+        29
+      ],
+      "count": 3,
+      "durationSeconds": 86,
+      "sha256": "627afe6e460c6eb05a1fcbd0723a0fb582ac23664b2079e4d18cf8c2e13a3ea8",
+      "manifest": {
+        "title": "100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+        "sourceTitle": "100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-12T06:49:06.193775+00:00",
+        "sourceContentHash": "fa3b4f23dd3737edd194739a02e9d3b5f21215f75f18c8e7dc9a37ff3ab549ae",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7730487707,
+          "sha": "0f48ff4ebc4fee262c844710d377245d25a092be",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-12T06:49:06.193775+00:00",
+          "url": "https://mcqs-base-62m5g3gwd-as-projects-10921176.vercel.app",
+          "publisherRunId": 43170190336
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 86,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "An object is placed between the focus and pole of a concave mirror. What image is formed?",
+            "choices": [
+              "Virtual, upright, and enlarged",
+              "Real, inverted, and diminished",
+              "Real, upright, and unchanged",
+              "No image"
+            ],
+            "correctIndex": 0,
+            "key": "4bbc63287c528529eb9e624ec8e477f38e2da49aff05ab0b366a3a7d9e2ea338",
+            "sourceNumber": 59
+          },
+          {
+            "question": "A wave has frequency 10 Hz and wavelength 3 m. How far does it travel in 2 seconds?",
+            "choices": [
+              "6 m",
+              "30 m",
+              "60 m",
+              "15 m"
+            ],
+            "correctIndex": 2,
+            "key": "c4ed5e8cba87622b6ae6f15b8e34ad1ad66a17e81a3b4c3d4c9bac8b1dfde220",
+            "sourceNumber": 14
+          },
+          {
+            "question": "What happens to the speed of sound in a uniform medium when the sound's frequency changes?",
+            "choices": [
+              "It is generally unchanged",
+              "It always doubles",
+              "It always becomes zero",
+              "It changes in direct proportion to frequency"
+            ],
+            "correctIndex": 0,
+            "key": "b90e3ab992b242e7828b423a4aa66e0d1aca1a6be8d54885e9423d4827d44ed1",
+            "sourceNumber": 29
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 20,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 20,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 21,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 23,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 29,
+            "duration": 17,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 46,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 47,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 48,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 49,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 53,
+            "duration": 20,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 73,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 74,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 75,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 76,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 81,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 1,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            59,
+            14,
+            29
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-waves-optics-part-01-627afe6e460c6eb0.mp4",
+        "videoSha256": "627afe6e460c6eb05a1fcbd0723a0fb582ac23664b2079e4d18cf8c2e13a3ea8",
+        "assetId": 738401698
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 1/5 | Q59, 14, 29 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 59, 14, 29\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 1/5 | Q59, 14, 29 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 59, 14, 29\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 1/5 | Q59, 14, 29 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 59, 14, 29\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 1/5 | Q59, 14, 29 | 100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 59, 14, 29\n100 NAT-IE-Style Waves and Optics MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-waves-optics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+          "format": "short"
+        }
+      }
+    }
+  ],
   "thinkingSeconds": 3
 }
