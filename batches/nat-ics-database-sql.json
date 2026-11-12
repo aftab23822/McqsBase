@@ -1711,7 +1711,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": true,
           "verification": "provider-post-url",
-          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+          "providerError": null
         },
         "instagram": {
           "status": "PUBLISHED",
@@ -1723,7 +1724,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": true,
           "verification": "provider-post-url",
-          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs",
+          "providerError": null
         },
         "tiktok": {
           "status": "PUBLISHED",
@@ -1735,7 +1737,8 @@
           "providerStatus": "PUBLISHED",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
-          "integrationId": "cmvwbcule0222ro9dhocbic4w"
+          "integrationId": "cmvwbcule0222ro9dhocbic4w",
+          "providerError": null
         },
         "youtube": {
           "status": "ERROR",
@@ -1747,7 +1750,13 @@
           "providerStatus": "ERROR",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
-          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
+          "providerError": "YouTube's daily upload quota is exhausted for today, please reschedule this post for a later time.",
+          "quotaRecovery": {
+            "status": "uncertain",
+            "scheduledAt": "2026-11-12T00:15:00-08:00"
+          },
+          "scheduledAt": "2026-11-12T00:15:00-08:00"
         }
       }
     },
@@ -2165,52 +2174,56 @@
       "scheduledAt": "2026-11-11T13:48:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:49:45.028214+00:00",
           "postId": "cmwbp92b60tfproivtzerlrvz",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
-          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+          "url": "https://www.facebook.com/reel/2655503731551716",
+          "providerUrl": "https://www.facebook.com/reel/2655503731551716",
+          "providerReleaseId": "2655503731551716",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+          "providerError": null
         },
         "instagram": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:49:49.280407+00:00",
           "postId": "cmwbp95ne0tfrroivfy1jbfsg",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
-          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
+          "url": "https://www.instagram.com/reel/DfmFmztEtBS/",
+          "providerUrl": "https://www.instagram.com/reel/DfmFmztEtBS/",
+          "providerReleaseId": "18401224606163720",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs",
+          "providerError": null
         },
         "tiktok": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:49:53.734631+00:00",
           "postId": "cmwbp993i0tfsroivlt94kgjj",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
+          "url": "https://www.tiktok.com/@mcqsbase",
+          "providerUrl": "https://www.tiktok.com/@mcqsbase",
+          "providerReleaseId": "v_pub_file~v2-1.7706832594558486580",
+          "providerStatus": "PUBLISHED",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
-          "integrationId": "cmvwbcule0222ro9dhocbic4w"
+          "integrationId": "cmvwbcule0222ro9dhocbic4w",
+          "providerError": null
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:49:58.236651+00:00",
           "postId": "cmwbp9cln0tftroivhtaqmsbp",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
-          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
+          "url": "https://www.youtube.com/watch?v=C49fgY0n3m0",
+          "providerUrl": "https://www.youtube.com/watch?v=C49fgY0n3m0",
+          "providerReleaseId": "C49fgY0n3m0",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
+          "providerError": null
         }
       }
     },
@@ -2579,52 +2592,56 @@
       "scheduledAt": "2026-11-11T16:31:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:50:02.994567+00:00",
           "postId": "cmwbp9g8m0tfuroive9a4jt3x",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
-          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+          "url": "https://www.facebook.com/reel/1138994672191771",
+          "providerUrl": "https://www.facebook.com/reel/1138994672191771",
+          "providerReleaseId": "1138994672191771",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+          "providerError": null
         },
         "instagram": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:50:07.594121+00:00",
           "postId": "cmwbp9jzp0tfwroivbhkfyk9g",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
-          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
+          "url": "https://www.instagram.com/reel/DfmYRXHnPp6/",
+          "providerUrl": "https://www.instagram.com/reel/DfmYRXHnPp6/",
+          "providerReleaseId": "18134232541762729",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs",
+          "providerError": null
         },
         "tiktok": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:50:12.206799+00:00",
           "postId": "cmwbp9na70tfxroivaj3uriav",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
+          "url": "https://www.tiktok.com/@mcqsbase",
+          "providerUrl": "https://www.tiktok.com/@mcqsbase",
+          "providerReleaseId": "v_pub_file~v2-1.7706874937042176001",
+          "providerStatus": "PUBLISHED",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
-          "integrationId": "cmvwbcule0222ro9dhocbic4w"
+          "integrationId": "cmvwbcule0222ro9dhocbic4w",
+          "providerError": null
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:50:16.652875+00:00",
           "postId": "cmwbp9qrl0tfyroivkhccg65d",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
-          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
+          "url": "https://www.youtube.com/watch?v=lFijTPYPhyg",
+          "providerUrl": "https://www.youtube.com/watch?v=lFijTPYPhyg",
+          "providerReleaseId": "lFijTPYPhyg",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
+          "providerError": null
         }
       }
     },
@@ -2993,52 +3010,56 @@
       "scheduledAt": "2026-11-11T19:14:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:50:21.276224+00:00",
           "postId": "cmwbp9ubg0tfzroiv58fgyvuu",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
-          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+          "url": "https://www.facebook.com/reel/1604304144257411",
+          "providerUrl": "https://www.facebook.com/reel/1604304144257411",
+          "providerReleaseId": "1604304144257411",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+          "providerError": null
         },
         "instagram": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:50:25.600273+00:00",
           "postId": "cmwbp9xn10tg5roivxvxwsczn",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
-          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
+          "url": "https://www.instagram.com/reel/Dfmq-M9jLlP/",
+          "providerUrl": "https://www.instagram.com/reel/Dfmq-M9jLlP/",
+          "providerReleaseId": "17994996906115649",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs",
+          "providerError": null
         },
         "tiktok": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:50:30.162252+00:00",
           "postId": "cmwbpa16e0tg6roivaxxki69k",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
+          "url": "https://www.tiktok.com/@mcqsbase",
+          "providerUrl": "https://www.tiktok.com/@mcqsbase",
+          "providerReleaseId": "v_pub_file~v2-1.7706916861841164309",
+          "providerStatus": "PUBLISHED",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
-          "integrationId": "cmvwbcule0222ro9dhocbic4w"
+          "integrationId": "cmvwbcule0222ro9dhocbic4w",
+          "providerError": null
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:50:34.881382+00:00",
           "postId": "cmwbpa4um0tg7roivmp2ccnrq",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
-          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
+          "url": "https://www.youtube.com/watch?v=xyfgBsPMQNY",
+          "providerUrl": "https://www.youtube.com/watch?v=xyfgBsPMQNY",
+          "providerReleaseId": "xyfgBsPMQNY",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
+          "providerError": null
         }
       }
     },
@@ -3456,52 +3477,56 @@
       "scheduledAt": "2026-11-11T21:57:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:50:39.643943+00:00",
           "postId": "cmwbpa8cx0tg8roivl8y2dg6a",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
-          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+          "url": "https://www.facebook.com/reel/1164317962817297",
+          "providerUrl": "https://www.facebook.com/reel/1164317962817297",
+          "providerReleaseId": "1164317962817297",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+          "providerError": null
         },
         "instagram": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:50:44.031403+00:00",
           "postId": "cmwbpabul0tgaroiv02fsbfsd",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
-          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
+          "url": "https://www.instagram.com/reel/Dfm9kZ7kzGH/",
+          "providerUrl": "https://www.instagram.com/reel/Dfm9kZ7kzGH/",
+          "providerReleaseId": "18130302226927527",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs",
+          "providerError": null
         },
         "tiktok": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:50:48.498513+00:00",
           "postId": "cmwbpafb30tgbroivxoooxxmo",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
+          "url": "https://www.tiktok.com/@mcqsbase",
+          "providerUrl": "https://www.tiktok.com/@mcqsbase",
+          "providerReleaseId": "v_pub_file~v2-1.7706958731950458886",
+          "providerStatus": "PUBLISHED",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
-          "integrationId": "cmvwbcule0222ro9dhocbic4w"
+          "integrationId": "cmvwbcule0222ro9dhocbic4w",
+          "providerError": null
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:50:52.807420+00:00",
           "postId": "cmwbpailf0tgcroiveembrn68",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
-          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
+          "url": "https://www.youtube.com/watch?v=ZzxPTV3DjME",
+          "providerUrl": "https://www.youtube.com/watch?v=ZzxPTV3DjME",
+          "providerReleaseId": "ZzxPTV3DjME",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
+          "providerError": null
         }
       }
     }
