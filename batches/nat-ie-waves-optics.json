@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "nat-ie-waves-optics",
+  "createdAt": "2026-11-12T06:49:06.328155+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nat-ie-waves-optics",
+    "title": "100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+    "url": "https://www.mcqsbase.com/blog/nat-ie-waves-optics",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7730487707,
+      "sha": "0f48ff4ebc4fee262c844710d377245d25a092be",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-12T06:49:06.193775+00:00",
+      "url": "https://mcqs-base-62m5g3gwd-as-projects-10921176.vercel.app",
+      "publisherRunId": 43170190336
+    },
+    "fetchedAt": "2026-11-12T06:49:06.193775+00:00",
+    "contentHash": "fa3b4f23dd3737edd194739a02e9d3b5f21215f75f18c8e7dc9a37ff3ab549ae",
+    "questions": [
+      {
+        "question": "A wave travels at 24 m/s and has a frequency of 6 Hz. What is its wavelength?",
+        "choices": [
+          "4 m",
+          "18 m",
+          "30 m",
+          "144 m"
+        ],
+        "key": "49aa19f396cc7bdf20206a58109b9fbf91951b87da0929c6ea7a37a3fdf6ed0b",
+        "sourceNumber": 1,
+        "correctIndex": 0
+      },
+      {
+        "question": "A wave completes 5 oscillations in 2 seconds. What is its frequency?",
+        "choices": [
+          "0.4 Hz",
+          "2.5 Hz",
+          "5 Hz",
+          "10 Hz"
+        ],
+        "key": "fceb0e96221dc0c8db7ef2c57f193838c11081f1c51c8fb68dd3e80a674dd97e",
+        "sourceNumber": 2,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the period of a wave with frequency 8 Hz?",
+        "choices": [
+          "0.125 s",
+          "0.8 s",
+          "8 s",
+          "16 s"
+        ],
+        "key": "ad71f017136d5d164fed8cba5d7cc18da55618b31a3f6f606273adbc91eca719",
+        "sourceNumber": 3,
+        "correctIndex": 0
+      },
+      {
+        "question": "A wave has a wavelength of 0.5 m and a frequency of 12 Hz. What is its speed?",
+        "choices": [
+          "6 m/s",
+          "12.5 m/s",
+          "24 m/s",
+          "0.042 m/s"
+        ],
+        "key": "a9c2c553e3d34e299a7882c60864c78a6971250d7a3e74b7eaf2a9cc65ca6169",
+        "sourceNumber": 4,
+        "correctIndex": 0
+      },
+      {
+        "question": "Two points on a travelling wave are one complete wavelength apart. What is their phase difference?",
+        "choices": [
+          "0°",
+          "90°",
+          "180°",
+          "360°"
+        ],
+        "key": "38c395713b2c6e8efff192f94a31d8b14759a9f9e10ed24b896c132a0ff74b0a",
+        "sourceNumber": 5,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which type of wave has oscillations perpendicular to its direction of travel?",
+        "choices": [
+          "Transverse",
+          "Longitudinal",
+          "Stationary only",
+          "Sound in air"
+        ],
+        "key": "7fc3d582dfdfac09473a0a72e63895bd127a241b0a414d3cd4aee99d340a5121",
+        "sourceNumber": 6,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a longitudinal wave, what are compressions?",
+        "choices": [
+          "Regions where particles are closer together",
+          "Regions where particles stop moving",
+          "Points of maximum transverse displacement",
+          "Regions with no pressure variation"
+        ],
+        "key": "e236c3cb6110be9cef28ea94ec553fb42fe521f0d1333acea574479c82822970",
+        "sourceNumber": 7,
+        "correctIndex": 0
+      },
+      {
+        "question": "A wave's frequency doubles while its speed in the same medium remains constant. What happens to its wavelength?",
+        "choices": [
+          "It doubles",
+          "It halves",
+          "It remains unchanged",
+          "It becomes four times larger"
+        ],
+        "key": "c7b9f61d58e96b2cd9f0930d0df046f986a8acb5741a0b6a96c8a80e250a3b6c",
+        "sourceNumber": 8,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which quantity describes the maximum displacement of an oscillating particle from its equilibrium position?",
+        "choices": [
+          "Amplitude",
+          "Frequency",
+          "Wavelength",
+          "Wave speed"
+        ],
+        "key": "08be5b4081960c2c23f9be50f8b4fe2ce88149f32de70801d8fd3fc4e26f7008",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "A wave has a period of 0.04 s. What is its frequency?",
+        "choices": [
+          "0.025 Hz",
+          "4 Hz",
+          "25 Hz",
+          "40 Hz"
+        ],
+        "key": "c803eadc7e3f42ad584740ac4e036226d5a4cc99d4a767224262b4cc3df2f6f2",
+        "sourceNumber": 10,
+        "correctIndex": 2
+      },
+      {
+        "question": "A wave travels 15 m in 3 s. What is its speed?",
+        "choices": [
+          "5 m/s",
+          "12 m/s",
+          "18 m/s",
+          "45 m/s"
+        ],
+        "key": "b913a65e0a9ea820a63aa81095ed14e74ff0d771663ac331e67f09b848df6f80",
+        "sourceNumber": 11,
+        "correctIndex": 0
+      },
+      {
+        "question": "A ripple has a wavelength of 0.8 m and a speed of 4 m/s. What is its frequency?",
+        "choices": [
+          "0.2 Hz",
+          "3.2 Hz",
+          "5 Hz",
+          "4.8 Hz"
+        ],
+        "key": "c15c60bc660c4eeb41491076623509b046361db071f0ef2d8d272c07c171fbdb",
+        "sourceNumber": 12,
+        "correctIndex": 2
+      },
+      {
+        "question": "A source produces 60 waves in 12 seconds. What is the period?",
+        "choices": [
+          "0.2 s",
+          "5 s",
+          "12 s",
+          "720 s"
+        ],
+        "key": "78c2062447c4f916696b53bab2d9be49098722da79d95a5be19abadfcb8b7f2e",
+        "sourceNumber": 13,
+        "correctIndex": 0
+      },
+      {
+        "question": "A wave has frequency 10 Hz and wavelength 3 m. How far does it travel in 2 seconds?",
+        "choices": [
+          "6 m",
+          "30 m",
+          "60 m",
+          "15 m"
+        ],
+        "key": "c4ed5e8cba87622b6ae6f15b8e34ad1ad66a17e81a3b4c3d4c9bac8b1dfde220",
+        "sourceNumber": 14,
+        "correctIndex": 2
+      },
+      {
+        "question": "When a wave passes from one medium into another, which property stays the same if the source frequency is unchanged?",
+        "choices": [
+          "Frequency",
+          "Wavelength",
+          "Speed",
+          "Amplitude in every case"
+        ],
+        "key": "42b469403f28d1ea09629926487c0fd7830cb677f164f4ee672625e69902f031",
+        "sourceNumber": 15,
+        "correctIndex": 0
+      },
+      {
+        "question": "A wave's frequency is 50 Hz. How many complete cycles occur in 4 seconds?",
+        "choices": [
+          "12.5",
+          "46",
+          "200",
+          "400"
+        ],
+        "key": "0f4982cb4e31ca9ea23c746bbd1059a772c63768b86f869c37e7a93b3f0747c7",
+        "sourceNumber": 16,
+        "correctIndex": 2
+      },
+      {
+        "question": "If the period of an oscillation increases, what happens to its frequency?",
+        "choices": [
+          "It increases in the same proportion",
+          "It decreases",
+          "It remains constant",
+          "It becomes zero"
+        ],
+        "key": "f7ccc0cf48c94cf6936f12a345536344e7973934232d1ac2ca7ba1f72b39317f",
+        "sourceNumber": 17,
+        "correctIndex": 1
+      },
+      {
+        "question": "A transverse wave has a wavelength of 2 m and frequency 3 Hz. What distance does it travel in 5 seconds?",
+        "choices": [
+          "6 m",
+          "15 m",
+          "30 m",
+          "10 m"
+        ],
+        "key": "8e9f8d1c31fec23ab7a7f372a96c43fd72d158d80fd16df38299f76cc761111f",
+        "sourceNumber": 18,
+        "correctIndex": 2
+      },
+      {
+        "question": "Which statement about energy carried by a travelling wave is generally correct?",
+        "choices": [
+          "The wave transfers energy without requiring a net transfer of the medium",
+          "The wave permanently carries every particle forward",
+          "Energy can travel only in a vacuum",
+          "A wave cannot transfer energy"
+        ],
+        "key": "29086a11589dc712f4181c4753ac357ffedd1c8ee2c628ee34f664e24820237b",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "Two waves in the same medium have the same frequency but different amplitudes. Which quantity must be the same?",
+        "choices": [
+          "Their wavelength",
+          "Their amplitude",
+          "Their energy in all cases",
+          "Their direction of travel"
+        ],
+        "key": "43a7a439fa0a860241e83e7b69fc638cd1c976799178e8249ca77f4ac38efa69",
+        "sourceNumber": 20,
+        "correctIndex": 0
+      },
+      {
+        "question": "Sound in ordinary air is primarily which type of wave?",
+        "choices": [
+          "Longitudinal mechanical wave",
+          "Transverse electromagnetic wave",
+          "Longitudinal electromagnetic wave",
+          "Transverse mechanical wave"
+        ],
+        "key": "a29fac693c345bdb97a5bdc5ab2c18ddd020ce0a6fc900fa323ba54690beaa78",
+        "sourceNumber": 21,
+        "correctIndex": 0
+      },
+      {
+        "question": "A sound wave travels at 340 m/s and has a frequency of 170 Hz. What is its wavelength?",
+        "choices": [
+          "0.5 m",
+          "2 m",
+          "170 m",
+          "510 m"
+        ],
+        "key": "b482a297af6f326d7a13bfbd818ca662e95d4b57b48b03c2f36eacb73474e81b",
+        "sourceNumber": 22,
+        "correctIndex": 1
+      },
+      {
+        "question": "A sound wave has a frequency of 250 Hz. What is its period?",
+        "choices": [
+          "0.004 s",
+          "0.04 s",
+          "4 s",
+          "250 s"
+        ],
+        "key": "68de55873f8e80ed22b9508963c4f935b3188dba7429450f5809a18b1bd3233a",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which property of a sound wave is most directly associated with how high or low a note sounds?",
+        "choices": [
+          "Frequency",
+          "Amplitude",
+          "Speed",
+          "Distance travelled"
+        ],
+        "key": "ffce4b3996f7f5698a1c8280884458392c67851c016ae6e0c1e5c575a9bba51e",
+        "sourceNumber": 24,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which change most directly makes a sound louder, with frequency unchanged?",
+        "choices": [
+          "Increasing its amplitude",
+          "Decreasing its wavelength in a different medium",
+          "Increasing its period",
+          "Changing its direction"
+        ],
+        "key": "df8a2be918a3a66c1c26218ed1b662ac619fbcecf437a68ae7a565ab8cbfb0e1",
+        "sourceNumber": 25,
+        "correctIndex": 0
+      },
+      {
+        "question": "A person hears an echo 2 seconds after making a sound. If sound travels at 340 m/s, how far away is the reflecting surface?",
+        "choices": [
+          "170 m",
+          "340 m",
+          "680 m",
+          "85 m"
+        ],
+        "key": "fede1003251ef35fa871e757f9e5fb7e571b44cc06cb8a3586992e3c57dea5e8",
+        "sourceNumber": 26,
+        "correctIndex": 1
+      },
+      {
+        "question": "Why can sound not travel through a perfect vacuum?",
+        "choices": [
+          "It requires a material medium to transmit mechanical vibrations",
+          "Its frequency becomes infinite",
+          "Vacuum absorbs all sound energy by reflection",
+          "Sound is an electromagnetic wave"
+        ],
+        "key": "97db385d035ae11bac0e2cc5becc60d8b7ef2e46b17e245765e21a3fa70d3008",
+        "sourceNumber": 27,
+        "correctIndex": 0
+      },
+      {
+        "question": "A sound source moves toward a stationary listener. What is the usual Doppler-effect change heard by the listener?",
+        "choices": [
+          "Higher frequency",
+          "Lower frequency",
+          "Zero frequency",
+          "Unchanged frequency in every case"
+        ],
+        "key": "e1a75dae53e5c9a33685f1812f1cb81e094818bba328586594f350f85222db2b",
+        "sourceNumber": 28,
+        "correctIndex": 0
+      },
+      {
+        "question": "What happens to the speed of sound in a uniform medium when the sound's frequency changes?",
+        "choices": [
+          "It is generally unchanged",
+          "It always doubles",
+          "It always becomes zero",
+          "It changes in direct proportion to frequency"
+        ],
+        "key": "b90e3ab992b242e7828b423a4aa66e0d1aca1a6be8d54885e9423d4827d44ed1",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "An echo returns after 0.6 s. If the sound speed is 330 m/s, what is the distance to the reflecting wall?",
+        "choices": [
+          "99 m",
+          "198 m",
+          "330 m",
+          "550 m"
+        ],
+        "key": "1e4249c6af37e3c54afceaba59429798ef5ec1096d9f58beeb91b8e892b4bf4c",
+        "sourceNumber": 30,
+        "correctIndex": 0
+      },
+      {
+        "question": "A sound wave travels at 300 m/s and has a wavelength of 1.5 m. What is its frequency?",
+        "choices": [
+          "200 Hz",
+          "450 Hz",
+          "300 Hz",
+          "20 Hz"
+        ],
+        "key": "e06f3a5f3914c99c261ea9f476fe58baf40989537190f726ea26c3d2b3f22db3",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement correctly compares infrasonic and ultrasonic sound?",
+        "choices": [
+          "Infrasound is below 20 Hz; ultrasound is above 20,000 Hz",
+          "Infrasound is above 20,000 Hz; ultrasound is below 20 Hz",
+          "Both are audible to every human",
+          "Both describe sound travelling in a vacuum"
+        ],
+        "key": "a8c9a0d8f2460aa4bdbb0d3412e82a779e21267c144bc611b2f219da9908683c",
+        "sourceNumber": 32,
+        "correctIndex": 0
+      },
+      {
+        "question": "A string vibrates at 120 Hz. What is the frequency of the sound it produces in air, assuming steady vibration?",
+        "choices": [
+          "60 Hz",
+          "120 Hz",
+          "240 Hz",
+          "The speed of sound in air"
+        ],
+        "key": "23ef725dde69505a61bbdd3105bbfd27257d57cbc56dc40c4d1cffed3dbb3eab",
+        "sourceNumber": 33,
+        "correctIndex": 1
+      },
+      {
+        "question": "In the same medium, what happens to sound wavelength if its frequency decreases while speed remains constant?",
+        "choices": [
+          "It increases",
+          "It decreases",
+          "It becomes zero",
+          "It remains unchanged"
+        ],
+        "key": "b5857e95a7493cd332087d2429c581198111cf9144a6ba71712a44a3272b04ac",
+        "sourceNumber": 34,
+        "correctIndex": 0
+      },
+      {
+        "question": "A sound wave has a frequency of 680 Hz and travels at 340 m/s. How many wavelengths fit into a 10 m distance?",
+        "choices": [
+          "10",
+          "20",
+          "34",
+          "68"
+        ],
+        "key": "09f8d040f4f721fee746463b63da749c94c3c60f29de8916b51d9281a981e206",
+        "sourceNumber": 35,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which electromagnetic wave has the longest wavelength among these options?",
+        "choices": [
+          "Radio wave",
+          "Visible light",
+          "Ultraviolet radiation",
+          "Gamma ray"
+        ],
+        "key": "1612940a452baeff51d344c8672794023f14eaac9408b275227b54ca7e6a7fb7",
+        "sourceNumber": 36,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which electromagnetic wave has the highest frequency among these options?",
+        "choices": [
+          "Microwave",
+          "Infrared",
+          "X-ray",
+          "Visible light"
+        ],
+        "key": "ac4227d60e084f051d84ff57ce3c1959770976af6594b1fc551da4a08c2abfe2",
+        "sourceNumber": 37,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the approximate speed of electromagnetic waves in a vacuum?",
+        "choices": [
+          "3 × 10⁶ m/s",
+          "3 × 10⁸ m/s",
+          "3 × 10¹⁰ m/s",
+          "340 m/s"
+        ],
+        "key": "30549caea78f22335b4a687c3d64fc7607350c7f2961cc3f49c03b7bbb97010b",
+        "sourceNumber": 38,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which statement about electromagnetic waves in a vacuum is correct?",
+        "choices": [
+          "They are transverse and can travel without a material medium",
+          "They are longitudinal and require air",
+          "They cannot transfer energy",
+          "Their speed depends on their amplitude"
+        ],
+        "key": "77644bbd8552f5db5882cc4a2a4ecedb7d30207af9be92a95ddef3f0fc042749",
+        "sourceNumber": 39,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which radiation is commonly used in remote controls?",
+        "choices": [
+          "Infrared",
+          "Gamma rays",
+          "X-rays",
+          "Ultraviolet"
+        ],
+        "key": "be1071c1dfc8651cf1fead3946008e47999535a34b9e05219e15c15b2ae46738",
+        "sourceNumber": 40,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which electromagnetic radiation is commonly used to image bones in a medical radiograph?",
+        "choices": [
+          "X-rays",
+          "Radio waves",
+          "Visible light",
+          "Microwaves"
+        ],
+        "key": "d8d1bca0330394029f04cd5c979165fed5cf3b85e6061e834b6fe8ab68c2c27d",
+        "sourceNumber": 41,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which electromagnetic radiation is commonly used in microwave ovens to heat food?",
+        "choices": [
+          "Microwaves",
+          "Ultraviolet",
+          "Gamma rays",
+          "Visible light"
+        ],
+        "key": "91afd7b70930f9dc61c3b380b6400bfaf1cafaf3ce41951face82f515e2dad16",
+        "sourceNumber": 42,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which visible-light colour has the longest wavelength in the usual spectrum?",
+        "choices": [
+          "Red",
+          "Green",
+          "Blue",
+          "Violet"
+        ],
+        "key": "f571321686b4b2c9cbd029017759c9ff536a7d1816e3eff5275f4fbb8ab3b779",
+        "sourceNumber": 43,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which visible-light colour has the highest frequency among these options?",
+        "choices": [
+          "Violet",
+          "Yellow",
+          "Orange",
+          "Red"
+        ],
+        "key": "1c8e485767c2cfb7778b50b8db9137f5531b931317e9d8c5fa5baa6d1d39b9b2",
+        "sourceNumber": 44,
+        "correctIndex": 0
+      },
+      {
+        "question": "If electromagnetic radiation has frequency 6 × 10¹⁴ Hz in vacuum, what is its approximate wavelength?",
+        "choices": [
+          "5 × 10⁻⁷ m",
+          "2 × 10⁻⁶ m",
+          "1.8 × 10²³ m",
+          "5 × 10⁷ m"
+        ],
+        "key": "ddcc9829a9aaea84003de5490a266a99496386364cefdac3c534277ee3406579",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement about all electromagnetic waves in a vacuum is correct?",
+        "choices": [
+          "They travel at the same speed",
+          "They all have the same frequency",
+          "They all have the same wavelength",
+          "They are all visible"
+        ],
+        "key": "e619bdbcbb1e739a13c217434a252ac081a39f8b2604bc8b465cd051dde0f0ff",
+        "sourceNumber": 46,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which part of the electromagnetic spectrum is commonly associated with sterilising some surfaces and causing sunburn?",
+        "choices": [
+          "Ultraviolet",
+          "Radio",
+          "Microwave",
+          "Infrared"
+        ],
+        "key": "3e1e7a3050d959fe87fe60c9050424324ed968fe4e528ff892db5c600433aa25",
+        "sourceNumber": 47,
+        "correctIndex": 0
+      },
+      {
+        "question": "A beam of light strikes a plane mirror at 35° to the normal. What is the angle of reflection?",
+        "choices": [
+          "35°",
+          "55°",
+          "70°",
+          "145°"
+        ],
+        "key": "d9e8cce447ce5415b171c55c31f520de88e975483f3b74591ad79465c0774cd6",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "A light ray makes an angle of 20° with a plane mirror's surface. What is its angle of incidence?",
+        "choices": [
+          "20°",
+          "70°",
+          "90°",
+          "110°"
+        ],
+        "key": "7f12ad4b878de6061e1377773e06dcd66234f79934a385d6f9955e0ee281c316",
+        "sourceNumber": 49,
+        "correctIndex": 1
+      },
+      {
+        "question": "An object is 3 m in front of a plane mirror. How far behind the mirror is its image?",
+        "choices": [
+          "1.5 m",
+          "3 m",
+          "6 m",
+          "0 m"
+        ],
+        "key": "29733f413b87c285a4698c4c86e2ad6d76996885301ed89cb64a7f9a036d3abf",
+        "sourceNumber": 50,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which image property is characteristic of a plane mirror?",
+        "choices": [
+          "Virtual, upright, and the same size as the object",
+          "Real, inverted, and magnified",
+          "Virtual, inverted, and smaller",
+          "Real, upright, and the same size"
+        ],
+        "key": "d159ae0b1a52ba4492c081e67b14ccdc93fd972c32cf4c9d91e4b4d45278d335",
+        "sourceNumber": 51,
+        "correctIndex": 0
+      },
+      {
+        "question": "A person stands 2 m from a plane mirror. What is the distance between the person and their image?",
+        "choices": [
+          "2 m",
+          "4 m",
+          "1 m",
+          "0 m"
+        ],
+        "key": "c726cb5a14bfc1e37d2dfd3b0f12908dfdb3709c669ea607b910ab401dd16111",
+        "sourceNumber": 52,
+        "correctIndex": 1
+      },
+      {
+        "question": "A ray strikes a plane mirror at an incidence angle of 50°. What angle does the reflected ray make with the mirror surface?",
+        "choices": [
+          "40°",
+          "50°",
+          "90°",
+          "100°"
+        ],
+        "key": "6e3df697d59c2ff911b7843efdb3e73dc9778ba6d3cfe903ac6895fd2c006524",
+        "sourceNumber": 53,
+        "correctIndex": 0
+      },
+      {
+        "question": "For regular reflection from a smooth plane surface, the incident ray, reflected ray, and normal lie in:",
+        "choices": [
+          "One plane",
+          "Three mutually perpendicular planes",
+          "A circle",
+          "Parallel planes only"
+        ],
+        "key": "20ba55b3f8580ef8e4e29e2170efb53d8975c02aa4568f0e34c6f81758bee9fd",
+        "sourceNumber": 54,
+        "correctIndex": 0
+      },
+      {
+        "question": "A plane mirror is rotated by 10° while the incident ray stays fixed. By how much does the reflected ray rotate?",
+        "choices": [
+          "5°",
+          "10°",
+          "20°",
+          "40°"
+        ],
+        "key": "ccc6d0c208d1223de75ac093f85aff9409cbc279ce2f43fefbe4f734238871e0",
+        "sourceNumber": 55,
+        "correctIndex": 2
+      },
+      {
+        "question": "Which mirror is commonly used to provide a wider field of view in a vehicle's side mirror?",
+        "choices": [
+          "Convex mirror",
+          "Concave mirror",
+          "Plane mirror only",
+          "Parabolic mirror facing inward"
+        ],
+        "key": "79184a0910a5002e77e3111a331076429878fc24ce6c2cfad68bef95a196767e",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "An object is placed beyond the centre of curvature of a concave mirror. Where does its real image form?",
+        "choices": [
+          "Between the focus and centre of curvature",
+          "Beyond the centre of curvature",
+          "Behind the mirror",
+          "At the pole"
+        ],
+        "key": "bd5e374859525c2bd4644494337f630ec51e7f08cbf2e48ee2ccd0f634aee725",
+        "sourceNumber": 57,
+        "correctIndex": 0
+      },
+      {
+        "question": "An object is at the centre of curvature of a concave mirror. What is the image?",
+        "choices": [
+          "Real, inverted, and the same size at C",
+          "Virtual, upright, and larger behind the mirror",
+          "Real, upright, and smaller at F",
+          "No image is formed"
+        ],
+        "key": "d17bc3dba0a3f4f2f3dd4f4525832b31bdf23d77f363321711f2451080604fdd",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "An object is placed between the focus and pole of a concave mirror. What image is formed?",
+        "choices": [
+          "Virtual, upright, and enlarged",
+          "Real, inverted, and diminished",
+          "Real, upright, and unchanged",
+          "No image"
+        ],
+        "key": "4bbc63287c528529eb9e624ec8e477f38e2da49aff05ab0b366a3a7d9e2ea338",
+        "sourceNumber": 59,
+        "correctIndex": 0
+      },
+      {
+        "question": "A spherical mirror has a radius of curvature of 40 cm. What is the magnitude of its focal length?",
+        "choices": [
+          "10 cm",
+          "20 cm",
+          "40 cm",
+          "80 cm"
+        ],
+        "key": "e2c99b81fad20d73a9ded65abb55ca1ec30ebe9331b100cdb87b7800c9b67707",
+        "sourceNumber": 60,
+        "correctIndex": 1
+      },
+      {
+        "question": "A ray parallel to the principal axis strikes a concave mirror. After reflection, it passes through:",
+        "choices": [
+          "The principal focus",
+          "The centre of curvature only",
+          "The pole at every incidence point",
+          "A point behind the mirror"
+        ],
+        "key": "593a112a32f8430f2f637966098ad34fce311c9ed2c1cb8a81f4d7ff4112d8d5",
+        "sourceNumber": 61,
+        "correctIndex": 0
+      },
+      {
+        "question": "A ray directed through the centre of curvature of a spherical mirror strikes the mirror. What is its direction after reflection?",
+        "choices": [
+          "It retraces its path",
+          "It travels parallel to the principal axis",
+          "It passes through the focus",
+          "It bends through 90°"
+        ],
+        "key": "e26cd4b32812db4a4171396f1954bced527502d2206d4e6a0f3d2b2cfb9099ca",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "The refractive index of a transparent material is defined as:",
+        "choices": [
+          "Speed of light in vacuum divided by speed in the material",
+          "Speed in the material divided by speed in vacuum",
+          "Frequency divided by wavelength",
+          "Wavelength in the material divided by wavelength in vacuum"
+        ],
+        "key": "5d1407d6c0da36a873890552f2ed21994e0ef0a0b9784cd81820be5fa0849fc3",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "Light travels through a material at 2 × 10⁸ m/s. What is the material's refractive index?",
+        "choices": [
+          "0.67",
+          "1.5",
+          "2.0",
+          "6"
+        ],
+        "key": "19b6ac0ff0e6c93771592f02d5e148492188389de87993c2ba442a877f0d37e3",
+        "sourceNumber": 64,
+        "correctIndex": 1
+      },
+      {
+        "question": "A ray enters glass from air at an angle of incidence of 30°. The glass has refractive index 1.5 and air is taken as 1. What is sin of the refraction angle?",
+        "choices": [
+          "1/3",
+          "1/2",
+          "2/3",
+          "3/4"
+        ],
+        "key": "6c988166e332ffee6fd9a37ac2f0404ca44c9c0e877c8a1ca04f402aa5d50950",
+        "sourceNumber": 65,
+        "correctIndex": 0
+      },
+      {
+        "question": "Light travels from air into a medium with a higher refractive index at a nonzero incidence angle. In which direction does it bend?",
+        "choices": [
+          "Toward the normal",
+          "Away from the normal",
+          "Along the surface in every case",
+          "It reverses direction"
+        ],
+        "key": "2cc730fa4e5b740f564496c079c7d3ddbf7a6af020a97db8825ea351a22b5ea5",
+        "sourceNumber": 66,
+        "correctIndex": 0
+      },
+      {
+        "question": "Light enters a lower-index medium from a higher-index medium at a nonzero incidence angle, without total internal reflection. Which way does it bend?",
+        "choices": [
+          "Away from the normal",
+          "Toward the normal",
+          "It always travels along the normal",
+          "It does not refract"
+        ],
+        "key": "2124fa46c0d5102804555be03c415003be2a0da05fba601e519cccab62e39d51",
+        "sourceNumber": 67,
+        "correctIndex": 0
+      },
+      {
+        "question": "At normal incidence, a light ray passes from air into glass. What happens to its direction?",
+        "choices": [
+          "It continues along the same line, though its speed changes",
+          "It bends by 90°",
+          "It reflects completely in every case",
+          "It stops at the boundary"
+        ],
+        "key": "bee2f009f57b9762bdd80881b2b67c5db9ac9c4cd3222aaff71efd99450458bc",
+        "sourceNumber": 68,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which condition is required for total internal reflection?",
+        "choices": [
+          "Light travels from higher to lower refractive index and incidence exceeds the critical angle",
+          "Light travels from lower to higher refractive index at any angle",
+          "Incidence is zero in any medium",
+          "The two media have identical refractive indices"
+        ],
+        "key": "55aea7a8615e3930a7452c7f6dafcedd81a882e4978fb14514868aa9e917403f",
+        "sourceNumber": 69,
+        "correctIndex": 0
+      },
+      {
+        "question": "A glass has refractive index 1.5 and is surrounded by air of index 1. What is the sine of its critical angle?",
+        "choices": [
+          "2/3",
+          "1/2",
+          "3/2",
+          "1"
+        ],
+        "key": "5f3d6338fc24a42594f17fd6ac50302cef2bcedd51f4da9504a83234cb46c4ed",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why can a ray of light be guided along an optical fibre?",
+        "choices": [
+          "Repeated total internal reflection at the core boundary",
+          "Repeated refraction into the surrounding air",
+          "Absorption and re-emission at each point",
+          "Diffraction by the fibre's outer surface"
+        ],
+        "key": "3e88b52234a97a0e0132cd694b855418c72998cfd64de7212167bbf770f9f702",
+        "sourceNumber": 71,
+        "correctIndex": 0
+      },
+      {
+        "question": "When light enters glass from air, which property remains unchanged at the boundary?",
+        "choices": [
+          "Frequency",
+          "Speed",
+          "Wavelength",
+          "Direction in every case"
+        ],
+        "key": "6e7a4e2a06f1b30a62f7fdf7a8588ace80067e061c17f68301bac3d4261e30ef",
+        "sourceNumber": 72,
+        "correctIndex": 0
+      },
+      {
+        "question": "Light has wavelength 600 nm in air and enters a material of refractive index 1.5. Approximately what is its wavelength in the material?",
+        "choices": [
+          "400 nm",
+          "600 nm",
+          "900 nm",
+          "150 nm"
+        ],
+        "key": "4595749e6b0ffa86995815e9c8e1ffdef8e79df1aa174d8bdbd1d056619111a9",
+        "sourceNumber": 73,
+        "correctIndex": 0
+      },
+      {
+        "question": "A rectangular glass slab has parallel opposite faces. For a ray entering and leaving into the same surrounding medium, how is the emergent ray oriented relative to the incident ray?",
+        "choices": [
+          "Parallel, with possible lateral displacement",
+          "Perpendicular",
+          "Always in the opposite direction",
+          "Coincident with the normal"
+        ],
+        "key": "5d92461302d092fd7473a638c6bac41dfe0c7940b2c64403ef495fa2fbff4666",
+        "sourceNumber": 74,
+        "correctIndex": 0
+      },
+      {
+        "question": "An object is 30 cm from a converging lens with focal length 10 cm. Using 1/f = 1/do + 1/di, what is the image distance?",
+        "choices": [
+          "15 cm",
+          "20 cm",
+          "30 cm",
+          "60 cm"
+        ],
+        "key": "8681fe67c0271f7321cdc8d45c4bf50c0c423d7779b06c0fd5fb8d4b6dd87973",
+        "sourceNumber": 75,
+        "correctIndex": 0
+      },
+      {
+        "question": "An object is placed at twice the focal length from a converging lens. Where does its image form?",
+        "choices": [
+          "At twice the focal length on the other side",
+          "At the focal point on the same side",
+          "At infinity",
+          "At the lens centre"
+        ],
+        "key": "e19c8ac71de573f21180bb1bce5b6e0fc3d445c063e5913b470ab47225c05460",
+        "sourceNumber": 76,
+        "correctIndex": 0
+      },
+      {
+        "question": "An object is placed inside the focal length of a converging lens. What kind of image is formed?",
+        "choices": [
+          "Virtual, upright, and magnified",
+          "Real, inverted, and diminished",
+          "Real, upright, and the same size",
+          "No image can form"
+        ],
+        "key": "e5485fc6b8d669a3e1138f9d482a23e157684e91f8250c85db294ac120cf68c8",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which lens is thinner at its centre than at its edges and generally diverges parallel incident rays?",
+        "choices": [
+          "Concave lens",
+          "Convex lens",
+          "Cylindrical converging lens only",
+          "Plano-convex lens"
+        ],
+        "key": "636572cf456a7090bce40d2b004b9d3b1149a898b9f08018dd58c01ab5e23495",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "A converging lens has focal length 25 cm. What is its optical power in dioptres?",
+        "choices": [
+          "+4 D",
+          "+0.25 D",
+          "−4 D",
+          "−25 D"
+        ],
+        "key": "89886ea853937f74adf0be13c32bbc4e624e19e637b65d6eeb4c0e4583a18fe6",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "A lens has optical power −2 D. What is its focal length?",
+        "choices": [
+          "−0.5 m",
+          "+0.5 m",
+          "−2 m",
+          "+2 m"
+        ],
+        "key": "b406beb3b2cb6c17477b679f1aec33e5db3b05b3d21f52dd1361039394caa096",
+        "sourceNumber": 80,
+        "correctIndex": 0
+      },
+      {
+        "question": "A converging lens forms a real image 40 cm from the lens when an object is 20 cm away. What is the focal length?",
+        "choices": [
+          "13.3 cm",
+          "20 cm",
+          "30 cm",
+          "60 cm"
+        ],
+        "key": "ac36042980852ef3f900bbf5a989b86d133f8a2034f1fb9c77e2cdee0ba65243",
+        "sourceNumber": 81,
+        "correctIndex": 0
+      },
+      {
+        "question": "A 2 cm tall object forms a 6 cm tall image. What is the magnitude of the magnification?",
+        "choices": [
+          "0.33",
+          "2",
+          "3",
+          "8"
+        ],
+        "key": "ae2ed933a32651b3e87c4d833e2c423d02679f88c2b08755dce2ba1d3a288747",
+        "sourceNumber": 82,
+        "correctIndex": 2
+      },
+      {
+        "question": "A lens forms a real image of an object. With the usual real-is-positive image-distance convention, what is the sign of the image distance?",
+        "choices": [
+          "Positive",
+          "Negative",
+          "Zero",
+          "It must equal the focal length"
+        ],
+        "key": "bd57454fec5f36257e5f5601976c60a4ebac08ec7b40b35c72ded68ac49da0fc",
+        "sourceNumber": 83,
+        "correctIndex": 0
+      },
+      {
+        "question": "An object is 12 cm from a converging lens of focal length 18 cm. What is the image distance using 1/f = 1/do + 1/di?",
+        "choices": [
+          "−36 cm",
+          "36 cm",
+          "−9 cm",
+          "9 cm"
+        ],
+        "key": "971532f2912297e86546e047e8b9eb14c9f68a464b60c46c9947ab8291bae40d",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "A concave mirror has focal length 15 cm. What is its radius of curvature magnitude?",
+        "choices": [
+          "7.5 cm",
+          "15 cm",
+          "30 cm",
+          "45 cm"
+        ],
+        "key": "9e7b5daf3810ecb2d16f9fc50abb37d777657089cf7b37f55fbd9b959cfb4a66",
+        "sourceNumber": 85,
+        "correctIndex": 2
+      },
+      {
+        "question": "A concave mirror has focal length 12 cm and an object is 36 cm in front. Using 1/f = 1/do + 1/di, how far from the mirror is the image?",
+        "choices": [
+          "18 cm",
+          "24 cm",
+          "36 cm",
+          "48 cm"
+        ],
+        "key": "6c09d68f5431a628a2c63912e9ae290bc0ce22f8227ee3ca01742a05dce981d5",
+        "sourceNumber": 86,
+        "correctIndex": 0
+      },
+      {
+        "question": "A convex mirror is used to view a larger area behind a vehicle. What kind of image does it form for a real object?",
+        "choices": [
+          "Virtual, upright, and diminished",
+          "Real, inverted, and enlarged",
+          "Real, upright, and magnified",
+          "Virtual, inverted, and the same size"
+        ],
+        "key": "88fd4c34a8d092b9f3edbd2e8a9bcefa7dfbdeb7ec98d8ce5337e419b4ae4fcf",
+        "sourceNumber": 87,
+        "correctIndex": 0
+      },
+      {
+        "question": "A ray parallel to the principal axis passes through a thin converging lens. After refraction, it travels through:",
+        "choices": [
+          "The principal focus on the far side",
+          "The optical centre without deviation in every case",
+          "The focus on the incident side",
+          "The centre of curvature of a mirror"
+        ],
+        "key": "8c78498abbc2ca07f7fb356e93606011f3718cda9a4b09b93d6f7fffa49c54a8",
+        "sourceNumber": 88,
+        "correctIndex": 0
+      },
+      {
+        "question": "A ray passes through the optical centre of an ideal thin lens. What is its approximate direction after passing through?",
+        "choices": [
+          "It continues undeviated",
+          "It turns through 90°",
+          "It reflects backward",
+          "It always passes through the focus"
+        ],
+        "key": "ef8f529074184ab9de33f145b6be448f626380806a132c744cdba17fdb274c6d",
+        "sourceNumber": 89,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which defect of vision is commonly corrected using a diverging lens?",
+        "choices": [
+          "Myopia",
+          "Hypermetropia",
+          "Presbyopia in every case",
+          "Colour blindness"
+        ],
+        "key": "e86142ecd4e68b654c4961c0f4dc1a7078ef8b04a22a3582d5d6662b8af9ebbf",
+        "sourceNumber": 90,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which type of lens is commonly used to correct hypermetropia?",
+        "choices": [
+          "Converging lens",
+          "Diverging lens",
+          "Plane glass only",
+          "Convex mirror"
+        ],
+        "key": "a8f08ec348e382b389a6849975862d6d1126f3b69fab3932eda45cfc91928b91",
+        "sourceNumber": 91,
+        "correctIndex": 0
+      },
+      {
+        "question": "A simple magnifying glass is normally used with the object placed:",
+        "choices": [
+          "Within the focal length of a converging lens",
+          "Beyond twice the focal length",
+          "At the centre of curvature of a mirror",
+          "Beyond the focal length of a diverging lens"
+        ],
+        "key": "2c7a7aa0be248b30ebea63d39ddb600fbdad036b11f925519704041a7b16ad1a",
+        "sourceNumber": 92,
+        "correctIndex": 0
+      },
+      {
+        "question": "A camera uses a converging lens to form an image of a distant object on its sensor. The image is generally:",
+        "choices": [
+          "Real and inverted",
+          "Virtual and upright",
+          "Virtual and inverted",
+          "Always the same size as the object"
+        ],
+        "key": "4ed8379fa41e3a60d67b7df219653b1a908f0a8ff486e4a875c5a8dab05333e2",
+        "sourceNumber": 93,
+        "correctIndex": 0
+      },
+      {
+        "question": "An object is placed at the focal point of an ideal converging lens. Where do the emerging rays meet?",
+        "choices": [
+          "At infinity as parallel rays",
+          "At the optical centre",
+          "At twice the focal length",
+          "At the object"
+        ],
+        "key": "b3bde31f47253f0804eab9cdedbe4cd81b7918399da21584d5d672405cdc54fe",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "A converging lens has power +5 D. What is its focal length?",
+        "choices": [
+          "0.2 m",
+          "5 m",
+          "−0.2 m",
+          "2.5 m"
+        ],
+        "key": "c897800b22673633c30d1fd8f5a60e13a38ec982fe843dd87d89c6e34f277431",
+        "sourceNumber": 95,
+        "correctIndex": 0
+      },
+      {
+        "question": "Two thin converging lenses of powers +2 D and +3 D are in contact. What is their combined power?",
+        "choices": [
+          "+1 D",
+          "+5 D",
+          "+6 D",
+          "−5 D"
+        ],
+        "key": "054a669588b36a17f911b261c8fdd114a80d7e30f3f652ae2ca8ab72428c635d",
+        "sourceNumber": 96,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which statement about a real image formed by a converging lens is correct?",
+        "choices": [
+          "It can be projected onto a screen",
+          "It is always upright",
+          "It must be on the same side as the object",
+          "It cannot be inverted"
+        ],
+        "key": "29f464dd50fc16ff695c6d585ef160949fc56e1e0ca91b24f9051cccf6ea9a9e",
+        "sourceNumber": 97,
+        "correctIndex": 0
+      },
+      {
+        "question": "A 3 cm object is 15 cm from a converging lens; its real image forms 30 cm away. What is the image height magnitude?",
+        "choices": [
+          "1.5 cm",
+          "3 cm",
+          "6 cm",
+          "9 cm"
+        ],
+        "key": "b6bb6506b384d47927d2ed6ccd86380701977cea27e832d919a48d7ac26f6285",
+        "sourceNumber": 98,
+        "correctIndex": 2
+      },
+      {
+        "question": "A thin lens has focal length 0.5 m. What is its power?",
+        "choices": [
+          "+2 D if converging",
+          "+0.5 D if converging",
+          "−2 D in every case",
+          "+5 D"
+        ],
+        "key": "9c75a6de5a56383d0d8bcdd3be42823e6216cba436215fd82fbab646a295b1d1",
+        "sourceNumber": 99,
+        "correctIndex": 0
+      },
+      {
+        "question": "A ray of light enters a glass prism and white light spreads into a spectrum. What is the main cause of this dispersion?",
+        "choices": [
+          "Different wavelengths refract by different amounts",
+          "All wavelengths have identical refractive indices",
+          "The prism changes light into sound",
+          "The glass reflects every colour equally"
+        ],
+        "key": "4d3348c617f9a7063e835d686bab3abedcc580fe471ecfeb80db686b493b287a",
+        "sourceNumber": 100,
+        "correctIndex": 0
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "8dbf6fc7faf8325f7bc7638f11c7f3d41706677de12b7e0213e61352b5af9a30",
+      "sourceQuestionNumbers": [
+        59,
+        14,
+        29,
+        64,
+        86,
+        85,
+        21,
+        50,
+        67,
+        12,
+        36,
+        52,
+        82,
+        9,
+        75,
+        95,
+        61,
+        34,
+        10,
+        53,
+        100,
+        69,
+        40,
+        20,
+        46,
+        80,
+        4,
+        24,
+        56,
+        99,
+        6,
+        58,
+        92,
+        72,
+        30,
+        89,
+        68,
+        2,
+        57,
+        26,
+        44,
+        35,
+        84,
+        76,
+        7,
+        42,
+        93,
+        11,
+        71,
+        38,
+        78,
+        54,
+        81,
+        32,
+        13,
+        22,
+        47,
+        15,
+        74,
+        83,
+        96,
+        55,
+        73,
+        17,
+        37,
+        91,
+        18,
+        49,
+        31,
+        79,
+        33,
+        65,
+        45,
+        1,
+        94,
+        77,
+        25,
+        3,
+        97,
+        51,
+        5,
+        39,
+        66,
+        98,
+        60,
+        41,
+        23,
+        88,
+        63,
+        19,
+        28,
+        43,
+        16,
+        87,
+        70,
+        90,
+        62,
+        27,
+        48,
+        8
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
