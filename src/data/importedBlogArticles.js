@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nat-ie-waves-optics": {
+    title: "100 NAT-IE-Style Waves and Optics MCQs with Explanations",
+    excerpt:
+      "Practise 100 original questions on wave properties, sound, electromagnetic waves, reflection, refraction, lenses, and optical instruments, with answers and concise reasoning.",
+    category: "Subject Guide",
+    date: "2026-11-12",
+    readTime: "31 min",
+    content: null,
+    body: readImportedBlogBody("nat-ie-waves-optics")
+  },
   "nat-ics-database-sql": {
     title: "100 Database and SQL MCQs for NAT-ICS-Style Practice",
     excerpt:
