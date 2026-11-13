@@ -1,0 +1,1328 @@
+{
+  "version": 1,
+  "slug": "airport-security-situational-judgment",
+  "createdAt": "2026-11-13T06:05:32.967592+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "airport-security-situational-judgment",
+    "title": "99 Airport Security Situational Judgment MCQs for ASF Preparation",
+    "url": "https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7758486545,
+      "sha": "90b48f81983dbe4a7162e3e01a8ec65db5e83149",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-13T06:05:32.791619+00:00",
+      "url": "https://mcqs-base-i6hinpffh-as-projects-10921176.vercel.app",
+      "publisherRunId": 43375576503
+    },
+    "fetchedAt": "2026-11-13T06:05:32.791619+00:00",
+    "contentHash": "d83e372665660e799214cb61cde83ee1a0e4df4c4603dee3af125e4c69408aee",
+    "questions": [
+      {
+        "question": "You notice a small bag left unattended beside a busy waiting-area seat. What is the best first response?",
+        "choices": [
+          "Keep a safe distance and promptly notify the appropriate security supervisor or response channel",
+          "Open it to look for identification",
+          "Move it to the nearest counter",
+          "Ignore it because it is small"
+        ],
+        "key": "3faa95a3f0d73b27d85f4bb858e50e8851da6e9a3a48e643c594a062a237bfa2",
+        "sourceNumber": 1,
+        "correctIndex": 0
+      },
+      {
+        "question": "A colleague suggests moving an unattended parcel to clear a walkway. What should you do?",
+        "choices": [
+          "Do not move it; report its location and follow the responsible security personnel's instructions",
+          "Move it a short distance without opening it",
+          "Ask a passenger to move it",
+          "Cover it so people do not notice"
+        ],
+        "key": "03ece978134419fb9f2bfd770020028db97f56cdbd3021b366bedc7ae6b065ff",
+        "sourceNumber": 2,
+        "correctIndex": 0
+      },
+      {
+        "question": "You see a person leave a bag behind while repeatedly looking around, but you do not know their intent. What is the soundest action?",
+        "choices": [
+          "Report the specific behavior and location without guessing at the person's motive",
+          "Announce that the person is a threat",
+          "Follow the person without notifying anyone",
+          "Do nothing unless the person returns"
+        ],
+        "key": "daf1fd64575cdc09d9a18cfe25d52f5d99edde26a9732e2b5e524027d31b6f15",
+        "sourceNumber": 3,
+        "correctIndex": 0
+      },
+      {
+        "question": "A nearby passenger says an unattended bag belongs to their companion. What should you do?",
+        "choices": [
+          "Report the situation and follow applicable instructions rather than relying only on an unverified explanation",
+          "Accept the explanation and leave immediately",
+          "Open the bag to check whether it matches the story",
+          "Ask the passenger to carry it away"
+        ],
+        "key": "47b5ebd36c8b7e891875b4ff7398505ca281eded05c233ea03e13bc54ff5443d",
+        "sourceNumber": 4,
+        "correctIndex": 0
+      },
+      {
+        "question": "You are asked to describe an unattended suitcase in a report. Which description is most useful?",
+        "choices": [
+          "A blue hard-sided suitcase beside the east entrance, observed at about 10:15",
+          "A suspicious bag left by a dangerous person",
+          "A strange suitcase somewhere near the entrance",
+          "A bag that probably contains something important"
+        ],
+        "key": "61df662876a65bfde9075fe99ab1bf082872ee9023c71126d5eb47fafe1986bf",
+        "sourceNumber": 5,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger says a package has been unattended for several minutes. You did not see who left it. What should you report?",
+        "choices": [
+          "The passenger's account as an account, along with your own observations",
+          "That you saw someone abandon the package",
+          "That the package is definitely dangerous",
+          "Nothing, because you did not witness it being left"
+        ],
+        "key": "1427f67d3e17ccff4eb0f965e3546f3a0b07c0950df104bc42debe1a889685a5",
+        "sourceNumber": 6,
+        "correctIndex": 0
+      },
+      {
+        "question": "A child is separated from an adult and is crying near a public corridor. What is the best response?",
+        "choices": [
+          "Stay attentive, reassure the child calmly, and notify the appropriate staff or supervisor",
+          "Take the child to a private room alone without telling anyone",
+          "Tell the child to search the terminal",
+          "Ignore the situation because no security incident is certain"
+        ],
+        "key": "0b4a51cc2352807fde37357fb0fb42da81900bcc5744c158ae62bf379c30ba10",
+        "sourceNumber": 7,
+        "correctIndex": 0
+      },
+      {
+        "question": "You notice smoke-like haze near a service doorway but cannot identify its source. What should you do?",
+        "choices": [
+          "Report the location promptly and follow the site's emergency instructions",
+          "Open the doorway to investigate alone",
+          "Wait until you can prove there is a fire",
+          "Tell nearby people it is harmless"
+        ],
+        "key": "06a4f254dbc47ec6a429422b9ff3927aeeca8384093a55c7cf5f9ac6c46e57a8",
+        "sourceNumber": 8,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger points out a leaking container in a public area. What is the most appropriate response?",
+        "choices": [
+          "Keep clear, report the location and observed leak, and follow instructions",
+          "Touch the liquid to identify it",
+          "Wipe it up with a cloth immediately",
+          "Tell the passenger to carry it outside"
+        ],
+        "key": "fa3244e867b085608c6206a06460be92aecc53420f97c5f3198230ea07423b71",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "A person leaves a package beside a bin and walks away. Which detail should you prioritize when reporting?",
+        "choices": [
+          "The package's exact location and the person's observable direction of travel",
+          "Your guess about the person's nationality",
+          "Whether the person seemed unfriendly",
+          "A description of unrelated people nearby"
+        ],
+        "key": "b6e6e8e4bedb8602675528cd13ca75f218a20995130a5b85246a287bd4d7b3de",
+        "sourceNumber": 10,
+        "correctIndex": 0
+      },
+      {
+        "question": "You see a person repeatedly trying a locked service door. What is the best response?",
+        "choices": [
+          "Report the behavior and location through the appropriate channel",
+          "Challenge the person physically",
+          "Unlock the door to see what they want",
+          "Assume they are authorized because they look confident"
+        ],
+        "key": "661c7e7b5e59e715592989d11c9d08933cdf435af413016c0242acc5ac9fbc97",
+        "sourceNumber": 11,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger points to a bag and says it may be theirs but is unsure. What should you do?",
+        "choices": [
+          "Keep the uncertainty clear, report the situation, and follow the applicable response",
+          "Tell them to open it immediately",
+          "Declare it abandoned without checking any process",
+          "Leave it because the passenger might own it"
+        ],
+        "key": "01d08adebd8122162c085340fb0dd335e5ba6af1574bfb9dcd9e1a09c969ce5d",
+        "sourceNumber": 12,
+        "correctIndex": 0
+      },
+      {
+        "question": "During a patrol, you find a door propped open in an area normally kept closed. What is the best action?",
+        "choices": [
+          "Report the door's location and condition and follow access-control instructions",
+          "Close it and say nothing",
+          "Enter the area alone to look around",
+          "Assume a colleague left it open for convenience"
+        ],
+        "key": "f1ace238482df73e2c33c29e0b94a51b86a241451419441e33220f504cb0209f",
+        "sourceNumber": 13,
+        "correctIndex": 0
+      },
+      {
+        "question": "You notice a suspicious-looking item, but a supervisor is speaking with someone. What should you do?",
+        "choices": [
+          "Use the designated prompt reporting channel and provide concise facts",
+          "Wait until the supervisor is free, regardless of urgency",
+          "Post a photo of it in a public group",
+          "Ask untrained bystanders to investigate"
+        ],
+        "key": "24de1e36e922b073735860d761a9f77c0a4ea310d80c97afa114b7e27aff5c32",
+        "sourceNumber": 14,
+        "correctIndex": 0
+      },
+      {
+        "question": "A person without visible authorization tries to follow an employee through a controlled door. What is the best general response?",
+        "choices": [
+          "Do not allow access to be assumed; alert the responsible staff and follow access-control procedure",
+          "Hold the door open because the person is close behind",
+          "Assume the employee knows the person",
+          "Ask a passenger to decide whether they belong"
+        ],
+        "key": "97748599827b12022b46a93cf9fffbe9e2a185b09253419156a024e6bdf80be5",
+        "sourceNumber": 15,
+        "correctIndex": 0
+      },
+      {
+        "question": "A staff member's credential does not appear to work at a controlled entrance. What should you advise?",
+        "choices": [
+          "Use the authorized assistance process to resolve the access issue",
+          "Borrow another employee's credential",
+          "Force the door open",
+          "Wait for someone else to enter and follow them"
+        ],
+        "key": "3791f5cce31cc0c557ce94926998cf467a2d206a291a167dfd9ffcd4994c4b9f",
+        "sourceNumber": 16,
+        "correctIndex": 0
+      },
+      {
+        "question": "A visitor says their appointment is urgent but has no visible authorization for a restricted area. What is the best action?",
+        "choices": [
+          "Direct the matter to the authorized contact or process before granting access",
+          "Let them enter because the appointment is urgent",
+          "Ask them to promise not to wander",
+          "Use your own credential to admit them"
+        ],
+        "key": "99106984b15864a1a89223f17dc3370e698acffd57d285c45d83d0fac4a8aa18",
+        "sourceNumber": 17,
+        "correctIndex": 0
+      },
+      {
+        "question": "You notice a controlled door has not latched after someone used it. What should you do?",
+        "choices": [
+          "Report it and follow the site's procedure to ensure the access issue is addressed",
+          "Leave it for the next patrol",
+          "Wedge it open so it cannot jam",
+          "Assume the alarm will handle everything"
+        ],
+        "key": "85db95d921eeae9bb427f83f886a025fae8e4ddf032d455d4867029c16b712e5",
+        "sourceNumber": 18,
+        "correctIndex": 0
+      },
+      {
+        "question": "A familiar employee asks you to let an unfamiliar person enter a restricted area without checking authorization. What is the soundest response?",
+        "choices": [
+          "Politely require the appropriate authorization check",
+          "Make an exception because the employee is familiar",
+          "Allow entry and record it later if asked",
+          "Tell the visitor to enter quickly"
+        ],
+        "key": "c1d76ed659bdcdb45695307f5a0be6fdcb67e784034a725e5b429db07ae8af22",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "A worker says they forgot their credential and asks to use yours for one entry. What should you do?",
+        "choices": [
+          "Decline to share it and direct them to the approved credential-assistance process",
+          "Lend it because you will be nearby",
+          "Leave the credential at the door for them",
+          "Enter together and let them pass through behind you"
+        ],
+        "key": "118f19913d522ffa878d8356c66ae2662fbeb0001ab452e317219a7c9cae6332",
+        "sourceNumber": 20,
+        "correctIndex": 0
+      },
+      {
+        "question": "An employee appears to be following an unknown person through a controlled entrance. What is the best judgment?",
+        "choices": [
+          "Treat the access concern seriously and report it through the appropriate channel",
+          "Assume the unknown person has permission",
+          "Shout accusations across the area",
+          "Ignore it because an employee is present"
+        ],
+        "key": "5fa9368aeb5f07d8ca53ea8ecc71a7fcaef51685c28eb7e2c0c9840b6275c3d5",
+        "sourceNumber": 21,
+        "correctIndex": 0
+      },
+      {
+        "question": "Someone presents a credential that is visibly damaged and difficult to read. What should you do?",
+        "choices": [
+          "Follow the procedure for checking the credential or referring the person for assistance",
+          "Guess the unreadable details and admit them",
+          "Keep the credential as a souvenir",
+          "Let them pass because the damage is minor"
+        ],
+        "key": "eb0d3397976f43164ec0fadb1ac1e27992cd379e100d043426e18d75d52c7b03",
+        "sourceNumber": 22,
+        "correctIndex": 0
+      },
+      {
+        "question": "A delivery worker arrives at a controlled entrance with a package and says they are expected. What is the best response?",
+        "choices": [
+          "Refer them to the designated authorization and delivery process",
+          "Let them in to avoid delaying the delivery",
+          "Accept the package and leave the worker unescorted",
+          "Ask them to find an open door"
+        ],
+        "key": "da7135813379b887d46d5520c07a61a63235c1ee9ae89d0e93332cac469977c3",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "You find a credential on the floor near a controlled doorway. What should you do?",
+        "choices": [
+          "Securely report or hand it in through the authorized lost-property or security process",
+          "Use it to test which doors it opens",
+          "Leave it where it is without alerting anyone",
+          "Give it to the first person who asks"
+        ],
+        "key": "c8f22ff703051decc454b49d24569e85124c8f521bd21cf2b5ee25d06ac2f3ff",
+        "sourceNumber": 24,
+        "correctIndex": 0
+      },
+      {
+        "question": "A person says a senior official has approved their entry but cannot provide the required authorization. What should you do?",
+        "choices": [
+          "Seek confirmation through the authorized channel before allowing access",
+          "Accept the claim because the official is senior",
+          "Ask the person to name a second official",
+          "Let them enter while you make a note"
+        ],
+        "key": "532f53c078f86e67fb1e92b34dcde66bd75970e3d0cce9dcb17eee75e92f3ae3",
+        "sourceNumber": 25,
+        "correctIndex": 0
+      },
+      {
+        "question": "Your assigned post is briefly unattended because you need assistance with an access-control issue. What is the best approach?",
+        "choices": [
+          "Notify the appropriate colleague or supervisor and follow coverage instructions",
+          "Leave without telling anyone",
+          "Ask an unauthorized visitor to watch the entrance",
+          "Disable the access control temporarily"
+        ],
+        "key": "126ecc0aef5042a13ccdfcb642454cda7fa4da94e59bb9732bd007be99be5f75",
+        "sourceNumber": 26,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger asks you to skip a screening step because they are late. What is the best response?",
+        "choices": [
+          "Explain calmly that required steps must be followed and direct them to the appropriate assistance option",
+          "Skip the step to prevent a complaint",
+          "Argue about whether they planned well",
+          "Tell them to proceed without screening"
+        ],
+        "key": "1b086107a0f115b9f0f6300a5c40ed10d3f4f71684807a647e56beafd52ff94a",
+        "sourceNumber": 27,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger asks you to apply a screening rule differently because you share their background. What should you do?",
+        "choices": [
+          "Apply the relevant rules consistently and respectfully",
+          "Make an exception to show goodwill",
+          "Ask other passengers to decide",
+          "Ignore the request and leave the area"
+        ],
+        "key": "c88c64c5e7ba7ba3013768f82edb0330482bc06fd346c7b859e01b8adb25e459",
+        "sourceNumber": 28,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger becomes frustrated when asked to follow a direction. What is the best first communication approach?",
+        "choices": [
+          "Use a calm tone, explain the direction briefly, and listen to the concern",
+          "Raise your voice to establish authority",
+          "Mock the passenger for being impatient",
+          "Stop communicating and walk away"
+        ],
+        "key": "ed71dc01f0e456bdce0cb6912ef3aa11e8d29b67775c63b2f089eade4228ca8b",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger complains that another person was treated differently. What is the most appropriate response?",
+        "choices": [
+          "Listen respectfully and refer the concern through the proper channel without disclosing private details",
+          "Reveal the other person's screening information",
+          "Dismiss the complaint without listening",
+          "Promise a specific outcome you cannot control"
+        ],
+        "key": "1155af8e45e208a96cce7b94b8ca1cdb866a7532cd6fe799546efbd5e7b6e253",
+        "sourceNumber": 30,
+        "correctIndex": 0
+      },
+      {
+        "question": "A person asks you to explain a restricted screening procedure in detail while others are nearby. What should you do?",
+        "choices": [
+          "Provide only appropriate general guidance and refer detailed questions to an authorized source",
+          "Describe every restricted detail to satisfy curiosity",
+          "Post the procedure publicly",
+          "Invent an answer to avoid delay"
+        ],
+        "key": "aa0badfd7add7363309bffdec50d19a00a818f6ccd4dcc11b7785c4e3ad70c87",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger makes a rude comment about your colleague during an interaction. What is the best response?",
+        "choices": [
+          "Stay professional, focus on the relevant issue, and seek support if needed",
+          "Insult the passenger in return",
+          "Stop applying the rules to end the exchange",
+          "Encourage nearby people to argue"
+        ],
+        "key": "69f6cda1a5f6b13928dcb646c60487d2f33a8330937599140e459d5fccfa2cbb",
+        "sourceNumber": 32,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger appears distressed and says they do not understand what is happening. What should you do?",
+        "choices": [
+          "Speak calmly, clarify the immediate instruction, and seek appropriate assistance if needed",
+          "Assume they are deliberately obstructing the process",
+          "Give several complicated instructions at once",
+          "Ignore the distress and walk away"
+        ],
+        "key": "ee96f12c67208cdc368d6a34cb8bd6773c4978248fba7e1278f0704ee8acd67f",
+        "sourceNumber": 33,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger offers you a gift to speed up their screening. What is the appropriate response?",
+        "choices": [
+          "Decline it and continue according to the applicable rules",
+          "Accept it but complete the usual steps",
+          "Accept it if no one is watching",
+          "Ask for a larger gift"
+        ],
+        "key": "980cb722add2c8c813ee9ec3679066d0fcb95f60c079edbd8dbffc78fe3275cc",
+        "sourceNumber": 34,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger's complaint is outside your authority to resolve. What should you say or do?",
+        "choices": [
+          "Explain your limit honestly and direct the passenger to the appropriate contact",
+          "Promise that the complaint will be resolved immediately",
+          "Make up a policy to end the discussion",
+          "Tell the passenger nobody can help"
+        ],
+        "key": "1621662c35d315436c9457e96d92eb2b629a422f095f2c42a41f40d5eddd34e5",
+        "sourceNumber": 35,
+        "correctIndex": 0
+      },
+      {
+        "question": "You recognize a passenger personally during a screening interaction. What is the soundest approach?",
+        "choices": [
+          "Maintain professional boundaries and apply the same relevant process",
+          "Skip steps to avoid awkwardness",
+          "Tell others private details about the passenger",
+          "Ask for a personal favor in return"
+        ],
+        "key": "f956b7f35598068e77c1d9a35270c0cd557d70fcdcc6816907e936738e51b23f",
+        "sourceNumber": 36,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger asks why you are directing them to a different line. What is the best reply?",
+        "choices": [
+          "Give a brief, accurate explanation appropriate to your role",
+          "Make a sarcastic remark",
+          "Invent a reason that sounds convincing",
+          "Discuss another passenger's private circumstances"
+        ],
+        "key": "9ffc4cf9dc0ccfc2b1091ccb8daa7b254118936329e26bb6eb198538bd3bad9c",
+        "sourceNumber": 37,
+        "correctIndex": 0
+      },
+      {
+        "question": "A colleague is speaking sharply to a passenger during a routine interaction. What should you do?",
+        "choices": [
+          "If safe, help restore calm and address the conduct through the appropriate supervisory channel",
+          "Join in to show support",
+          "Record and post the exchange online",
+          "Ignore it in every circumstance"
+        ],
+        "key": "4f1a19560344cb43eeff5b899e2093e950a0d5e42b23e8ad3bb327b984d1e4db",
+        "sourceNumber": 38,
+        "correctIndex": 0
+      },
+      {
+        "question": "You must give a quick incident report over a radio or phone. Which structure is most useful?",
+        "choices": [
+          "Identify yourself and location, state the observed issue, then give necessary details",
+          "Begin with a long personal opinion",
+          "Use vague phrases and omit the location",
+          "Include rumors before the facts"
+        ],
+        "key": "b22e4251ccad3af3f4fbcd9a29027c1eb415a6404460d640b981d37aa32cc5a4",
+        "sourceNumber": 39,
+        "correctIndex": 0
+      },
+      {
+        "question": "You are unsure whether a detail in your report is accurate. What should you do?",
+        "choices": [
+          "Label it as uncertain or leave it out until confirmed",
+          "Present it as fact to sound decisive",
+          "Ask someone to invent a likely answer",
+          "Hide the uncertainty from the recipient"
+        ],
+        "key": "843bdb1e032d0ae24172c7a529b9949268e2f8d94c654b24e5df9c6b78b8e579",
+        "sourceNumber": 40,
+        "correctIndex": 0
+      },
+      {
+        "question": "A colleague asks you to repeat an instruction you received, but you did not hear part of it clearly. What should you do?",
+        "choices": [
+          "Confirm the unclear instruction with the source before relaying it as definite",
+          "Guess what the missing part probably was",
+          "Tell the colleague a different instruction",
+          "Say nothing and let them decide"
+        ],
+        "key": "4a2f7992bfe96dc8a99a7c4d96a7015f1a62a0f8de37f8039b4499cc4bb67674",
+        "sourceNumber": 41,
+        "correctIndex": 0
+      },
+      {
+        "question": "You are reporting a person's movements. Which wording is most objective?",
+        "choices": [
+          "The person walked from the west entrance toward the information desk",
+          "The person looked guilty and planned something",
+          "The person was obviously dangerous",
+          "The person was acting weird"
+        ],
+        "key": "d989f802e6154d29a10a6c13d55b9b35fb2c94006022945e59f3e4b1b46c1ea3",
+        "sourceNumber": 42,
+        "correctIndex": 0
+      },
+      {
+        "question": "A report contains a time that you later realize is wrong. What should you do?",
+        "choices": [
+          "Promptly correct the record through the appropriate reporting process",
+          "Leave it because the error is small",
+          "Change the record secretly without telling anyone",
+          "Ask a colleague to accept responsibility"
+        ],
+        "key": "5a08b002b39f9750d16d27a5b914af27c91cc5e88c4fdf544093d44f81b2422b",
+        "sourceNumber": 43,
+        "correctIndex": 0
+      },
+      {
+        "question": "A caller gives you a detailed allegation about a person but no firsthand evidence. How should you pass it on?",
+        "choices": [
+          "Identify it as the caller's allegation and provide any relevant details without endorsing it as fact",
+          "State that the allegation is confirmed",
+          "Ignore it automatically",
+          "Add extra details to make it clearer"
+        ],
+        "key": "d3c524a35784a2e338377a8a975965eb0d63cc8ced133347b733431a4893c52d",
+        "sourceNumber": 44,
+        "correctIndex": 0
+      },
+      {
+        "question": "You receive two instructions that appear to conflict. What is the best response?",
+        "choices": [
+          "Seek clarification through the appropriate supervisory channel before acting where possible",
+          "Choose whichever instruction is easier",
+          "Ignore both instructions",
+          "Tell others that one supervisor is wrong"
+        ],
+        "key": "8d27e8fd3e01b65744b586822698700eaef20c4384a6da3f08770e384d9cc40a",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger reports a concern while you are handling another task. What should you do?",
+        "choices": [
+          "Acknowledge the report, assess urgency, and route it promptly without abandoning essential duties unsafely",
+          "Dismiss the passenger immediately",
+          "Promise to investigate later without recording details",
+          "Leave your assigned post without arranging coverage"
+        ],
+        "key": "a50f69df539acac1f53ff92cb0df6fee31388e72591b4fef34d2af5dfe72eb25",
+        "sourceNumber": 46,
+        "correctIndex": 0
+      },
+      {
+        "question": "You are asked to hand over an unresolved issue at the end of your shift. What should you include?",
+        "choices": [
+          "The current status, relevant observed facts, actions taken, and outstanding follow-up",
+          "Only your personal opinion of the people involved",
+          "Nothing, because the next shift can discover it",
+          "A conclusion without supporting details"
+        ],
+        "key": "0661bf7d1b1e5653362e889fe77ada520dff95e4f552a6e4a03cbc27e4b38255",
+        "sourceNumber": 47,
+        "correctIndex": 0
+      },
+      {
+        "question": "A colleague uses an unclear abbreviation in an incident message. What should you do?",
+        "choices": [
+          "Ask for clarification rather than assume what it means",
+          "Guess from context and act as if certain",
+          "Repeat it to others as confirmed",
+          "Ignore the entire message"
+        ],
+        "key": "b3c96331e6fe9b39c61349a0b71866a684a90400870169557f9ae545c33f462c",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger gives a useful description of a person who has left the area. Which information is most helpful to relay?",
+        "choices": [
+          "Observable clothing and direction of travel, with the time and location",
+          "A guess about the person's private life",
+          "An unsupported judgment about character",
+          "Only the passenger's emotional reaction"
+        ],
+        "key": "0ff49f2883ee701e8a14248700c64a2c5e07d14531024de0f225f01eb6c5e4e1",
+        "sourceNumber": 49,
+        "correctIndex": 0
+      },
+      {
+        "question": "An alarm or warning occurs in your area, but you do not know its cause. What should you do?",
+        "choices": [
+          "Report the warning and follow the applicable response instructions",
+          "Silence it without authorization",
+          "Assume it is a false alarm and continue",
+          "Tell people the cause is known"
+        ],
+        "key": "bb1ea45d04d3e1243124b3b1fc800f41f96f17b332e077e6183f91a814762a58",
+        "sourceNumber": 50,
+        "correctIndex": 0
+      },
+      {
+        "question": "A small crowd begins gathering around a developing disturbance. What should you prioritize?",
+        "choices": [
+          "Report the situation, follow instructions, and help maintain safety without provoking the crowd",
+          "Push through the crowd to confront someone",
+          "Encourage people to film closer",
+          "Make a public announcement about an unconfirmed cause"
+        ],
+        "key": "e08bb6fbe457208af648b1d8a640cf5d57d1f16017aeb0e8cfd8b3164e3b1451",
+        "sourceNumber": 51,
+        "correctIndex": 0
+      },
+      {
+        "question": "You witness an argument that is becoming louder, but no one has made a threat. What is the best judgment?",
+        "choices": [
+          "Report or seek assistance as appropriate, keep a safe distance, and avoid assuming a threat has occurred",
+          "Declare that an assault has happened",
+          "Join the argument to determine who is right",
+          "Ignore all escalation because no threat was spoken"
+        ],
+        "key": "faaa7bc5190d6a922efe6cd3c00f8316ba0a3fd979e385f43eebb1e99b2c06ff",
+        "sourceNumber": 52,
+        "correctIndex": 0
+      },
+      {
+        "question": "You hear a loud bang from an area out of sight. What is the most appropriate initial response?",
+        "choices": [
+          "Report the sound and location, then follow the relevant instructions",
+          "Run toward it alone to identify the source",
+          "Tell others it was definitely harmless",
+          "Ignore it unless someone complains"
+        ],
+        "key": "5faca1001829df6db2f6900d619d5d89e59220f61d3d72e1b2e719def0cba4e3",
+        "sourceNumber": 53,
+        "correctIndex": 0
+      },
+      {
+        "question": "Someone collapses in a public area. What should you do first as a general judgment principle?",
+        "choices": [
+          "Call or notify the appropriate emergency assistance and follow your training",
+          "Move the person immediately without assessing safety",
+          "Give medication from your own bag",
+          "Wait to see whether a crowd forms"
+        ],
+        "key": "345da11fe61c7bf358b2d607df16d170af744f77f8aa4652e4172fd5285aa3c4",
+        "sourceNumber": 54,
+        "correctIndex": 0
+      },
+      {
+        "question": "A person says they have lost a family member in the terminal. What is the best response?",
+        "choices": [
+          "Gather the essential information calmly and contact the appropriate assistance channel",
+          "Tell them to search every restricted area",
+          "Ask them to post personal details publicly",
+          "Assume they will find the person without help"
+        ],
+        "key": "af569b7baef642386b71af3161132c993574be561bb4262d1b58f2c97f67b030",
+        "sourceNumber": 55,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger tells you they feel unsafe but cannot explain why. What should you do?",
+        "choices": [
+          "Listen, ask for relevant observable details, and route the concern appropriately",
+          "Dismiss the concern because there is no proof",
+          "Tell everyone nearby that a threat exists",
+          "Promise that no risk is present"
+        ],
+        "key": "50769a8bb05bfa8913c6e8b4c1ecdc4d42624dc668b1b2bf5bc8a83af0f74ac8",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "You notice a fire exit partly blocked by boxes. What is the best action?",
+        "choices": [
+          "Report the obstruction promptly and follow the applicable safety process",
+          "Stack more boxes to make them stable",
+          "Leave it because the exit is still visible",
+          "Wait until an emergency to mention it"
+        ],
+        "key": "a3787f2d155ccbac901ab585472cae46aaba3f32a7e6a081aa711e459cb37071",
+        "sourceNumber": 57,
+        "correctIndex": 0
+      },
+      {
+        "question": "A colleague asks you to leave a safety concern out of a handover because it has already been mentioned verbally. What should you do?",
+        "choices": [
+          "Follow the appropriate reporting and handover process so relevant information is not lost",
+          "Omit it to avoid disagreement",
+          "Alter the details to sound less serious",
+          "Send an unverified rumor instead"
+        ],
+        "key": "1e568134d26494c66310397c503789d4940fc746f22b4eaf380116313ec93565",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "During a disruption, you cannot safely hear a radio instruction. What should you do?",
+        "choices": [
+          "Request a repeat or clarification using the appropriate channel",
+          "Act on a guess",
+          "Switch to an unrelated channel without notice",
+          "Assume the instruction was meant for someone else"
+        ],
+        "key": "a05ee1917665008f02202c81e3edf5352d51b4048fda90761f30da879a613537",
+        "sourceNumber": 59,
+        "correctIndex": 0
+      },
+      {
+        "question": "A person appears to need urgent medical help while you are assigned to a post. What is the best general response?",
+        "choices": [
+          "Alert appropriate assistance and coordinate coverage according to instructions",
+          "Abandon the post without telling anyone",
+          "Ignore the person to preserve your routine",
+          "Attempt treatment beyond your training"
+        ],
+        "key": "8258442fd265c5bebdcbd9748eeec1606c4fdcb761fd9514009453e43508c4a9",
+        "sourceNumber": 60,
+        "correctIndex": 0
+      },
+      {
+        "question": "A colleague reports an incident using an insulting label for a person. How should you record your own account?",
+        "choices": [
+          "Use neutral, factual descriptions of what you personally observed",
+          "Repeat the insult as an established fact",
+          "Add a harsher label to make the report convincing",
+          "Remove all useful details"
+        ],
+        "key": "80e5dd7005838fd638033dbbd30a07387739550316574912621721ea9bc08b32",
+        "sourceNumber": 61,
+        "correctIndex": 0
+      },
+      {
+        "question": "A member of the public asks to see another passenger's private information. What should you do?",
+        "choices": [
+          "Do not disclose it; refer the request to an authorized channel if appropriate",
+          "Share it if the requester seems concerned",
+          "Read it aloud so others can confirm",
+          "Send a photo of the record"
+        ],
+        "key": "4ed176a22e1f6736ff9e472759fe6da150dc3f4ba83c424eb31d482497b6b632",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "You accidentally send a work message containing sensitive information to the wrong recipient. What should you do?",
+        "choices": [
+          "Report the mistake promptly through the appropriate channel and follow instructions",
+          "Delete your sent copy and say nothing",
+          "Ask the recipient to forward it to others",
+          "Pretend the message was intentional"
+        ],
+        "key": "221b3afa12066f87ef9ec5420bfc209fbf573d4902a5e86b8585272def987dee",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "A friend asks for your work schedule and details about security routines. What is the best response?",
+        "choices": [
+          "Do not share sensitive work details; direct any legitimate request to an authorized source",
+          "Share everything because the friend is trustworthy",
+          "Send the details through a private account",
+          "Give an approximate schedule to be helpful"
+        ],
+        "key": "38f648063eaad4a439baae74bdbfc2c0339dbf4cb75f2a396de6afcaf84f6924",
+        "sourceNumber": 64,
+        "correctIndex": 0
+      },
+      {
+        "question": "A visitor offers money for information about a security incident. What should you do?",
+        "choices": [
+          "Decline and report the approach through the appropriate channel",
+          "Accept payment but share only a little",
+          "Ask the visitor to return later",
+          "Give a false story in exchange"
+        ],
+        "key": "5b4dce42db98675a154307f7a43552665f48bebdf38995bd83b2d3a3dbe61880",
+        "sourceNumber": 65,
+        "correctIndex": 0
+      },
+      {
+        "question": "You notice a colleague has recorded an event time incorrectly. What is the most responsible action?",
+        "choices": [
+          "Bring the discrepancy to the colleague or supervisor and use the proper correction process",
+          "Change the record without anyone knowing",
+          "Ignore it because the event is over",
+          "Copy the same incorrect time into your report"
+        ],
+        "key": "f8fe72904adb7682f94b341c93f3fa9c39d1a1fefe55eb67dce1609731b3e5d1",
+        "sourceNumber": 66,
+        "correctIndex": 0
+      },
+      {
+        "question": "A supervisor asks you to state that you witnessed something you did not see. What should you do?",
+        "choices": [
+          "Decline to make a false statement and report only what you know",
+          "Agree to support the supervisor",
+          "Repeat what another person guessed",
+          "Write the statement and correct it only if challenged"
+        ],
+        "key": "672cf0a25f1dbe050c9ff4472622e1b03f98b95c1c85ebecbdff121a8ac5ba88",
+        "sourceNumber": 67,
+        "correctIndex": 0
+      },
+      {
+        "question": "You find a wallet containing cash while on duty. What should you do?",
+        "choices": [
+          "Handle it according to the authorized lost-property process and report the relevant facts",
+          "Keep the cash and leave the wallet",
+          "Give it to a random passerby",
+          "Take it home until someone claims it"
+        ],
+        "key": "f62950ba533c920e37c83bcaeebc7551e16345477be9810cb486ddedbf53d8c2",
+        "sourceNumber": 68,
+        "correctIndex": 0
+      },
+      {
+        "question": "A colleague asks you to share your login so they can finish a work task quickly. What should you do?",
+        "choices": [
+          "Do not share credentials; direct them to authorized access support",
+          "Share the login and change it later",
+          "Write it on a note beside the device",
+          "Complete the task using their name"
+        ],
+        "key": "b269163b732fdb2cd9857804cab9779b5461263991bd08b344dc126bf3ee6903",
+        "sourceNumber": 69,
+        "correctIndex": 0
+      },
+      {
+        "question": "You see a work document left visible to people who do not need access to it. What is the best response?",
+        "choices": [
+          "Protect it from unauthorized viewing and notify the responsible person or channel as appropriate",
+          "Photograph it for personal reference",
+          "Read it aloud to identify its owner",
+          "Leave it exposed because it is not yours"
+        ],
+        "key": "62edc170a9e15cba8a2baf9511a8fadf77e96f3e601dc2916854b416aa28ac04",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger asks you to delete a record of their screening interaction. What is the appropriate response?",
+        "choices": [
+          "Do not alter records outside your authority; refer the request to the proper process",
+          "Delete it to avoid a complaint",
+          "Promise deletion without checking",
+          "Change the record to remove identifying details yourself"
+        ],
+        "key": "ad6b0cbe368266f5c33d163d21b62dc9af5d645e4066750052a1f8af09b48ce0",
+        "sourceNumber": 71,
+        "correctIndex": 0
+      },
+      {
+        "question": "You realize you made a procedural mistake that may have affected an interaction. What should you do?",
+        "choices": [
+          "Report it promptly and follow instructions to correct or document the issue",
+          "Hide it unless someone notices",
+          "Blame the passenger",
+          "Alter the record to make the action appear correct"
+        ],
+        "key": "a07e9d2304aeabc33438af166077e84cb3659c101faacf593f8a724497bb50a6",
+        "sourceNumber": 72,
+        "correctIndex": 0
+      },
+      {
+        "question": "Two tasks arrive at once: one is routine paperwork, and one is a new report of a possible immediate safety concern. What should you do?",
+        "choices": [
+          "Promptly route the safety concern and ensure duties are covered, then return to routine work",
+          "Finish paperwork first because it arrived earlier",
+          "Ignore the report until the end of the shift",
+          "Ask a bystander to decide which task matters"
+        ],
+        "key": "643e2421f0636818a53d1daa18b759c3c48ace6e3a101c53265b914e60bd33cd",
+        "sourceNumber": 73,
+        "correctIndex": 0
+      },
+      {
+        "question": "A colleague is handling an incident while you are responsible for another post. What is the best way to assist?",
+        "choices": [
+          "Coordinate with the colleague or supervisor so help is provided without leaving your post unmanaged",
+          "Abandon your post without notice",
+          "Assume the colleague needs no help",
+          "Bring several unauthorized people to watch"
+        ],
+        "key": "10555d9fbc7a6cef69b2b5e304348c26b5b14c101ea12f593deb51d1dc5418eb",
+        "sourceNumber": 74,
+        "correctIndex": 0
+      },
+      {
+        "question": "A group of colleagues gives inconsistent accounts of a minor incident. What should you do in your own report?",
+        "choices": [
+          "Record your own observations and clearly attribute information from others",
+          "Combine the accounts into one certain story",
+          "Choose the most dramatic version",
+          "Leave out every detail"
+        ],
+        "key": "299f04040c0fc43d770755d4739cf2af7bea53ab965587eb28ec47fed1ed6bf9",
+        "sourceNumber": 75,
+        "correctIndex": 0
+      },
+      {
+        "question": "You are tired near the end of a shift and notice you may have missed a routine observation. What is the best response?",
+        "choices": [
+          "Tell the appropriate colleague or supervisor and follow handover or coverage instructions",
+          "Pretend you completed it",
+          "Make a guess in the log",
+          "Leave without mentioning the gap"
+        ],
+        "key": "f56f82e868fd16aadff8127aca48151e9638593f4d166f2714620ad067d45ff6",
+        "sourceNumber": 76,
+        "correctIndex": 0
+      },
+      {
+        "question": "A colleague asks you to confirm a rumor about a possible incident. You have no firsthand knowledge. What should you say?",
+        "choices": [
+          "State that you cannot confirm it and direct them to an authorized information source",
+          "Repeat the rumor as likely true",
+          "Add a detail you heard from someone else without attribution",
+          "Post a warning publicly"
+        ],
+        "key": "e6c8179902b7c686a4f800c2293d7f8ae565f12caeeae4fa367e57de884fe416",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger becomes angry while your colleague is explaining a direction. What is the best way to support the interaction?",
+        "choices": [
+          "Remain calm, avoid talking over the colleague, and assist if requested or needed for safety",
+          "Surround the passenger with colleagues",
+          "Interrupt with a threat",
+          "Record the interaction for entertainment"
+        ],
+        "key": "f6f4abdf9404c7047c131f25ca86def20e8e7d48ab817112153fe3ff4492e506",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "You disagree with a colleague's interpretation of a rule during a live interaction. What should you do?",
+        "choices": [
+          "Avoid debating in front of the passenger where possible and seek prompt clarification through the proper channel",
+          "Contradict the colleague loudly",
+          "Apply whichever interpretation benefits you",
+          "Tell the passenger to choose the rule"
+        ],
+        "key": "b25fc943b1805617f6d38181ffe8c94fa71594fa1b8bc377bc4237183e256d9d",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "A new colleague is unsure whom to contact about a reported concern. What is the best response?",
+        "choices": [
+          "Direct them to the established reporting route or supervisor",
+          "Tell them to post it publicly",
+          "Guess a contact without checking",
+          "Advise them to keep it to themselves"
+        ],
+        "key": "994706ba5d556ea634aa1ec58df56ddccc5eb205881f66555346968fff94ab36",
+        "sourceNumber": 80,
+        "correctIndex": 0
+      },
+      {
+        "question": "You discover that your earlier report omitted a relevant location detail. What should you do?",
+        "choices": [
+          "Send a clear correction or addendum through the appropriate process",
+          "Wait for someone else to notice",
+          "Replace it with an unrelated detail",
+          "Claim that the location was obvious"
+        ],
+        "key": "1d9a224b5f2ee0a3b9e5939d8c3acb28b6823e06cbb5e561e2dd7452efeb4cba",
+        "sourceNumber": 81,
+        "correctIndex": 0
+      },
+      {
+        "question": "A visitor asks you to keep their security concern secret from all staff. What should you do?",
+        "choices": [
+          "Explain that relevant concerns must be shared with the appropriate people and route it discreetly",
+          "Promise absolute secrecy regardless of risk",
+          "Tell the entire public area",
+          "Ignore the concern to honor the request"
+        ],
+        "key": "8bdfa91ca00b4c7d3edda65a59cfcbfaf82e059c0f32a2abc920ee0edb23f452",
+        "sourceNumber": 82,
+        "correctIndex": 0
+      },
+      {
+        "question": "You are given a task that seems outside your training. What is the most responsible action?",
+        "choices": [
+          "Tell the supervisor what you can and cannot safely do, then seek guidance",
+          "Attempt it anyway to appear confident",
+          "Ask an untrained passenger for help",
+          "Refuse without explaining or seeking alternatives"
+        ],
+        "key": "1085333794eeda207e66daa00457549d96d19a4d21e15b332ad76b149f025a08",
+        "sourceNumber": 83,
+        "correctIndex": 0
+      },
+      {
+        "question": "A routine task and a possible immediate hazard compete for your attention while you are alone. What principle should guide your decision?",
+        "choices": [
+          "Prioritize prompt safety reporting while following instructions to preserve essential coverage",
+          "Always complete routine work first",
+          "Choose the task with fewer steps",
+          "Ignore both until another worker arrives"
+        ],
+        "key": "76168daa0eb4fbece6054b6fc5d1c7a1f598cfea351a69a72f8313795d3e95eb",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger asks for directions while you are monitoring an active access point. What is the best response?",
+        "choices": [
+          "Give brief help if it does not compromise monitoring, or direct them to another appropriate staff member",
+          "Turn away from the access point for an extended conversation",
+          "Ignore the passenger rudely",
+          "Invite the passenger to monitor the entrance"
+        ],
+        "key": "53913a2070b5cc2db8dbc7178ed5fbbdb630374dce6b9e480f65ce55784642e2",
+        "sourceNumber": 85,
+        "correctIndex": 0
+      },
+      {
+        "question": "A colleague asks you to cover their post but gives no handover about an unresolved concern. What should you do?",
+        "choices": [
+          "Ask for the necessary handover and confirm coverage arrangements before taking responsibility",
+          "Accept without asking anything",
+          "Assume there is no concern",
+          "Leave both posts unattended to find out"
+        ],
+        "key": "dd3e03086f1191ecd8254ae6a4f178aa390cec5a15503d2a0a4a6490c82c6f7f",
+        "sourceNumber": 86,
+        "correctIndex": 0
+      },
+      {
+        "question": "You notice a colleague repeatedly overlooking a required check. What is the best action?",
+        "choices": [
+          "Raise the concern through the appropriate supervisory or reporting channel",
+          "Ignore it because the colleague is experienced",
+          "Publicly shame the colleague",
+          "Copy the omission to avoid conflict"
+        ],
+        "key": "62d3aaeb80448cd62e3ef6d242ff3f1a87fa780b1a7a8a97090d9263ec9c4b6d",
+        "sourceNumber": 87,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger asks you to make an exception for someone who appears vulnerable. What should you do?",
+        "choices": [
+          "Show respectful consideration while following applicable rules and seeking authorized assistance for needs",
+          "Ignore the person's needs entirely",
+          "Bypass every requirement automatically",
+          "Ask unrelated passengers to decide"
+        ],
+        "key": "9438f923d9d5b18e4a4283625d76bfe4508cead41445cdba2120200ebe9815ad",
+        "sourceNumber": 88,
+        "correctIndex": 0
+      },
+      {
+        "question": "You cannot verify a claim that a person has permission to enter a controlled area. What is the soundest decision?",
+        "choices": [
+          "Pause access and use the authorized verification process",
+          "Allow entry because the person sounds certain",
+          "Let them enter and verify afterward",
+          "Ask them to choose which door to use"
+        ],
+        "key": "a157c5dfbe747318b3288ac5daaf261c2f6d58b7036a1eee6c4c9ec65766e2c1",
+        "sourceNumber": 89,
+        "correctIndex": 0
+      },
+      {
+        "question": "After an incident, a colleague asks you to delete your notes because the situation was resolved. What should you do?",
+        "choices": [
+          "Keep and handle records according to the appropriate retention and reporting instructions",
+          "Delete them immediately on request",
+          "Send them to a personal account",
+          "Rewrite them from memory to remove inconvenient details"
+        ],
+        "key": "44d60d90e867b8b77a729d137d4959299e2e1d252ccf7d25fd1fa69ae697c5f3",
+        "sourceNumber": 90,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger asks whether a particular person is being investigated. What is the best response?",
+        "choices": [
+          "Do not speculate or disclose confidential information; refer the question appropriately",
+          "Confirm the investigation to reassure them",
+          "Share what you heard from a colleague",
+          "Make up an explanation"
+        ],
+        "key": "30a908dcf5fd016138bcfe5d6c5ae8b6d43863e407e407cc9741dadd99cb16b9",
+        "sourceNumber": 91,
+        "correctIndex": 0
+      },
+      {
+        "question": "You have completed a task but are unsure whether the next shift knows about a developing issue. What should you do?",
+        "choices": [
+          "Confirm the issue is included in the appropriate handover",
+          "Assume someone else has told them",
+          "Leave a vague note without location or status",
+          "Wait for the next shift to ask"
+        ],
+        "key": "8f337cf6b98a037758b6f9548f17c85e6d8fd938e5eb91bdee425168d7028989",
+        "sourceNumber": 92,
+        "correctIndex": 0
+      },
+      {
+        "question": "A colleague is under pressure to hurry and suggests skipping documentation of an unusual event. What is the best response?",
+        "choices": [
+          "Follow the applicable documentation process and seek help managing workload if needed",
+          "Skip the record because the event was brief",
+          "Create a vague record later from memory",
+          "Ask the passenger to write the official report"
+        ],
+        "key": "2c247d0b5ef03e6206c1f6a38a8b1d141a74013376ff26dc3fcb45343025151b",
+        "sourceNumber": 93,
+        "correctIndex": 0
+      },
+      {
+        "question": "Two people give conflicting descriptions of an event. What should you do when recording the accounts?",
+        "choices": [
+          "Record each account with its source and note the conflict without deciding unsupported details",
+          "Choose whichever person sounds more confident",
+          "Merge them into a single account",
+          "Delete both accounts as unreliable"
+        ],
+        "key": "f993bf57dbc2e65fedc0fa15115c0d66af9b13c37a2ada14a68665d66f1907d5",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "A supervisor is temporarily unavailable, and you receive a report that may require quick attention. What is the best general approach?",
+        "choices": [
+          "Use the established alternative reporting channel and follow applicable instructions",
+          "Wait indefinitely for one specific supervisor",
+          "Post the report on social media",
+          "Assume it is not important without checking"
+        ],
+        "key": "defed316d41905810c53266cb34d0ae82deb0a3ed3217fa594a90caaa2d0c847",
+        "sourceNumber": 95,
+        "correctIndex": 0
+      },
+      {
+        "question": "A passenger has a disability and asks for help understanding a direction. What is the best response?",
+        "choices": [
+          "Communicate respectfully, ask what assistance is useful, and follow the appropriate process",
+          "Assume the passenger cannot decide what help they need",
+          "Ignore the request to avoid slowing the queue",
+          "Ask another passenger to handle it without consent"
+        ],
+        "key": "293f4c49f0e4df1ba56129bf883186bed5114903cb4da111d10510aa42c7230c",
+        "sourceNumber": 96,
+        "correctIndex": 0
+      },
+      {
+        "question": "You have no authority to approve a requested exception, but the passenger says refusing will cause a delay. What should you do?",
+        "choices": [
+          "Explain your role honestly and refer the request to the authorized decision-maker",
+          "Approve it anyway to avoid delay",
+          "Pretend a decision has been made",
+          "Tell the passenger to leave without explanation"
+        ],
+        "key": "69eea5a989d689f2f3200f566ad0828608cb8338517fa929a6a6edf853e2206f",
+        "sourceNumber": 97,
+        "correctIndex": 0
+      },
+      {
+        "question": "After a busy period, you are unsure whether an access concern was fully resolved. What should you do?",
+        "choices": [
+          "Check the status through the proper handover or reporting channel",
+          "Assume it was resolved because time has passed",
+          "Erase your notes to avoid duplication",
+          "Ask an uninvolved passenger what happened"
+        ],
+        "key": "9dea3c5babbd2098ec64b39cfd77c776b26ce5aa4c4dcb87cbfa2dfbd3a7f19b",
+        "sourceNumber": 98,
+        "correctIndex": 0
+      },
+      {
+        "question": "A colleague asks you to favor a friend in a queue. What is the most professional response?",
+        "choices": [
+          "Decline preferential treatment and apply the relevant process consistently",
+          "Agree because the request is harmless",
+          "Ask the friend for a favor in return",
+          "Move the friend ahead without recording it"
+        ],
+        "key": "d83ac59b85dde62dec420a9036402b79716fb118d89fa346f652892b54849b4e",
+        "sourceNumber": 99,
+        "correctIndex": 0
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "69369581d514adbdb4bcf685278ef80a08e5cf64b309cf41b32a65e8701d075f",
+      "sourceQuestionNumbers": [
+        97,
+        54,
+        66,
+        29,
+        15,
+        9,
+        60,
+        25,
+        80,
+        47,
+        28,
+        67,
+        59,
+        6,
+        88,
+        12,
+        46,
+        73,
+        85,
+        22,
+        57,
+        71,
+        33,
+        87,
+        10,
+        32,
+        41,
+        91,
+        4,
+        69,
+        51,
+        34,
+        63,
+        3,
+        92,
+        74,
+        14,
+        82,
+        35,
+        53,
+        76,
+        81,
+        24,
+        16,
+        52,
+        8,
+        27,
+        65,
+        95,
+        40,
+        43,
+        19,
+        90,
+        21,
+        78,
+        44,
+        79,
+        7,
+        96,
+        31,
+        70,
+        86,
+        36,
+        48,
+        17,
+        68,
+        56,
+        98,
+        20,
+        5,
+        55,
+        38,
+        61,
+        94,
+        1,
+        13,
+        49,
+        72,
+        99,
+        23,
+        84,
+        50,
+        26,
+        2,
+        64,
+        93,
+        75,
+        30,
+        11,
+        58,
+        45,
+        77,
+        83,
+        18,
+        39,
+        42,
+        37,
+        89,
+        62
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
