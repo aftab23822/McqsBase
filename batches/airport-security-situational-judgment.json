@@ -2277,7 +2277,11 @@
       },
       "uploadIntent": {
         "filename": "airport-security-situational-judgment-part-04-9fc18d208dc45c1b.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "ab1750c9-4934-4c36-a60d-7b1cecc737d3",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/DHQVJKe83y.mp4"
       }
     },
     {
