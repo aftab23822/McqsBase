@@ -1790,7 +1790,7 @@
           "integrationId": "cmvwbcule0222ro9dhocbic4w"
         },
         "youtube": {
-          "status": "ERROR",
+          "status": "QUEUE",
           "attemptedAt": "2026-11-12T06:53:10.014528+00:00",
           "postId": "cmwd6yh3k018zlmauylrkkqim",
           "url": null,
@@ -1802,7 +1802,7 @@
           "verification": "provider-status-only",
           "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
           "quotaRecovery": {
-            "status": "uncertain",
+            "status": "scheduled",
             "scheduledAt": "2026-11-13T00:15:00-08:00"
           },
           "scheduledAt": "2026-11-13T00:15:00-08:00"
