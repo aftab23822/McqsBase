@@ -1787,6 +1787,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        15,
+        9
+      ],
+      "count": 2,
+      "durationSeconds": 80,
+      "sha256": "6027b048ede52efc457ed26b369054b3f52dc8405d8389d17a68526816d1bfdd",
+      "manifest": {
+        "title": "99 Airport Security Situational Judgment MCQs for ASF Preparation",
+        "sourceTitle": "99 Airport Security Situational Judgment MCQs for ASF Preparation",
+        "sourceUrl": "https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-13T06:05:32.791619+00:00",
+        "sourceContentHash": "d83e372665660e799214cb61cde83ee1a0e4df4c4603dee3af125e4c69408aee",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7758486545,
+          "sha": "90b48f81983dbe4a7162e3e01a8ec65db5e83149",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-13T06:05:32.791619+00:00",
+          "url": "https://mcqs-base-i6hinpffh-as-projects-10921176.vercel.app",
+          "publisherRunId": 43375576503
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 80,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A person without visible authorization tries to follow an employee through a controlled door. What is the best general response?",
+            "choices": [
+              "Do not allow access to be assumed; alert the responsible staff and follow access-control procedure",
+              "Hold the door open because the person is close behind",
+              "Assume the employee knows the person",
+              "Ask a passenger to decide whether they belong"
+            ],
+            "correctIndex": 0,
+            "key": "97748599827b12022b46a93cf9fffbe9e2a185b09253419156a024e6bdf80be5",
+            "sourceNumber": 15
+          },
+          {
+            "question": "A passenger points out a leaking container in a public area. What is the most appropriate response?",
+            "choices": [
+              "Keep clear, report the location and observed leak, and follow instructions",
+              "Touch the liquid to identify it",
+              "Wipe it up with a cloth immediately",
+              "Tell the passenger to carry it outside"
+            ],
+            "correctIndex": 0,
+            "key": "fa3244e867b085608c6206a06460be92aecc53420f97c5f3198230ea07423b71",
+            "sourceNumber": 9
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 28,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 28,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 29,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 30,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 31,
+            "duration": 10,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 41,
+            "duration": 23,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 64,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 65,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 66,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 67,
+            "duration": 8,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 75,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            15,
+            9
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#TestPreparation",
+          "#QuizTime",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/airport-security-situational-judgment-part-03-6027b048ede52efc.mp4",
+        "videoSha256": "6027b048ede52efc457ed26b369054b3f52dc8405d8389d17a68526816d1bfdd",
+        "assetId": 742507905
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q15, 9 | 99 Airport Security Situational Judgment MCQs for ASF Preparation",
+          "text": "Part 3/5 · Source questions 15, 9\n99 Airport Security Situational Judgment MCQs for ASF Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q15, 9 | 99 Airport Security Situational Judgment MCQs for ASF Preparation",
+          "text": "Part 3/5 · Source questions 15, 9\n99 Airport Security Situational Judgment MCQs for ASF Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/airport-security-situational-judgment\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q15, 9 | 99 Airport Security Situational Judgment MCQs for ASF Preparation",
+          "text": "Part 3/5 · Source questions 15, 9\n99 Airport Security Situational Judgment MCQs for ASF Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/airport-security-situational-judgment\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q15, 9 | 99 Airport Security Situational Judgment MCQs for ASF Preparation",
+          "text": "Part 3/5 · Source questions 15, 9\n99 Airport Security Situational Judgment MCQs for ASF Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/airport-security-situational-judgment\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
