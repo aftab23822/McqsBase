@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "competitive-exam-grammar-mcqs",
   "createdAt": "2026-11-10T06:54:55.922993+00:00",
-  "status": "scheduled",
+  "status": "provider-published",
   "package": {
     "slug": "competitive-exam-grammar-mcqs",
     "title": "99 English Grammar MCQs for PPSC and PMS-Style Practice",
@@ -1777,15 +1777,15 @@
           "providerError": null
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-10T07:00:34.123937+00:00",
           "postId": "cmwaccahw0hfkroivh01d8a12",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
+          "url": "https://www.youtube.com/watch?v=4uXh5Qy--DA",
+          "providerUrl": "https://www.youtube.com/watch?v=4uXh5Qy--DA",
+          "providerReleaseId": "4uXh5Qy--DA",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
           "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
           "providerError": "YouTube's daily upload quota is exhausted for today, please reschedule this post for a later time.",
           "quotaRecovery": {
