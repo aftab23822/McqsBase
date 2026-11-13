@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-ics-database-sql",
   "createdAt": "2026-11-11T05:43:23.546796+00:00",
-  "status": "scheduled",
+  "status": "provider-published",
   "package": {
     "slug": "nat-ics-database-sql",
     "title": "100 Database and SQL MCQs for NAT-ICS-Style Practice",
@@ -1741,15 +1741,15 @@
           "providerError": null
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-11T05:49:39.851997+00:00",
           "postId": "cmwbp8yf70tforoiv2o9lap1g",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
+          "url": "https://www.youtube.com/watch?v=TlsZATFou7M",
+          "providerUrl": "https://www.youtube.com/watch?v=TlsZATFou7M",
+          "providerReleaseId": "TlsZATFou7M",
+          "providerStatus": "PUBLISHED",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
           "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
           "providerError": "YouTube's daily upload quota is exhausted for today, please reschedule this post for a later time.",
           "quotaRecovery": {
