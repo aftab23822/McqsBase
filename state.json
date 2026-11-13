@@ -1101,7 +1101,7 @@
       "verifiedPublications": 15
     },
     "nat-ics-database-sql": {
-      "status": "scheduled",
+      "status": "provider-published",
       "ledger": "batches/nat-ics-database-sql.json",
       "createdAt": "2026-11-11T05:43:23.546796+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ics-database-sql",
@@ -1113,8 +1113,8 @@
         "2026-11-11T19:14:00+05:00",
         "2026-11-11T21:57:00+05:00"
       ],
-      "published": 19,
-      "verifiedPublications": 14
+      "published": 20,
+      "verifiedPublications": 15
     },
     "nat-ie-waves-optics": {
       "status": "scheduled",
