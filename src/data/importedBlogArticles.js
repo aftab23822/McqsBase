@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "airport-security-situational-judgment": {
+    title: "99 Airport Security Situational Judgment MCQs for ASF Preparation",
+    excerpt:
+      "Practise observation, access-control judgment, professional communication, and ethical decision-making through 99 original airport-security scenarios.",
+    category: "Subject Guide",
+    date: "2026-11-13",
+    readTime: "45 min",
+    content: null,
+    body: readImportedBlogBody("airport-security-situational-judgment")
+  },
   "nat-ie-waves-optics": {
     title: "100 NAT-IE-Style Waves and Optics MCQs with Explanations",
     excerpt:
