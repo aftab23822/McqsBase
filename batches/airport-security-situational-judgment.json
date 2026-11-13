@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "airport-security-situational-judgment",
   "createdAt": "2026-11-13T06:05:32.967592+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "airport-security-situational-judgment",
     "title": "99 Airport Security Situational Judgment MCQs for ASF Preparation",
@@ -1687,7 +1687,12 @@
         }
       },
       "scheduledAt": "2026-11-13T11:27:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-13T06:11:43.250937+00:00"
+        }
+      }
     },
     {
       "part": 2,
