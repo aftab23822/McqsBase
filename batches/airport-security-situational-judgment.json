@@ -1323,6 +1323,239 @@
       "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
     }
   },
-  "parts": [],
+  "parts": [
+    {
+      "part": 1,
+      "directory": "part-01",
+      "sourceQuestionNumbers": [
+        97,
+        54
+      ],
+      "count": 2,
+      "durationSeconds": 78,
+      "sha256": "b4f4f384db5226caa1b84550df0597000779ae80eeb8601036fc14887266c9e1",
+      "manifest": {
+        "title": "99 Airport Security Situational Judgment MCQs for ASF Preparation",
+        "sourceTitle": "99 Airport Security Situational Judgment MCQs for ASF Preparation",
+        "sourceUrl": "https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-13T06:05:32.791619+00:00",
+        "sourceContentHash": "d83e372665660e799214cb61cde83ee1a0e4df4c4603dee3af125e4c69408aee",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7758486545,
+          "sha": "90b48f81983dbe4a7162e3e01a8ec65db5e83149",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-13T06:05:32.791619+00:00",
+          "url": "https://mcqs-base-i6hinpffh-as-projects-10921176.vercel.app",
+          "publisherRunId": 43375576503
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 78,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "You have no authority to approve a requested exception, but the passenger says refusing will cause a delay. What should you do?",
+            "choices": [
+              "Explain your role honestly and refer the request to the authorized decision-maker",
+              "Approve it anyway to avoid delay",
+              "Pretend a decision has been made",
+              "Tell the passenger to leave without explanation"
+            ],
+            "correctIndex": 0,
+            "key": "69eea5a989d689f2f3200f566ad0828608cb8338517fa929a6a6edf853e2206f",
+            "sourceNumber": 97
+          },
+          {
+            "question": "Someone collapses in a public area. What should you do first as a general judgment principle?",
+            "choices": [
+              "Call or notify the appropriate emergency assistance and follow your training",
+              "Move the person immediately without assessing safety",
+              "Give medication from your own bag",
+              "Wait to see whether a crowd forms"
+            ],
+            "correctIndex": 0,
+            "key": "345da11fe61c7bf358b2d607df16d170af744f77f8aa4652e4172fd5285aa3c4",
+            "sourceNumber": 54
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 26,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 26,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 27,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 28,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 29,
+            "duration": 9,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 38,
+            "duration": 24,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 62,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 63,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 64,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 65,
+            "duration": 8,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 73,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 1,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            97,
+            54
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#TestPreparation",
+          "#QuizTime",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/airport-security-situational-judgment-part-01-b4f4f384db5226ca.mp4",
+        "videoSha256": "b4f4f384db5226caa1b84550df0597000779ae80eeb8601036fc14887266c9e1",
+        "assetId": 742502786
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 1/5 | Q97, 54 | 99 Airport Security Situational Judgment MCQs for ASF Preparation",
+          "text": "Part 1/5 · Source questions 97, 54\n99 Airport Security Situational Judgment MCQs for ASF Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 1/5 | Q97, 54 | 99 Airport Security Situational Judgment MCQs for ASF Preparation",
+          "text": "Part 1/5 · Source questions 97, 54\n99 Airport Security Situational Judgment MCQs for ASF Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/airport-security-situational-judgment\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 1/5 | Q97, 54 | 99 Airport Security Situational Judgment MCQs for ASF Preparation",
+          "text": "Part 1/5 · Source questions 97, 54\n99 Airport Security Situational Judgment MCQs for ASF Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/airport-security-situational-judgment\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 1/5 | Q97, 54 | 99 Airport Security Situational Judgment MCQs for ASF Preparation",
+          "text": "Part 1/5 · Source questions 97, 54\n99 Airport Security Situational Judgment MCQs for ASF Preparation\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/airport-security-situational-judgment\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+          "format": "short"
+        }
+      }
+    }
+  ],
   "thinkingSeconds": 3
 }
