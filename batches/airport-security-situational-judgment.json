@@ -1794,6 +1794,10 @@
           "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/airport-security-situational-judgment",
           "format": "short"
         }
+      },
+      "uploadIntent": {
+        "filename": "airport-security-situational-judgment-part-02-2c937b936060a56f.mp4",
+        "status": "uncertain"
       }
     },
     {
