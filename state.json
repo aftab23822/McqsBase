@@ -1133,7 +1133,7 @@
       "verifiedPublications": 14
     },
     "airport-security-situational-judgment": {
-      "status": "scheduling",
+      "status": "scheduled",
       "ledger": "batches/airport-security-situational-judgment.json",
       "createdAt": "2026-11-13T06:05:32.967592+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/airport-security-situational-judgment",
