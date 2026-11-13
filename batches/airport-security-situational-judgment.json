@@ -3361,9 +3361,17 @@
       "scheduledAt": "2026-11-13T21:59:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "accepted",
+          "status": "QUEUE",
           "attemptedAt": "2026-11-13T06:13:12.695473+00:00",
-          "postId": "cmwekyxx703palmauh4lpwmdg"
+          "postId": "cmwekyxx703palmauh4lpwmdg",
+          "url": null,
+          "providerUrl": null,
+          "providerReleaseId": null,
+          "providerStatus": "QUEUE",
+          "providerError": null,
+          "publicUrlVerified": false,
+          "verification": "provider-status-only",
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
         }
       }
     }
