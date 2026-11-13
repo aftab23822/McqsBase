@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "airport-security-situational-judgment",
   "createdAt": "2026-11-13T06:05:32.967592+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "airport-security-situational-judgment",
     "title": "99 Airport Security Situational Judgment MCQs for ASF Preparation",
@@ -2485,5 +2485,81 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "airport-security-situational-judgment",
+    "sourceUrl": "https://www.mcqsbase.com/blog/airport-security-situational-judgment",
+    "sourceTitle": "99 Airport Security Situational Judgment MCQs for ASF Preparation",
+    "sourceContentHash": "d83e372665660e799214cb61cde83ee1a0e4df4c4603dee3af125e4c69408aee",
+    "productionDeployment": {
+      "id": 7758486545,
+      "sha": "90b48f81983dbe4a7162e3e01a8ec65db5e83149",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-13T06:05:32.791619+00:00",
+      "url": "https://mcqs-base-i6hinpffh-as-projects-10921176.vercel.app",
+      "publisherRunId": 43375576503
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          97,
+          54
+        ],
+        "count": 2,
+        "durationSeconds": 78,
+        "sha256": "b4f4f384db5226caa1b84550df0597000779ae80eeb8601036fc14887266c9e1"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          66,
+          29
+        ],
+        "count": 2,
+        "durationSeconds": 78,
+        "sha256": "2c937b936060a56f14a42116dfbaadf76ce6991994d5b909dc7fcca87f337b98"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          15,
+          9
+        ],
+        "count": 2,
+        "durationSeconds": 80,
+        "sha256": "6027b048ede52efc457ed26b369054b3f52dc8405d8389d17a68526816d1bfdd"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          60,
+          25
+        ],
+        "count": 2,
+        "durationSeconds": 77,
+        "sha256": "9fc18d208dc45c1b417f1717ea66bf05ad090774ac167246b962da5b1e6c56dd"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          80,
+          47
+        ],
+        "count": 2,
+        "durationSeconds": 75,
+        "sha256": "96b3a3cfc8a1623b6374dc3c800bc80455ba8523a3a1f99f7bacfb81f6719025"
+      }
+    ]
+  }
 }
