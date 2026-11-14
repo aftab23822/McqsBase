@@ -1898,6 +1898,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        97,
+        23
+      ],
+      "count": 2,
+      "durationSeconds": 67,
+      "sha256": "46b0d75382fdcdd8ad36f26bf3afded0e058cd21c69078141a73d18df5c94091",
+      "manifest": {
+        "title": "100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+        "sourceTitle": "100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-14T05:53:11.415678+00:00",
+        "sourceContentHash": "89e00301b5d1d98a76cd8af604562e62be2271c789531ed66bbf26b1a22a378f",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7783405703,
+          "sha": "3cfd9640785bb10a0d7b23970e45d48511130fe7",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-14T05:53:11.415678+00:00",
+          "url": "https://mcqs-base-n92nqfrdt-as-projects-10921176.vercel.app",
+          "publisherRunId": 43563290469
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 67,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Which statement best describes BF3 with respect to the octet rule?",
+            "choices": [
+              "Boron has an incomplete octet in its usual Lewis structure",
+              "Boron has ten electrons around it",
+              "Each fluorine has an incomplete duet",
+              "The molecule has no covalent bonds"
+            ],
+            "correctIndex": 0,
+            "key": "7718301c922a785340f6e987d8adccc171404473aeaf23dd42832ee443210b92",
+            "sourceNumber": 97
+          },
+          {
+            "question": "An element has isotopes of mass 10 u at 20% abundance and mass 11 u at 80% abundance. What is its average atomic mass?",
+            "choices": [
+              "10.2 u",
+              "10.5 u",
+              "10.8 u",
+              "11.0 u"
+            ],
+            "correctIndex": 2,
+            "key": "b22fe94823a077ce09b7e83e7475a4b73b948feee7f3c181eb1a02f7765c2188",
+            "sourceNumber": 23
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 22,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 25,
+            "duration": 7,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 32,
+            "duration": 22,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 54,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 55,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 56,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 57,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 62,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            97,
+            23
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-atomic-bonding-part-03-46b0d75382fdcdd8.mp4",
+        "videoSha256": "46b0d75382fdcdd8ad36f26bf3afded0e058cd21c69078141a73d18df5c94091",
+        "assetId": 746478177
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q97, 23 | 100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+          "text": "Part 3/5 · Source questions 97, 23\n100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q97, 23 | 100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+          "text": "Part 3/5 · Source questions 97, 23\n100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q97, 23 | 100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+          "text": "Part 3/5 · Source questions 97, 23\n100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q97, 23 | 100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+          "text": "Part 3/5 · Source questions 97, 23\n100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
