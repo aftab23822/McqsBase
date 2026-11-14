@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "nat-ie-atomic-bonding",
+  "createdAt": "2026-11-14T05:53:11.656302+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nat-ie-atomic-bonding",
+    "title": "100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+    "url": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7783405703,
+      "sha": "3cfd9640785bb10a0d7b23970e45d48511130fe7",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-14T05:53:11.415678+00:00",
+      "url": "https://mcqs-base-n92nqfrdt-as-projects-10921176.vercel.app",
+      "publisherRunId": 43563290469
+    },
+    "fetchedAt": "2026-11-14T05:53:11.415678+00:00",
+    "contentHash": "89e00301b5d1d98a76cd8af604562e62be2271c789531ed66bbf26b1a22a378f",
+    "questions": [
+      {
+        "question": "The atomic number of an element is equal to the number of which particles in its nucleus?",
+        "choices": [
+          "Protons",
+          "Neutrons",
+          "Protons and neutrons",
+          "Electrons and neutrons"
+        ],
+        "key": "f5e70e667419975ed104584426887f082a33a5999d9195698e65ae7b2fceaaca",
+        "sourceNumber": 1,
+        "correctIndex": 0
+      },
+      {
+        "question": "An atom has 11 protons and 12 neutrons. What is its mass number?",
+        "choices": [
+          "11",
+          "12",
+          "23",
+          "24"
+        ],
+        "key": "e84ab93a66d2b671e990f08cd5043ccf5102088407dce7042c20b3d20d472691",
+        "sourceNumber": 2,
+        "correctIndex": 2
+      },
+      {
+        "question": "Two atoms of the same element have different numbers of neutrons. They are called:",
+        "choices": [
+          "Isotopes",
+          "Isobars",
+          "Ions",
+          "Allotropes"
+        ],
+        "key": "a62f5be23877c5d234c478d1c10312ed48cbb8d8e7319da5b80945a8c98011e3",
+        "sourceNumber": 3,
+        "correctIndex": 0
+      },
+      {
+        "question": "How many electrons are in a neutral sodium atom with atomic number 11?",
+        "choices": [
+          "10",
+          "11",
+          "12",
+          "23"
+        ],
+        "key": "cf27bdfbf93400010d575092310c166f4f60aaa142557d3238b70fad9fa7dc05",
+        "sourceNumber": 4,
+        "correctIndex": 1
+      },
+      {
+        "question": "A particle has 3 protons and 4 neutrons. What is its mass number?",
+        "choices": [
+          "1",
+          "3",
+          "4",
+          "7"
+        ],
+        "key": "a80329c3bb1e689302fdca31afde5d6796973b9261a287099f3a16027e99e1fc",
+        "sourceNumber": 5,
+        "correctIndex": 3
+      },
+      {
+        "question": "According to the 2n-squared rule, what is the maximum electron capacity of the third shell?",
+        "choices": [
+          "8",
+          "18",
+          "32",
+          "9"
+        ],
+        "key": "9968e5ffb6694839db693c6b47b1dec861d7ea53e4ead7472b5465f84bfa7d0c",
+        "sourceNumber": 6,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many orbitals are present in a p subshell?",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "5"
+        ],
+        "key": "f4ff1d52c0f166ae2e57a690ab8d200def5cc6de6ce44b02d79e4781bfc665d0",
+        "sourceNumber": 7,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the maximum number of electrons that can occupy one orbital?",
+        "choices": [
+          "1",
+          "2",
+          "6",
+          "8"
+        ],
+        "key": "dffdfb3ef20ea162c00896786eab6e801cc2047fe1e21d57294e7bafc8123473",
+        "sourceNumber": 8,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the azimuthal quantum number l for an s subshell?",
+        "choices": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "key": "14072ba6cce42fe43eb52248b957bc4e03b113e84d835a9a7bc6874485bad5f0",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which subshell is filled immediately after 2s in the usual Aufbau filling order?",
+        "choices": [
+          "2p",
+          "3s",
+          "3p",
+          "1d"
+        ],
+        "key": "80f99d7b76abe58f0be328ad1a182b3100a7c66a4b660f0f82510a3539f684fc",
+        "sourceNumber": 10,
+        "correctIndex": 0
+      },
+      {
+        "question": "The Aufbau principle says that electrons in a ground-state atom generally occupy:",
+        "choices": [
+          "The highest-energy orbitals first",
+          "The lowest-energy available orbitals first",
+          "Only orbitals containing paired electrons",
+          "Orbitals in order of their shapes"
+        ],
+        "key": "da2194f5c6458387e4b291abd9dd0fe61ea3154379b5ec16e429a9a4df60f112",
+        "sourceNumber": 11,
+        "correctIndex": 1
+      },
+      {
+        "question": "According to the Pauli exclusion principle, two electrons in the same orbital must have:",
+        "choices": [
+          "The same spin",
+          "Opposite spins",
+          "Different principal shells",
+          "Identical four quantum numbers"
+        ],
+        "key": "a75349d42c5cdbc68fc67fbb606325de43d87801f227636123b38e0521c5d166",
+        "sourceNumber": 12,
+        "correctIndex": 1
+      },
+      {
+        "question": "Hund's rule predicts that electrons fill equal-energy orbitals by:",
+        "choices": [
+          "Pairing in one orbital before occupying others",
+          "Occupying separate orbitals with parallel spins first",
+          "Filling the highest-energy orbital first",
+          "Taking opposite spins in every orbital"
+        ],
+        "key": "3b634eabe10d48330fd42db8d76556599e56f3efbf06d3ff4b2d298b6d3db784",
+        "sourceNumber": 13,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the ground-state electron configuration of magnesium, atomic number 12?",
+        "choices": [
+          "1s2 2s2 2p6 3s2",
+          "1s2 2s2 2p5 3s3",
+          "1s2 2s2 2p6 3p2",
+          "1s2 2s2 2p6 3s1"
+        ],
+        "key": "364e1281349eb737cd83ef8c702f6ababc32c8987c4b474f792a17b02bdd7b20",
+        "sourceNumber": 14,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which subshell is the last occupied in the ground-state electron configuration of chlorine, atomic number 17?",
+        "choices": [
+          "2p",
+          "3s",
+          "3p",
+          "4s"
+        ],
+        "key": "091e6f0d613907138b0b2a082ca87669b5b82d272668bfc39c97301f58515e1e",
+        "sourceNumber": 15,
+        "correctIndex": 2
+      },
+      {
+        "question": "Which is the ground-state configuration of iron, atomic number 26, using noble-gas shorthand?",
+        "choices": [
+          "[Ar] 3d6 4s2",
+          "[Ar] 3d8",
+          "[Ar] 3d5 4s3",
+          "[Ne] 3s2 3p6"
+        ],
+        "key": "8e61acfdb8d7ccefddd4dd6eff0ee20187630241bc54294cfaf1968f00aaa34e",
+        "sourceNumber": 16,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which ground-state configuration represents chromium, atomic number 24?",
+        "choices": [
+          "[Ar] 3d4 4s2",
+          "[Ar] 3d5 4s1",
+          "[Ar] 3d6",
+          "[Ar] 3d3 4s3"
+        ],
+        "key": "5f82502677999cdb72d089b1827d66818ce1f58fde3a39b73490d93e52e9cc16",
+        "sourceNumber": 17,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which ground-state configuration represents copper, atomic number 29?",
+        "choices": [
+          "[Ar] 3d9 4s2",
+          "[Ar] 3d10 4s1",
+          "[Ar] 3d8 4s3",
+          "[Ar] 3d10"
+        ],
+        "key": "d86b4af9045024f58063246601cdbf1c996104d12c9d5846149ebdb94f4288a1",
+        "sourceNumber": 18,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many electrons are in the outermost shell of a neutral sodium atom?",
+        "choices": [
+          "1",
+          "2",
+          "7",
+          "8"
+        ],
+        "key": "1d5810ae2862dfb21275eae555ae5a17c9d367947afda99234b114f31f7921db",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "A positive ion is formed from a neutral atom when the atom:",
+        "choices": [
+          "Gains protons",
+          "Loses protons",
+          "Gains electrons",
+          "Loses electrons"
+        ],
+        "key": "bd6b89108877a84252a66becec3a1108a65985312e36a8f75aad1b2a4d4a4d1a",
+        "sourceNumber": 20,
+        "correctIndex": 3
+      },
+      {
+        "question": "How many electrons are in an O2- ion? Oxygen has atomic number 8.",
+        "choices": [
+          "6",
+          "8",
+          "10",
+          "16"
+        ],
+        "key": "08b26794790329186802db3bf047c26f7e3fadc899591c95283f6bfe86621c2b",
+        "sourceNumber": 21,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many electrons are in a Cl- ion? Chlorine has atomic number 17.",
+        "choices": [
+          "16",
+          "17",
+          "18",
+          "35"
+        ],
+        "key": "550a4d655765f2676876635ba9023019fcd05997c51b93e98e50a0619ab6b22a",
+        "sourceNumber": 22,
+        "correctIndex": 2
+      },
+      {
+        "question": "An element has isotopes of mass 10 u at 20% abundance and mass 11 u at 80% abundance. What is its average atomic mass?",
+        "choices": [
+          "10.2 u",
+          "10.5 u",
+          "10.8 u",
+          "11.0 u"
+        ],
+        "key": "b22fe94823a077ce09b7e83e7475a4b73b948feee7f3c181eb1a02f7765c2188",
+        "sourceNumber": 23,
+        "correctIndex": 2
+      },
+      {
+        "question": "For electromagnetic radiation, what happens to photon energy when frequency increases?",
+        "choices": [
+          "It decreases",
+          "It increases",
+          "It stays constant",
+          "It becomes zero"
+        ],
+        "key": "28d37b85d4a92c87042e1e36ac1c4fea0793ad909c9c02a1c131f784bd7878f0",
+        "sourceNumber": 24,
+        "correctIndex": 1
+      },
+      {
+        "question": "If the frequency of light increases, its wavelength in a vacuum:",
+        "choices": [
+          "Increases",
+          "Decreases",
+          "Stays the same",
+          "Becomes equal to its amplitude"
+        ],
+        "key": "9861e8f8a308f8d273f687b084336f49d60b433ffb6e9f5b16a2b37e3c49c0c0",
+        "sourceNumber": 25,
+        "correctIndex": 1
+      },
+      {
+        "question": "For a main-group element, the period number generally indicates the number of:",
+        "choices": [
+          "Protons",
+          "Occupied principal electron shells",
+          "Valence electrons",
+          "Neutrons"
+        ],
+        "key": "df6bb1147d70cde2ee22720ba4f11e8a9d9ac8b19e5fce4dea3e1430faa98983",
+        "sourceNumber": 26,
+        "correctIndex": 1
+      },
+      {
+        "question": "Elements in Group 17 of the periodic table are commonly called:",
+        "choices": [
+          "Alkali metals",
+          "Alkaline-earth metals",
+          "Halogens",
+          "Noble gases"
+        ],
+        "key": "ca5c9e94cc1a8183da7df04bfe493c9862d9a4db479bcfad9f75879915d4fa4a",
+        "sourceNumber": 27,
+        "correctIndex": 2
+      },
+      {
+        "question": "Which group contains the noble gases in the modern periodic table?",
+        "choices": [
+          "Group 1",
+          "Group 2",
+          "Group 17",
+          "Group 18"
+        ],
+        "key": "97c2907f2427cb3633aa07475c150391657fcf559cc65d4ed73793a24e57027e",
+        "sourceNumber": 28,
+        "correctIndex": 3
+      },
+      {
+        "question": "Across a period from left to right, atomic radius generally:",
+        "choices": [
+          "Increases",
+          "Decreases",
+          "Stays exactly constant",
+          "First becomes zero"
+        ],
+        "key": "dbbb8132d5d38aa1d66b9cf6ce24fd51a2d48d88058a060980e8b7960edbab7e",
+        "sourceNumber": 29,
+        "correctIndex": 1
+      },
+      {
+        "question": "Moving down a group, atomic radius generally:",
+        "choices": [
+          "Increases",
+          "Decreases",
+          "Stays exactly constant",
+          "Becomes equal to atomic number"
+        ],
+        "key": "0a890a449b86fe623195fbc8d0e939c01cafb8c4e1670f9352f22afa7356b9a9",
+        "sourceNumber": 30,
+        "correctIndex": 0
+      },
+      {
+        "question": "For main-group elements across a period, electronegativity generally:",
+        "choices": [
+          "Increases from left to right",
+          "Decreases from left to right",
+          "Is always zero",
+          "Does not vary"
+        ],
+        "key": "ca151c6138749dc70810051a474a003956f215fa07f59a6acb3ef307fbbeb133",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which element has the greatest electronegativity on the Pauling scale?",
+        "choices": [
+          "Fluorine",
+          "Oxygen",
+          "Chlorine",
+          "Nitrogen"
+        ],
+        "key": "2aa969a82be1a48d36ae5bafe7ebf440de8e67c613f8683abd1eb369a8235bb6",
+        "sourceNumber": 32,
+        "correctIndex": 0
+      },
+      {
+        "question": "For elements within a group, metallic character generally increases:",
+        "choices": [
+          "Up the group",
+          "Down the group",
+          "From left to right across a period",
+          "Only in noble gases"
+        ],
+        "key": "50f44551042cfb81e18595fb28630cd6a4fd9848e169dc8068a14d021271f91d",
+        "sourceNumber": 33,
+        "correctIndex": 1
+      },
+      {
+        "question": "For main-group elements across a period, first ionization energy generally tends to:",
+        "choices": [
+          "Increase from left to right",
+          "Decrease from left to right",
+          "Remain identical",
+          "Become negative for every element"
+        ],
+        "key": "2e8db0b5563a7489d4fa385b21979e6140857feadc074c83c99921a00fa2cc00",
+        "sourceNumber": 34,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which atom has the lower first ionization energy: potassium or sodium?",
+        "choices": [
+          "Potassium",
+          "Sodium",
+          "They are always equal",
+          "It cannot be compared"
+        ],
+        "key": "c19fb8504d153ab12b37507bb7e86864be1543ed2d77ef769a38a40b69f02e7f",
+        "sourceNumber": 35,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which species has the largest radius among O2-, F- and Na+?",
+        "choices": [
+          "O2-",
+          "F-",
+          "Na+",
+          "They have equal radii"
+        ],
+        "key": "0895944c2f88572b1394c46c9b9df83d8b5c66b1ea0a904cec8fe26c39410ac1",
+        "sourceNumber": 36,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which third-period atom is generally the largest in atomic radius?",
+        "choices": [
+          "Sodium",
+          "Silicon",
+          "Chlorine",
+          "Argon"
+        ],
+        "key": "140c340cc657a4e3f9e9b8cecc599dd80899cbb173ae3c6b0bf7923e726296fb",
+        "sourceNumber": 37,
+        "correctIndex": 0
+      },
+      {
+        "question": "A main-group atom has the electron arrangement 2,8,7. Which group does it belong to?",
+        "choices": [
+          "Group 1",
+          "Group 2",
+          "Group 17",
+          "Group 18"
+        ],
+        "key": "0e4850842dba7b72036dc61f74f4efed838608890ad70bc3fe3beee0896e6033",
+        "sourceNumber": 38,
+        "correctIndex": 2
+      },
+      {
+        "question": "A main-group atom has the electron arrangement 2,8,2. Which group does it belong to?",
+        "choices": [
+          "Group 1",
+          "Group 2",
+          "Group 16",
+          "Group 18"
+        ],
+        "key": "f710ddcb07ae6197a56f227ce4aa55c2f0a0ce386ec315bc70b208886ba122f2",
+        "sourceNumber": 39,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which oxide is generally basic when dissolved or reacted with acid?",
+        "choices": [
+          "Magnesium oxide",
+          "Sulfur trioxide",
+          "Carbon dioxide",
+          "Nitrogen dioxide"
+        ],
+        "key": "06a2dd50e9e09509448f2ca4f3653fa0f3ffd26998e508e969b881eea8d22938",
+        "sourceNumber": 40,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which oxide is an acidic oxide that forms an acid when it reacts with water?",
+        "choices": [
+          "Sodium oxide",
+          "Magnesium oxide",
+          "Sulfur trioxide",
+          "Calcium oxide"
+        ],
+        "key": "a8f88bd2bebffce77f33a26df0e0a3fc22a08d5ba39afe33805d3df74ebd5e40",
+        "sourceNumber": 41,
+        "correctIndex": 2
+      },
+      {
+        "question": "Electron affinity is concerned with the energy change when a gaseous atom:",
+        "choices": [
+          "Loses a proton",
+          "Gains an electron",
+          "Gains a neutron",
+          "Forms a nucleus"
+        ],
+        "key": "828f037821ec5ecee3db0442e644121eb58bf81e2fa31b5675132bc230e868bc",
+        "sourceNumber": 42,
+        "correctIndex": 1
+      },
+      {
+        "question": "Why does shielding generally increase down a group?",
+        "choices": [
+          "More inner electron shells are present",
+          "The nucleus loses all its protons",
+          "The valence shell disappears",
+          "Neutrons repel the outer electrons"
+        ],
+        "key": "58b57084a3821374519364ffeddd6ebb2ac9a2072fec0c5c7b0da484d65acb5a",
+        "sourceNumber": 43,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a typical ionic bond between a metal and a non-metal, the bond forms primarily through:",
+        "choices": [
+          "Transfer of electrons followed by electrostatic attraction",
+          "Sharing of a neutron pair",
+          "Fusion of their nuclei",
+          "Sharing of protons"
+        ],
+        "key": "a7a775bd149cad60d6adc191714add15617f49d5d0061b3a9cec66daa0a8051c",
+        "sourceNumber": 44,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the principal bonding arrangement in solid sodium chloride?",
+        "choices": [
+          "A lattice of Na+ and Cl- ions",
+          "Separate NaCl molecules linked by hydrogen bonds",
+          "A network of neutral sodium atoms",
+          "A lattice of shared electron pairs between Na and Cl"
+        ],
+        "key": "e40b4705810928a6cb6d31d2a8f8cb949b9c3a9d71364e64cdaa574eb3eb128c",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the simplest formula for a compound made from Mg2+ and Cl- ions?",
+        "choices": [
+          "MgCl",
+          "MgCl2",
+          "Mg2Cl",
+          "Mg2Cl2"
+        ],
+        "key": "743602316d294b44e1edfd6843cd9c99532d52571d6e457e0cc006d08afecad4",
+        "sourceNumber": 46,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the simplest formula for a neutral compound made from Al3+ and O2- ions?",
+        "choices": [
+          "AlO",
+          "Al2O3",
+          "Al3O2",
+          "Al2O"
+        ],
+        "key": "26be1b5e36fba6f4a43237066784e21c2ab9a52a55d6c2028dfda6adbe4cb4e0",
+        "sourceNumber": 47,
+        "correctIndex": 1
+      },
+      {
+        "question": "A covalent bond is formed when atoms:",
+        "choices": [
+          "Share one or more pairs of electrons",
+          "Exchange protons",
+          "Share neutrons only",
+          "Form ions without electron interaction"
+        ],
+        "key": "90c1b008676f744fa8b99c6ddf97f434f763015c39378242f4fee3184a5c56b9",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "How many shared electron pairs are present in a single covalent bond?",
+        "choices": [
+          "One",
+          "Two",
+          "Three",
+          "Four"
+        ],
+        "key": "39b4658065ac4f4e72e3f0566e88f26431e67d63cdb0f8c0f735cc9e252716fa",
+        "sourceNumber": 49,
+        "correctIndex": 0
+      },
+      {
+        "question": "How many shared electron pairs are present in a double covalent bond?",
+        "choices": [
+          "One",
+          "Two",
+          "Three",
+          "Four"
+        ],
+        "key": "298b11aaad9a74062b1f8cd408ca846142e1ceaef30e966f4becc2b66ebe55cb",
+        "sourceNumber": 50,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many shared electron pairs are present in a triple covalent bond?",
+        "choices": [
+          "One",
+          "Two",
+          "Three",
+          "Six"
+        ],
+        "key": "c2006599eafa9143db3703854985824313dfa45d94808013404be8e040ed07e7",
+        "sourceNumber": 51,
+        "correctIndex": 2
+      },
+      {
+        "question": "A coordinate covalent bond forms when the shared electron pair is:",
+        "choices": [
+          "Supplied by one bonding atom",
+          "Supplied equally as one electron from each atom in all cases",
+          "Made of two protons",
+          "Transferred completely to form only a neutral atom"
+        ],
+        "key": "e1b39cef9c2d4c2a57c74c8ff0c325d1e3a0d55e2040d5e6435a73b8547e278b",
+        "sourceNumber": 52,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a Lewis electron-dot symbol, the dots around an element symbol usually represent its:",
+        "choices": [
+          "Valence electrons",
+          "Neutrons",
+          "Inner-shell electrons only",
+          "Protons"
+        ],
+        "key": "c3d120f23be960fdb44e2cc81511b49755ae76589748e660fcb403b21c4b630e",
+        "sourceNumber": 53,
+        "correctIndex": 0
+      },
+      {
+        "question": "How many electrons are needed in the first shell for hydrogen to reach a filled shell?",
+        "choices": [
+          "1",
+          "2",
+          "8",
+          "18"
+        ],
+        "key": "86559d33a60981d01055cfc8e933ff2eb0d9d05fd3b55ce0c61efbf9c2c97580",
+        "sourceNumber": 54,
+        "correctIndex": 1
+      },
+      {
+        "question": "Why do many ionic solids have high melting points?",
+        "choices": [
+          "Strong electrostatic attractions hold their ions in a lattice",
+          "Their ions are free to move in the solid",
+          "They contain no charged particles",
+          "Their molecules are held together only by weak dispersion forces"
+        ],
+        "key": "ddb222e501e2bce45674c776be36448f326029594fd2b186e0edca9c9019f5ab",
+        "sourceNumber": 55,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why can molten sodium chloride conduct electricity?",
+        "choices": [
+          "Its ions are mobile and carry charge",
+          "Its electrons are all removed from the atoms",
+          "Its ions are fixed in place",
+          "It contains only neutral molecules"
+        ],
+        "key": "f2016ba5aaa27d34ee05abaa8ea164185c8450ff10ecfa329c413344a04f635a",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why does solid sodium chloride not conduct electricity well?",
+        "choices": [
+          "Its ions are held in fixed lattice positions",
+          "It contains no ions",
+          "Its ions have no charge",
+          "All its electrons move freely through the solid"
+        ],
+        "key": "d8fc64b024769921d5feb341f617c7dfab1519b48bed9bb6dbddb2a9c1fe71e2",
+        "sourceNumber": 57,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why does aqueous sodium chloride solution conduct electricity?",
+        "choices": [
+          "Dissolved Na+ and Cl- ions can move through the solution",
+          "Water molecules turn into metal atoms",
+          "Only neutral NaCl molecules conduct",
+          "The solution contains no charged species"
+        ],
+        "key": "33b5df05bf86f7a6c408b51a7d64d9d74b29acb7cdd53a7feebf78f0a2b6a575",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which description best fits a typical small covalent molecular substance such as methane?",
+        "choices": [
+          "It consists of discrete molecules",
+          "It is necessarily a giant ionic lattice",
+          "It contains only free metal ions",
+          "It always conducts electricity as a solid"
+        ],
+        "key": "a1fa481120657e16786664b9358991310a7b8fcb4994aa407fc7e4c0c215582e",
+        "sourceNumber": 59,
+        "correctIndex": 0
+      },
+      {
+        "question": "The formula NaCl represents the simplest ratio of ions in the solid. This ratio is called a:",
+        "choices": [
+          "Formula unit",
+          "Molecular shape",
+          "Valence shell",
+          "Coordinate pair"
+        ],
+        "key": "d632cf772f6fb6d10fa5b330e88def2afa2e4565dfd0b89cf4c8bdaec790e4d8",
+        "sourceNumber": 60,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which bond is expected to be polar because the atoms have different electronegativities?",
+        "choices": [
+          "H-Cl",
+          "Cl-Cl",
+          "N-N",
+          "O-O"
+        ],
+        "key": "146dc3c6330110d1a41f676e910ecdc70553ef13591c867aa6f5d20756e4d623",
+        "sourceNumber": 61,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which bond is nonpolar because it joins identical atoms?",
+        "choices": [
+          "H-Cl",
+          "C-O",
+          "Cl-Cl",
+          "N-H"
+        ],
+        "key": "a8223a8b45141b4ddee512d698741f85d310967ee7b6478980cd5c3c96e1d388",
+        "sourceNumber": 62,
+        "correctIndex": 2
+      },
+      {
+        "question": "A bond dipole points, by the usual chemistry convention, toward the atom that is:",
+        "choices": [
+          "More electronegative",
+          "Less electronegative",
+          "Larger in mass",
+          "More neutron-rich"
+        ],
+        "key": "f3605fb9306877ec0d24d76c45dcecc274bbd7a306d286b231ff1b6599f77275",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the formal charge on nitrogen in the ammonium ion, NH4+?",
+        "choices": [
+          "-1",
+          "0",
+          "+1",
+          "+2"
+        ],
+        "key": "a6841ef4c65c14500ca5baa69b6647d941d6c9f7321992ce654bb1f918feb718",
+        "sourceNumber": 64,
+        "correctIndex": 2
+      },
+      {
+        "question": "In the common Lewis structure of carbon dioxide, the carbon atom is joined to each oxygen by a:",
+        "choices": [
+          "Single bond",
+          "Double bond",
+          "Triple bond",
+          "Coordinate bond only"
+        ],
+        "key": "76e17d9833ff9cf7ef0355ae89a5d3af0a1d675ddcb293102d7571938791ee1f",
+        "sourceNumber": 65,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many lone pairs are on the nitrogen atom in a typical Lewis structure of NH3?",
+        "choices": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "key": "ab8bcaa445a8985fab9bdc9e3123c0bbffb34a403dcb5a137058f339adb19bae",
+        "sourceNumber": 66,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many lone pairs are on the oxygen atom in a typical Lewis structure of H2O?",
+        "choices": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "key": "22227245676e2d770a575a09edeb5503204b1437ae3e1eed78b5e9c6fd1a4882",
+        "sourceNumber": 67,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the molecular shape of CH4?",
+        "choices": [
+          "Linear",
+          "Trigonal planar",
+          "Tetrahedral",
+          "Bent"
+        ],
+        "key": "09aca01b641b8ce517bbed5faf9af048ff75b46f6bf44264bedb919c9552350d",
+        "sourceNumber": 68,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the molecular shape of CO2?",
+        "choices": [
+          "Bent",
+          "Linear",
+          "Tetrahedral",
+          "Trigonal pyramidal"
+        ],
+        "key": "b32ddcb0c4ea0e9ffdacff50ca8dba24c0c4a9770e340a008cc22210e29c3efc",
+        "sourceNumber": 69,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the molecular shape of BF3?",
+        "choices": [
+          "Linear",
+          "Trigonal planar",
+          "Trigonal pyramidal",
+          "Tetrahedral"
+        ],
+        "key": "c92b1802293bbd1ad36dc39d9d0c39be4cb984eac773c402270a35873518d5ce",
+        "sourceNumber": 70,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the molecular shape of NH3?",
+        "choices": [
+          "Trigonal planar",
+          "Trigonal pyramidal",
+          "Linear",
+          "Tetrahedral"
+        ],
+        "key": "9d63d807c7d19e703e350d0c07680a668938b365fac9bd27fd1489cd43dcceb5",
+        "sourceNumber": 71,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the molecular shape of H2O?",
+        "choices": [
+          "Linear",
+          "Bent",
+          "Trigonal planar",
+          "Tetrahedral"
+        ],
+        "key": "2e44d4fb9e24d41b77eda1ee927d718b9dd1e623683982fd29034d42ca5e1824",
+        "sourceNumber": 72,
+        "correctIndex": 1
+      },
+      {
+        "question": "The approximate H-C-H bond angle in tetrahedral methane is:",
+        "choices": [
+          "90 degrees",
+          "109.5 degrees",
+          "120 degrees",
+          "180 degrees"
+        ],
+        "key": "6a6759ead23581b0df88a337b244f44131302e4d5a0d5389676e2ca552b64cfd",
+        "sourceNumber": 73,
+        "correctIndex": 1
+      },
+      {
+        "question": "The carbon atoms in ethene, C2H4, each have which local geometry?",
+        "choices": [
+          "Linear",
+          "Trigonal planar",
+          "Tetrahedral",
+          "Trigonal pyramidal"
+        ],
+        "key": "971398dd0baef6aa4ad0d4901c764f31e9dd6aab981c49a91ee1c48a6b1b79c5",
+        "sourceNumber": 74,
+        "correctIndex": 1
+      },
+      {
+        "question": "The carbon atoms in ethyne, C2H2, each have which local geometry?",
+        "choices": [
+          "Linear",
+          "Trigonal planar",
+          "Tetrahedral",
+          "Bent"
+        ],
+        "key": "457b99b08443c9bd5bbb898ba40bb7c34fd4475211a1f43283a6b36d5898c50c",
+        "sourceNumber": 75,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which hybridization is commonly assigned to the carbon atom in methane?",
+        "choices": [
+          "sp",
+          "sp2",
+          "sp3",
+          "dsp2"
+        ],
+        "key": "5b19e2d3b8be56e005ea2174c302773eaa92a68b0e7d89dbcd83845a3d6d7ce9",
+        "sourceNumber": 76,
+        "correctIndex": 2
+      },
+      {
+        "question": "Which hybridization is commonly assigned to the carbon atom in CO2?",
+        "choices": [
+          "sp",
+          "sp2",
+          "sp3",
+          "d2sp3"
+        ],
+        "key": "4e14165d5fcd90b7ad8a87387ca9043d7608fde59cd43f0dec27441520467e1e",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which hybridization is commonly assigned to boron in BF3?",
+        "choices": [
+          "sp",
+          "sp2",
+          "sp3",
+          "sp3d"
+        ],
+        "key": "8e94870445b3f72506edb41fa93abe1ad06021957b039ba35be4f19f3abb699a",
+        "sourceNumber": 78,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which hybridization is commonly assigned to nitrogen in NH3 in the basic valence-bond model?",
+        "choices": [
+          "sp",
+          "sp2",
+          "sp3",
+          "sp3d"
+        ],
+        "key": "3b188b1c5c22b734b410b4aeea3bb7e658861517eb8394df07074d7416ab8a14",
+        "sourceNumber": 79,
+        "correctIndex": 2
+      },
+      {
+        "question": "A sigma bond is formed by orbitals overlapping:",
+        "choices": [
+          "Head-on along the internuclear axis",
+          "Sideways above and below the internuclear axis only",
+          "Without any orbital overlap",
+          "Only between two nuclei"
+        ],
+        "key": "7b4a9ae969892ac9d6454b8d90778c81c895a77225bbd03b4e8e75c65ca8f93c",
+        "sourceNumber": 80,
+        "correctIndex": 0
+      },
+      {
+        "question": "A pi bond is formed primarily by:",
+        "choices": [
+          "Sideways overlap of parallel orbitals",
+          "Head-on overlap along the internuclear axis",
+          "Transfer of a proton",
+          "Attraction between ions only"
+        ],
+        "key": "89fc50c804ee3b9208b24cc8fb792ef1cc677520c5dd50027816e84b8c7cfa8e",
+        "sourceNumber": 81,
+        "correctIndex": 0
+      },
+      {
+        "question": "How many sigma bonds are present in a single covalent bond?",
+        "choices": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "key": "dd2e2f6c9a43a702f120cddc994fb3c69c29a3912606d3019f0ca46676840a1e",
+        "sourceNumber": 82,
+        "correctIndex": 1
+      },
+      {
+        "question": "A double covalent bond consists of:",
+        "choices": [
+          "Two sigma bonds",
+          "One sigma bond and one pi bond",
+          "Two pi bonds",
+          "One sigma bond and two pi bonds"
+        ],
+        "key": "d99bbf5ab79a36b69777270d0209a20843277a7b243c02f1167a2fe013d7c759",
+        "sourceNumber": 83,
+        "correctIndex": 1
+      },
+      {
+        "question": "A triple covalent bond consists of:",
+        "choices": [
+          "Three sigma bonds",
+          "Two sigma bonds and one pi bond",
+          "One sigma bond and two pi bonds",
+          "Three pi bonds"
+        ],
+        "key": "668b922edd63cf89ca988482adf4a76d5f307e7ea1a4d18fbd2ffa5d956bffff",
+        "sourceNumber": 84,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the bond order of the nitrogen-nitrogen bond in N2?",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "key": "e477f7383ed5b8442bf43c2f020f4b20f16ac08efd6f6506af6899ec954f0ada",
+        "sourceNumber": 85,
+        "correctIndex": 2
+      },
+      {
+        "question": "Which statement about H-Cl is correct?",
+        "choices": [
+          "It has a polar covalent bond",
+          "It has a nonpolar covalent bond",
+          "It is a metallic bond",
+          "It has an ionic bond between identical ions"
+        ],
+        "key": "39b857e0345b9c773165618ecf356d2caf3434a219d97d3f4dcd7387df206a43",
+        "sourceNumber": 86,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which substance can form hydrogen bonds between its molecules in the pure liquid?",
+        "choices": [
+          "HF",
+          "CH4",
+          "CO2",
+          "CCl4"
+        ],
+        "key": "a0205a610ab470f96f9ea84dd4a729bd63a2b586c48c016e6e4f12c80a3357af",
+        "sourceNumber": 87,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why does water have a higher boiling point than a similar-sized molecule with only weak dispersion forces?",
+        "choices": [
+          "Water molecules form intermolecular hydrogen bonds",
+          "Water has no intermolecular attractions",
+          "Water molecules are ionic solids at room temperature",
+          "Water has a greater number of protons per molecule"
+        ],
+        "key": "9cdd8245f251d8a195b07aa1842d2ba9ad69418e7cf478fb697a010e00a4ecc5",
+        "sourceNumber": 88,
+        "correctIndex": 0
+      },
+      {
+        "question": "London dispersion forces arise from:",
+        "choices": [
+          "Temporary fluctuations in electron distribution",
+          "Permanent transfer of protons",
+          "Only hydrogen bonds",
+          "The sharing of nuclei"
+        ],
+        "key": "304d6f456af2afcb87acc78152811aefe3a973215acc993e9c2a2b07ac117816",
+        "sourceNumber": 89,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which intermolecular attraction is especially important between nonpolar I2 molecules?",
+        "choices": [
+          "London dispersion forces",
+          "Hydrogen bonding",
+          "Ion-dipole attraction",
+          "Permanent dipole-dipole attraction"
+        ],
+        "key": "fe3fceff646993d9dee4183274cef8d1d81ffe874b5f8588941463ab52e995d1",
+        "sourceNumber": 90,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which attraction is characteristic between neighbouring polar HCl molecules?",
+        "choices": [
+          "Dipole-dipole attraction",
+          "Hydrogen bonding between H and Cl",
+          "Metallic bonding",
+          "An ionic lattice attraction"
+        ],
+        "key": "1c395b9bb1aae6468be546e4a2c80a10b1804637cd30e4309c5ad1fcd7e1afc6",
+        "sourceNumber": 91,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement correctly compares hydrogen bonding with covalent bonding in water?",
+        "choices": [
+          "Hydrogen bonds are attractions between molecules; O-H covalent bonds are within a molecule",
+          "They are two names for the same bond",
+          "O-H covalent bonds occur only between separate water molecules",
+          "Hydrogen bonds join oxygen nuclei into one nucleus"
+        ],
+        "key": "f1ad654fb633ea10bff816aa24d0fd78a09dbf8b892cde8e8b121f1400c414c6",
+        "sourceNumber": 92,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which pair of ions has the same number of electrons?",
+        "choices": [
+          "Na+ and Ne",
+          "Na and Ne",
+          "Cl- and Ar+",
+          "Mg2+ and Na"
+        ],
+        "key": "25b4924ed67ce171edcb40d95210d6d0ae05a9a6e2c6046c5756de007bb1e9ef",
+        "sourceNumber": 93,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the simplest formula for a neutral compound made from Ca2+ and PO4 3- ions?",
+        "choices": [
+          "CaPO4",
+          "Ca2(PO4)3",
+          "Ca3(PO4)2",
+          "Ca(PO4)2"
+        ],
+        "key": "66d1ccf8061ce29abc68242b591d561827b48e262e72de8611891103c0c0e3da",
+        "sourceNumber": 94,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many total valence electrons are in the ammonium ion, NH4+?",
+        "choices": [
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "key": "606265794985c99586f949c49e80181fc07f3214319f3b47ee3a65ae5404db73",
+        "sourceNumber": 95,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which Lewis description of the carbonate ion, CO3 2-, is correct?",
+        "choices": [
+          "It has three identical C-O bonds in each resonance hybrid",
+          "It has one permanent C=O bond and two permanently different C-O bonds",
+          "It contains no covalent bonds",
+          "It has a linear arrangement around carbon"
+        ],
+        "key": "b9a029bfe99b398ba0f7c0fdb1fb8a24cd262c96c74de660daea6383cbb908fc",
+        "sourceNumber": 96,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement best describes BF3 with respect to the octet rule?",
+        "choices": [
+          "Boron has an incomplete octet in its usual Lewis structure",
+          "Boron has ten electrons around it",
+          "Each fluorine has an incomplete duet",
+          "The molecule has no covalent bonds"
+        ],
+        "key": "7718301c922a785340f6e987d8adccc171404473aeaf23dd42832ee443210b92",
+        "sourceNumber": 97,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which molecule is commonly described as having an expanded octet around its central atom?",
+        "choices": [
+          "CH4",
+          "NH3",
+          "PCl5",
+          "H2O"
+        ],
+        "key": "8cfda0faccf85032b02b24c481d9927925dad907722b466f0fd9245276d68db7",
+        "sourceNumber": 98,
+        "correctIndex": 2
+      },
+      {
+        "question": "When NH3 accepts H+ to form NH4+, the nitrogen atom acts as a:",
+        "choices": [
+          "Electron-pair donor",
+          "Neutron donor",
+          "Proton acceptor only",
+          "Metallic conductor"
+        ],
+        "key": "c629c710f7be0c70e12eeb387d09faa40b2148319c48738c4c7cbea18d0b3119",
+        "sourceNumber": 99,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which is expected to have stronger ionic attractions in its solid lattice, MgO or NaCl, based on ionic charges alone and comparable separation?",
+        "choices": [
+          "MgO",
+          "NaCl",
+          "They must be identical",
+          "Neither has ionic attractions"
+        ],
+        "key": "f00d25fa710952c8b454b3c9f9a5bc33f0391976fa4dc924f2949ef45d31fda3",
+        "sourceNumber": 100,
+        "correctIndex": 0
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "97a17d838410466d56ff02a36be363819cd7af69b4ba4d99459d299bd504b7ac",
+      "sourceQuestionNumbers": [
+        98,
+        69,
+        32,
+        15,
+        60,
+        47,
+        97,
+        23,
+        13,
+        71,
+        53,
+        19,
+        77,
+        99,
+        29,
+        42,
+        12,
+        30,
+        63,
+        96,
+        5,
+        25,
+        73,
+        56,
+        91,
+        49,
+        72,
+        88,
+        8,
+        38,
+        52,
+        3,
+        82,
+        26,
+        66,
+        21,
+        76,
+        94,
+        20,
+        57,
+        59,
+        92,
+        40,
+        62,
+        10,
+        34,
+        9,
+        87,
+        65,
+        41,
+        67,
+        7,
+        90,
+        36,
+        58,
+        17,
+        89,
+        54,
+        24,
+        75,
+        50,
+        2,
+        79,
+        93,
+        31,
+        78,
+        4,
+        86,
+        48,
+        28,
+        68,
+        43,
+        1,
+        81,
+        33,
+        95,
+        27,
+        11,
+        74,
+        46,
+        85,
+        39,
+        45,
+        6,
+        70,
+        61,
+        84,
+        22,
+        44,
+        16,
+        83,
+        35,
+        14,
+        80,
+        55,
+        51,
+        64,
+        37,
+        100,
+        18
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
