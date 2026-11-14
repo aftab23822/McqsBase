@@ -1619,7 +1619,11 @@
       },
       "uploadIntent": {
         "filename": "nat-ie-atomic-bonding-part-01-796b64b0903ba4a0.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "5180905a-cea6-484f-b03d-728d33f66695",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Yc2ve9IEtx.mp4"
       }
     },
     {
