@@ -3567,7 +3567,8 @@
           ]
         }
       },
-      "scheduledAt": "2026-11-14T21:58:00+05:00"
+      "scheduledAt": "2026-11-14T21:58:00+05:00",
+      "receipts": {}
     }
   ],
   "thinkingSeconds": 3,
