@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-ie-waves-optics",
   "createdAt": "2026-11-12T06:49:06.328155+00:00",
-  "status": "scheduled",
+  "status": "provider-published",
   "package": {
     "slug": "nat-ie-waves-optics",
     "title": "100 NAT-IE-Style Waves and Optics MCQs with Explanations",
@@ -1790,16 +1790,16 @@
           "integrationId": "cmvwbcule0222ro9dhocbic4w"
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-12T06:53:10.014528+00:00",
           "postId": "cmwd6yh3k018zlmauylrkkqim",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "ERROR",
+          "url": "https://www.youtube.com/watch?v=OrS2SLdAhMI",
+          "providerUrl": "https://www.youtube.com/watch?v=OrS2SLdAhMI",
+          "providerReleaseId": "OrS2SLdAhMI",
+          "providerStatus": "PUBLISHED",
           "providerError": "YouTube's daily upload quota is exhausted for today, please reschedule this post for a later time.",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
           "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
           "quotaRecovery": {
             "status": "scheduled",
