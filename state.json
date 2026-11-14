@@ -1149,7 +1149,7 @@
       "verifiedPublications": 15
     },
     "nat-ie-atomic-bonding": {
-      "status": "ready",
+      "status": "scheduling",
       "ledger": "batches/nat-ie-atomic-bonding.json",
       "createdAt": "2026-11-14T05:53:11.656302+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
