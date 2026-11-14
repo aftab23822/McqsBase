@@ -2411,6 +2411,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 5,
+      "directory": "part-05",
+      "sourceQuestionNumbers": [
+        19,
+        77,
+        99
+      ],
+      "count": 3,
+      "durationSeconds": 75,
+      "sha256": "17089b1e776c504277427aa65f53e2b0a50799d07bfb8c51fb3d3003b397c209",
+      "manifest": {
+        "title": "100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+        "sourceTitle": "100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-14T05:53:11.415678+00:00",
+        "sourceContentHash": "89e00301b5d1d98a76cd8af604562e62be2271c789531ed66bbf26b1a22a378f",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7783405703,
+          "sha": "3cfd9640785bb10a0d7b23970e45d48511130fe7",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-14T05:53:11.415678+00:00",
+          "url": "https://mcqs-base-n92nqfrdt-as-projects-10921176.vercel.app",
+          "publisherRunId": 43563290469
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 75,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "How many electrons are in the outermost shell of a neutral sodium atom?",
+            "choices": [
+              "1",
+              "2",
+              "7",
+              "8"
+            ],
+            "correctIndex": 0,
+            "key": "1d5810ae2862dfb21275eae555ae5a17c9d367947afda99234b114f31f7921db",
+            "sourceNumber": 19
+          },
+          {
+            "question": "Which hybridization is commonly assigned to the carbon atom in CO2?",
+            "choices": [
+              "sp",
+              "sp2",
+              "sp3",
+              "d2sp3"
+            ],
+            "correctIndex": 0,
+            "key": "4e14165d5fcd90b7ad8a87387ca9043d7608fde59cd43f0dec27441520467e1e",
+            "sourceNumber": 77
+          },
+          {
+            "question": "When NH3 accepts H+ to form NH4+, the nitrogen atom acts as a:",
+            "choices": [
+              "Electron-pair donor",
+              "Neutron donor",
+              "Proton acceptor only",
+              "Metallic conductor"
+            ],
+            "correctIndex": 0,
+            "key": "c629c710f7be0c70e12eeb387d09faa40b2148319c48738c4c7cbea18d0b3119",
+            "sourceNumber": 99
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 13,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 13,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 14,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 15,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 16,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 20,
+            "duration": 16,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 36,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 37,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 38,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 39,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 43,
+            "duration": 19,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 62,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 63,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 64,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 65,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 70,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 5,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            19,
+            77,
+            99
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-atomic-bonding-part-05-17089b1e776c5042.mp4",
+        "videoSha256": "17089b1e776c504277427aa65f53e2b0a50799d07bfb8c51fb3d3003b397c209",
+        "assetId": 746481800
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 5/5 | Q19, 77, 99 | 100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+          "text": "Part 5/5 · Source questions 19, 77, 99\n100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 5/5 | Q19, 77, 99 | 100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+          "text": "Part 5/5 · Source questions 19, 77, 99\n100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 5/5 | Q19, 77, 99 | 100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+          "text": "Part 5/5 · Source questions 19, 77, 99\n100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 5/5 | Q19, 77, 99 | 100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+          "text": "Part 5/5 · Source questions 19, 77, 99\n100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
