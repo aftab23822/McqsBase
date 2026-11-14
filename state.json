@@ -1117,7 +1117,7 @@
       "verifiedPublications": 15
     },
     "nat-ie-waves-optics": {
-      "status": "scheduled",
+      "status": "provider-published",
       "ledger": "batches/nat-ie-waves-optics.json",
       "createdAt": "2026-11-12T06:49:06.328155+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-waves-optics",
@@ -1129,8 +1129,8 @@
         "2026-11-12T19:32:00+05:00",
         "2026-11-12T22:00:00+05:00"
       ],
-      "published": 19,
-      "verifiedPublications": 14
+      "published": 20,
+      "verifiedPublications": 15
     },
     "airport-security-situational-judgment": {
       "status": "scheduled",
