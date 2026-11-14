@@ -1336,6 +1336,288 @@
       "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
     }
   },
-  "parts": [],
+  "parts": [
+    {
+      "part": 1,
+      "directory": "part-01",
+      "sourceQuestionNumbers": [
+        98,
+        69,
+        32
+      ],
+      "count": 3,
+      "durationSeconds": 71,
+      "sha256": "796b64b0903ba4a0cdb86df923a0a6bfae3fb6913e37377b9cdf0238d50bc918",
+      "manifest": {
+        "title": "100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+        "sourceTitle": "100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-14T05:53:11.415678+00:00",
+        "sourceContentHash": "89e00301b5d1d98a76cd8af604562e62be2271c789531ed66bbf26b1a22a378f",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7783405703,
+          "sha": "3cfd9640785bb10a0d7b23970e45d48511130fe7",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-14T05:53:11.415678+00:00",
+          "url": "https://mcqs-base-n92nqfrdt-as-projects-10921176.vercel.app",
+          "publisherRunId": 43563290469
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 71,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Which molecule is commonly described as having an expanded octet around its central atom?",
+            "choices": [
+              "CH4",
+              "NH3",
+              "PCl5",
+              "H2O"
+            ],
+            "correctIndex": 2,
+            "key": "8cfda0faccf85032b02b24c481d9927925dad907722b466f0fd9245276d68db7",
+            "sourceNumber": 98
+          },
+          {
+            "question": "What is the molecular shape of CO2?",
+            "choices": [
+              "Bent",
+              "Linear",
+              "Tetrahedral",
+              "Trigonal pyramidal"
+            ],
+            "correctIndex": 1,
+            "key": "b32ddcb0c4ea0e9ffdacff50ca8dba24c0c4a9770e340a008cc22210e29c3efc",
+            "sourceNumber": 69
+          },
+          {
+            "question": "Which element has the greatest electronegativity on the Pauling scale?",
+            "choices": [
+              "Fluorine",
+              "Oxygen",
+              "Chlorine",
+              "Nitrogen"
+            ],
+            "correctIndex": 0,
+            "key": "2aa969a82be1a48d36ae5bafe7ebf440de8e67c613f8683abd1eb369a8235bb6",
+            "sourceNumber": 32
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 17,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 17,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 18,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 19,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 20,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 25,
+            "duration": 13,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 38,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 39,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 40,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 41,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 45,
+            "duration": 14,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 59,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 60,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 61,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 62,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 66,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 1,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            98,
+            69,
+            32
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-atomic-bonding-part-01-796b64b0903ba4a0.mp4",
+        "videoSha256": "796b64b0903ba4a0cdb86df923a0a6bfae3fb6913e37377b9cdf0238d50bc918",
+        "assetId": 746473820
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 1/5 | Q98, 69, 32 | 100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+          "text": "Part 1/5 · Source questions 98, 69, 32\n100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 1/5 | Q98, 69, 32 | 100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+          "text": "Part 1/5 · Source questions 98, 69, 32\n100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 1/5 | Q98, 69, 32 | 100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+          "text": "Part 1/5 · Source questions 98, 69, 32\n100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 1/5 | Q98, 69, 32 | 100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+          "text": "Part 1/5 · Source questions 98, 69, 32\n100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "format": "short"
+        }
+      }
+    }
+  ],
   "thinkingSeconds": 3
 }
