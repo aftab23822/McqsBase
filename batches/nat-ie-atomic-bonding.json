@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-ie-atomic-bonding",
   "createdAt": "2026-11-14T05:53:11.656302+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "nat-ie-atomic-bonding",
     "title": "100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
@@ -1749,7 +1749,12 @@
         }
       },
       "scheduledAt": "2026-11-14T11:14:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-14T05:58:55.797574+00:00"
+        }
+      }
     },
     {
       "part": 2,
