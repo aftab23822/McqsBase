@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nat-ie-atomic-bonding": {
+    title: "100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+    excerpt:
+      "Practise atomic structure, periodic trends, chemical bonds, molecular shapes and intermolecular forces with 100 original MCQs and concise explanations.",
+    category: "Subject Guide",
+    date: "2026-11-14",
+    readTime: "28 min",
+    content: null,
+    body: readImportedBlogBody("nat-ie-atomic-bonding")
+  },
   "airport-security-situational-judgment": {
     title: "99 Airport Security Situational Judgment MCQs for ASF Preparation",
     excerpt:
