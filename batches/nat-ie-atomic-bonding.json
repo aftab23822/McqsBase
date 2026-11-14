@@ -1617,6 +1617,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 2,
+      "directory": "part-02",
+      "sourceQuestionNumbers": [
+        15,
+        60,
+        47
+      ],
+      "count": 3,
+      "durationSeconds": 78,
+      "sha256": "b5593fbf388e2c8d083afd19926f0781c727e54be65bc62ae7df0e0cb638fc37",
+      "manifest": {
+        "title": "100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+        "sourceTitle": "100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-14T05:53:11.415678+00:00",
+        "sourceContentHash": "89e00301b5d1d98a76cd8af604562e62be2271c789531ed66bbf26b1a22a378f",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7783405703,
+          "sha": "3cfd9640785bb10a0d7b23970e45d48511130fe7",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-14T05:53:11.415678+00:00",
+          "url": "https://mcqs-base-n92nqfrdt-as-projects-10921176.vercel.app",
+          "publisherRunId": 43563290469
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 78,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Which subshell is the last occupied in the ground-state electron configuration of chlorine, atomic number 17?",
+            "choices": [
+              "2p",
+              "3s",
+              "3p",
+              "4s"
+            ],
+            "correctIndex": 2,
+            "key": "091e6f0d613907138b0b2a082ca87669b5b82d272668bfc39c97301f58515e1e",
+            "sourceNumber": 15
+          },
+          {
+            "question": "The formula NaCl represents the simplest ratio of ions in the solid. This ratio is called a:",
+            "choices": [
+              "Formula unit",
+              "Molecular shape",
+              "Valence shell",
+              "Coordinate pair"
+            ],
+            "correctIndex": 0,
+            "key": "d632cf772f6fb6d10fa5b330e88def2afa2e4565dfd0b89cf4c8bdaec790e4d8",
+            "sourceNumber": 60
+          },
+          {
+            "question": "What is the simplest formula for a neutral compound made from Al3+ and O2- ions?",
+            "choices": [
+              "AlO",
+              "Al2O3",
+              "Al3O2",
+              "Al2O"
+            ],
+            "correctIndex": 1,
+            "key": "26be1b5e36fba6f4a43237066784e21c2ab9a52a55d6c2028dfda6adbe4cb4e0",
+            "sourceNumber": 47
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 17,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 17,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 18,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 19,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 20,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 24,
+            "duration": 18,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 42,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 43,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 44,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 45,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 49,
+            "duration": 17,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 66,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 67,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 68,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 69,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 73,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 2,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            15,
+            60,
+            47
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-atomic-bonding-part-02-b5593fbf388e2c8d.mp4",
+        "videoSha256": "b5593fbf388e2c8d083afd19926f0781c727e54be65bc62ae7df0e0cb638fc37",
+        "assetId": 746475840
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 2/5 | Q15, 60, 47 | 100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+          "text": "Part 2/5 · Source questions 15, 60, 47\n100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 2/5 | Q15, 60, 47 | 100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+          "text": "Part 2/5 · Source questions 15, 60, 47\n100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 2/5 | Q15, 60, 47 | 100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+          "text": "Part 2/5 · Source questions 15, 60, 47\n100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 2/5 | Q15, 60, 47 | 100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+          "text": "Part 2/5 · Source questions 15, 60, 47\n100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
