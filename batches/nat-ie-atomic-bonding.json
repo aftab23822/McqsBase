@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-ie-atomic-bonding",
   "createdAt": "2026-11-14T05:53:11.656302+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "nat-ie-atomic-bonding",
     "title": "100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
@@ -2694,5 +2694,85 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "nat-ie-atomic-bonding",
+    "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
+    "sourceTitle": "100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
+    "sourceContentHash": "89e00301b5d1d98a76cd8af604562e62be2271c789531ed66bbf26b1a22a378f",
+    "productionDeployment": {
+      "id": 7783405703,
+      "sha": "3cfd9640785bb10a0d7b23970e45d48511130fe7",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-14T05:53:11.415678+00:00",
+      "url": "https://mcqs-base-n92nqfrdt-as-projects-10921176.vercel.app",
+      "publisherRunId": 43563290469
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          98,
+          69,
+          32
+        ],
+        "count": 3,
+        "durationSeconds": 71,
+        "sha256": "796b64b0903ba4a0cdb86df923a0a6bfae3fb6913e37377b9cdf0238d50bc918"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          15,
+          60,
+          47
+        ],
+        "count": 3,
+        "durationSeconds": 78,
+        "sha256": "b5593fbf388e2c8d083afd19926f0781c727e54be65bc62ae7df0e0cb638fc37"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          97,
+          23
+        ],
+        "count": 2,
+        "durationSeconds": 67,
+        "sha256": "46b0d75382fdcdd8ad36f26bf3afded0e058cd21c69078141a73d18df5c94091"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          13,
+          71,
+          53
+        ],
+        "count": 3,
+        "durationSeconds": 83,
+        "sha256": "02adad72d4043cb9672eaa5c00f7310c5d1101cb278b19c03fea0e3a09b729b0"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          19,
+          77,
+          99
+        ],
+        "count": 3,
+        "durationSeconds": 75,
+        "sha256": "17089b1e776c504277427aa65f53e2b0a50799d07bfb8c51fb3d3003b397c209"
+      }
+    ]
+  }
 }
