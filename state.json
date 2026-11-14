@@ -1154,7 +1154,13 @@
       "createdAt": "2026-11-14T05:53:11.656302+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
       "blockedNetworks": [],
-      "scheduledAt": [],
+      "scheduledAt": [
+        "2026-11-14T11:14:00+05:00",
+        "2026-11-14T13:55:00+05:00",
+        "2026-11-14T16:36:00+05:00",
+        "2026-11-14T19:17:00+05:00",
+        "2026-11-14T21:58:00+05:00"
+      ],
       "published": 0,
       "verifiedPublications": 0
     }
