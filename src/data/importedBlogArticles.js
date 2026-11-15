@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "verbal-analogies-aptitude-practice": {
+    title: "100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+    excerpt:
+      "Practise 100 original verbal analogy questions covering word relationships, classification, sequence, cause and effect, and functional pairs, with an explanation for every answer.",
+    category: "Subject Guide",
+    date: "2026-11-15",
+    readTime: "23 min",
+    content: null,
+    body: readImportedBlogBody("verbal-analogies-aptitude-practice")
+  },
   "nat-ie-atomic-bonding": {
     title: "100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
     excerpt:
