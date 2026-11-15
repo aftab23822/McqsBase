@@ -2460,6 +2460,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 5,
+      "directory": "part-05",
+      "sourceQuestionNumbers": [
+        52,
+        66,
+        85
+      ],
+      "count": 3,
+      "durationSeconds": 64,
+      "sha256": "23741ad7df21d6a43a9e5f134bb8cbfe7d1abd4221ad2a233236b1d167ee22ef",
+      "manifest": {
+        "title": "100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+        "sourceTitle": "100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-15T05:54:15.189558+00:00",
+        "sourceContentHash": "194ca54672120f1d23edb837bbabeb755f3cb8c6d90148b1467f9ad99c649f14",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7799297089,
+          "sha": "b0e68d2d9c47cf626d4d09be04420b1127a338f0",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-15T05:54:15.189558+00:00",
+          "url": "https://mcqs-base-8qilvnr4e-as-projects-10921176.vercel.app",
+          "publisherRunId": 43682686827
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 64,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Carelessness is to accident as neglect is to:",
+            "choices": [
+              "Deterioration",
+              "Celebration",
+              "Discovery",
+              "Recovery"
+            ],
+            "correctIndex": 0,
+            "key": "c3194bab991fd0f383c5dd1f0c736d03cf90980d3ae813b0fb6ab3ebdc6a203f",
+            "sourceNumber": 52
+          },
+          {
+            "question": "Plan is to action as recipe is to:",
+            "choices": [
+              "Cooking",
+              "Shopping",
+              "Eating",
+              "Washing"
+            ],
+            "correctIndex": 0,
+            "key": "510385bfd312ce7c72d5491497ff0158cc6de5d9eded90bcd233bb833dd0cca2",
+            "sourceNumber": 66
+          },
+          {
+            "question": "Sand is to glass as iron ore is to:",
+            "choices": [
+              "Iron",
+              "Plastic",
+              "Paper",
+              "Cement"
+            ],
+            "correctIndex": 0,
+            "key": "408584cd23910dfb9aad071e62815930091d782897b9e8b992d5a8ec1b23bb9c",
+            "sourceNumber": 85
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 14,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 14,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 15,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 16,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 17,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 21,
+            "duration": 12,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 33,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 34,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 35,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 36,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 40,
+            "duration": 12,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 52,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 53,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 54,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 55,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 59,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 5,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            52,
+            66,
+            85
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#EntryTest",
+          "#TestPreparation",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/verbal-analogies-aptitude-practice-part-05-23741ad7df21d6a4.mp4",
+        "videoSha256": "23741ad7df21d6a43a9e5f134bb8cbfe7d1abd4221ad2a233236b1d167ee22ef",
+        "assetId": 750003132
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 5/5 | Q52, 66, 85 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+          "text": "Part 5/5 · Source questions 52, 66, 85\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#EntryTest",
+            "#TestPreparation",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 5/5 | Q52, 66, 85 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+          "text": "Part 5/5 · Source questions 52, 66, 85\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#EntryTest",
+            "#TestPreparation",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 5/5 | Q52, 66, 85 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+          "text": "Part 5/5 · Source questions 52, 66, 85\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#EntryTest",
+            "#TestPreparation",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 5/5 | Q52, 66, 85 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+          "text": "Part 5/5 · Source questions 52, 66, 85\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#EntryTest",
+            "#TestPreparation",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
