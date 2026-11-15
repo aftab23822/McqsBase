@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "verbal-analogies-aptitude-practice",
+  "createdAt": "2026-11-15T05:54:15.350457+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "verbal-analogies-aptitude-practice",
+    "title": "100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+    "url": "https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7799297089,
+      "sha": "b0e68d2d9c47cf626d4d09be04420b1127a338f0",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-15T05:54:15.189558+00:00",
+      "url": "https://mcqs-base-8qilvnr4e-as-projects-10921176.vercel.app",
+      "publisherRunId": 43682686827
+    },
+    "fetchedAt": "2026-11-15T05:54:15.189558+00:00",
+    "contentHash": "194ca54672120f1d23edb837bbabeb755f3cb8c6d90148b1467f9ad99c649f14",
+    "questions": [
+      {
+        "question": "Compass is to direction as thermometer is to:",
+        "choices": [
+          "Pressure",
+          "Temperature",
+          "Distance",
+          "Speed"
+        ],
+        "key": "6df6e5e8ce5bea51ea69920b0e46f2950793db38ec30ec85aa5fc8b4d4e19ee1",
+        "sourceNumber": 1,
+        "correctIndex": 1
+      },
+      {
+        "question": "Key is to lock as password is to:",
+        "choices": [
+          "Account",
+          "Keyboard",
+          "Screen",
+          "Internet"
+        ],
+        "key": "e0bf38f7fcde8293e3bbcff2845bf632521147e1e906abb39e5cfd8de998de1d",
+        "sourceNumber": 2,
+        "correctIndex": 0
+      },
+      {
+        "question": "Scissors are to cutting as a sieve is to:",
+        "choices": [
+          "Stirring",
+          "Filtering",
+          "Measuring",
+          "Heating"
+        ],
+        "key": "5fa66838102b4ea772ab841534fdfd70747b30f23aa962a7b6c59dd5ee335340",
+        "sourceNumber": 3,
+        "correctIndex": 1
+      },
+      {
+        "question": "Odometer is to distance as clock is to:",
+        "choices": [
+          "Weight",
+          "Time",
+          "Temperature",
+          "Volume"
+        ],
+        "key": "78b06b30128aeee157454e722eeafc7295477b12a844ad6dca0ac2e0c0be7206",
+        "sourceNumber": 4,
+        "correctIndex": 1
+      },
+      {
+        "question": "Telescope is to distant objects as microscope is to:",
+        "choices": [
+          "Tiny objects",
+          "Heavy objects",
+          "Bright objects",
+          "Moving objects"
+        ],
+        "key": "3b845a2dbabfd5a4e3b2fbb1b7d13afa0c067cd16be342d5cfbe1e79d3d176ec",
+        "sourceNumber": 5,
+        "correctIndex": 0
+      },
+      {
+        "question": "Broom is to sweeping as mop is to:",
+        "choices": [
+          "Polishing shoes",
+          "Washing floors",
+          "Painting walls",
+          "Dusting shelves"
+        ],
+        "key": "ca9dea723c4358abf2a4378e9f0ca20f85c9e41d8de142b3886c9a7c3463b92b",
+        "sourceNumber": 6,
+        "correctIndex": 1
+      },
+      {
+        "question": "Needle is to sewing as chisel is to:",
+        "choices": [
+          "Carving",
+          "Weaving",
+          "Measuring",
+          "Digging"
+        ],
+        "key": "0d4ac9d82433a47b30b26cd34e160e3aaf9be94184701c5aadf5dc16448e0f31",
+        "sourceNumber": 7,
+        "correctIndex": 0
+      },
+      {
+        "question": "Ladle is to soup as tongs are to:",
+        "choices": [
+          "Lifting food",
+          "Grinding grain",
+          "Peeling fruit",
+          "Slicing bread"
+        ],
+        "key": "eb74484a60563757414665f8334a1219d032231deba6bebe10dbf7e4669be498",
+        "sourceNumber": 8,
+        "correctIndex": 0
+      },
+      {
+        "question": "Stethoscope is to listening as magnifying glass is to:",
+        "choices": [
+          "Enlarging",
+          "Weighing",
+          "Cooling",
+          "Recording"
+        ],
+        "key": "b431f0c1f0297680ae756c27ee060415e196de55fe60d000ac691dad0ea02529",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "Thermostat is to temperature as speedometer is to:",
+        "choices": [
+          "Fuel",
+          "Speed",
+          "Direction",
+          "Distance"
+        ],
+        "key": "fb1578164203992f0242c82d5ee8a8a08192bae14c22e8c87a29d0a55601dd5a",
+        "sourceNumber": 10,
+        "correctIndex": 1
+      },
+      {
+        "question": "Wheel is to bicycle as page is to:",
+        "choices": [
+          "Book",
+          "Ink",
+          "Library",
+          "Writer"
+        ],
+        "key": "61a2a3ace67bc7cf04458394f9f14c1af3dc0d95f923c49df3729a13be27b2fb",
+        "sourceNumber": 11,
+        "correctIndex": 0
+      },
+      {
+        "question": "Petal is to flower as leaf is to:",
+        "choices": [
+          "Root",
+          "Plant",
+          "Soil",
+          "Seed"
+        ],
+        "key": "60299d80386559419a95344b4934031b78271f1b85184699e8dfcd26a6c4cb7e",
+        "sourceNumber": 12,
+        "correctIndex": 1
+      },
+      {
+        "question": "Chapter is to novel as act is to:",
+        "choices": [
+          "Stage",
+          "Play",
+          "Actor",
+          "Audience"
+        ],
+        "key": "93b235044a55c1e31f95d1f8839cd520d5b4d3292d965d3eae592a5807979d5f",
+        "sourceNumber": 13,
+        "correctIndex": 1
+      },
+      {
+        "question": "Finger is to hand as toe is to:",
+        "choices": [
+          "Foot",
+          "Shoe",
+          "Leg",
+          "Ankle"
+        ],
+        "key": "479b98e17fece46d0e0ebd6a20ac996bc08a1b13044feb5366600bebf868faed",
+        "sourceNumber": 14,
+        "correctIndex": 0
+      },
+      {
+        "question": "Roof is to house as lid is to:",
+        "choices": [
+          "Box",
+          "Room",
+          "Wall",
+          "Floor"
+        ],
+        "key": "ad85d7d53943e2469bfdd9f05027566540152c0dba2b5135e5d6d8574973a31d",
+        "sourceNumber": 15,
+        "correctIndex": 0
+      },
+      {
+        "question": "Keyboard is to computer as steering wheel is to:",
+        "choices": [
+          "Bicycle",
+          "Vehicle",
+          "Road",
+          "Garage"
+        ],
+        "key": "de101089ccf75fd380e7c81ae8f2d0b31c973f4045a2905223eff08d321a850b",
+        "sourceNumber": 16,
+        "correctIndex": 1
+      },
+      {
+        "question": "Branch is to tree as arm is to:",
+        "choices": [
+          "Person",
+          "Chair",
+          "Sleeve",
+          "Hand"
+        ],
+        "key": "93d956d6080f21feef5718b0128e4bc0fcf4156934fb5f84df653d24c55ca1e2",
+        "sourceNumber": 17,
+        "correctIndex": 0
+      },
+      {
+        "question": "Engine is to car as heart is to:",
+        "choices": [
+          "Body",
+          "Blood",
+          "Lung",
+          "Chest"
+        ],
+        "key": "68a6e20f49a60a7766c80176d0e5ff855722f6a5661f96454d8b00d6887144e3",
+        "sourceNumber": 18,
+        "correctIndex": 0
+      },
+      {
+        "question": "Handle is to cup as grip is to:",
+        "choices": [
+          "Tool",
+          "Hand",
+          "Workshop",
+          "Material"
+        ],
+        "key": "6d389319092f45f8f322898f2de1fd27e795758e9455157918e4e0390abdd965",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "Pupil is to eye as eardrum is to:",
+        "choices": [
+          "Nose",
+          "Ear",
+          "Throat",
+          "Tongue"
+        ],
+        "key": "a8e1dcc642a611af61ccab20eccb228604a26b6a0ed6a65b2a8d112b9d6782a8",
+        "sourceNumber": 20,
+        "correctIndex": 1
+      },
+      {
+        "question": "Carpenter is to wood as mason is to:",
+        "choices": [
+          "Brick",
+          "Cloth",
+          "Glass",
+          "Paper"
+        ],
+        "key": "700b6a703feb664400a9f9933453c4386e3e644b08108985f9654157d9bfc404",
+        "sourceNumber": 21,
+        "correctIndex": 0
+      },
+      {
+        "question": "Farmer is to field as sailor is to:",
+        "choices": [
+          "Ship",
+          "Forest",
+          "Factory",
+          "Court"
+        ],
+        "key": "87b4f46a3410ea75d7d9117196b1cdcdbe507cfbe7a71fa1ae2a1e659d8b6dfd",
+        "sourceNumber": 22,
+        "correctIndex": 0
+      },
+      {
+        "question": "Dentist is to teeth as optometrist is to:",
+        "choices": [
+          "Eyes",
+          "Ears",
+          "Bones",
+          "Skin"
+        ],
+        "key": "bd08c10b07bd806828eb1111fb97e3cd0bfa9b5041c7146fb942c8ecf656f701",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "Author is to book as composer is to:",
+        "choices": [
+          "Painting",
+          "Musical composition",
+          "Building",
+          "Sculpture"
+        ],
+        "key": "8ceeabd67a150ad04b56c6d08bd93e8c3c350fb6ad3bdd8f24841e6df34a2d47",
+        "sourceNumber": 24,
+        "correctIndex": 1
+      },
+      {
+        "question": "Pilot is to aircraft as captain is to:",
+        "choices": [
+          "Ship",
+          "Station",
+          "Court",
+          "Farm"
+        ],
+        "key": "fd53cd74fd0562d65a7258a20f9b850b44d3a6a556b25328341ab107972f646e",
+        "sourceNumber": 25,
+        "correctIndex": 0
+      },
+      {
+        "question": "Baker is to bread as potter is to:",
+        "choices": [
+          "Pottery",
+          "Furniture",
+          "Clothing",
+          "Jewellery"
+        ],
+        "key": "572618eb73ba01910b6dc499f16bb4bebb2cfce0c7d66fd7dc8aa8c3a2b9324f",
+        "sourceNumber": 26,
+        "correctIndex": 0
+      },
+      {
+        "question": "Judge is to court as teacher is to:",
+        "choices": [
+          "Classroom",
+          "Factory",
+          "Laboratory",
+          "Harbour"
+        ],
+        "key": "7d52d415534d5b322f5ff3c975d2e07d26e350b2050ee5b76d35514172a91c07",
+        "sourceNumber": 27,
+        "correctIndex": 0
+      },
+      {
+        "question": "Tailor is to clothing as cobbler is to:",
+        "choices": [
+          "Footwear",
+          "Furniture",
+          "Books",
+          "Crops"
+        ],
+        "key": "ac1c4360234f789aedf0d52625234a707a0a6eda3674c1c5b6097103404604bb",
+        "sourceNumber": 28,
+        "correctIndex": 0
+      },
+      {
+        "question": "Librarian is to books as archivist is to:",
+        "choices": [
+          "Historical records",
+          "Fresh food",
+          "Musical instruments",
+          "Sports equipment"
+        ],
+        "key": "bfdfc850b0f564a3c6c7fc386dceff308ceea48cf172153edc067930a55e97bc",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "Shepherd is to sheep as beekeeper is to:",
+        "choices": [
+          "Bees",
+          "Horses",
+          "Ducks",
+          "Cattle"
+        ],
+        "key": "7e19ddd1fde2d89d74e4fc1b23b5f38cb13392329721a1da110282d28bcb53bc",
+        "sourceNumber": 30,
+        "correctIndex": 0
+      },
+      {
+        "question": "Bird is to nest as bee is to:",
+        "choices": [
+          "Hive",
+          "Den",
+          "Burrow",
+          "Stable"
+        ],
+        "key": "2fb4eaf0729ebe5bd11325b5c97892ec7123d8702a89f298f425f4ee5a1b2dbf",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "Puppy is to dog as kitten is to:",
+        "choices": [
+          "Cat",
+          "Rabbit",
+          "Goat",
+          "Fox"
+        ],
+        "key": "972eb70b0bc967735de68f100a55339f4fb7a6d1e4c345c52ee5aec9eedce6be",
+        "sourceNumber": 32,
+        "correctIndex": 0
+      },
+      {
+        "question": "Calf is to cow as foal is to:",
+        "choices": [
+          "Horse",
+          "Sheep",
+          "Deer",
+          "Camel"
+        ],
+        "key": "f9ae850e3af7c0fcff3f49c035332ba021c31cc8ad61caedb74d48ec60ec01c8",
+        "sourceNumber": 33,
+        "correctIndex": 0
+      },
+      {
+        "question": "Flock is to sheep as herd is to:",
+        "choices": [
+          "Cattle",
+          "Sparrows",
+          "Bees",
+          "Fish"
+        ],
+        "key": "93bb8b29a459d53ab528d2a46754646cb5f684e638eca8f6bbcc52c934c688c3",
+        "sourceNumber": 34,
+        "correctIndex": 0
+      },
+      {
+        "question": "Oak is to tree as salmon is to:",
+        "choices": [
+          "Fish",
+          "Bird",
+          "Mammal",
+          "Insect"
+        ],
+        "key": "532596d9682441f9b4abc56e42359ae7173e3175c2a9b4851b64bee265038ed1",
+        "sourceNumber": 35,
+        "correctIndex": 0
+      },
+      {
+        "question": "Sparrow is to bird as rose is to:",
+        "choices": [
+          "Flower",
+          "Fruit",
+          "Tree",
+          "Herb"
+        ],
+        "key": "19e5f88460134bef6dca46c3adbeb5dd69075698257643b7c4c14c4b6ec41290",
+        "sourceNumber": 36,
+        "correctIndex": 0
+      },
+      {
+        "question": "Copper is to metal as granite is to:",
+        "choices": [
+          "Rock",
+          "Liquid",
+          "Gas",
+          "Fibre"
+        ],
+        "key": "9879b623f76572235f9c74a3727749b2118bce234d163612023fc3090005a657",
+        "sourceNumber": 37,
+        "correctIndex": 0
+      },
+      {
+        "question": "Triangle is to polygon as cube is to:",
+        "choices": [
+          "Polyhedron",
+          "Circle",
+          "Line",
+          "Angle"
+        ],
+        "key": "417496bbb636e793f4791b9fddac2bbadd63ecf109c8db9eb89e07c453f30ad3",
+        "sourceNumber": 38,
+        "correctIndex": 0
+      },
+      {
+        "question": "February is to month as Tuesday is to:",
+        "choices": [
+          "Weekday",
+          "Season",
+          "Year",
+          "Calendar"
+        ],
+        "key": "c2141b45132349050d232f85bf68cf6539a4746eeeada0b7a5974d13f0e1b15d",
+        "sourceNumber": 39,
+        "correctIndex": 0
+      },
+      {
+        "question": "Novel is to fiction as biography is to:",
+        "choices": [
+          "Nonfiction",
+          "Poetry",
+          "Drama",
+          "Folklore"
+        ],
+        "key": "61f714f29788193d4f2d6981feb5b20bfbdf2dfe2e7453184b89c42f10369607",
+        "sourceNumber": 40,
+        "correctIndex": 0
+      },
+      {
+        "question": "Mile is to distance as litre is to:",
+        "choices": [
+          "Volume",
+          "Mass",
+          "Time",
+          "Area"
+        ],
+        "key": "843cd27c2abb40df81606bc7cca03e22a98e69d3806461e5e9404d89851b3824",
+        "sourceNumber": 41,
+        "correctIndex": 0
+      },
+      {
+        "question": "Kilogram is to mass as second is to:",
+        "choices": [
+          "Time",
+          "Length",
+          "Temperature",
+          "Force"
+        ],
+        "key": "6894e508a39d3917d8df31e0df641055c5be63ec3854490c12f1774b6eecbebb",
+        "sourceNumber": 42,
+        "correctIndex": 0
+      },
+      {
+        "question": "Square is to four sides as hexagon is to:",
+        "choices": [
+          "Six sides",
+          "Five sides",
+          "Seven sides",
+          "Eight sides"
+        ],
+        "key": "c90bf70d7c4ed377d4f7172b66070f309aebdd142b1b56f71312ba8752a936ac",
+        "sourceNumber": 43,
+        "correctIndex": 0
+      },
+      {
+        "question": "January is to year as Monday is to:",
+        "choices": [
+          "Week",
+          "Month",
+          "Season",
+          "Daylight"
+        ],
+        "key": "aacc97fb9857ad8003f2947637135c8366dc61153da8d94b4d72db4f3ffa1a2a",
+        "sourceNumber": 44,
+        "correctIndex": 0
+      },
+      {
+        "question": "Red is to colour as loud is to:",
+        "choices": [
+          "Sound",
+          "Light",
+          "Texture",
+          "Shape"
+        ],
+        "key": "e220090701c1fdbafa3b815f86b6c985f79c901cbb6cc20ec60a96578b75fe69",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "Kilometre is to metre as kilogram is to:",
+        "choices": [
+          "Gram",
+          "Litre",
+          "Second",
+          "Newton"
+        ],
+        "key": "65daf09a4a732a58f393db2989ed111b797b1a380ebdb1343fe814844916a354",
+        "sourceNumber": 46,
+        "correctIndex": 0
+      },
+      {
+        "question": "Seed is to plant as egg is to:",
+        "choices": [
+          "Bird",
+          "Nest",
+          "Feather",
+          "Wing"
+        ],
+        "key": "f285407d4fe09eb2b6ac843fa7a690789d3d2c550fdefa6b133ae3506056a88c",
+        "sourceNumber": 47,
+        "correctIndex": 0
+      },
+      {
+        "question": "Rain is to flood as drought is to:",
+        "choices": [
+          "Water shortage",
+          "Heavy snowfall",
+          "Strong wind",
+          "Landslide"
+        ],
+        "key": "046b0ac25a2fe11c75f0f5d85c73860d5ff1a0c386fda8c6961841b58a34e57a",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "Fire is to smoke as boiling is to:",
+        "choices": [
+          "Steam",
+          "Ice",
+          "Ash",
+          "Dust"
+        ],
+        "key": "467631727429a091320872306ae2d0733e886c56efec43b0b0b3b27d9698536d",
+        "sourceNumber": 49,
+        "correctIndex": 0
+      },
+      {
+        "question": "Exercise is to fitness as practice is to:",
+        "choices": [
+          "Skill",
+          "Sleep",
+          "Hunger",
+          "Weather"
+        ],
+        "key": "5e2a5c17093027296c6b0dce72075de4133e8f7d3e008c1493c7fdd1e910c7e1",
+        "sourceNumber": 50,
+        "correctIndex": 0
+      },
+      {
+        "question": "Germ is to infection as spark is to:",
+        "choices": [
+          "Fire",
+          "Rain",
+          "Shadow",
+          "Silence"
+        ],
+        "key": "a5a6e367e29f4660bb77eccef98e6b911171c0dd1f44195ad10daa968ab80ff0",
+        "sourceNumber": 51,
+        "correctIndex": 0
+      },
+      {
+        "question": "Carelessness is to accident as neglect is to:",
+        "choices": [
+          "Deterioration",
+          "Celebration",
+          "Discovery",
+          "Recovery"
+        ],
+        "key": "c3194bab991fd0f383c5dd1f0c736d03cf90980d3ae813b0fb6ab3ebdc6a203f",
+        "sourceNumber": 52,
+        "correctIndex": 0
+      },
+      {
+        "question": "Friction is to heat as impact is to:",
+        "choices": [
+          "Sound",
+          "Colour",
+          "Weight",
+          "Taste"
+        ],
+        "key": "6205772021e0389b3e1ee1bf2fe0e426997ba3e61b9825a31411e73ce7212251",
+        "sourceNumber": 53,
+        "correctIndex": 0
+      },
+      {
+        "question": "Sunlight is to photosynthesis as food is to:",
+        "choices": [
+          "Energy",
+          "Rainfall",
+          "Gravity",
+          "Reflection"
+        ],
+        "key": "078abf5e770a60d4902324f246a1add9acf4af4baef522811dca1c984c6deb03",
+        "sourceNumber": 54,
+        "correctIndex": 0
+      },
+      {
+        "question": "Rust is to iron as tarnish is to:",
+        "choices": [
+          "Silver",
+          "Cotton",
+          "Glass",
+          "Clay"
+        ],
+        "key": "84132f4f4b900e0ea384618943b09e852196d2dfbe931d227b4ec860c5c40d90",
+        "sourceNumber": 55,
+        "correctIndex": 0
+      },
+      {
+        "question": "Thawing is to melting as freezing is to:",
+        "choices": [
+          "Solidifying",
+          "Evaporating",
+          "Condensing",
+          "Boiling"
+        ],
+        "key": "356d944d831991d88eb914e2140f8703c3d8efb636cb3e84bab23224c5b68c21",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "Evaporation is to liquid as condensation is to:",
+        "choices": [
+          "Gas",
+          "Solid",
+          "Metal",
+          "Plasma"
+        ],
+        "key": "67aef47fba1aad1d65c5e797468b837794f3174e0054b946b183dd9f077cc740",
+        "sourceNumber": 57,
+        "correctIndex": 0
+      },
+      {
+        "question": "Dawn is to morning as dusk is to:",
+        "choices": [
+          "Evening",
+          "Noon",
+          "Midnight",
+          "Afternoon"
+        ],
+        "key": "b43b6ceb68a3e7ae07955be3f3cc382bdb5da11fbc3a6a73de62a146225bd123",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "Bud is to flower as caterpillar is to:",
+        "choices": [
+          "Butterfly",
+          "Spider",
+          "Worm",
+          "Beetle"
+        ],
+        "key": "8d3586480728a09d51bf1c20322ed9322941afbeca9ed2bb24c3dca677f454cc",
+        "sourceNumber": 59,
+        "correctIndex": 0
+      },
+      {
+        "question": "Morning is to afternoon as spring is to:",
+        "choices": [
+          "Summer",
+          "Winter",
+          "Night",
+          "Autumn"
+        ],
+        "key": "09d85813954c16cb9a66a259114022ed84213c5c4ba7a3c369753f4e77ad6e56",
+        "sourceNumber": 60,
+        "correctIndex": 0
+      },
+      {
+        "question": "Draft is to final copy as sketch is to:",
+        "choices": [
+          "Finished drawing",
+          "Blank page",
+          "Paintbrush",
+          "Frame"
+        ],
+        "key": "dc617f15a04f44624e6e1e946cde58f980b89366921734c0f1441b130abe5c50",
+        "sourceNumber": 61,
+        "correctIndex": 0
+      },
+      {
+        "question": "First is to second as penultimate is to:",
+        "choices": [
+          "Last",
+          "Middle",
+          "Third",
+          "Beginning"
+        ],
+        "key": "283b07bf225193c74ebbfa1198879078df621cb95c8ab9a8e009feba4c7146b5",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "Hour is to minute as minute is to:",
+        "choices": [
+          "Second",
+          "Day",
+          "Week",
+          "Month"
+        ],
+        "key": "9184227549646cd26dbcbde768a4229e2e72b5b0be4ccf8661f7f4d58760ac31",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "Monday is to Wednesday as Thursday is to:",
+        "choices": [
+          "Saturday",
+          "Friday",
+          "Sunday",
+          "Tuesday"
+        ],
+        "key": "fd4b1d0f7f9f676db49557a6cb6b3dfd626e9129010765ef3722650b9a23b311",
+        "sourceNumber": 64,
+        "correctIndex": 0
+      },
+      {
+        "question": "Seedling is to mature plant as infant is to:",
+        "choices": [
+          "Adult",
+          "Parent",
+          "Teacher",
+          "Neighbour"
+        ],
+        "key": "8103ba43bc67b9c2e9eff9b2d9d85fad49d634f73a6dc67dc8dd4903c7fc37d6",
+        "sourceNumber": 65,
+        "correctIndex": 0
+      },
+      {
+        "question": "Plan is to action as recipe is to:",
+        "choices": [
+          "Cooking",
+          "Shopping",
+          "Eating",
+          "Washing"
+        ],
+        "key": "510385bfd312ce7c72d5491497ff0158cc6de5d9eded90bcd233bb833dd0cca2",
+        "sourceNumber": 66,
+        "correctIndex": 0
+      },
+      {
+        "question": "Question is to answer as problem is to:",
+        "choices": [
+          "Solution",
+          "Argument",
+          "Delay",
+          "Example"
+        ],
+        "key": "c0f9aab0c4d51e682662f46ebc88d694d9bab2318687e637d05079e3fdb53723",
+        "sourceNumber": 67,
+        "correctIndex": 0
+      },
+      {
+        "question": "Map is to journey as timetable is to:",
+        "choices": [
+          "Schedule",
+          "Ticket",
+          "Station",
+          "Passenger"
+        ],
+        "key": "6f09b923c438589eedf0447e8f3d0ca904ff8e271a450583ff1a04c75250fd65",
+        "sourceNumber": 68,
+        "correctIndex": 0
+      },
+      {
+        "question": "Truth is to honesty as fairness is to:",
+        "choices": [
+          "Justice",
+          "Anger",
+          "Speed",
+          "Silence"
+        ],
+        "key": "787dc76c0b00f51ebae7ed4b39d3fcdb324abb1a44f800723b27be495b9d34b3",
+        "sourceNumber": 69,
+        "correctIndex": 0
+      },
+      {
+        "question": "Generous is to stingy as courageous is to:",
+        "choices": [
+          "Cowardly",
+          "Careful",
+          "Curious",
+          "Patient"
+        ],
+        "key": "f0b2f18218d1900188f984139d85272905c0d117665d9140d0b9747d673b1428",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "Expand is to contract as advance is to:",
+        "choices": [
+          "Retreat",
+          "Arrive",
+          "Continue",
+          "Improve"
+        ],
+        "key": "9d0ab4fa56b7ddb0ecd2f465e120537a25507237e2155a3a11a608edd5ff7110",
+        "sourceNumber": 71,
+        "correctIndex": 0
+      },
+      {
+        "question": "Transparent is to opaque as flexible is to:",
+        "choices": [
+          "Rigid",
+          "Light",
+          "Smooth",
+          "Narrow"
+        ],
+        "key": "e4d2af4c9679cb7dca99584a2975dc0207db40cf0cf9311868c31ab5125479b4",
+        "sourceNumber": 72,
+        "correctIndex": 0
+      },
+      {
+        "question": "Ancient is to modern as scarce is to:",
+        "choices": [
+          "Abundant",
+          "Rare",
+          "Limited",
+          "Missing"
+        ],
+        "key": "7924ea1d04938e9d03112c0c070a54f67591b9980c693271cf8465ae6f260dc8",
+        "sourceNumber": 73,
+        "correctIndex": 0
+      },
+      {
+        "question": "Whisper is to shout as drizzle is to:",
+        "choices": [
+          "Downpour",
+          "Cloud",
+          "Puddle",
+          "Breeze"
+        ],
+        "key": "4fda80dcd93ff1ef24597fe2bbff218fd373767282328b318e30ed952b8465cc",
+        "sourceNumber": 74,
+        "correctIndex": 0
+      },
+      {
+        "question": "Warm is to hot as cool is to:",
+        "choices": [
+          "Cold",
+          "Wet",
+          "Dry",
+          "Bright"
+        ],
+        "key": "aede306d2fcfcffb5d069c3a2e9cca3da46066f7a10785381b97d0c302fc7d47",
+        "sourceNumber": 75,
+        "correctIndex": 0
+      },
+      {
+        "question": "Smile is to grin as walk is to:",
+        "choices": [
+          "Stride",
+          "Sit",
+          "Rest",
+          "Fall"
+        ],
+        "key": "c0c1fb2e9b24a73374058e3fa99749c8ed0d3dd98db6751422e316db138e458d",
+        "sourceNumber": 76,
+        "correctIndex": 0
+      },
+      {
+        "question": "Tiny is to small as enormous is to:",
+        "choices": [
+          "Huge",
+          "Narrow",
+          "Short",
+          "Light"
+        ],
+        "key": "80c854744a0ed52f984537736c42f784850d429bb064e767efa96a1ebe1c85fa",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "Pleased is to delighted as annoyed is to:",
+        "choices": [
+          "Furious",
+          "Calm",
+          "Amused",
+          "Hopeful"
+        ],
+        "key": "a48839d7a907ba018301419b0f42f58bc72d70b32e1a0d8f151639cef7f73b34",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "Rain is to drizzle as wind is to:",
+        "choices": [
+          "Breeze",
+          "Thunder",
+          "Cloud",
+          "Flood"
+        ],
+        "key": "78bf43ab74978a0c0af7cee2e90e7b3f32f60e5ee17540db2fbeceae47f11a3a",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "Acorn is to oak as coconut is to:",
+        "choices": [
+          "Coconut palm",
+          "Pine tree",
+          "Rose bush",
+          "Maple tree"
+        ],
+        "key": "a5ff6dd89076a2542e6ececa9ceb14274b07884141dfb7d199a642a85732c8d1",
+        "sourceNumber": 80,
+        "correctIndex": 0
+      },
+      {
+        "question": "Wool is to sheep as silk is to:",
+        "choices": [
+          "Silkworm",
+          "Spider",
+          "Bee",
+          "Butterfly"
+        ],
+        "key": "a304b5b8f7a1f3c89406292592213853dcac6b5f12ee4cbe7f8823d2d62af487",
+        "sourceNumber": 81,
+        "correctIndex": 0
+      },
+      {
+        "question": "Milk is to cheese as grapes are to:",
+        "choices": [
+          "Raisins",
+          "Butter",
+          "Flour",
+          "Yoghurt"
+        ],
+        "key": "14404b7d5fe65cbfded418ffaf43e735918ad0af7ff7f18e9023d95c64c07a91",
+        "sourceNumber": 82,
+        "correctIndex": 0
+      },
+      {
+        "question": "Clay is to pottery as flour is to:",
+        "choices": [
+          "Bread",
+          "Cheese",
+          "Oil",
+          "Jam"
+        ],
+        "key": "63c314673a47c7bd35ca6dc7db74137f0fa34c4105badab29155765c8acaff22",
+        "sourceNumber": 83,
+        "correctIndex": 0
+      },
+      {
+        "question": "Cotton is to fabric as timber is to:",
+        "choices": [
+          "Furniture",
+          "Glass",
+          "Paper clip",
+          "Rubber"
+        ],
+        "key": "7fdd78f32bcaf3fc78ce4ff8414ce8cb650bb31dcaf725fb102f253e9d22e58e",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "Sand is to glass as iron ore is to:",
+        "choices": [
+          "Iron",
+          "Plastic",
+          "Paper",
+          "Cement"
+        ],
+        "key": "408584cd23910dfb9aad071e62815930091d782897b9e8b992d5a8ec1b23bb9c",
+        "sourceNumber": 85,
+        "correctIndex": 0
+      },
+      {
+        "question": "Caterpillar is to leaf as cow is to:",
+        "choices": [
+          "Grass",
+          "Meat",
+          "Stone",
+          "Bark"
+        ],
+        "key": "40511315bd98fac8d060358d4ebe5a9cd66fc54cecd342ea23a6e429587f9691",
+        "sourceNumber": 86,
+        "correctIndex": 0
+      },
+      {
+        "question": "Carnivore is to meat as herbivore is to:",
+        "choices": [
+          "Plants",
+          "Insects",
+          "Fungi",
+          "Minerals"
+        ],
+        "key": "8d7d7126775cab882be22ae0cb74a9ab9eb7e6d3e0239e5b905c006f0941bfcf",
+        "sourceNumber": 87,
+        "correctIndex": 0
+      },
+      {
+        "question": "Bee is to pollen as spider is to:",
+        "choices": [
+          "Insects",
+          "Nectar",
+          "Leaves",
+          "Seeds"
+        ],
+        "key": "c5e46009e15d4eb5fc3430338d0be717ec8caf2945d2a2b362a1ffdcb44cd265",
+        "sourceNumber": 88,
+        "correctIndex": 0
+      },
+      {
+        "question": "Glove is to hand as sock is to:",
+        "choices": [
+          "Foot",
+          "Head",
+          "Arm",
+          "Neck"
+        ],
+        "key": "add02129c92ea9bad7c6a7e0f95651b95eba5e78d8da1c74e071c27f8df57301",
+        "sourceNumber": 89,
+        "correctIndex": 0
+      },
+      {
+        "question": "Helmet is to head as knee pad is to:",
+        "choices": [
+          "Knee",
+          "Elbow",
+          "Shoulder",
+          "Wrist"
+        ],
+        "key": "4f1aa7a3d3522c55c554dccb63f3eaee25ad4bbc53d16e8d3d9f3556ae50bb81",
+        "sourceNumber": 90,
+        "correctIndex": 0
+      },
+      {
+        "question": "Umbrella is to rain as sunscreen is to:",
+        "choices": [
+          "Sunlight",
+          "Wind",
+          "Cold",
+          "Dust"
+        ],
+        "key": "12390088daf02d930b8ebf0ad1e576a9a6037779d2e819e4e24cdc662d786641",
+        "sourceNumber": 91,
+        "correctIndex": 0
+      },
+      {
+        "question": "Seat belt is to safety as lock is to:",
+        "choices": [
+          "Security",
+          "Comfort",
+          "Speed",
+          "Decoration"
+        ],
+        "key": "d7fdc62b0cf183fb6716f06c6d3b675aa8279c2e22aff2aae309982c544728e2",
+        "sourceNumber": 92,
+        "correctIndex": 0
+      },
+      {
+        "question": "Candle is to light as heater is to:",
+        "choices": [
+          "Warmth",
+          "Shadow",
+          "Sound",
+          "Moisture"
+        ],
+        "key": "474ae2532177f76897d9b54b22a6e62ddc38067e77dcb3699c1a4b5adac1eec9",
+        "sourceNumber": 93,
+        "correctIndex": 0
+      },
+      {
+        "question": "Printer is to paper as projector is to:",
+        "choices": [
+          "Screen",
+          "Keyboard",
+          "Microphone",
+          "Router"
+        ],
+        "key": "b65ab04e0866322b2c0e72aad02df06f149c118c6bcb026c693cabdf66a2c541",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "Microphone is to sound as camera is to:",
+        "choices": [
+          "Image",
+          "Smell",
+          "Pressure",
+          "Temperature"
+        ],
+        "key": "8fcb98ce928844d5352aecbe50706a3e44c634df639b5c3dc631251c2927ccaf",
+        "sourceNumber": 95,
+        "correctIndex": 0
+      },
+      {
+        "question": "Envelope is to letter as bottle is to:",
+        "choices": [
+          "Liquid",
+          "Label",
+          "Glass",
+          "Cap"
+        ],
+        "key": "583c04cb16fab03869cb5d62fdc623c98c1cc80d4ff52ad9c6f46be2894d5f42",
+        "sourceNumber": 96,
+        "correctIndex": 0
+      },
+      {
+        "question": "Garage is to car as stable is to:",
+        "choices": [
+          "Horse",
+          "Book",
+          "Boat",
+          "Bird"
+        ],
+        "key": "94031bb7479f5d874ae722dd4ea02f8ea7e4489701a71dd0e7e203b3b9b70d06",
+        "sourceNumber": 97,
+        "correctIndex": 0
+      },
+      {
+        "question": "Museum is to artefacts as gallery is to:",
+        "choices": [
+          "Artworks",
+          "Livestock",
+          "Crops",
+          "Tools"
+        ],
+        "key": "f9e33d17ccacdcbc24285aecdd9425d150e4aefd03f74f825d39ae51e62664db",
+        "sourceNumber": 98,
+        "correctIndex": 0
+      },
+      {
+        "question": "Thermometer is to fever as rain gauge is to:",
+        "choices": [
+          "Rainfall",
+          "Wind direction",
+          "Air pressure",
+          "Cloud height"
+        ],
+        "key": "4698a252629c7fdbbc061f576872aeea679f239b1ee794f27840fa468f4aa551",
+        "sourceNumber": 99,
+        "correctIndex": 0
+      },
+      {
+        "question": "Dictionary is to word meaning as atlas is to:",
+        "choices": [
+          "Maps",
+          "Recipes",
+          "Equations",
+          "Poems"
+        ],
+        "key": "99a3128244857ec07b7d2aac9148f0063b429c61a74a1db56d8a4dd95bf9bf0e",
+        "sourceNumber": 100,
+        "correctIndex": 0
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "9365780d47d29c632265fe3aa592b41967f2d9f087976a15ddfeed184521706e",
+      "sourceQuestionNumbers": [
+        69,
+        47,
+        5,
+        31,
+        83,
+        18,
+        46,
+        95,
+        80,
+        34,
+        38,
+        1,
+        52,
+        66,
+        85,
+        63,
+        21,
+        45,
+        91,
+        14,
+        77,
+        44,
+        16,
+        93,
+        29,
+        42,
+        23,
+        86,
+        73,
+        3,
+        99,
+        53,
+        62,
+        36,
+        2,
+        4,
+        35,
+        51,
+        61,
+        82,
+        7,
+        57,
+        24,
+        90,
+        72,
+        92,
+        9,
+        28,
+        67,
+        58,
+        17,
+        87,
+        43,
+        65,
+        27,
+        68,
+        49,
+        98,
+        19,
+        22,
+        89,
+        33,
+        79,
+        56,
+        12,
+        74,
+        20,
+        32,
+        50,
+        97,
+        41,
+        40,
+        100,
+        64,
+        13,
+        6,
+        48,
+        76,
+        96,
+        26,
+        81,
+        70,
+        37,
+        55,
+        8,
+        94,
+        75,
+        59,
+        11,
+        39,
+        25,
+        78,
+        10,
+        84,
+        54,
+        60,
+        88,
+        15,
+        71,
+        30
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
