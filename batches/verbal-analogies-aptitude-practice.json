@@ -1624,7 +1624,131 @@
       "studioMedia": {
         "id": "626d8315-f538-4ad3-ba7f-17cd6ee38b9d",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/qQ4pbLtosL.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 1/5 | Q69, 47, 5 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice"
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 69, 47, 5\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+              "image": [
+                {
+                  "id": "626d8315-f538-4ad3-ba7f-17cd6ee38b9d",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/qQ4pbLtosL.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 69, 47, 5\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+              "image": [
+                {
+                  "id": "626d8315-f538-4ad3-ba7f-17cd6ee38b9d",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/qQ4pbLtosL.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 1/5 | Q69, 47, 5 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 69, 47, 5\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+              "image": [
+                {
+                  "id": "626d8315-f538-4ad3-ba7f-17cd6ee38b9d",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/qQ4pbLtosL.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 1/5 | Q69, 47, 5 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "TestPreparation",
+                "label": "TestPreparation"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 69, 47, 5\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+              "image": [
+                {
+                  "id": "626d8315-f538-4ad3-ba7f-17cd6ee38b9d",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/qQ4pbLtosL.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-15T11:13:00+05:00"
     },
     {
       "part": 2,
@@ -1913,7 +2037,131 @@
       "studioMedia": {
         "id": "87fb55d2-65cb-4644-8076-46bb04b57b3e",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/aXgFtN6aaL.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 2/5 | Q31, 83, 18 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice"
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 31, 83, 18\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+              "image": [
+                {
+                  "id": "87fb55d2-65cb-4644-8076-46bb04b57b3e",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/aXgFtN6aaL.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 31, 83, 18\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+              "image": [
+                {
+                  "id": "87fb55d2-65cb-4644-8076-46bb04b57b3e",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/aXgFtN6aaL.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 2/5 | Q31, 83, 18 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 31, 83, 18\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+              "image": [
+                {
+                  "id": "87fb55d2-65cb-4644-8076-46bb04b57b3e",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/aXgFtN6aaL.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 2/5 | Q31, 83, 18 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "TestPreparation",
+                "label": "TestPreparation"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 31, 83, 18\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+              "image": [
+                {
+                  "id": "87fb55d2-65cb-4644-8076-46bb04b57b3e",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/aXgFtN6aaL.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-15T13:54:00+05:00"
     },
     {
       "part": 3,
@@ -2202,7 +2450,131 @@
       "studioMedia": {
         "id": "4400061e-56d9-4f9c-af2e-ccccc380c7b5",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/MIyNYX7MWm.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 3/5 | Q46, 95, 80 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice"
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 46, 95, 80\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+              "image": [
+                {
+                  "id": "4400061e-56d9-4f9c-af2e-ccccc380c7b5",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/MIyNYX7MWm.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 46, 95, 80\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+              "image": [
+                {
+                  "id": "4400061e-56d9-4f9c-af2e-ccccc380c7b5",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/MIyNYX7MWm.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 3/5 | Q46, 95, 80 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 46, 95, 80\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+              "image": [
+                {
+                  "id": "4400061e-56d9-4f9c-af2e-ccccc380c7b5",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/MIyNYX7MWm.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 3/5 | Q46, 95, 80 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "TestPreparation",
+                "label": "TestPreparation"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 46, 95, 80\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+              "image": [
+                {
+                  "id": "4400061e-56d9-4f9c-af2e-ccccc380c7b5",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/MIyNYX7MWm.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-15T16:35:00+05:00"
     },
     {
       "part": 4,
@@ -2491,7 +2863,131 @@
       "studioMedia": {
         "id": "15bbb6be-e797-4d54-917a-ce7d203a1ff4",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/6JcO7ZtUJL.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 4/5 | Q34, 38, 1 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice"
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 34, 38, 1\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+              "image": [
+                {
+                  "id": "15bbb6be-e797-4d54-917a-ce7d203a1ff4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/6JcO7ZtUJL.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 34, 38, 1\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+              "image": [
+                {
+                  "id": "15bbb6be-e797-4d54-917a-ce7d203a1ff4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/6JcO7ZtUJL.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 4/5 | Q34, 38, 1 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 34, 38, 1\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+              "image": [
+                {
+                  "id": "15bbb6be-e797-4d54-917a-ce7d203a1ff4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/6JcO7ZtUJL.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 4/5 | Q34, 38, 1 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "TestPreparation",
+                "label": "TestPreparation"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 34, 38, 1\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+              "image": [
+                {
+                  "id": "15bbb6be-e797-4d54-917a-ce7d203a1ff4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/6JcO7ZtUJL.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-15T19:16:00+05:00"
     },
     {
       "part": 5,
@@ -2780,7 +3276,131 @@
       "studioMedia": {
         "id": "07397fab-1e97-440a-99a6-686e991e6a68",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/9WF7j94s5L.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 5/5 | Q52, 66, 85 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice"
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 52, 66, 85\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+              "image": [
+                {
+                  "id": "07397fab-1e97-440a-99a6-686e991e6a68",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/9WF7j94s5L.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 52, 66, 85\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+              "image": [
+                {
+                  "id": "07397fab-1e97-440a-99a6-686e991e6a68",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/9WF7j94s5L.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 5/5 | Q52, 66, 85 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 52, 66, 85\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+              "image": [
+                {
+                  "id": "07397fab-1e97-440a-99a6-686e991e6a68",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/9WF7j94s5L.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 5/5 | Q52, 66, 85 | 100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "TestPreparation",
+                "label": "TestPreparation"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 52, 66, 85\n100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #EntryTest #TestPreparation #Shorts",
+              "image": [
+                {
+                  "id": "07397fab-1e97-440a-99a6-686e991e6a68",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/9WF7j94s5L.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-15T21:57:00+05:00"
     }
   ],
   "thinkingSeconds": 3,
@@ -2864,5 +3484,12 @@
         "sha256": "23741ad7df21d6a43a9e5f134bb8cbfe7d1abd4221ad2a233236b1d167ee22ef"
       }
     ]
-  }
+  },
+  "schedule": [
+    "2026-11-15T11:13:00+05:00",
+    "2026-11-15T13:54:00+05:00",
+    "2026-11-15T16:35:00+05:00",
+    "2026-11-15T19:16:00+05:00",
+    "2026-11-15T21:57:00+05:00"
+  ]
 }
