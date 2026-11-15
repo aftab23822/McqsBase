@@ -1163,6 +1163,16 @@
       ],
       "published": 0,
       "verifiedPublications": 0
+    },
+    "verbal-analogies-aptitude-practice": {
+      "status": "rendering",
+      "ledger": "batches/verbal-analogies-aptitude-practice.json",
+      "createdAt": "2026-11-15T05:54:15.350457+00:00",
+      "sourceUrl": "https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+      "blockedNetworks": [],
+      "scheduledAt": [],
+      "published": 0,
+      "verifiedPublications": 0
     }
   },
   "socialService": {
