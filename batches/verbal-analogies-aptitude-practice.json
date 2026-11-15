@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "verbal-analogies-aptitude-practice",
   "createdAt": "2026-11-15T05:54:15.350457+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "verbal-analogies-aptitude-practice",
     "title": "100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
@@ -1749,7 +1749,12 @@
         }
       },
       "scheduledAt": "2026-11-15T11:13:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-15T05:57:48.551128+00:00"
+        }
+      }
     },
     {
       "part": 2,
