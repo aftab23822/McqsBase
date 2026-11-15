@@ -2709,6 +2709,10 @@
           "publicUrlVerified": false,
           "verification": "provider-status-only",
           "integrationId": "cmvwbbtq00220ro9du35l1wrs"
+        },
+        "tiktok": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-15T05:58:33.866852+00:00"
         }
       }
     },
