@@ -1170,7 +1170,13 @@
       "createdAt": "2026-11-15T05:54:15.350457+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
       "blockedNetworks": [],
-      "scheduledAt": [],
+      "scheduledAt": [
+        "2026-11-15T11:13:00+05:00",
+        "2026-11-15T13:54:00+05:00",
+        "2026-11-15T16:35:00+05:00",
+        "2026-11-15T19:16:00+05:00",
+        "2026-11-15T21:57:00+05:00"
+      ],
       "published": 0,
       "verifiedPublications": 0
     }
