@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "verbal-analogies-aptitude-practice",
   "createdAt": "2026-11-15T05:54:15.350457+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "verbal-analogies-aptitude-practice",
     "title": "100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
@@ -2743,5 +2743,86 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "verbal-analogies-aptitude-practice",
+    "sourceUrl": "https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
+    "sourceTitle": "100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
+    "sourceContentHash": "194ca54672120f1d23edb837bbabeb755f3cb8c6d90148b1467f9ad99c649f14",
+    "productionDeployment": {
+      "id": 7799297089,
+      "sha": "b0e68d2d9c47cf626d4d09be04420b1127a338f0",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-15T05:54:15.189558+00:00",
+      "url": "https://mcqs-base-8qilvnr4e-as-projects-10921176.vercel.app",
+      "publisherRunId": 43682686827
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          69,
+          47,
+          5
+        ],
+        "count": 3,
+        "durationSeconds": 65,
+        "sha256": "fd8f9597f2fae5339f99b106e4f489b06ea817f6834c2f867c914456e8c2e208"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          31,
+          83,
+          18
+        ],
+        "count": 3,
+        "durationSeconds": 60,
+        "sha256": "126ab5bbd5b4c32fbded429c5601791eea9b1d58fb51efb07985537d68ac1e36"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          46,
+          95,
+          80
+        ],
+        "count": 3,
+        "durationSeconds": 64,
+        "sha256": "922185109588bff666940628d55de330effce4079b83fc120248ecc0f6d01895"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          34,
+          38,
+          1
+        ],
+        "count": 3,
+        "durationSeconds": 63,
+        "sha256": "d559d59639cc06337c1b30a50911a0f99b32352a40ae452bad769c7991d7ca09"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          52,
+          66,
+          85
+        ],
+        "count": 3,
+        "durationSeconds": 64,
+        "sha256": "23741ad7df21d6a43a9e5f134bb8cbfe7d1abd4221ad2a233236b1d167ee22ef"
+      }
+    ]
+  }
 }
