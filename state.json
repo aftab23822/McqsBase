@@ -1165,7 +1165,7 @@
       "verifiedPublications": 14
     },
     "verbal-analogies-aptitude-practice": {
-      "status": "ready",
+      "status": "scheduling",
       "ledger": "batches/verbal-analogies-aptitude-practice.json",
       "createdAt": "2026-11-15T05:54:15.350457+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
