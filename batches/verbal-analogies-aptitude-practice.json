@@ -1908,7 +1908,11 @@
       },
       "uploadIntent": {
         "filename": "verbal-analogies-aptitude-practice-part-02-126ab5bbd5b4c32f.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "87fb55d2-65cb-4644-8076-46bb04b57b3e",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/aXgFtN6aaL.mp4"
       }
     },
     {
