@@ -1177,8 +1177,10 @@
   },
   "socialService": {
     "status": "checked",
-    "checkedAt": "2026-11-14T05:58:20.228286+00:00",
+    "checkedAt": "2026-11-15T05:57:17.325881+00:00",
     "blockedNetworks": {},
-    "authRecovery": {}
+    "authRecovery": {
+      "tiktok": "creator-verified-after-studio-renewal"
+    }
   }
 }
