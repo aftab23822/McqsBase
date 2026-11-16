@@ -1165,7 +1165,7 @@
       "verifiedPublications": 15
     },
     "verbal-analogies-aptitude-practice": {
-      "status": "scheduled",
+      "status": "provider-published",
       "ledger": "batches/verbal-analogies-aptitude-practice.json",
       "createdAt": "2026-11-15T05:54:15.350457+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/verbal-analogies-aptitude-practice",
@@ -1177,8 +1177,8 @@
         "2026-11-15T19:16:00+05:00",
         "2026-11-15T21:57:00+05:00"
       ],
-      "published": 0,
-      "verifiedPublications": 0
+      "published": 20,
+      "verifiedPublications": 15
     },
     "mdcat-human-physiology": {
       "status": "ready",
