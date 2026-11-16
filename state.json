@@ -1181,7 +1181,7 @@
       "verifiedPublications": 15
     },
     "mdcat-human-physiology": {
-      "status": "ready",
+      "status": "scheduling",
       "ledger": "batches/mdcat-human-physiology.json",
       "createdAt": "2026-11-16T05:56:16.147750+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
