@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "mdcat-human-physiology",
   "createdAt": "2026-11-16T05:56:16.147750+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "mdcat-human-physiology",
     "title": "100 MDCAT Human Physiology MCQs with Answers and Explanations",
@@ -1700,7 +1700,12 @@
         }
       },
       "scheduledAt": "2026-11-16T11:18:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-16T06:02:26.707534+00:00"
+        }
+      }
     },
     {
       "part": 2,
