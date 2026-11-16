@@ -2313,6 +2313,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 5,
+      "directory": "part-05",
+      "sourceQuestionNumbers": [
+        18,
+        55,
+        68
+      ],
+      "count": 3,
+      "durationSeconds": 82,
+      "sha256": "99bb44702c581e4ee56397e5f1c78695ae953e84dbb944e33c00de2ce08969ce",
+      "manifest": {
+        "title": "100 MDCAT Human Physiology MCQs",
+        "sourceTitle": "100 MDCAT Human Physiology MCQs with Answers and Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-16T05:56:15.897270+00:00",
+        "sourceContentHash": "b9a9e36aff719efd0db33b2aa6807d1413333b30bc3a0314547a8e7f64006be5",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7816689696,
+          "sha": "c35413ea33c29fd22032319e19034f2b942b83a1",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-16T05:56:15.897270+00:00",
+          "url": "https://mcqs-base-bulswmzi7-as-projects-10921176.vercel.app",
+          "publisherRunId": 43812753557
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 82,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Which hormone helps the kidneys conserve water by increasing water reabsorption in collecting ducts?",
+            "choices": [
+              "Antidiuretic hormone",
+              "Insulin",
+              "Glucagon",
+              "Calcitonin"
+            ],
+            "correctIndex": 0,
+            "key": "6524d094be21d6b3d6503bd16c1c31e8c12e797b2687a57c3c6778bab575473c",
+            "sourceNumber": 18
+          },
+          {
+            "question": "Which substance in the stomach provides an acidic environment that supports pepsin activity?",
+            "choices": [
+              "Hydrochloric acid",
+              "Bicarbonate from bile",
+              "Salivary amylase",
+              "Insulin"
+            ],
+            "correctIndex": 0,
+            "key": "f16c0035d407e88bdfd04f62385cbad371ec3ebf890fc9d3df2fcaecec91a096",
+            "sourceNumber": 55
+          },
+          {
+            "question": "Which type of immunity is produced when a person's own immune system responds to an infection?",
+            "choices": [
+              "Active immunity",
+              "Passive immunity",
+              "Mechanical immunity only",
+              "Inherited immunity from a transfusion"
+            ],
+            "correctIndex": 0,
+            "key": "3efba3fd82c5860fb575f724e859fff3e4eeae758707cf6591d28f914464abcb",
+            "sourceNumber": 68
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 17,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 17,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 18,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 19,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 20,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 25,
+            "duration": 18,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 43,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 44,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 45,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 46,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 51,
+            "duration": 19,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 70,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 71,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 72,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 73,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 77,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 5,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            18,
+            55,
+            68
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MDCAT",
+          "#MedicalEntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/mdcat-human-physiology-part-05-99bb44702c581e4e.mp4",
+        "videoSha256": "99bb44702c581e4ee56397e5f1c78695ae953e84dbb944e33c00de2ce08969ce",
+        "assetId": 753673444
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 5/5 | Q18, 55, 68 | 100 MDCAT Human Physiology MCQs",
+          "text": "Part 5/5 · Source questions 18, 55, 68\n100 MDCAT Human Physiology MCQs\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 5/5 | Q18, 55, 68 | 100 MDCAT Human Physiology MCQs",
+          "text": "Part 5/5 · Source questions 18, 55, 68\n100 MDCAT Human Physiology MCQs\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-human-physiology\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 5/5 | Q18, 55, 68 | 100 MDCAT Human Physiology MCQs",
+          "text": "Part 5/5 · Source questions 18, 55, 68\n100 MDCAT Human Physiology MCQs\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-human-physiology\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 5/5 | Q18, 55, 68 | 100 MDCAT Human Physiology MCQs",
+          "text": "Part 5/5 · Source questions 18, 55, 68\n100 MDCAT Human Physiology MCQs\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-human-physiology\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
