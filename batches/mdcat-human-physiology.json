@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "mdcat-human-physiology",
+  "createdAt": "2026-11-16T05:56:16.147750+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "mdcat-human-physiology",
+    "title": "100 MDCAT Human Physiology MCQs with Answers and Explanations",
+    "url": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7816689696,
+      "sha": "c35413ea33c29fd22032319e19034f2b942b83a1",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-16T05:56:15.897270+00:00",
+      "url": "https://mcqs-base-bulswmzi7-as-projects-10921176.vercel.app",
+      "publisherRunId": 43812753557
+    },
+    "fetchedAt": "2026-11-16T05:56:15.897270+00:00",
+    "contentHash": "b9a9e36aff719efd0db33b2aa6807d1413333b30bc3a0314547a8e7f64006be5",
+    "questions": [
+      {
+        "question": "Which statement best describes negative feedback in human physiology?",
+        "choices": [
+          "A response reduces the original change that triggered it",
+          "A response continually increases the original change",
+          "A response occurs only after a voluntary decision",
+          "A response prevents all internal conditions from changing"
+        ],
+        "key": "8a7b3c1efec233693d82250dfd705869b73cba2fcda726cfd3bb539c94f76492",
+        "sourceNumber": 1,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which part of a neuron usually receives signals from other neurons?",
+        "choices": [
+          "Dendrites",
+          "Myelin sheath",
+          "Axon terminal",
+          "Node of Ranvier"
+        ],
+        "key": "a940cbe1edf7f6acf4ed85ef131f52d253892cbe3408713bb4f5ad066014773c",
+        "sourceNumber": 2,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a typical neuron, in which direction does an action potential travel along the axon?",
+        "choices": [
+          "From the cell body toward the axon terminals",
+          "From the axon terminals toward the dendrites only",
+          "From the myelin sheath into the nucleus",
+          "From the synaptic cleft into the cell body"
+        ],
+        "key": "cf11217e720b09973fd016d824bc250f9e299002115b6cb52f17233489a717f3",
+        "sourceNumber": 3,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main role of myelin around many axons?",
+        "choices": [
+          "To increase the speed of impulse conduction",
+          "To release neurotransmitters into the blood",
+          "To produce the neuron's DNA",
+          "To detect changes in blood glucose"
+        ],
+        "key": "4959ab1e4a48f905226c0b7f04b23f45b1576e66591d2d5957e74c5d4f985e25",
+        "sourceNumber": 4,
+        "correctIndex": 0
+      },
+      {
+        "question": "At a chemical synapse, what is released from the presynaptic terminal to pass a signal across the synaptic cleft?",
+        "choices": [
+          "Neurotransmitter",
+          "Myelin",
+          "Haemoglobin",
+          "Bile"
+        ],
+        "key": "ced69cd13a15fc3e398a8a6e7d7fa720b0d8965694d92cf58094fcf91c6160b1",
+        "sourceNumber": 5,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which sequence correctly represents a basic reflex arc?",
+        "choices": [
+          "Receptor, sensory neuron, integration centre, motor neuron, effector",
+          "Effector, sensory neuron, receptor, motor neuron, integration centre",
+          "Motor neuron, receptor, effector, sensory neuron, integration centre",
+          "Receptor, motor neuron, sensory neuron, effector, integration centre"
+        ],
+        "key": "7cdd566ebb3f54a16f8b7c9f998baa54d58e858102bced38c64354f93c08ddb7",
+        "sourceNumber": 6,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which structure is primarily responsible for coordinating balance and fine control of movement?",
+        "choices": [
+          "Cerebellum",
+          "Medulla oblongata",
+          "Hypothalamus",
+          "Spinal cord"
+        ],
+        "key": "c35349936426d5aaeeeac9f0ee4eff7f3da7aace91a9955d363d710ecb36e915",
+        "sourceNumber": 7,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which brain region is especially important in regulating body temperature and hunger?",
+        "choices": [
+          "Hypothalamus",
+          "Cerebellum",
+          "Occipital lobe",
+          "Corpus callosum"
+        ],
+        "key": "5e31deb66cdc337fbc34a8c62fa589b0a2657a183bc1e532e0d1d5dc85653ebe",
+        "sourceNumber": 8,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which division of the autonomic nervous system generally prepares the body for rapid action?",
+        "choices": [
+          "Sympathetic division",
+          "Parasympathetic division",
+          "Somatic sensory division",
+          "Enteric sensory division only"
+        ],
+        "key": "650db47bcc0656b83bd96659bde50c43fa8f647ee8d9c5f3e30915377dd01976",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which response is generally associated with parasympathetic activity?",
+        "choices": [
+          "Increased digestive activity",
+          "Pupil dilation during acute stress",
+          "Increased heart rate during a threat",
+          "Reduced salivation during exertion"
+        ],
+        "key": "2545413ff88a7c7724233d6473ef5917d6de9ce5d6081c706901f57da0034262",
+        "sourceNumber": 10,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which part of the eye changes its diameter to regulate how much light enters?",
+        "choices": [
+          "Iris",
+          "Cornea",
+          "Retina",
+          "Optic nerve"
+        ],
+        "key": "6cd066719ef363759b127251c5eba99a55e41860abc92d1f0f3ee462bd6e3679",
+        "sourceNumber": 11,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which photoreceptors are especially important for colour vision in bright light?",
+        "choices": [
+          "Cones",
+          "Rods",
+          "Bipolar cells",
+          "Ganglion cells"
+        ],
+        "key": "2a934e3d55e769d6a3c77dbe1482b371439ff4b1777c8878af852c619991aa1d",
+        "sourceNumber": 12,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which structure in the inner ear contains receptors for detecting head rotation?",
+        "choices": [
+          "Semicircular canals",
+          "Cochlea",
+          "Auditory tube",
+          "Eardrum"
+        ],
+        "key": "b5b54195830f6bd4189e953dcb8d816f535d0c4694ad3ff84e1ae41d1577a9eb",
+        "sourceNumber": 13,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which hormone lowers blood glucose by promoting its uptake and storage?",
+        "choices": [
+          "Insulin",
+          "Glucagon",
+          "Adrenaline",
+          "Thyroxine"
+        ],
+        "key": "f785afcf0a6b866d878702179dd9067d7cab54f5162bcf6082ff34d8d3519860",
+        "sourceNumber": 14,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which hormone is released by pancreatic alpha cells and tends to raise blood glucose?",
+        "choices": [
+          "Glucagon",
+          "Insulin",
+          "Calcitonin",
+          "Melatonin"
+        ],
+        "key": "f80b6299464f622e0e0f1dec3c3834d9d842300cdd9cf3a59027076b91bbfffd",
+        "sourceNumber": 15,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which gland produces thyroxine?",
+        "choices": [
+          "Thyroid gland",
+          "Adrenal cortex",
+          "Pancreas",
+          "Pineal gland"
+        ],
+        "key": "394c884019589ac18bb87a86dd6c9337a5cf44f882ba616ddd0f724bdc9e5d43",
+        "sourceNumber": 16,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which pituitary hormone stimulates the thyroid gland to release thyroid hormones?",
+        "choices": [
+          "Thyroid-stimulating hormone",
+          "Antidiuretic hormone",
+          "Oxytocin",
+          "Prolactin"
+        ],
+        "key": "eb758068b6dc5bbb8118614cd1f0213f45a8735434f0b0cb7476e24b467f1afa",
+        "sourceNumber": 17,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which hormone helps the kidneys conserve water by increasing water reabsorption in collecting ducts?",
+        "choices": [
+          "Antidiuretic hormone",
+          "Insulin",
+          "Glucagon",
+          "Calcitonin"
+        ],
+        "key": "6524d094be21d6b3d6503bd16c1c31e8c12e797b2687a57c3c6778bab575473c",
+        "sourceNumber": 18,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which hormone is released from the adrenal medulla during an acute stress response?",
+        "choices": [
+          "Adrenaline",
+          "Aldosterone",
+          "Cortisol",
+          "Thyroxine"
+        ],
+        "key": "265a7144f3fd383e08da22585e95efcf6c33ad810fc19e3770ea8d5ce2b8e8f1",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which hormone from the parathyroid glands raises blood calcium concentration?",
+        "choices": [
+          "Parathyroid hormone",
+          "Calcitonin",
+          "Insulin",
+          "Thymosin"
+        ],
+        "key": "7d41add6db8718f8b3d93c645436ef2c36c2958c3321cbe27a6520c413eb08ad",
+        "sourceNumber": 20,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which hormone is most directly involved in stimulating uterine contractions during labour?",
+        "choices": [
+          "Oxytocin",
+          "Prolactin",
+          "Follicle-stimulating hormone",
+          "Thyroid-stimulating hormone"
+        ],
+        "key": "9e7f8a22a114e467c5fa988ec66259b8a288db8aa39bf1e00e51209f78f94399",
+        "sourceNumber": 21,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which hormone primarily stimulates milk production after childbirth?",
+        "choices": [
+          "Prolactin",
+          "Oxytocin",
+          "Oestrogen",
+          "Progesterone"
+        ],
+        "key": "b5deab613a4807b0cd1b413dce565722b56ab8d7530efa6a2230e4d62bde7a7a",
+        "sourceNumber": 22,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a typical negative-feedback loop, what happens to secretion of a hormone when its regulated product rises sufficiently?",
+        "choices": [
+          "The stimulus for further secretion is reduced",
+          "Secretion must increase without limit",
+          "The target organ stops existing",
+          "The hormone changes into an enzyme"
+        ],
+        "key": "c2b665f6968169e68ea5aa74718efaf9531e912f72267546c00149c3fd455e53",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which blood component is chiefly responsible for oxygen transport?",
+        "choices": [
+          "Red blood cells",
+          "Platelets",
+          "Lymphocytes",
+          "Plasma proteins"
+        ],
+        "key": "08e98a2fa35b8c7128f9f5c9fcf7faf33c6808a2d8255016c094064302e768db",
+        "sourceNumber": 24,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which protein in red blood cells binds oxygen reversibly?",
+        "choices": [
+          "Haemoglobin",
+          "Fibrin",
+          "Albumin",
+          "Insulin"
+        ],
+        "key": "bfe1c172fa9c5a350d600d6dd285b943c96fb404ff9f74cff764b51425d59d74",
+        "sourceNumber": 25,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which blood component initiates formation of a platelet plug at a damaged vessel?",
+        "choices": [
+          "Platelets",
+          "Red blood cells",
+          "Neutrophils",
+          "Albumin"
+        ],
+        "key": "7cbd8e6acd4682ddcb7f72bfc10740800f5a71ce7147e9e444653d71af46311a",
+        "sourceNumber": 26,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which plasma protein is converted into fibrin during blood clotting?",
+        "choices": [
+          "Fibrinogen",
+          "Haemoglobin",
+          "Keratin",
+          "Myosin"
+        ],
+        "key": "200d229061049cd6c6296abba73bdf73eb1855c9c6d64c9ecb0e78bdeb7300cf",
+        "sourceNumber": 27,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which type of white blood cell can differentiate into antibody-secreting plasma cells?",
+        "choices": [
+          "B lymphocyte",
+          "Red blood cell",
+          "Platelet",
+          "Eosinophil"
+        ],
+        "key": "df85e918c994e6443b58eda597bbb7fc7c53997edca98cb4374bccf6f9ffd070",
+        "sourceNumber": 28,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which chamber of the heart pumps blood into the pulmonary artery?",
+        "choices": [
+          "Right ventricle",
+          "Left ventricle",
+          "Right atrium",
+          "Left atrium"
+        ],
+        "key": "d29ba1f7f5085edb93f3e9c09422e8746f663dff95f6fedecece5a34a7cb4468",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which chamber of the heart pumps oxygenated blood into the aorta?",
+        "choices": [
+          "Left ventricle",
+          "Right ventricle",
+          "Left atrium",
+          "Right atrium"
+        ],
+        "key": "e89d7a4809ecb3931ced159690420bc72060d398f2fb2e71343e9796170c7c6a",
+        "sourceNumber": 30,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which valve prevents backflow from the left ventricle into the left atrium during ventricular contraction?",
+        "choices": [
+          "Mitral valve",
+          "Tricuspid valve",
+          "Pulmonary semilunar valve",
+          "Aortic semilunar valve"
+        ],
+        "key": "71d882b2e00019bf5f9f9412a731c74abd9b0bd96f7dcefdb948cc27aa4f960f",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which blood vessel carries blood from the right ventricle toward the lungs?",
+        "choices": [
+          "Pulmonary artery",
+          "Pulmonary vein",
+          "Aorta",
+          "Vena cava"
+        ],
+        "key": "c0a17de9a6cbbfc64d353e068fbbce340ffb6954cf67aac76db8063b186ab1e1",
+        "sourceNumber": 32,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which blood vessels return oxygenated blood from the lungs to the heart?",
+        "choices": [
+          "Pulmonary veins",
+          "Pulmonary arteries",
+          "Venae cavae",
+          "Coronary arteries"
+        ],
+        "key": "69d0ca32e8e3dc83fead42a5dea88c2ae06fda753573d9e3a14f871ed3fbe490",
+        "sourceNumber": 33,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the usual sequence of blood flow through the heart after blood returns from the body?",
+        "choices": [
+          "Right atrium, right ventricle, lungs, left atrium, left ventricle",
+          "Left atrium, left ventricle, lungs, right atrium, right ventricle",
+          "Right ventricle, right atrium, lungs, left ventricle, left atrium",
+          "Left ventricle, right ventricle, body, left atrium, lungs"
+        ],
+        "key": "abc7fb565f264d27a7e72fc3b041492323a30a687c0cd84697b20e21bd1f05c3",
+        "sourceNumber": 34,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main function of the sinoatrial node?",
+        "choices": [
+          "It initiates the normal heartbeat rhythm",
+          "It filters waste from the blood",
+          "It produces red blood cells",
+          "It prevents oxygen from entering the heart"
+        ],
+        "key": "a22598a16ed28b8ef9a233d206cb570cbe06116be696b4a95fe27e4c9569a28a",
+        "sourceNumber": 35,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which vessels have walls only one cell thick to support exchange with tissues?",
+        "choices": [
+          "Capillaries",
+          "Arteries",
+          "Veins",
+          "Aorta"
+        ],
+        "key": "bc56d4d5f58e0443a04f37f84f0f0bc10f5a050068e51f1363a85ded5351bdde",
+        "sourceNumber": 36,
+        "correctIndex": 0
+      },
+      {
+        "question": "Compared with veins, arteries generally have thicker muscular walls because they:",
+        "choices": [
+          "Carry blood under higher pressure away from the heart",
+          "Always carry blood with more carbon dioxide",
+          "Contain valves at regular intervals throughout",
+          "Exchange most nutrients with body cells"
+        ],
+        "key": "3e24204ae819ed6c31b8f09d517418c0028d03578ea6494e7aeba931f4d53ef7",
+        "sourceNumber": 37,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which process moves oxygen from the alveoli into pulmonary capillary blood?",
+        "choices": [
+          "Diffusion down a partial-pressure gradient",
+          "Active transport using ATP",
+          "Filtration driven by kidney pressure",
+          "Osmosis through the alveolar wall"
+        ],
+        "key": "703bbf46da8283e34217d3591e74cd3b8b4c46db9463ab7e1ef4ad559b654a9c",
+        "sourceNumber": 38,
+        "correctIndex": 0
+      },
+      {
+        "question": "During quiet inhalation, what happens to the diaphragm?",
+        "choices": [
+          "It contracts and flattens",
+          "It relaxes and domes upward",
+          "It closes the trachea",
+          "It pushes air directly into the blood"
+        ],
+        "key": "8c80848ca4e3d4cf36340966a1b61673ad4eaf18a11f45b60829dcb5ba2f873c",
+        "sourceNumber": 39,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why does air enter the lungs during inhalation?",
+        "choices": [
+          "Pressure inside the lungs falls below atmospheric pressure",
+          "Pressure inside the lungs rises above atmospheric pressure",
+          "Oxygen is actively pumped through the trachea",
+          "The ribs reduce thoracic volume"
+        ],
+        "key": "cf65147370bb842c28ab14897bc093a38fdcdb52eeb003ded60037443abfa091",
+        "sourceNumber": 40,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which feature of alveoli most directly supports rapid gas exchange?",
+        "choices": [
+          "Large surface area and thin moist walls",
+          "Thick walls and a small surface area",
+          "A lining of rigid bone",
+          "A lack of blood supply"
+        ],
+        "key": "87583c5c3fd6c6623a93d3c2704f80ed234245a66af10477ec37904907cedacd",
+        "sourceNumber": 41,
+        "correctIndex": 0
+      },
+      {
+        "question": "In which form is most carbon dioxide transported in human blood?",
+        "choices": [
+          "Bicarbonate ions in plasma",
+          "Dissolved unchanged in red blood cells only",
+          "Bound to platelets",
+          "Converted entirely into oxygen"
+        ],
+        "key": "425d3318b5d735d02cb201d32202af8bb3d9e90772f074e944375e0dcd71bba9",
+        "sourceNumber": 42,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the role of haemoglobin in carbon dioxide transport?",
+        "choices": [
+          "Some carbon dioxide binds to haemoglobin",
+          "It converts all carbon dioxide directly into oxygen",
+          "It prevents carbon dioxide from leaving tissues",
+          "It transports carbon dioxide only in the lungs"
+        ],
+        "key": "17f4cf153f7b66328ff0af038b4849cb787536ddf798d162e896be187f4295a2",
+        "sourceNumber": 43,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which structure prevents food from entering the trachea during swallowing?",
+        "choices": [
+          "Epiglottis",
+          "Diaphragm",
+          "Uvula",
+          "Cochlea"
+        ],
+        "key": "4868cec236c247510f7580f2fae6a05fda38f30903d889a3774587c5577dcc39",
+        "sourceNumber": 44,
+        "correctIndex": 0
+      },
+      {
+        "question": "Where does most chemical digestion of starch begin?",
+        "choices": [
+          "Mouth",
+          "Stomach",
+          "Large intestine",
+          "Oesophagus"
+        ],
+        "key": "4f84b5ef2f782a17e4c738b20c1810bca9989fefef850a8aa63ca05d7204c0e5",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which enzyme begins protein digestion in the stomach?",
+        "choices": [
+          "Pepsin",
+          "Amylase",
+          "Lipase",
+          "Maltase"
+        ],
+        "key": "f12d691e40d58091a8242998e897fc0cf6ed6ca9f73ef4c39142e71d6536d991",
+        "sourceNumber": 46,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main digestive role of bile?",
+        "choices": [
+          "Emulsifying fats into smaller droplets",
+          "Breaking proteins into amino acids by hydrolysis",
+          "Converting glucose into glycogen",
+          "Digesting starch into maltose"
+        ],
+        "key": "4db79e31aa4efb9216b2dff14075799b7381874b796ad0e7422bb46ca7c2761d",
+        "sourceNumber": 47,
+        "correctIndex": 0
+      },
+      {
+        "question": "Where is bile produced?",
+        "choices": [
+          "Liver",
+          "Gallbladder",
+          "Pancreas",
+          "Small intestine"
+        ],
+        "key": "dd12be8cb1f7fa34defc56297a8d5acdcdcd789821273fed24681c8089df23c9",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is a major digestive function of the pancreas?",
+        "choices": [
+          "Secreting enzymes into the small intestine",
+          "Storing bile produced by the liver",
+          "Absorbing most water from faeces",
+          "Producing hydrochloric acid in the stomach"
+        ],
+        "key": "17e5af6f4eeebe38dd19ac2d355c4ce360af2c24b23408bbf89fb7f0284c88fd",
+        "sourceNumber": 49,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which region of the digestive tract is the main site of nutrient absorption?",
+        "choices": [
+          "Small intestine",
+          "Oesophagus",
+          "Stomach",
+          "Rectum"
+        ],
+        "key": "610ae68e71822e5b47982a1d9e1ef204d93a0e0e89494e10b0908ba2f3cbcb80",
+        "sourceNumber": 50,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the principal role of villi in the small intestine?",
+        "choices": [
+          "Increase surface area for absorption",
+          "Produce bile",
+          "Prevent all movement of intestinal contents",
+          "Store digestive enzymes permanently"
+        ],
+        "key": "97b86ea830423710402dc3e5f95d3881a3851c5dbf94201026fa09016266bff7",
+        "sourceNumber": 51,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which nutrient is absorbed into lacteals in the villi mainly as part of chylomicrons?",
+        "choices": [
+          "Dietary fat",
+          "Glucose",
+          "Amino acids",
+          "Most mineral ions"
+        ],
+        "key": "ef9226599cb89b84b16f677ca61ca26f28ab362445abcc6fbeffe0cb14994a58",
+        "sourceNumber": 52,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which structure carries absorbed glucose from the small intestine toward the liver?",
+        "choices": [
+          "Hepatic portal vein",
+          "Pulmonary vein",
+          "Renal artery",
+          "Aorta"
+        ],
+        "key": "a440cdcbdebc5a9bfe01f5fa818b264750f339fc33a712047795c648d1b64034",
+        "sourceNumber": 53,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is peristalsis?",
+        "choices": [
+          "Wave-like muscular contractions that move contents along the gut",
+          "The enzymatic breakdown of fats in the liver",
+          "The absorption of oxygen into blood",
+          "The filtration of blood in the kidney"
+        ],
+        "key": "540630f53b94c5eb5ca34267166a48b80818f76aec638d1545dde8a6093924cf",
+        "sourceNumber": 54,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which substance in the stomach provides an acidic environment that supports pepsin activity?",
+        "choices": [
+          "Hydrochloric acid",
+          "Bicarbonate from bile",
+          "Salivary amylase",
+          "Insulin"
+        ],
+        "key": "f16c0035d407e88bdfd04f62385cbad371ec3ebf890fc9d3df2fcaecec91a096",
+        "sourceNumber": 55,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main function of the large intestine?",
+        "choices": [
+          "Absorption of water and electrolytes from remaining contents",
+          "Most enzymatic digestion of proteins",
+          "Production of insulin",
+          "Gas exchange with the blood"
+        ],
+        "key": "3d471420a801f1fff90ad281516a758da27a0c1ad0bfd1fa6138390c1ecb8ba8",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the functional unit of the kidney?",
+        "choices": [
+          "Nephron",
+          "Alveolus",
+          "Neuron",
+          "Villus"
+        ],
+        "key": "1c9ab424f7fa38f94d42633dee81cf575834de2aa278f08f1c8866742dea9abf",
+        "sourceNumber": 57,
+        "correctIndex": 0
+      },
+      {
+        "question": "Where does filtration of blood plasma begin in a nephron?",
+        "choices": [
+          "Glomerulus into Bowman's capsule",
+          "Collecting duct into renal artery",
+          "Loop of Henle into ureter",
+          "Renal pelvis into nephron"
+        ],
+        "key": "cabce698cfae94227dc4e7a3bf2d6c0fd58e77f5365e6490c9c0ae709529e4b6",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which substance is normally retained in the blood during glomerular filtration because of its size?",
+        "choices": [
+          "Red blood cells",
+          "Water",
+          "Glucose",
+          "Urea"
+        ],
+        "key": "5c199edd5324fd417a064e00b4f0a471639ad03db3812ba7cbe432620c6ca0dd",
+        "sourceNumber": 59,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a healthy kidney, where is most filtered glucose reabsorbed?",
+        "choices": [
+          "Proximal convoluted tubule",
+          "Renal pelvis",
+          "Ureter",
+          "Collecting duct only"
+        ],
+        "key": "0ab56806f31dde2402d5a764563af010d1568d0a63c64c1ad4a51bdfb26dea33",
+        "sourceNumber": 60,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which process returns useful substances from nephron fluid to the blood?",
+        "choices": [
+          "Tubular reabsorption",
+          "Glomerular filtration",
+          "Urination",
+          "Ventilation"
+        ],
+        "key": "d5e89ae6ff892e515c9f95b414dcbc7375786ab5414b8274bf3d743709e7308b",
+        "sourceNumber": 61,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the principal nitrogen-containing waste product in human urine?",
+        "choices": [
+          "Urea",
+          "Glycogen",
+          "Bile",
+          "Haemoglobin"
+        ],
+        "key": "8128cb36dccbd0cac0f272529c21e2c7a88de72bfc3160755970dca39582422c",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which hormone increases water permeability in the kidney collecting ducts?",
+        "choices": [
+          "Antidiuretic hormone",
+          "Glucagon",
+          "Insulin",
+          "Thyroxine"
+        ],
+        "key": "5c13510a658550e6e18c01529ec7d09df5c4a948d1c31b976695014fd351f401",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "When a person is dehydrated, what change in urine is generally expected if the kidneys are functioning normally?",
+        "choices": [
+          "Lower volume and greater concentration",
+          "Higher volume and lower concentration",
+          "No change in volume or concentration",
+          "Urine containing large numbers of red blood cells"
+        ],
+        "key": "d563d4be89d926cf21cc27dcbc6066723242cb1ad1dea708c8c791adc9e01628",
+        "sourceNumber": 64,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which sequence correctly traces urine from the kidney to outside the body?",
+        "choices": [
+          "Ureter, urinary bladder, urethra",
+          "Urethra, urinary bladder, ureter",
+          "Renal artery, urethra, ureter",
+          "Urinary bladder, renal vein, ureter"
+        ],
+        "key": "41f5f8088f4a0c3f18ae6b98441353da9461eaf5169cd7511e92888639352a41",
+        "sourceNumber": 65,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which organ converts ammonia to urea?",
+        "choices": [
+          "Liver",
+          "Lung",
+          "Spleen",
+          "Urinary bladder"
+        ],
+        "key": "7e5c3d1a81d0705c27d2c963dcc9573e73762ac9694194a35a7490e9aa873a02",
+        "sourceNumber": 66,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which structure carries urine from a kidney to the urinary bladder?",
+        "choices": [
+          "Ureter",
+          "Urethra",
+          "Renal artery",
+          "Nephron"
+        ],
+        "key": "89de7ff07ea5b539839c59298fa39341151f33a5b8763e49c5a40aac13526024",
+        "sourceNumber": 67,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which type of immunity is produced when a person's own immune system responds to an infection?",
+        "choices": [
+          "Active immunity",
+          "Passive immunity",
+          "Mechanical immunity only",
+          "Inherited immunity from a transfusion"
+        ],
+        "key": "3efba3fd82c5860fb575f724e859fff3e4eeae758707cf6591d28f914464abcb",
+        "sourceNumber": 68,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is a primary function of antibodies?",
+        "choices": [
+          "Bind specific antigens",
+          "Carry oxygen to tissues",
+          "Digest starch in the mouth",
+          "Form the kidney filtration barrier"
+        ],
+        "key": "4c2b3523fee5a063c205303ad5e66bc080ff8e44ab573fa8ededd06c71802bd6",
+        "sourceNumber": 69,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which cells can directly engulf and digest many invading microbes?",
+        "choices": [
+          "Phagocytes",
+          "Red blood cells",
+          "Platelets",
+          "Osteocytes"
+        ],
+        "key": "f17d014d6c5ffd5f43cde77f0b28fde1eb0b7dfaee5bb972b00685b16bb96436",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which feature distinguishes adaptive immunity from innate immunity?",
+        "choices": [
+          "Specific recognition and immunological memory",
+          "Immediate response that is identical to every pathogen",
+          "Protection provided only by skin",
+          "Absence of lymphocytes"
+        ],
+        "key": "af2db7529ee79fbd0e7fe5d9491596530121800b22bda076ef8bc772621440ca",
+        "sourceNumber": 71,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is a key function of helper T cells in an adaptive immune response?",
+        "choices": [
+          "Coordinate responses by signaling other immune cells",
+          "Carry oxygen using haemoglobin",
+          "Produce bile salts",
+          "Filter plasma in the glomerulus"
+        ],
+        "key": "b163d654732579c74127b94e049bc6e5e74b45188a017aa23566b82264cce853",
+        "sourceNumber": 72,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which cells are primarily responsible for destroying many virus-infected body cells?",
+        "choices": [
+          "Cytotoxic T cells",
+          "Red blood cells",
+          "Platelets",
+          "Pancreatic beta cells"
+        ],
+        "key": "c2bff577d65bea321bf361735f67143681f3447f9e36434620a6190eb9667a79",
+        "sourceNumber": 73,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which structure produces sperm cells in the human male reproductive system?",
+        "choices": [
+          "Seminiferous tubules",
+          "Prostate gland",
+          "Vas deferens",
+          "Seminal vesicle"
+        ],
+        "key": "a394bcb3583ba41d4d575d740a8715fa7186b39cf60185718d81382f8184c0bb",
+        "sourceNumber": 74,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which hormone from the anterior pituitary stimulates sperm production indirectly by acting on Sertoli cells?",
+        "choices": [
+          "Follicle-stimulating hormone",
+          "Oxytocin",
+          "Prolactin",
+          "Thyroid-stimulating hormone"
+        ],
+        "key": "6720bef54d2e96a657ae271aa86f14e61a563ada2f8d1f15489aacad5223551a",
+        "sourceNumber": 75,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which hormone stimulates Leydig cells in the testes to produce testosterone?",
+        "choices": [
+          "Luteinizing hormone",
+          "Antidiuretic hormone",
+          "Prolactin",
+          "Calcitonin"
+        ],
+        "key": "89846fcc608065a2343595349c4609b59fcd0c58ac6f1a4a5b9b62eef2869147",
+        "sourceNumber": 76,
+        "correctIndex": 0
+      },
+      {
+        "question": "Where does fertilization most commonly occur in the human female reproductive tract?",
+        "choices": [
+          "Oviduct",
+          "Uterine cavity",
+          "Cervix",
+          "Vagina"
+        ],
+        "key": "f1b939ffa5cdcaf7090b05860812e2bb40f7b98c6c6074049389a2a1008d44b5",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which hormone is released in a surge that triggers ovulation?",
+        "choices": [
+          "Luteinizing hormone",
+          "Insulin",
+          "Antidiuretic hormone",
+          "Parathyroid hormone"
+        ],
+        "key": "46c5ec6110d15991cd3b9faac5dfb01fd2b569bd4d2748096f9d3ebf063013dc",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "After ovulation, which ovarian structure produces progesterone during the luteal phase?",
+        "choices": [
+          "Corpus luteum",
+          "Graafian follicle before ovulation only",
+          "Endometrium",
+          "Cervix"
+        ],
+        "key": "8d4966875ff0d5c4bd63f0da165e748e56c1509d7797363288edf3d11090782f",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which hormone helps maintain the uterine lining after ovulation?",
+        "choices": [
+          "Progesterone",
+          "Glucagon",
+          "Adrenaline",
+          "Calcitonin"
+        ],
+        "key": "5d2ec543a07ac09c1a97b00bf01133b960c6b7dc729ecc752633e3b0f493b35b",
+        "sourceNumber": 80,
+        "correctIndex": 0
+      },
+      {
+        "question": "Where does implantation of an early human embryo normally occur?",
+        "choices": [
+          "Endometrium of the uterus",
+          "Wall of the urinary bladder",
+          "Oviduct opening into the ovary",
+          "Cervical canal"
+        ],
+        "key": "4d4ee4a795958f7e676736372ee67fcfb2394cfdf6dd05bb79627ab8c745dd2e",
+        "sourceNumber": 81,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which structure connects a developing fetus to the placenta and carries fetal blood between them?",
+        "choices": [
+          "Umbilical cord",
+          "Oviduct",
+          "Ureter",
+          "Vas deferens"
+        ],
+        "key": "fe8a8b276cd1d4063ada2da45f2c68be7f063655880d5075e432e62c255ed2fa",
+        "sourceNumber": 82,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement best describes the role of the placenta?",
+        "choices": [
+          "It allows exchange of substances between maternal and fetal blood",
+          "It produces sperm cells for the fetus",
+          "It directly pumps maternal blood through the fetal heart",
+          "It stores urine before birth"
+        ],
+        "key": "231e63b93497fc5403c3d12fb2523eedc2d018910658984949fde67c53a13a78",
+        "sourceNumber": 83,
+        "correctIndex": 0
+      },
+      {
+        "question": "A person's blood glucose rises after a meal. Which response most directly helps return it toward its usual range?",
+        "choices": [
+          "Increased insulin secretion",
+          "Increased glucagon secretion",
+          "Reduced glucose uptake by cells",
+          "Increased breakdown of liver glycogen"
+        ],
+        "key": "9f9bddf77851085ba39ea6429aa6eec9d6c2b6f99544d37b2e177f9b3730f902",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "A person moves from a warm room into a cold environment. Which response helps reduce heat loss from the skin?",
+        "choices": [
+          "Constriction of skin blood vessels",
+          "Increased sweating",
+          "Dilation of skin blood vessels",
+          "Increased heat loss by evaporation"
+        ],
+        "key": "8a30fafea1512743f968c2d344ef5e4f8bb4bc319e9aaff984854fb47771f24a",
+        "sourceNumber": 85,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why does sweating help cool the body in a warm environment?",
+        "choices": [
+          "Evaporation of sweat removes heat from the skin",
+          "Sweat permanently lowers the body's metabolic rate to zero",
+          "Sweat directly increases blood oxygen concentration",
+          "Sweat blocks all heat exchange with the surroundings"
+        ],
+        "key": "45b137304554afa2669cedf18ef78a69de69859d69df74a1a0cd1f9187d2de49",
+        "sourceNumber": 86,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which muscle type is under voluntary control and is attached to bones?",
+        "choices": [
+          "Skeletal muscle",
+          "Smooth muscle",
+          "Cardiac muscle",
+          "Ciliary muscle"
+        ],
+        "key": "55ed1959d3f2ac8cafb5d9377339332eda5a6e534c26c46185e7c9f5221b3295",
+        "sourceNumber": 87,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which muscle tissue forms the wall of the heart?",
+        "choices": [
+          "Cardiac muscle",
+          "Skeletal muscle",
+          "Smooth muscle",
+          "Connective cartilage"
+        ],
+        "key": "3a0f17afd1f2153d2dcc4722b5904824bd3bc2ea31cf7e31ba12353b88f6cf68",
+        "sourceNumber": 88,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which mineral ion is essential for initiating the interaction between actin and myosin during skeletal muscle contraction?",
+        "choices": [
+          "Calcium",
+          "Chloride",
+          "Iodide",
+          "Fluoride"
+        ],
+        "key": "dbd1ef808c381368ca843f80dce7a18f0aa868144dea342f5d2cb71523b8fd01",
+        "sourceNumber": 89,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main role of ATP in the muscle cross-bridge cycle?",
+        "choices": [
+          "It allows myosin to detach from actin and supports cycling",
+          "It permanently locks myosin onto actin",
+          "It replaces calcium in the blood",
+          "It forms the muscle fibre's cell membrane"
+        ],
+        "key": "10e4aa2a2f8b0f452442e3558cb1752ebcd0087d6acdcc3aeece461c5bc8a398",
+        "sourceNumber": 90,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which joint type allows movement in many directions, as at the shoulder?",
+        "choices": [
+          "Ball-and-socket joint",
+          "Hinge joint",
+          "Pivot joint",
+          "Fixed suture"
+        ],
+        "key": "7ca1ae91d14af0c9906491b49a731117afb393c52050ad02ffba3779b71d7d06",
+        "sourceNumber": 91,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement about oxygen delivery to body tissues is correct?",
+        "choices": [
+          "Oxygen can dissociate from haemoglobin where tissue conditions favour its release",
+          "Haemoglobin releases oxygen only inside the stomach",
+          "Oxygen moves from tissues to blood by active transport in all cases",
+          "Red blood cells produce oxygen for surrounding tissues"
+        ],
+        "key": "115cce4623a0d120b7acb1b2c8b8a54d0c97cf46846ca3b64a26ed37d3c8ce01",
+        "sourceNumber": 92,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which change in blood vessels would generally increase blood flow to a particular tissue, assuming other factors stay similar?",
+        "choices": [
+          "Vasodilation of arterioles supplying the tissue",
+          "Vasoconstriction of all supplying arterioles",
+          "Complete blockage of the capillaries",
+          "Closure of the tissue's venous drainage"
+        ],
+        "key": "d3f63295c8e5f643e7fb8a0d96097976a92882d69326ab7006db6bf47fa6f964",
+        "sourceNumber": 93,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement correctly distinguishes ventilation from external gas exchange?",
+        "choices": [
+          "Ventilation moves air; external gas exchange moves gases between alveoli and blood",
+          "Ventilation is blood filtration; external gas exchange is urine formation",
+          "Ventilation occurs only in blood; external gas exchange occurs only in the brain",
+          "The terms both mean oxygen production by red blood cells"
+        ],
+        "key": "4b42628125270afd47b5b901955cf30ed026c03faa161deaeb8388ae8dbe47e0",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which condition would most directly increase the rate of breathing through normal chemical control?",
+        "choices": [
+          "A rise in carbon dioxide that lowers blood pH",
+          "A fall in body temperature during sleep",
+          "A rise in blood glucose after eating",
+          "A reduction in light entering the eye"
+        ],
+        "key": "5e605f678908bf8038dd70fdbbfbede7ef96ef2f2b7e3a21fff689783060e871",
+        "sourceNumber": 95,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement about the human urinary system is correct?",
+        "choices": [
+          "The kidneys help regulate water and ion balance as well as remove wastes",
+          "The ureters filter blood into urine",
+          "The bladder produces urea from amino acids",
+          "The urethra carries blood from the heart to the kidneys"
+        ],
+        "key": "6ba0bd7de32d910d27fed1c58597fda4eb620d951a7ea78dbedb18b32109695e",
+        "sourceNumber": 96,
+        "correctIndex": 0
+      },
+      {
+        "question": "What happens to the filtrate when useful water is reabsorbed from a nephron tubule into the blood?",
+        "choices": [
+          "The remaining tubular fluid becomes more concentrated",
+          "The remaining tubular fluid becomes pure oxygen",
+          "The filtrate returns to the glomerulus unchanged",
+          "All dissolved wastes disappear immediately"
+        ],
+        "key": "bf5e4367899c0796d71f6d0a465a7cccd952a5fbd3e5e74af1f180c617d3afe3",
+        "sourceNumber": 97,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which structure in a villus transports absorbed water-soluble nutrients into the blood?",
+        "choices": [
+          "Blood capillary network",
+          "Lacteal only",
+          "Bile duct",
+          "Pancreatic duct"
+        ],
+        "key": "9b4ea0bdd5ed0cefdecf2fa241f5101619a6ec1a31bada4e54b885d1b6c47592",
+        "sourceNumber": 98,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which digestive enzyme breaks down triglycerides into smaller lipid products?",
+        "choices": [
+          "Lipase",
+          "Pepsin",
+          "Amylase",
+          "Nuclease"
+        ],
+        "key": "e4f8633297950987fc3608484aa8faf7025e40a39a6af32dc43f963ce8ef80c2",
+        "sourceNumber": 99,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which cells in the stomach lining secrete hydrochloric acid?",
+        "choices": [
+          "Parietal cells",
+          "Beta cells",
+          "Leydig cells",
+          "Red blood cells"
+        ],
+        "key": "8759b56679a41cbe260d53f360a4157f9c6ada27aad63c5d05243cb738375e0d",
+        "sourceNumber": 100,
+        "correctIndex": 0
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "29f95f430f0b481cd3cf76e49804a23772eeec921fa58e8a7857e0ab3ad21e7c",
+      "sourceQuestionNumbers": [
+        84,
+        3,
+        41,
+        71,
+        22,
+        49,
+        96,
+        34,
+        74,
+        18,
+        55,
+        68,
+        16,
+        39,
+        81,
+        94,
+        33,
+        43,
+        80,
+        1,
+        86,
+        48,
+        73,
+        32,
+        15,
+        17,
+        99,
+        64,
+        52,
+        31,
+        45,
+        2,
+        29,
+        85,
+        75,
+        53,
+        88,
+        69,
+        5,
+        30,
+        56,
+        9,
+        82,
+        27,
+        78,
+        65,
+        4,
+        92,
+        24,
+        50,
+        11,
+        70,
+        35,
+        44,
+        87,
+        21,
+        72,
+        54,
+        13,
+        89,
+        37,
+        90,
+        62,
+        58,
+        20,
+        14,
+        91,
+        57,
+        61,
+        23,
+        28,
+        10,
+        83,
+        66,
+        51,
+        19,
+        98,
+        42,
+        40,
+        67,
+        47,
+        12,
+        38,
+        63,
+        100,
+        26,
+        60,
+        77,
+        6,
+        97,
+        8,
+        79,
+        36,
+        95,
+        46,
+        93,
+        76,
+        25,
+        59,
+        7
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
