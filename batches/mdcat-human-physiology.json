@@ -2081,6 +2081,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 4,
+      "directory": "part-04",
+      "sourceQuestionNumbers": [
+        34,
+        74
+      ],
+      "count": 2,
+      "durationSeconds": 69,
+      "sha256": "d03b4e6e50135a03f2317477cea45f23474126b77d2377df9a3126734e497103",
+      "manifest": {
+        "title": "100 MDCAT Human Physiology MCQs",
+        "sourceTitle": "100 MDCAT Human Physiology MCQs with Answers and Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-16T05:56:15.897270+00:00",
+        "sourceContentHash": "b9a9e36aff719efd0db33b2aa6807d1413333b30bc3a0314547a8e7f64006be5",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7816689696,
+          "sha": "c35413ea33c29fd22032319e19034f2b942b83a1",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-16T05:56:15.897270+00:00",
+          "url": "https://mcqs-base-bulswmzi7-as-projects-10921176.vercel.app",
+          "publisherRunId": 43812753557
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 69,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "What is the usual sequence of blood flow through the heart after blood returns from the body?",
+            "choices": [
+              "Right atrium, right ventricle, lungs, left atrium, left ventricle",
+              "Left atrium, left ventricle, lungs, right atrium, right ventricle",
+              "Right ventricle, right atrium, lungs, left ventricle, left atrium",
+              "Left ventricle, right ventricle, body, left atrium, lungs"
+            ],
+            "correctIndex": 0,
+            "key": "abc7fb565f264d27a7e72fc3b041492323a30a687c0cd84697b20e21bd1f05c3",
+            "sourceNumber": 34
+          },
+          {
+            "question": "Which structure produces sperm cells in the human male reproductive system?",
+            "choices": [
+              "Seminiferous tubules",
+              "Prostate gland",
+              "Vas deferens",
+              "Seminal vesicle"
+            ],
+            "correctIndex": 0,
+            "key": "a394bcb3583ba41d4d575d740a8715fa7186b39cf60185718d81382f8184c0bb",
+            "sourceNumber": 74
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 28,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 28,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 29,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 30,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 31,
+            "duration": 8,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 39,
+            "duration": 17,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 56,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 57,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 58,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 59,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 64,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 4,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            34,
+            74
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MDCAT",
+          "#MedicalEntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/mdcat-human-physiology-part-04-d03b4e6e50135a03.mp4",
+        "videoSha256": "d03b4e6e50135a03f2317477cea45f23474126b77d2377df9a3126734e497103",
+        "assetId": 753670935
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 4/5 | Q34, 74 | 100 MDCAT Human Physiology MCQs",
+          "text": "Part 4/5 · Source questions 34, 74\n100 MDCAT Human Physiology MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 4/5 | Q34, 74 | 100 MDCAT Human Physiology MCQs",
+          "text": "Part 4/5 · Source questions 34, 74\n100 MDCAT Human Physiology MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-human-physiology\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 4/5 | Q34, 74 | 100 MDCAT Human Physiology MCQs",
+          "text": "Part 4/5 · Source questions 34, 74\n100 MDCAT Human Physiology MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-human-physiology\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 4/5 | Q34, 74 | 100 MDCAT Human Physiology MCQs",
+          "text": "Part 4/5 · Source questions 34, 74\n100 MDCAT Human Physiology MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-human-physiology\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
