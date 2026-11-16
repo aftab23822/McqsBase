@@ -1149,7 +1149,7 @@
       "verifiedPublications": 15
     },
     "nat-ie-atomic-bonding": {
-      "status": "scheduled",
+      "status": "provider-published",
       "ledger": "batches/nat-ie-atomic-bonding.json",
       "createdAt": "2026-11-14T05:53:11.656302+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-atomic-bonding",
@@ -1161,8 +1161,8 @@
         "2026-11-14T19:17:00+05:00",
         "2026-11-14T21:58:00+05:00"
       ],
-      "published": 19,
-      "verifiedPublications": 14
+      "published": 20,
+      "verifiedPublications": 15
     },
     "verbal-analogies-aptitude-practice": {
       "status": "scheduled",
