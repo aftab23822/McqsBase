@@ -1859,7 +1859,11 @@
       },
       "uploadIntent": {
         "filename": "mdcat-human-physiology-part-02-5054ead805e7a495.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "e33e47d7-e18c-4e6b-911c-d26923688ff7",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Blpi98nY8l.mp4"
       }
     },
     {
