@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "mdcat-human-physiology": {
+    title: "100 MDCAT Human Physiology MCQs with Answers and Explanations",
+    excerpt:
+      "Practise 100 original human physiology MCQs on the nervous, endocrine, circulatory, respiratory, digestive, urinary, immune, and reproductive systems.",
+    category: "Subject Guide",
+    date: "2026-11-16",
+    readTime: "32 min",
+    content: null,
+    body: readImportedBlogBody("mdcat-human-physiology")
+  },
   "verbal-analogies-aptitude-practice": {
     title: "100 Verbal Analogy MCQs for Pakistan Aptitude Test Practice",
     excerpt:
