@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-ie-atomic-bonding",
   "createdAt": "2026-11-14T05:53:11.656302+00:00",
-  "status": "scheduled",
+  "status": "provider-published",
   "package": {
     "slug": "nat-ie-atomic-bonding",
     "title": "100 NAT-IE-Style Chemistry MCQs on Atomic Structure and Bonding",
@@ -1790,16 +1790,16 @@
           "integrationId": "cmvwbcule0222ro9dhocbic4w"
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-14T05:59:11.396694+00:00",
           "postId": "cmwfzwrew05uvlmauqmsi8j5d",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "ERROR",
+          "url": "https://www.youtube.com/watch?v=JDodkwETWEA",
+          "providerUrl": "https://www.youtube.com/watch?v=JDodkwETWEA",
+          "providerReleaseId": "JDodkwETWEA",
+          "providerStatus": "PUBLISHED",
           "providerError": "YouTube's daily upload quota is exhausted for today, please reschedule this post for a later time.",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
           "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
           "quotaRecovery": {
             "status": "scheduled",
