@@ -1336,6 +1336,239 @@
       "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
     }
   },
-  "parts": [],
+  "parts": [
+    {
+      "part": 1,
+      "directory": "part-01",
+      "sourceQuestionNumbers": [
+        84,
+        3
+      ],
+      "count": 2,
+      "durationSeconds": 67,
+      "sha256": "6eff2d776955f3208334270a6b61fd4a242ff1c3deee98dea069d9bbcced2344",
+      "manifest": {
+        "title": "100 MDCAT Human Physiology MCQs",
+        "sourceTitle": "100 MDCAT Human Physiology MCQs with Answers and Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-16T05:56:15.897270+00:00",
+        "sourceContentHash": "b9a9e36aff719efd0db33b2aa6807d1413333b30bc3a0314547a8e7f64006be5",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7816689696,
+          "sha": "c35413ea33c29fd22032319e19034f2b942b83a1",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-16T05:56:15.897270+00:00",
+          "url": "https://mcqs-base-bulswmzi7-as-projects-10921176.vercel.app",
+          "publisherRunId": 43812753557
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 67,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A person's blood glucose rises after a meal. Which response most directly helps return it toward its usual range?",
+            "choices": [
+              "Increased insulin secretion",
+              "Increased glucagon secretion",
+              "Reduced glucose uptake by cells",
+              "Increased breakdown of liver glycogen"
+            ],
+            "correctIndex": 0,
+            "key": "9f9bddf77851085ba39ea6429aa6eec9d6c2b6f99544d37b2e177f9b3730f902",
+            "sourceNumber": 84
+          },
+          {
+            "question": "In a typical neuron, in which direction does an action potential travel along the axon?",
+            "choices": [
+              "From the cell body toward the axon terminals",
+              "From the axon terminals toward the dendrites only",
+              "From the myelin sheath into the nucleus",
+              "From the synaptic cleft into the cell body"
+            ],
+            "correctIndex": 0,
+            "key": "cf11217e720b09973fd016d824bc250f9e299002115b6cb52f17233489a717f3",
+            "sourceNumber": 3
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 23,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 25,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 26,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 31,
+            "duration": 22,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 53,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 54,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 55,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 56,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 62,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 1,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            84,
+            3
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MDCAT",
+          "#MedicalEntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/mdcat-human-physiology-part-01-6eff2d776955f320.mp4",
+        "videoSha256": "6eff2d776955f3208334270a6b61fd4a242ff1c3deee98dea069d9bbcced2344",
+        "assetId": 753662416
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 1/5 | Q84, 3 | 100 MDCAT Human Physiology MCQs",
+          "text": "Part 1/5 · Source questions 84, 3\n100 MDCAT Human Physiology MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 1/5 | Q84, 3 | 100 MDCAT Human Physiology MCQs",
+          "text": "Part 1/5 · Source questions 84, 3\n100 MDCAT Human Physiology MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-human-physiology\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 1/5 | Q84, 3 | 100 MDCAT Human Physiology MCQs",
+          "text": "Part 1/5 · Source questions 84, 3\n100 MDCAT Human Physiology MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-human-physiology\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 1/5 | Q84, 3 | 100 MDCAT Human Physiology MCQs",
+          "text": "Part 1/5 · Source questions 84, 3\n100 MDCAT Human Physiology MCQs\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-human-physiology\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-human-physiology",
+          "format": "short"
+        }
+      }
+    }
+  ],
   "thinkingSeconds": 3
 }
