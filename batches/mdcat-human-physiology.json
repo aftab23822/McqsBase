@@ -1570,7 +1570,11 @@
       },
       "uploadIntent": {
         "filename": "mdcat-human-physiology-part-01-6eff2d776955f320.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "0620e92a-d1e4-42ee-a6ea-3ffb3f76a438",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/je6b6fs5gx.mp4"
       }
     },
     {
