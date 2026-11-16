@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "mdcat-human-physiology",
   "createdAt": "2026-11-16T05:56:16.147750+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "mdcat-human-physiology",
     "title": "100 MDCAT Human Physiology MCQs with Answers and Explanations",
@@ -2596,5 +2596,83 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "mdcat-human-physiology",
+    "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
+    "sourceTitle": "100 MDCAT Human Physiology MCQs with Answers and Explanations",
+    "sourceContentHash": "b9a9e36aff719efd0db33b2aa6807d1413333b30bc3a0314547a8e7f64006be5",
+    "productionDeployment": {
+      "id": 7816689696,
+      "sha": "c35413ea33c29fd22032319e19034f2b942b83a1",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-16T05:56:15.897270+00:00",
+      "url": "https://mcqs-base-bulswmzi7-as-projects-10921176.vercel.app",
+      "publisherRunId": 43812753557
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          84,
+          3
+        ],
+        "count": 2,
+        "durationSeconds": 67,
+        "sha256": "6eff2d776955f3208334270a6b61fd4a242ff1c3deee98dea069d9bbcced2344"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          41,
+          71,
+          22
+        ],
+        "count": 3,
+        "durationSeconds": 89,
+        "sha256": "5054ead805e7a4955aba7b4c9fc24896efd3fbc06ac3972b9a433640529625f5"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          49,
+          96
+        ],
+        "count": 2,
+        "durationSeconds": 68,
+        "sha256": "670053ad1ca956a273541af9612cc5c1e3d4ad7f88ae39f6da8a2bfd24d94f9a"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          34,
+          74
+        ],
+        "count": 2,
+        "durationSeconds": 69,
+        "sha256": "d03b4e6e50135a03f2317477cea45f23474126b77d2377df9a3126734e497103"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          18,
+          55,
+          68
+        ],
+        "count": 3,
+        "durationSeconds": 82,
+        "sha256": "99bb44702c581e4ee56397e5f1c78695ae953e84dbb944e33c00de2ce08969ce"
+      }
+    ]
+  }
 }
