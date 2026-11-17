@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nat-ics-boolean-digital-logic": {
+    title: "99 NAT-ICS-Style Boolean Algebra and Digital Logic MCQs",
+    excerpt:
+      "Practise binary representation, Boolean laws, logic gates, and basic digital circuits with 99 original questions and concise explanations.",
+    category: "Subject Guide",
+    date: "2026-11-17",
+    readTime: "27 min",
+    content: null,
+    body: readImportedBlogBody("nat-ics-boolean-digital-logic")
+  },
   "mdcat-human-physiology": {
     title: "100 MDCAT Human Physiology MCQs with Answers and Explanations",
     excerpt:
