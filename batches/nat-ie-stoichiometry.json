@@ -1555,6 +1555,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 2,
+      "directory": "part-02",
+      "sourceQuestionNumbers": [
+        66,
+        2
+      ],
+      "count": 2,
+      "durationSeconds": 61,
+      "sha256": "bf4586d547a0c6c7d47feff93d07a52bbb6c833d6f6befc0d7c8033e303b371a",
+      "manifest": {
+        "title": "99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+        "sourceTitle": "99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-18T06:57:50.854458+00:00",
+        "sourceContentHash": "1d6861a72322d58d9d7df4437e8c04ca37c990b17d85bf00b29f6718377970c2",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7876453694,
+          "sha": "05a8a4a1cad84dd57ef8d94051fca924ed008df5",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-18T06:57:50.854458+00:00",
+          "url": "https://mcqs-base-1wgkbkv4t-as-projects-10921176.vercel.app",
+          "publisherRunId": 44254385645
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 61,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "For 2Mg + O₂ → 2MgO, 3 mol Mg react with 1 mol O₂. Which reactant is limiting, and how many moles of MgO form?",
+            "choices": [
+              "Mg; 3 mol MgO",
+              "O₂; 2 mol MgO",
+              "Mg; 2 mol MgO",
+              "O₂; 3 mol MgO"
+            ],
+            "correctIndex": 0,
+            "key": "2c8d4fa74c1ac1753b3887c716a3f877e5ac7fdb2b81e3698cb39b33a62cccca",
+            "sourceNumber": 66
+          },
+          {
+            "question": "What is the mass of 0.50 mol of carbon dioxide, CO₂?",
+            "choices": [
+              "11 g",
+              "22 g",
+              "44 g",
+              "88 g"
+            ],
+            "correctIndex": 1,
+            "key": "6f6d56dac5d2758f26212e800d3d54737161c58dbf73a472f8b9f98f04da4565",
+            "sourceNumber": 2
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 25,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 25,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 26,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 27,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 28,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 33,
+            "duration": 16,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 49,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 50,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 51,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 52,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 56,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 2,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            66,
+            2
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-stoichiometry-part-02-bf4586d547a0c6c7.mp4",
+        "videoSha256": "bf4586d547a0c6c7d47feff93d07a52bbb6c833d6f6befc0d7c8033e303b371a",
+        "assetId": 762297325
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 2/5 | Q66, 2 | 99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+          "text": "Part 2/5 · Source questions 66, 2\n99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 2/5 | Q66, 2 | 99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+          "text": "Part 2/5 · Source questions 66, 2\n99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-stoichiometry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 2/5 | Q66, 2 | 99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+          "text": "Part 2/5 · Source questions 66, 2\n99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-stoichiometry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 2/5 | Q66, 2 | 99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+          "text": "Part 2/5 · Source questions 66, 2\n99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-stoichiometry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
