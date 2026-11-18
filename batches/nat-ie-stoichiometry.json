@@ -2349,6 +2349,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 5,
+      "directory": "part-05",
+      "sourceQuestionNumbers": [
+        32,
+        49,
+        74
+      ],
+      "count": 3,
+      "durationSeconds": 82,
+      "sha256": "a7ace33d30af3c3da1ccb13eee95f03fe38f72f46521ce1b88f9cac718897e37",
+      "manifest": {
+        "title": "99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+        "sourceTitle": "99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-18T06:57:50.854458+00:00",
+        "sourceContentHash": "1d6861a72322d58d9d7df4437e8c04ca37c990b17d85bf00b29f6718377970c2",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7876453694,
+          "sha": "05a8a4a1cad84dd57ef8d94051fca924ed008df5",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-18T06:57:50.854458+00:00",
+          "url": "https://mcqs-base-1wgkbkv4t-as-projects-10921176.vercel.app",
+          "publisherRunId": 44254385645
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 82,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "What coefficients balance N₂ + H₂ → NH₃, in the order N₂, H₂, NH₃?",
+            "choices": [
+              "1, 1, 2",
+              "1, 3, 2",
+              "2, 3, 1",
+              "2, 6, 2"
+            ],
+            "correctIndex": 1,
+            "key": "c476184f574984a505bbb2a3be8eb2f55a7c4f15b949159eebd2e020a7a5d97d",
+            "sourceNumber": 32
+          },
+          {
+            "question": "What mass of water forms when 4 g of H₂ burns completely in excess oxygen?",
+            "choices": [
+              "18 g",
+              "32 g",
+              "36 g",
+              "40 g"
+            ],
+            "correctIndex": 2,
+            "key": "23213157e322edbde11ccd889fa946e52c697426cc7facdbd210319572a8b9b6",
+            "sourceNumber": 49
+          },
+          {
+            "question": "With excess oxygen, what is the theoretical mass of water produced from 5 mol H₂ according to 2H₂ + O₂ → 2H₂O?",
+            "choices": [
+              "45 g",
+              "90 g",
+              "180 g",
+              "360 g"
+            ],
+            "correctIndex": 1,
+            "key": "2153f18c24e43a02f0e54d8661f8f8b75d74acac28d45d8cae5b21ccbc78abad",
+            "sourceNumber": 74
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 18,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 18,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 19,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 20,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 21,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 25,
+            "duration": 17,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 42,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 43,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 44,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 45,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 49,
+            "duration": 21,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 70,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 71,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 72,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 73,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 77,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 5,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            32,
+            49,
+            74
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-stoichiometry-part-05-a7ace33d30af3c3d.mp4",
+        "videoSha256": "a7ace33d30af3c3da1ccb13eee95f03fe38f72f46521ce1b88f9cac718897e37",
+        "assetId": 762307354
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 5/5 | Q32, 49, 74 | 99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+          "text": "Part 5/5 · Source questions 32, 49, 74\n99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 5/5 | Q32, 49, 74 | 99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+          "text": "Part 5/5 · Source questions 32, 49, 74\n99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-stoichiometry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 5/5 | Q32, 49, 74 | 99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+          "text": "Part 5/5 · Source questions 32, 49, 74\n99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-stoichiometry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 5/5 | Q32, 49, 74 | 99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+          "text": "Part 5/5 · Source questions 32, 49, 74\n99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-stoichiometry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
