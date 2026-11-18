@@ -3078,6 +3078,10 @@
           "publicUrlVerified": false,
           "verification": "provider-status-only",
           "integrationId": "cmvwbcule0222ro9dhocbic4w"
+        },
+        "youtube": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-18T07:05:00.924548+00:00"
         }
       }
     },
