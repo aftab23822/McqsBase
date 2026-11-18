@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-ie-stoichiometry",
   "createdAt": "2026-11-18T06:57:51.112969+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "nat-ie-stoichiometry",
     "title": "99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
@@ -1687,7 +1687,12 @@
         }
       },
       "scheduledAt": "2026-11-18T12:19:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-18T07:03:50.208921+00:00"
+        }
+      }
     },
     {
       "part": 2,
