@@ -1195,6 +1195,16 @@
       ],
       "published": 0,
       "verifiedPublications": 0
+    },
+    "nat-ie-stoichiometry": {
+      "status": "rendering",
+      "ledger": "batches/nat-ie-stoichiometry.json",
+      "createdAt": "2026-11-18T06:57:51.112969+00:00",
+      "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+      "blockedNetworks": [],
+      "scheduledAt": [],
+      "published": 0,
+      "verifiedPublications": 0
     }
   },
   "socialService": {
