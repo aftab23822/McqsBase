@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nat-ie-stoichiometry": {
+    title: "99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+    excerpt:
+      "Practise mole calculations, chemical equations, reaction quantities, limiting reagents, solution concentrations, and gas volumes with 99 explained MCQs.",
+    category: "Subject Guide",
+    date: "2026-11-18",
+    readTime: "30 min",
+    content: null,
+    body: readImportedBlogBody("nat-ie-stoichiometry")
+  },
   "nat-ics-boolean-digital-logic": {
     title: "99 NAT-ICS-Style Boolean Algebra and Digital Logic MCQs",
     excerpt:
