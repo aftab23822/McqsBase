@@ -3519,6 +3519,10 @@
           "publicUrlVerified": false,
           "verification": "provider-status-only",
           "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+        },
+        "instagram": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-18T07:05:09.700983+00:00"
         }
       }
     }
