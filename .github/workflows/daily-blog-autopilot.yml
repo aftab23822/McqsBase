@@ -24,6 +24,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  deployments: read
 
 concurrency:
   group: daily-blog-autopilot-production
@@ -32,7 +33,8 @@ concurrency:
 jobs:
   daily-blog:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # Generation and build take ~15 minutes; the deployment safety net can wait up to ~27 more.
+    timeout-minutes: 50
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -86,6 +88,7 @@ jobs:
         run: npm run build
 
       - name: Create and merge pull request
+        id: publish
         env:
           GH_TOKEN: ${{ github.token }}
           AUTO_MERGE: ${{ github.event_name == 'schedule' || inputs.auto_merge }}
@@ -128,4 +131,18 @@ jobs:
 
           if [ "$AUTO_MERGE" = "true" ]; then
             gh pr merge "$PR_NUMBER" --squash --delete-branch
+            MERGED_SHA="$(gh pr view "$PR_NUMBER" --json mergeCommit --jq '.mergeCommit.oid // empty' || true)"
+            echo "merged_sha=${MERGED_SHA}" >> "$GITHUB_OUTPUT"
           fi
+
+      # Vercel occasionally never receives the push (no deployment at all, e.g. 2026-11-17).
+      # Wait for Production to contain the merged commit; if Vercel never started, trigger the
+      # Deploy Hook once. This never fails the run, so the quiz workflow still starts.
+      - name: Make sure Vercel deploys the published article
+        if: steps.publish.outputs.merged_sha != ''
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DEPLOY_SHA: ${{ steps.publish.outputs.merged_sha }}
+          VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+        run: python3 scripts/ensure-production-deployment.py
