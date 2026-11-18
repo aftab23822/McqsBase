@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "mdcat-human-physiology",
   "createdAt": "2026-11-16T05:56:16.147750+00:00",
-  "status": "scheduled",
+  "status": "publication-needs-attention",
   "package": {
     "slug": "mdcat-human-physiology",
     "title": "100 MDCAT Human Physiology MCQs with Answers and Explanations",
@@ -3616,5 +3616,6 @@
     "2026-11-16T16:38:00+05:00",
     "2026-11-16T19:18:00+05:00",
     "2026-11-16T21:58:00+05:00"
-  ]
+  ],
+  "lastError": "An existing receipt needs attention; preserve IDs and repair only the missing step. "
 }
