@@ -35,7 +35,8 @@ class GitHubState:
         self.base = f'https://api.github.com/repos/{repository}'
         self.http = requests.Session()
         self.http.mount('https://api.github.com/', HTTPAdapter(max_retries=Retry(
-            total=2, connect=0, read=2, status=2, backoff_factor=1,
+            # Connection resets and brief API outages are common on hosted runners.
+            total=5, connect=3, read=3, status=4, backoff_factor=2,
             status_forcelist=(429, 500, 502, 503, 504), allowed_methods=frozenset({'GET'}),
             respect_retry_after_header=True, raise_on_status=False)))
         self.http.headers.update({'Authorization': f'Bearer {token}',
@@ -95,26 +96,76 @@ def successful_blog_run(storage):
     return run['id']
 
 
-def production_deployment(storage, sha, attempts=25):
-    """Verify the exact checked-out commit was deployed by Vercel to Production.
+class DeploymentPending(RuntimeError):
+    """The source commit is not live yet; keep the work queued instead of failing it."""
+
+
+def _vercel_production(deployment):
+    return (deployment.get('environment') == 'Production'
+            and deployment.get('creator', {}).get('login') == 'vercel[bot]')
+
+
+def _latest_status(storage, deployment):
+    statuses = storage.api('GET', f'/deployments/{deployment["id"]}/statuses', params={'per_page': 1})
+    return statuses[0] if statuses else {}
+
+
+def _proof(deployment, status, source_sha):
+    proof = {'id': deployment['id'], 'sha': deployment['sha'], 'environment': 'Production', 'state': 'success',
+             'verifiedAt': datetime.now(timezone.utc).isoformat(), 'url': status.get('environment_url')}
+    if deployment['sha'] != source_sha:
+        proof['sourceSha'] = source_sha  # The live commit contains the checked-out source commit.
+    return proof
+
+
+def find_production_deployment(storage, sha):
+    """Return proof that `sha` is live on Production, or None. Makes one pass, no waiting.
+
+    Accepts the exact commit, or the newest successful Vercel Production deployment when
+    its commit contains `sha` (Vercel can skip or coalesce a push; a later deploy still
+    ships the article). Previews, failed/queued deployments and older commits never qualify.
+    """
+    exact = storage.api('GET', '/deployments', params={'sha': sha, 'environment': 'Production', 'per_page': 10})
+    for deployment in exact:
+        if deployment.get('sha') != sha or not _vercel_production(deployment):
+            continue
+        status = _latest_status(storage, deployment)
+        if status.get('state') == 'success':
+            return _proof(deployment, status, sha)
+    recent = storage.api('GET', '/deployments', params={'environment': 'Production', 'per_page': 20})
+    checked = 0
+    for deployment in recent:  # Newest first; only the newest successful one is what is live.
+        if not _vercel_production(deployment) or not re.fullmatch(r'[0-9a-f]{40}', deployment.get('sha', '')):
+            continue
+        status = _latest_status(storage, deployment)
+        if status.get('state') != 'success':
+            checked += 1
+            if checked >= 5:
+                return None
+            continue
+        if deployment['sha'] == sha:
+            return _proof(deployment, status, sha)
+        comparison = storage.api('GET', f'/compare/{sha}...{deployment["sha"]}')
+        if comparison.get('status') in ('ahead', 'identical'):
+            return _proof(deployment, status, sha)
+        return None
+    return None
+
+
+def production_deployment(storage, sha, attempts=24, delay=30):
+    """Verify the checked-out commit is live on Vercel Production, waiting up to ~12 minutes.
 
     Read public deployment evidence rather than crawling a rate-limited website.
-    Preview builds, commit checks alone, and failed/queued deployments do not qualify.
+    Raises DeploymentPending (not a hard failure) so callers can keep the work queued.
     """
     for attempt in range(attempts):
-        deployments = storage.api('GET', '/deployments', params={
-            'sha': sha, 'environment': 'Production', 'per_page': 10})
-        for deployment in deployments:
-            if (deployment.get('sha') != sha or deployment.get('environment') != 'Production'
-                    or deployment.get('creator', {}).get('login') != 'vercel[bot]'):
-                continue
-            statuses = storage.api('GET', f'/deployments/{deployment["id"]}/statuses', params={'per_page': 1})
-            if statuses and statuses[0].get('state') == 'success':
-                return {'id': deployment['id'], 'sha': sha, 'environment': 'Production', 'state': 'success',
-                        'verifiedAt': datetime.now(timezone.utc).isoformat(), 'url': statuses[0].get('environment_url')}
+        proof = find_production_deployment(storage, sha)
+        if proof:
+            return proof
         if attempt + 1 < attempts:
-            time.sleep(12)
-    raise RuntimeError('The checked-out blog revision is not successfully deployed to Production yet. Retry this job later.')
+            time.sleep(delay)
+    raise DeploymentPending(f'Commit {sha[:7]} is not successfully deployed to Production yet; '
+                            'the batch stays queued and is retried automatically.')
 
 
 def deployed_sources(proof, state, articles=None):

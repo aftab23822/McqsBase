@@ -177,8 +177,74 @@ class Worker(unittest.TestCase):
         self.assertFalse((worker.ROOT / '.github/workflows/metricool-cloud-handoff.yml').exists())
         workflow = (worker.ROOT / '.github/workflows/blog-quiz-batches.yml').read_text()
         self.assertIn("workflows: ['Daily Blog Autopilot']", workflow)
-        self.assertNotIn('cron:', workflow)
+        self.assertIn("github.event_name == 'schedule'", workflow)  # Self-healing retry only.
         self.assertNotIn('MCQS_MAKE', workflow)
+
+    def plan(self, state, articles, event='schedule', hour=12, deployed=None, blog_ok=True):
+        storage = type('Storage', (), {'sha': 'existing-state', 'load': lambda _: state})()
+        blog = patch.object(worker.cloud, 'successful_blog_run', return_value=1) if blog_ok else \
+            patch.object(worker.cloud, 'successful_blog_run', side_effect=RuntimeError('publisher failed'))
+        with tempfile.TemporaryDirectory() as temp, blog, \
+             patch.object(worker.cloud, 'GitHubState', return_value=storage), \
+             patch.object(worker.cloud, 'find_production_deployment', return_value=deployed), \
+             patch.object(worker, 'local_hour', return_value=hour), \
+             patch.object(worker, 'head_sha', return_value='a' * 40), \
+             patch.object(worker.subprocess, 'check_output', return_value=json.dumps(articles)), \
+             patch.object(sys, 'argv', ['worker', '--phase', 'plan']), \
+             patch.dict(os.environ, {'GH_TOKEN': 'test', 'GITHUB_REPOSITORY': 'owner/repo', 'GITHUB_EVENT_NAME': event,
+                                     'GITHUB_OUTPUT': str(Path(temp) / 'output')}):
+            worker.main()
+            return (Path(temp) / 'output').read_text()
+
+    def test_scheduled_retry_never_polls_existing_receipts(self):
+        state = {'articles': {}, 'videoBatches': {'latest': {'status': 'scheduled'}}}
+        output = self.plan(state, [{'slug': 'latest', 'date': '2026-11-02'}])
+        self.assertIn('generate=false', output)
+        self.assertIn('work=false', output)
+        self.assertIn('work=true', self.plan(state, [{'slug': 'latest', 'date': '2026-11-02'}], event='workflow_dispatch'))
+
+    def test_scheduled_retry_is_a_quiet_no_op_when_the_blog_publisher_failed(self):
+        output = self.plan({'articles': {}}, [{'slug': 'latest', 'date': '2026-11-02'}], blog_ok=False)
+        self.assertIn('generate=false', output)
+        with self.assertRaisesRegex(RuntimeError, 'publisher failed'):
+            self.plan({'articles': {}}, [{'slug': 'latest', 'date': '2026-11-02'}], event='workflow_dispatch', blog_ok=False)
+
+    def test_scheduled_retry_renders_a_waiting_batch_only_once_it_is_live_and_early_enough(self):
+        state = {'articles': {}, 'videoBatches': {'latest': {'status': 'awaiting-deployment', 'sourceSha': 'a' * 40}}}
+        articles = [{'slug': 'latest', 'date': '2026-11-02'}]
+        self.assertIn('generate=false', self.plan(state, articles, deployed=None))
+        self.assertIn('generate=true\nwork=true', self.plan(state, articles, deployed={'state': 'success'}))
+        self.assertIn('generate=false', self.plan(state, articles, deployed={'state': 'success'}, hour=21))
+
+    def test_missing_deployment_keeps_the_article_queued_instead_of_failing(self):
+        ledger = type('Ledger', (), {'path': 'batches/latest.json', 'load': lambda _: None,
+                                     'save': lambda *_: self.fail('No ledger before a deployment')})()
+        saved = []
+        storage = type('Storage', (), {'save': lambda _, state: saved.append(deepcopy(state))})()
+        state = {'articles': {}}
+        with patch.object(worker, 'Ledger', return_value=ledger), \
+             patch.object(worker.subprocess, 'check_output', return_value='a' * 40), \
+             patch.object(worker.cloud, 'production_deployment', side_effect=worker.cloud.DeploymentPending('not live')):
+            self.assertFalse(worker.generate(storage, state, 'latest', 1))
+            worker.generate(storage, state, 'latest', 1)
+        entry = saved[-1]['videoBatches']['latest']
+        self.assertEqual(entry['status'], 'awaiting-deployment')
+        self.assertEqual(entry['deploymentChecks'], 2)
+        self.assertEqual(worker.choose(state, [{'slug': 'latest', 'date': '2026-11-02'}]), 'latest')
+        self.assertIsNone(worker.choose(state, [{'slug': 'latest', 'date': '2026-11-02'}], exclude={'latest'}))
+
+    def test_waiting_article_is_retired_when_a_newer_article_arrives(self):
+        state = {'articles': {}, 'videoBatches': {'older': {'status': 'awaiting-deployment'}}}
+        articles = [{'slug': 'newest', 'date': '2026-11-03'}, {'slug': 'older', 'date': '2026-11-02'}]
+        worker.retire_superseded(state, articles)
+        self.assertEqual(state['videoBatches']['older']['status'], 'skipped')
+        self.assertEqual(worker.choose(state, articles), 'newest')
+
+    def test_repeated_render_failures_stop_automatic_retries_but_not_manual_runs(self):
+        state = {'articles': {}, 'videoBatches': {'stuck': {'status': 'rendering', 'renderFailures': 4}}}
+        articles = [{'slug': 'stuck', 'date': '2026-11-02'}]
+        self.assertIsNone(worker.choose(state, articles, automatic=True))
+        self.assertEqual(worker.choose(state, articles), 'stuck')
 
 
 if __name__ == '__main__':
