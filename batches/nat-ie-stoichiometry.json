@@ -2375,7 +2375,11 @@
       },
       "uploadIntent": {
         "filename": "nat-ie-stoichiometry-part-04-73e3c3ce2761a052.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "c36e313e-0b99-4ae2-bab7-424c45341c4f",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/NfAU7AFexX.mp4"
       }
     },
     {
