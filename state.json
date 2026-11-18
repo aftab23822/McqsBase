@@ -1197,7 +1197,7 @@
       "verifiedPublications": 13
     },
     "nat-ie-stoichiometry": {
-      "status": "ready",
+      "status": "scheduling",
       "ledger": "batches/nat-ie-stoichiometry.json",
       "createdAt": "2026-11-18T06:57:51.112969+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
