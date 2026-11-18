@@ -4,6 +4,11 @@ on:
     workflows: ['Daily Blog Autopilot']
     types: [completed]
     branches: [master]
+  schedule:
+    # Self-healing retry for batches the daily event could not finish (for example a
+    # Production deployment that arrived late). It never polls receipts or creates posts
+    # unless it just rendered such a batch, and it is a no-op otherwise.
+    - cron: '23 */2 * * *'
   workflow_dispatch:
     inputs:
       validation:
@@ -36,7 +41,7 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      - run: python -m pip install requests==2.32.5
+      - run: python -m pip install --retries 5 --timeout 60 requests==2.32.5
       - run: |
           python scripts/test-quiz-batch.py
           python scripts/test-studio-cloud.py
@@ -44,7 +49,7 @@ jobs:
   plan:
     if: >-
       github.ref == 'refs/heads/master' &&
-      (github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'workflow_dispatch' || github.event_name == 'schedule' ||
        (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' &&
         github.event.workflow_run.head_repository.full_name == github.repository))
     runs-on: ubuntu-latest
@@ -52,13 +57,14 @@ jobs:
     permissions:
       contents: read
       actions: read
+      deployments: read
     outputs:
       generate: ${{ steps.plan.outputs.generate }}
       work: ${{ steps.plan.outputs.work }}
     steps:
       - uses: actions/checkout@v4
         with: {ref: master}
-      - run: python -m pip install requests==2.32.5
+      - run: python -m pip install --retries 5 --timeout 60 requests==2.32.5
       - name: Check latest article and existing ledger without voices or rendering
         id: plan
         env:
@@ -83,7 +89,7 @@ jobs:
           python-version: '3.12'
           cache: pip
           cache-dependency-path: scripts/video-requirements.txt
-      - run: python -m pip install -r scripts/video-requirements.txt
+      - run: python -m pip install --retries 5 --timeout 60 -r scripts/video-requirements.txt
       - uses: actions/cache@v4
         with:
           path: .social-automation/voices
@@ -120,7 +126,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: {ref: master}
-      - run: python -m pip install requests==2.32.5
+      - run: python -m pip install --retries 5 --timeout 60 requests==2.32.5
       - name: Verify exact imported bytes, then schedule twenty free posts with durable receipts
         env:
           GH_TOKEN: ${{ github.token }}

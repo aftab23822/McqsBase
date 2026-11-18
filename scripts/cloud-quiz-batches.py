@@ -2,6 +2,7 @@
 import argparse
 import base64
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 import hashlib
 import html
 import importlib.util
@@ -30,6 +31,16 @@ cloud = module('five_cloud', 'quiz-cloud-state.py')
 media = module('five_media', 'quiz-cloud-media.py')
 publisher = module('five_publisher', 'studio-cloud.py')
 POLICY = json.loads((ROOT / 'config/quiz-batch-policy.json').read_text(encoding='utf-8'))
+AWAITING = 'awaiting-deployment'
+RESUMABLE = ('rendering', 'retry', AWAITING)
+# Automatic retries stop after this many failed renders; a manual run can still resume it.
+MAX_AUTOMATIC_RENDER_FAILURES = 4
+# Scheduled retries render only while all five posts can still be spread over the same local day.
+RETRY_WINDOW_HOURS = (6, 20)
+
+
+def warn(message):
+    print('::warning::' + str(message).replace('\n', ' '), flush=True)
 
 
 def report_handoff(state, error=None):
@@ -76,7 +87,8 @@ class Ledger:
 
 def summary(state, record, ledger):
     # Keep the historical state small: full packages/receipts live in per-article files.
-    state.setdefault('videoBatches', {})[record['slug']] = {
+    previous = state.setdefault('videoBatches', {}).get(record['slug'], {})
+    state['videoBatches'][record['slug']] = {
         'status': record['status'], 'ledger': ledger.path, 'createdAt': record['createdAt'],
         'sourceUrl': record['package']['url'],
         'blockedNetworks': list(record.get('blockedNetworks', {})),
@@ -85,22 +97,49 @@ def summary(state, record, ledger):
                          for receipt in part.get('receipts', {}).values()),
         'verifiedPublications': sum(receipt.get('publicUrlVerified', False) for part in record.get('parts', [])
                          for receipt in part.get('receipts', {}).values())}
+    failures = record.get('renderFailures', previous.get('renderFailures') if record['status'] in RESUMABLE else None)
+    if failures:
+        state['videoBatches'][record['slug']]['renderFailures'] = failures
 
 
-def choose(state, articles):
+def choose(state, articles, exclude=(), automatic=False):
     # Resume an existing incomplete batch before creating a second batch for that article.
     for slug, entry in state.get('videoBatches', {}).items():
-        if entry['status'] in ('rendering', 'retry'):
-            return slug
+        if slug in exclude or entry['status'] not in RESUMABLE:
+            continue
+        if automatic and entry.get('renderFailures', 0) >= MAX_AUTOMATIC_RENDER_FAILURES:
+            continue  # Repeated deterministic failures wait for a person instead of looping forever.
+        return slug
     newest = articles[0]
     slug = newest['slug']
-    if slug in state.get('videoBatches', {}):
+    if slug in exclude or slug in state.get('videoBatches', {}):
         return None
     if newest.get('date', '') < POLICY['firstDate']:
         return None
     if slug in state.get('articles', {}) and slug != POLICY['firstArticle']:
         return None  # Historical baseline and old campaigns are never backfilled.
     return slug
+
+
+def retire_superseded(state, articles):
+    """An article still waiting for its deployment is dropped once a newer article exists.
+
+    Old articles are never backfilled, and two batches must not share one day's slots.
+    """
+    newest = articles[0]['slug'] if articles else None
+    for slug, entry in state.get('videoBatches', {}).items():
+        if entry['status'] == AWAITING and slug != newest:
+            entry.update(status='skipped', reason='A newer article was published before this one reached Production.')
+            warn(f'{slug}: skipped because a newer article replaced it before its deployment went live.')
+
+
+def mark_awaiting(state, slug, sha, error):
+    entry = state.setdefault('videoBatches', {}).setdefault(slug, {'status': AWAITING})
+    entry.update(status=AWAITING, sourceSha=sha, lastError=str(error),
+                 deploymentChecks=entry.get('deploymentChecks', 0) + 1,
+                 checkedAt=datetime.now(timezone.utc).isoformat())
+    entry.setdefault('firstWaitedAt', entry['checkedAt'])
+    warn(f'{slug}: {error}')
 
 
 def public_bytes(url):
@@ -122,11 +161,17 @@ def public_bytes(url):
 
 
 def generate(storage, state, slug, publisher_run):
+    """Render one batch. Returns False when it must wait for Production, True otherwise."""
     ledger = Ledger(storage, slug)
     record = ledger.load()
     if record is None:
         sha = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
-        proof = cloud.production_deployment(storage, sha)
+        try:
+            proof = cloud.production_deployment(storage, sha)
+        except cloud.DeploymentPending as error:
+            mark_awaiting(state, slug, sha, error)
+            storage.save(state)
+            return False
         proof['publisherRunId'] = publisher_run
         snapshot = cloud.deployed_sources(proof, state)
         package = snapshot['packages'][slug]
@@ -144,7 +189,7 @@ def generate(storage, state, slug, publisher_run):
     if len(package['questions']) < 5:
         record.update(status='skipped', reason=f'Only {len(package["questions"])} valid published MCQs; five distinct videos cannot be made.')
         save()
-        return
+        return True
     output = ROOT / '.social-automation/five-video-batch' / slug
     output.mkdir(parents=True, exist_ok=True)
     source = output / 'article.json'
@@ -176,12 +221,23 @@ def generate(storage, state, slug, publisher_run):
         record['parts'].append({**part, 'manifest': manifest, 'asset': asset,
             'captions': json.loads((folder / 'platform-captions.json').read_text(encoding='utf-8'))})
         save()
-    result = batcher.build_batch(package, output, render, batcher.decode_video, completed=complete)
+    try:
+        result = batcher.build_batch(package, output, render, batcher.decode_video, completed=complete)
+    except Exception:
+        # Count failures durably so automatic retries stop on a persistent fault.
+        record['renderFailures'] = record.get('renderFailures', 0) + 1
+        try:
+            save()
+        except Exception as error:  # Never hide the original render failure.
+            warn(f'Could not record the render failure: {error}')
+        raise
+    record.pop('renderFailures', None)
     record['status'] = 'ready'
     record['batch'] = result
     save()
     print(json.dumps({'slug': slug, 'status': 'ready', 'videos': len(record['parts']),
                       'questions': [part['sourceQuestionNumbers'] for part in record['parts']]}))
+    return True
 
 
 def upload_part(studio, part, filename, data, save):
@@ -301,6 +357,20 @@ def publish(storage, state, channels, studio, spacing, verify_only=False):
     report_handoff(state)
 
 
+def local_hour():
+    return datetime.now(ZoneInfo(POLICY['timezone'])).hour
+
+
+def head_sha():
+    return subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
+
+
+def write_outputs(generate_new, work):
+    if os.environ.get('GITHUB_OUTPUT'):
+        with Path(os.environ['GITHUB_OUTPUT']).open('a', encoding='utf-8') as stream:
+            stream.write(f'generate={str(generate_new).lower()}\nwork={str(work).lower()}\n')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--phase', choices=('plan', 'render', 'publish'), required=True)
@@ -318,23 +388,48 @@ def main():
     state = storage.load()
     if not storage.sha:
         raise RuntimeError('The established baseline must already exist; do not initialize another queue.')
-    publisher_run = None if args.verify_only else cloud.successful_blog_run(storage)
+    # Scheduled runs are a self-healing retry only: they never poll receipts or create posts
+    # unless they just finished a batch that an earlier event could not.
+    automatic = os.environ.get('GITHUB_EVENT_NAME') == 'schedule'
+    try:
+        publisher_run = None if args.verify_only else cloud.successful_blog_run(storage)
+    except RuntimeError as error:
+        if not automatic:
+            raise
+        print(f'Scheduled retry skipped: {error}')
+        write_outputs(False, False)
+        return
     articles = json.loads(subprocess.check_output(['node', str(ROOT / 'scripts/export-blog-video-sources.mjs')], cwd=ROOT, text=True, encoding='utf-8'))
-    slug = choose(state, articles)
+    retire_superseded(state, articles)  # Saved by the render phase; plan only reads.
+    slug = choose(state, articles, automatic=automatic)
     if args.validation and slug and slug != POLICY['firstArticle']:
         raise ValueError('Rollout validation is restricted to the one approved latest article.')
     if args.phase == 'plan':
-        generate_new = slug is not None and state.get('videoBatches', {}).get(slug, {}).get('status') not in ('ready', 'scheduling')
+        batches = state.get('videoBatches', {})
+        entry = batches.get(slug, {}) if slug else {}
+        generate_new = slug is not None and entry.get('status') not in ('ready', 'scheduling')
+        if generate_new and automatic:
+            if not RETRY_WINDOW_HOURS[0] <= local_hour() < RETRY_WINDOW_HOURS[1]:
+                generate_new = False  # Too late to spread five posts today; the next retry picks it up.
+            elif (entry.get('status') == AWAITING and entry.get('sourceSha') == head_sha()
+                    and not cloud.find_production_deployment(storage, entry['sourceSha'])):
+                generate_new = False  # Still not live: skip the expensive render job until it is.
         work_states = ('ready', 'scheduling', 'partially-scheduled', 'scheduled') + (
             ('provider-published', 'publication-needs-attention') if args.verify_only else ())
-        work = generate_new or any(item['status'] in work_states for item in state.get('videoBatches', {}).values())
-        with Path(os.environ['GITHUB_OUTPUT']).open('a', encoding='utf-8') as stream:
-            stream.write(f'generate={str(generate_new).lower()}\nwork={str(work).lower()}\n')
+        work = generate_new or (not automatic and any(item['status'] in work_states for item in batches.values()))
+        write_outputs(generate_new, work)
         print(json.dumps({'generate': generate_new, 'work': work, 'slug': slug}))
     elif args.phase == 'render':
+        storage.save(state)
+        attempted = set()
         while slug:
+            attempted.add(slug)
             generate(storage, state, slug, publisher_run)
-            slug = choose(state, articles)
+            slug = choose(state, articles, exclude=attempted, automatic=automatic)
+        waiting = [s for s, e in state.get('videoBatches', {}).items() if e['status'] == AWAITING]
+        if waiting:
+            report_handoff(state, 'Waiting for the Production deployment of: ' + ', '.join(waiting) +
+                           '. A scheduled retry continues automatically; act only if this persists for a day.')
     else:
         studio = publisher.Studio()
         try:

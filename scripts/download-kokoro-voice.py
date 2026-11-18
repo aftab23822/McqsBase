@@ -2,6 +2,7 @@
 from concurrent.futures import ThreadPoolExecutor
 import hashlib
 from pathlib import Path
+import time
 from urllib.request import urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,9 +25,18 @@ def download(asset):
         if not digest or 'sha256:' + hashlib.sha256(destination.read_bytes()).hexdigest() == digest:
             return
     temporary = destination.with_suffix(destination.suffix + '.download')
-    with urlopen(RELEASE + asset['name'], timeout=60) as source, temporary.open('wb') as output:
-        while chunk := source.read(1024 * 1024):
-            output.write(chunk)
+    for attempt in range(4):  # Release downloads occasionally reset or truncate on hosted runners.
+        try:
+            with urlopen(RELEASE + asset['name'], timeout=60) as source, temporary.open('wb') as output:
+                while chunk := source.read(1024 * 1024):
+                    output.write(chunk)
+            if temporary.stat().st_size == asset['size']:
+                break
+        except OSError as error:  # URLError, HTTPError, timeouts and connection resets.
+            if attempt == 3:
+                raise
+            print(f'Retrying {asset["name"]} after: {error}', flush=True)
+        time.sleep(5 * 2 ** attempt)
     if temporary.stat().st_size != asset['size']:
         raise ValueError('Incomplete voice model download.')
     checksum = hashlib.sha256(temporary.read_bytes()).hexdigest()

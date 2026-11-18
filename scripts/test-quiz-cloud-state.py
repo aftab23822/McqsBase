@@ -54,6 +54,34 @@ class CloudStateTests(unittest.TestCase):
         self.assertEqual(proof['sha'], 'a' * 40)
         self.assertEqual(proof['state'], 'success')
 
+    def deployments(self, newest_sha, comparison, status='success'):
+        def api(method, path, params=None):
+            if path == '/deployments' and params.get('sha'):
+                return []  # Vercel skipped the exact commit.
+            if path == '/deployments':
+                return [{'id': 9, 'sha': newest_sha, 'environment': 'Production', 'creator': {'login': 'vercel[bot]'}}]
+            if path.endswith('/statuses'):
+                return [{'state': status, 'environment_url': 'https://example.vercel.app'}]
+            if path.startswith('/compare/'):
+                return {'status': comparison}
+            raise AssertionError(path)
+        return Mock(api=Mock(side_effect=api))
+
+    def test_later_production_deployment_containing_the_commit_is_accepted(self):
+        proof = cloud.find_production_deployment(self.deployments('b' * 40, 'ahead'), 'a' * 40)
+        self.assertEqual(proof['sha'], 'b' * 40)
+        self.assertEqual(proof['sourceSha'], 'a' * 40)
+        cloud.deployed_sources(proof, {}, [{'slug': 'x', 'title': 'X', 'date': '2026-11-01', 'body': ''}])
+
+    def test_older_diverged_or_failed_production_deployments_are_rejected(self):
+        for comparison in ('behind', 'diverged'):
+            self.assertIsNone(cloud.find_production_deployment(self.deployments('b' * 40, comparison), 'a' * 40))
+        self.assertIsNone(cloud.find_production_deployment(self.deployments('b' * 40, 'ahead', 'failure'), 'a' * 40))
+
+    def test_missing_deployment_is_a_retryable_pending_state(self):
+        with self.assertRaises(cloud.DeploymentPending):
+            cloud.production_deployment(self.deployments('b' * 40, 'behind'), 'a' * 40, attempts=1)
+
     def test_deployed_questions_are_validated_and_older_unseen_articles_excluded(self):
         proof = {'sha': 'a' * 40, 'state': 'success', 'environment': 'Production', 'verifiedAt': 'now'}
         body = '| 1 | Test?<br />A) One<br />B) Two<br />C) Three<br />D) Four | **B) Two** |'
