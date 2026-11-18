@@ -1787,6 +1787,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        85,
+        95,
+        13
+      ],
+      "count": 3,
+      "durationSeconds": 85,
+      "sha256": "cb5850b5c5580f7dc62355f27ccb6cbb42db88ecf38e79d176bd2f431066fa30",
+      "manifest": {
+        "title": "99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+        "sourceTitle": "99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-18T06:57:50.854458+00:00",
+        "sourceContentHash": "1d6861a72322d58d9d7df4437e8c04ca37c990b17d85bf00b29f6718377970c2",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7876453694,
+          "sha": "05a8a4a1cad84dd57ef8d94051fca924ed008df5",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-18T06:57:50.854458+00:00",
+          "url": "https://mcqs-base-1wgkbkv4t-as-projects-10921176.vercel.app",
+          "publisherRunId": 44254385645
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 85,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "What volume of 0.10 M NaOH neutralizes 100 mL of 0.10 M HCl? The reaction is HCl + NaOH → NaCl + H₂O.",
+            "choices": [
+              "10 mL",
+              "50 mL",
+              "100 mL",
+              "200 mL"
+            ],
+            "correctIndex": 2,
+            "key": "b2fc8e4f9881aa1d0bf7957e781564348dfa2042fa87a41d0ba25d93be8780f1",
+            "sourceNumber": 85
+          },
+          {
+            "question": "At the stated STP, how many moles of gas occupy 2.24 L?",
+            "choices": [
+              "0.010 mol",
+              "0.10 mol",
+              "1.0 mol",
+              "10 mol"
+            ],
+            "correctIndex": 1,
+            "key": "82a765398a394eca95d0b5b0deeb896ff50d7d27d97b8724c663a83f8447864b",
+            "sourceNumber": 95
+          },
+          {
+            "question": "What is the mass of 0.25 mol of CaCO₃?",
+            "choices": [
+              "10 g",
+              "25 g",
+              "50 g",
+              "100 g"
+            ],
+            "correctIndex": 1,
+            "key": "4d1691f2bd4a651f0f25860cab7a718923334df399516f68efd1959b1d3ec507",
+            "sourceNumber": 13
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 24,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 25,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 26,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 27,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 31,
+            "duration": 19,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 50,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 51,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 52,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 53,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 58,
+            "duration": 15,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 73,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 74,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 75,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 76,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 80,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            85,
+            95,
+            13
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-stoichiometry-part-03-cb5850b5c5580f7d.mp4",
+        "videoSha256": "cb5850b5c5580f7dc62355f27ccb6cbb42db88ecf38e79d176bd2f431066fa30",
+        "assetId": 762300668
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q85, 95, 13 | 99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+          "text": "Part 3/5 · Source questions 85, 95, 13\n99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q85, 95, 13 | 99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+          "text": "Part 3/5 · Source questions 85, 95, 13\n99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-stoichiometry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q85, 95, 13 | 99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+          "text": "Part 3/5 · Source questions 85, 95, 13\n99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-stoichiometry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q85, 95, 13 | 99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+          "text": "Part 3/5 · Source questions 85, 95, 13\n99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-stoichiometry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
