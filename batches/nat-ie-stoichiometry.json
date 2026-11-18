@@ -2068,6 +2068,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 4,
+      "directory": "part-04",
+      "sourceQuestionNumbers": [
+        75,
+        26,
+        43
+      ],
+      "count": 3,
+      "durationSeconds": 87,
+      "sha256": "73e3c3ce2761a052830d2ec17e70fd0d0c700e49c98d0d731d821656d96d01c6",
+      "manifest": {
+        "title": "99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+        "sourceTitle": "99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-18T06:57:50.854458+00:00",
+        "sourceContentHash": "1d6861a72322d58d9d7df4437e8c04ca37c990b17d85bf00b29f6718377970c2",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7876453694,
+          "sha": "05a8a4a1cad84dd57ef8d94051fca924ed008df5",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-18T06:57:50.854458+00:00",
+          "url": "https://mcqs-base-1wgkbkv4t-as-projects-10921176.vercel.app",
+          "publisherRunId": 44254385645
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 87,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "For 2H₂ + O₂ → 2H₂O, 4 mol H₂ react with 3 mol O₂. How many moles of O₂ remain after the reaction is complete?",
+            "choices": [
+              "0 mol",
+              "1 mol",
+              "2 mol",
+              "3 mol"
+            ],
+            "correctIndex": 1,
+            "key": "850d7e25ec0ba08138e5fce40c44fcd0ac4320a20223c374d6aeaf80807e369e",
+            "sourceNumber": 75
+          },
+          {
+            "question": "A compound contains 30.4% nitrogen and 69.6% oxygen by mass, and has molar mass 92 g mol⁻¹. What is its molecular formula?",
+            "choices": [
+              "NO₂",
+              "N₂O₃",
+              "N₂O₄",
+              "N₃O₆"
+            ],
+            "correctIndex": 2,
+            "key": "da11b9aa85b132acc18721dbfb16146552bed0a3f49c81809689aa0f2f0dd38c",
+            "sourceNumber": 26
+          },
+          {
+            "question": "For N₂ + 3H₂ → 2NH₃, how many moles of NH₃ form from 6 mol of H₂ with excess N₂?",
+            "choices": [
+              "2 mol",
+              "3 mol",
+              "4 mol",
+              "12 mol"
+            ],
+            "correctIndex": 2,
+            "key": "c4abee536d1cbb1ea03202b08f2b6b57ce8efc50eff9226a8bee895d0078b5aa",
+            "sourceNumber": 43
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 20,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 20,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 21,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 23,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 27,
+            "duration": 22,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 49,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 50,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 51,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 52,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 56,
+            "duration": 19,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 75,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 76,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 77,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 78,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 82,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 4,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            75,
+            26,
+            43
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-stoichiometry-part-04-73e3c3ce2761a052.mp4",
+        "videoSha256": "73e3c3ce2761a052830d2ec17e70fd0d0c700e49c98d0d731d821656d96d01c6",
+        "assetId": 762304149
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 4/5 | Q75, 26, 43 | 99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+          "text": "Part 4/5 · Source questions 75, 26, 43\n99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 4/5 | Q75, 26, 43 | 99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+          "text": "Part 4/5 · Source questions 75, 26, 43\n99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-stoichiometry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 4/5 | Q75, 26, 43 | 99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+          "text": "Part 4/5 · Source questions 75, 26, 43\n99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-stoichiometry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 4/5 | Q75, 26, 43 | 99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+          "text": "Part 4/5 · Source questions 75, 26, 43\n99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-stoichiometry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
