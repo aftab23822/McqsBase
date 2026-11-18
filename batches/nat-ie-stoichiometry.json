@@ -1,0 +1,1328 @@
+{
+  "version": 1,
+  "slug": "nat-ie-stoichiometry",
+  "createdAt": "2026-11-18T06:57:51.112969+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nat-ie-stoichiometry",
+    "title": "99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
+    "url": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7876453694,
+      "sha": "05a8a4a1cad84dd57ef8d94051fca924ed008df5",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-18T06:57:50.854458+00:00",
+      "url": "https://mcqs-base-1wgkbkv4t-as-projects-10921176.vercel.app",
+      "publisherRunId": 44254385645
+    },
+    "fetchedAt": "2026-11-18T06:57:50.854458+00:00",
+    "contentHash": "1d6861a72322d58d9d7df4437e8c04ca37c990b17d85bf00b29f6718377970c2",
+    "questions": [
+      {
+        "question": "What is the mass of 1.00 mol of water, H₂O?",
+        "choices": [
+          "16 g",
+          "18 g",
+          "20 g",
+          "34 g"
+        ],
+        "key": "2bb35b90e94941b05d9f070c271bd3295e3fd54f54b828ae9564b942612afa97",
+        "sourceNumber": 1,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the mass of 0.50 mol of carbon dioxide, CO₂?",
+        "choices": [
+          "11 g",
+          "22 g",
+          "44 g",
+          "88 g"
+        ],
+        "key": "6f6d56dac5d2758f26212e800d3d54737161c58dbf73a472f8b9f98f04da4565",
+        "sourceNumber": 2,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many molecules are in 0.25 mol of a molecular substance? Use Avogadro's constant 6.02 × 10²³ mol⁻¹.",
+        "choices": [
+          "1.51 × 10²²",
+          "6.02 × 10²²",
+          "1.51 × 10²³",
+          "2.41 × 10²⁴"
+        ],
+        "key": "6896c990000f5c3680c0d381d307f9c947b6efb79fe15549e7c4b8c22ebce689",
+        "sourceNumber": 3,
+        "correctIndex": 2
+      },
+      {
+        "question": "A sample contains 3.01 × 10²³ molecules. Approximately how many moles is this?",
+        "choices": [
+          "0.25 mol",
+          "0.50 mol",
+          "1.00 mol",
+          "2.00 mol"
+        ],
+        "key": "0397130ee1e47cb1ca4cd29dda992a5f8360b42bf4f49c8a9149d9af7bf16bff",
+        "sourceNumber": 4,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many formula units are present in 2.00 mol of sodium chloride? Use Avogadro's constant 6.02 × 10²³ mol⁻¹.",
+        "choices": [
+          "3.01 × 10²³",
+          "6.02 × 10²³",
+          "1.20 × 10²⁴",
+          "2.41 × 10²⁴"
+        ],
+        "key": "f0cd1defec861c5deb9b4f5d2009cd6e2fe37feb0ea811e8a9308a8e17d93631",
+        "sourceNumber": 5,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many moles are in 11 g of CO₂?",
+        "choices": [
+          "0.10 mol",
+          "0.25 mol",
+          "0.50 mol",
+          "4.00 mol"
+        ],
+        "key": "e561ba2c4f9d518a8cd83d6a4361b6ca2257e5144e9cda21b03baec36ae1656f",
+        "sourceNumber": 6,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many moles of O₂ are in 16 g of oxygen gas?",
+        "choices": [
+          "0.25 mol",
+          "0.50 mol",
+          "1.00 mol",
+          "2.00 mol"
+        ],
+        "key": "66c75a34de5faa27115cc56be4eab374dd4ac4ece8c789f0c506322d14b5015b",
+        "sourceNumber": 7,
+        "correctIndex": 1
+      },
+      {
+        "question": "At STP as defined in this set, how many moles of an ideal gas occupy 5.6 L?",
+        "choices": [
+          "0.10 mol",
+          "0.25 mol",
+          "0.50 mol",
+          "4.00 mol"
+        ],
+        "key": "f93dc089f536b0a451c0d3d55207b1bdd6a0c49ef74a1f03f32116666527b767",
+        "sourceNumber": 8,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the mass of 0.20 mol of N₂?",
+        "choices": [
+          "2.8 g",
+          "5.6 g",
+          "14 g",
+          "28 g"
+        ],
+        "key": "2c5eadc028d00bb8f2760fef4af37b46cab7d07243fed8707491b9d382694c70",
+        "sourceNumber": 9,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many molecules are in 3.00 mol of H₂? Use Avogadro's constant 6.02 × 10²³ mol⁻¹.",
+        "choices": [
+          "2.01 × 10²³",
+          "6.02 × 10²³",
+          "1.81 × 10²⁴",
+          "3.00 × 10²⁴"
+        ],
+        "key": "1783547bbf76312e75f5b561def0b9af282c4871649dfe44c110017bf568bfcb",
+        "sourceNumber": 10,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many moles of atoms are present in 1 mol of H₂O molecules?",
+        "choices": [
+          "1 mol",
+          "2 mol",
+          "3 mol",
+          "6 mol"
+        ],
+        "key": "21c4a8892ed5652635fa76e2ba5bc0ea70244959b5e750026230ee6d70133224",
+        "sourceNumber": 11,
+        "correctIndex": 2
+      },
+      {
+        "question": "Approximately how many formula units are in 0.50 mol of CaCO₃? Use Avogadro's constant 6.02 × 10²³ mol⁻¹.",
+        "choices": [
+          "1.51 × 10²³",
+          "3.01 × 10²³",
+          "6.02 × 10²³",
+          "1.20 × 10²⁴"
+        ],
+        "key": "75f73accd2ff2de44b0a1ae077c18fd716d5cfe1451de855ae2130b74d80c720",
+        "sourceNumber": 12,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the mass of 0.25 mol of CaCO₃?",
+        "choices": [
+          "10 g",
+          "25 g",
+          "50 g",
+          "100 g"
+        ],
+        "key": "4d1691f2bd4a651f0f25860cab7a718923334df399516f68efd1959b1d3ec507",
+        "sourceNumber": 13,
+        "correctIndex": 1
+      },
+      {
+        "question": "Approximately how many water molecules are in 9 g of H₂O? Use Avogadro's constant 6.02 × 10²³ mol⁻¹.",
+        "choices": [
+          "1.51 × 10²³",
+          "3.01 × 10²³",
+          "6.02 × 10²³",
+          "1.20 × 10²⁴"
+        ],
+        "key": "bbdf91d5b17b19b45b2ac9790726c93b91a828b793348f7a8733bc24dea193f7",
+        "sourceNumber": 14,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many moles of helium atoms are in 4 g of He? Use a molar mass of 4 g mol⁻¹.",
+        "choices": [
+          "0.25 mol",
+          "0.50 mol",
+          "1.00 mol",
+          "4.00 mol"
+        ],
+        "key": "bf384261e30b1ad27dd2c76bfa03d55aa612acad2c9f5cd9d21950bbe5f581b6",
+        "sourceNumber": 15,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many moles are in 14 g of N₂?",
+        "choices": [
+          "0.25 mol",
+          "0.50 mol",
+          "1.00 mol",
+          "2.00 mol"
+        ],
+        "key": "19d015f5dc2d7fd698a6bde1fc9ffc29c6eca8686fde263a61100cf050b3b76a",
+        "sourceNumber": 16,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the molar mass of NH₃?",
+        "choices": [
+          "14 g mol⁻¹",
+          "16 g mol⁻¹",
+          "17 g mol⁻¹",
+          "18 g mol⁻¹"
+        ],
+        "key": "984552640f0522bf83161f54792944922f5139d7db3a04d806b0c8b63f865bc3",
+        "sourceNumber": 17,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the molar mass of H₂SO₄?",
+        "choices": [
+          "49 g mol⁻¹",
+          "82 g mol⁻¹",
+          "98 g mol⁻¹",
+          "100 g mol⁻¹"
+        ],
+        "key": "2c2f2098e5fb53c33ee3bfe5b5814c97b52a527696411616c3150b2a6a7edd26",
+        "sourceNumber": 18,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the molar mass of Ca(OH)₂?",
+        "choices": [
+          "57 g mol⁻¹",
+          "74 g mol⁻¹",
+          "90 g mol⁻¹",
+          "114 g mol⁻¹"
+        ],
+        "key": "309f699a7a6f2271c73519e3ed007ae0e7dc4f52039b0251b6bc15d2aadcdd11",
+        "sourceNumber": 19,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the molar mass of Al₂(SO₄)₃?",
+        "choices": [
+          "246 g mol⁻¹",
+          "294 g mol⁻¹",
+          "342 g mol⁻¹",
+          "390 g mol⁻¹"
+        ],
+        "key": "5f525a0a4e902ba7b2663a201a7d266d57081f4b7a53c3203d72d620755c9426",
+        "sourceNumber": 20,
+        "correctIndex": 2
+      },
+      {
+        "question": "What percentage by mass of H₂O is oxygen?",
+        "choices": [
+          "11.1%",
+          "50.0%",
+          "88.9%",
+          "94.1%"
+        ],
+        "key": "012313a7e6b08a478620f45b14ec750e4ae3152f23d2e26a35547ed4fa9e60a0",
+        "sourceNumber": 21,
+        "correctIndex": 2
+      },
+      {
+        "question": "What percentage by mass of CO₂ is carbon?",
+        "choices": [
+          "12.0%",
+          "27.3%",
+          "50.0%",
+          "72.7%"
+        ],
+        "key": "ba9b8231c42dd5ad1e61ee018386c58fe5b30cdf06b1e0424cb8718859ee0445",
+        "sourceNumber": 22,
+        "correctIndex": 1
+      },
+      {
+        "question": "A compound contains 40.0% carbon, 6.7% hydrogen, and 53.3% oxygen by mass. What is its empirical formula?",
+        "choices": [
+          "CH₂O",
+          "C₂H₄O",
+          "CH₄O",
+          "C₂H₂O₂"
+        ],
+        "key": "9b4b62a074cd90e3c5ea2d72ae83b3d532697af071c71f17c831564ef742f7e6",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "A compound has empirical formula CH₂O and molar mass 180 g mol⁻¹. What is its molecular formula?",
+        "choices": [
+          "CH₂O",
+          "C₂H₄O₂",
+          "C₆H₁₂O₆",
+          "C₁₂H₂₄O₁₂"
+        ],
+        "key": "cb8aceeca225fdf281fd3c2abb38f422ee2c3dfcb1aaabe3e2b258ea89c24898",
+        "sourceNumber": 24,
+        "correctIndex": 2
+      },
+      {
+        "question": "A compound has empirical formula CH and molar mass 78 g mol⁻¹. What is its molecular formula?",
+        "choices": [
+          "CH",
+          "C₂H₂",
+          "C₆H₆",
+          "C₇H₇"
+        ],
+        "key": "1043ceff8c3aa0c766e3a0a33d4bbd89ec2c8ab6e050bef60d4ce81301d95985",
+        "sourceNumber": 25,
+        "correctIndex": 2
+      },
+      {
+        "question": "A compound contains 30.4% nitrogen and 69.6% oxygen by mass, and has molar mass 92 g mol⁻¹. What is its molecular formula?",
+        "choices": [
+          "NO₂",
+          "N₂O₃",
+          "N₂O₄",
+          "N₃O₆"
+        ],
+        "key": "da11b9aa85b132acc18721dbfb16146552bed0a3f49c81809689aa0f2f0dd38c",
+        "sourceNumber": 26,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 2.50 g sample of hydrated CuSO₄ is heated until 1.60 g of anhydrous CuSO₄ remains. What is the hydrate formula?",
+        "choices": [
+          "CuSO₄·2H₂O",
+          "CuSO₄·3H₂O",
+          "CuSO₄·5H₂O",
+          "CuSO₄·7H₂O"
+        ],
+        "key": "366182b8f1ca92025932c6a1c1f65bf3a947b684e1960d1356a1aa2f06cf1238",
+        "sourceNumber": 27,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the mass percentage of NaCl in a 100 g solution containing 5 g of NaCl?",
+        "choices": [
+          "0.5%",
+          "5%",
+          "20%",
+          "95%"
+        ],
+        "key": "4889144854496f53773795f85608adaf01f92063778888b5bd2d24387c9a374f",
+        "sourceNumber": 28,
+        "correctIndex": 1
+      },
+      {
+        "question": "A solution contains 10 g of solute and 90 g of solvent. What is the solute's mass percentage?",
+        "choices": [
+          "9%",
+          "10%",
+          "11.1%",
+          "90%"
+        ],
+        "key": "c4d2d250a57234c04934c6fbb3b5961f0d048fe5f6e2b078777d8ef4181b1ad4",
+        "sourceNumber": 29,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many grams of solute are needed to prepare 200 g of a 15% by-mass solution?",
+        "choices": [
+          "15 g",
+          "30 g",
+          "85 g",
+          "170 g"
+        ],
+        "key": "d51d0e2d957dd6e2953a55ffa9e87dd3a8447783edec080a144e84871731babf",
+        "sourceNumber": 30,
+        "correctIndex": 1
+      },
+      {
+        "question": "What coefficients balance H₂ + O₂ → H₂O, in the order H₂, O₂, H₂O?",
+        "choices": [
+          "1, 1, 1",
+          "2, 1, 2",
+          "2, 2, 1",
+          "1, 2, 2"
+        ],
+        "key": "ef81e045d6c0d06a9d2b25890fb40e232545a0aff950de0cf0650727ecc61e7f",
+        "sourceNumber": 31,
+        "correctIndex": 1
+      },
+      {
+        "question": "What coefficients balance N₂ + H₂ → NH₃, in the order N₂, H₂, NH₃?",
+        "choices": [
+          "1, 1, 2",
+          "1, 3, 2",
+          "2, 3, 1",
+          "2, 6, 2"
+        ],
+        "key": "c476184f574984a505bbb2a3be8eb2f55a7c4f15b949159eebd2e020a7a5d97d",
+        "sourceNumber": 32,
+        "correctIndex": 1
+      },
+      {
+        "question": "What coefficients balance Fe + O₂ → Fe₂O₃, in the order Fe, O₂, Fe₂O₃?",
+        "choices": [
+          "2, 1, 1",
+          "4, 3, 2",
+          "3, 2, 1",
+          "2, 3, 2"
+        ],
+        "key": "33f4ec83bc0635ed4409cecd75106b25d7b1a0ee66df3150cdf231eba08e6d53",
+        "sourceNumber": 33,
+        "correctIndex": 1
+      },
+      {
+        "question": "What coefficients balance C₃H₈ + O₂ → CO₂ + H₂O, in that order?",
+        "choices": [
+          "1, 3, 3, 4",
+          "1, 5, 3, 4",
+          "2, 5, 6, 8",
+          "1, 4, 3, 3"
+        ],
+        "key": "0e1442e7af64bd89b2802eda38c6d72e19ec5137b6c3c17ce08e0f9d4cd95c58",
+        "sourceNumber": 34,
+        "correctIndex": 1
+      },
+      {
+        "question": "What coefficients balance Al + HCl → AlCl₃ + H₂, in that order?",
+        "choices": [
+          "1, 3, 1, 1",
+          "2, 6, 2, 3",
+          "2, 3, 2, 1",
+          "3, 6, 2, 2"
+        ],
+        "key": "e88d7c02fd67c3f1d9e157836f14e3441d8ffa5ce26faa9cb98f162827c790fa",
+        "sourceNumber": 35,
+        "correctIndex": 1
+      },
+      {
+        "question": "What coefficients balance KClO₃ → KCl + O₂, in that order?",
+        "choices": [
+          "1, 1, 1",
+          "2, 2, 3",
+          "2, 3, 2",
+          "3, 2, 3"
+        ],
+        "key": "1b2ffafcbcb9d3be499589a300c943abae448af4545218650f39688dbb16f2a7",
+        "sourceNumber": 36,
+        "correctIndex": 1
+      },
+      {
+        "question": "What coefficients balance Na + H₂O → NaOH + H₂, in that order?",
+        "choices": [
+          "1, 1, 1, 1",
+          "2, 2, 2, 1",
+          "2, 1, 2, 1",
+          "1, 2, 1, 2"
+        ],
+        "key": "da5299f2a1712fa4744b5bb21fa1a6887e60a59a78942061173cf8cf6d513dd8",
+        "sourceNumber": 37,
+        "correctIndex": 1
+      },
+      {
+        "question": "What coefficients balance CH₄ + O₂ → CO₂ + H₂O, in that order?",
+        "choices": [
+          "1, 1, 1, 2",
+          "1, 2, 1, 2",
+          "2, 3, 2, 4",
+          "1, 3, 1, 1"
+        ],
+        "key": "83ba5447aa84f195746d96868c8239b9466bde977b935e651648bc6bdeb2bebf",
+        "sourceNumber": 38,
+        "correctIndex": 1
+      },
+      {
+        "question": "What coefficients balance CaCO₃ → CaO + CO₂, in that order?",
+        "choices": [
+          "1, 1, 1",
+          "1, 2, 1",
+          "2, 1, 2",
+          "2, 2, 1"
+        ],
+        "key": "b32db094e1e6804482d6e49136954a2e381dcc9ab8c8d7f1592d79b782e8413d",
+        "sourceNumber": 39,
+        "correctIndex": 0
+      },
+      {
+        "question": "What coefficients balance Mg + HCl → MgCl₂ + H₂, in that order?",
+        "choices": [
+          "1, 1, 1, 1",
+          "1, 2, 1, 1",
+          "2, 1, 2, 1",
+          "2, 2, 1, 2"
+        ],
+        "key": "0dd6d85347940e68e06fd50b5cbd6341c4e9784d7fc4bb41f88c553d90bc6873",
+        "sourceNumber": 40,
+        "correctIndex": 1
+      },
+      {
+        "question": "For 2H₂ + O₂ → 2H₂O, how many moles of O₂ are required to react completely with 4 mol of H₂?",
+        "choices": [
+          "1 mol",
+          "2 mol",
+          "4 mol",
+          "8 mol"
+        ],
+        "key": "74b3e4378119f6b182f5b2f2547660583e30059b30f01865d4390d69ac096977",
+        "sourceNumber": 41,
+        "correctIndex": 1
+      },
+      {
+        "question": "For 2H₂ + O₂ → 2H₂O, how many moles of H₂O form from 3 mol of O₂ with excess H₂?",
+        "choices": [
+          "1.5 mol",
+          "3 mol",
+          "6 mol",
+          "9 mol"
+        ],
+        "key": "bc666d3be6aad0cf6f68feab6a540ee96f0b68a46576073dadb693a2b814c455",
+        "sourceNumber": 42,
+        "correctIndex": 2
+      },
+      {
+        "question": "For N₂ + 3H₂ → 2NH₃, how many moles of NH₃ form from 6 mol of H₂ with excess N₂?",
+        "choices": [
+          "2 mol",
+          "3 mol",
+          "4 mol",
+          "12 mol"
+        ],
+        "key": "c4abee536d1cbb1ea03202b08f2b6b57ce8efc50eff9226a8bee895d0078b5aa",
+        "sourceNumber": 43,
+        "correctIndex": 2
+      },
+      {
+        "question": "For 2KClO₃ → 2KCl + 3O₂, how many moles of O₂ form from 4 mol KClO₃?",
+        "choices": [
+          "3 mol",
+          "4 mol",
+          "6 mol",
+          "12 mol"
+        ],
+        "key": "98d13ffb8fc9e55d41ca4880ddd695d2533f4a3279350197ef00eb449461055a",
+        "sourceNumber": 44,
+        "correctIndex": 2
+      },
+      {
+        "question": "For 2Al + 3Cl₂ → 2AlCl₃, how many moles of AlCl₃ form from 3 mol Cl₂ with excess Al?",
+        "choices": [
+          "1 mol",
+          "2 mol",
+          "3 mol",
+          "4.5 mol"
+        ],
+        "key": "e023520c9f80e84c98c700b103508820c33fb75917ea1b54f490c05c1e6bb5c3",
+        "sourceNumber": 45,
+        "correctIndex": 1
+      },
+      {
+        "question": "When 50 g of CaCO₃ decomposes according to CaCO₃ → CaO + CO₂, what mass of CaO forms?",
+        "choices": [
+          "14 g",
+          "28 g",
+          "44 g",
+          "56 g"
+        ],
+        "key": "46abf272d26b34735f3993285a13a87b37dedf2d5524c69ac85205d1418150b4",
+        "sourceNumber": 46,
+        "correctIndex": 1
+      },
+      {
+        "question": "Magnesium burns according to 2Mg + O₂ → 2MgO. What mass of MgO forms from 10 g Mg with excess oxygen?",
+        "choices": [
+          "10 g",
+          "13.3 g",
+          "16.7 g",
+          "20 g"
+        ],
+        "key": "90d598744d2d9746fbde7710fb02700eb325a6219cc1c733d45b4c4526081380",
+        "sourceNumber": 47,
+        "correctIndex": 2
+      },
+      {
+        "question": "What mass of CO₂ forms when 12 g of carbon reacts completely with excess oxygen?",
+        "choices": [
+          "12 g",
+          "22 g",
+          "32 g",
+          "44 g"
+        ],
+        "key": "adf5a56643b35e91eadc508e3b7e3bdb4c170c6fd129837be2621f06a5fe0037",
+        "sourceNumber": 48,
+        "correctIndex": 3
+      },
+      {
+        "question": "What mass of water forms when 4 g of H₂ burns completely in excess oxygen?",
+        "choices": [
+          "18 g",
+          "32 g",
+          "36 g",
+          "40 g"
+        ],
+        "key": "23213157e322edbde11ccd889fa946e52c697426cc7facdbd210319572a8b9b6",
+        "sourceNumber": 49,
+        "correctIndex": 2
+      },
+      {
+        "question": "What mass of SO₂ forms when 32 g of sulfur burns completely in excess oxygen?",
+        "choices": [
+          "32 g",
+          "48 g",
+          "64 g",
+          "96 g"
+        ],
+        "key": "c5a037aaee1ca79525d90f1c3ad4715897075faf2045763940370292b6f0733d",
+        "sourceNumber": 50,
+        "correctIndex": 2
+      },
+      {
+        "question": "For 2CO + O₂ → 2CO₂, what mass of CO₂ forms from 5.6 L of O₂ at the stated STP with excess CO?",
+        "choices": [
+          "11 g",
+          "22 g",
+          "44 g",
+          "88 g"
+        ],
+        "key": "c1de649cf8177a1c5b2f95ebbe2914c994a7aadcdcfa1701520cd7385d93c33a",
+        "sourceNumber": 51,
+        "correctIndex": 1
+      },
+      {
+        "question": "For N₂ + 3H₂ → 2NH₃, what mass of NH₃ forms from 11.2 L of N₂ at the stated STP with excess H₂?",
+        "choices": [
+          "8.5 g",
+          "17 g",
+          "28 g",
+          "34 g"
+        ],
+        "key": "a2f5910033c42f8f8bfe27fe23bf5d4286253f82af8dc69b6ad883145eac2096",
+        "sourceNumber": 52,
+        "correctIndex": 1
+      },
+      {
+        "question": "What mass of CO₂ is produced by the complete decomposition of 20 g of CaCO₃?",
+        "choices": [
+          "4.4 g",
+          "8.8 g",
+          "11 g",
+          "20 g"
+        ],
+        "key": "e551f9b8090abb0096f30acfefb10dd9c121c3a4a9b2b2b4d4afea6d1fa9b767",
+        "sourceNumber": 53,
+        "correctIndex": 1
+      },
+      {
+        "question": "For 2H₂ + O₂ → 2H₂O, what mass of O₂ is needed to make 9 g of water?",
+        "choices": [
+          "4 g",
+          "8 g",
+          "16 g",
+          "32 g"
+        ],
+        "key": "8f0be728f135c377edce8ac115aa3f1aafedc5d801e44799db288ce08dee0aaf",
+        "sourceNumber": 54,
+        "correctIndex": 1
+      },
+      {
+        "question": "For Zn + 2HCl → ZnCl₂ + H₂, what mass of H₂ forms from 6.5 g Zn with excess HCl?",
+        "choices": [
+          "0.10 g",
+          "0.20 g",
+          "0.40 g",
+          "2.0 g"
+        ],
+        "key": "25d12cdc73626d15fa525a7823caff081b02cf16834ae3e240addcb4ad4e8ad9",
+        "sourceNumber": 55,
+        "correctIndex": 1
+      },
+      {
+        "question": "For 2Mg + O₂ → 2MgO, what mass of MgO forms from 4.8 g Mg with excess oxygen?",
+        "choices": [
+          "4.8 g",
+          "6.4 g",
+          "8.0 g",
+          "9.6 g"
+        ],
+        "key": "c3cca18f91eb336a1205765d15e862f436b8cede8e25661d11fe5800f287720f",
+        "sourceNumber": 56,
+        "correctIndex": 2
+      },
+      {
+        "question": "For N₂ + 3H₂ → 2NH₃, what mass of NH₃ forms from 14 g N₂ with excess hydrogen?",
+        "choices": [
+          "17 g",
+          "28 g",
+          "34 g",
+          "42 g"
+        ],
+        "key": "37101d06f782b3ac09ca6581c5c2f82b897388a3d1cd86a536a36daa9a679708",
+        "sourceNumber": 57,
+        "correctIndex": 2
+      },
+      {
+        "question": "What mass of CaO forms when 25 g of CaCO₃ decomposes completely?",
+        "choices": [
+          "7 g",
+          "14 g",
+          "22 g",
+          "25 g"
+        ],
+        "key": "28363094bd331c8792922eba0474b0ebd59133af919a3076f63ae41401e37892",
+        "sourceNumber": 58,
+        "correctIndex": 1
+      },
+      {
+        "question": "For CH₄ + 2O₂ → CO₂ + 2H₂O, what mass of O₂ reacts with 8 g CH₄?",
+        "choices": [
+          "16 g",
+          "32 g",
+          "64 g",
+          "128 g"
+        ],
+        "key": "147cd6acf0121ccc4ccc1a5eeb03f640723576fe48ea932f46782ee7ecd76649",
+        "sourceNumber": 59,
+        "correctIndex": 1
+      },
+      {
+        "question": "What mass of carbon is contained in 4.4 g of CO₂?",
+        "choices": [
+          "0.6 g",
+          "1.2 g",
+          "2.2 g",
+          "4.0 g"
+        ],
+        "key": "a046666a1a80afb2b7e65069ef0f60b1eb7728ffdd8dc96a9887a7e2891e8a57",
+        "sourceNumber": 60,
+        "correctIndex": 1
+      },
+      {
+        "question": "For 2H₂ + O₂ → 2H₂O, 3 mol H₂ react with 2 mol O₂. Which reactant is limiting, and how many moles of H₂O form?",
+        "choices": [
+          "H₂; 3 mol H₂O",
+          "O₂; 4 mol H₂O",
+          "H₂; 6 mol H₂O",
+          "O₂; 2 mol H₂O"
+        ],
+        "key": "847b8e07734937a5ea4905976e0baa25a0ee414d5879c610ac744a433ab545c9",
+        "sourceNumber": 61,
+        "correctIndex": 0
+      },
+      {
+        "question": "For N₂ + 3H₂ → 2NH₃, 2 mol N₂ react with 3 mol H₂. Which reactant is limiting, and how many moles of NH₃ form?",
+        "choices": [
+          "N₂; 4 mol NH₃",
+          "H₂; 2 mol NH₃",
+          "H₂; 3 mol NH₃",
+          "N₂; 2 mol NH₃"
+        ],
+        "key": "32de3848c1983ec39a5de95f391ff3cc4754fef678334554bf0c779156df06ad",
+        "sourceNumber": 62,
+        "correctIndex": 1
+      },
+      {
+        "question": "For 2Na + Cl₂ → 2NaCl, 4 mol Na react with 1 mol Cl₂. Which reactant is limiting, and how many moles of NaCl form?",
+        "choices": [
+          "Na; 2 mol NaCl",
+          "Cl₂; 2 mol NaCl",
+          "Na; 4 mol NaCl",
+          "Cl₂; 4 mol NaCl"
+        ],
+        "key": "35b16ed706c6de66f1f943ba687ee94871fedd52aa8653bd40b23fa90e51074a",
+        "sourceNumber": 63,
+        "correctIndex": 1
+      },
+      {
+        "question": "For 2Al + 3Cl₂ → 2AlCl₃, 2 mol Al react with 2 mol Cl₂. Which reactant is limiting, and how many moles of AlCl₃ form?",
+        "choices": [
+          "Al; 2 mol AlCl₃",
+          "Cl₂; 4/3 mol AlCl₃",
+          "Al; 4/3 mol AlCl₃",
+          "Cl₂; 2 mol AlCl₃"
+        ],
+        "key": "c783d736579de77566b0e9270f32c145642733b4eb952f8fdabe66344acbfcbb",
+        "sourceNumber": 64,
+        "correctIndex": 1
+      },
+      {
+        "question": "For 2CO + O₂ → 2CO₂, 4 mol CO react with 1 mol O₂. Which reactant is limiting, and how many moles of CO₂ form?",
+        "choices": [
+          "CO; 2 mol CO₂",
+          "O₂; 2 mol CO₂",
+          "CO; 4 mol CO₂",
+          "O₂; 4 mol CO₂"
+        ],
+        "key": "950b2849c9fd9cc23ea969b569ede4bc1b65ea57b7a757d5ea364c6c556ca98e",
+        "sourceNumber": 65,
+        "correctIndex": 1
+      },
+      {
+        "question": "For 2Mg + O₂ → 2MgO, 3 mol Mg react with 1 mol O₂. Which reactant is limiting, and how many moles of MgO form?",
+        "choices": [
+          "Mg; 3 mol MgO",
+          "O₂; 2 mol MgO",
+          "Mg; 2 mol MgO",
+          "O₂; 3 mol MgO"
+        ],
+        "key": "2c8d4fa74c1ac1753b3887c716a3f877e5ac7fdb2b81e3698cb39b33a62cccca",
+        "sourceNumber": 66,
+        "correctIndex": 0
+      },
+      {
+        "question": "For Ca + 2H₂O → Ca(OH)₂ + H₂, 2 mol Ca react with 3 mol H₂O. Which reactant is limiting, and how many moles of Ca(OH)₂ form?",
+        "choices": [
+          "Ca; 2 mol",
+          "H₂O; 1.5 mol",
+          "Ca; 1.5 mol",
+          "H₂O; 2 mol"
+        ],
+        "key": "42e250c2bc0f74d7178227a51bde823bd22febb3e6909d5f1d742fe583c842be",
+        "sourceNumber": 67,
+        "correctIndex": 1
+      },
+      {
+        "question": "For 2Al + 3Cl₂ → 2AlCl₃, 1 mol Al reacts with 1 mol Cl₂. Which reactant is limiting, and how many moles of AlCl₃ form?",
+        "choices": [
+          "Al; 1 mol",
+          "Cl₂; 2/3 mol",
+          "Al; 2/3 mol",
+          "Cl₂; 1 mol"
+        ],
+        "key": "82c9ea70549a3e7ddd17779a03ee98342e653bebef9243434b565e601255de64",
+        "sourceNumber": 68,
+        "correctIndex": 1
+      },
+      {
+        "question": "For N₂ + 3H₂ → 2NH₃, 5 mol N₂ react with 12 mol H₂. Which reactant is limiting, and how many moles of NH₃ form?",
+        "choices": [
+          "N₂; 10 mol",
+          "H₂; 8 mol",
+          "N₂; 8 mol",
+          "H₂; 12 mol"
+        ],
+        "key": "e1ee07592b5012fce6fa69e1cb70124f3ef2cf23a499b5e823f3f87e3df826d5",
+        "sourceNumber": 69,
+        "correctIndex": 1
+      },
+      {
+        "question": "For C + O₂ → CO₂, 2 mol C react with 3 mol O₂. Which reactant is limiting, and how many moles of CO₂ form?",
+        "choices": [
+          "C; 2 mol",
+          "O₂; 2 mol",
+          "C; 3 mol",
+          "O₂; 3 mol"
+        ],
+        "key": "b96d013823085fa3ee23e0c96735497fb7a11a65c073081780cc2b58f76f1357",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "For 2A + B → A₂B, a mixture contains 5 mol A and 2 mol B. Which reactant is limiting?",
+        "choices": [
+          "A",
+          "B",
+          "Neither; they are in exact proportions",
+          "There is not enough information"
+        ],
+        "key": "fc7e020f07d014fa8b13ffdde9998d80a7eb692d725823678ccfd66b9513aee1",
+        "sourceNumber": 71,
+        "correctIndex": 1
+      },
+      {
+        "question": "For CaCO₃ + 2HCl → CaCl₂ + CO₂ + H₂O, 0.50 mol CaCO₃ reacts with 0.40 mol HCl. Which reactant limits the reaction, and how many moles of CO₂ form?",
+        "choices": [
+          "CaCO₃; 0.50 mol",
+          "HCl; 0.20 mol",
+          "HCl; 0.40 mol",
+          "CaCO₃; 0.20 mol"
+        ],
+        "key": "702af4d55769e3604ee1568d6cdcd690b8dc3adfbb93696b249cfa89c73ac245",
+        "sourceNumber": 72,
+        "correctIndex": 1
+      },
+      {
+        "question": "For CaCO₃ + 2HCl → CaCl₂ + CO₂ + H₂O, what mass of CO₂ forms from 10 g CaCO₃ and 7.3 g HCl?",
+        "choices": [
+          "2.2 g",
+          "4.4 g",
+          "8.8 g",
+          "11 g"
+        ],
+        "key": "83b063ba8b70db4449e2d3a2e4e10ea1e7e300c5c63fbd89fcc5df001fbded68",
+        "sourceNumber": 73,
+        "correctIndex": 1
+      },
+      {
+        "question": "With excess oxygen, what is the theoretical mass of water produced from 5 mol H₂ according to 2H₂ + O₂ → 2H₂O?",
+        "choices": [
+          "45 g",
+          "90 g",
+          "180 g",
+          "360 g"
+        ],
+        "key": "2153f18c24e43a02f0e54d8661f8f8b75d74acac28d45d8cae5b21ccbc78abad",
+        "sourceNumber": 74,
+        "correctIndex": 1
+      },
+      {
+        "question": "For 2H₂ + O₂ → 2H₂O, 4 mol H₂ react with 3 mol O₂. How many moles of O₂ remain after the reaction is complete?",
+        "choices": [
+          "0 mol",
+          "1 mol",
+          "2 mol",
+          "3 mol"
+        ],
+        "key": "850d7e25ec0ba08138e5fce40c44fcd0ac4320a20223c374d6aeaf80807e369e",
+        "sourceNumber": 75,
+        "correctIndex": 1
+      },
+      {
+        "question": "A solution contains 0.50 mol of solute in 2.0 L of solution. What is its molarity?",
+        "choices": [
+          "0.10 M",
+          "0.25 M",
+          "1.0 M",
+          "4.0 M"
+        ],
+        "key": "24faaf5832ee3003f29442e4e48066c5f6a61ee2a9a9ef97718a9e8aef6a17b4",
+        "sourceNumber": 76,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the molarity of a solution made by dissolving 5.85 g NaCl to a final volume of 0.50 L?",
+        "choices": [
+          "0.10 M",
+          "0.20 M",
+          "0.50 M",
+          "2.0 M"
+        ],
+        "key": "67d5acd962dac94106e57b1d65778c3f20ae34fa8df40d3dd96e778235168120",
+        "sourceNumber": 77,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many moles of solute are in 250 mL of a 0.20 M solution?",
+        "choices": [
+          "0.005 mol",
+          "0.050 mol",
+          "0.20 mol",
+          "5.0 mol"
+        ],
+        "key": "50f2e287188cd85c4db8db223820560f6fbdfd46b236856ac4ab99d85a43aa81",
+        "sourceNumber": 78,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 100 mL sample of 2.0 M solution is diluted to a final volume of 500 mL. What is the new molarity?",
+        "choices": [
+          "0.20 M",
+          "0.40 M",
+          "1.0 M",
+          "10 M"
+        ],
+        "key": "0c2d2a29347d525275fb8565cc16db61a729c63a1fe3c71ee881c9628eb6c3eb",
+        "sourceNumber": 79,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 100 mL sample of 1.0 M solution is diluted to a final volume of 250 mL. What is the new molarity?",
+        "choices": [
+          "0.10 M",
+          "0.40 M",
+          "1.5 M",
+          "2.5 M"
+        ],
+        "key": "c57d57d291b94d47eae5dd7f536547cfa726ca2c825308bd76c4648f358f82ab",
+        "sourceNumber": 80,
+        "correctIndex": 1
+      },
+      {
+        "question": "What mass of NaCl is required to prepare 1.00 L of 0.50 M NaCl solution?",
+        "choices": [
+          "14.6 g",
+          "29.3 g",
+          "58.5 g",
+          "117 g"
+        ],
+        "key": "f9e20dd4cccb8676eeff705da52798a24749e6696595ce986cfa92366942bddc",
+        "sourceNumber": 81,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the molarity of 9.8 g H₂SO₄ in a final solution volume of 0.50 L?",
+        "choices": [
+          "0.10 M",
+          "0.20 M",
+          "0.50 M",
+          "2.0 M"
+        ],
+        "key": "862483723d5ee0ea9693c6833e866a1f4c50da23cc89ed5f5129fa02c5c4ab78",
+        "sourceNumber": 82,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the molarity of 4.0 g NaOH in a final volume of 500 mL?",
+        "choices": [
+          "0.10 M",
+          "0.20 M",
+          "0.50 M",
+          "2.0 M"
+        ],
+        "key": "aa2c8a33646c8437e3cf9308681742e0036fd6804aa228ca541ba9c227a70653",
+        "sourceNumber": 83,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many moles of HCl are present in 100 mL of 0.10 M HCl?",
+        "choices": [
+          "0.001 mol",
+          "0.010 mol",
+          "0.10 mol",
+          "1.0 mol"
+        ],
+        "key": "ab40064c04c0c34503bbc6e09ed739a42dda687860d76aa6d50965d8bf55bdf7",
+        "sourceNumber": 84,
+        "correctIndex": 1
+      },
+      {
+        "question": "What volume of 0.10 M NaOH neutralizes 100 mL of 0.10 M HCl? The reaction is HCl + NaOH → NaCl + H₂O.",
+        "choices": [
+          "10 mL",
+          "50 mL",
+          "100 mL",
+          "200 mL"
+        ],
+        "key": "b2fc8e4f9881aa1d0bf7957e781564348dfa2042fa87a41d0ba25d93be8780f1",
+        "sourceNumber": 85,
+        "correctIndex": 2
+      },
+      {
+        "question": "What volume of 0.10 M NaOH neutralizes 25 mL of 0.20 M H₂SO₄? The reaction is H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O.",
+        "choices": [
+          "25 mL",
+          "50 mL",
+          "100 mL",
+          "200 mL"
+        ],
+        "key": "8df8a7a684679ca3797495267cfeb62bf89f52b7e85785a7e6f6eb7f8994e8f1",
+        "sourceNumber": 86,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the molarity of a solution containing 18 g glucose, C₆H₁₂O₆, in a final volume of 200 mL?",
+        "choices": [
+          "0.10 M",
+          "0.25 M",
+          "0.50 M",
+          "1.0 M"
+        ],
+        "key": "12fa1bf41a537a2b07752ef7ed38f304bc71de4f7c2ffe538581698dd614dd09",
+        "sourceNumber": 87,
+        "correctIndex": 2
+      },
+      {
+        "question": "A solution contains 10 g of a solute with molar mass 50 g mol⁻¹ in a final volume of 250 mL. What is its molarity?",
+        "choices": [
+          "0.20 M",
+          "0.40 M",
+          "0.80 M",
+          "2.0 M"
+        ],
+        "key": "a30b0ae29408be78baa1597c30378c7a10f87a62701bed2739614ade30a12843",
+        "sourceNumber": 88,
+        "correctIndex": 2
+      },
+      {
+        "question": "A solution contains 0.20 mol solute in a final volume of 1.00 L. What is its molarity?",
+        "choices": [
+          "0.020 M",
+          "0.20 M",
+          "1.0 M",
+          "5.0 M"
+        ],
+        "key": "9f3880a565791f237c27a15ad6d8ac216bae6e14dce0a286d4e6f0ed5bd11e6a",
+        "sourceNumber": 89,
+        "correctIndex": 1
+      },
+      {
+        "question": "A solution has 5 g of solute in a final volume of 250 mL. What is its mass concentration in g L⁻¹?",
+        "choices": [
+          "5 g L⁻¹",
+          "12.5 g L⁻¹",
+          "20 g L⁻¹",
+          "50 g L⁻¹"
+        ],
+        "key": "e30f6a231dff300dd1013d5d43406f2a1fc21a87b49c4980b289d85e0e96c47c",
+        "sourceNumber": 90,
+        "correctIndex": 2
+      },
+      {
+        "question": "A reaction has a theoretical product yield of 10 g and an actual yield of 8 g. What is the percentage yield?",
+        "choices": [
+          "20%",
+          "80%",
+          "100%",
+          "125%"
+        ],
+        "key": "dc5c77c1342746d56c87090ce1b48049ee5ab7699b2b5c4ed00cbd7a32a9fe55",
+        "sourceNumber": 91,
+        "correctIndex": 1
+      },
+      {
+        "question": "A reaction has a theoretical yield of 24 g and an actual yield of 18 g. What is the percentage yield?",
+        "choices": [
+          "60%",
+          "75%",
+          "80%",
+          "133%"
+        ],
+        "key": "a583064a61bf87d015dafbe139ab0eef0d6ae35643618baae17fd8472f70382b",
+        "sourceNumber": 92,
+        "correctIndex": 1
+      },
+      {
+        "question": "A reaction has a theoretical yield of 40 g and a percentage yield of 75%. What is its actual yield?",
+        "choices": [
+          "10 g",
+          "25 g",
+          "30 g",
+          "53.3 g"
+        ],
+        "key": "5e4e665f5127eab5bf8570471df95722976ed1c898831cc75162836122a1387a",
+        "sourceNumber": 93,
+        "correctIndex": 2
+      },
+      {
+        "question": "At the stated STP, what volume is occupied by 0.50 mol of an ideal gas?",
+        "choices": [
+          "5.6 L",
+          "11.2 L",
+          "22.4 L",
+          "44.8 L"
+        ],
+        "key": "d1f13e53c0924118e29194b5d36bb80eee90f99f94dd3a0d622dd58ddc9d1042",
+        "sourceNumber": 94,
+        "correctIndex": 1
+      },
+      {
+        "question": "At the stated STP, how many moles of gas occupy 2.24 L?",
+        "choices": [
+          "0.010 mol",
+          "0.10 mol",
+          "1.0 mol",
+          "10 mol"
+        ],
+        "key": "82a765398a394eca95d0b5b0deeb896ff50d7d27d97b8724c663a83f8447864b",
+        "sourceNumber": 95,
+        "correctIndex": 1
+      },
+      {
+        "question": "At the stated STP, what volume does 1.00 mol of an ideal gas occupy?",
+        "choices": [
+          "2.24 L",
+          "11.2 L",
+          "22.4 L",
+          "24.0 L"
+        ],
+        "key": "f1267b19ba63b29228dfdb9fe1151068f4fe7f808f77476a6254b1e9596d13d3",
+        "sourceNumber": 96,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many moles of O₂ are in 3.2 g of oxygen gas?",
+        "choices": [
+          "0.050 mol",
+          "0.10 mol",
+          "0.20 mol",
+          "1.0 mol"
+        ],
+        "key": "a16b1d4b2ad25a0ed104ab41b2304434a5f07319a0f2acadb0d258e1b4d74484",
+        "sourceNumber": 97,
+        "correctIndex": 1
+      },
+      {
+        "question": "At the stated STP, what volume of CO₂ is produced by 4.4 g of CO₂?",
+        "choices": [
+          "1.12 L",
+          "2.24 L",
+          "4.48 L",
+          "22.4 L"
+        ],
+        "key": "61af8d73d31d3512d97385c2f1f385a03ed12f0256c8a80d847df96f6388180b",
+        "sourceNumber": 98,
+        "correctIndex": 1
+      },
+      {
+        "question": "When 5.0 g of CaCO₃ decomposes completely according to CaCO₃ → CaO + CO₂, what volume of CO₂ forms at the stated STP?",
+        "choices": [
+          "0.56 L",
+          "1.12 L",
+          "2.24 L",
+          "5.60 L"
+        ],
+        "key": "17fdf33babc4ad8e6efd3c9434dc78c866fb9e53e4a1c9a09d3054d96d0a16bb",
+        "sourceNumber": 99,
+        "correctIndex": 1
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "d0b53a57a674e551ea3872f477293d35d613a7913151c554284e8f9b71193c59",
+      "sourceQuestionNumbers": [
+        29,
+        57,
+        66,
+        2,
+        85,
+        95,
+        13,
+        75,
+        26,
+        43,
+        32,
+        49,
+        74,
+        14,
+        97,
+        37,
+        81,
+        69,
+        15,
+        53,
+        64,
+        51,
+        94,
+        28,
+        11,
+        48,
+        16,
+        27,
+        62,
+        82,
+        23,
+        3,
+        90,
+        63,
+        46,
+        19,
+        44,
+        91,
+        38,
+        70,
+        76,
+        4,
+        50,
+        20,
+        96,
+        22,
+        99,
+        42,
+        68,
+        6,
+        10,
+        83,
+        55,
+        60,
+        25,
+        12,
+        92,
+        61,
+        59,
+        24,
+        47,
+        5,
+        78,
+        93,
+        31,
+        7,
+        52,
+        30,
+        67,
+        89,
+        41,
+        39,
+        98,
+        65,
+        18,
+        84,
+        1,
+        40,
+        35,
+        79,
+        58,
+        21,
+        73,
+        87,
+        17,
+        72,
+        8,
+        88,
+        45,
+        33,
+        86,
+        56,
+        71,
+        9,
+        36,
+        77,
+        80,
+        54,
+        34
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
