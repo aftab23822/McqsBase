@@ -2197,7 +2197,11 @@
       },
       "uploadIntent": {
         "filename": "mdcat-genetics-inheritance-part-03-8fd07d43d07f7b23.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "4fa71383-a053-416a-9ffe-4d306b1c1f28",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/toVONHcI7M.mp4"
       }
     },
     {
