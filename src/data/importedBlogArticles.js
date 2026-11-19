@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "mdcat-genetics-inheritance": {
+    title: "100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+    excerpt:
+      "Practise genetics concepts for MDCAT-style biology preparation with 100 original questions on inheritance, DNA, gene expression, and genetic variation.",
+    category: "Subject Guide",
+    date: "2026-11-19",
+    readTime: "33 min",
+    content: null,
+    body: readImportedBlogBody("mdcat-genetics-inheritance")
+  },
   "nat-ie-stoichiometry": {
     title: "99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
     excerpt:
