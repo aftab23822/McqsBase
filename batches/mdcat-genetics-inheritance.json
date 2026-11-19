@@ -2460,6 +2460,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 5,
+      "directory": "part-05",
+      "sourceQuestionNumbers": [
+        8,
+        97
+      ],
+      "count": 2,
+      "durationSeconds": 67,
+      "sha256": "436db80acc7b627d505fea102615c383a6ecd9d00e934875377c91f703efbc35",
+      "manifest": {
+        "title": "100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+        "sourceTitle": "100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-19T06:58:17.079598+00:00",
+        "sourceContentHash": "9ae2b3b53153774101feee2cccf5c7ab8957eb5b52f6e4ac8048acf838c5b78b",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7906349610,
+          "sha": "447102947d4981a175957df179ece8a8890460c0",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-19T06:58:17.079598+00:00",
+          "url": "https://mcqs-base-n65tag215-as-projects-10921176.vercel.app",
+          "publisherRunId": 44475289196
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 67,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A test cross for an individual showing a dominant phenotype uses which partner genotype?",
+            "choices": [
+              "Homozygous dominant",
+              "Heterozygous",
+              "Homozygous recessive",
+              "Any genotype with a dominant allele"
+            ],
+            "correctIndex": 2,
+            "key": "816556e21d2b4e3db0a3c4ac85030ef89d6a22f2cf7424bc7564597b422413ca",
+            "sourceNumber": 8
+          },
+          {
+            "question": "A person with genotype Aa has a dominant phenotype. Which conclusion is justified under complete dominance?",
+            "choices": [
+              "The person carries one dominant and one recessive allele",
+              "The person must be homozygous dominant",
+              "The person cannot pass allele a to offspring",
+              "Every child must show the dominant phenotype"
+            ],
+            "correctIndex": 0,
+            "key": "fb39a12c3cb5ac7443347874bf00bb53ea6821e539b6e1c2d429b880d36bf8a2",
+            "sourceNumber": 97
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 19,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 19,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 20,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 21,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 22,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 27,
+            "duration": 25,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 52,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 53,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 54,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 55,
+            "duration": 7,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 62,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 5,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            8,
+            97
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MDCAT",
+          "#MedicalEntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/mdcat-genetics-inheritance-part-05-436db80acc7b627d.mp4",
+        "videoSha256": "436db80acc7b627d505fea102615c383a6ecd9d00e934875377c91f703efbc35",
+        "assetId": 766621322
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 5/5 | Q8, 97 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 8, 97\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 5/5 | Q8, 97 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 8, 97\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 5/5 | Q8, 97 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 8, 97\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 5/5 | Q8, 97 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 8, 97\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
