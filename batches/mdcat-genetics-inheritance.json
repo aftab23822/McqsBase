@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "mdcat-genetics-inheritance",
+  "createdAt": "2026-11-19T06:58:17.344761+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "mdcat-genetics-inheritance",
+    "title": "100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+    "url": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7906349610,
+      "sha": "447102947d4981a175957df179ece8a8890460c0",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-19T06:58:17.079598+00:00",
+      "url": "https://mcqs-base-n65tag215-as-projects-10921176.vercel.app",
+      "publisherRunId": 44475289196
+    },
+    "fetchedAt": "2026-11-19T06:58:17.079598+00:00",
+    "contentHash": "9ae2b3b53153774101feee2cccf5c7ab8957eb5b52f6e4ac8048acf838c5b78b",
+    "questions": [
+      {
+        "question": "Which term describes different versions of the same gene at a particular locus?",
+        "choices": [
+          "Alleles",
+          "Chromatids",
+          "Codons",
+          "Centromeres"
+        ],
+        "key": "51377c19a6d463d75b2b940983ca2242751f6603d550039805e4f949b3840e08",
+        "sourceNumber": 1,
+        "correctIndex": 0
+      },
+      {
+        "question": "An organism with two identical alleles for a gene is described as:",
+        "choices": [
+          "Homozygous",
+          "Heterozygous",
+          "Hemizygous",
+          "Polygenic"
+        ],
+        "key": "9d74d822ac3ca2321432586bdf2adfbacfc2bb86ca23d9e8c495e62f846ddd6e",
+        "sourceNumber": 2,
+        "correctIndex": 0
+      },
+      {
+        "question": "If allele A is completely dominant to allele a, which genotype is heterozygous?",
+        "choices": [
+          "AA",
+          "Aa",
+          "aa",
+          "A"
+        ],
+        "key": "125d8f41f46eca5de963edd2c3570f265c795f4e8e1fab64b0a6234a1411f59b",
+        "sourceNumber": 3,
+        "correctIndex": 0
+      },
+      {
+        "question": "For a gene with complete dominance, which genotypes show the recessive phenotype?",
+        "choices": [
+          "AA only",
+          "Aa only",
+          "AA and Aa",
+          "aa only"
+        ],
+        "key": "b2acbf488b676c3572aee693ebeecaae6e11c25ea5cf56bc853efa436c9de8ed",
+        "sourceNumber": 4,
+        "correctIndex": 0
+      },
+      {
+        "question": "A cross is written as Aa × Aa. Which gametes can each parent produce?",
+        "choices": [
+          "A only",
+          "a only",
+          "A and a",
+          "AA and aa"
+        ],
+        "key": "a3cd754c75260e243f7460f70a657a4150ad6559f889822b6fb104e9b5326143",
+        "sourceNumber": 5,
+        "correctIndex": 2
+      },
+      {
+        "question": "In the cross Aa × Aa, what fraction of offspring is expected to be aa?",
+        "choices": [
+          "1/4",
+          "1/2",
+          "3/4",
+          "All"
+        ],
+        "key": "50c78d0581750b5818caf0b6318cbab24c6a3ef5104a5585f78932aff589a886",
+        "sourceNumber": 6,
+        "correctIndex": 0
+      },
+      {
+        "question": "In the cross Aa × Aa with complete dominance, what fraction is expected to show the dominant phenotype?",
+        "choices": [
+          "1/4",
+          "1/2",
+          "3/4",
+          "All"
+        ],
+        "key": "3b56ab9e701a208c4e91ffbee7323a9e82e5150dc3b75a8dfaaf3e352840795a",
+        "sourceNumber": 7,
+        "correctIndex": 2
+      },
+      {
+        "question": "A test cross for an individual showing a dominant phenotype uses which partner genotype?",
+        "choices": [
+          "Homozygous dominant",
+          "Heterozygous",
+          "Homozygous recessive",
+          "Any genotype with a dominant allele"
+        ],
+        "key": "816556e21d2b4e3db0a3c4ac85030ef89d6a22f2cf7424bc7564597b422413ca",
+        "sourceNumber": 8,
+        "correctIndex": 2
+      },
+      {
+        "question": "An organism of unknown genotype with a dominant phenotype is crossed with aa. Half the offspring are recessive. What is the unknown genotype?",
+        "choices": [
+          "AA",
+          "Aa",
+          "aa",
+          "It cannot be inferred"
+        ],
+        "key": "4112246ad3cf6d961d6e09690291082b1d9ce6ae088855af23260ac974ac28ba",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a cross between Aa and aa, assuming complete dominance, what fraction of offspring is expected to show the dominant phenotype?",
+        "choices": [
+          "0",
+          "1/4",
+          "1/2",
+          "All"
+        ],
+        "key": "29d8a9c16ac0c554c63454449a54ff0417ebbd993249f4c4e73b4056e66afb53",
+        "sourceNumber": 10,
+        "correctIndex": 2
+      },
+      {
+        "question": "A plant with genotype Tt is self-crossed. If T is completely dominant, what is the expected phenotype ratio?",
+        "choices": [
+          "1 tall : 1 short",
+          "3 tall : 1 short",
+          "1 tall : 2 short",
+          "All short"
+        ],
+        "key": "9751d23a2573503104ea8daa4d4fc68e8d22719b50c17ef8771d2d328b6dcb6d",
+        "sourceNumber": 11,
+        "correctIndex": 1
+      },
+      {
+        "question": "For a monohybrid cross Aa × Aa, what is the expected genotype ratio?",
+        "choices": [
+          "1 AA : 1 aa",
+          "1 AA : 2 Aa : 1 aa",
+          "3 AA : 1 aa",
+          "1 Aa : 1 aa"
+        ],
+        "key": "3c35f2363e160382e252dd53a8afca3458707c703c8164445904269d8eed4c49",
+        "sourceNumber": 12,
+        "correctIndex": 1
+      },
+      {
+        "question": "A cross Aa × aa produces offspring. What is the probability that one offspring will be heterozygous?",
+        "choices": [
+          "1/4",
+          "1/2",
+          "3/4",
+          "1"
+        ],
+        "key": "8a9aca17dc10f3a2518d1ccab91d368434d119570db05733bf299cd6341ff632",
+        "sourceNumber": 13,
+        "correctIndex": 1
+      },
+      {
+        "question": "In a cross Aa × Aa, what is the probability that two successive offspring are both aa, assuming independent outcomes?",
+        "choices": [
+          "1/4",
+          "1/8",
+          "1/16",
+          "1/2"
+        ],
+        "key": "4c6663a7e06bff6ef92e7a9950d61e159e6a4e60b04a58e5b8aa4b9c51f9e55a",
+        "sourceNumber": 14,
+        "correctIndex": 2
+      },
+      {
+        "question": "In a cross Aa × Aa, what is the probability that two offspring are both dominant-phenotype individuals, assuming independent outcomes?",
+        "choices": [
+          "3/16",
+          "6/16",
+          "9/16",
+          "12/16"
+        ],
+        "key": "672fd42f7ddc5ca5ba42998776cc07c8bec8ebfff36a87044f1b51fdd9814430",
+        "sourceNumber": 15,
+        "correctIndex": 2
+      },
+      {
+        "question": "For two independently assorting genes, what gametes can an AaBb individual produce?",
+        "choices": [
+          "AB only",
+          "Ab and aB only",
+          "AB, Ab, aB, and ab",
+          "AA, Aa, BB, and Bb"
+        ],
+        "key": "20440de6a79b01f3f9c70251fb47081cc46e91b04f7ca0e3cf080052fe4d2bdc",
+        "sourceNumber": 16,
+        "correctIndex": 2
+      },
+      {
+        "question": "In the cross AaBb × aabb, assume the genes assort independently. What fraction of offspring is expected to be aabb?",
+        "choices": [
+          "1/16",
+          "1/8",
+          "1/4",
+          "1/2"
+        ],
+        "key": "7eda4dac2d2cb343e02ea32fc45064425e3ff771ccbafe0bae78806647049e4b",
+        "sourceNumber": 17,
+        "correctIndex": 2
+      },
+      {
+        "question": "In AaBb × AaBb, with independent assortment and complete dominance at both loci, what fraction is expected to be dominant for A and recessive for b?",
+        "choices": [
+          "1/16",
+          "3/16",
+          "4/16",
+          "9/16"
+        ],
+        "key": "606cf9b5ddb070a1724bb5e0892ebef7362796098fda69b3220d299faf87bdc2",
+        "sourceNumber": 18,
+        "correctIndex": 1
+      },
+      {
+        "question": "In AaBb × AaBb, assuming independent assortment and complete dominance, what fraction is expected to show both recessive phenotypes?",
+        "choices": [
+          "1/16",
+          "3/16",
+          "4/16",
+          "9/16"
+        ],
+        "key": "4eeafe8345982144ea799116ad2b6348ca5d1f5314dfc83bc9a41e83568dca6c",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "A cross AaBb × aabb is performed with independent assortment. What fraction of offspring is expected to show the dominant phenotype for both genes?",
+        "choices": [
+          "1/4",
+          "1/2",
+          "3/4",
+          "All"
+        ],
+        "key": "50a07b7197dcf32b1b0259f5020891043cf35cca61708d48d4beeb09ebe7e442",
+        "sourceNumber": 20,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement best describes independent assortment in a standard Mendelian model?",
+        "choices": [
+          "Alleles of one gene always stay together",
+          "Alleles of different genes assort independently when the genes are unlinked",
+          "Both alleles enter every gamete",
+          "Dominant alleles are more likely to enter gametes"
+        ],
+        "key": "764db8f364d08dee65b04847474a2987f9b7d67ca0d541ed503378653c19b0b6",
+        "sourceNumber": 21,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which cells are produced by meiosis from one diploid precursor cell, before considering later developmental changes?",
+        "choices": [
+          "Two diploid cells",
+          "Four haploid cells",
+          "Four diploid cells",
+          "One haploid cell"
+        ],
+        "key": "06825d02ded1d8cee6ddb8bef4eacefeabc2e4a16a9aa2ec86a3446c38e9607e",
+        "sourceNumber": 22,
+        "correctIndex": 1
+      },
+      {
+        "question": "A diploid species has 2n = 12 chromosomes. How many chromosomes are expected in each normal gamete?",
+        "choices": [
+          "3",
+          "6",
+          "12",
+          "24"
+        ],
+        "key": "e703cfb6ddc31ae278b6939e807fb92e088040b152e1e3fa69e6608654fcc2ea",
+        "sourceNumber": 23,
+        "correctIndex": 1
+      },
+      {
+        "question": "During which stage of meiosis do homologous chromosomes separate?",
+        "choices": [
+          "Anaphase I",
+          "Anaphase II",
+          "Metaphase II",
+          "Prophase II"
+        ],
+        "key": "9d2499c3ce1b58d35001f4674b3d5cfed6c2172b24f01fba85e5c41906bc10e6",
+        "sourceNumber": 24,
+        "correctIndex": 0
+      },
+      {
+        "question": "Crossing over between homologous chromosomes usually occurs during which stage?",
+        "choices": [
+          "Prophase I",
+          "Metaphase I",
+          "Anaphase II",
+          "Telophase II"
+        ],
+        "key": "4c1cdbf1f1ee06c597c424974cd52bd0ad578e82619bd51ec0fb0f93c3c3d347",
+        "sourceNumber": 25,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which process most directly creates new combinations of alleles on chromosomes during meiosis?",
+        "choices": [
+          "Crossing over",
+          "DNA translation",
+          "Mitosis",
+          "Cytokinesis alone"
+        ],
+        "key": "4ba8b775bae773a56ad2fcd0bbc346191ea2d51f98722ab07806b0a048290f0f",
+        "sourceNumber": 26,
+        "correctIndex": 0
+      },
+      {
+        "question": "An organism with genotype Aa forms gametes. Which principle explains why each gamete receives only one of the two alleles?",
+        "choices": [
+          "Segregation",
+          "Codominance",
+          "Translation",
+          "Linkage"
+        ],
+        "key": "7023db497e5c9ab3b43fa409cd5d0032dd2ede85fed006b0e6ce1ea9d01f7ef7",
+        "sourceNumber": 27,
+        "correctIndex": 0
+      },
+      {
+        "question": "A gene's locus is best defined as:",
+        "choices": [
+          "Its physical position on a chromosome",
+          "The shape of its protein product",
+          "The number of alleles in a population",
+          "The process of making a gamete"
+        ],
+        "key": "860cec574eb88d3e8186c881f5a42a179035b382346a9f5e850d8482528d4b91",
+        "sourceNumber": 28,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement correctly distinguishes genotype from phenotype?",
+        "choices": [
+          "Genotype is the allele combination; phenotype is an observable or measurable trait",
+          "Genotype is an organism's habitat; phenotype is its chromosome number",
+          "They mean exactly the same thing",
+          "Phenotype always reveals the complete genotype"
+        ],
+        "key": "8e619a523a3b1553a0475b2a9b43bd021abde9353048118def5ce7e744ede9fe",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "In incomplete dominance, a heterozygote typically has a phenotype:",
+        "choices": [
+          "Intermediate between the two homozygotes",
+          "Identical to both homozygotes",
+          "That is always recessive",
+          "Determined only by the father's allele"
+        ],
+        "key": "fce66fd00058ee5373a2529d81da6f1b1068dfbe4f9998460571212681028b87",
+        "sourceNumber": 30,
+        "correctIndex": 0
+      },
+      {
+        "question": "In codominance, a heterozygote typically:",
+        "choices": [
+          "Expresses both alleles distinctly",
+          "Expresses neither allele",
+          "Expresses only the recessive allele",
+          "Has an intermediate blend in every case"
+        ],
+        "key": "7104a1f1529342920560bb3ac623b76cb57b78e1e23a08d4d0c3d374d76672a6",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "The human ABO blood group is an example involving:",
+        "choices": [
+          "Multiple alleles and codominance",
+          "One allele with incomplete dominance only",
+          "Y-linked inheritance",
+          "Mitochondrial inheritance only"
+        ],
+        "key": "339724744209da5e700539e75c53b38f2ac4b76fa5b8faf4141e923f01161472",
+        "sourceNumber": 32,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which genotype produces blood group AB in the ABO system?",
+        "choices": [
+          "IAIB",
+          "IAi",
+          "IBi",
+          "ii"
+        ],
+        "key": "3565faf25f8a8cac93138139c75ef4ce7e2fa076d9b33988d7d73a27e20ae161",
+        "sourceNumber": 33,
+        "correctIndex": 0
+      },
+      {
+        "question": "A parent with genotype IAi and a parent with genotype IBi have a child. Which blood-group phenotype is possible?",
+        "choices": [
+          "AB",
+          "O only",
+          "A only",
+          "B only"
+        ],
+        "key": "a7336220d6cd37f5dabce92ff803d069411d228a4fc1b435e03279b38f02e8b8",
+        "sourceNumber": 34,
+        "correctIndex": 0
+      },
+      {
+        "question": "A parent with blood group O has genotype ii. The other parent has genotype IAIB. Which blood groups can their children have?",
+        "choices": [
+          "A or B",
+          "AB or O",
+          "A, B, AB, or O",
+          "O only"
+        ],
+        "key": "c221b30a450fa15510de23e4f1e04c9d9c228341436caeb0c2519d219bbce669",
+        "sourceNumber": 35,
+        "correctIndex": 0
+      },
+      {
+        "question": "If both parents have genotype ii for the ABO system, what blood-group phenotype is expected in their children?",
+        "choices": [
+          "A",
+          "B",
+          "AB",
+          "O"
+        ],
+        "key": "6ed22cc7aeebad4cb69a5d19ebd13a4561a41ecaa0e904c46987aed16ca11f2b",
+        "sourceNumber": 36,
+        "correctIndex": 3
+      },
+      {
+        "question": "A red-green colour-vision trait is treated as X-linked recessive. A carrier mother (XᴺXⁿ) and an unaffected father (XᴺY) have a son. What is the probability that the son is affected?",
+        "choices": [
+          "0",
+          "1/4",
+          "1/2",
+          "1"
+        ],
+        "key": "2b1d1ae909eed44b514278c43737439e58ffb6275b1bccf3ed95204c456fd83f",
+        "sourceNumber": 37,
+        "correctIndex": 2
+      },
+      {
+        "question": "For an X-linked recessive trait, an affected father and a non-carrier mother have a daughter. What is the daughter's expected status?",
+        "choices": [
+          "Affected",
+          "Carrier but typically unaffected",
+          "Unaffected and not a carrier",
+          "She cannot inherit the father's allele"
+        ],
+        "key": "6e981cb6686af8d5156fb1658007814a71b3593baef0b30728fd38b9d6fd5ce0",
+        "sourceNumber": 38,
+        "correctIndex": 1
+      },
+      {
+        "question": "For an X-linked recessive trait, an affected mother (XⁿXⁿ) and an unaffected father (XᴺY) have children. What is expected for their sons?",
+        "choices": [
+          "All affected",
+          "Half affected",
+          "All unaffected carriers",
+          "No sons can inherit the trait"
+        ],
+        "key": "a62ec40af3354b1bc57a21b443bd953800894d8cfb36ad063abdc5a4fb127716",
+        "sourceNumber": 39,
+        "correctIndex": 0
+      },
+      {
+        "question": "A father passes his X chromosome directly to which children?",
+        "choices": [
+          "All sons",
+          "All daughters",
+          "Half of sons only",
+          "Half of daughters only"
+        ],
+        "key": "0185f66fa95b6e9b6ddc0d0d5aac044a9fee98365a637f787a4beb9e65575837",
+        "sourceNumber": 40,
+        "correctIndex": 1
+      },
+      {
+        "question": "A gene located on the Y chromosome is ordinarily transmitted from an affected father to:",
+        "choices": [
+          "All sons",
+          "All daughters",
+          "Half of daughters",
+          "Children of both sexes equally"
+        ],
+        "key": "ac34e2430460a13dcab8b65fed899d058e3de55d94c4c895fc29c079959a35f3",
+        "sourceNumber": 41,
+        "correctIndex": 0
+      },
+      {
+        "question": "A trait is observed in each generation, affects males and females similarly, and an affected heterozygous parent can pass it to a child of either sex. Which pattern is most consistent with these clues?",
+        "choices": [
+          "Autosomal dominant",
+          "Y-linked",
+          "Mitochondrial",
+          "X-linked recessive only"
+        ],
+        "key": "c0f856c9699d6364eb1726b0a5d524b08dd5e857b77ccb1d725f4a8fe9f9165f",
+        "sourceNumber": 42,
+        "correctIndex": 0
+      },
+      {
+        "question": "Two unaffected parents have a child with a rare autosomal recessive trait. Under a simple single-gene model, what is the most likely genotype of each parent?",
+        "choices": [
+          "AA and AA",
+          "AA and aa",
+          "Aa and Aa",
+          "aa and aa"
+        ],
+        "key": "ee4ef694f389c0468c9f7b088536cfe01024dd0f132591f4b0e7ecfa3b7d469d",
+        "sourceNumber": 43,
+        "correctIndex": 0
+      },
+      {
+        "question": "Under a simple autosomal recessive model, what is the chance that an unaffected sibling of an affected child from two carrier parents is a carrier?",
+        "choices": [
+          "1/4",
+          "1/3",
+          "1/2",
+          "2/3"
+        ],
+        "key": "23ac591f7e59af122e33ac8af4fb4cf366b87777fdacfcb265672f5651ed6b89",
+        "sourceNumber": 44,
+        "correctIndex": 3
+      },
+      {
+        "question": "An affected individual with an autosomal recessive condition has genotype aa. If the other parent is confirmed AA, what genotypes are expected among their children?",
+        "choices": [
+          "All AA",
+          "All Aa",
+          "Half Aa and half aa",
+          "All aa"
+        ],
+        "key": "988b9a51ad61ff2fc1ecb71d1253ad63b0b5bd4a3526a9208a92c13705b81dee",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "An autosomal dominant trait is caused by allele D. A heterozygous affected parent (Dd) and an unaffected parent (dd) have a child. What is the probability the child is affected?",
+        "choices": [
+          "0",
+          "1/4",
+          "1/2",
+          "All"
+        ],
+        "key": "3870afc893625daaaf83ca37174006d7a67b2ce39e4994ad1b6d2da685f957e4",
+        "sourceNumber": 46,
+        "correctIndex": 2
+      },
+      {
+        "question": "In a typical pedigree, which observation most strongly supports mitochondrial inheritance?",
+        "choices": [
+          "Affected fathers transmit the trait to all daughters",
+          "Affected mothers can transmit the trait to children of either sex",
+          "Only males are affected",
+          "The trait skips every other generation"
+        ],
+        "key": "f384ccedbf975e9903fb7a92fa421a1df9fce065658e4f2f40b20efbbd8b6e7c",
+        "sourceNumber": 47,
+        "correctIndex": 1
+      },
+      {
+        "question": "A person has two alleles of a gene on a pair of homologous autosomes. One allele was inherited from each parent. This illustrates:",
+        "choices": [
+          "Biparental inheritance",
+          "Translation",
+          "Crossing over in every fertilization",
+          "Somatic mutation"
+        ],
+        "key": "4d034b5240b772468cb7abba73f01cb5ef591f71fb59a144a5d950dbda8f3460",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which structure is the main hereditary material in most living organisms?",
+        "choices": [
+          "DNA",
+          "Cellulose",
+          "Phospholipid",
+          "Glycogen"
+        ],
+        "key": "e5c61f81455a59e076339b4fec4a107e1f2f6b29779adbd49a50e940e52395f4",
+        "sourceNumber": 49,
+        "correctIndex": 0
+      },
+      {
+        "question": "A DNA nucleotide contains which three components?",
+        "choices": [
+          "Deoxyribose, phosphate, and a nitrogenous base",
+          "Ribose, amino acid, and phosphate",
+          "Glucose, phosphate, and fatty acid",
+          "Deoxyribose, glycerol, and amino acid"
+        ],
+        "key": "67fb436f8459a4e668c0f2f3449d34208a8951c8a7f7764dc8adf75e8467a978",
+        "sourceNumber": 50,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which base pairs with adenine in double-stranded DNA?",
+        "choices": [
+          "Thymine",
+          "Uracil",
+          "Cytosine",
+          "Guanine"
+        ],
+        "key": "f4714f4307f5b47fbe36ef2dfc63a15f93f404998419097401ee99c792fca021",
+        "sourceNumber": 51,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which base pairs with cytosine in DNA?",
+        "choices": [
+          "Adenine",
+          "Thymine",
+          "Guanine",
+          "Uracil"
+        ],
+        "key": "3b7e746b985de3bef001ec03e21d174565f0ddf33bb3347a25ca2af1ab021455",
+        "sourceNumber": 52,
+        "correctIndex": 2
+      },
+      {
+        "question": "If a double-stranded DNA molecule contains 30% adenine, what percentage is guanine?",
+        "choices": [
+          "20%",
+          "30%",
+          "40%",
+          "70%"
+        ],
+        "key": "fd2ee28572c2697f1aa0841f941433f95724d1abc7469a0687c341f1124561bb",
+        "sourceNumber": 53,
+        "correctIndex": 0
+      },
+      {
+        "question": "A DNA strand has the base sequence 5′-A G T C-3′. What is the complementary strand written antiparallel?",
+        "choices": [
+          "3′-T C A G-5′",
+          "3′-A G T C-5′",
+          "5′-T C A G-3′",
+          "5′-U C A G-3′"
+        ],
+        "key": "c98ee4700ccb13cb07aea173227c391a589b8751c5188a9689ef1fc605623d48",
+        "sourceNumber": 54,
+        "correctIndex": 0
+      },
+      {
+        "question": "In the double helix, the two DNA strands are described as antiparallel because they:",
+        "choices": [
+          "Run in opposite 5′-to-3′ directions",
+          "Contain exactly the same bases in the same order",
+          "Are made of amino acids",
+          "Never separate during replication"
+        ],
+        "key": "8b906143c5af88f3e603323dc0ae88af96bfe8b68e2113b9b4a5015c2a7743b5",
+        "sourceNumber": 55,
+        "correctIndex": 0
+      },
+      {
+        "question": "DNA replication is called semiconservative because each daughter DNA molecule contains:",
+        "choices": [
+          "One parental strand and one newly synthesized strand",
+          "Two newly synthesized strands only",
+          "Two parental strands only",
+          "One DNA strand and one RNA strand"
+        ],
+        "key": "468513cee27f9a672b57c5cd71cbed52a21ded31e2aa49c9567b200b878c2f8d",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which enzyme unwinds the DNA double helix at a replication fork?",
+        "choices": [
+          "Helicase",
+          "Ligase",
+          "RNA polymerase",
+          "Peptidase"
+        ],
+        "key": "64344eb7cbc004321f40968d6d4a990c180db1beceb3418a62700bb97f1475d3",
+        "sourceNumber": 57,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which enzyme joins adjacent DNA fragments on the lagging strand?",
+        "choices": [
+          "DNA ligase",
+          "Helicase",
+          "Amylase",
+          "Ribosomal RNA"
+        ],
+        "key": "c243b55acf4638f8307fcc7b95f7b51f38fb2626748a20aa146efdf4b54678c0",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why is one new DNA strand synthesized discontinuously during replication?",
+        "choices": [
+          "DNA polymerase synthesizes only in the 5′-to-3′ direction",
+          "The lagging strand contains uracil",
+          "The leading strand has no template",
+          "DNA ligase blocks continuous synthesis"
+        ],
+        "key": "f51a8cc97404730adb012cc1719f8bf69d4b09511c89adbad10c34b6254e81e9",
+        "sourceNumber": 59,
+        "correctIndex": 0
+      },
+      {
+        "question": "In eukaryotic cells, most nuclear DNA is packaged around proteins called:",
+        "choices": [
+          "Histones",
+          "Actins",
+          "Tubulins",
+          "Keratin filaments"
+        ],
+        "key": "d832af91af3197fdaeaa0b509e373e6c4f4bac9459b7f0fcf34ed9999ba1b537",
+        "sourceNumber": 60,
+        "correctIndex": 0
+      },
+      {
+        "question": "A chromosome replicated before cell division consists of two:",
+        "choices": [
+          "Sister chromatids joined at a centromere",
+          "Homologous chromosomes joined at a telomere",
+          "Genes joined at a codon",
+          "Nucleotides joined at an anticodon"
+        ],
+        "key": "787bd19af15c3180ecbc684d680cc7501b6cef9ef10e92465086bc65dd83aab9",
+        "sourceNumber": 61,
+        "correctIndex": 0
+      },
+      {
+        "question": "A gene is best described as:",
+        "choices": [
+          "A DNA sequence that contributes to a functional product",
+          "A complete chromosome pair",
+          "A type of lipid in a membrane",
+          "A single amino acid"
+        ],
+        "key": "1d6d288d4310226907ae297ebfce8ccc53c75e02c0f13558df65bff894376ace",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "The process of making an RNA copy from a DNA template is called:",
+        "choices": [
+          "Transcription",
+          "Translation",
+          "Replication",
+          "Crossing over"
+        ],
+        "key": "b34c995760ed7c9473b53acb5f3f803fa3d60529490116e7361ea5be346adf78",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "During transcription, which RNA base is used in place of thymine?",
+        "choices": [
+          "Uracil",
+          "Cytosine",
+          "Guanine",
+          "Adenine"
+        ],
+        "key": "6f5f3b39a6e646fd66598ab3d9f867d15bd8468827a711d2ac139678567f3a97",
+        "sourceNumber": 64,
+        "correctIndex": 0
+      },
+      {
+        "question": "A DNA template strand has the sequence 3′-T A C G G A-5′. What mRNA sequence is transcribed?",
+        "choices": [
+          "5′-A U G C C U-3′",
+          "5′-T A C G G A-3′",
+          "3′-A U G C C U-5′",
+          "5′-U A C G G A-3′"
+        ],
+        "key": "140a5cee1edf11b44251188e84986608d86c145783f3cb7b53d60dff20777221",
+        "sourceNumber": 65,
+        "correctIndex": 0
+      },
+      {
+        "question": "The usual location of transcription of a nuclear gene in a eukaryotic cell is the:",
+        "choices": [
+          "Nucleus",
+          "Ribosome",
+          "Golgi apparatus",
+          "Lysosome"
+        ],
+        "key": "2e5376b08a9f7ff11e4016d0aa846110fd37009b74b92b7b8cd4926fea63c8ca",
+        "sourceNumber": 66,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which molecule carries a codon sequence that is read during translation?",
+        "choices": [
+          "mRNA",
+          "tRNA",
+          "rRNA only",
+          "DNA polymerase"
+        ],
+        "key": "1ed392bca5c7524a142027974a840268b3e114f4dfb2c696d5ebf5d8b93b25d2",
+        "sourceNumber": 67,
+        "correctIndex": 0
+      },
+      {
+        "question": "A codon consists of how many nucleotide bases?",
+        "choices": [
+          "One",
+          "Two",
+          "Three",
+          "Four"
+        ],
+        "key": "25eca5b6efb3d95cbfa01faa9beeba5799a1539317c4a0bf6753cd4d6a6a1cf7",
+        "sourceNumber": 68,
+        "correctIndex": 2
+      },
+      {
+        "question": "Which RNA molecule brings a specific amino acid to a ribosome during translation?",
+        "choices": [
+          "tRNA",
+          "mRNA",
+          "DNA",
+          "snRNA only"
+        ],
+        "key": "70d98c41065b7dcea7c0ba6005b703fc7c8e226925089708b59283dafc2b90c4",
+        "sourceNumber": 69,
+        "correctIndex": 0
+      },
+      {
+        "question": "Where does translation occur in a eukaryotic cell?",
+        "choices": [
+          "At ribosomes",
+          "At centrioles",
+          "Inside the nucleus only",
+          "At the cell wall"
+        ],
+        "key": "acd4b9745632da82a32650323b54c43650a4ea7cfdf94413a04c827663e08422",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "A DNA coding strand has the sequence 5′-A T G G A A T A A-3′. What is the corresponding mRNA sequence?",
+        "choices": [
+          "5′-A U G G A A U A A-3′",
+          "5′-U A C C U U A U U-3′",
+          "3′-A U G G A A U A A-5′",
+          "5′-A T G G A A T A A-3′"
+        ],
+        "key": "339fafbda2de698f0aa498b08abd1d900c6deb0b0da2ec16f1d9fdbf98384320",
+        "sourceNumber": 71,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement about a stop codon is correct?",
+        "choices": [
+          "It signals termination of translation and does not specify an amino acid",
+          "It always codes for methionine",
+          "It is found only in DNA, never in mRNA",
+          "It begins DNA replication"
+        ],
+        "key": "5e708d8a8f81a6ff5b7af0a583caa09ffa445b35a232971b68d9fbae0e6511fb",
+        "sourceNumber": 72,
+        "correctIndex": 0
+      },
+      {
+        "question": "A change in one nucleotide of a gene is generally called a:",
+        "choices": [
+          "Point mutation",
+          "Karyotype",
+          "Centromere",
+          "Synapse"
+        ],
+        "key": "358e1f402c33fbde2edda6339a893086ec41e6d40de002f862982aab197723c8",
+        "sourceNumber": 73,
+        "correctIndex": 0
+      },
+      {
+        "question": "A substitution changes a codon but not the amino acid it encodes. This is a:",
+        "choices": [
+          "Silent mutation",
+          "Nonsense mutation",
+          "Frameshift mutation",
+          "Chromosome deletion"
+        ],
+        "key": "85c5a7fffc817619deb7f3faa6d56eb279bc8f04dc80ac018d73356becb4ec05",
+        "sourceNumber": 74,
+        "correctIndex": 0
+      },
+      {
+        "question": "A base substitution changes an amino-acid codon into a stop codon. What type of mutation is this?",
+        "choices": [
+          "Nonsense mutation",
+          "Silent mutation",
+          "Missense mutation",
+          "Inversion"
+        ],
+        "key": "898c2a18cb8d8fa6f91249f20f9194a41157c3725caa1f5dfe516b3c95954524",
+        "sourceNumber": 75,
+        "correctIndex": 0
+      },
+      {
+        "question": "A base substitution changes one codon so that a different amino acid is incorporated. This is a:",
+        "choices": [
+          "Missense mutation",
+          "Silent mutation",
+          "Nonsense mutation",
+          "Translocation"
+        ],
+        "key": "baec6633db90b1d9252c9388164fbc9e02bb24b6395477a64b0884ae0f1a8ada",
+        "sourceNumber": 76,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why can insertion or deletion of one nucleotide in a coding sequence have a large effect on a protein?",
+        "choices": [
+          "It can shift the reading frame of downstream codons",
+          "It always removes one whole chromosome",
+          "It changes every amino acid in the organism",
+          "It prevents DNA from pairing at every locus"
+        ],
+        "key": "dbaa2b761945dc72087d9e78cd6490e306c402f4eec0ea1a3da5658694f2312a",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "A three-base insertion within a coding sequence, away from regulatory regions, is least likely to cause which effect compared with a one-base insertion?",
+        "choices": [
+          "A frameshift of all downstream codons",
+          "Addition of one amino acid",
+          "A possible change in protein function",
+          "A change to the encoded sequence"
+        ],
+        "key": "c95c062599222b35389f9564dd5d0ec7f4c630c462bcd41b360c38dca6c58487",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "A mutation in a somatic cell is most directly expected to be passed to:",
+        "choices": [
+          "Descendants of that cell through cell division",
+          "All offspring of the organism",
+          "Only gametes",
+          "No cells in the same organism"
+        ],
+        "key": "05795cd998e33de6eb685b29ef9d7d24e064b5de1231b96fca1b5395c7f683c2",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "A mutation in a cell that contributes to a gamete may be inherited by offspring because it can be:",
+        "choices": [
+          "Present in the gamete's DNA",
+          "Automatically removed during fertilization",
+          "Transferred only through ribosomes",
+          "Converted into a dominant allele"
+        ],
+        "key": "9b2c7ffc15ae4ffedd151c543401b0c1c121de44321bfecdae736e6801172b71",
+        "sourceNumber": 80,
+        "correctIndex": 0
+      },
+      {
+        "question": "A mutation is best described as:",
+        "choices": [
+          "A change in genetic material",
+          "Any temporary change in behaviour",
+          "A normal separation of homologous chromosomes",
+          "The joining of amino acids"
+        ],
+        "key": "a61f1ac26db423f0b24e13647c5918c112827c9af7d4f8349437634628bd7fc7",
+        "sourceNumber": 81,
+        "correctIndex": 0
+      },
+      {
+        "question": "A chromosome-number change in which one chromosome is present in three copies is called:",
+        "choices": [
+          "Trisomy",
+          "Monosomy",
+          "Polyploidy",
+          "Deletion"
+        ],
+        "key": "4eba2e26b990a737c8b7c5c8a1c9773999ba7bb674381857023c326d4553aa65",
+        "sourceNumber": 82,
+        "correctIndex": 0
+      },
+      {
+        "question": "A diploid cell is missing one chromosome from a homologous pair. This condition is called:",
+        "choices": [
+          "Monosomy",
+          "Trisomy",
+          "Triploidy",
+          "Duplication"
+        ],
+        "key": "1566b4ecc46efec9ef2b16d5cd2eecbfd8e509433a3a98abbec96f3a04d30c27",
+        "sourceNumber": 83,
+        "correctIndex": 0
+      },
+      {
+        "question": "Failure of homologous chromosomes or sister chromatids to separate properly during cell division is called:",
+        "choices": [
+          "Nondisjunction",
+          "Transcription",
+          "Crossing over",
+          "Codominance"
+        ],
+        "key": "64fac599ed287f4ec591ab9bc9557b9543824a8e1b368b3c2f7c2b207e5c263b",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "An allele is recessive in a simple complete-dominance model. What does that mean?",
+        "choices": [
+          "Its phenotype is masked in a heterozygote",
+          "It is always harmful",
+          "It is less common in every population",
+          "It cannot be inherited by a child"
+        ],
+        "key": "d672f714cac0e66e14b36403f89dbaaeacfa7311e3adb2551fce7f23d7985e88",
+        "sourceNumber": 85,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement about dominant alleles is scientifically sound?",
+        "choices": [
+          "Dominance describes an allele's expression in a heterozygote, not its frequency",
+          "A dominant allele is always more common",
+          "A dominant allele is always beneficial",
+          "A dominant allele always produces a more severe trait"
+        ],
+        "key": "fc798f828b46e60281f0e7e71faaa2bc408ec94c9cd8b44fc77809262dfdd76a",
+        "sourceNumber": 86,
+        "correctIndex": 0
+      },
+      {
+        "question": "Two genes on the same chromosome are more likely to be inherited together when they are:",
+        "choices": [
+          "Close together on that chromosome",
+          "On different chromosomes",
+          "Both recessive",
+          "Expressed in different tissues"
+        ],
+        "key": "2ace3011a8e5c346da97db07a3493f0aac3272c2535c7da505982abb1def50d7",
+        "sourceNumber": 87,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the usual consequence of crossing over between two linked genes?",
+        "choices": [
+          "Some gametes carry recombinant allele combinations",
+          "Every gamete becomes genetically identical",
+          "The genes move to a different species",
+          "The chromosome number doubles"
+        ],
+        "key": "00c7ed2e09173e6ddb670c708500303ed2e3de871d0a908e63ececc5e0d0dafc",
+        "sourceNumber": 88,
+        "correctIndex": 0
+      },
+      {
+        "question": "A population contains two alleles, A and a, with frequencies p and q. Under Hardy-Weinberg conditions, which relationship holds?",
+        "choices": [
+          "p + q = 1",
+          "p − q = 1",
+          "p × q = 1",
+          "p² + q² = 1 in every case"
+        ],
+        "key": "3bda938fd2cf1209515f3eaa9634c0fc68c05856d938f8faf8374a84f9eddc36",
+        "sourceNumber": 89,
+        "correctIndex": 0
+      },
+      {
+        "question": "Under Hardy-Weinberg conditions for two alleles, which expression gives the expected frequency of heterozygotes?",
+        "choices": [
+          "2pq",
+          "p²",
+          "q²",
+          "p + q"
+        ],
+        "key": "1b7863c1e02f7016d51338fd17ae262fb3636e2308b284e41e957f3dde4784c2",
+        "sourceNumber": 90,
+        "correctIndex": 0
+      },
+      {
+        "question": "If allele a has frequency q = 0.2 in a population at Hardy-Weinberg equilibrium, what is the expected frequency of aa individuals?",
+        "choices": [
+          "0.04",
+          "0.16",
+          "0.32",
+          "0.80"
+        ],
+        "key": "109a8807ac1a6d9611a22502990d12bfdbd8dd96fa59651e01a7d55bd3df24b8",
+        "sourceNumber": 91,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a population at Hardy-Weinberg equilibrium, p = 0.7 and q = 0.3. What is the expected heterozygote frequency?",
+        "choices": [
+          "0.21",
+          "0.42",
+          "0.49",
+          "0.70"
+        ],
+        "key": "4f9fead9d1d3826fee83083ba5062c6d26cbe55668e014212c49a0e5e56ab2a9",
+        "sourceNumber": 92,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which condition is required for Hardy-Weinberg equilibrium in its basic model?",
+        "choices": [
+          "Random mating",
+          "Strong natural selection",
+          "Continuous immigration",
+          "A very small population"
+        ],
+        "key": "13b287783b3635b54cf658435efd6676cf317f12a067a98a88a047d017f6f723",
+        "sourceNumber": 93,
+        "correctIndex": 0
+      },
+      {
+        "question": "A trait influenced by many genes is described as:",
+        "choices": [
+          "Polygenic",
+          "Monogenic",
+          "Y-linked",
+          "Codominant by definition"
+        ],
+        "key": "071a0e7af507489cb4b6ce9a3e8d9ce45292468d4ea209fad2b5a5319095fb18",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which is the most accurate description of an environmental effect on phenotype?",
+        "choices": [
+          "Environment can influence how a genotype is expressed",
+          "Environment always changes the DNA sequence",
+          "Phenotype is determined only by environment",
+          "Environment replaces inherited alleles"
+        ],
+        "key": "b261459fcd3e71de82299870558c14e04f3214795a7d91196525c02e245cffe0",
+        "sourceNumber": 95,
+        "correctIndex": 0
+      },
+      {
+        "question": "Two individuals with the same genotype may show different phenotypes if:",
+        "choices": [
+          "They experience different environmental conditions",
+          "Their alleles become identical only at fertilization",
+          "Genes cannot be expressed",
+          "Their chromosomes have no DNA"
+        ],
+        "key": "cf578733085c90a9ed1827b2a8886e6a5acc7e73fabc0b724b319574d7784a4a",
+        "sourceNumber": 96,
+        "correctIndex": 0
+      },
+      {
+        "question": "A person with genotype Aa has a dominant phenotype. Which conclusion is justified under complete dominance?",
+        "choices": [
+          "The person carries one dominant and one recessive allele",
+          "The person must be homozygous dominant",
+          "The person cannot pass allele a to offspring",
+          "Every child must show the dominant phenotype"
+        ],
+        "key": "fb39a12c3cb5ac7443347874bf00bb53ea6821e539b6e1c2d429b880d36bf8a2",
+        "sourceNumber": 97,
+        "correctIndex": 0
+      },
+      {
+        "question": "A parent is heterozygous Bb and passes allele b to a child. What is the probability of passing b in any one gamete?",
+        "choices": [
+          "1/4",
+          "1/2",
+          "3/4",
+          "1"
+        ],
+        "key": "15c013fe6da3d404b37fe0e6e2afccbd40f08367ff317d3a246a1fe847eda09c",
+        "sourceNumber": 98,
+        "correctIndex": 1
+      },
+      {
+        "question": "An individual with genotype AaBb has independently assorting genes. What is the probability that one gamete carries allele a and allele B?",
+        "choices": [
+          "1/4",
+          "1/2",
+          "3/4",
+          "1"
+        ],
+        "key": "71d012a5663d5f1722ad4f00e67ef3f149e382b134571049def51bae063ac593",
+        "sourceNumber": 99,
+        "correctIndex": 0
+      },
+      {
+        "question": "For an AaBb parent with independently assorting genes, what is the probability of producing an AB gamete?",
+        "choices": [
+          "1/8",
+          "1/4",
+          "1/2",
+          "3/4"
+        ],
+        "key": "8d12233e537fc73996f0b0ac021b26f5ded2887073951c4b566969089adceeef",
+        "sourceNumber": 100,
+        "correctIndex": 1
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "446bb2eef6e30ce873e110b6267dbc7d28f34a522f8f8367dd8b0c0d77743933",
+      "sourceQuestionNumbers": [
+        40,
+        19,
+        46,
+        88,
+        63,
+        52,
+        84,
+        39,
+        11,
+        66,
+        70,
+        54,
+        8,
+        97,
+        22,
+        45,
+        77,
+        17,
+        81,
+        24,
+        25,
+        74,
+        87,
+        42,
+        7,
+        99,
+        14,
+        61,
+        58,
+        31,
+        92,
+        18,
+        49,
+        67,
+        36,
+        38,
+        50,
+        62,
+        20,
+        91,
+        69,
+        57,
+        16,
+        96,
+        35,
+        64,
+        29,
+        6,
+        44,
+        83,
+        3,
+        27,
+        85,
+        43,
+        71,
+        30,
+        41,
+        9,
+        79,
+        86,
+        100,
+        32,
+        76,
+        55,
+        12,
+        90,
+        33,
+        72,
+        13,
+        47,
+        53,
+        78,
+        34,
+        95,
+        15,
+        65,
+        48,
+        1,
+        93,
+        21,
+        56,
+        82,
+        37,
+        5,
+        68,
+        75,
+        4,
+        28,
+        51,
+        94,
+        23,
+        59,
+        98,
+        2,
+        73,
+        26,
+        60,
+        10,
+        89,
+        80
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
