@@ -1898,6 +1898,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        84,
+        39,
+        11
+      ],
+      "count": 3,
+      "durationSeconds": 87,
+      "sha256": "8fd07d43d07f7b234e34bf2721520242a248bed4368bf1d348a8be6326162114",
+      "manifest": {
+        "title": "100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+        "sourceTitle": "100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-19T06:58:17.079598+00:00",
+        "sourceContentHash": "9ae2b3b53153774101feee2cccf5c7ab8957eb5b52f6e4ac8048acf838c5b78b",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7906349610,
+          "sha": "447102947d4981a175957df179ece8a8890460c0",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-19T06:58:17.079598+00:00",
+          "url": "https://mcqs-base-n65tag215-as-projects-10921176.vercel.app",
+          "publisherRunId": 44475289196
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 87,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Failure of homologous chromosomes or sister chromatids to separate properly during cell division is called:",
+            "choices": [
+              "Nondisjunction",
+              "Transcription",
+              "Crossing over",
+              "Codominance"
+            ],
+            "correctIndex": 0,
+            "key": "64fac599ed287f4ec591ab9bc9557b9543824a8e1b368b3c2f7c2b207e5c263b",
+            "sourceNumber": 84
+          },
+          {
+            "question": "For an X-linked recessive trait, an affected mother (XⁿXⁿ) and an unaffected father (XᴺY) have children. What is expected for their sons?",
+            "choices": [
+              "All affected",
+              "Half affected",
+              "All unaffected carriers",
+              "No sons can inherit the trait"
+            ],
+            "correctIndex": 0,
+            "key": "a62ec40af3354b1bc57a21b443bd953800894d8cfb36ad063abdc5a4fb127716",
+            "sourceNumber": 39
+          },
+          {
+            "question": "A plant with genotype Tt is self-crossed. If T is completely dominant, what is the expected phenotype ratio?",
+            "choices": [
+              "1 tall : 1 short",
+              "3 tall : 1 short",
+              "1 tall : 2 short",
+              "All short"
+            ],
+            "correctIndex": 1,
+            "key": "9751d23a2573503104ea8daa4d4fc68e8d22719b50c17ef8771d2d328b6dcb6d",
+            "sourceNumber": 11
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 18,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 18,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 19,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 20,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 21,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 25,
+            "duration": 22,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 47,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 48,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 49,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 50,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 54,
+            "duration": 20,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 74,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 75,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 76,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 77,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 82,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            84,
+            39,
+            11
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MDCAT",
+          "#MedicalEntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/mdcat-genetics-inheritance-part-03-8fd07d43d07f7b23.mp4",
+        "videoSha256": "8fd07d43d07f7b234e34bf2721520242a248bed4368bf1d348a8be6326162114",
+        "assetId": 766616148
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q84, 39, 11 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 84, 39, 11\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q84, 39, 11 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 84, 39, 11\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q84, 39, 11 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 84, 39, 11\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q84, 39, 11 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 84, 39, 11\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
