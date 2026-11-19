@@ -247,36 +247,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      {/* Structured Data for SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "McqsBase",
-            "url": "https://www.mcqsbase.com",
-            "logo": "https://www.mcqsbase.com/logo.png",
-            "description": "Your premier destination for comprehensive MCQ preparation. Access thousands of practice questions, past papers, interview materials, and mock tests to excel in your competitive exams.",
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "contactType": "customer service",
-              "email": "info@mcqsbase.com"
-            },
-            "sameAs": [
-              "https://facebook.com/mcqsbase",
-              "https://twitter.com/mcqsbase",
-              "https://instagram.com/mcqsbase",
-              "https://linkedin.com/company/mcqsbase"
-            ],
-            "address": {
-              "@type": "PostalAddress",
-              "addressCountry": "Pakistan"
-            }
-          })
-        }}
-      />
+      {/* Organization structured data lives once in app/layout.js. */}
     </footer>
   );
 };

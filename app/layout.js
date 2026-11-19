@@ -68,31 +68,42 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
+            // One site-wide entity graph. Pages reference the organization by @id
+            // instead of repeating (and contradicting) its details.
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "WebSite",
-              "name": "McqsBase.com",
-              "url": "https://www.mcqsbase.com",
-              "description": "Pakistan's premier platform for competitive exam preparation with MCQs, past papers, and interview materials.",
-            })
-          }}
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "McqsBase.com",
-              "url": "https://www.mcqsbase.com",
-              "logo": "https://www.mcqsbase.com/eagle.svg",
-              "description": "Pakistan's premier platform for competitive exam preparation with MCQs, past papers, and interview materials.",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "customer service",
-                "email": "contact@mcqsbase.com"
-              }
+              "@graph": [
+                {
+                  "@type": "WebSite",
+                  "@id": "https://www.mcqsbase.com/#website",
+                  "name": "McqsBase.com",
+                  "url": "https://www.mcqsbase.com",
+                  "inLanguage": "en",
+                  "description": "Pakistan's premier platform for competitive exam preparation with MCQs, past papers, and interview materials.",
+                  "publisher": { "@id": "https://www.mcqsbase.com/#organization" }
+                },
+                {
+                  "@type": "Organization",
+                  "@id": "https://www.mcqsbase.com/#organization",
+                  "name": "McqsBase.com",
+                  "alternateName": "McqsBase",
+                  "url": "https://www.mcqsbase.com",
+                  "logo": "https://www.mcqsbase.com/eagle.svg",
+                  "description": "Pakistan's premier platform for competitive exam preparation with MCQs, past papers, and interview materials.",
+                  "areaServed": "PK",
+                  "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "customer service",
+                    "email": "contact@mcqsbase.com"
+                  },
+                  "sameAs": [
+                    "https://www.facebook.com/profile.php?id=61582964920997",
+                    "https://www.instagram.com/mcqsbase",
+                    "https://www.tiktok.com/@mcqsbase",
+                    "https://www.youtube.com/@mcqsbase"
+                  ]
+                }
+              ]
             })
           }}
         />

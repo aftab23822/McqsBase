@@ -1,0 +1,24 @@
+# McqsBase.com
+
+> Free exam-preparation platform for Pakistan's competitive exams (FPSC, SPSC, PPSC, NTS, CSS, PMS, MDCAT, NAT, ETEA and others). Each question page has the question, its options, the correct answer and, where available, an explanation.
+
+McqsBase is published in English for students and job candidates in Pakistan. Content is organised by subject (MCQs), by commission and post (past papers), and as long-form practice articles (blog). Corrections follow the editorial policy linked below.
+
+## Practice content
+
+- [Subject-wise MCQs](https://www.mcqsbase.com/mcqs): MCQs grouped by subject and subtopic, each with its own question page.
+- [Past papers](https://www.mcqsbase.com/past-papers): solved past-paper questions by testing body, department and post.
+- [Practice articles](https://www.mcqsbase.com/blog): daily long-form sets of original MCQs with answers and explanations (MDCAT, NAT, NTS and more).
+- [Online quizzes](https://www.mcqsbase.com/quiz): timed subject quizzes.
+- [Mock tests](https://www.mcqsbase.com/mock-tests): full-length practice tests.
+
+## About
+
+- [About McqsBase](https://www.mcqsbase.com/about)
+- [Editorial policy and corrections](https://www.mcqsbase.com/editorial-policy)
+- [Contact](https://www.mcqsbase.com/contact)
+
+## Machine-readable indexes
+
+- [Sitemap index](https://www.mcqsbase.com/sitemap.xml): all question sitemaps plus the main sitemap.
+- [Main sitemap](https://www.mcqsbase.com/sitemap-main.xml): section pages and every practice article.
