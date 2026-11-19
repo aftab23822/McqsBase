@@ -1197,7 +1197,7 @@
       "verifiedPublications": 15
     },
     "nat-ie-stoichiometry": {
-      "status": "scheduled",
+      "status": "publication-needs-attention",
       "ledger": "batches/nat-ie-stoichiometry.json",
       "createdAt": "2026-11-18T06:57:51.112969+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
@@ -1209,8 +1209,8 @@
         "2026-11-18T19:34:00+05:00",
         "2026-11-18T21:59:00+05:00"
       ],
-      "published": 0,
-      "verifiedPublications": 0
+      "published": 19,
+      "verifiedPublications": 14
     },
     "mdcat-genetics-inheritance": {
       "status": "ready",
