@@ -2179,6 +2179,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 4,
+      "directory": "part-04",
+      "sourceQuestionNumbers": [
+        66,
+        70,
+        54
+      ],
+      "count": 3,
+      "durationSeconds": 79,
+      "sha256": "4e01c1bdc449b8d1ad5718f320f5d497fc659216c47cda006620cfdd53af5e51",
+      "manifest": {
+        "title": "100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+        "sourceTitle": "100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-19T06:58:17.079598+00:00",
+        "sourceContentHash": "9ae2b3b53153774101feee2cccf5c7ab8957eb5b52f6e4ac8048acf838c5b78b",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7906349610,
+          "sha": "447102947d4981a175957df179ece8a8890460c0",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-19T06:58:17.079598+00:00",
+          "url": "https://mcqs-base-n65tag215-as-projects-10921176.vercel.app",
+          "publisherRunId": 44475289196
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 79,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "The usual location of transcription of a nuclear gene in a eukaryotic cell is the:",
+            "choices": [
+              "Nucleus",
+              "Ribosome",
+              "Golgi apparatus",
+              "Lysosome"
+            ],
+            "correctIndex": 0,
+            "key": "2e5376b08a9f7ff11e4016d0aa846110fd37009b74b92b7b8cd4926fea63c8ca",
+            "sourceNumber": 66
+          },
+          {
+            "question": "Where does translation occur in a eukaryotic cell?",
+            "choices": [
+              "At ribosomes",
+              "At centrioles",
+              "Inside the nucleus only",
+              "At the cell wall"
+            ],
+            "correctIndex": 0,
+            "key": "acd4b9745632da82a32650323b54c43650a4ea7cfdf94413a04c827663e08422",
+            "sourceNumber": 70
+          },
+          {
+            "question": "A DNA strand has the base sequence 5′-A G T C-3′. What is the complementary strand written antiparallel?",
+            "choices": [
+              "3′-T C A G-5′",
+              "3′-A G T C-5′",
+              "5′-T C A G-3′",
+              "5′-U C A G-3′"
+            ],
+            "correctIndex": 0,
+            "key": "c98ee4700ccb13cb07aea173227c391a589b8751c5188a9689ef1fc605623d48",
+            "sourceNumber": 54
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 16,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 16,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 17,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 18,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 19,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 23,
+            "duration": 15,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 38,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 39,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 40,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 41,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 45,
+            "duration": 21,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 66,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 67,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 68,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 69,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 74,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 4,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            66,
+            70,
+            54
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MDCAT",
+          "#MedicalEntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/mdcat-genetics-inheritance-part-04-4e01c1bdc449b8d1.mp4",
+        "videoSha256": "4e01c1bdc449b8d1ad5718f320f5d497fc659216c47cda006620cfdd53af5e51",
+        "assetId": 766618583
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 4/5 | Q66, 70, 54 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 4/5 · Source questions 66, 70, 54\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 4/5 | Q66, 70, 54 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 4/5 · Source questions 66, 70, 54\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 4/5 | Q66, 70, 54 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 4/5 · Source questions 66, 70, 54\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 4/5 | Q66, 70, 54 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 4/5 · Source questions 66, 70, 54\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
