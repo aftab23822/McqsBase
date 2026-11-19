@@ -1624,7 +1624,131 @@
       "studioMedia": {
         "id": "ab06b836-eb6c-4429-b327-f4ec6190feb4",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/nPEl2Rnrdj.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 1/5 | Q40, 19, 46 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 40, 19, 46\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+              "image": [
+                {
+                  "id": "ab06b836-eb6c-4429-b327-f4ec6190feb4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/nPEl2Rnrdj.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 40, 19, 46\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+              "image": [
+                {
+                  "id": "ab06b836-eb6c-4429-b327-f4ec6190feb4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/nPEl2Rnrdj.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 1/5 | Q40, 19, 46 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 40, 19, 46\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+              "image": [
+                {
+                  "id": "ab06b836-eb6c-4429-b327-f4ec6190feb4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/nPEl2Rnrdj.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 1/5 | Q40, 19, 46 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "MDCAT",
+                "label": "MDCAT"
+              },
+              {
+                "value": "MedicalEntryTest",
+                "label": "MedicalEntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 40, 19, 46\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+              "image": [
+                {
+                  "id": "ab06b836-eb6c-4429-b327-f4ec6190feb4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/nPEl2Rnrdj.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-19T12:20:00+05:00"
     },
     {
       "part": 2,
@@ -1913,7 +2037,131 @@
       "studioMedia": {
         "id": "ecf04a37-d8c4-4ef5-afba-94b4470b2238",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/EGfjlaYdMW.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 2/5 | Q88, 63, 52 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 88, 63, 52\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+              "image": [
+                {
+                  "id": "ecf04a37-d8c4-4ef5-afba-94b4470b2238",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/EGfjlaYdMW.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 88, 63, 52\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+              "image": [
+                {
+                  "id": "ecf04a37-d8c4-4ef5-afba-94b4470b2238",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/EGfjlaYdMW.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 2/5 | Q88, 63, 52 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 88, 63, 52\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+              "image": [
+                {
+                  "id": "ecf04a37-d8c4-4ef5-afba-94b4470b2238",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/EGfjlaYdMW.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 2/5 | Q88, 63, 52 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "MDCAT",
+                "label": "MDCAT"
+              },
+              {
+                "value": "MedicalEntryTest",
+                "label": "MedicalEntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 88, 63, 52\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+              "image": [
+                {
+                  "id": "ecf04a37-d8c4-4ef5-afba-94b4470b2238",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/EGfjlaYdMW.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-19T14:45:00+05:00"
     },
     {
       "part": 3,
@@ -2202,7 +2450,131 @@
       "studioMedia": {
         "id": "4fa71383-a053-416a-9ffe-4d306b1c1f28",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/toVONHcI7M.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 3/5 | Q84, 39, 11 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 84, 39, 11\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+              "image": [
+                {
+                  "id": "4fa71383-a053-416a-9ffe-4d306b1c1f28",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/toVONHcI7M.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 84, 39, 11\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+              "image": [
+                {
+                  "id": "4fa71383-a053-416a-9ffe-4d306b1c1f28",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/toVONHcI7M.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 3/5 | Q84, 39, 11 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 84, 39, 11\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+              "image": [
+                {
+                  "id": "4fa71383-a053-416a-9ffe-4d306b1c1f28",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/toVONHcI7M.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 3/5 | Q84, 39, 11 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "MDCAT",
+                "label": "MDCAT"
+              },
+              {
+                "value": "MedicalEntryTest",
+                "label": "MedicalEntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 84, 39, 11\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+              "image": [
+                {
+                  "id": "4fa71383-a053-416a-9ffe-4d306b1c1f28",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/toVONHcI7M.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-19T17:10:00+05:00"
     },
     {
       "part": 4,
@@ -2491,7 +2863,131 @@
       "studioMedia": {
         "id": "1713a9ba-b145-406f-b8c4-ced3318db4b4",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/KM2HBHWpC0.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 4/5 | Q66, 70, 54 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 66, 70, 54\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+              "image": [
+                {
+                  "id": "1713a9ba-b145-406f-b8c4-ced3318db4b4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/KM2HBHWpC0.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 66, 70, 54\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+              "image": [
+                {
+                  "id": "1713a9ba-b145-406f-b8c4-ced3318db4b4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/KM2HBHWpC0.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 4/5 | Q66, 70, 54 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 66, 70, 54\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+              "image": [
+                {
+                  "id": "1713a9ba-b145-406f-b8c4-ced3318db4b4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/KM2HBHWpC0.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 4/5 | Q66, 70, 54 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "MDCAT",
+                "label": "MDCAT"
+              },
+              {
+                "value": "MedicalEntryTest",
+                "label": "MedicalEntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 66, 70, 54\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+              "image": [
+                {
+                  "id": "1713a9ba-b145-406f-b8c4-ced3318db4b4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/KM2HBHWpC0.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-19T19:35:00+05:00"
     },
     {
       "part": 5,
@@ -2731,7 +3227,131 @@
       "studioMedia": {
         "id": "a1b9a2cf-268a-4d92-ab95-8f96a72c3cc2",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Xw1Sk0BXID.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 5/5 | Q8, 97 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 8, 97\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+              "image": [
+                {
+                  "id": "a1b9a2cf-268a-4d92-ab95-8f96a72c3cc2",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Xw1Sk0BXID.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 8, 97\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+              "image": [
+                {
+                  "id": "a1b9a2cf-268a-4d92-ab95-8f96a72c3cc2",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Xw1Sk0BXID.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 5/5 | Q8, 97 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 8, 97\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+              "image": [
+                {
+                  "id": "a1b9a2cf-268a-4d92-ab95-8f96a72c3cc2",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Xw1Sk0BXID.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 5/5 | Q8, 97 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "MDCAT",
+                "label": "MDCAT"
+              },
+              {
+                "value": "MedicalEntryTest",
+                "label": "MedicalEntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 8, 97\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+              "image": [
+                {
+                  "id": "a1b9a2cf-268a-4d92-ab95-8f96a72c3cc2",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Xw1Sk0BXID.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-19T22:00:00+05:00"
     }
   ],
   "thinkingSeconds": 3,
@@ -2814,5 +3434,12 @@
         "sha256": "436db80acc7b627d505fea102615c383a6ecd9d00e934875377c91f703efbc35"
       }
     ]
-  }
+  },
+  "schedule": [
+    "2026-11-19T12:20:00+05:00",
+    "2026-11-19T14:45:00+05:00",
+    "2026-11-19T17:10:00+05:00",
+    "2026-11-19T19:35:00+05:00",
+    "2026-11-19T22:00:00+05:00"
+  ]
 }
