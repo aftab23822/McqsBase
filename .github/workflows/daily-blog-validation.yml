@@ -9,6 +9,7 @@ on:
       - 'scripts/blog-quality*'
       - 'scripts/published-blogs*'
       - 'scripts/*production-deployment*'
+      - 'lib/utils/blogLinks*'
   push:
     branches: [master]
     paths:
@@ -18,6 +19,7 @@ on:
       - 'scripts/blog-quality*'
       - 'scripts/published-blogs*'
       - 'scripts/*production-deployment*'
+      - 'lib/utils/blogLinks*'
 
 permissions:
   contents: read
@@ -32,6 +34,6 @@ jobs:
         with:
           node-version: 20
       - name: Test generator validation and bounded recovery without API calls
-        run: node --test scripts/blog-quality.test.mjs scripts/published-blogs.test.mjs scripts/generate-daily-blog.test.mjs
+        run: node --test scripts/blog-quality.test.mjs scripts/published-blogs.test.mjs scripts/generate-daily-blog.test.mjs lib/utils/blogLinks.test.mjs
       - name: Test the Vercel deployment safety net without network calls
         run: python3 scripts/test-ensure-production-deployment.py

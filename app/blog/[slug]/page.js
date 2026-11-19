@@ -7,6 +7,8 @@ import BlogArticleDetail from '../../../src/components/BlogArticleDetail';
 import { blogArticles } from '../../../src/data/blogArticles';
 import { getPublishedBlogBySlug } from '../../../lib/services/blogService';
 import { estimateReadTime } from '../../../lib/utils/blogContent';
+import BlogLinkList from '../../../src/components/BlogLinkList';
+import { articleLinkGroups } from '../../../lib/utils/blogLinks';
 
 export const dynamic = 'force-dynamic';
 
@@ -70,6 +72,7 @@ export default async function BlogArticlePage({ params }) {
 
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || 'your-recaptcha-site-key';
   const canonicalUrl = `${DEFAULT_BASE_URL}/blog/${slug}`;
+  const linkGroups = articleLinkGroups(blogArticles, slug);
   const publishedDate = toStructuredDate(databaseArticle?.publishedAt || article.date);
   const modifiedDate = toStructuredDate(databaseArticle?.updatedAt || article.updatedDate || databaseArticle?.publishedAt || article.date);
   const articleDescription = databaseArticle
@@ -112,6 +115,8 @@ export default async function BlogArticlePage({ params }) {
       <ReCaptchaProvider siteKey={recaptchaSiteKey}>
         <Navbar />
         <BlogArticleDetail article={article} />
+        <BlogLinkList title="Related practice articles" articles={linkGroups.related} />
+        <BlogLinkList title="Latest articles" articles={linkGroups.latest} viewAll />
         <Footer />
       </ReCaptchaProvider>
     </>
