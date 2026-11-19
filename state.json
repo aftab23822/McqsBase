@@ -1181,7 +1181,7 @@
       "verifiedPublications": 15
     },
     "mdcat-human-physiology": {
-      "status": "publication-needs-attention",
+      "status": "provider-published",
       "ledger": "batches/mdcat-human-physiology.json",
       "createdAt": "2026-11-16T05:56:16.147750+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-human-physiology",
@@ -1193,8 +1193,8 @@
         "2026-11-16T19:18:00+05:00",
         "2026-11-16T21:58:00+05:00"
       ],
-      "published": 18,
-      "verifiedPublications": 13
+      "published": 20,
+      "verifiedPublications": 15
     },
     "nat-ie-stoichiometry": {
       "status": "scheduled",
