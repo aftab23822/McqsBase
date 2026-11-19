@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "mdcat-human-physiology",
   "createdAt": "2026-11-16T05:56:16.147750+00:00",
-  "status": "publication-needs-attention",
+  "status": "provider-published",
   "package": {
     "slug": "mdcat-human-physiology",
     "title": "100 MDCAT Human Physiology MCQs with Answers and Explanations",
@@ -1741,16 +1741,16 @@
           "integrationId": "cmvwbcule0222ro9dhocbic4w"
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-16T06:02:43.385584+00:00",
           "postId": "cmwiux0bt0a9nlmauekp1xsin",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "ERROR",
+          "url": "https://www.youtube.com/watch?v=v906iWBJYso",
+          "providerUrl": "https://www.youtube.com/watch?v=v906iWBJYso",
+          "providerReleaseId": "v906iWBJYso",
+          "providerStatus": "PUBLISHED",
           "providerError": "YouTube's daily upload quota is exhausted for today, please reschedule this post for a later time.",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
           "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
           "quotaRecovery": {
             "status": "scheduled",
@@ -3010,7 +3010,7 @@
       "scheduledAt": "2026-11-16T19:18:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "ERROR",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-16T06:03:30.763009+00:00",
           "postId": "cmwiuy0wn0a9ylmau4a7ybwsg",
           "url": "https://www.facebook.com/reel/2442739126261644",
@@ -3018,9 +3018,11 @@
           "providerReleaseId": "2442739126261644",
           "providerStatus": "ERROR",
           "providerError": null,
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
-          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
+          "publicUrlVerified": true,
+          "verification": "Facebook public Reel (Part 4/5) and MCQsBase Page 61582964920997 author source comment directly verified; stale scheduler ERROR, video not republished",
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww",
+          "sourceCommentId": "1631905371264437",
+          "sourceCommentVerified": true
         },
         "instagram": {
           "status": "PUBLISHED",
