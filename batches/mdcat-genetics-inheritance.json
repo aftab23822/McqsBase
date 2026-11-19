@@ -1617,6 +1617,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 2,
+      "directory": "part-02",
+      "sourceQuestionNumbers": [
+        88,
+        63,
+        52
+      ],
+      "count": 3,
+      "durationSeconds": 80,
+      "sha256": "cc419c796fd74a92ca1e7a1b06355ef45b051de89dfb9183c085411c6e65638a",
+      "manifest": {
+        "title": "100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+        "sourceTitle": "100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-19T06:58:17.079598+00:00",
+        "sourceContentHash": "9ae2b3b53153774101feee2cccf5c7ab8957eb5b52f6e4ac8048acf838c5b78b",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7906349610,
+          "sha": "447102947d4981a175957df179ece8a8890460c0",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-19T06:58:17.079598+00:00",
+          "url": "https://mcqs-base-n65tag215-as-projects-10921176.vercel.app",
+          "publisherRunId": 44475289196
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 80,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "What is the usual consequence of crossing over between two linked genes?",
+            "choices": [
+              "Some gametes carry recombinant allele combinations",
+              "Every gamete becomes genetically identical",
+              "The genes move to a different species",
+              "The chromosome number doubles"
+            ],
+            "correctIndex": 0,
+            "key": "00c7ed2e09173e6ddb670c708500303ed2e3de871d0a908e63ececc5e0d0dafc",
+            "sourceNumber": 88
+          },
+          {
+            "question": "The process of making an RNA copy from a DNA template is called:",
+            "choices": [
+              "Transcription",
+              "Translation",
+              "Replication",
+              "Crossing over"
+            ],
+            "correctIndex": 0,
+            "key": "b34c995760ed7c9473b53acb5f3f803fa3d60529490116e7361ea5be346adf78",
+            "sourceNumber": 63
+          },
+          {
+            "question": "Which base pairs with cytosine in DNA?",
+            "choices": [
+              "Adenine",
+              "Thymine",
+              "Guanine",
+              "Uracil"
+            ],
+            "correctIndex": 2,
+            "key": "3b7e746b985de3bef001ec03e21d174565f0ddf33bb3347a25ca2af1ab021455",
+            "sourceNumber": 52
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 22,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 25,
+            "duration": 7,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 32,
+            "duration": 16,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 48,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 49,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 50,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 51,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 55,
+            "duration": 13,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 68,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 69,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 70,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 71,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 75,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 2,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            88,
+            63,
+            52
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MDCAT",
+          "#MedicalEntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/mdcat-genetics-inheritance-part-02-cc419c796fd74a92.mp4",
+        "videoSha256": "cc419c796fd74a92ca1e7a1b06355ef45b051de89dfb9183c085411c6e65638a",
+        "assetId": 766612757
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 2/5 | Q88, 63, 52 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 88, 63, 52\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 2/5 | Q88, 63, 52 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 88, 63, 52\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 2/5 | Q88, 63, 52 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 88, 63, 52\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 2/5 | Q88, 63, 52 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 88, 63, 52\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
