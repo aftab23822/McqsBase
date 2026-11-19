@@ -1336,6 +1336,288 @@
       "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
     }
   },
-  "parts": [],
+  "parts": [
+    {
+      "part": 1,
+      "directory": "part-01",
+      "sourceQuestionNumbers": [
+        40,
+        19,
+        46
+      ],
+      "count": 3,
+      "durationSeconds": 85,
+      "sha256": "c810eec81a55ab42cde19f59f57f671573cad86bfe53a9aa0fc7001031401f4f",
+      "manifest": {
+        "title": "100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+        "sourceTitle": "100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-19T06:58:17.079598+00:00",
+        "sourceContentHash": "9ae2b3b53153774101feee2cccf5c7ab8957eb5b52f6e4ac8048acf838c5b78b",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7906349610,
+          "sha": "447102947d4981a175957df179ece8a8890460c0",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-19T06:58:17.079598+00:00",
+          "url": "https://mcqs-base-n65tag215-as-projects-10921176.vercel.app",
+          "publisherRunId": 44475289196
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 85,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A father passes his X chromosome directly to which children?",
+            "choices": [
+              "All sons",
+              "All daughters",
+              "Half of sons only",
+              "Half of daughters only"
+            ],
+            "correctIndex": 1,
+            "key": "0185f66fa95b6e9b6ddc0d0d5aac044a9fee98365a637f787a4beb9e65575837",
+            "sourceNumber": 40
+          },
+          {
+            "question": "In AaBb × AaBb, assuming independent assortment and complete dominance, what fraction is expected to show both recessive phenotypes?",
+            "choices": [
+              "1/16",
+              "3/16",
+              "4/16",
+              "9/16"
+            ],
+            "correctIndex": 0,
+            "key": "4eeafe8345982144ea799116ad2b6348ca5d1f5314dfc83bc9a41e83568dca6c",
+            "sourceNumber": 19
+          },
+          {
+            "question": "An autosomal dominant trait is caused by allele D. A heterozygous affected parent (Dd) and an unaffected parent (dd) have a child. What is the probability the child is affected?",
+            "choices": [
+              "0",
+              "1/4",
+              "1/2",
+              "All"
+            ],
+            "correctIndex": 2,
+            "key": "3870afc893625daaaf83ca37174006d7a67b2ce39e4994ad1b6d2da685f957e4",
+            "sourceNumber": 46
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 15,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 15,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 16,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 17,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 18,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 22,
+            "duration": 22,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 44,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 45,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 46,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 47,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 51,
+            "duration": 22,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 73,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 74,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 75,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 76,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 80,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 1,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            40,
+            19,
+            46
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MDCAT",
+          "#MedicalEntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/mdcat-genetics-inheritance-part-01-c810eec81a55ab42.mp4",
+        "videoSha256": "c810eec81a55ab42cde19f59f57f671573cad86bfe53a9aa0fc7001031401f4f",
+        "assetId": 766610575
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 1/5 | Q40, 19, 46 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 40, 19, 46\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 1/5 | Q40, 19, 46 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 40, 19, 46\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 1/5 | Q40, 19, 46 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 40, 19, 46\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 1/5 | Q40, 19, 46 | 100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 40, 19, 46\n100 MDCAT-Style Genetics and Inheritance MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
+          "format": "short"
+        }
+      }
+    }
+  ],
   "thinkingSeconds": 3
 }
