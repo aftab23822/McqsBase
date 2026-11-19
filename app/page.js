@@ -2,6 +2,9 @@ import Navbar from '../src/components/Navbar'
 import Home from '../src/components/Home'
 import Footer from '../src/components/Footer'
 import { ReCaptchaProvider } from '../src/components/recaptcha'
+import BlogLinkList from '../src/components/BlogLinkList'
+import { blogArticles } from '../src/data/blogArticles'
+import { latestArticles } from '../lib/utils/blogLinks'
 
 export const metadata = { alternates: { canonical: 'https://www.mcqsbase.com/' } };
 
@@ -13,6 +16,8 @@ export default function HomePage() {
     <ReCaptchaProvider siteKey={recaptchaSiteKey}>
       <Navbar />
       <Home />
+      {/* Every daily article is a new deploy, so this list stays current. */}
+      <BlogLinkList title="Latest practice articles" articles={latestArticles(blogArticles, { limit: 8 })} viewAll />
       <Footer />
     </ReCaptchaProvider>
   )
