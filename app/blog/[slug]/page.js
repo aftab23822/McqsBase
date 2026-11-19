@@ -92,25 +92,31 @@ export default async function BlogArticlePage({ params }) {
     image: `${DEFAULT_BASE_URL}/eagle.svg`,
     datePublished: publishedDate,
     dateModified: modifiedDate || publishedDate,
+    inLanguage: 'en',
+    articleSection: article.category || undefined,
     author: {
       '@type': 'Organization',
-      name: article.author || 'McqsBase Team'
+      name: article.author || 'McqsBase Team',
+      url: `${DEFAULT_BASE_URL}/editorial-policy`
     },
-    publisher: {
-      '@type': 'Organization',
-      name: 'McqsBase.com',
-      logo: {
-        '@type': 'ImageObject',
-        url: `${DEFAULT_BASE_URL}/eagle.svg`
-      }
-    }
+    // The site-wide Organization entity is defined once in app/layout.js.
+    publisher: { '@id': `${DEFAULT_BASE_URL}/#organization` }
+  };
+  const breadcrumbStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${DEFAULT_BASE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${DEFAULT_BASE_URL}/blog` },
+      { '@type': 'ListItem', position: 3, name: article.title, item: canonicalUrl }
+    ]
   };
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogStructuredData) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([blogStructuredData, breadcrumbStructuredData]) }}
       />
       <ReCaptchaProvider siteKey={recaptchaSiteKey}>
         <Navbar />

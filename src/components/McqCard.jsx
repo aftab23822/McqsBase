@@ -33,11 +33,14 @@ const McqCard = ({
     <div className="bg-white shadow-md rounded-lg p-4 space-y-4 w-full mx-auto border border-gray-100">
       
       {/* Question */}
-      <div className="bg-blue-50 rounded-lg p-3 border-l-4 border-blue-500">
-        <QuestionHeading className="text-base font-semibold text-gray-800 leading-relaxed">
-          <span className="inline-flex items-center justify-center w-10 h-6 bg-blue-500 text-white rounded-full text-xs font-bold mr-2">
+      <div className="bg-blue-50 rounded-lg p-3 border-l-4 border-blue-500 flex items-start">
+        {/* The number badge stays outside the heading so the heading text is only the question. */}
+        {questionNumber != null && (
+          <span aria-hidden="true" className="inline-flex shrink-0 items-center justify-center w-10 h-6 bg-blue-500 text-white rounded-full text-xs font-bold mr-2 mt-0.5">
             {questionNumber}
           </span>
+        )}
+        <QuestionHeading className="text-base font-semibold text-gray-800 leading-relaxed">
           {question}
         </QuestionHeading>
       </div>

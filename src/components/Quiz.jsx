@@ -65,7 +65,20 @@ const Quiz = () => {
 
   return (
     <>
-      {/* SEO handled by metadata API */}
+      {/* Metadata comes from app/quiz/page.js; this page's own heading and item list are rendered here. */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <section className="bg-gray-100 px-4 pt-8">
+        <div className="max-w-screen-xl mx-auto">
+          <h1 className="text-3xl font-bold text-gray-900">Online Quiz Practice for Pakistan Competitive Exams</h1>
+          <p className="mt-2 text-gray-600 max-w-3xl">
+            Timed, subject-wise quizzes for FPSC, SPSC, PPSC, NTS and other exams. Answer each question, then check the
+            correct answer to improve speed and accuracy.
+          </p>
+        </div>
+      </section>
       <EverydayScienceQuiz />
     </>
   );

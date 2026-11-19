@@ -701,10 +701,7 @@ async function generateStructuredData(question, category, subject, subjectPath) 
       },
       url: questionUrl,
       dateCreated: question.createdAt,
-      author: {
-        '@type': 'Organization',
-        name: 'McqsBase.com'
-      }
+      author: { '@id': `${baseUrl}/#organization` }
     },
     breadcrumb: {
       '@type': 'BreadcrumbList',
