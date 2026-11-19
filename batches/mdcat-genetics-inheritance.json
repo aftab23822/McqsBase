@@ -2723,6 +2723,10 @@
           "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-genetics-inheritance",
           "format": "short"
         }
+      },
+      "uploadIntent": {
+        "filename": "mdcat-genetics-inheritance-part-05-436db80acc7b627d.mp4",
+        "status": "uncertain"
       }
     }
   ],
