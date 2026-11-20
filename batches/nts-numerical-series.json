@@ -1895,7 +1895,11 @@
       },
       "uploadIntent": {
         "filename": "nts-numerical-series-part-02-a76bb25a9dea5d48.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "ec80173c-cf22-4860-8193-cf59d65b8004",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/clmc60qkjt.mp4"
       }
     },
     {
