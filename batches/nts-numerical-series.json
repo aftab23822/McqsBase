@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nts-numerical-series",
   "createdAt": "2026-11-20T06:48:09.325674+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "nts-numerical-series",
     "title": "99 NTS-Style Numerical Series MCQs with Explanations",
@@ -1736,7 +1736,12 @@
         }
       },
       "scheduledAt": "2026-11-20T12:08:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-20T06:52:33.997739+00:00"
+        }
+      }
     },
     {
       "part": 2,
