@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nts-numerical-series": {
+    title: "99 NTS-Style Numerical Series MCQs with Explanations",
+    excerpt:
+      "Practise 99 original number-pattern questions covering differences, ratios, alternating rules and more complex sequences, with an explanation for every answer.",
+    category: "Subject Guide",
+    date: "2026-11-20",
+    readTime: "26 min",
+    content: null,
+    body: readImportedBlogBody("nts-numerical-series")
+  },
   "mdcat-genetics-inheritance": {
     title: "100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
     excerpt:
