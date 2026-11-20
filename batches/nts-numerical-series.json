@@ -1885,6 +1885,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        32,
+        66,
+        51
+      ],
+      "count": 3,
+      "durationSeconds": 82,
+      "sha256": "d359711aee6a433f3f55509431f16a79a69215947bec101eea7cf7a7648f2788",
+      "manifest": {
+        "title": "99 NTS-Style Numerical Series MCQs with Explanations",
+        "sourceTitle": "99 NTS-Style Numerical Series MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nts-numerical-series",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-20T06:48:09.152508+00:00",
+        "sourceContentHash": "9a07cb3e6cf0c0bf1d4fa4d0df7a6724d6642321c9f7f266c06d2acb7926cb64",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7935337962,
+          "sha": "c8557ec158284d0e796ee3e9de3ad9d426dafc97",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-20T06:48:09.152508+00:00",
+          "url": "https://mcqs-base-kd4obzn2u-as-projects-10921176.vercel.app",
+          "publisherRunId": 44689627805
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 82,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "What is the next number in the sequence 96, 48, 51, 25.5, 28.5, 14.25, ...?",
+            "choices": [
+              "16.25",
+              "17.25",
+              "18.25",
+              "19.25"
+            ],
+            "correctIndex": 1,
+            "key": "28e9a4528f4b1c8905135e7f5e42d564dcd82f5b2a915c6f59dfc98f70deb2d4",
+            "sourceNumber": 32
+          },
+          {
+            "question": "What is the next number in the sequence 3, 12, 27, 48, 75, ...?",
+            "choices": [
+              "96",
+              "102",
+              "108",
+              "112"
+            ],
+            "correctIndex": 2,
+            "key": "b6790bb80b3f0733116cae0042f528d2f6e19cda97789acea7d4536972f230c6",
+            "sourceNumber": 66
+          },
+          {
+            "question": "What is the next number in the sequence 7, 10, 16, 28, 52, ...?",
+            "choices": [
+              "88",
+              "96",
+              "100",
+              "104"
+            ],
+            "correctIndex": 2,
+            "key": "3a5bd74d0f9dc90dc380cf02f9c5be2cd24613fa6cad29d160d0eae93fb3b6cc",
+            "sourceNumber": 51
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 22,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 25,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 30,
+            "duration": 17,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 47,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 48,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 49,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 50,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 54,
+            "duration": 16,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 70,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 71,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 72,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 73,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 77,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            32,
+            66,
+            51
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nts-numerical-series-part-03-d359711aee6a433f.mp4",
+        "videoSha256": "d359711aee6a433f3f55509431f16a79a69215947bec101eea7cf7a7648f2788",
+        "assetId": 770791271
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q32, 66, 51 | 99 NTS-Style Numerical Series MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 32, 66, 51\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-numerical-series",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-numerical-series",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q32, 66, 51 | 99 NTS-Style Numerical Series MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 32, 66, 51\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-numerical-series",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-numerical-series",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q32, 66, 51 | 99 NTS-Style Numerical Series MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 32, 66, 51\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-numerical-series",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-numerical-series",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q32, 66, 51 | 99 NTS-Style Numerical Series MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 32, 66, 51\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-numerical-series",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-numerical-series",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
