@@ -1234,7 +1234,13 @@
       "createdAt": "2026-11-20T06:48:09.325674+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nts-numerical-series",
       "blockedNetworks": [],
-      "scheduledAt": [],
+      "scheduledAt": [
+        "2026-11-20T12:08:00+05:00",
+        "2026-11-20T14:36:00+05:00",
+        "2026-11-20T17:04:00+05:00",
+        "2026-11-20T19:32:00+05:00",
+        "2026-11-20T22:00:00+05:00"
+      ],
       "published": 0,
       "verifiedPublications": 0
     }
