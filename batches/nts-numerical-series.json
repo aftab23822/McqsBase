@@ -1775,6 +1775,10 @@
           "publicUrlVerified": false,
           "verification": "provider-status-only",
           "integrationId": "cmvwbcule0222ro9dhocbic4w"
+        },
+        "youtube": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-20T06:52:48.242499+00:00"
         }
       }
     },
