@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nts-numerical-series",
   "createdAt": "2026-11-20T06:48:09.325674+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "nts-numerical-series",
     "title": "99 NTS-Style Numerical Series MCQs with Explanations",
@@ -2730,5 +2730,86 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "nts-numerical-series",
+    "sourceUrl": "https://www.mcqsbase.com/blog/nts-numerical-series",
+    "sourceTitle": "99 NTS-Style Numerical Series MCQs with Explanations",
+    "sourceContentHash": "9a07cb3e6cf0c0bf1d4fa4d0df7a6724d6642321c9f7f266c06d2acb7926cb64",
+    "productionDeployment": {
+      "id": 7935337962,
+      "sha": "c8557ec158284d0e796ee3e9de3ad9d426dafc97",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-20T06:48:09.152508+00:00",
+      "url": "https://mcqs-base-kd4obzn2u-as-projects-10921176.vercel.app",
+      "publisherRunId": 44689627805
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          35,
+          13,
+          76
+        ],
+        "count": 3,
+        "durationSeconds": 77,
+        "sha256": "7c66dae1bd767b37c5d1753fc6d7c986534f20fbd4dd7f2025c8186370551bcb"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          92,
+          41,
+          1
+        ],
+        "count": 3,
+        "durationSeconds": 75,
+        "sha256": "a76bb25a9dea5d48e7ddca2f5fe396092f3efe4730ea908d0bf642454ab8758c"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          32,
+          66,
+          51
+        ],
+        "count": 3,
+        "durationSeconds": 82,
+        "sha256": "d359711aee6a433f3f55509431f16a79a69215947bec101eea7cf7a7648f2788"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          96,
+          18,
+          79
+        ],
+        "count": 3,
+        "durationSeconds": 81,
+        "sha256": "8c1b85df54f72928bebcd4748eaa79feb5e3ef747ed971f440a31a15f3c210df"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          39,
+          47,
+          86
+        ],
+        "count": 3,
+        "durationSeconds": 74,
+        "sha256": "deeac6b52e441d6e3b63894d9d173ad363ec62d24802cdac049a959974b824c3"
+      }
+    ]
+  }
 }
