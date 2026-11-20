@@ -1,0 +1,1328 @@
+{
+  "version": 1,
+  "slug": "nts-numerical-series",
+  "createdAt": "2026-11-20T06:48:09.325674+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nts-numerical-series",
+    "title": "99 NTS-Style Numerical Series MCQs with Explanations",
+    "url": "https://www.mcqsbase.com/blog/nts-numerical-series",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7935337962,
+      "sha": "c8557ec158284d0e796ee3e9de3ad9d426dafc97",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-20T06:48:09.152508+00:00",
+      "url": "https://mcqs-base-kd4obzn2u-as-projects-10921176.vercel.app",
+      "publisherRunId": 44689627805
+    },
+    "fetchedAt": "2026-11-20T06:48:09.152508+00:00",
+    "contentHash": "9a07cb3e6cf0c0bf1d4fa4d0df7a6724d6642321c9f7f266c06d2acb7926cb64",
+    "questions": [
+      {
+        "question": "What is the next number in the sequence 4, 7, 10, 13, ...?",
+        "choices": [
+          "15",
+          "16",
+          "17",
+          "18"
+        ],
+        "key": "127477eae73ac9bf243f2f7cc4586523a9aacf8ce95cab6015bf84836e75b71d",
+        "sourceNumber": 1,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the next number in the sequence 31, 27, 23, 19, ...?",
+        "choices": [
+          "11",
+          "13",
+          "15",
+          "16"
+        ],
+        "key": "13417c967a93b7a55ef8a8633d54c1617d0d335d6bb74782b4464a9d1ca9231b",
+        "sourceNumber": 2,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 6, 18, 54, ...?",
+        "choices": [
+          "108",
+          "144",
+          "162",
+          "216"
+        ],
+        "key": "2b2701421757ed88da1a9793826dde9a02b8196aa33da65cd93a1eb94cdbc703",
+        "sourceNumber": 3,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 160, 80, 40, 20, ...?",
+        "choices": [
+          "5",
+          "8",
+          "10",
+          "12"
+        ],
+        "key": "55dc85da40843dcfe5ef15cfff93b30ca6c2bc43768985472880632bddcc0276",
+        "sourceNumber": 4,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 5, 10, 20, 40, ...?",
+        "choices": [
+          "60",
+          "70",
+          "75",
+          "80"
+        ],
+        "key": "08b3ff932d16576f391bb6e931966c2acdb745a3e664ee4336396ab91cb0b039",
+        "sourceNumber": 5,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the next number in the sequence 3, 8, 13, 18, ...?",
+        "choices": [
+          "21",
+          "22",
+          "23",
+          "24"
+        ],
+        "key": "e6b6e672c9a88d715cb49d795642b869d25b79f15b05094bd0b8854c48d40134",
+        "sourceNumber": 6,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 1, 4, 9, 16, ...?",
+        "choices": [
+          "20",
+          "24",
+          "25",
+          "36"
+        ],
+        "key": "54f79ff5e22bf6b9a902134473dc34e21e107dbc0b97362085e6300eeee112f6",
+        "sourceNumber": 7,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 5, 10, 17, 26, ...?",
+        "choices": [
+          "35",
+          "36",
+          "37",
+          "38"
+        ],
+        "key": "43e28ea162b148ace212a21d28c76086380a128573ec9cca349c57f436a3312a",
+        "sourceNumber": 8,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 100, 96, 88, 76, 60, ...?",
+        "choices": [
+          "36",
+          "38",
+          "40",
+          "42"
+        ],
+        "key": "f825d9399ab641982d5e2d6e8a06383e6289ebd04c229f4d9b200b1353902306",
+        "sourceNumber": 9,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 1, 2, 6, 24, 120, ...?",
+        "choices": [
+          "600",
+          "620",
+          "720",
+          "840"
+        ],
+        "key": "f50853c1f2bf67591cd22fc238db6eddd14e2fc37fe1a5f67553ddc5f61fdf55",
+        "sourceNumber": 10,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 7, 14, 12, 24, 22, 44, ...?",
+        "choices": [
+          "40",
+          "42",
+          "46",
+          "48"
+        ],
+        "key": "e7eaa45b71b2e9c792c431772a74ccf22b1c35713bad104b785d4efdabf3c9a2",
+        "sourceNumber": 11,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the next number in the sequence 2, 3, 5, 8, 12, 17, ...?",
+        "choices": [
+          "22",
+          "23",
+          "24",
+          "25"
+        ],
+        "key": "5c6c87bc7933fd5cea3daa460cfd809d4283df7ffbef9dbb90685f5d6fc2c2de",
+        "sourceNumber": 12,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the next number in the sequence 81, 27, 9, 3, ...?",
+        "choices": [
+          "0",
+          "1",
+          "2",
+          "6"
+        ],
+        "key": "412e62f5bc4dcc8a7aa7950962b8de710f1a19e17621f5d56809961155a78c9f",
+        "sourceNumber": 13,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the next number in the sequence 4, 9, 19, 39, ...?",
+        "choices": [
+          "59",
+          "69",
+          "78",
+          "79"
+        ],
+        "key": "352b2fb1003cd29bc935b8b3d86f4e93989988b526cacb1f04d773518528a793",
+        "sourceNumber": 14,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the next number in the sequence 6, 11, 21, 41, ...?",
+        "choices": [
+          "61",
+          "71",
+          "81",
+          "83"
+        ],
+        "key": "151a6e121f5dc896e7d9fa9aa291469b0518e3bfb9e1c8b28b74096f87fa1cd6",
+        "sourceNumber": 15,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 7, 17, 32, 52, ...?",
+        "choices": [
+          "72",
+          "75",
+          "77",
+          "82"
+        ],
+        "key": "39613f869e597c8606c929d059de7471e86400e355b4eca17039a61e5f566e70",
+        "sourceNumber": 16,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 50, 45, 35, 20, ...?",
+        "choices": [
+          "−5",
+          "0",
+          "5",
+          "10"
+        ],
+        "key": "2ba4656fb1bf24b5bd8f6b0aca65c223bbb18f3f08e68f6d4a8168b82b71f4e5",
+        "sourceNumber": 17,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the next number in the sequence 1, 3, 7, 15, 31, ...?",
+        "choices": [
+          "47",
+          "55",
+          "62",
+          "63"
+        ],
+        "key": "7705a986debfec2bc0665652f4bb9499ff6e0d6dcfd9b5364807df4a67518a72",
+        "sourceNumber": 18,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the next number in the sequence 9, 18, 16, 32, 30, ...?",
+        "choices": [
+          "56",
+          "58",
+          "60",
+          "62"
+        ],
+        "key": "9551d07c4af55bcd6d522159f6676485bf047d59d4946afc29938e636902515b",
+        "sourceNumber": 19,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 3, 4, 8, 17, 33, ...?",
+        "choices": [
+          "54",
+          "56",
+          "58",
+          "60"
+        ],
+        "key": "d1c76d26a518e194ac0a85495f0bf19618fade34b80a970124d153839ee9b95d",
+        "sourceNumber": 20,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 1, 8, 27, 64, ...?",
+        "choices": [
+          "100",
+          "121",
+          "125",
+          "144"
+        ],
+        "key": "8cb74d69497a9951d1831084b3b004f5c78c07dded8d10a0dab2e74de7411ad8",
+        "sourceNumber": 21,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 4, 8, 16, 32, ...?",
+        "choices": [
+          "48",
+          "56",
+          "64",
+          "72"
+        ],
+        "key": "f040b723eb5f45c36b0d4777578d954a7d7c2dedd3fb583c714d50061cfda5d3",
+        "sourceNumber": 22,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 1, 1, 2, 3, 5, 8, ...?",
+        "choices": [
+          "11",
+          "12",
+          "13",
+          "15"
+        ],
+        "key": "d424dfc5062febe319ff5f649c2d548f88d6dddcb470e50bacf798d5ba3bb102",
+        "sourceNumber": 23,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 13, 16, 22, 31, 43, ...?",
+        "choices": [
+          "55",
+          "56",
+          "58",
+          "60"
+        ],
+        "key": "c70c68ca36f196121fb686dca3ea02ba602d378f6a8c224921ae4c934a32271a",
+        "sourceNumber": 24,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 9, 28, 65, 126, ...?",
+        "choices": [
+          "180",
+          "196",
+          "216",
+          "217"
+        ],
+        "key": "f49cce22dacace17082ad599428d6bc900a9ac98b1bb3e4974f4dd39d4602f76",
+        "sourceNumber": 25,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the next number in the sequence 3, 6, 11, 18, 27, ...?",
+        "choices": [
+          "36",
+          "37",
+          "38",
+          "39"
+        ],
+        "key": "57e1a116baf3c83b05d77748b1a71d8ae509a816d6d4f08152f11f783d3275eb",
+        "sourceNumber": 26,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 64, 32, 16, 8, 4, ...?",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "6"
+        ],
+        "key": "e0cec25c06d8c735db8ad4b47001a2ebbca76178c0c62563ddcc53339a63dbec",
+        "sourceNumber": 27,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the next number in the sequence 5, 7, 11, 17, 25, ...?",
+        "choices": [
+          "31",
+          "33",
+          "35",
+          "37"
+        ],
+        "key": "e96d1cc12389cbbc1754d17f72234aee62b2fd3f49c04b2327b7d3ad60f4f48a",
+        "sourceNumber": 28,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 3, 6, 11, 18, ...?",
+        "choices": [
+          "25",
+          "26",
+          "27",
+          "28"
+        ],
+        "key": "fc1285611d583ad6c6dc5fd4e776c9958bdfe5b55223f015bd4cf50a5cf3ae52",
+        "sourceNumber": 29,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 1, 5, 14, 30, 55, ...?",
+        "choices": [
+          "81",
+          "89",
+          "91",
+          "93"
+        ],
+        "key": "34d6631d3e4ee9d9e1a844dd879aba355611b6baf467d4f63a6d8d85ce99eccb",
+        "sourceNumber": 30,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 4, 6, 12, 14, 28, 30, ...?",
+        "choices": [
+          "56",
+          "58",
+          "60",
+          "62"
+        ],
+        "key": "d4a536775fcdee7aa2f0e35b837d9f8bdef50b506a3da1f1e2625a358a13d1d9",
+        "sourceNumber": 31,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 96, 48, 51, 25.5, 28.5, 14.25, ...?",
+        "choices": [
+          "16.25",
+          "17.25",
+          "18.25",
+          "19.25"
+        ],
+        "key": "28e9a4528f4b1c8905135e7f5e42d564dcd82f5b2a915c6f59dfc98f70deb2d4",
+        "sourceNumber": 32,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the next number in the sequence 10, 13, 12, 15, 14, 17, ...?",
+        "choices": [
+          "15",
+          "16",
+          "18",
+          "19"
+        ],
+        "key": "b7ab87193799de2b0371ee8b1816326c507247b47f1aa2b6bc309cde4ed24b57",
+        "sourceNumber": 33,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the next number in the sequence 1, 4, 10, 22, 46, ...?",
+        "choices": [
+          "90",
+          "92",
+          "94",
+          "96"
+        ],
+        "key": "d7aeda165c5c4cfaadeeda4d676a87795e10a239dc544da51fe1ac196ed67362",
+        "sourceNumber": 34,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 3, 10, 21, 36, 55, ...?",
+        "choices": [
+          "74",
+          "76",
+          "78",
+          "80"
+        ],
+        "key": "b712d27fe27ed8f46b098156b43baf615ad7399d7d473a59b5e2fd36b6d96eb0",
+        "sourceNumber": 35,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 6, 12, 20, 30, ...?",
+        "choices": [
+          "40",
+          "41",
+          "42",
+          "44"
+        ],
+        "key": "b6f07bca393920e12cec6ecde523a4e840914f63b5142d0e2bc161c6c30f7b4e",
+        "sourceNumber": 36,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 1, 2, 4, 7, 11, 16, ...?",
+        "choices": [
+          "20",
+          "21",
+          "22",
+          "23"
+        ],
+        "key": "7ba367c632e13517858e720324984b850f0c0205267854274730e8cfd7c60fa7",
+        "sourceNumber": 37,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 200, 190, 170, 140, 100, ...?",
+        "choices": [
+          "40",
+          "45",
+          "50",
+          "55"
+        ],
+        "key": "09ecc93d1c95bda97b1ada10a6d8aa632eccdfb6c5ea48d95ccb8fea5a2c66c8",
+        "sourceNumber": 38,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 5, 11, 23, 47, ...?",
+        "choices": [
+          "93",
+          "94",
+          "95",
+          "96"
+        ],
+        "key": "2e7a807c7429e60d6a839e3aeb7c742ee7c49b0963d059b117d354a3ce10db19",
+        "sourceNumber": 39,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 1, 4, 13, 40, 121, ...?",
+        "choices": [
+          "242",
+          "361",
+          "363",
+          "364"
+        ],
+        "key": "c231fb75a76f18c621ebc619fb3c2eaa1bcbf6462adeb50496bf8cb4459c7fde",
+        "sourceNumber": 40,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the next number in the sequence 1, 3, 6, 10, 15, ...?",
+        "choices": [
+          "18",
+          "20",
+          "21",
+          "24"
+        ],
+        "key": "22008a079cb753409fe12508f78cf3d545743fe34cacf6049baa8b23938bac83",
+        "sourceNumber": 41,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 8, 12, 18, 26, 36, ...?",
+        "choices": [
+          "46",
+          "47",
+          "48",
+          "50"
+        ],
+        "key": "4292b76bd12a88aae7a1f971a528eea2a893cc5287b38fb062fa5750b8d6fb38",
+        "sourceNumber": 42,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 10, 30, 68, 130, ...?",
+        "choices": [
+          "180",
+          "210",
+          "216",
+          "222"
+        ],
+        "key": "f84036e721ce1a759084c5729de6eb39c5831e429b296903fc40338924ff9a20",
+        "sourceNumber": 43,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the next number in the sequence 1, 2, 5, 14, 41, ...?",
+        "choices": [
+          "82",
+          "120",
+          "122",
+          "124"
+        ],
+        "key": "dae35debc8b0906b205b6b97c5985997edd8ec8ff49eacd3825377a8f9e53514",
+        "sourceNumber": 44,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 5, 6, 8, 11, 15, ...?",
+        "choices": [
+          "19",
+          "20",
+          "21",
+          "22"
+        ],
+        "key": "d892f372490456cd0959036e5588732ca3fbfac6d3a8cb0e1d69cf839e56dcf8",
+        "sourceNumber": 45,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the next number in the sequence 3, 9, 10, 30, 31, 93, ...?",
+        "choices": [
+          "92",
+          "94",
+          "95",
+          "96"
+        ],
+        "key": "88eca038bb4bcb274a468f0ddb787796f2c97f829b0ea13c6c7d6338195aa331",
+        "sourceNumber": 46,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the next number in the sequence 1, 4, 8, 13, 19, ...?",
+        "choices": [
+          "24",
+          "25",
+          "26",
+          "27"
+        ],
+        "key": "0bab584c042240d53771513460220b2fe96d09ac0f3b7f47080ae2f34c88cf43",
+        "sourceNumber": 47,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 243, 81, 27, 9, ...?",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "6"
+        ],
+        "key": "dcd0665d649ef97e9b36357eca10f7c25330f5b2a118edb0268e57c822c4bfed",
+        "sourceNumber": 48,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 6, 18, 20, 60, 62, ...?",
+        "choices": [
+          "124",
+          "180",
+          "186",
+          "188"
+        ],
+        "key": "f46cd0423124fef9b8f0314d11b7f57a9515c0a271709d7fd922e520b1949649",
+        "sourceNumber": 49,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 4, 16, 36, 64, ...?",
+        "choices": [
+          "80",
+          "90",
+          "100",
+          "121"
+        ],
+        "key": "18684cf6062c873045680e44c6b36f2671415907b2b41e4e8d1e238417724b39",
+        "sourceNumber": 50,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 7, 10, 16, 28, 52, ...?",
+        "choices": [
+          "88",
+          "96",
+          "100",
+          "104"
+        ],
+        "key": "3a5bd74d0f9dc90dc380cf02f9c5be2cd24613fa6cad29d160d0eae93fb3b6cc",
+        "sourceNumber": 51,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 90, 81, 63, 36, ...?",
+        "choices": [
+          "0",
+          "3",
+          "9",
+          "18"
+        ],
+        "key": "5a30b8c87b9d7974236d5461f7bba5cbfe5fc2297dbd3909585d0abf1e5a0b8c",
+        "sourceNumber": 52,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the next number in the sequence 1, 3, 12, 60, 360, ...?",
+        "choices": [
+          "1800",
+          "2160",
+          "2520",
+          "2880"
+        ],
+        "key": "6af5b73cc1631d2530022eac13cca707de6cd1707eee4bbb0a265183e480668a",
+        "sourceNumber": 53,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 6, 13, 27, 55, 111, ...?",
+        "choices": [
+          "221",
+          "222",
+          "223",
+          "224"
+        ],
+        "key": "faab91bd43c9965c409d70c532482b37808c2a3e6937cdd6ec6f2f14cf569f11",
+        "sourceNumber": 54,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 4, 7, 11, 16, ...?",
+        "choices": [
+          "20",
+          "21",
+          "22",
+          "23"
+        ],
+        "key": "8cbf756ddbed166fd1c1119d3c6870603bb72ad0ee8b5d934decedde1770c279",
+        "sourceNumber": 55,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 11, 22, 21, 42, 41, ...?",
+        "choices": [
+          "80",
+          "81",
+          "82",
+          "83"
+        ],
+        "key": "b66a11caebd28315966767ba560ac4de6d8df8ddbc5e3ca4a8cbe1b8e69f3449",
+        "sourceNumber": 56,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 1, 6, 15, 28, 45, ...?",
+        "choices": [
+          "60",
+          "63",
+          "66",
+          "69"
+        ],
+        "key": "0e0e94b4f1f4217de307635e78e53047c6dc773931f363e1d294eaddb0b572d9",
+        "sourceNumber": 57,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 3, 5, 9, 17, 33, ...?",
+        "choices": [
+          "49",
+          "63",
+          "65",
+          "67"
+        ],
+        "key": "b7c9c08190d0d2562e800aa9060069e23b2cbe115343b4d065d6d5604460d807",
+        "sourceNumber": 58,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 128, 64, 32, 16, 8, ...?",
+        "choices": [
+          "2",
+          "3",
+          "4",
+          "6"
+        ],
+        "key": "ad12cfc54b29484a557ed199f52df66bb62721f562f0d4b6e9196ea6b3924b6c",
+        "sourceNumber": 59,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 4, 7, 14, 17, 34, 37, ...?",
+        "choices": [
+          "71",
+          "72",
+          "74",
+          "76"
+        ],
+        "key": "cabbd4ce971dc44e11da479eacce74edcb3598d24345851c316e44e0774cd164",
+        "sourceNumber": 60,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 3, 5, 9, 17, ...?",
+        "choices": [
+          "25",
+          "31",
+          "33",
+          "35"
+        ],
+        "key": "bf09fe168caf0eadffe916a5f588d18f85aa0847b245afd89529117109cf99b2",
+        "sourceNumber": 61,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 1, 9, 25, 49, ...?",
+        "choices": [
+          "64",
+          "72",
+          "81",
+          "100"
+        ],
+        "key": "8ba4309d9c4f82591bb0b2e970e816034a7bc34e3d6d6b7bc6177a7dd10364a7",
+        "sourceNumber": 62,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 7, 16, 29, 46, ...?",
+        "choices": [
+          "63",
+          "65",
+          "67",
+          "69"
+        ],
+        "key": "7d74d43cd363c45738ab72eef198fffc56d4b8d58fe2e06fc7e1e7abdf224f93",
+        "sourceNumber": 63,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 5, 15, 14, 42, 41, 123, ...?",
+        "choices": [
+          "120",
+          "121",
+          "122",
+          "124"
+        ],
+        "key": "f96f80b7353ef8d5c7d2cb0490061c33e1252ccbad19643d04e58835e4866b28",
+        "sourceNumber": 64,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 10, 20, 17, 34, 31, 62, ...?",
+        "choices": [
+          "56",
+          "58",
+          "59",
+          "64"
+        ],
+        "key": "9b403bbe0c819ae6c1ae894ab34042e928ddfd65c66f5fac4e71068f881b939c",
+        "sourceNumber": 65,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 3, 12, 27, 48, 75, ...?",
+        "choices": [
+          "96",
+          "102",
+          "108",
+          "112"
+        ],
+        "key": "b6790bb80b3f0733116cae0042f528d2f6e19cda97789acea7d4536972f230c6",
+        "sourceNumber": 66,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 1, 2, 6, 24, 120, 720, ...?",
+        "choices": [
+          "4320",
+          "5040",
+          "5760",
+          "6000"
+        ],
+        "key": "8b61ecdc5065de0f609e3a3b24525fbbf756b6d48bb82070317012169b5b09d9",
+        "sourceNumber": 67,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the next number in the sequence 7, 12, 19, 28, 39, ...?",
+        "choices": [
+          "50",
+          "51",
+          "52",
+          "54"
+        ],
+        "key": "9bea996a7e8b4c877c5359e214176f031cba1f36d8b34671682677457ba0a4d0",
+        "sourceNumber": 68,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 8, 32, 128, ...?",
+        "choices": [
+          "256",
+          "384",
+          "512",
+          "640"
+        ],
+        "key": "d96dc403f631deb3351300c70bde3fbcd2a53f5659ecbbc70a291c3028ae9deb",
+        "sourceNumber": 69,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 1000, 500, 250, 125, ...?",
+        "choices": [
+          "50",
+          "60",
+          "62.5",
+          "75"
+        ],
+        "key": "fac028e60d3414ecb2a82bfc3cbfd57212f359bfd7fb5a32b193483f6bf0aff4",
+        "sourceNumber": 70,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 4, 5, 9, 18, 34, ...?",
+        "choices": [
+          "54",
+          "56",
+          "59",
+          "62"
+        ],
+        "key": "1b3028d5e619b8e6e66518790a9174939fa5f2c298c44dc1762d13d7391639a2",
+        "sourceNumber": 71,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 1, 4, 7, 13, 25, ...?",
+        "choices": [
+          "45",
+          "47",
+          "49",
+          "51"
+        ],
+        "key": "861994c06b269be4909c42b885699aba91996198c85c6ef9973b8e93eceff294",
+        "sourceNumber": 72,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 5, 14, 41, 122, ...?",
+        "choices": [
+          "243",
+          "364",
+          "365",
+          "366"
+        ],
+        "key": "f271c3bf64c1d5c76811d143c96d260a8971b0a40384a3adfb42ba135a0732d2",
+        "sourceNumber": 73,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 9, 7, 14, 12, 24, 22, ...?",
+        "choices": [
+          "40",
+          "42",
+          "44",
+          "46"
+        ],
+        "key": "04ce310b74ba3673a5ae573af873b9119b5be2bba2b2f5f0c03e103dac565124",
+        "sourceNumber": 74,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 1, 3, 4, 7, 11, 18, ...?",
+        "choices": [
+          "27",
+          "28",
+          "29",
+          "30"
+        ],
+        "key": "00cd037b3cac6c9c571ee7acdc603ff67e84a20b3a15aa4048f7994427bca357",
+        "sourceNumber": 75,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 6, 18, 21, 63, 66, ...?",
+        "choices": [
+          "192",
+          "195",
+          "198",
+          "201"
+        ],
+        "key": "4c9f858acc20a07cac306900cd06d8a50bf78b65546caa3b0ad7763fda074955",
+        "sourceNumber": 76,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 12, 36, 80, 150, ...?",
+        "choices": [
+          "222",
+          "240",
+          "252",
+          "264"
+        ],
+        "key": "0c0e6f65799924a799fa3ab2dd2398a07d534ea1d4a8fdaf2d0e51af119b9385",
+        "sourceNumber": 77,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 1, 8, 9, 16, 17, 24, ...?",
+        "choices": [
+          "23",
+          "25",
+          "31",
+          "32"
+        ],
+        "key": "c6a437a482b841afd37e334037e0491a8391b49431e8821ca06c3c121ab14be1",
+        "sourceNumber": 78,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the next number in the sequence 3, 7, 15, 31, 63, ...?",
+        "choices": [
+          "95",
+          "125",
+          "126",
+          "127"
+        ],
+        "key": "dac18e2f4497d16f19b6e2a15b89f598efb54b721048b6f071fd1b35908b23f2",
+        "sourceNumber": 79,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the next number in the sequence 256, 128, 64, 32, ...?",
+        "choices": [
+          "8",
+          "12",
+          "16",
+          "24"
+        ],
+        "key": "3a5e49aff6ed62c8512254c7a8a36e7cfb0d321ff218a817ba3c17026ef9685e",
+        "sourceNumber": 80,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 1, 2, 5, 10, 17, 26, ...?",
+        "choices": [
+          "35",
+          "36",
+          "37",
+          "38"
+        ],
+        "key": "e00777f31519df00baef0c1dfde5f6823c96a865402608d056519a42fbc2ab21",
+        "sourceNumber": 81,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 4, 10, 22, 46, 94, ...?",
+        "choices": [
+          "186",
+          "188",
+          "190",
+          "192"
+        ],
+        "key": "54ef020fb3a62985c24c70e11d78f8534cdd4189cb8225f9875aeedcd480d387",
+        "sourceNumber": 82,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 4, 3, 9, 4, 16, ...?",
+        "choices": [
+          "5",
+          "8",
+          "20",
+          "25"
+        ],
+        "key": "a591f9c36e317d65406cdf3bda1891c5453796427bfec881e7335e25deb16f09",
+        "sourceNumber": 83,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the next number in the sequence 1, 10, 100, 1000, ...?",
+        "choices": [
+          "5000",
+          "9000",
+          "10000",
+          "11000"
+        ],
+        "key": "b796f735dbaa0a82e6cb64e5146b882c54f0c7ee201493ce15e512bde4acb0d7",
+        "sourceNumber": 84,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 15, 14, 12, 9, 5, ...?",
+        "choices": [
+          "−1",
+          "0",
+          "1",
+          "2"
+        ],
+        "key": "1cede327cfb886491877a0de2bc5e1000df228d40f5ca171600a3f667c29cd0a",
+        "sourceNumber": 85,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the next number in the sequence 2, 3, 9, 10, 30, 31, ...?",
+        "choices": [
+          "32",
+          "62",
+          "93",
+          "96"
+        ],
+        "key": "0dae513ee77dee0d31b7d65702550f659ad346a8d9f5b5393074ff86ec0c7f45",
+        "sourceNumber": 86,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 5, 11, 23, 47, 95, ...?",
+        "choices": [
+          "181",
+          "189",
+          "190",
+          "191"
+        ],
+        "key": "b675921c138af503bee4275150ab935fbc45d3ff56603cf61b4883c1f1d8cef3",
+        "sourceNumber": 87,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the next number in the sequence 1, 5, 6, 30, 31, 155, ...?",
+        "choices": [
+          "154",
+          "156",
+          "160",
+          "775"
+        ],
+        "key": "bcc78a1b927698ea6e17f406171763c1c44748ce12f3db5d8e0d0ffe86f1fce8",
+        "sourceNumber": 88,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the next number in the sequence 12, 15, 21, 30, 42, ...?",
+        "choices": [
+          "54",
+          "55",
+          "57",
+          "60"
+        ],
+        "key": "d90db33c24ab78e4c3df77d7ba58ef50e7c3078267bd730b86d9ece3607d59b5",
+        "sourceNumber": 89,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 3, 4, 6, 10, 18, ...?",
+        "choices": [
+          "26",
+          "32",
+          "34",
+          "36"
+        ],
+        "key": "c49db3119a2b68dca71f21ce526b6df095726cfe427b7a75cdac3e43b90ea00d",
+        "sourceNumber": 90,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 5, 11, 20, 32, ...?",
+        "choices": [
+          "44",
+          "45",
+          "46",
+          "47"
+        ],
+        "key": "e3c461f0e8a208f5f1def9deec2b3be450ac56f989d8762a749a22840fef5f04",
+        "sourceNumber": 91,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the next number in the sequence 3, 7, 16, 35, 74, ...?",
+        "choices": [
+          "147",
+          "149",
+          "152",
+          "153"
+        ],
+        "key": "4fa682e1d7f5f59d34bdd980fd077bd06318891eef20ab8fb3d567cb4292990c",
+        "sourceNumber": 92,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the next number in the sequence 10, 9, 18, 17, 34, 33, ...?",
+        "choices": [
+          "64",
+          "65",
+          "66",
+          "68"
+        ],
+        "key": "f394ee8db6425a469fe5dba78cfc4da1d541a50dc4df9485ea62450ab9e57cb3",
+        "sourceNumber": 93,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 4, 12, 24, 40, 60, ...?",
+        "choices": [
+          "80",
+          "82",
+          "84",
+          "86"
+        ],
+        "key": "3d7d9ed59b882cc499000e08feca6ed1b93580249a68178b76a60b661c1f6838",
+        "sourceNumber": 94,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 1, 6, 18, 40, 75, ...?",
+        "choices": [
+          "110",
+          "120",
+          "126",
+          "130"
+        ],
+        "key": "5c34aef105ce1c30ae1c9ba0aec3e3d8429f9dea3625ac419f756f55861d244e",
+        "sourceNumber": 95,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 8, 13, 23, 43, 83, ...?",
+        "choices": [
+          "123",
+          "160",
+          "163",
+          "166"
+        ],
+        "key": "055ee45cafa19a212dd5207084fd12ebcec118791767080e8d7f1cb0efd1f771",
+        "sourceNumber": 96,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 2, 3, 7, 16, 32, ...?",
+        "choices": [
+          "52",
+          "54",
+          "56",
+          "57"
+        ],
+        "key": "1620d0ca6457e97e2cf7a70e9196c407f13d3ceb7ddd4c0d38a973cf74270bfd",
+        "sourceNumber": 97,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the next number in the sequence 5, 9, 18, 34, 59, ...?",
+        "choices": [
+          "90",
+          "93",
+          "95",
+          "97"
+        ],
+        "key": "0f5b00d7b1efcf8736c4eadfd276514e8b0dca703b3fbe9354db696d7dfe9faa",
+        "sourceNumber": 98,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the next number in the sequence 1, 3, 8, 18, 35, ...?",
+        "choices": [
+          "58",
+          "60",
+          "61",
+          "63"
+        ],
+        "key": "4c644bef9efb53f34057d0193c2a36a9be878aa1f1e6d71866c8e033272b04ca",
+        "sourceNumber": 99,
+        "correctIndex": 2
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "d79db65962da130a4b3acd1dc42f8bbbada56678f4ccc63c350c62c92422e98d",
+      "sourceQuestionNumbers": [
+        35,
+        13,
+        76,
+        92,
+        41,
+        1,
+        32,
+        66,
+        51,
+        96,
+        18,
+        79,
+        39,
+        47,
+        86,
+        54,
+        36,
+        97,
+        73,
+        5,
+        53,
+        68,
+        22,
+        17,
+        98,
+        11,
+        57,
+        28,
+        63,
+        95,
+        24,
+        58,
+        90,
+        67,
+        10,
+        7,
+        48,
+        99,
+        26,
+        65,
+        6,
+        56,
+        20,
+        62,
+        82,
+        31,
+        81,
+        61,
+        55,
+        12,
+        94,
+        71,
+        37,
+        52,
+        14,
+        8,
+        80,
+        77,
+        46,
+        38,
+        69,
+        43,
+        84,
+        34,
+        16,
+        3,
+        64,
+        44,
+        85,
+        30,
+        49,
+        25,
+        4,
+        78,
+        93,
+        33,
+        60,
+        19,
+        59,
+        91,
+        23,
+        50,
+        15,
+        89,
+        74,
+        21,
+        83,
+        70,
+        2,
+        45,
+        27,
+        40,
+        9,
+        75,
+        87,
+        88,
+        42,
+        29,
+        72
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
