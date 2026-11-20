@@ -1611,7 +1611,131 @@
       "studioMedia": {
         "id": "42e6494e-3713-48e7-ad19-d5641f272a38",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/qk68XqfWZY.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 1/5 | Q35, 13, 76 | 99 NTS-Style Numerical Series MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 35, 13, 76\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series",
+              "image": [
+                {
+                  "id": "42e6494e-3713-48e7-ad19-d5641f272a38",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/qk68XqfWZY.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-numerical-series",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 35, 13, 76\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "42e6494e-3713-48e7-ad19-d5641f272a38",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/qk68XqfWZY.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 1/5 | Q35, 13, 76 | 99 NTS-Style Numerical Series MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 35, 13, 76\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "42e6494e-3713-48e7-ad19-d5641f272a38",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/qk68XqfWZY.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 1/5 | Q35, 13, 76 | 99 NTS-Style Numerical Series MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 35, 13, 76\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "42e6494e-3713-48e7-ad19-d5641f272a38",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/qk68XqfWZY.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-20T12:08:00+05:00"
     },
     {
       "part": 2,
@@ -1900,7 +2024,131 @@
       "studioMedia": {
         "id": "ec80173c-cf22-4860-8193-cf59d65b8004",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/clmc60qkjt.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 2/5 | Q92, 41, 1 | 99 NTS-Style Numerical Series MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 92, 41, 1\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series",
+              "image": [
+                {
+                  "id": "ec80173c-cf22-4860-8193-cf59d65b8004",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/clmc60qkjt.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-numerical-series",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 92, 41, 1\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "ec80173c-cf22-4860-8193-cf59d65b8004",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/clmc60qkjt.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 2/5 | Q92, 41, 1 | 99 NTS-Style Numerical Series MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 92, 41, 1\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "ec80173c-cf22-4860-8193-cf59d65b8004",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/clmc60qkjt.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 2/5 | Q92, 41, 1 | 99 NTS-Style Numerical Series MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 92, 41, 1\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "ec80173c-cf22-4860-8193-cf59d65b8004",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/clmc60qkjt.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-20T14:36:00+05:00"
     },
     {
       "part": 3,
@@ -2189,7 +2437,131 @@
       "studioMedia": {
         "id": "a1205a84-0a5a-4c36-aa87-d614f00a1ed2",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/J3fQuulJHz.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 3/5 | Q32, 66, 51 | 99 NTS-Style Numerical Series MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 32, 66, 51\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series",
+              "image": [
+                {
+                  "id": "a1205a84-0a5a-4c36-aa87-d614f00a1ed2",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/J3fQuulJHz.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-numerical-series",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 32, 66, 51\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "a1205a84-0a5a-4c36-aa87-d614f00a1ed2",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/J3fQuulJHz.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 3/5 | Q32, 66, 51 | 99 NTS-Style Numerical Series MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 32, 66, 51\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "a1205a84-0a5a-4c36-aa87-d614f00a1ed2",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/J3fQuulJHz.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 3/5 | Q32, 66, 51 | 99 NTS-Style Numerical Series MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 32, 66, 51\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "a1205a84-0a5a-4c36-aa87-d614f00a1ed2",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/J3fQuulJHz.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-20T17:04:00+05:00"
     },
     {
       "part": 4,
@@ -2478,7 +2850,131 @@
       "studioMedia": {
         "id": "d4505d4e-8355-4ba2-b7dc-cd0d8e78b942",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/YLoH4CtNnL.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 4/5 | Q96, 18, 79 | 99 NTS-Style Numerical Series MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 96, 18, 79\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series",
+              "image": [
+                {
+                  "id": "d4505d4e-8355-4ba2-b7dc-cd0d8e78b942",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/YLoH4CtNnL.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-numerical-series",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 96, 18, 79\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "d4505d4e-8355-4ba2-b7dc-cd0d8e78b942",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/YLoH4CtNnL.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 4/5 | Q96, 18, 79 | 99 NTS-Style Numerical Series MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 96, 18, 79\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "d4505d4e-8355-4ba2-b7dc-cd0d8e78b942",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/YLoH4CtNnL.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 4/5 | Q96, 18, 79 | 99 NTS-Style Numerical Series MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 96, 18, 79\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "d4505d4e-8355-4ba2-b7dc-cd0d8e78b942",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/YLoH4CtNnL.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-20T19:32:00+05:00"
     },
     {
       "part": 5,
@@ -2767,7 +3263,131 @@
       "studioMedia": {
         "id": "ed0f783a-dcc4-4683-8bad-c0d7f4ced354",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/rNrCGx1G7A.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 5/5 | Q39, 47, 86 | 99 NTS-Style Numerical Series MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 39, 47, 86\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series",
+              "image": [
+                {
+                  "id": "ed0f783a-dcc4-4683-8bad-c0d7f4ced354",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/rNrCGx1G7A.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-numerical-series",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 39, 47, 86\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "ed0f783a-dcc4-4683-8bad-c0d7f4ced354",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/rNrCGx1G7A.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 5/5 | Q39, 47, 86 | 99 NTS-Style Numerical Series MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 39, 47, 86\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "ed0f783a-dcc4-4683-8bad-c0d7f4ced354",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/rNrCGx1G7A.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 5/5 | Q39, 47, 86 | 99 NTS-Style Numerical Series MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 39, 47, 86\n99 NTS-Style Numerical Series MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-numerical-series\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "ed0f783a-dcc4-4683-8bad-c0d7f4ced354",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/rNrCGx1G7A.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-20T22:00:00+05:00"
     }
   ],
   "thinkingSeconds": 3,
@@ -2851,5 +3471,12 @@
         "sha256": "deeac6b52e441d6e3b63894d9d173ad363ec62d24802cdac049a959974b824c3"
       }
     ]
-  }
+  },
+  "schedule": [
+    "2026-11-20T12:08:00+05:00",
+    "2026-11-20T14:36:00+05:00",
+    "2026-11-20T17:04:00+05:00",
+    "2026-11-20T19:32:00+05:00",
+    "2026-11-20T22:00:00+05:00"
+  ]
 }
