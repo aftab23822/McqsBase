@@ -3603,7 +3603,8 @@
           ]
         }
       },
-      "scheduledAt": "2026-11-20T22:00:00+05:00"
+      "scheduledAt": "2026-11-20T22:00:00+05:00",
+      "receipts": {}
     }
   ],
   "thinkingSeconds": 3,
