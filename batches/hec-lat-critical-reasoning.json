@@ -2530,7 +2530,11 @@
       },
       "uploadIntent": {
         "filename": "hec-lat-critical-reasoning-part-05-91d26d7cba344760.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "63e9bc54-3675-4560-8a5c-53235884ef47",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/ePVr7fK3Wu.mp4"
       }
     }
   ],
