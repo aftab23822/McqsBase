@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "mdcat-genetics-inheritance",
   "createdAt": "2026-11-19T06:58:17.344761+00:00",
-  "status": "scheduled",
+  "status": "provider-published",
   "package": {
     "slug": "mdcat-genetics-inheritance",
     "title": "100 MDCAT-Style Genetics and Inheritance MCQs with Explanations",
@@ -1790,16 +1790,16 @@
           "integrationId": "cmvwbcule0222ro9dhocbic4w"
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-19T07:04:23.952914+00:00",
           "postId": "cmwn7fvpg0i9vlmaumbo2ksjb",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "ERROR",
+          "url": "https://www.youtube.com/watch?v=KduNTq7dWLw",
+          "providerUrl": "https://www.youtube.com/watch?v=KduNTq7dWLw",
+          "providerReleaseId": "KduNTq7dWLw",
+          "providerStatus": "PUBLISHED",
           "providerError": "YouTube's daily upload quota is exhausted for today, please reschedule this post for a later time.",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
           "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
           "quotaRecovery": {
             "status": "scheduled",
