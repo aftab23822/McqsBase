@@ -2264,6 +2264,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 5,
+      "directory": "part-05",
+      "sourceQuestionNumbers": [
+        47,
+        79
+      ],
+      "count": 2,
+      "durationSeconds": 77,
+      "sha256": "91d26d7cba344760e3b1c1b19393dd7e9878c9bed7049ff985b8439d41036e0b",
+      "manifest": {
+        "title": "100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+        "sourceTitle": "100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-21T06:40:38.114071+00:00",
+        "sourceContentHash": "41f2a8d6d24bb3b43d660214ca501524d0c3c0ac2702f85dcc6409c0df04243d",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7959791516,
+          "sha": "c7a636809349ca39ff712a4310ad4924e1d1ad13",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-21T06:40:38.114071+00:00",
+          "url": "https://mcqs-base-2s264iegs-as-projects-10921176.vercel.app",
+          "publisherRunId": 44876169132
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 77,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A community group argues that a vacant lot should become a playground because children in the area have few places to play. Which assumption is most important?",
+            "choices": [
+              "The lot can be made safe and suitable for children's play.",
+              "All children prefer outdoor games.",
+              "The lot is the largest land parcel in the district.",
+              "No adult uses the area."
+            ],
+            "correctIndex": 0,
+            "key": "81e832ef7e882fb4dea0c8682076ccc8bca5d95217059bfeec12fced46e032dd",
+            "sourceNumber": 47
+          },
+          {
+            "question": "A reader claims a newspaper is unbiased because it published criticism of both major parties. Which fact most challenges the claim?",
+            "choices": [
+              "It published substantially more favourable coverage of one party than the other.",
+              "It publishes news every day.",
+              "Its articles have headlines.",
+              "Readers can access it online."
+            ],
+            "correctIndex": 0,
+            "key": "5dc4d7fda60bdfbc87ee04899513ad6fc59c12d372fa1f4f7af28e8c4726c629",
+            "sourceNumber": 79
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 26,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 26,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 27,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 28,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 29,
+            "duration": 7,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 36,
+            "duration": 25,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 61,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 62,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 63,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 64,
+            "duration": 8,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 72,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 5,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            47,
+            79
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#TestPreparation",
+          "#QuizTime",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/hec-lat-critical-reasoning-part-05-91d26d7cba344760.mp4",
+        "videoSha256": "91d26d7cba344760e3b1c1b19393dd7e9878c9bed7049ff985b8439d41036e0b",
+        "assetId": 774702279
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 5/5 | Q47, 79 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 47, 79\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 5/5 | Q47, 79 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 47, 79\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 5/5 | Q47, 79 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 47, 79\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 5/5 | Q47, 79 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 47, 79\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
