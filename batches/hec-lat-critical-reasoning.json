@@ -3387,9 +3387,17 @@
           "integrationId": "cmvwb4faa021yro9dgcj8vlww"
         },
         "instagram": {
-          "status": "accepted",
+          "status": "QUEUE",
           "attemptedAt": "2026-11-21T06:49:06.724686+00:00",
-          "postId": "cmwq1rxek0oh9lmaulppyk8tu"
+          "postId": "cmwq1rxek0oh9lmaulppyk8tu",
+          "url": null,
+          "providerUrl": null,
+          "providerReleaseId": null,
+          "providerStatus": "QUEUE",
+          "providerError": null,
+          "publicUrlVerified": false,
+          "verification": "provider-status-only",
+          "integrationId": "cmvwbbtq00220ro9du35l1wrs"
         }
       }
     }
