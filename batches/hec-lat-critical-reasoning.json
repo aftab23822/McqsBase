@@ -1575,7 +1575,131 @@
       "studioMedia": {
         "id": "10b21940-caa3-4520-af03-5708346cada4",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/WtNnU308lh.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 1/5 | Q93, 17 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 93, 17\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+              "image": [
+                {
+                  "id": "10b21940-caa3-4520-af03-5708346cada4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/WtNnU308lh.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 93, 17\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "10b21940-caa3-4520-af03-5708346cada4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/WtNnU308lh.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 1/5 | Q93, 17 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 93, 17\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "10b21940-caa3-4520-af03-5708346cada4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/WtNnU308lh.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 1/5 | Q93, 17 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "TestPreparation",
+                "label": "TestPreparation"
+              },
+              {
+                "value": "QuizTime",
+                "label": "QuizTime"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 93, 17\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "10b21940-caa3-4520-af03-5708346cada4",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/WtNnU308lh.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-21T12:03:00+05:00"
     },
     {
       "part": 2,
@@ -1815,7 +1939,131 @@
       "studioMedia": {
         "id": "ad70e973-5e24-4ac1-b86f-80e826dba7f3",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/NlISVL1fKK.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 2/5 | Q77, 21 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 77, 21\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+              "image": [
+                {
+                  "id": "ad70e973-5e24-4ac1-b86f-80e826dba7f3",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/NlISVL1fKK.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 77, 21\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "ad70e973-5e24-4ac1-b86f-80e826dba7f3",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/NlISVL1fKK.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 2/5 | Q77, 21 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 77, 21\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "ad70e973-5e24-4ac1-b86f-80e826dba7f3",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/NlISVL1fKK.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 2/5 | Q77, 21 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "TestPreparation",
+                "label": "TestPreparation"
+              },
+              {
+                "value": "QuizTime",
+                "label": "QuizTime"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 77, 21\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "ad70e973-5e24-4ac1-b86f-80e826dba7f3",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/NlISVL1fKK.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-21T14:32:00+05:00"
     },
     {
       "part": 3,
@@ -2055,7 +2303,131 @@
       "studioMedia": {
         "id": "68670223-859e-4a12-839a-ff9457d3965e",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Rp4rDCScEL.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 3/5 | Q54, 10 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 54, 10\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+              "image": [
+                {
+                  "id": "68670223-859e-4a12-839a-ff9457d3965e",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Rp4rDCScEL.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 54, 10\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "68670223-859e-4a12-839a-ff9457d3965e",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Rp4rDCScEL.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 3/5 | Q54, 10 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 54, 10\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "68670223-859e-4a12-839a-ff9457d3965e",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Rp4rDCScEL.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 3/5 | Q54, 10 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "TestPreparation",
+                "label": "TestPreparation"
+              },
+              {
+                "value": "QuizTime",
+                "label": "QuizTime"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 54, 10\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "68670223-859e-4a12-839a-ff9457d3965e",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Rp4rDCScEL.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-21T17:01:00+05:00"
     },
     {
       "part": 4,
@@ -2295,7 +2667,131 @@
       "studioMedia": {
         "id": "3413dd44-eebd-4123-901d-f55772774f30",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/ufGOMNhQOg.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 4/5 | Q33, 92 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 33, 92\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+              "image": [
+                {
+                  "id": "3413dd44-eebd-4123-901d-f55772774f30",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/ufGOMNhQOg.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 33, 92\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "3413dd44-eebd-4123-901d-f55772774f30",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/ufGOMNhQOg.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 4/5 | Q33, 92 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 33, 92\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "3413dd44-eebd-4123-901d-f55772774f30",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/ufGOMNhQOg.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 4/5 | Q33, 92 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "TestPreparation",
+                "label": "TestPreparation"
+              },
+              {
+                "value": "QuizTime",
+                "label": "QuizTime"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 33, 92\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "3413dd44-eebd-4123-901d-f55772774f30",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/ufGOMNhQOg.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-21T19:30:00+05:00"
     },
     {
       "part": 5,
@@ -2535,7 +3031,131 @@
       "studioMedia": {
         "id": "63e9bc54-3675-4560-8a5c-53235884ef47",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/ePVr7fK3Wu.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 5/5 | Q47, 79 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 47, 79\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+              "image": [
+                {
+                  "id": "63e9bc54-3675-4560-8a5c-53235884ef47",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/ePVr7fK3Wu.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 47, 79\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "63e9bc54-3675-4560-8a5c-53235884ef47",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/ePVr7fK3Wu.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 5/5 | Q47, 79 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 47, 79\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "63e9bc54-3675-4560-8a5c-53235884ef47",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/ePVr7fK3Wu.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 5/5 | Q47, 79 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "TestPreparation",
+                "label": "TestPreparation"
+              },
+              {
+                "value": "QuizTime",
+                "label": "QuizTime"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 47, 79\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+              "image": [
+                {
+                  "id": "63e9bc54-3675-4560-8a5c-53235884ef47",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/ePVr7fK3Wu.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-21T21:59:00+05:00"
     }
   ],
   "thinkingSeconds": 3,
@@ -2614,5 +3234,12 @@
         "sha256": "91d26d7cba344760e3b1c1b19393dd7e9878c9bed7049ff985b8439d41036e0b"
       }
     ]
-  }
+  },
+  "schedule": [
+    "2026-11-21T12:03:00+05:00",
+    "2026-11-21T14:32:00+05:00",
+    "2026-11-21T17:01:00+05:00",
+    "2026-11-21T19:30:00+05:00",
+    "2026-11-21T21:59:00+05:00"
+  ]
 }
