@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "hec-lat-critical-reasoning",
+  "createdAt": "2026-11-21T06:40:38.354552+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "hec-lat-critical-reasoning",
+    "title": "100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+    "url": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7959791516,
+      "sha": "c7a636809349ca39ff712a4310ad4924e1d1ad13",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-21T06:40:38.114071+00:00",
+      "url": "https://mcqs-base-2s264iegs-as-projects-10921176.vercel.app",
+      "publisherRunId": 44876169132
+    },
+    "fetchedAt": "2026-11-21T06:40:38.114071+00:00",
+    "contentHash": "41f2a8d6d24bb3b43d660214ca501524d0c3c0ac2702f85dcc6409c0df04243d",
+    "questions": [
+      {
+        "question": "A town installed brighter streetlights on several roads, and reported night-time thefts later fell on those roads. Which conclusion is best supported?",
+        "choices": [
+          "Brighter lights may have contributed to the decline in reported thefts.",
+          "Every road in the town is now safer.",
+          "Theft has ended because of the new lights.",
+          "Residents no longer report theft at night."
+        ],
+        "key": "700456625d9ae62283bc4255258c4350aef43a19c60178c833099d8bdac508de",
+        "sourceNumber": 1,
+        "correctIndex": 0
+      },
+      {
+        "question": "A college claims its new study room improves examination results because students who used it scored higher than those who did not. What is the central weakness?",
+        "choices": [
+          "The users may already have been more motivated or better prepared.",
+          "Examination results cannot be compared between students.",
+          "A study room cannot be used by more than one student.",
+          "The claim does not say what colour the room is."
+        ],
+        "key": "eaa3af0e2b14af268580436a2d50faeb2a806ef3ef1699fbda85566544353f1e",
+        "sourceNumber": 2,
+        "correctIndex": 0
+      },
+      {
+        "question": "A library extended its opening hours. The manager concludes that more people will borrow books. Which assumption is necessary?",
+        "choices": [
+          "Some potential borrowers can use the library during the added hours.",
+          "Every visitor prefers printed books to digital books.",
+          "The library will purchase a new building.",
+          "Borrowing books is the only reason people visit."
+        ],
+        "key": "fcdce4cfc7830070ccb56799656445dcdcb81704c47aaa3c883471b59707b142",
+        "sourceNumber": 3,
+        "correctIndex": 0
+      },
+      {
+        "question": "A report says that all applicants who met the stated minimum requirement were considered for interview. Sana met that requirement. What follows?",
+        "choices": [
+          "Sana was considered for interview.",
+          "Sana was selected for the job.",
+          "Sana performed better than every other applicant.",
+          "Sana accepted an interview invitation."
+        ],
+        "key": "fd24429014b82b77f347278a8f6078b112c09f4e76df6409ededed630e743a0f",
+        "sourceNumber": 4,
+        "correctIndex": 0
+      },
+      {
+        "question": "A shop owner argues that lowering prices increased sales because more units were sold in the week after the reduction. Which information would most weaken the argument?",
+        "choices": [
+          "The week after the reduction included a major festival absent from the comparison week.",
+          "The shop displayed the lower prices clearly.",
+          "Some customers paid in cash.",
+          "The shop sells several different products."
+        ],
+        "key": "e7906febb24b6a325102ecac729490622a5d43392fe2b9bfd9036eee881f8bc8",
+        "sourceNumber": 5,
+        "correctIndex": 0
+      },
+      {
+        "question": "A school says that its new reading programme caused improved reading scores. Which evidence would strengthen the claim most?",
+        "choices": [
+          "Comparable pupils assigned to the programme improved more than pupils not assigned to it.",
+          "The programme uses colourful books.",
+          "Teachers say that reading is important.",
+          "The school also repainted its classrooms."
+        ],
+        "key": "e9bdb38e27c424fa6f525ad47d0f60e0820ce5205e6453d685a8ef23f185ce24",
+        "sourceNumber": 6,
+        "correctIndex": 0
+      },
+      {
+        "question": "A survey of 30 volunteers at a fitness centre finds that most support a new exercise policy. The organiser concludes that most residents support it. What is the main flaw?",
+        "choices": [
+          "The volunteers may not represent residents generally.",
+          "The policy is necessarily unpopular with fitness-centre members.",
+          "A survey can never provide useful information.",
+          "The organiser has not stated the policy's cost."
+        ],
+        "key": "aa41923f88e4eb39dddadafa6bf70dbefdf0e11ae8cf2b6c75e03fda5e124ece",
+        "sourceNumber": 7,
+        "correctIndex": 0
+      },
+      {
+        "question": "A bus route carried more passengers after its timetable was made more frequent. Which conclusion is most careful?",
+        "choices": [
+          "The more frequent timetable may have helped attract passengers.",
+          "The timetable was the sole reason passenger numbers rose.",
+          "Every passenger prefers frequent buses.",
+          "The route is now profitable."
+        ],
+        "key": "110e975b85938357013bb3eb44c94b531eba6a0f9ce63dedd3d420cc95ab2ab5",
+        "sourceNumber": 8,
+        "correctIndex": 0
+      },
+      {
+        "question": "A manager says, 'Our office should adopt paperless forms because printing costs will fall.' Which assumption best supports the reasoning?",
+        "choices": [
+          "The cost of adopting and maintaining the system will not outweigh the printing savings.",
+          "Every employee already owns a printer.",
+          "Paper forms are always inaccurate.",
+          "No client will ever need assistance."
+        ],
+        "key": "244ac9b68c3d28f32c1a7b37fbec344726b562e92c5b7e00280f80802f206060",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "A notice states that the clinic is closed on Sundays and open on every other day. Which statement follows?",
+        "choices": [
+          "The clinic is open on Saturday.",
+          "The clinic is open every Sunday morning.",
+          "The clinic closes whenever it is busy.",
+          "The clinic is open only on weekdays."
+        ],
+        "key": "4c3090381fd802ef5e54c1d46517cbdbd887832b42522d0de152d313884b07a7",
+        "sourceNumber": 10,
+        "correctIndex": 0
+      },
+      {
+        "question": "A company claims that its training course reduces workplace errors because error reports fell after the course began. What additional fact most weakens the claim?",
+        "choices": [
+          "The company also introduced a rule discouraging employees from reporting minor errors.",
+          "The course included practical demonstrations.",
+          "Employees received the course during working hours.",
+          "The company sells products in several regions."
+        ],
+        "key": "ae7b2dff79df24d1ff44383c3aeab1b7b7369d8d8fb0480d1d428836b998aee4",
+        "sourceNumber": 11,
+        "correctIndex": 0
+      },
+      {
+        "question": "A researcher finds that neighbourhoods with more trees tend to have lower summer temperatures. What can be inferred?",
+        "choices": [
+          "Tree-rich neighbourhoods in the study tended to have lower summer temperatures.",
+          "Planting one tree will lower any home's temperature by a fixed amount.",
+          "Trees are the only factor affecting neighbourhood temperature.",
+          "Every neighbourhood with few trees has a high temperature."
+        ],
+        "key": "0bdf403c03ba3cb8b9635adec7c982c0f2c9839e80094f8f467d920cd2a8cdf3",
+        "sourceNumber": 12,
+        "correctIndex": 0
+      },
+      {
+        "question": "An argument says: 'The town should repair the footpath because many pedestrians currently avoid it.' Which assumption connects the evidence to the recommendation?",
+        "choices": [
+          "Repairing the footpath would make it more usable for pedestrians.",
+          "Every pedestrian owns a bicycle.",
+          "The town has no roads.",
+          "Avoiding the footpath is illegal."
+        ],
+        "key": "59b6c024515c0fcb204e3e29615d7ec9a8e22b4234a34c728ad0496e77f03bab",
+        "sourceNumber": 13,
+        "correctIndex": 0
+      },
+      {
+        "question": "A student concludes that a particular book is easy because two classmates found it easy. Which fact would most challenge this conclusion?",
+        "choices": [
+          "The classmates had already studied the book's subject in depth.",
+          "The book has a blue cover.",
+          "The student borrowed the book from a library.",
+          "The classmates read it in different rooms."
+        ],
+        "key": "661e773733c0eaf519f15786673fb61b8739cfbc8ee281ee73dfdc73aa205e6f",
+        "sourceNumber": 14,
+        "correctIndex": 0
+      },
+      {
+        "question": "Every member of a committee must sign the final report. Amir signed the final report. What can be concluded?",
+        "choices": [
+          "Amir is a committee member.",
+          "Amir may be a committee member, but the statement does not establish that he is.",
+          "Only committee members can sign the report.",
+          "Amir wrote the entire report."
+        ],
+        "key": "5a7c970272a21cd97995ebf94ff3df07173473a19a1ccc07a51436c13c2a4ebb",
+        "sourceNumber": 15,
+        "correctIndex": 1
+      },
+      {
+        "question": "A restaurant claims a new menu improved customer satisfaction because positive comments increased. Which evidence would most strengthen the claim?",
+        "choices": [
+          "A comparable customer survey shows satisfaction rose after the menu change.",
+          "The menu uses a larger font.",
+          "The restaurant opened a second branch.",
+          "The chef has worked there for many years."
+        ],
+        "key": "5e7e15d8a533d484352dd1d4e5b773c5276be2064865e3e81d5e5ff47623e8ff",
+        "sourceNumber": 16,
+        "correctIndex": 0
+      },
+      {
+        "question": "A school has fewer late arrivals since it began sending reminder messages. Which alternative explanation most weakens the claim that reminders caused the decline?",
+        "choices": [
+          "The school also changed its first-period start time to later in the morning.",
+          "The messages were sent by phone.",
+          "Some pupils read the messages at home.",
+          "The school records arrival times."
+        ],
+        "key": "7f0b1b4b2b1a48a50dcd5f150dad896af48b1660bc4e8accca892665e33404ba",
+        "sourceNumber": 17,
+        "correctIndex": 0
+      },
+      {
+        "question": "A report says that no applicant without a completed form can be assessed. Bilal's form is incomplete. What follows?",
+        "choices": [
+          "Bilal cannot be assessed.",
+          "Bilal will be rejected permanently.",
+          "Bilal did not submit any documents.",
+          "Bilal's form contains incorrect information."
+        ],
+        "key": "b9629ab766389c4c268ed919360b8baf389263a194827452323d52dfddad60f7",
+        "sourceNumber": 18,
+        "correctIndex": 0
+      },
+      {
+        "question": "A newspaper argues that a city should add bicycle lanes because many residents cycle. Which fact most weakens the argument?",
+        "choices": [
+          "The proposed lanes would remove the only safe route for emergency vehicles.",
+          "Some residents own bicycles.",
+          "Cycling can provide exercise.",
+          "The city has several parks."
+        ],
+        "key": "150ea4caa9947a5b93849758d82e496e2509b52925ef530806b572607c94521e",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "A shop sells a product for less than a nearby shop. Which conclusion is justified by that information alone?",
+        "choices": [
+          "Its listed price for that product is lower than the nearby shop's.",
+          "Its product is better quality.",
+          "It has lower operating costs.",
+          "All its products are cheaper."
+        ],
+        "key": "5ca71e95d19b4531b102d7e2ab9850dedd5cd8ee3d9e9d011b2135e57843b05e",
+        "sourceNumber": 20,
+        "correctIndex": 0
+      },
+      {
+        "question": "A council argues that adding more rubbish bins will reduce litter. Which assumption is necessary?",
+        "choices": [
+          "A meaningful amount of litter is caused by a lack of convenient disposal places.",
+          "Every resident produces the same amount of rubbish.",
+          "The bins will be made from recycled material.",
+          "Litter is the only problem in the area."
+        ],
+        "key": "1ea229fd3e7f82e321efa5ec2a05a0e248ab62aa1990e6db1878b9150491165a",
+        "sourceNumber": 21,
+        "correctIndex": 0
+      },
+      {
+        "question": "A report finds that students who sleep longer often earn higher marks. Which conclusion is best supported?",
+        "choices": [
+          "Longer sleep is associated with higher marks among the students studied.",
+          "Sleeping longer guarantees higher marks for every student.",
+          "High marks always cause students to sleep longer.",
+          "Sleep has no relation to academic performance."
+        ],
+        "key": "f3f8fa13b9ac7989050fb2fde241c71e213ca09cdca17282b308ed2ce14c2b77",
+        "sourceNumber": 22,
+        "correctIndex": 0
+      },
+      {
+        "question": "A coach claims that a new warm-up routine prevents injuries because no team member was injured in the first week. What is the strongest criticism?",
+        "choices": [
+          "One injury-free week is too little evidence to establish prevention.",
+          "Warm-ups must always cause injuries.",
+          "The team should stop all physical activity.",
+          "The routine is ineffective because it is new."
+        ],
+        "key": "ac8cfeb7fec6c45de6811267908083255375f252706fc272c394e88fee1ca43c",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "If a proposal is approved, the committee will publish it. The committee published the proposal. What can be concluded?",
+        "choices": [
+          "The proposal was approved.",
+          "The proposal may have been approved, but publication alone does not prove it.",
+          "The committee did not approve the proposal.",
+          "Only approved proposals can ever be published."
+        ],
+        "key": "e26db565639bf86815043b680002a87e53fc129d47d7e28922729376c8c9c145",
+        "sourceNumber": 24,
+        "correctIndex": 1
+      },
+      {
+        "question": "A town's recycling rate rose after it introduced separate collection bins. Which evidence most strengthens the claim that the bins helped?",
+        "choices": [
+          "Similar nearby towns without new bins did not show a comparable rise during the same period.",
+          "The bins are painted different colours.",
+          "The town held a sports event that month.",
+          "Residents can see the bins from the main road."
+        ],
+        "key": "1873f406696c6f52331d2c0bc5a3dc273c93dc5ae060673df240d5ed72278f39",
+        "sourceNumber": 25,
+        "correctIndex": 0
+      },
+      {
+        "question": "A lecturer says, 'The library is quiet, so it is the best place for every student to study.' Which flaw is clearest?",
+        "choices": [
+          "It assumes that quietness is the only feature relevant to every student's study needs.",
+          "It proves that the library is noisy.",
+          "It confuses students with lecturers.",
+          "It gives a precise count of library users."
+        ],
+        "key": "30defc80693e087a13b4ba28ae0b23b4c23be93f6f9d6c6eb6081d942cd8b118",
+        "sourceNumber": 26,
+        "correctIndex": 0
+      },
+      {
+        "question": "A report states that some city residents work from home. Which statement must be true?",
+        "choices": [
+          "At least one city resident works from home.",
+          "Most city residents work from home.",
+          "No city resident travels to work.",
+          "Every city resident can work from home."
+        ],
+        "key": "b16f4582ad50a9cd9f185d7bdf5dcfcdc9d86782072d27f41667b4ab50d54aa2",
+        "sourceNumber": 27,
+        "correctIndex": 0
+      },
+      {
+        "question": "A company claims its new packaging is environmentally preferable because it uses less plastic. Which information most weakens the claim?",
+        "choices": [
+          "Producing the replacement material causes substantially greater environmental harm.",
+          "The package is smaller than before.",
+          "Customers can open it easily.",
+          "The company sells the product online."
+        ],
+        "key": "aeb5e6bf2b464770464547d5cd07765f91743998e3cfec28b1eeec46ecef2c58",
+        "sourceNumber": 28,
+        "correctIndex": 0
+      },
+      {
+        "question": "All candidates who pass the written stage may attend the next stage. Nadia passed the written stage. What follows?",
+        "choices": [
+          "Nadia may attend the next stage.",
+          "Nadia must pass the next stage.",
+          "Nadia has been appointed.",
+          "Only Nadia passed the written stage."
+        ],
+        "key": "e36bb21136131dc8dc12575afd13a99cfa1ee2500afc1edb26507802c7772a0e",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "A shopkeeper says a new sign increased customers because more people entered after it was installed. Which question would be most useful to evaluate the claim?",
+        "choices": [
+          "Did customer numbers also rise at similar shops without new signs during that period?",
+          "What material was used to make the sign?",
+          "How many colours are on the sign?",
+          "Does the shopkeeper prefer large signs?"
+        ],
+        "key": "5be4320c22dd70808d440df7ed4feacb64a58b5d51342cd9cb195be130a2d38a",
+        "sourceNumber": 30,
+        "correctIndex": 0
+      },
+      {
+        "question": "A school proposes replacing some lectures with recorded lessons, arguing that this will save classroom time. Which assumption is needed?",
+        "choices": [
+          "Students can access and use the recordings for the lessons being replaced.",
+          "Every student owns the same device.",
+          "Classrooms will no longer be needed.",
+          "Recorded lessons are always shorter than lectures."
+        ],
+        "key": "50f4293db78a92217691b804e812ab4d53afc94ee6de2933be9d639e89dca1b3",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "A survey finds that residents who use a park report greater wellbeing than residents who do not. Which fact most challenges a claim that park use causes wellbeing?",
+        "choices": [
+          "People with greater wellbeing may be more likely to visit parks.",
+          "The park has several walking paths.",
+          "The survey asked about wellbeing.",
+          "Some residents live near the park."
+        ],
+        "key": "dad317dbae19d0c8fea03928e71d10c32ee499a5f87fc06db03837365116dcbb",
+        "sourceNumber": 32,
+        "correctIndex": 0
+      },
+      {
+        "question": "A student says, 'The last two novels I read by this author were excellent, so every novel by the author is excellent.' What is the main flaw?",
+        "choices": [
+          "It generalizes about all the author's novels from only two examples.",
+          "It assumes novels have authors.",
+          "It compares novels with non-fiction books.",
+          "It concludes that the two novels were not excellent."
+        ],
+        "key": "596164c6fd57816ea1709a7d0d99dfd3bed5502861fa618d001657bd0cdaea6c",
+        "sourceNumber": 33,
+        "correctIndex": 0
+      },
+      {
+        "question": "The museum is free on the first Monday of each month. Today is the first Monday of the month. What follows?",
+        "choices": [
+          "Admission today is free.",
+          "Admission is free every Monday.",
+          "The museum is open every day.",
+          "Every visitor must reserve a place."
+        ],
+        "key": "818b6492853cb8033f6de11ee141d25821ec56bfa314be89e0be2e8967494ed1",
+        "sourceNumber": 34,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business argues that it should offer flexible hours because employees say they find commuting difficult. Which additional evidence would strengthen the argument?",
+        "choices": [
+          "Employees with flexible hours have fewer attendance problems than comparable employees without them.",
+          "The office has a large meeting room.",
+          "Some employees commute by bus.",
+          "The business has operated for ten years."
+        ],
+        "key": "bb76e71bd541ddd7837afc9f46d052ec6fb994d2adc02ff122ef8c2e0ee09dd7",
+        "sourceNumber": 35,
+        "correctIndex": 0
+      },
+      {
+        "question": "A researcher concludes that a new tutoring service raised scores because users improved more than before. Which fact most weakens that conclusion?",
+        "choices": [
+          "The users were selected because their scores had been unusually low on the first test.",
+          "The tutoring sessions covered the tested subject.",
+          "The tutor kept attendance records.",
+          "The second test used the same scoring scale."
+        ],
+        "key": "d66ab897d20d48ca9258c01fb78f245202cbb0ed7ada8dda4140d7235492a855",
+        "sourceNumber": 36,
+        "correctIndex": 0
+      },
+      {
+        "question": "A rule states that only registered members may borrow equipment. Zoya borrowed equipment. What follows?",
+        "choices": [
+          "Zoya is a registered member.",
+          "Zoya borrowed it without permission.",
+          "Every registered member borrowed equipment.",
+          "Zoya owns the equipment."
+        ],
+        "key": "0fda300772a37f64a024e1031c617f8831996b4ef8e0f6dcb7ca4eaab4d7582a",
+        "sourceNumber": 37,
+        "correctIndex": 0
+      },
+      {
+        "question": "A restaurant concludes that its food is more popular because it sold more meals this month than last month. Which information most weakens the conclusion?",
+        "choices": [
+          "The restaurant was open for twice as many days this month.",
+          "The restaurant changed the colour of its menu.",
+          "The meals were served on plates.",
+          "Some customers paid by card."
+        ],
+        "key": "1e374275d8c1fdf8fa067b33415fa0f2b9946780dd510cbe4b7dcc7b963b1703",
+        "sourceNumber": 38,
+        "correctIndex": 0
+      },
+      {
+        "question": "A report says no trained driver in the sample had a collision during the observation period. Which conclusion is justified?",
+        "choices": [
+          "No trained driver in that sample had a collision during that period.",
+          "Training prevents every collision.",
+          "Untrained drivers always have collisions.",
+          "The sample represents all drivers."
+        ],
+        "key": "f8d68b0041afb1d07188a83c740739a135f35f4ba8471e57a7cc6be4559f2cd1",
+        "sourceNumber": 39,
+        "correctIndex": 0
+      },
+      {
+        "question": "A council claims that adding a public water fountain will reduce plastic bottle waste. Which assumption is necessary?",
+        "choices": [
+          "Some people who would otherwise use disposable bottles will use the fountain instead.",
+          "Every resident carries a reusable bottle.",
+          "Plastic bottles are never recycled.",
+          "The fountain will be placed indoors."
+        ],
+        "key": "6614e1e5588987c57df776c5f27e71a92c99b2bada2b44f10939933d4ef92536",
+        "sourceNumber": 40,
+        "correctIndex": 0
+      },
+      {
+        "question": "A writer states: 'The proposal has not been rejected, so it must have been accepted.' What is the flaw?",
+        "choices": [
+          "It treats two possibilities as exhaustive even though the proposal could still be pending.",
+          "It assumes that proposals can be discussed.",
+          "It confuses a writer with a reader.",
+          "It gives evidence that the proposal was rejected."
+        ],
+        "key": "68183b392e906395c0ea0fb4f614d695c7c70a06ecd6a3e23d8820fdf2b349ba",
+        "sourceNumber": 41,
+        "correctIndex": 0
+      },
+      {
+        "question": "A college says a new advising service improved retention because more students returned the following year. What evidence would most strengthen its claim?",
+        "choices": [
+          "Comparable students offered the service returned at a higher rate than those not offered it.",
+          "The service uses a newly decorated office.",
+          "The college added more courses that year.",
+          "Students can book appointments online."
+        ],
+        "key": "f1e857600b79846bb2bc4ddfff17adf017f3dd1f04b6e00eb38dc3569bb7b752",
+        "sourceNumber": 42,
+        "correctIndex": 0
+      },
+      {
+        "question": "A report says that most applicants submitted their forms online. Which statement follows?",
+        "choices": [
+          "More than half of the applicants submitted their forms online.",
+          "Every applicant submitted a form online.",
+          "Exactly half submitted forms online.",
+          "No applicant submitted a paper form."
+        ],
+        "key": "693a504aada07b13a10e90697230951a222f0b67832e90a10932168b1e8384c9",
+        "sourceNumber": 43,
+        "correctIndex": 0
+      },
+      {
+        "question": "A school claims that a quiet-room policy improves concentration because pupils in the room completed more tasks. Which fact would most weaken the claim?",
+        "choices": [
+          "The pupils using the room were given easier tasks than other pupils.",
+          "The room has fewer distractions.",
+          "Pupils worked individually in the room.",
+          "Teachers recorded completed tasks."
+        ],
+        "key": "ad7b8abd6996dfdd7f5e88e308c094e70990f8ceea1229dcfe9215874e79fa85",
+        "sourceNumber": 44,
+        "correctIndex": 0
+      },
+      {
+        "question": "If the office receives a complete application, it sends a confirmation email. Farah received a confirmation email. What can be concluded?",
+        "choices": [
+          "Farah may have submitted a complete application, but the email alone does not prove it.",
+          "Farah definitely submitted an incomplete application.",
+          "The office never sends confirmation emails.",
+          "Only Farah received an email."
+        ],
+        "key": "1e073468afc42aeac21d61b1470687ea8c1b7dd032d5a3cbecbb9f77bc043ae8",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "A company says its new delivery system is faster because one order arrived earlier than expected. What is the strongest criticism?",
+        "choices": [
+          "One order does not establish the system's typical delivery speed.",
+          "An order cannot arrive early.",
+          "The company should stop delivering orders.",
+          "Customers always prefer slower delivery."
+        ],
+        "key": "8c0e10d3d9c48a35233c8b6301925864ea439c4232129f1deecf64e8bdeeb04a",
+        "sourceNumber": 46,
+        "correctIndex": 0
+      },
+      {
+        "question": "A community group argues that a vacant lot should become a playground because children in the area have few places to play. Which assumption is most important?",
+        "choices": [
+          "The lot can be made safe and suitable for children's play.",
+          "All children prefer outdoor games.",
+          "The lot is the largest land parcel in the district.",
+          "No adult uses the area."
+        ],
+        "key": "81e832ef7e882fb4dea0c8682076ccc8bca5d95217059bfeec12fced46e032dd",
+        "sourceNumber": 47,
+        "correctIndex": 0
+      },
+      {
+        "question": "An analyst notes that a city's electricity use fell during a mild winter and concludes that insulation upgrades caused the decrease. Which fact most weakens the conclusion?",
+        "choices": [
+          "Residents needed less heating during the mild winter.",
+          "Some buildings were upgraded with insulation.",
+          "The city records electricity use monthly.",
+          "The upgrades were completed before winter."
+        ],
+        "key": "d3b8f0ee83f403d0515c2a6e7da307c9daf3ec5864f72ff9087fe4822677b213",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "All books in the display are available for loan. This book is in the display. What follows?",
+        "choices": [
+          "This book is available for loan.",
+          "This book has already been borrowed.",
+          "Only displayed books can be borrowed.",
+          "Every book in the library is displayed."
+        ],
+        "key": "e8beef66b67214c68f61c135bcf37a62a6bdad1465963137940cce1741dec92e",
+        "sourceNumber": 49,
+        "correctIndex": 0
+      },
+      {
+        "question": "A survey finds that people who eat breakfast report better concentration. Which conclusion is most cautious?",
+        "choices": [
+          "Breakfast eating is associated with better reported concentration in the survey.",
+          "Breakfast guarantees concentration for everyone.",
+          "Poor concentration causes people to eat breakfast.",
+          "The survey proves breakfast has no effect."
+        ],
+        "key": "fe6572b8c20687c41a8bdc94b4f38575a080f3a34549fb78e7cea280c327502c",
+        "sourceNumber": 50,
+        "correctIndex": 0
+      },
+      {
+        "question": "A manager claims that a shorter meeting format saves staff time. Which fact most weakens the claim?",
+        "choices": [
+          "The shorter meetings require lengthy follow-up meetings to resolve unfinished issues.",
+          "The meetings begin on time.",
+          "Staff receive agendas in advance.",
+          "The office has a shared calendar."
+        ],
+        "key": "b12c2afc2146b4fdbfa0beaffc8057bdf9fbd12b72650231e00f1c9c9acb3e39",
+        "sourceNumber": 51,
+        "correctIndex": 0
+      },
+      {
+        "question": "A school says that its attendance improved after it began calling absent pupils' families. Which question best tests whether the calls caused the improvement?",
+        "choices": [
+          "Did comparable schools without the calling policy show a similar attendance increase?",
+          "What brand of phone did the school use?",
+          "How many teachers work at the school?",
+          "Were the calls made in the morning?"
+        ],
+        "key": "dc5335ff7e547d251779138eefcdc73db4de2c8524c33cc4b9f5290754d98b33",
+        "sourceNumber": 52,
+        "correctIndex": 0
+      },
+      {
+        "question": "A critic argues that a public garden is unnecessary because the district already has a sports field. What is the main weakness?",
+        "choices": [
+          "It assumes a sports field meets the same needs as a public garden.",
+          "It proves that the district has no residents.",
+          "It assumes gardens contain plants.",
+          "It establishes that the sports field is always open."
+        ],
+        "key": "0b03305afcea1f80ac50fea6bf63ce8c66c8656768ca37c78415a067cad5326f",
+        "sourceNumber": 53,
+        "correctIndex": 0
+      },
+      {
+        "question": "A rule says that a person may enter the laboratory only if wearing safety glasses. Hamza entered the laboratory. What follows?",
+        "choices": [
+          "Hamza was wearing safety glasses.",
+          "Hamza works in the laboratory.",
+          "Everyone wearing safety glasses entered.",
+          "Hamza used every laboratory instrument."
+        ],
+        "key": "ccc427537770bfbc9199bc00cc73448aea6af50acdf405171841d9999f4eb90b",
+        "sourceNumber": 54,
+        "correctIndex": 0
+      },
+      {
+        "question": "A firm claims its customer-support change reduced complaints because complaint numbers fell. Which additional information would most weaken the claim?",
+        "choices": [
+          "The firm made it harder for customers to submit complaints.",
+          "The support team now answers calls more quickly.",
+          "The firm sells fewer product types than before.",
+          "Customers can contact support by email."
+        ],
+        "key": "84cda658d66d4ebede8c5e79c2f870231e3e742e9717e972ff1ce63722689d01",
+        "sourceNumber": 55,
+        "correctIndex": 0
+      },
+      {
+        "question": "A library's new online catalogue is used by more patrons than the old catalogue was. Which claim is supported?",
+        "choices": [
+          "More patrons used the new catalogue than used the old one.",
+          "The new catalogue is easier for every patron.",
+          "The new catalogue caused more people to visit the library.",
+          "The old catalogue contained incorrect information."
+        ],
+        "key": "298e6884c21978eb9c2a0d044507857c5f47bcdbd1d0e48e56ffd554f5ed7e42",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "A town proposes a late-night bus service because some workers finish shifts after the current buses stop. Which assumption best supports the proposal?",
+        "choices": [
+          "Some of those workers would use the late-night service.",
+          "All workers prefer travelling by bus.",
+          "The current buses are always full.",
+          "Every employer operates at night."
+        ],
+        "key": "87f209ded780a2a9e5bf0a825018876deaa2939604eceb5ebc45856c4c293056",
+        "sourceNumber": 57,
+        "correctIndex": 0
+      },
+      {
+        "question": "A researcher reports that students who attend every class score higher on average. What is one plausible alternative explanation?",
+        "choices": [
+          "Students with stronger prior preparation may both attend more and score higher.",
+          "Scores are always unrelated to learning.",
+          "Attending class is impossible for students.",
+          "Every student takes a different subject."
+        ],
+        "key": "c4bec55ebcbb9d351d77e03da338990c27bcf63377498e9fd61c537600ace7ec",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "A proposal is popular among people who attended a public meeting. The organiser concludes that it is popular across the whole district. What is the main concern?",
+        "choices": [
+          "Meeting attendees may not represent the district's residents.",
+          "The proposal must be unpopular with attendees.",
+          "Public meetings cannot include opinions.",
+          "The district has no residents who work."
+        ],
+        "key": "ff3c0015d96948ab577b55e6b3d755da6f013a420db202579f60e542cff3b672",
+        "sourceNumber": 59,
+        "correctIndex": 0
+      },
+      {
+        "question": "A claim says that all items stored in Cabinet A are labelled. One labelled item is found on a desk. What can be concluded?",
+        "choices": [
+          "The item is not shown to have come from Cabinet A.",
+          "The item definitely came from Cabinet A.",
+          "The item is unlabelled.",
+          "Nothing stored in Cabinet A is labelled."
+        ],
+        "key": "e7f3e6747cf34c6e2a48db14ffe3e5537d297147e347f7d35f0133cd3b571be1",
+        "sourceNumber": 60,
+        "correctIndex": 0
+      },
+      {
+        "question": "A school argues that a new library will improve learning because students will have more books available. Which evidence most strengthens the argument?",
+        "choices": [
+          "Comparable students with access to the new library use its resources and improve on relevant learning measures.",
+          "The library's walls are newly painted.",
+          "The school has a large playground.",
+          "Some students enjoy reading at home."
+        ],
+        "key": "e4142734cd2ab0201069ad303c52aa2f26fac937dbb43e68b44bc9c721d86175",
+        "sourceNumber": 61,
+        "correctIndex": 0
+      },
+      {
+        "question": "A news report says that a medicine helped some patients in a small study. Which conclusion goes beyond the evidence?",
+        "choices": [
+          "The medicine will help every patient who takes it.",
+          "Some patients in the study improved after receiving it.",
+          "The study offers preliminary information about the medicine.",
+          "Further evidence could clarify its effects."
+        ],
+        "key": "04e0143ad4b537fae2c5d7592477e9eab59a24d2ad2b630428aed69c5571f061",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "An office introduces a four-day workweek and reports that output per employee rose. Which information would most weaken the claim that the new schedule caused the rise?",
+        "choices": [
+          "The office also installed software that automated a large share of routine work.",
+          "Employees liked having an extra day off.",
+          "The office recorded output before and after the change.",
+          "Some employees work from home."
+        ],
+        "key": "89a0144c3e85c19a9d5ec41b148a03d166a39c44b92525750985ddbf7af0ebe0",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "If a file is confidential, it must be stored in the secure cabinet. This file is stored in the secure cabinet. What follows?",
+        "choices": [
+          "The file might be confidential, but its storage alone does not prove that it is.",
+          "The file is definitely not confidential.",
+          "Only confidential files are stored in the cabinet.",
+          "The file has been read by the whole office."
+        ],
+        "key": "9ee0537a89a9895d533a17fbc9b35b9c8b11d45a6482cd0b4646a93948a4b28e",
+        "sourceNumber": 64,
+        "correctIndex": 0
+      },
+      {
+        "question": "A shop says its loyalty scheme increased sales because members spent more than non-members. Which fact most challenges the conclusion?",
+        "choices": [
+          "The scheme attracted customers who were already frequent, high-spending shoppers.",
+          "Members received a card.",
+          "The shop sells groceries.",
+          "Some non-members visited the shop."
+        ],
+        "key": "d0cfc4e54ff4979d8fe5c08a9f6bc1e7c42ba5c269c6c3996eb1eb32b11bedd6",
+        "sourceNumber": 65,
+        "correctIndex": 0
+      },
+      {
+        "question": "A report states that a new bridge is used by both pedestrians and cyclists. Which statement must be true?",
+        "choices": [
+          "At least one pedestrian and at least one cyclist use the bridge.",
+          "Most bridge users are cyclists.",
+          "No vehicles use the bridge.",
+          "Every pedestrian also cycles."
+        ],
+        "key": "77e5a1409188d41e33dbfdb676d758e94829a41e9dba7fa4b721c4cafcfc86b2",
+        "sourceNumber": 66,
+        "correctIndex": 0
+      },
+      {
+        "question": "A neighbourhood group argues that a vacant shop should become a clinic because residents travel far for basic care. What evidence would most strengthen the proposal?",
+        "choices": [
+          "A needs assessment finds enough local demand and confirms the shop can be adapted for clinical use.",
+          "The shop has a wide front window.",
+          "Some residents own cars.",
+          "The neighbourhood has several restaurants."
+        ],
+        "key": "1b31c6739ff6a5edfe462d9cb6188fc9bae9b255be20fe706f3bc905234c5f3a",
+        "sourceNumber": 67,
+        "correctIndex": 0
+      },
+      {
+        "question": "A student says, 'I revised for one hour and passed, so one hour of revision is enough for every student.' What is the main flaw?",
+        "choices": [
+          "It generalizes from one student's experience to all students.",
+          "It assumes passing is possible.",
+          "It confuses revision with examination.",
+          "It proves that one hour is never useful."
+        ],
+        "key": "183c07f57096dd53e15c784b125fbbc10db977aa881fbfbe0c4950da863b415c",
+        "sourceNumber": 68,
+        "correctIndex": 0
+      },
+      {
+        "question": "Every approved expense has a receipt attached. An expense has no receipt attached. What follows?",
+        "choices": [
+          "The expense is not shown to be approved.",
+          "The expense must be approved.",
+          "The receipt was lost after approval.",
+          "No expenses are approved."
+        ],
+        "key": "995a78a64bff7afcf2e109ffe11cbc57f814bb5ea0cb7f2494ed3e8e93898073",
+        "sourceNumber": 69,
+        "correctIndex": 0
+      },
+      {
+        "question": "A city says traffic congestion fell after it introduced a toll. Which information most weakens the claim that the toll caused the decline?",
+        "choices": [
+          "A major road was closed for repairs during the same period.",
+          "The toll amount was posted clearly.",
+          "Some drivers paid electronically.",
+          "The city has several traffic lights."
+        ],
+        "key": "e0922d3bcd872c423f2f68761e8f0dd9e2994001c706ec42a290b7236eccb75a",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "A committee recommends translating a public notice because many residents speak another language. Which assumption is most important?",
+        "choices": [
+          "A translated notice would help some residents understand the information.",
+          "Every resident speaks only one language.",
+          "The notice is already difficult for officials to read.",
+          "The committee can eliminate every communication problem."
+        ],
+        "key": "dfe955bfef2769770edecc69bc75c5173dceb00bc4d08b80275df0e369b1a09b",
+        "sourceNumber": 71,
+        "correctIndex": 0
+      },
+      {
+        "question": "A company reports that staff satisfaction rose after it introduced a recognition scheme. Which further information would most strengthen a causal interpretation?",
+        "choices": [
+          "Comparable staff groups without the scheme did not show a similar rise.",
+          "The scheme uses certificates.",
+          "The company has several departments.",
+          "Managers announced the scheme by email."
+        ],
+        "key": "2552026570e34e607f8805c1c11a37b9741663012eae05fb6213f810a5c7fa8f",
+        "sourceNumber": 72,
+        "correctIndex": 0
+      },
+      {
+        "question": "A guide says that every express train stops at Central Station. Train X stops at Central Station. What follows?",
+        "choices": [
+          "Train X may be express, but the stop alone does not establish that it is.",
+          "Train X is not express.",
+          "Only express trains stop at Central Station.",
+          "Train X stops at every station."
+        ],
+        "key": "16f300f51799a8588e7f42fa8de96de48fdcce49b807ea19462a6bb17b3b1b1f",
+        "sourceNumber": 73,
+        "correctIndex": 0
+      },
+      {
+        "question": "A school claims that offering free breakfast improves attendance because attendance rose after the programme began. Which fact most weakens the claim?",
+        "choices": [
+          "The school also changed its attendance recording system so fewer absences were counted.",
+          "Breakfast is served before classes.",
+          "Pupils can choose from several foods.",
+          "The programme began at the start of a term."
+        ],
+        "key": "8af4816538de8ac28328642d13839c516fee84652757e0bc625b1f6e699fba5f",
+        "sourceNumber": 74,
+        "correctIndex": 0
+      },
+      {
+        "question": "A report says that a policy reduced waiting time at one clinic. Which conclusion is justified?",
+        "choices": [
+          "Waiting time fell at that clinic after the policy was applied, according to the report.",
+          "The policy will reduce waiting time at every clinic.",
+          "Every patient received immediate care.",
+          "The clinic no longer needs staff."
+        ],
+        "key": "2e307b044b0fda217dae8e38f7dfde00029aa9b9eb54d99e276bf4c100829910",
+        "sourceNumber": 75,
+        "correctIndex": 0
+      },
+      {
+        "question": "A manager says employees should receive written instructions because verbal instructions are sometimes forgotten. Which assumption supports the recommendation?",
+        "choices": [
+          "Employees can consult written instructions when they need to remember the task.",
+          "All verbal instructions are incorrect.",
+          "Employees never read documents.",
+          "Written instructions eliminate every workplace error."
+        ],
+        "key": "ec6c99d1c7acfd6248ae3d28c16776f6b17246f8c8fa76d0eb686aa2f490f8fd",
+        "sourceNumber": 76,
+        "correctIndex": 0
+      },
+      {
+        "question": "A researcher finds that people who use a certain app exercise more often. Which fact most weakens the inference that the app causes more exercise?",
+        "choices": [
+          "The app is marketed mainly to people who already exercise regularly.",
+          "The app records exercise sessions.",
+          "Some users exercise outdoors.",
+          "The app is available on several phones."
+        ],
+        "key": "fe7c15e76bd4087c235b2a9c0fc06af6b5598b23ae0cb31833835812e83e4e25",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "A local council says that replacing old street signs will reduce navigation errors. Which assumption is necessary?",
+        "choices": [
+          "Some navigation errors occur because the old signs are unclear or difficult to read.",
+          "Every traveller uses a paper map.",
+          "The new signs will be larger than every building.",
+          "Navigation errors are the only cause of late arrivals."
+        ],
+        "key": "7e3547e8b6426044c9cbe67d707fa8c42c618ec10c458acb4637e1d527617158",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "A reader claims a newspaper is unbiased because it published criticism of both major parties. Which fact most challenges the claim?",
+        "choices": [
+          "It published substantially more favourable coverage of one party than the other.",
+          "It publishes news every day.",
+          "Its articles have headlines.",
+          "Readers can access it online."
+        ],
+        "key": "5dc4d7fda60bdfbc87ee04899513ad6fc59c12d372fa1f4f7af28e8c4726c629",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "If a candidate submits the required documents, the application is complete. This application is complete. What can be concluded?",
+        "choices": [
+          "The candidate may have submitted the required documents, but completeness alone does not prove it.",
+          "The candidate submitted no documents.",
+          "Only complete applications are ever reviewed.",
+          "The application must be incomplete."
+        ],
+        "key": "209b7619c0559f051881e29e0ad0fd67097b04a95db82d961515e42d44c268f2",
+        "sourceNumber": 80,
+        "correctIndex": 0
+      },
+      {
+        "question": "A library reports more visits after adding weekend hours. Which evidence would most weaken the claim that the new hours caused the rise?",
+        "choices": [
+          "A nearby event brought unusually large crowds to the library during the same period.",
+          "The library kept a record of visits.",
+          "Weekend hours were announced in advance.",
+          "Some visitors borrowed books."
+        ],
+        "key": "4b23dc94f141cd6a8bb3c5cbf7f75c3fe59359de1596c30573c38cc9530bbc7f",
+        "sourceNumber": 81,
+        "correctIndex": 0
+      },
+      {
+        "question": "A report says that no participant who completed the course failed the final assessment. Which conclusion is warranted?",
+        "choices": [
+          "In the reported group, course completers did not fail the final assessment.",
+          "Completing the course guarantees success for every future participant.",
+          "Every participant completed the course.",
+          "Participants who failed did not attend any classes."
+        ],
+        "key": "cc3196bb7d182aa50dd048921e75390789403c74452fb3d0e20fdddc8f12fa8b",
+        "sourceNumber": 82,
+        "correctIndex": 0
+      },
+      {
+        "question": "A business proposes a self-service checkout to reduce queues. Which assumption is most important?",
+        "choices": [
+          "Some customers will use the self-service checkout instead of waiting for a staffed checkout.",
+          "All customers prefer shopping without staff.",
+          "The store has no other queues.",
+          "Every purchase contains exactly one item."
+        ],
+        "key": "3d408797e8d68b9f8e9e0133eec763e9ffee1972c7a4f6f0de0d6ec1e235cc5e",
+        "sourceNumber": 83,
+        "correctIndex": 0
+      },
+      {
+        "question": "An author argues that a town should preserve an old building because it is historically significant. Which fact most strengthens the argument?",
+        "choices": [
+          "Independent records show that the building is associated with an important event in the town's history.",
+          "The building has several windows.",
+          "The building is near a bus stop.",
+          "Some residents prefer modern architecture."
+        ],
+        "key": "8bd5da11af52ed68ff663a643559041afdcc2a0f25896598594dc13ca34121df",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "A school reports fewer disciplinary incidents after introducing a new rule. Which evidence most weakens the claim that behaviour improved?",
+        "choices": [
+          "The school stopped recording minor incidents after the rule was introduced.",
+          "Teachers explained the rule to pupils.",
+          "The rule applies in classrooms.",
+          "Some incidents still occurred."
+        ],
+        "key": "def13fac7f816f2f9c094bb1aee64ae07cb3246ffcc02d454e2bdf77e6634e8c",
+        "sourceNumber": 85,
+        "correctIndex": 0
+      },
+      {
+        "question": "A notice states that the training room is reserved for registered participants. A person is not registered. What follows?",
+        "choices": [
+          "The person is not entitled to use the room under the stated reservation rule.",
+          "The person has attended the training before.",
+          "The person is registered under another name.",
+          "The room is empty."
+        ],
+        "key": "e38fec6cd28d0c820e165e315048a03983f60cd4d2f24b1d284e271f947a75dd",
+        "sourceNumber": 86,
+        "correctIndex": 0
+      },
+      {
+        "question": "A company says that a new product is reliable because one customer used it for a year without a problem. What is the main weakness?",
+        "choices": [
+          "One customer's experience is too limited to establish reliability generally.",
+          "A product cannot be used for a year.",
+          "The customer must have used the product incorrectly.",
+          "Reliability has no meaning for products."
+        ],
+        "key": "f7f0bcedc6dba954cf40f9d9861aeaf894d9b34d036743cc931c8816cac5d71f",
+        "sourceNumber": 87,
+        "correctIndex": 0
+      },
+      {
+        "question": "A council argues that adding shade at a bus stop will make waiting more comfortable. Which assumption is required?",
+        "choices": [
+          "Exposure to sun or weather currently makes waiting less comfortable for some passengers.",
+          "All passengers wait for the same bus.",
+          "The bus stop is the only public space nearby.",
+          "Shade will make buses arrive sooner."
+        ],
+        "key": "b447da52fcb0a8fee5a2637bf4ee7d14c375af2a330068d4be8d4f060955ee43",
+        "sourceNumber": 88,
+        "correctIndex": 0
+      },
+      {
+        "question": "A report finds that districts with more public parks have lower rates of reported stress. Which conclusion is best supported?",
+        "choices": [
+          "The districts studied show an association between more parks and lower reported stress.",
+          "Building one park will eliminate stress in any district.",
+          "Parks are the only cause of stress levels.",
+          "People with stress never use parks."
+        ],
+        "key": "544d2b74a19efdf9166c0290a35098b1ce69f43fd8d668ab60a8aeb74b82c908",
+        "sourceNumber": 89,
+        "correctIndex": 0
+      },
+      {
+        "question": "A manager claims that a new checklist reduced packing errors because fewer errors were found. Which question is most important?",
+        "choices": [
+          "Was the method for detecting and recording errors kept the same?",
+          "What colour is the checklist?",
+          "How many employees work in the office?",
+          "Does the checklist have a title?"
+        ],
+        "key": "f27d42081982df5b3ee7abb27c6e2bd512eeb6c10c89cbf5a9e34118eebf67a1",
+        "sourceNumber": 90,
+        "correctIndex": 0
+      },
+      {
+        "question": "Only staff with a current permit may operate the machine. Leena has a current permit. What follows?",
+        "choices": [
+          "Leena is allowed to operate the machine under the stated rule.",
+          "Leena must operate the machine today.",
+          "Everyone with a permit operates the machine.",
+          "Leena has trained every staff member."
+        ],
+        "key": "b5c373811ceb990b1fbc71a7be0e8750b0b34ae8c4a912ba77b795dbd47f2b2b",
+        "sourceNumber": 91,
+        "correctIndex": 0
+      },
+      {
+        "question": "A town claims a new recycling campaign increased recycling because the amount collected rose. Which fact most weakens the claim?",
+        "choices": [
+          "A nearby recycling facility began accepting materials that were previously excluded.",
+          "The campaign used posters.",
+          "Residents received collection calendars.",
+          "The town weighed collected materials."
+        ],
+        "key": "f4b318bc40efeced8cb40511d9dca45d2e901c0db0716d8ffc986bd8b9c92281",
+        "sourceNumber": 92,
+        "correctIndex": 0
+      },
+      {
+        "question": "A report says that some applicants who were interviewed received offers. Which statement must be true?",
+        "choices": [
+          "At least one interviewed applicant received an offer.",
+          "Every interviewed applicant received an offer.",
+          "No applicant received an offer without an interview.",
+          "Most applicants were interviewed."
+        ],
+        "key": "6618c6402338f7f9ce9ee74fd2436994ccae96766b7fddfcab12686da6c12176",
+        "sourceNumber": 93,
+        "correctIndex": 0
+      },
+      {
+        "question": "A college says an online appointment system reduced missed appointments because the recorded number of missed appointments fell. Which information most weakens the claim?",
+        "choices": [
+          "The college reduced the number of appointments available during the same period.",
+          "Students can book appointments online.",
+          "The system sends reminders.",
+          "Staff record appointment outcomes."
+        ],
+        "key": "847cc9b67350c9933e96b1b35c6dfebde61e7521fc8f2f7cb8d9bce53bad2fbf",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "A newspaper argues that a public meeting should be held in the evening because many residents work during the day. Which assumption best supports the argument?",
+        "choices": [
+          "Some residents who cannot attend during the day would be able to attend in the evening.",
+          "Every resident works the same hours.",
+          "The meeting will be held outdoors.",
+          "Daytime meetings are always shorter."
+        ],
+        "key": "06ef596285fea5978c0720b3d52901692cfe5e9ee83e206a612c086944a34735",
+        "sourceNumber": 95,
+        "correctIndex": 0
+      },
+      {
+        "question": "A claim says that a new reading app improved vocabulary because users learned more words than before. Which evidence most strengthens the claim?",
+        "choices": [
+          "A comparable group not using the app showed less improvement on the same vocabulary measure.",
+          "The app includes animated pictures.",
+          "Users can change the background colour.",
+          "The app can be downloaded on phones."
+        ],
+        "key": "774e8bc986530dc8e0fe2fa9267265d2718ce16b270aaca3c02531cdf40539ad",
+        "sourceNumber": 96,
+        "correctIndex": 0
+      },
+      {
+        "question": "A person argues, 'The town's new policy is effective because no one has complained about it.' What is the main flaw?",
+        "choices": [
+          "Absence of complaints does not establish that the policy is effective.",
+          "An effective policy must receive many complaints.",
+          "The town cannot have policies.",
+          "People complain only when policies are effective."
+        ],
+        "key": "2c43181a62bb6ce7e0671e121459297e84290998d34749ab7803537860d9164e",
+        "sourceNumber": 97,
+        "correctIndex": 0
+      },
+      {
+        "question": "A school states that students who submit every assignment are eligible for a certificate. Rafi submitted every assignment. What follows?",
+        "choices": [
+          "Rafi is eligible for a certificate.",
+          "Rafi has received the certificate.",
+          "Rafi earned the highest score.",
+          "Only Rafi submitted every assignment."
+        ],
+        "key": "f333c91989b6d85b4aff558f155c6b6a7d1e4f2a23cdfecc18c12513844526d7",
+        "sourceNumber": 98,
+        "correctIndex": 0
+      },
+      {
+        "question": "A district plans to add signs directing visitors to a clinic, arguing that this will reduce missed appointments. Which assumption is most important?",
+        "choices": [
+          "Some missed appointments occur because visitors have difficulty finding the clinic.",
+          "Every visitor arrives by car.",
+          "The clinic has no appointment system.",
+          "Signs will shorten the medical consultation."
+        ],
+        "key": "39a9f598e425912994d849d45a2fb5894b6ed6427ad409936651d4697a5e5674",
+        "sourceNumber": 99,
+        "correctIndex": 0
+      },
+      {
+        "question": "A researcher observes that homes with solar panels have lower electricity bills. Which fact most weakens the claim that panels caused the lower bills?",
+        "choices": [
+          "Panel owners also tend to use less electricity than other households.",
+          "Solar panels are installed on roofs.",
+          "Some households receive monthly bills.",
+          "The study includes several homes."
+        ],
+        "key": "b4eb704af955827e73051d6ad0059af93c99a60303f470292b9c299744cb2520",
+        "sourceNumber": 100,
+        "correctIndex": 0
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "45d74c8ac3894a4e56ad7acc2543484b7d85edcd3afbeca0194c92cb554b3a51",
+      "sourceQuestionNumbers": [
+        93,
+        17,
+        77,
+        21,
+        54,
+        10,
+        33,
+        92,
+        47,
+        79,
+        1,
+        57,
+        32,
+        76,
+        94,
+        28,
+        81,
+        44,
+        72,
+        8,
+        97,
+        64,
+        9,
+        22,
+        42,
+        45,
+        13,
+        26,
+        66,
+        90,
+        36,
+        65,
+        19,
+        43,
+        99,
+        69,
+        6,
+        53,
+        34,
+        96,
+        95,
+        16,
+        51,
+        39,
+        78,
+        46,
+        83,
+        71,
+        35,
+        4,
+        63,
+        5,
+        30,
+        98,
+        50,
+        41,
+        73,
+        88,
+        3,
+        37,
+        48,
+        82,
+        20,
+        67,
+        40,
+        86,
+        55,
+        15,
+        29,
+        75,
+        49,
+        38,
+        61,
+        11,
+        91,
+        2,
+        60,
+        84,
+        23,
+        68,
+        62,
+        87,
+        56,
+        7,
+        25,
+        12,
+        31,
+        70,
+        59,
+        89,
+        74,
+        14,
+        27,
+        52,
+        85,
+        24,
+        18,
+        58,
+        80,
+        100
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
