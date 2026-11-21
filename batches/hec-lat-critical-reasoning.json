@@ -1800,6 +1800,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        54,
+        10
+      ],
+      "count": 2,
+      "durationSeconds": 68,
+      "sha256": "b4fce30876cf83371a2fc44cf1425e7f969553cdf9801e5d7d3ffafbca754e0f",
+      "manifest": {
+        "title": "100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+        "sourceTitle": "100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-21T06:40:38.114071+00:00",
+        "sourceContentHash": "41f2a8d6d24bb3b43d660214ca501524d0c3c0ac2702f85dcc6409c0df04243d",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7959791516,
+          "sha": "c7a636809349ca39ff712a4310ad4924e1d1ad13",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-21T06:40:38.114071+00:00",
+          "url": "https://mcqs-base-2s264iegs-as-projects-10921176.vercel.app",
+          "publisherRunId": 44876169132
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 68,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A rule says that a person may enter the laboratory only if wearing safety glasses. Hamza entered the laboratory. What follows?",
+            "choices": [
+              "Hamza was wearing safety glasses.",
+              "Hamza works in the laboratory.",
+              "Everyone wearing safety glasses entered.",
+              "Hamza used every laboratory instrument."
+            ],
+            "correctIndex": 0,
+            "key": "ccc427537770bfbc9199bc00cc73448aea6af50acdf405171841d9999f4eb90b",
+            "sourceNumber": 54
+          },
+          {
+            "question": "A notice states that the clinic is closed on Sundays and open on every other day. Which statement follows?",
+            "choices": [
+              "The clinic is open on Saturday.",
+              "The clinic is open every Sunday morning.",
+              "The clinic closes whenever it is busy.",
+              "The clinic is open only on weekdays."
+            ],
+            "correctIndex": 0,
+            "key": "4c3090381fd802ef5e54c1d46517cbdbd887832b42522d0de152d313884b07a7",
+            "sourceNumber": 10
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 24,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 25,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 26,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 27,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 33,
+            "duration": 22,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 55,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 56,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 57,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 58,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 63,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            54,
+            10
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#TestPreparation",
+          "#QuizTime",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/hec-lat-critical-reasoning-part-03-b4fce30876cf8337.mp4",
+        "videoSha256": "b4fce30876cf83371a2fc44cf1425e7f969553cdf9801e5d7d3ffafbca754e0f",
+        "assetId": 774696110
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q54, 10 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 54, 10\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q54, 10 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 54, 10\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q54, 10 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 54, 10\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q54, 10 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 54, 10\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
