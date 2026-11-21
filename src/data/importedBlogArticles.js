@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "hec-lat-critical-reasoning": {
+    title: "100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+    excerpt:
+      "Practise drawing careful inferences, identifying assumptions and evaluating arguments with 100 original critical reasoning questions and concise explanations.",
+    category: "Subject Guide",
+    date: "2026-11-21",
+    readTime: "46 min",
+    content: null,
+    body: readImportedBlogBody("hec-lat-critical-reasoning")
+  },
   "nts-numerical-series": {
     title: "99 NTS-Style Numerical Series MCQs with Explanations",
     excerpt:
