@@ -1241,8 +1241,8 @@
         "2026-11-20T19:32:00+05:00",
         "2026-11-20T22:00:00+05:00"
       ],
-      "published": 0,
-      "verifiedPublications": 0
+      "published": 19,
+      "verifiedPublications": 14
     },
     "hec-lat-critical-reasoning": {
       "status": "ready",
