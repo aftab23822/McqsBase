@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "hec-lat-critical-reasoning",
   "createdAt": "2026-11-21T06:40:38.354552+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "hec-lat-critical-reasoning",
     "title": "100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
@@ -2498,5 +2498,81 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "hec-lat-critical-reasoning",
+    "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+    "sourceTitle": "100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+    "sourceContentHash": "41f2a8d6d24bb3b43d660214ca501524d0c3c0ac2702f85dcc6409c0df04243d",
+    "productionDeployment": {
+      "id": 7959791516,
+      "sha": "c7a636809349ca39ff712a4310ad4924e1d1ad13",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-21T06:40:38.114071+00:00",
+      "url": "https://mcqs-base-2s264iegs-as-projects-10921176.vercel.app",
+      "publisherRunId": 44876169132
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          93,
+          17
+        ],
+        "count": 2,
+        "durationSeconds": 75,
+        "sha256": "2b44aeddf6489ef821e94bc6c47a6312d70ec0e621094eaadfbb188c08ba59d0"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          77,
+          21
+        ],
+        "count": 2,
+        "durationSeconds": 81,
+        "sha256": "c197c1280ade91a99e12fe99ae4199fcaa6a428f7992c4374ad62aa1bca4b6c7"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          54,
+          10
+        ],
+        "count": 2,
+        "durationSeconds": 68,
+        "sha256": "b4fce30876cf83371a2fc44cf1425e7f969553cdf9801e5d7d3ffafbca754e0f"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          33,
+          92
+        ],
+        "count": 2,
+        "durationSeconds": 80,
+        "sha256": "f88aad5566b39c1a00efbfede94be20dee07c831d375c52108f7675fd5d1d346"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          47,
+          79
+        ],
+        "count": 2,
+        "durationSeconds": 77,
+        "sha256": "91d26d7cba344760e3b1c1b19393dd7e9878c9bed7049ff985b8439d41036e0b"
+      }
+    ]
+  }
 }
