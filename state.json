@@ -1245,7 +1245,7 @@
       "verifiedPublications": 14
     },
     "hec-lat-critical-reasoning": {
-      "status": "scheduling",
+      "status": "scheduled",
       "ledger": "batches/hec-lat-critical-reasoning.json",
       "createdAt": "2026-11-21T06:40:38.354552+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
