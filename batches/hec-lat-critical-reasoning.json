@@ -2527,6 +2527,10 @@
           "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
           "format": "short"
         }
+      },
+      "uploadIntent": {
+        "filename": "hec-lat-critical-reasoning-part-05-91d26d7cba344760.mp4",
+        "status": "uncertain"
       }
     }
   ],
