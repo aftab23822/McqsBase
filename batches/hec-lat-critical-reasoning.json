@@ -1568,6 +1568,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 2,
+      "directory": "part-02",
+      "sourceQuestionNumbers": [
+        77,
+        21
+      ],
+      "count": 2,
+      "durationSeconds": 81,
+      "sha256": "c197c1280ade91a99e12fe99ae4199fcaa6a428f7992c4374ad62aa1bca4b6c7",
+      "manifest": {
+        "title": "100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+        "sourceTitle": "100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-21T06:40:38.114071+00:00",
+        "sourceContentHash": "41f2a8d6d24bb3b43d660214ca501524d0c3c0ac2702f85dcc6409c0df04243d",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7959791516,
+          "sha": "c7a636809349ca39ff712a4310ad4924e1d1ad13",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-21T06:40:38.114071+00:00",
+          "url": "https://mcqs-base-2s264iegs-as-projects-10921176.vercel.app",
+          "publisherRunId": 44876169132
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 81,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A researcher finds that people who use a certain app exercise more often. Which fact most weakens the inference that the app causes more exercise?",
+            "choices": [
+              "The app is marketed mainly to people who already exercise regularly.",
+              "The app records exercise sessions.",
+              "Some users exercise outdoors.",
+              "The app is available on several phones."
+            ],
+            "correctIndex": 0,
+            "key": "fe7c15e76bd4087c235b2a9c0fc06af6b5598b23ae0cb31833835812e83e4e25",
+            "sourceNumber": 77
+          },
+          {
+            "question": "A council argues that adding more rubbish bins will reduce litter. Which assumption is necessary?",
+            "choices": [
+              "A meaningful amount of litter is caused by a lack of convenient disposal places.",
+              "Every resident produces the same amount of rubbish.",
+              "The bins will be made from recycled material.",
+              "Litter is the only problem in the area."
+            ],
+            "correctIndex": 0,
+            "key": "1ea229fd3e7f82e321efa5ec2a05a0e248ab62aa1990e6db1878b9150491165a",
+            "sourceNumber": 21
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 27,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 27,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 28,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 29,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 30,
+            "duration": 8,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 38,
+            "duration": 26,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 64,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 65,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 66,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 67,
+            "duration": 9,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 76,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 2,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            77,
+            21
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#TestPreparation",
+          "#QuizTime",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/hec-lat-critical-reasoning-part-02-c197c1280ade91a9.mp4",
+        "videoSha256": "c197c1280ade91a99e12fe99ae4199fcaa6a428f7992c4374ad62aa1bca4b6c7",
+        "assetId": 774693851
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 2/5 | Q77, 21 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 77, 21\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 2/5 | Q77, 21 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 77, 21\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 2/5 | Q77, 21 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 77, 21\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 2/5 | Q77, 21 | 100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 77, 21\n100 HEC LAT-Style Critical Reasoning MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #TestPreparation #QuizTime #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#TestPreparation",
+            "#QuizTime",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
