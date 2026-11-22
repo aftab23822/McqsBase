@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "nat-ie-thermal-physics",
+  "createdAt": "2026-11-22T06:08:05.106115+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nat-ie-thermal-physics",
+    "title": "100 Thermal Physics MCQs for NAT-IE-Style Practice",
+    "url": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7974754634,
+      "sha": "0ba54782daf921cd8bdcd2d6a89f1ff8c8b5fb4b",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-22T06:08:04.919944+00:00",
+      "url": "https://mcqs-base-d7y633b8s-as-projects-10921176.vercel.app",
+      "publisherRunId": 44991915054
+    },
+    "fetchedAt": "2026-11-22T06:08:04.919944+00:00",
+    "contentHash": "0e7b12cc3b41e79aea4f4f8aa2fb801618c33d4b99e5609a146c7431a2e20451",
+    "questions": [
+      {
+        "question": "What is 27°C on the kelvin scale?",
+        "choices": [
+          "273 K",
+          "300 K",
+          "27 K",
+          "246 K"
+        ],
+        "key": "981875b7dc73fad1f639fa15ce7c9651b55f5014c07cea076edeeb3e29f32848",
+        "sourceNumber": 1,
+        "correctIndex": 1
+      },
+      {
+        "question": "A temperature of 0°C is approximately equal to which temperature?",
+        "choices": [
+          "0 K",
+          "100 K",
+          "273 K",
+          "373 K"
+        ],
+        "key": "25f1d60967c95b8db0e25efcfa95f7228aafe2486ff08e4435a220840877a752",
+        "sourceNumber": 2,
+        "correctIndex": 2
+      },
+      {
+        "question": "A temperature rises by 18°C. What is the size of this temperature change in kelvins?",
+        "choices": [
+          "18 K",
+          "255 K",
+          "291 K",
+          "18/273 K"
+        ],
+        "key": "efcb6fff521dc8f86e069c73630d82b32b963d7189687da3df2d5d9018f1d42e",
+        "sourceNumber": 3,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is 68°F in degrees Celsius?",
+        "choices": [
+          "10°C",
+          "20°C",
+          "32°C",
+          "36°C"
+        ],
+        "key": "d68a8893c4f3176717fce8b457d3f14e42cbf0e4c83e64f7b8a80d96cce93254",
+        "sourceNumber": 4,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 2 kg metal block with specific heat capacity 450 J kg⁻¹ K⁻¹ warms by 10 K. How much heat does it absorb?",
+        "choices": [
+          "900 J",
+          "4,500 J",
+          "9,000 J",
+          "90,000 J"
+        ],
+        "key": "5d201ebacd20e72e62164307a315244de3507921d309a81c48fc929131cbab77",
+        "sourceNumber": 5,
+        "correctIndex": 2
+      },
+      {
+        "question": "How much heat is required to raise 0.5 kg of water by 4 K? Use c = 4,200 J kg⁻¹ K⁻¹.",
+        "choices": [
+          "2,100 J",
+          "8,400 J",
+          "16,800 J",
+          "33,600 J"
+        ],
+        "key": "446887c380843a4f97bfd0c90cb2b9dbd9c68ebef6da0986884ddfc73ba42a2a",
+        "sourceNumber": 6,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 3 kg substance absorbs 6,000 J while warming by 5 K. What is its specific heat capacity?",
+        "choices": [
+          "200 J kg⁻¹ K⁻¹",
+          "400 J kg⁻¹ K⁻¹",
+          "1,000 J kg⁻¹ K⁻¹",
+          "3,600 J kg⁻¹ K⁻¹"
+        ],
+        "key": "b22c8d9ac60f9daa34f9b1b1996f510aa554853a498c98f35c873105adbf11f4",
+        "sourceNumber": 7,
+        "correctIndex": 1
+      },
+      {
+        "question": "How much energy melts 0.2 kg of ice at its melting point if the latent heat of fusion is 334,000 J kg⁻¹?",
+        "choices": [
+          "6,680 J",
+          "66,800 J",
+          "167,000 J",
+          "668,000 J"
+        ],
+        "key": "cd03779e7d1e5ce3531b6679858c71dcc39e86b1cfe25113ed4d1e46bf0a6f5d",
+        "sourceNumber": 8,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 0.5 kg liquid vaporizes at its boiling point. If its latent heat of vaporization is 2.26 × 10⁶ J kg⁻¹, how much energy is needed?",
+        "choices": [
+          "1.13 × 10⁵ J",
+          "1.13 × 10⁶ J",
+          "2.26 × 10⁶ J",
+          "4.52 × 10⁶ J"
+        ],
+        "key": "f58dfcd11277a0d137cb4744e43adf8243ef9b53c1b5c25a0bc78bd0f55b75c4",
+        "sourceNumber": 9,
+        "correctIndex": 1
+      },
+      {
+        "question": "Equal masses of the same liquid at 20°C and 80°C are mixed in an insulated container. Assuming no phase change, what is the final temperature?",
+        "choices": [
+          "30°C",
+          "40°C",
+          "50°C",
+          "60°C"
+        ],
+        "key": "a453df9d16043e1a460be993132a59b8f55235d9274b37dfe7299436a4953954",
+        "sourceNumber": 10,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 0.2 kg metal object at 100°C is placed in 0.3 kg of water at 20°C in an insulated container. The metal has c = 400 J kg⁻¹ K⁻¹ and water has c = 4,000 J kg⁻¹ K⁻¹. What is the final temperature?",
+        "choices": [
+          "22°C",
+          "24°C",
+          "40°C",
+          "60°C"
+        ],
+        "key": "0591478a878a3d7362b0b6fcda8707c15c388920ebf30df7d5697b1a00cf216b",
+        "sourceNumber": 11,
+        "correctIndex": 1
+      },
+      {
+        "question": "What happens to the temperature of a pure substance while it melts at its melting point under steady heating?",
+        "choices": [
+          "It rises steadily",
+          "It falls steadily",
+          "It remains constant during the idealized melting",
+          "It alternates between rising and falling"
+        ],
+        "key": "a2f76bf76a044c768e8cc1947abf0fd7c8942bf41bd81e5fa40394492ee7bb1a",
+        "sourceNumber": 12,
+        "correctIndex": 2
+      },
+      {
+        "question": "Why can water in a pond moderate nearby temperatures?",
+        "choices": [
+          "Water has a relatively high specific heat capacity",
+          "Water has zero latent heat",
+          "Water conducts heat faster than all metals",
+          "Water cannot absorb radiation"
+        ],
+        "key": "992e0791f5ccbef28ac38541cc3b1968dc9aa67fc64f71008612856740500777",
+        "sourceNumber": 13,
+        "correctIndex": 0
+      },
+      {
+        "question": "A metal spoon feels cooler than a wooden spoon in the same room. Which explanation is best?",
+        "choices": [
+          "The metal must be at a lower temperature",
+          "The metal transfers heat away from the hand more rapidly",
+          "Wood produces heat when touched",
+          "Metal has no internal energy"
+        ],
+        "key": "f128d8934f3e064cb4dfdedd7244296834eda786b1a7f2c6484a9205b49ef440",
+        "sourceNumber": 14,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which heat-transfer process can occur through a vacuum?",
+        "choices": [
+          "Conduction only",
+          "Convection only",
+          "Radiation only",
+          "Conduction and convection"
+        ],
+        "key": "8eea8742f88dfbb2d6ad6178d4a46fa8a7b663cdfcab2b50eb3687f2f4b818be",
+        "sourceNumber": 15,
+        "correctIndex": 2
+      },
+      {
+        "question": "In a room, warm air rising above a heater is primarily an example of which process?",
+        "choices": [
+          "Conduction",
+          "Convection",
+          "Radiation",
+          "Sublimation"
+        ],
+        "key": "aa0a178cae930a67a300aee01d946165da1b3d9cd9006cb51f273b3b2659e64c",
+        "sourceNumber": 16,
+        "correctIndex": 1
+      },
+      {
+        "question": "Heat passing along a solid metal rod from its hot end to its cool end is mainly transferred by:",
+        "choices": [
+          "Conduction",
+          "Convection",
+          "Evaporation",
+          "Nuclear fusion"
+        ],
+        "key": "752ec487792bb283e0a59ed3f008a24803b132e2f969ad7745f4a460203a54a0",
+        "sourceNumber": 17,
+        "correctIndex": 0
+      },
+      {
+        "question": "A dull black surface is generally a better absorber of thermal radiation than a shiny silver surface because it:",
+        "choices": [
+          "Reflects more incident radiation",
+          "Absorbs a larger fraction of incident radiation",
+          "Has a lower temperature by definition",
+          "Cannot emit radiation"
+        ],
+        "key": "a245131d6108d2a6a73c2a03061388fd66324aa18b2b0e512a442b675e9800c7",
+        "sourceNumber": 18,
+        "correctIndex": 1
+      },
+      {
+        "question": "Why are cooking pots often made with metal bases?",
+        "choices": [
+          "Metal is a good thermal conductor",
+          "Metal has no specific heat capacity",
+          "Metal prevents all radiation",
+          "Metal has a lower melting point than water"
+        ],
+        "key": "0cf59970546e7368f6cda671c563d2ac69e505295908c90161673d231b54744d",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "A metal rod is 2.0 m long. Its linear expansion coefficient is 12 × 10⁻⁶ K⁻¹, and its temperature rises by 50 K. How much longer does it become?",
+        "choices": [
+          "0.12 mm",
+          "1.2 mm",
+          "12 mm",
+          "120 mm"
+        ],
+        "key": "ffa5d5a34d074ab110a18e3041558520a019dc9b9954ddc5284e6a872bc9bcb9",
+        "sourceNumber": 20,
+        "correctIndex": 1
+      },
+      {
+        "question": "A metal wire of length 1.5 m has α = 20 × 10⁻⁶ K⁻¹. What is its length increase for a 100 K rise?",
+        "choices": [
+          "0.3 mm",
+          "3 mm",
+          "30 mm",
+          "300 mm"
+        ],
+        "key": "01660f7e214a0373ca61fc9f3691cb9c557122598d2a01f0c7fcd2ae1766fa63",
+        "sourceNumber": 21,
+        "correctIndex": 1
+      },
+      {
+        "question": "For a uniform isotropic solid with a small temperature change, the volume expansion coefficient is approximately:",
+        "choices": [
+          "α/3",
+          "α",
+          "2α",
+          "3α"
+        ],
+        "key": "8ea22c5867ad477a59d2150ca5928561c2ba35ec327b9c0b69ed8e386702b194",
+        "sourceNumber": 22,
+        "correctIndex": 3
+      },
+      {
+        "question": "A 2.0 L liquid has volume expansion coefficient 2 × 10⁻⁴ K⁻¹. What is its approximate volume increase for a 10 K rise?",
+        "choices": [
+          "0.0004 L",
+          "0.004 L",
+          "0.04 L",
+          "0.4 L"
+        ],
+        "key": "890ed24d493bb26685201c7a1b1dfb0656bfc04796761cf406f6fd5b6fc135a2",
+        "sourceNumber": 23,
+        "correctIndex": 1
+      },
+      {
+        "question": "Why are gaps often left between sections of a long metal bridge?",
+        "choices": [
+          "To allow for expansion as temperature rises",
+          "To make the bridge conduct electricity less effectively",
+          "To stop the bridge from absorbing heat",
+          "To increase the metal's melting point"
+        ],
+        "key": "6c0a04ed186d3984a00d6cd5af78430f334ca501e3880b52c99c9bd0e23cec75",
+        "sourceNumber": 24,
+        "correctIndex": 0
+      },
+      {
+        "question": "A liquid thermometer works mainly because the liquid:",
+        "choices": [
+          "Expands as its temperature changes",
+          "Changes mass when heated",
+          "Stops conducting heat at its boiling point",
+          "Has the same volume at every temperature"
+        ],
+        "key": "4b2cadc7f701aff7e2785d51f3f5c64a3f72aeaf5f6ae7733db96ec0746e6b82",
+        "sourceNumber": 25,
+        "correctIndex": 0
+      },
+      {
+        "question": "A bimetallic strip bends on heating because its two bonded metals:",
+        "choices": [
+          "Have different thermal expansion coefficients",
+          "Have identical expansion at all temperatures",
+          "Both contract by exactly the same amount",
+          "Become liquids at room temperature"
+        ],
+        "key": "82bb7b3cb2278abd91ff3ef1ba326e3eca19118c9ef0b37fd6821624c4c1bc86",
+        "sourceNumber": 26,
+        "correctIndex": 0
+      },
+      {
+        "question": "A 1.0 m iron rail expands by 0.6 mm for a temperature rise of 50 K. What is its linear expansion coefficient?",
+        "choices": [
+          "1.2 × 10⁻⁶ K⁻¹",
+          "1.2 × 10⁻⁵ K⁻¹",
+          "3.0 × 10⁻⁵ K⁻¹",
+          "8.3 × 10⁻⁵ K⁻¹"
+        ],
+        "key": "6ad63714731de565806f881d96e5bf2a36bd918a1b3de0a77584f99f665c1654",
+        "sourceNumber": 27,
+        "correctIndex": 1
+      },
+      {
+        "question": "At constant pressure, a gas has volume 2.0 L at 300 K. What is its volume at 450 K?",
+        "choices": [
+          "1.3 L",
+          "2.0 L",
+          "3.0 L",
+          "4.5 L"
+        ],
+        "key": "76ef656d18ec6dc9cbf6123209ff013be9abd0f10814e6169acdd698ded99557",
+        "sourceNumber": 28,
+        "correctIndex": 2
+      },
+      {
+        "question": "A gas occupies 6.0 L at 2.0 atm. If temperature is constant and pressure becomes 3.0 atm, what is its new volume?",
+        "choices": [
+          "2.0 L",
+          "3.0 L",
+          "4.0 L",
+          "9.0 L"
+        ],
+        "key": "273614ef844909cd80f6075b798092c8b61e9609486d79fee65c14585d034a78",
+        "sourceNumber": 29,
+        "correctIndex": 2
+      },
+      {
+        "question": "A gas at constant volume has pressure 100 kPa at 300 K. What is its pressure at 450 K?",
+        "choices": [
+          "67 kPa",
+          "100 kPa",
+          "150 kPa",
+          "200 kPa"
+        ],
+        "key": "512748c5b4a96b448865894e8e19f534ff7c4a9f300980875b1b07b348263a3f",
+        "sourceNumber": 30,
+        "correctIndex": 2
+      },
+      {
+        "question": "A gas occupies 4.0 L at 300 K and 100 kPa. What volume will it occupy at 400 K and 120 kPa?",
+        "choices": [
+          "3.0 L",
+          "4.0 L",
+          "4.44 L",
+          "6.4 L"
+        ],
+        "key": "2f54a07df344249259109525482194487ea6be949ce081916219a101bda761d2",
+        "sourceNumber": 31,
+        "correctIndex": 2
+      },
+      {
+        "question": "A sealed flexible balloon is taken from 300 K to 330 K while its pressure remains constant. If its initial volume is 2.0 L, what is its final volume?",
+        "choices": [
+          "1.82 L",
+          "2.0 L",
+          "2.2 L",
+          "3.0 L"
+        ],
+        "key": "d4563a0f91516292c1dd0aef291a967e144e8c787565e6de73afb3988df528a2",
+        "sourceNumber": 32,
+        "correctIndex": 2
+      },
+      {
+        "question": "An ideal gas sample has pressure 100 kPa, volume 0.0249 m³, and temperature 300 K. Approximately how many moles does it contain? Use R = 8.31 J mol⁻¹ K⁻¹.",
+        "choices": [
+          "0.10 mol",
+          "1.0 mol",
+          "10 mol",
+          "100 mol"
+        ],
+        "key": "e7fa29a8acc56d97d6237ffe46a6443466e5d2a48f837e13abd560e42714ea8a",
+        "sourceNumber": 33,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many molecules are in 2 mol of a substance? Use Avogadro's constant 6.02 × 10²³ mol⁻¹.",
+        "choices": [
+          "3.01 × 10²³",
+          "6.02 × 10²³",
+          "1.20 × 10²⁴",
+          "2.41 × 10²⁴"
+        ],
+        "key": "a9009e29d71fa1dbe7bcb2345578433f37843c6f949ff4ee8456ecc7741232f1",
+        "sourceNumber": 34,
+        "correctIndex": 2
+      },
+      {
+        "question": "A gas sample contains 0.5 mol at 300 K. What is nRT? Use R = 8.31 J mol⁻¹ K⁻¹.",
+        "choices": [
+          "416 J",
+          "1,247 J",
+          "2,493 J",
+          "4,986 J"
+        ],
+        "key": "4a02cacbafcff957ccc8bce95b45cd4b7f5822ae7cdfa1523ba8b6f12387ebec",
+        "sourceNumber": 35,
+        "correctIndex": 1
+      },
+      {
+        "question": "For an ideal gas, pressure P, volume V, and temperature T are related by:",
+        "choices": [
+          "PV = nRT",
+          "PT = nRV",
+          "P/V = nRT",
+          "PV/T = nR/T"
+        ],
+        "key": "5fca497973af02466b6c36ed7d7317853782ac047c790b74c3a42f55a55c0037",
+        "sourceNumber": 36,
+        "correctIndex": 0
+      },
+      {
+        "question": "A gas is heated in a rigid, sealed container. Which quantity is fixed?",
+        "choices": [
+          "Pressure",
+          "Volume",
+          "Temperature",
+          "Average molecular kinetic energy"
+        ],
+        "key": "c488662da70bf3c320be284dcdafd2671895734b8390d87262051a66c2c3c27f",
+        "sourceNumber": 37,
+        "correctIndex": 1
+      },
+      {
+        "question": "A gas is compressed slowly while its temperature is held constant. For an ideal gas, its internal energy:",
+        "choices": [
+          "Increases",
+          "Decreases",
+          "Remains unchanged",
+          "Becomes zero"
+        ],
+        "key": "304f080644da8de265126f4f8cc06b16ac3aa9caa7e5ea8b5e97f24fd772f555",
+        "sourceNumber": 38,
+        "correctIndex": 2
+      },
+      {
+        "question": "At constant temperature, the pressure of a fixed amount of ideal gas is doubled. What happens to its volume?",
+        "choices": [
+          "It doubles",
+          "It halves",
+          "It stays constant",
+          "It becomes four times as large"
+        ],
+        "key": "52156573d90e1db7960340e8f7fe728f10f656c9b023dc662e1f5aa3404b57e3",
+        "sourceNumber": 39,
+        "correctIndex": 1
+      },
+      {
+        "question": "A gas is heated at constant pressure from 200 K to 400 K. What happens to its volume?",
+        "choices": [
+          "It halves",
+          "It stays constant",
+          "It doubles",
+          "It quadruples"
+        ],
+        "key": "e5de2c9ca269701f38eee386ee02bf509aa4a2b6b5fbc7444b6e74a9a7418482",
+        "sourceNumber": 40,
+        "correctIndex": 2
+      },
+      {
+        "question": "A gas is heated at constant volume from 250 K to 500 K. What happens to its absolute pressure?",
+        "choices": [
+          "It halves",
+          "It doubles",
+          "It stays constant",
+          "It quadruples"
+        ],
+        "key": "c227aab8276256a60330bd6753de4503beed4780ae3b5c315ca344a86f4e17df",
+        "sourceNumber": 41,
+        "correctIndex": 1
+      },
+      {
+        "question": "The absolute temperature of an ideal gas increases from 300 K to 600 K. What happens to the average translational kinetic energy per molecule?",
+        "choices": [
+          "It halves",
+          "It doubles",
+          "It quadruples",
+          "It remains unchanged"
+        ],
+        "key": "2de1c30c8d51d8f19dd66a179b6912a37d3688c4e3d555480568403661eb84e2",
+        "sourceNumber": 42,
+        "correctIndex": 1
+      },
+      {
+        "question": "If the absolute temperature of a gas increases by a factor of four, its root-mean-square molecular speed changes by what factor?",
+        "choices": [
+          "2",
+          "4",
+          "8",
+          "16"
+        ],
+        "key": "d75c915385e1f4a138ccdfdb4db44247e0f1a1d298f998ad8e5b244b28ab8a94",
+        "sourceNumber": 43,
+        "correctIndex": 0
+      },
+      {
+        "question": "At the same temperature, which gas molecules have the greater average translational kinetic energy?",
+        "choices": [
+          "The lighter molecules",
+          "The heavier molecules",
+          "Both have the same average translational kinetic energy",
+          "It cannot be compared even for ideal gases"
+        ],
+        "key": "d0f628988bae563ae01e18d664ff92c63d93b7bcca12ef40c1b98c02e1b04940",
+        "sourceNumber": 44,
+        "correctIndex": 2
+      },
+      {
+        "question": "At the same temperature, which gas has the greater root-mean-square molecular speed?",
+        "choices": [
+          "The gas with the greater molecular mass",
+          "The gas with the smaller molecular mass",
+          "Both have the same root-mean-square speed",
+          "Speed is independent of molecular mass and temperature"
+        ],
+        "key": "4ca8f71ad690c1840e682e5f568e7ef5a64070976a31d72dc1f69efc8c5b40e3",
+        "sourceNumber": 45,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the root-mean-square speed of an ideal gas with molar mass 0.004 kg mol⁻¹ at 300 K? Use R = 8.31 J mol⁻¹ K⁻¹.",
+        "choices": [
+          "432 m s⁻¹",
+          "790 m s⁻¹",
+          "1,370 m s⁻¹",
+          "2,493 m s⁻¹"
+        ],
+        "key": "29d99961159ef7a6233bef99819fa8e126229c67995571fd008125d1d875fc88",
+        "sourceNumber": 46,
+        "correctIndex": 2
+      },
+      {
+        "question": "A gas's pressure on the walls of its container is caused mainly by:",
+        "choices": [
+          "Molecular impacts on the walls",
+          "The weight of each molecule alone",
+          "The container's thermal expansion",
+          "Molecules being at rest between collisions"
+        ],
+        "key": "f327073af866f8ce0731d200857e51e3cbc55240e3a1239125600b003c7dc0e9",
+        "sourceNumber": 47,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why does gas pressure rise when a sealed rigid container is heated?",
+        "choices": [
+          "Molecules collide with the walls more energetically and frequently",
+          "The number of molecules necessarily increases",
+          "The container's volume must increase",
+          "The gas molecules lose all kinetic energy"
+        ],
+        "key": "eb6696dd09d4542d6d62a5ed4b8854bd9b90d986bf87b6c5494797450302c6ae",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement is a key assumption of the ideal-gas model?",
+        "choices": [
+          "Gas molecules attract each other strongly at all times",
+          "Molecules occupy negligible volume compared with the container",
+          "Molecules are permanently at rest",
+          "Every collision loses kinetic energy"
+        ],
+        "key": "0f21975d4017735280625ee6a7cd4be695742966d95d27cd3f40ff0a7ac42a60",
+        "sourceNumber": 49,
+        "correctIndex": 1
+      },
+      {
+        "question": "Under which conditions is a real gas most likely to behave approximately like an ideal gas?",
+        "choices": [
+          "High pressure and low temperature",
+          "Low pressure and high temperature",
+          "High pressure and high temperature only",
+          "Low pressure and low temperature"
+        ],
+        "key": "78b979a3d603e093fd5816aeca8ded1fb481bff077dfa1b0efb667db4a7ca8ef",
+        "sourceNumber": 50,
+        "correctIndex": 1
+      },
+      {
+        "question": "In the convention ΔU = Q − W, what does positive W represent?",
+        "choices": [
+          "Work done on the gas",
+          "Work done by the gas",
+          "Heat leaving the gas",
+          "Change in gas mass"
+        ],
+        "key": "a9c801581a3597fe2f81b0ce2aeb6005fd2f64500eb0764f638bed6c6cd21e7f",
+        "sourceNumber": 51,
+        "correctIndex": 1
+      },
+      {
+        "question": "A gas absorbs 500 J of heat and does 200 J of work. What is its change in internal energy?",
+        "choices": [
+          "−700 J",
+          "−300 J",
+          "300 J",
+          "700 J"
+        ],
+        "key": "93b41cb66b0c67d6c6b10b8329a329e9b8c1b7def320424500351c1068f67f77",
+        "sourceNumber": 52,
+        "correctIndex": 2
+      },
+      {
+        "question": "A gas loses 100 J of heat while 40 J of work is done on it. What is its change in internal energy?",
+        "choices": [
+          "−140 J",
+          "−60 J",
+          "60 J",
+          "140 J"
+        ],
+        "key": "47afb8c4a664154888dd48a0961215f80b9c868fe0a80405f35225f7f2852ee9",
+        "sourceNumber": 53,
+        "correctIndex": 1
+      },
+      {
+        "question": "A gas expands at constant pressure 2.0 × 10⁵ Pa from 0.010 m³ to 0.014 m³. What work does it do?",
+        "choices": [
+          "80 J",
+          "400 J",
+          "800 J",
+          "8,000 J"
+        ],
+        "key": "d83d090a45e3846705fc19b9e41bf0014ca1c80a213fd8f730054af2adee42a3",
+        "sourceNumber": 54,
+        "correctIndex": 2
+      },
+      {
+        "question": "On a pressure-volume diagram, the work done by a gas during expansion is represented by:",
+        "choices": [
+          "The area under the process curve",
+          "The slope at the starting point",
+          "The final pressure alone",
+          "The product of temperature and time"
+        ],
+        "key": "f815b059a659e45de7050038c522152e946f30bca45bda29448994549980e7c9",
+        "sourceNumber": 55,
+        "correctIndex": 0
+      },
+      {
+        "question": "An ideal gas undergoes an isochoric process. How much work does it do?",
+        "choices": [
+          "Zero",
+          "Positive and equal to its heat input",
+          "Negative and equal to its heat input",
+          "Always equal to nRT"
+        ],
+        "key": "9dc4ff219d83b947ec51bd9bc5feeacf3a4e99ef34d49b5b0c2c979c12f37e53",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "An ideal gas undergoes an isothermal expansion. What is its change in internal energy?",
+        "choices": [
+          "Positive",
+          "Negative",
+          "Zero",
+          "Equal to its pressure"
+        ],
+        "key": "6032afc343092d114b295ab8312b985d30cf6acb8a5488959d321abee0a73cce",
+        "sourceNumber": 57,
+        "correctIndex": 2
+      },
+      {
+        "question": "A gas expands adiabatically. Which statement must be true?",
+        "choices": [
+          "Q = 0",
+          "W = 0",
+          "ΔU = 0 for every gas",
+          "Temperature must stay constant"
+        ],
+        "key": "d32d92c085a859dfdbd458a9099bfdc34c04e6bc294fccc7c8a6a2edfc2e51ec",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "An ideal gas is compressed adiabatically, with work done on the gas. What generally happens to its internal energy?",
+        "choices": [
+          "It increases",
+          "It decreases",
+          "It remains unchanged",
+          "It becomes negative"
+        ],
+        "key": "8aad411e7a9de545eef87bac69846c655525b2583182766d007b83441174892b",
+        "sourceNumber": 59,
+        "correctIndex": 0
+      },
+      {
+        "question": "A gas absorbs 900 J of heat and its internal energy increases by 500 J. How much work does it do?",
+        "choices": [
+          "200 J",
+          "400 J",
+          "500 J",
+          "1,400 J"
+        ],
+        "key": "a110beaace67cd44fb081f863102c49bc55507334d9015ef238fbbdfddb286a9",
+        "sourceNumber": 60,
+        "correctIndex": 1
+      },
+      {
+        "question": "A gas does 250 J of work while its internal energy decreases by 100 J. How much heat does it absorb?",
+        "choices": [
+          "−350 J",
+          "−150 J",
+          "150 J",
+          "350 J"
+        ],
+        "key": "918ee7c1754fd6d324886560658dd64220e640e019f4a93835906b471d0a500f",
+        "sourceNumber": 61,
+        "correctIndex": 2
+      },
+      {
+        "question": "A heat engine takes in 1,000 J of heat and rejects 600 J per cycle. What work does it produce per cycle?",
+        "choices": [
+          "400 J",
+          "600 J",
+          "1,000 J",
+          "1,600 J"
+        ],
+        "key": "fcd839adde7fa729639f09130a033ed1a52dd843e655a500049928a0569600da",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "A heat engine receives 1,200 J and produces 300 J of work per cycle. What is its efficiency?",
+        "choices": [
+          "25%",
+          "40%",
+          "75%",
+          "400%"
+        ],
+        "key": "498030c9a83e5777ddb62a4a13437747ddaa613f239e902a72abeac8675558cc",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "A heat engine receives 800 J of heat and has an efficiency of 30%. How much work does it produce?",
+        "choices": [
+          "24 J",
+          "240 J",
+          "560 J",
+          "830 J"
+        ],
+        "key": "02d784559b14fdc9d5e7b930d17bafccca8b18bed3181b5949b0af16ab8e2887",
+        "sourceNumber": 64,
+        "correctIndex": 1
+      },
+      {
+        "question": "A heat engine takes in 1,500 J and produces 450 J of work. How much heat does it reject?",
+        "choices": [
+          "450 J",
+          "900 J",
+          "1,050 J",
+          "1,950 J"
+        ],
+        "key": "44a31e4307d4ff5132061d970725a967c7de034e00dbfbc491ec62d37c70f15a",
+        "sourceNumber": 65,
+        "correctIndex": 2
+      },
+      {
+        "question": "An ideal Carnot engine operates between reservoirs at 500 K and 300 K. What is its maximum possible efficiency?",
+        "choices": [
+          "20%",
+          "40%",
+          "60%",
+          "80%"
+        ],
+        "key": "683a87ea55b208f250a9af8dca84d3d1395521106185ef5117c72e8a90cd9b80",
+        "sourceNumber": 66,
+        "correctIndex": 1
+      },
+      {
+        "question": "A Carnot engine operates between 600 K and 300 K. What is its efficiency?",
+        "choices": [
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ],
+        "key": "cfefc37c3929e00850f8d8cf84a09db6b3693f5f0a33b31f89f4ea2ac2d98594",
+        "sourceNumber": 67,
+        "correctIndex": 1
+      },
+      {
+        "question": "Why must reservoir temperatures be expressed in kelvins when calculating Carnot efficiency?",
+        "choices": [
+          "The formula uses absolute temperature ratios",
+          "Celsius degrees are too small to measure",
+          "Kelvin is the unit of heat",
+          "The efficiency formula uses temperature differences only"
+        ],
+        "key": "ab2c9b316878220d642c8d3e25ec54aef418e7dabb0cf1579c86db01f9fba468",
+        "sourceNumber": 68,
+        "correctIndex": 0
+      },
+      {
+        "question": "Can a cyclic heat engine convert all heat absorbed from a single reservoir into work with no other effect?",
+        "choices": [
+          "Yes, if its efficiency is exactly 100%",
+          "Yes, if the reservoir is large enough",
+          "No, such complete conversion is prohibited by the second law",
+          "No, because heat can never produce work"
+        ],
+        "key": "772960579fc86bde68df2705b00d54eabf3817ee50b6454538fa528aea3e12ed",
+        "sourceNumber": 69,
+        "correctIndex": 2
+      },
+      {
+        "question": "In an ideal reversible process, entropy change is related to heat transfer by which expression?",
+        "choices": [
+          "ΔS = Qrev/T for a process at constant temperature",
+          "ΔS = QT",
+          "ΔS = T/Qrev",
+          "ΔS = Qrev + T"
+        ],
+        "key": "093e634b1f29f642e311b0526f0da500913502cfaa4791d930176efa0682a752",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "A system absorbs 600 J reversibly at a constant temperature of 300 K. What is its entropy change?",
+        "choices": [
+          "0.5 J K⁻¹",
+          "2 J K⁻¹",
+          "200 J K⁻¹",
+          "900 J K⁻¹"
+        ],
+        "key": "96d1aa041404ad4cdbcd6ddfb24ba42aa8c4566479cbbafc28dcd555e6ca8a3a",
+        "sourceNumber": 71,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which statement about entropy in an isolated system is consistent with the second law?",
+        "choices": [
+          "It can never change",
+          "It cannot decrease in a spontaneous process",
+          "It must decrease whenever heat flows",
+          "It is always equal to temperature"
+        ],
+        "key": "4aac76c726df39badd28246e04915aacda3cb6fd3837a3e79a78a9dddd561b2d",
+        "sourceNumber": 72,
+        "correctIndex": 1
+      },
+      {
+        "question": "A refrigerator removes 300 J of heat from its cold compartment while using 100 J of work. How much heat does it release to the room?",
+        "choices": [
+          "100 J",
+          "200 J",
+          "300 J",
+          "400 J"
+        ],
+        "key": "60d7bf3f98f9dd2e5ecf66c2cbea86bd3d5e953b0fb510c88cfa5cb1f2b3ca39",
+        "sourceNumber": 73,
+        "correctIndex": 3
+      },
+      {
+        "question": "A refrigerator removes 500 J from its cold space using 100 J of work. What is its coefficient of performance?",
+        "choices": [
+          "0.2",
+          "4",
+          "5",
+          "6"
+        ],
+        "key": "331613292ede3d7ea870d1bfca7c19806f7382fccb934a3ef8b40b6c24918924",
+        "sourceNumber": 74,
+        "correctIndex": 2
+      },
+      {
+        "question": "A heater supplies 2,000 J of energy in 10 s. What is its average power?",
+        "choices": [
+          "20 W",
+          "200 W",
+          "2,000 W",
+          "20,000 W"
+        ],
+        "key": "a3acd3f7f3e8bebb3ebe96ac4e85e14df3133b42e00ce1b65d67334b6300f5fb",
+        "sourceNumber": 75,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 1.0 kW heater runs for 5 minutes. How much energy does it transfer?",
+        "choices": [
+          "5 kJ",
+          "50 kJ",
+          "300 kJ",
+          "3,000 kJ"
+        ],
+        "key": "d7a75622d80f1d374d3d176403476b69fa9018faf5197278379e93dfce6d4849",
+        "sourceNumber": 76,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 0.4 kg block with specific heat capacity 500 J kg⁻¹ K⁻¹ absorbs 10 kJ. By how much does its temperature rise, assuming no phase change?",
+        "choices": [
+          "5 K",
+          "20 K",
+          "50 K",
+          "200 K"
+        ],
+        "key": "807cc90a8338d5388c7dbe632fd24c8e0e9ebd4a155ecb6ac68100aedb20d003",
+        "sourceNumber": 77,
+        "correctIndex": 2
+      },
+      {
+        "question": "A material's specific heat capacity is 800 J kg⁻¹ K⁻¹. How much heat is needed to raise 0.25 kg of it by 20 K?",
+        "choices": [
+          "400 J",
+          "4,000 J",
+          "16,000 J",
+          "40,000 J"
+        ],
+        "key": "31bff2baa2bebe35205ec78f30288965037f499733424ed21c9bcc35b39830b1",
+        "sourceNumber": 78,
+        "correctIndex": 1
+      },
+      {
+        "question": "An ideal calorimeter has negligible heat capacity. A 100 g sample at 90°C is placed in 100 g of the same liquid at 30°C. What is the final temperature?",
+        "choices": [
+          "30°C",
+          "45°C",
+          "60°C",
+          "90°C"
+        ],
+        "key": "70e712f3d80a389b8ecca8c13342b9818dab6772cc67b2b48273789e1f6e6600",
+        "sourceNumber": 79,
+        "correctIndex": 2
+      },
+      {
+        "question": "A 100 g metal sample at 100°C is put into 100 g of water at 20°C in an insulated container. The metal's specific heat is 400 J kg⁻¹ K⁻¹ and water's is 4,000 J kg⁻¹ K⁻¹. What is the final temperature?",
+        "choices": [
+          "21.8°C",
+          "27.3°C",
+          "50°C",
+          "80°C"
+        ],
+        "key": "9223634075bf406d99d8dcf7f8128ee2e184b3e2d609e68dd02fa702d4e874eb",
+        "sourceNumber": 80,
+        "correctIndex": 1
+      },
+      {
+        "question": "A 0.10 kg substance with latent heat of fusion 200,000 J kg⁻¹ melts completely at its melting point. How much heat is required?",
+        "choices": [
+          "2,000 J",
+          "20,000 J",
+          "200,000 J",
+          "2,000,000 J"
+        ],
+        "key": "30180cdd2e429fa26ce71611c429f5d5cb7e718aee42cb94679861a71610716f",
+        "sourceNumber": 81,
+        "correctIndex": 1
+      },
+      {
+        "question": "How much heat is needed to raise 0.10 kg of ice from −10°C to 0°C? Use cice = 2,100 J kg⁻¹ K⁻¹.",
+        "choices": [
+          "210 J",
+          "2,100 J",
+          "21,000 J",
+          "334,000 J"
+        ],
+        "key": "9b8a5149f615738508a0a6a3b081d325b94123bc24d980403e48f487d0753a04",
+        "sourceNumber": 82,
+        "correctIndex": 1
+      },
+      {
+        "question": "How much heat is needed to melt 0.10 kg of ice at 0°C and then warm the resulting water to 10°C? Use Lf = 334,000 J kg⁻¹ and cwater = 4,200 J kg⁻¹ K⁻¹.",
+        "choices": [
+          "3,340 J",
+          "7,540 J",
+          "33,400 J",
+          "75,400 J"
+        ],
+        "key": "87520ccc43ae7855b08d2e189a7c25722f1490fe59067ce658d90f4b874afa92",
+        "sourceNumber": 83,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which surface is generally the best emitter of thermal radiation?",
+        "choices": [
+          "A dull black surface",
+          "A polished silver surface",
+          "A transparent vacuum",
+          "A bright white mirror"
+        ],
+        "key": "5be135fd7833ee6e59aedab9c0434d323a598f37889a0d01d0a275383bb242fe",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why does a vacuum flask use reflective surfaces around its contents?",
+        "choices": [
+          "To reduce heat transfer by radiation",
+          "To increase convection inside the vacuum",
+          "To conduct heat into the contents faster",
+          "To increase the contents' mass"
+        ],
+        "key": "a2d2cd395f1e5f0d4cfe0c20cd34b3aa238039c5f4a7c6f40812b3a787e80cbc",
+        "sourceNumber": 85,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why is a vacuum used in the space between the walls of some insulated containers?",
+        "choices": [
+          "It prevents all radiation",
+          "It greatly reduces conduction and convection through the gap",
+          "It increases the density of the air",
+          "It makes the walls expand equally"
+        ],
+        "key": "c5c7ceb9c215541b816b5bd9b3171fb1a38081728e3a4235b69edb5c065d4978",
+        "sourceNumber": 86,
+        "correctIndex": 1
+      },
+      {
+        "question": "A gas is heated while it expands at constant pressure. If it absorbs 700 J of heat and does 250 J of work, what is its internal-energy increase?",
+        "choices": [
+          "250 J",
+          "450 J",
+          "700 J",
+          "950 J"
+        ],
+        "key": "b16a06cd49e084899972d005044a7bbac92856ed1a0373e79e4a2b5e6944ed3f",
+        "sourceNumber": 87,
+        "correctIndex": 1
+      },
+      {
+        "question": "A gas at pressure 1.5 × 10⁵ Pa expands by 0.002 m³ against a constant pressure. How much work does it do?",
+        "choices": [
+          "30 J",
+          "300 J",
+          "3,000 J",
+          "30,000 J"
+        ],
+        "key": "e5d46a46f35e49e7b4ef31c045881607728eb88f4efae2f2d2927a5524f34d56",
+        "sourceNumber": 88,
+        "correctIndex": 1
+      },
+      {
+        "question": "A gas is compressed at constant pressure 1.0 × 10⁵ Pa from 0.010 m³ to 0.006 m³. What is the work done by the gas?",
+        "choices": [
+          "−400 J",
+          "−40 J",
+          "400 J",
+          "4,000 J"
+        ],
+        "key": "90e31d631726d1867b53c71aed7ebbea7d2a2a715957d6cae5cc61de378d658c",
+        "sourceNumber": 89,
+        "correctIndex": 0
+      },
+      {
+        "question": "A fixed amount of ideal gas is in a rigid container. If its absolute temperature is tripled, what happens to its pressure?",
+        "choices": [
+          "It becomes one-third",
+          "It stays the same",
+          "It triples",
+          "It becomes nine times as great"
+        ],
+        "key": "81f1eb609bae3a82e6fcd0d7646d1310107009c3e69aa0164e93b88cb44ea4ec",
+        "sourceNumber": 90,
+        "correctIndex": 2
+      },
+      {
+        "question": "A sample contains 3 mol of ideal gas at 400 K. What is its internal energy if it is a monatomic ideal gas? Use U = 3nRT/2 and R = 8.31 J mol⁻¹ K⁻¹.",
+        "choices": [
+          "4,986 J",
+          "9,972 J",
+          "14,958 J",
+          "19,944 J"
+        ],
+        "key": "e7ce0ac9673fd9a8de7b1dc73aefe80466526511491a89a98575cfecd801ce01",
+        "sourceNumber": 91,
+        "correctIndex": 2
+      },
+      {
+        "question": "For a monatomic ideal gas, what is its molar heat capacity at constant volume, given R as the gas constant?",
+        "choices": [
+          "R/2",
+          "R",
+          "3R/2",
+          "5R/2"
+        ],
+        "key": "56eb26d15a39d1dfc5a02489df8e7e53a541d15de7694d289e25a39701cc8ccf",
+        "sourceNumber": 92,
+        "correctIndex": 2
+      },
+      {
+        "question": "For a monatomic ideal gas, what is the ratio Cp/Cv?",
+        "choices": [
+          "1",
+          "4/3",
+          "5/3",
+          "2"
+        ],
+        "key": "c0a36385ce60da53df4884e22990136256ec85557ce5b226b0dd2549feb645e6",
+        "sourceNumber": 93,
+        "correctIndex": 2
+      },
+      {
+        "question": "A gas expands freely into an evacuated insulated chamber. What is the external pressure opposing the expansion?",
+        "choices": [
+          "Zero",
+          "Equal to the gas pressure",
+          "Twice the gas pressure",
+          "Atmospheric pressure in every case"
+        ],
+        "key": "1153a5044f95147339c41fdd1cdb8ac4f602fc2749472089ebc6211eb6029715",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "An ideal gas undergoes free expansion into a vacuum in an insulated container. What is its change in internal energy?",
+        "choices": [
+          "Negative",
+          "Zero",
+          "Positive and equal to its initial energy",
+          "Impossible to determine because the gas expands"
+        ],
+        "key": "21580f22c3a5f1c778e0af13d34db651cfffb6ae9deaf74befb9087c1741476d",
+        "sourceNumber": 95,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which quantity is a state function for a thermodynamic system?",
+        "choices": [
+          "Work",
+          "Heat",
+          "Internal energy",
+          "Heat-transfer rate"
+        ],
+        "key": "aeb5cd51e6f39da8bc0542b0745e4a761a9b6f059ba9de601364ab359ec7b4f1",
+        "sourceNumber": 96,
+        "correctIndex": 2
+      },
+      {
+        "question": "A system completes a full thermodynamic cycle and returns to its initial state. What is its net change in internal energy?",
+        "choices": [
+          "Negative",
+          "Zero",
+          "Positive and equal to total heat input",
+          "Equal to total work output"
+        ],
+        "key": "1deb944df46fa5310dfb0185445761a4b1e2e9bd1ed5adf2e7bdd92e4225f647",
+        "sourceNumber": 97,
+        "correctIndex": 1
+      },
+      {
+        "question": "During a complete cycle, a heat engine receives 900 J and rejects 650 J. What is its net work output?",
+        "choices": [
+          "250 J",
+          "650 J",
+          "900 J",
+          "1,550 J"
+        ],
+        "key": "70e72e3e6768ed922cf7806a68059c3c76f74dfcc123058468460f3afb60ea7e",
+        "sourceNumber": 98,
+        "correctIndex": 0
+      },
+      {
+        "question": "An engine has efficiency 20% and receives 2,000 J of heat per cycle. How much heat does it reject per cycle?",
+        "choices": [
+          "400 J",
+          "1,200 J",
+          "1,600 J",
+          "2,400 J"
+        ],
+        "key": "79d1682bd64041ab9faabe33b720e800427c88aa8fb93efbeb386e169f8fc6be",
+        "sourceNumber": 99,
+        "correctIndex": 2
+      },
+      {
+        "question": "A Carnot engine works between reservoirs at 400 K and 200 K. How much work could it ideally produce from 1,000 J of heat input?",
+        "choices": [
+          "250 J",
+          "500 J",
+          "750 J",
+          "1,000 J"
+        ],
+        "key": "f77d4fc4028843a7f1f9ca8a4cead49a3ff6596777103fe8b70dc32a6fb5c76a",
+        "sourceNumber": 100,
+        "correctIndex": 1
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "893a3de83e19f4a3a1d6a4b496d3652741befc58479216c3060780e3f0d4174f",
+      "sourceQuestionNumbers": [
+        16,
+        54,
+        62,
+        85,
+        38,
+        17,
+        40,
+        61,
+        86,
+        53,
+        52,
+        5,
+        96,
+        26,
+        76,
+        70,
+        23,
+        90,
+        60,
+        8,
+        1,
+        49,
+        83,
+        28,
+        63,
+        80,
+        81,
+        14,
+        37,
+        44,
+        69,
+        21,
+        56,
+        15,
+        91,
+        10,
+        24,
+        41,
+        98,
+        64,
+        20,
+        84,
+        29,
+        67,
+        50,
+        88,
+        57,
+        66,
+        39,
+        12,
+        55,
+        89,
+        9,
+        65,
+        27,
+        7,
+        51,
+        82,
+        79,
+        31,
+        47,
+        33,
+        3,
+        72,
+        92,
+        45,
+        99,
+        11,
+        78,
+        35,
+        74,
+        6,
+        46,
+        36,
+        100,
+        68,
+        48,
+        22,
+        18,
+        87,
+        34,
+        93,
+        75,
+        4,
+        43,
+        13,
+        58,
+        71,
+        25,
+        94,
+        32,
+        19,
+        59,
+        73,
+        95,
+        2,
+        42,
+        30,
+        97,
+        77
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
