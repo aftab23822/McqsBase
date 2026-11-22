@@ -3433,7 +3433,12 @@
           "providerError": "YouTube's daily upload quota is exhausted for today, please reschedule this post for a later time.",
           "publicUrlVerified": false,
           "verification": "provider-status-only",
-          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
+          "quotaRecovery": {
+            "status": "uncertain",
+            "scheduledAt": "2026-11-22T00:15:00-08:00"
+          },
+          "scheduledAt": "2026-11-22T00:15:00-08:00"
         }
       }
     }
