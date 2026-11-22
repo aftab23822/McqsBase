@@ -2130,6 +2130,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 4,
+      "directory": "part-04",
+      "sourceQuestionNumbers": [
+        86,
+        53
+      ],
+      "count": 2,
+      "durationSeconds": 63,
+      "sha256": "70780358a6e432d781d31dbdedb13b0419a5c4051ea8bc34821755a5397798e6",
+      "manifest": {
+        "title": "100 Thermal Physics MCQs for NAT-IE-Style Practice",
+        "sourceTitle": "100 Thermal Physics MCQs for NAT-IE-Style Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-22T06:08:04.919944+00:00",
+        "sourceContentHash": "0e7b12cc3b41e79aea4f4f8aa2fb801618c33d4b99e5609a146c7431a2e20451",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7974754634,
+          "sha": "0ba54782daf921cd8bdcd2d6a89f1ff8c8b5fb4b",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-22T06:08:04.919944+00:00",
+          "url": "https://mcqs-base-d7y633b8s-as-projects-10921176.vercel.app",
+          "publisherRunId": 44991915054
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 63,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Why is a vacuum used in the space between the walls of some insulated containers?",
+            "choices": [
+              "It prevents all radiation",
+              "It greatly reduces conduction and convection through the gap",
+              "It increases the density of the air",
+              "It makes the walls expand equally"
+            ],
+            "correctIndex": 1,
+            "key": "c5c7ceb9c215541b816b5bd9b3171fb1a38081728e3a4235b69edb5c065d4978",
+            "sourceNumber": 86
+          },
+          {
+            "question": "A gas loses 100 J of heat while 40 J of work is done on it. What is its change in internal energy?",
+            "choices": [
+              "−140 J",
+              "−60 J",
+              "60 J",
+              "140 J"
+            ],
+            "correctIndex": 1,
+            "key": "47afb8c4a664154888dd48a0961215f80b9c868fe0a80405f35225f7f2852ee9",
+            "sourceNumber": 53
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 22,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 25,
+            "duration": 7,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 32,
+            "duration": 19,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 51,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 52,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 53,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 54,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 58,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 4,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            86,
+            53
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-thermal-physics-part-04-70780358a6e432d7.mp4",
+        "videoSha256": "70780358a6e432d781d31dbdedb13b0419a5c4051ea8bc34821755a5397798e6",
+        "assetId": 778080388
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 4/5 | Q86, 53 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+          "text": "Part 4/5 · Source questions 86, 53\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 4/5 | Q86, 53 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+          "text": "Part 4/5 · Source questions 86, 53\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 4/5 | Q86, 53 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+          "text": "Part 4/5 · Source questions 86, 53\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 4/5 | Q86, 53 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+          "text": "Part 4/5 · Source questions 86, 53\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
