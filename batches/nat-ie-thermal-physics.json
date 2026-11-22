@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-ie-thermal-physics",
   "createdAt": "2026-11-22T06:08:05.106115+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "nat-ie-thermal-physics",
     "title": "100 Thermal Physics MCQs for NAT-IE-Style Practice",
@@ -1749,7 +1749,12 @@
         }
       },
       "scheduledAt": "2026-11-22T11:28:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-22T06:12:16.049994+00:00"
+        }
+      }
     },
     {
       "part": 2,
