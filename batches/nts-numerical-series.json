@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nts-numerical-series",
   "createdAt": "2026-11-20T06:48:09.325674+00:00",
-  "status": "scheduled",
+  "status": "provider-published",
   "package": {
     "slug": "nts-numerical-series",
     "title": "99 NTS-Style Numerical Series MCQs with Explanations",
@@ -1777,16 +1777,16 @@
           "integrationId": "cmvwbcule0222ro9dhocbic4w"
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-20T06:52:48.242499+00:00",
           "postId": "cmwomgtfl0lv6lmau2p78uv8y",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "ERROR",
+          "url": "https://www.youtube.com/watch?v=MrTMLNBnEq4",
+          "providerUrl": "https://www.youtube.com/watch?v=MrTMLNBnEq4",
+          "providerReleaseId": "MrTMLNBnEq4",
+          "providerStatus": "PUBLISHED",
           "providerError": "YouTube's daily upload quota is exhausted for today, please reschedule this post for a later time.",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
           "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
           "quotaRecovery": {
             "status": "scheduled",
