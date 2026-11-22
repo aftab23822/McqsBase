@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nat-ie-thermal-physics": {
+    title: "100 Thermal Physics MCQs for NAT-IE-Style Practice",
+    excerpt:
+      "Practise temperature, heat transfer, gas laws, thermodynamic processes, and heat engines with 100 original MCQs and concise explanations.",
+    category: "Subject Guide",
+    date: "2026-11-22",
+    readTime: "32 min",
+    content: null,
+    body: readImportedBlogBody("nat-ie-thermal-physics")
+  },
   "hec-lat-critical-reasoning": {
     title: "100 HEC LAT-Style Critical Reasoning MCQs with Explanations",
     excerpt:
