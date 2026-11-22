@@ -3560,9 +3560,17 @@
           "integrationId": "cmvwbcule0222ro9dhocbic4w"
         },
         "youtube": {
-          "status": "accepted",
+          "status": "QUEUE",
           "attemptedAt": "2026-11-22T06:13:44.770427+00:00",
-          "postId": "cmwrfyalj0q7elmauqab0bls8"
+          "postId": "cmwrfyalj0q7elmauqab0bls8",
+          "url": null,
+          "providerUrl": null,
+          "providerReleaseId": null,
+          "providerStatus": "QUEUE",
+          "providerError": null,
+          "publicUrlVerified": false,
+          "verification": "provider-status-only",
+          "integrationId": "cmvwb2nny021wro9d0gxp3wm4"
         }
       }
     }
