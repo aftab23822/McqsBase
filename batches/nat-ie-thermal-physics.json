@@ -1624,7 +1624,131 @@
       "studioMedia": {
         "id": "9d5e2063-8ffe-4ca7-ab29-0f7ecaa192d2",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/tPbOuG1Kv3.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 1/5 | Q16, 54, 62 | 100 Thermal Physics MCQs for NAT-IE-Style Practice"
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 16, 54, 62\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+              "image": [
+                {
+                  "id": "9d5e2063-8ffe-4ca7-ab29-0f7ecaa192d2",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/tPbOuG1Kv3.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 16, 54, 62\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "9d5e2063-8ffe-4ca7-ab29-0f7ecaa192d2",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/tPbOuG1Kv3.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 1/5 | Q16, 54, 62 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 16, 54, 62\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "9d5e2063-8ffe-4ca7-ab29-0f7ecaa192d2",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/tPbOuG1Kv3.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 1/5 | Q16, 54, 62 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 16, 54, 62\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "9d5e2063-8ffe-4ca7-ab29-0f7ecaa192d2",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/tPbOuG1Kv3.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-22T11:28:00+05:00"
     },
     {
       "part": 2,
@@ -1913,7 +2037,131 @@
       "studioMedia": {
         "id": "5f8cd275-8cef-42ba-8466-04b1659cc612",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Mdha4fCNYX.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 2/5 | Q85, 38, 17 | 100 Thermal Physics MCQs for NAT-IE-Style Practice"
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 85, 38, 17\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+              "image": [
+                {
+                  "id": "5f8cd275-8cef-42ba-8466-04b1659cc612",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Mdha4fCNYX.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 85, 38, 17\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "5f8cd275-8cef-42ba-8466-04b1659cc612",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Mdha4fCNYX.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 2/5 | Q85, 38, 17 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 85, 38, 17\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "5f8cd275-8cef-42ba-8466-04b1659cc612",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Mdha4fCNYX.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 2/5 | Q85, 38, 17 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 85, 38, 17\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "5f8cd275-8cef-42ba-8466-04b1659cc612",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Mdha4fCNYX.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-22T14:06:00+05:00"
     },
     {
       "part": 3,
@@ -2153,7 +2401,131 @@
       "studioMedia": {
         "id": "baaaacaf-49c9-4b58-92f5-17abc3035c68",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/xxo3jdQRhP.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 3/5 | Q40, 61 | 100 Thermal Physics MCQs for NAT-IE-Style Practice"
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 40, 61\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+              "image": [
+                {
+                  "id": "baaaacaf-49c9-4b58-92f5-17abc3035c68",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/xxo3jdQRhP.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 40, 61\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "baaaacaf-49c9-4b58-92f5-17abc3035c68",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/xxo3jdQRhP.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 3/5 | Q40, 61 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 40, 61\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "baaaacaf-49c9-4b58-92f5-17abc3035c68",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/xxo3jdQRhP.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 3/5 | Q40, 61 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 40, 61\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "baaaacaf-49c9-4b58-92f5-17abc3035c68",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/xxo3jdQRhP.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-22T16:44:00+05:00"
     },
     {
       "part": 4,
@@ -2393,7 +2765,131 @@
       "studioMedia": {
         "id": "719fdcb3-496d-48cd-9ce2-3fbb0ebd33c0",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Om0hj1LWD6.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 4/5 | Q86, 53 | 100 Thermal Physics MCQs for NAT-IE-Style Practice"
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 86, 53\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+              "image": [
+                {
+                  "id": "719fdcb3-496d-48cd-9ce2-3fbb0ebd33c0",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Om0hj1LWD6.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 86, 53\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "719fdcb3-496d-48cd-9ce2-3fbb0ebd33c0",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Om0hj1LWD6.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 4/5 | Q86, 53 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 86, 53\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "719fdcb3-496d-48cd-9ce2-3fbb0ebd33c0",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Om0hj1LWD6.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 4/5 | Q86, 53 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 86, 53\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "719fdcb3-496d-48cd-9ce2-3fbb0ebd33c0",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/Om0hj1LWD6.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-22T19:22:00+05:00"
     },
     {
       "part": 5,
@@ -2682,7 +3178,131 @@
       "studioMedia": {
         "id": "ec6dfd22-e082-4ccc-8b91-0036f7a36546",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/W6ReQUJeFh.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 5/5 | Q52, 5, 96 | 100 Thermal Physics MCQs for NAT-IE-Style Practice"
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 52, 5, 96\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+              "image": [
+                {
+                  "id": "ec6dfd22-e082-4ccc-8b91-0036f7a36546",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/W6ReQUJeFh.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 52, 5, 96\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "ec6dfd22-e082-4ccc-8b91-0036f7a36546",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/W6ReQUJeFh.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 5/5 | Q52, 5, 96 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 52, 5, 96\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "ec6dfd22-e082-4ccc-8b91-0036f7a36546",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/W6ReQUJeFh.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 5/5 | Q52, 5, 96 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 52, 5, 96\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "ec6dfd22-e082-4ccc-8b91-0036f7a36546",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/W6ReQUJeFh.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-22T22:00:00+05:00"
     }
   ],
   "thinkingSeconds": 3,
@@ -2764,5 +3384,12 @@
         "sha256": "f531f2c22db2b8c0996b2d0ce843c42269d247873673a07838b6ee48ce748977"
       }
     ]
-  }
+  },
+  "schedule": [
+    "2026-11-22T11:28:00+05:00",
+    "2026-11-22T14:06:00+05:00",
+    "2026-11-22T16:44:00+05:00",
+    "2026-11-22T19:22:00+05:00",
+    "2026-11-22T22:00:00+05:00"
+  ]
 }
