@@ -2218,8 +2218,9 @@
       "scheduledAt": "2026-11-22T14:06:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "uncertain",
-          "attemptedAt": "2026-11-22T06:12:35.142382+00:00"
+          "status": "accepted",
+          "attemptedAt": "2026-11-22T06:12:35.142382+00:00",
+          "postId": "cmwrfwsvs0q6vlmauegs8jjg0"
         }
       }
     },
