@@ -1617,6 +1617,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 2,
+      "directory": "part-02",
+      "sourceQuestionNumbers": [
+        85,
+        38,
+        17
+      ],
+      "count": 3,
+      "durationSeconds": 85,
+      "sha256": "cb7c0b4fd14dd7132f44afea4c2f9626a09449924ed0c401a4382484f3b4798b",
+      "manifest": {
+        "title": "100 Thermal Physics MCQs for NAT-IE-Style Practice",
+        "sourceTitle": "100 Thermal Physics MCQs for NAT-IE-Style Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-22T06:08:04.919944+00:00",
+        "sourceContentHash": "0e7b12cc3b41e79aea4f4f8aa2fb801618c33d4b99e5609a146c7431a2e20451",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7974754634,
+          "sha": "0ba54782daf921cd8bdcd2d6a89f1ff8c8b5fb4b",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-22T06:08:04.919944+00:00",
+          "url": "https://mcqs-base-d7y633b8s-as-projects-10921176.vercel.app",
+          "publisherRunId": 44991915054
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 85,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Why does a vacuum flask use reflective surfaces around its contents?",
+            "choices": [
+              "To reduce heat transfer by radiation",
+              "To increase convection inside the vacuum",
+              "To conduct heat into the contents faster",
+              "To increase the contents' mass"
+            ],
+            "correctIndex": 0,
+            "key": "a2d2cd395f1e5f0d4cfe0c20cd34b3aa238039c5f4a7c6f40812b3a787e80cbc",
+            "sourceNumber": 85
+          },
+          {
+            "question": "A gas is compressed slowly while its temperature is held constant. For an ideal gas, its internal energy:",
+            "choices": [
+              "Increases",
+              "Decreases",
+              "Remains unchanged",
+              "Becomes zero"
+            ],
+            "correctIndex": 2,
+            "key": "304f080644da8de265126f4f8cc06b16ac3aa9caa7e5ea8b5e97f24fd772f555",
+            "sourceNumber": 38
+          },
+          {
+            "question": "Heat passing along a solid metal rod from its hot end to its cool end is mainly transferred by:",
+            "choices": [
+              "Conduction",
+              "Convection",
+              "Evaporation",
+              "Nuclear fusion"
+            ],
+            "correctIndex": 0,
+            "key": "752ec487792bb283e0a59ed3f008a24803b132e2f969ad7745f4a460203a54a0",
+            "sourceNumber": 17
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 21,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 21,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 24,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 30,
+            "duration": 18,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 48,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 49,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 50,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 51,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 56,
+            "duration": 17,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 73,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 74,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 75,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 76,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 80,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 2,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            85,
+            38,
+            17
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-thermal-physics-part-02-cb7c0b4fd14dd713.mp4",
+        "videoSha256": "cb7c0b4fd14dd7132f44afea4c2f9626a09449924ed0c401a4382484f3b4798b",
+        "assetId": 778077891
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 2/5 | Q85, 38, 17 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+          "text": "Part 2/5 · Source questions 85, 38, 17\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 2/5 | Q85, 38, 17 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+          "text": "Part 2/5 · Source questions 85, 38, 17\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 2/5 | Q85, 38, 17 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+          "text": "Part 2/5 · Source questions 85, 38, 17\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 2/5 | Q85, 38, 17 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+          "text": "Part 2/5 · Source questions 85, 38, 17\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
