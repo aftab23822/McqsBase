@@ -2677,7 +2677,11 @@
       },
       "uploadIntent": {
         "filename": "nat-ie-thermal-physics-part-05-f531f2c22db2b8c0.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "ec6dfd22-e082-4ccc-8b91-0036f7a36546",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/W6ReQUJeFh.mp4"
       }
     }
   ],
