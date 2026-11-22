@@ -1229,7 +1229,7 @@
       "verifiedPublications": 15
     },
     "nts-numerical-series": {
-      "status": "scheduled",
+      "status": "provider-published",
       "ledger": "batches/nts-numerical-series.json",
       "createdAt": "2026-11-20T06:48:09.325674+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nts-numerical-series",
@@ -1241,8 +1241,8 @@
         "2026-11-20T19:32:00+05:00",
         "2026-11-20T22:00:00+05:00"
       ],
-      "published": 19,
-      "verifiedPublications": 14
+      "published": 20,
+      "verifiedPublications": 15
     },
     "hec-lat-critical-reasoning": {
       "status": "scheduled",
