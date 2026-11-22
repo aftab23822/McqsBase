@@ -1336,6 +1336,288 @@
       "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
     }
   },
-  "parts": [],
+  "parts": [
+    {
+      "part": 1,
+      "directory": "part-01",
+      "sourceQuestionNumbers": [
+        16,
+        54,
+        62
+      ],
+      "count": 3,
+      "durationSeconds": 85,
+      "sha256": "94b57d7c46a0c159c49b9cd617682b8a9d97c651341882bbe786d594cd87087a",
+      "manifest": {
+        "title": "100 Thermal Physics MCQs for NAT-IE-Style Practice",
+        "sourceTitle": "100 Thermal Physics MCQs for NAT-IE-Style Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-22T06:08:04.919944+00:00",
+        "sourceContentHash": "0e7b12cc3b41e79aea4f4f8aa2fb801618c33d4b99e5609a146c7431a2e20451",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7974754634,
+          "sha": "0ba54782daf921cd8bdcd2d6a89f1ff8c8b5fb4b",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-22T06:08:04.919944+00:00",
+          "url": "https://mcqs-base-d7y633b8s-as-projects-10921176.vercel.app",
+          "publisherRunId": 44991915054
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 85,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "In a room, warm air rising above a heater is primarily an example of which process?",
+            "choices": [
+              "Conduction",
+              "Convection",
+              "Radiation",
+              "Sublimation"
+            ],
+            "correctIndex": 1,
+            "key": "aa0a178cae930a67a300aee01d946165da1b3d9cd9006cb51f273b3b2659e64c",
+            "sourceNumber": 16
+          },
+          {
+            "question": "A gas expands at constant pressure 2.0 × 10⁵ Pa from 0.010 m³ to 0.014 m³. What work does it do?",
+            "choices": [
+              "80 J",
+              "400 J",
+              "800 J",
+              "8,000 J"
+            ],
+            "correctIndex": 2,
+            "key": "d83d090a45e3846705fc19b9e41bf0014ca1c80a213fd8f730054af2adee42a3",
+            "sourceNumber": 54
+          },
+          {
+            "question": "A heat engine takes in 1,000 J of heat and rejects 600 J per cycle. What work does it produce per cycle?",
+            "choices": [
+              "400 J",
+              "600 J",
+              "1,000 J",
+              "1,600 J"
+            ],
+            "correctIndex": 0,
+            "key": "fcd839adde7fa729639f09130a033ed1a52dd843e655a500049928a0569600da",
+            "sourceNumber": 62
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 16,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 16,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 17,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 18,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 19,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 23,
+            "duration": 23,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 46,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 47,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 48,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 49,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 53,
+            "duration": 20,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 73,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 74,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 75,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 76,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 80,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 1,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            16,
+            54,
+            62
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-thermal-physics-part-01-94b57d7c46a0c159.mp4",
+        "videoSha256": "94b57d7c46a0c159c49b9cd617682b8a9d97c651341882bbe786d594cd87087a",
+        "assetId": 778076570
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 1/5 | Q16, 54, 62 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+          "text": "Part 1/5 · Source questions 16, 54, 62\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 1/5 | Q16, 54, 62 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+          "text": "Part 1/5 · Source questions 16, 54, 62\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 1/5 | Q16, 54, 62 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+          "text": "Part 1/5 · Source questions 16, 54, 62\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 1/5 | Q16, 54, 62 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+          "text": "Part 1/5 · Source questions 16, 54, 62\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "format": "short"
+        }
+      }
+    }
+  ],
   "thinkingSeconds": 3
 }
