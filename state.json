@@ -1261,7 +1261,7 @@
       "verifiedPublications": 12
     },
     "nat-ie-thermal-physics": {
-      "status": "scheduling",
+      "status": "scheduled",
       "ledger": "batches/nat-ie-thermal-physics.json",
       "createdAt": "2026-11-22T06:08:05.106115+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
