@@ -1898,6 +1898,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        40,
+        61
+      ],
+      "count": 2,
+      "durationSeconds": 58,
+      "sha256": "5505ea122714731b46d671fdb10ea970a6675a82f38b61a8527d50df4d532526",
+      "manifest": {
+        "title": "100 Thermal Physics MCQs for NAT-IE-Style Practice",
+        "sourceTitle": "100 Thermal Physics MCQs for NAT-IE-Style Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-22T06:08:04.919944+00:00",
+        "sourceContentHash": "0e7b12cc3b41e79aea4f4f8aa2fb801618c33d4b99e5609a146c7431a2e20451",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7974754634,
+          "sha": "0ba54782daf921cd8bdcd2d6a89f1ff8c8b5fb4b",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-22T06:08:04.919944+00:00",
+          "url": "https://mcqs-base-d7y633b8s-as-projects-10921176.vercel.app",
+          "publisherRunId": 44991915054
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 58,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A gas is heated at constant pressure from 200 K to 400 K. What happens to its volume?",
+            "choices": [
+              "It halves",
+              "It stays constant",
+              "It doubles",
+              "It quadruples"
+            ],
+            "correctIndex": 2,
+            "key": "e5de2c9ca269701f38eee386ee02bf509aa4a2b6b5fbc7444b6e74a9a7418482",
+            "sourceNumber": 40
+          },
+          {
+            "question": "A gas does 250 J of work while its internal energy decreases by 100 J. How much heat does it absorb?",
+            "choices": [
+              "−350 J",
+              "−150 J",
+              "150 J",
+              "350 J"
+            ],
+            "correctIndex": 2,
+            "key": "918ee7c1754fd6d324886560658dd64220e640e019f4a93835906b471d0a500f",
+            "sourceNumber": 61
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 17,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 17,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 18,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 19,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 20,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 24,
+            "duration": 21,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 45,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 46,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 47,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 48,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 53,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            40,
+            61
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-thermal-physics-part-03-5505ea122714731b.mp4",
+        "videoSha256": "5505ea122714731b46d671fdb10ea970a6675a82f38b61a8527d50df4d532526",
+        "assetId": 778078958
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q40, 61 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+          "text": "Part 3/5 · Source questions 40, 61\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q40, 61 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+          "text": "Part 3/5 · Source questions 40, 61\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q40, 61 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+          "text": "Part 3/5 · Source questions 40, 61\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q40, 61 | 100 Thermal Physics MCQs for NAT-IE-Style Practice",
+          "text": "Part 3/5 · Source questions 40, 61\n100 Thermal Physics MCQs for NAT-IE-Style Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-thermal-physics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
