@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-ie-thermal-physics",
   "createdAt": "2026-11-22T06:08:05.106115+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "nat-ie-thermal-physics",
     "title": "100 Thermal Physics MCQs for NAT-IE-Style Practice",
@@ -2645,5 +2645,84 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "nat-ie-thermal-physics",
+    "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
+    "sourceTitle": "100 Thermal Physics MCQs for NAT-IE-Style Practice",
+    "sourceContentHash": "0e7b12cc3b41e79aea4f4f8aa2fb801618c33d4b99e5609a146c7431a2e20451",
+    "productionDeployment": {
+      "id": 7974754634,
+      "sha": "0ba54782daf921cd8bdcd2d6a89f1ff8c8b5fb4b",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-22T06:08:04.919944+00:00",
+      "url": "https://mcqs-base-d7y633b8s-as-projects-10921176.vercel.app",
+      "publisherRunId": 44991915054
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          16,
+          54,
+          62
+        ],
+        "count": 3,
+        "durationSeconds": 85,
+        "sha256": "94b57d7c46a0c159c49b9cd617682b8a9d97c651341882bbe786d594cd87087a"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          85,
+          38,
+          17
+        ],
+        "count": 3,
+        "durationSeconds": 85,
+        "sha256": "cb7c0b4fd14dd7132f44afea4c2f9626a09449924ed0c401a4382484f3b4798b"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          40,
+          61
+        ],
+        "count": 2,
+        "durationSeconds": 58,
+        "sha256": "5505ea122714731b46d671fdb10ea970a6675a82f38b61a8527d50df4d532526"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          86,
+          53
+        ],
+        "count": 2,
+        "durationSeconds": 63,
+        "sha256": "70780358a6e432d781d31dbdedb13b0419a5c4051ea8bc34821755a5397798e6"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          52,
+          5,
+          96
+        ],
+        "count": 3,
+        "durationSeconds": 83,
+        "sha256": "f531f2c22db2b8c0996b2d0ce843c42269d247873673a07838b6ee48ce748977"
+      }
+    ]
+  }
 }
