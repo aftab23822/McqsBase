@@ -1197,7 +1197,7 @@
       "verifiedPublications": 15
     },
     "nat-ie-stoichiometry": {
-      "status": "publication-needs-attention",
+      "status": "skipped",
       "ledger": "batches/nat-ie-stoichiometry.json",
       "createdAt": "2026-11-18T06:57:51.112969+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-stoichiometry",
@@ -1210,7 +1210,8 @@
         "2026-11-18T21:59:00+05:00"
       ],
       "published": 19,
-      "verifiedPublications": 14
+      "verifiedPublications": 14,
+      "reason": "Abandoned by owner request on 2026-11-23: one YouTube post time was changed at the provider; no further retries."
     },
     "mdcat-genetics-inheritance": {
       "status": "provider-published",

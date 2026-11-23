@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-ie-stoichiometry",
   "createdAt": "2026-11-18T06:57:51.112969+00:00",
-  "status": "publication-needs-attention",
+  "status": "skipped",
   "package": {
     "slug": "nat-ie-stoichiometry",
     "title": "99 Stoichiometry MCQs for NAT-IE-Style Chemistry Practice",
@@ -3649,5 +3649,6 @@
     "2026-11-18T19:34:00+05:00",
     "2026-11-18T21:59:00+05:00"
   ],
-  "lastError": "An existing receipt needs attention; preserve IDs and repair only the missing step. youtube: Provider changed the saved publication time; hold."
+  "lastError": "An existing receipt needs attention; preserve IDs and repair only the missing step. youtube: Provider changed the saved publication time; hold.",
+  "reason": "Abandoned by owner request on 2026-11-23: one YouTube post time was changed at the provider; no further retries."
 }
