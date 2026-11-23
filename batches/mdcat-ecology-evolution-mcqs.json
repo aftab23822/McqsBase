@@ -1336,6 +1336,239 @@
       "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
     }
   },
-  "parts": [],
+  "parts": [
+    {
+      "part": 1,
+      "directory": "part-01",
+      "sourceQuestionNumbers": [
+        75,
+        100
+      ],
+      "count": 2,
+      "durationSeconds": 66,
+      "sha256": "7aeeb98a7181bc58e5fee3ae96298a41860d8e69c5324604a2b9a6714bd6184a",
+      "manifest": {
+        "title": "100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+        "sourceTitle": "100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-23T07:03:01.936591+00:00",
+        "sourceContentHash": "4b4b14cc21d90ad8ff873f3107cdd4324885076373eb33f91e15b99c8c52f496",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7992489272,
+          "sha": "697db0d706e6d4f1bdd3eabca19d9c4441c2ccbd",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-23T07:03:01.936591+00:00",
+          "url": "https://mcqs-base-3deoz5s9c-as-projects-10921176.vercel.app",
+          "publisherRunId": 45127348060
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 66,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "If one extreme of a trait gives individuals higher reproductive success, the population may experience:",
+            "choices": [
+              "Directional selection",
+              "Stabilizing selection",
+              "No selection by definition",
+              "Primary succession"
+            ],
+            "correctIndex": 0,
+            "key": "52e737cfde8304611e5115172509821273c9a351f2d8c1f804f00f8f9e4062d4",
+            "sourceNumber": 75
+          },
+          {
+            "question": "Two populations exchange migrants, and the migrants reproduce. What is a likely genetic consequence?",
+            "choices": [
+              "Some alleles may become more similar between the populations",
+              "All genetic variation must disappear",
+              "Mutation immediately stops",
+              "Speciation becomes certain"
+            ],
+            "correctIndex": 0,
+            "key": "a5bdf961c703e868c9474c265cb66c476576e082a2e15a71c4e5530a9956227c",
+            "sourceNumber": 100
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 20,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 20,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 21,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 23,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 28,
+            "duration": 23,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 51,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 52,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 53,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 54,
+            "duration": 7,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 61,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 1,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            75,
+            100
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MDCAT",
+          "#MedicalEntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/mdcat-ecology-evolution-mcqs-part-01-7aeeb98a7181bc58.mp4",
+        "videoSha256": "7aeeb98a7181bc58e5fee3ae96298a41860d8e69c5324604a2b9a6714bd6184a",
+        "assetId": 781911985
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 1/5 | Q75, 100 | 100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+          "text": "Part 1/5 · Source questions 75, 100\n100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 1/5 | Q75, 100 | 100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+          "text": "Part 1/5 · Source questions 75, 100\n100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 1/5 | Q75, 100 | 100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+          "text": "Part 1/5 · Source questions 75, 100\n100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 1/5 | Q75, 100 | 100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+          "text": "Part 1/5 · Source questions 75, 100\n100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "format": "short"
+        }
+      }
+    }
+  ],
   "thinkingSeconds": 3
 }
