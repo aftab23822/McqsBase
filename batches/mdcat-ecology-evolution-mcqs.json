@@ -2579,7 +2579,11 @@
       },
       "uploadIntent": {
         "filename": "mdcat-ecology-evolution-mcqs-part-05-02d6504382986a6f.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "8e477dd4-64bc-4d2d-8fea-f0ab884d1a9d",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/YP0z8FjbY0.mp4"
       }
     }
   ],
