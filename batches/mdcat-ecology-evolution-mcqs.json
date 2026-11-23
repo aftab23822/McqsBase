@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "mdcat-ecology-evolution-mcqs",
+  "createdAt": "2026-11-23T07:03:02.126806+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "mdcat-ecology-evolution-mcqs",
+    "title": "100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+    "url": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 7992489272,
+      "sha": "697db0d706e6d4f1bdd3eabca19d9c4441c2ccbd",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-23T07:03:01.936591+00:00",
+      "url": "https://mcqs-base-3deoz5s9c-as-projects-10921176.vercel.app",
+      "publisherRunId": 45127348060
+    },
+    "fetchedAt": "2026-11-23T07:03:01.936591+00:00",
+    "contentHash": "4b4b14cc21d90ad8ff873f3107cdd4324885076373eb33f91e15b99c8c52f496",
+    "questions": [
+      {
+        "question": "A group of individuals of the same species living in the same area at the same time is a:",
+        "choices": [
+          "Community",
+          "Population",
+          "Ecosystem",
+          "Biome"
+        ],
+        "key": "aedc0f82473f2f623269df88a0b418f5d65994029f95c6f9e5d48f98ef2d5209",
+        "sourceNumber": 1,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which ecological level includes organisms together with the non-living conditions around them?",
+        "choices": [
+          "Organism",
+          "Population",
+          "Community",
+          "Ecosystem"
+        ],
+        "key": "8937231fcf07db0610f397f304b58481e4ae9b2229ec54df2c676d08c0c77540",
+        "sourceNumber": 2,
+        "correctIndex": 3
+      },
+      {
+        "question": "All the populations of different species living and interacting in one woodland form a:",
+        "choices": [
+          "Population",
+          "Community",
+          "Species",
+          "Biome"
+        ],
+        "key": "e4688ab70238c5ddd01a1333f59bc177e82ea386bb444bb27252dd0002c9bed6",
+        "sourceNumber": 3,
+        "correctIndex": 1
+      },
+      {
+        "question": "A student counts 240 plants in a 12 m² plot. What is their density?",
+        "choices": [
+          "12 plants/m²",
+          "20 plants/m²",
+          "240 plants/m²",
+          "2,880 plants/m²"
+        ],
+        "key": "489ea5a44244fc849f9eb5765d3fb07c06a12caf51891c63a0ef2fab26b8014d",
+        "sourceNumber": 4,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which method is most suitable for estimating the abundance of stationary grass plants in a field?",
+        "choices": [
+          "Quadrat sampling",
+          "Mark-and-recapture",
+          "Migration tracking",
+          "Age determination"
+        ],
+        "key": "255c7f558f00140109dd0dd8d6858b5ce01bd0ddd6993965deb6024f5a86bb04",
+        "sourceNumber": 5,
+        "correctIndex": 0
+      },
+      {
+        "question": "In mark-and-recapture sampling, 40 animals are marked and released. Later, 50 are caught, of which 10 are marked. Using N ≈ (marked first × caught second) ÷ marked recaptured, estimate the population.",
+        "choices": [
+          "100",
+          "150",
+          "200",
+          "250"
+        ],
+        "key": "6b4b0a67ae22e2ed29ce6d9f2bd8b266047eabed43cd3160fba242bb2678eaf6",
+        "sourceNumber": 6,
+        "correctIndex": 2
+      },
+      {
+        "question": "Individuals in a population are distributed at fairly equal distances from one another. This is:",
+        "choices": [
+          "Clumped dispersion",
+          "Random dispersion",
+          "Uniform dispersion",
+          "Seasonal migration"
+        ],
+        "key": "bf4832ae7c0224282c0ffb4ffe31b6e0bd481733e31f7721b08795635b1b7c3a",
+        "sourceNumber": 7,
+        "correctIndex": 2
+      },
+      {
+        "question": "A population in which individuals occur in groups around patches of food has which dispersion pattern?",
+        "choices": [
+          "Clumped",
+          "Uniform",
+          "Random",
+          "Linear growth"
+        ],
+        "key": "dae0ef938385d11fb2f511f953210378253261d37c5713ff3a13fb6725764808",
+        "sourceNumber": 8,
+        "correctIndex": 0
+      },
+      {
+        "question": "A population increases by 30 individuals over one year, with no immigration or emigration. What is the net effect of births minus deaths?",
+        "choices": [
+          "A decrease of 30",
+          "An increase of 30",
+          "No change",
+          "It cannot be inferred"
+        ],
+        "key": "b29a6e8f26e80c84cbfd9d74104cfdeb6997e77366b44e6887bea9b898206f4b",
+        "sourceNumber": 9,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which expression gives population change when migration is included?",
+        "choices": [
+          "Births + deaths + immigration − emigration",
+          "Births − deaths + immigration − emigration",
+          "Deaths − births + emigration − immigration",
+          "Births − immigration + deaths + emigration"
+        ],
+        "key": "bd48b0baf6b176153e251551f2772a59cfb2bcf83fd37d15018bad85f266bb2b",
+        "sourceNumber": 10,
+        "correctIndex": 1
+      },
+      {
+        "question": "Under ideal conditions with resources continually available, a population's per-capita growth rate is constant. Its growth is:",
+        "choices": [
+          "Logistic",
+          "Exponential",
+          "Negative",
+          "Density-independent decline"
+        ],
+        "key": "e055f8ab0dfb0a592c824714d60ae5d7e43a4e8ddd5e27865f27327a41edc8da",
+        "sourceNumber": 11,
+        "correctIndex": 1
+      },
+      {
+        "question": "A logistic growth curve typically levels off near the:",
+        "choices": [
+          "Mutation rate",
+          "Carrying capacity",
+          "Trophic efficiency",
+          "Niche breadth"
+        ],
+        "key": "a045d1ba8488f71f6dde52e3f80a305978b088e909e76f4ca1a403b28a3b23fc",
+        "sourceNumber": 12,
+        "correctIndex": 1
+      },
+      {
+        "question": "A population's carrying capacity falls after a prolonged drought. Which explanation is most direct?",
+        "choices": [
+          "Water has become a more abundant resource",
+          "A limiting resource has become scarcer",
+          "The species has stopped evolving",
+          "All density effects have disappeared"
+        ],
+        "key": "ab9fe6ffd26f08567d16e369e5cf2c2576e1fa70d6828216f1520f09e4a986d0",
+        "sourceNumber": 13,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which is a density-dependent factor that can reduce population growth?",
+        "choices": [
+          "A volcanic eruption",
+          "A severe frost affecting the whole region",
+          "Competition for food among crowded individuals",
+          "A sudden flood"
+        ],
+        "key": "ffea36aa73ac7c11174a6f3cd3ff2d7a9e5b275b6b295974943ff0e4f389da1a",
+        "sourceNumber": 14,
+        "correctIndex": 2
+      },
+      {
+        "question": "A storm kills a similar proportion of a species in both a sparse and a dense population. The storm is best described as:",
+        "choices": [
+          "Density-dependent",
+          "Density-independent",
+          "A carrying capacity",
+          "A mutualistic interaction"
+        ],
+        "key": "58e7cf3a770645f5084b4941bfe8714547eb179ca93bf5fb1aec8fcc96061e40",
+        "sourceNumber": 15,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which age structure is most likely to support future population growth, assuming survival and reproduction conditions remain similar?",
+        "choices": [
+          "A broad base of young individuals",
+          "A population made up only of post-reproductive adults",
+          "Equal numbers at every age with no young",
+          "A population with no reproductive individuals"
+        ],
+        "key": "aa98c2cfbd2f6773c3c4d22670a07af2e4c45df1f45a634a7150e271ede7d1d9",
+        "sourceNumber": 16,
+        "correctIndex": 0
+      },
+      {
+        "question": "A species produces many small offspring and provides little parental care. This pattern is most consistent with:",
+        "choices": [
+          "High investment in each offspring",
+          "Low investment in each offspring",
+          "No reproduction",
+          "Obligate mutualism"
+        ],
+        "key": "90371d18e4f22f957c1412f72a5e59c2f6205eb82d2b0ee4b11efec1a0013b0c",
+        "sourceNumber": 17,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which statement about a species' ecological niche is most accurate?",
+        "choices": [
+          "It is only the place where the species is found",
+          "It includes how the species uses resources and interacts with conditions",
+          "It is identical to the species' population size",
+          "It describes only its predators"
+        ],
+        "key": "3f0c05661c494e4074b0b40ae458d7ede4716954bb0f5ced4ec906330c1cbda3",
+        "sourceNumber": 18,
+        "correctIndex": 1
+      },
+      {
+        "question": "Two species use the same limited food source in the same habitat. Which interaction is likely if their resource use overlaps strongly?",
+        "choices": [
+          "Competition",
+          "Commensalism",
+          "Mutualism",
+          "Neutralism"
+        ],
+        "key": "127e4d54f37ec3d9555240939c276fd5e9a068aa56b02e230aa0dcf75622ac7f",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a food chain, arrows conventionally point from:",
+        "choices": [
+          "Consumer to the organism it eats",
+          "Food source to the organism receiving energy",
+          "Predator to prey only",
+          "Decomposer to sunlight"
+        ],
+        "key": "7f4a637108471de06e6cdb36446351d7184598704aebcd5826bbb583df7d3880",
+        "sourceNumber": 20,
+        "correctIndex": 1
+      },
+      {
+        "question": "In the chain grass → grasshopper → frog, the grasshopper is a:",
+        "choices": [
+          "Producer",
+          "Primary consumer",
+          "Secondary consumer",
+          "Decomposer"
+        ],
+        "key": "f4beaa34558de73b5ab14bc1dc094fd5025183c9f00ae366463151dd3aeb157f",
+        "sourceNumber": 21,
+        "correctIndex": 1
+      },
+      {
+        "question": "In the chain algae → zooplankton → small fish, the small fish is a:",
+        "choices": [
+          "Producer",
+          "Primary consumer",
+          "Secondary consumer",
+          "Detritivore"
+        ],
+        "key": "3599b50e4922fd4a658e55db15c0615956412abf9c0779aeaca9139bd0133662",
+        "sourceNumber": 22,
+        "correctIndex": 2
+      },
+      {
+        "question": "Which organisms convert light energy into chemical energy in most ecosystems?",
+        "choices": [
+          "Producers",
+          "Primary consumers",
+          "Scavengers",
+          "Parasites"
+        ],
+        "key": "7908c3d45f1848beddc8de3de81c843307b52c78f61252100ba97e3e098a5460",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why is less energy generally available at higher trophic levels?",
+        "choices": [
+          "Energy is recycled completely at each level",
+          "Organisms use energy for life processes and release much as heat",
+          "Consumers do not contain chemical energy",
+          "Producers absorb all energy from predators"
+        ],
+        "key": "2a50ea8479c2c769e84eb3fbf50d08aa1de0c538e4e97cbbb2f798c1e3494520",
+        "sourceNumber": 24,
+        "correctIndex": 1
+      },
+      {
+        "question": "A producer level stores 10,000 kJ of energy. If 10% is transferred to the next trophic level, how much is transferred?",
+        "choices": [
+          "10 kJ",
+          "100 kJ",
+          "1,000 kJ",
+          "9,000 kJ"
+        ],
+        "key": "29528d68a19cb904a590d841fc5275ddcdb648fb77fe0668fa3fa49eed80190e",
+        "sourceNumber": 25,
+        "correctIndex": 2
+      },
+      {
+        "question": "Which ecological pyramid is always upright when it represents energy at successive trophic levels?",
+        "choices": [
+          "Pyramid of numbers",
+          "Pyramid of biomass",
+          "Pyramid of energy",
+          "Pyramid of population age"
+        ],
+        "key": "693834dd6acc0855a557735a02e553b9aa18c86a2f55d322a9968bb72ad1531e",
+        "sourceNumber": 26,
+        "correctIndex": 2
+      },
+      {
+        "question": "A biomass pyramid in an aquatic ecosystem can appear inverted because:",
+        "choices": [
+          "Energy increases at each trophic level",
+          "Small producers can reproduce rapidly despite low standing biomass",
+          "Consumers perform photosynthesis",
+          "Biomass has no relation to organisms"
+        ],
+        "key": "bfbce0b333153aa21e3efb1496f1b1800541ecaab608803fdb7574e0b6709cdd",
+        "sourceNumber": 27,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which group plays a central role in breaking down dead organic matter and releasing simpler substances?",
+        "choices": [
+          "Decomposers",
+          "Top predators",
+          "Primary consumers",
+          "Pollinators only"
+        ],
+        "key": "e00ef24d00aea2c47c35273784d4a41d09205f993fce5e861d1e3b41b77d4b47",
+        "sourceNumber": 28,
+        "correctIndex": 0
+      },
+      {
+        "question": "A food web differs from a simple food chain because it:",
+        "choices": [
+          "Shows interconnected feeding relationships",
+          "Contains no producers",
+          "Tracks only one energy transfer",
+          "Shows nutrient cycles but no feeding"
+        ],
+        "key": "0aca10bd6d7003a83ac940299fc2f8f3b1dc96728be364d7b60cc5050cb25e10",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the primary source of energy for most terrestrial food webs?",
+        "choices": [
+          "The Moon",
+          "The Sun",
+          "Soil minerals",
+          "Decomposers"
+        ],
+        "key": "621a8d6a0052036510a78082a5562e7dc16ad6c4fbcddadb4017b499c0ad7df9",
+        "sourceNumber": 30,
+        "correctIndex": 1
+      },
+      {
+        "question": "Gross primary productivity is the rate at which producers:",
+        "choices": [
+          "Use stored organic matter in respiration",
+          "Capture energy or fix carbon before respiratory losses are subtracted",
+          "Transfer all energy to top predators",
+          "Decompose dead organisms"
+        ],
+        "key": "8787b5b7bb08ff2102d4da0eb5230499b39b3e5698535cdf6af1644a4e891fc7",
+        "sourceNumber": 31,
+        "correctIndex": 1
+      },
+      {
+        "question": "If gross primary productivity is 900 units and producers use 350 units in respiration, what is net primary productivity?",
+        "choices": [
+          "350 units",
+          "550 units",
+          "900 units",
+          "1,250 units"
+        ],
+        "key": "f2708dbb6b520a0b6b83695113936286e055473175a0a2fcabd53d9a7ec0c6cc",
+        "sourceNumber": 32,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which statement best distinguishes energy flow from nutrient cycling?",
+        "choices": [
+          "Both are endlessly recycled in the same form",
+          "Energy flows through ecosystems while nutrients are reused in cycles",
+          "Nutrients flow once and disappear",
+          "Energy cycles between predators and prey without losses"
+        ],
+        "key": "cbd06dbe4667d4a4c516135b9747bcd902ac700ad774149559a8472febea0f6d",
+        "sourceNumber": 33,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which process removes carbon dioxide from the atmosphere and incorporates carbon into organic molecules?",
+        "choices": [
+          "Photosynthesis",
+          "Combustion",
+          "Cellular respiration",
+          "Decomposition alone"
+        ],
+        "key": "7c316438d4520f263348fb79faa3e9258f4420125d6e2c73f4ac43b6af6836cd",
+        "sourceNumber": 34,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which process returns carbon dioxide to the atmosphere from living organisms?",
+        "choices": [
+          "Cellular respiration",
+          "Nitrogen fixation",
+          "Nitrification",
+          "Rock weathering only"
+        ],
+        "key": "7c4c571b079b7941db147b5df69455f2df43bdec0d04a93fa8b6eeb8cf897dab",
+        "sourceNumber": 35,
+        "correctIndex": 0
+      },
+      {
+        "question": "Burning coal and petroleum transfers stored carbon mainly:",
+        "choices": [
+          "From the atmosphere into fossil fuels",
+          "From fossil fuels into the atmosphere as carbon dioxide",
+          "From nitrogen gas into soil nitrate",
+          "From ocean water into oxygen"
+        ],
+        "key": "e4eaea385d318b75b5f8209aad9d0e2df0cdf906c90c3d4704b62aa94416655f",
+        "sourceNumber": 36,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which organisms can convert atmospheric nitrogen gas into biologically usable nitrogen compounds?",
+        "choices": [
+          "Nitrogen-fixing microorganisms",
+          "All flowering plants unaided",
+          "Only herbivorous animals",
+          "Nitrifying organisms converting nitrate to nitrogen gas"
+        ],
+        "key": "beb7d608d7c4638a87ade9c4f39b85cfab85718bbcb1314d1ee7d230da467824",
+        "sourceNumber": 37,
+        "correctIndex": 0
+      },
+      {
+        "question": "In the nitrogen cycle, nitrification generally converts:",
+        "choices": [
+          "Ammonia into nitrite and then nitrate",
+          "Nitrate into atmospheric nitrogen",
+          "Nitrogen gas into glucose",
+          "Protein directly into nitrogen gas"
+        ],
+        "key": "f3ac6ca6d23c1705d3d9b5799c1d5f025595b2c14e7ac9c11ab359ee2e7a3b45",
+        "sourceNumber": 38,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which process returns nitrogen gas to the atmosphere from nitrogen compounds in soil?",
+        "choices": [
+          "Denitrification",
+          "Nitrogen fixation",
+          "Assimilation",
+          "Photosynthesis"
+        ],
+        "key": "b4ae85ceb4556324d3ac69cbcf59fdd8a44471ed25c45df70ae031d48579c0ea",
+        "sourceNumber": 39,
+        "correctIndex": 0
+      },
+      {
+        "question": "Plants most commonly obtain usable nitrogen from soil in the form of:",
+        "choices": [
+          "Nitrogen gas only",
+          "Nitrate or ammonium ions",
+          "Atmospheric oxygen",
+          "Elemental phosphorus"
+        ],
+        "key": "2a43aeb7de5b6ca1defd5756610a09a34ca1852cb170b72709965dcd2238f66a",
+        "sourceNumber": 40,
+        "correctIndex": 1
+      },
+      {
+        "question": "Why can excessive nutrient runoff cause oxygen depletion in a lake?",
+        "choices": [
+          "Nutrients directly remove all oxygen",
+          "Algal growth and subsequent decomposition increase oxygen demand",
+          "Nutrients stop all microbial activity",
+          "Runoff converts oxygen into nitrogen immediately"
+        ],
+        "key": "5bd0df27b6c40460299b521356e0abffc0f8cf648405259071e0b5731b3940d2",
+        "sourceNumber": 41,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which description best fits mutualism?",
+        "choices": [
+          "Both interacting species benefit",
+          "One benefits and the other is harmed",
+          "One benefits and the other is unaffected",
+          "Both species are harmed"
+        ],
+        "key": "560425fae2a8aa30cf33ef3a6fe436b6cf6c42858a7bb7eb21d770d85f22435e",
+        "sourceNumber": 42,
+        "correctIndex": 0
+      },
+      {
+        "question": "A bird nests in a tree without measurably affecting the tree. This relationship is best described as:",
+        "choices": [
+          "Parasitism",
+          "Commensalism",
+          "Competition",
+          "Predation"
+        ],
+        "key": "66a58af13444a53457ebe1594ea31f1d3d0a952b89f6f2cf4ac7090d3ad9c22d",
+        "sourceNumber": 43,
+        "correctIndex": 1
+      },
+      {
+        "question": "A tick feeds on a mammal and harms it. This interaction is:",
+        "choices": [
+          "Mutualism",
+          "Commensalism",
+          "Parasitism",
+          "Competition"
+        ],
+        "key": "1ec74f3f64678da532bcedc47b5e7437ce5f0afaff220c25d22e10128de1cdc5",
+        "sourceNumber": 44,
+        "correctIndex": 2
+      },
+      {
+        "question": "A predator captures and consumes its prey. Which pair of effects describes the interaction?",
+        "choices": [
+          "Predator benefits; prey is harmed",
+          "Both benefit",
+          "Predator is harmed; prey benefits",
+          "Neither is affected"
+        ],
+        "key": "92ad82e057bfde31c1c2c4bfdb596c8979cb1cb78a7cef7296e8090dca11815e",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "Two barnacle species compete for limited attachment space. If one species excludes the other from that space, the outcome illustrates:",
+        "choices": [
+          "Competitive exclusion",
+          "Mutualism",
+          "Nutrient cycling",
+          "Genetic drift"
+        ],
+        "key": "cf6094148f97dfd5756c2884a2e33940b66e0c44d83a4f60683d3b778c037531",
+        "sourceNumber": 46,
+        "correctIndex": 0
+      },
+      {
+        "question": "Two similar species coexist in one habitat by feeding at different times. This is an example of:",
+        "choices": [
+          "Resource partitioning",
+          "Primary succession",
+          "Biomagnification",
+          "Predator satiation"
+        ],
+        "key": "81ff8820157b816fca3bfef27e28820ecb4fb772fb520e86aa9d570028a67377",
+        "sourceNumber": 47,
+        "correctIndex": 0
+      },
+      {
+        "question": "A predator's presence changes prey behaviour, and this indirectly changes plant abundance. The plant response is an example of a:",
+        "choices": [
+          "Trophic cascade",
+          "Nitrogen fixation",
+          "Founder effect",
+          "Primary succession"
+        ],
+        "key": "169064b32c5b6ef4a9a7297af12a2778feda37bd7efb3caeae65941cf517f3bf",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "The total variety of genes, species and ecosystems in a region is broadly called:",
+        "choices": [
+          "Biodiversity",
+          "Biomass",
+          "Carrying capacity",
+          "Productivity"
+        ],
+        "key": "8775f05434fe868a8500065eae1ca246069a14212bc745179e7eee127b6f9ad3",
+        "sourceNumber": 49,
+        "correctIndex": 0
+      },
+      {
+        "question": "A community contains many species with relatively similar abundances. Which aspect of diversity is especially high?",
+        "choices": [
+          "Evenness",
+          "Carrying capacity",
+          "Predation rate",
+          "Trophic efficiency"
+        ],
+        "key": "c220b862119c93bb0d55124d500a22a7e3c9a76bdd64df8a03db799ca700d613",
+        "sourceNumber": 50,
+        "correctIndex": 0
+      },
+      {
+        "question": "A habitat contains 25 different species. The number 25 measures its:",
+        "choices": [
+          "Species richness",
+          "Species evenness",
+          "Primary productivity",
+          "Population density"
+        ],
+        "key": "e45c203cfcb1df816898b43f0739ff5a4b4498e0adfdd518d9c810cebe709ab1",
+        "sourceNumber": 51,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which change most directly fragments a continuous habitat?",
+        "choices": [
+          "A road dividing a forest into separate patches",
+          "Seasonal leaf fall",
+          "A brief increase in rainfall",
+          "A single predator eating prey"
+        ],
+        "key": "b730ceb25e72f700842cde31963baabe3ab6bfab88d9e6171f04c5a1cff120ca",
+        "sourceNumber": 52,
+        "correctIndex": 0
+      },
+      {
+        "question": "An ecosystem's resilience is its ability to:",
+        "choices": [
+          "Recover or maintain function after disturbance",
+          "Prevent every disturbance from occurring",
+          "Increase energy at each trophic level",
+          "Stop all species from competing"
+        ],
+        "key": "b3e8d206364dcc9bcb3d19c51be8d2be3a9da82b7e834a0b9d444cd481babab9",
+        "sourceNumber": 53,
+        "correctIndex": 0
+      },
+      {
+        "question": "Succession that begins on newly exposed rock with no developed soil is:",
+        "choices": [
+          "Primary succession",
+          "Secondary succession",
+          "Seasonal succession",
+          "Trophic succession"
+        ],
+        "key": "480543d573bb5e70487b7e294764906869b7bdbf1d74e5571b1bac983052f4ac",
+        "sourceNumber": 54,
+        "correctIndex": 0
+      },
+      {
+        "question": "After a fire, a forest regrows where soil remains. This is generally:",
+        "choices": [
+          "Primary succession",
+          "Secondary succession",
+          "Nitrogen fixation",
+          "Evolutionary drift"
+        ],
+        "key": "f476f3ea6d5f654ac951ad85c6699806e71436a8b2a601750aeb5879d546a775",
+        "sourceNumber": 55,
+        "correctIndex": 1
+      },
+      {
+        "question": "Why can secondary succession proceed faster than primary succession?",
+        "choices": [
+          "It begins with existing soil and often surviving seeds or organisms",
+          "It never involves competition",
+          "It starts without any organisms or nutrients",
+          "It always has a higher carrying capacity"
+        ],
+        "key": "e6613d080a6e896b44809fba9349f3ca4994cff4d5c45a6d81785031b2b50cbc",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "An early colonizing species on bare rock that helps create conditions for later species is called a:",
+        "choices": [
+          "Pioneer species",
+          "Keystone predator",
+          "Secondary consumer",
+          "Host species"
+        ],
+        "key": "2e58cc42e21474c74fb229753c2adf62e21deb25478a028e6ecfddbd5cae801a",
+        "sourceNumber": 57,
+        "correctIndex": 0
+      },
+      {
+        "question": "In ecological succession, facilitation describes a situation where early species:",
+        "choices": [
+          "Make conditions more suitable for later species",
+          "Prevent all later species from arriving",
+          "Convert consumers into producers",
+          "Stop nutrient cycling"
+        ],
+        "key": "062a21ae2c9bb1c3886157f2f373ee1514a170879bf072462f7389e007bf36a0",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement about a so-called climax community is most careful?",
+        "choices": [
+          "Every ecosystem reaches one permanent, unchanging endpoint",
+          "Community composition can continue to change with disturbance and environmental conditions",
+          "It contains only one species",
+          "It has no interactions among organisms"
+        ],
+        "key": "3aa5319d4af771527dc46df7763256e22c9cd1f04ca81de448b2cc9b68c5ae9c",
+        "sourceNumber": 59,
+        "correctIndex": 1
+      },
+      {
+        "question": "A keystone species is one that:",
+        "choices": [
+          "Has an ecological effect disproportionately large relative to its abundance",
+          "Is always the most numerous species",
+          "Produces all ecosystem energy",
+          "Cannot be affected by environmental change"
+        ],
+        "key": "6fdcc335cc1f522dcfcafb60249449797ffc95d7c8f42b826c29b34d5b111c71",
+        "sourceNumber": 60,
+        "correctIndex": 0
+      },
+      {
+        "question": "A species found naturally in one limited geographic region and nowhere else is:",
+        "choices": [
+          "Endemic",
+          "Cosmopolitan",
+          "Migratory",
+          "Invasive by definition"
+        ],
+        "key": "fe2dcb0e32bcb71044fa6f4a78ecaee4b699ed4dcfd83fab514de00c40fea433",
+        "sourceNumber": 61,
+        "correctIndex": 0
+      },
+      {
+        "question": "An introduced species becomes invasive when it:",
+        "choices": [
+          "Spreads and causes ecological or other significant harm",
+          "Is simply observed outside a laboratory",
+          "Is native and rare",
+          "Has no effect on its new community"
+        ],
+        "key": "9014da0fa765f03530a615e93496049f023cd20dc76d5814b1f01e05f761d81d",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which feature is shared by all living organisms and is essential to natural selection?",
+        "choices": [
+          "Heritable variation among individuals",
+          "Identical reproductive success",
+          "A conscious effort to adapt",
+          "No differences in survival"
+        ],
+        "key": "304e79a0402ba270dc5abe4d28da4990f4f6e567c455524d91a1565ecb5e7fec",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "In evolutionary biology, fitness most directly refers to an individual's:",
+        "choices": [
+          "Physical strength alone",
+          "Contribution of genes to later generations through reproductive success",
+          "Age at death only",
+          "Body size compared with every other species"
+        ],
+        "key": "d5ffa2872a36868ee2ac33b731ab78d602afd827968d61dad8be77aaced0d14f",
+        "sourceNumber": 64,
+        "correctIndex": 1
+      },
+      {
+        "question": "A population of insects becomes more resistant to a pesticide over generations. The best explanation is that:",
+        "choices": [
+          "The pesticide caused each insect to choose resistance",
+          "Resistant heritable variants left more offspring under pesticide exposure",
+          "All insects changed their genes in the same way during treatment",
+          "Resistance is not affected by reproduction"
+        ],
+        "key": "04da2b2e759616880786b60c2d5a99cdbac705caf0e6f672d685a6f35c9a8a6a",
+        "sourceNumber": 65,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which statement correctly describes natural selection?",
+        "choices": [
+          "Individuals evolve because they need to",
+          "Populations change over generations as heritable variants differ in reproductive success",
+          "Every mutation improves survival",
+          "Selection creates the exact variation organisms require"
+        ],
+        "key": "693e0dce3f7037e26e555964c28a280f5c093ad3f1291ce025a9512ffc9dd830",
+        "sourceNumber": 66,
+        "correctIndex": 1
+      },
+      {
+        "question": "A mutation occurs in a body cell that does not contribute to gametes. In a sexually reproducing animal, it is generally:",
+        "choices": [
+          "Inherited by offspring automatically",
+          "Not passed to offspring through that animal's gametes",
+          "Always beneficial",
+          "A new species"
+        ],
+        "key": "14b7073c25537d5fad173293a083534262dc1bb5c96aa434198930fbfbef25ca",
+        "sourceNumber": 67,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which source introduces new alleles into a population?",
+        "choices": [
+          "Mutation",
+          "Natural selection alone",
+          "Non-random mating alone",
+          "A change in an individual's body size"
+        ],
+        "key": "f56eac52c35ce74a07f100ef6a7fd082da26f5216d07004f9a96f1006ecc66ef",
+        "sourceNumber": 68,
+        "correctIndex": 0
+      },
+      {
+        "question": "Gene flow occurs when:",
+        "choices": [
+          "Alleles move between populations through migrating and reproducing individuals",
+          "A population stops reproducing",
+          "Individuals alter traits through practice",
+          "A species becomes extinct"
+        ],
+        "key": "b227357160b7026eba8fa2872ede2b8e1c738112b377494e6a29929f5b8c2428",
+        "sourceNumber": 69,
+        "correctIndex": 0
+      },
+      {
+        "question": "A few individuals establish a new, small population on an island. Its allele frequencies differ by chance from the source population. This is the:",
+        "choices": [
+          "Founder effect",
+          "Stabilizing selection",
+          "Competitive exclusion",
+          "Bottleneck-free equilibrium"
+        ],
+        "key": "1323feeb5c0fb34476b45a589a18e135e946931868145965d1bbec3e25947958",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "A disaster sharply reduces a population, leaving a small, unrepresentative sample of its original alleles. This is a:",
+        "choices": [
+          "Bottleneck effect",
+          "Founder effect only",
+          "Gene flow",
+          "Directional selection"
+        ],
+        "key": "09d062876de3b91a5ac4f751ee4be4f01d0e02f3407bc8d45d9957f8e09c118d",
+        "sourceNumber": 71,
+        "correctIndex": 0
+      },
+      {
+        "question": "Genetic drift has the strongest effect on allele frequencies in:",
+        "choices": [
+          "Very large populations",
+          "Small populations",
+          "Populations with no alleles",
+          "Every population equally"
+        ],
+        "key": "c56733a8990c556672c8e21df7fe5b9b19f6cf5e887943274bd6f7213e172d44",
+        "sourceNumber": 72,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which process changes allele frequencies through differences in survival or reproductive success associated with inherited traits?",
+        "choices": [
+          "Natural selection",
+          "Genetic drift only",
+          "Gene flow only",
+          "Non-heritable acclimation"
+        ],
+        "key": "bb4c69f6ecb83d6fb9e7830c06ac15e035fed7e5ce4d117ee911a61bf5ea2c1a",
+        "sourceNumber": 73,
+        "correctIndex": 0
+      },
+      {
+        "question": "If individuals at both extremes of a trait distribution have lower reproductive success than intermediate individuals, selection is:",
+        "choices": [
+          "Stabilizing",
+          "Directional",
+          "Disruptive",
+          "Artificial only"
+        ],
+        "key": "54a9db5ec50395557727fe66ff863f2fc683a6a7f135e8eb694c9be0f0b4b74b",
+        "sourceNumber": 74,
+        "correctIndex": 0
+      },
+      {
+        "question": "If one extreme of a trait gives individuals higher reproductive success, the population may experience:",
+        "choices": [
+          "Directional selection",
+          "Stabilizing selection",
+          "No selection by definition",
+          "Primary succession"
+        ],
+        "key": "52e737cfde8304611e5115172509821273c9a351f2d8c1f804f00f8f9e4062d4",
+        "sourceNumber": 75,
+        "correctIndex": 0
+      },
+      {
+        "question": "When individuals at both extremes of a trait have higher reproductive success than intermediate individuals, this is:",
+        "choices": [
+          "Disruptive selection",
+          "Stabilizing selection",
+          "Directional selection toward the mean",
+          "Gene flow"
+        ],
+        "key": "8f872657f9c450c7a5824ef2ad3756e61da9330bdd6e30e2f2b3fc98a69e17e0",
+        "sourceNumber": 76,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which statement distinguishes adaptation from acclimation?",
+        "choices": [
+          "Adaptation is an inherited population-level change across generations; acclimation is an individual's adjustment during its lifetime",
+          "Both always involve changes in allele frequencies",
+          "Acclimation always creates a new species",
+          "Adaptation is a deliberate choice by an individual"
+        ],
+        "key": "903ad134fbd466f0e0faa0a59d357959bf5e5f8750e6eaab0a563808c7bad080",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "The similar streamlined shape of sharks and dolphins is commonly explained by:",
+        "choices": [
+          "Convergent evolution",
+          "Homologous ancestry of the exact body shape",
+          "Genetic drift alone",
+          "Artificial selection"
+        ],
+        "key": "ca6e43ccd789ce7cf47a53faa4ddc8d2f27688807458635d9325e5bf79dc3a60",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "The forelimbs of humans, whales and bats have similar underlying bone arrangements but different functions. They are:",
+        "choices": [
+          "Homologous structures",
+          "Analogous structures only",
+          "Vestigial organs in every case",
+          "Unrelated structures by definition"
+        ],
+        "key": "1e3b6893f9752dfb43becd964519a4d89d03fcfad155b82f065d8b2da028adfc",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "Wings of insects and birds serve a similar function but evolved in different structural lineages. As wings, they are commonly considered:",
+        "choices": [
+          "Analogous structures",
+          "Homologous structures in every detail",
+          "Embryonic fossils",
+          "Evidence against selection"
+        ],
+        "key": "ced74f2e1b2276e47344b94b643c9cbe4c8e468f8153cf5a94359eb0545c4fa5",
+        "sourceNumber": 80,
+        "correctIndex": 0
+      },
+      {
+        "question": "A reduced structure that has lost much of its ancestral function is described as:",
+        "choices": [
+          "Vestigial",
+          "Dominant",
+          "Trophic",
+          "Abiotic"
+        ],
+        "key": "67076db22472faf42211838a12551be21eed8b3074e1aad5e0d3b0e9c450cd2d",
+        "sourceNumber": 81,
+        "correctIndex": 0
+      },
+      {
+        "question": "A sequence of fossils shows gradual change in a lineage through successive rock layers. This is evidence for:",
+        "choices": [
+          "Change in populations over geological time",
+          "The absence of past life",
+          "The impossibility of extinction",
+          "Inheritance of acquired traits in every case"
+        ],
+        "key": "10dc7718ec4beb773411098d788821378729e6bab4b867be85d70903de1ee8b8",
+        "sourceNumber": 82,
+        "correctIndex": 0
+      },
+      {
+        "question": "The geographic distribution of related organisms across separated regions is studied in:",
+        "choices": [
+          "Biogeography",
+          "Physiology",
+          "Histology",
+          "Taxidermy"
+        ],
+        "key": "72c6e8cec1cf86bffae845f390809f70d38d44c319b0af36ef36e848d72ca15c",
+        "sourceNumber": 83,
+        "correctIndex": 0
+      },
+      {
+        "question": "Similarities in early embryonic development among related groups can support the inference of:",
+        "choices": [
+          "Common ancestry",
+          "Identical adult niches",
+          "No evolutionary change",
+          "Equal population sizes"
+        ],
+        "key": "6a2b15ae45a42e257eff691b418b3f85067decfd9ac114f68e6735cfcdea057d",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "Under the biological species concept, members of the same species are generally able to:",
+        "choices": [
+          "Interbreed in nature and produce fertile offspring",
+          "Occupy exactly the same habitat",
+          "Look identical at every life stage",
+          "Have identical allele frequencies"
+        ],
+        "key": "2899b02044b915ee9fe1e52de60e43beae1b6138cb961951ba1da4428421a880",
+        "sourceNumber": 85,
+        "correctIndex": 0
+      },
+      {
+        "question": "Two populations become geographically isolated and eventually can no longer produce fertile offspring together. This outcome is consistent with:",
+        "choices": [
+          "Speciation",
+          "Acclimation",
+          "Commensalism",
+          "Nutrient limitation"
+        ],
+        "key": "218160d92d92d81596ec545f510f7607a73482b7c6761ba62a0822360b622793",
+        "sourceNumber": 86,
+        "correctIndex": 0
+      },
+      {
+        "question": "A river divides one population, reducing interbreeding between the two sides. This is a potential starting point for:",
+        "choices": [
+          "Allopatric speciation",
+          "Sympatric speciation only",
+          "Ecological succession",
+          "Nitrification"
+        ],
+        "key": "f57a651c1a27f57a0d91c8737c9f097f69bab236890b973c05af58ac428bc609",
+        "sourceNumber": 87,
+        "correctIndex": 0
+      },
+      {
+        "question": "A prezygotic reproductive barrier acts by:",
+        "choices": [
+          "Preventing mating or fertilization",
+          "Making every hybrid infertile after birth",
+          "Reducing survival of adult hybrids only",
+          "Changing the climate"
+        ],
+        "key": "4682e4363aae42dfe8810d69733ec71ddc5a165040c91c39c12d849c9de4fab2",
+        "sourceNumber": 88,
+        "correctIndex": 0
+      },
+      {
+        "question": "A postzygotic barrier occurs when:",
+        "choices": [
+          "Fertilization is prevented by different mating seasons",
+          "Hybrid offspring have reduced survival or fertility",
+          "Two populations use different courtship calls before mating",
+          "Pollen fails to reach a flower"
+        ],
+        "key": "c89898ac4c31fcaf0d21275a128af15bc5cfb37382db53546983e4f6bad02eb4",
+        "sourceNumber": 89,
+        "correctIndex": 1
+      },
+      {
+        "question": "In a Hardy–Weinberg population with two alleles, p = 0.7 and q = 0.3. What is the expected frequency of heterozygotes?",
+        "choices": [
+          "0.09",
+          "0.21",
+          "0.42",
+          "0.49"
+        ],
+        "key": "fac278d7cfc1ac08431da9d8ffa84d53311acf8ebf73692b770a41fec24f4c13",
+        "sourceNumber": 90,
+        "correctIndex": 2
+      },
+      {
+        "question": "For two alleles with frequencies p and q in a population, which relation must hold?",
+        "choices": [
+          "p + q = 1",
+          "p − q = 1",
+          "p × q = 1",
+          "p² + q = 0"
+        ],
+        "key": "79980115d8f92624b93f224c984820d45df45915a3a8b5197b0908e824d89326",
+        "sourceNumber": 91,
+        "correctIndex": 0
+      },
+      {
+        "question": "Under Hardy–Weinberg equilibrium, if p = 0.6 and q = 0.4, what is the expected frequency of homozygous recessive individuals?",
+        "choices": [
+          "0.16",
+          "0.24",
+          "0.36",
+          "0.48"
+        ],
+        "key": "a3619d9cd6045af055891418bca991ab5469ed66638a1d05c460199457ed22d7",
+        "sourceNumber": 92,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which condition is required for Hardy–Weinberg equilibrium in its simplest form?",
+        "choices": [
+          "Random mating",
+          "Strong selection",
+          "Frequent migration",
+          "A very small population"
+        ],
+        "key": "695bb2027834ae1d5ef6ec288c6b61ad1b29af68fb519a493305b4c9cd2bacac",
+        "sourceNumber": 93,
+        "correctIndex": 0
+      },
+      {
+        "question": "If allele frequencies remain constant across generations under Hardy–Weinberg conditions, the population is:",
+        "choices": [
+          "In genetic equilibrium",
+          "Under directional selection",
+          "Experiencing a bottleneck",
+          "Necessarily forming a new species"
+        ],
+        "key": "1b88df6ed8abd629117a8805e08b52c8117c21a25fba4421235fae002d1966b7",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which factor violates Hardy–Weinberg equilibrium by introducing alleles from another population?",
+        "choices": [
+          "Gene flow",
+          "Random mating",
+          "Large population size",
+          "Absence of selection"
+        ],
+        "key": "c3ef03dcc82104bed4330fc94d4f33ffb04519615cb3960e55844104b4e49860",
+        "sourceNumber": 95,
+        "correctIndex": 0
+      },
+      {
+        "question": "Artificial selection differs from natural selection because artificial selection is primarily directed by:",
+        "choices": [
+          "Human choices about which organisms reproduce",
+          "Random changes in allele frequencies alone",
+          "Climate acting without any organisms",
+          "The organisms' conscious need to evolve"
+        ],
+        "key": "29765e914dc519bd9577b8f2c69976a5300836384bddfec39d753c992351ac23",
+        "sourceNumber": 96,
+        "correctIndex": 0
+      },
+      {
+        "question": "A population contains heritable variation in beak size. During a drought, only large seeds remain plentiful and birds with deeper beaks produce more offspring. This is:",
+        "choices": [
+          "Natural selection favouring a heritable trait",
+          "Acclimation of every bird",
+          "Gene flow without migration",
+          "Selection unrelated to reproduction"
+        ],
+        "key": "498a09d781bb8f3a164320a3c0e32463ff154054d21d3c0d01927786ea24d573",
+        "sourceNumber": 97,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why is the statement “individual organisms evolve because they need to” inaccurate?",
+        "choices": [
+          "Evolution is a change in inherited population traits across generations, not a purposeful individual decision",
+          "Individuals never respond to their environments",
+          "Populations cannot change",
+          "Only fossils can evolve"
+        ],
+        "key": "446222b69765768ee7b7dc5a34be08583cb501b15aff8b5afea6862ee505178f",
+        "sourceNumber": 98,
+        "correctIndex": 0
+      },
+      {
+        "question": "A trait is useful in one environment but costly in another. What is the best evolutionary conclusion?",
+        "choices": [
+          "Its effect on fitness depends on the environment",
+          "It must always be beneficial",
+          "It cannot be inherited",
+          "It prevents natural selection"
+        ],
+        "key": "14721121fa3949383e6f8d9342e6e5ae47338a1f120cfda55d766f48778247f9",
+        "sourceNumber": 99,
+        "correctIndex": 0
+      },
+      {
+        "question": "Two populations exchange migrants, and the migrants reproduce. What is a likely genetic consequence?",
+        "choices": [
+          "Some alleles may become more similar between the populations",
+          "All genetic variation must disappear",
+          "Mutation immediately stops",
+          "Speciation becomes certain"
+        ],
+        "key": "a5bdf961c703e868c9474c265cb66c476576e082a2e15a71c4e5530a9956227c",
+        "sourceNumber": 100,
+        "correctIndex": 0
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "800c35055632af2c8376ba21eaa67a116c7cca272e2fc2b3a6e49207347fc152",
+      "sourceQuestionNumbers": [
+        75,
+        100,
+        47,
+        32,
+        9,
+        34,
+        17,
+        58,
+        65,
+        82,
+        38,
+        10,
+        64,
+        96,
+        45,
+        35,
+        67,
+        43,
+        14,
+        85,
+        95,
+        23,
+        48,
+        4,
+        61,
+        69,
+        16,
+        60,
+        39,
+        92,
+        36,
+        52,
+        89,
+        71,
+        13,
+        62,
+        51,
+        1,
+        86,
+        29,
+        70,
+        42,
+        24,
+        93,
+        5,
+        20,
+        46,
+        22,
+        98,
+        73,
+        19,
+        94,
+        31,
+        72,
+        44,
+        26,
+        66,
+        56,
+        88,
+        8,
+        91,
+        41,
+        11,
+        78,
+        21,
+        83,
+        54,
+        79,
+        28,
+        18,
+        59,
+        80,
+        7,
+        97,
+        27,
+        40,
+        15,
+        68,
+        81,
+        57,
+        90,
+        50,
+        37,
+        6,
+        77,
+        76,
+        2,
+        30,
+        53,
+        84,
+        12,
+        87,
+        55,
+        25,
+        74,
+        33,
+        63,
+        49,
+        3,
+        99
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
