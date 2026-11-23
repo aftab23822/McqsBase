@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "mdcat-ecology-evolution-mcqs": {
+    title: "100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+    excerpt:
+      "Practise ecology and evolution with 100 original multiple-choice questions covering populations, ecosystems, nutrient cycles, species interactions and natural selection.",
+    category: "Subject Guide",
+    date: "2026-11-23",
+    readTime: "31 min",
+    content: null,
+    body: readImportedBlogBody("mdcat-ecology-evolution-mcqs")
+  },
   "nat-ie-thermal-physics": {
     title: "100 Thermal Physics MCQs for NAT-IE-Style Practice",
     excerpt:
