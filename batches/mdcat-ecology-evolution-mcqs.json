@@ -2313,6 +2313,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 5,
+      "directory": "part-05",
+      "sourceQuestionNumbers": [
+        82,
+        38
+      ],
+      "count": 2,
+      "durationSeconds": 68,
+      "sha256": "02d6504382986a6f2e10c68bb433dff6f0f884e454517e44854cdf1e59097817",
+      "manifest": {
+        "title": "100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+        "sourceTitle": "100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-23T07:03:01.936591+00:00",
+        "sourceContentHash": "4b4b14cc21d90ad8ff873f3107cdd4324885076373eb33f91e15b99c8c52f496",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7992489272,
+          "sha": "697db0d706e6d4f1bdd3eabca19d9c4441c2ccbd",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-23T07:03:01.936591+00:00",
+          "url": "https://mcqs-base-3deoz5s9c-as-projects-10921176.vercel.app",
+          "publisherRunId": 45127348060
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 68,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A sequence of fossils shows gradual change in a lineage through successive rock layers. This is evidence for:",
+            "choices": [
+              "Change in populations over geological time",
+              "The absence of past life",
+              "The impossibility of extinction",
+              "Inheritance of acquired traits in every case"
+            ],
+            "correctIndex": 0,
+            "key": "10dc7718ec4beb773411098d788821378729e6bab4b867be85d70903de1ee8b8",
+            "sourceNumber": 82
+          },
+          {
+            "question": "In the nitrogen cycle, nitrification generally converts:",
+            "choices": [
+              "Ammonia into nitrite and then nitrate",
+              "Nitrate into atmospheric nitrogen",
+              "Nitrogen gas into glucose",
+              "Protein directly into nitrogen gas"
+            ],
+            "correctIndex": 0,
+            "key": "f3ac6ca6d23c1705d3d9b5799c1d5f025595b2c14e7ac9c11ab359ee2e7a3b45",
+            "sourceNumber": 38
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 24,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 25,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 26,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 27,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 33,
+            "duration": 21,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 54,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 55,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 56,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 57,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 63,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 5,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            82,
+            38
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MDCAT",
+          "#MedicalEntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/mdcat-ecology-evolution-mcqs-part-05-02d6504382986a6f.mp4",
+        "videoSha256": "02d6504382986a6f2e10c68bb433dff6f0f884e454517e44854cdf1e59097817",
+        "assetId": 781920439
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 5/5 | Q82, 38 | 100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+          "text": "Part 5/5 · Source questions 82, 38\n100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 5/5 | Q82, 38 | 100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+          "text": "Part 5/5 · Source questions 82, 38\n100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 5/5 | Q82, 38 | 100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+          "text": "Part 5/5 · Source questions 82, 38\n100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 5/5 | Q82, 38 | 100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+          "text": "Part 5/5 · Source questions 82, 38\n100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
