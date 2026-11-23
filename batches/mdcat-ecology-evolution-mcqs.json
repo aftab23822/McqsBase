@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "mdcat-ecology-evolution-mcqs",
   "createdAt": "2026-11-23T07:03:02.126806+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "mdcat-ecology-evolution-mcqs",
     "title": "100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
@@ -2547,5 +2547,82 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "mdcat-ecology-evolution-mcqs",
+    "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+    "sourceTitle": "100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+    "sourceContentHash": "4b4b14cc21d90ad8ff873f3107cdd4324885076373eb33f91e15b99c8c52f496",
+    "productionDeployment": {
+      "id": 7992489272,
+      "sha": "697db0d706e6d4f1bdd3eabca19d9c4441c2ccbd",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-23T07:03:01.936591+00:00",
+      "url": "https://mcqs-base-3deoz5s9c-as-projects-10921176.vercel.app",
+      "publisherRunId": 45127348060
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          75,
+          100
+        ],
+        "count": 2,
+        "durationSeconds": 66,
+        "sha256": "7aeeb98a7181bc58e5fee3ae96298a41860d8e69c5324604a2b9a6714bd6184a"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          47,
+          32
+        ],
+        "count": 2,
+        "durationSeconds": 64,
+        "sha256": "4a7bd07fbb4a22c7cef303ee1d0b9114b021b8b1da57231b0f59900beb5962ec"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          9,
+          34,
+          17
+        ],
+        "count": 3,
+        "durationSeconds": 89,
+        "sha256": "2a3e64e4aa254bfbbaa4de1b9b74fa717de5911ad064d54dbb0ceff2c9e8b7c9"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          58,
+          65
+        ],
+        "count": 2,
+        "durationSeconds": 75,
+        "sha256": "18d25efd8080f71a8d80b7c59ac95c2685f1e15a13f9e40ff286f23f5d7966eb"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          82,
+          38
+        ],
+        "count": 2,
+        "durationSeconds": 68,
+        "sha256": "02d6504382986a6f2e10c68bb433dff6f0f884e454517e44854cdf1e59097817"
+      }
+    ]
+  }
 }
