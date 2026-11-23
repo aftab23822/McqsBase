@@ -1245,7 +1245,7 @@
       "verifiedPublications": 15
     },
     "hec-lat-critical-reasoning": {
-      "status": "scheduled",
+      "status": "provider-published",
       "ledger": "batches/hec-lat-critical-reasoning.json",
       "createdAt": "2026-11-21T06:40:38.354552+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/hec-lat-critical-reasoning",
@@ -1257,8 +1257,8 @@
         "2026-11-21T19:30:00+05:00",
         "2026-11-21T21:59:00+05:00"
       ],
-      "published": 17,
-      "verifiedPublications": 12
+      "published": 20,
+      "verifiedPublications": 15
     },
     "nat-ie-thermal-physics": {
       "status": "scheduled",
