@@ -2081,6 +2081,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 4,
+      "directory": "part-04",
+      "sourceQuestionNumbers": [
+        58,
+        65
+      ],
+      "count": 2,
+      "durationSeconds": 75,
+      "sha256": "18d25efd8080f71a8d80b7c59ac95c2685f1e15a13f9e40ff286f23f5d7966eb",
+      "manifest": {
+        "title": "100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+        "sourceTitle": "100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-23T07:03:01.936591+00:00",
+        "sourceContentHash": "4b4b14cc21d90ad8ff873f3107cdd4324885076373eb33f91e15b99c8c52f496",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 7992489272,
+          "sha": "697db0d706e6d4f1bdd3eabca19d9c4441c2ccbd",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-23T07:03:01.936591+00:00",
+          "url": "https://mcqs-base-3deoz5s9c-as-projects-10921176.vercel.app",
+          "publisherRunId": 45127348060
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 75,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "In ecological succession, facilitation describes a situation where early species:",
+            "choices": [
+              "Make conditions more suitable for later species",
+              "Prevent all later species from arriving",
+              "Convert consumers into producers",
+              "Stop nutrient cycling"
+            ],
+            "correctIndex": 0,
+            "key": "062a21ae2c9bb1c3886157f2f373ee1514a170879bf072462f7389e007bf36a0",
+            "sourceNumber": 58
+          },
+          {
+            "question": "A population of insects becomes more resistant to a pesticide over generations. The best explanation is that:",
+            "choices": [
+              "The pesticide caused each insect to choose resistance",
+              "Resistant heritable variants left more offspring under pesticide exposure",
+              "All insects changed their genes in the same way during treatment",
+              "Resistance is not affected by reproduction"
+            ],
+            "correctIndex": 1,
+            "key": "04da2b2e759616880786b60c2d5a99cdbac705caf0e6f672d685a6f35c9a8a6a",
+            "sourceNumber": 65
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 22,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 25,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 31,
+            "duration": 28,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 59,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 60,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 61,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 62,
+            "duration": 8,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 70,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 4,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            58,
+            65
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MDCAT",
+          "#MedicalEntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/mdcat-ecology-evolution-mcqs-part-04-18d25efd8080f71a.mp4",
+        "videoSha256": "18d25efd8080f71a8d80b7c59ac95c2685f1e15a13f9e40ff286f23f5d7966eb",
+        "assetId": 781918006
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 4/5 | Q58, 65 | 100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+          "text": "Part 4/5 · Source questions 58, 65\n100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 4/5 | Q58, 65 | 100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+          "text": "Part 4/5 · Source questions 58, 65\n100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 4/5 | Q58, 65 | 100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+          "text": "Part 4/5 · Source questions 58, 65\n100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 4/5 | Q58, 65 | 100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
+          "text": "Part 4/5 · Source questions 58, 65\n100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MDCAT #MedicalEntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MDCAT",
+            "#MedicalEntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
