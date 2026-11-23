@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "mdcat-ecology-evolution-mcqs",
   "createdAt": "2026-11-23T07:03:02.126806+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "mdcat-ecology-evolution-mcqs",
     "title": "100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
@@ -1700,7 +1700,12 @@
         }
       },
       "scheduledAt": "2026-11-23T12:23:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-23T07:07:33.554603+00:00"
+        }
+      }
     },
     {
       "part": 2,
