@@ -2264,6 +2264,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 5,
+      "directory": "part-05",
+      "sourceQuestionNumbers": [
+        18,
+        79
+      ],
+      "count": 2,
+      "durationSeconds": 77,
+      "sha256": "dcf9325cd0f91c89292fdf70ced452a5cd47dafab3a746550939357d1597604e",
+      "manifest": {
+        "title": "100 NTS-Style Reading Comprehension MCQs with Explanations",
+        "sourceTitle": "100 NTS-Style Reading Comprehension MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-24T09:28:04.278466+00:00",
+        "sourceContentHash": "87620d21a1238a1b807d3d4d19be90eb24a13cc95efcd49534b029f703113380",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 8023738938,
+          "sha": "9c731ec2de111f902a73bf32652ce52741f300f5",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-24T09:28:04.278466+00:00",
+          "url": "https://mcqs-base-qcxywb9zs-as-projects-10921176.vercel.app",
+          "publisherRunId": 45364368337
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 77,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Read: Noman brought a reusable cup to the office. He used it at the tea station each day, so he did not need a disposable cup there. What can be inferred?",
+            "choices": [
+              "He reduced his use of disposable cups at work.",
+              "He stopped drinking tea.",
+              "The office banned all cups.",
+              "He bought a new cup every day."
+            ],
+            "correctIndex": 0,
+            "key": "223e6fcfe28b0fe7f4a7c4b0eeef2b99f722db2fe85f5146b9cd9d620e0478d6",
+            "sourceNumber": 18
+          },
+          {
+            "question": "Read: The notice says the office will open at 9 a.m. on Monday because maintenance is scheduled before then. Which statement follows?",
+            "choices": [
+              "The office is scheduled to open at 9 a.m. on Monday.",
+              "The office will be closed for the entire week.",
+              "Maintenance will take place after the office opens.",
+              "The notice gives the office’s usual hours."
+            ],
+            "correctIndex": 0,
+            "key": "cee00e9c674e3572799c0ba2a42c3ad9cd6b8dbbeceacbddf3d83068b334d0fc",
+            "sourceNumber": 79
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 24,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 25,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 26,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 27,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 33,
+            "duration": 28,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 61,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 62,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 63,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 64,
+            "duration": 8,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 72,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 5,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            18,
+            79
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nts-reading-comprehension-part-05-dcf9325cd0f91c89.mp4",
+        "videoSha256": "dcf9325cd0f91c89292fdf70ced452a5cd47dafab3a746550939357d1597604e",
+        "assetId": 786531657
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 5/5 | Q18, 79 | 100 NTS-Style Reading Comprehension MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 18, 79\n100 NTS-Style Reading Comprehension MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 5/5 | Q18, 79 | 100 NTS-Style Reading Comprehension MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 18, 79\n100 NTS-Style Reading Comprehension MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-reading-comprehension\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 5/5 | Q18, 79 | 100 NTS-Style Reading Comprehension MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 18, 79\n100 NTS-Style Reading Comprehension MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-reading-comprehension\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 5/5 | Q18, 79 | 100 NTS-Style Reading Comprehension MCQs with Explanations",
+          "text": "Part 5/5 · Source questions 18, 79\n100 NTS-Style Reading Comprehension MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-reading-comprehension\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
