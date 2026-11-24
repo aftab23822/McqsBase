@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nts-reading-comprehension": {
+    title: "100 NTS-Style Reading Comprehension MCQs with Explanations",
+    excerpt:
+      "Practise reading comprehension with 100 original MCQs covering main ideas, details, inference, vocabulary in context, pronoun reference and argument structure.",
+    category: "Subject Guide",
+    date: "2026-11-24",
+    readTime: "40 min",
+    content: null,
+    body: readImportedBlogBody("nts-reading-comprehension")
+  },
   "mdcat-ecology-evolution-mcqs": {
     title: "100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
     excerpt:
