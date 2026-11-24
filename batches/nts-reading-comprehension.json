@@ -2032,6 +2032,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 4,
+      "directory": "part-04",
+      "sourceQuestionNumbers": [
+        60,
+        34
+      ],
+      "count": 2,
+      "durationSeconds": 68,
+      "sha256": "c1ccc9b9fc44d7a25c2261832c22ca600c5cf1d0b4fa7d2e504d8d152461fbfd",
+      "manifest": {
+        "title": "100 NTS-Style Reading Comprehension MCQs with Explanations",
+        "sourceTitle": "100 NTS-Style Reading Comprehension MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-24T09:28:04.278466+00:00",
+        "sourceContentHash": "87620d21a1238a1b807d3d4d19be90eb24a13cc95efcd49534b029f703113380",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 8023738938,
+          "sha": "9c731ec2de111f902a73bf32652ce52741f300f5",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-24T09:28:04.278466+00:00",
+          "url": "https://mcqs-base-qcxywb9zs-as-projects-10921176.vercel.app",
+          "publisherRunId": 45364368337
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 68,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Read: The device is small, yet it can store thousands of records. What does “yet” indicate?",
+            "choices": [
+              "A contrast between small size and large capacity",
+              "A reason the device cannot be used",
+              "A sequence of two events",
+              "An example of a record"
+            ],
+            "correctIndex": 0,
+            "key": "e007a2c58875c57af429ae91d2cb43a1c748b9cbed7074e04bb0ca619c7b9a39",
+            "sourceNumber": 60
+          },
+          {
+            "question": "Read: Although the first route looked shorter on the map, it was impractical because a section was closed to vehicles. In this context, impractical means:",
+            "choices": [
+              "Not workable for the purpose",
+              "More expensive than expected",
+              "Especially scenic",
+              "Impossible to describe"
+            ],
+            "correctIndex": 0,
+            "key": "fd07255e147050b8ceabaa4514cf3b1f7afcb050334e7a6c387b32134c81f55f",
+            "sourceNumber": 34
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 22,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 25,
+            "duration": 7,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 32,
+            "duration": 23,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 55,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 56,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 57,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 58,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 63,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 4,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            60,
+            34
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nts-reading-comprehension-part-04-c1ccc9b9fc44d7a2.mp4",
+        "videoSha256": "c1ccc9b9fc44d7a25c2261832c22ca600c5cf1d0b4fa7d2e504d8d152461fbfd",
+        "assetId": 786528317
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 4/5 | Q60, 34 | 100 NTS-Style Reading Comprehension MCQs with Explanations",
+          "text": "Part 4/5 · Source questions 60, 34\n100 NTS-Style Reading Comprehension MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 4/5 | Q60, 34 | 100 NTS-Style Reading Comprehension MCQs with Explanations",
+          "text": "Part 4/5 · Source questions 60, 34\n100 NTS-Style Reading Comprehension MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-reading-comprehension\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 4/5 | Q60, 34 | 100 NTS-Style Reading Comprehension MCQs with Explanations",
+          "text": "Part 4/5 · Source questions 60, 34\n100 NTS-Style Reading Comprehension MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-reading-comprehension\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 4/5 | Q60, 34 | 100 NTS-Style Reading Comprehension MCQs with Explanations",
+          "text": "Part 4/5 · Source questions 60, 34\n100 NTS-Style Reading Comprehension MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-reading-comprehension\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
