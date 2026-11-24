@@ -1262,7 +1262,7 @@
       "verifiedPublications": 15
     },
     "nat-ie-thermal-physics": {
-      "status": "scheduled",
+      "status": "provider-published",
       "ledger": "batches/nat-ie-thermal-physics.json",
       "createdAt": "2026-11-22T06:08:05.106115+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-thermal-physics",
@@ -1274,8 +1274,8 @@
         "2026-11-22T19:22:00+05:00",
         "2026-11-22T22:00:00+05:00"
       ],
-      "published": 18,
-      "verifiedPublications": 13
+      "published": 20,
+      "verifiedPublications": 15
     },
     "mdcat-ecology-evolution-mcqs": {
       "status": "scheduled",
