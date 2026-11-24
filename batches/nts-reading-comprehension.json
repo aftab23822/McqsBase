@@ -1336,6 +1336,239 @@
       "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
     }
   },
-  "parts": [],
+  "parts": [
+    {
+      "part": 1,
+      "directory": "part-01",
+      "sourceQuestionNumbers": [
+        48,
+        69
+      ],
+      "count": 2,
+      "durationSeconds": 70,
+      "sha256": "a5718cfe021046805b07572ab5c296f07e631b8bce842398579d98939a9a6efc",
+      "manifest": {
+        "title": "100 NTS-Style Reading Comprehension MCQs with Explanations",
+        "sourceTitle": "100 NTS-Style Reading Comprehension MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-24T09:28:04.278466+00:00",
+        "sourceContentHash": "87620d21a1238a1b807d3d4d19be90eb24a13cc95efcd49534b029f703113380",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 8023738938,
+          "sha": "9c731ec2de111f902a73bf32652ce52741f300f5",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-24T09:28:04.278466+00:00",
+          "url": "https://mcqs-base-qcxywb9zs-as-projects-10921176.vercel.app",
+          "publisherRunId": 45364368337
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 70,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Read: The guide says the cave is accessible by a marked footpath, though the final section is steep. Accessible means:",
+            "choices": [
+              "Reachable or possible to enter",
+              "Free of all physical effort",
+              "Open only to vehicles",
+              "Located beneath a road"
+            ],
+            "correctIndex": 0,
+            "key": "43143c6e2bac279172d795ac5c3893a43f09a46dce388f4cdbbef2d30b46ba0e",
+            "sourceNumber": 48
+          },
+          {
+            "question": "Read: A school introduced a quiet room for students who need a calm place to work. Teachers reported that some students used it before exams. What does the evidence show?",
+            "choices": [
+              "Some students used the room before exams.",
+              "Every student’s exam results improved.",
+              "The quiet room replaced all classrooms.",
+              "Students used it only after exams."
+            ],
+            "correctIndex": 0,
+            "key": "61409e171cec0a4bdc62735a8822ebe701f4efe00a6ab4399d384bfc5731a387",
+            "sourceNumber": 69
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 22,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 25,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 30,
+            "duration": 26,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 56,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 57,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 58,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 59,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 65,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 1,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            48,
+            69
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nts-reading-comprehension-part-01-a5718cfe02104680.mp4",
+        "videoSha256": "a5718cfe021046805b07572ab5c296f07e631b8bce842398579d98939a9a6efc",
+        "assetId": 786517691
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 1/5 | Q48, 69 | 100 NTS-Style Reading Comprehension MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 48, 69\n100 NTS-Style Reading Comprehension MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 1/5 | Q48, 69 | 100 NTS-Style Reading Comprehension MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 48, 69\n100 NTS-Style Reading Comprehension MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-reading-comprehension\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 1/5 | Q48, 69 | 100 NTS-Style Reading Comprehension MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 48, 69\n100 NTS-Style Reading Comprehension MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-reading-comprehension\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 1/5 | Q48, 69 | 100 NTS-Style Reading Comprehension MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 48, 69\n100 NTS-Style Reading Comprehension MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-reading-comprehension\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-reading-comprehension",
+          "format": "short"
+        }
+      }
+    }
+  ],
   "thinkingSeconds": 3
 }
