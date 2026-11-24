@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nts-reading-comprehension",
   "createdAt": "2026-11-24T09:28:04.573237+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "nts-reading-comprehension",
     "title": "100 NTS-Style Reading Comprehension MCQs with Explanations",
@@ -1700,7 +1700,12 @@
         }
       },
       "scheduledAt": "2026-11-24T14:50:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-24T09:34:40.794037+00:00"
+        }
+      }
     },
     {
       "part": 2,
