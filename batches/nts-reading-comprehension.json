@@ -1702,8 +1702,9 @@
       "scheduledAt": "2026-11-24T14:50:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "uncertain",
-          "attemptedAt": "2026-11-24T09:34:40.794037+00:00"
+          "status": "accepted",
+          "attemptedAt": "2026-11-24T09:34:40.794037+00:00",
+          "postId": "cmwui0fjg0xjnlmau99y2ymtx"
         }
       }
     },
