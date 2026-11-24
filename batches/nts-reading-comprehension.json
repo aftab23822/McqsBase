@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "nts-reading-comprehension",
+  "createdAt": "2026-11-24T09:28:04.573237+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nts-reading-comprehension",
+    "title": "100 NTS-Style Reading Comprehension MCQs with Explanations",
+    "url": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 8023738938,
+      "sha": "9c731ec2de111f902a73bf32652ce52741f300f5",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-24T09:28:04.278466+00:00",
+      "url": "https://mcqs-base-qcxywb9zs-as-projects-10921176.vercel.app",
+      "publisherRunId": 45364368337
+    },
+    "fetchedAt": "2026-11-24T09:28:04.278466+00:00",
+    "contentHash": "87620d21a1238a1b807d3d4d19be90eb24a13cc95efcd49534b029f703113380",
+    "questions": [
+      {
+        "question": "Read: The town library extended its evening hours after workers said they could not visit before closing. During the first month, evening visits increased. What is the main point?",
+        "choices": [
+          "The library changed its opening hours to serve workers, and evening use rose.",
+          "Workers prefer borrowing books to using other library services.",
+          "The library reduced its daytime opening hours.",
+          "Evening visits increased before the hours changed."
+        ],
+        "key": "a7f616968e47f266a9cf73020c70d433f938804652078bbfa1bc7f5208c5c733",
+        "sourceNumber": 1,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A farmer planted trees along the canal bank. Their roots held the soil, and less earth washed into the water during heavy rain. Which benefit is stated?",
+        "choices": [
+          "The trees reduced soil erosion into the canal.",
+          "The trees prevented all flooding in the area.",
+          "The canal became deeper because of the roots.",
+          "Heavy rain stopped occurring."
+        ],
+        "key": "ff4f285270709b95de4e697f367e5706d3f191a86be7a55a8bcd3baef1a91012",
+        "sourceNumber": 2,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The team postponed its outdoor survey because thick fog made distant landmarks difficult to see. Which condition caused the delay?",
+        "choices": [
+          "A shortage of survey forms",
+          "Poor visibility in fog",
+          "A disagreement about the route",
+          "A lack of interested participants"
+        ],
+        "key": "1d8fe66aff1c185f728774619cdb4ba329e6b0a067bc8fa595b25868621e3b94",
+        "sourceNumber": 3,
+        "correctIndex": 1
+      },
+      {
+        "question": "Read: Sana compared prices at three shops before buying a desk lamp. She chose the middle-priced one because it had a longer warranty. Why did she choose it?",
+        "choices": [
+          "It was the cheapest lamp.",
+          "It had the longest warranty among the lamps she considered.",
+          "It was the only lamp available.",
+          "It had the brightest colour."
+        ],
+        "key": "f3724c1ae49b335867c581d27bad61c1126cf39bd386c960bab98142c1c7c637",
+        "sourceNumber": 4,
+        "correctIndex": 1
+      },
+      {
+        "question": "Read: The clinic placed clear signs near the entrance and registration desk. New visitors began reaching the correct counters with fewer questions. What result followed the signs?",
+        "choices": [
+          "Visitors needed less help finding counters.",
+          "The clinic added more registration counters.",
+          "New visitors stopped coming.",
+          "The entrance was moved."
+        ],
+        "key": "aff6a09f5da5eafecbef08d74a3dec432e7ad6aeb719c5fd96a2c399efeac807",
+        "sourceNumber": 5,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A science club met every Friday to build a small weather station. Members took turns recording temperature and rainfall. What did members do in rotation?",
+        "choices": [
+          "Choose the club’s name",
+          "Record weather measurements",
+          "Decide when Friday occurs",
+          "Repair the school building"
+        ],
+        "key": "f3004f09a98b8eb2589bfafa5519087819b84457e0acc7d9fe62d763b68ee96b",
+        "sourceNumber": 6,
+        "correctIndex": 1
+      },
+      {
+        "question": "Read: The bus route was shortened while a bridge was repaired. Passengers had to walk the final kilometre to reach the market. What did passengers need to do?",
+        "choices": [
+          "Cross the bridge by bus",
+          "Walk the final kilometre",
+          "Use a different market",
+          "Wait until the repair ended before travelling"
+        ],
+        "key": "6012468186362f1b79b8c7c70134b2daeb004c490050336a7caf8b96f85aa7cf",
+        "sourceNumber": 7,
+        "correctIndex": 1
+      },
+      {
+        "question": "Read: The shop began selling refill packs for its cleaning liquid. Customers could reuse their bottles instead of buying a new bottle each time. What is the stated purpose of the refill packs?",
+        "choices": [
+          "To let customers reuse bottles",
+          "To make the liquid stronger",
+          "To replace every product in the shop",
+          "To require customers to buy two bottles"
+        ],
+        "key": "67788fa4d0179bc0a8a75a2c9f69c1557fc8d372e28f254c6b60dd08d3bbbeab",
+        "sourceNumber": 8,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: Hira left her phone in another room while studying. She finished the assignment sooner than on previous evenings. Which change accompanied the faster completion?",
+        "choices": [
+          "She studied without her phone beside her.",
+          "She shortened the assignment.",
+          "She worked with a larger group.",
+          "She started the assignment on a different day."
+        ],
+        "key": "81372049be9782bb9719ec47bc5a7f4857a01525d43169b19629508fbacc818d",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The museum labels use large type and short sentences. Visitors who have difficulty reading small print can therefore follow the displays more easily. Who especially benefits from the design?",
+        "choices": [
+          "Visitors who struggle with small print",
+          "Visitors who have already memorized every display",
+          "Workers who transport the exhibits",
+          "People who do not visit the museum"
+        ],
+        "key": "1f0a405378e300c82a778317db787fd293a21ead035408a06fff63cb7d9051ef",
+        "sourceNumber": 10,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The bakery makes fewer loaves on weekdays than on Saturdays. On Saturday mornings, families often buy bread for the weekend. Which day has the higher bread demand in this example?",
+        "choices": [
+          "Saturday",
+          "Every weekday equally",
+          "Sunday only",
+          "The passage gives no comparison."
+        ],
+        "key": "d358fa52fa0f45db91da302f6b398dfde1b35ecc1dea16170bb58b27dc502bb4",
+        "sourceNumber": 11,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A student read the instructions twice before assembling the model. This helped her avoid reversing two pieces. What mistake did rereading help prevent?",
+        "choices": [
+          "Placing two pieces in the wrong orientation",
+          "Using too much paint",
+          "Losing the instruction sheet",
+          "Choosing the wrong model"
+        ],
+        "key": "f826c01a16e35c1d1cea0701ac04255bdaff8a37c1bc4acdc988077ea21a55c6",
+        "sourceNumber": 12,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The village held its meeting under a covered courtyard because rain was expected. Why was the courtyard selected?",
+        "choices": [
+          "It offered shelter from possible rain.",
+          "It was the only place with electricity.",
+          "The meeting was about gardening.",
+          "The village hall had already been rebuilt."
+        ],
+        "key": "1f21bb2a8a6c19c94d41ad999121d6cdb6f89557196db494b2da8d0a5728750b",
+        "sourceNumber": 13,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A repair shop began giving customers a written estimate before starting work. This allowed customers to know the expected cost in advance. What information did the estimate provide?",
+        "choices": [
+          "The expected repair cost",
+          "The exact date the item was manufactured",
+          "The customer’s future income",
+          "The name of every supplier in the city"
+        ],
+        "key": "8102478e8c6d165e3694e45efe50210d27c91251b36f2c7fedee621db948bf6b",
+        "sourceNumber": 14,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The gardening group tested two kinds of compost on equal-sized plots. The vegetables grew better in one plot, but the group planned another trial before choosing a method. What can be concluded?",
+        "choices": [
+          "The group has a promising result but wants more evidence.",
+          "Both composts produced identical results.",
+          "The group has permanently rejected one method.",
+          "The trial did not compare composts."
+        ],
+        "key": "25bcd649c03461b4f1def9dda55568a4c9acc52c2c8628774ead6cf44edc3340",
+        "sourceNumber": 15,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A town installed a water tank beside the public garden. Gardeners can now water plants during short supply interruptions. Which need does the tank address?",
+        "choices": [
+          "A temporary lack of water for the garden",
+          "A shortage of garden tools",
+          "The need to expand the town’s roads",
+          "A lack of seeds in nearby shops"
+        ],
+        "key": "277beb26ba523f31ec4c62be5c4211725ab1f854575b3a73672cacaf3b7bf552",
+        "sourceNumber": 16,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: After the railway station added a timetable board, travellers asked staff fewer questions about departure times. What does this suggest?",
+        "choices": [
+          "The board made timetable information easier to find.",
+          "Trains stopped following a timetable.",
+          "Staff stopped working at the station.",
+          "Travellers no longer used trains."
+        ],
+        "key": "569605d8e42fab8000af2bb98f01a8e1ba5d20a35e19c4e2249b48fb8ca29da4",
+        "sourceNumber": 17,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: Noman brought a reusable cup to the office. He used it at the tea station each day, so he did not need a disposable cup there. What can be inferred?",
+        "choices": [
+          "He reduced his use of disposable cups at work.",
+          "He stopped drinking tea.",
+          "The office banned all cups.",
+          "He bought a new cup every day."
+        ],
+        "key": "223e6fcfe28b0fe7f4a7c4b0eeef2b99f722db2fe85f5146b9cd9d620e0478d6",
+        "sourceNumber": 18,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The researcher interviewed ten shopkeepers on one street. She described their responses as an initial picture, not a complete account of every business in the district. Why did she use cautious wording?",
+        "choices": [
+          "Her small, local sample may not represent the entire district.",
+          "The shopkeepers refused to answer every question.",
+          "She had surveyed every business in the district.",
+          "The street contained no shops."
+        ],
+        "key": "7a22647d7333df79915651b5124b906a3c4a00cfd333f702917832185b3bfb88",
+        "sourceNumber": 19,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A school moved its reading corner beside a quiet window. Pupils began spending more break time there, although the number of books had not changed. What is a reasonable inference?",
+        "choices": [
+          "The calmer or more appealing location may have encouraged use.",
+          "The school doubled its book collection.",
+          "Pupils were required to stay inside at every break.",
+          "The window supplied new books."
+        ],
+        "key": "023af5c9aefd0f78b401d7f0b013bee1818645aa5e265471e60e66fff4374772",
+        "sourceNumber": 20,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A bus company added a route to a neighbourhood after residents reported that the nearest stop was far away. Which conclusion is best supported?",
+        "choices": [
+          "The route was intended to improve local access to bus service.",
+          "Every resident had requested a private car.",
+          "The neighbourhood had no roads.",
+          "The company ended all other routes."
+        ],
+        "key": "3dda43492a363f4a92b8cb0506a3f1acc05102d8101a28e80851b8c2e755493c",
+        "sourceNumber": 21,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The first batch of seedlings wilted after being watered at midday in strong heat. The gardener began watering them early in the morning. What did the gardener most likely hope to avoid?",
+        "choices": [
+          "Watering plants during the hottest part of the day",
+          "Growing seedlings outdoors",
+          "Using any water at all",
+          "Giving the seedlings more sunlight at night"
+        ],
+        "key": "c9a8a22724d7fdf8fc78f6b3d7da548cab82d97b69e715349fda0187b1eebc7a",
+        "sourceNumber": 22,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A report found that people who walked to work often reported feeling more alert. It did not compare their health with that of people who used other transport. Which claim would go beyond the report?",
+        "choices": [
+          "Walking to work causes better overall health than every other commute.",
+          "Some walkers reported feeling alert.",
+          "The report did not compare all transport choices.",
+          "The study recorded people’s reports."
+        ],
+        "key": "94f2704aeaf5874923349a21ca2f625baac012e7923de7b67bd2aef11d75a741",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A café listed the ingredients beside each dish. Customers with food allergies could check the list before ordering. What practical benefit did the list provide?",
+        "choices": [
+          "It helped customers identify ingredients before choosing food.",
+          "It guaranteed that no customer would have an allergic reaction.",
+          "It showed which dish was the cheapest.",
+          "It replaced the café’s cooking staff."
+        ],
+        "key": "c72d87251cf994940a9f506af9d422cf9b43beada714943e8c3adebfdf4a480d",
+        "sourceNumber": 24,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The team completed its first test in a classroom, where the signal was strong. A later test in a basement failed, so the engineers plan to measure signal strength in several locations. What is the team trying to learn?",
+        "choices": [
+          "How signal strength varies by location",
+          "Whether classrooms have walls",
+          "How to eliminate every wireless signal",
+          "Whether the first test happened"
+        ],
+        "key": "1d978c712a1a40ae4a8005cd2e53010f2b3519298dd581d9757e875e377202a1",
+        "sourceNumber": 25,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A local archive digitized old maps. Researchers can now inspect the maps without handling fragile originals. What can be inferred about digitization?",
+        "choices": [
+          "It can improve access while reducing handling of originals.",
+          "It makes the original maps unnecessary in every situation.",
+          "It repairs damage that has already occurred.",
+          "It prevents researchers from viewing the maps."
+        ],
+        "key": "96347361e9637ed4b965dd9bda87b8e6ce20ae85461c7cb6439120b327a16bfc",
+        "sourceNumber": 26,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The manager asked staff to record the time spent on each task for one week. She wanted to find where delays were occurring before changing the schedule. What was her first goal?",
+        "choices": [
+          "Gather information about where time was being lost",
+          "Immediately dismiss the slowest worker",
+          "Extend every task by one week",
+          "Cancel the existing schedule without review"
+        ],
+        "key": "2c2e0ec1d5cc1a5c026e60fcd5bdf86a38e7a0f4daaadc586833af6e8a95a394",
+        "sourceNumber": 27,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A village shop stocked a small supply of batteries after residents said the nearest seller was several kilometres away. What does the decision suggest?",
+        "choices": [
+          "The shop responded to a local access problem.",
+          "Residents had stopped using batteries.",
+          "The shop planned to close immediately.",
+          "The nearest seller moved into the village."
+        ],
+        "key": "bcc7e1841e349dd32bb8543b298b99b17c04a49de30958fb1977661cd8868fcf",
+        "sourceNumber": 28,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The report notes that rainfall was lower this month, but it does not say why. Which statement is supported?",
+        "choices": [
+          "Rainfall was lower this month than the comparison period implied by the report.",
+          "Climate change definitely caused the decrease.",
+          "No rain fell anywhere in the region.",
+          "The report proves rainfall will remain low next month."
+        ],
+        "key": "8f6da4bc29fad4fb8a757e58a023f5bf3ff46c31460266f4428e8c74c3b7fb0a",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The teacher gave students a sample answer before the exercise. Several students then organized their responses more clearly. What may the sample have provided?",
+        "choices": [
+          "A model of how to structure a response",
+          "The answers to every future examination",
+          "A reason to skip the exercise",
+          "Proof that all students learned equally"
+        ],
+        "key": "fc850eb800b1912c02fa744ffadad4ce75a45ac49b8ca277ae06ac9dfb2f2982",
+        "sourceNumber": 30,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A shop’s sales rose during a festival week. The owner also extended opening hours and offered a new product. Why is it difficult to identify one cause of the increase?",
+        "choices": [
+          "Several changes and circumstances occurred at the same time.",
+          "The shop recorded no sales.",
+          "The festival took place after the increase.",
+          "The owner made no changes."
+        ],
+        "key": "d07c35f2e4110d3426511db81f538ad46c0f1fe8deca4cedaa7e9b717384089a",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The editor called the instructions concise because they explained each step without unnecessary detail. In this passage, concise most nearly means:",
+        "choices": [
+          "Brief but clear",
+          "Difficult to verify",
+          "Full of repetition",
+          "Written in an unfamiliar language"
+        ],
+        "key": "43f7c4292b0728466c747a32cb3d2fa9591c37b92c25b23d72c2f5ce10519979",
+        "sourceNumber": 32,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The committee postponed its decision until it received the missing cost estimate. Here, postponed means:",
+        "choices": [
+          "Delayed",
+          "Celebrated",
+          "Reversed",
+          "Completed"
+        ],
+        "key": "ef3376be61bbdca574558f34729fbda677634895c40a68d2baf5ab55064c1c12",
+        "sourceNumber": 33,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: Although the first route looked shorter on the map, it was impractical because a section was closed to vehicles. In this context, impractical means:",
+        "choices": [
+          "Not workable for the purpose",
+          "More expensive than expected",
+          "Especially scenic",
+          "Impossible to describe"
+        ],
+        "key": "fd07255e147050b8ceabaa4514cf3b1f7afcb050334e7a6c387b32134c81f55f",
+        "sourceNumber": 34,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The speaker gave a tentative answer and said she would confirm it after checking the records. Tentative most nearly means:",
+        "choices": [
+          "Provisional and not yet certain",
+          "Final and legally binding",
+          "Angry and forceful",
+          "Unrelated to the question"
+        ],
+        "key": "d4c55b79eed78dee3d37a4c95b5e85f944c7d62daeff94b9ce6f17b1a17ad84f",
+        "sourceNumber": 35,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The technician isolated the fault to one cable by testing each connection separately. Isolated most nearly means:",
+        "choices": [
+          "Identified as being limited to",
+          "Connected to every device",
+          "Hidden from the technician",
+          "Removed without testing"
+        ],
+        "key": "b19a90d50ab1fd962abb7056aa3629cd2ab2b4b11fc367ce62655103fcd04fd6",
+        "sourceNumber": 36,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The proposal was feasible because the school already had the required room and equipment. Feasible means:",
+        "choices": [
+          "Possible to carry out",
+          "Certain to be unpopular",
+          "Impossible to measure",
+          "Already completed"
+        ],
+        "key": "8a73c42ddce88f879956009f9895de4f93d82fffadf53d91ce9a66337812a3bc",
+        "sourceNumber": 37,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The witness gave a consistent account on both occasions, describing the same sequence of events. Consistent most nearly means:",
+        "choices": [
+          "In agreement with itself",
+          "Changing at every point",
+          "Difficult to hear",
+          "Based on a prediction"
+        ],
+        "key": "ea560000f6205cd3f1646a6a409327dba2c962cc0b3a139518717ab8ff955733",
+        "sourceNumber": 38,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The guide gave a brief overview before explaining each step in detail. Overview means:",
+        "choices": [
+          "A general summary",
+          "A final criticism",
+          "A list of errors only",
+          "A precise measurement"
+        ],
+        "key": "b2740deff8b48673a47634ef771bb5f29c276ba1009c73beb38a6a7564914e74",
+        "sourceNumber": 39,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The new rule applies only to vehicles entering the restricted lane; other roads are unaffected. Restricted most nearly means:",
+        "choices": [
+          "Limited or controlled",
+          "Open to every use",
+          "Recently repaired",
+          "Located underground"
+        ],
+        "key": "263ef659be2d98924fbf417e883cc91a3f4b4507a93fb485660f7cf2e8535485",
+        "sourceNumber": 40,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The researcher said the result was preliminary because only a few samples had been examined. Preliminary means:",
+        "choices": [
+          "Early and not yet conclusive",
+          "Secret and unavailable",
+          "Proven beyond doubt",
+          "Unrelated to the research"
+        ],
+        "key": "5fb8d28aca313bae3dca6f51dabf9f4974ed9724643375abfd7fadc689f35fbd",
+        "sourceNumber": 41,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The old bridge was sturdy; despite frequent use, its supports remained firm. Sturdy means:",
+        "choices": [
+          "Strong and solid",
+          "Narrow and slippery",
+          "Newly painted",
+          "Easy to dismantle"
+        ],
+        "key": "48362c55b5b7397e4e3227028f1196d07151d1938916fe12c01c169ad2ef1654",
+        "sourceNumber": 42,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The article distinguishes correlation from causation: two trends may occur together without one producing the other. Causation means:",
+        "choices": [
+          "A relationship in which one factor produces an effect",
+          "A method for arranging data alphabetically",
+          "A pair of unrelated measurements",
+          "A conclusion based only on appearance"
+        ],
+        "key": "598d21aab98a5cf01a257f8a4215a11355be664d0750ab687e84bfef1448da33",
+        "sourceNumber": 43,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: Because the evidence was sparse, the author avoided making a broad claim. Sparse most nearly means:",
+        "choices": [
+          "Scant or limited",
+          "Reliable and complete",
+          "Complicated but current",
+          "Available in several languages"
+        ],
+        "key": "a5a85fa29400a7baa184fa8bc53ac2f5c9e85cda59d0d6caca45ba795de41769",
+        "sourceNumber": 44,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The instructions were ambiguous: two readers interpreted the same sentence in different ways. Ambiguous means:",
+        "choices": [
+          "Open to more than one interpretation",
+          "Short and easy to memorize",
+          "Supported by measurements",
+          "Written in a foreign alphabet"
+        ],
+        "key": "b48145973890a8197b40531bf7cc68e76e7e01b3c729e8ece83b33146fbb27d5",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The committee revised the draft after receiving comments; it changed two examples but kept the central recommendation. Revised means:",
+        "choices": [
+          "Changed or edited",
+          "Ignored completely",
+          "Published unchanged",
+          "Translated word for word"
+        ],
+        "key": "95b35d59860fe1d04016fb782e7d64086f80aa7192d959a0acde13793156a96f",
+        "sourceNumber": 46,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The worker wore gloves to handle the abrasive material, which could scratch bare skin. Abrasive most nearly means:",
+        "choices": [
+          "Rough and capable of wearing or scratching a surface",
+          "Soft enough to absorb water",
+          "Bright enough to reflect light",
+          "Too light to be handled"
+        ],
+        "key": "42a6f3d6c7a6dc56236227c69f963c1d6afca52890216a16e6e3b45b94706620",
+        "sourceNumber": 47,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The guide says the cave is accessible by a marked footpath, though the final section is steep. Accessible means:",
+        "choices": [
+          "Reachable or possible to enter",
+          "Free of all physical effort",
+          "Open only to vehicles",
+          "Located beneath a road"
+        ],
+        "key": "43143c6e2bac279172d795ac5c3893a43f09a46dce388f4cdbbef2d30b46ba0e",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The manager asked for a concise report, so Ali removed repeated examples but kept the key figures. Concise means:",
+        "choices": [
+          "Brief without losing essential information",
+          "Long and highly detailed",
+          "Unclear because it lacks figures",
+          "Focused only on personal opinions"
+        ],
+        "key": "f6bea0a1fa31c38a6e1473ebcdaa9d7a38a2b5252753611710d1cbacba4f73ed",
+        "sourceNumber": 49,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The two accounts differ on the time of arrival, but both agree that the meeting began after noon. Differ means:",
+        "choices": [
+          "Are not the same",
+          "Are equally certain",
+          "Were written together",
+          "Contain no time information"
+        ],
+        "key": "68b0970a08413f958d1ef81661695c8ee371c0a5995667868f19671385f466b8",
+        "sourceNumber": 50,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The new procedure is optional; staff may use it, but they are not required to do so. Optional means:",
+        "choices": [
+          "A matter of choice",
+          "Required in every case",
+          "Forbidden by the rules",
+          "Available only in the past"
+        ],
+        "key": "7c8c728fb6808278f45bc905bc009cee44171be819b792e01843b31c9be6eec4",
+        "sourceNumber": 51,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The plan was revised in response to feedback. The committee shortened the application form but kept the same eligibility criteria. What does “the same” refer to?",
+        "choices": [
+          "The eligibility criteria",
+          "The application form’s length",
+          "The feedback",
+          "The committee"
+        ],
+        "key": "66715ce4fc9b40c94bbe31124378901cb962023a790363b5268b28b4a9c0c2ab",
+        "sourceNumber": 52,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The courier placed the parcel in a dry cabinet because it contained paper documents. What does “it” refer to?",
+        "choices": [
+          "The parcel",
+          "The cabinet",
+          "The courier",
+          "The paper"
+        ],
+        "key": "9bcb9aa3cdd3ad750e3300e9d89354caedfabe3f075ec92fce99d10ad1db89a8",
+        "sourceNumber": 53,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The library bought a scanner for fragile maps. They can now be viewed digitally without repeated handling. What does “They” refer to?",
+        "choices": [
+          "The fragile maps",
+          "The scanners",
+          "The library staff",
+          "The digital screens"
+        ],
+        "key": "2aed7447c26c6de857db46e83cb637c41847b1a9b63463a44d3dca1d038c1917",
+        "sourceNumber": 54,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The committee tested the new form with five applicants before distributing it widely. This step revealed that one question was confusing. What does “This step” refer to?",
+        "choices": [
+          "Testing the form with five applicants",
+          "Distributing the form widely",
+          "Removing every question",
+          "Appointing the committee"
+        ],
+        "key": "0ff5a350c529012c9e0478a098b4ac2bddad3c46c08798f02a62abda447c81df",
+        "sourceNumber": 55,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The road was closed for repairs; consequently, delivery trucks used a longer route. What does “consequently” signal?",
+        "choices": [
+          "A result",
+          "A contrast",
+          "An example",
+          "A condition"
+        ],
+        "key": "59a32b409c66918e9e5b90c521f2710271cd871268441b6393a40859211889d3",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The first design was inexpensive. However, it required frequent repairs. What relationship does “However” express?",
+        "choices": [
+          "Contrast",
+          "Cause",
+          "Sequence",
+          "Definition"
+        ],
+        "key": "1ef5537826f2d05b9fb0110ce89601b10e6e446c12a771e328385191216ca103",
+        "sourceNumber": 57,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The guide first describes the problem, then lists two possible solutions, and finally recommends one. Which function does the final section serve?",
+        "choices": [
+          "It gives the guide’s recommendation.",
+          "It introduces a new problem.",
+          "It supplies the opening definition.",
+          "It rejects the existence of solutions."
+        ],
+        "key": "33abc3b2d8d31df2ddfe2f705695e0df53608023d6e4e75c9e48ba02f77a794d",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The field team measured soil moisture at dawn. These readings were compared with measurements taken at midday. What does “These readings” refer to?",
+        "choices": [
+          "The soil-moisture measurements taken at dawn",
+          "The midday weather forecast",
+          "The team’s travel plans",
+          "The soil samples’ labels"
+        ],
+        "key": "b8ddc3a082a598b30e3aff21124f391b24f0d9ce5e0064a10a23c2848b7ce994",
+        "sourceNumber": 59,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The device is small, yet it can store thousands of records. What does “yet” indicate?",
+        "choices": [
+          "A contrast between small size and large capacity",
+          "A reason the device cannot be used",
+          "A sequence of two events",
+          "An example of a record"
+        ],
+        "key": "e007a2c58875c57af429ae91d2cb43a1c748b9cbed7074e04bb0ca619c7b9a39",
+        "sourceNumber": 60,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The report gives three causes of delay: missing parts, unclear instructions and late approvals. It then explains each one. What is the role of the list?",
+        "choices": [
+          "It previews the causes discussed in more detail.",
+          "It presents three possible solutions.",
+          "It proves that delays never happen.",
+          "It reports the final approval date."
+        ],
+        "key": "97ade26552f967d584ba79c2b82c40eb3cce96541e4cdc36346178ffbfc0027e",
+        "sourceNumber": 61,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The new timetable reduced waiting times at the counter. In addition, it helped staff plan breaks more evenly. What does “In addition” signal?",
+        "choices": [
+          "Another benefit",
+          "A disagreement",
+          "A correction",
+          "A cause that reverses the first claim"
+        ],
+        "key": "c3736d71aead70614aa18d32990e31e8899c0bf425beb870ff420bba5cc4bd44",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The first sample was contaminated, so the laboratory discarded it and tested a fresh one. What does “it” refer to in “discarded it”?",
+        "choices": [
+          "The first sample",
+          "The laboratory",
+          "The fresh test",
+          "The contamination"
+        ],
+        "key": "4fbed9013d65ccad2da43824a080774ca55867cd9563792ff5f6b00d92e6be5f",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The teacher asked learners to compare two summaries rather than memorize either one. The exercise was intended to help them notice which details each summary omitted. What is the purpose of the exercise?",
+        "choices": [
+          "To identify omissions by comparing summaries",
+          "To memorize both summaries exactly",
+          "To prove that summaries contain every detail",
+          "To replace reading the original passage"
+        ],
+        "key": "b3279a6e1ef689d9dfc902f341b534e07eb33bbc83d1c83049f1354c2209b431",
+        "sourceNumber": 64,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The manual includes a warning before the cleaning steps. The warning says to disconnect the appliance first. Why does the warning appear before the steps?",
+        "choices": [
+          "To make an important safety condition clear before cleaning",
+          "To describe how the appliance was manufactured",
+          "To recommend cleaning while it is connected",
+          "To list the appliance’s sales figures"
+        ],
+        "key": "23ca53e803e45c5f2b07fdec953380aeaab98a896ba87eea583359c4048ceb70",
+        "sourceNumber": 65,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The survey asked residents how often they used the park, not whether they approved of its design. Which question could the survey answer most directly?",
+        "choices": [
+          "How frequently residents use the park",
+          "Whether every resident likes the park’s design",
+          "How much the park will cost next year",
+          "Which park design will be built elsewhere"
+        ],
+        "key": "57e4a16bb14f5c16c476f136719e0923269b44b5aa73471dd823d9ba53cb2d89",
+        "sourceNumber": 66,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A report states that a new queue system shortened the average wait from 20 minutes to 12 minutes over two weeks. What is the numerical change in average waiting time?",
+        "choices": [
+          "A decrease of 8 minutes",
+          "An increase of 8 minutes",
+          "A decrease of 12 minutes",
+          "An increase of 20 minutes"
+        ],
+        "key": "062b88cf886954f2ced56e2a430db6bb65d2ef5e9ee658eca606d968ed9e82e8",
+        "sourceNumber": 67,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A town tested a new bus schedule on one route for a month. Passenger numbers rose, but the report did not compare fares or service on other routes. Which conclusion is best supported?",
+        "choices": [
+          "Passenger numbers rose on the tested route during the trial.",
+          "The new schedule will increase use on every route.",
+          "Lower fares caused the rise in passengers.",
+          "The schedule has already been tested for a year."
+        ],
+        "key": "c15a88a8ea64deafbf7fd73ec33d61102016bb31d737c2c25cf8492612a1f77c",
+        "sourceNumber": 68,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A school introduced a quiet room for students who need a calm place to work. Teachers reported that some students used it before exams. What does the evidence show?",
+        "choices": [
+          "Some students used the room before exams.",
+          "Every student’s exam results improved.",
+          "The quiet room replaced all classrooms.",
+          "Students used it only after exams."
+        ],
+        "key": "61409e171cec0a4bdc62735a8822ebe701f4efe00a6ab4399d384bfc5731a387",
+        "sourceNumber": 69,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A shop owner claims that arranging fruit by colour increased sales. Sales did rise that week, but the shop also lowered prices. What is the strongest limitation of the claim?",
+        "choices": [
+          "The price change is another possible reason sales rose.",
+          "Fruit cannot be arranged by colour.",
+          "The sales increase happened before the arrangement changed.",
+          "The claim gives no information about fruit."
+        ],
+        "key": "a12884fb76e156f001f26c7fd00c67ecf99820a36e2b78d0cc70ca9822439d18",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A researcher compared two types of seed under the same light and watering conditions. Type A produced more sprouts in this trial. What feature of the method strengthens the comparison?",
+        "choices": [
+          "Both seed types received the same light and water conditions.",
+          "The researcher used different conditions for each type.",
+          "The trial measured only the colour of the seed packets.",
+          "The researcher changed several conditions without recording them."
+        ],
+        "key": "8aa351bbec67f743c23c4e3d3f6f406bc96a313a91744893ba86e3a3b55fe377",
+        "sourceNumber": 71,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The article argues that public benches should be repaired because older residents use them while walking to the clinic. It gives interviews with three residents but no wider survey. Which description best fits its evidence?",
+        "choices": [
+          "It offers examples from a small group, not a measure of all residents.",
+          "It proves that every resident uses the benches.",
+          "It contains no evidence at all.",
+          "It establishes the cost of every repair."
+        ],
+        "key": "50ed9dd87aa0b45a2edd81415dc636ae74d6e68a07e207909486c790591d0b0e",
+        "sourceNumber": 72,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The writer supports paperless forms because they reduce printing. The writer also acknowledges that some visitors need help using the online version. What is the writer’s position?",
+        "choices": [
+          "Generally supportive, while recognizing a practical difficulty",
+          "Completely opposed to online forms",
+          "Certain that every visitor uses digital tools easily",
+          "Uninterested in the effects of printing"
+        ],
+        "key": "f8a1267a05dd286650983f97bb7dea0b8f2530fe9f7f96af28f687a29404ac76",
+        "sourceNumber": 73,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The article describes a crowded market, narrow walking lanes and vendors calling to customers. Which tone is most evident?",
+        "choices": [
+          "Observational",
+          "Triumphant",
+          "Threatening",
+          "Indifferent to the scene"
+        ],
+        "key": "9f67121b47ebf73d504cd86328b7b7343afb868fdca4567f209033e824eedc62",
+        "sourceNumber": 74,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: An author says that a single successful classroom trial is encouraging but not enough to justify changing every school’s method. What is the author’s main caution?",
+        "choices": [
+          "One trial may not provide enough evidence for a universal change.",
+          "Classroom trials should never be conducted.",
+          "The trial failed completely.",
+          "Every school already uses the method."
+        ],
+        "key": "a93569bf3b843fe1e4217655bd692ba04bc03c63949337892cdcb792d3296ccc",
+        "sourceNumber": 75,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The writer compares two water filters. Filter X costs less initially, while Filter Y needs fewer replacement parts. No information is given about the price of those parts. What cannot be concluded?",
+        "choices": [
+          "Which filter will cost less to own over time",
+          "Filter X has the lower initial price",
+          "Filter Y needs fewer replacement parts",
+          "The comparison mentions two filters"
+        ],
+        "key": "2c639ad031f1f1a585f5a721d58c8feb457cca7b879a150fc9228fc6a610fe0e",
+        "sourceNumber": 76,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The report says a reading group met weekly for six weeks. Participants enjoyed discussing the stories, but their reading speed was not measured. Which outcome was reported?",
+        "choices": [
+          "Participants enjoyed the discussions.",
+          "Participants all read faster afterward.",
+          "The group met for six months.",
+          "The stories were never discussed."
+        ],
+        "key": "8508a7da9fe10d97884a125d497295115e1ac2a28f6266a1bc6148910eda54cf",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A notice says the office will open at 9 a.m. on Monday because maintenance is scheduled before then. Which statement follows?",
+        "choices": [
+          "The office will open later than 9 a.m. on Monday.",
+          "The office will be closed for the entire week.",
+          "Maintenance will take place after the office opens.",
+          "The notice gives the office’s usual hours."
+        ],
+        "key": "9bdf30f32cb097d67c5f2a31cd2f7a9712fb6737627383120db883c4eedad03c",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The notice says the office will open at 9 a.m. on Monday because maintenance is scheduled before then. Which statement follows?",
+        "choices": [
+          "The office is scheduled to open at 9 a.m. on Monday.",
+          "The office will be closed for the entire week.",
+          "Maintenance will take place after the office opens.",
+          "The notice gives the office’s usual hours."
+        ],
+        "key": "cee00e9c674e3572799c0ba2a42c3ad9cd6b8dbbeceacbddf3d83068b334d0fc",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A letter praises the volunteers’ careful work but asks them to label boxes more clearly next time. What is the letter’s overall tone?",
+        "choices": [
+          "Appreciative with a constructive suggestion",
+          "Entirely hostile",
+          "Uninterested and dismissive",
+          "Certain that the project failed"
+        ],
+        "key": "5dd27da1b906aa269f39d8a98720ac9c6e349be1730cf003b76268f4718b3bc0",
+        "sourceNumber": 80,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A notice asks applicants to bring a copy of their receipt to the counter. It does not say that the original receipt is required. Which statement is justified?",
+        "choices": [
+          "Applicants are asked to bring a copy.",
+          "Applicants must bring the original receipt.",
+          "Applicants may apply only by post.",
+          "The counter is closed to applicants."
+        ],
+        "key": "f7efa8197ccb5785df2213c3ba7309ca286d66a230dddb797b17d766d4e6f015",
+        "sourceNumber": 81,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A guide recommends checking a map before leaving because mobile signals may be weak on the trail. What is the guide’s reason for checking the map in advance?",
+        "choices": [
+          "A weak signal may make map access difficult during the walk.",
+          "The trail has no turns.",
+          "The map will improve the mobile signal.",
+          "Mobile signals are stronger on every trail."
+        ],
+        "key": "13668b96af8b6a492ae342baf01f8f199c355726150a37deb05e678cf75da4d5",
+        "sourceNumber": 82,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The author says, “The pilot suggests the schedule may help, though a longer trial is needed.” Which wording shows the author’s caution?",
+        "choices": [
+          "“may help” and “a longer trial is needed”",
+          "“the schedule”",
+          "“the pilot”",
+          "“suggests” alone"
+        ],
+        "key": "4f207882581984ba59b32b41ce2598619d7b2c1aa2d3dd9f3f76d52f1ac4d1aa",
+        "sourceNumber": 83,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A notice describes a walking tour as suitable for beginners but says one section includes stairs. Which conclusion is most reasonable?",
+        "choices": [
+          "Beginners are welcome, but participants should expect stairs.",
+          "The tour is entirely flat.",
+          "Only experienced climbers may join.",
+          "The tour has no walking."
+        ],
+        "key": "b62ad9740a0e1ce9e8ec170d24c95acd5918b573191c0a9aa2eeb285d4564cb0",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A town placed separate bins for paper and food waste. The report says the bins were installed last month but gives no figures on what residents put in them. What is not established?",
+        "choices": [
+          "Whether residents sorted their waste correctly",
+          "That separate bins were installed",
+          "That paper and food waste were assigned different bins",
+          "That the installation occurred last month"
+        ],
+        "key": "380914e763e9e9a80f7ddf3318a97a6abe7ebdda457895cc0e617eb1d3859a44",
+        "sourceNumber": 85,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A notice states that the workshop begins at 10 a.m. and asks participants to arrive 15 minutes early. At what time should participants arrive?",
+        "choices": [
+          "9:45 a.m.",
+          "10:15 a.m.",
+          "9:30 a.m.",
+          "10:00 a.m."
+        ],
+        "key": "2f82ba5630466c22dcf3bfdf867b0063d535fc4fd9fdeb99cffc47028dcf047e",
+        "sourceNumber": 86,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A report compares average water use before and after a reminder sign was installed. Use fell from 40 litres per household to 36 litres. By how much did average use fall?",
+        "choices": [
+          "4 litres per household",
+          "6 litres per household",
+          "36 litres per household",
+          "76 litres per household"
+        ],
+        "key": "10c6e4f182280bd0b075b3744d89bea3a05ef61cde06c04ea25a06d08d834a90",
+        "sourceNumber": 87,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A researcher says, “The survey results are consistent with the idea that shade encourages people to use the square, but they do not prove it.” What does the researcher mean?",
+        "choices": [
+          "The results fit the idea but do not establish it as certain.",
+          "The results directly contradict the idea.",
+          "The survey measured no use of the square.",
+          "Shade has been proven to be the only cause."
+        ],
+        "key": "03b7e4f33b11723f548f6083d929af0ee02741575a4d57f0d4c23474aa2e0567",
+        "sourceNumber": 88,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A school wants to know whether a new lunch menu is popular. Which piece of evidence would most directly answer that question?",
+        "choices": [
+          "A survey asking students whether they like the new menu",
+          "The colour of the dining room walls",
+          "The number of books in the school library",
+          "The menu’s printing cost alone"
+        ],
+        "key": "d20c4a1db4acdbfcee352df2c55a5d98434fabdeb799d87732c8cf87dedcae46",
+        "sourceNumber": 89,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The article describes a river cleanup. It reports that volunteers collected 30 bags of litter, then notes that rubbish continued to wash downstream from nearby areas. Which summary best captures the passage?",
+        "choices": [
+          "Volunteers removed substantial litter, but the wider source of rubbish remained.",
+          "The cleanup eliminated all litter from the river.",
+          "No volunteers participated in the cleanup.",
+          "The river stopped flowing downstream."
+        ],
+        "key": "25e37ac15b0838f65e548e0835c396574a84ba10733d742f08fa565a3815753c",
+        "sourceNumber": 90,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A museum’s visitor count rose after it introduced weekend tours. The museum also hosted a popular exhibition during the same period. What is the most careful interpretation?",
+        "choices": [
+          "Visitor numbers rose, but the passage cannot identify which change caused the rise.",
+          "Weekend tours alone caused every additional visit.",
+          "The exhibition reduced attendance.",
+          "The museum did not offer weekend tours."
+        ],
+        "key": "6e07b196b4ca3c7b305fc8f27a216eae65341aa68fe61569435d67b8cd3071a6",
+        "sourceNumber": 91,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The writer first explains that handwritten records are difficult to search. Next, the writer describes a digital catalogue and concludes that it makes specific entries easier to locate. What structure does the passage use?",
+        "choices": [
+          "Problem, proposed solution and benefit",
+          "Chronological biography followed by a debate",
+          "A list of unrelated definitions",
+          "A question followed by an unrelated anecdote"
+        ],
+        "key": "6ae8e285b66f9f79880101b6a59b8f606f832a26611857cd2df1a635711ba385",
+        "sourceNumber": 92,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A guide says to turn off the tap while brushing teeth. It adds that a leaking tap should be repaired because it can waste water continuously. What is the shared concern behind both recommendations?",
+        "choices": [
+          "Reducing unnecessary water waste",
+          "Increasing water pressure",
+          "Making taps harder to use",
+          "Replacing every bathroom fixture"
+        ],
+        "key": "e53387a52e648de10c288b1d086cf68e4c85142c2d4fc2ca36bbca57d4398e34",
+        "sourceNumber": 93,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A report says an online form saved applicants a trip, but several users needed help uploading documents. Which summary is most balanced?",
+        "choices": [
+          "The form saved some effort, though document uploading created a difficulty for some users.",
+          "The form caused problems for every applicant.",
+          "The form removed the need for documents.",
+          "The form had no effect on applicants."
+        ],
+        "key": "0e9f4ae34533c5daf8574bc440382bf981de667ee3eaf7961494e83ca9d85d34",
+        "sourceNumber": 94,
+        "correctIndex": 3
+      },
+      {
+        "question": "Read: A small study found that participants who took short breaks reported less tiredness. The study involved one office and did not measure work quality. Which conclusion is warranted?",
+        "choices": [
+          "Participants in that study reported less tiredness after taking short breaks.",
+          "Short breaks improve work quality in every workplace.",
+          "All office workers should take breaks of the same length.",
+          "The study proved that tiredness has one cause."
+        ],
+        "key": "0698a2cca87bc6040157e38f13b1d33b0ef2821e2f31119f55f9d5ac10a7f708",
+        "sourceNumber": 95,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The notice says the community hall is unavailable on Tuesday for repairs. It does not mention other days. What can a reader conclude about Wednesday?",
+        "choices": [
+          "The notice gives no information about Wednesday.",
+          "The hall is definitely closed on Wednesday.",
+          "The hall is definitely open on Wednesday.",
+          "Repairs will continue throughout the month."
+        ],
+        "key": "b09fb217e9a7a553b2838ada679376c148a9e1aa18aef63b826c5924542fd2c0",
+        "sourceNumber": 96,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A reviewer says a book’s examples are useful, but its explanations sometimes assume prior knowledge. What is the reviewer’s main assessment?",
+        "choices": [
+          "The book has a strength and a limitation.",
+          "The book contains no examples.",
+          "The reviewer thinks the book is suitable for every beginner without qualification.",
+          "The reviewer refuses to discuss the explanations."
+        ],
+        "key": "bc84fc6e030a41710d665516fa1486d8e80de7f17f4ae3b97813070aa713079b",
+        "sourceNumber": 97,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A survey received responses from 80 of 200 invited residents. What proportion of invited residents responded?",
+        "choices": [
+          "40%",
+          "20%",
+          "60%",
+          "80%"
+        ],
+        "key": "d9b82bca00a0813963ec82d2fae88db8c7b9a0e05f1e651664028ecb051b26a7",
+        "sourceNumber": 98,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: The project team completed the design stage but has not yet tested the prototype. Which statement is accurate?",
+        "choices": [
+          "The design is complete, while prototype testing remains unfinished.",
+          "The prototype passed every test.",
+          "The project has no design.",
+          "Testing finished before the design stage."
+        ],
+        "key": "0a5f7d0cdfe499c87345262cb91cfb870b03b3e50162baf34cf757be8571cdbf",
+        "sourceNumber": 99,
+        "correctIndex": 0
+      },
+      {
+        "question": "Read: A writer argues that a neighbourhood needs more streetlights because several paths are poorly lit. The writer gives no crime statistics. Which claim is supported by the passage?",
+        "choices": [
+          "Some neighbourhood paths are poorly lit.",
+          "Streetlights will certainly eliminate crime.",
+          "Crime increased on every path.",
+          "The neighbourhood already has too many lights."
+        ],
+        "key": "1e36f403aa2f23caae3d353dfa745516848c11595dd6cc1eb442dc8c930873e6",
+        "sourceNumber": 100,
+        "correctIndex": 0
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "b50b9d3d8f33c5a442f62da5bbd5a0446e870d2ec3317e3b5bc93be5167b54ab",
+      "sourceQuestionNumbers": [
+        48,
+        69,
+        39,
+        17,
+        84,
+        98,
+        60,
+        34,
+        18,
+        79,
+        61,
+        51,
+        31,
+        91,
+        5,
+        47,
+        82,
+        21,
+        19,
+        67,
+        55,
+        97,
+        27,
+        10,
+        75,
+        95,
+        71,
+        35,
+        13,
+        52,
+        42,
+        65,
+        38,
+        1,
+        87,
+        26,
+        14,
+        90,
+        56,
+        72,
+        93,
+        63,
+        36,
+        16,
+        54,
+        2,
+        59,
+        99,
+        30,
+        76,
+        43,
+        24,
+        96,
+        3,
+        68,
+        44,
+        4,
+        77,
+        22,
+        88,
+        86,
+        9,
+        80,
+        25,
+        46,
+        64,
+        20,
+        45,
+        94,
+        37,
+        78,
+        28,
+        85,
+        58,
+        11,
+        6,
+        57,
+        92,
+        40,
+        62,
+        81,
+        49,
+        70,
+        8,
+        32,
+        23,
+        83,
+        7,
+        53,
+        66,
+        73,
+        29,
+        41,
+        15,
+        100,
+        50,
+        89,
+        74,
+        33,
+        12
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
