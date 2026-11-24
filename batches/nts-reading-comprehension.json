@@ -1570,7 +1570,11 @@
       },
       "uploadIntent": {
         "filename": "nts-reading-comprehension-part-01-a5718cfe02104680.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "288bd057-c43b-40db-a3fe-17b4a9c305b5",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/TC55mXGmLS.mp4"
       }
     },
     {
