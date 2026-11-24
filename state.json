@@ -1294,7 +1294,7 @@
       "verifiedPublications": 14
     },
     "nts-reading-comprehension": {
-      "status": "ready",
+      "status": "scheduling",
       "ledger": "batches/nts-reading-comprehension.json",
       "createdAt": "2026-11-24T09:28:04.573237+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
