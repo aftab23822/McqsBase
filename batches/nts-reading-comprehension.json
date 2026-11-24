@@ -2982,9 +2982,17 @@
           "integrationId": "cmvwbbtq00220ro9du35l1wrs"
         },
         "tiktok": {
-          "status": "accepted",
+          "status": "QUEUE",
           "attemptedAt": "2026-11-24T09:35:58.289625+00:00",
-          "postId": "cmwui22aj0xk5lmaurfbk92kz"
+          "postId": "cmwui22aj0xk5lmaurfbk92kz",
+          "url": null,
+          "providerUrl": null,
+          "providerReleaseId": null,
+          "providerStatus": "QUEUE",
+          "providerError": null,
+          "publicUrlVerified": false,
+          "verification": "provider-status-only",
+          "integrationId": "cmvwbcule0222ro9dhocbic4w"
         }
       }
     },
