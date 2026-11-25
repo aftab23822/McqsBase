@@ -1294,7 +1294,7 @@
       "verifiedPublications": 14
     },
     "nts-reading-comprehension": {
-      "status": "scheduled",
+      "status": "publication-needs-attention",
       "ledger": "batches/nts-reading-comprehension.json",
       "createdAt": "2026-11-24T09:28:04.573237+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nts-reading-comprehension",
@@ -1306,8 +1306,8 @@
         "2026-11-24T20:11:00+05:00",
         "2026-11-24T21:58:00+05:00"
       ],
-      "published": 0,
-      "verifiedPublications": 0
+      "published": 15,
+      "verifiedPublications": 10
     },
     "nat-ie-organic-chemistry": {
       "status": "ready",
