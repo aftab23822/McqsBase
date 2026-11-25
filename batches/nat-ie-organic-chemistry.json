@@ -3090,9 +3090,17 @@
       "scheduledAt": "2026-11-25T19:49:00+05:00",
       "receipts": {
         "facebook": {
-          "status": "accepted",
+          "status": "QUEUE",
           "attemptedAt": "2026-11-25T08:07:48.423502+00:00",
-          "postId": "cmwvucj860zgblmaulo32okko"
+          "postId": "cmwvucj860zgblmaulo32okko",
+          "url": null,
+          "providerUrl": null,
+          "providerReleaseId": null,
+          "providerStatus": "QUEUE",
+          "providerError": null,
+          "publicUrlVerified": false,
+          "verification": "provider-status-only",
+          "integrationId": "cmvwb4faa021yro9dgcj8vlww"
         }
       }
     },
