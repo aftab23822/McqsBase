@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-ie-organic-chemistry",
   "createdAt": "2026-11-25T08:01:03.533493+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "nat-ie-organic-chemistry",
     "title": "99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
@@ -1687,7 +1687,12 @@
         }
       },
       "scheduledAt": "2026-11-25T13:22:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-25T08:06:43.856845+00:00"
+        }
+      }
     },
     {
       "part": 2,
