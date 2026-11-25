@@ -1846,7 +1846,11 @@
       },
       "uploadIntent": {
         "filename": "nat-ie-organic-chemistry-part-02-f3c3321a5e191d21.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "c269820d-9db2-4d1d-b30b-ca16c97e5662",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/zKp8vmy5lA.mp4"
       }
     },
     {
