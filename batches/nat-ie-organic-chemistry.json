@@ -1562,7 +1562,131 @@
       "studioMedia": {
         "id": "01110a22-faaa-45c7-8dfb-1870d1ebac54",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/nUiPRLgMZe.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 1/5 | Q29, 82 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 29, 82\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+              "image": [
+                {
+                  "id": "01110a22-faaa-45c7-8dfb-1870d1ebac54",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/nUiPRLgMZe.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 29, 82\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "01110a22-faaa-45c7-8dfb-1870d1ebac54",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/nUiPRLgMZe.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 1/5 | Q29, 82 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 29, 82\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "01110a22-faaa-45c7-8dfb-1870d1ebac54",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/nUiPRLgMZe.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 1/5 | Q29, 82 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 29, 82\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "01110a22-faaa-45c7-8dfb-1870d1ebac54",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/nUiPRLgMZe.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-25T13:22:00+05:00"
     },
     {
       "part": 2,
@@ -1851,7 +1975,131 @@
       "studioMedia": {
         "id": "c269820d-9db2-4d1d-b30b-ca16c97e5662",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/zKp8vmy5lA.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 2/5 | Q52, 7, 65 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 52, 7, 65\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+              "image": [
+                {
+                  "id": "c269820d-9db2-4d1d-b30b-ca16c97e5662",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/zKp8vmy5lA.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 52, 7, 65\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "c269820d-9db2-4d1d-b30b-ca16c97e5662",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/zKp8vmy5lA.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 2/5 | Q52, 7, 65 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 52, 7, 65\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "c269820d-9db2-4d1d-b30b-ca16c97e5662",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/zKp8vmy5lA.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 2/5 | Q52, 7, 65 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 52, 7, 65\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "c269820d-9db2-4d1d-b30b-ca16c97e5662",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/zKp8vmy5lA.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-25T15:31:00+05:00"
     },
     {
       "part": 3,
@@ -2140,7 +2388,131 @@
       "studioMedia": {
         "id": "eb620925-a627-4c83-8790-2518c5b1c8e5",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/CHg9eiO4TP.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 3/5 | Q97, 55, 79 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 97, 55, 79\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+              "image": [
+                {
+                  "id": "eb620925-a627-4c83-8790-2518c5b1c8e5",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/CHg9eiO4TP.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 97, 55, 79\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "eb620925-a627-4c83-8790-2518c5b1c8e5",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/CHg9eiO4TP.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 3/5 | Q97, 55, 79 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 97, 55, 79\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "eb620925-a627-4c83-8790-2518c5b1c8e5",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/CHg9eiO4TP.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 3/5 | Q97, 55, 79 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 97, 55, 79\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "eb620925-a627-4c83-8790-2518c5b1c8e5",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/CHg9eiO4TP.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-25T17:40:00+05:00"
     },
     {
       "part": 4,
@@ -2429,7 +2801,131 @@
       "studioMedia": {
         "id": "33370155-9532-4263-8218-8b336e6f0d07",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/xZhZoTWRxU.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 4/5 | Q10, 22, 90 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 10, 22, 90\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+              "image": [
+                {
+                  "id": "33370155-9532-4263-8218-8b336e6f0d07",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/xZhZoTWRxU.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 10, 22, 90\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "33370155-9532-4263-8218-8b336e6f0d07",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/xZhZoTWRxU.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 4/5 | Q10, 22, 90 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 10, 22, 90\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "33370155-9532-4263-8218-8b336e6f0d07",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/xZhZoTWRxU.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 4/5 | Q10, 22, 90 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 10, 22, 90\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "33370155-9532-4263-8218-8b336e6f0d07",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/xZhZoTWRxU.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-25T19:49:00+05:00"
     },
     {
       "part": 5,
@@ -2718,7 +3214,131 @@
       "studioMedia": {
         "id": "c51b4849-6e01-42c7-9012-d99f9be9bd83",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/vJVVTts0xV.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 5/5 | Q18, 35, 67 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 18, 35, 67\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+              "image": [
+                {
+                  "id": "c51b4849-6e01-42c7-9012-d99f9be9bd83",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/vJVVTts0xV.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 18, 35, 67\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "c51b4849-6e01-42c7-9012-d99f9be9bd83",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/vJVVTts0xV.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 5/5 | Q18, 35, 67 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 18, 35, 67\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "c51b4849-6e01-42c7-9012-d99f9be9bd83",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/vJVVTts0xV.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 5/5 | Q18, 35, 67 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 18, 35, 67\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "c51b4849-6e01-42c7-9012-d99f9be9bd83",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/vJVVTts0xV.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-25T21:58:00+05:00"
     }
   ],
   "thinkingSeconds": 3,
@@ -2801,5 +3421,12 @@
         "sha256": "228c30d5f94b29e3694bb24f826f10ddbc8a47ada5692e50d90ae86467b4bc93"
       }
     ]
-  }
+  },
+  "schedule": [
+    "2026-11-25T13:22:00+05:00",
+    "2026-11-25T15:31:00+05:00",
+    "2026-11-25T17:40:00+05:00",
+    "2026-11-25T19:49:00+05:00",
+    "2026-11-25T21:58:00+05:00"
+  ]
 }
