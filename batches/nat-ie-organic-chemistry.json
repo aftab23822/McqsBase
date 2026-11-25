@@ -1836,6 +1836,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        97,
+        55,
+        79
+      ],
+      "count": 3,
+      "durationSeconds": 84,
+      "sha256": "7d3e1c65088844222da12146eed82d6400aa103418df64f8842a55ff9e05cfb5",
+      "manifest": {
+        "title": "99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+        "sourceTitle": "99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-25T08:01:03.243106+00:00",
+        "sourceContentHash": "828b8fc6d7f9f2b1b18eca4058ed626adcb29fc1932d0583defc6b0c80f0ff09",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 8051720780,
+          "sha": "e87a7605fc476d7b5811b5fc1088ccedcaa1b1e3",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-25T08:01:03.243106+00:00",
+          "url": "https://mcqs-base-dg7xj8rtz-as-projects-10921176.vercel.app",
+          "publisherRunId": 45571869603
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 84,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "How many carbon atoms are present in one molecule of ethyl ethanoate, CH₃COOCH₂CH₃?",
+            "choices": [
+              "Three",
+              "Four",
+              "Five",
+              "Six"
+            ],
+            "correctIndex": 1,
+            "key": "84ec193be83ed0ffcdde1304afaefb778d0e1babe3076e4b9b08b2fa45a28e0f",
+            "sourceNumber": 97
+          },
+          {
+            "question": "Which class of alcohol does not usually undergo oxidation with common laboratory oxidants without carbon–carbon bond cleavage?",
+            "choices": [
+              "Primary alcohol",
+              "Secondary alcohol",
+              "Tertiary alcohol",
+              "All alcohols oxidize identically"
+            ],
+            "correctIndex": 2,
+            "key": "27d35953d911fd93b128094942efe13f948223804503c07fa5d9c2bbf85c6cf4",
+            "sourceNumber": 55
+          },
+          {
+            "question": "In phenol, where is the hydroxyl group attached?",
+            "choices": [
+              "Directly to an aromatic ring carbon",
+              "To a carbon one position away from the ring",
+              "To a carbonyl carbon",
+              "To a nitrogen atom"
+            ],
+            "correctIndex": 0,
+            "key": "3b6a2169d6d8b4208996c38909f51e274b2fe39cb663335a121c6ec15ebccaab",
+            "sourceNumber": 79
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 15,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 15,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 16,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 17,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 18,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 22,
+            "duration": 21,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 43,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 44,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 45,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 46,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 51,
+            "duration": 19,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 70,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 71,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 72,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 73,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 79,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            97,
+            55,
+            79
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-organic-chemistry-part-03-7d3e1c6508884422.mp4",
+        "videoSha256": "7d3e1c65088844222da12146eed82d6400aa103418df64f8842a55ff9e05cfb5",
+        "assetId": 790642328
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q97, 55, 79 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 97, 55, 79\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q97, 55, 79 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 97, 55, 79\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q97, 55, 79 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 97, 55, 79\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q97, 55, 79 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 97, 55, 79\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
