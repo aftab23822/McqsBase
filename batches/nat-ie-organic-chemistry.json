@@ -1555,6 +1555,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 2,
+      "directory": "part-02",
+      "sourceQuestionNumbers": [
+        52,
+        7,
+        65
+      ],
+      "count": 3,
+      "durationSeconds": 81,
+      "sha256": "f3c3321a5e191d21a42abbff53155dca4b39a797e2f3a35481cb0c61856dae6f",
+      "manifest": {
+        "title": "99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+        "sourceTitle": "99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-25T08:01:03.243106+00:00",
+        "sourceContentHash": "828b8fc6d7f9f2b1b18eca4058ed626adcb29fc1932d0583defc6b0c80f0ff09",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 8051720780,
+          "sha": "e87a7605fc476d7b5811b5fc1088ccedcaa1b1e3",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-25T08:01:03.243106+00:00",
+          "url": "https://mcqs-base-dg7xj8rtz-as-projects-10921176.vercel.app",
+          "publisherRunId": 45571869603
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 81,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "What are the main organic products when an ester is hydrolysed with aqueous sodium hydroxide?",
+            "choices": [
+              "A carboxylate salt and an alcohol",
+              "An aldehyde and hydrogen",
+              "An alkene and water",
+              "A ketone and carbon dioxide"
+            ],
+            "correctIndex": 0,
+            "key": "83f8aebac08c408eb5447c43a589d4a63749f94391a020a642457deb6a01123a",
+            "sourceNumber": 52
+          },
+          {
+            "question": "What is the molecular formula of benzene?",
+            "choices": [
+              "C₆H₆",
+              "C₆H₁₂",
+              "C₆H₁₄",
+              "C₆H₈"
+            ],
+            "correctIndex": 0,
+            "key": "f12747c3686e2fbb3fc7bb7a573ff894b3a1690b6e28fea02ac7e986be4eb9b5",
+            "sourceNumber": 7
+          },
+          {
+            "question": "What is the main organic product of adding water to propene under acidic conditions, following the usual orientation rule?",
+            "choices": [
+              "Propan-1-ol",
+              "Propan-2-ol",
+              "Propanal",
+              "Propanoic acid"
+            ],
+            "correctIndex": 1,
+            "key": "2ac1bab27098c71ff087393b71558e07248a6f77812d5146d7bb4cbcecf07c00",
+            "sourceNumber": 65
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 21,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 21,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 24,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 30,
+            "duration": 13,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 43,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 44,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 45,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 46,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 50,
+            "duration": 19,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 69,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 70,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 71,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 72,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 76,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 2,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            52,
+            7,
+            65
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-organic-chemistry-part-02-f3c3321a5e191d21.mp4",
+        "videoSha256": "f3c3321a5e191d21a42abbff53155dca4b39a797e2f3a35481cb0c61856dae6f",
+        "assetId": 790639138
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 2/5 | Q52, 7, 65 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 52, 7, 65\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 2/5 | Q52, 7, 65 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 52, 7, 65\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 2/5 | Q52, 7, 65 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 52, 7, 65\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 2/5 | Q52, 7, 65 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+          "text": "Part 2/5 · Source questions 52, 7, 65\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
