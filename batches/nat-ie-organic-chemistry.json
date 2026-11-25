@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-ie-organic-chemistry",
   "createdAt": "2026-11-25T08:01:03.533493+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "nat-ie-organic-chemistry",
     "title": "99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
@@ -2681,5 +2681,85 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "nat-ie-organic-chemistry",
+    "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+    "sourceTitle": "99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+    "sourceContentHash": "828b8fc6d7f9f2b1b18eca4058ed626adcb29fc1932d0583defc6b0c80f0ff09",
+    "productionDeployment": {
+      "id": 8051720780,
+      "sha": "e87a7605fc476d7b5811b5fc1088ccedcaa1b1e3",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-25T08:01:03.243106+00:00",
+      "url": "https://mcqs-base-dg7xj8rtz-as-projects-10921176.vercel.app",
+      "publisherRunId": 45571869603
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          29,
+          82
+        ],
+        "count": 2,
+        "durationSeconds": 69,
+        "sha256": "036d3bea3498b9cedc8a68692d0ab7588b3e932a399dd93cd4c8a5aadb957c93"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          52,
+          7,
+          65
+        ],
+        "count": 3,
+        "durationSeconds": 81,
+        "sha256": "f3c3321a5e191d21a42abbff53155dca4b39a797e2f3a35481cb0c61856dae6f"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          97,
+          55,
+          79
+        ],
+        "count": 3,
+        "durationSeconds": 84,
+        "sha256": "7d3e1c65088844222da12146eed82d6400aa103418df64f8842a55ff9e05cfb5"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          10,
+          22,
+          90
+        ],
+        "count": 3,
+        "durationSeconds": 64,
+        "sha256": "b0b44c01629ebc1c8278afe2e1bd8b913827128cadfbb244cb26af2253586510"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          18,
+          35,
+          67
+        ],
+        "count": 3,
+        "durationSeconds": 85,
+        "sha256": "228c30d5f94b29e3694bb24f826f10ddbc8a47ada5692e50d90ae86467b4bc93"
+      }
+    ]
+  }
 }
