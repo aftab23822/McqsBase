@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nat-ie-organic-chemistry": {
+    title: "99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+    excerpt:
+      "Practise organic chemistry fundamentals, naming, isomerism, reactions, and aromatic compounds with 99 original multiple-choice questions and concise explanations.",
+    category: "Subject Guide",
+    date: "2026-11-25",
+    readTime: "26 min",
+    content: null,
+    body: readImportedBlogBody("nat-ie-organic-chemistry")
+  },
   "nts-reading-comprehension": {
     title: "100 NTS-Style Reading Comprehension MCQs with Explanations",
     excerpt:
