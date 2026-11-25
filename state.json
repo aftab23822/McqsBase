@@ -1315,7 +1315,13 @@
       "createdAt": "2026-11-25T08:01:03.533493+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
       "blockedNetworks": [],
-      "scheduledAt": [],
+      "scheduledAt": [
+        "2026-11-25T13:22:00+05:00",
+        "2026-11-25T15:31:00+05:00",
+        "2026-11-25T17:40:00+05:00",
+        "2026-11-25T19:49:00+05:00",
+        "2026-11-25T21:58:00+05:00"
+      ],
       "published": 0,
       "verifiedPublications": 0
     }
