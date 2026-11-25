@@ -1,0 +1,1328 @@
+{
+  "version": 1,
+  "slug": "nat-ie-organic-chemistry",
+  "createdAt": "2026-11-25T08:01:03.533493+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nat-ie-organic-chemistry",
+    "title": "99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+    "url": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 8051720780,
+      "sha": "e87a7605fc476d7b5811b5fc1088ccedcaa1b1e3",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-25T08:01:03.243106+00:00",
+      "url": "https://mcqs-base-dg7xj8rtz-as-projects-10921176.vercel.app",
+      "publisherRunId": 45571869603
+    },
+    "fetchedAt": "2026-11-25T08:01:03.243106+00:00",
+    "contentHash": "828b8fc6d7f9f2b1b18eca4058ed626adcb29fc1932d0583defc6b0c80f0ff09",
+    "questions": [
+      {
+        "question": "What is the usual valency of carbon in stable organic compounds?",
+        "choices": [
+          "Two",
+          "Three",
+          "Four",
+          "Six"
+        ],
+        "key": "185fd8cade0d8a429b8dbd65e30219ad29cf14186385b8f031ed7b086eba0325",
+        "sourceNumber": 1,
+        "correctIndex": 2
+      },
+      {
+        "question": "Which general formula describes an acyclic alkane containing one saturated carbon chain?",
+        "choices": [
+          "CₙH₂ₙ₊₂",
+          "CₙH₂ₙ",
+          "CₙH₂ₙ₋₂",
+          "CₙHₙ"
+        ],
+        "key": "a0a80e5b91d2717b48263d087cfe1c2811c04d0ddc2e7bbcbe7b11eed4ee21d2",
+        "sourceNumber": 2,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which formula is the general formula for an acyclic alkene with one carbon–carbon double bond?",
+        "choices": [
+          "CₙH₂ₙ₊₂",
+          "CₙH₂ₙ",
+          "CₙH₂ₙ₋₂",
+          "CₙHₙ₊₂"
+        ],
+        "key": "df431c3cee28ec7fbcc9189b24b7187af24d9e815c9f22c9bf93b97a63dac7d7",
+        "sourceNumber": 3,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which formula is the general formula for an acyclic alkyne with one carbon–carbon triple bond?",
+        "choices": [
+          "CₙH₂ₙ₊₂",
+          "CₙH₂ₙ",
+          "CₙH₂ₙ₋₂",
+          "CₙHₙ"
+        ],
+        "key": "f166cef018c4dabd81c1eb0b1cadefa706fff10d8c7421a2fe76bbf99221bd0e",
+        "sourceNumber": 4,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the hybridization of the carbon atom in methane, CH₄?",
+        "choices": [
+          "sp",
+          "sp²",
+          "sp³",
+          "dsp²"
+        ],
+        "key": "4bebc4ad18b1977b8ad3458dffac2068a2795d667b420f88fa059e5e183c86f9",
+        "sourceNumber": 5,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the approximate H–C–H bond angle in ethene, C₂H₄?",
+        "choices": [
+          "90°",
+          "109.5°",
+          "120°",
+          "180°"
+        ],
+        "key": "ca117304e5ccf83b7f8e2e848b033a20d07652c254fb25f041a305ea18d602a0",
+        "sourceNumber": 6,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the molecular formula of benzene?",
+        "choices": [
+          "C₆H₆",
+          "C₆H₁₂",
+          "C₆H₁₄",
+          "C₆H₈"
+        ],
+        "key": "f12747c3686e2fbb3fc7bb7a573ff894b3a1690b6e28fea02ac7e986be4eb9b5",
+        "sourceNumber": 7,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which compound is a saturated hydrocarbon?",
+        "choices": [
+          "Ethene",
+          "Ethyne",
+          "Propane",
+          "Benzene"
+        ],
+        "key": "bde9d2d1df7d28b7fa008cdeb931dc36f8dca6e616fe076401eafcc3fbcec7e7",
+        "sourceNumber": 8,
+        "correctIndex": 2
+      },
+      {
+        "question": "Which functional group defines an alcohol?",
+        "choices": [
+          "–OH attached to a saturated carbon",
+          "–CHO",
+          "–COOH",
+          "–CO–"
+        ],
+        "key": "bdd0beea7998ef73890a6a572b856f1377aff1779f2e90f4b3fea2739e79f298",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which functional group is present in an aldehyde?",
+        "choices": [
+          "–COOH",
+          "–CHO",
+          "–O–",
+          "–NH₂"
+        ],
+        "key": "64078f5b2838e6dacd1d1c697bc99f55312b54b1d5e3ef752943fcce7cb4aec2",
+        "sourceNumber": 10,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which functional group is characteristic of a ketone?",
+        "choices": [
+          "A carbonyl carbon bonded to two carbon groups",
+          "A carbonyl carbon bonded to hydrogen",
+          "A hydroxyl group bonded to an aromatic ring",
+          "A carbon–carbon triple bond"
+        ],
+        "key": "44ba9cec7528c458e7a89f081c3eb30c95ab9e2b40c1f9ef063dc01948295088",
+        "sourceNumber": 11,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which group is the carboxyl group?",
+        "choices": [
+          "–COOH",
+          "–CHO",
+          "–CO–",
+          "–O–"
+        ],
+        "key": "9812310a4cbec25c7cf47ccebb17fcb0479c97f9bb1f3a12888d49844b27af8f",
+        "sourceNumber": 12,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which linkage is characteristic of an ester?",
+        "choices": [
+          "–COO– between carbon groups",
+          "–NH₂",
+          "–C≡N",
+          "–O– between two alkyl groups only"
+        ],
+        "key": "3caf812ddb8cedf2c2c37a3152b987f79bd590ee07c0c62786667b6d50c2c0d3",
+        "sourceNumber": 13,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which group is characteristic of an ether?",
+        "choices": [
+          "R–O–R′",
+          "R–COOH",
+          "R–CHO",
+          "R–CO–R′"
+        ],
+        "key": "aa5b9d663283b36ba7ac0b6f74cd05cf77c6a0b44c66363dcc66a4a3d25b5eb1",
+        "sourceNumber": 14,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the simplest structure of a primary amine?",
+        "choices": [
+          "R–NH₂",
+          "R–COOH",
+          "R–CHO",
+          "R–COO–R′"
+        ],
+        "key": "2b4f0f0178ef00ccbd321e703eca01c33733745f2adc13266fa88179e4e24135",
+        "sourceNumber": 15,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which feature identifies a haloalkane?",
+        "choices": [
+          "A halogen bonded to an alkyl carbon",
+          "An –OH group bonded to an alkyl carbon",
+          "A carbonyl group between two carbons",
+          "A –COOH group"
+        ],
+        "key": "530447f877a8f8054d51a08fa78ab8e341e319cdba21a501add310a52c38e5c2",
+        "sourceNumber": 16,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the IUPAC name of CH₃CH₂CH₃?",
+        "choices": [
+          "Methane",
+          "Ethane",
+          "Propane",
+          "Butane"
+        ],
+        "key": "c07dad5447d565fb192a44e4a922d74a72c333880b1f867e780a00da2d68976e",
+        "sourceNumber": 17,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the IUPAC name of CH₃CH(CH₃)CH₃?",
+        "choices": [
+          "Butane",
+          "2-methylpropane",
+          "2-methylbutane",
+          "2,2-dimethylethane"
+        ],
+        "key": "7f7bf543bc08af2fb326f2850dfd0f18becf97673c89965b3529882b961525d5",
+        "sourceNumber": 18,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the IUPAC name of CH₃CH₂OH?",
+        "choices": [
+          "Methanol",
+          "Ethanol",
+          "Ethanal",
+          "Ethanoic acid"
+        ],
+        "key": "fb8e5074a69d3cf0da1af95cc19713cb3dbcf325540a8e7e53a9829d7c27d247",
+        "sourceNumber": 19,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the IUPAC name of CH₃COOH?",
+        "choices": [
+          "Methanoic acid",
+          "Ethanoic acid",
+          "Propanone",
+          "Ethanal"
+        ],
+        "key": "6effdbd9d7026a4b7700c9c7e6cd7b5cda9660a15df41222811747f70e5aea6d",
+        "sourceNumber": 20,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the IUPAC name of CH₃CHO?",
+        "choices": [
+          "Ethanol",
+          "Ethanal",
+          "Ethanoic acid",
+          "Propanal"
+        ],
+        "key": "97fba14db4787a0dd429bb8cde31b20bcd04d7dbaa2724d48fb7ad7ceaa1ea1f",
+        "sourceNumber": 21,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the IUPAC name of CH₃COCH₃?",
+        "choices": [
+          "Propanal",
+          "Propanone",
+          "Propanoic acid",
+          "Propanol"
+        ],
+        "key": "8a9e5b841a8f09df5863a5a89f05d9bd507c17a945f38881647b7162098c8a6e",
+        "sourceNumber": 22,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the common IUPAC name of CH₃OCH₃?",
+        "choices": [
+          "Methoxymethane",
+          "Ethanol",
+          "Methanal",
+          "Ethanoic acid"
+        ],
+        "key": "8d70dfcc81f592b6762652c89c60606d58b6ac994bb5b9608804c11a4b9eec67",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "How many structural isomers does C₄H₁₀ have?",
+        "choices": [
+          "One",
+          "Two",
+          "Three",
+          "Four"
+        ],
+        "key": "9d89e2cabeb0744e269da7070210f82479df956cb98f4f8c989ab93faf0bc7f4",
+        "sourceNumber": 24,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which pair consists of functional-group isomers with the formula C₂H₆O?",
+        "choices": [
+          "Ethanol and methoxymethane",
+          "Ethanal and ethanoic acid",
+          "Ethene and ethyne",
+          "Propanol and propanone"
+        ],
+        "key": "8ebf7f65a6b91ca890e18cb2e85daaff6307c83c5bc7f647e46fb48a79417f7d",
+        "sourceNumber": 25,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which pair can exhibit cis–trans isomerism?",
+        "choices": [
+          "Ethane",
+          "1-butene",
+          "2-butene",
+          "2-methylpropane"
+        ],
+        "key": "31b8f65ec82b6e905086b1df2fd58f8afb8a0bc7dc5ded982237da5a91f7c2bc",
+        "sourceNumber": 26,
+        "correctIndex": 2
+      },
+      {
+        "question": "Which condition is necessary for a tetrahedral carbon to be a chiral centre?",
+        "choices": [
+          "It is bonded to four identical groups",
+          "It is bonded to four different groups",
+          "It forms a double bond to oxygen",
+          "It has no hydrogen atoms"
+        ],
+        "key": "d30176321d25c844e790a00399a09f7310e59f6f332185da084a21183bf5e79e",
+        "sourceNumber": 27,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the defining formula difference between successive members of a homologous series?",
+        "choices": [
+          "One oxygen atom",
+          "One –CH₂– unit",
+          "One –OH group",
+          "One carbon–carbon double bond"
+        ],
+        "key": "8d8f46053245f7e4a9bbe50dba349723bc7e29657d8e8c6a483169be193f6b1a",
+        "sourceNumber": 28,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which statement best describes structural isomers?",
+        "choices": [
+          "They have the same molecular formula but different atom connectivity",
+          "They have different molecular formulas but identical connectivity",
+          "They differ only in the number of neutrons",
+          "They must have different functional groups"
+        ],
+        "key": "bea2e5119a032dd504cfab604566a5a70afdcc7e638e3414b78fc660484fdd7d",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which intermolecular attraction is especially important between ethanol molecules?",
+        "choices": [
+          "Hydrogen bonding",
+          "Metallic bonding",
+          "Ionic bonding",
+          "Covalent bonding between separate molecules"
+        ],
+        "key": "82a1dc881ebceeacc400fe056d5e151b69877602548ad812cbc0117edb676f7d",
+        "sourceNumber": 30,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why does ethanol mix readily with water?",
+        "choices": [
+          "It can form hydrogen bonds with water",
+          "It is an ionic salt",
+          "It contains no carbon atoms",
+          "It is nonpolar throughout"
+        ],
+        "key": "faeca79463fca39a7fa2f4d73ab836bf0efd34b17442a4953f556be9585be97d",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "For a series of straight-chain alkanes, what generally happens to boiling point as chain length increases?",
+        "choices": [
+          "It generally increases",
+          "It generally decreases",
+          "It remains exactly constant",
+          "It becomes zero"
+        ],
+        "key": "85614b43e271eb92c762eedf47540a16429aa916b8a550792d41950aa95350d2",
+        "sourceNumber": 32,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which compound has the highest boiling point among these compounds with two carbon atoms?",
+        "choices": [
+          "Ethane",
+          "Ethene",
+          "Ethanol",
+          "Methoxymethane"
+        ],
+        "key": "08b55209830c5426c08d4073733dc498c4aa1d197372817d954f7584655fed14",
+        "sourceNumber": 33,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the molar mass of ethanol, C₂H₆O, using C = 12, H = 1, and O = 16?",
+        "choices": [
+          "30 g mol⁻¹",
+          "42 g mol⁻¹",
+          "46 g mol⁻¹",
+          "60 g mol⁻¹"
+        ],
+        "key": "b2b6f640e463cfb42714df408e95c03c1d0521ff3d83023ada3150f7e59b6eff",
+        "sourceNumber": 34,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the percentage by mass of oxygen in ethanol, C₂H₆O, using molar mass 46 g mol⁻¹ and O = 16 g mol⁻¹?",
+        "choices": [
+          "16.0%",
+          "34.8%",
+          "46.0%",
+          "52.2%"
+        ],
+        "key": "a15950a9e9596151e152835e557121e853e270e7e1a25b39a9e0969dc0b00f48",
+        "sourceNumber": 35,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the empirical formula of a compound with molecular formula C₂H₄?",
+        "choices": [
+          "CH",
+          "CH₂",
+          "C₂H₄",
+          "C₂H₂"
+        ],
+        "key": "249868fb80aa46a0d63f1fdcf3dcdaa192c29fba35af947b0bcbb8fca6e4cf83",
+        "sourceNumber": 36,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the molecular formula of an alkane with five carbon atoms?",
+        "choices": [
+          "C₅H₈",
+          "C₅H₁₀",
+          "C₅H₁₂",
+          "C₅H₁₄"
+        ],
+        "key": "1cd550edaefb54dd50fda938357740fb617970689a4a104209faed149686ab04",
+        "sourceNumber": 37,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the formula of an acyclic monoalkene with five carbon atoms?",
+        "choices": [
+          "C₅H₈",
+          "C₅H₁₀",
+          "C₅H₁₂",
+          "C₅H₆"
+        ],
+        "key": "cb56789c0bc1488f8cf5e0cc6e32e4066e404fdf67b84e9feea5638d4d247942",
+        "sourceNumber": 38,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the formula of an acyclic monoalkyne with four carbon atoms?",
+        "choices": [
+          "C₄H₄",
+          "C₄H₆",
+          "C₄H₈",
+          "C₄H₁₀"
+        ],
+        "key": "af676b54de8ddcb99ec746e9e1563da562072436c9b3a42a77a6b2035b79912c",
+        "sourceNumber": 39,
+        "correctIndex": 1
+      },
+      {
+        "question": "How many sigma and pi bonds are present in one carbon–carbon double bond?",
+        "choices": [
+          "One sigma and one pi",
+          "Two sigma and no pi",
+          "No sigma and two pi",
+          "Two sigma and one pi"
+        ],
+        "key": "5a7c3346d0a5d63b921c0d7dd7c4e6391031923f4aa011a87a8e99d639a32fab",
+        "sourceNumber": 40,
+        "correctIndex": 0
+      },
+      {
+        "question": "How many pi bonds are present in a carbon–carbon triple bond?",
+        "choices": [
+          "Zero",
+          "One",
+          "Two",
+          "Three"
+        ],
+        "key": "c35dc6acbd1a1336bee6a00b628bb0b8a2353db00c0999abc1bcf36414c3d8cb",
+        "sourceNumber": 41,
+        "correctIndex": 2
+      },
+      {
+        "question": "How many carbon atoms are present in one molecule of propene?",
+        "choices": [
+          "Two",
+          "Three",
+          "Four",
+          "Five"
+        ],
+        "key": "6a69ef3cc27f8e36c6fc6e73d70b6cf9bc0acd3640096052e3ed377f63547a79",
+        "sourceNumber": 42,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the IUPAC name of HC≡CH?",
+        "choices": [
+          "Ethane",
+          "Ethene",
+          "Ethyne",
+          "Ethanal"
+        ],
+        "key": "997ec6dcc9dfe9b3d35fa0688b51360f56d3c410d48d9d02a8448555defd0e0b",
+        "sourceNumber": 43,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the main organic product when ethene reacts completely with hydrogen in the presence of a suitable catalyst?",
+        "choices": [
+          "Ethane",
+          "Ethanol",
+          "Ethanal",
+          "Ethanoic acid"
+        ],
+        "key": "48890a47052d17f81657299e070082a9aff1eed29d1cf768faafc40ef5692c64",
+        "sourceNumber": 44,
+        "correctIndex": 0
+      },
+      {
+        "question": "What visible change usually occurs when bromine water is shaken with an alkene under ordinary test conditions?",
+        "choices": [
+          "Orange-brown colour disappears",
+          "A blue precipitate forms",
+          "A white gas is produced",
+          "A silver mirror forms"
+        ],
+        "key": "42df1f55c0673ab7837b213b4d8f25cf7a9eccb921d494b88ceffdacf2dfa152",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "Under ultraviolet light, ethane reacts with chlorine mainly by which reaction type?",
+        "choices": [
+          "Free-radical substitution",
+          "Electrophilic addition",
+          "Esterification",
+          "Condensation"
+        ],
+        "key": "ee1bc82fb9eb5466ec1fc2e3d9bf5f0f3ab7ed1f045889c247e981456c373876",
+        "sourceNumber": 46,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which product forms when one mole of ethene undergoes addition of one mole of bromine?",
+        "choices": [
+          "1,2-dibromoethane",
+          "Bromoethane",
+          "Ethane",
+          "Bromomethane"
+        ],
+        "key": "097f87fd8a5375174320f3f712bee418421ca9f27342b9c25148c3c42d163dea",
+        "sourceNumber": 47,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which polymer is formed by addition polymerization of ethene?",
+        "choices": [
+          "Poly(ethene)",
+          "Poly(propene)",
+          "Poly(vinyl chloride)",
+          "Nylon-6,6"
+        ],
+        "key": "d9c3c95a456c71d7ad957d89d6d9d6b6b8f935ab08c1f76842f7aa6b1f07b883",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the monomer used to make poly(propene)?",
+        "choices": [
+          "Propene",
+          "Propanol",
+          "Propane",
+          "Propyne"
+        ],
+        "key": "69072e166cd096baac2779d5b76877c7db990c306c2f877b5ddf8011a5f88563",
+        "sourceNumber": 49,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which small molecule is produced alongside an ester when a carboxylic acid reacts with an alcohol?",
+        "choices": [
+          "Water",
+          "Hydrogen",
+          "Carbon monoxide",
+          "Ammonia"
+        ],
+        "key": "1ba008da81965c05a57c62059037ba9c0e6ac098f8427b34cbfd5cb2a880415f",
+        "sourceNumber": 50,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which pair of reactants can produce ethyl ethanoate and water?",
+        "choices": [
+          "Ethanol and ethanoic acid",
+          "Methanol and methanoic acid",
+          "Ethanol and propanone",
+          "Ethene and water"
+        ],
+        "key": "5eb088ba01041a97adcd29a37a6a2e2850c73b53dd3e6988ced526b91c946593",
+        "sourceNumber": 51,
+        "correctIndex": 0
+      },
+      {
+        "question": "What are the main organic products when an ester is hydrolysed with aqueous sodium hydroxide?",
+        "choices": [
+          "A carboxylate salt and an alcohol",
+          "An aldehyde and hydrogen",
+          "An alkene and water",
+          "A ketone and carbon dioxide"
+        ],
+        "key": "83f8aebac08c408eb5447c43a589d4a63749f94391a020a642457deb6a01123a",
+        "sourceNumber": 52,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the product of controlled oxidation of ethanol that stops at the aldehyde stage?",
+        "choices": [
+          "Ethanal",
+          "Ethanoic acid",
+          "Ethene",
+          "Ethane"
+        ],
+        "key": "e10ce78283804d82570f5f204fe01322ace04e000442dfdb3ca63d9dff3fbb9e",
+        "sourceNumber": 53,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the usual oxidation product of propan-2-ol?",
+        "choices": [
+          "Propanal",
+          "Propanone",
+          "Propanoic acid",
+          "Propene"
+        ],
+        "key": "8450b6d616a95d826b645e6fe631341af3855b47cd74aba192a573f7f7a14c9c",
+        "sourceNumber": 54,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which class of alcohol does not usually undergo oxidation with common laboratory oxidants without carbon–carbon bond cleavage?",
+        "choices": [
+          "Primary alcohol",
+          "Secondary alcohol",
+          "Tertiary alcohol",
+          "All alcohols oxidize identically"
+        ],
+        "key": "27d35953d911fd93b128094942efe13f948223804503c07fa5d9c2bbf85c6cf4",
+        "sourceNumber": 55,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the main organic product when ethanol is dehydrated under suitable hot, concentrated acid conditions?",
+        "choices": [
+          "Ethene",
+          "Ethane",
+          "Ethanal",
+          "Ethanoic acid"
+        ],
+        "key": "e51b248aa4aaa68aafa692857e6ce715472fce67e6acf53b51936937a83e69b5",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which observation is expected when an aldehyde gives a positive Tollens' test?",
+        "choices": [
+          "A silver deposit forms",
+          "A blue solution becomes colourless",
+          "A violet vapour appears",
+          "A white precipitate dissolves"
+        ],
+        "key": "bef0e60f1bc77b506baa7a79274163b9480641a4c086fb843eb1fd90b790fce9",
+        "sourceNumber": 57,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which compound is expected to give a positive Tollens' test under standard conditions?",
+        "choices": [
+          "Propanone",
+          "Propanal",
+          "Propane",
+          "Propan-2-ol"
+        ],
+        "key": "f90a001ab82005b2116307a63664f9b9632949af05a0e0e5c70a7d1fee303391",
+        "sourceNumber": 58,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the usual result when a carboxylic acid reacts with sodium carbonate?",
+        "choices": [
+          "Carbon dioxide gas is released",
+          "A silver mirror forms",
+          "Hydrogen gas is released",
+          "A black solid forms"
+        ],
+        "key": "02fc4684b1aa03a84305cb6070267a181f1c5d23dfc5cfbdc62dea631ef87261",
+        "sourceNumber": 59,
+        "correctIndex": 0
+      },
+      {
+        "question": "What happens to blue litmus paper in a solution of ethanoic acid?",
+        "choices": [
+          "It turns red",
+          "It turns green",
+          "It remains blue in every case",
+          "It becomes orange"
+        ],
+        "key": "07b2aefc3d32b5415154dc05f2576bf125ca275f2819c22012dd612caf834de8",
+        "sourceNumber": 60,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is produced by complete combustion of a hydrocarbon in excess oxygen?",
+        "choices": [
+          "Carbon dioxide and water",
+          "Carbon monoxide and hydrogen",
+          "Carbon and water only",
+          "Methanol and oxygen"
+        ],
+        "key": "53bd1427cc8b9084a1b28cbf41a3002129ffd012390e87aca67290f43b882fd1",
+        "sourceNumber": 61,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which dangerous gas can be produced by incomplete combustion of a carbon-containing fuel when oxygen is limited?",
+        "choices": [
+          "Carbon monoxide",
+          "Oxygen",
+          "Nitrogen",
+          "Helium"
+        ],
+        "key": "c8d2db6077d0e6802ad8b7cd48d5dc87c122894f685c13d86f503acddbebb912",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the carbon oxidation product when methane burns completely in oxygen?",
+        "choices": [
+          "Carbon dioxide",
+          "Carbon monoxide only",
+          "Elemental carbon only",
+          "Methanol"
+        ],
+        "key": "36c3ed1cfe14d68a4d5be9ad95ee9053786e0c734d07b6fd8193a3dbc95eed83",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "In the reaction CH₄ + 2O₂ → CO₂ + 2H₂O, how many moles of oxygen are needed for one mole of methane?",
+        "choices": [
+          "One mole",
+          "Two moles",
+          "Three moles",
+          "Four moles"
+        ],
+        "key": "e9ae794307712956bb41166d37ea3d9f5148c56c5dab4faf715930b0e58db065",
+        "sourceNumber": 64,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the main organic product of adding water to propene under acidic conditions, following the usual orientation rule?",
+        "choices": [
+          "Propan-1-ol",
+          "Propan-2-ol",
+          "Propanal",
+          "Propanoic acid"
+        ],
+        "key": "2ac1bab27098c71ff087393b71558e07248a6f77812d5146d7bb4cbcecf07c00",
+        "sourceNumber": 65,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the main product when propene reacts with hydrogen bromide in the absence of peroxides?",
+        "choices": [
+          "1-bromopropane",
+          "2-bromopropane",
+          "1,2-dibromopropane",
+          "2-bromopropan-1-ol"
+        ],
+        "key": "8b5d8ff293ff82677e0730f46c14ab809455e4aae56b1d7e3d16ec8c5b70ba8c",
+        "sourceNumber": 66,
+        "correctIndex": 1
+      },
+      {
+        "question": "What reaction type occurs when hydrogen adds across a carbon–carbon double bond?",
+        "choices": [
+          "Addition",
+          "Substitution",
+          "Elimination",
+          "Neutralization"
+        ],
+        "key": "62267d72eb883c56dc049bbb510b4fc151344116c5902c34fc003672aa78d791",
+        "sourceNumber": 67,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which reagent is commonly used to oxidize a primary alcohol in an introductory laboratory reaction?",
+        "choices": [
+          "Acidified potassium dichromate(VI)",
+          "Aqueous sodium chloride",
+          "Bromine water only",
+          "Sodium carbonate"
+        ],
+        "key": "e7b2b33563d80a0ecf187f6462fb6c7fc22fa3ed58cc978413a3a25c6b027866",
+        "sourceNumber": 68,
+        "correctIndex": 0
+      },
+      {
+        "question": "What colour change is commonly observed when acidified potassium dichromate(VI) is reduced during oxidation of an alcohol?",
+        "choices": [
+          "Orange to green",
+          "Green to orange",
+          "Blue to red",
+          "Colourless to purple"
+        ],
+        "key": "a05d73dd1a28a38f0f73743a327c019622a544a0f89fcebcdbc2d84c1c238ab5",
+        "sourceNumber": 69,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the usual name for the reaction in which an alkene is converted into an alkane by adding hydrogen?",
+        "choices": [
+          "Hydrogenation",
+          "Nitration",
+          "Esterification",
+          "Hydrolysis"
+        ],
+        "key": "f1e363e9b382604ff0073946b621f70373c600e035fead0b7c68af12c77f492e",
+        "sourceNumber": 70,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the hybridization of each carbon atom in ethyne, HC≡CH?",
+        "choices": [
+          "sp",
+          "sp²",
+          "sp³",
+          "dsp³"
+        ],
+        "key": "f1eebd69d11e6ecdce1ac9c2b1aa532bc6b0ecb23426aeafc450caea1b6c9286",
+        "sourceNumber": 71,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the approximate bond angle around each carbon atom in ethyne?",
+        "choices": [
+          "90°",
+          "109.5°",
+          "120°",
+          "180°"
+        ],
+        "key": "f671427753ffc68b71d1fe9a12eee81d10062315b14cfee2f1c9c3fc6a0efb5e",
+        "sourceNumber": 72,
+        "correctIndex": 3
+      },
+      {
+        "question": "Which structural feature makes benzene aromatic in the introductory model?",
+        "choices": [
+          "A planar, cyclic, conjugated ring with delocalized pi electrons",
+          "A ring with only isolated single bonds",
+          "A chain with one carbon–carbon triple bond",
+          "A saturated ring containing only sp³ carbons"
+        ],
+        "key": "04839da6cdebf552072199c42d172ba822fbd296ef9914d707203bfecde1567f",
+        "sourceNumber": 73,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which reaction type is more characteristic of benzene than simple addition across its ring?",
+        "choices": [
+          "Electrophilic substitution",
+          "Nucleophilic addition",
+          "Free-radical polymerization",
+          "Alcohol dehydration"
+        ],
+        "key": "be63177bd57fb8a141ad677aaa31b92a83f32d23776c1ca4067ab7a9d9df9e7c",
+        "sourceNumber": 74,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the usual catalyst for bromination of benzene in an introductory laboratory reaction?",
+        "choices": [
+          "Iron(III) bromide",
+          "Sodium hydroxide",
+          "Nickel only",
+          "Dilute hydrochloric acid"
+        ],
+        "key": "2f59966a9716a8ada2797a74d4ca68a070ccdcda2052d3e52fb0d7f3d82b9645",
+        "sourceNumber": 75,
+        "correctIndex": 0
+      },
+      {
+        "question": "What are the typical reagents for nitration of benzene?",
+        "choices": [
+          "Concentrated nitric acid and concentrated sulfuric acid",
+          "Dilute hydrochloric acid and water",
+          "Sodium hydroxide and ethanol",
+          "Hydrogen and nickel"
+        ],
+        "key": "89fa39575ec2e220e68b1887d59de10f50eaa2b52d11f401d333da13fc655e45",
+        "sourceNumber": 76,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the IUPAC retained name for benzene with one methyl substituent?",
+        "choices": [
+          "Methylbenzene",
+          "Ethylbenzene",
+          "Dimethylbenzene",
+          "Phenylmethane oxide"
+        ],
+        "key": "7c626c019441d8e69565fe38dfb680f7e039436fdd3d7e059e40a93a3ed8b413",
+        "sourceNumber": 77,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which formula corresponds to methylbenzene?",
+        "choices": [
+          "C₆H₆",
+          "C₇H₈",
+          "C₇H₁₄",
+          "C₈H₁₀"
+        ],
+        "key": "3b7cf67e2a460625592654da3cd5b62eff4b48f7af39db5bbb4efe47569a61f1",
+        "sourceNumber": 78,
+        "correctIndex": 1
+      },
+      {
+        "question": "In phenol, where is the hydroxyl group attached?",
+        "choices": [
+          "Directly to an aromatic ring carbon",
+          "To a carbon one position away from the ring",
+          "To a carbonyl carbon",
+          "To a nitrogen atom"
+        ],
+        "key": "3b6a2169d6d8b4208996c38909f51e274b2fe39cb663335a121c6ec15ebccaab",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "Why does benzene usually not decolourize bromine water in the same simple way as an alkene?",
+        "choices": [
+          "Its aromatic ring is stabilized and does not undergo ordinary addition under those conditions",
+          "It has no carbon atoms",
+          "It reacts instantly with water to form an alcohol",
+          "It contains only carbon–carbon single bonds"
+        ],
+        "key": "4714c5d6389da21b1ef49bbc5a8b4904935b01650191c1208c33d28dd4afcb1e",
+        "sourceNumber": 80,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the molecular formula of cyclohexane?",
+        "choices": [
+          "C₆H₆",
+          "C₆H₁₂",
+          "C₆H₁₄",
+          "C₆H₁₀"
+        ],
+        "key": "473f8ccdb036bdc923cbf92fe6bdccb99fb08763fbc20c2619786ff93f579d65",
+        "sourceNumber": 81,
+        "correctIndex": 1
+      },
+      {
+        "question": "How does the formula of a monocyclic cycloalkane with one ring compare with that of an acyclic alkane with the same number of carbons?",
+        "choices": [
+          "It has two fewer hydrogen atoms",
+          "It has two more hydrogen atoms",
+          "It has the same number of hydrogen atoms",
+          "It has one fewer carbon atom"
+        ],
+        "key": "cf91d10b727b33da492d78c5530fa62d7168728c9eed6d34366baf4f9cd6dd02",
+        "sourceNumber": 82,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which structure is an example of a primary alcohol?",
+        "choices": [
+          "CH₃CH₂OH",
+          "CH₃CH(OH)CH₃",
+          "(CH₃)₃COH",
+          "CH₃COOH"
+        ],
+        "key": "c1a1c1715b75aa3ec15d814180803d0c7ebe7286ec617ae5163a409dc97ae494",
+        "sourceNumber": 83,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which structure is a secondary alcohol?",
+        "choices": [
+          "CH₃OH",
+          "CH₃CH₂OH",
+          "CH₃CH(OH)CH₃",
+          "(CH₃)₃COH"
+        ],
+        "key": "a1968bdb5e8247d1c0322daee606dd7757caa0a828ca1456e8b112581bd55763",
+        "sourceNumber": 84,
+        "correctIndex": 2
+      },
+      {
+        "question": "Which structure is a tertiary alcohol?",
+        "choices": [
+          "CH₃CH₂OH",
+          "CH₃CH(OH)CH₃",
+          "(CH₃)₃COH",
+          "CH₃CHO"
+        ],
+        "key": "07ed9cfff52944743db38a392143df09378ff727ea1add44314ea4e566087bbf",
+        "sourceNumber": 85,
+        "correctIndex": 2
+      },
+      {
+        "question": "Which is the correct name for CH₃CH₂CH₂OH when the –OH group is on the end carbon?",
+        "choices": [
+          "Propan-1-ol",
+          "Propan-2-ol",
+          "Propanal",
+          "Propanoic acid"
+        ],
+        "key": "c2bea8415fdfbb7f37d5307bc5f6cfccbbf091fcd9b0b688d8cd425c3da5baf5",
+        "sourceNumber": 86,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which is the correct name for CH₃CH(OH)CH₃?",
+        "choices": [
+          "Propan-1-ol",
+          "Propan-2-ol",
+          "Propanone",
+          "2-methyl ethanol"
+        ],
+        "key": "4348e898411e2d7340d26ad3ea2047b8620363314f8850bfd0b06056a143c0aa",
+        "sourceNumber": 87,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the name of the ester CH₃COOCH₂CH₃?",
+        "choices": [
+          "Methyl ethanoate",
+          "Ethyl ethanoate",
+          "Ethyl methanoate",
+          "Propyl methanoate"
+        ],
+        "key": "71472290d7f4061ede83ef1dd0404985f509fbc80b67b85cede73d4315a40803",
+        "sourceNumber": 88,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which two functional groups are present in an amino acid molecule in its basic introductory representation?",
+        "choices": [
+          "Amino and carboxyl",
+          "Alcohol and ether",
+          "Aldehyde and ketone",
+          "Ester and nitrile"
+        ],
+        "key": "da947560ec06cd0f69f37af0903118474d8a1b58e1afe3e00fe8772da8a6a006",
+        "sourceNumber": 89,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which functional group defines a nitrile?",
+        "choices": [
+          "–C≡N",
+          "–COOH",
+          "–O–",
+          "–CHO"
+        ],
+        "key": "8446d28e106cb1b4aacbb7fff44584d9858ab0d81d5eca241f31b99f0d2383f6",
+        "sourceNumber": 90,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which structure is an amide?",
+        "choices": [
+          "CH₃CONH₂",
+          "CH₃COOCH₃",
+          "CH₃OCH₃",
+          "CH₃CHO"
+        ],
+        "key": "645d80cc71d7bb188dba2a064d60003c1dbe22bb96508fcdac2f1af224f11095",
+        "sourceNumber": 91,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main organic product when bromoethane reacts with aqueous sodium hydroxide by substitution?",
+        "choices": [
+          "Ethanol",
+          "Ethene",
+          "Ethane",
+          "Ethanal"
+        ],
+        "key": "13c1ce1a014f0b73fd5611492eb0da7875b66f410a8042fa112eb38a2ab33c13",
+        "sourceNumber": 92,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the main organic product when bromoethane is heated with ethanolic potassium hydroxide under elimination conditions?",
+        "choices": [
+          "Ethene",
+          "Ethanol",
+          "Ethane",
+          "Ethanoic acid"
+        ],
+        "key": "2c2dfd89d32b9a1c5f61c758a9eb59f88e905e384b3c2a6b72c7e81ef70fc214",
+        "sourceNumber": 93,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which functional group is present in propanal?",
+        "choices": [
+          "Aldehyde",
+          "Ketone",
+          "Ester",
+          "Ether"
+        ],
+        "key": "1a612fa46dca1828b725b933033496fa9cef01b3830831d82bf74d001b5b8149",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which functional group is present in butanone?",
+        "choices": [
+          "Ketone",
+          "Aldehyde",
+          "Carboxylic acid",
+          "Amine"
+        ],
+        "key": "bf016ac7e53aebed659ccae9d4f7b843136699998405dc7bedae921b1b48c525",
+        "sourceNumber": 95,
+        "correctIndex": 0
+      },
+      {
+        "question": "Which product is expected when ethanoic acid reacts with sodium hydroxide?",
+        "choices": [
+          "Sodium ethanoate and water",
+          "Ethanal and hydrogen",
+          "Ethene and water",
+          "Methane and carbon dioxide"
+        ],
+        "key": "ed2db255c59f40927f2e37dc7c6bf9a5e6dc332404f79d41d3779e856d8b78a5",
+        "sourceNumber": 96,
+        "correctIndex": 0
+      },
+      {
+        "question": "How many carbon atoms are present in one molecule of ethyl ethanoate, CH₃COOCH₂CH₃?",
+        "choices": [
+          "Three",
+          "Four",
+          "Five",
+          "Six"
+        ],
+        "key": "84ec193be83ed0ffcdde1304afaefb778d0e1babe3076e4b9b08b2fa45a28e0f",
+        "sourceNumber": 97,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the molecular formula of ethyl ethanoate, CH₃COOCH₂CH₃?",
+        "choices": [
+          "C₃H₆O₂",
+          "C₄H₈O₂",
+          "C₄H₁₀O",
+          "C₅H₁₀O₂"
+        ],
+        "key": "e648d05851231a690cf47392bb9b8946d0130b778d2062c88e2ff0beedf32099",
+        "sourceNumber": 98,
+        "correctIndex": 1
+      },
+      {
+        "question": "Which statement about a catalyst in hydrogenation of an alkene is correct?",
+        "choices": [
+          "It provides a surface that helps hydrogen add to the double bond",
+          "It becomes the main carbon-containing product",
+          "It changes the alkene into an alcohol by itself",
+          "It increases the number of carbon atoms in the product"
+        ],
+        "key": "39e9299960accca1af68410029f65fad2feef11278167e4ae8d8338a8dc49618",
+        "sourceNumber": 99,
+        "correctIndex": 0
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "f0275af97615bf2229f56a9268a293e18b1bfe1f4d26977a9df2fa103582ff55",
+      "sourceQuestionNumbers": [
+        29,
+        82,
+        52,
+        7,
+        65,
+        97,
+        55,
+        79,
+        10,
+        22,
+        90,
+        18,
+        35,
+        67,
+        59,
+        39,
+        19,
+        76,
+        87,
+        51,
+        41,
+        80,
+        34,
+        63,
+        11,
+        2,
+        99,
+        46,
+        75,
+        27,
+        26,
+        49,
+        62,
+        4,
+        84,
+        98,
+        77,
+        53,
+        38,
+        13,
+        58,
+        94,
+        24,
+        5,
+        72,
+        95,
+        42,
+        68,
+        20,
+        14,
+        85,
+        6,
+        57,
+        25,
+        66,
+        96,
+        1,
+        28,
+        54,
+        70,
+        44,
+        73,
+        15,
+        33,
+        83,
+        81,
+        32,
+        61,
+        40,
+        9,
+        45,
+        16,
+        71,
+        89,
+        21,
+        86,
+        47,
+        3,
+        30,
+        69,
+        36,
+        12,
+        56,
+        64,
+        92,
+        37,
+        88,
+        17,
+        48,
+        74,
+        43,
+        8,
+        93,
+        78,
+        31,
+        50,
+        60,
+        23,
+        91
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
