@@ -1323,6 +1323,239 @@
       "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
     }
   },
-  "parts": [],
+  "parts": [
+    {
+      "part": 1,
+      "directory": "part-01",
+      "sourceQuestionNumbers": [
+        29,
+        82
+      ],
+      "count": 2,
+      "durationSeconds": 69,
+      "sha256": "036d3bea3498b9cedc8a68692d0ab7588b3e932a399dd93cd4c8a5aadb957c93",
+      "manifest": {
+        "title": "99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+        "sourceTitle": "99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-25T08:01:03.243106+00:00",
+        "sourceContentHash": "828b8fc6d7f9f2b1b18eca4058ed626adcb29fc1932d0583defc6b0c80f0ff09",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 8051720780,
+          "sha": "e87a7605fc476d7b5811b5fc1088ccedcaa1b1e3",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-25T08:01:03.243106+00:00",
+          "url": "https://mcqs-base-dg7xj8rtz-as-projects-10921176.vercel.app",
+          "publisherRunId": 45571869603
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 69,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "Which statement best describes structural isomers?",
+            "choices": [
+              "They have the same molecular formula but different atom connectivity",
+              "They have different molecular formulas but identical connectivity",
+              "They differ only in the number of neutrons",
+              "They must have different functional groups"
+            ],
+            "correctIndex": 0,
+            "key": "bea2e5119a032dd504cfab604566a5a70afdcc7e638e3414b78fc660484fdd7d",
+            "sourceNumber": 29
+          },
+          {
+            "question": "How does the formula of a monocyclic cycloalkane with one ring compare with that of an acyclic alkane with the same number of carbons?",
+            "choices": [
+              "It has two fewer hydrogen atoms",
+              "It has two more hydrogen atoms",
+              "It has the same number of hydrogen atoms",
+              "It has one fewer carbon atom"
+            ],
+            "correctIndex": 0,
+            "key": "cf91d10b727b33da492d78c5530fa62d7168728c9eed6d34366baf4f9cd6dd02",
+            "sourceNumber": 82
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 22,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 23,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 24,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 25,
+            "duration": 7,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 32,
+            "duration": 24,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 56,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 57,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 58,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 59,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 64,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 1,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            29,
+            82
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-organic-chemistry-part-01-036d3bea3498b9ce.mp4",
+        "videoSha256": "036d3bea3498b9cedc8a68692d0ab7588b3e932a399dd93cd4c8a5aadb957c93",
+        "assetId": 790636319
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 1/5 | Q29, 82 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 29, 82\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 1/5 | Q29, 82 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 29, 82\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 1/5 | Q29, 82 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 29, 82\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 1/5 | Q29, 82 | 99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 29, 82\n99 NAT-IE-Style Organic Chemistry MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
+          "format": "short"
+        }
+      }
+    }
+  ],
   "thinkingSeconds": 3
 }
