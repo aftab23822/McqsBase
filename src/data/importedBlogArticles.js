@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nat-ie-equilibrium-kinetics": {
+    title: "100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+    excerpt:
+      "Practise equilibrium expressions, reaction shifts, rate laws, and reaction mechanisms with 100 original questions and concise reasoning.",
+    category: "Subject Guide",
+    date: "2026-11-26",
+    readTime: "32 min",
+    content: null,
+    body: readImportedBlogBody("nat-ie-equilibrium-kinetics")
+  },
   "nat-ie-organic-chemistry": {
     title: "99 NAT-IE-Style Organic Chemistry MCQs with Explanations",
     excerpt:
