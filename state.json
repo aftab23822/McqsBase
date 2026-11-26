@@ -1326,7 +1326,7 @@
       "verifiedPublications": 10
     },
     "nat-ie-equilibrium-kinetics": {
-      "status": "scheduling",
+      "status": "scheduled",
       "ledger": "batches/nat-ie-equilibrium-kinetics.json",
       "createdAt": "2026-11-26T07:51:08.732230+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
