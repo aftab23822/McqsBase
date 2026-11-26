@@ -2530,7 +2530,11 @@
       },
       "uploadIntent": {
         "filename": "nat-ie-equilibrium-kinetics-part-05-90971668327a151d.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "f8cf1641-48c0-4308-81ce-16f6784857ca",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/xwAkfb1PPr.mp4"
       }
     }
   ],
