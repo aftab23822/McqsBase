@@ -1310,7 +1310,7 @@
       "verifiedPublications": 10
     },
     "nat-ie-organic-chemistry": {
-      "status": "scheduled",
+      "status": "publication-needs-attention",
       "ledger": "batches/nat-ie-organic-chemistry.json",
       "createdAt": "2026-11-25T08:01:03.533493+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-organic-chemistry",
@@ -1322,8 +1322,8 @@
         "2026-11-25T19:49:00+05:00",
         "2026-11-25T21:58:00+05:00"
       ],
-      "published": 0,
-      "verifiedPublications": 0
+      "published": 15,
+      "verifiedPublications": 10
     },
     "nat-ie-equilibrium-kinetics": {
       "status": "ready",
