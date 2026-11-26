@@ -1278,7 +1278,7 @@
       "verifiedPublications": 15
     },
     "mdcat-ecology-evolution-mcqs": {
-      "status": "scheduled",
+      "status": "provider-published",
       "ledger": "batches/mdcat-ecology-evolution-mcqs.json",
       "createdAt": "2026-11-23T07:03:02.126806+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/mdcat-ecology-evolution-mcqs",
@@ -1290,8 +1290,8 @@
         "2026-11-23T19:35:00+05:00",
         "2026-11-23T21:59:00+05:00"
       ],
-      "published": 19,
-      "verifiedPublications": 14
+      "published": 20,
+      "verifiedPublications": 15
     },
     "nts-reading-comprehension": {
       "status": "publication-needs-attention",
