@@ -2032,6 +2032,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 4,
+      "directory": "part-04",
+      "sourceQuestionNumbers": [
+        88,
+        66
+      ],
+      "count": 2,
+      "durationSeconds": 76,
+      "sha256": "6db7192392be9b38b310e4cc29a0c8b9686a6f867739c6622b81f3812e87f833",
+      "manifest": {
+        "title": "100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+        "sourceTitle": "100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-26T07:51:08.437747+00:00",
+        "sourceContentHash": "3bb052f58aa562eaef1f98ae80a06e9675472a2027718b026bb9664a7ff3a806",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 8079485791,
+          "sha": "c9a3a7dbfd0c46e70cf234454f22116c2ab7d679",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-26T07:51:08.437747+00:00",
+          "url": "https://mcqs-base-31hw1bpcb-as-projects-10921176.vercel.app",
+          "publisherRunId": 45777704410
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 76,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "For a second-order reaction in A, [A]0 = 0.50 M and k = 2.0 L·mol−1·s−1. What is [A] after 1.0 s?",
+            "choices": [
+              "0.10 M",
+              "0.20 M",
+              "0.25 M",
+              "0.40 M"
+            ],
+            "correctIndex": 2,
+            "key": "87410be2bea9d3c4992a8bde202d588b8ce47ee41cc8d66e50ddc53376c35ae7",
+            "sourceNumber": 88
+          },
+          {
+            "question": "For a reaction mixture at equilibrium, a reactant is suddenly removed. Immediately after removal, before the reaction responds, what generally happens to Q?",
+            "choices": [
+              "Q increases if the reactant is in its denominator",
+              "Q decreases if the reactant is in its denominator",
+              "Q stays at K in all cases",
+              "K changes immediately"
+            ],
+            "correctIndex": 0,
+            "key": "f032c774a8bc4b98c57f6ed2c0c6ee34bdd60bb913e712e7e199c09427e3ccb2",
+            "sourceNumber": 66
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 26,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 26,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 27,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 28,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 29,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 34,
+            "duration": 27,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 61,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 62,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 63,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 64,
+            "duration": 7,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 71,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 4,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            88,
+            66
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-equilibrium-kinetics-part-04-6db7192392be9b38.mp4",
+        "videoSha256": "6db7192392be9b38b310e4cc29a0c8b9686a6f867739c6622b81f3812e87f833",
+        "assetId": 794848688
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 4/5 | Q88, 66 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+          "text": "Part 4/5 · Source questions 88, 66\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 4/5 | Q88, 66 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+          "text": "Part 4/5 · Source questions 88, 66\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 4/5 | Q88, 66 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+          "text": "Part 4/5 · Source questions 88, 66\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 4/5 | Q88, 66 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+          "text": "Part 4/5 · Source questions 88, 66\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
