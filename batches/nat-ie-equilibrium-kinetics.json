@@ -1800,6 +1800,238 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        48,
+        46
+      ],
+      "count": 2,
+      "durationSeconds": 63,
+      "sha256": "52a82a371daaf2e86cf3e122a617c63e148d17310c54e7eb94dc379630396c38",
+      "manifest": {
+        "title": "100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+        "sourceTitle": "100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-26T07:51:08.437747+00:00",
+        "sourceContentHash": "3bb052f58aa562eaef1f98ae80a06e9675472a2027718b026bb9664a7ff3a806",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 8079485791,
+          "sha": "c9a3a7dbfd0c46e70cf234454f22116c2ab7d679",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-26T07:51:08.437747+00:00",
+          "url": "https://mcqs-base-31hw1bpcb-as-projects-10921176.vercel.app",
+          "publisherRunId": 45777704410
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 63,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "For the equilibrium 2A(g) ⇌ B(g), which change can alter the equilibrium constant without changing the reaction equation?",
+            "choices": [
+              "Changing the temperature",
+              "Adding B",
+              "Removing A",
+              "Adding a catalyst"
+            ],
+            "correctIndex": 0,
+            "key": "06412c25158f0365008b8d7059f97db36847e36f8755c51df07d30d63ef0d62b",
+            "sourceNumber": 48
+          },
+          {
+            "question": "For a gas reaction with Δn = 0, which statement is valid at a given temperature?",
+            "choices": [
+              "Kp and Kc have the same numerical value",
+              "Kp is always greater than Kc",
+              "Kp is always less than Kc",
+              "Kp must equal zero"
+            ],
+            "correctIndex": 0,
+            "key": "9668dc2e059b62162decf2fee36ed00746ac0d8a4c86992c148f21ec874ce438",
+            "sourceNumber": 46
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 19,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 19,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 20,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 21,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 22,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 26,
+            "duration": 23,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 49,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 50,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 51,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 52,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 58,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            48,
+            46
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-equilibrium-kinetics-part-03-52a82a371daaf2e8.mp4",
+        "videoSha256": "52a82a371daaf2e86cf3e122a617c63e148d17310c54e7eb94dc379630396c38",
+        "assetId": 794845805
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q48, 46 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 48, 46\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q48, 46 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 48, 46\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q48, 46 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 48, 46\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q48, 46 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+          "text": "Part 3/5 · Source questions 48, 46\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
