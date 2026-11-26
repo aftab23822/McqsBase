@@ -1575,7 +1575,131 @@
       "studioMedia": {
         "id": "666c414c-c99e-4ada-b949-c644f6f790df",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/QhMK9AGKwa.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 1/5 | Q39, 62 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 39, 62\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+              "image": [
+                {
+                  "id": "666c414c-c99e-4ada-b949-c644f6f790df",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/QhMK9AGKwa.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 39, 62\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "666c414c-c99e-4ada-b949-c644f6f790df",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/QhMK9AGKwa.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 1/5 | Q39, 62 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanat",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 39, 62\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "666c414c-c99e-4ada-b949-c644f6f790df",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/QhMK9AGKwa.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 1/5 | Q39, 62 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 1/5 · Source questions 39, 62\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "666c414c-c99e-4ada-b949-c644f6f790df",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/QhMK9AGKwa.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-26T13:13:00+05:00"
     },
     {
       "part": 2,
@@ -1815,7 +1939,131 @@
       "studioMedia": {
         "id": "b322b380-9cd0-4971-8f32-a4542e292050",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/y2ti36U9HH.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 2/5 | Q3, 84 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 3, 84\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+              "image": [
+                {
+                  "id": "b322b380-9cd0-4971-8f32-a4542e292050",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/y2ti36U9HH.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 3, 84\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "b322b380-9cd0-4971-8f32-a4542e292050",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/y2ti36U9HH.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 2/5 | Q3, 84 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanati",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 3, 84\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "b322b380-9cd0-4971-8f32-a4542e292050",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/y2ti36U9HH.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 2/5 | Q3, 84 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 2/5 · Source questions 3, 84\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "b322b380-9cd0-4971-8f32-a4542e292050",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/y2ti36U9HH.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-26T15:24:00+05:00"
     },
     {
       "part": 3,
@@ -2055,7 +2303,131 @@
       "studioMedia": {
         "id": "59914cf4-7b48-4fa6-80b2-b5a10870819d",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/TPlPmAgLAr.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 3/5 | Q48, 46 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 48, 46\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+              "image": [
+                {
+                  "id": "59914cf4-7b48-4fa6-80b2-b5a10870819d",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/TPlPmAgLAr.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 48, 46\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "59914cf4-7b48-4fa6-80b2-b5a10870819d",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/TPlPmAgLAr.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 3/5 | Q48, 46 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanat",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 48, 46\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "59914cf4-7b48-4fa6-80b2-b5a10870819d",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/TPlPmAgLAr.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 3/5 | Q48, 46 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 3/5 · Source questions 48, 46\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "59914cf4-7b48-4fa6-80b2-b5a10870819d",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/TPlPmAgLAr.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-26T17:35:00+05:00"
     },
     {
       "part": 4,
@@ -2295,7 +2667,131 @@
       "studioMedia": {
         "id": "26542a57-8019-40e6-b104-ee71c4ae043f",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/iDaSSgMXZj.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 4/5 | Q88, 66 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 88, 66\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+              "image": [
+                {
+                  "id": "26542a57-8019-40e6-b104-ee71c4ae043f",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/iDaSSgMXZj.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 88, 66\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "26542a57-8019-40e6-b104-ee71c4ae043f",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/iDaSSgMXZj.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 4/5 | Q88, 66 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanat",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 88, 66\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "26542a57-8019-40e6-b104-ee71c4ae043f",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/iDaSSgMXZj.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 4/5 | Q88, 66 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 4/5 · Source questions 88, 66\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "26542a57-8019-40e6-b104-ee71c4ae043f",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/iDaSSgMXZj.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-26T19:46:00+05:00"
     },
     {
       "part": 5,
@@ -2535,7 +3031,131 @@
       "studioMedia": {
         "id": "f8cf1641-48c0-4308-81ce-16f6784857ca",
         "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/xwAkfb1PPr.mp4"
-      }
+      },
+      "payloads": {
+        "facebook": {
+          "integration": {
+            "id": "cmvwb4faa021yro9dgcj8vlww"
+          },
+          "settings": {
+            "__type": "facebook",
+            "post_type": "post",
+            "title": "Part 5/5 | Q1, 27 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations"
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 1, 27\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+              "image": [
+                {
+                  "id": "f8cf1641-48c0-4308-81ce-16f6784857ca",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/xwAkfb1PPr.mp4"
+                }
+              ]
+            },
+            {
+              "content": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+              "image": [],
+              "delay": 1
+            }
+          ]
+        },
+        "instagram": {
+          "integration": {
+            "id": "cmvwbbtq00220ro9du35l1wrs"
+          },
+          "settings": {
+            "__type": "instagram-standalone",
+            "post_type": "post",
+            "is_trial_reel": false
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 1, 27\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "f8cf1641-48c0-4308-81ce-16f6784857ca",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/xwAkfb1PPr.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "tiktok": {
+          "integration": {
+            "id": "cmvwbcule0222ro9dhocbic4w"
+          },
+          "settings": {
+            "__type": "tiktok",
+            "title": "Part 5/5 | Q1, 27 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanati",
+            "content_posting_method": "DIRECT_POST",
+            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "duet": false,
+            "stitch": false,
+            "comment": true,
+            "autoAddMusic": "no",
+            "brand_organic_toggle": true,
+            "brand_content_toggle": false,
+            "disclose": true,
+            "video_made_with_ai": true
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 1, 27\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "f8cf1641-48c0-4308-81ce-16f6784857ca",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/xwAkfb1PPr.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        "youtube": {
+          "integration": {
+            "id": "cmvwb2nny021wro9d0gxp3wm4"
+          },
+          "settings": {
+            "__type": "youtube",
+            "title": "Part 5/5 | Q1, 27 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+            "type": "public",
+            "selfDeclaredMadeForKids": "no",
+            "tags": [
+              {
+                "value": "MCQsBase",
+                "label": "MCQsBase"
+              },
+              {
+                "value": "MCQs",
+                "label": "MCQs"
+              },
+              {
+                "value": "NTS",
+                "label": "NTS"
+              },
+              {
+                "value": "EntryTest",
+                "label": "EntryTest"
+              },
+              {
+                "value": "Shorts",
+                "label": "Shorts"
+              }
+            ]
+          },
+          "value": [
+            {
+              "content": "Part 5/5 · Source questions 1, 27\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+              "image": [
+                {
+                  "id": "f8cf1641-48c0-4308-81ce-16f6784857ca",
+                  "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/xwAkfb1PPr.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "scheduledAt": "2026-11-26T21:57:00+05:00"
     }
   ],
   "thinkingSeconds": 3,
@@ -2614,5 +3234,12 @@
         "sha256": "90971668327a151d31e2a51160f1c64344fccf0e18e931a06b84e0350b0f3676"
       }
     ]
-  }
+  },
+  "schedule": [
+    "2026-11-26T13:13:00+05:00",
+    "2026-11-26T15:24:00+05:00",
+    "2026-11-26T17:35:00+05:00",
+    "2026-11-26T19:46:00+05:00",
+    "2026-11-26T21:57:00+05:00"
+  ]
 }
