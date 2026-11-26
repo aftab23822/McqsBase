@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "nat-ie-equilibrium-kinetics",
+  "createdAt": "2026-11-26T07:51:08.732230+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nat-ie-equilibrium-kinetics",
+    "title": "100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+    "url": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 8079485791,
+      "sha": "c9a3a7dbfd0c46e70cf234454f22116c2ab7d679",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-26T07:51:08.437747+00:00",
+      "url": "https://mcqs-base-31hw1bpcb-as-projects-10921176.vercel.app",
+      "publisherRunId": 45777704410
+    },
+    "fetchedAt": "2026-11-26T07:51:08.437747+00:00",
+    "contentHash": "3bb052f58aa562eaef1f98ae80a06e9675472a2027718b026bb9664a7ff3a806",
+    "questions": [
+      {
+        "question": "For the reaction N2(g) + 3H2(g) ⇌ 2NH3(g), which is the correct Kc expression?",
+        "choices": [
+          "[NH3]^2/([N2][H2]^3)",
+          "[N2][H2]^3/[NH3]^2",
+          "[NH3]/([N2][H2])",
+          "[NH3]^2/([N2]^2[H2]^3)"
+        ],
+        "key": "0e49a796770052175c45fdc655dc9608bf7efb5ab7b050d51d3c9695ebe4207d",
+        "sourceNumber": 1,
+        "correctIndex": 0
+      },
+      {
+        "question": "For CaCO3(s) ⇌ CaO(s) + CO2(g), what is Kp?",
+        "choices": [
+          "P(CO2)",
+          "P(CaO)P(CO2)/P(CaCO3)",
+          "1/P(CO2)",
+          "P(CO2)^2"
+        ],
+        "key": "c41ea57e986a4b3c0b1fef81e32923c5f74b8fa3afea60947ae5a547d94bcdb3",
+        "sourceNumber": 2,
+        "correctIndex": 0
+      },
+      {
+        "question": "For H2(g) + I2(g) ⇌ 2HI(g), equilibrium concentrations are [H2] = 0.20 M, [I2] = 0.20 M, and [HI] = 0.80 M. Find Kc.",
+        "choices": [
+          "4",
+          "16",
+          "0.25",
+          "8"
+        ],
+        "key": "727832f0378121e4c6ae827b9fe4c802e7a61b4009b5dc2dd58e435560d4d921",
+        "sourceNumber": 3,
+        "correctIndex": 1
+      },
+      {
+        "question": "If the reaction A ⇌ B has Kc = 5, what is Kc for B ⇌ A at the same temperature?",
+        "choices": [
+          "5",
+          "0.2",
+          "25",
+          "−5"
+        ],
+        "key": "0115e32c25b64ea07dc82e73cd4d80038aecefb8cbbf638b5f67651787fc002c",
+        "sourceNumber": 4,
+        "correctIndex": 1
+      },
+      {
+        "question": "For A ⇌ B, Kc = 4. What is Kc for 2A ⇌ 2B?",
+        "choices": [
+          "2",
+          "4",
+          "8",
+          "16"
+        ],
+        "key": "c3955542d3ba35219f8ba18fee020c989c9e96365821366b42ee314035bc78b1",
+        "sourceNumber": 5,
+        "correctIndex": 3
+      },
+      {
+        "question": "A reaction is written as A + B ⇌ C with Kc = 3. What is Kc for 2A + 2B ⇌ 2C?",
+        "choices": [
+          "1.5",
+          "3",
+          "6",
+          "9"
+        ],
+        "key": "1ed504bade79e8ae3087f7163081103184d87b39fefeaa26c17ba6b0995a1389",
+        "sourceNumber": 6,
+        "correctIndex": 3
+      },
+      {
+        "question": "For N2O4(g) ⇌ 2NO2(g), which relationship connects Kp and Kc?",
+        "choices": [
+          "Kp = Kc(RT)^1",
+          "Kp = Kc(RT)^−1",
+          "Kp = Kc",
+          "Kp = Kc(RT)^2"
+        ],
+        "key": "4b35d6b550a2355623fef233c4744edefefd6ed09baab2c7ceac8482dec54d10",
+        "sourceNumber": 7,
+        "correctIndex": 0
+      },
+      {
+        "question": "For H2(g) + Cl2(g) ⇌ 2HCl(g), what is the relationship between Kp and Kc?",
+        "choices": [
+          "Kp = Kc(RT)",
+          "Kp = Kc/(RT)",
+          "Kp = Kc",
+          "Kp = Kc(RT)^2"
+        ],
+        "key": "f8230be3529061dd6bded6c3800e7c4381f057477f78a56abc22784691328845",
+        "sourceNumber": 8,
+        "correctIndex": 2
+      },
+      {
+        "question": "For A(g) ⇌ 2B(g), Kc = 2.0 at a specified temperature. If R = 0.0821 L·atm·mol−1·K−1 and T = 300 K, approximately what is Kp?",
+        "choices": [
+          "0.081",
+          "2.0",
+          "49",
+          "738"
+        ],
+        "key": "f568f69f33d0c965c4bc0fb2297f186778bff47bea1d2ef15c19a763bf2eac67",
+        "sourceNumber": 9,
+        "correctIndex": 2
+      },
+      {
+        "question": "For a reaction mixture, Qc = 0.5 and Kc = 2.0. Which net change will occur as equilibrium is approached?",
+        "choices": [
+          "Reactants form products",
+          "Products form reactants",
+          "No net reaction occurs",
+          "The value of Kc decreases"
+        ],
+        "key": "119c235f642b9b50c11cef2037a29b08afdb10c5afad84b4a94adf33a45ae3cb",
+        "sourceNumber": 10,
+        "correctIndex": 0
+      },
+      {
+        "question": "For a reaction mixture, Qc = 8 and Kc = 3. Which direction is favoured initially?",
+        "choices": [
+          "Forward, toward products",
+          "Reverse, toward reactants",
+          "Neither direction",
+          "The equilibrium constant doubles"
+        ],
+        "key": "d1caab29bd386239b5d1f18929be68204be4f4a20558ff9d97931be267f6743a",
+        "sourceNumber": 11,
+        "correctIndex": 1
+      },
+      {
+        "question": "At equilibrium for A(g) ⇌ B(g), which statement is correct?",
+        "choices": [
+          "The forward and reverse reaction rates are equal",
+          "The concentrations of A and B must be equal",
+          "Both reaction rates are zero",
+          "The reaction has stopped permanently"
+        ],
+        "key": "686cfd88dc0df5080f789c28fb384a0122aa21eb8aca875483b37ccc34e8870c",
+        "sourceNumber": 12,
+        "correctIndex": 0
+      },
+      {
+        "question": "For A(g) ⇌ 2B(g), the system is at equilibrium in a container. What is the immediate effect of adding more A at constant temperature and volume?",
+        "choices": [
+          "The reaction shifts toward B",
+          "The reaction shifts toward A",
+          "K increases",
+          "The equilibrium composition remains unchanged"
+        ],
+        "key": "d9555a49a49a625e87c95b8c9598f8a31cf9d8d7de9670118710369d85a35eb9",
+        "sourceNumber": 13,
+        "correctIndex": 0
+      },
+      {
+        "question": "For N2(g) + 3H2(g) ⇌ 2NH3(g), what is the effect of decreasing the volume at constant temperature?",
+        "choices": [
+          "Shift toward NH3",
+          "Shift toward N2 and H2",
+          "No shift because all substances are gases",
+          "Increase Kc"
+        ],
+        "key": "bd93e96db9d0b5d025a2a755716e89a787e7911e1798b3398239cffe6afe63da",
+        "sourceNumber": 14,
+        "correctIndex": 0
+      },
+      {
+        "question": "For H2(g) + I2(g) ⇌ 2HI(g), what is the effect of reducing the container volume at constant temperature?",
+        "choices": [
+          "Shift toward HI",
+          "Shift toward H2 and I2",
+          "No shift in composition",
+          "Kp becomes smaller"
+        ],
+        "key": "df88fa2219584c651f48655a91ccd8a43c161b602e3de809acec125887bad2a7",
+        "sourceNumber": 15,
+        "correctIndex": 2
+      },
+      {
+        "question": "For an exothermic forward reaction A(g) ⇌ B(g) + heat, what does raising the temperature do to the equilibrium position?",
+        "choices": [
+          "Shifts it toward B",
+          "Shifts it toward A",
+          "Does not affect it",
+          "Makes the catalyst less effective"
+        ],
+        "key": "9e3890bf8afff0580d0698d48ebdc95827d966f5f43c47053d8ed72906d208f9",
+        "sourceNumber": 16,
+        "correctIndex": 1
+      },
+      {
+        "question": "For an endothermic forward reaction, how does increasing temperature affect K?",
+        "choices": [
+          "K increases",
+          "K decreases",
+          "K is unchanged",
+          "K becomes zero"
+        ],
+        "key": "a998853343ecb4cc6cb630022fc609e739f852ce10dd73d2ddde1a77d6b6b545",
+        "sourceNumber": 17,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the effect of adding a catalyst to a reversible reaction already at equilibrium?",
+        "choices": [
+          "It changes K and shifts toward products",
+          "It changes K and shifts toward reactants",
+          "It speeds both directions without changing K or the equilibrium composition",
+          "It stops the reverse reaction"
+        ],
+        "key": "743119c2645db5e0d818c50135c178cd8495c3e8905ae989d6a7c2f8c0e2eab5",
+        "sourceNumber": 18,
+        "correctIndex": 2
+      },
+      {
+        "question": "For PCl5(g) ⇌ PCl3(g) + Cl2(g), what happens to the equilibrium position when an inert gas is added at constant volume and temperature?",
+        "choices": [
+          "Shifts toward PCl3 and Cl2",
+          "Shifts toward PCl5",
+          "No shift in composition",
+          "K increases"
+        ],
+        "key": "55db1e75bf33ae96bbe9733ebf033fccb23d7832a6e07cbd3c31555edbd5bfdf",
+        "sourceNumber": 19,
+        "correctIndex": 2
+      },
+      {
+        "question": "For PCl5(g) ⇌ PCl3(g) + Cl2(g), what is the usual ideal-gas effect of adding inert gas at constant total pressure?",
+        "choices": [
+          "Shifts toward PCl3 and Cl2",
+          "Shifts toward PCl5",
+          "No shift because inert gas never matters",
+          "K decreases"
+        ],
+        "key": "b21c3ff2307f6129ee71e939eac8da57cb2b34e26361264b588b0d7209092141",
+        "sourceNumber": 20,
+        "correctIndex": 0
+      },
+      {
+        "question": "For N2(g) + 3H2(g) ⇌ 2NH3(g), what is the effect of removing NH3 at constant temperature?",
+        "choices": [
+          "Shifts toward NH3 formation",
+          "Shifts toward N2 and H2 formation",
+          "K decreases",
+          "No shift"
+        ],
+        "key": "c0831bfc13eadb2a85035fd790b7bf821bb2f51eca123ed91133753f2a53d97e",
+        "sourceNumber": 21,
+        "correctIndex": 0
+      },
+      {
+        "question": "For a specified reaction at fixed temperature, which change alters the numerical value of K?",
+        "choices": [
+          "Adding a catalyst",
+          "Increasing reactant concentration",
+          "Decreasing the volume",
+          "Changing the temperature"
+        ],
+        "key": "82dee7a59c96ef8cc62456d251f82eef2f594854d04ea74440d661b13a45194f",
+        "sourceNumber": 22,
+        "correctIndex": 3
+      },
+      {
+        "question": "For A(g) ⇌ B(g), the initial concentrations are [A] = 1.0 M and [B] = 0. At equilibrium Kc = 4. What is [A]eq?",
+        "choices": [
+          "0.20 M",
+          "0.25 M",
+          "0.50 M",
+          "0.80 M"
+        ],
+        "key": "5c50668b76d521e158144f699ee2368d38d6dd2b8347f046d0e63667b5daa66e",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "For A(g) ⇌ B(g), initial [A] = 1.0 M, [B] = 0, and Kc = 1. What is [B] at equilibrium?",
+        "choices": [
+          "0.25 M",
+          "0.50 M",
+          "0.75 M",
+          "1.0 M"
+        ],
+        "key": "4e7d8d216a2fe04209a79c38c0f741e0c7ecff546f795e3c29f58ab5556a54dc",
+        "sourceNumber": 24,
+        "correctIndex": 1
+      },
+      {
+        "question": "For A(g) ⇌ 2B(g), initially [A] = 1.0 M and [B] = 0. If 0.20 M of A reacts, what is [B] formed?",
+        "choices": [
+          "0.10 M",
+          "0.20 M",
+          "0.40 M",
+          "0.80 M"
+        ],
+        "key": "68cc4713a2ada460943fdd556be678adbb73475b57022f4a996c8e724c6bffc5",
+        "sourceNumber": 25,
+        "correctIndex": 2
+      },
+      {
+        "question": "For A(g) + B(g) ⇌ C(g), equilibrium concentrations are [A] = 0.20 M, [B] = 0.30 M, and [C] = 0.60 M. Find Kc.",
+        "choices": [
+          "10",
+          "20",
+          "30",
+          "40"
+        ],
+        "key": "df9d4467b694e23b212bb2f9888ec3001bf6f94e426ed54466673ba3b7f9424a",
+        "sourceNumber": 26,
+        "correctIndex": 0
+      },
+      {
+        "question": "For 2A(g) ⇌ B(g), equilibrium concentrations are [A] = 0.50 M and [B] = 0.25 M. Find Kc.",
+        "choices": [
+          "0.5",
+          "1.0",
+          "2.0",
+          "4.0"
+        ],
+        "key": "4f9ea4816bba4f6107fa6653460f5418f2ed42fbd9bbef9822dfdf0cb71eba3d",
+        "sourceNumber": 27,
+        "correctIndex": 1
+      },
+      {
+        "question": "For A(g) + B(g) ⇌ 2C(g), equilibrium concentrations are [A] = 0.20 M, [B] = 0.50 M, and [C] = 0.40 M. What is Kc?",
+        "choices": [
+          "0.8",
+          "1.6",
+          "3.2",
+          "6.4"
+        ],
+        "key": "6071cca98833fecb05777dec76f7597a48aa48ad8c684d148f5e57f6ed84348a",
+        "sourceNumber": 28,
+        "correctIndex": 1
+      },
+      {
+        "question": "For A(g) ⇌ B(g), equilibrium partial pressures are PA = 0.40 atm and PB = 1.20 atm. What is Kp?",
+        "choices": [
+          "0.33",
+          "0.80",
+          "1.6",
+          "3.0"
+        ],
+        "key": "70576dfcb654957d638bfc7998e9d29bdd7daa5a161a44e3e149bf0103f2835f",
+        "sourceNumber": 29,
+        "correctIndex": 3
+      },
+      {
+        "question": "For 2A(g) ⇌ B(g), equilibrium partial pressures are PA = 0.50 atm and PB = 0.20 atm. Find Kp.",
+        "choices": [
+          "0.4",
+          "0.8",
+          "1.25",
+          "2.5"
+        ],
+        "key": "ed098d5ea88cea3ba066c9101c5215daf02755992e28c04ecac86c600a27b82a",
+        "sourceNumber": 30,
+        "correctIndex": 1
+      },
+      {
+        "question": "For A(g) ⇌ B(g), Kc = 2. Initially [A] = 0.60 M and [B] = 0.30 M. What is the initial direction of net reaction?",
+        "choices": [
+          "Forward, toward B",
+          "Reverse, toward A",
+          "Already at equilibrium",
+          "Cannot be determined without a catalyst"
+        ],
+        "key": "667f83bbd1257eb5c1042fcca4dfc44941d6e40011bc6bcf5b830c409486d93f",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "For 2A(g) ⇌ B(g), Kc = 4. Initially [A] = 0.50 M and [B] = 0.50 M. What is the initial net direction?",
+        "choices": [
+          "Forward, toward B",
+          "Reverse, toward A",
+          "At equilibrium",
+          "K must increase first"
+        ],
+        "key": "b91d680504a973c4446878e6094410d844d0bb5d19f46df83107bcb31eb2bd30",
+        "sourceNumber": 32,
+        "correctIndex": 1
+      },
+      {
+        "question": "For A(g) + B(g) ⇌ C(g), Kc = 2. Initially [A] = 1.0 M, [B] = 1.0 M, and [C] = 4.0 M. What is the initial net direction?",
+        "choices": [
+          "Forward, toward C",
+          "Reverse, toward A and B",
+          "Already at equilibrium",
+          "No reaction because K is positive"
+        ],
+        "key": "2a38bd02fa38734b3ca600be5e33d8fb5328e604b4fbb806c8a8ded51829652a",
+        "sourceNumber": 33,
+        "correctIndex": 1
+      },
+      {
+        "question": "For 2SO2(g) + O2(g) ⇌ 2SO3(g), what pressure change favours SO3 at constant temperature?",
+        "choices": [
+          "Increasing pressure by reducing volume",
+          "Decreasing pressure by increasing volume",
+          "Adding an inert gas at constant volume",
+          "Adding a catalyst"
+        ],
+        "key": "c2809d4bdfc91cf6394005df6f78243c0b99fb63e2e3e99dcf99a069cfd6d985",
+        "sourceNumber": 34,
+        "correctIndex": 0
+      },
+      {
+        "question": "For a heterogeneous equilibrium involving a pure solid and gases, what is the usual reason the solid is omitted from K?",
+        "choices": [
+          "Its activity is treated as constant",
+          "Its concentration is always zero",
+          "Solids cannot react reversibly",
+          "The solid's coefficient must be one"
+        ],
+        "key": "2b61ebec751af598d164081681bf485b0b30d142f4a9a3dd2a1c353586ba4b89",
+        "sourceNumber": 35,
+        "correctIndex": 0
+      },
+      {
+        "question": "For H2O(l) ⇌ H2O(g) in a closed system containing liquid water, what is Kp for the vaporization equilibrium?",
+        "choices": [
+          "P(H2O)",
+          "1/P(H2O)",
+          "P(H2O)^2",
+          "Zero"
+        ],
+        "key": "6f3be81f041327dda79e90805054865ff52e7e1c8e2c95e7005fe83704847b5b",
+        "sourceNumber": 36,
+        "correctIndex": 0
+      },
+      {
+        "question": "For a reaction with Kc = 1.0 × 10^−6 at a particular temperature, which is the best interpretation?",
+        "choices": [
+          "Equilibrium composition favours reactants",
+          "Equilibrium composition favours products",
+          "The reaction cannot occur",
+          "The forward and reverse rates are unequal at equilibrium"
+        ],
+        "key": "84305432511403842acb6a1bbb84eebceb7e63414fbee3a2495f716ad4d9890e",
+        "sourceNumber": 37,
+        "correctIndex": 0
+      },
+      {
+        "question": "For a reaction with Kc = 1.0 × 10^6, which inference is justified at equilibrium?",
+        "choices": [
+          "Products are favoured relative to reactants",
+          "Reactants are favoured relative to products",
+          "The reaction is instantaneous",
+          "The forward rate constant equals 10^6 s−1"
+        ],
+        "key": "7fe063da10bc3f598dbdfbb3ccf9f72cefc2e0c6a315e720d271d46a8ad10ff7",
+        "sourceNumber": 38,
+        "correctIndex": 0
+      },
+      {
+        "question": "For an exothermic reaction, a catalyst is added while the system is at equilibrium. What happens to its equilibrium constant?",
+        "choices": [
+          "It increases",
+          "It decreases",
+          "It remains unchanged",
+          "It becomes one"
+        ],
+        "key": "31fa594526d17a4b7ecc8fc9cfd965fa1147cb11d57d6a83c3d49118e11df9f4",
+        "sourceNumber": 39,
+        "correctIndex": 2
+      },
+      {
+        "question": "For A(g) + B(g) ⇌ 2C(g), adding a small amount of A while holding temperature and volume fixed changes Q how immediately?",
+        "choices": [
+          "Q decreases",
+          "Q increases",
+          "Q is unchanged",
+          "Q becomes equal to K automatically"
+        ],
+        "key": "f25a7179d9db6baf3fa9c4e147056dc576979c508787ace532cb5a35df5cbb79",
+        "sourceNumber": 40,
+        "correctIndex": 0
+      },
+      {
+        "question": "For A(g) ⇌ 2B(g), the equilibrium mixture is compressed at constant temperature. Which statement best describes the immediate change in Qp?",
+        "choices": [
+          "Qp increases because PA rises more strongly in its squared product term",
+          "Qp decreases because reactant pressure rises",
+          "Qp stays constant for every gas reaction",
+          "Kp changes to match the new pressure"
+        ],
+        "key": "9860c9f16928817e5eda53c67002cd9ba113c8efda7ddbf9eb47b193cfc44841",
+        "sourceNumber": 41,
+        "correctIndex": 0
+      },
+      {
+        "question": "For A(g) ⇌ B(g), compression at constant temperature multiplies both partial pressures by the same factor. What happens to Qp?",
+        "choices": [
+          "It increases",
+          "It decreases",
+          "It remains unchanged",
+          "It becomes zero"
+        ],
+        "key": "4825702c381788658b8498b2903042c1a78dfc13fd8546bcb17a00ad5eeca1b3",
+        "sourceNumber": 42,
+        "correctIndex": 2
+      },
+      {
+        "question": "For a system at equilibrium, a small disturbance changes Q but not K. Which subsequent event restores equilibrium?",
+        "choices": [
+          "Reaction proceeds until Q again equals K",
+          "K changes until it equals Q",
+          "Both reaction rates become zero",
+          "The catalyst is consumed"
+        ],
+        "key": "b46c7b11b41dd0a80cd640b1587470be2e5d74d3674ac4abcc4a6d891310c05a",
+        "sourceNumber": 43,
+        "correctIndex": 0
+      },
+      {
+        "question": "For A(g) + B(g) ⇌ C(g), initially [A] = [B] = 1.0 M and [C] = 0. At equilibrium, [C] = 0.40 M. What is Kc?",
+        "choices": [
+          "0.40",
+          "0.67",
+          "1.11",
+          "2.50"
+        ],
+        "key": "88072698f54f2872a0b54dd9a44f5e299a26e39ff781d06293a28f3c906a5f47",
+        "sourceNumber": 44,
+        "correctIndex": 2
+      },
+      {
+        "question": "For A(g) ⇌ 2B(g), initial [A] = 1.0 M and [B] = 0. At equilibrium [A] = 0.70 M. What is Kc?",
+        "choices": [
+          "0.18",
+          "0.36",
+          "0.60",
+          "1.20"
+        ],
+        "key": "87f25b2343c79e11baf1b45020e6963982c04a4a98fc73e868e4f6ff436e020b",
+        "sourceNumber": 45,
+        "correctIndex": 1
+      },
+      {
+        "question": "For a gas reaction with Δn = 0, which statement is valid at a given temperature?",
+        "choices": [
+          "Kp and Kc have the same numerical value",
+          "Kp is always greater than Kc",
+          "Kp is always less than Kc",
+          "Kp must equal zero"
+        ],
+        "key": "9668dc2e059b62162decf2fee36ed00746ac0d8a4c86992c148f21ec874ce438",
+        "sourceNumber": 46,
+        "correctIndex": 0
+      },
+      {
+        "question": "For a reaction at equilibrium, the forward rate is 0.12 mol·L−1·s−1. What is the reverse rate at that instant?",
+        "choices": [
+          "0",
+          "0.06 mol·L−1·s−1",
+          "0.12 mol·L−1·s−1",
+          "It must be greater than 0.12"
+        ],
+        "key": "9b11b8801b856c7bb162e1ea1df1285e525512f7ac17a8b09bc6ea703e655c98",
+        "sourceNumber": 47,
+        "correctIndex": 2
+      },
+      {
+        "question": "For the equilibrium 2A(g) ⇌ B(g), which change can alter the equilibrium constant without changing the reaction equation?",
+        "choices": [
+          "Changing the temperature",
+          "Adding B",
+          "Removing A",
+          "Adding a catalyst"
+        ],
+        "key": "06412c25158f0365008b8d7059f97db36847e36f8755c51df07d30d63ef0d62b",
+        "sourceNumber": 48,
+        "correctIndex": 0
+      },
+      {
+        "question": "For A(g) ⇌ B(g), Kc = 2 at a fixed temperature. If [A]eq = 0.30 M, what is [B]eq?",
+        "choices": [
+          "0.15 M",
+          "0.30 M",
+          "0.60 M",
+          "1.5 M"
+        ],
+        "key": "d15e804285944aa3693d120ef1e65768d4c13be2436d13b15a3ddf4e76d722ce",
+        "sourceNumber": 49,
+        "correctIndex": 2
+      },
+      {
+        "question": "For 2A(g) ⇌ B(g), Kc = 4.0 and [A]eq = 0.50 M. What is [B]eq?",
+        "choices": [
+          "0.25 M",
+          "0.50 M",
+          "1.0 M",
+          "2.0 M"
+        ],
+        "key": "420bc15f5c8587ba8436c8be3d8e1b0d8c8942875d1c0360b43ae57b76b02d9f",
+        "sourceNumber": 50,
+        "correctIndex": 2
+      },
+      {
+        "question": "For A(g) + B(g) ⇌ 2C(g), Kc = 9 and equilibrium [A] = [B] = 0.20 M. What is [C]eq?",
+        "choices": [
+          "0.20 M",
+          "0.40 M",
+          "0.60 M",
+          "0.90 M"
+        ],
+        "key": "79374c2d0826d9d3d15d4dbc68449cdfb366c7f1280b3b2a1c93bbf1aa637311",
+        "sourceNumber": 51,
+        "correctIndex": 2
+      },
+      {
+        "question": "For A(g) ⇌ B(g) + heat, which temperature change raises the amount of A at the new equilibrium?",
+        "choices": [
+          "Increase temperature",
+          "Decrease temperature",
+          "Add catalyst",
+          "Add an inert gas at constant volume"
+        ],
+        "key": "f31bb2da661650866e9c3304f5cd6fd97ecda4d615e096415580044d43ea1452",
+        "sourceNumber": 52,
+        "correctIndex": 0
+      },
+      {
+        "question": "At a fixed temperature, an equilibrium reaction is diluted by adding solvent. Which principle best predicts the shift for an aqueous reaction?",
+        "choices": [
+          "The side with more dissolved particles is generally favoured by dilution",
+          "The side with fewer dissolved particles is always favoured",
+          "Dilution changes K directly",
+          "Dilution has no possible effect"
+        ],
+        "key": "2881605a16c5a6a70d8ea721988fcfaf4bc78b3c93844fd1c05727ed5fba7b9c",
+        "sourceNumber": 53,
+        "correctIndex": 0
+      },
+      {
+        "question": "For the gas equilibrium 2A(g) ⇌ B(g), Kp is defined using partial pressures. If all reacting-gas partial pressures are instantaneously doubled at the same temperature, what happens to Qp?",
+        "choices": [
+          "It is multiplied by 1/2",
+          "It is multiplied by 2",
+          "It is unchanged",
+          "It is multiplied by 4"
+        ],
+        "key": "886ef527a0327868f2713c3145cd6031e1771ce3499a421225bbb2c1aebadc34",
+        "sourceNumber": 54,
+        "correctIndex": 0
+      },
+      {
+        "question": "For a reaction with K = 1 at a specified temperature, what can be concluded about the equilibrium mixture?",
+        "choices": [
+          "The reaction quotient expression evaluates to one at equilibrium",
+          "Reactant and product concentrations must all be equal",
+          "The reaction is exactly 50% complete",
+          "The forward and reverse rate constants are equal"
+        ],
+        "key": "a4699ee78b1ed9a8ab96def3ec55b18af621f40253fe5d0685821cff16469098",
+        "sourceNumber": 55,
+        "correctIndex": 0
+      },
+      {
+        "question": "For a reaction with Kc = 0.25, the initial Qc is 0.10. Which conclusion follows?",
+        "choices": [
+          "Net forward reaction occurs",
+          "Net reverse reaction occurs",
+          "The mixture is at equilibrium",
+          "Kc rises to 0.10"
+        ],
+        "key": "474a4102c9eaeaaf1627abcb31e8a390c6870eaec9eda861ebae0c5e882f398d",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "For a reaction with Kc = 0.25, the initial Qc is 0.50. Which conclusion follows?",
+        "choices": [
+          "Net forward reaction occurs",
+          "Net reverse reaction occurs",
+          "The mixture is at equilibrium",
+          "The reaction stops"
+        ],
+        "key": "a6332131f0f3dbffeae8a688fd07938f960978d26c58eecd186d31fcdd098c82",
+        "sourceNumber": 57,
+        "correctIndex": 1
+      },
+      {
+        "question": "For 2A(g) ⇌ 2B(g), Kc = 9. What is Kc for A(g) ⇌ B(g)?",
+        "choices": [
+          "3",
+          "9",
+          "18",
+          "81"
+        ],
+        "key": "df4cb8b730725f95803c2986a36d8e65e9474708481ba9af58e2642c1869ac2c",
+        "sourceNumber": 58,
+        "correctIndex": 0
+      },
+      {
+        "question": "For A(g) + B(g) ⇌ C(g), the reaction is reversed and then all coefficients are doubled. If the original Kc = 2, what is the new Kc?",
+        "choices": [
+          "0.25",
+          "0.5",
+          "2",
+          "4"
+        ],
+        "key": "c45dc0701bd86085eb27992f8306a213ad90037bb89e0e3b96b1088acfb5708a",
+        "sourceNumber": 59,
+        "correctIndex": 0
+      },
+      {
+        "question": "For an equilibrium with a pure solid reactant and gaseous products, increasing the amount of the solid while some is already present will usually do what to the equilibrium composition?",
+        "choices": [
+          "Cause a shift toward products",
+          "Cause a shift toward reactants",
+          "Cause no shift",
+          "Change K"
+        ],
+        "key": "0dab57feae989eb2224c1a782ff27cdbebb1a2d05b179cf68e5c19bae7d82c8c",
+        "sourceNumber": 60,
+        "correctIndex": 2
+      },
+      {
+        "question": "For the equilibrium AgCl(s) ⇌ Ag+(aq) + Cl−(aq), which is the appropriate K expression?",
+        "choices": [
+          "[Ag+][Cl−]",
+          "[AgCl]/([Ag+][Cl−])",
+          "[Ag+]/[Cl−]",
+          "[AgCl]"
+        ],
+        "key": "aaf97cc3e02d9443695cf3f4c2ef34b6ef2e040397560df665d80d9fab9a8a13",
+        "sourceNumber": 61,
+        "correctIndex": 0
+      },
+      {
+        "question": "For A(g) + B(g) ⇌ 2C(g), Kc = 4. At a moment, [A] = 0.50 M, [B] = 0.50 M, and [C] = 0.50 M. What is the direction of net change?",
+        "choices": [
+          "Forward, toward C",
+          "Reverse, toward A and B",
+          "At equilibrium",
+          "Cannot determine because concentrations are equal"
+        ],
+        "key": "6a3c27707fee6c92afd7e4664d585f7010540e36e15c764894b177f2c5e75aa5",
+        "sourceNumber": 62,
+        "correctIndex": 1
+      },
+      {
+        "question": "For the equilibrium N2O4(g) ⇌ 2NO2(g), increasing volume at constant temperature favours which side?",
+        "choices": [
+          "NO2 side",
+          "N2O4 side",
+          "Neither side because the reaction is reversible",
+          "The side with lower pressure coefficient"
+        ],
+        "key": "f7dfb69331df751bbb4a986ab0c8b1d9eaa85f535c0af4c51f33d58ac466dab4",
+        "sourceNumber": 63,
+        "correctIndex": 0
+      },
+      {
+        "question": "For the exothermic equilibrium 2SO2(g) + O2(g) ⇌ 2SO3(g) + heat, what is the combined qualitative effect of cooling and increasing pressure?",
+        "choices": [
+          "Both favour SO3",
+          "Cooling favours SO3, pressure favours reactants",
+          "Cooling favours reactants, pressure favours SO3",
+          "Both favour reactants"
+        ],
+        "key": "bfd7cc76fbc26f8f5042f5175d477edbee01f34bf28f95d52438553e88ff2536",
+        "sourceNumber": 64,
+        "correctIndex": 0
+      },
+      {
+        "question": "For a balanced reaction, what does a very large equilibrium constant alone fail to tell you?",
+        "choices": [
+          "Whether products are favoured at equilibrium",
+          "The reaction's rate or how quickly equilibrium is reached",
+          "The value of the reaction quotient at equilibrium",
+          "The relative product-to-reactant activity ratio"
+        ],
+        "key": "c3eaeab9c84059f9ef463833bc90ff666cc620cba2dbffb6c5c38ad4f3127745",
+        "sourceNumber": 65,
+        "correctIndex": 1
+      },
+      {
+        "question": "For a reaction mixture at equilibrium, a reactant is suddenly removed. Immediately after removal, before the reaction responds, what generally happens to Q?",
+        "choices": [
+          "Q increases if the reactant is in its denominator",
+          "Q decreases if the reactant is in its denominator",
+          "Q stays at K in all cases",
+          "K changes immediately"
+        ],
+        "key": "f032c774a8bc4b98c57f6ed2c0c6ee34bdd60bb913e712e7e199c09427e3ccb2",
+        "sourceNumber": 66,
+        "correctIndex": 0
+      },
+      {
+        "question": "For 2A(g) ⇌ B(g), Kc = 1.0. A mixture has [A] = 2.0 M and [B] = 4.0 M. What is true?",
+        "choices": [
+          "Qc = 1 and the mixture is at equilibrium",
+          "Qc = 2 and it shifts forward",
+          "Qc = 4 and it shifts reverse",
+          "Qc = 0.25 and it shifts forward"
+        ],
+        "key": "48ed785a469b8ad1758fad981fe6245cd257a0099019b9191d2f7069d655decc",
+        "sourceNumber": 67,
+        "correctIndex": 0
+      },
+      {
+        "question": "For an ideal-gas equilibrium, what does a catalyst do to the time required to attain equilibrium?",
+        "choices": [
+          "Usually shortens it by speeding both directions",
+          "Lengthens it by lowering the forward rate",
+          "Has no effect on either reaction rate",
+          "Changes the final K but not the time"
+        ],
+        "key": "217978be03a583ab285d9dec123b280398336e6a95ab4933327a6ccc9c50eb81",
+        "sourceNumber": 68,
+        "correctIndex": 0
+      },
+      {
+        "question": "For the reaction 2NO2(g) ⇌ N2O4(g), the forward reaction is exothermic. Which changes both favour N2O4?",
+        "choices": [
+          "Cooling and compression",
+          "Heating and compression",
+          "Cooling and expansion",
+          "Heating and expansion"
+        ],
+        "key": "c9b1b3893590170c551d9069ed5048719dbaf4c902b9b154f1199de233556cfe",
+        "sourceNumber": 69,
+        "correctIndex": 0
+      },
+      {
+        "question": "An elementary reaction has rate law rate = k[A]^2[B]. What is its overall order?",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "key": "f6783b8cef48ebef986768e208cb4e7f059f12b7c3191064b16fa48d3e04bd27",
+        "sourceNumber": 70,
+        "correctIndex": 2
+      },
+      {
+        "question": "For rate = k[A]^2, by what factor does the rate change when [A] is tripled at constant temperature?",
+        "choices": [
+          "3",
+          "6",
+          "9",
+          "27"
+        ],
+        "key": "4e12c58cdcd9a85214ab3290052df5b03b75727d40d3c7ae7bcb298137edf87c",
+        "sourceNumber": 71,
+        "correctIndex": 2
+      },
+      {
+        "question": "For rate = k[A][B], [A] is doubled while [B] is halved. What happens to the rate?",
+        "choices": [
+          "It doubles",
+          "It halves",
+          "It is unchanged",
+          "It becomes four times larger"
+        ],
+        "key": "f22374bff5eb0efb88c05424e8337fe64fc5ba093945755de0fa79d0457abf14",
+        "sourceNumber": 72,
+        "correctIndex": 2
+      },
+      {
+        "question": "For rate = k[A]^0[B], what is the order with respect to A?",
+        "choices": [
+          "Zero",
+          "One",
+          "Two",
+          "Cannot be determined"
+        ],
+        "key": "6fdb7431aa07bd1f8c7bb012234b3782b73d5562bdce710a7182942aec004434",
+        "sourceNumber": 73,
+        "correctIndex": 0
+      },
+      {
+        "question": "In an experiment, doubling [A] while keeping [B] fixed doubles the rate. What is the order with respect to A?",
+        "choices": [
+          "Zero",
+          "One",
+          "Two",
+          "Three"
+        ],
+        "key": "2936e9cf93436fe7fc15a3941367609d64018da3f90b3868b8a7c222ee363406",
+        "sourceNumber": 74,
+        "correctIndex": 1
+      },
+      {
+        "question": "Doubling [A] at fixed [B] increases the rate by a factor of four. What is the order with respect to A?",
+        "choices": [
+          "Zero",
+          "One",
+          "Two",
+          "Four"
+        ],
+        "key": "4e52f1b28716390f70691df8905e77db509dc0454a00ff2af7267563405c8fc6",
+        "sourceNumber": 75,
+        "correctIndex": 2
+      },
+      {
+        "question": "Tripling [A] at fixed concentrations of other reactants leaves the measured rate unchanged. What is the order with respect to A?",
+        "choices": [
+          "Zero",
+          "One",
+          "Two",
+          "Three"
+        ],
+        "key": "fd6dec97b44e8eb9cd479a9b1a746b3714393cf774a7ad0b5d4a35a640c7a5be",
+        "sourceNumber": 76,
+        "correctIndex": 0
+      },
+      {
+        "question": "For rate = k[A][B]^2, what is the overall order?",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "key": "1204533dd6f6f92b7bdcdf88e65e85d75357a0ed7037c28082ac08f716d30074",
+        "sourceNumber": 77,
+        "correctIndex": 2
+      },
+      {
+        "question": "For rate = k[A]^2, rate is 0.080 mol·L−1·s−1 when [A] = 0.20 mol·L−1. What is k?",
+        "choices": [
+          "0.20 L·mol−1·s−1",
+          "1.0 L·mol−1·s−1",
+          "2.0 L·mol−1·s−1",
+          "4.0 s−1"
+        ],
+        "key": "06cc42c72e20e567653b349b8c10f5322ee1c201dfc1a3c32cf405139670c1cf",
+        "sourceNumber": 78,
+        "correctIndex": 2
+      },
+      {
+        "question": "For rate = k[A], k = 0.25 s−1 and [A] = 0.40 mol·L−1. What is the rate?",
+        "choices": [
+          "0.10 mol·L−1·s−1",
+          "0.16 mol·L−1·s−1",
+          "0.65 mol·L−1·s−1",
+          "1.6 mol·L−1·s−1"
+        ],
+        "key": "f2f9dfd97f2e6f4084c722cc3a03aa961960ac3df772f8cee9ddb5e0797985cb",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "For rate = k[A][B], k = 3.0 L·mol−1·s−1, [A] = 0.20 M, and [B] = 0.50 M. Find the rate.",
+        "choices": [
+          "0.03 M·s−1",
+          "0.30 M·s−1",
+          "1.5 M·s−1",
+          "3.0 M·s−1"
+        ],
+        "key": "3ef731d70412787f9c90ca0cffffe0741bd5baac6bca1004747e452bb124739e",
+        "sourceNumber": 80,
+        "correctIndex": 1
+      },
+      {
+        "question": "For a first-order reaction, which plot is linear with slope −k?",
+        "choices": [
+          "[A] versus time",
+          "ln[A] versus time",
+          "1/[A] versus time",
+          "Rate versus [A]^2"
+        ],
+        "key": "4563f51a7d0b43722c42f5da908ce17a25e39c06c655f331abfc93e13af91991",
+        "sourceNumber": 81,
+        "correctIndex": 1
+      },
+      {
+        "question": "For a zero-order reaction, which plot is linear with slope −k?",
+        "choices": [
+          "[A] versus time",
+          "ln[A] versus time",
+          "1/[A] versus time",
+          "Rate versus time squared"
+        ],
+        "key": "d586e36b48d86635d937a4b07e0201f2c8dea3fea660f7eef3ec1121857324fc",
+        "sourceNumber": 82,
+        "correctIndex": 0
+      },
+      {
+        "question": "For a second-order reaction in A, which plot is linear with slope +k?",
+        "choices": [
+          "[A] versus time",
+          "ln[A] versus time",
+          "1/[A] versus time",
+          "Rate versus time"
+        ],
+        "key": "2df1ca61d18406149e81d4d66dc535677f6ae94d41f6bd237945144229ef64d9",
+        "sourceNumber": 83,
+        "correctIndex": 2
+      },
+      {
+        "question": "A first-order reaction has k = 0.20 min−1. What is its half-life?",
+        "choices": [
+          "1.39 min",
+          "3.47 min",
+          "5.00 min",
+          "10.0 min"
+        ],
+        "key": "625815c9bf649b016dd309c53c638c73371c5169758b66629481c373dcb2f3c8",
+        "sourceNumber": 84,
+        "correctIndex": 1
+      },
+      {
+        "question": "A first-order reactant has an initial concentration of 0.80 M. What concentration remains after three half-lives?",
+        "choices": [
+          "0.40 M",
+          "0.20 M",
+          "0.10 M",
+          "0.025 M"
+        ],
+        "key": "10e4919ad4a96b06863df0ab96cc7564816b37a412af1115b647581a1cba108b",
+        "sourceNumber": 85,
+        "correctIndex": 2
+      },
+      {
+        "question": "A first-order reaction has a half-life of 8 minutes. What fraction of the reactant remains after 24 minutes?",
+        "choices": [
+          "1/2",
+          "1/4",
+          "1/8",
+          "1/16"
+        ],
+        "key": "210e6ce79c2cdd99f4e18349d41d61d5c3048936153f3588b6bf80de9ec7454d",
+        "sourceNumber": 86,
+        "correctIndex": 2
+      },
+      {
+        "question": "A zero-order reaction has [A]0 = 0.60 M and k = 0.05 M·s−1. What is [A] after 4.0 s, assuming the reaction has not stopped?",
+        "choices": [
+          "0.20 M",
+          "0.40 M",
+          "0.50 M",
+          "0.80 M"
+        ],
+        "key": "eb1f11ea5d90f596a254ac4bf3776ed632b1df355591d440a5830e4a48aeb9d3",
+        "sourceNumber": 87,
+        "correctIndex": 1
+      },
+      {
+        "question": "For a second-order reaction in A, [A]0 = 0.50 M and k = 2.0 L·mol−1·s−1. What is [A] after 1.0 s?",
+        "choices": [
+          "0.10 M",
+          "0.20 M",
+          "0.25 M",
+          "0.40 M"
+        ],
+        "key": "87410be2bea9d3c4992a8bde202d588b8ce47ee41cc8d66e50ddc53376c35ae7",
+        "sourceNumber": 88,
+        "correctIndex": 2
+      },
+      {
+        "question": "For a first-order reaction, [A]0 = 0.50 M, [A] = 0.25 M after 10 s. What is k?",
+        "choices": [
+          "0.0347 s−1",
+          "0.0693 s−1",
+          "0.10 s−1",
+          "0.20 s−1"
+        ],
+        "key": "a688b3b2cee48d20629878c3165fa4074266e586774176f8cc2bd5081e9aafbb",
+        "sourceNumber": 89,
+        "correctIndex": 1
+      },
+      {
+        "question": "For a zero-order reaction, [A]0 = 0.80 M and [A] = 0.50 M after 6 s. What is k?",
+        "choices": [
+          "0.020 M·s−1",
+          "0.050 M·s−1",
+          "0.080 M·s−1",
+          "0.30 M·s−1"
+        ],
+        "key": "646f0eae3ed3e7a083a707f2fdcc7e0a0ac3524f4e0f136fba7e8de67f62a657",
+        "sourceNumber": 90,
+        "correctIndex": 1
+      },
+      {
+        "question": "For a second-order reaction in A, [A]0 = 0.20 M and [A] = 0.10 M after 5 s. What is k?",
+        "choices": [
+          "0.5 L·mol−1·s−1",
+          "1.0 L·mol−1·s−1",
+          "2.0 L·mol−1·s−1",
+          "5.0 L·mol−1·s−1"
+        ],
+        "key": "c3092aeb1fb524f9c3be355a3c1d4f68117184c28b825d35de7984b65a552016",
+        "sourceNumber": 91,
+        "correctIndex": 1
+      },
+      {
+        "question": "What are the units of k for a first-order reaction?",
+        "choices": [
+          "s−1",
+          "mol·L−1·s−1",
+          "L·mol−1·s−1",
+          "L2·mol−2·s−1"
+        ],
+        "key": "23c0df6745b395b7f2cea5bfc414eecd259237bfa9b9111b6808198eb6168879",
+        "sourceNumber": 92,
+        "correctIndex": 0
+      },
+      {
+        "question": "What are the units of k for a zero-order reaction when concentration is in mol·L−1 and time in seconds?",
+        "choices": [
+          "s−1",
+          "mol·L−1·s−1",
+          "L·mol−1·s−1",
+          "mol2·L−2·s−1"
+        ],
+        "key": "7595899ba5214f0df3349df7b7a163e6a2500c6510f74297bab4cbf709224aea",
+        "sourceNumber": 93,
+        "correctIndex": 1
+      },
+      {
+        "question": "What are the units of k for an overall third-order rate law when concentration is mol·L−1 and time is seconds?",
+        "choices": [
+          "s−1",
+          "L·mol−1·s−1",
+          "L2·mol−2·s−1",
+          "mol·L−1·s−1"
+        ],
+        "key": "e3015e403aea1fe1b6ef1f3a906ee0360c2f7d2a2715e4816496b332f82f43a7",
+        "sourceNumber": 94,
+        "correctIndex": 2
+      },
+      {
+        "question": "For an elementary step A + B → products, what rate law follows from its molecularity?",
+        "choices": [
+          "rate = k[A][B]",
+          "rate = k[A] + [B]",
+          "rate = k[A]^2[B]",
+          "rate = k[B] only"
+        ],
+        "key": "d1e1652719eb0cfa7a031183cc7685b177e1c7e63efa67edf86a625f1a0ebdb2",
+        "sourceNumber": 95,
+        "correctIndex": 0
+      },
+      {
+        "question": "For an elementary unimolecular step A → products, what is its rate law?",
+        "choices": [
+          "rate = k[A]",
+          "rate = k[A]^2",
+          "rate = k",
+          "rate = k[A][products]"
+        ],
+        "key": "e15dde906d679b83baaf231a98d3e9992888d5f6f5f82fa0b9726bcc92332a04",
+        "sourceNumber": 96,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a proposed mechanism, the slow elementary step is A + B → intermediate. Under the usual elementary-step assumption, what rate law is predicted?",
+        "choices": [
+          "rate = k[A][B]",
+          "rate = k[A] + [B]",
+          "rate = k[intermediate]",
+          "rate = k[A]^2[B]"
+        ],
+        "key": "129f3086974251f8faf31a8299199dd2115e1545f145d33e72934ee7eaaa2e79",
+        "sourceNumber": 97,
+        "correctIndex": 0
+      },
+      {
+        "question": "The slow step in a mechanism is 2A → intermediate, an elementary step. What rate law follows for that step?",
+        "choices": [
+          "rate = k[A]",
+          "rate = k[A]^2",
+          "rate = k[intermediate]",
+          "rate = k"
+        ],
+        "key": "ba67e24812b591f93e223229f172852ee30b513b1710fb484c20b16005ae4000",
+        "sourceNumber": 98,
+        "correctIndex": 1
+      },
+      {
+        "question": "A catalyst increases reaction rate primarily by which means?",
+        "choices": [
+          "Providing an alternative pathway with lower activation energy",
+          "Increasing the reaction enthalpy",
+          "Changing the equilibrium constant",
+          "Increasing the amount of product at equilibrium"
+        ],
+        "key": "dd32afa027b4baaceb92df00f40b5091e9f1e3df220c92e6aadd817a8ad0edd7",
+        "sourceNumber": 99,
+        "correctIndex": 0
+      },
+      {
+        "question": "At the same temperature, a catalyst is added to a reaction mixture. Which quantity does it directly lower?",
+        "choices": [
+          "Activation energy for the catalysed pathway",
+          "Equilibrium constant",
+          "Standard reaction enthalpy",
+          "Reactant concentration"
+        ],
+        "key": "2b1f8869aab44f2c039d2a0e3e72bf3792d26acee66a4123e0e68d8bf84b2fba",
+        "sourceNumber": 100,
+        "correctIndex": 0
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "d7c8f9c3ec1422e48d80115ed2ea3ec6dbf494f2c38a845f24063f2abdc25b04",
+      "sourceQuestionNumbers": [
+        39,
+        62,
+        3,
+        84,
+        48,
+        46,
+        88,
+        66,
+        1,
+        27,
+        81,
+        37,
+        8,
+        51,
+        74,
+        32,
+        93,
+        20,
+        70,
+        52,
+        54,
+        25,
+        86,
+        6,
+        69,
+        56,
+        90,
+        15,
+        38,
+        65,
+        89,
+        19,
+        59,
+        78,
+        30,
+        60,
+        34,
+        11,
+        67,
+        95,
+        58,
+        75,
+        23,
+        14,
+        91,
+        87,
+        12,
+        47,
+        73,
+        35,
+        31,
+        50,
+        85,
+        2,
+        71,
+        43,
+        26,
+        17,
+        77,
+        100,
+        29,
+        83,
+        49,
+        13,
+        61,
+        24,
+        94,
+        76,
+        18,
+        55,
+        7,
+        96,
+        63,
+        42,
+        33,
+        57,
+        16,
+        98,
+        80,
+        40,
+        72,
+        28,
+        41,
+        92,
+        9,
+        10,
+        44,
+        64,
+        99,
+        22,
+        4,
+        45,
+        68,
+        82,
+        36,
+        79,
+        97,
+        21,
+        53,
+        5
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
