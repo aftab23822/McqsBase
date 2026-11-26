@@ -1336,6 +1336,239 @@
       "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
     }
   },
-  "parts": [],
+  "parts": [
+    {
+      "part": 1,
+      "directory": "part-01",
+      "sourceQuestionNumbers": [
+        39,
+        62
+      ],
+      "count": 2,
+      "durationSeconds": 68,
+      "sha256": "47c2e51d0f582fcf5274e983a06b0ae8b83f5dc81f271b84fa2e40fdf00432b0",
+      "manifest": {
+        "title": "100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+        "sourceTitle": "100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-26T07:51:08.437747+00:00",
+        "sourceContentHash": "3bb052f58aa562eaef1f98ae80a06e9675472a2027718b026bb9664a7ff3a806",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 8079485791,
+          "sha": "c9a3a7dbfd0c46e70cf234454f22116c2ab7d679",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-26T07:51:08.437747+00:00",
+          "url": "https://mcqs-base-31hw1bpcb-as-projects-10921176.vercel.app",
+          "publisherRunId": 45777704410
+        },
+        "status": "local-preview-only",
+        "count": 2,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 68,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "For an exothermic reaction, a catalyst is added while the system is at equilibrium. What happens to its equilibrium constant?",
+            "choices": [
+              "It increases",
+              "It decreases",
+              "It remains unchanged",
+              "It becomes one"
+            ],
+            "correctIndex": 2,
+            "key": "31fa594526d17a4b7ecc8fc9cfd965fa1147cb11d57d6a83c3d49118e11df9f4",
+            "sourceNumber": 39
+          },
+          {
+            "question": "For A(g) + B(g) ⇌ 2C(g), Kc = 4. At a moment, [A] = 0.50 M, [B] = 0.50 M, and [C] = 0.50 M. What is the direction of net change?",
+            "choices": [
+              "Forward, toward C",
+              "Reverse, toward A and B",
+              "At equilibrium",
+              "Cannot determine because concentrations are equal"
+            ],
+            "correctIndex": 1,
+            "key": "6a3c27707fee6c92afd7e4664d585f7010540e36e15c764894b177f2c5e75aa5",
+            "sourceNumber": 62
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 20,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 20,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 21,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 22,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 23,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 28,
+            "duration": 27,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 55,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 56,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 57,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 58,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 63,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0010.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 1,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            39,
+            62
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nat-ie-equilibrium-kinetics-part-01-47c2e51d0f582fcf.mp4",
+        "videoSha256": "47c2e51d0f582fcf5274e983a06b0ae8b83f5dc81f271b84fa2e40fdf00432b0",
+        "assetId": 794839514
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 1/5 | Q39, 62 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 39, 62\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 1/5 | Q39, 62 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 39, 62\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 1/5 | Q39, 62 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 39, 62\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 1/5 | Q39, 62 | 100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+          "text": "Part 1/5 · Source questions 39, 62\n100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations\n2 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+          "format": "short"
+        }
+      }
+    }
+  ],
   "thinkingSeconds": 3
 }
