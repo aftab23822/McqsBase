@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nat-ie-equilibrium-kinetics",
   "createdAt": "2026-11-26T07:51:08.732230+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "nat-ie-equilibrium-kinetics",
     "title": "100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
@@ -2498,5 +2498,81 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "nat-ie-equilibrium-kinetics",
+    "sourceUrl": "https://www.mcqsbase.com/blog/nat-ie-equilibrium-kinetics",
+    "sourceTitle": "100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
+    "sourceContentHash": "3bb052f58aa562eaef1f98ae80a06e9675472a2027718b026bb9664a7ff3a806",
+    "productionDeployment": {
+      "id": 8079485791,
+      "sha": "c9a3a7dbfd0c46e70cf234454f22116c2ab7d679",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-26T07:51:08.437747+00:00",
+      "url": "https://mcqs-base-31hw1bpcb-as-projects-10921176.vercel.app",
+      "publisherRunId": 45777704410
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          39,
+          62
+        ],
+        "count": 2,
+        "durationSeconds": 68,
+        "sha256": "47c2e51d0f582fcf5274e983a06b0ae8b83f5dc81f271b84fa2e40fdf00432b0"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          3,
+          84
+        ],
+        "count": 2,
+        "durationSeconds": 66,
+        "sha256": "1d5bbbf5717113b36c6b7a47ec04aecffcccb4cc7da92c94655349706d802977"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          48,
+          46
+        ],
+        "count": 2,
+        "durationSeconds": 63,
+        "sha256": "52a82a371daaf2e86cf3e122a617c63e148d17310c54e7eb94dc379630396c38"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          88,
+          66
+        ],
+        "count": 2,
+        "durationSeconds": 76,
+        "sha256": "6db7192392be9b38b310e4cc29a0c8b9686a6f867739c6622b81f3812e87f833"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          1,
+          27
+        ],
+        "count": 2,
+        "durationSeconds": 66,
+        "sha256": "90971668327a151d31e2a51160f1c64344fccf0e18e931a06b84e0350b0f3676"
+      }
+    ]
+  }
 }
