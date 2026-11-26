@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "mdcat-ecology-evolution-mcqs",
   "createdAt": "2026-11-23T07:03:02.126806+00:00",
-  "status": "scheduled",
+  "status": "provider-published",
   "package": {
     "slug": "mdcat-ecology-evolution-mcqs",
     "title": "100 Ecology and Evolution MCQs for MDCAT-Style Biology Practice",
@@ -1741,16 +1741,16 @@
           "integrationId": "cmvwbcule0222ro9dhocbic4w"
         },
         "youtube": {
-          "status": "QUEUE",
+          "status": "PUBLISHED",
           "attemptedAt": "2026-11-23T07:07:49.080243+00:00",
           "postId": "cmwsxbojr0teglmaue1khzzuk",
-          "url": null,
-          "providerUrl": null,
-          "providerReleaseId": null,
-          "providerStatus": "QUEUE",
+          "url": "https://www.youtube.com/watch?v=5X8l2K9GWmM",
+          "providerUrl": "https://www.youtube.com/watch?v=5X8l2K9GWmM",
+          "providerReleaseId": "5X8l2K9GWmM",
+          "providerStatus": "PUBLISHED",
           "providerError": "YouTube's daily upload quota is exhausted for today, please reschedule this post for a later time.",
-          "publicUrlVerified": false,
-          "verification": "provider-status-only",
+          "publicUrlVerified": true,
+          "verification": "provider-post-url",
           "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
           "quotaRecovery": {
             "status": "scheduled",
