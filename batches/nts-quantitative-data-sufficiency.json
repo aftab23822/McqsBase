@@ -1983,6 +1983,189 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 4,
+      "directory": "part-04",
+      "sourceQuestionNumbers": [
+        44
+      ],
+      "count": 1,
+      "durationSeconds": 56,
+      "sha256": "36ba8c6e4c794c1ab9bb557ef09cd992b7faf99664909db5910631165569a5cd",
+      "manifest": {
+        "title": "100 NTS-Style Quantitative Data Sufficiency MCQs with Explanations",
+        "sourceTitle": "100 NTS-Style Quantitative Data Sufficiency MCQs with Explanations",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-data-sufficiency",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-27T07:51:24.763989+00:00",
+        "sourceContentHash": "1f3710c7230d553ef8ff10d884b8532daea85f3b4c0fb9daf2dc3192738709c4",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 8104603710,
+          "sha": "93ff6f9851c39224895c131b60c9d1ab193347a9",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-27T07:51:24.763989+00:00",
+          "url": "https://mcqs-base-2n4dburkm-as-projects-10921176.vercel.app",
+          "publisherRunId": 45960565365
+        },
+        "status": "local-preview-only",
+        "count": 1,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 56,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "What is the cost per kilogram of a mixture made from 2 kg of tea at Rs 300 per kg and 3 kg at Rs 400 per kg? I. The quantities and prices are as stated. II. The total cost is Rs 1,800 and the total mass is 5 kg.",
+            "choices": [
+              "Statement I alone is sufficient, but Statement II alone is not.",
+              "Statement II alone is sufficient, but Statement I alone is not.",
+              "Both statements together are sufficient, but neither alone is sufficient.",
+              "Each statement alone is sufficient."
+            ],
+            "correctIndex": 3,
+            "key": "48e705f5269e30fa8ebb6e61f1dfaad7f25472c806802653c6b258564982f545",
+            "sourceNumber": 44
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 42,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 42,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 43,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 44,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 45,
+            "duration": 6,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 51,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0005.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 4,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            44
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#MathQuiz",
+          "#QuantitativeAptitude",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nts-quantitative-data-sufficiency-part-04-36ba8c6e4c794c1a.mp4",
+        "videoSha256": "36ba8c6e4c794c1ab9bb557ef09cd992b7faf99664909db5910631165569a5cd",
+        "assetId": 799527761
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 4/5 | Q44 | 100 NTS-Style Quantitative Data Sufficiency MCQs with Explanations",
+          "text": "Part 4/5 · Source question 44\n100 NTS-Style Quantitative Data Sufficiency MCQs with Explanations\n1 question. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MathQuiz",
+            "#QuantitativeAptitude",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-data-sufficiency",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-data-sufficiency",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 4/5 | Q44 | 100 NTS-Style Quantitative Data Sufficiency MCQs with Explanations",
+          "text": "Part 4/5 · Source question 44\n100 NTS-Style Quantitative Data Sufficiency MCQs with Explanations\n1 question. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-data-sufficiency\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MathQuiz",
+            "#QuantitativeAptitude",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-data-sufficiency",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-data-sufficiency",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 4/5 | Q44 | 100 NTS-Style Quantitative Data Sufficiency MCQs with Explanations",
+          "text": "Part 4/5 · Source question 44\n100 NTS-Style Quantitative Data Sufficiency MCQs with Explanations\n1 question. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-data-sufficiency\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MathQuiz",
+            "#QuantitativeAptitude",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-data-sufficiency",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-data-sufficiency",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 4/5 | Q44 | 100 NTS-Style Quantitative Data Sufficiency MCQs with Explanations",
+          "text": "Part 4/5 · Source question 44\n100 NTS-Style Quantitative Data Sufficiency MCQs with Explanations\n1 question. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-quantitative-data-sufficiency\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #MathQuiz #QuantitativeAptitude #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#MathQuiz",
+            "#QuantitativeAptitude",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-data-sufficiency",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-quantitative-data-sufficiency",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
