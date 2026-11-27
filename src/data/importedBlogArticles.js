@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nts-quantitative-data-sufficiency": {
+    title: "100 NTS-Style Quantitative Data Sufficiency MCQs with Explanations",
+    excerpt:
+      "Practise deciding whether one statement, both statements, or either statement can answer a quantitative question. Includes 100 original questions with concise reasoning.",
+    category: "Subject Guide",
+    date: "2026-11-27",
+    readTime: "50 min",
+    content: null,
+    body: readImportedBlogBody("nts-quantitative-data-sufficiency")
+  },
   "nat-ie-equilibrium-kinetics": {
     title: "100 NAT-IE-Style Chemical Equilibrium and Kinetics MCQs with Explanations",
     excerpt:
