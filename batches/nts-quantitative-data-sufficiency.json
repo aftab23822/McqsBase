@@ -2856,7 +2856,12 @@
         }
       },
       "scheduledAt": "2026-11-27T19:47:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-27T07:59:48.611249+00:00"
+        }
+      }
     },
     {
       "part": 5,
