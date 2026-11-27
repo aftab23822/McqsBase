@@ -1340,6 +1340,16 @@
       ],
       "published": 0,
       "verifiedPublications": 0
+    },
+    "nts-quantitative-data-sufficiency": {
+      "status": "rendering",
+      "ledger": "batches/nts-quantitative-data-sufficiency.json",
+      "createdAt": "2026-11-27T07:51:25.070598+00:00",
+      "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-data-sufficiency",
+      "blockedNetworks": [],
+      "scheduledAt": [],
+      "published": 0,
+      "verifiedPublications": 0
     }
   },
   "socialService": {
