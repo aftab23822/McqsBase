@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "nts-quantitative-data-sufficiency",
+  "createdAt": "2026-11-27T07:51:25.070598+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nts-quantitative-data-sufficiency",
+    "title": "100 NTS-Style Quantitative Data Sufficiency MCQs with Explanations",
+    "url": "https://www.mcqsbase.com/blog/nts-quantitative-data-sufficiency",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 8104603710,
+      "sha": "93ff6f9851c39224895c131b60c9d1ab193347a9",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-27T07:51:24.763989+00:00",
+      "url": "https://mcqs-base-2n4dburkm-as-projects-10921176.vercel.app",
+      "publisherRunId": 45960565365
+    },
+    "fetchedAt": "2026-11-27T07:51:24.763989+00:00",
+    "contentHash": "1f3710c7230d553ef8ff10d884b8532daea85f3b4c0fb9daf2dc3192738709c4",
+    "questions": [
+      {
+        "question": "What is the value of x? I. 4x = 28. II. x + y = 10.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "95f7160d6690b906ed9cead56c2860ca2e179562db603acf156984e1492b4814",
+        "sourceNumber": 1,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the value of x? I. x + y = 11. II. 2x = 16.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "2a41dde094aa94cd378f19df3062443a66199c23fddd3f595ef14aab7906dc27",
+        "sourceNumber": 2,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the value of x? I. x + y = 12. II. y = 5.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "90ded01720ea560ea4d96b297c6370f62a8339638448c8068e1c7328bb04822d",
+        "sourceNumber": 3,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the value of positive x? I. x² = 49. II. 2x = 14.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "a81cb5ed711183c001fde4eefc2db620ae7df928a8dca5c00967a5cca582d09b",
+        "sourceNumber": 4,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the average of p and q? I. p + q = 18. II. p = 8 and q = 10.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "204ffd234fd18140b0b0ae5ec1869b4acdfa6075ca8176ad2924288d4baeb1e0",
+        "sourceNumber": 5,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the remainder when integer n is divided by 5? I. n = 5k + 2, where k is an integer. II. n is odd.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "c14de203ededf028fed88888c512266c2da6f45e43e786bca77a0f83417ec705",
+        "sourceNumber": 6,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the value of x? I. x/y = 3, where y is nonzero. II. 2x = 24.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "25927d7e6bbe9cae5144132d98dd50bd131d78f62c93f3ead00b14c3a2f5c997",
+        "sourceNumber": 7,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the value of x? I. x − y = 2. II. x + y = 10.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "f5403ced8e164bbe2998657f108964badfb6f7d02ac5b08c812807f0a9539b39",
+        "sourceNumber": 8,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the value of xy? I. x = 3 and y = 4. II. x + y = 7.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "0f2fe5ed66a0e96c652a2ef3e87c4d1e8cee73e0cd23f9e53a7a6b22a545480d",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the area of a rectangle? I. Its length is 5 cm and its width is 4 cm. II. Its perimeter is 18 cm.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "048d76613620f312afa3f33ecb00440e8d90c5f14ed2e3c0486ca300373c7ec9",
+        "sourceNumber": 10,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the perimeter of a rectangle? I. Its length plus width is 9 cm. II. Its length is 5 cm and its width is 4 cm.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "46c77fcbafdbc13b9d17b25c1e32d3cd43a2c684954339fdcef1f9afdd9ae0c0",
+        "sourceNumber": 11,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the circumference of a circle? I. Its radius is 7 cm. II. Its diameter is 14 cm.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "3d34ad1bec37b2cdb9392b446e657f37298ce0418cc38fcb89f82a5ea49002f9",
+        "sourceNumber": 12,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the area of a triangle? I. Its base is 10 cm and its perpendicular height is 6 cm. II. The product of its base and perpendicular height is 60 cm².",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "291a92f55c4a7cf41c4c4d84acfca082925db1c0b74d666e0409696d494999f0",
+        "sourceNumber": 13,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the hypotenuse of a right triangle? I. Its legs are 5 cm and 12 cm. II. The sum of the squares of its legs is 169 cm².",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "a986b2b68cdb0f08d5e75f68cdf3d630318db3293718711de50d5711cbbbf524",
+        "sourceNumber": 14,
+        "correctIndex": 3
+      },
+      {
+        "question": "Is integer n divisible by 6? I. n is divisible by 2. II. n is divisible by 3.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "937cf048d454e9e68bcd1601710f4889aa3718a5ac0e2c80c624730696843f48",
+        "sourceNumber": 15,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the average of five numbers? I. Their sum is 45. II. Four of the numbers are 6, 8, 10, and 12, and the fifth is 9.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "741f666d6a8e5acd7573a2bfa807dd8cc50607e101d9c86f929d149259f1d728",
+        "sourceNumber": 16,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is 25% of n? I. n = 80. II. n/4 = 20.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "6a90f5a061afc55cbec40578f812a6f7fe335f6d9f50c04fd1dc0a9db8b82191",
+        "sourceNumber": 17,
+        "correctIndex": 3
+      },
+      {
+        "question": "What was the original price of an item after a 20% discount if its sale price is known? I. The sale price is Rs 800. II. The discount amount is Rs 200.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "6dde9cc835be24c323f01dc2ce8354e482b75c9b0dd2057b091c037be2550ed0",
+        "sourceNumber": 18,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x? I. x is 30% of 200. II. x/5 = 12.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "690a08eaa0f8f3e3f19313f548c1830d97489bdba30c5745af0f7d4ebef7dcbf",
+        "sourceNumber": 19,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the ratio of a to b in simplest form? I. a = 18 and b = 24. II. a/b = 3/4.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "90b13d5e7a06e1b68a91299f10bb20ee257710512a580b68688596dbda16899d",
+        "sourceNumber": 20,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x? I. x:y = 2:3 and y = 15. II. x + y = 25 and x = 10.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "1e264e8be5d5dd90ad3670cdab15f3b3f8c46af6b0921561b626b0a0e5eb923d",
+        "sourceNumber": 21,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x? I. 3x + 2y = 16. II. y = 2 and x + y = 7.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "39a4ae40b8cea38f916346489af90d3a0c9598cd78bbfdc7fac381d6f6aba142",
+        "sourceNumber": 22,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the value of the positive integer n? I. n² = 81. II. n is an odd prime greater than 5.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "1b0f2a3c4a9e65a69a8b1a61eba77f8a18ea25e6073bc43b8047a6180d1c4ac4",
+        "sourceNumber": 23,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the value of x? I. x² = 16. II. x > 0.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "c9a98578148b2817cd28b200bd5eff14ddae56762c91a9de741cb360310e4d31",
+        "sourceNumber": 24,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the value of x? I. |x| = 6. II. x is negative.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "347b6eab7b0d46f55ec91e1d00eabc277870ce2cac46e2c08eeef778ac5d7cff",
+        "sourceNumber": 25,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the median of the three numbers 2, 8, and x, where x is an integer? I. x = 5. II. x is between 3 and 7, inclusive.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "2e705719f5654b9538b02405e129f2fd9bbaac2e90e0b94e68d44bdceffdea3c",
+        "sourceNumber": 26,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the median of the three numbers 2, 8, and x? I. x = 5. II. x is between 3 and 7, inclusive.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "ece8dd429317fa88a8f2fc3c7334cd80b95a0d22fe2a5953e45779af61d4f3c3",
+        "sourceNumber": 27,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the value of the larger of two consecutive integers? I. Their sum is 41. II. The smaller integer is 20.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "3322650b995f03cfb4946276619646d119ea72be7417dfbdb44d292e97d265cf",
+        "sourceNumber": 28,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the greatest common divisor of positive integers a and b? I. a = 18 and b = 30. II. a = 6m and b = 10m, where m is a positive integer.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "4d432486a5af84c8e9ea975c3a5b4c071770d4c7f7dac30f674ed669dd4ee046",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the least common multiple of positive integers a and b? I. a = 4 and b = 6. II. Their product is 24 and their greatest common divisor is 2.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "1e9d5506cc86d52f49de9b7358cf3e02033816a7a3c28496cb7ce6a4169b9230",
+        "sourceNumber": 30,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the units digit of 7ⁿ, where n is a positive integer? I. n is a multiple of 4. II. n is a positive multiple of 2.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "ea1d5a9929532e93da8c6c7d56e47e903a2b58477ba4d0daaee4f6496816c5c5",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "Is integer n even? I. n² is even. II. n + 1 is odd.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "c34907caee85cb09071ae369a2c439c264b06e04fa24576d97001b23b762018d",
+        "sourceNumber": 32,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x? I. 5x − 3 = 17. II. x is an integer between 0 and 10, and 2x = 8.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "ca83fba813b617b2bb3b01e888cc02c23f1f3b2256d9d9ce6bf9526e50034bee",
+        "sourceNumber": 33,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x? I. 2x + y = 11. II. x − y = 1.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "c1644734b4bd3c4a6a8c0bc934cff30db01102cda02f8d93d5f38cb518b66dfa",
+        "sourceNumber": 34,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the value of x? I. x + y = 6. II. xy = 8.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "16416db13020c41f2dd08bc8d2d313a91febbd7ca9efb57eef2423936bf5e90e",
+        "sourceNumber": 35,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the value of x if x and y are positive integers? I. x + y = 9. II. x − y = 1.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "a5ccee4b5e317ff702353387215a683f380f1eba4cd97f80fd0278c023fe452c",
+        "sourceNumber": 36,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the value of x? I. x + 2y = 14. II. x + y = 9 and y = 5.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "44396f44ea08cc40f305db5bba967d660d89102b28111d58da4b7e4d3a6accd6",
+        "sourceNumber": 37,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the value of x? I. x/3 = y/4. II. x + y = 14.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "6f7c7edd25fff606e561bb71d864f1d766379fb9f1d0db0ae905d1d441958e36",
+        "sourceNumber": 38,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the value of x? I. x is 20% of y. II. y = 50 and x + y = 60.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "ac1026064138c82e1d7f540bb43f6c471a9d2ba816206bd3f2efd34cb9f0e012",
+        "sourceNumber": 39,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the value of x? I. x is 15% of 80. II. 4x = 48.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "bc81e939e3351a47ff130a8e556ae9db2eb4efadb196bb13a10bd5ee29c461a8",
+        "sourceNumber": 40,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the final amount after a 10% increase on an original amount? I. The original amount is Rs 500. II. The increase is Rs 50.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "ab1831b03514cefdcb127e8aaa4cf2d7d2533f0fd97e425f05759400b00b1011",
+        "sourceNumber": 41,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the simple interest on a principal for 2 years at an annual rate of 5%? I. The principal is Rs 1,000. II. The principal and rate are in the ratio 20,000:1.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "2035d9e350bfc9252863305fbbdb671b8242dfcd1e90ada1af791bcc189d1b98",
+        "sourceNumber": 42,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the total cost of 3 identical notebooks? I. One notebook costs Rs 40. II. Five such notebooks cost Rs 200.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "4e021dd4a5529dfbfaaddfb7595c0bbe8fe97a342150ebf10498a77a57d26c18",
+        "sourceNumber": 43,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the cost per kilogram of a mixture made from 2 kg of tea at Rs 300 per kg and 3 kg at Rs 400 per kg? I. The quantities and prices are as stated. II. The total cost is Rs 1,800 and the total mass is 5 kg.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "48e705f5269e30fa8ebb6e61f1dfaad7f25472c806802653c6b258564982f545",
+        "sourceNumber": 44,
+        "correctIndex": 3
+      },
+      {
+        "question": "How long does a vehicle take to travel 120 km at a constant speed? I. Its speed is 60 km/h. II. It travels 30 km in 30 minutes at the same speed.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "2f13bbb73a2821a33fbd84b267633ea1cecfefd9a48841efe880e4cb19f037aa",
+        "sourceNumber": 45,
+        "correctIndex": 3
+      },
+      {
+        "question": "How far does a cyclist travel in 3 hours at a constant speed? I. The cyclist's speed is 12 km/h. II. The cyclist travels 24 km in 2 hours at the same speed.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "2d037b8e7f29bf853200fad1851381efce0d4061017a6f51b4b8f78309325abc",
+        "sourceNumber": 46,
+        "correctIndex": 3
+      },
+      {
+        "question": "How long will two identical taps take to fill an empty tank together if they run at constant rates? I. Each tap fills the tank in 6 hours. II. One tap fills one-third of the tank in 2 hours.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "0282b21f6175e35fd3cdf36c450ebee7e982c5b9d5ea50e8adc23534a2ca35a3",
+        "sourceNumber": 47,
+        "correctIndex": 3
+      },
+      {
+        "question": "How long does a worker take to complete a job at a constant rate? I. The worker completes 40% of the job in 2 hours. II. The worker's rate is one-fifth of the job per hour.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "4688846e043254ec9b3ca2ae213121628858f1de053d6e9cd1a72c3d9b602f51",
+        "sourceNumber": 48,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the area of a square? I. Its side is 9 cm. II. Its perimeter is 36 cm.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "17871f2ad05ba6b0ef22bed297c02d01b471248bdf5f4acb64ad234fe98389b5",
+        "sourceNumber": 49,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the side length of a square with area 64 cm²? I. Its area is 64 cm². II. Its perimeter is 32 cm.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "b21592369a79ecdbb903060bfd3f68d01376ed0f050e523bca766b397661bade",
+        "sourceNumber": 50,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the volume of a cube? I. Its side is 4 cm. II. Its total surface area is 96 cm².",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "c26bd4c9e59e14e03de133066b324478ff2cd6674096e38d2819db9e5146764c",
+        "sourceNumber": 51,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the radius of a circle? I. Its diameter is 18 cm. II. Its circumference is 18π cm.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "8481a1d01dbe20de895a5e09bb073ee4a798e8c2740db082f1e848f386ef973c",
+        "sourceNumber": 52,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the area of a circle? I. Its radius is 3 cm. II. Its circumference is 6π cm.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "9d80b7ecec580d9c411b3c0192cc4770263174b3f03d0e8df470e87608984bdf",
+        "sourceNumber": 53,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the area of a rectangle with positive integer side lengths? I. Its perimeter is 20 cm. II. Its length is 6 cm and its width is 4 cm.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "d0bb885d8a21f8c661fc031d6bbaa34f4c58a650d86144736e6bba93901f9b75",
+        "sourceNumber": 54,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the perimeter of a triangle? I. Its side lengths are 5 cm, 6 cm, and 7 cm. II. Its side lengths sum to 18 cm.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "ae0535fc1f79eee10cf42b817e2089eb1e7ff72180b396b4ddb72ffaf2cda1c4",
+        "sourceNumber": 55,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of the angle supplementary to an angle measuring x degrees? I. x = 110. II. The two angles sum to 180 degrees.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "8a2b75f766cdcdac544da7c2ff710340b8a5c0963f6d8e58b193df4e1564dfac",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the complement of an angle measuring x degrees? I. x = 35. II. The angle is acute.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "ec9f8a91bc2e0eb55e6745e06ecc61fded9d1100866137c1aac416951b1c606f",
+        "sourceNumber": 57,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the sum of the interior angles of a convex polygon with n sides? I. n = 7. II. The sum is given by (n − 2) × 180 degrees.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "df8577f2468650ee2acfce2242bc38f201739ea564f8de4974e09d2b7968a3c4",
+        "sourceNumber": 58,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the value of x in degrees? I. x and 40 degrees are complementary angles. II. x + 40 = 90.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "da2947fba1b3265411ddf3b2b4a11ef83fcb90f304386a893595652084937d02",
+        "sourceNumber": 59,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x in degrees? I. The angles of a triangle are x, 2x, and 3x. II. x = 30.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "8ad672e37f202df0d7d26e27c34dbb61f2f3f40e49d1c7c5417f61c73383f1aa",
+        "sourceNumber": 60,
+        "correctIndex": 3
+      },
+      {
+        "question": "Is a triangle right-angled? I. Its side lengths are 3, 4, and 5 units. II. The square of its longest side equals the sum of the squares of the other two sides.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "028a6cc9b5fb2900e74193b12949b1711631c85682a2780345fafcbd582de413",
+        "sourceNumber": 61,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the distance between points (0, 0) and (a, b)? I. a = 3 and b = 4. II. a² + b² = 25.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "f493c2d857d346392345924b8ea89e93411a27b88e927151b6e20459a5a68a2a",
+        "sourceNumber": 62,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the slope of a line through points (1, 2) and (3, 6)? I. The points are (1, 2) and (3, 6). II. The line passes through (0, 1) and (2, 5).",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "6e3407db7222edf2d6478b99b35f59db34ce8e8e0b63cd4f09f292c124e5e4a0",
+        "sourceNumber": 63,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of the arithmetic sequence's seventh term? I. Its first term is 3 and its common difference is 4. II. Its seventh term is 27.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "c0afff7fc2b9dfa3d3736b4786ff67a49c346373d6139172111b0f40e29aad02",
+        "sourceNumber": 64,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the sum of the first five positive integers? I. The integers are 1, 2, 3, 4, and 5. II. Their average is 3.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "932207be354946064dccc7f3b83004a1770c07850a2cdb5dde93e84e163f41a2",
+        "sourceNumber": 65,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the probability of getting a head in one fair coin toss? I. The coin is fair and has two equally likely outcomes. II. Exactly one of its two outcomes is a head.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "5e6d8ef0ab0062684731d6d0bfa86dbab7bf56ceee0abb28947a77a0a32120e2",
+        "sourceNumber": 66,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the probability of drawing a red card from a standard 52-card deck in one draw? I. The deck contains 26 red cards. II. The deck has 52 cards, all equally likely to be drawn.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "6def0c42fad4d82be958ebeaf083a93babc5042915e64fab1c9d8a2879108c91",
+        "sourceNumber": 67,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the probability of rolling a number greater than 4 on one fair six-sided die? I. The favourable faces are 5 and 6. II. The die has six equally likely faces numbered 1 through 6.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "d07b51b47c0dbfbe5dea5664601e849eb4ae468b55cdd4d1bc52a3037b068483",
+        "sourceNumber": 68,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the probability of drawing an ace from a standard 52-card deck? I. There are 4 aces in the deck. II. There are 52 equally likely cards.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "783c93cdc1c046f4dbe108d61d730afecba9abaec298e5ade955ab04a8761907",
+        "sourceNumber": 69,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the probability of getting two heads in two tosses of a fair coin? I. Each toss has a 1/2 chance of heads and the tosses are independent. II. The four equally likely outcomes are HH, HT, TH, and TT.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "e5fcb3ae8fa23c7be6772b444da655257aad54403121e30808ffbc49348c4def",
+        "sourceNumber": 70,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the probability that the sum of two fair six-sided dice is 7? I. There are six ordered outcomes that sum to 7. II. The two dice have 36 equally likely ordered outcomes.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "26d2f4e207d996650f237d2cf9fce8991c27f70ef9b49196288ac3da026df2d4",
+        "sourceNumber": 71,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the value of the larger number? I. Two numbers have a sum of 20 and a difference of 4. II. The larger number is 12.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "db048bb79c6b989955223d0ab755cacdd69b3f8ff76d784178c1950d57d6caba",
+        "sourceNumber": 72,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of the smaller number? I. Two numbers have a sum of 30 and a difference of 8. II. The larger number is 19.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "bd1848a0ef02c7bee0ca7df869ec0487ba134ec9f4587dd6e4938caae084db55",
+        "sourceNumber": 73,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of the smaller of two numbers whose sum is 30? I. Their difference is 8. II. The larger number is 19.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "1e80c69eaf2a65b38cf38f52cf42abc9b426415e76183e3929deee0a747f64ff",
+        "sourceNumber": 74,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the value of the smaller of two numbers? I. Their sum is 30 and their difference is 8. II. Their sum is 30 and the larger number is 19.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "6545985add99c76a1f214a1e7696fbcaebad98addbe350536e98cf3d47d1040c",
+        "sourceNumber": 75,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of the larger of two numbers? I. Their product is 48 and their sum is 14. II. The two numbers are 6 and 8.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "c602b8ded4c7194ea97ca8d7c0117434baaf4eb04f436c4c71452e4ebb881950",
+        "sourceNumber": 76,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x? I. x is the greater root of t² − 9t + 20 = 0. II. x is a root of t² − 9t + 20 = 0 and x > 5.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "a75a5f214f7a72e0462c2c874d3864505399673e3822692703b926b864ed15b0",
+        "sourceNumber": 77,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x if x and y are real numbers? I. x² + y² = 25. II. y = 0 and x is positive.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "ad53dc5479d04a6c85049aeaba69316c4e698eb9ee833d101730799a2ced4e2c",
+        "sourceNumber": 78,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the value of x? I. x² = 25 and x is positive. II. x = 5 or x = −5.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "bad641fb0d7fba3f6af7b33fc8e07de11518d519d95d429855fd8403d5b71081",
+        "sourceNumber": 79,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the value of the positive integer n? I. n is a factor of 12. II. n is greater than 3 and less than 5.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "1f13141b4dfbb38a05350f3f5036ca43922536100a4356d10772642b1ea1dce3",
+        "sourceNumber": 80,
+        "correctIndex": 1
+      },
+      {
+        "question": "Is positive integer n prime? I. n is greater than 1 and has exactly two positive factors. II. n = 13.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "c78930c4ecf0205cadf047e4c656920938fee7aafd68ad01d0fb6173da5485ce",
+        "sourceNumber": 81,
+        "correctIndex": 3
+      },
+      {
+        "question": "Is integer n a multiple of 12? I. n is divisible by 3 and by 4. II. n is divisible by 6 and by 4.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "de791df4c155a45c06fda1e12d1dbcbaf431cf94cbd1fc2aa9527299e5c6fbc4",
+        "sourceNumber": 82,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the remainder when integer n is divided by 3? I. n = 3k + 1, where k is an integer. II. n is one more than a multiple of 3.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "27e96b6fdd8370d62207425b1dfc05713f4fb22c7db98c3ecaf77ca208574e9d",
+        "sourceNumber": 83,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the units digit of the positive integer n? I. n is divisible by 10. II. n is an even integer.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "d3a05955f9e344f9cdb936b1d3e9a5c335a65dbd1942a0efc7c053655f1c134b",
+        "sourceNumber": 84,
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the value of x? I. x is the units digit of 7². II. x is an integer from 0 through 9 and x = 9.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "02adc7c197bebb1aabb369567568675c6789ef48a06d7fca145b40866325aa10",
+        "sourceNumber": 85,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x? I. x + 4 = 13. II. 3x = 27.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "4a75b8aedcddc55501517474abc0c311c1e332822fdfefbd3a0e8d1106f04ac6",
+        "sourceNumber": 86,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x? I. x − 3y = 2. II. 2x + y = 13.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "909e560110e70ce99a471751767d689a5cb286e6228a59a62fc1c5a801641fef",
+        "sourceNumber": 87,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the value of x? I. 2x + 3y = 12. II. x + 3y = 8.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "521c23d084e6896e26acee46f940ef1ef18a6c299b59d037181d30b5b41f307e",
+        "sourceNumber": 88,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the value of x? I. x + y = 8 and y = 3. II. x − y = 2 and y = 3.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "6cc54cf80aa55348dfead83f05f4b56e38bf29ed774de2054e293fc6bc8e3211",
+        "sourceNumber": 89,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x? I. x + y = 20. II. x − y = 4.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "0f97c8cce98556b2e2bdfd861f0c54a9b0bfe67ac03bdbe2b3cf09f0091dc0d4",
+        "sourceNumber": 90,
+        "correctIndex": 2
+      },
+      {
+        "question": "What is the value of x? I. x + y = 10 and x − y = 2. II. x = 6.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "88f9a37a1a80aa51da6f04e59a3dd80c128edbed4db2fbfaa366b3d093a996a7",
+        "sourceNumber": 91,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x? I. x is twice y and x + y = 18. II. x = 12.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "f6c77b0941ffe681197f1f0ef59b192b2c132f7050b84137be2a6e12ca8a3bf1",
+        "sourceNumber": 92,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x? I. x is three times y and x + y = 20. II. y = 5 and x = 15.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "f1dea8c912bff0c4345621586bbf644289f4b70e2d4b752d94ad4617e179f03a",
+        "sourceNumber": 93,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x? I. x is 40% of y and y = 25. II. x + y = 35 and x = 10.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "12d3314ace07fde68441fde53203b5e1abddd373358706190b6653305e1160c7",
+        "sourceNumber": 94,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x? I. The ratio x:y is 5:2 and y = 8. II. x − y = 12 and y = 8.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "4df97de44d7803f42193c9a0339637f4716926348c0076a6107ddb23571c8068",
+        "sourceNumber": 95,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x? I. x:y = 4:3 and x + y = 28. II. x = 16.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "97e913099369719a8e897812afb4b19bd856b24aace9c1b31f1d146f386f57dd",
+        "sourceNumber": 96,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x? I. x is 25% greater than 40. II. x − 40 = 10.",
+        "choices": [
+          "Statement I alone is sufficient, but Statement II alone is not.",
+          "Statement II alone is sufficient, but Statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "c7e674a42e5805f15756d8305c138626311b8d5e32ac8b9eb4c367b04a2ab504",
+        "sourceNumber": 97,
+        "correctIndex": 3
+      },
+      {
+        "question": "What is the value of x? I. x is 40% of 75. II. x + y = 50, where y is an unknown number.",
+        "choices": [
+          "Statement I alone is sufficient, but statement II alone is not.",
+          "Statement II alone is sufficient, but statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "b32a2c3f3ee9593879ce0953f8a5247837ecf7be90da7847f42f3e5233d8fc1b",
+        "sourceNumber": 98,
+        "correctIndex": 0
+      },
+      {
+        "question": "Is positive integer n greater than 10? I. n is a prime number. II. n = 13.",
+        "choices": [
+          "Statement I alone is sufficient, but statement II alone is not.",
+          "Statement II alone is sufficient, but statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "1ce8d140b9efb59a7e2602e3b0bb6fe1133b277dbdca3c001430d770bf13e582",
+        "sourceNumber": 99,
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the average speed for a journey? I. The total distance traveled is 150 km. II. The total time for the journey is 3 hours.",
+        "choices": [
+          "Statement I alone is sufficient, but statement II alone is not.",
+          "Statement II alone is sufficient, but statement I alone is not.",
+          "Both statements together are sufficient, but neither alone is sufficient.",
+          "Each statement alone is sufficient."
+        ],
+        "key": "46c9c16b3b1d921a558e6cee845589d3a32708d07fcbd6637a111046a555fe8d",
+        "sourceNumber": 100,
+        "correctIndex": 2
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "eac88e0a39052bd5c6c28a8fd7373100d681d806f9fe6415413f72b00dc2c87c",
+      "sourceQuestionNumbers": [
+        43,
+        82,
+        24,
+        10,
+        80,
+        44,
+        39,
+        100,
+        9,
+        62,
+        2,
+        84,
+        48,
+        26,
+        75,
+        15,
+        68,
+        31,
+        89,
+        45,
+        99,
+        47,
+        19,
+        70,
+        36,
+        5,
+        86,
+        61,
+        42,
+        35,
+        94,
+        22,
+        57,
+        66,
+        3,
+        29,
+        16,
+        55,
+        96,
+        76,
+        11,
+        95,
+        63,
+        25,
+        58,
+        88,
+        4,
+        54,
+        28,
+        71,
+        21,
+        59,
+        90,
+        14,
+        74,
+        34,
+        65,
+        91,
+        8,
+        49,
+        93,
+        38,
+        56,
+        6,
+        69,
+        33,
+        50,
+        18,
+        73,
+        85,
+        1,
+        98,
+        30,
+        41,
+        67,
+        78,
+        12,
+        27,
+        46,
+        97,
+        92,
+        7,
+        64,
+        52,
+        32,
+        60,
+        72,
+        37,
+        81,
+        17,
+        23,
+        51,
+        77,
+        13,
+        87,
+        53,
+        79,
+        83,
+        40,
+        20
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
