@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nts-quantitative-data-sufficiency",
   "createdAt": "2026-11-27T07:51:25.070598+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "nts-quantitative-data-sufficiency",
     "title": "100 NTS-Style Quantitative Data Sufficiency MCQs with Explanations",
@@ -1700,7 +1700,12 @@
         }
       },
       "scheduledAt": "2026-11-27T13:14:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-27T07:58:46.780444+00:00"
+        }
+      }
     },
     {
       "part": 2,
