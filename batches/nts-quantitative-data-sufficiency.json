@@ -2001,7 +2001,11 @@
       },
       "uploadIntent": {
         "filename": "nts-quantitative-data-sufficiency-part-03-1689dd0f4a4ec877.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "3138ccbe-859c-470f-be8a-e478a0fdd125",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/rHv2duT5E7.mp4"
       }
     },
     {
