@@ -1908,7 +1908,11 @@
       },
       "uploadIntent": {
         "filename": "nts-ordering-scheduling-reasoning-part-02-d00d54b16cfff10a.mp4",
-        "status": "uncertain"
+        "status": "verified"
+      },
+      "studioMedia": {
+        "id": "19fc617d-4e92-4502-9ec0-33124b717bfa",
+        "path": "https://pub-8cba39ca15cc41b7aaa6092f15f898ed.r2.dev/HqF2dcfWmx.mp4"
       }
     },
     {
