@@ -1617,6 +1617,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 2,
+      "directory": "part-02",
+      "sourceQuestionNumbers": [
+        16,
+        78,
+        6
+      ],
+      "count": 3,
+      "durationSeconds": 76,
+      "sha256": "d00d54b16cfff10a04059dbdff17e523a7c7cb0e69a77511bee60584e3748de9",
+      "manifest": {
+        "title": "100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice",
+        "sourceTitle": "100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-28T07:19:18.614721+00:00",
+        "sourceContentHash": "e8370e2c94f3a1655451ba16b52ae71f3d205ff3758e1ee067ecbb3a529510a0",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 8126116149,
+          "sha": "3d513e50e53df0581eafd970e5ce16346516f70a",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-28T07:19:18.614721+00:00",
+          "url": "https://mcqs-base-qo5locjre-as-projects-10921176.vercel.app",
+          "publisherRunId": 46120195405
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 76,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "In a queue, U stands somewhere before V, and V stands before W. Which person must not be ahead of U?",
+            "choices": [
+              "V",
+              "W",
+              "U",
+              "Both V and W"
+            ],
+            "correctIndex": 3,
+            "key": "3a5d5f17c4abcf8b6a34367b789791a42e962e083193f29706a7dbca24312a30",
+            "sourceNumber": 16
+          },
+          {
+            "question": "A printer setup requires loading paper before printing and printing before binding. Which step must occur first?",
+            "choices": [
+              "Loading paper",
+              "Printing",
+              "Binding",
+              "The order is not fixed"
+            ],
+            "correctIndex": 0,
+            "key": "145ab3ee3e767c879d6115e276fd8dd54144c814e9d19e24a0f3cde8e2df34ef",
+            "sourceNumber": 78
+          },
+          {
+            "question": "In a queue, Omar is ahead of Zara, and Zara is ahead of Hamza. Who is behind Zara?",
+            "choices": [
+              "Omar",
+              "Zara",
+              "Hamza",
+              "Cannot be determined"
+            ],
+            "correctIndex": 2,
+            "key": "191ff16f64a4034dc70ae04b08fd783343dc1f532b6596dae414439e373aa9b9",
+            "sourceNumber": 6
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 16,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 16,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 17,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 18,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 19,
+            "duration": 5,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 24,
+            "duration": 18,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 42,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 43,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 44,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 45,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 49,
+            "duration": 15,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 64,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 65,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 66,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 67,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 71,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 2,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            16,
+            78,
+            6
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nts-ordering-scheduling-reasoning-part-02-d00d54b16cfff10a.mp4",
+        "videoSha256": "d00d54b16cfff10a04059dbdff17e523a7c7cb0e69a77511bee60584e3748de9",
+        "assetId": 803650651
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 2/5 | Q16, 78, 6 | 100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice",
+          "text": "Part 2/5 · Source questions 16, 78, 6\n100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 2/5 | Q16, 78, 6 | 100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice",
+          "text": "Part 2/5 · Source questions 16, 78, 6\n100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 2/5 | Q16, 78, 6 | 100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice",
+          "text": "Part 2/5 · Source questions 16, 78, 6\n100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 2/5 | Q16, 78, 6 | 100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice",
+          "text": "Part 2/5 · Source questions 16, 78, 6\n100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
