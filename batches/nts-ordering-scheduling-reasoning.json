@@ -1,0 +1,1341 @@
+{
+  "version": 1,
+  "slug": "nts-ordering-scheduling-reasoning",
+  "createdAt": "2026-11-28T07:19:18.851310+00:00",
+  "status": "rendering",
+  "package": {
+    "slug": "nts-ordering-scheduling-reasoning",
+    "title": "100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice",
+    "url": "https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+    "verifiedLive": false,
+    "verification": "production-deployment",
+    "productionDeployment": {
+      "id": 8126116149,
+      "sha": "3d513e50e53df0581eafd970e5ce16346516f70a",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-28T07:19:18.614721+00:00",
+      "url": "https://mcqs-base-qo5locjre-as-projects-10921176.vercel.app",
+      "publisherRunId": 46120195405
+    },
+    "fetchedAt": "2026-11-28T07:19:18.614721+00:00",
+    "contentHash": "e8370e2c94f3a1655451ba16b52ae71f3d205ff3758e1ee067ecbb3a529510a0",
+    "questions": [
+      {
+        "question": "A, B, C, and D stand in a line. A is before C, B is before C, and C is before D. Who must be last?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "key": "ae267d116c57424e7c74b3cdf4063a77dcd4a11d093b61e2b00b553d1ce46308",
+        "sourceNumber": 1,
+        "correctIndex": 3
+      },
+      {
+        "question": "Five files P, Q, R, S, and T are arranged in order. P is before Q, Q before R, R before S, and S before T. Which file must be first?",
+        "choices": [
+          "P",
+          "Q",
+          "R",
+          "T"
+        ],
+        "key": "74f941c74d63202e67c2d015789935f3c2542e4fd48e486e3b5d002253ce721b",
+        "sourceNumber": 2,
+        "correctIndex": 0
+      },
+      {
+        "question": "Five speakers L, J, K, H, and M speak one at a time. L speaks before J, J before K, K before H, and H before M. Who speaks last?",
+        "choices": [
+          "J",
+          "K",
+          "H",
+          "M"
+        ],
+        "key": "736a6fb9ba22ad9d0b783ec768c3cf2d51c1844ecac0de9cb4a3f98166fd5a29",
+        "sourceNumber": 3,
+        "correctIndex": 3
+      },
+      {
+        "question": "Six books are placed left to right. E is before A, A before B, B before C, C before D, and D before F. Which book is immediately after C?",
+        "choices": [
+          "B",
+          "D",
+          "E",
+          "F"
+        ],
+        "key": "7e9c08de8621bf9db10245cb2081ac603e7104adcb79b4d885a1e1f9befd234f",
+        "sourceNumber": 4,
+        "correctIndex": 1
+      },
+      {
+        "question": "Four runners finish a race with no tie. Sana finishes ahead of Bilal, and Bilal finishes ahead of Noor. Which statement must be true?",
+        "choices": [
+          "Noor finishes ahead of Sana",
+          "Sana finishes ahead of Noor",
+          "Bilal finishes ahead of Sana",
+          "Noor finishes between Sana and Bilal"
+        ],
+        "key": "57b1051343e78db06e3fe2aa56bfa4343fb2a0a0254ad9ea3e6c5051faa483e5",
+        "sourceNumber": 5,
+        "correctIndex": 1
+      },
+      {
+        "question": "In a queue, Omar is ahead of Zara, and Zara is ahead of Hamza. Who is behind Zara?",
+        "choices": [
+          "Omar",
+          "Zara",
+          "Hamza",
+          "Cannot be determined"
+        ],
+        "key": "191ff16f64a4034dc70ae04b08fd783343dc1f532b6596dae414439e373aa9b9",
+        "sourceNumber": 6,
+        "correctIndex": 2
+      },
+      {
+        "question": "Four tasks W, X, Y, and Z must be completed in an order. X must occur before Z, and W must occur after Z. Which task must be before W?",
+        "choices": [
+          "W only",
+          "Z only",
+          "X and Z",
+          "Y and W"
+        ],
+        "key": "afcf44ecf7ca366f4cefb00c03388988c0d3fb408b476ba33eedec41d05e927a",
+        "sourceNumber": 7,
+        "correctIndex": 2
+      },
+      {
+        "question": "A, B, C, and D are arranged from earliest to latest. C is earlier than A, and A is earlier than D. Which item cannot be earliest?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "key": "168343ef41a5dbc1c2e216ef3d4e08efb8df0263c5f647e7de65aac2ecdae968",
+        "sourceNumber": 8,
+        "correctIndex": 3
+      },
+      {
+        "question": "Four people enter a room one by one. R enters before S, and T enters after S. Which ordering is required among these three?",
+        "choices": [
+          "R, S, T",
+          "S, R, T",
+          "T, S, R",
+          "R, T, S"
+        ],
+        "key": "450c04d2231a357509229cd504ceb00e1dfce6c4eb43a09b3b811f208cbc821f",
+        "sourceNumber": 9,
+        "correctIndex": 0
+      },
+      {
+        "question": "Five parcels are loaded in sequence. K is loaded before L, M after L, and N after M. Which parcel is definitely later than K?",
+        "choices": [
+          "L",
+          "K",
+          "None of them",
+          "K and only K"
+        ],
+        "key": "64c22948a9e9b131a78924b0f0597d59c09ed6f3bcc3bb098b450f04f1fbb7af",
+        "sourceNumber": 10,
+        "correctIndex": 0
+      },
+      {
+        "question": "A, B, C, and D are in a row. B is somewhere before D, while A is before B and C is after D. Which person is last?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "key": "654910abdb9073ef5f6a23ce3256ed69ac8e27ef3621977c716aca40ac656f15",
+        "sourceNumber": 11,
+        "correctIndex": 2
+      },
+      {
+        "question": "Four machines finish a test at different times. Machine M finishes before N; N finishes before P; and Q finishes after P. Which machine finishes second?",
+        "choices": [
+          "M",
+          "N",
+          "P",
+          "Q"
+        ],
+        "key": "9b012b544cc2dc2292b0a991056f9eec62774f50b76deb88e75cdf5cc90e1e58",
+        "sourceNumber": 12,
+        "correctIndex": 1
+      },
+      {
+        "question": "Five lessons are arranged from first to last. History is before Science; Science is before Art; and Art is before Music. Which lesson is later than Science but earlier than Music?",
+        "choices": [
+          "History only",
+          "Art only",
+          "Music only",
+          "History and Art"
+        ],
+        "key": "e35d2fab30799db9cf058b818aca8ab2aaa0fd71360786ae4caedce21958c514",
+        "sourceNumber": 13,
+        "correctIndex": 1
+      },
+      {
+        "question": "Four applicants are interviewed in a line. F is interviewed after G but before H. J is interviewed before G. Who must be interviewed first?",
+        "choices": [
+          "F",
+          "G",
+          "H",
+          "J"
+        ],
+        "key": "2c4f3fbef69884b42aaa53715d1d62e537459d83f911989e4211d0bbace83d7e",
+        "sourceNumber": 14,
+        "correctIndex": 3
+      },
+      {
+        "question": "A, B, C, and D are ordered from lightest to heaviest. A is heavier than B, C is heavier than A, and D is heavier than C. Which is heaviest?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "key": "de4b9ff81d1069c490510171ce55fb0756b72e7cd64576c659bb372ff18b7a85",
+        "sourceNumber": 15,
+        "correctIndex": 3
+      },
+      {
+        "question": "In a queue, U stands somewhere before V, and V stands before W. Which person must not be ahead of U?",
+        "choices": [
+          "V",
+          "W",
+          "U",
+          "Both V and W"
+        ],
+        "key": "3a5d5f17c4abcf8b6a34367b789791a42e962e083193f29706a7dbca24312a30",
+        "sourceNumber": 16,
+        "correctIndex": 3
+      },
+      {
+        "question": "Five paintings are hung left to right. The blue painting is before the red one; the red one is before the gold one; and the white one is after the gold one. Which color must be after red?",
+        "choices": [
+          "Blue",
+          "Red",
+          "Gold",
+          "None"
+        ],
+        "key": "b1e1a6ea79014929b97f6bf7a0118d0126aac4ea80aa0d21e30fa3d71debc116",
+        "sourceNumber": 17,
+        "correctIndex": 2
+      },
+      {
+        "question": "Four jobs are done one after another. Job B is after A. Job C is after B. Job D is before A. Which job is second?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "key": "a8b1725f75d28b92bec1c4fc13faef7ba8d6d8236943ec94fe6c4ee49b59ef2c",
+        "sourceNumber": 18,
+        "correctIndex": 0
+      },
+      {
+        "question": "P, Q, R, and S are ordered. P is before Q, and R is after Q. S is before P. Which item is necessarily before R?",
+        "choices": [
+          "P only",
+          "Q only",
+          "P and Q",
+          "S only"
+        ],
+        "key": "3c2048da4ef174284f2b3df23feb2b99b2aea412b27ececa0c01ae0d1a702dd4",
+        "sourceNumber": 19,
+        "correctIndex": 2
+      },
+      {
+        "question": "Four cyclists cross a finish line at different times. T crosses after U but before V. W crosses after V. Who crosses third?",
+        "choices": [
+          "U",
+          "T",
+          "V",
+          "W"
+        ],
+        "key": "0a54285135c94df657ca63c477f4763a84c36dbe6a482f73b88d45fff35cd0a9",
+        "sourceNumber": 20,
+        "correctIndex": 2
+      },
+      {
+        "question": "Five letters are arranged in a sequence. A comes before C, C before E, and B after E. Which statement must be true?",
+        "choices": [
+          "A comes before B",
+          "B comes before A",
+          "E comes before C",
+          "C comes after B"
+        ],
+        "key": "b3d0f7f6f46cc48948d5c4d4a3068982d221580a0c8ee3555dd6b6b3bce518db",
+        "sourceNumber": 21,
+        "correctIndex": 0
+      },
+      {
+        "question": "Four people are ranked from oldest to youngest. R is older than S, and S is older than T. Which person is younger than R?",
+        "choices": [
+          "S only",
+          "T only",
+          "S and T",
+          "No one"
+        ],
+        "key": "7c17e0ac3ccf8aae1698dc6f38119fce565945ae2c682f96196638122a857b33",
+        "sourceNumber": 22,
+        "correctIndex": 2
+      },
+      {
+        "question": "Four trains depart at different times. Train A leaves before B. Train C leaves after B, and D leaves after C. Which train departs latest?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "key": "c180a29f7cdae27961bf113a4a9d04bc14b35ea5bdf28e37af1b3cd7faf2581e",
+        "sourceNumber": 23,
+        "correctIndex": 3
+      },
+      {
+        "question": "Five candidates are called in order. K is called before L; M is called after L; and N is called before K. Which candidate is definitely before M?",
+        "choices": [
+          "N",
+          "L",
+          "Both N and L",
+          "Neither N nor L"
+        ],
+        "key": "b851a66c8b94d93776a7a160cd5460e48ed2fcaa9eb2e9a0f5a36bcbca92b97b",
+        "sourceNumber": 24,
+        "correctIndex": 2
+      },
+      {
+        "question": "Four boxes are arranged from left to right. Box A is left of B, and C is right of B. D is right of C. Which box is farthest right?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "key": "a3bc2c14980b05ddda6db482380c30cad52286ab604f41bc5b8d75288e86eb70",
+        "sourceNumber": 25,
+        "correctIndex": 3
+      },
+      {
+        "question": "A team presents four reports. Report X is presented before Y. Z is presented after Y but before W. Which report is presented immediately before W if all four reports are the only presentations?",
+        "choices": [
+          "X",
+          "Y",
+          "Z",
+          "Cannot be determined"
+        ],
+        "key": "8e8c2832d68b232f8f3b4e4eee748440fa5e9350df4adf25e19915b81459d6d4",
+        "sourceNumber": 26,
+        "correctIndex": 2
+      },
+      {
+        "question": "Five students are lined up. Mina is ahead of Ali; Ali is ahead of Rehan; and Rehan is ahead of Iqra. Which student is behind Ali but ahead of Iqra?",
+        "choices": [
+          "Mina",
+          "Rehan",
+          "Iqra",
+          "Cannot be determined"
+        ],
+        "key": "330107a2178fdb33484612237f351f069b53257d7bfcc9a41a285db205f107fe",
+        "sourceNumber": 27,
+        "correctIndex": 1
+      },
+      {
+        "question": "Four events occur in sequence. Event P is not first; Q occurs before P; R occurs after P; and S occurs after R. Which event must be last?",
+        "choices": [
+          "P",
+          "Q",
+          "R",
+          "S"
+        ],
+        "key": "1ee428346052d1a61f2fdc9e498f95b37b3fff21d8f0a19d8ef754ca3106cf4e",
+        "sourceNumber": 28,
+        "correctIndex": 3
+      },
+      {
+        "question": "A, B, C, D, and E are arranged in a row. A is before B, B before C, and D before E. Which relation is guaranteed?",
+        "choices": [
+          "A is before C",
+          "E is before A",
+          "C is before D",
+          "D is before B"
+        ],
+        "key": "d52f62730550f16bff50b1d371e8252715b25da364b02d924fe332c0651fb464",
+        "sourceNumber": 29,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a race of six runners, H finishes ahead of J, J ahead of K, and K ahead of L. Which runner is definitely behind H?",
+        "choices": [
+          "J only",
+          "K only",
+          "J, K, and L",
+          "None"
+        ],
+        "key": "3bbe76e32909273d9a0ec02cdd4a0d2ad9469e51312ffa2af51beaceeff9b346",
+        "sourceNumber": 30,
+        "correctIndex": 2
+      },
+      {
+        "question": "Four packages are processed. A is processed before B. C is processed before A. D is processed after B. Which package is second?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "key": "ccaee1f0896e4bcb65dcbe6db09347ccc044b7895077356106f63d607f791a06",
+        "sourceNumber": 31,
+        "correctIndex": 0
+      },
+      {
+        "question": "Five books are stacked from bottom to top. The atlas is below the dictionary, and the dictionary is below the guidebook. Which book is above the atlas?",
+        "choices": [
+          "Atlas only",
+          "Dictionary and guidebook",
+          "Guidebook only",
+          "Cannot be determined"
+        ],
+        "key": "c1c78d5ef73fe548d4cf28c1d12b77d20352390d7d2061a5f3c0560fa5b82117",
+        "sourceNumber": 32,
+        "correctIndex": 1
+      },
+      {
+        "question": "Four people rank in a contest from first to fourth. Dani ranks ahead of Farah; Farah ranks ahead of Gohar; and Hina ranks behind Gohar. Who is fourth?",
+        "choices": [
+          "Dani",
+          "Farah",
+          "Gohar",
+          "Hina"
+        ],
+        "key": "a0e770b2a5d2f449c03bfc1e4067062ed6f83f5c70c3c9c1df92c9f0fbaa3e5f",
+        "sourceNumber": 33,
+        "correctIndex": 3
+      },
+      {
+        "question": "Five tasks are completed in order. Task R is before S; T is after S; U is before R; and V is after T. Which task is earliest?",
+        "choices": [
+          "R",
+          "S",
+          "U",
+          "V"
+        ],
+        "key": "9317c61ba127e10d14456a77027152cfc3fa78a609700ce8b71ae1b80e7d006f",
+        "sourceNumber": 34,
+        "correctIndex": 2
+      },
+      {
+        "question": "Four runners finish in order. P finishes ahead of Q. R finishes between Q and S. What is the required order of Q, R, and S?",
+        "choices": [
+          "Q, R, S",
+          "R, Q, S",
+          "S, R, Q",
+          "Q, S, R"
+        ],
+        "key": "3ac88531a7039317a5aa07a3c626c8387aae69edc477449412dd2aac86e22c55",
+        "sourceNumber": 35,
+        "correctIndex": 0
+      },
+      {
+        "question": "A delivery route visits four towns. A is visited before B, C after B, and D before A. Which town is visited immediately before B if these are the only four towns?",
+        "choices": [
+          "A",
+          "C",
+          "D",
+          "Cannot be determined"
+        ],
+        "key": "405346d03d86981d5921618265850a7c651f327c98fb3555f5ca91d27eb7fda0",
+        "sourceNumber": 36,
+        "correctIndex": 0
+      },
+      {
+        "question": "Four contestants are ranked from highest score to lowest. K scores more than L, and L more than M. N scores less than M. Who must score higher than N?",
+        "choices": [
+          "K only",
+          "L only",
+          "K, L, and M",
+          "M only"
+        ],
+        "key": "40c71577270500ebd30ff8673fc5b6753eea65f30aa9220b4ab125d9243e92c0",
+        "sourceNumber": 37,
+        "correctIndex": 2
+      },
+      {
+        "question": "A queue has five people. A is ahead of B; C is behind B; D is ahead of A; E is behind C. Who is at the back?",
+        "choices": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "key": "d6c705e81452ec2bf9ce35bc50abdfe10818c075250333af6045f059226590a3",
+        "sourceNumber": 38,
+        "correctIndex": 3
+      },
+      {
+        "question": "Four meetings are ordered by start time. Meeting R starts before S, S before T, and Q after T. Which meeting starts first?",
+        "choices": [
+          "Q",
+          "R",
+          "S",
+          "T"
+        ],
+        "key": "da539c2adba74b70d164e341aec89b56616055d72120954b540d6e7df8f49cd4",
+        "sourceNumber": 39,
+        "correctIndex": 1
+      },
+      {
+        "question": "Five objects are sorted from shortest to tallest. P is taller than Q; R is taller than P; S is shorter than Q; and T is taller than R. Which object is shortest?",
+        "choices": [
+          "P",
+          "Q",
+          "S",
+          "T"
+        ],
+        "key": "81f9e703a23b2829738463319b5a98cdde5fed5d367d71ce14ab865185d3adfd",
+        "sourceNumber": 40,
+        "correctIndex": 2
+      },
+      {
+        "question": "In a line of four people, A stands somewhere before B, and C stands after B. D stands before A. Who is immediately before B?",
+        "choices": [
+          "A",
+          "C",
+          "D",
+          "Cannot be determined"
+        ],
+        "key": "066f449fc7269bfec7cd57307f028cbe6daa9c43cb065dada6cb8cd064c98264",
+        "sourceNumber": 41,
+        "correctIndex": 0
+      },
+      {
+        "question": "Five stages are completed in order. Stage 2 follows Stage 1; Stage 3 follows Stage 2; Stage 4 follows Stage 3; Stage 5 follows Stage 4. Which stage is third?",
+        "choices": [
+          "Stage 1",
+          "Stage 2",
+          "Stage 3",
+          "Stage 4"
+        ],
+        "key": "3fed9e79b3fa3b1f06b46bdeac97196eab3c0f0db33d7aa745c5a995d151369c",
+        "sourceNumber": 42,
+        "correctIndex": 2
+      },
+      {
+        "question": "Four students submit assignments at different times. A submits before B, C submits after B, and D submits before A. Who submits just before C if these are the only students?",
+        "choices": [
+          "A",
+          "B",
+          "D",
+          "Cannot be determined"
+        ],
+        "key": "566ec151b30f57c571d97c7ca22798b0e6f45059445d32c0697c2e0a933c467d",
+        "sourceNumber": 43,
+        "correctIndex": 1
+      },
+      {
+        "question": "Six runners finish a race. T is ahead of U, U ahead of V, and V ahead of W. Which runner is necessarily not among these four runners' earliest finisher?",
+        "choices": [
+          "T",
+          "U",
+          "V",
+          "W"
+        ],
+        "key": "815d0a516925f0210b9337844bfa9d21754098ccb1eb2038d38423851ebee301",
+        "sourceNumber": 44,
+        "correctIndex": 3
+      },
+      {
+        "question": "Four items are ordered by weight. A weighs more than B; C weighs less than B; and D weighs more than A. Which item is second heaviest?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "key": "40e65a891b4023bbb8c6bcd541b36534497b48c0be90a01bfaf55faa5cdbe05f",
+        "sourceNumber": 45,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a queue, X is behind Y, Z is ahead of Y, and W is behind X. Which person must be ahead of X?",
+        "choices": [
+          "Y only",
+          "Z only",
+          "Y and Z",
+          "W only"
+        ],
+        "key": "9320e4d94082500278959a136d2ade4e8965852625c90b58c5d0e00cad7d16c0",
+        "sourceNumber": 46,
+        "correctIndex": 2
+      },
+      {
+        "question": "A, B, C, and D complete a relay in that order subject to these clues: C is after A, B is after C, and D is after B. Who runs second?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "key": "40f38e6fc4daa2791b611b4c1176644c56dfb5fbc98a755d899b627e05357a2c",
+        "sourceNumber": 47,
+        "correctIndex": 2
+      },
+      {
+        "question": "A five-person panel speaks one at a time. J speaks before K, L speaks after K, M speaks before J, and N speaks after L. Who is last?",
+        "choices": [
+          "J",
+          "K",
+          "L",
+          "N"
+        ],
+        "key": "b747d2d1fa17c67880dc6cecd88ecdc622155830a44013253f7b9d164a3872db",
+        "sourceNumber": 48,
+        "correctIndex": 3
+      },
+      {
+        "question": "On a Monday-to-Friday workweek, a report is reviewed on Wednesday. A second report is reviewed the next day. On which day is the second report reviewed?",
+        "choices": [
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "key": "4b68bf3164cdb65e734f7cff9e3c6981b25b7959df1d6833daff993850fa639a",
+        "sourceNumber": 49,
+        "correctIndex": 2
+      },
+      {
+        "question": "A meeting is scheduled two days after Monday. On which day does it occur?",
+        "choices": [
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "key": "c8e6268c1998289303b8ce68588ae57a51a8a8750942fd171c8559249af33ed5",
+        "sourceNumber": 50,
+        "correctIndex": 1
+      },
+      {
+        "question": "A workshop occurs on Friday. A briefing takes place one weekday before it. When is the briefing?",
+        "choices": [
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "key": "90ce11bfc057bb7669fee6e5a2a1cdcc424d1dc32d813543dd37a1bdab0fddcb",
+        "sourceNumber": 51,
+        "correctIndex": 1
+      },
+      {
+        "question": "A test is held on Tuesday. A review session is held three days later, counting Wednesday as one day later. What day is the review?",
+        "choices": [
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "key": "8cdeab2d774830348ccbfe333f89ad453f4b0eadc4d8736685c52072ccf32101",
+        "sourceNumber": 52,
+        "correctIndex": 1
+      },
+      {
+        "question": "A training session must occur on a weekday after Wednesday but before Friday. Which day is possible?",
+        "choices": [
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "key": "4a80e4d6afe811fe7a4545c129bb7b930f4c1dabe1cfa7969f402bfaf3592099",
+        "sourceNumber": 53,
+        "correctIndex": 2
+      },
+      {
+        "question": "A delivery arrives on Thursday. The order was dispatched one weekday earlier. On which day was it dispatched?",
+        "choices": [
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "key": "0de746c99da48984a5a9e07805ce291cb5afac0487c919f979ec67f4084da405",
+        "sourceNumber": 54,
+        "correctIndex": 1
+      },
+      {
+        "question": "A team meets on Monday and again exactly four days later. What is the second meeting day?",
+        "choices": [
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "key": "cb44b744583d6dfb707523fc6b87885bb16c179d1efa02fb2ee30e56150510d5",
+        "sourceNumber": 55,
+        "correctIndex": 1
+      },
+      {
+        "question": "An interview is held on Wednesday. A written test is scheduled two weekdays before it. When is the written test?",
+        "choices": [
+          "Monday",
+          "Tuesday",
+          "Thursday",
+          "Friday"
+        ],
+        "key": "49800b8ef0477299fdc40ca8678cd07844eb6689a829b57b26a2c5a3249ed5e7",
+        "sourceNumber": 56,
+        "correctIndex": 0
+      },
+      {
+        "question": "A seminar is held on Tuesday. A follow-up is held on the next weekday. When is the follow-up?",
+        "choices": [
+          "Monday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "key": "8047bc1e23d12a5acf29ca2318279b8d1d4dd9d2f00eb4346cc5ff735492b64d",
+        "sourceNumber": 57,
+        "correctIndex": 1
+      },
+      {
+        "question": "A report is due on Friday. A draft must be submitted two weekdays earlier. What is the draft deadline?",
+        "choices": [
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "key": "257df4697efeb6b662f47a7c1b5f3962bfba816d919d693f8904f62f883b13f2",
+        "sourceNumber": 58,
+        "correctIndex": 1
+      },
+      {
+        "question": "A class occurs on Thursday, and a quiz occurs the weekday immediately before the class. When is the quiz?",
+        "choices": [
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "key": "30369eec5e485b4e8c26642fcef358c42765a1ddaa2264dc78c7840a03cea7ff",
+        "sourceNumber": 59,
+        "correctIndex": 1
+      },
+      {
+        "question": "A project starts on Monday and lasts three consecutive weekdays, with Monday counted as day one. On what day does it end?",
+        "choices": [
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "key": "d7c00b0f2ccb802231e7596339a907cde11e2d47525f43b506a3d21e6e3bd7d7",
+        "sourceNumber": 60,
+        "correctIndex": 1
+      },
+      {
+        "question": "A library event is held on Friday. A planning meeting takes place two weekdays before it. When is the planning meeting?",
+        "choices": [
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "key": "ccf4d3c576742fa221a3cb8f6c691d3e3c75897b17ffcbb91a5c01df2b479010",
+        "sourceNumber": 61,
+        "correctIndex": 1
+      },
+      {
+        "question": "A field visit is on Thursday. A preparation session occurs three days earlier, counting calendar days and allowing the weekend. What day is the preparation session?",
+        "choices": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Sunday"
+        ],
+        "key": "dd1c0d9aee7dcca2b786dc67328e55e273330e683ad5ed6850c4fd7741175943",
+        "sourceNumber": 62,
+        "correctIndex": 0
+      },
+      {
+        "question": "A task is scheduled for Wednesday. A second task occurs the weekday after the first, and a third occurs the weekday after the second. What day is the third task?",
+        "choices": [
+          "Thursday",
+          "Friday",
+          "Monday",
+          "Tuesday"
+        ],
+        "key": "8032076e924092edf8505098e8301d003a99a35be9df32903a7ccb4548616610",
+        "sourceNumber": 63,
+        "correctIndex": 1
+      },
+      {
+        "question": "An exam is scheduled for Monday. A practice session is held five calendar days earlier. What day is the practice session?",
+        "choices": [
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Saturday"
+        ],
+        "key": "c36f74d157ac1cffa65564f9a0e5e6eb6ee17117499a0663893fcd68bb98c448",
+        "sourceNumber": 64,
+        "correctIndex": 1
+      },
+      {
+        "question": "A meeting is on Friday. A reminder is sent two calendar days before it. What day is the reminder sent?",
+        "choices": [
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Saturday"
+        ],
+        "key": "c15081289801d244f9d8f1b74ef5b6727301beab6f1d58b014703e3da839245a",
+        "sourceNumber": 65,
+        "correctIndex": 1
+      },
+      {
+        "question": "A workshop is on Tuesday. A planning meeting is held the weekday before the workshop. What day is the planning meeting?",
+        "choices": [
+          "Monday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "key": "8faa0b7f985d5e7c70b1d76c62aad54b7dda792bc36971d1297846fb7af3cff5",
+        "sourceNumber": 66,
+        "correctIndex": 0
+      },
+      {
+        "question": "A review is held on Thursday. A follow-up is held four weekdays later, with Friday as the first day later. What day is the follow-up?",
+        "choices": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday"
+        ],
+        "key": "2df5f9f8f2306ac94c57dd247cb29bb6f3beca3c81d763e79eae25748aa91da1",
+        "sourceNumber": 67,
+        "correctIndex": 2
+      },
+      {
+        "question": "A team works Monday through Friday. If a task begins on Thursday and takes two consecutive weekdays including the start day, when is it finished?",
+        "choices": [
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Monday"
+        ],
+        "key": "33d7c697fb93843474a0d337111e194e6f7e389d05c17e7a52b16575e2947d58",
+        "sourceNumber": 68,
+        "correctIndex": 1
+      },
+      {
+        "question": "An appointment falls on Wednesday. A reminder is sent the previous calendar day. When is the reminder sent?",
+        "choices": [
+          "Monday",
+          "Tuesday",
+          "Thursday",
+          "Friday"
+        ],
+        "key": "11b3d026d0fb7dd760ed67f59f36c6d03daa19a72bf18432761c0f0b60f2901b",
+        "sourceNumber": 69,
+        "correctIndex": 1
+      },
+      {
+        "question": "A test takes place on Thursday. A candidate's preparation begins exactly one week earlier. On which day does preparation begin?",
+        "choices": [
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "key": "e7c9146be0ad1af5daa68ae648f8abe623ad4b1ac085b1e18b40d1ccffbb6978",
+        "sourceNumber": 70,
+        "correctIndex": 1
+      },
+      {
+        "question": "A lecture is held on Monday. A discussion is held two weekdays afterward. What day is the discussion?",
+        "choices": [
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "key": "c1d11b428c79b26d078e65e266251323df877d9a587c0bba1c54910c08ff49ac",
+        "sourceNumber": 71,
+        "correctIndex": 1
+      },
+      {
+        "question": "A report is presented on Tuesday. Another report is presented on the weekday immediately following it. When is the second report presented?",
+        "choices": [
+          "Monday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "key": "1579020a801a8fd2de1ba7e67921a6cd5ffd6e11d30ae29e70923abb8db500b2",
+        "sourceNumber": 72,
+        "correctIndex": 1
+      },
+      {
+        "question": "A deadline is on Friday. Work must be completed three weekdays before the deadline. What is the completion day?",
+        "choices": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday"
+        ],
+        "key": "a683835f1006a1da1a4e0966788ab26dced2d54ffc2882ac6d73b26eba6130ce",
+        "sourceNumber": 73,
+        "correctIndex": 1
+      },
+      {
+        "question": "A session takes place on Wednesday. A related session takes place the following Monday. How many calendar days separate the sessions?",
+        "choices": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "key": "e17826e80585adda7b124a2c8ade5ebbf6467900677d270d37287f957d74665d",
+        "sourceNumber": 74,
+        "correctIndex": 2
+      },
+      {
+        "question": "A test is on Monday. A practice test is on the preceding Friday. How many calendar days before the test is the practice test?",
+        "choices": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "key": "cf86f5e57d549cb6d27782b869f73dbead1b4050650dd52fdbf6135138ff843c",
+        "sourceNumber": 75,
+        "correctIndex": 1
+      },
+      {
+        "question": "Tasks A, B, and C must be completed in order, with each task beginning immediately after the previous one. If A takes one hour and B takes two hours, when does C begin after A starts at 9:00 a.m.?",
+        "choices": [
+          "10:00 a.m.",
+          "11:00 a.m.",
+          "12:00 p.m.",
+          "1:00 p.m."
+        ],
+        "key": "90ad8c014b8677c1afadd66f1719a2d1839cfe14f5f479d14d755cd0a3b19199",
+        "sourceNumber": 76,
+        "correctIndex": 2
+      },
+      {
+        "question": "A recipe requires mixing before baking, and cooling after baking. Which step must be last among these three?",
+        "choices": [
+          "Mixing",
+          "Baking",
+          "Cooling",
+          "Mixing or baking"
+        ],
+        "key": "472f36b19789639d67ac4218efa4cdf7d0e7801e510dd3bfb83a28dbfb65ed95",
+        "sourceNumber": 77,
+        "correctIndex": 2
+      },
+      {
+        "question": "A printer setup requires loading paper before printing and printing before binding. Which step must occur first?",
+        "choices": [
+          "Loading paper",
+          "Printing",
+          "Binding",
+          "The order is not fixed"
+        ],
+        "key": "145ab3ee3e767c879d6115e276fd8dd54144c814e9d19e24a0f3cde8e2df34ef",
+        "sourceNumber": 78,
+        "correctIndex": 0
+      },
+      {
+        "question": "Four steps are arranged: inspect before repair, repair before testing, and testing before packing. Which step is immediately before packing if these are the only four steps?",
+        "choices": [
+          "Inspect",
+          "Repair",
+          "Testing",
+          "Packing"
+        ],
+        "key": "910cbd7bd0c8d4fc2d26005ac42a610005baaefb82c78e2459de43cc50b6c08d",
+        "sourceNumber": 79,
+        "correctIndex": 2
+      },
+      {
+        "question": "A document must be drafted before editing; editing must occur before approval. Which statement is necessarily true?",
+        "choices": [
+          "Approval precedes drafting",
+          "Drafting precedes approval",
+          "Editing follows approval",
+          "Drafting and approval occur together"
+        ],
+        "key": "8f9910753dead514e74830f8dd36c281c6deee946abc27ab1d37df2cf417e5dd",
+        "sourceNumber": 80,
+        "correctIndex": 1
+      },
+      {
+        "question": "A computer is switched on before a program is opened. The program is opened before a file is saved. What must happen before the file is saved?",
+        "choices": [
+          "Only switching on",
+          "Only opening the program",
+          "Switching on and opening the program",
+          "Nothing"
+        ],
+        "key": "2f0c6ce33bdb8f55bbf0695989da607e5b93f3dbb342e2cda472a068f35ae136",
+        "sourceNumber": 81,
+        "correctIndex": 2
+      },
+      {
+        "question": "A lab procedure requires measuring a sample, then adding a reagent, then recording the result. What happens immediately before recording?",
+        "choices": [
+          "Measuring the sample",
+          "Adding the reagent",
+          "Recording the result",
+          "Nothing"
+        ],
+        "key": "8141ae490a0d044754fd4e4a4b99b51d332b3f4f8dd6e56c22fce3a5eb7f4f09",
+        "sourceNumber": 82,
+        "correctIndex": 1
+      },
+      {
+        "question": "Four steps A, B, C, and D satisfy A before C, B before C, and C before D. Which step is definitely last?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "key": "a0b981550ce42da57153ca0a9676274c4cc1de6c4f6057029b710556b842b3c9",
+        "sourceNumber": 83,
+        "correctIndex": 3
+      },
+      {
+        "question": "A package must be sealed after the item is placed inside, and labelled after it is sealed. What must happen first?",
+        "choices": [
+          "Labelling",
+          "Sealing",
+          "Placing the item inside",
+          "Either sealing or labelling"
+        ],
+        "key": "aafbaccac4e03c822bf429e81cdbdfab2f4779cbac9d8918d2fc09f43085e30d",
+        "sourceNumber": 84,
+        "correctIndex": 2
+      },
+      {
+        "question": "A job has three steps: A precedes B, and C precedes B. No relationship between A and C is specified. Which conclusion is valid?",
+        "choices": [
+          "A must precede C",
+          "C must precede A",
+          "Both A and C precede B",
+          "B precedes A"
+        ],
+        "key": "3d8367d33ed1fb877ba6d2b09fa322cf4c7f7078c5cfa161a11ff7f0d0a2e44b",
+        "sourceNumber": 85,
+        "correctIndex": 2
+      },
+      {
+        "question": "A system is tested only after installation, and approval occurs only after the test. Which order is required?",
+        "choices": [
+          "Approval, installation, test",
+          "Installation, test, approval",
+          "Test, approval, installation",
+          "Installation, approval, test"
+        ],
+        "key": "aba0f98a1a9a18e752581771124915ffdd8358f857114a8089ceaf6f113ea394",
+        "sourceNumber": 86,
+        "correctIndex": 1
+      },
+      {
+        "question": "A meeting agenda has opening remarks before the report, and the report before questions. Which item comes immediately before questions if these are the only agenda items?",
+        "choices": [
+          "Opening remarks",
+          "The report",
+          "Questions",
+          "Cannot be determined"
+        ],
+        "key": "cb1b8986ce66d786eff0985084242be38c3617247b604afdd5b89a64e95148ec",
+        "sourceNumber": 87,
+        "correctIndex": 1
+      },
+      {
+        "question": "A phone is unlocked before an application is opened. A message is sent after the application is opened. Which action must occur before sending the message?",
+        "choices": [
+          "Unlocking the phone only",
+          "Opening the application only",
+          "Unlocking the phone and opening the application",
+          "No action is required first"
+        ],
+        "key": "64400de6b52b9dfc2bbefcf70c11312aef389c3901b8c4b7a4680fe56cd9557d",
+        "sourceNumber": 88,
+        "correctIndex": 2
+      },
+      {
+        "question": "Four processes P, Q, R, and S obey P before Q, R before Q, and Q before S. Which process must be last?",
+        "choices": [
+          "P",
+          "Q",
+          "R",
+          "S"
+        ],
+        "key": "c75a9da85b846a7739d9f419efcc74f673f1eca649ab978411e5f5eb447826e1",
+        "sourceNumber": 89,
+        "correctIndex": 3
+      },
+      {
+        "question": "A safety check occurs before machine operation. Cleaning occurs after operation. Which event must occur between the check and cleaning?",
+        "choices": [
+          "Safety check",
+          "Machine operation",
+          "Cleaning",
+          "No event"
+        ],
+        "key": "12813ab006ea29f419869fc57cb1df5861cde34b40559038e476bdf028fe2e54",
+        "sourceNumber": 90,
+        "correctIndex": 1
+      },
+      {
+        "question": "A recipe's four stages satisfy chopping before cooking, cooking before serving, and washing after serving. Which stage is last?",
+        "choices": [
+          "Chopping",
+          "Cooking",
+          "Serving",
+          "Washing"
+        ],
+        "key": "e1458fd560c84fc6f78a73ce32fb5c915c8380cd8138e7f985d9485af1d3cdbd",
+        "sourceNumber": 91,
+        "correctIndex": 3
+      },
+      {
+        "question": "A, B, and C are steps in a process. B must follow A, but C may occur at any time. Which statement is guaranteed?",
+        "choices": [
+          "C occurs after B",
+          "C occurs before A",
+          "A occurs before B",
+          "C is between A and B"
+        ],
+        "key": "c012840aa945c7e63d84957535fbea0395e402d354d6098264b86b5ccd406276",
+        "sourceNumber": 92,
+        "correctIndex": 2
+      },
+      {
+        "question": "A form is completed before it is submitted. Submission occurs before confirmation is received. What happens first?",
+        "choices": [
+          "Confirmation",
+          "Submission",
+          "Form completion",
+          "Cannot be determined"
+        ],
+        "key": "d5e9fcabbd3a6858db8ce6b4a16af8650ab1cc445faeb01b84aed0578f046685",
+        "sourceNumber": 93,
+        "correctIndex": 2
+      },
+      {
+        "question": "A package is weighed before postage is calculated. A label is printed after postage is calculated. Which step is necessarily between weighing and label printing?",
+        "choices": [
+          "Postage calculation",
+          "Label printing",
+          "Weighing",
+          "No step"
+        ],
+        "key": "05ce10e095b7749c53dec6d696d07bab22592ba4fbe38f893efccd0d362b5a5d",
+        "sourceNumber": 94,
+        "correctIndex": 0
+      },
+      {
+        "question": "Tasks L, M, N, and O are sequenced so that L precedes N, N precedes M, and M precedes O. What is immediately before O?",
+        "choices": [
+          "L",
+          "M",
+          "N",
+          "O"
+        ],
+        "key": "520558436a1a2b0c9f0f5ced40221de6b92c2a22fa1603f2943a28fe9fcd068f",
+        "sourceNumber": 95,
+        "correctIndex": 1
+      },
+      {
+        "question": "An event registration requires choosing a session before paying, and payment before receiving a ticket. What must occur before payment?",
+        "choices": [
+          "Choosing a session",
+          "Receiving a ticket",
+          "Both choosing and receiving a ticket",
+          "Nothing"
+        ],
+        "key": "4eaef278a4753e960604aab413c7add631a8f98aac4462c41dbec70dfd14ec4b",
+        "sourceNumber": 96,
+        "correctIndex": 0
+      },
+      {
+        "question": "A pilot study is completed before a full study, and the full study is completed before analysis. Which task cannot be first?",
+        "choices": [
+          "Pilot study",
+          "Full study",
+          "Analysis",
+          "Either pilot study or full study"
+        ],
+        "key": "2face66d41f1cb7437593366d630b7bd680d06db24691bee10ade8000711466e",
+        "sourceNumber": 97,
+        "correctIndex": 2
+      },
+      {
+        "question": "Four boxes are packed in order. Box A is packed before B; C is packed after B; D is packed before A. Which box is packed second?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "key": "7ff827ea820677f99d318f486860be84e70d7e157707570f42baf0f3ebc83242",
+        "sourceNumber": 98,
+        "correctIndex": 0
+      },
+      {
+        "question": "In a five-person race, K finishes ahead of L; M finishes behind L; N finishes ahead of K; and P finishes behind M. Who finishes last?",
+        "choices": [
+          "K",
+          "M",
+          "N",
+          "P"
+        ],
+        "key": "94b57f26e158378e3ff512224a7e8951ee0ec42129b832cd946a8331eac4b1e8",
+        "sourceNumber": 99,
+        "correctIndex": 3
+      },
+      {
+        "question": "Five workshops A, B, C, D, and E run one per weekday from Monday to Friday. A is Monday, B is before C, D is after C, and E is Friday. Which workshop must be Tuesday?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "key": "698db7b17668505500d891ce1513f878a03b2f0a3902474ef23a462e29a25476",
+        "sourceNumber": 100,
+        "correctIndex": 1
+      }
+    ],
+    "invalidQuestionTable": false,
+    "selectionPlan": {
+      "version": 1,
+      "strategy": "stratified-source-position",
+      "seed": "747e1e2c4497653c4639335b21fd26eac9adff962ce4010196e6f8f68c7b4d3e",
+      "sourceQuestionNumbers": [
+        43,
+        92,
+        39,
+        16,
+        78,
+        6,
+        66,
+        60,
+        96,
+        24,
+        95,
+        25,
+        51,
+        7,
+        73,
+        20,
+        34,
+        65,
+        97,
+        55,
+        40,
+        77,
+        94,
+        45,
+        19,
+        49,
+        80,
+        32,
+        85,
+        5,
+        63,
+        57,
+        26,
+        3,
+        88,
+        68,
+        37,
+        84,
+        50,
+        14,
+        28,
+        8,
+        90,
+        74,
+        52,
+        23,
+        93,
+        12,
+        71,
+        48,
+        81,
+        62,
+        33,
+        46,
+        11,
+        56,
+        75,
+        13,
+        99,
+        30,
+        9,
+        47,
+        29,
+        76,
+        98,
+        35,
+        100,
+        67,
+        59,
+        15,
+        91,
+        58,
+        1,
+        61,
+        31,
+        64,
+        2,
+        27,
+        89,
+        41,
+        36,
+        79,
+        87,
+        53,
+        18,
+        69,
+        83,
+        10,
+        38,
+        42,
+        86,
+        54,
+        72,
+        21,
+        4,
+        44,
+        82,
+        70,
+        17,
+        22
+      ]
+    },
+    "videoBranding": {
+      "logo": "eagle",
+      "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+      "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+    }
+  },
+  "parts": [],
+  "thinkingSeconds": 3
+}
