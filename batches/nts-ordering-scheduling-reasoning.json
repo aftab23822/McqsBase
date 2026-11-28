@@ -1898,6 +1898,287 @@
           "format": "short"
         }
       }
+    },
+    {
+      "part": 3,
+      "directory": "part-03",
+      "sourceQuestionNumbers": [
+        66,
+        60,
+        96
+      ],
+      "count": 3,
+      "durationSeconds": 80,
+      "sha256": "b3febafaf3a2cdf360cde2efc99d03730212b03844350ab645f6c34d7d058db4",
+      "manifest": {
+        "title": "100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice",
+        "sourceTitle": "100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice",
+        "sourceUrl": "https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+        "sourceVerifiedLive": false,
+        "sourceFetchedAt": "2026-11-28T07:19:18.614721+00:00",
+        "sourceContentHash": "e8370e2c94f3a1655451ba16b52ae71f3d205ff3758e1ee067ecbb3a529510a0",
+        "sourceVerification": "production-deployment",
+        "productionDeployment": {
+          "id": 8126116149,
+          "sha": "3d513e50e53df0581eafd970e5ce16346516f70a",
+          "environment": "Production",
+          "state": "success",
+          "verifiedAt": "2026-11-28T07:19:18.614721+00:00",
+          "url": "https://mcqs-base-qo5locjre-as-projects-10921176.vercel.app",
+          "publisherRunId": 46120195405
+        },
+        "status": "local-preview-only",
+        "count": 3,
+        "secondsPerQuestion": 3,
+        "durationSeconds": 80,
+        "width": 1080,
+        "height": 1920,
+        "answersIncluded": true,
+        "narration": true,
+        "voiceName": "Kokoro af_heart",
+        "countdownStartsAfterNarration": true,
+        "seed": "mcqsbase-demo",
+        "questions": [
+          {
+            "question": "A workshop is on Tuesday. A planning meeting is held the weekday before the workshop. What day is the planning meeting?",
+            "choices": [
+              "Monday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "correctIndex": 0,
+            "key": "8faa0b7f985d5e7c70b1d76c62aad54b7dda792bc36971d1297846fb7af3cff5",
+            "sourceNumber": 66
+          },
+          {
+            "question": "A project starts on Monday and lasts three consecutive weekdays, with Monday counted as day one. On what day does it end?",
+            "choices": [
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "correctIndex": 1,
+            "key": "d7c00b0f2ccb802231e7596339a907cde11e2d47525f43b506a3d21e6e3bd7d7",
+            "sourceNumber": 60
+          },
+          {
+            "question": "An event registration requires choosing a session before paying, and payment before receiving a ticket. What must occur before payment?",
+            "choices": [
+              "Choosing a session",
+              "Receiving a ticket",
+              "Both choosing and receiving a ticket",
+              "Nothing"
+            ],
+            "correctIndex": 0,
+            "key": "4eaef278a4753e960604aab413c7add631a8f98aac4462c41dbec70dfd14ec4b",
+            "sourceNumber": 96
+          }
+        ],
+        "stages": [
+          {
+            "start": 0,
+            "duration": 17,
+            "stage": "narration",
+            "question": 1,
+            "frame": "0000.png"
+          },
+          {
+            "start": 17,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0001.png"
+          },
+          {
+            "start": 18,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0002.png"
+          },
+          {
+            "start": 19,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 1,
+            "frame": "0003.png"
+          },
+          {
+            "start": 20,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 1,
+            "frame": "0004.png"
+          },
+          {
+            "start": 24,
+            "duration": 17,
+            "stage": "narration",
+            "question": 2,
+            "frame": "0005.png"
+          },
+          {
+            "start": 41,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0006.png"
+          },
+          {
+            "start": 42,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0007.png"
+          },
+          {
+            "start": 43,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 2,
+            "frame": "0008.png"
+          },
+          {
+            "start": 44,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 2,
+            "frame": "0009.png"
+          },
+          {
+            "start": 48,
+            "duration": 20,
+            "stage": "narration",
+            "question": 3,
+            "frame": "0010.png"
+          },
+          {
+            "start": 68,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0011.png"
+          },
+          {
+            "start": 69,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0012.png"
+          },
+          {
+            "start": 70,
+            "duration": 1,
+            "stage": "countdown",
+            "question": 3,
+            "frame": "0013.png"
+          },
+          {
+            "start": 71,
+            "duration": 4,
+            "stage": "reveal",
+            "question": 3,
+            "frame": "0014.png"
+          },
+          {
+            "start": 75,
+            "duration": 5,
+            "stage": "outro",
+            "question": null,
+            "frame": "0015.png"
+          }
+        ],
+        "introIncluded": false,
+        "outroIncluded": true,
+        "requestedCount": 3,
+        "maxDurationSeconds": 89,
+        "branding": {
+          "logo": "eagle",
+          "sourceSha256": "89c676c8a314e34c4d4380ad47d3718516102899251e6a7b43b33bcb7deb73e6",
+          "imageSha256": "7a9df9d5532eeb005a66fc4e324cf6209eec909c813fbdfe2d9d35e3ba5fdfaf"
+        },
+        "sequence": {
+          "part": 3,
+          "totalParts": 5,
+          "sourceQuestionNumbers": [
+            66,
+            60,
+            96
+          ]
+        },
+        "hashtags": [
+          "#MCQsBase",
+          "#MCQs",
+          "#NTS",
+          "#EntryTest",
+          "#Shorts"
+        ]
+      },
+      "asset": {
+        "videoUrl": "https://github.com/aftab23822/McqsBase/releases/download/mcqsbase-quiz-media/nts-ordering-scheduling-reasoning-part-03-b3febafaf3a2cdf3.mp4",
+        "videoSha256": "b3febafaf3a2cdf360cde2efc99d03730212b03844350ab645f6c34d7d058db4",
+        "assetId": 803652449
+      },
+      "captions": {
+        "facebook": {
+          "title": "Part 3/5 | Q66, 60, 96 | 100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice",
+          "text": "Part 3/5 · Source questions 66, 60, 96\n100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set and answers in the first comment.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+          "format": "reel"
+        },
+        "instagram": {
+          "title": "Part 3/5 | Q66, 60, 96 | 100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice",
+          "text": "Part 3/5 · Source questions 66, 60, 96\n100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+          "format": "reel"
+        },
+        "tiktok": {
+          "title": "Part 3/5 | Q66, 60, 96 | 100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice",
+          "text": "Part 3/5 · Source questions 66, 60, 96\n100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+          "format": "video"
+        },
+        "youtube": {
+          "title": "Part 3/5 | Q66, 60, 96 | 100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice",
+          "text": "Part 3/5 · Source questions 66, 60, 96\n100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice\n3 questions. Choose A, B, C or D before the timer ends. Share your score!\nFull practice set: https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning\nVisit mcqsbase.com/blog; look for the test title above.\n#MCQsBase #MCQs #NTS #EntryTest #Shorts",
+          "hashtags": [
+            "#MCQsBase",
+            "#MCQs",
+            "#NTS",
+            "#EntryTest",
+            "#Shorts"
+          ],
+          "sourceUrl": "https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+          "firstCommentText": "Full practice set and answers: https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+          "format": "short"
+        }
+      }
     }
   ],
   "thinkingSeconds": 3
