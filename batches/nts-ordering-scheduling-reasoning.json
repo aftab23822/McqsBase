@@ -2698,8 +2698,9 @@
           "integrationId": "cmvwb4faa021yro9dgcj8vlww"
         },
         "instagram": {
-          "status": "uncertain",
-          "attemptedAt": "2026-11-28T07:25:19.082140+00:00"
+          "status": "accepted",
+          "attemptedAt": "2026-11-28T07:25:19.082140+00:00",
+          "postId": "cmx035g6x0222o0asst2x30al"
         }
       }
     },
