@@ -1342,7 +1342,7 @@
       "verifiedPublications": 10
     },
     "nts-quantitative-data-sufficiency": {
-      "status": "scheduled",
+      "status": "publication-needs-attention",
       "ledger": "batches/nts-quantitative-data-sufficiency.json",
       "createdAt": "2026-11-27T07:51:25.070598+00:00",
       "sourceUrl": "https://www.mcqsbase.com/blog/nts-quantitative-data-sufficiency",
