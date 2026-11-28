@@ -5,6 +5,16 @@ const readImportedBlogBody = (slug) =>
   readFileSync(path.join(process.cwd(), 'public', 'blog', slug, 'article.md'), 'utf8');
 
 export const importedBlogArticles = {
+  "nts-ordering-scheduling-reasoning": {
+    title: "100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice",
+    excerpt:
+      "Practise linear ordering, rankings, schedules, and task sequences with 100 original MCQs and concise explanations.",
+    category: "Subject Guide",
+    date: "2026-11-28",
+    readTime: "30 min",
+    content: null,
+    body: readImportedBlogBody("nts-ordering-scheduling-reasoning")
+  },
   "nts-quantitative-data-sufficiency": {
     title: "100 NTS-Style Quantitative Data Sufficiency MCQs with Explanations",
     excerpt:
