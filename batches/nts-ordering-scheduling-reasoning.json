@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nts-ordering-scheduling-reasoning",
   "createdAt": "2026-11-28T07:19:18.851310+00:00",
-  "status": "rendering",
+  "status": "ready",
   "package": {
     "slug": "nts-ordering-scheduling-reasoning",
     "title": "100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice",
@@ -2743,5 +2743,86 @@
       }
     }
   ],
-  "thinkingSeconds": 3
+  "thinkingSeconds": 3,
+  "batch": {
+    "version": 1,
+    "status": "ready-for-scheduling",
+    "slug": "nts-ordering-scheduling-reasoning",
+    "sourceUrl": "https://www.mcqsbase.com/blog/nts-ordering-scheduling-reasoning",
+    "sourceTitle": "100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice",
+    "sourceContentHash": "e8370e2c94f3a1655451ba16b52ae71f3d205ff3758e1ee067ecbb3a529510a0",
+    "productionDeployment": {
+      "id": 8126116149,
+      "sha": "3d513e50e53df0581eafd970e5ce16346516f70a",
+      "environment": "Production",
+      "state": "success",
+      "verifiedAt": "2026-11-28T07:19:18.614721+00:00",
+      "url": "https://mcqs-base-qo5locjre-as-projects-10921176.vercel.app",
+      "publisherRunId": 46120195405
+    },
+    "videoCount": 5,
+    "platformPublicationCount": 20,
+    "parts": [
+      {
+        "part": 1,
+        "directory": "part-01",
+        "sourceQuestionNumbers": [
+          43,
+          92,
+          39
+        ],
+        "count": 3,
+        "durationSeconds": 86,
+        "sha256": "bb836ee69b25bfec59d5e19df346d8aa405fbe7cfbea463626eb9cf2094e01f3"
+      },
+      {
+        "part": 2,
+        "directory": "part-02",
+        "sourceQuestionNumbers": [
+          16,
+          78,
+          6
+        ],
+        "count": 3,
+        "durationSeconds": 76,
+        "sha256": "d00d54b16cfff10a04059dbdff17e523a7c7cb0e69a77511bee60584e3748de9"
+      },
+      {
+        "part": 3,
+        "directory": "part-03",
+        "sourceQuestionNumbers": [
+          66,
+          60,
+          96
+        ],
+        "count": 3,
+        "durationSeconds": 80,
+        "sha256": "b3febafaf3a2cdf360cde2efc99d03730212b03844350ab645f6c34d7d058db4"
+      },
+      {
+        "part": 4,
+        "directory": "part-04",
+        "sourceQuestionNumbers": [
+          24,
+          95,
+          25
+        ],
+        "count": 3,
+        "durationSeconds": 80,
+        "sha256": "e8f393eb667fbfc6ca58c8e2e1c1ada9db08963a4dedde340bd28d6a1a102b78"
+      },
+      {
+        "part": 5,
+        "directory": "part-05",
+        "sourceQuestionNumbers": [
+          51,
+          7,
+          73
+        ],
+        "count": 3,
+        "durationSeconds": 80,
+        "sha256": "5b652808d7aec4fab72f7aaed43f8c2190e36d1ea2511b5b922e28838c719052"
+      }
+    ]
+  }
 }
