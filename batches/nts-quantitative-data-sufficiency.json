@@ -3315,7 +3315,7 @@
           "integrationId": "cmvwbcule0222ro9dhocbic4w"
         },
         "youtube": {
-          "status": "ERROR",
+          "status": "QUEUE",
           "attemptedAt": "2026-11-27T08:00:27.035483+00:00",
           "postId": "cmwyoys0w14i5lmauunghj8s3",
           "url": null,
@@ -3327,7 +3327,7 @@
           "verification": "provider-status-only",
           "integrationId": "cmvwb2nny021wro9d0gxp3wm4",
           "quotaRecovery": {
-            "status": "uncertain",
+            "status": "scheduled",
             "scheduledAt": "2026-11-28T00:15:00-08:00"
           },
           "scheduledAt": "2026-11-28T00:15:00-08:00"
