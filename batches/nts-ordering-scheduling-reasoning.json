@@ -2,7 +2,7 @@
   "version": 1,
   "slug": "nts-ordering-scheduling-reasoning",
   "createdAt": "2026-11-28T07:19:18.851310+00:00",
-  "status": "ready",
+  "status": "scheduling",
   "package": {
     "slug": "nts-ordering-scheduling-reasoning",
     "title": "100 Ordering and Scheduling Reasoning MCQs for NTS-Style Aptitude Practice",
@@ -1749,7 +1749,12 @@
         }
       },
       "scheduledAt": "2026-11-28T12:40:00+05:00",
-      "receipts": {}
+      "receipts": {
+        "facebook": {
+          "status": "uncertain",
+          "attemptedAt": "2026-11-28T07:24:28.952532+00:00"
+        }
+      }
     },
     {
       "part": 2,
